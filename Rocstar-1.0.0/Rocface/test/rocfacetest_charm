@@ -1,0 +1,12 @@
+#!/bin/csh
+
+set SRCDIR = /csar/jiao/Rocstar
+set OPTS = 'CHARM=1 LIBSUF=a'
+
+cd ${SRCDIR}/Roccom; gmake ${OPTS} clean; 
+cvs update -dP; gmake ${OPTS} OPTS="-memory paranoid" -j 4
+
+cd ${SRCDIR}/Rocface; gmake ${OPTS} clean
+cvs update -dP; gmake ${OPTS} OPTS="-memory paranoid" -j 4
+
+gmake ${OPTS} testall

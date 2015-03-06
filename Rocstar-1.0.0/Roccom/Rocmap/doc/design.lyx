@@ -1,0 +1,86 @@
+#LyX 1.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 220
+\textclass article
+\language english
+\inputencoding default
+\fontscheme default
+\graphics default
+\float_placement h
+\paperfontsize 12
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 1
+\use_natbib 0
+\use_numerical_citations 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Title
+
+Rocmap Design Document
+\layout Section
+
+Introduction
+\layout Standard
+
+Rocmap is an add-on module of Roccom standing for Mesh Aware Procedures.
+ It is self-contained and its only strong dependence is Roccom.
+ All its communications are handled using a subset of MPI, specifically
+ the nonblocking calls and collective calls of MPI.
+ To eliminate its dependence on MPI, Rocmap also provides a dummy MPI implementa
+tion for one processor, so that an application code can use Rocmap on one-proces
+sor without having to link with MPI.
+ This also makes it easier for debugging an application code on a single
+ processor.
+\layout Standard
+
+Rocmap provides the following functionality.
+ 
+\layout Enumerate
+
+Determine inter-pane connectivity using coordinate and elemental connectity
+ information.
+ This is done in parallel through message passing.
+ The algorithm does not perform exact comparison on nodal coordinates, but
+ compare them within a certain tolerance.
+ The data structure for inter-pane connectivity is give later in Section\SpecialChar ~
+
+\begin_inset LatexCommand \ref{ipc}
+
+\end_inset 
+
+.
+\layout Enumerate
+
+Constructs a ghost window for another window using interpane-connectivity.
+\layout Enumerate
+
+Synchronize data between a window and its ghost window.
+\layout Enumerate
+
+Perform reduction operations locally on a window and its ghost window.
+\layout Section
+
+Data Structures
+\layout Subsection
+
+
+\begin_inset LatexCommand \label{ipc}
+
+\end_inset 
+
+Inter-pane connectivity
+\layout Section
+
+API
+\the_end

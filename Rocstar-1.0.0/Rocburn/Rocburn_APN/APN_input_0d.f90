@@ -1,0 +1,149 @@
+! *********************************************************************
+! * Rocstar Simulation Suite                                          *
+! * Copyright@2015, Illinois Rocstar LLC. All rights reserved.        *
+! *                                                                   *
+! * Illinois Rocstar LLC                                              *
+! * Champaign, IL                                                     *
+! * www.illinoisrocstar.com                                           *
+! * sales@illinoisrocstar.com                                         *
+! *                                                                   *
+! * License: See LICENSE file in top level of distribution package or *
+! * http://opensource.org/licenses/NCSA                               *
+! *********************************************************************
+! *********************************************************************
+! * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,   *
+! * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES   *
+! * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND          *
+! * NONINFRINGEMENT.  IN NO EVENT SHALL THE CONTRIBUTORS OR           *
+! * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER       *
+! * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,   *
+! * Arising FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE    *
+! * USE OR OTHER DEALINGS WITH THE SOFTWARE.                          *
+! *********************************************************************
+!                                                                             
+! ---------------------------------------------------------------------------  
+!                                                                              
+!   SUBROUTINE  : APN_input_0d                                                  
+!                                                                              
+!   This subroutine read inputs for burning rate model Rocburn_1D_APN
+!
+!   Authors          : 
+!
+!   Creation Date    :  Sep. 10, 2002
+!   
+!   Modifications    :
+!
+!    No.     Date         Authors       Description
+!
+!                                                                              
+! ---------------------------------------------------------------------------  
+!                                                                              
+!                                                                              
+!   arguments   :                                                              
+!                                                                              
+!      G_APN     : Global variables for Rocburn_1D_APN
+!      Indir     : directory for input data file
+!                                                                              
+! ---------------------------------------------------------------------------  
+!
+  SUBROUTINE APN_input_0d(G_APN, Indir)
+
+    USE M_Rocburn_APN_Global_Data
+
+    IMPLICIT NONE
+    INCLUDE 'mpif.h'
+
+!
+!   Global data for Rocburn_1D_APN passed as a pointer
+!
+
+    TYPE (G_BURN_1D), POINTER :: G_APN
+!
+!   arguments
+!
+    CHARACTER(*), INTENT(IN)  :: Indir
+    CHARACTER(*), PARAMETER :: ControlFile = "RocburnAPNControl.txt"
+
+!
+!   
+!
+!
+! ----------------------------------------------------------------
+!   local variables
+    CHARACTER(LEN=80) :: Infile
+
+    INTEGER   :: ir, ioerr
+    INTEGER   :: mat
+
+!
+!       read propellant thermophysical properties
+!
+
+    ir = 10
+
+    if (Indir(LEN_TRIM(Indir):LEN_TRIM(Indir)) == '/') then
+       Infile= TRIM(Indir) // ControlFile
+    else
+       Infile= TRIM(Indir) // '/' // ControlFile
+    endif
+
+    OPEN (unit=ir,file=Infile,status='old')
+
+!RAF
+!RAF Extend for multiple propellants, but keep it backward compatible
+!RAF Specify same value for nxmax and To for all materials.
+!RAF
+
+    DO mat = 1, MATMAX
+
+      READ(ir,*,IOSTAT=ioerr)   G_APN%a_p(mat)
+      IF (ioerr /= 0) THEN
+        G_APN%nmat = mat - 1
+        EXIT
+      ENDIF
+      G_APN%nmat = mat
+
+      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  a_p(',mat,')  =',  &
+                                    G_APN%a_p(mat)
+
+      READ(ir,*)   G_APN%n_p(mat)
+      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  n_p(',mat,')  =',  &
+                                    G_APN%n_p(mat)
+
+      READ(ir,*)   G_APN%nxmax
+      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  nxmax= ',G_APN%nxmax
+
+      READ(ir,*)   G_APN%Tf_adiabatic(mat)
+      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  Tf_adiabatic(',mat,') = ',  &
+                                    G_APN%Tf_adiabatic(mat)
+
+      READ(ir,*)   G_APN%To
+      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  To= ',G_APN%To
+
+      READ(ir,*,IOSTAT=ioerr) G_APN%xmax(mat)
+      IF (ioerr /= 0) THEN
+        G_APN%xmax(mat) = 1.0e+15
+      ENDIF
+      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  xmax(',mat,')  =',  &
+                                    G_APN%xmax(mat)
+      IF (ioerr /= 0) EXIT
+
+    END DO
+    IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  Found a total of ',G_APN%nmat,' materials'
+
+!RAF
+
+    CLOSE(ir)
+
+    IF (G_APN%rank==0) PRINT *,'ROCBURN_APN: rank=',G_APN%rank,       &
+            ' done input ', ControlFile
+
+    RETURN 
+
+  END SUBROUTINE APN_input_0d
+
+
+
+
+
+
