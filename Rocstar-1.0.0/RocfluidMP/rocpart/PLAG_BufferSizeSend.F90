@@ -86,7 +86,7 @@ SUBROUTINE PLAG_BufferSizeSend( regions, iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_BufferSizeSend',&
-  __FILE__ )
+  'PLAG_BufferSizeSend.F90' )
     
 ! get dimensions and set pointer ----------------------------------------------
   
@@ -228,6 +228,7 @@ END SUBROUTINE PLAG_BufferSizeSend
 ! Initial import for MPI
 !
 !******************************************************************************
+
 
 
 

@@ -131,7 +131,7 @@ MODULE RFLU_ModThrustSpecImpulse
 ! *****************************************************************************
  
     CALL RegisterFunction(global,'RFLU_TSI_CloseGlobalVals',&
-  __FILE__)
+  'RFLU_ModThrustSpecImpulse.F90')
 
 ! ==============================================================================
 !   Opening thrust and specific impulse file
@@ -237,7 +237,7 @@ MODULE RFLU_ModThrustSpecImpulse
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_TSI_ComputeGlobalThrustSI',&
-  __FILE__)
+  'RFLU_ModThrustSpecImpulse.F90')
 
     pForceCoeff     => pRegion%forceCoeffsGlobal
     pForceCoeffVac  => pRegion%forceVacCoeffsGlobal
@@ -381,7 +381,7 @@ MODULE RFLU_ModThrustSpecImpulse
 ! *****************************************************************************
  
     CALL RegisterFunction(global,'RFLU_TSI_OpenGlobalVals',&
-  __FILE__)
+  'RFLU_ModThrustSpecImpulse.F90')
 
 ! ==============================================================================
 !   Opening thrust and specific impulse file
@@ -518,7 +518,7 @@ MODULE RFLU_ModThrustSpecImpulse
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_TSI_PrintGlobalVals',&
-  __FILE__)
+  'RFLU_ModThrustSpecImpulse.F90')
                 
 ! ******************************************************************************
 !   Print global force coefficients
@@ -620,7 +620,7 @@ MODULE RFLU_ModThrustSpecImpulse
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_TSI_WriteGlobalVals',&
-  __FILE__)
+  'RFLU_ModThrustSpecImpulse.F90')
 
 ! ******************************************************************************
 !   Increment counter
@@ -750,6 +750,11 @@ END MODULE RFLU_ModThrustSpecImpulse
 !
 !
 ! ******************************************************************************
+
+
+
+
+
 
 
 

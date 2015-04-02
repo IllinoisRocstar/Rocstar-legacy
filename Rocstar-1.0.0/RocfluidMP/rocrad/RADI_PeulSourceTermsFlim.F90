@@ -79,7 +79,7 @@ SUBROUTINE RADI_PeulSourceTermsFlim( region )
 
   global => region%global
   CALL RegisterFunction( global,'RADI_PeulSourceTermsFlim',&
-  __FILE__ )
+  'RADI_PeulSourceTermsFlim.F90' )
 
 ! get coefficients and parameters ---------------------------------------------
 
@@ -164,6 +164,7 @@ END SUBROUTINE RADI_PeulSourceTermsFlim
 !
 !
 !******************************************************************************
+
 
 
 

@@ -166,7 +166,7 @@ SUBROUTINE RFLU_BXV_ComputeVarsCv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_ComputeVarsCv',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and set dependent variables
@@ -263,7 +263,7 @@ SUBROUTINE RFLU_BXV_CompEnergyPatch(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_CompEnergyPatch',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -366,7 +366,7 @@ SUBROUTINE RFLU_BXV_CompMomEnergyPatch(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_CompMomEnergyPatch',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -468,7 +468,7 @@ SUBROUTINE RFLU_BXV_CreateVarsCv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_CreateVarsCv',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and allocate memory
@@ -545,7 +545,7 @@ SUBROUTINE RFLU_BXV_CreateVarsDv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_CreateVarsDv',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and allocate memory
@@ -621,7 +621,7 @@ SUBROUTINE RFLU_BXV_CreateVarsTStep(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_CreateVarsTStep',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and Allocate memory
@@ -711,7 +711,7 @@ SUBROUTINE RFLU_BXV_DestroyVarsCv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_DestroyVarsCv',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and deallocate memory
@@ -788,7 +788,7 @@ SUBROUTINE RFLU_BXV_DestroyVarsDv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_DestroyVarsDv',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and deallocate memory
@@ -864,7 +864,7 @@ SUBROUTINE RFLU_BXV_DestroyVarsTStep(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_DestroyVarsTStep',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and deallocate memory
@@ -949,7 +949,7 @@ SUBROUTINE RFLU_BXV_InitVars(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_InitVars',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and initialize patch variable arrays 
@@ -1045,7 +1045,7 @@ SUBROUTINE RFLU_BXV_NullifyVarsCv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_NullifyVarsCv',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and nullify memory
@@ -1117,7 +1117,7 @@ SUBROUTINE RFLU_BXV_NullifyVarsDv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_NullifyVarsDv',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and nullify memory
@@ -1189,7 +1189,7 @@ SUBROUTINE RFLU_BXV_NullifyVarsTStep(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_NullifyVarsTStep',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and nullify memory
@@ -1270,7 +1270,7 @@ SUBROUTINE RFLU_BXV_ReadVarsASCII(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_ReadVarsASCII',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -1508,7 +1508,7 @@ SUBROUTINE RFLU_BXV_ReadVarsBinary(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_ReadVarsBinary',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -1739,7 +1739,7 @@ SUBROUTINE RFLU_BXV_ReadVarsWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_ReadVarsWrapper',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Read bcv files
@@ -1813,7 +1813,7 @@ SUBROUTINE RFLU_BXV_SetDependentVars(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_SetDependentVars',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Loop over patches and set dependent variables if NSCBC active.
@@ -1887,7 +1887,7 @@ SUBROUTINE RFLU_BXV_SetDependentVarsPatch(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_SetDependentVarsPatch',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -2034,7 +2034,7 @@ SUBROUTINE RFLU_BXV_WriteVarsASCII(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_WriteVarsASCII',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -2190,7 +2190,7 @@ SUBROUTINE RFLU_BXV_WriteVarsBinary(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_WriteVarsBinary',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -2338,7 +2338,7 @@ SUBROUTINE RFLU_BXV_WriteVarsWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_WriteVarsWrapper',&
-  __FILE__)
+  'RFLU_ModBoundXvUtils.F90')
 
 ! ******************************************************************************
 ! Read bcv files
@@ -2393,6 +2393,27 @@ END MODULE RFLU_ModBoundXvUtils
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

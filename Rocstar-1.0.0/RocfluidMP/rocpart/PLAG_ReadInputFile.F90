@@ -79,7 +79,7 @@ SUBROUTINE PLAG_ReadInputFile( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global, 'PLAG_ReadInputFile',&
-  __FILE__ )
+  'PLAG_ReadInputFile.F90' )
 
 ! Open file -------------------------------------------------------------------
 
@@ -197,6 +197,7 @@ END SUBROUTINE PLAG_ReadInputFile
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

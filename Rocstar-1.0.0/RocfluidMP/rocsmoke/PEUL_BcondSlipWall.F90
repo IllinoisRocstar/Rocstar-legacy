@@ -82,7 +82,7 @@ SUBROUTINE PEUL_BcondSlipWall( region,patch )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_BcondSlipWall',&
-  __FILE__ )
+  'PEUL_BcondSlipWall.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -151,6 +151,7 @@ END SUBROUTINE PEUL_BcondSlipWall
 ! added slip wall boundary conditions
 !
 !******************************************************************************
+
 
 
 

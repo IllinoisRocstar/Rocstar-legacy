@@ -81,7 +81,7 @@ SUBROUTINE RFLU_SetPatchPlotFlags(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SetPatchPlotFlags',&
-  __FILE__)
+  'RFLU_SetPatchPlotFlags.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -187,6 +187,7 @@ END SUBROUTINE RFLU_SetPatchPlotFlags
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

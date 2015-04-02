@@ -73,7 +73,7 @@ SUBROUTINE MixtureProperties( region,inBeg,inEnd,gasUpdate )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'MixtureProperties',&
-  __FILE__ )
+  'MixtureProperties.F90' )
 
 ! set local quantities to avoid duplicate calls -------------------------------
 
@@ -189,6 +189,7 @@ END SUBROUTINE MixtureProperties
 ! Added calculation of mixture properties.
 !
 !******************************************************************************
+
 
 
 

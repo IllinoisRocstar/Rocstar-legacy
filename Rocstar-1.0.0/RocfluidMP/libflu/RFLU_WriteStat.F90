@@ -85,7 +85,7 @@ SUBROUTINE RFLU_WriteStat( region )
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_WriteStat',&
-  __FILE__)
+  'RFLU_WriteStat.F90')
 
 ! open file ----------------------------------------------------------------
 
@@ -199,6 +199,7 @@ END SUBROUTINE RFLU_WriteStat
 !
 !
 !******************************************************************************
+
 
 
 

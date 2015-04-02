@@ -72,7 +72,7 @@ SUBROUTINE TURB_RFLO_RansBndConditionsRecv( regions,iReg ) ! PUBLIC
 !******************************************************************************
 
   CALL RegisterFunction( regions(iReg)%global, &
-                         'TURB_RFLO_RansBndConditionsRecv', __FILE__ )
+                         'TURB_RFLO_RansBndConditionsRecv', 'TURB_rFLO_RansBndConditionsRecv.F90' )
 
   IF (regions(iReg)%turbInput%modelClass /= MODEL_RANS) GOTO 999
 
@@ -163,6 +163,7 @@ END SUBROUTINE TURB_RFLO_RansBndConditionsRecv
 !
 !
 !******************************************************************************
+
 
 
 

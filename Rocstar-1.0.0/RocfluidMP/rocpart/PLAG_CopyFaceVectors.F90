@@ -78,7 +78,7 @@ SUBROUTINE PLAG_CopyFaceVectors( region )
   global => region%global
   
   CALL RegisterFunction( global,'PLAG_CopyFaceVectors',&
-  __FILE__ )
+  'PLAG_CopyFaceVectors.F90' )
     
 ! Loop over all grid levels ---------------------------------------------------
 
@@ -144,6 +144,7 @@ END SUBROUTINE PLAG_CopyFaceVectors
 ! Initial import of face vectors for PLAG datastructure
 !
 !******************************************************************************
+
 
 
 

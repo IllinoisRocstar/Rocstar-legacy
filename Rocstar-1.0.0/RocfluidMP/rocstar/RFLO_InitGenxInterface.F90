@@ -100,7 +100,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_InitGenxInterface',&
-  __FILE__ )
+  'RFLO_InitGenxInterface.F90' )
 
 ! open data windows and register variables ------------------------------------
 
@@ -928,6 +928,7 @@ END SUBROUTINE RFLO_InitGenxInterface
 ! Finalized integration into GenX.
 !
 !******************************************************************************
+
 
 
 

@@ -80,7 +80,7 @@ SUBROUTINE TURB_CoWlmReadBcSection( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'TURB_CoWlmReadBcSection',&
-  __FILE__ )
+  'TURB_coWlmReadBcSectionFlu.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -213,6 +213,7 @@ END SUBROUTINE TURB_CoWlmReadBcSection
 !
 !
 !******************************************************************************
+
 
 
 

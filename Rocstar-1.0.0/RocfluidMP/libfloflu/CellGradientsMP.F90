@@ -100,7 +100,7 @@ SUBROUTINE CellGradientsMP(region)
   global => region%global
 
   CALL RegisterFunction(global,'CellGradientsMP',&
-  __FILE__)
+  'CellGradientsMP.F90')
 
 #ifdef RFLU
 ! ******************************************************************************
@@ -360,6 +360,7 @@ END SUBROUTINE CellGradientsMP
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

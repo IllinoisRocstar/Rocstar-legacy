@@ -90,7 +90,7 @@ SUBROUTINE RkInitGeneric(region,iStage,icBeg,icEnd,ivBeg,ivEnd,cv,cvOld,diss)
   global => region%global
 
   CALL RegisterFunction(global,'RkInitGeneric',&
-  __FILE__)
+  'RkInitGeneric.F90')
 
 ! *****************************************************************************
 ! Initialize Runge-Kutta scheme
@@ -155,6 +155,7 @@ END SUBROUTINE RkInitGeneric
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

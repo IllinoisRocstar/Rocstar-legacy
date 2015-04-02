@@ -80,7 +80,7 @@ SUBROUTINE SPEC_DerivedInputValues(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'SPEC_DerivedInputValues',&
-  __FILE__)
+  'SPEC_DerivedInputValues.F90')
 
 ! ******************************************************************************
 ! Loop over regions
@@ -245,6 +245,7 @@ END SUBROUTINE SPEC_DerivedInputValues
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

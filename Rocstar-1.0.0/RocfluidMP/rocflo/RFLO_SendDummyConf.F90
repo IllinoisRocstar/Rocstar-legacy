@@ -80,7 +80,7 @@ SUBROUTINE RFLO_SendDummyConf( region,regionSrc,patch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_SendDummyConf',&
-  __FILE__ )
+  'RFLO_SendDummyConf.F90' )
 
 ! check if the source region is active
 
@@ -379,6 +379,7 @@ END SUBROUTINE RFLO_SendDummyConf
 ! Added flux computation (central scheme).
 !
 !******************************************************************************
+
 
 
 

@@ -70,7 +70,7 @@ SUBROUTINE RFLO_C2eAvgCoeffsDegec( region )
   global => region%global
 
   CALL RegisterFunction(global,'RFLO_C2eAvgCoeffsDegec',&
-  __FILE__)
+  'RFLO_C2eAvgCoeffsDegec.F90')
 
 ! get parameters and pointers --------------------------------------------------
 
@@ -167,6 +167,7 @@ END SUBROUTINE RFLO_C2eAvgCoeffsDegec
 !
 !
 ! ******************************************************************************
+
 
 
 

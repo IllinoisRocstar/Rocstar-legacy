@@ -128,7 +128,7 @@ MODULE RFLU_ModReadWriteGrid
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridASCII',&
-  __FILE__)
+  'RFLU_ModReadWriteGrid.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -625,7 +625,7 @@ MODULE RFLU_ModReadWriteGrid
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridBinary',&
-  __FILE__)
+  'RFLU_ModReadWriteGrid.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1111,7 +1111,7 @@ MODULE RFLU_ModReadWriteGrid
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridWrapper',&
-  __FILE__)
+  'RFLU_ModReadWriteGrid.F90')
 
 ! ******************************************************************************
 !   Read grid files
@@ -1195,7 +1195,7 @@ MODULE RFLU_ModReadWriteGrid
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteGridASCII',&
-  __FILE__)
+  'RFLU_ModReadWriteGrid.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1464,7 +1464,7 @@ MODULE RFLU_ModReadWriteGrid
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteGridBinary',&
-  __FILE__)
+  'RFLU_ModReadWriteGrid.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1729,7 +1729,7 @@ MODULE RFLU_ModReadWriteGrid
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteGridWrapper',&
-  __FILE__)
+  'RFLU_ModReadWriteGrid.F90')
 
 ! ******************************************************************************
 !   Read solution files
@@ -1807,6 +1807,12 @@ END MODULE RFLU_ModReadWriteGrid
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
 
 
 

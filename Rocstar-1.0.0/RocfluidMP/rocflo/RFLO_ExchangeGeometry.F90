@@ -72,7 +72,7 @@ SUBROUTINE RFLO_ExchangeGeometry( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ExchangeGeometry',&
-  __FILE__ )
+  'RFLO_ExchangeGeometry.F90' )
 
 ! exchange orientation of l1/2-directions -------------------------------------
 
@@ -219,6 +219,7 @@ END SUBROUTINE RFLO_ExchangeGeometry
 ! Added routines to read grid and solution.
 !
 !******************************************************************************
+
 
 
 

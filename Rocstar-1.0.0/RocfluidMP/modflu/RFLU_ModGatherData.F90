@@ -109,7 +109,7 @@ MODULE RFLU_ModGatherData
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CountGatheredData',&
-  __FILE__)
+  'RFLU_ModGatherData.F90')
 
 ! ******************************************************************************
 !   Determine number of variables
@@ -200,7 +200,7 @@ MODULE RFLU_ModGatherData
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateGatheredData',&
-  __FILE__)
+  'RFLU_ModGatherData.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -322,7 +322,7 @@ MODULE RFLU_ModGatherData
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyGatheredData',&
-  __FILE__)
+  'RFLU_ModGatherData.F90')
 
 ! ******************************************************************************
 !   Deallocate memory
@@ -398,7 +398,7 @@ MODULE RFLU_ModGatherData
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_GatherData',&
-  __FILE__)
+  'RFLU_ModGatherData.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -549,7 +549,7 @@ MODULE RFLU_ModGatherData
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ScatterGatheredData',&
-  __FILE__)
+  'RFLU_ModGatherData.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -680,6 +680,11 @@ END MODULE RFLU_ModGatherData
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
 
 
 

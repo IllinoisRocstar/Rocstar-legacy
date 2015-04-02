@@ -74,7 +74,7 @@ SUBROUTINE RFLU_SetRestartTimeFlag(global)
   RCSIdentString = '$RCSfile: RFLU_SetRestartTimeFlag.F90,v $ $Revision: 1.4 $'
 
   CALL RegisterFunction(global,'RFLU_SetRestartTimeFlag',&
-  __FILE__)
+  'RFLU_SetRestartTimeFlag.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -136,6 +136,7 @@ END SUBROUTINE RFLU_SetRestartTimeFlag
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

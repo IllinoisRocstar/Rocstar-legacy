@@ -86,7 +86,7 @@ SUBROUTINE RFLO_MoveGridBlocks( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_MoveGridBlocks',&
-  __FILE__ )
+  'RFLO_MoveGridBlocks.F90' )
 
 #ifdef GENX
 ! update geometry buffers -----------------------------------------------------
@@ -270,6 +270,7 @@ END SUBROUTINE RFLO_MoveGridBlocks
 ! Added time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

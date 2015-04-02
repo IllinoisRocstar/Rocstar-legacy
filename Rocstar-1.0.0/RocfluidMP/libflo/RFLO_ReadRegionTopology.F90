@@ -72,7 +72,7 @@ SUBROUTINE RFLO_ReadRegionTopology( global,regions )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_ReadRegionTopology',&
-  __FILE__ )
+  'RFLO_ReadRegionTopology.F90' )
 
 ! open file & read number of regions
 
@@ -448,6 +448,7 @@ END SUBROUTINE RFLO_ReadRegionTopology
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
 
 
 

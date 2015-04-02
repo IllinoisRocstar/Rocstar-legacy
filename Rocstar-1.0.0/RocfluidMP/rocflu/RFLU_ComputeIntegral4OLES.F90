@@ -77,7 +77,7 @@ SUBROUTINE RFLU_ComputeIntegral4OLES(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeIntegral4OLES',&
-  __FILE__)
+  'RFLU_ComputeIntegral4OLES.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -366,6 +366,7 @@ END SUBROUTINE RFLU_ComputeIntegral4OLES
 ! Added KIND qualifyer to NINT, added footer
 !
 !*******************************************************************************
+
 
 
 

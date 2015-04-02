@@ -92,7 +92,7 @@ SUBROUTINE RFLO_ReadTbcSection( regions,tbcType )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadTbcSection',&
-  __FILE__ )
+  'RFLO_ReadTbcSection.F90' )
 
   IF (global%flowType == FLOW_STEADY) &
     CALL ErrorStop( global,ERR_STEADY,__LINE__ )
@@ -665,6 +665,7 @@ END SUBROUTINE RFLO_ReadTbcSection
 ! Added Time-dependent boundary conditions
 !
 !******************************************************************************
+
 
 
 

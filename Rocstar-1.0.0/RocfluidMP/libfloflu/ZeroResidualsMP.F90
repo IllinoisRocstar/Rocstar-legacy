@@ -75,7 +75,7 @@ SUBROUTINE ZeroResidualsMP(region)
   global => region%global
 
   CALL RegisterFunction(global,'ZeroResidualsMP',&
-  __FILE__)
+  'ZeroResidualsMP.F90')
 
 ! ******************************************************************************
 ! Zero residuals
@@ -127,6 +127,7 @@ END SUBROUTINE ZeroResidualsMP
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

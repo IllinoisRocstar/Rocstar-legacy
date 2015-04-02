@@ -78,7 +78,7 @@ SUBROUTINE RFLO_GetPatchIndices( region,patch,iLev,ibeg,iend,jbeg,jend, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetPatchIndices',&
-  __FILE__ )
+  'RFLO_GetPatchDimens.F90' )
 
   CALL RFLO_GetDimensPhys( region,iLev,ipcbeg,ipcend, &
                            jpcbeg,jpcend,kpcbeg,kpcend )
@@ -155,7 +155,7 @@ SUBROUTINE RFLO_GetPatchIndicesNodes( region,patch,iLev,ibeg,iend, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetPatchIndicesNodes',&
-  __FILE__ )
+  'RFLO_GetPatchDimens.F90' )
 
   CALL RFLO_GetDimensPhysNodes( region,iLev,ipnbeg,ipnend, &
                                 jpnbeg,jpnend,kpnbeg,kpnend )
@@ -285,6 +285,8 @@ END SUBROUTINE RFLO_GetPatchDirection
 ! Added calculation of face vectors and volumes.
 !
 !******************************************************************************
+
+
 
 
 

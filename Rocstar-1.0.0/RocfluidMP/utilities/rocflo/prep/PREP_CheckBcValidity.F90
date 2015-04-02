@@ -68,7 +68,7 @@ SUBROUTINE CheckBcValidity( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'CheckBcValidity',&
-  __FILE__ )
+  'PREP_CheckBcValidity.F90' )
 
 ! start -----------------------------------------------------------------------
 
@@ -166,6 +166,7 @@ END SUBROUTINE CheckBcValidity
 !
 !
 !******************************************************************************
+
 
 
 

@@ -139,7 +139,7 @@ SUBROUTINE RFLU_RES_ComputeResidual(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_RES_ComputeResidual',&
-  __FILE__)
+  'RFLU_ModResidual.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -362,7 +362,7 @@ SUBROUTINE RFLU_GetResidualSupport1(pRegion,icg,rs,rsSizeMax,rsSize)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_GetResidualSupport1',&
-  __FILE__)
+  'RFLU_ModResidual.F90')
 
   pGrid => pRegion%grid
 
@@ -518,7 +518,7 @@ SUBROUTINE RFLU_GetResidualSupport2(pRegion,icg,rs,rsSizeMax,rsSize)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_GetResidualSupport2',&
-  __FILE__)
+  'RFLU_ModResidual.F90')
 
   pGrid => pRegion%grid
 
@@ -743,7 +743,7 @@ SUBROUTINE RFLU_RES_SetCvOld(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_RES_SetCvOld',&
-  __FILE__)
+  'RFLU_ModResidual.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -825,7 +825,7 @@ SUBROUTINE RFLU_RES_SetDiss(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_RES_SetDiss',&
-  __FILE__)
+  'RFLU_ModResidual.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -909,7 +909,7 @@ SUBROUTINE RFLU_RES_SetRhs(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_RES_SetRhs',&
-  __FILE__)
+  'RFLU_ModResidual.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -1012,6 +1012,12 @@ END MODULE RFLU_ModResidual
 !
 ! ******************************************************************************
   
+
+
+
+
+
+
 
 
 

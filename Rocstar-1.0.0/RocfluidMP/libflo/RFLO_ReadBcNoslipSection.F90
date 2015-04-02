@@ -78,7 +78,7 @@ SUBROUTINE RFLO_ReadBcNoslipSection( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadBcNoslipSection',&
-  __FILE__ )
+  'RFLO_ReadBcNoslipSection.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -273,6 +273,7 @@ END SUBROUTINE RFLO_ReadBcNoslipSection
 ! Added routines to read BC input file.
 !
 !******************************************************************************
+
 
 
 

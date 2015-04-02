@@ -133,7 +133,7 @@ SUBROUTINE RFLU_ENS_WriteGrid(pRegion,emptyPartFlag)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ENS_WriteGrid', &
-                        __FILE__)
+                        'RFLU_ModENSIGHTUtils.F90')
 
   pGrid => pRegion%grid
 
@@ -603,7 +603,7 @@ SUBROUTINE RFLU_ENS_WriteScalar(pRegion,var,iFile,emptyPartFlag)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ENS_WriteScalar', &
-                        __FILE__)
+                        'RFLU_ModENSIGHTUtils.F90')
 
   pGrid => pRegion%grid
 
@@ -855,7 +855,7 @@ SUBROUTINE RFLU_ENS_WriteVector(pRegion,var,iFile,emptyPartFlag)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ENS_WriteVector', &
-                        __FILE__)
+                        'RFLU_ModENSIGHTUtils.F90')
 
   pGrid => pRegion%grid
 
@@ -1124,6 +1124,9 @@ END MODULE RFLU_ModENSIGHTUtils
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
 
 
 

@@ -131,7 +131,7 @@ MODULE PLAG_ModCheckVars
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_CheckPositivity',&
-  __FILE__)
+  'PLAG_ModCheckVars.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -292,7 +292,7 @@ MODULE PLAG_ModCheckVars
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_CheckValidity',&
-  __FILE__)
+  'PLAG_ModCheckVars.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -443,6 +443,8 @@ END MODULE PLAG_ModCheckVars
 ! Initial version
 !
 ! ******************************************************************************
+
+
 
 
 

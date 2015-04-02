@@ -75,7 +75,7 @@ SUBROUTINE RFLO_CalcThrust( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcThrust',&
-  __FILE__ )
+  'RFLO_CalcThrust.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -186,6 +186,7 @@ END SUBROUTINE RFLO_CalcThrust
 ! Added computation of thrust.
 !
 !******************************************************************************
+
 
 
 

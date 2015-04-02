@@ -79,7 +79,7 @@ SUBROUTINE INRT_PrintUserInput( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'INRT_PrintUserInput',&
-  __FILE__ )
+  'INRT_PrintUserInput.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -434,6 +434,7 @@ END SUBROUTINE INRT_PrintUserInput
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

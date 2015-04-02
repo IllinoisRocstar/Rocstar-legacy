@@ -73,7 +73,7 @@ SUBROUTINE RFLO_ResidualNorm( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ResidualNorm',&
-  __FILE__ )
+  'RFLO_ResidualNorm.F90' )
 
 ! sum drho for all regions on this processor ----------------------------------
 
@@ -167,6 +167,7 @@ END SUBROUTINE RFLO_ResidualNorm
 ! Added low-level time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

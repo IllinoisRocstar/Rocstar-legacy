@@ -72,7 +72,7 @@ SUBROUTINE RADI_SourceTerms( region )
 
   global => region%global
   CALL RegisterFunction( global,'RADI_SourceTerms',&
-  __FILE__ )
+  'RADI_SourceTerms.F90' )
 
 ! compute radiation quantities and add radiation source term to RHS -----------
 
@@ -148,6 +148,7 @@ END SUBROUTINE RADI_SourceTerms
 !
 !
 !******************************************************************************
+
 
 
 

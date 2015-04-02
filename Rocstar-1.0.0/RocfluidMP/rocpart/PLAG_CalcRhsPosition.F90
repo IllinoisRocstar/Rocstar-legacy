@@ -76,7 +76,7 @@ SUBROUTINE PLAG_calcRhsPosition( region )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_calcRhsPosition',&
-  __FILE__ )
+  'PLAG_CalcRhsPosition.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -135,6 +135,7 @@ END SUBROUTINE PLAG_calcRhsPosition
 !
 !
 !******************************************************************************
+
 
 
 

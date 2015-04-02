@@ -80,7 +80,7 @@ SUBROUTINE RFLU_PickRegions(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_PickRegions',&
-  __FILE__)
+  'RFLU_PickRegions.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -185,6 +185,7 @@ END SUBROUTINE RFLU_PickRegions
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

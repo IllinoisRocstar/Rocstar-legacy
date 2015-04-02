@@ -163,7 +163,7 @@ MODULE PLAG_ModStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_CreateStat',&
-  __FILE__)
+  'PLAG_ModStats.F90')
 
     nTav =global%plagNStat     
 
@@ -259,7 +259,7 @@ MODULE PLAG_ModStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_DestroyStat',&
-  __FILE__)
+  'PLAG_ModStats.F90')
 
 ! ******************************************************************************
 !   Deallocate memory
@@ -347,7 +347,7 @@ MODULE PLAG_ModStats
     global => pRegion%global
  
     CALL RegisterFunction(global,'PLAG_InitStat',&
-  __FILE__)
+  'PLAG_ModStats.F90')
 
     nVars = global%plagNStat      
 
@@ -413,6 +413,9 @@ END MODULE PLAG_ModStats
 ! Initial import for PLAG statistics
 !
 ! ******************************************************************************
+
+
+
 
 
 

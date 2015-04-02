@@ -87,7 +87,7 @@ SUBROUTINE RFLU_DeallocMemVertWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocMemVertWrapper', &
-                        __FILE__)
+                        'RFLU_DeallocMemVertWrapper.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -144,6 +144,7 @@ END SUBROUTINE RFLU_DeallocMemVertWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

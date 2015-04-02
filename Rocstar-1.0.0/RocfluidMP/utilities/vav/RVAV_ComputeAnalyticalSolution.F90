@@ -94,7 +94,7 @@ SUBROUTINE RVAV_ComputeAnalyticalSolution( similarityType,regionsS1 )
   global => regionsS1(1)%global
   
   CALL RegisterFunction( global, 'RVAV_ComputeAnalyticalSolution',&
-  __FILE__ )
+  'RVAV_ComputeAnalyticalSolution.F90' )
    
 ! open file in which stream2 is stored
           
@@ -254,6 +254,7 @@ END SUBROUTINE RVAV_ComputeAnalyticalSolution
 ! Initial Import
 !
 !******************************************************************************
+
 
 
 

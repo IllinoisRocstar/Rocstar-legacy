@@ -85,7 +85,7 @@ SUBROUTINE PLAG_injcTileUpdate( region, iReg, iStage )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_InjcTileUpdate',&
-  __FILE__ )
+  'PLAG_InjcTileUpdate.F90' )
 
 ! - Calculate rhs for tile ----------------------------------------------------
 
@@ -144,6 +144,7 @@ END SUBROUTINE PLAG_InjcTileUpdate
 ! Initial Import
 !
 !******************************************************************************
+
 
 
 

@@ -115,7 +115,7 @@ SUBROUTINE INRT_CalcScouring( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_CalcScouring',&
-  __FILE__ )
+  'INRT_CalcScouring.F90' )
 
 #ifdef PLAG
 ! begin =======================================================================
@@ -291,6 +291,7 @@ END SUBROUTINE INRT_CalcScouring
 ! Initial Import of routines for burning and scouring
 !
 !******************************************************************************
+
 
 
 

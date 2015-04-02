@@ -138,7 +138,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildBF2CStencil_1D',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
     IF ( global%myProcid == MASTERPROC ) THEN
       IF ( global%verbLevel > VERBOSE_NONE ) THEN
@@ -465,7 +465,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildBF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
     IF ( global%myProcid == MASTERPROC ) THEN
       IF ( global%verbLevel > VERBOSE_NONE ) THEN
@@ -948,7 +948,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildBF2CStencilWrapper',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -1036,7 +1036,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateBF2CStencil_1D',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
     IF ( global%myProcid == MASTERPROC ) THEN
       IF ( global%verbLevel > VERBOSE_NONE ) THEN
@@ -1137,7 +1137,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateBF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
     IF ( global%myProcid == MASTERPROC ) THEN
       IF ( global%verbLevel > VERBOSE_NONE ) THEN
@@ -1237,7 +1237,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateBF2CStencilWrapper',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
 ! ******************************************************************************
 !   Call routines to create stencils
@@ -1311,7 +1311,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyBF2CStencil_1D',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
     IF ( global%myProcid == MASTERPROC ) THEN
       IF ( global%verbLevel > VERBOSE_NONE ) THEN
@@ -1431,7 +1431,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyBF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
     IF ( global%myProcid == MASTERPROC ) THEN
       IF ( global%verbLevel > VERBOSE_NONE ) THEN
@@ -1551,7 +1551,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyBF2CStencilWrapper',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
 ! ******************************************************************************
 !   Call routines to destroy stencils
@@ -1624,7 +1624,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyBF2CStencil_1D',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
 ! ******************************************************************************
 !   Nullify memory 
@@ -1690,7 +1690,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyBF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
 ! ******************************************************************************
 !   Nullify memory 
@@ -1764,7 +1764,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SetInfoBF2CStencil_1D',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1875,7 +1875,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SetInfoBF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1984,7 +1984,7 @@ MODULE RFLU_ModStencilsBFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SetInfoBF2CStencilWrapper',&
-  __FILE__)
+  'RFLU_ModStencilsBFaces.F90')
 
 ! ******************************************************************************
 !   Call routines to set info for stencils
@@ -2057,6 +2057,20 @@ END MODULE RFLU_ModStencilsBFaces
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

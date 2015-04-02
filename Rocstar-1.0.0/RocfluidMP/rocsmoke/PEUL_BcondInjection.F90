@@ -85,7 +85,7 @@ SUBROUTINE PEUL_BcondInjection( region,patch )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_BcondInjection',&
-  __FILE__ )
+  'PEUL_BcondInjection.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -206,6 +206,7 @@ END SUBROUTINE PEUL_BcondInjection
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

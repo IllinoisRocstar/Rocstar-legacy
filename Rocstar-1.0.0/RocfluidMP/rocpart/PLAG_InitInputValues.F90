@@ -72,7 +72,7 @@ SUBROUTINE PLAG_InitInputValues( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_InitInputValues',&
-  __FILE__ )
+  'PLAG_InitInputValues.F90' )
 
 ! global values ---------------------------------------------------------------
 
@@ -181,6 +181,7 @@ END SUBROUTINE PLAG_InitInputValues
 ! Initial import for proper input initialization
 !
 !******************************************************************************
+
 
 
 

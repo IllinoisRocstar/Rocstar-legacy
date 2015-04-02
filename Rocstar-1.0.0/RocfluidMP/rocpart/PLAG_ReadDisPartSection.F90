@@ -88,7 +88,7 @@ SUBROUTINE PLAG_ReadDisPartSection( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global, 'PLAG_ReadDisPartSection',&
-  __FILE__ )
+  'PLAG_ReadDisPartSection.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -289,6 +289,7 @@ END SUBROUTINE PLAG_ReadDisPartSection
 !
 !
 !******************************************************************************
+
 
 
 

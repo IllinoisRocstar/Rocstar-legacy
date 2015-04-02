@@ -91,7 +91,7 @@ MODULE RFLU_ModSplitTree
       INTEGER :: errorFlag,ip         
         
       CALL RegisterFunction(global,'RFLU_CreateSplitTree',&
-  __FILE__)
+  'RFLU_ModSplitTree.F90')
 
 ! ------------------------------------------------------------------------------
 !     Copy argument into nPoints variable
@@ -154,7 +154,7 @@ MODULE RFLU_ModSplitTree
 ! ------------------------------------------------------------------------------      
       
       CALL RegisterFunction(global,'RFLU_BuildSplitTree',&
-  __FILE__)      
+  'RFLU_ModSplitTree.F90')      
 
       nLevels  = 1
       nBuckets = 1
@@ -278,7 +278,7 @@ MODULE RFLU_ModSplitTree
       INTEGER :: errorFlag
 
       CALL RegisterFunction(global,'RFLU_DestroySplitTree',&
-  __FILE__)
+  'RFLU_ModSplitTree.F90')
 
       DEALLOCATE(tree,STAT=errorFlag)
       global%error = errorFlag  
@@ -337,6 +337,9 @@ END MODULE RFLU_ModSplitTree
 !
 !
 ! ******************************************************************************
+
+
+
 
 
 

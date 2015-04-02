@@ -167,7 +167,7 @@ MODULE RFLU_ModOLES
       global => pRegion%global
       
       CALL RegisterFunction(global,'RFLU_CreateStencilsWeightsOLES',&
-  __FILE__)
+  'RFLU_ModOLES.F90')
 
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN
@@ -301,7 +301,7 @@ MODULE RFLU_ModOLES
       global => pRegion%global
       
       CALL RegisterFunction(global,'RFLU_CreateIntegralsOLES',&
-  __FILE__)
+  'RFLU_ModOLES.F90')
 
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN
@@ -507,7 +507,7 @@ MODULE RFLU_ModOLES
       global => pRegion%global
       
       CALL RegisterFunction(global,'RFLU_BuildStencilsOLES',&
-  __FILE__)
+  'RFLU_ModOLES.F90')
 
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN
@@ -762,7 +762,7 @@ MODULE RFLU_ModOLES
       global => pRegion%global
       
       CALL RegisterFunction(global,'RFLU_FindPrototypeFacesOLES',&
-  __FILE__)
+  'RFLU_ModOLES.F90')
 
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN
@@ -908,7 +908,7 @@ MODULE RFLU_ModOLES
       global => pRegion%global
       
       CALL RegisterFunction(global,'RFLU_ComputeGeometricTermsOLES',&
-  __FILE__)
+  'RFLU_ModOLES.F90')
 
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN
@@ -1123,7 +1123,7 @@ MODULE RFLU_ModOLES
       global => pRegion%global
       
       CALL RegisterFunction(global,'RFLU_BuildSymmetryMapsOLES',&
-  __FILE__)    
+  'RFLU_ModOLES.F90')    
     
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1196,7 +1196,7 @@ MODULE RFLU_ModOLES
       global => pRegion%global
       
       CALL RegisterFunction(global,'RFLU_EnforceSymmetryOLES',&
-  __FILE__)
+  'RFLU_ModOLES.F90')
 
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN
@@ -2042,7 +2042,7 @@ MODULE RFLU_ModOLES
       global => pRegion%global
       
       CALL RegisterFunction(global,'RFLU_DestroyStencilsWeightsOLES',&
-  __FILE__)
+  'RFLU_ModOLES.F90')
 
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN
@@ -2112,7 +2112,7 @@ MODULE RFLU_ModOLES
 ! ==============================================================================
       
       CALL RegisterFunction(global,'RFLU_AllocateDCUHREArrays',&
-  __FILE__)
+  'RFLU_ModOLES.F90')
 
 ! ==============================================================================
 !     Allocate memory
@@ -2175,7 +2175,7 @@ MODULE RFLU_ModOLES
 ! ==============================================================================
       
       CALL RegisterFunction(global,'RFLU_DeallocateDCUHREArrays',&
-  __FILE__)
+  'RFLU_ModOLES.F90')
 
 ! ==============================================================================
 !     Allocate memory
@@ -2443,6 +2443,16 @@ END MODULE RFLU_ModOLES
 !   Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
 
 
 

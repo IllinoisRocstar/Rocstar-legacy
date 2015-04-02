@@ -67,7 +67,7 @@ SUBROUTINE PERI_SolutionUpdate( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'PERI_SolutionUpdate',&
-  __FILE__ )
+  'PERI_SolutionUpdate.F90' )
 
 ! update flow solution --------------------------------------------------------
 
@@ -138,6 +138,7 @@ END SUBROUTINE PERI_SolutionUpdate
 !
 !
 !******************************************************************************
+
 
 
 

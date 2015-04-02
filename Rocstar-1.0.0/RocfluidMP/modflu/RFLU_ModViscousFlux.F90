@@ -121,7 +121,7 @@ SUBROUTINE RFLU_EnforceHeatFlux(pRegion,tv,tvIndxCond)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_EnforceHeatFlux',&
-  __FILE__)
+  'RFLU_ModViscousFlux.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -270,7 +270,7 @@ SUBROUTINE RFLU_ViscousFluxes(pRegion,tv,tvIndxVisc,tvIndxCond)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ViscousFluxes',&
-  __FILE__)
+  'RFLU_ModViscousFlux.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -469,7 +469,7 @@ SUBROUTINE RFLU_ViscousFluxesPatches(pRegion,tv,tvIndxVisc,tvIndxCond)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ViscousFluxesPatches',&
-  __FILE__)
+  'RFLU_ModViscousFlux.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -666,6 +666,9 @@ END MODULE RFLU_ModViscousFlux
 ! ******************************************************************************
   
   
+
+
+
 
 
 

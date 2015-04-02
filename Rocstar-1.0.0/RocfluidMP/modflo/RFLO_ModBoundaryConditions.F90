@@ -125,7 +125,7 @@ SUBROUTINE RFLO_BcondFarfield( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_BcondFarfield',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions and pointers
 
@@ -297,7 +297,7 @@ SUBROUTINE RFLO_BcondInflow( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_BcondInflow',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions and pointers
 
@@ -588,7 +588,7 @@ SUBROUTINE RFLO_BcondInjectionAPN( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_BcondInjectionAPN',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -720,7 +720,7 @@ SUBROUTINE RFLO_BcondInjection( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_BcondInjection',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -953,7 +953,7 @@ SUBROUTINE RFLO_BcondInjectionInit( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_BcondInjectionInit',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! copy values/distribution to variables ---------------------------------------
 
@@ -1132,7 +1132,7 @@ SUBROUTINE RFLO_BcondNoslipWall( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_BcondNoslipWall',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -1338,7 +1338,7 @@ SUBROUTINE RFLO_BcondOutflow( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_BcondOutflow',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions and pointers
 
@@ -1543,7 +1543,7 @@ SUBROUTINE RFLO_BcondRotatPeriod( region,regionSrc,patch,patchSrc )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_BcondRotatPeriod',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 
 
@@ -1595,7 +1595,7 @@ SUBROUTINE RFLO_BcondSlipWall( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_BcondSlipWall',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions and pointers
 
@@ -1721,7 +1721,7 @@ SUBROUTINE RFLO_BcondSymmetry( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_BcondSymmetry',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions and pointers
 
@@ -1824,7 +1824,7 @@ SUBROUTINE RFLO_BoundaryConditionsRecv( regions,iReg )
 !******************************************************************************
 
   CALL RegisterFunction( regions(iReg)%global,'RFLO_BoundaryConditionsRecv', &
-                         __FILE__ )
+                         'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -1923,7 +1923,7 @@ SUBROUTINE RFLO_BoundaryConditionsSend( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RFLO_BoundaryConditionsSend',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -2040,7 +2040,7 @@ SUBROUTINE RFLO_BoundaryConditionsSet( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RFLO_BoundaryConditionsSet',&
-       __FILE__ )
+       'RFLO_ModBoundaryConditions.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -2703,6 +2703,19 @@ END MODULE RFLO_ModBoundaryConditions
 !
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

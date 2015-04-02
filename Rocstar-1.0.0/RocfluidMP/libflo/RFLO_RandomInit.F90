@@ -69,7 +69,7 @@ SUBROUTINE RFLO_RandomInit( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_RandomInit',&
-  __FILE__ )
+  'RFLO_RandomInit.F90' )
 
 ! ******************************************************************************
 ! Set seed type
@@ -131,6 +131,7 @@ END SUBROUTINE RFLO_RandomInit
 ! Implemented portable random number generator ModRandom
 !
 !******************************************************************************
+
 
 
 

@@ -74,7 +74,7 @@ SUBROUTINE InitializeFlowField( iLev,region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'InitializeFlowField',&
-  __FILE__ )
+  'PREP_InitializeFlowField.F90' )
 
 ! start
 
@@ -260,7 +260,7 @@ END SUBROUTINE InitializeFlowField
 ! Corrected mistake in phased check-in
 !
 ! Revision 1.5  2003/03/20 19:35:43  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'PREP_InitializeFlowField.F90' names
 !
 ! Revision 1.4  2002/10/12 03:20:51  jblazek
 ! Replaced [io]stat=global%error with local errorFlag for Rocflo.
@@ -275,6 +275,8 @@ END SUBROUTINE InitializeFlowField
 ! Added flow initialization.
 !
 !******************************************************************************
+
+
 
 
 

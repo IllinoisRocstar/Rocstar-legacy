@@ -62,7 +62,7 @@ SUBROUTINE RADI_SolutionUpdate( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'RADI_SolutionUpdate',&
-  __FILE__ )
+  'RADI_SolutionUpdate.F90' )
 
 ! update FLD radiation solution -----------------------------------------------
 
@@ -98,6 +98,7 @@ END SUBROUTINE RADI_SolutionUpdate
 !
 !
 !******************************************************************************
+
 
 
 

@@ -155,7 +155,7 @@ SUBROUTINE ExplicitMultistage( regions,ftermNew,residFterm )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'ExplicitMultistage',&
-  __FILE__ )
+  'ExplicitMultistage.F90' )
 
 #ifdef RFLO
 ! set time for time-dependent BC data (for dual-time stepping)-----------------
@@ -902,6 +902,7 @@ END SUBROUTINE ExplicitMultistage
 ! Added time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

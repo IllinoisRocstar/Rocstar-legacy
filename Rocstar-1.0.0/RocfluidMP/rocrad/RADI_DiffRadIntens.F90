@@ -75,7 +75,7 @@ SUBROUTINE RADI_DiffRadIntens( region )
 
   global => region%global
   CALL RegisterFunction( global,'RADI_DiffRadIntens',&
-  __FILE__ )
+  'RADI_DiffRadIntens.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -159,6 +159,7 @@ END SUBROUTINE RADI_DiffRadIntens
 !
 !
 !******************************************************************************
+
 
 
 

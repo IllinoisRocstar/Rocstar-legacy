@@ -60,7 +60,7 @@ SUBROUTINE RFLO_OpenConverFile( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_OpenConverFile',&
-  __FILE__ )
+  'RFLO_OpenConverFile.F90' )
 
 ! open file
 
@@ -118,6 +118,7 @@ END SUBROUTINE RFLO_OpenConverFile
 ! Simplified solver initialization routine.
 !
 !******************************************************************************
+
 
 
 

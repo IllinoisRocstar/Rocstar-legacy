@@ -69,7 +69,7 @@ SUBROUTINE ReadTransformSection( global )
   RCSIdentString = '$RCSfile: ReadTransformSection.F90,v $ $Revision: 1.4 $'
 
   CALL RegisterFunction( global,'ReadTranformSection',&
-  __FILE__ )
+  'ReadTransformSection.F90' )
 
 ! specify keywords and search for them
 
@@ -227,6 +227,7 @@ END SUBROUTINE ReadTransformSection
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

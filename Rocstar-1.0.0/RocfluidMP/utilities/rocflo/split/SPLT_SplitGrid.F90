@@ -76,7 +76,7 @@ SUBROUTINE SplitGrid( splitDirection,regionsOld,regionsNew )
   globalNew => regionsNew(1)%global
 
   CALL RegisterFunction( globalNew,'SplitGrid',&
-  __FILE__ )
+  'SPLT_SplitGrid.F90' )
 
 ! allocate memory for new grid; set dimensions --------------------------------
 
@@ -214,6 +214,7 @@ END SUBROUTINE SplitGrid
 ! Added tool to split single grid into multiple regions.
 !
 !******************************************************************************
+
 
 
 

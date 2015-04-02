@@ -62,7 +62,7 @@ SUBROUTINE ReadThrustSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadThrustSection',&
-  __FILE__ )
+  'ReadThrustSection.F90' )
 
 ! specify keywords and search for them
 
@@ -139,6 +139,7 @@ END SUBROUTINE ReadThrustSection
 ! Added computation of thrust.
 !
 !******************************************************************************
+
 
 
 

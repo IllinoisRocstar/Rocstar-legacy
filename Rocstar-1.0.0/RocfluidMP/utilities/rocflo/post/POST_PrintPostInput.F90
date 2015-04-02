@@ -63,7 +63,7 @@ SUBROUTINE PrintPostInput( region )
   global => region%global
 
   CALL RegisterFunction( global,'PrintPostInput',&
-  __FILE__ )
+  'POST_PrintPostInput.F90' )
 
 ! obtain parameters -----------------------------------------------------------
 
@@ -214,6 +214,7 @@ END SUBROUTINE PrintPostInput
 !
 !
 !******************************************************************************
+
 
 
 

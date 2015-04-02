@@ -121,7 +121,7 @@ SUBROUTINE RFLO_MoveGridQFlatPatch( region,patch,iPatch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_MoveGridQFlatPatch',&
-       __FILE__ )
+       'RFLO_ModMoveGridUtil.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -306,7 +306,7 @@ SUBROUTINE RFLO_MoveGridCurvedPatch( region,patch,iPatch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_MoveGridCurvedPatch',&
-       __FILE__ )
+       'RFLO_ModMoveGridUtil.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -456,6 +456,8 @@ END MODULE RFLO_ModMoveGridUtil
 !
 !
 ! ******************************************************************************
+
+
 
 
 

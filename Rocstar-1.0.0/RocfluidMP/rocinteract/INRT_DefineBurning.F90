@@ -99,7 +99,7 @@ SUBROUTINE INRT_DefineBurning( region,matIndIn,matIndOut,matIndOx, &
   global => region%global
 
   CALL RegisterFunction( global,'INRT_DefineBurning',&
-  __FILE__ )
+  'INRT_DefineBurning.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -322,6 +322,7 @@ END SUBROUTINE INRT_DefineBurning
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

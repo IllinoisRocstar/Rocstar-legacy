@@ -73,7 +73,7 @@ SUBROUTINE RFLO_GetBoundaryValues( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_GetBoundaryValues',&
-  __FILE__ )
+  'RFLO_GetBoundaryValues.F90' )
 
 ! get offsets
 
@@ -214,6 +214,7 @@ END SUBROUTINE RFLO_GetBoundaryValues
 ! Finalized integration into GenX.
 !
 !******************************************************************************
+
 
 
 

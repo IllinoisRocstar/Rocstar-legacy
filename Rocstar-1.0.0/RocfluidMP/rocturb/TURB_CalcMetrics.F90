@@ -69,7 +69,7 @@ SUBROUTINE TURB_CalcMetrics( regions, isInit ) ! PUBLIC
   global => regions(1)%global
 
   CALL RegisterFunction( global,'TURB_CalcMetrics',&
-  __FILE__ )
+  'TURB_CalcMetrics.F90' )
 
 ! get general parameters ------------------------------------------------------
 
@@ -204,6 +204,7 @@ END SUBROUTINE TURB_CalcMetrics
 !
 !
 !******************************************************************************
+
 
 
 

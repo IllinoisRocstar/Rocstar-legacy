@@ -92,7 +92,7 @@ SUBROUTINE SPEC_RFLU_ReadBcInputFile(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_ReadBcInputFile',&
-  __FILE__)
+  'SPEC_RFLU_ReadBcInputFile.F90')
 
 ! ******************************************************************************
 ! Open file
@@ -195,6 +195,7 @@ END SUBROUTINE SPEC_RFLU_ReadBcInputFile
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

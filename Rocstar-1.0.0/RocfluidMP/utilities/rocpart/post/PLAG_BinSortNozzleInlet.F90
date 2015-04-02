@@ -105,7 +105,7 @@ SUBROUTINE PLAG_BinSortNozzleInlet ( iReg, iLev, region, iRegBin )
 
   global => region%global
 
-  CALL RegisterFunction( global,'PLAG_BinSortNozzleInlet', __FILE__ )
+  CALL RegisterFunction( global,'PLAG_BinSortNozzleInlet', 'PLAG_BinSortNozzleInlet.F90' )
 
 ! set parameters --------------------------------------------------------------
 
@@ -431,6 +431,7 @@ END SUBROUTINE PLAG_BinSortNozzleInlet
 ! Initial import of binning routine
 !
 !******************************************************************************
+
 
 
 

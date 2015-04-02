@@ -87,7 +87,7 @@ SUBROUTINE SPEC_RFLU_AllocateMemoryTStep(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_AllocateMemoryTStep',&
-  __FILE__)
+  'SPEC_RFLU_AllocateMemoryTStep.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables 
@@ -238,6 +238,7 @@ END SUBROUTINE SPEC_RFLU_AllocateMemoryTStep
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

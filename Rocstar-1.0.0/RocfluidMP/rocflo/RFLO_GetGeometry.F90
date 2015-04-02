@@ -85,7 +85,7 @@ SUBROUTINE RFLO_GetGeometry( regions,iread )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_GetGeometry',&
-  __FILE__ )
+  'RFLO_GetGeometry.F90' )
 
 ! read/receive grid data for all regions if grid motion active
 
@@ -267,6 +267,7 @@ END SUBROUTINE RFLO_GetGeometry
 ! Simplified solver initialization routine.
 !
 !******************************************************************************
+
 
 
 

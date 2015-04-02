@@ -85,7 +85,7 @@ SUBROUTINE PLAG_INRT_DeallocMemTStep( pRegion,pPlag )
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_INRT_DeallocMemTStep',&
-  __FILE__)
+  'PLAG_INRT_DeallocMemTStep.F90')
 
 ! ******************************************************************************
 ! Set variables 
@@ -137,6 +137,7 @@ END SUBROUTINE PLAG_INRT_DeallocMemTStep
 ! Initial import
 !
 !******************************************************************************
+
 
 
 

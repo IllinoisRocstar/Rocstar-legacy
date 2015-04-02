@@ -128,7 +128,7 @@ MODULE SPEC_RFLU_ModChemistry
     global => pRegion%global
 
     CALL RegisterFunction(global,'SPEC_RFLU_IntegrateChemSrcTerm',&
-  __FILE__)
+  'SPEC_RFLU_ModChemistry.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -754,6 +754,7 @@ END MODULE SPEC_RFLU_ModChemistry
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

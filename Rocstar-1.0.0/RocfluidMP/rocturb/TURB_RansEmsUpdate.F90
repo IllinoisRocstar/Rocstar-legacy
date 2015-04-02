@@ -82,7 +82,7 @@ SUBROUTINE TURB_RansEmsUpdate( region )
   global => region%global
 
   CALL RegisterFunction( global,'TURB_RansEmsUpdate',&
-  __FILE__ )
+  'TURB_RansEmsUpdate.F90' )
 
 ! get parameters, dimensions and pointers -------------------------------------
 
@@ -214,6 +214,7 @@ END SUBROUTINE TURB_RansEmsUpdate
 !
 !
 !******************************************************************************
+
 
 
 

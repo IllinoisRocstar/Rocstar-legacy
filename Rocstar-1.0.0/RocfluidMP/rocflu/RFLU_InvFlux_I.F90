@@ -87,7 +87,7 @@ SUBROUTINE RFLU_InvFlux_I(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_InvFlux_I',&
-  __FILE__)
+  'RFLU_InvFlux_I.F90')
 
 ! ******************************************************************************
 ! Set dimensions and pointers
@@ -163,6 +163,7 @@ END SUBROUTINE RFLU_InvFlux_I
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -68,7 +68,7 @@ SUBROUTINE GenxStatNaming( global, fluidType )
 !******************************************************************************
 
   CALL RegisterFunction( global,'GenxStatNaming',&
-  __FILE__ )
+  'STAT_RocstarStatNaming.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -147,6 +147,7 @@ END SUBROUTINE GenxStatNaming
 !
 !
 !******************************************************************************
+
 
 
 

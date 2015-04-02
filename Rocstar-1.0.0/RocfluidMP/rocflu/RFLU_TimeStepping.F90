@@ -153,7 +153,7 @@ SUBROUTINE RFLU_TimeStepping(dTimeSystem,dIterSystem,regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_TimeStepping',&
-  __FILE__)
+  'RFLU_TimeStepping.F90')
 
   finished = .FALSE. ! run not finished yet
 
@@ -869,6 +869,7 @@ END SUBROUTINE RFLU_TimeStepping
 ! Initial revision, commented out RFLO stuff
 !
 ! ******************************************************************************
+
 
 
 

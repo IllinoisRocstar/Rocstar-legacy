@@ -93,7 +93,7 @@ SUBROUTINE RFLU_PutBoundaryValues(region)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_PutBoundaryValues',&
-  __FILE__)
+  'RFLU_PutBoundaryValues.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -468,6 +468,7 @@ END SUBROUTINE RFLU_PutBoundaryValues
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

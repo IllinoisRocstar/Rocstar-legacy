@@ -78,7 +78,7 @@ SUBROUTINE InitCommunicationMP( regions,iReg,istage )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'InitCommunicationMP',&
-  __FILE__ )
+  'InitCommunicationMP.F90' )
 
 ! compute value of substage physical time and time-step =======================
 
@@ -172,6 +172,7 @@ END SUBROUTINE InitCommunicationMP
 ! Initial import for RocfluidMP
 !
 !******************************************************************************
+
 
 
 

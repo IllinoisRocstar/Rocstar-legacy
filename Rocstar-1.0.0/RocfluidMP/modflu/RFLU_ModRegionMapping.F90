@@ -132,7 +132,7 @@ SUBROUTINE RFLU_ApplyRegionMapping(global,levels)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ApplyRegionMapping',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -216,7 +216,7 @@ SUBROUTINE RFLU_BuildRegionMappingSimple(global)
 ! ******************************************************************************  
     
   CALL RegisterFunction(global,'RFLU_BuildRegionMappingSimple',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -318,7 +318,7 @@ SUBROUTINE RFLU_CheckRegionMapping(global)
 ! ******************************************************************************  
     
   CALL RegisterFunction(global,'RFLU_CheckRegionMapping',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -418,7 +418,7 @@ SUBROUTINE RFLU_CloseRegionMappingFile(global)
 ! ******************************************************************************  
     
   CALL RegisterFunction(global,'RFLU_CloseRegionMappingFile',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -496,7 +496,7 @@ SUBROUTINE RFLU_CreateRegionMapping(global,mapType)
 ! ******************************************************************************  
     
   CALL RegisterFunction(global,'RFLU_CreateRegionMapping',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -588,7 +588,7 @@ SUBROUTINE RFLU_DestroyRegionMapping(global,mapType)
 ! ******************************************************************************  
     
   CALL RegisterFunction(global,'RFLU_DestroyRegionMapping',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -689,7 +689,7 @@ SUBROUTINE RFLU_GetProcLocRegIds(global,regIds,nRegIds,procIds,locRegIds)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_GetProcLocRegIds',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -834,7 +834,7 @@ SUBROUTINE RFLU_ImposeRegionMappingSerial(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ImposeRegionMappingSerial',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -912,7 +912,7 @@ SUBROUTINE RFLU_OpenRegionMappingFile(global)
 ! ******************************************************************************  
     
   CALL RegisterFunction(global,'RFLU_OpenRegionMappingFile',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1006,7 +1006,7 @@ SUBROUTINE RFLU_ReadRegionMappingFile(global,readMode,myProcId)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ReadRegionMappingFile',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC ) THEN 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1205,7 +1205,7 @@ SUBROUTINE RFLU_SetRegionMappingSerial(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_SetRegionMappingSerial',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1277,7 +1277,7 @@ SUBROUTINE RFLU_WriteRegionMappingFile(global)
 ! ******************************************************************************  
     
   CALL RegisterFunction(global,'RFLU_WriteRegionMappingFile',&
-  __FILE__)
+  'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1363,6 +1363,18 @@ END MODULE RFLU_ModRegionMapping
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

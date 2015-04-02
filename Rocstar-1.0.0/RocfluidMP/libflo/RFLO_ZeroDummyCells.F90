@@ -69,7 +69,7 @@ SUBROUTINE RFLO_ZeroDummyCells( region,var )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ZeroDummyCells',&
-  __FILE__ )
+  'RFLO_ZeroDummyCells.F90' )
 
 ! get dimensions
 
@@ -174,6 +174,7 @@ END SUBROUTINE RFLO_ZeroDummyCells
 ! Added low-level time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

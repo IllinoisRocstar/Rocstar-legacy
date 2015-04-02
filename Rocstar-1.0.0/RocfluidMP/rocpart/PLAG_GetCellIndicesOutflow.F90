@@ -96,7 +96,7 @@ SUBROUTINE PLAG_GetCellIndicesOutflow( region )
   global => region%global
     
   CALL RegisterFunction( global, 'PLAG_GetCellIndicesOutflow',&
-  __FILE__ )
+  'PLAG_GetCellIndicesOutflow.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -270,6 +270,7 @@ END SUBROUTINE PLAG_GetCellIndicesOutflow
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

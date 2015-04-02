@@ -60,7 +60,7 @@ SUBROUTINE RFLO_OpenThrustFile( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_OpenThrustFile',&
-  __FILE__ )
+  'RFLO_OpenThrustFile.F90' )
 
 ! open file
 
@@ -123,6 +123,7 @@ END SUBROUTINE RFLO_OpenThrustFile
 ! Added computation of thrust.
 !
 !******************************************************************************
+
 
 
 

@@ -73,7 +73,7 @@ SUBROUTINE PEUL_SourceTerms( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_SourceTerms',&
-  __FILE__ )
+  'PEUL_SourceTerms.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -114,6 +114,7 @@ END SUBROUTINE PEUL_SourceTerms
 ! Implemented equilibrium Eulerian method
 !
 !******************************************************************************
+
 
 
 

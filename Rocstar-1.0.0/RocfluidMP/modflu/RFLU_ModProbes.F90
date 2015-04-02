@@ -117,7 +117,7 @@ SUBROUTINE RFLU_CloseProbeFiles(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CloseProbeFiles',&
-  __FILE__)
+  'RFLU_ModProbes.F90')
 
 ! ******************************************************************************
 ! Loop over probes
@@ -196,7 +196,7 @@ LOGICAL FUNCTION RFLU_DecideWriteProbes(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_DecideWriteProbes',&
-  __FILE__)
+  'RFLU_ModProbes.F90')
 
 ! ******************************************************************************
 ! Initialize
@@ -304,7 +304,7 @@ SUBROUTINE RFLU_FindProbeCells(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_FindProbeCells',&
-  __FILE__)
+  'RFLU_ModProbes.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_LOW ) THEN   
@@ -481,7 +481,7 @@ SUBROUTINE RFLU_OpenProbeFiles(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_OpenProbeFiles',&
-  __FILE__)
+  'RFLU_ModProbes.F90')
 
 ! ******************************************************************************
 ! Initialize
@@ -662,7 +662,7 @@ SUBROUTINE RFLU_PrintProbeInfo(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_PrintProbeInfo',&
-  __FILE__)
+  'RFLU_ModProbes.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_LOW ) THEN   
@@ -818,6 +818,11 @@ END MODULE RFLU_ModProbes
 !
 ! ******************************************************************************
   
+
+
+
+
+
 
 
 

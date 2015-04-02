@@ -84,7 +84,7 @@ SUBROUTINE RFLU_InterpolateWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_InterpolateWrapper', &
-                        __FILE__)
+                        'RFLU_InterpolateWrapper.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -242,6 +242,7 @@ END SUBROUTINE RFLU_InterpolateWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -84,7 +84,7 @@ SUBROUTINE PLAG_INRT_AllocMemTStep( pRegion,pPlag )
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_INRT_AllocMemTStep',&
-  __FILE__)
+  'PLAG_INRT_AllocMemTStep.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables 
@@ -159,6 +159,7 @@ END SUBROUTINE PLAG_INRT_AllocMemTStep
 ! initial import
 !
 !******************************************************************************
+
 
 
 

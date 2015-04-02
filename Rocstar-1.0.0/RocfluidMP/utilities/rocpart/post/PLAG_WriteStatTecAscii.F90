@@ -129,7 +129,7 @@ SUBROUTINE PLAG_WriteStatTecAscii( regions, iReg)
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_WriteStatTecAscii',&
-  __FILE__ )
+  'PLAG_WriteStatTecAscii.F90' )
 
   IF (.NOT. global%plagUsed) GOTO 999
 
@@ -392,6 +392,7 @@ END SUBROUTINE PLAG_WriteStatTecAscii
 ! Initial import
 !
 !******************************************************************************
+
 
 
 

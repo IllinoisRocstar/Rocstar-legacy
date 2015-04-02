@@ -74,7 +74,7 @@ SUBROUTINE TURB_FluCv2Prim( pRegion,cvStateFuture )
   global => pRegion%global
 
   CALL RegisterFunction(global,'TURB_FluCv2Prim',&
-  __FILE__)
+  'TURB_fluCv2Prim.F90')
 
 ! *****************************************************************************
 ! Set pointers and variables
@@ -187,6 +187,7 @@ END SUBROUTINE TURB_FluCv2Prim
 !
 !
 ! ******************************************************************************
+
 
 
 

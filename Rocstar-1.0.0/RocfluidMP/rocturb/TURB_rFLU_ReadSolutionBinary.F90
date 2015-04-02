@@ -83,7 +83,7 @@ SUBROUTINE TURB_RFLU_ReadSolutionBinary( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction(global,'TURB_RFLU_ReadSolutionBinary',&
-  __FILE__)
+  'TURB_rFLU_ReadSolutionBinary.F90')
 
 #ifdef GENX
   GOTO 999    ! Genx doesn't need to read turbulence solution file
@@ -408,6 +408,7 @@ END SUBROUTINE TURB_RFLU_ReadSolutionBinary
 ! added routines specific for Rocflu           
 !
 ! ******************************************************************************
+
 
 
 

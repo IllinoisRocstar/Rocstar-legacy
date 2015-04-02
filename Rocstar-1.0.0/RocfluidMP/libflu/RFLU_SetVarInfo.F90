@@ -80,7 +80,7 @@ SUBROUTINE RFLU_SetVarInfo(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SetVarInfo',&
-  __FILE__)
+  'RFLU_SetVarInfo.F90')
 
 ! ******************************************************************************
 ! Set variable info depending on fluid model
@@ -154,6 +154,7 @@ END SUBROUTINE RFLU_SetVarInfo
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

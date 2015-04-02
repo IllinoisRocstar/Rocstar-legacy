@@ -65,7 +65,7 @@ SUBROUTINE ReadFormatsSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadFormatsSection',&
-  __FILE__ )
+  'ReadFormatsSection.F90' )
 
 ! specify keywords and search for them
 
@@ -153,6 +153,7 @@ END SUBROUTINE ReadFormatsSection
 ! Added files to read user input.
 !
 !******************************************************************************
+
 
 
 

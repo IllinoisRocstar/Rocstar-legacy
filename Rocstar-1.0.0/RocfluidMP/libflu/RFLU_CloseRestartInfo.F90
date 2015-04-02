@@ -75,7 +75,7 @@ SUBROUTINE RFLU_CloseRestartInfo(global)
   RCSIdentString = '$RCSfile: RFLU_CloseRestartInfo.F90,v $ $Revision: 1.6 $'
 
   CALL RegisterFunction(global,'RFLU_CloseRestartInfo',&
-  __FILE__)
+  'RFLU_CloseRestartInfo.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -132,6 +132,7 @@ END SUBROUTINE RFLU_CloseRestartInfo
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

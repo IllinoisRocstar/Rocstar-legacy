@@ -112,7 +112,7 @@ SUBROUTINE RFLU_AUSM_ComputeFlux(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AUSM_ComputeFlux',&
-  __FILE__)
+  'RFLU_ModAUSMFlux.F90')
 
 ! ******************************************************************************
 ! Call flux functions
@@ -377,7 +377,7 @@ SUBROUTINE RFLU_AUSM_ComputeFlux1(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AUSM_ComputeFlux1',&
-  __FILE__)
+  'RFLU_ModAUSMFlux.F90')
 
 #ifdef ROCPROF 
   CALL FPROFILER_BEGINS("RFLU::AUSM_ComputeFlux1")
@@ -609,7 +609,7 @@ SUBROUTINE RFLU_AUSM_ComputeFlux2_MPSD(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AUSM_ComputeFlux2_MPSD',&
-  __FILE__)
+  'RFLU_ModAUSMFlux.F90')
 
 #ifdef ROCPROF 
   CALL FPROFILER_BEGINS("RFLU::AUSM_ComputeFlux2_MPSD")
@@ -985,7 +985,7 @@ SUBROUTINE RFLU_AUSM_ComputeFlux2_MTCP(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AUSM_ComputeFlux2_MTCP',&
-  __FILE__)
+  'RFLU_ModAUSMFlux.F90')
 
 #ifdef ROCPROF 
   CALL FPROFILER_BEGINS("RFLU::AUSM_ComputeFlux2_MTCP")
@@ -1310,7 +1310,7 @@ SUBROUTINE RFLU_AUSM_ComputeFlux2_TCP(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AUSM_ComputeFlux2_TCP',&
-  __FILE__)
+  'RFLU_ModAUSMFlux.F90')
 
 #ifdef ROCPROF 
   CALL FPROFILER_BEGINS("RFLU::AUSM_ComputeFlux2_TCP")
@@ -1568,6 +1568,11 @@ END MODULE RFLU_ModAUSMFlux
 ! ******************************************************************************
   
   
+
+
+
+
+
 
 
 

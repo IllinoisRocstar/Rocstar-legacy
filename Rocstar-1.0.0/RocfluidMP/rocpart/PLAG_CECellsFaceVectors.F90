@@ -106,7 +106,7 @@ SUBROUTINE PLAG_CECellsFaceVectors( regions, iReg )
   global => regions(iReg)%global
     
   CALL RegisterFunction( global, 'PLAG_CECellsFaceVectors',&
-  __FILE__ )
+  'PLAG_CECellsFaceVectors.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -422,6 +422,7 @@ END SUBROUTINE PLAG_CECellsFaceVectors
 ! Initial import of Corner-Edge cells Infrastructure
 !
 !******************************************************************************
+
 
 
 

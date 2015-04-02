@@ -83,7 +83,7 @@ SUBROUTINE RFLO_copyMatrixPatches( iLev,region,mat )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_copyMatrixPatches',&
-  __FILE__ )
+  'RFLO_CopyMatrixDummy.F90' )
 
 ! loop over patches (all but inter-region and periodic boundaries)
 
@@ -153,7 +153,7 @@ SUBROUTINE RFLO_copyMatrixEdges( iLev,region,mat )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_copyMatrixEdges',&
-  __FILE__ )
+  'RFLO_CopyMatrixDummy.F90' )
 
 ! loop over edge cells without source region
 ! or with multiple source regions
@@ -228,7 +228,7 @@ SUBROUTINE RFLO_copyMatrixCorners( iLev,region,mat )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_copyMatrixCorners',&
-  __FILE__ )
+  'RFLO_CopyMatrixDummy.F90' )
 
 ! loop over corner cells without source region
 ! or with multiple source regions
@@ -318,6 +318,9 @@ END SUBROUTINE RFLO_copyMatrixCorners
 ! Added low-level time-stepping routines.
 !
 !******************************************************************************
+
+
+
 
 
 

@@ -85,7 +85,7 @@ SUBROUTINE RFLO_LaplaceGridSmoo( regions,resid )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_LaplaceGridSmoo',&
-  __FILE__ )
+  'RFLO_LaplaceGridSmoo.F90' )
 
 ! smooth grid region-wise -----------------------------------------------------
 
@@ -274,6 +274,7 @@ END SUBROUTINE RFLO_LaplaceGridSmoo
 ! Added basic global grid smoothing scheme.
 !
 !******************************************************************************
+
 
 
 

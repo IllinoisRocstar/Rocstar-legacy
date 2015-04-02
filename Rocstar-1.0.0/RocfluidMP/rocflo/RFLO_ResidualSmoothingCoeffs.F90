@@ -68,7 +68,7 @@ SUBROUTINE RFLO_residualSmoothingCoeffs( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_residualSmoothingCoeffs',&
-  __FILE__ )
+  'RFLO_ResidualSmoothingCoeffs.F90' )
 
 ! get dimensions and pointers
 
@@ -149,6 +149,7 @@ END SUBROUTINE RFLO_residualSmoothingCoeffs
 ! Added multi-probe option, residual smoothing, physical time step.
 !
 !******************************************************************************
+
 
 
 

@@ -73,7 +73,7 @@ SUBROUTINE TURB_FloRansBcondInjection( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_FloRansBcondInjection',&
-  __FILE__ )
+  'TURB_floRansBcondInjection.F90' )
 
 ! get dimensions and pointers
 
@@ -185,6 +185,7 @@ END SUBROUTINE TURB_FloRansBcondInjection
 !
 !
 !******************************************************************************
+
 
 
 

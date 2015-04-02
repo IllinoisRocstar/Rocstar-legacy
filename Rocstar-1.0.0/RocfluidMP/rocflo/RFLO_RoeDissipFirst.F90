@@ -75,7 +75,7 @@ SUBROUTINE RFLO_RoeDissipFirst( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_RoeDissipFirst',&
-  __FILE__ )
+  'RFLO_RoeDissipFirst.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -463,6 +463,7 @@ END SUBROUTINE RFLO_RoeDissipFirst
 ! Implemented Roe scheme.
 !
 !******************************************************************************
+
 
 
 

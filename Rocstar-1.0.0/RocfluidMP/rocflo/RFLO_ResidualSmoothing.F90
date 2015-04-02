@@ -68,7 +68,7 @@ SUBROUTINE RFLO_ResidualSmoothing( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ResidualSmoothing',&
-  __FILE__ )
+  'RFLO_ResidualSmoothing.F90' )
 
 ! get dimensions and pointers
 
@@ -295,6 +295,7 @@ END SUBROUTINE RFLO_ResidualSmoothing
 ! Added low-level time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

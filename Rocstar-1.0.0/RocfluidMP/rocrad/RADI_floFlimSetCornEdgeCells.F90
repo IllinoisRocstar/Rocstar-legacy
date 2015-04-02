@@ -70,7 +70,7 @@ SUBROUTINE RADI_FloFlimSetCornEdgeCells( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FloFlimSetCornEdgeCells', &
-                         __FILE__ )
+                         'RADI_floFlimSetCornEdgeCells.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -234,6 +234,7 @@ END SUBROUTINE RADI_FloFlimSetCornEdgeCells
 !
 !
 !******************************************************************************
+
 
 
 

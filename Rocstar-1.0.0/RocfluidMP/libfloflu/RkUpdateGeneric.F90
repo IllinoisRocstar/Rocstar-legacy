@@ -100,7 +100,7 @@ SUBROUTINE RkUpdateGeneric(region,varType,iStage,icBeg,icEnd,ivBeg,ivEnd, &
   global => region%global
 
   CALL RegisterFunction(global,'RkUpdateGeneric',&
-  __FILE__)
+  'RkUpdateGeneric.F90')
 
 ! *****************************************************************************
 ! Set pointers and variables
@@ -388,6 +388,7 @@ END SUBROUTINE RkUpdateGeneric
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

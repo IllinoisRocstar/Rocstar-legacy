@@ -96,7 +96,7 @@ SUBROUTINE PLAG_AppendDataFromBuffers( region, iReg )
   global => region%global
     
   CALL RegisterFunction( global, 'PLAG_AppendDataFromBuffers',&
-  __FILE__ )
+  'PLAG_AppendDataFromBuffers.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -267,6 +267,7 @@ END SUBROUTINE PLAG_AppendDataFromBuffers
 ! Initial import
 !
 !******************************************************************************
+
 
 
 

@@ -85,7 +85,7 @@ SUBROUTINE INRT_DefineBoilingRegulation( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_DefineBoilingRegulation',&
-  __FILE__ )
+  'INRT_DefineBoilingRegulation.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -138,6 +138,7 @@ END SUBROUTINE INRT_DefineBoilingRegulation
 !
 !
 !******************************************************************************
+
 
 
 

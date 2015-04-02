@@ -78,7 +78,7 @@ SUBROUTINE SPEC_RFLU_SetVarInfo(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_SetVarInfo',&
-  __FILE__)
+  'SPEC_RFLU_SetVarInfo.F90')
 
 ! ******************************************************************************
 ! Set variable info 
@@ -111,6 +111,7 @@ END SUBROUTINE SPEC_RFLU_SetVarInfo
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

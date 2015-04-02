@@ -105,7 +105,7 @@ SUBROUTINE RFLU_ComputeExactFlowError(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeExactFlowError', &
-                        __FILE__)
+                        'RFLU_ComputeExactFlowError.F90')
  
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Computing errors in flow solution...'
@@ -688,6 +688,7 @@ END SUBROUTINE RFLU_ComputeExactFlowError
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

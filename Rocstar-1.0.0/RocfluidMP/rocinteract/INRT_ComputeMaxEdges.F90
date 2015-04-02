@@ -74,7 +74,7 @@ SUBROUTINE INRT_ComputeMaxEdges( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_ComputeMaxEdges',&
-  __FILE__ )
+  'INRT_ComputeMaxEdges.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -124,6 +124,7 @@ END SUBROUTINE INRT_ComputeMaxEdges
 ! initial import
 !
 !******************************************************************************
+
 
 
 

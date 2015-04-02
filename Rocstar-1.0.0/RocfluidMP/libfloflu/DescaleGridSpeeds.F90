@@ -99,7 +99,7 @@ SUBROUTINE DescaleGridSpeeds( region )
   global => region%global
 
   CALL RegisterFunction(global,'DescaleGridSpeeds',&
-  __FILE__)
+  'DescaleGridSpeeds.F90')
   
 ! *****************************************************************************
 ! Set pointers and variables
@@ -208,6 +208,7 @@ END SUBROUTINE DescaleGridSpeeds
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

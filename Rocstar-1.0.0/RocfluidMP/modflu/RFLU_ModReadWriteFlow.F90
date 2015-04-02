@@ -132,7 +132,7 @@ MODULE RFLU_ModReadWriteFlow
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadFlowASCII',&
-  __FILE__)
+  'RFLU_ModReadWriteFlow.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -601,7 +601,7 @@ MODULE RFLU_ModReadWriteFlow
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadFlowBinary',&
-  __FILE__)
+  'RFLU_ModReadWriteFlow.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1085,7 +1085,7 @@ MODULE RFLU_ModReadWriteFlow
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadFlowWrapper',&
-  __FILE__)
+  'RFLU_ModReadWriteFlow.F90')
 
 ! ******************************************************************************
 !   Read mixture solution files
@@ -1247,7 +1247,7 @@ MODULE RFLU_ModReadWriteFlow
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteFlowASCII',&
-  __FILE__)
+  'RFLU_ModReadWriteFlow.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1560,7 +1560,7 @@ MODULE RFLU_ModReadWriteFlow
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteFlowBinary',&
-  __FILE__)
+  'RFLU_ModReadWriteFlow.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1888,7 +1888,7 @@ MODULE RFLU_ModReadWriteFlow
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteFlowWrapper',&
-  __FILE__)
+  'RFLU_ModReadWriteFlow.F90')
 
 ! ******************************************************************************
 !   Write mixture solution files
@@ -2037,6 +2037,12 @@ END MODULE RFLU_ModReadWriteFlow
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
 
 
 

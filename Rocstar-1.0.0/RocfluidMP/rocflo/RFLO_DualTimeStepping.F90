@@ -122,7 +122,7 @@ SUBROUTINE RFLO_DualTimeStepping( dTimeSystem,regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_DualTimeStepping',&
-  __FILE__ )
+  'RFLO_DualTimeStepping.F90' )
 
 ! initialize parameters -------------------------------------------------------
 
@@ -738,6 +738,7 @@ END SUBROUTINE RFLO_DualTimeStepping
 ! Implemented dual-time stepping.
 !
 !******************************************************************************
+
 
 
 

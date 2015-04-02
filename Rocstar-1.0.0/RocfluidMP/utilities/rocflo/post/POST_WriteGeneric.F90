@@ -94,7 +94,7 @@ SUBROUTINE WriteGeneric( iReg,region )
   global => region%global
 
   CALL RegisterFunction( global,'WriteGeneric',&
-  __FILE__ )
+  'POST_WriteGeneric.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -330,7 +330,7 @@ END SUBROUTINE WriteGeneric
 ! Corrected mistake in phased check-in
 !
 ! Revision 1.7  2003/03/20 19:34:37  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'POST_WriteGeneric.F90' names
 !
 ! Revision 1.6  2002/10/12 03:20:51  jblazek
 ! Replaced [io]stat=global%error with local errorFlag for Rocflo.
@@ -351,6 +351,8 @@ END SUBROUTINE WriteGeneric
 ! Added generic binary output format.
 !
 !******************************************************************************
+
+
 
 
 

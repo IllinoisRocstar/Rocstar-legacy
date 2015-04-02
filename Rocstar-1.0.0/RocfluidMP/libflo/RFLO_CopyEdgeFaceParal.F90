@@ -79,7 +79,7 @@ SUBROUTINE RFLO_CopyEdgeFaceParal( region,iFBeg,iFEnd,fvari,fvarj,fvark )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CopyEdgeFaceParal',&
-  __FILE__ )
+  'RFLO_CopyEdgeFaceParal.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -238,6 +238,7 @@ END SUBROUTINE RFLO_CopyEdgeFaceParal
 ! add viscous terms
 !
 !******************************************************************************
+
 
 
 

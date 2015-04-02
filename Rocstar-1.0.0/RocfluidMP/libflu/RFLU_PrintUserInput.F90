@@ -101,7 +101,7 @@ SUBROUTINE RFLU_PrintUserInput(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_PrintUserInput',&
-  __FILE__)
+  'RFLU_PrintUserInput.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -851,6 +851,7 @@ END SUBROUTINE RFLU_PrintUserInput
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

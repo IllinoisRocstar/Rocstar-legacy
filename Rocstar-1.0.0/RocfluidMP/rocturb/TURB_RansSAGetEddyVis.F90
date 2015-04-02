@@ -83,7 +83,7 @@ SUBROUTINE TURB_RansSAGetEddyVis( region )
   global => region%global
 
   CALL RegisterFunction( global,'TURB_RansSAGetEddyVis',&
-  __FILE__ )
+  'TURB_RansSAGetEddyVis.F90' )
 
 ! get coefficients and constants ----------------------------------------------
 
@@ -184,6 +184,7 @@ END SUBROUTINE TURB_RansSAGetEddyVis
 !
 !
 !******************************************************************************
+
 
 
 

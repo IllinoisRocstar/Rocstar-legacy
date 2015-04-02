@@ -123,7 +123,7 @@ MODULE RFLU_ModVertexLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildVert2CellList',&
-  __FILE__)
+  'RFLU_ModVertexLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -353,7 +353,7 @@ MODULE RFLU_ModVertexLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateVert2CellList',&
-  __FILE__)
+  'RFLU_ModVertexLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -447,7 +447,7 @@ MODULE RFLU_ModVertexLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyVert2CellList',&
-  __FILE__)
+  'RFLU_ModVertexLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -541,7 +541,7 @@ MODULE RFLU_ModVertexLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyVert2CellList',&
-  __FILE__)
+  'RFLU_ModVertexLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -607,6 +607,10 @@ END MODULE RFLU_ModVertexLists
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

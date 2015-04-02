@@ -85,7 +85,7 @@ SUBROUTINE PLAG_ClearSizeSendRequests( regions, iReg )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_ClearSizeSendRequests',&
-  __FILE__ )
+  'PLAG_ClearSizeSendRequests.F90' )
 
 #ifdef MPI
 
@@ -147,6 +147,7 @@ END SUBROUTINE PLAG_ClearSizeSendRequests
 ! Renamed from PLAG_clearRequests.F90
 !
 !******************************************************************************
+
 
 
 

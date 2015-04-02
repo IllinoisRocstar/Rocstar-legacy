@@ -97,7 +97,7 @@ SUBROUTINE TURB_WlmFluxPatch( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_WlmFluxPatch',&
-  __FILE__ )
+  'TURB_WlmFluxPatch.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -256,6 +256,7 @@ END SUBROUTINE TURB_WlmFluxPatch
 !
 !
 !******************************************************************************
+
 
 
 

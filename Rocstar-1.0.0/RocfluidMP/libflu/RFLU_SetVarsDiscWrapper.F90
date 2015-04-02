@@ -88,7 +88,7 @@ SUBROUTINE RFLU_SetVarsDiscWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SetVarsDiscWrapper',&
-  __FILE__)
+  'RFLU_SetVarsDiscWrapper.F90')
 
 ! ******************************************************************************
 ! Set variables
@@ -125,6 +125,7 @@ END SUBROUTINE RFLU_SetVarsDiscWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

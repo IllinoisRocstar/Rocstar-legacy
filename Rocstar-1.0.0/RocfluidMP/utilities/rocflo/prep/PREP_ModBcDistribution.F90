@@ -109,7 +109,7 @@ SUBROUTINE BcDistributionFiles( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'BcDistributionFiles',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! open file
 
@@ -276,7 +276,7 @@ SUBROUTINE BcSlipWallDistrib( regions,ithRead,bcTitle,distrib )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'BcSlipWallDistrib',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -384,7 +384,7 @@ SUBROUTINE BcNoslipDistrib( regions,ithRead,bcTitle,distrib )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'BcNoslipDistrib',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -559,7 +559,7 @@ SUBROUTINE BcInflowTotAngDistrib( regions,ithRead,bcTitle,distrib )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'BcInflowTotAngDistrib',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -776,7 +776,7 @@ SUBROUTINE BcInflowVelDistrib( regions,ithRead,bcTitle,distrib )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'BcInflowVelDistrib',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -1107,7 +1107,7 @@ SUBROUTINE BcOutflowDistrib( regions,ithRead,bcTitle,distrib )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'BcOutflowDistrib',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -1282,7 +1282,7 @@ SUBROUTINE BcFarfDistrib( regions,ithRead,bcTitle,distrib )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'BcFarfDistrib',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -1427,7 +1427,7 @@ SUBROUTINE BcInjectDistrib( regions,ithRead,bcTitle,distrib )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'BcInjectDistrib',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -1581,7 +1581,7 @@ SUBROUTINE ReadPatchSection( global,fileID,nvals,keys,vals,brbeg,brend, &
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadPatchSection',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! read lines from file until # or EOF found
 
@@ -1677,7 +1677,7 @@ SUBROUTINE WriteBcToFile( global,fname,patch )
 !******************************************************************************
 
   CALL RegisterFunction( global,'WriteBcToFile',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! dimensions
 
@@ -1769,7 +1769,7 @@ SUBROUTINE ProfInflowVTTaylorCyl( global,patch,nvals,switch,keys,defined,vals )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ProfInflowVTTaylorCyl',&
-  __FILE__ )
+  'PREP_ModBcDistribution.F90' )
 
 ! remember keys
 
@@ -1953,6 +1953,17 @@ END MODULE PREP_ModBcDistribution
 !
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -124,7 +124,7 @@ SUBROUTINE RFLU_BLIN_ComputeNormal(global,ax,ay,az,bx,by,bz,cx,cy,cz,dx,dy,dz, &
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_BLIN_ComputeNormal',&
-  __FILE__)
+  'RFLU_ModBilinearPatch.F90')
 
 ! ******************************************************************************
 ! Compute normal
@@ -233,7 +233,7 @@ SUBROUTINE RFLU_BLIN_ComputeXSectLine(pRegion,xLoc,yLoc,zLoc,ex,ey,ez,icg, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BLIN_ComputeXSectLine',&
-  __FILE__)
+  'RFLU_ModBilinearPatch.F90')
 
 ! ==============================================================================
 ! Set grid pointer and initialize variables
@@ -597,7 +597,7 @@ END SUBROUTINE RFLU_BLIN_ComputeXSectLine
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_BLIN_FindClosestPoint',&
-  __FILE__)
+  'RFLU_ModBilinearPatch.F90')
 
 
 ! ******************************************************************************
@@ -703,6 +703,9 @@ END MODULE RFLU_ModBilinearPatch
 !
 ! ******************************************************************************
   
+
+
+
 
 
 

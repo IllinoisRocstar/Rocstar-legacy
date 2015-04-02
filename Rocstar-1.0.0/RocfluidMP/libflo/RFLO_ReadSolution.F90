@@ -91,7 +91,7 @@ SUBROUTINE RFLO_ReadSolution( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadSolution',&
-  __FILE__ )
+  'RFLO_ReadSolution.F90' )
 
 ! allocate fixed-size temporary data arrays -----------------------------------
 
@@ -428,6 +428,7 @@ END SUBROUTINE RFLO_ReadSolution
 ! Added routines to read grid and solution.
 !
 !******************************************************************************
+
 
 
 

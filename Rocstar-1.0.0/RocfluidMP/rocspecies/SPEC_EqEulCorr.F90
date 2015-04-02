@@ -100,7 +100,7 @@ SUBROUTINE SPEC_EqEulCorr(pRegion,iSpec)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_EqEulCorr',&
-  __FILE__)
+  'SPEC_EqEulCorr.F90')
 
 ! ******************************************************************************
 ! Set dimensions and pointers
@@ -288,6 +288,7 @@ END SUBROUTINE SPEC_EqEulCorr
 ! Implemented Equilibrium Eulerian method for Rocflu
 !
 ! ******************************************************************************
+
 
 
 

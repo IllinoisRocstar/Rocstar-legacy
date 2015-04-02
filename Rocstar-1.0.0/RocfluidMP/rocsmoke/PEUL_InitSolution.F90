@@ -72,7 +72,7 @@ SUBROUTINE PEUL_InitSolution( iReg, region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global, 'PEUL_InitSolution',&
-  __FILE__ )
+  'PEUL_InitSolution.F90' )
 
 ! loop over all grid levels
 
@@ -111,6 +111,7 @@ END SUBROUTINE PEUL_InitSolution
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

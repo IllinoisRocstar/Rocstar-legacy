@@ -159,7 +159,7 @@ SUBROUTINE PLAG_EjectParticle( pRegion,pPlag,pTilePlag,      &
   global => pRegion%global
 
   CALL RegisterFunction( global, 'PLAG_EjectParticle',&
-  __FILE__ )
+  'PLAG_ModInjection.F90' )
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -394,7 +394,7 @@ END SUBROUTINE PLAG_EjectParticle
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_InjcSetPoolPos',&
-  __FILE__ )
+  'PLAG_ModInjection.F90' )
 
 ! ****************************************************************************** 
 !   Set normals to point inwards 
@@ -578,7 +578,7 @@ SUBROUTINE PLAG_InvokeEjecModel1( pRegion,pPlag,pTilePlag,      &
   global => pRegion%global
 
   CALL RegisterFunction( global, 'PLAG_InvokeEjecModel1',&
-  __FILE__ )
+  'PLAG_ModInjection.F90' )
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -744,7 +744,7 @@ SUBROUTINE PLAG_InvokeConsRandEjec( pRegion,pPlag,pTilePlag,      &
   global => pRegion%global
 
   CALL RegisterFunction( global, 'PLAG_InvokeConsRandEjec',&
-  __FILE__ )
+  'PLAG_ModInjection.F90' )
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -1030,6 +1030,10 @@ END MODULE PLAG_ModInjection
 ! Initial import of Injection Module
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

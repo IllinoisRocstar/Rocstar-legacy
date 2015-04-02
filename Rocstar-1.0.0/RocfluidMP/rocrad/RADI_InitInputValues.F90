@@ -83,7 +83,7 @@ SUBROUTINE RADI_InitInputValues
 
   global => regions(1)%global
   CALL RegisterFunction( global,'RADI_InitInputValues',&
-  __FILE__ )
+  'RADI_InitInputValues.F90' )
 
 ! global values ---------------------------------------------------------------
 
@@ -196,6 +196,7 @@ END SUBROUTINE RADI_InitInputValues
 !
 !
 !******************************************************************************
+
 
 
 

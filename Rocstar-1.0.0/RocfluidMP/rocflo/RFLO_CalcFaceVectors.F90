@@ -70,7 +70,7 @@ SUBROUTINE RFLO_CalcFaceVectors( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcFaceVectors',&
-  __FILE__ )
+  'RFLO_CalcFaceVectors.F90' )
 
 ! loop over all grid levels ---------------------------------------------------
 
@@ -204,6 +204,7 @@ END SUBROUTINE RFLO_CalcFaceVectors
 ! Added calculation of face vectors and volumes.
 !
 !******************************************************************************
+
 
 
 

@@ -79,7 +79,7 @@ SUBROUTINE RADI_FlimSourceTerms( region )
 
   global => region%global
   CALL RegisterFunction( global,'RADI_FlimSourceTerms',&
-  __FILE__ )
+  'RADI_FlimSourceTerms.F90' )
 
 ! get coefficients and parameters ---------------------------------------------
 
@@ -155,6 +155,7 @@ END SUBROUTINE RADI_FlimSourceTerms
 !
 !
 !******************************************************************************
+
 
 
 

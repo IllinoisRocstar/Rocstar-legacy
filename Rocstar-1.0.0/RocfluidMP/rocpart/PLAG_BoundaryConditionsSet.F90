@@ -77,7 +77,7 @@ SUBROUTINE PLAG_BoundaryConditionsSet( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_BoundaryConditionsSet',&
-  __FILE__ )
+  'PLAG_BoundaryConditionsSet.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -145,6 +145,7 @@ END SUBROUTINE PLAG_BoundaryConditionsSet
 ! Initial Import of Multiblock capability
 !
 !******************************************************************************
+
 
 
 

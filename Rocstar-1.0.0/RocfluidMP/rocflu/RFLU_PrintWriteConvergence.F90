@@ -76,7 +76,7 @@ SUBROUTINE RFLU_PrintWriteConvergence(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_PrintWriteConvergence',&
-  __FILE__)
+  'RFLU_PrintWriteConvergence.F90')
 
 ! ******************************************************************************
 ! Reduce data
@@ -177,6 +177,7 @@ END SUBROUTINE RFLU_PrintWriteConvergence
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

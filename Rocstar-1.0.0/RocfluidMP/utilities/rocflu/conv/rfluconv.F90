@@ -126,7 +126,7 @@ SUBROUTINE rfluconv(caseString,stampString,verbLevel)
   CALL RFLU_InitGlobal(casename,verbLevel,CRAZY_VALUE_INT,global)
 
   CALL RegisterFunction(global,'main', &
-                        __FILE__)
+                        'rfluconv.F90')
 
 ! ******************************************************************************
 ! Print header
@@ -536,6 +536,7 @@ END SUBROUTINE rfluconv
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -87,7 +87,7 @@ SUBROUTINE RFLU_EquilibriumEulerian(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_EquilibriumEulerian',&
-  __FILE__)
+  'RFLU_EquilibriumEulerian.F90')
 
 ! ******************************************************************************
 ! Call various subroutines to finish computation, if necessary
@@ -137,6 +137,7 @@ END SUBROUTINE RFLU_EquilibriumEulerian
 ! Implemented Equilibrium Eulerian method for Rocflu
 !
 ! ******************************************************************************
+
 
 
 

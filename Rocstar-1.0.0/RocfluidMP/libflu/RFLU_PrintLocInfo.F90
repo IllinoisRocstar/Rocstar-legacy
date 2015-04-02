@@ -107,7 +107,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_PrintLocInfo',&
-  __FILE__)
+  'RFLU_PrintLocInfo.F90')
 
   IF ( outputMode == OUTPUT_MODE_MASTER_ONLY ) THEN 
     outputFlag = (global%myProcid == MASTERPROC)
@@ -547,6 +547,7 @@ END SUBROUTINE RFLU_PrintLocInfo
 ! Initial revision                                                    
 !
 ! ******************************************************************************
+
 
 
 

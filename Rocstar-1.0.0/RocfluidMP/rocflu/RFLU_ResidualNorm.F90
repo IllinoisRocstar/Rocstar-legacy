@@ -81,7 +81,7 @@ SUBROUTINE RFLU_ResidualNorm(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_ResidualNorm',&
-  __FILE__)
+  'RFLU_ResidualNorm.F90')
 
 ! ******************************************************************************
 ! Sum density changes over local regions 
@@ -162,6 +162,7 @@ END SUBROUTINE RFLU_ResidualNorm
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

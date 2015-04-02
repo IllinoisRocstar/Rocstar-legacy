@@ -88,7 +88,7 @@ SUBROUTINE RVAV_ReadFileStream1 ( regionsS1 )
   global => regionsS1(1)%global
 
   CALL RegisterFunction( global, 'RVAV_ReadFileStream1',&
-  __FILE__ )
+  'RVAV_ReadFileStream1.F90' )
 
 ! load case name
 
@@ -316,6 +316,7 @@ END SUBROUTINE RVAV_readFileStream1
 ! Initial Import of RocVaV
 !
 !******************************************************************************
+
 
 
 

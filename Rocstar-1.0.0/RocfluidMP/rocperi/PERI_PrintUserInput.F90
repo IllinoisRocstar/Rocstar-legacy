@@ -78,7 +78,7 @@ SUBROUTINE PERI_PrintUserInput( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'PERI_PrintUserInput',&
-  __FILE__ )
+  'PERI_PrintUserInput.F90' )
 
 ! get pointers and parameters -------------------------------------------------
 
@@ -204,6 +204,7 @@ END SUBROUTINE PERI_PrintUserInput
 !
 !
 !******************************************************************************
+
 
 
 

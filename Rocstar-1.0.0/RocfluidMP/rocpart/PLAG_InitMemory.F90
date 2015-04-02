@@ -81,7 +81,7 @@ SUBROUTINE PLAG_InitMemory( region )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_InitMemory',&
-  __FILE__ )
+  'PLAG_InitMemory.F90' )
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -206,6 +206,7 @@ END SUBROUTINE PLAG_InitMemory
 !
 !
 !******************************************************************************
+
 
 
 

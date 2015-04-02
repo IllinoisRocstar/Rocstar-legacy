@@ -92,7 +92,7 @@ SUBROUTINE PLAG_InjcTileInitialize( region )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_InjcTileInitialize',&
-  __FILE__ )
+  'PLAG_InjcTileInitialize.F90' )
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -244,6 +244,7 @@ END SUBROUTINE PLAG_injcTileInitialize
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

@@ -71,7 +71,7 @@ SUBROUTINE RVAV_ReadComparisonsSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global, 'RVAV_ReadComparisonsSection',&
-  __FILE__ )
+  'RVAV_ReadComparisonsSection.F90' )
 
 ! read lines from file until # or EOF found
 
@@ -226,6 +226,7 @@ END SUBROUTINE RVAV_ReadComparisonsSection
 ! Initial Import of RocVaV
 !
 !******************************************************************************
+
 
 
 

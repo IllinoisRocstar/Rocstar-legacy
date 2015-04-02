@@ -104,7 +104,7 @@ SUBROUTINE RFLU_MoveGridDisp(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_MoveGridDisp',&
-  __FILE__)
+  'RFLU_MoveGridDisp.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel /= VERBOSE_LOW ) THEN
@@ -507,6 +507,7 @@ END SUBROUTINE RFLU_MoveGridDisp
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

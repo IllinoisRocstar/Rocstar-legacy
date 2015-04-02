@@ -85,7 +85,7 @@ SUBROUTINE WriteTecplotAscii( iReg,iLev,plotType,region )
   global => region%global
 
   CALL RegisterFunction( global,'WriteTecplotAscii',&
-  __FILE__ )
+  'WriteTecplotAscii.F90' )
 
 ! set parameters --------------------------------------------------------------
 
@@ -257,6 +257,7 @@ END SUBROUTINE WriteTecplotAscii
 ! Implented Rocsmoke post-processing
 !
 !******************************************************************************
+
 
 
 

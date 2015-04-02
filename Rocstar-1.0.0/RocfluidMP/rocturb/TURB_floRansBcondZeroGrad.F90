@@ -72,7 +72,7 @@ SUBROUTINE TURB_FloRansBcondZeroGrad( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_FloRansBcondZeroGrad',&
-  __FILE__ )
+  'TURB_floRansBcondZeroGrad.F90' )
 
 ! get dimensions and pointers
 
@@ -137,6 +137,7 @@ END SUBROUTINE TURB_FloRansBcondZeroGrad
 !
 !
 !******************************************************************************
+
 
 
 

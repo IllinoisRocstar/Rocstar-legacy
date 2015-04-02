@@ -112,7 +112,7 @@ SUBROUTINE RFLU_SetDependentVars(pRegion,icgBeg,icgEnd)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SetDependentVars',&
-  __FILE__)
+  'RFLU_SetDependentVars.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -392,6 +392,7 @@ END SUBROUTINE RFLU_SetDependentVars
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

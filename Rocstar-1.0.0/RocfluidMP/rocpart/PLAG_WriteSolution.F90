@@ -97,7 +97,7 @@ SUBROUTINE PLAG_WriteSolution( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_WriteSolution',&
-  __FILE__ )
+  'PLAG_WriteSolution.F90' )
 
   IF (.NOT. (global%plagUsed .eqv. .true.)) THEN
      IF (global%myProcid == MASTERPROC) THEN
@@ -775,6 +775,7 @@ END SUBROUTINE PLAG_WriteSolution
 !
 !
 !******************************************************************************
+
 
 
 

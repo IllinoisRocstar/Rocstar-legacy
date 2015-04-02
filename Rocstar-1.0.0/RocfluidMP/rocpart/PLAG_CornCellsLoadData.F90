@@ -111,7 +111,7 @@ SUBROUTINE PLAG_CornCellsLoadData( regions, iReg )
   global => regions(iReg)%global
     
   CALL RegisterFunction( global, 'PLAG_CornCellsLoadData',&
-  __FILE__ )
+  'PLAG_CornCellsLoadData.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -497,6 +497,7 @@ END SUBROUTINE PLAG_CornCellsLoadData
 ! Initial import for corner-edge cells to load buffer data
 !
 !******************************************************************************
+
 
 
 

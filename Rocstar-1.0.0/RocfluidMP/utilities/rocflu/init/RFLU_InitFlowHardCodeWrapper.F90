@@ -88,7 +88,7 @@ SUBROUTINE RFLU_InitFlowHardCodeWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_InitFlowHardCodeWrapper',&
-  __FILE__)
+  'RFLU_InitFlowHardCodeWrapper.F90')
 
 #ifdef SPEC
 ! ******************************************************************************
@@ -185,6 +185,7 @@ END SUBROUTINE RFLU_InitFlowHardCodeWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

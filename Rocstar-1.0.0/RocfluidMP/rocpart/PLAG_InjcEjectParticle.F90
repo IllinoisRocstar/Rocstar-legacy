@@ -123,7 +123,7 @@ SUBROUTINE PLAG_InjcEjectParticle( region, iReg )
   global => region%global
 
   CALL RegisterFunction( global, 'PLAG_InjcEjectParticle',&
-  __FILE__ )
+  'PLAG_InjcEjectParticle.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -1011,6 +1011,7 @@ END SUBROUTINE PLAG_InjcEjectParticle
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

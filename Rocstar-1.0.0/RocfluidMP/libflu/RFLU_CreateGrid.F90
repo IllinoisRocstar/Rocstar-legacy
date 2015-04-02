@@ -91,7 +91,7 @@ SUBROUTINE RFLU_CreateGrid(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CreateGrid',&
-  __FILE__)
+  'RFLU_CreateGrid.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -400,6 +400,7 @@ END SUBROUTINE RFLU_CreateGrid
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

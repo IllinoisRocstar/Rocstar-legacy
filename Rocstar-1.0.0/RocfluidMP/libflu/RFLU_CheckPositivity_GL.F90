@@ -97,7 +97,7 @@ SUBROUTINE RFLU_CheckPositivity_GL(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CheckPositivity_GL',&
-  __FILE__)
+  'RFLU_CheckPositivity_GL.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -238,6 +238,7 @@ END SUBROUTINE RFLU_CheckPositivity_GL
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

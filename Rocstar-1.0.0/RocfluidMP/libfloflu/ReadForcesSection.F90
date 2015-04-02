@@ -81,7 +81,7 @@ SUBROUTINE ReadForcesSection( global )
 ! ******************************************************************************
 
   CALL RegisterFunction( global,'ReadForcesSection',&
-  __FILE__ )
+  'ReadForcesSection.F90' )
 
 ! ******************************************************************************
 ! Specify keywords and search for them
@@ -281,6 +281,7 @@ END SUBROUTINE ReadForcesSection
 ! Added files to read user input.
 !
 ! ******************************************************************************
+
 
 
 

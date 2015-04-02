@@ -83,7 +83,7 @@ SUBROUTINE PLAG_InjcMakeParticle( region, injcDiamDist, diam, spLoad )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_InjcMakeParticle',&
-  __FILE__ )
+  'PLAG_InjcMakeParticle.F90' )
 
 ! Select injection model ------------------------------------------------------
 
@@ -220,6 +220,7 @@ END SUBROUTINE PLAG_injcMakeParticle
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

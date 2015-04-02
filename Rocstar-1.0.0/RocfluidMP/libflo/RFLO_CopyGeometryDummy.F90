@@ -69,7 +69,7 @@ SUBROUTINE RFLO_CopyGeometryDummy( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CopyGeometryDummy',&
-  __FILE__ )
+  'RFLO_CopyGeometryDummy.F90' )
 
 ! loop over all grid levels ---------------------------------------------------
 
@@ -208,6 +208,7 @@ END SUBROUTINE RFLO_CopyGeometryDummy
 ! Added routines to generate geometry for dummy cells.
 !
 !******************************************************************************
+
 
 
 

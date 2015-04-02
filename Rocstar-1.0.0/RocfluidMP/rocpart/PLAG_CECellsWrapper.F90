@@ -74,7 +74,7 @@ SUBROUTINE PLAG_CECellsWrapper( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_CECellsWrapper',&
-  __FILE__ )
+  'PLAG_CECellsWrapper.F90' )
 
 ! check if module is active in any region======================================
 
@@ -165,6 +165,7 @@ END SUBROUTINE PLAG_CECellsWrapper
 ! Initial import of Corner-Edge cells Infrastructure
 !
 !******************************************************************************
+
 
 
 

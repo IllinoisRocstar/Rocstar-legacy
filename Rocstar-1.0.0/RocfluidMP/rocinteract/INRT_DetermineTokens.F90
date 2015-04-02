@@ -78,7 +78,7 @@ SUBROUTINE INRT_DetermineTokens( region,inrt )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_DetermineTokens',&
-  __FILE__ )
+  'INRT_DetermineTokens.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -183,6 +183,7 @@ END SUBROUTINE INRT_DetermineTokens
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

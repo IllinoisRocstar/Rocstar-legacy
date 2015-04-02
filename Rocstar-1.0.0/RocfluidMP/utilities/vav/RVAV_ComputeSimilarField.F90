@@ -72,7 +72,7 @@ SUBROUTINE RVAV_ComputeSimilarField( global, iNodes,jNodes,kNodes, &
 !******************************************************************************
 
   CALL RegisterFunction( global, 'RVAV_ComputeSimilarField',&
-  __FILE__ )
+  'RVAV_ComputeSimilarField.F90' )
 
   SELECT CASE (similarityType)
   
@@ -164,6 +164,7 @@ END SUBROUTINE RVAV_ComputeSimilarField
 ! Initial Import
 !
 !******************************************************************************
+
 
 
 

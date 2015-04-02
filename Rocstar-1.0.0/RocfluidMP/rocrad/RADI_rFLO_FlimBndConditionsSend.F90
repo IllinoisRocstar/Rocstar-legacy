@@ -74,7 +74,7 @@ SUBROUTINE RADI_RFLO_FlimBndConditionsSend( regions,iReg ) ! PUBLIC
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RADI_RFLO_FlimBndConditionsSend',&
-  __FILE__ )
+  'RADI_rFLO_FlimBndConditionsSend.F90' )
 
   IF (regions(iReg)%radiInput%radiModel /= RADI_MODEL_FLDTRAN) GOTO 999
 
@@ -176,6 +176,7 @@ END SUBROUTINE RADI_RFLO_FlimBndConditionsSend
 !
 !
 !******************************************************************************
+
 
 
 

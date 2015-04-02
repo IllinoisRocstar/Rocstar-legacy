@@ -74,7 +74,7 @@ SUBROUTINE SplitTopology( splitDirection,regionsOld,regionsNew )
   globalNew => regionsNew(1)%global
 
   CALL RegisterFunction( globalNew,'SplitTopology',&
-  __FILE__ )
+  'SPLT_SplitTopology.F90' )
 
 ! copy old patches ------------------------------------------------------------
 
@@ -311,6 +311,7 @@ END SUBROUTINE SplitTopology
 ! Added tool to split single grid into multiple regions.
 !
 !******************************************************************************
+
 
 
 

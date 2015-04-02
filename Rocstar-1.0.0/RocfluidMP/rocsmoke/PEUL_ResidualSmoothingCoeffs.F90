@@ -78,7 +78,7 @@ SUBROUTINE PEUL_residualSmoothingCoeffs( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_residualSmoothingCoeffs',&
-  __FILE__ )
+  'PEUL_ResidualSmoothingCoeffs.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -155,6 +155,7 @@ END SUBROUTINE PEUL_residualSmoothingCoeffs
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

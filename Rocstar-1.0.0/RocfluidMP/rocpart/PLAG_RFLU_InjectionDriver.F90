@@ -108,7 +108,7 @@ SUBROUTINE PLAG_RFLU_InjectionDriver(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction( global, 'PLAG_RFLU_InjectionDriver',&
-  __FILE__ )
+  'PLAG_RFLU_InjectionDriver.F90' )
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -320,6 +320,7 @@ END SUBROUTINE PLAG_RFLU_InjectionDriver
 ! Initial import of RFLU-specific injection routines
 !
 ! ******************************************************************************
+
 
 
 

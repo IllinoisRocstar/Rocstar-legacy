@@ -81,7 +81,7 @@ SUBROUTINE ZeroDummyCellsMP( region )
   global => region%global
 
   CALL RegisterFunction( global,'ZeroDummyCellsMP',&
-  __FILE__ )
+  'ZeroDummyCellsMP.F90' )
 
 ! get dimensions and pointers =================================================
 
@@ -195,6 +195,7 @@ END SUBROUTINE ZeroDummyCellsMP
 ! Initial import for RocfluidMP
 !
 !******************************************************************************
+
 
 
 

@@ -138,7 +138,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildF2CStencil_1D',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( (global%myProcid == MASTERPROC) .AND. &
          (global%verbLevel > VERBOSE_NONE) ) THEN
@@ -435,7 +435,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -856,7 +856,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildF2CStencilWrapper',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -945,7 +945,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildListCF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1069,7 +1069,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateF2CStencil_1D',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1168,7 +1168,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1264,7 +1264,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateF2CStencilWrapper',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
 ! ******************************************************************************
 !   Call routines to create stencils
@@ -1338,7 +1338,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyF2CStencil_1D',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1448,7 +1448,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1557,7 +1557,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyF2CStencilWrapper',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
 ! ******************************************************************************
 !   Call routines to destroy stencils
@@ -1629,7 +1629,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyListCF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1722,7 +1722,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyF2CStencil_1D',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1805,7 +1805,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1894,7 +1894,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SetInfoF2CStencil_1D',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -2009,7 +2009,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SetInfoF2CStencil',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -2123,7 +2123,7 @@ MODULE RFLU_ModStencilsFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SetInfoF2CStencilWrapper',&
-  __FILE__)
+  'RFLU_ModStencilsFaces.F90')
 
 ! ******************************************************************************
 !   Call routines to set info for stencils
@@ -2197,6 +2197,22 @@ END MODULE RFLU_ModStencilsFaces
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

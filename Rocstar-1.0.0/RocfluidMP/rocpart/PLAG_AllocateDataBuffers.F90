@@ -89,7 +89,7 @@ SUBROUTINE PLAG_AllocateDataBuffers( regions, iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global, 'PLAG_AllocateDataBuffers',&
-  __FILE__ )
+  'PLAG_AllocateDataBuffers.F90' )
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -398,6 +398,7 @@ END SUBROUTINE PLAG_AllocateDataBuffers
 !
 !
 !******************************************************************************
+
 
 
 

@@ -94,7 +94,7 @@ SUBROUTINE PLAG_RFLU_InitSolSerial_3D(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_InitSolSerial_3D', &
-                        __FILE__)
+                        'PLAG_RFLU_InitSolSerial_3D.F90')
  
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initializing particle solution '// &
@@ -243,6 +243,7 @@ END SUBROUTINE PLAG_RFLU_InitSolSerial_3D
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

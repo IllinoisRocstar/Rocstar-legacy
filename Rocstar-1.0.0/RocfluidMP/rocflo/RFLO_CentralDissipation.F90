@@ -72,7 +72,7 @@ SUBROUTINE RFLO_CentralDissipation( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CentralDissipation',&
-  __FILE__ )
+  'RFLO_CentralDissipation.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -429,6 +429,7 @@ END SUBROUTINE RFLO_CentralDissipation
 ! Added low-level time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

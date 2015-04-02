@@ -85,7 +85,7 @@ SUBROUTINE RFLU_SetVars(pRegion,icgBeg,icgEnd)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SetVars',&
-  __FILE__)
+  'RFLU_SetVars.F90')
 
 #ifdef ROCPROF
   CALL FPROFILER_BEGINS("RFLU::SetVars")
@@ -142,6 +142,7 @@ END SUBROUTINE RFLU_SetVars
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -78,7 +78,7 @@ SUBROUTINE RFLU_WriteRestartInfo(global)
   RCSIdentString = '$RCSfile: RFLU_WriteRestartInfo.F90,v $ $Revision: 1.4 $'
 
   CALL RegisterFunction(global,'RFLU_WriteRestartInfo',&
-  __FILE__)
+  'RFLU_WriteRestartInfo.F90')
 
 ! =============================================================================
 ! Write restart info to file
@@ -123,6 +123,7 @@ END SUBROUTINE RFLU_WriteRestartInfo
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

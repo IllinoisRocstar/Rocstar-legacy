@@ -90,7 +90,7 @@ SUBROUTINE RFLU_ScalarViscousFluxes(pRegion,nVarScal,tvScal,gradScal,resScal)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ScalarViscousFluxes',&
-  __FILE__)
+  'RFLU_ScalarViscousFluxes.F90')
 
 ! *****************************************************************************
 ! Set variables and pointers
@@ -168,6 +168,7 @@ END SUBROUTINE RFLU_ScalarViscousFluxes
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

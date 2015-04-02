@@ -84,7 +84,7 @@ SUBROUTINE PEUL_SourceEqEul( region,ipt )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_SourceEqEul',&
-  __FILE__ )
+  'PEUL_SourceEqEul.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -235,6 +235,7 @@ END SUBROUTINE PEUL_SourceEqEul
 ! Implemented equilibrium Eulerian method
 !
 !******************************************************************************
+
 
 
 

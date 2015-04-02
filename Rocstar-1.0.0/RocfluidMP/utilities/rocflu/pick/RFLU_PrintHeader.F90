@@ -76,7 +76,7 @@ SUBROUTINE RFLU_PrintHeader(global)
   RCSIdentString = '$RCSfile: RFLU_PrintHeader.F90,v $'
 
   CALL RegisterFunction(global,'RFLU_PrintHeader', &
-                        __FILE__)
+                        'RFLU_PrintHeader.F90')
 
 ! ==============================================================================
 ! Build version string
@@ -145,6 +145,7 @@ END SUBROUTINE RFLU_PrintHeader
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

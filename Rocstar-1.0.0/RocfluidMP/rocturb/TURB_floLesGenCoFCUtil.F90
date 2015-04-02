@@ -83,7 +83,7 @@ SUBROUTINE TURB_FloLesGenCoFCLo( global,filtDir,ibeg,iend,jbeg,jend,kbeg, &
   RCSIdentString = '$RCSfile: TURB_floLesGenCoFCUtil.F90,v $'
 
   CALL RegisterFunction( global,'TURB_FloLesGenCoFCLo',&
-  __FILE__ )
+  'TURB_floLesGenCoFCUtil.F90' )
 
 ! start computations --------------------------------------------------------
 
@@ -223,7 +223,7 @@ SUBROUTINE TURB_FloLesGenCoFCHi( global,filtDir,ibeg,iend,jbeg,jend,kbeg, &
   RCSIdentString = '$RCSfile: TURB_floLesGenCoFCUtil.F90,v $'
 
   CALL RegisterFunction( global,'TURB_FloLesGenCoFCHi',&
-  __FILE__ )
+  'TURB_floLesGenCoFCUtil.F90' )
 
 ! start computations --------------------------------------------------------
 
@@ -367,6 +367,8 @@ END SUBROUTINE TURB_FloLesGenCoFCHi
 !
 !
 !******************************************************************************
+
+
 
 
 

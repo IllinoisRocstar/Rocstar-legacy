@@ -97,7 +97,7 @@ SUBROUTINE PLAG_RFLU_ReadSolutionBinary(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_ReadSolutionBinary',&
-  __FILE__)
+  'PLAG_RFLU_ReadSolutionBinary.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -545,6 +545,7 @@ END SUBROUTINE PLAG_RFLU_ReadSolutionBinary
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

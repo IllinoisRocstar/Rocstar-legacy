@@ -76,7 +76,7 @@ SUBROUTINE TURB_RFLO_RansAllocDataBuffers( regions,iReg ) ! PUBLIC
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'TURB_RFLO_RansAllocDataBuffers',&
-  __FILE__ )
+  'TURB_rFLO_RansAllocDataBuffers.F90' )
 
   IF (regions(iReg)%turbInput%modelClass /= MODEL_RANS) GOTO 999
 
@@ -201,6 +201,7 @@ END SUBROUTINE TURB_RFLO_RansAllocDataBuffers
 !
 !
 !******************************************************************************
+
 
 
 

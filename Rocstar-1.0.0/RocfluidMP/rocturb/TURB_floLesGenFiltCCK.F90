@@ -86,7 +86,7 @@ SUBROUTINE TURB_FloLesGenFiltCCK( region,nDum,ibeg,iend,jbeg,jend,kbeg,kend, &
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloLesGenFiltCCK',&
-  __FILE__ )
+  'TURB_floLesGenFiltCCK.F90' )
 
 ! get parameters and pointers ------------------------------------------------
 
@@ -242,6 +242,7 @@ END SUBROUTINE TURB_FloLesGenFiltCCK
 ! Install Rocturb
 !
 !******************************************************************************
+
 
 
 

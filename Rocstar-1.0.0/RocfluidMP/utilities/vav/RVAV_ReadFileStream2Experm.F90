@@ -91,7 +91,7 @@ SUBROUTINE RVAV_ReadFileStream2Experm( global,regionsS2 )
 !******************************************************************************
 
   CALL RegisterFunction( global, 'RVAV_ReadFileStream2Experm',&
-  __FILE__ )
+  'RVAV_ReadFileStream2Experm.F90' )
 
   IF ( global%verbLevel/=VERBOSE_NONE ) &	   
     WRITE(STDOUT,'(/,A)') 'Reading grid and solution from Stream 2 - EXPERIMENTAL...' 
@@ -357,6 +357,7 @@ END SUBROUTINE RVAV_readFileStream2Experm
 !
 !
 !******************************************************************************
+
 
 
 

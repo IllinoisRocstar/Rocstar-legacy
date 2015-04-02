@@ -84,7 +84,7 @@ SUBROUTINE SPEC_CheckUserInput(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'SPEC_CheckUserInput',&
-  __FILE__)
+  'SPEC_CheckUserInput.F90')
 
 ! ******************************************************************************
 ! Check input values
@@ -161,6 +161,7 @@ END SUBROUTINE SPEC_CheckUserInput
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

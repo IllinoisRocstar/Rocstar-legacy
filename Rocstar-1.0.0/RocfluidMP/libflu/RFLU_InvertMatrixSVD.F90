@@ -89,7 +89,7 @@ SUBROUTINE RFLU_InvertMatrixSVD(global,nRows,nCols,a,aInv,sCount)
   RCSIdentString = '$RCSfile: RFLU_InvertMatrixSVD.F90,v $ $Revision: 1.9 $'
 
   CALL RegisterFunction(global,'RFLU_InvertMatrixSVD',&
-  __FILE__)
+  'RFLU_InvertMatrixSVD.F90')
 
 ! ******************************************************************************
 ! Set work array size and allocate memory
@@ -213,6 +213,7 @@ END SUBROUTINE RFLU_InvertMatrixSVD
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

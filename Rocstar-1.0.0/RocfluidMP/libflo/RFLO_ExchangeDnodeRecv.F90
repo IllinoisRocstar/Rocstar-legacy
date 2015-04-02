@@ -91,7 +91,7 @@ SUBROUTINE RFLO_ExchangeDnodeRecv( region,regionSrc,patch,patchSrc, &
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ExchangeDnodeRecv',&
-  __FILE__ )
+  'RFLO_ExchangeDnodeRecv.F90' )
 
 ! check if the source region is active
 
@@ -444,6 +444,7 @@ END SUBROUTINE RFLO_ExchangeDnodeRecv
 ! Improved mesh motion algorithm - node movement exchaged between blocks.
 !
 !******************************************************************************
+
 
 
 

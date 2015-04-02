@@ -69,7 +69,7 @@ SUBROUTINE RFLO_ExchangeDummyInt( region,regionSrc,patch,patchSrc )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ExchangeDummyInt',&
-  __FILE__ )
+  'RFLO_ExchangeDummyInt.F90' )
 
 
 
@@ -113,6 +113,7 @@ END SUBROUTINE RFLO_ExchangeDummyInt
 ! Added flux computation (central scheme).
 !
 !******************************************************************************
+
 
 
 

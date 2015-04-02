@@ -72,7 +72,7 @@ SUBROUTINE RFLO_DualMultigrid( dTimeSystem,regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_DualMultigrid',&
-  __FILE__ )
+  'RFLO_DualMultigrid.F90' )
 
   iter = 0
 
@@ -108,6 +108,7 @@ END SUBROUTINE RFLO_DualMultigrid
 ! Implemented dual-time stepping.
 !
 !******************************************************************************
+
 
 
 

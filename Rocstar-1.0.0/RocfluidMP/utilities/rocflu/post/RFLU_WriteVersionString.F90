@@ -75,7 +75,7 @@ SUBROUTINE RFLU_WriteVersionString(global)
   RCSIdentString = '$RCSfile: RFLU_WriteVersionString.F90,v $ $Revision: 1.4 $'
 
   CALL RegisterFunction(global,'RFLU_WriteVersionString',&
-  __FILE__)
+  'RFLU_WriteVersionString.F90')
 
 ! ******************************************************************************
 ! Build strings
@@ -133,6 +133,7 @@ END SUBROUTINE RFLU_WriteVersionString
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

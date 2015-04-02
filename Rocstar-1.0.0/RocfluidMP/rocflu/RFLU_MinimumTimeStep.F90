@@ -87,7 +87,7 @@ SUBROUTINE RFLU_MinimumTimeStep(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_MinimumTimeStep',&
-  __FILE__)
+  'RFLU_MinimumTimeStep.F90')
 
 ! ******************************************************************************
 ! Compute actual time step for each region. NOTE take into account CFL number 
@@ -331,6 +331,7 @@ END SUBROUTINE RFLU_MinimumTimeStep
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

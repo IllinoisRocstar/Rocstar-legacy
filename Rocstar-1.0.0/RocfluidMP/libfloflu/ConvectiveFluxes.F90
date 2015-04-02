@@ -99,7 +99,7 @@ SUBROUTINE ConvectiveFluxes( region )
   global => region%global
 
   CALL RegisterFunction( global,'ConvectiveFluxes',&
-  __FILE__ )
+  'ConvectiveFluxes.F90' )
 
 ! ******************************************************************************
 ! Get dimensions and pointers
@@ -299,6 +299,7 @@ END SUBROUTINE ConvectiveFluxes
 ! Added low-level time-stepping routines.
 !
 ! ******************************************************************************
+
 
 
 

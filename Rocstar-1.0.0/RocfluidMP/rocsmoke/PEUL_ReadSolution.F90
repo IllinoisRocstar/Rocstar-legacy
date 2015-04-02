@@ -94,7 +94,7 @@ SUBROUTINE PEUL_ReadSolution( regions ) ! PUBLIC
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PEUL_ReadSolution',&
-  __FILE__ )
+  'PEUL_ReadSolution.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -365,6 +365,7 @@ END SUBROUTINE PEUL_ReadSolution
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

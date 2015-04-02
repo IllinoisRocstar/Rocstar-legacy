@@ -134,7 +134,7 @@ MODULE RFLU_ModPETScPoisson
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PETSC_BuildPoisson',&
-  __FILE__)
+  'RFLU_ModPETScPoisson.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN  
@@ -297,7 +297,7 @@ MODULE RFLU_ModPETScPoisson
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PETSC_CreatePoisson',&
-  __FILE__)
+  'RFLU_ModPETScPoisson.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -489,7 +489,7 @@ MODULE RFLU_ModPETScPoisson
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PETSC_SetSolverPoisson',&
-  __FILE__)
+  'RFLU_ModPETScPoisson.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN  
@@ -638,7 +638,7 @@ MODULE RFLU_ModPETScPoisson
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PETSC_SolvePressurePoisson',&
-  __FILE__)
+  'RFLU_ModPETScPoisson.F90')
 
     pGrid => pRegion%grid  
 
@@ -809,6 +809,10 @@ END MODULE RFLU_ModPETScPoisson
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

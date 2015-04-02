@@ -131,7 +131,7 @@ MODULE RFLU_ModStencilsVert
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildStencilVert2Cell',&
-  __FILE__)
+  'RFLU_ModStencilsVert.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -467,7 +467,7 @@ MODULE RFLU_ModStencilsVert
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildStencilVert2Cell',&
-  __FILE__)
+  'RFLU_ModStencilsVert.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -567,7 +567,7 @@ MODULE RFLU_ModStencilsVert
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyStencilVert2Cell',&
-  __FILE__)
+  'RFLU_ModStencilsVert.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -667,7 +667,7 @@ MODULE RFLU_ModStencilsVert
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyStencilVert2Cell',&
-  __FILE__)
+  'RFLU_ModStencilsVert.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -751,7 +751,7 @@ MODULE RFLU_ModStencilsVert
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SetInfoStencilVert2Cell',&
-  __FILE__)
+  'RFLU_ModStencilsVert.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -844,6 +844,11 @@ END MODULE RFLU_ModStencilsVert
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
 
 
 

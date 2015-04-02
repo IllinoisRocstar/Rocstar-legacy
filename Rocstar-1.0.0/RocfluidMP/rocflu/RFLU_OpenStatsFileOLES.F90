@@ -77,7 +77,7 @@ SUBROUTINE RFLU_OpenStatsFileOLES(global)
   RCSIdentString = '$RCSfile: RFLU_OpenStatsFileOLES.F90,v $ $Revision: 1.8 $'
 
   CALL RegisterFunction(global,'RFLU_OpenStatsFileOLES',&
-  __FILE__ )
+  'RFLU_OpenStatsFileOLES.F90' )
 
 ! ==============================================================================
 ! Open file
@@ -142,6 +142,7 @@ END SUBROUTINE RFLU_OpenStatsFileOLES
 ! Initial revision
 ! 
 ! ******************************************************************************
+
 
 
 

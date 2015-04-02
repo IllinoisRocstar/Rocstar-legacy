@@ -69,7 +69,7 @@ SUBROUTINE INRT_AugmentConSources( region,iInrt )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_AugmentConSources',&
-  __FILE__ )
+  'INRT_AugmentConSources.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -109,6 +109,7 @@ END SUBROUTINE INRT_AugmentConSources
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

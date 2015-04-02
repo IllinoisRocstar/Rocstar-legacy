@@ -109,7 +109,7 @@ SUBROUTINE ReadInputFile(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'ReadInputFile',&
-  __FILE__)
+  'ReadInputFile.F90')
 
 ! ******************************************************************************
 ! Open file
@@ -346,6 +346,7 @@ END SUBROUTINE ReadInputFile
 ! Added files to read user input.
 !
 ! ******************************************************************************
+
 
 
 

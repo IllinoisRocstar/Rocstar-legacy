@@ -116,7 +116,7 @@ SUBROUTINE TURB_LesCalcEddyVis( region,ibn,ien,ijk )
 
   global => region%global
   CALL RegisterFunction( global,'Turb_LesCalcEddyVis',&
-  __FILE__ )
+  'TURB_LesCalcEddyVis.F90' )
 
 ! get parameters and coefficients -------------------------------------------
 
@@ -518,6 +518,7 @@ END SUBROUTINE TURB_LesCalcEddyVis
 !
 !
 !******************************************************************************
+
 
 
 

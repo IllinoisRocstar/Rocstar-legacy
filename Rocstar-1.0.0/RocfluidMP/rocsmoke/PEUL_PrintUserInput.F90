@@ -70,7 +70,7 @@ SUBROUTINE PEUL_PrintUserInput( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_PrintUserInput',&
-  __FILE__ )
+  'PEUL_PrintUserInput.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -188,6 +188,7 @@ END SUBROUTINE PEUL_PrintUserInput
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

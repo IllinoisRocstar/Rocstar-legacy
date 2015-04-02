@@ -142,7 +142,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildAVFace2BorderList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN   
@@ -360,7 +360,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildAVFace2PatchList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN   
@@ -519,7 +519,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildCell2FaceList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN   
@@ -799,7 +799,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildFaceList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -1595,7 +1595,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateAVFace2BorderList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -1688,7 +1688,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateAVFace2PatchList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -1781,7 +1781,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateCell2FaceList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -1905,7 +1905,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateFaceList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -2083,7 +2083,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyAVFace2BorderList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -2171,7 +2171,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyAVFace2PatchList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -2257,7 +2257,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyCell2FaceList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -2377,7 +2377,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global  
 
     CALL RegisterFunction(global,'RFLU_DestroyFaceList',&
-  __FILE__)        
+  'RFLU_ModFaceList.F90')        
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN 
@@ -2532,7 +2532,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_GetOpposingFaces',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     pGrid => pRegion%grid      
 
@@ -2756,7 +2756,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_InsertIntoCell2FaceList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
     
     pGrid => pRegion%grid
     
@@ -3041,7 +3041,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyAVFace2BorderList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     pGrid => pRegion%grid
           
@@ -3108,7 +3108,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyAVFace2PatchList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
   
     pGrid => pRegion%grid
           
@@ -3175,7 +3175,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyCell2FaceList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     pGrid => pRegion%grid
           
@@ -3249,7 +3249,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyFaceList',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
 ! ******************************************************************************
 !   Set grid pointer 
@@ -3341,7 +3341,7 @@ MODULE RFLU_ModFaceList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReorientFaces',&
-  __FILE__)
+  'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -3562,6 +3562,25 @@ END MODULE RFLU_ModFaceList
 ! Initial revision                                                              
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -112,7 +112,7 @@ SUBROUTINE RFLU_CentralFirstPatch(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CentralFirstPatch',&
-  __FILE__)
+  'RFLU_CentralFirstPatch.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -1019,6 +1019,7 @@ END SUBROUTINE RFLU_CentralFirstPatch
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

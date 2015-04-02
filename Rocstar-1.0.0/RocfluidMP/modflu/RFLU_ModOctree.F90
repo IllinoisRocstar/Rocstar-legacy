@@ -99,7 +99,7 @@ MODULE RFLU_ModOctree
       INTEGER :: errorFlag  
         
       CALL RegisterFunction(global,'RFLU_CreateOctree',&
-  __FILE__)
+  'RFLU_ModOctree.F90')
 
       NNODE = nPoints
       MOCTR = 2*NNODE
@@ -674,7 +674,7 @@ MODULE RFLU_ModOctree
       INTEGER :: errorFlag
 
       CALL RegisterFunction(global,'RFLU_DestroyOctree',&
-  __FILE__)
+  'RFLU_ModOctree.F90')
 
       DEALLOCATE(ICHK,STAT=errorFlag)
       global%error = errorFlag 
@@ -758,6 +758,8 @@ END MODULE RFLU_ModOctree
 !   Initial revision
 !
 ! *****************************************************************************
+
+
 
 
 

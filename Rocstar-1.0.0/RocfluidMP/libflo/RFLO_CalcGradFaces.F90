@@ -86,7 +86,7 @@ SUBROUTINE RFLO_CalcGradFaces( region,ilev,iBegV,iEndV,iBegG,iEndG,var, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcGradFaces',&
-  __FILE__ )
+  'RFLO_CalcGradFaces.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -527,6 +527,7 @@ END SUBROUTINE RFLO_CalcGradFaces
 ! made compliant with CODING RULE
 !
 !******************************************************************************
+
 
 
 

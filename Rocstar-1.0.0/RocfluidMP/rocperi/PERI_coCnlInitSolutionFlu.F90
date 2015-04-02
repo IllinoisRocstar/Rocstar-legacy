@@ -73,7 +73,7 @@ SUBROUTINE PERI_CoCnlInitSolution( region )
 
   global => region%global
   CALL RegisterFunction( global,'PERI_CoCnlInitSolution',&
-  __FILE__ )
+  'PERI_coCnlInitSolutionFlu.F90' )
 
 ! get parameters and pointers ----------------------------------------------
 
@@ -207,6 +207,7 @@ END SUBROUTINE PERI_CoCnlInitSolution
 !
 !
 !******************************************************************************
+
 
 
 

@@ -165,7 +165,7 @@ SUBROUTINE RFLU_TEC_CloseFile(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_TEC_CloseFile', & 
-                        __FILE__)
+                        'RFLU_ModTECPLOTUtils.F90')
 
 ! ******************************************************************************
 ! Close TECPLOT file
@@ -243,7 +243,7 @@ SUBROUTINE RFLU_TEC_OpenFile(global,title,fileName)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_TEC_OpenFile', & 
-                        __FILE__)
+                        'RFLU_ModTECPLOTUtils.F90')
 
 ! ==============================================================================
 ! Set some TECPLOT variables
@@ -344,7 +344,7 @@ SUBROUTINE RFLU_TEC_WriteZoneCellsSpecial(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_WriteZoneCellsSpecial', & 
-                        __FILE__)
+                        'RFLU_ModTECPLOTUtils.F90')
 
 ! ******************************************************************************
 ! Set grid pointer
@@ -688,7 +688,7 @@ SUBROUTINE RFLU_TEC_WriteZoneFacesSpecial(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_WriteZoneFacesSpecial', & 
-                        __FILE__)
+                        'RFLU_ModTECPLOTUtils.F90')
 
 ! ******************************************************************************
 ! Set grid pointer
@@ -968,7 +968,7 @@ SUBROUTINE RFLU_TEC_WriteZoneInterf(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_WriteZoneInterf', & 
-                        __FILE__)
+                        'RFLU_ModTECPLOTUtils.F90')
 
 ! ******************************************************************************
 ! Set grid pointer
@@ -1533,7 +1533,7 @@ SUBROUTINE RFLU_TEC_WriteZoneSurf(pRegion,pPatch,faceType,faceKind)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_WriteZoneSurf', & 
-                        __FILE__)
+                        'RFLU_ModTECPLOTUtils.F90')
 
 ! ******************************************************************************
 ! Set grid pointer
@@ -1938,7 +1938,7 @@ SUBROUTINE RFLU_TEC_WriteZoneSurfMixed(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_WriteZoneSurfMixed', & 
-                        __FILE__)
+                        'RFLU_ModTECPLOTUtils.F90')
 
 ! ******************************************************************************
 ! Set grid pointer
@@ -2134,7 +2134,7 @@ SUBROUTINE RFLU_TEC_WriteZoneVol(pRegion,cellType,cellKind)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_WriteZoneVol', & 
-                        __FILE__)
+                        'RFLU_ModTECPLOTUtils.F90')
 
 ! ******************************************************************************
 ! Set grid pointer
@@ -2448,6 +2448,14 @@ END MODULE RFLU_ModTECPLOTUtils
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
 
 
 

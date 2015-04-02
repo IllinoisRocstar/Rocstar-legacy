@@ -79,7 +79,7 @@ SUBROUTINE RFLU_CheckUserInput(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_CheckUserInput',&
-  __FILE__)
+  'RFLU_CheckUserInput.F90')
 
 ! ******************************************************************************
 ! Check global data
@@ -467,6 +467,7 @@ END SUBROUTINE RFLU_CheckUserInput
 ! Added to check TURB module activation and other input data
 !
 ! ******************************************************************************
+
 
 
 

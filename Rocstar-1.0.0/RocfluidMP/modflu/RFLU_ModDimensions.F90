@@ -143,7 +143,7 @@ MODULE RFLU_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadDimensions',&
-  __FILE__)
+  'RFLU_ModDimensions.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN  
@@ -506,7 +506,7 @@ MODULE RFLU_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadDimensionsWrapper',&
-  __FILE__)
+  'RFLU_ModDimensions.F90')
 
 ! ******************************************************************************
 !   Call routines
@@ -640,7 +640,7 @@ MODULE RFLU_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SetMaxDimensions',&
-  __FILE__)
+  'RFLU_ModDimensions.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN   
@@ -752,7 +752,7 @@ MODULE RFLU_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteDimensions',&
-  __FILE__)
+  'RFLU_ModDimensions.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -960,7 +960,7 @@ MODULE RFLU_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteDimensionsBorders',&
-  __FILE__)
+  'RFLU_ModDimensions.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1145,7 +1145,7 @@ MODULE RFLU_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteDimensionsWrapper',&
-  __FILE__)
+  'RFLU_ModDimensions.F90')
 
 ! ******************************************************************************
 !   Call routines
@@ -1244,6 +1244,12 @@ END MODULE RFLU_ModDimensions
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
 
 
 

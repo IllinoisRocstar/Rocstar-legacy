@@ -86,7 +86,7 @@ SUBROUTINE RFLU_InitFlowHardCodeLimWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_InitFlowHardCodeLimWrapper', &
-                        __FILE__)
+                        'RFLU_InitFlowHardCodeLimWrapper.F90')
 
 #ifdef SPEC
 ! ******************************************************************************
@@ -154,6 +154,7 @@ END SUBROUTINE RFLU_InitFlowHardCodeLimWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -124,7 +124,7 @@ MODULE RFLU_ModMPI
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_MPI_ClearRequest',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -197,7 +197,7 @@ MODULE RFLU_ModMPI
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MPI_ClearRequestWrapper',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 #ifdef ROCPROF 
     CALL FPROFILER_BEGINS("RFLU::ClearRequestWrapper")
@@ -304,7 +304,7 @@ MODULE RFLU_ModMPI
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_MPI_CopyCellData',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 ! ******************************************************************************
 !   Set variables
@@ -391,7 +391,7 @@ MODULE RFLU_ModMPI
     global => regions(0)%global
 
     CALL RegisterFunction(global,'RFLU_MPI_CopyWrapper',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 #ifdef ROCPROF 
     CALL FPROFILER_BEGINS("RFLU::CopyWrapper")
@@ -519,7 +519,7 @@ MODULE RFLU_ModMPI
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MPI_CreateBufferIPclSend',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -619,7 +619,7 @@ MODULE RFLU_ModMPI
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_MPI_CreateBuffers',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 ! ******************************************************************************
 !   Allocate memory
@@ -696,7 +696,7 @@ MODULE RFLU_ModMPI
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MPI_CreateBuffersWrapper',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -810,7 +810,7 @@ MODULE RFLU_ModMPI
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MPI_DestroyBufferIPclSend',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -903,7 +903,7 @@ MODULE RFLU_ModMPI
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_MPI_DestroyBuffers',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 ! ******************************************************************************
 !   Allocate memory
@@ -980,7 +980,7 @@ MODULE RFLU_ModMPI
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MPI_DestroyBuffersWrapper',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1096,7 +1096,7 @@ MODULE RFLU_ModMPI
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_MPI_ISendCellData',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
     
 ! ******************************************************************************
 !   Set variables
@@ -1191,7 +1191,7 @@ MODULE RFLU_ModMPI
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MPI_RecreateBufferIPclSend',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -1322,7 +1322,7 @@ MODULE RFLU_ModMPI
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MPI_ISendWrapper',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 #ifdef ROCPROF 
     CALL FPROFILER_BEGINS("RFLU::ISendWrapper")
@@ -1437,7 +1437,7 @@ MODULE RFLU_ModMPI
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_MPI_RecvCellData',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 ! ******************************************************************************
 !   Set variables
@@ -1529,7 +1529,7 @@ MODULE RFLU_ModMPI
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MPI_RecvWrapper',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 #ifdef ROCPROF 
     CALL FPROFILER_BEGINS("RFLU::RecvWrapper")
@@ -1635,7 +1635,7 @@ MODULE RFLU_ModMPI
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_MPI_SetTag',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 ! ******************************************************************************
 !   Set tag
@@ -1714,7 +1714,7 @@ MODULE RFLU_ModMPI
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MPI_SetTagsWrapper',&
-  __FILE__)
+  'RFLU_ModMPI.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -1857,6 +1857,23 @@ END MODULE RFLU_ModMPI
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

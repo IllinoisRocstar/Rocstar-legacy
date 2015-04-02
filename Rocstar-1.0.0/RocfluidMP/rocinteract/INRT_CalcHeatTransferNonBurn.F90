@@ -88,7 +88,7 @@ SUBROUTINE INRT_CalcHeatTransferNonBurn( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_CalcHeatTransferNonBurn',&
-  __FILE__ )
+  'INRT_CalcHeatTransferNonBurn.F90' )
 
 #ifdef PLAG
 ! begin -----------------------------------------------------------------------
@@ -229,6 +229,7 @@ END SUBROUTINE INRT_CalcHeatTransferNonBurn
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

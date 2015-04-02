@@ -138,7 +138,7 @@ MODULE RFLU_ModCommLists
     global => regions(0)%global
 
     CALL RegisterFunction(global,'RFLU_COMM_BuildCommLists',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
     
 ! ******************************************************************************
 !   Call routines
@@ -227,7 +227,7 @@ MODULE RFLU_ModCommLists
     global => regions(0)%global
 
     CALL RegisterFunction(global,'RFLU_COMM_BuildCommListsCells',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -583,7 +583,7 @@ MODULE RFLU_ModCommLists
     global => regions(0)%global
 
     CALL RegisterFunction(global,'RFLU_COMM_BuildCommListsVert',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -1024,7 +1024,7 @@ MODULE RFLU_ModCommLists
     global => regions(1)%global
 
     CALL RegisterFunction(global,'RFLU_COMM_CheckCountBorders',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking counting of borders...'      
@@ -1175,7 +1175,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_CountBorders',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Counting borders...'      
@@ -1370,7 +1370,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_CountBordersSerial',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Counting serial borders...'      
@@ -1473,7 +1473,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_CreateBorderCntr',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
     
 ! ******************************************************************************
 !   Set grid pointer and variables
@@ -1565,7 +1565,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_CreateBorders',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &  
          global%verbLevel > VERBOSE_NONE ) THEN       
@@ -1704,7 +1704,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_CreateCommLists',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN   
@@ -1825,7 +1825,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_DestroyBorderCntr',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
     
 ! ******************************************************************************
 !   Set grid pointer 
@@ -1904,7 +1904,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_DestroyBorders',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN     
@@ -1996,7 +1996,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_DestroyCommLists',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN   
@@ -2125,7 +2125,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_GetProcLocRegIds',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN       
@@ -2276,7 +2276,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_ReadCommLists',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -2539,7 +2539,7 @@ MODULE RFLU_ModCommLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COMM_WriteCommLists',&
-  __FILE__)
+  'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -2749,6 +2749,21 @@ END MODULE RFLU_ModCommLists
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

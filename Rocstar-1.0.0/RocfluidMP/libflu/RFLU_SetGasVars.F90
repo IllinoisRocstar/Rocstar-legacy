@@ -99,7 +99,7 @@ SUBROUTINE RFLU_SetGasVars(pRegion,icgBeg,icgEnd)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SetGasVars',&
-  __FILE__)
+  'RFLU_SetGasVars.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -304,6 +304,7 @@ END SUBROUTINE RFLU_SetGasVars
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

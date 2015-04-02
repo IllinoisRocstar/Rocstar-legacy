@@ -97,7 +97,7 @@ SUBROUTINE PLAG_CECellsSendRecvWrapper( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_CECellsSendRecv',&
-  __FILE__ )
+  'PLAG_CECellsSendRecvWrapper.F90' )
 
 ! ******************************************************************************
 ! Set infrastructure for MPI-based communication
@@ -588,6 +588,7 @@ END SUBROUTINE PLAG_CECellsSendRecvWrapper
 ! Initial import of main MPI-based wrapper
 !
 !******************************************************************************
+
 
 
 

@@ -89,7 +89,7 @@ SUBROUTINE RFLO_ReadGrid( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadGrid',&
-  __FILE__ )
+  'RFLO_ReadGrid.F90' )
 
 ! allocate fixed-size temporary data arrays -----------------------------------
 
@@ -342,6 +342,7 @@ END SUBROUTINE RFLO_ReadGrid
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
 
 
 

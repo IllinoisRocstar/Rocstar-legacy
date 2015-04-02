@@ -94,7 +94,7 @@ SUBROUTINE RVAV_ProudmanCulickSolution( fname,regionsS1 )
   global => regionsS1(1)%global
   
   CALL RegisterFunction( global, 'RVAV_ProudmanCulickSolution',&
-  __FILE__ )
+  'RVAV_ProudmanCulickSolution.F90' )
   
   pi =  global%pi
 
@@ -221,6 +221,7 @@ END SUBROUTINE RVAV_ProudmanCulickSolution
 !
 !
 !******************************************************************************
+
 
 
 

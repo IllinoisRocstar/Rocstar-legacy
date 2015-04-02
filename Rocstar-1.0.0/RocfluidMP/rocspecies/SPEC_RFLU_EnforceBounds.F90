@@ -88,7 +88,7 @@ SUBROUTINE SPEC_RFLU_EnforceBounds(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_EnforceBounds',&
-  __FILE__)
+  'SPEC_RFLU_EnforceBounds.F90')
 
 ! ==============================================================================
 ! Set pointers and variables
@@ -171,6 +171,7 @@ END SUBROUTINE SPEC_RFLU_EnforceBounds
 !   Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -84,7 +84,7 @@ SUBROUTINE ReadMixtureSection(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'ReadMixtureSection',&
-  __FILE__)
+  'ReadMixtureSection.F90')
 
 ! specify keywords and search for them
 
@@ -144,6 +144,7 @@ END SUBROUTINE ReadMixtureSection
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -74,7 +74,7 @@ SUBROUTINE ReadFlowSection( regions )
 !******************************************************************************
 
   CALL RegisterFunction( regions(1)%global,'ReadFlowSection',&
-  __FILE__ )
+  'ReadFlowSection.F90' )
 
 ! specify keywords and search for them
 
@@ -190,6 +190,7 @@ END SUBROUTINE ReadFlowSection
 ! Added files to read user input.
 !
 !******************************************************************************
+
 
 
 

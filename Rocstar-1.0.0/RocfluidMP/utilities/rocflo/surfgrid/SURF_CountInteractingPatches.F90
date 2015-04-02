@@ -67,7 +67,7 @@ SUBROUTINE CountInteractingPatches( regions,nInteract )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'CountInteractingPatches', &
-                         __FILE__ )
+                         'SURF_CountInteractingPatches.F90' )
 
 ! loop over all regions
 
@@ -117,6 +117,7 @@ END SUBROUTINE CountInteractingPatches
 ! Added utility (rflosurf) to write out surface grids for GenX.
 !
 !******************************************************************************
+
 
 
 

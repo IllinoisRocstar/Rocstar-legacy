@@ -102,7 +102,7 @@ SUBROUTINE ScaleGridSpeeds( region )
   global => region%global
 
   CALL RegisterFunction(global,'ScaleGridSpeeds',&
-  __FILE__)
+  'ScaleGridSpeeds.F90')
   
 ! *****************************************************************************
 ! Set pointers and variables
@@ -222,6 +222,7 @@ END SUBROUTINE ScaleGridSpeeds
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

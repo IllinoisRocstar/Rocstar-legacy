@@ -77,7 +77,7 @@ SUBROUTINE PEUL_ConvectiveFluxes( region ) ! PUBLIC
   RCSIdentString = '$RCSfile: PEUL_ConvectiveFluxes.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction( region%global,'PEUL_ConvectiveFluxes',&
-  __FILE__ )
+  'PEUL_ConvectiveFluxes.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -145,6 +145,7 @@ END SUBROUTINE PEUL_ConvectiveFluxes
 !
 !
 !******************************************************************************
+
 
 
 

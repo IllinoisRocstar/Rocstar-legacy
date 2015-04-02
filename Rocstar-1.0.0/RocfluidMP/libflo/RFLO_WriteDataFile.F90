@@ -68,7 +68,7 @@ SUBROUTINE RFLO_WriteDataFileInt( global,fileId,form,nDim1,nDim2,ivar )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_WriteDataFileInt',&
-  __FILE__ )
+  'RFLO_WriteDataFile.F90' )
 
 ! write
 
@@ -117,7 +117,7 @@ SUBROUTINE RFLO_WriteDataFileReal( global,fileId,form,nDim1,nDim2,var )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_WriteDataFileReal',&
-  __FILE__ )
+  'RFLO_WriteDataFile.F90' )
 
 ! write
 
@@ -170,6 +170,8 @@ END SUBROUTINE RFLO_WriteDataFileReal
 ! Grid & solution for all regions in one file.
 !
 !******************************************************************************
+
+
 
 
 

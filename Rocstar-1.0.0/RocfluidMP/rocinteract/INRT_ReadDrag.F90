@@ -94,7 +94,7 @@ SUBROUTINE INRT_ReadDrag( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'INRT_ReadDrag',&
-  __FILE__ )
+  'INRT_ReadDrag.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -272,6 +272,7 @@ END SUBROUTINE INRT_ReadDrag
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

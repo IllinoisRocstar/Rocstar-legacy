@@ -98,7 +98,7 @@ SUBROUTINE PLAG_WallBounce( region )
   global => region%global
     
   CALL RegisterFunction( global, 'PLAG_WallBounce',&
-  __FILE__ )
+  'PLAG_WallBounce.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -307,6 +307,7 @@ END SUBROUTINE PLAG_WallBounce
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

@@ -70,7 +70,7 @@ SUBROUTINE PLAG_UserInput( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global, 'PLAG_UserInput',&
-  __FILE__ )
+  'PLAG_UserInput.F90' )
 
 ! Initialize parameters -------------------------------------------------------
 
@@ -128,6 +128,7 @@ END SUBROUTINE PLAG_UserInput
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

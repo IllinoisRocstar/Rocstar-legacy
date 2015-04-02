@@ -75,7 +75,7 @@ INTEGER FUNCTION RFLU_GetCvLoc(global,fluidModel,var)
   RCSIdentString = '$RCSfile: RFLU_GetCvLoc.F90,v $ $Revision: 1.4 $'
 
   CALL RegisterFunction(global,'RFLU_GetCvLoc',&
-  __FILE__)
+  'RFLU_GetCvLoc.F90')
 
 ! ******************************************************************************
 ! Set variable info depending on fluid model
@@ -155,6 +155,7 @@ END FUNCTION RFLU_GetCvLoc
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -72,7 +72,7 @@ SUBROUTINE TURB_FloRansBcondNoslipWall( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_FloRansBcondNoslipWall',&
-  __FILE__ )
+  'TURB_floRansBcondNoslipWall.F90' )
 
 ! get dimensions and pointers
 
@@ -150,6 +150,7 @@ END SUBROUTINE TURB_FloRansBcondNoslipWall
 !
 !
 !******************************************************************************
+
 
 
 

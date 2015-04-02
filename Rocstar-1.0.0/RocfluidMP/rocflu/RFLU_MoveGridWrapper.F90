@@ -87,7 +87,7 @@ SUBROUTINE RFLU_MoveGridWrapper(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_MoveGridWrapper',&
-  __FILE__)
+  'RFLU_MoveGridWrapper.F90')
 
 ! ******************************************************************************
 ! Call appropriate grid motion routine
@@ -141,6 +141,7 @@ END SUBROUTINE RFLU_MoveGridWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -114,7 +114,7 @@ SUBROUTINE TURB_FloLesAverageFace( region,ijk,faceVar,avgFaceVar )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloLesAverageFace',&
-  __FILE__ )
+  'TURB_floLesAverageFace.F90' )
 
 ! get indices and pointers --------------------------------------------------
 
@@ -971,6 +971,7 @@ END SUBROUTINE TURB_FloLesAverageFace
 ! Install Rocturb
 !
 !******************************************************************************
+
 
 
 

@@ -63,7 +63,7 @@ SUBROUTINE PrintPrepInput( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PrintPrepInput',&
-  __FILE__ )
+  'PREP_PrintPrepInput.F90' )
 
 ! start -----------------------------------------------------------------------
 
@@ -167,6 +167,7 @@ END SUBROUTINE PrintPrepInput
 !
 !
 !******************************************************************************
+
 
 
 

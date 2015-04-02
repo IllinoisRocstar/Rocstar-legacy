@@ -70,7 +70,7 @@ SUBROUTINE TURB_ReadInputFile( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'TURB_ReadInputFile',&
-  __FILE__ )
+  'TURB_ReadInputFile.F90' )
 
 ! open file -------------------------------------------------------------------
 
@@ -159,6 +159,7 @@ END SUBROUTINE TURB_ReadInputFile
 ! Install Rocturb
 !
 !******************************************************************************
+
 
 
 

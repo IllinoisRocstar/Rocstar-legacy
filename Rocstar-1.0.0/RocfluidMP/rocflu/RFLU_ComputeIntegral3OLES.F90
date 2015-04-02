@@ -86,7 +86,7 @@ SUBROUTINE RFLU_ComputeIntegral3OLES(region)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_ComputeIntegral3OLES',&
-  __FILE__)
+  'RFLU_ComputeIntegral3OLES.F90')
 
   IF ( region%mixt%cvState == CV_MIXT_STATE_CONS ) THEN 
     CALL ErrorStop(global,ERR_CV_STATE_INVALID,__LINE__)
@@ -220,6 +220,7 @@ END SUBROUTINE RFLU_ComputeIntegral3OLES
 ! Added footer
 !
 !*******************************************************************************
+
 
 
 

@@ -64,7 +64,7 @@ SUBROUTINE RFLO_NewGrid( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_NewGrid',&
-  __FILE__ )
+  'RFLO_NewGrid.F90' )
 
 
 
@@ -102,6 +102,7 @@ END SUBROUTINE RFLO_NewGrid
 ! Added basic boundary conditions.
 !
 !******************************************************************************
+
 
 
 

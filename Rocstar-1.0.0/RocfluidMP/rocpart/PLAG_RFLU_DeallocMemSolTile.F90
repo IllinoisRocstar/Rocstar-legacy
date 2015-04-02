@@ -87,7 +87,7 @@ SUBROUTINE PLAG_RFLU_DeallocMemSolTile(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_DeallocMemSolTile',&
-  __FILE__)
+  'PLAG_RFLU_DeallocMemSolTile.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables 
@@ -155,6 +155,7 @@ END SUBROUTINE PLAG_RFLU_DeallocMemSolTile
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

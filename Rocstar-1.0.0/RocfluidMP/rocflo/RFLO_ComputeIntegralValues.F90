@@ -90,7 +90,7 @@ SUBROUTINE RFLO_ComputeIntegralValues(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLO_ComputeIntegralValues',&
-  __FILE__)
+  'RFLO_ComputeIntegralValues.F90')
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -206,6 +206,7 @@ END SUBROUTINE RFLO_ComputeIntegralValues
 !
 !
 !******************************************************************************
+
 
 
 

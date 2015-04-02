@@ -75,7 +75,7 @@ SUBROUTINE TURB_FloRansCentralDissipation( region )
   global => region%global
 
   CALL RegisterFunction( global,'TURB_FloRansCentralDissipation',&
-  __FILE__ )
+  'TURB_floRansCentralDissipation.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -281,6 +281,7 @@ END SUBROUTINE TURB_FloRansCentralDissipation
 !
 !
 !******************************************************************************
+
 
 
 

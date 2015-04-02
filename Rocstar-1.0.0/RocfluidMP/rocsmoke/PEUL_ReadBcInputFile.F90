@@ -74,7 +74,7 @@ SUBROUTINE PEUL_ReadBcInputFile( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PEUL_ReadBcInputFile',&
-  __FILE__ )
+  'PEUL_ReadBcInputFile.F90' )
 
 ! open file
 
@@ -149,6 +149,7 @@ END SUBROUTINE PEUL_ReadBcInputFile
 !
 !
 !******************************************************************************
+
 
 
 

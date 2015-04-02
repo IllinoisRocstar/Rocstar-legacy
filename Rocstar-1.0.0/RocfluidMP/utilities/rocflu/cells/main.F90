@@ -127,7 +127,7 @@ PROGRAM rflucells
   CALL RFLU_InitGlobal(casename,verbLevel,global)
 
   CALL RegisterFunction(global,'driver', &
-                        __FILE__)
+                        'main.F90')
 
 ! ******************************************************************************
 ! Print header and write version string
@@ -304,6 +304,7 @@ END PROGRAM rflucells
 ! Initial revision
 !
 !*******************************************************************************
+
 
 
 

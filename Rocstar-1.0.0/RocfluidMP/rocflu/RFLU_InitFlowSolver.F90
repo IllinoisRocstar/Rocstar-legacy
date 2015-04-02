@@ -272,7 +272,7 @@ SUBROUTINE RFLU_InitFlowSolver(casename,verbLevel,global,levels)
   CALL RFLU_SetModuleType(global,MODULE_TYPE_SOLVER)
 
   CALL RegisterFunction(global,'RFLU_InitFlowSolver',&
-  __FILE__)
+  'RFLU_InitFlowSolver.F90')
 
 #ifndef GENX
 #ifdef ROCPROF
@@ -1477,6 +1477,7 @@ END SUBROUTINE RFLU_InitFlowSolver
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

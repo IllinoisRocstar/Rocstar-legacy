@@ -91,7 +91,7 @@ SUBROUTINE RFLU_WriteIntegrals1245OLES(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_WriteIntegrals1245OLES',&
-  __FILE__)
+  'RFLU_WriteIntegrals1245OLES.F90')
   
   nCells = SIZE(pGrid%fsOLES,1)
 
@@ -327,6 +327,7 @@ END SUBROUTINE RFLU_WriteIntegrals1245OLES
 !   Initial revision
 !
 ! ******************************************************************************
+
 
 
 

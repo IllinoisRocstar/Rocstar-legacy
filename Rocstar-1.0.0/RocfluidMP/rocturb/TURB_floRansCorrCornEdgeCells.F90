@@ -80,7 +80,7 @@ SUBROUTINE TURB_FloRansCorrCornEdgeCells( region,patch,bcType )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_FloRansCorrCornEdgeCells', &
-                         __FILE__ )
+                         'TURB_floRansCorrCornEdgeCells.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -363,6 +363,7 @@ END SUBROUTINE TURB_FloRansCorrCornEdgeCells
 !
 !
 !******************************************************************************
+
 
 
 

@@ -99,7 +99,7 @@ SUBROUTINE TURB_LesCoefDynMixd( region,ibn,ien,ijk )
 
   global => region%global
   CALL RegisterFunction( global,'Turb_LesCoefDynMixd',&
-  __FILE__ )
+  'TURB_LesCoefDynMixd.F90' )
 
 ! get some parameters --------------------------------------------------------
 
@@ -240,6 +240,7 @@ END SUBROUTINE TURB_LesCoefDynMixd
 !
 !
 !******************************************************************************
+
 
 
 

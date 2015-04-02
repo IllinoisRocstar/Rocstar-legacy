@@ -60,7 +60,7 @@ SUBROUTINE WriteFluCellMap( global )
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'WriteFluCellMap',&
-  __FILE__)
+  'TFLU_WriteFluCellMap.F90')
 
 ! start ------------------------------------------------------------------------
 
@@ -143,6 +143,7 @@ END SUBROUTINE WriteFluCellMap
 !
 !
 ! ******************************************************************************
+
 
 
 

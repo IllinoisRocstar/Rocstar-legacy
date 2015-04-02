@@ -76,7 +76,7 @@ SUBROUTINE PLAG_AllocateMemoryTile( region )
   global => region%global
 
   CALL RegisterFunction( global, 'PLAG_AllocateMemoryTile',&
-  __FILE__ )
+  'PLAG_AllocateMemoryTile.F90' )
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -182,6 +182,7 @@ END SUBROUTINE PLAG_AllocateMemoryTile
 !
 !
 !******************************************************************************
+
 
 
 

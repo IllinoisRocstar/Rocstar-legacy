@@ -93,7 +93,7 @@ SUBROUTINE TURB_GetTvCell( region )
 
   global => region%global
   CALL RegisterFunction( global,'Turb_GetTvCell',&
-  __FILE__ )
+  'TURB_GetTvCell.F90' )
 
 ! get parameters ----------------------------------------------------
 
@@ -298,6 +298,7 @@ END SUBROUTINE TURB_GetTvCell
 ! Install Rocturb
 !
 !******************************************************************************
+
 
 
 

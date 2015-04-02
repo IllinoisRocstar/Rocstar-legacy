@@ -83,7 +83,7 @@ SUBROUTINE RFLO_EdgeDeformation( region,boundMoved,edgeMoved, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_EdgeDeformation',&
-  __FILE__ )
+  'RFLO_EdgeDeformation.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -237,6 +237,7 @@ END SUBROUTINE RFLO_EdgeDeformation
 ! Implemented grid deformation capability.
 !
 !******************************************************************************
+
 
 
 

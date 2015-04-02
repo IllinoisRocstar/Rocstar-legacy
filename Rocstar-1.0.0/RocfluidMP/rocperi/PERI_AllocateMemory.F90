@@ -80,7 +80,7 @@ SUBROUTINE PERI_AllocateMemory( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'PERI_AllocateMemory',&
-  __FILE__ )
+  'PERI_AllocateMemory.F90' )
 
 #ifdef RFLO
 
@@ -194,6 +194,7 @@ END SUBROUTINE PERI_AllocateMemory
 !
 !
 !******************************************************************************
+
 
 
 

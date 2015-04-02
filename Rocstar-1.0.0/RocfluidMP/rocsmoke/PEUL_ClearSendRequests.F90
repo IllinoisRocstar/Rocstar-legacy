@@ -83,7 +83,7 @@ SUBROUTINE PEUL_ClearSendRequests( regions,iReg ) ! PUBLIC
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PEUL_ClearSendRequests',&
-  __FILE__ )
+  'PEUL_ClearSendRequests.F90' )
 
 #ifdef MPI
 ! get dimensions --------------------------------------------------------------
@@ -164,6 +164,7 @@ END SUBROUTINE PEUL_ClearSendRequests
 ! Initial Import of MPI-based rocsmoke
 !
 !******************************************************************************
+
 
 
 

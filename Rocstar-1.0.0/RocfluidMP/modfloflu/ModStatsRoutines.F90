@@ -159,7 +159,7 @@ SUBROUTINE GetStatistics( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'GetStatistics',&
-  __FILE__ )
+  'ModStatsRoutines.F90' )
 
 ! perform data sampling --------------------------------------------------------
 
@@ -257,7 +257,7 @@ SUBROUTINE InitStatistics( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'InitStatistics',&
-  __FILE__ )
+  'ModStatsRoutines.F90' )
 
 ! check if the flow is unsteady -----------------------------------------------
 
@@ -480,7 +480,7 @@ SUBROUTINE StatDataSampling( region,fluidType )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'StatDataSampling',&
-  __FILE__ )
+  'ModStatsRoutines.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -679,7 +679,7 @@ SUBROUTINE StatMapping( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'StatMapping',&
-  __FILE__ )
+  'ModStatsRoutines.F90' )
 
 ! allocate mixture variables and set pointers ---------------------------------
 
@@ -888,7 +888,7 @@ SUBROUTINE StatTimeAccumulation( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'StatTimeAccumulation',&
-  __FILE__ )
+  'ModStatsRoutines.F90' )
 
 ! accumulate time steps used in time-weighted averaging process
 
@@ -956,7 +956,7 @@ SUBROUTINE StatWriteMP( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'StatWriteMP',&
-  __FILE__ )
+  'ModStatsRoutines.F90' )
 
 ! start -----------------------------------------------------------------------
 
@@ -1027,6 +1027,12 @@ END MODULE ModStatsRoutines
 !
 !
 ! ******************************************************************************
+
+
+
+
+
+
 
 
 

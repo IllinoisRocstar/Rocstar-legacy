@@ -88,7 +88,7 @@ SUBROUTINE RFLO_ViscousFluxPatch( region,patch,indxMu,indxTCo,tv )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ViscousFluxPatch',&
-  __FILE__ )
+  'RFLO_ViscousFluxPatch.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -306,6 +306,7 @@ END SUBROUTINE RFLO_ViscousFluxPatch
 ! made compliant with CODING RULE
 !
 !******************************************************************************
+
 
 
 

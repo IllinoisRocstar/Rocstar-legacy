@@ -78,7 +78,7 @@ SUBROUTINE PLAG_initSolution( iReg, region )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_InitSolution',&
-  __FILE__ )
+  'PLAG_InitSolution.F90' )
 
   IF ( global%myProcid == MASTERPROC   .AND. & 
        global%verbLevel > VERBOSE_NONE .AND. iReg == 1 ) THEN 
@@ -142,6 +142,7 @@ END SUBROUTINE PLAG_InitSolution
 !
 !
 !******************************************************************************
+
 
 
 

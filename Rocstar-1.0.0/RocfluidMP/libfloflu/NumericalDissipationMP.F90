@@ -74,7 +74,7 @@ SUBROUTINE NumericalDissipationMP( region )
   global => region%global
 
   CALL RegisterFunction( global,'NumericalDissipationMP',&
-  __FILE__ )
+  'NumericalDissipationMP.F90' )
 
 ! get parameters --------------------------------------------------------------
 
@@ -153,6 +153,7 @@ END SUBROUTINE NumericalDissipationMP
 ! Initial import for RocfluidMP
 !
 !******************************************************************************
+
 
 
 

@@ -102,7 +102,7 @@ SUBROUTINE UpdateTbcStochastic( region,tbc,dt )
   global => region%global
 
   CALL RegisterFunction( global,'UpdateTbcStochastic',&
-  __FILE__ )
+  'UpdateTbcStochastic.F90' )
 
   bvals  => tbc%bvals
   params => tbc%params
@@ -179,6 +179,7 @@ END SUBROUTINE UpdateTbcStochastic
 ! Added Time-dependent boundary conditions
 !
 !******************************************************************************
+
 
 
 

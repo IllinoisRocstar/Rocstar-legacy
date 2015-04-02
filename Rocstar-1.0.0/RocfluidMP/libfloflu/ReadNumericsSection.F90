@@ -83,7 +83,7 @@ SUBROUTINE ReadNumericsSection( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'ReadNumericsSection',&
-  __FILE__ )
+  'ReadNumericsSection.F90' )
 
 ! specify keywords and search for them
 
@@ -380,6 +380,7 @@ END SUBROUTINE ReadNumericsSection
 ! Added files to read user input.
 !
 !******************************************************************************
+
 
 
 

@@ -91,7 +91,7 @@ SUBROUTINE INRT_SetParticleTemp( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_SetParticleTemp',&
-  __FILE__ )
+  'INRT_SetParticleTemp.F90' )
 
 #ifdef PLAG
 ! begin -----------------------------------------------------------------------
@@ -218,6 +218,7 @@ END SUBROUTINE INRT_SetParticleTemp
 ! Added After Update interactions
 !
 !******************************************************************************
+
 
 
 

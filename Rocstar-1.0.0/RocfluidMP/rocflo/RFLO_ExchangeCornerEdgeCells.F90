@@ -77,7 +77,7 @@ SUBROUTINE RFLO_ExchangeCornerEdgeCells( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RFLO_ExchangeCornerEdgeCells',&
-  __FILE__ )
+  'RFLO_ExchangeCornerEdgeCells.F90' )
 
 ! get dimensions and pointers
 
@@ -227,6 +227,7 @@ END SUBROUTINE RFLO_ExchangeCornerEdgeCells
 ! Added treatment of edge & corner cells.
 !
 !******************************************************************************
+
 
 
 

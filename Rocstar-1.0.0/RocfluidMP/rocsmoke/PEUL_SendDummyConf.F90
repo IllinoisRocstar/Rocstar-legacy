@@ -91,7 +91,7 @@ SUBROUTINE PEUL_SendDummyConf( region,regionSrc,patch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_SendDummyConf',&
-  __FILE__ )
+  'PEUL_SendDummyConf.F90' )
 
 ! check if the source region is active ----------------------------------------
 
@@ -394,6 +394,7 @@ END SUBROUTINE PEUL_SendDummyConf
 ! Initial Import of MPI-based rocsmoke
 !
 !******************************************************************************
+
 
 
 

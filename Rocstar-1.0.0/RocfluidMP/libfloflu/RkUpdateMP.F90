@@ -115,7 +115,7 @@ SUBROUTINE RKUpdateMP( region,iReg,istage )
   global => region%global
 
   CALL RegisterFunction( global,'RKUpdateMP',&
-  __FILE__ )
+  'RkUpdateMP.F90' )
 
 ! set flags ===================================================================
 
@@ -315,6 +315,7 @@ END SUBROUTINE RKUpdateMP
 ! Initial import for RocfluidMP
 !
 !******************************************************************************
+
 
 
 

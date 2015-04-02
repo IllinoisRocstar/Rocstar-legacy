@@ -149,7 +149,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_CloseSurfStats',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
              
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -233,7 +233,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_CreateSurfStats',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
     
     pGrid => pRegion%grid
         
@@ -341,7 +341,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
  
     CALL RegisterFunction(global,'PLAG_CreateSurfStatsKernel',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     nBFaces = SIZE(pStatsPlag,DIM=1)   
 
@@ -429,7 +429,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_DestroySurfStats',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
     
     pGrid => pRegion%grid
         
@@ -512,7 +512,7 @@ MODULE PLAG_ModSurfStats
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'PLAG_DestroySurfStatsKernel',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     nBFaces = SIZE(pStatsPlag,DIM=1)        
 
@@ -602,7 +602,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_GatherSurfStats',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     nCont = pRegion%plagInput%nCont
 
@@ -735,7 +735,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
  
     CALL RegisterFunction(global,'PLAG_InitSurfStats',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     nBFaces = SIZE(pStatsPlag,DIM=1)          
 
@@ -821,7 +821,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_DestroySurfStats',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
     
     pGrid => pRegion%grid
 
@@ -908,7 +908,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_OpenSurfStatsASCII',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
          
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1029,7 +1029,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_OpenSurfStatsBinary',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
          
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1146,7 +1146,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_ReadSurfStatsASCII',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1304,7 +1304,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_ReadSurfStatsBinary',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1463,7 +1463,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_ReadSurfStatsKernelASCII',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     iFile = IF_PLAG_SURF_STATS
 
@@ -1555,7 +1555,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_ReadSurfStatsKernelBinary',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     iFile = IF_PLAG_SURF_STATS
 
@@ -1648,7 +1648,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_ReadSurfStatsWrapper',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
     
     SELECT CASE(global%solutFormat)
       CASE( FORMAT_ASCII )
@@ -1745,7 +1745,7 @@ MODULE PLAG_ModSurfStats
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'PLAG_SetBinMethod',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
 ! ******************************************************************************
 !   Determine bin index
@@ -1818,7 +1818,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_WriteSurfStatsASCII',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1937,7 +1937,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_WriteSurfStatsBinary',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -2060,7 +2060,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_WriteSurfStatsKernelASCII',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     iFile = IF_PLAG_SURF_STATS
 
@@ -2153,7 +2153,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_WriteSurfStatsKernelBinary',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
 
     iFile = IF_PLAG_SURF_STATS 
 
@@ -2238,7 +2238,7 @@ MODULE PLAG_ModSurfStats
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_WriteSurfStatsWrapper',&
-  __FILE__)
+  'PLAG_ModSurfStats.F90')
     
     SELECT CASE( global%solutFormat ) 
       CASE( FORMAT_ASCII )
@@ -2313,6 +2313,27 @@ END MODULE PLAG_ModSurfStats
 ! Initial import of surface statistics module
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

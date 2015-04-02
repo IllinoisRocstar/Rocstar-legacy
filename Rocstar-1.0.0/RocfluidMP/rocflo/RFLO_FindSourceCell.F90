@@ -86,7 +86,7 @@ SUBROUTINE RFLO_FindSourceCell( regions,iReg,iLev,ic,jc,kc,icell, &
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_FindSourceCell',&
-  __FILE__ )
+  'RFLO_FindSourceCell.F90' )
 
   found = .false.
 
@@ -358,7 +358,7 @@ SUBROUTINE RFLO_SourceCell( region,regionSrc,patch,patchSrc, &
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_SourceCell',&
-  __FILE__ )
+  'RFLO_FindSourceCell.F90' )
 
 ! get dimensions
 
@@ -433,6 +433,8 @@ END SUBROUTINE RFLO_SourceCell
 ! Added treatment of edge and corner cells for one processor.
 !
 !******************************************************************************
+
+
 
 
 

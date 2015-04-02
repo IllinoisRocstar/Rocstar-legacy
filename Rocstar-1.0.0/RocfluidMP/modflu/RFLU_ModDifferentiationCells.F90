@@ -130,7 +130,7 @@ MODULE RFLU_ModDifferentiationCells
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradCells_1D',&
-  __FILE__ )
+  'RFLU_ModDifferentiationCells.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::ComputeGradCells_1D")
@@ -363,7 +363,7 @@ MODULE RFLU_ModDifferentiationCells
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradCells_2D',&
-  __FILE__ )
+  'RFLU_ModDifferentiationCells.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::ComputeGradCells_2D")
@@ -536,7 +536,7 @@ MODULE RFLU_ModDifferentiationCells
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradCells_3D',&
-  __FILE__ )
+  'RFLU_ModDifferentiationCells.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::ComputeGradCells_3D")
@@ -725,7 +725,7 @@ MODULE RFLU_ModDifferentiationCells
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradCellsFast_2D',&
-  __FILE__ )
+  'RFLU_ModDifferentiationCells.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::ComputeGradCellsFast_2D")
@@ -958,7 +958,7 @@ MODULE RFLU_ModDifferentiationCells
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradCellsFast_3D',&
-  __FILE__ )
+  'RFLU_ModDifferentiationCells.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::ComputeGradCellsFast_3D")
@@ -1221,7 +1221,7 @@ MODULE RFLU_ModDifferentiationCells
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradCellsConstr',&
-  __FILE__)
+  'RFLU_ModDifferentiationCells.F90')
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::ComputeGradCellsConstr")
@@ -1642,7 +1642,7 @@ MODULE RFLU_ModDifferentiationCells
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradCellsWrapper',&
-  __FILE__ )
+  'RFLU_ModDifferentiationCells.F90' )
 
 ! ******************************************************************************    
 !   Call gradient routines
@@ -1737,6 +1737,13 @@ END MODULE RFLU_ModDifferentiationCells
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
 
 
 

@@ -85,7 +85,7 @@ SUBROUTINE TURB_RansEmsInit( region, istage )
   global => region%global
 
   CALL RegisterFunction( global,'TURB_RansEmsInit',&
-  __FILE__ )
+  'TURB_RansEmsInit.F90' )
   
 ! get parameters, dimensions and pointers -------------------------------------
 
@@ -183,6 +183,7 @@ END SUBROUTINE TURB_RansEmsInit
 !
 !
 !******************************************************************************
+
 
 
 

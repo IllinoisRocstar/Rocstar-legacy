@@ -61,7 +61,7 @@ SUBROUTINE GenxWriteRocinout( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'GenxWriteRocinout',&
-  __FILE__ )
+  'PREP_GenxWriteRocinout.F90' )
 
 ! open files and write mapping info ------------------------------------------
 
@@ -198,6 +198,7 @@ END SUBROUTINE GenxWriteRocinout
 !
 !
 !******************************************************************************
+
 
 
 

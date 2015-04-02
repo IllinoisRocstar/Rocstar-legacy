@@ -90,7 +90,7 @@ SUBROUTINE TURB_FloWlmMetric( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloWlmMetric',&
-  __FILE__ )
+  'TURB_floWlmMetric.F90' )
 
 ! get dimensions, parameters and pointers -------------------------------------
 
@@ -333,6 +333,7 @@ END SUBROUTINE TURB_FloWlmMetric
 !
 !
 !******************************************************************************
+
 
 
 

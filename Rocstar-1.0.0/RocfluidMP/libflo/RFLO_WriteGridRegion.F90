@@ -89,7 +89,7 @@ SUBROUTINE RFLO_WriteGridRegion( iReg,regions )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RFLO_WriteGridRegion',&
-  __FILE__ )
+  'RFLO_WriteGridRegion.F90' )
 
 ! allocate fixed-size temporary data arrays -----------------------------------
 
@@ -255,6 +255,7 @@ END SUBROUTINE RFLO_WriteGridRegion
 ! Grid & solution for all regions in one file.
 !
 !******************************************************************************
+
 
 
 

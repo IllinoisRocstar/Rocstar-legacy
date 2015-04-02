@@ -75,7 +75,7 @@ SUBROUTINE RFLO_ExtrapIntCellScal( region,fVec )
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_ExtrapIntCellScal',&
-  __FILE__ )
+  'RFLO_ExtrapIntCellScal.F90' )
 
 ! get indices ---------------------------------------------------------------
 
@@ -200,6 +200,7 @@ END SUBROUTINE RFLO_ExtrapIntCellScal
 !
 !
 !******************************************************************************
+
 
 
 

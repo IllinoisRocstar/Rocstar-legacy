@@ -128,7 +128,7 @@ SUBROUTINE RFLU_AllocateMemoryGSpeeds(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemoryGSpeeds',&
-  __FILE__)
+  'RFLU_ModAllocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -305,7 +305,7 @@ SUBROUTINE RFLU_AllocateMemorySol(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemorySol',&
-  __FILE__)
+  'RFLU_ModAllocateMemory.F90')
 
 ! ******************************************************************************
 ! Allocate memory
@@ -374,7 +374,7 @@ SUBROUTINE RFLU_AllocateMemorySolCv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemorySolCv',&
-  __FILE__)
+  'RFLU_ModAllocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -456,7 +456,7 @@ SUBROUTINE RFLU_AllocateMemorySolDv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemorySolDv',&
-  __FILE__)
+  'RFLU_ModAllocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -532,7 +532,7 @@ SUBROUTINE RFLU_AllocateMemorySolGv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemorySolGv',&
-  __FILE__)
+  'RFLU_ModAllocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -612,7 +612,7 @@ SUBROUTINE RFLU_AllocateMemorySolTv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemorySolTv',&
-  __FILE__)
+  'RFLU_ModAllocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -696,7 +696,7 @@ SUBROUTINE RFLU_AllocateMemoryTStep(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemoryTStep',&
-  __FILE__)
+  'RFLU_ModAllocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -1088,7 +1088,7 @@ SUBROUTINE RFLU_AllocateMemoryTStep_C(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemoryTStep_C',&
-  __FILE__)
+  'RFLU_ModAllocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -1198,7 +1198,7 @@ SUBROUTINE RFLU_AllocateMemoryTStep_I(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemoryTStep_I',&
-  __FILE__)
+  'RFLU_ModAllocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -1305,6 +1305,15 @@ END MODULE RFLU_ModAllocateMemory
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
 
 
 

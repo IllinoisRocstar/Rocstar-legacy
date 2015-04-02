@@ -82,7 +82,7 @@ SUBROUTINE RFLU_GetDeformation(region)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_GetDeformation',&
-  __FILE__)
+  'RFLU_GetDeformation.F90')
   
 ! ******************************************************************************
 ! Loop over ALL boundaries 
@@ -177,6 +177,7 @@ END SUBROUTINE RFLU_GetDeformation
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

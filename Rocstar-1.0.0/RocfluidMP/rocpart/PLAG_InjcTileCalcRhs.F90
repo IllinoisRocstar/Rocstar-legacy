@@ -88,7 +88,7 @@ SUBROUTINE PLAG_InjcTileCalcRhs( region )
   global => region%global
     
   CALL RegisterFunction( global, 'PLAG_InjcTileCalcRhs',&
-  __FILE__ )
+  'PLAG_InjcTileCalcRhs.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -253,6 +253,7 @@ END SUBROUTINE PLAG_InjcTileCalcRhs
 !
 !
 !******************************************************************************
+
 
 
 

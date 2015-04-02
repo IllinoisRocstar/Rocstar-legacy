@@ -93,7 +93,7 @@ SUBROUTINE RFLU_CheckValidity(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CheckValidity',&
-  __FILE__)
+  'RFLU_CheckValidity.F90')
 
   nLocs = 0
 
@@ -223,6 +223,7 @@ END SUBROUTINE RFLU_CheckValidity
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

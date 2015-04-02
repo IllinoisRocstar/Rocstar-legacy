@@ -92,7 +92,7 @@ SUBROUTINE RFLO_ExchangeDnodeCopy( region,regionSrc,patch,patchSrc, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ExchangeDnodeCopy',&
-  __FILE__ )
+  'RFLO_ExchangeDnodeCopy.F90' )
 
 ! check if the source region is active
 
@@ -352,6 +352,7 @@ END SUBROUTINE RFLO_ExchangeDnodeCopy
 ! Improved mesh motion algorithm - node movement exchaged between blocks.
 !
 !******************************************************************************
+
 
 
 

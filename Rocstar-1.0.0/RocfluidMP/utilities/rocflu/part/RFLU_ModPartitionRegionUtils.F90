@@ -127,7 +127,7 @@ MODULE RFLU_ModPartitionRegionUtils
     global => pRegionSerial%global
 
     CALL RegisterFunction(global,'RFLU_PART_AddVirtualCellsInv1',&
-  __FILE__)
+  'RFLU_ModPartitionRegionUtils.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -275,7 +275,7 @@ MODULE RFLU_ModPartitionRegionUtils
     global => pRegionSerial%global
 
     CALL RegisterFunction(global,'RFLU_PART_AddVirtualCellsInv2',&
-  __FILE__)
+  'RFLU_ModPartitionRegionUtils.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -661,6 +661,8 @@ END MODULE RFLU_ModPartitionRegionUtils
 ! Initial revision
 !
 ! ******************************************************************************
+
+
 
 
 

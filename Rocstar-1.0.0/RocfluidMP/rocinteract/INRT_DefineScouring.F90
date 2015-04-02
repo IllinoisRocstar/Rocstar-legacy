@@ -93,7 +93,7 @@ SUBROUTINE INRT_DefineScouring( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_DefineScouring',&
-  __FILE__ )
+  'INRT_DefineScouring.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -208,6 +208,7 @@ END SUBROUTINE INRT_DefineScouring
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

@@ -83,7 +83,7 @@ SUBROUTINE PLAG_BufferSizeRecv( regions, iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_BufferSizeRecv',&
-  __FILE__ )
+  'PLAG_BufferSizeRecv.F90' )
             
 ! receive buffer size from source to destination region 
   
@@ -210,6 +210,7 @@ END SUBROUTINE PLAG_BufferSizeRecv
 ! Initial import for MPI
 !
 !******************************************************************************
+
 
 
 

@@ -72,7 +72,7 @@ SUBROUTINE RFLO_UserInput( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_UserInput',&
-  __FILE__ )
+  'RFLO_UserInput.F90' )
 
 ! initialize parameters
 
@@ -206,6 +206,7 @@ END SUBROUTINE RFLO_UserInput
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
 
 
 

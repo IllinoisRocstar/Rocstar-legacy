@@ -99,7 +99,7 @@ SUBROUTINE ConvectiveFluxesMP( region )
   global => region%global
 
   CALL RegisterFunction( global,'ConvectiveFluxesMP',&
-  __FILE__ )
+  'ConvectiveFluxesMP.F90' )
 
 ! *****************************************************************************
 ! Get parameters
@@ -258,6 +258,7 @@ END SUBROUTINE ConvectiveFluxesMP
 ! Initial import for RocfluidMP
 !
 !******************************************************************************
+
 
 
 

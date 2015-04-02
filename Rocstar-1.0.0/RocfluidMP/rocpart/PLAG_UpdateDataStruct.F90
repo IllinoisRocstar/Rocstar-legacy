@@ -109,7 +109,7 @@ SUBROUTINE PLAG_UpdateDataStruct(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_UpdateDataStruct',&
-  __FILE__)
+  'PLAG_UpdateDataStruct.F90')
   
 ! ******************************************************************************
 ! Set variables and pointers
@@ -321,6 +321,7 @@ END SUBROUTINE PLAG_UpdateDataStruct
 ! Initial import for plag datastructure update
 !
 ! ******************************************************************************
+
 
 
 

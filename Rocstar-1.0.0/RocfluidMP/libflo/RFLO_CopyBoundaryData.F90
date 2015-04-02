@@ -62,7 +62,7 @@ SUBROUTINE RFLO_CopyBoundaryData( global,patchPrev,patch )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_CopyBoundaryData',&
-  __FILE__ )
+  'RFLO_CopyBoundaryData.F90' )
 
 ! copy switches
 
@@ -161,6 +161,7 @@ END SUBROUTINE RFLO_CopyBoundaryData
 ! Added files to read user input.
 !
 !******************************************************************************
+
 
 
 

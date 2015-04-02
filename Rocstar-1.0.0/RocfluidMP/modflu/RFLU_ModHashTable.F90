@@ -154,7 +154,7 @@ MODULE RFLU_ModHashTable
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_CreateHashTable',&
-  __FILE__)
+  'RFLU_ModHashTable.F90')
     
 ! ******************************************************************************
 !   Find nearest prime
@@ -232,7 +232,7 @@ MODULE RFLU_ModHashTable
 ! ******************************************************************************  
 
     CALL RegisterFunction(global,'RFLU_DestroyHashTable',&
-  __FILE__)
+  'RFLU_ModHashTable.F90')
 
 ! ******************************************************************************
 !   Deallocate memory
@@ -500,7 +500,7 @@ MODULE RFLU_ModHashTable
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_HashEdge',&
-  __FILE__)
+  'RFLU_ModHashTable.F90')
     
 ! ******************************************************************************
 !   Construct address from key based on sorted edge vertices
@@ -617,7 +617,7 @@ MODULE RFLU_ModHashTable
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_HashFace',&
-  __FILE__)
+  'RFLU_ModHashTable.F90')
     
 ! ******************************************************************************
 !   Construct address from key based on sorted face vertices
@@ -865,7 +865,7 @@ MODULE RFLU_ModHashTable
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_HashVertex',&
-  __FILE__)
+  'RFLU_ModHashTable.F90')
 
     IF ( PRESENT(errorFlag) ) THEN 
       errorFlag = ERR_NONE
@@ -990,7 +990,7 @@ MODULE RFLU_ModHashTable
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_HashVertexFancy',&
-  __FILE__)
+  'RFLU_ModHashTable.F90')
     
 ! ******************************************************************************
 !   Construct address from key
@@ -1110,7 +1110,7 @@ MODULE RFLU_ModHashTable
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_UnHashBFace',&
-  __FILE__)
+  'RFLU_ModHashTable.F90')
     
 ! ******************************************************************************
 !   Construct address from key based on sorted face vertices
@@ -1301,6 +1301,13 @@ END MODULE RFLU_ModHashTable
 ! Initial revision                                                             
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
 
 
 

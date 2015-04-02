@@ -176,7 +176,7 @@ SUBROUTINE rfluinit(caseString,verbLevel)
   CALL RFLU_InitGlobal(casename,verbLevel,MPI_COMM_WORLD,global)
 
   CALL RegisterFunction(global,'rfluinit', & 
-                        __FILE__)
+                        'rfluinit.F90')
 
   CALL RFLU_SetModuleType(global,MODULE_TYPE_INIT)
 
@@ -995,6 +995,7 @@ END SUBROUTINE rfluinit
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -78,7 +78,7 @@ SUBROUTINE RADI_FloFlimCentFluxPatch( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FloFlimCentFluxPatch',&
-  __FILE__ )
+  'RADI_floFlimCentFluxPatch.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -277,6 +277,7 @@ END SUBROUTINE RADI_FloFlimCentFluxPatch
 !
 !
 !******************************************************************************
+
 
 
 

@@ -142,7 +142,7 @@ MODULE RFLU_ModStencilsUtils
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_AddBFaces',&
-  __FILE__)     
+  'RFLU_ModStencilsUtils.F90')     
 
 ! ******************************************************************************
 !   Build sorted bf2c lists (and sorting keys) so can be searched later on
@@ -336,7 +336,7 @@ MODULE RFLU_ModStencilsUtils
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_AddCellLayer_1D',&
-  __FILE__)
+  'RFLU_ModStencilsUtils.F90')
 
 ! ******************************************************************************
 !   Add layer of cells to existing stencil in 1D, store in separate array
@@ -518,7 +518,7 @@ MODULE RFLU_ModStencilsUtils
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_AddCellLayer_1D_G',&
-  __FILE__)
+  'RFLU_ModStencilsUtils.F90')
 
 ! ******************************************************************************
 !   Add layer of cells to existing stencil, store in separate array
@@ -697,7 +697,7 @@ MODULE RFLU_ModStencilsUtils
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_AddCellLayer',&
-  __FILE__)
+  'RFLU_ModStencilsUtils.F90')
 
 ! ******************************************************************************
 !   Add layer of cells to existing stencil, store in separate array
@@ -981,7 +981,7 @@ MODULE RFLU_ModStencilsUtils
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_AddFaceVertNeighbs',&
-  __FILE__)
+  'RFLU_ModStencilsUtils.F90')
 
 ! ******************************************************************************
 !   Add layer of cells to existing stencil, store in separate array
@@ -1091,7 +1091,7 @@ MODULE RFLU_ModStencilsUtils
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_ComputeStencilSize',&
-  __FILE__)
+  'RFLU_ModStencilsUtils.F90')
 
 ! ******************************************************************************
 !   Compute stencil size
@@ -1203,7 +1203,7 @@ MODULE RFLU_ModStencilsUtils
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_ComputeStencilWeights',&
-  __FILE__)
+  'RFLU_ModStencilsUtils.F90')
 
     wtsNormMin = 1.0_RFREAL 
     wtsNormMax = 10.0_RFREAL 
@@ -1522,7 +1522,7 @@ MODULE RFLU_ModStencilsUtils
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_SortBFaces',&
-  __FILE__)     
+  'RFLU_ModStencilsUtils.F90')     
 
 ! ******************************************************************************
 !   Back up data structure so can copy later on
@@ -1628,6 +1628,14 @@ END MODULE RFLU_ModStencilsUtils
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
 
 
 

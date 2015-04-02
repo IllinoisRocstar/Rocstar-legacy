@@ -100,7 +100,7 @@ SUBROUTINE PLAG_RFLU_InjcTileCalcRhs( pRegion )
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_InjcTileCalcRhs',&
-  __FILE__)
+  'PLAG_RFLU_InjcTileCalcRhs.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables 
@@ -296,6 +296,7 @@ END SUBROUTINE PLAG_RFLU_InjcTileCalcRhs
 ! Initial import of RFLU-specific injection routines
 !
 !******************************************************************************
+
 
 
 

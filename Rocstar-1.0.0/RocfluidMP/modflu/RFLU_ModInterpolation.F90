@@ -133,7 +133,7 @@ MODULE RFLU_ModInterpolation
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_InterpCells2Face',&
-  __FILE__)
+  'RFLU_ModInterpolation.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -361,7 +361,7 @@ MODULE RFLU_ModInterpolation
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_InterpCells2FacePatch',&
-  __FILE__)
+  'RFLU_ModInterpolation.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -551,7 +551,7 @@ MODULE RFLU_ModInterpolation
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_InterpCells2Faces',&
-  __FILE__)
+  'RFLU_ModInterpolation.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -749,7 +749,7 @@ MODULE RFLU_ModInterpolation
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_InterpCells2Verts',&
-  __FILE__)
+  'RFLU_ModInterpolation.F90')
 
     IF ( global%myProcid == MASTERPROC ) THEN 
       IF ( global%verbLevel > VERBOSE_NONE ) THEN
@@ -914,7 +914,7 @@ MODULE RFLU_ModInterpolation
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_InterpSimpleCells2Verts',&
-  __FILE__)
+  'RFLU_ModInterpolation.F90')
 
     IF ( global%myProcid == MASTERPROC ) THEN 
       IF ( global%verbLevel > VERBOSE_NONE ) THEN
@@ -1062,6 +1062,11 @@ END MODULE RFLU_ModInterpolation
 ! Initial revision                                                                       
 !
 ! ******************************************************************************
+
+
+
+
+
 
 
 

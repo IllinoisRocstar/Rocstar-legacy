@@ -87,7 +87,7 @@ SUBROUTINE RFLU_AllocMemVertWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocMemVertWrapper', &
-                        __FILE__)
+                        'RFLU_AllocMemVertWrapper.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -144,6 +144,7 @@ END SUBROUTINE RFLU_AllocMemVertWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

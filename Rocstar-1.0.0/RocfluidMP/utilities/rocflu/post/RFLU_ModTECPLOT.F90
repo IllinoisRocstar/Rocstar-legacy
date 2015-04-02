@@ -172,7 +172,7 @@ SUBROUTINE RFLU_TEC_BuildDataFieldSurf(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_BuildDataFieldSurf', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -701,7 +701,7 @@ SUBROUTINE RFLU_TEC_BuildDataFieldVol(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_BuildDataFieldVol', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -1198,7 +1198,7 @@ SUBROUTINE RFLU_TEC_BuildDataPatch(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_BuildDataPatch', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -1447,7 +1447,7 @@ SUBROUTINE RFLU_TEC_BuildDataPatchStats(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_BuildDataPatchStats', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -1693,7 +1693,7 @@ SUBROUTINE RFLU_TEC_BuildHeaderField(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_BuildHeaderField', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -1829,7 +1829,7 @@ SUBROUTINE RFLU_TEC_BuildHeaderPatch(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_BuildHeaderPatch', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -1921,7 +1921,7 @@ SUBROUTINE RFLU_TEC_BuildHeaderPatchStats(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_BuildHeaderPatchStats', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -2025,7 +2025,7 @@ SUBROUTINE RFLU_TEC_CloseFileField(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_TEC_CloseFileField', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing TECPLOT field file...'
@@ -2114,7 +2114,7 @@ SUBROUTINE RFLU_TEC_CloseFilePatch(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_TEC_CloseFilePatch', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing TECPLOT patch file...'
@@ -2202,7 +2202,7 @@ SUBROUTINE RFLU_TEC_CloseFilePatchStats(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_TEC_CloseFilePatchStats', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -2287,7 +2287,7 @@ SUBROUTINE RFLU_TEC_CloseFilePnt(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_TEC_CloseFilePnt', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing TECPLOT point file...'
@@ -2368,7 +2368,7 @@ SUBROUTINE RFLU_TEC_DestroyDataFieldSurf(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_DestroyDataFieldSurf', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -2461,7 +2461,7 @@ SUBROUTINE RFLU_TEC_DestroyDataFieldVol(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_DestroyDataFieldVol', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -2556,7 +2556,7 @@ SUBROUTINE RFLU_TEC_DestroyDataPatch(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_DestroyDataPatch', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying TECPLOT patch data...'
@@ -2641,7 +2641,7 @@ SUBROUTINE RFLU_TEC_Init(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_TEC_Init', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initializing TECPLOT...'
@@ -2723,7 +2723,7 @@ SUBROUTINE RFLU_TEC_OpenFileField(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_OpenFileField', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Opening TECPLOT field file...'
@@ -2840,7 +2840,7 @@ SUBROUTINE RFLU_TEC_OpenFilePatch(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_OpenFilePatch', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Opening TECPLOT patch file...'
@@ -2959,7 +2959,7 @@ SUBROUTINE RFLU_TEC_OpenFilePatchStats(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_OpenFilePatchStats', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -3077,7 +3077,7 @@ SUBROUTINE RFLU_TEC_OpenFilePnt(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_OpenFilePnt', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Opening TECPLOT point file...'
@@ -3179,7 +3179,7 @@ SUBROUTINE RFLU_TEC_WriteFileFieldSurf(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_WriteFileFieldSurf', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -3294,7 +3294,7 @@ SUBROUTINE RFLU_TEC_WriteFileFieldVol(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_WriteFileFieldVol', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -3488,7 +3488,7 @@ SUBROUTINE RFLU_TEC_WriteFilePatch(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_WriteFilePatch', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing data to TECPLOT patch file...'
@@ -3580,7 +3580,7 @@ SUBROUTINE RFLU_TEC_WriteFilePnt(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TEC_WriteFilePnt', &
-                        __FILE__)
+                        'RFLU_ModTECPLOT.F90')
 
 #ifdef PLAG
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
@@ -3749,12 +3749,36 @@ END MODULE RFLU_ModTECPLOT
 !
 ! Revision 1.2  2003/03/20 20:07:19  haselbac
 ! Modified RegFun call to avoid probs with
-! long __FILE__ names
+! long 'RFLU_ModTECPLOT.F90' names
 !
 ! Revision 1.1  2003/03/15 19:16:54  haselbac
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

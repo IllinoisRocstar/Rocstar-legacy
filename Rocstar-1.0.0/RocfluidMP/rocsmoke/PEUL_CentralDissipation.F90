@@ -79,7 +79,7 @@ SUBROUTINE PEUL_CentralDissipation( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_CentralDissipation',&
-  __FILE__ )
+  'PEUL_CentralDissipation.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -249,6 +249,7 @@ END SUBROUTINE PEUL_CentralDissipation
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

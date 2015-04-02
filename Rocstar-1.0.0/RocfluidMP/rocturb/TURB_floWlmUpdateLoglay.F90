@@ -94,7 +94,7 @@ SUBROUTINE TURB_FloWlmUpdateLoglay( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloWlmUpdateLoglay',&
-  __FILE__ )
+  'TURB_floWlmUpdateLoglay.F90' )
 
 ! get dimensions and parameters -----------------------------------------------
 
@@ -394,6 +394,7 @@ END SUBROUTINE TURB_FloWlmUpdateLoglay
 !
 !
 !******************************************************************************
+
 
 
 

@@ -82,7 +82,7 @@ SUBROUTINE PEUL_EnforcePositivity( region )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_EnforcePositivity',&
-  __FILE__ )
+  'PEUL_EnforcePositivity.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -236,6 +236,7 @@ END SUBROUTINE PEUL_EnforcePositivity
 ! Added clipping options
 !
 !******************************************************************************
+
 
 
 

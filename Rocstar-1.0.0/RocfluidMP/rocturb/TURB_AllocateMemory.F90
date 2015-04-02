@@ -91,7 +91,7 @@ SUBROUTINE TURB_AllocateMemory( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'TURB_AllocateMemory',&
-  __FILE__ )
+  'TURB_AllocateMemory.F90' )
 
 ! get variables ---------------------------------------------------------------
 
@@ -635,6 +635,7 @@ END SUBROUTINE TURB_AllocateMemory
 !
 !
 !******************************************************************************
+
 
 
 

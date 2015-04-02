@@ -90,7 +90,7 @@ SUBROUTINE RFLU_ScalarCheckPositivity(pRegion,moduleType,nVarScal,cvScal)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ScalarCheckPositivity',&
-  __FILE__)
+  'RFLU_ScalarCheckPositivity.F90')
 
 ! *****************************************************************************
 ! Set pointers and variables
@@ -197,6 +197,7 @@ END SUBROUTINE RFLU_ScalarCheckPositivity
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

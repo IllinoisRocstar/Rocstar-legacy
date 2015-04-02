@@ -78,7 +78,7 @@ SUBROUTINE RFLO_CalcGradDummy( region,patch,iBegV,iEndV,iBegG,iEndG, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcGradDummy',&
-       __FILE__ )
+       'RFLO_CalcGradDummy.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -200,6 +200,7 @@ END SUBROUTINE RFLO_CalcGradDummy
 ! made compliant with CODING RULE
 !
 !******************************************************************************
+
 
 
 

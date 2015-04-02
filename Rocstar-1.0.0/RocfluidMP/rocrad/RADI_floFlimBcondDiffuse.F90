@@ -71,7 +71,7 @@ SUBROUTINE RADI_FloFlimBcondDiffuse( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FloFlimBcondDiffuse',&
-  __FILE__ )
+  'RADI_floFlimBcondDiffuse.F90' )
 
 ! get dimensions and pointers
 
@@ -131,6 +131,7 @@ END SUBROUTINE RADI_FloFlimBcondDiffuse
 !
 !
 !******************************************************************************
+
 
 
 

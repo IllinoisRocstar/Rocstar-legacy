@@ -84,7 +84,7 @@ SUBROUTINE RFLU_AllocateMemory(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemory',&
-  __FILE__)
+  'RFLU_AllocateMemory.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -219,6 +219,7 @@ END SUBROUTINE RFLU_AllocateMemory
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

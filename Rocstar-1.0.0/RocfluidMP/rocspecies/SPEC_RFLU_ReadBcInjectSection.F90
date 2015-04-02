@@ -93,7 +93,7 @@ SUBROUTINE SPEC_RFLU_ReadBcInjectSection(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_ReadBcInjectSection',&
-  __FILE__)
+  'SPEC_RFLU_ReadBcInjectSection.F90')
 
 ! *****************************************************************************
 ! Allocate memory 
@@ -306,6 +306,7 @@ END SUBROUTINE SPEC_RFLU_ReadBcInjectSection
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

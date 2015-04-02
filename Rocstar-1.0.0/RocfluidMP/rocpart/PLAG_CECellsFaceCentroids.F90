@@ -104,7 +104,7 @@ SUBROUTINE PLAG_CECellsFaceCentroids( regions, iReg )
   global => regions(iReg)%global
     
   CALL RegisterFunction( global, 'PLAG_CECellsFaceCentroids',&
-  __FILE__ )
+  'PLAG_CECellsFaceCentroids.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -378,6 +378,7 @@ END SUBROUTINE PLAG_CECellsFaceCentroids
 ! Initial import of Corner-Edge cells Infrastructure
 !
 !******************************************************************************
+
 
 
 

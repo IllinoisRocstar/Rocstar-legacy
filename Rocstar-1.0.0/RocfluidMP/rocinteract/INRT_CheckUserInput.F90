@@ -84,7 +84,7 @@ SUBROUTINE INRT_CheckUserInput( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_CheckUserInput',&
-  __FILE__ )
+  'INRT_CheckUserInput.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -533,6 +533,7 @@ END SUBROUTINE INRT_CheckUserInput
 ! Implemented routine to check user input for Rocinteract
 !
 !******************************************************************************
+
 
 
 

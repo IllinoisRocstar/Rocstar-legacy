@@ -92,7 +92,7 @@ SUBROUTINE TURB_FloLesGenFiltCC( region,nDel,idBeg,idEnd,fVar,fbVar )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloLesGenFiltCC',&
-  __FILE__ )
+  'TURB_floLesGenFiltCC.F90' )
 
 ! get indices, parameters and pointers ----------------------------------------
 
@@ -191,6 +191,7 @@ END SUBROUTINE TURB_FloLesGenFiltCC
 ! Install Rocturb
 !
 !******************************************************************************
+
 
 
 

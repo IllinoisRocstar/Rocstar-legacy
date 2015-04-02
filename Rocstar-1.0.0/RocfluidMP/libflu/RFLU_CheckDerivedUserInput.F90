@@ -79,7 +79,7 @@ SUBROUTINE RFLU_CheckDerivedUserInput(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_CheckDerivedUserInput',&
-  __FILE__)
+  'RFLU_CheckDerivedUserInput.F90')
 
 ! *****************************************************************************
 ! Check region related data
@@ -174,6 +174,7 @@ END SUBROUTINE RFLU_CheckDerivedUserInput
 ! Implemented Equilibrium Eulerian method for Rocflu
 !
 ! *****************************************************************************
+
 
 
 

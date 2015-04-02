@@ -83,7 +83,7 @@ SUBROUTINE INRT_TwoDimAverage( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_TwoDimAverage',&
-  __FILE__ )
+  'INRT_TwoDimAverage.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -219,6 +219,7 @@ END SUBROUTINE INRT_TwoDimAverage
 ! Added After Update interactions
 !
 !******************************************************************************
+
 
 
 

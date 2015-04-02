@@ -90,7 +90,7 @@ SUBROUTINE PLAG_AllocateMemory( region )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_AllocateMemory',&
-  __FILE__ )
+  'PLAG_AllocateMemory.F90' )
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -346,6 +346,7 @@ END SUBROUTINE PLAG_AllocateMemory
 !
 !
 !******************************************************************************
+
 
 
 

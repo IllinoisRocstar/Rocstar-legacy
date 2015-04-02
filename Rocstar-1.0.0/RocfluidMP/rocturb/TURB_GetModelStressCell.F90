@@ -86,7 +86,7 @@ SUBROUTINE TURB_GetModelStressCell( region )
 
   global => region%global
   CALL RegisterFunction( global,'Turb_GetModelStressCell',&
-  __FILE__ )
+  'TURB_GetModelStressCell.F90' )
 
 ! get parameters -------------------------------------------------------------
 
@@ -312,6 +312,7 @@ END SUBROUTINE TURB_GetModelStressCell
 !
 !
 !******************************************************************************
+
 
 
 

@@ -184,7 +184,7 @@ SUBROUTINE RFLU_NSCBC_CompFirstPatchFlux(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompFirstPatchFlux',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -514,7 +514,7 @@ SUBROUTINE RFLU_NSCBC_CompPatchFlux(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompPatchFlux',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -842,7 +842,7 @@ SUBROUTINE RFLU_NSCBC_CompSecondPatchFlux(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompSecondPatchFlux',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -1181,7 +1181,7 @@ SUBROUTINE RFLU_NSCBC_CompRhs(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompRhs',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Compute gradients at boundary faces
@@ -1311,7 +1311,7 @@ SUBROUTINE RFLU_NSCBC_CompRhsFF(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompRhsFF',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main Body - loop over all boundary faces
@@ -1641,7 +1641,7 @@ SUBROUTINE RFLU_NSCBC_CompRhsIFTotAng(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompRhsIFTotAng',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main body
@@ -1722,7 +1722,7 @@ SUBROUTINE RFLU_NSCBC_CompRhsIFVelTemp(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompRhsIFVelTemp',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main body - loop over all boundary faces
@@ -2043,7 +2043,7 @@ SUBROUTINE RFLU_NSCBC_CompRhsIJ(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompRhsIJ',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main body
@@ -2109,7 +2109,7 @@ SUBROUTINE RFLU_NSCBC_CompRhsNSWHeat(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompRhsNSWHeat',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main body
@@ -2175,7 +2175,7 @@ SUBROUTINE RFLU_NSCBC_CompRhsNSWTemp(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompRhsNSWTemp',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main body
@@ -2253,7 +2253,7 @@ SUBROUTINE RFLU_NSCBC_CompRhsOF(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompRhsOF',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main Body - loop over all boundary faces
@@ -2586,7 +2586,7 @@ SUBROUTINE RFLU_NSCBC_CompRhsSW(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_CompRhsSW',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main Body - loop over all boundary faces
@@ -2773,7 +2773,7 @@ LOGICAL FUNCTION RFLU_NSCBC_DecideHaveNSCBC(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_DecideHaveNSCBC',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! *****************************************************************************
 ! Initialize
@@ -2859,7 +2859,7 @@ SUBROUTINE RFLU_NSCBC_InitFF(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_InitFF',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main Body 
@@ -3012,7 +3012,7 @@ SUBROUTINE RFLU_NSCBC_InitIFTotAng(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_InitIFTotAng',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main Body 
@@ -3134,7 +3134,7 @@ SUBROUTINE RFLU_NSCBC_InitIFVelTemp(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_InitIFVelTemp',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main body 
@@ -3251,7 +3251,7 @@ SUBROUTINE RFLU_NSCBC_InitIJ(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_InitIJ',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main body 
@@ -3319,7 +3319,7 @@ SUBROUTINE RFLU_NSCBC_InitNSWHeat(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_InitNSWHeat',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main body 
@@ -3386,7 +3386,7 @@ SUBROUTINE RFLU_NSCBC_InitNSWTemp(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_InitNSWTemp',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main body 
@@ -3456,7 +3456,7 @@ SUBROUTINE RFLU_NSCBC_InitOF(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_InitOF',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main Body 
@@ -3577,7 +3577,7 @@ SUBROUTINE RFLU_NSCBC_InitSW(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NSCBC_InitSW',&
-  __FILE__)
+  'RFLU_ModNSCBC.F90')
 
 ! ******************************************************************************
 ! Main Body 
@@ -3680,6 +3680,27 @@ END MODULE RFLU_ModNSCBC
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

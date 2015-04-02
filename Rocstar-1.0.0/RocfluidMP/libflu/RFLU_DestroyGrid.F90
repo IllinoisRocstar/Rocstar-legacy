@@ -85,7 +85,7 @@ SUBROUTINE RFLU_DestroyGrid(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DestroyGrid',&
-  __FILE__)
+  'RFLU_DestroyGrid.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -271,6 +271,7 @@ END SUBROUTINE RFLU_DestroyGrid
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

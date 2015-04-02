@@ -149,7 +149,7 @@ SUBROUTINE RFLU_ENS_BuildDataInfo(pRegion,iServer)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ENS_BuildDataInfo', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building ENSIGHT data info...'
@@ -453,7 +453,7 @@ SUBROUTINE RFLU_ENS_CloseFileFlowWrapper(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ENS_CloseFileFlowWrapper', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing ENSIGHT flow files...'
@@ -528,7 +528,7 @@ SUBROUTINE RFLU_ENS_CloseFileGeometry(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ENS_CloseFileGeometry', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing ENSIGHT geometry file...'
@@ -601,7 +601,7 @@ SUBROUTINE RFLU_ENS_CloseFileScalarVector(global,iFile)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ENS_CloseFileScalarVector', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
 ! ******************************************************************************
 ! Close file
@@ -665,7 +665,7 @@ SUBROUTINE RFLU_ENS_DestroyDataInfo(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ENS_DestroyDataInfo', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying ENSIGHT data info...'
@@ -846,7 +846,7 @@ SUBROUTINE RFLU_ENS_OpenFileFlowWrapper(global,iServer)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ENS_OpenFileFlowWrapper', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Opening ENSIGHT flow files...'
@@ -925,7 +925,7 @@ SUBROUTINE RFLU_ENS_OpenFileGeometry(global,iServer)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ENS_OpenFileGeometry', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Opening ENSIGHT geometry file...'
@@ -1023,7 +1023,7 @@ SUBROUTINE RFLU_ENS_OpenFileScalarVector(global,iFile,iFileName)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ENS_OpenFileScalarVector', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
 ! ******************************************************************************
 ! Open file
@@ -1195,7 +1195,7 @@ SUBROUTINE RFLU_ENS_WriteFileCase(global,iServer)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_ENS_WriteFileCase', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
 ! ******************************************************************************
 ! Write 
@@ -1297,7 +1297,7 @@ SUBROUTINE RFLU_ENS_WriteFlowWrapper(pRegion,emptyPartFlagIn)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ENS_WriteFlowWrapper', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing solution to ENSIGHT files...'
@@ -1511,7 +1511,7 @@ SUBROUTINE RFLU_ENS_WriteGridWrapper(pRegion,emptyPartFlagIn)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ENS_WriteGrid', &
-                        __FILE__)
+                        'RFLU_ModENSIGHT.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -1586,6 +1586,17 @@ END MODULE RFLU_ModENSIGHT
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
 
 
 

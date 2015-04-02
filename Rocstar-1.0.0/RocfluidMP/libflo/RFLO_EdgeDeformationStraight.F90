@@ -85,7 +85,7 @@ SUBROUTINE RFLO_EdgeDeformationStraight( region,boundMoved,edgeStraight, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_EdgeDeformationStraight',&
-  __FILE__)
+  'RFLO_EdgeDeformationStraight.F90')
 
 ! get dimensions --------------------------------------------------------------
 
@@ -195,6 +195,7 @@ END SUBROUTINE RFLO_EdgeDeformationStraight
 !
 !
 !******************************************************************************
+
 
 
 

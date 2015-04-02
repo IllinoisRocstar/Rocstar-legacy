@@ -80,7 +80,7 @@ SUBROUTINE TURB_FloRansExchangeDummyConf( region,regionSrc,patch,patchSrc )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_FloRansExchangeDummyConf', &
-                         __FILE__ )
+                         'TURB_floRansExchangeDummyConf.F90' )
 
 ! check if the source region is active
 
@@ -172,6 +172,7 @@ END SUBROUTINE TURB_FloRansExchangeDummyConf
 !
 !
 !******************************************************************************
+
 
 
 

@@ -112,7 +112,7 @@ PROGRAM ROCVAV_Post
   
   global%nFunTree  = 0
   CALL RegisterFunction( global, 'ROCVAV_Post',&
-  __FILE__ )
+  'RVAV_Main.F90' )
 
 ! initialize global parameters ------------------------------------------------
 
@@ -564,6 +564,7 @@ END PROGRAM ROCVAV_Post
 ! Initial Import of RocVaV
 !
 !******************************************************************************
+
 
 
 

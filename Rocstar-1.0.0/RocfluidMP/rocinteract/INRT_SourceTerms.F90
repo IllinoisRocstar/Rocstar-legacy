@@ -88,7 +88,7 @@ SUBROUTINE INRT_SourceTerms( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'INRT_SourceTerms',&
-  __FILE__ )
+  'INRT_SourceTerms.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -200,6 +200,7 @@ END SUBROUTINE INRT_SourceTerms
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

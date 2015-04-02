@@ -122,7 +122,7 @@ SUBROUTINE RFLO_LaplaceGridSmoo( regions,resid )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_LaplaceGridSmoo',&
-       __FILE__ )
+       'RFLO_ModLaplaceSmoothing.F90' )
 
 ! smooth grid region-wise -----------------------------------------------------
 
@@ -541,7 +541,7 @@ SUBROUTINE RFLO_LaplaceGridPatch( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_LaplaceGridPatch',&
-       __FILE__ )
+       'RFLO_ModLaplaceSmoothing.F90' )
 
 ! get dimensions and pointers
 
@@ -613,7 +613,7 @@ SUBROUTINE RFLO_LaplaceGridJump( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_LaplaceGridJump',&
-       __FILE__ )
+       'RFLO_ModLaplaceSmoothing.F90' )
 
 ! get dimensions and pointers
 
@@ -694,7 +694,7 @@ SUBROUTINE RFLO_LaplaceGridSolve( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_LaplaceGridSolve',&
-       __FILE__ )
+       'RFLO_ModLaplaceSmoothing.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -1173,7 +1173,7 @@ SUBROUTINE RFLO_LaplaceGridOrtho( region )
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_LaplaceGridOrtho',&
-       __FILE__ )
+       'RFLO_ModLaplaceSmoothing.F90' )
 
 ! get local parameters --------------------------------------------------------
 
@@ -1580,7 +1580,7 @@ SUBROUTINE RFLO_LaplaceGridOrtho1( region )
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_LaplaceGridOrtho1',&
-       __FILE__ )
+       'RFLO_ModLaplaceSmoothing.F90' )
 
 ! get local parameters --------------------------------------------------------
 
@@ -1834,7 +1834,7 @@ SUBROUTINE RFLO_LaplaceGridOrtho2( region )
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_LaplaceGridOrtho2',&
-       __FILE__ )
+       'RFLO_ModLaplaceSmoothing.F90' )
 
 ! get local parameters --------------------------------------------------------
 
@@ -2139,6 +2139,13 @@ END MODULE RFLO_ModLaplaceSmoothing
 !
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
 
 
 

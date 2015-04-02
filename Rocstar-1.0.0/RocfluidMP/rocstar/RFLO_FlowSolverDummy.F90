@@ -85,7 +85,7 @@ SUBROUTINE RFLO_FlowSolverDummy( globalGenx,timeSystem,dTimeSystem, &
   global%currentTime  = timeSystem
 
   CALL RegisterFunction( global,'RFLO_FlowSolverDummy',&
-  __FILE__ )
+  'RFLO_FlowSolverDummy.F90' )
 
 ! fill outgoing buffers
 
@@ -130,6 +130,7 @@ END SUBROUTINE RFLO_FlowSolverDummy
 ! Finalized integration into GenX.
 !
 !******************************************************************************
+
 
 
 

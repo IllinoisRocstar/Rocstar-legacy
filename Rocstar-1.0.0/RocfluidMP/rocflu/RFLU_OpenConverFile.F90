@@ -76,7 +76,7 @@ SUBROUTINE RFLU_OpenConverFile(global)
   RCSIdentString = '$RCSfile: RFLU_OpenConverFile.F90,v $ $Revision: 1.8 $'
 
   CALL RegisterFunction(global,'RFLU_OpenConverFile',&
-  __FILE__)
+  'RFLU_OpenConverFile.F90')
 
 ! ==============================================================================
 ! Open file
@@ -144,6 +144,7 @@ END SUBROUTINE RFLU_OpenConverFile
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

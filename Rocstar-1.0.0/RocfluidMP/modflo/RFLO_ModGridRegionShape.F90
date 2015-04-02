@@ -115,7 +115,7 @@ SUBROUTINE RFLO_GridFlatPatch( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GridFlatPatch',&
-       __FILE__ )
+       'RFLO_ModGridRegionShape.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -405,7 +405,7 @@ SUBROUTINE RFLO_FindFunkyBlocks( regions )
 !******************************************************************************
 
   CALL RegisterFunction( regions(1)%global,'RFLO_FindFunkyBlocks',&
-       __FILE__ )
+       'RFLO_ModGridRegionShape.F90' )
 
 !  IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
 !       regions(1)%global%verbLevel > VERBOSE_NONE ) THEN
@@ -476,7 +476,7 @@ SUBROUTINE RFLO_BlockSkewedCell( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_BlockSkewedCell',&
-       __FILE__ )
+       'RFLO_ModGridRegionShape.F90' )
 
 ! compute cell skewness -------------------------------------------------------
 
@@ -704,6 +704,9 @@ END MODULE RFLO_ModGridRegionShape
 !
 !
 ! ******************************************************************************
+
+
+
 
 
 

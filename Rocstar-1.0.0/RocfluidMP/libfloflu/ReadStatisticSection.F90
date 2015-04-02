@@ -70,7 +70,7 @@ SUBROUTINE ReadStatisticSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadStatisticSection',&
-  __FILE__ )
+  'ReadStatisticSection.F90' )
 
 ! specify keywords and search for them --------------------------------------
 
@@ -338,6 +338,7 @@ END SUBROUTINE ReadStatisticSection
 !
 !
 !******************************************************************************
+
 
 
 

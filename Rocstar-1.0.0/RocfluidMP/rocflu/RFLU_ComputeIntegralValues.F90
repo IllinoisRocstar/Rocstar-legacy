@@ -101,7 +101,7 @@ SUBROUTINE RFLU_ComputeIntegralValues(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_ComputeIntegralValues',&
-  __FILE__)
+  'RFLU_ComputeIntegralValues.F90')
 
 ! ******************************************************************************
 ! Compute total volume and total mass
@@ -235,6 +235,7 @@ END SUBROUTINE RFLU_ComputeIntegralValues
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

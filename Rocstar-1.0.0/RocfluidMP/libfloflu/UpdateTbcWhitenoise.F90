@@ -84,7 +84,7 @@ SUBROUTINE UpdateTbcWhitenoise( region,tbc )
   global => region%global
 
   CALL RegisterFunction( global,'UpdateTbcWhitenoise',&
-  __FILE__ )
+  'UpdateTbcWhitenoise.F90' )
 
   CALL RandUniform(tbc%bvals(TBCSTO_VAL,:),region%randData)
 
@@ -139,6 +139,7 @@ END SUBROUTINE UpdateTbcWhitenoise
 ! Added Time-dependent boundary conditions
 !
 !******************************************************************************
+
 
 
 

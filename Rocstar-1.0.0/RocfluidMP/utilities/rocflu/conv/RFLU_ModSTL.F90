@@ -128,7 +128,7 @@ MODULE RFLU_ModSTL
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_STL_WriteSurfGridASCII', &
-                          __FILE__)
+                          'RFLU_ModSTL.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -320,6 +320,7 @@ END MODULE RFLU_ModSTL
 ! ******************************************************************************
   
   
+
 
 
 

@@ -76,7 +76,7 @@ SUBROUTINE Fluid_postHdfOutput( globalGenx )
 #endif
 
   CALL RegisterFunction( global,'Fluid_preHdfOutput',&
-  __FILE__ )
+  'Fluid_postHdfOutput.F90' )
 
 ! set tav from accumulated values ---------------------------------------------
 ! to be moved to a wrapper
@@ -166,6 +166,7 @@ END SUBROUTINE Fluid_postHdfOutput
 !
 !
 !******************************************************************************
+
 
 
 

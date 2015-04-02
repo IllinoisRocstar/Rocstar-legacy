@@ -81,7 +81,7 @@ SUBROUTINE RFLU_UserInput(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_UserInput',&
-  __FILE__)
+  'RFLU_UserInput.F90')
 
 ! ******************************************************************************
 ! Initialize, read input values, set derived values, and check 
@@ -136,6 +136,7 @@ END SUBROUTINE RFLU_UserInput
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

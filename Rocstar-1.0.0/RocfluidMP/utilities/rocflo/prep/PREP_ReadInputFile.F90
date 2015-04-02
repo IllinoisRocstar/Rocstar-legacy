@@ -67,7 +67,7 @@ SUBROUTINE ReadInputFile( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'ReadInputFile',&
-  __FILE__ )
+  'PREP_ReadInputFile.F90' )
 
 ! open file
 
@@ -153,7 +153,7 @@ END SUBROUTINE ReadInputFile
 ! Corrected mistake in phased check-in
 !
 ! Revision 1.6  2003/03/20 19:35:43  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'PREP_ReadInputFile.F90' names
 !
 ! Revision 1.5  2002/10/12 03:20:51  jblazek
 ! Replaced [io]stat=global%error with local errorFlag for Rocflo.
@@ -171,6 +171,8 @@ END SUBROUTINE ReadInputFile
 ! Added flow initialization.
 !
 !******************************************************************************
+
+
 
 
 

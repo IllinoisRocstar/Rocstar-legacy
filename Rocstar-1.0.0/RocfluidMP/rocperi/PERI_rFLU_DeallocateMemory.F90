@@ -76,7 +76,7 @@ SUBROUTINE PERI_RFLU_DeallocateMemory(region)
   global => region%global
 
   CALL RegisterFunction(global,'PERI_RFLU_DeallocateMemory',&
-  __FILE__)
+  'PERI_rFLU_DeallocateMemory.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -121,6 +121,7 @@ END SUBROUTINE PERI_RFLU_DeallocateMemory
 !
 !
 ! ******************************************************************************
+
 
 
 

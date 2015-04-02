@@ -73,7 +73,7 @@ SUBROUTINE RFLO_MoveGridSurfaces( regions,someMoved )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_MoveGridSurfaces',&
-  __FILE__ )
+  'RFLO_MoveGridSurfaces.F90' )
 
 ! move grid separately for each region ----------------------------------------
 
@@ -167,6 +167,7 @@ END SUBROUTINE RFLO_MoveGridSurfaces
 ! Added basic global grid smoothing scheme.
 !
 !******************************************************************************
+
 
 
 

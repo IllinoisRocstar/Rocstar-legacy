@@ -85,7 +85,7 @@ SUBROUTINE PLAG_ClearDataSendRequests( regions, iReg )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_ClearDataSendRequests',&
-  __FILE__ )
+  'PLAG_ClearDataSendRequests.F90' )
 
 #ifdef MPI
 
@@ -164,6 +164,7 @@ END SUBROUTINE PLAG_ClearDataSendRequests
 ! Initial import
 !
 !******************************************************************************
+
 
 
 

@@ -82,7 +82,7 @@ SUBROUTINE BuildFileNameBasic(global,dest,ext,id,fileName)
   RCSIdentString = '$RCSfile: BuildFileNameBasic.F90,v $ $Revision: 1.4 $'
 
   CALL RegisterFunction(global,'BuildFileNameBasic',&
-  __FILE__)
+  'BuildFileNameBasic.F90')
    
   IF ( dest == FILEDEST_INDIR ) THEN 
     WRITE(destString,'(A)') global%inDir
@@ -125,6 +125,7 @@ END SUBROUTINE BuildFileNameBasic
 !   Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -91,7 +91,7 @@ SUBROUTINE RFLO_ReadStatRegion( iReg,regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadStatRegion',&
-  __FILE__ )
+  'RFLO_ReadStatRegion.F90' )
 
 ! allocate temporary data arrays --------------------------------------------
 
@@ -310,6 +310,7 @@ END SUBROUTINE RFLO_ReadStatRegion
 !
 !
 !******************************************************************************
+
 
 
 

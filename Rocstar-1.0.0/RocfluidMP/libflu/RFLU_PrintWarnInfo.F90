@@ -74,7 +74,7 @@ SUBROUTINE RFLU_PrintWarnInfo(global)
   RCSIdentString = '$RCSfile: RFLU_PrintWarnInfo.F90,v $ $Revision: 1.5 $'
 
   CALL RegisterFunction(global,'RFLU_PrintWarnInfo',&
-  __FILE__)
+  'RFLU_PrintWarnInfo.F90')
 
 ! ******************************************************************************
 ! Write info on number of warnings
@@ -116,6 +116,7 @@ END SUBROUTINE RFLU_PrintWarnInfo
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

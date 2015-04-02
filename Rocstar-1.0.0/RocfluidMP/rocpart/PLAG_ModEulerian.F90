@@ -159,7 +159,7 @@ MODULE PLAG_ModEulerian
     global => pRegion%global
  
     CALL RegisterFunction(global,'PLAG_CalcEulerianField',&
-  __FILE__)
+  'PLAG_ModEulerian.F90')
 
 #ifdef RFLO
     iLev  = pRegion%currLevel
@@ -326,7 +326,7 @@ MODULE PLAG_ModEulerian
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_CreateEulerian',&
-  __FILE__)
+  'PLAG_ModEulerian.F90')
 
     nEv = pPlag%nEv        
 
@@ -422,7 +422,7 @@ MODULE PLAG_ModEulerian
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_DestroyEulerian',&
-  __FILE__)
+  'PLAG_ModEulerian.F90')
 
 ! ******************************************************************************
 !   Deallocate memory
@@ -510,7 +510,7 @@ MODULE PLAG_ModEulerian
     global => pRegion%global
  
     CALL RegisterFunction(global,'PLAG_InitEulerianField',&
-  __FILE__)
+  'PLAG_ModEulerian.F90')
 
     nVars = pPlag%nEv       
 
@@ -611,7 +611,7 @@ MODULE PLAG_ModEulerian
     global => pRegion%global
  
     CALL RegisterFunction(global,'PLAG_RFLU_CalcEulerianField',&
-  __FILE__)
+  'PLAG_ModEulerian.F90')
 
     pGrid => pRegion%grid
     pPlag => pRegion%plag
@@ -776,6 +776,11 @@ END MODULE PLAG_ModEulerian
 ! Initial import for PLAG statistics
 !
 ! ******************************************************************************
+
+
+
+
+
 
 
 

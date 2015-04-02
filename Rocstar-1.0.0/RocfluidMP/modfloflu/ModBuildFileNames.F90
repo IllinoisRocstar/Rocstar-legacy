@@ -134,7 +134,7 @@ MODULE ModBuildFileNames
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'BuildFileNameBasic',&
-         __FILE__)
+         'ModBuildFileNames.F90')
 
 ! ******************************************************************************
 !   Build file name
@@ -217,7 +217,7 @@ MODULE ModBuildFileNames
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'BuildFileNamePlain',&
-         __FILE__)
+         'ModBuildFileNames.F90')
 
 ! ******************************************************************************
 !   Build file name
@@ -298,7 +298,7 @@ MODULE ModBuildFileNames
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'BuildFileNamePlainSteady',&
-         __FILE__)
+         'ModBuildFileNames.F90')
 
 ! ******************************************************************************
 !   Build file name
@@ -381,7 +381,7 @@ MODULE ModBuildFileNames
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'BuildFileNamePlainUnsteady',&
-         __FILE__)
+         'ModBuildFileNames.F90')
 
 ! ******************************************************************************
 !   Build file name
@@ -464,7 +464,7 @@ MODULE ModBuildFileNames
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'BuildFileNameSteady',&
-         __FILE__)
+         'ModBuildFileNames.F90')
 
 ! ******************************************************************************
 !   Build file name
@@ -549,7 +549,7 @@ MODULE ModBuildFileNames
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'BuildFileNameUnsteady',&
-         __FILE__)
+         'ModBuildFileNames.F90')
 
 ! ******************************************************************************
 !   Build file name
@@ -627,7 +627,7 @@ MODULE ModBuildFileNames
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'BuildRegionIdString',&
-         __FILE__)
+         'ModBuildFileNames.F90')
 
 ! ******************************************************************************
 !   Write region id into region string
@@ -672,6 +672,13 @@ END MODULE ModBuildFileNames
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
 
 
 

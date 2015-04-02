@@ -62,7 +62,7 @@ SUBROUTINE TURB_LesRkInit( region, istage )
   global => region%global
 
   CALL RegisterFunction( global,'TURB_LesRkInit',&
-  __FILE__ )
+  'TURB_LesRkInit.F90' )
   
 ! initialize LES variables that are global to each processor ------------------
 
@@ -98,6 +98,7 @@ END SUBROUTINE TURB_LesRkInit
 !
 !
 !******************************************************************************
+
 
 
 

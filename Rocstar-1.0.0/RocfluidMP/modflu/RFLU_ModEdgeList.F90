@@ -126,7 +126,7 @@ MODULE RFLU_ModEdgeList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyEdgeList',&
-  __FILE__)
+  'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -205,7 +205,7 @@ MODULE RFLU_ModEdgeList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyEdge2CellList',&
-  __FILE__)
+  'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -291,7 +291,7 @@ MODULE RFLU_ModEdgeList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateEdgeList',&
-  __FILE__)
+  'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -423,7 +423,7 @@ MODULE RFLU_ModEdgeList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateEdge2CellList',&
-  __FILE__)
+  'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -533,7 +533,7 @@ MODULE RFLU_ModEdgeList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildEdgeList',&
-  __FILE__)
+  'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1005,7 +1005,7 @@ MODULE RFLU_ModEdgeList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildEdge2CellList',&
-  __FILE__)
+  'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1401,7 +1401,7 @@ MODULE RFLU_ModEdgeList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyEdgeList',&
-  __FILE__)
+  'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1496,7 +1496,7 @@ MODULE RFLU_ModEdgeList
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyEdge2CellList',&
-  __FILE__)
+  'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1612,6 +1612,14 @@ END MODULE RFLU_ModEdgeList
 ! Initial revision                                                                       
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
 
 
 

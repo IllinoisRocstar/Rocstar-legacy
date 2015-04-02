@@ -86,7 +86,7 @@ SUBROUTINE PLAG_CalcBreakup( region, iReg )
   global => region%global
 
   CALL RegisterFunction( global,'PLAG_CalcBreakup',&
-  __FILE__ )
+  'PLAG_CalcBreakup.F90' )
 
 ! begin =======================================================================
 
@@ -256,6 +256,7 @@ END SUBROUTINE PLAG_CalcBreakup
 ! Initialimport of breakup model
 !
 !******************************************************************************
+
 
 
 

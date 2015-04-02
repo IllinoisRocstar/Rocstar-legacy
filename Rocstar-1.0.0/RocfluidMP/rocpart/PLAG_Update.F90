@@ -89,7 +89,7 @@ SUBROUTINE PLAG_Update( region, iReg, iStage )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_Update',&
-  __FILE__ )
+  'PLAG_Update.F90' )
   
 ! get dimensions and set pointer ----------------------------------------------
 
@@ -240,6 +240,7 @@ END SUBROUTINE PLAG_Update
 !
 !
 !******************************************************************************
+
 
 
 

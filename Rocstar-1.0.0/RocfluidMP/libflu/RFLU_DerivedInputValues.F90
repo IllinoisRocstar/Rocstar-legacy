@@ -83,7 +83,7 @@ SUBROUTINE RFLU_DerivedInputValues(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_DerivedInputValues',&
-  __FILE__)
+  'RFLU_DerivedInputValues.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -398,6 +398,7 @@ END SUBROUTINE RFLU_DerivedInputValues
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -112,7 +112,7 @@ SUBROUTINE RFLO_GridControlGrad3D( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_GridControlGrad3D',&
-       __FILE__ )
+       'RFLO_ModGridControlMap.F90' )
 
 ! get dimensions, allocate temporary storage ----------------------------------
 
@@ -194,7 +194,7 @@ SUBROUTINE RFLO_GridPhysGrad3D( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_GridPhysGrad3D',&
-       __FILE__ )
+       'RFLO_ModGridControlMap.F90' )
 
 ! get dimensions, allocate temporary storage ----------------------------------
 
@@ -288,7 +288,7 @@ SUBROUTINE RFLO_GridControlFunc3D( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_GridControlFunc3D',&
-       __FILE__ )
+       'RFLO_ModGridControlMap.F90' )
 
 ! get dimensions, allocate temporary storage ----------------------------------
 
@@ -520,7 +520,7 @@ SUBROUTINE RFLO_GridControlGrad2D( region,patch,iPatch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_GridControlGrad2D',&
-       __FILE__ )
+       'RFLO_ModGridControlMap.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -593,7 +593,7 @@ SUBROUTINE RFLO_GridPhysGrad2D( region,patch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_GridPhysGrad2D',&
-       __FILE__ )
+       'RFLO_ModGridControlMap.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -700,7 +700,7 @@ SUBROUTINE RFLO_GridControlFunc2D( region,patch,iPatch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_GridControlFunc2D',&
-       __FILE__ )
+       'RFLO_ModGridControlMap.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -812,7 +812,7 @@ SUBROUTINE RFLO_GridControlMap3D( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_GridControlMap3D',&
-       __FILE__ )
+       'RFLO_ModGridControlMap.F90' )
 
 ! get dimensions, allocate temporary storage ----------------------------------
 
@@ -1139,7 +1139,7 @@ SUBROUTINE RFLO_GridControlMap2D( region,patch,iPatch )
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_GridControlMap2D',&
-       __FILE__ )
+       'RFLO_ModGridControlMap.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -1477,6 +1477,14 @@ END MODULE RFLO_ModGridControlMap
 !
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
 
 
 

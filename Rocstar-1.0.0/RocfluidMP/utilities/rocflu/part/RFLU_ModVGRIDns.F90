@@ -141,7 +141,7 @@ MODULE RFLU_ModVGRIDns
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ConvVGRIDns2ROCFLU', &
-                          __FILE__)
+                          'RFLU_ModVGRIDns.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -573,7 +573,7 @@ MODULE RFLU_ModVGRIDns
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridVGRIDns', &
-                          __FILE__)
+                          'RFLU_ModVGRIDns.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading VGRIDns grid file...'
@@ -842,6 +842,8 @@ END MODULE RFLU_ModVGRIDns
   
 
   
+
+
 
 
 

@@ -79,7 +79,7 @@ SUBROUTINE PLAG_DeallocateDataBuffers( regions, iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global, 'PLAG_DeallocateDataBuffers',&
-  __FILE__ )
+  'PLAG_DeallocateDataBuffers.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -241,6 +241,7 @@ END SUBROUTINE PLAG_DeallocateDataBuffers
 !
 !
 !******************************************************************************
+
 
 
 

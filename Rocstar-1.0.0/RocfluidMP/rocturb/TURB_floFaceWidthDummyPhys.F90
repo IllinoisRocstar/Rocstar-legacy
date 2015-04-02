@@ -82,7 +82,7 @@ SUBROUTINE TURB_FloFaceWidthDummyPhys( region,lbound,idir,jdir,kdir, &
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloFaceWidthDummyPhys',&
-  __FILE__ )
+  'TURB_floFaceWidthDummyPhys.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -208,6 +208,7 @@ END SUBROUTINE TURB_FloFaceWidthDummyPhys
 ! Install Rocturb
 !
 !******************************************************************************
+
 
 
 

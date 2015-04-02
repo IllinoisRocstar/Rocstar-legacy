@@ -128,7 +128,7 @@ SUBROUTINE PLAG_RkInitGenericInt(region,iStage,icBeg,icEnd,ivBeg,ivEnd,&
   global => region%global
 
   CALL RegisterFunction(global,'PLAG_RkInitGenericInt',&
-  __FILE__)
+  'PLAG_ModRkInit.F90')
 
 ! *****************************************************************************
 ! Initialize Runge-Kutta scheme
@@ -220,7 +220,7 @@ SUBROUTINE PLAG_RkInitGenericReal(region,iStage,icBeg,icEnd,ivBeg,ivEnd,&
   global => region%global
 
   CALL RegisterFunction(global,'PLAG_RkInitGenericReal',&
-  __FILE__)
+  'PLAG_ModRkInit.F90')
 
 ! *****************************************************************************
 ! Initialize Runge-Kutta scheme
@@ -313,7 +313,7 @@ SUBROUTINE PLAG_RkInitPrimary( region, iStage )
   global => region%global
 
   CALL RegisterFunction(global,'PLAG_RkInitPrimary',&
-  __FILE__)
+  'PLAG_ModRkInit.F90')
 
 !******************************************************************************
 ! Set pointers
@@ -426,7 +426,7 @@ SUBROUTINE PLAG_InjcTileRkInit( region, iStage )
   global => region%global
 
   CALL RegisterFunction(global,'PLAG_InjcTileRkInit',&
-  __FILE__)
+  'PLAG_ModRkInit.F90')
   
 !****************************************************************************** 
 ! Get dimensions
@@ -542,6 +542,10 @@ END MODULE PLAG_ModRkInit
 ! Initial import
 !
 !******************************************************************************
+
+
+
+
 
 
 

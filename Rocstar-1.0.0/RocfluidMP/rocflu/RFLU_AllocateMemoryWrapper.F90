@@ -113,7 +113,7 @@ SUBROUTINE RFLU_AllocateMemoryWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_AllocateMemoryWrapper',&
-  __FILE__)
+  'RFLU_AllocateMemoryWrapper.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -281,6 +281,7 @@ END SUBROUTINE RFLU_AllocateMemoryWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

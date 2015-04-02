@@ -66,7 +66,7 @@ SUBROUTINE RFLO_CalcFaceCentroids( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcFaceCentroids',&
-       __FILE__ )
+       'RFLO_CalcFaceCentroids.F90' )
 
 ! loop over all grid levels
 
@@ -271,6 +271,7 @@ END SUBROUTINE RFLO_CalcFaceCentroids
 !
 !
 !******************************************************************************
+
 
 
 

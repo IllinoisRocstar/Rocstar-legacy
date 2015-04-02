@@ -77,7 +77,7 @@ SUBROUTINE TURB_RFLO_RansResSmoothingCoeff( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'TURB_RFLO_RansResSmoothingCoeff',&
-  __FILE__ )
+  'TURB_rFLO_RansResSmoothingCoeff.F90' )
 
   IF (region%turbInput%modelClass /= MODEL_RANS) GOTO 999
 
@@ -159,6 +159,7 @@ END SUBROUTINE TURB_RFLO_RansResSmoothingCoeff
 !
 !
 !******************************************************************************
+
 
 
 

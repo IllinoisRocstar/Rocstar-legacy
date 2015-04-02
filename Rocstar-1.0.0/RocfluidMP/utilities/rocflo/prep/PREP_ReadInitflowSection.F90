@@ -64,7 +64,7 @@ SUBROUTINE ReadInitflowSection( regions )
 !******************************************************************************
 
   CALL RegisterFunction( regions(1)%global,'ReadInitflowSection', &
-                         __FILE__ )
+                         'PREP_ReadInitflowSection.F90' )
 
 ! specify keywords and search for them
 
@@ -147,7 +147,7 @@ END SUBROUTINE ReadInitFlowSection
 ! Corrected mistake in phased check-in
 !
 ! Revision 1.4  2003/03/20 19:35:43  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'PREP_ReadInitflowSection.F90' names
 !
 ! Revision 1.3  2002/09/05 17:40:22  jblazek
 ! Variable global moved into regions().
@@ -159,6 +159,8 @@ END SUBROUTINE ReadInitFlowSection
 ! Added flow initialization.
 !
 !******************************************************************************
+
+
 
 
 

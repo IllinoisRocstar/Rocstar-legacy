@@ -88,7 +88,7 @@ SUBROUTINE RFLU_GetSpecialCells(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_GetSpecialCells', &
-                        __FILE__)
+                        'RFLU_GetSpecialCells.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting special cells...'
@@ -400,12 +400,14 @@ END SUBROUTINE RFLU_GetSpecialCells
 !
 ! Revision 1.2  2003/03/20 20:07:19  haselbac
 ! Modified RegFun call to avoid probs with
-! long __FILE__ names
+! long 'RFLU_GetSpecialCells.F90' names
 !
 ! Revision 1.1  2003/03/15 19:16:54  haselbac
 ! Initial revision
 !
 !******************************************************************************
+
+
 
 
 

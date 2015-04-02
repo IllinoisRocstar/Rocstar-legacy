@@ -142,7 +142,7 @@ SUBROUTINE PLAG_ProcessEulerField( regions, iReg, nPclsSum )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_ProcessEulerField',&
-  __FILE__ )
+  'PLAG_ProcessEulerField.F90' )
 
   IF (.NOT. global%plagUsed) GOTO 999
 
@@ -1587,6 +1587,7 @@ END SUBROUTINE PLAG_ProcessEulerField
 ! Initial import
 !
 !******************************************************************************
+
 
 
 

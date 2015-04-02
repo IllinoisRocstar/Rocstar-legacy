@@ -78,7 +78,7 @@ SUBROUTINE PLAG_CheckUserInput( regions )
 #endif
 
   CALL RegisterFunction( global, 'PLAG_CheckUserInput',&
-  __FILE__ )
+  'PLAG_CheckUserInput.F90' )
 
 ! Check for consistency with flow solver -------------------------------------
 
@@ -255,6 +255,7 @@ END SUBROUTINE PLAG_CheckUserInput
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

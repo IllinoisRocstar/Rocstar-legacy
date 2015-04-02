@@ -106,7 +106,7 @@ SUBROUTINE INRT_VaporEnergyConversion( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_VaporEnergyConversion',&
-  __FILE__ )
+  'INRT_VaporEnergyConversion.F90' )
 
 #ifdef PLAG
 ! begin -----------------------------------------------------------------------
@@ -306,6 +306,7 @@ END SUBROUTINE INRT_VaporEnergyConversion
 ! Added After Update interactions
 !
 !******************************************************************************
+
 
 
 

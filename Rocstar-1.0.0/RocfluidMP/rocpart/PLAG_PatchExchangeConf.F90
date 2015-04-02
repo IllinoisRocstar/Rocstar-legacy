@@ -109,7 +109,7 @@ SUBROUTINE PLAG_PatchExchangeConf( region,regionDes,patch,patchDes,iReg,iRegDes 
   global => region%global
   
   CALL RegisterFunction( global,'PLAG_PatchExchangeConf',&
-  __FILE__ )
+  'PLAG_PatchExchangeConf.F90' )
 
 ! check if the source region is active ----------------------------------------
 
@@ -271,6 +271,7 @@ END SUBROUTINE PLAG_PatchExchangeConf
 ! Initial Import of Multiblock capability
 !
 !******************************************************************************
+
 
 
 

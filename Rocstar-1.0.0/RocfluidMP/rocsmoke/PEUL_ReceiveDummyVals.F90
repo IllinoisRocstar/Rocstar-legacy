@@ -91,7 +91,7 @@ SUBROUTINE PEUL_ReceiveDummyVals( region,regionSrc,patch,patchSrc )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_ReceiveDummyVals',&
-  __FILE__ )
+  'PEUL_ReceiveDummyVals.F90' )
 
 ! check if the source region is active ----------------------------------------
 
@@ -238,6 +238,7 @@ END SUBROUTINE PEUL_ReceiveDummyVals
 ! Initial Import of MPI-based rocsmoke
 !
 !******************************************************************************
+
 
 
 

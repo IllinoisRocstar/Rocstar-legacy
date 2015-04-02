@@ -84,7 +84,7 @@ SUBROUTINE RFLU_FlowSolverDummy(globalGenx,timeSystem,dTimeSystem, &
 ! start time stepping
 
   CALL RegisterFunction(global,'RFLU_FlowSolverDummy',&
-  __FILE__)
+  'RFLU_FlowSolverDummy.F90')
 
   CALL ErrorStop(global,ERR_EXTERNAL_FUNCT,__LINE__)
 
@@ -112,6 +112,7 @@ END SUBROUTINE RFLU_FlowSolverDummy
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

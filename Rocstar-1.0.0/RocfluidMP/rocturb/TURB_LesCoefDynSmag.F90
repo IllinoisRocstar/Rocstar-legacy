@@ -98,7 +98,7 @@ SUBROUTINE TURB_LesCoefDynSmag( region,ibn,ien,ijk )
 
   global => region%global
   CALL RegisterFunction( global,'Turb_LesCoefDynSmag',&
-  __FILE__ )
+  'TURB_LesCoefDynSmag.F90' )
 
 ! get some parameters and pointers ------------------------------------------
 
@@ -231,6 +231,7 @@ END SUBROUTINE TURB_LesCoefDynSmag
 !
 !
 !******************************************************************************
+
 
 
 

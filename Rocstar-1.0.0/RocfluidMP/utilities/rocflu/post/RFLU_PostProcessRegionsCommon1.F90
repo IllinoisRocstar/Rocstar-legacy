@@ -125,7 +125,7 @@ SUBROUTINE RFLU_PostProcessRegionsCommon1(pRegion,postInfoFileExists)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_PostProcessRegionsCommon1',&
-  __FILE__)
+  'RFLU_PostProcessRegionsCommon1.F90')
 
 ! ******************************************************************************
 ! Read dimensions file, create grid, and read bc file
@@ -375,6 +375,7 @@ END SUBROUTINE RFLU_PostProcessRegionsCommon1
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

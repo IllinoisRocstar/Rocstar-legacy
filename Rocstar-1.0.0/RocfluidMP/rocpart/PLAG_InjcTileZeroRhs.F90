@@ -83,7 +83,7 @@ SUBROUTINE PLAG_injcTileZeroRhs( region )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_InjcTileZeroRhs',&
-  __FILE__ )
+  'PLAG_InjcTileZeroRhs.F90' )
   
 ! Get dimensions --------------------------------------------------------------
 
@@ -182,6 +182,7 @@ END SUBROUTINE PLAG_InjcTileZeroRhs
 !
 !
 !******************************************************************************
+
 
 
 

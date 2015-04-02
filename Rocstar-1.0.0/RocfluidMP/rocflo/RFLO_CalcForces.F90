@@ -78,7 +78,7 @@ SUBROUTINE RFLO_CalcForces( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_CalcForces',&
-  __FILE__ )
+  'RFLO_CalcForces.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -218,6 +218,7 @@ END SUBROUTINE RFLO_CalcForces
 ! Added time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

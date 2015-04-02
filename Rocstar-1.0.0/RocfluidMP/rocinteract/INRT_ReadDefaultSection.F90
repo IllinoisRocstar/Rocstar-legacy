@@ -96,7 +96,7 @@ SUBROUTINE INRT_ReadDefaultSection( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'INRT_ReadDefaultSection',&
-  __FILE__ )
+  'INRT_ReadDefaultSection.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -307,6 +307,7 @@ END SUBROUTINE INRT_ReadDefaultSection
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

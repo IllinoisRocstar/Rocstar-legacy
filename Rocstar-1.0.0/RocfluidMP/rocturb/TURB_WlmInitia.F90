@@ -87,7 +87,7 @@ SUBROUTINE TURB_WlmInitia( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_WlmInitia',&
-  __FILE__ )
+  'TURB_WlmInitia.F90' )
 
 ! get common pointers ---------------------------------------------------------
 
@@ -193,6 +193,7 @@ END SUBROUTINE TURB_WlmInitia
 !
 !
 !******************************************************************************
+
 
 
 

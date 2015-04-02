@@ -91,7 +91,7 @@ SUBROUTINE PLAG_PatchRemoveDataOutflow( region, iReg )
   global => region%global
     
   CALL RegisterFunction( global, 'PLAG_PatchRemoveDataOutflow',&
-  __FILE__ )
+  'PLAG_PatchRemoveDataOutflow.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -214,6 +214,7 @@ END SUBROUTINE PLAG_PatchRemoveDataOutflow
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

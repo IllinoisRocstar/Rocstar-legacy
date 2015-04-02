@@ -91,7 +91,7 @@ SUBROUTINE RFLU_CheckPositivityWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CheckPositivityWrapper',&
-  __FILE__)
+  'RFLU_CheckPositivityWrapper.F90')
 
 ! ******************************************************************************
 ! Mixture
@@ -189,6 +189,7 @@ END SUBROUTINE RFLU_CheckPositivityWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

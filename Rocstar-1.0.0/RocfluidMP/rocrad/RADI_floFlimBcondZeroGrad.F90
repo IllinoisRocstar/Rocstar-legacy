@@ -71,7 +71,7 @@ SUBROUTINE RADI_FloFlimBcondZeroGrad( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FloFlimBcondZeroGrad',&
-  __FILE__ )
+  'RADI_floFlimBcondZeroGrad.F90' )
 
 ! get dimensions and pointers
 
@@ -131,6 +131,7 @@ END SUBROUTINE RADI_FloFlimBcondZeroGrad
 !
 !
 !******************************************************************************
+
 
 
 

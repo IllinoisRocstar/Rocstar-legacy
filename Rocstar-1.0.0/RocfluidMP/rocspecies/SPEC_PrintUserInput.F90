@@ -80,7 +80,7 @@ SUBROUTINE SPEC_PrintUserInput(region)
   global => region%global
 
   CALL RegisterFunction(global,'SPEC_PrintUserInput',&
-  __FILE__)
+  'SPEC_PrintUserInput.F90')
 
 ! ******************************************************************************
 ! Print user input
@@ -191,6 +191,7 @@ END SUBROUTINE SPEC_PrintUserInput
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

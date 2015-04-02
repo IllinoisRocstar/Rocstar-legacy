@@ -120,7 +120,7 @@ MODULE RFLU_ModReadWriteBcDataFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DecideReadWriteBcDataFile',&
-  __FILE__)
+  'RFLU_ModReadWriteBcDataFile.F90')
     
 ! ******************************************************************************
 !   Set pointers and initialize
@@ -217,7 +217,7 @@ MODULE RFLU_ModReadWriteBcDataFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcDataFile',&
-  __FILE__)
+  'RFLU_ModReadWriteBcDataFile.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN  
@@ -436,7 +436,7 @@ MODULE RFLU_ModReadWriteBcDataFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteBcDataFile',&
-  __FILE__)
+  'RFLU_ModReadWriteBcDataFile.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN  
@@ -569,6 +569,9 @@ END MODULE RFLU_ModReadWriteBcDataFile
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
 
 
 

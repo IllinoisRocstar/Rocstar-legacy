@@ -83,7 +83,7 @@ SUBROUTINE RFLO_ReceiveDummyVals( region,regionSrc,patch,patchSrc )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ReceiveDummyVals',&
-  __FILE__ )
+  'RFLO_ReceiveDummyVals.F90' )
 
 ! check if the source region is active
 
@@ -259,6 +259,7 @@ END SUBROUTINE RFLO_ReceiveDummyVals
 ! Added time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

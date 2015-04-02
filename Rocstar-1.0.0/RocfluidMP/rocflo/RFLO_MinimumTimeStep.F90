@@ -68,7 +68,7 @@ SUBROUTINE RFLO_MinimumTimeStep( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_MinimumTimeStep',&
-  __FILE__ )
+  'RFLO_MinimumTimeStep.F90' )
 
 ! compare imposed and max. stable time step
 
@@ -136,6 +136,7 @@ END SUBROUTINE RFLO_MinimumTimeStep
 ! Added time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

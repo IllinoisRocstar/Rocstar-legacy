@@ -78,7 +78,7 @@ SUBROUTINE RFLO_ReadBcInjectMrateSection( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadBcInjectMrateSection',&
-  __FILE__ )
+  'RFLO_ReadBcInjectMrateSection.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -267,6 +267,7 @@ END SUBROUTINE RFLO_ReadBcInjectMrateSection
 ! Added routines to read BC input file.
 !
 !******************************************************************************
+
 
 
 

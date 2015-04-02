@@ -85,7 +85,7 @@ SUBROUTINE PLAG_cECellsAllocateData( regions, iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global, 'PLAG_CECellsAllocateData',&
-  __FILE__ )
+  'PLAG_CECellsAllocateData.F90' )
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE     ) THEN 
@@ -407,6 +407,7 @@ END SUBROUTINE PLAG_CECellsAllocateData
 ! Initial import of Corner-Edge cells Infrastructure
 !
 !******************************************************************************
+
 
 
 

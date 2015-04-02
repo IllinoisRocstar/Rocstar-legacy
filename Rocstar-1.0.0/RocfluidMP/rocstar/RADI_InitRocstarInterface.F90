@@ -72,7 +72,7 @@ SUBROUTINE RADI_InitGenxInterface( regions,wins,winv )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RADI_InitGenxInterface',&
-  __FILE__ )
+  'RADI_InitRocstarInterface.F90' )
 
 ! input data (currently none) -------------------------------------------------
 
@@ -153,6 +153,7 @@ END SUBROUTINE RADI_InitGenxInterface
 ! added TURB and RADI_initGenxInterface
 !
 !******************************************************************************
+
 
 
 

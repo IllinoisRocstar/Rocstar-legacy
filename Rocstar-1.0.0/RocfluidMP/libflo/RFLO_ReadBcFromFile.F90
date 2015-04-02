@@ -68,7 +68,7 @@ SUBROUTINE RFLO_ReadBcFromFile( global,fname,patch )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_ReadBcFromFile',&
-  __FILE__ )
+  'RFLO_ReadBcFromFile.F90' )
 
 ! dimensions
 
@@ -158,6 +158,7 @@ END SUBROUTINE RFLO_ReadBcFromFile
 ! Finalized integration into GenX.
 !
 !******************************************************************************
+
 
 
 

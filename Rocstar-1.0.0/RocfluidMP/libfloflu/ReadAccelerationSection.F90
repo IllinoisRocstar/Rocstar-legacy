@@ -75,7 +75,7 @@ SUBROUTINE ReadAccelerationSection(global)
 ! ******************************************************************************
 
   CALL RegisterFunction( global,'ReadAccelerationSection',&
-  __FILE__ )
+  'ReadAccelerationSection.F90' )
 
 ! ******************************************************************************
 ! Specify keywords and search for them
@@ -157,6 +157,7 @@ END SUBROUTINE ReadAccelerationSection
 ! Added acceleration terms.
 !
 ! ******************************************************************************
+
 
 
 

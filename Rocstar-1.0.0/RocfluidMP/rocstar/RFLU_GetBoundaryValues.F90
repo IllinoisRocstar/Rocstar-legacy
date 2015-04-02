@@ -83,7 +83,7 @@ SUBROUTINE RFLU_GetBoundaryValues(region)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_GetBoundaryValues',&
-  __FILE__)
+  'RFLU_GetBoundaryValues.F90')
 
 ! ******************************************************************************
 ! Loop over ALL boundaries 
@@ -297,6 +297,7 @@ END SUBROUTINE RFLU_GetBoundaryValues
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

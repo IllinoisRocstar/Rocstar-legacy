@@ -71,7 +71,7 @@ SUBROUTINE RFLO_ReadBcInputFile( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadBcInputFile',&
-  __FILE__ )
+  'RFLO_ReadBcInputFile.F90' )
 
 ! - open file
 
@@ -220,6 +220,7 @@ END SUBROUTINE RFLO_ReadBcInputFile
 ! Added routines to read BC input file.
 !
 !******************************************************************************
+
 
 
 

@@ -67,7 +67,7 @@ SUBROUTINE RFLO_InitAvgCoeffs( region )
   global => region%global
 
   CALL RegisterFunction(global,'RFLO_InitAvgCoeffs',&
-  __FILE__)
+  'RFLO_InitAvgCoeffs.F90')
 
 ! get dimensions ---------------------------------------------------------------
 
@@ -125,6 +125,7 @@ END SUBROUTINE RFLO_InitAvgCoeffs
 !
 !
 ! ******************************************************************************
+
 
 
 

@@ -116,7 +116,7 @@ SUBROUTINE PLAG_BufferDataSend( regions, iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_BufferDataSend',&
-  __FILE__ )
+  'PLAG_BufferDataSend.F90' )
     
 ! get dimensions ------------------------------
   
@@ -480,6 +480,7 @@ END SUBROUTINE PLAG_BufferDataSend
 ! Initial import
 !
 !******************************************************************************
+
 
 
 

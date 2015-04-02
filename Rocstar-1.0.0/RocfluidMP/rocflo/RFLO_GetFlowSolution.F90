@@ -99,7 +99,7 @@ SUBROUTINE RFLO_GetFlowSolution( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_GetFlowSolution',&
-  __FILE__ )
+  'RFLO_GetFlowSolution.F90' )
 
 ! read/receive solution for all regions on this processor
 
@@ -394,6 +394,7 @@ END SUBROUTINE RFLO_GetFlowSolution
 ! Simplified solver initialization routine.
 !
 !******************************************************************************
+
 
 
 

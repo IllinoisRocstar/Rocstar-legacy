@@ -121,7 +121,7 @@ SUBROUTINE RFLO_TimeStepping( dTimeSystem,dIterSystem,regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_TimeStepping',&
-  __FILE__ )
+  'RFLO_TimeStepping.F90' )
 
 ! initialize ------------------------------------------------------------------
 
@@ -829,6 +829,7 @@ END SUBROUTINE RFLO_TimeStepping
 ! Added time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

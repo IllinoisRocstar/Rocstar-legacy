@@ -126,7 +126,7 @@ SUBROUTINE RFLU_DeallocateMemoryGSpeeds(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocateMemoryGSpeeds',&
-  __FILE__)
+  'RFLU_ModDeallocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -260,7 +260,7 @@ SUBROUTINE RFLU_DeallocateMemorySol(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocateMemorySol',&
-  __FILE__)
+  'RFLU_ModDeallocateMemory.F90')
 
 ! ******************************************************************************
 ! Allocate memory
@@ -329,7 +329,7 @@ SUBROUTINE RFLU_DeallocateMemorySolCv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocateMemorySolCv',&
-  __FILE__)
+  'RFLU_ModDeallocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -410,7 +410,7 @@ SUBROUTINE RFLU_DeallocateMemorySolDv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocateMemorySolDv',&
-  __FILE__)
+  'RFLU_ModDeallocateMemory.F90')
 
 ! ******************************************************************************
 ! Deallocate memory
@@ -478,7 +478,7 @@ SUBROUTINE RFLU_DeallocateMemorySolGv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocateMemorySolGv',&
-  __FILE__)
+  'RFLU_ModDeallocateMemory.F90')
 
 ! ******************************************************************************
 ! Deallocate memory
@@ -546,7 +546,7 @@ SUBROUTINE RFLU_DeallocateMemorySolTv(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocateMemorySolTv',&
-  __FILE__)
+  'RFLU_ModDeallocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -627,7 +627,7 @@ SUBROUTINE RFLU_DeallocateMemoryTStep(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocateMemoryTStep',&
-  __FILE__)
+  'RFLU_ModDeallocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -931,7 +931,7 @@ SUBROUTINE RFLU_DeallocateMemoryTStep_C(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocateMemoryTStep_C',&
-  __FILE__)
+  'RFLU_ModDeallocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -1023,7 +1023,7 @@ SUBROUTINE RFLU_DeallocateMemoryTStep_I(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocateMemoryTStep_I',&
-  __FILE__)
+  'RFLU_ModDeallocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -1115,6 +1115,15 @@ END MODULE RFLU_ModDeallocateMemory
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
 
 
 

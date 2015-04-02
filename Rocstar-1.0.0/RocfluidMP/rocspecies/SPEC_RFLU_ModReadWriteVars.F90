@@ -139,7 +139,7 @@ SUBROUTINE SPEC_RFLU_ReadCvASCII(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_ReadCvASCII',&
-  __FILE__)
+  'SPEC_RFLU_ModReadWriteVars.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -422,7 +422,7 @@ SUBROUTINE SPEC_RFLU_ReadCvBinary(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_ReadCvBinary',&
-  __FILE__)
+  'SPEC_RFLU_ModReadWriteVars.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -707,7 +707,7 @@ SUBROUTINE SPEC_RFLU_ReadEEvASCII(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_ReadEEvASCII',&
-  __FILE__)
+  'SPEC_RFLU_ModReadWriteVars.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1018,7 +1018,7 @@ SUBROUTINE SPEC_RFLU_ReadEEvBinary(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_ReadEEvBinary',&
-  __FILE__)
+  'SPEC_RFLU_ModReadWriteVars.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1321,7 +1321,7 @@ SUBROUTINE SPEC_RFLU_WriteCvASCII(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_WriteCvASCII',&
-  __FILE__)
+  'SPEC_RFLU_ModReadWriteVars.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1479,7 +1479,7 @@ SUBROUTINE SPEC_RFLU_WriteCvBinary(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_WriteCvBinary',&
-  __FILE__)
+  'SPEC_RFLU_ModReadWriteVars.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1636,7 +1636,7 @@ SUBROUTINE SPEC_RFLU_WriteEEvASCII(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_WriteEEvASCII',&
-  __FILE__)
+  'SPEC_RFLU_ModReadWriteVars.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1806,7 +1806,7 @@ SUBROUTINE SPEC_RFLU_WriteEEvBinary(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_WriteEEvBinary',&
-  __FILE__)
+  'SPEC_RFLU_ModReadWriteVars.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1948,6 +1948,14 @@ END MODULE SPEC_RFLU_ModReadWriteVars
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
 
 
 

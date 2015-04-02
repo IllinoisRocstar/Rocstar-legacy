@@ -74,7 +74,7 @@ SUBROUTINE RADI_FlimZeroDummyCells( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'RADI_FlimZeroDummyCells',&
-  __FILE__ )
+  'RADI_FlimZeroDummyCells.F90' )
 
 ! zero out residuals in dummy cells -------------------------------------------
 
@@ -119,6 +119,7 @@ END SUBROUTINE RADI_FlimZeroDummyCells
 !
 !
 !******************************************************************************
+
 
 
 

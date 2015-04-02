@@ -128,7 +128,7 @@ MODULE RFLU_ModWENO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WENOGradCells_2D',&
-  __FILE__ )
+  'RFLU_ModWENO.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::WENOGradCells_2D")
@@ -307,7 +307,7 @@ MODULE RFLU_ModWENO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WENOGradCells_3D',&
-  __FILE__ )
+  'RFLU_ModWENO.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::WENOGradCells_3D")
@@ -490,7 +490,7 @@ MODULE RFLU_ModWENO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WENOGradCellsWrapper',&
-  __FILE__ )
+  'RFLU_ModWENO.F90' )
 
 ! ******************************************************************************    
 !   Call weighting routines
@@ -574,7 +574,7 @@ MODULE RFLU_ModWENO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WENOGradCellsXYZ_1D',&
-  __FILE__ )
+  'RFLU_ModWENO.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::WENOGradCellsXYZ_1D")
@@ -789,7 +789,7 @@ MODULE RFLU_ModWENO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WENOGradCellsXYZ_2D',&
-  __FILE__ )
+  'RFLU_ModWENO.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::WENOGradCellsXYZ_2D")
@@ -993,7 +993,7 @@ MODULE RFLU_ModWENO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WENOGradCellsXYZ_3D',&
-  __FILE__ )
+  'RFLU_ModWENO.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::WENOGradCellsXYZ_3D")
@@ -1214,7 +1214,7 @@ MODULE RFLU_ModWENO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WENOGradCellsXYZFast_2D',&
-  __FILE__ )
+  'RFLU_ModWENO.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::WENOGradCellsXYZFast_2D")
@@ -1414,7 +1414,7 @@ MODULE RFLU_ModWENO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WENOGradCellsXYZFast_3D',&
-  __FILE__ )
+  'RFLU_ModWENO.F90' )
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::WENOGradCellsXYZFast_3D")
@@ -1619,7 +1619,7 @@ MODULE RFLU_ModWENO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WENOGradCellsXYZWrapper',&
-  __FILE__ )
+  'RFLU_ModWENO.F90' )
 
 ! ******************************************************************************    
 !   Call weighting routines
@@ -1675,6 +1675,15 @@ END MODULE RFLU_ModWENO
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
 
 
 

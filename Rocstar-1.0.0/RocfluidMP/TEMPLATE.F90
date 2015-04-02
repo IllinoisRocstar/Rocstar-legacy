@@ -63,7 +63,7 @@ FUNCTION
   RCSIdentString = '$RCSfile: TEMPLATE.F90,v $ $Revision: 1.5 $'
 
   CALL RegisterFunction( global,'function name',&
-  __FILE__ )
+  'TEMPLATE.F90' )
 
 ! comment ---------------------------------------------------------------------
 
@@ -106,6 +106,7 @@ END FUNCTION
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
 
 
 

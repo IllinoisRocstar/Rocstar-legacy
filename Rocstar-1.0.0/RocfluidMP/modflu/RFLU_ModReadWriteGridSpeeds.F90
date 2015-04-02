@@ -123,7 +123,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridSpeedsASCII',&
-  __FILE__)
+  'RFLU_ModReadWriteGridSpeeds.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -384,7 +384,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridSpeedsBinary',&
-  __FILE__)
+  'RFLU_ModReadWriteGridSpeeds.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -642,7 +642,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridSpeedsWrapper',&
-  __FILE__)
+  'RFLU_ModReadWriteGridSpeeds.F90')
 
 ! ******************************************************************************
 !   Read grid speed files
@@ -723,7 +723,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteGridSpeedsASCII',&
-  __FILE__)
+  'RFLU_ModReadWriteGridSpeeds.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -910,7 +910,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteGridSpeedsBinary',&
-  __FILE__)
+  'RFLU_ModReadWriteGridSpeeds.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1096,7 +1096,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteGridSpeedsWrapper',&
-  __FILE__)
+  'RFLU_ModReadWriteGridSpeeds.F90')
 
 ! ******************************************************************************
 !   Read grid speed file
@@ -1153,6 +1153,12 @@ END MODULE RFLU_ModReadWriteGridSpeeds
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
 
 
 

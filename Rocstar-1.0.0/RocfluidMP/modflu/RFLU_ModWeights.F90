@@ -128,7 +128,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateWtsBF2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -267,7 +267,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateWtsBF2CWrapper',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -347,7 +347,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateWtsC2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -478,7 +478,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateWtsC2CWrapper',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -559,7 +559,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateWtsF2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -695,7 +695,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateWtsF2CWrapper',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -777,7 +777,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeWtsBF2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -950,7 +950,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeWtsBF2CWrapper',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -1031,7 +1031,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeWtsC2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1189,7 +1189,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeWtsC2CWrapper',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -1270,7 +1270,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeWtsF2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1438,7 +1438,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeWtsF2CWrapper',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -1525,7 +1525,7 @@ MODULE RFLU_ModWeights
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_ComputeWtsX2C_1D',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -1650,7 +1650,7 @@ MODULE RFLU_ModWeights
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_ComputeStencilMoments2D1',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Compute moments
@@ -1781,7 +1781,7 @@ MODULE RFLU_ModWeights
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_ComputeStencilMoments3D1',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Compute moments
@@ -1928,7 +1928,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyBWtsF2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -2026,7 +2026,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyWtsBF2CWrapper',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -2103,7 +2103,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyWtsC2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -2200,7 +2200,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyWtsC2CWrapper',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -2279,7 +2279,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyWtsF2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -2373,7 +2373,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyWtsF2CWrapper',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -2452,7 +2452,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyWtsBF2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set grid pointer
@@ -2527,7 +2527,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyWtsC2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set grid pointer
@@ -2599,7 +2599,7 @@ MODULE RFLU_ModWeights
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyWtsF2C',&
-  __FILE__)
+  'RFLU_ModWeights.F90')
 
 ! ******************************************************************************
 !   Set grid pointer
@@ -2690,6 +2690,30 @@ END MODULE RFLU_ModWeights
 ! Initial revision                                                             
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

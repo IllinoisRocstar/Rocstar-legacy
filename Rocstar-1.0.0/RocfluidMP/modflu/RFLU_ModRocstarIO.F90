@@ -159,7 +159,7 @@ MODULE RFLU_ModRocstarIO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_GENX_BuildRocinPaneStrings', & 
-                          __FILE__)
+                          'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -251,7 +251,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_GENX_CloseRocinCtrlFiles', & 
-                          __FILE__)
+                          'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -340,7 +340,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_GENX_DecideReadFile',&
-  __FILE__)
+  'RFLU_ModRocstarIO.F90')
     
 ! ******************************************************************************
 !   Decide whether need to read files
@@ -405,7 +405,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_GENX_DecideWriteFile',&
-  __FILE__)
+  'RFLU_ModRocstarIO.F90')
     
 ! ******************************************************************************
 !   Decide whether need to write files
@@ -1450,7 +1450,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_GENX_OpenRocinCtrlFiles', & 
-                          __FILE__)
+                          'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1701,7 +1701,7 @@ MODULE RFLU_ModRocstarIO
     pGrid => pRegion%grid
 
     CALL RegisterFunction(global,'RFLU_GENX_PutDataGSpeedsSurf',&
-  __FILE__)
+  'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1848,7 +1848,7 @@ MODULE RFLU_ModRocstarIO
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_GENX_PutDataGSpeedsVol',&
-  __FILE__)
+  'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -2251,7 +2251,7 @@ MODULE RFLU_ModRocstarIO
     pGrid => pRegion%grid
 
     CALL RegisterFunction(global,'RFLU_GENX_PutGridSurf',&
-  __FILE__)
+  'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -2444,7 +2444,7 @@ MODULE RFLU_ModRocstarIO
     pGrid => pRegion%grid
 
     CALL RegisterFunction(global,'RFLU_GENX_PutGridVol',&
-  __FILE__)
+  'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -2579,7 +2579,7 @@ MODULE RFLU_ModRocstarIO
     pGrid => pRegion%grid
 
     CALL RegisterFunction(global,'RFLU_GENX_ReadWindow',&
-  __FILE__)
+  'RFLU_ModRocstarIO.F90')
 
 ! ******************************************************************************
 !   Set variables
@@ -2691,7 +2691,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_GENX_WriteRocinCtrlFiles', & 
-                          __FILE__)
+                          'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -2901,6 +2901,17 @@ END MODULE RFLU_ModRocstarIO
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -121,7 +121,7 @@ MODULE RFLU_ModMergeRegions
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MERG_MergeGrid',&
-  __FILE__)
+  'RFLU_ModMergeRegions.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Merging grid...' 
@@ -401,7 +401,7 @@ MODULE RFLU_ModMergeRegions
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MERG_MergePatchCoeffs',&
-  __FILE__)
+  'RFLU_ModMergeRegions.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Merging patch coefficients...' 
@@ -530,7 +530,7 @@ MODULE RFLU_ModMergeRegions
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_MERG_MergeSolWrapper',&
-  __FILE__)
+  'RFLU_ModMergeRegions.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Merging solution...' 
@@ -659,6 +659,9 @@ END MODULE RFLU_ModMergeRegions
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
 
 
 

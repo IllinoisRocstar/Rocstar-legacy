@@ -86,7 +86,7 @@ SUBROUTINE RFLU_PickSpecialFaces(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_PickSpecialFaces', &
-                        __FILE__)
+                        'RFLU_PickSpecialFaces.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Picking special faces...'
@@ -264,6 +264,7 @@ END SUBROUTINE RFLU_PickSpecialFaces
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

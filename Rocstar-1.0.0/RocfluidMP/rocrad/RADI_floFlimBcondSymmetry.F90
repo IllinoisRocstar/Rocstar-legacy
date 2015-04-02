@@ -72,7 +72,7 @@ SUBROUTINE RADI_FloFlimBcondSymmetry( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FloFlimBcondSymmetry',&
-  __FILE__ )
+  'RADI_floFlimBcondSymmetry.F90' )
 
 ! get dimensions and pointers
 
@@ -125,6 +125,7 @@ END SUBROUTINE RADI_FloFlimBcondSymmetry
 !
 !
 !******************************************************************************
+
 
 
 

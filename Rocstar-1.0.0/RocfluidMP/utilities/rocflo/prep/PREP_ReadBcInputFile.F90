@@ -66,7 +66,7 @@ SUBROUTINE ReadBcInputFile( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'ReadBcInputFile',&
-  __FILE__ )
+  'PREP_ReadBcInputFile.F90' )
 
 ! open file
 
@@ -174,6 +174,7 @@ END SUBROUTINE ReadBcInputFile
 !
 !
 !******************************************************************************
+
 
 
 

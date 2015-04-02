@@ -140,7 +140,7 @@ MODULE RFLU_ModDifferentiationFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradFaces',&
-  __FILE__)
+  'RFLU_ModDifferentiationFaces.F90')
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::ComputeGradFaces")
@@ -422,7 +422,7 @@ MODULE RFLU_ModDifferentiationFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradFacesConstr',&
-  __FILE__)
+  'RFLU_ModDifferentiationFaces.F90')
 
 #ifdef ROCPROF
     CALL FPROFILER_BEGINS("RFLU::ComputeGradFacesConstr")
@@ -856,7 +856,7 @@ MODULE RFLU_ModDifferentiationFaces
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradFacesWrapper',&
-  __FILE__ )
+  'RFLU_ModDifferentiationFaces.F90' )
 
 ! ******************************************************************************    
 !   Call gradient routines
@@ -945,7 +945,7 @@ MODULE RFLU_ModDifferentiationFaces
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_ComputeGradConstrained',&
-  __FILE__)
+  'RFLU_ModDifferentiationFaces.F90')
 
 ! ******************************************************************************
 !   Set variables
@@ -1114,6 +1114,10 @@ END MODULE RFLU_ModDifferentiationFaces
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

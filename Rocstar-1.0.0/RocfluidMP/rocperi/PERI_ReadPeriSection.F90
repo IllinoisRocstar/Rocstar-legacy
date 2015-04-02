@@ -79,7 +79,7 @@ SUBROUTINE PERI_ReadPeriSection( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'PERI_ReadPeriSection',&
-  __FILE__ )
+  'PERI_ReadPeriSection.F90' )
 
 ! specify keywords and search for them
 
@@ -158,6 +158,7 @@ END SUBROUTINE PERI_ReadPeriSection
 !
 !
 !******************************************************************************
+
 
 
 

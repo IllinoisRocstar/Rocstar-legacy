@@ -82,7 +82,7 @@ SUBROUTINE RADI_FloFlimRecvDummyVals( region,regionSrc,patch,patchSrc )
   global => region%global
 
   CALL RegisterFunction( global,'RADI_FloFlimRecvDummyVals',&
-  __FILE__ )
+  'RADI_floFlimRecvDummyVals.F90' )
 
 ! check if the source region is active
 
@@ -194,6 +194,7 @@ END SUBROUTINE RADI_FloFlimRecvDummyVals
 !
 !
 !******************************************************************************
+
 
 
 

@@ -72,7 +72,7 @@ SUBROUTINE TURB_FloRansBcondInflow( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_FloRansBcondInflow',&
-  __FILE__ )
+  'TURB_floRansBcondInflow.F90' )
 
 ! get dimensions and pointers
 
@@ -131,6 +131,7 @@ END SUBROUTINE TURB_FloRansBcondInflow
 !
 !
 !******************************************************************************
+
 
 
 

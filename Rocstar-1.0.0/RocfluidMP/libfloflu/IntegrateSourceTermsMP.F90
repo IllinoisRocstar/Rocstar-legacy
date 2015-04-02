@@ -93,7 +93,7 @@ SUBROUTINE IntegrateSourceTermsMP(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'IntegrateSourceTermsMP',&
-  __FILE__)
+  'IntegrateSourceTermsMP.F90')
 
 #ifdef RFLU
 #ifdef SPEC  
@@ -157,6 +157,7 @@ END SUBROUTINE IntegrateSourceTermsMP
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

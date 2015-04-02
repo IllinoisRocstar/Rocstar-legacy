@@ -95,7 +95,7 @@ SUBROUTINE PLAG_RFLU_InitSolutionRandom(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_InitSolutionRandom', &
-                        __FILE__)
+                        'PLAG_RFLU_InitSolutionRandom.F90')
  
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -338,6 +338,7 @@ END SUBROUTINE PLAG_RFLU_InitSolutionRandom
 ! Initial import
 !
 ! ******************************************************************************
+
 
 
 

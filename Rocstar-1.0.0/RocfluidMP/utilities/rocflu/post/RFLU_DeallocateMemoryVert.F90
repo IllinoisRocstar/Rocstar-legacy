@@ -84,7 +84,7 @@ SUBROUTINE RFLU_DeallocateMemoryVert(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DeallocateMemoryVert', &
-                        __FILE__)
+                        'RFLU_DeallocateMemoryVert.F90')
 
 ! ******************************************************************************
 ! Set pointers 
@@ -153,6 +153,7 @@ END SUBROUTINE RFLU_DeallocateMemoryVert
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

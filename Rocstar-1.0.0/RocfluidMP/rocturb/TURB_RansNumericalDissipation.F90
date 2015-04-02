@@ -59,7 +59,7 @@ SUBROUTINE TURB_RansNumericalDissipation( region ) ! PUBLIC
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_RansNumericalDissipation', &
-                         __FILE__ )
+                         'TURB_RansNumericalDissipation.F90' )
 
   IF (region%turbInput%modelClass /= MODEL_RANS) GOTO 999
 
@@ -116,6 +116,7 @@ END SUBROUTINE TURB_RansNumericalDissipation
 !
 !
 !******************************************************************************
+
 
 
 

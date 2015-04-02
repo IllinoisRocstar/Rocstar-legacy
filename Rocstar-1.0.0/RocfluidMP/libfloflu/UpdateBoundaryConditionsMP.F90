@@ -102,7 +102,7 @@ SUBROUTINE UpdateBoundaryConditionsMP( regions,istage )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'UpdateBoundaryConditions',&
-  __FILE__ )
+  'UpdateBoundaryConditionsMP.F90' )
 
 ! get time-stepping coefficients ==============================================
 
@@ -308,6 +308,7 @@ END SUBROUTINE UpdateBoundaryConditionsMP
 ! Initial import for RocfluidMP
 !
 !******************************************************************************
+
 
 
 

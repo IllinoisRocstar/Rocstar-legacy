@@ -133,7 +133,7 @@ SUBROUTINE RFLU_MergePostProcessRegions(levels)
   global => levels(1)%regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_MergePostProcessRegions',&
-  __FILE__)
+  'RFLU_MergePostProcessRegions.F90')
 
 #ifndef NO_TECPLOT
 ! ******************************************************************************
@@ -639,6 +639,7 @@ END SUBROUTINE RFLU_MergePostProcessRegions
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

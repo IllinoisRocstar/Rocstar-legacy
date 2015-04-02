@@ -84,7 +84,7 @@ SUBROUTINE RFLU_RandomInit( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLU_RandomInit',&
-  __FILE__ )
+  'RFLU_RandomInit.F90' )
 
 ! ******************************************************************************
 ! Set seed type
@@ -145,6 +145,7 @@ END SUBROUTINE RFLU_RandomInit
 !
 !
 !******************************************************************************
+
 
 
 

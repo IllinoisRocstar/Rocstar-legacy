@@ -75,7 +75,7 @@ SUBROUTINE RADI_FloFlimSendCornEdgeCells( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RADI_FloFlimSendCornEdgeCells',&
-  __FILE__ )
+  'RADI_floFlimSendCornEdgeCells.F90' )
 
   iLev =  regions(iReg)%currLevel
   nCv  =  regions(iReg)%radiInput%nCv
@@ -160,6 +160,7 @@ END SUBROUTINE RADI_FloFlimSendCornEdgeCells
 !
 !
 !******************************************************************************
+
 
 
 

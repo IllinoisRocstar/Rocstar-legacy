@@ -78,7 +78,7 @@ SUBROUTINE PLAG_DeallocateMemoryPost( region, iReg )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_DeallocateMemoryPost',&
-  __FILE__ )
+  'PLAG_DeallocateMemoryPost.F90' )
 
   IF ( iReg == 1 .AND. global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -166,6 +166,7 @@ END SUBROUTINE PLAG_DeallocateMemoryPost
 ! Initial import
 !
 !******************************************************************************
+
 
 
 

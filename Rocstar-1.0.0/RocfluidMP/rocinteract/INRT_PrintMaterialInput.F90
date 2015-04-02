@@ -65,7 +65,7 @@ SUBROUTINE INRT_PrintMaterialInput( global ) ! PUBLIC
   RCSIdentString = '$RCSfile: INRT_PrintMaterialInput.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction( global,'INRT_PrintMaterialInput',&
-  __FILE__ )
+  'INRT_PrintMaterialInput.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -145,6 +145,7 @@ END SUBROUTINE INRT_PrintMaterialInput
 ! converted from libfloflu routine to rocinteract routine
 !
 !******************************************************************************
+
 
 
 

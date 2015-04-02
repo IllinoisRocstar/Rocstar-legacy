@@ -134,7 +134,7 @@ SUBROUTINE RFLU_ComputeLimiterBarthJesp(pRegion,iBegVar,iEndVar,iBegGrad, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeLimiterBarthJesp',&
-  __FILE__ )
+  'RFLU_ModLimiters.F90' )
 
   IF ( (iEndVar  - iBegVar) /= (iEndGrad - iBegGrad) ) THEN
     CALL ErrorStop(global,ERR_GRAD_MISMATCH,__LINE__)
@@ -346,7 +346,7 @@ SUBROUTINE RFLU_ComputeLimiterVenkat(pRegion,iBegVar,iEndVar,iBegGrad, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeLimiterVenkat',&
-  __FILE__ )
+  'RFLU_ModLimiters.F90' )
 
 ! ******************************************************************************    
 ! Set pointers and variables
@@ -560,7 +560,7 @@ SUBROUTINE RFLU_CreateLimiter(pRegion,iBegGrad,iEndGrad,lim)
   pGrid  => pRegion%grid
 
   CALL RegisterFunction(global,'RFLU_CreateLimiter', &
-                        __FILE__)
+                        'RFLU_ModLimiters.F90')
 
 ! ******************************************************************************
 ! Create limiter
@@ -630,7 +630,7 @@ SUBROUTINE RFLU_DestroyLimiter(pRegion,lim)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DestroyLimiter', &
-                        __FILE__)
+                        'RFLU_ModLimiters.F90')
 
 ! ******************************************************************************
 ! Destroy limiter
@@ -709,7 +709,7 @@ SUBROUTINE RFLU_LimitGradCells(pRegion,iBegGrad,iEndGrad,grad,lim)
   pGrid  => pRegion%grid
 
   CALL RegisterFunction(global,'RFLU_LimitGradCells', &
-                        __FILE__)
+                        'RFLU_ModLimiters.F90')
 
 ! ******************************************************************************
 ! Apply limiter
@@ -799,7 +799,7 @@ SUBROUTINE RFLU_LimitGradCellsSimple(pRegion,iBegVar,iEndVar,iBegGrad, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_LimitGradCellsSimple',&
-  __FILE__ )
+  'RFLU_ModLimiters.F90' )
 
   IF ( (iEndVar  - iBegVar) /= (iEndGrad - iBegGrad) ) THEN 
     CALL ErrorStop(global,ERR_GRAD_MISMATCH,__LINE__)
@@ -924,6 +924,12 @@ END MODULE RFLU_ModLimiters
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
 
 
 

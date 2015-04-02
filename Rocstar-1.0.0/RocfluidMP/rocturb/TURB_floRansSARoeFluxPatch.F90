@@ -90,7 +90,7 @@ SUBROUTINE TURB_FloRansSARoeFluxPatch( region,patch )
                        3._RFREAL*eps+1.E-30_RFREAL)
 
   CALL RegisterFunction( region%global,'TURB_FloRansSARoeFluxPatch',&
-  __FILE__ )
+  'TURB_floRansSARoeFluxPatch.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -356,6 +356,7 @@ END SUBROUTINE TURB_FloRansSARoeFluxPatch
 !
 !
 !******************************************************************************
+
 
 
 

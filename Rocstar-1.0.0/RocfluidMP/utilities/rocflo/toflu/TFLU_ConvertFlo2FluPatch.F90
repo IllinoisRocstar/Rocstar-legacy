@@ -79,7 +79,7 @@ SUBROUTINE ConvertFlo2FluPatch( iReg,regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'ConvertFlo2FluPatch',&
-  __FILE__ )
+  'TFLU_ConvertFlo2FluPatch.F90' )
 
 ! obtain boundary vertices and faces (quads) connectivity ---------------------
 
@@ -260,6 +260,7 @@ END SUBROUTINE ConvertFlo2FluPatch
 !
 !
 !******************************************************************************
+
 
 
 

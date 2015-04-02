@@ -93,7 +93,7 @@ SUBROUTINE PEUL_ReadConPartSection( regions,nPtypes,brbeg,brend )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PEUL_ReadConPartSection',&
-  __FILE__ )
+  'PEUL_ReadConPartSection.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -290,6 +290,7 @@ END SUBROUTINE PEUL_ReadConPartSection
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 
