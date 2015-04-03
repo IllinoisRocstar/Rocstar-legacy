@@ -24,7 +24,7 @@ void Rocon::init_from_file( const char *inp, const int *ndiv )
 	      << configfile << std::endl;
     return;
   }
-  Util::Parameters configparams;
+  IRAD::Util::Parameters configparams;
   configparams.ReadFromStream(ConfigFile);
   ConfigFile.close();
   std::string inpath(configparams.Param("constraint_surface"));

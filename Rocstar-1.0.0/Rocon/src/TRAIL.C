@@ -567,7 +567,7 @@ TRAIL_FD2FE_WinCreate(const std::string &wname,const std::string &outwname,std::
   // Get the window communicator
   MPI_Comm communicator = MPI_COMM_NULL;
   COM_get_communicator(wname.c_str(),&communicator);
-  Comm::CommunicatorObject BaseComm(communicator);
+  IRAD::Comm::CommunicatorObject BaseComm(communicator);
   int nprocs = BaseComm.Size();
   int rank   = BaseComm.Rank();
   if(ouf && !rank)
@@ -581,14 +581,14 @@ TRAIL_FD2FE_WinCreate(const std::string &wname,const std::string &outwname,std::
   TRAIL_GetPanelAttribute(wname,"block_id",local_block_ids);
   if(ouf && !rank){
     *ouf << "Local Block_ids: ";
-    DumpContents(*ouf,local_block_ids," ");
+    IRAD::Util::DumpContents(*ouf,local_block_ids," ");
     *ouf << std::endl;
   }
   std::vector<int> global_blocks;
   TRAIL_UniqueAcrossProcs(local_block_ids,global_blocks,BaseComm.World());
   if(ouf && !rank){
     *ouf << "Global Block_ids: ";
-    DumpContents(*ouf,local_block_ids," ");
+    IRAD::Util::DumpContents(*ouf,local_block_ids," ");
     *ouf << std::endl;
   }
   // Now all_block_ids is an array of all the unique block ids across all procs
@@ -623,7 +623,7 @@ TRAIL_FD2FE_WinCreate(const std::string &wname,const std::string &outwname,std::
     // Split the communicator into haves and have nots for this block
     if(ouf && !rank)
       *ouf << "Splitting communicator for blocks." << std::endl;
-    Comm::CommunicatorObject BlockComm;
+    IRAD::Comm::CommunicatorObject BlockComm;
     BaseComm.Split(block_color,rank,BlockComm);
     if(block_color == 1){ // all the guys with data on this block
       int block_nproc = BlockComm.Size();
@@ -649,7 +649,7 @@ TRAIL_FD2FE_WinCreate(const std::string &wname,const std::string &outwname,std::
 	// Determine if local processor owns part of the patch
 	// Split the communicator into haves and have nots
 	int patch_color = 0;
-	Comm::CommunicatorObject PatchComm;
+	IRAD::Comm::CommunicatorObject PatchComm;
 	std::vector<int>::iterator fp = std::find(local_patch_ids.begin(),local_patch_ids.end(),patch_id);
 	if(fp != local_patch_ids.end())
 	  patch_color = 1;
@@ -742,7 +742,7 @@ TRAIL_FD2FE_WinCreate(const std::string &wname,const std::string &outwname,std::
 	      PatchComm.ASend(FlattenedNeighborExtents[nc],nid,1);
 	      if(ouf){
 		*ouf << "Sending the extents I request from " << nid << ": ";
-		DumpContents(*ouf,FlattenedNeighborExtents[nc]," ");
+		IRAD::Util::DumpContents(*ouf,FlattenedNeighborExtents[nc]," ");
 		*ouf << std::endl;
 	      }
 	      PatchComm.ARecv(RemoteNodalCoordinates[nc],nid,2);
@@ -799,7 +799,7 @@ TRAIL_FD2FE_WinCreate(const std::string &wname,const std::string &outwname,std::
 // 	    std::vector<int> tempout;
 // 	    uns_extent.Flatten(tempout);
 // 	    *ouf << "Unstructured extent: ";
-// 	    DumpContents(*ouf,tempout," ");
+// 	    IRAD::Util::DumpContents(*ouf,tempout," ");
 // 	    *ouf << std::endl;
 // 	  }
 	  // Register it as the local_extent
@@ -901,7 +901,7 @@ TRAIL_FD2FE_WinCreate(const std::string &wname,const std::string &outwname,std::
 		NeighborExtent.Flatten(flatsendextent);
 		if(ouf){
 		  *ouf << "Send extents: ";
-		  DumpContents(*ouf,flatsendextent," ");
+		  IRAD::Util::DumpContents(*ouf,flatsendextent," ");
 		  *ouf << std::endl;
 		}
 		flat_send_extents.push_back(flatsendextent);
@@ -922,19 +922,19 @@ TRAIL_FD2FE_WinCreate(const std::string &wname,const std::string &outwname,std::
 	    *ouf << "Number of panes I send to: " << nsend << std::endl
 		 << "Number of panes I recv from: " << nrecv << std::endl
 		 << "Send panes: ";
-	    DumpContents(*ouf,send_panes," ");
+	    IRAD::Util::DumpContents(*ouf,send_panes," ");
 	    *ouf << std::endl
 		 << "Recv panes: ";
-	    DumpContents(*ouf,recv_panes," ");
+	    IRAD::Util::DumpContents(*ouf,recv_panes," ");
 	    *ouf << std::endl
 		 << "Send Extents: " << std::endl;
 	    for(int o = 0;o < nsend;o++){
-	      DumpContents(*ouf,flat_send_extents[o]," ");
+	      IRAD::Util::DumpContents(*ouf,flat_send_extents[o]," ");
 	      *ouf << std::endl;
 	    }
 	    *ouf << "Recv Extents:" << std::endl;
 	    for(int o = 0;o < nrecv;o++){
-	      DumpContents(*ouf,flat_recv_extents[o]," ");
+	      IRAD::Util::DumpContents(*ouf,flat_recv_extents[o]," ");
 	      *ouf << std::endl;
 	    }
 	  }
@@ -987,7 +987,7 @@ TRAIL_FE2FD_Transfer(const std::string &fewin,const std::string &fdwin,
   // Get the window communicator
   //  MPI_Comm communicator = MPI_COMM_NULL;
   //  COM_get_communicator(fdwin.c_str(),&communicator);
-  Comm::CommunicatorObject BaseComm(communicator);
+  IRAD::Comm::CommunicatorObject BaseComm(communicator);
   int rank   = BaseComm.Rank();
   std::vector<std::string>::iterator atti = atts.begin();
   if(ouf)
@@ -1000,7 +1000,7 @@ TRAIL_FE2FD_Transfer(const std::string &fewin,const std::string &fdwin,
     int att_color = 0;
     if(att_hndl >= 0)
       att_color = 1;
-    Comm::CommunicatorObject AttComm;
+    IRAD::Comm::CommunicatorObject AttComm;
     BaseComm.Split(att_color,rank,AttComm);
     if(att_color == 1){
       MPI_Comm ocomm = COM_get_default_communicator();
@@ -1032,14 +1032,14 @@ TRAIL_FE2FD_Transfer(const std::string &fewin,const std::string &fdwin,
   TRAIL_GetPanelAttribute(fdwin,"block_id",local_block_ids);
   if(ouf){
     *ouf << "FE2FD: Local Block_ids: ";
-    DumpContents(*ouf,local_block_ids," ");
+    IRAD::Util::DumpContents(*ouf,local_block_ids," ");
     *ouf << std::endl;
   }
   std::vector<int> global_blocks;
   TRAIL_UniqueAcrossProcs(local_block_ids,global_blocks,BaseComm.World());
   if(ouf){
     *ouf << "FE2FD: Global Block_ids: ";
-    DumpContents(*ouf,local_block_ids," ");
+    IRAD::Util::DumpContents(*ouf,local_block_ids," ");
     *ouf << std::endl;
   }
   // Now all_block_ids is an array of all the unique block ids across all procs
@@ -1054,7 +1054,7 @@ TRAIL_FE2FD_Transfer(const std::string &fewin,const std::string &fdwin,
     // Split the communicator into haves and have nots for this block
     if(ouf)
       *ouf << "FE2FD: Splitting communicator for blocks." << std::endl;
-    Comm::CommunicatorObject BlockComm;
+    IRAD::Comm::CommunicatorObject BlockComm;
     BaseComm.Split(block_color,rank,BlockComm);
     if(block_color == 1){ // all the guys with data on this block
       int block_nproc = BlockComm.Size();
@@ -1080,7 +1080,7 @@ TRAIL_FE2FD_Transfer(const std::string &fewin,const std::string &fdwin,
 	// Determine if local processor owns part of the patch
 	// Split the communicator into haves and have nots
 	int patch_color = 0;
-	Comm::CommunicatorObject PatchComm;
+	IRAD::Comm::CommunicatorObject PatchComm;
 	std::vector<int>::iterator fp = std::find(local_patch_ids.begin(),local_patch_ids.end(),patch_id);
 	if(fp != local_patch_ids.end())
 	  patch_color = 1;
@@ -1191,9 +1191,9 @@ TRAIL_FD2FE_Transfer(const std::string &srcwin,const std::string &destwin,
   // Get the window communicator
   MPI_Comm communicator = MPI_COMM_NULL;
   COM_get_communicator(srcwin.c_str(),&communicator);
-  Comm::CommunicatorObject BaseComm(communicator);
-  Comm::CommunicatorObject BlockComm;
-  Comm::CommunicatorObject PatchComm;
+  IRAD::Comm::CommunicatorObject BaseComm(communicator);
+  IRAD::Comm::CommunicatorObject BlockComm;
+  IRAD::Comm::CommunicatorObject PatchComm;
   // Make sure the attribute exists
   TRAIL_Add_Attributes(srcwin,destwin,atts);
   //  int nprocs = BaseComm.Size();
@@ -1207,14 +1207,14 @@ TRAIL_FD2FE_Transfer(const std::string &srcwin,const std::string &destwin,
   TRAIL_GetPanelAttribute(srcwin,"block_id",local_block_ids);
   if(ouf && !rank){
     *ouf << "TRAIL: Local Block_ids: ";
-    DumpContents(*ouf,local_block_ids," ");
+    IRAD::Util::DumpContents(*ouf,local_block_ids," ");
     *ouf << std::endl;
   }
   std::vector<int> global_blocks;
   TRAIL_UniqueAcrossProcs(local_block_ids,global_blocks,BaseComm.World());
   if(ouf && !rank){
     *ouf << "TRAIL: Global Block_ids: ";
-    DumpContents(*ouf,local_block_ids," ");
+    IRAD::Util::DumpContents(*ouf,local_block_ids," ");
     *ouf << std::endl;
   }
   // Now all_block_ids is an array of all the unique block ids across all procs
@@ -1230,7 +1230,7 @@ TRAIL_FD2FE_Transfer(const std::string &srcwin,const std::string &destwin,
       // Split the communicator into haves and have nots for this block
       if(ouf && !rank)
 	*ouf << "TRAIL: Splitting communicator for blocks." << std::endl;
-      //    Comm::CommunicatorObject BlockComm;
+      //    IRAD::Comm::CommunicatorObject BlockComm;
       BaseComm.Split(block_color,rank,BlockComm);
       if(true){
 	if(block_color == 1){ // all the guys with data on this block
@@ -1257,7 +1257,7 @@ TRAIL_FD2FE_Transfer(const std::string &srcwin,const std::string &destwin,
 	    // Determine if local processor owns part of the patch
 	    // Split the communicator into haves and have nots
 	    int patch_color = 0;
-	    //	Comm::CommunicatorObject PatchComm;
+	    //	IRAD::Comm::CommunicatorObject PatchComm;
 	    std::vector<int>::iterator fp = std::find(local_patch_ids.begin(),local_patch_ids.end(),patch_id);
 	    if(fp != local_patch_ids.end())
 	      patch_color = 1;
@@ -1495,7 +1495,7 @@ TRAIL_FD2FE_Transfer(const std::string &srcwin,const std::string &destwin,
 		  //	    if(ouf){
 		  //	      *ouf << "TRAIL: Made it past finding indices." << std::endl
 		  //		   << "TRAIL: found overlap: ";
-		  //	      DumpContents(*ouf,theflatindices," ");
+		  //	      IRAD::Util::DumpContents(*ouf,theflatindices," ");
 		  //	      *ouf << std::endl << std::flush;
 		  //	    }
 		  
@@ -1654,7 +1654,7 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
   // Get the window communicator
   MPI_Comm communicator = MPI_COMM_NULL;
   COM_get_communicator(wname.c_str(),&communicator);
-  Comm::CommunicatorObject BaseComm(communicator);
+  IRAD::Comm::CommunicatorObject BaseComm(communicator);
   int nprocs = BaseComm.Size();
   int rank   = BaseComm.Rank();
   if(ouf)
@@ -1668,14 +1668,14 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
   TRAIL_GetPanelAttribute(wname,"block_id",local_block_ids);
   if(ouf){
     *ouf << "Local Block_ids: ";
-    DumpContents(*ouf,local_block_ids," ");
+    IRAD::Util::DumpContents(*ouf,local_block_ids," ");
     *ouf << std::endl;
   }
   std::vector<int> global_blocks;
   TRAIL_UniqueAcrossProcs(local_block_ids,global_blocks,BaseComm.World());
   if(ouf){
     *ouf << "Global Block_ids: ";
-    DumpContents(*ouf,global_blocks," ");
+    IRAD::Util::DumpContents(*ouf,global_blocks," ");
     *ouf << std::endl;
   }
   // Now all_block_ids is an array of all the unique block ids across all procs
@@ -1712,7 +1712,7 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
     // Split the communicator into haves and have nots for this block
     if(ouf)
       *ouf << "Splitting communicator for blocks." << std::endl;
-    Comm::CommunicatorObject BlockComm;
+    IRAD::Comm::CommunicatorObject BlockComm;
     BaseComm.Split(block_color,rank,BlockComm);
     if(block_color == 1){ // all the guys with data on this block
       int block_nproc = BlockComm.Size();
@@ -1730,7 +1730,7 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
       TRAIL_ExtractPanes(wname,"block_id",block_id,panes); // get pane id's of panes with block id = block_id
       if(ouf){
 	*ouf << "Found " << panes.size() << " local panes: ";
-	DumpContents(*ouf,panes," ");
+	IRAD::Util::DumpContents(*ouf,panes," ");
 	*ouf << std::endl;
       }
       std::vector<int>::iterator pi = panes.begin();
@@ -1743,7 +1743,7 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
       }
       if(ouf){
 	*ouf << "Found " << local_patch_ids.size() << " local patch_ids: ";
-	DumpContents(*ouf,local_patch_ids," ");
+	IRAD::Util::DumpContents(*ouf,local_patch_ids," ");
 	*ouf << std::endl;
       }
       std::vector<int> all_patches(block_nproc);
@@ -1751,7 +1751,7 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
       // Now all_patches is an array of all the unique patch id across all procs having the current block
       if(ouf){
 	*ouf << "Found " << all_patches.size() << " global patch_ids: ";
-	DumpContents(*ouf,all_patches," ");
+	IRAD::Util::DumpContents(*ouf,all_patches," ");
 	*ouf << std::endl;
       }
       std::vector<int>::iterator pii = all_patches.begin();
@@ -1760,7 +1760,7 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
 	// Determine if local processor owns part of the patch
 	// Split the communicator into haves and have nots
 	int patch_color = 0;
-	Comm::CommunicatorObject PatchComm;
+	IRAD::Comm::CommunicatorObject PatchComm;
 	std::vector<int>::iterator fp = std::find(local_patch_ids.begin(),local_patch_ids.end(),patch_id);
 	if(fp != local_patch_ids.end())
 	  patch_color = 1;
@@ -1804,10 +1804,10 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
 	  }
 	  std::vector<int> local_patch_extent;
 	  std::vector<int> flat_local_patch_extents(6*patch_nproc);
-	  CopyIntoContainer(local_patch_extent,local_patch_extent_ptr,6);
+	  IRAD::Util::CopyIntoContainer(local_patch_extent,local_patch_extent_ptr,6);
 	  Mesh::BSExtent<int> LocalPatchExtent(local_patch_extent);
 	  std::vector<int> global_patch_extent;
-	  CopyIntoContainer(global_patch_extent,global_patch_extent_ptr,6);
+	  IRAD::Util::CopyIntoContainer(global_patch_extent,global_patch_extent_ptr,6);
 	  Mesh::BSExtent<int> GlobalPatchExtent(global_patch_extent);
 
 	  // Here's a rather simple bit of code that extends the patch to
@@ -1865,7 +1865,7 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
 	    if(ouf){
 	      *ouf << "Shared nodes found." << std::endl
 		   << "Neighbor indices: ";
-	      DumpContents(*ouf,neighborindices," ");
+	      IRAD::Util::DumpContents(*ouf,neighborindices," ");
 	      *ouf << std::endl << "Shared extents: " << std::endl;
 	      std::vector<Mesh::BSExtent<int> >::iterator bsmi = shared_extents.begin();
 	      while(bsmi != shared_extents.end()){
@@ -1891,9 +1891,9 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
 	  }
 	  if(ouf){
 	    *ouf << "Neighbor ranks: ";
-	    DumpContents(*ouf,neighborranks," ");
+	    IRAD::Util::DumpContents(*ouf,neighborranks," ");
 	    *ouf << std::endl << "Neighborpanes: ";
-	    DumpContents(*ouf,neighborpanes," ");
+	    IRAD::Util::DumpContents(*ouf,neighborpanes," ");
 	    *ouf << std::endl;
 	  }
 
@@ -1932,7 +1932,7 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
 // 	    std::vector<int> tempout;
 // 	    ExtendedPatchExtent.Flatten(tempout);
 // 	    *ouf << "Unstructured extent: ";
-// 	    DumpContents(*ouf,tempout," ");
+// 	    IRAD::Util::DumpContents(*ouf,tempout," ");
 // 	    *ouf << std::endl;
 // 	    *ouf << "Connectivity: " << std::endl
 // 		 << conn << std::endl;
@@ -1985,7 +1985,7 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
 	  TRAIL_Copy2Attribute((wname2+".pconn"),pconn,patch_pane[0],pconn.size());
 	  if(ouf){
 	    *ouf << "PConn: ";
-	    DumpContents(*ouf,pconn," ");
+	    IRAD::Util::DumpContents(*ouf,pconn," ");
 	    *ouf << std::endl;
 	  }
 	}

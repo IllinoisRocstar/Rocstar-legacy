@@ -216,7 +216,7 @@ namespace Mesh {
 
   bool TestFace::operator<(const TestFace &f)
   {
-    return(LessThan(*this,f));
+    return(IRAD::Util::LessThan(*this,f));
   };
 
   Mesh::Connectivity::Connectivity() : std::vector<std::vector<IndexType> >()
@@ -410,7 +410,7 @@ namespace Mesh {
 		  for(Mesh::IndexType nbrface = 1;nbrface <= nbr_nfaces && !found;nbrface++){
 		    Mesh::IndexType nbr_face_index = nbrface -1;
 		    if(!ef[enbr_index][nbr_face_index]){
-		      if(HaveOppositeOrientation(all_face_conn[index][findex],
+		      if(IRAD::Util::HaveOppositeOrientation(all_face_conn[index][findex],
 						 all_face_conn[enbr_index][nbr_face_index])){
 			found = true;
 			ef[enbr_index][nbr_face_index] = number_of_faces + 1;
@@ -1239,7 +1239,7 @@ namespace Mesh {
 	//	std::cout << "Mesh::FindPointInMesh: Error: Closest approach: " << dist
 	//		  << " at node " << closest_node << "." << std::endl
 	//		  << "Mesh::FindPointInMesh: Element(" << *ei << ") = (";
-	//	DumpContents(std::cout,ec[*ei-1],",");
+	//	IRAD::Util::DumpContents(std::cout,ec[*ei-1],",");
 	//	std::cout << ")" << std::endl;
 	//	std::cout << "Point: " << p << std::endl
 	//	          << "Nodes: " << std::endl;
@@ -1323,7 +1323,7 @@ namespace Mesh {
 	std::cout << "Mesh::FindPointInMesh: Error: Closest approach: " << dist
 		  << " at node " << closest_node << "." << std::endl
 		  << "Mesh::FindPointInMesh: Element(" << *ei << ") = (";
-	DumpContents(std::cout,ec[*ei-1],",");
+	IRAD::Util::DumpContents(std::cout,ec[*ei-1],",");
 	std::cout << ")" << std::endl;
 	std::vector<Mesh::IndexType>::const_iterator ei2 = dc[closest_node-1].begin();
 	GeoPrim::CBox new_bounds;
@@ -1411,7 +1411,7 @@ namespace Mesh {
 	std::cout << "Mesh::FindPointInMesh: Error: Closest approach: " << dist
 		  << " at node " << closest_node << "." << std::endl
 		  << "Mesh::FindPointInMesh: Element(" << *ei << ") = (";
-	DumpContents(std::cout,ec[*ei-1],",");
+	IRAD::Util::DumpContents(std::cout,ec[*ei-1],",");
 	std::cout << ")" << std::endl;
 	std::vector<Mesh::IndexType>::const_iterator ei2 = dc[closest_node-1].begin();
 	GeoPrim::CBox new_bounds;

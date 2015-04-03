@@ -54,14 +54,14 @@ namespace Mesh {
   const double LTOL = 0.0 - TOL;
   const double HTOL = 1.0 + TOL;
 
-  typedef Primitive::IndexType IndexType;
-  typedef ubyte CellEntityIDType;
+  typedef IRAD::Primitive::IndexType IndexType;
+  typedef IRAD::Primitive::ubyte CellEntityIDType;
   typedef std::pair<IndexType,CellEntityIDType> SubEntityId;
   typedef std::pair<SubEntityId,SubEntityId> SymbolicFace;
   typedef std::vector<IndexType> IndexVec;
-  typedef Primitive::MultiContainer<IndexType>::VecVec MultiVec;
-  typedef Primitive::MultiContainer<IndexType,IndexType>::VecMap VecMap;
-  typedef ubyte GeoDimType;
+  typedef IRAD::Primitive::MultiContainer<IndexType>::VecVec MultiVec;
+  typedef IRAD::Primitive::MultiContainer<IndexType,IndexType>::VecMap VecMap;
+  typedef IRAD::Primitive::ubyte GeoDimType;
   typedef std::string GeoNameType;
 
   template<typename OuterCont,typename OutCont,typename InnerCont,typename MapType>
