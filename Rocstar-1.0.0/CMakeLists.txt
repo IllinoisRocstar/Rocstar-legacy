@@ -20,6 +20,55 @@ if (NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE "Release")
 endif()
 
+# 
+# Add testing support from IRAD
+#
+INCLUDE(CTest)
+IF(BUILD_TESTING)
+  SET(BUILDNAME "${BUILDNAME}" CACHE STRING "Name of build on the dashboard")
+  MARK_AS_ADVANCED(BUILDNAME)
+ENDIF(BUILD_TESTING)
+
+IF(EXISTS ${CMAKE_SOURCE_DIR}/IRAD)
+  add_subdirectory(IRAD)
+  SET(IRAD_INCPATH ${CMAKE_SOURCE_DIR}/IRAD/include)
+  SET(RUNTEST ${EXECUTABLE_OUTPUT_PATH}/bin/runtest)
+  SET(TESTRESULT ${EXECUTABLE_OUTPUT_PATH}/bin/testresults)
+  SET(IRAD_LIB IRAD)
+ELSE()
+  FIND_LIBRARY(IRAD_LIB IRAD)
+  FIND_FILE(IRAD_HDR COMM.H)
+  FIND_PROGRAM(RUNTEST runtest)
+  FIND_PROGRAM(TESTRESULT testresults)
+  GET_FILENAME_COMPONENT(IRAD_LIBPATH ${IRAD_LIB} PATH)
+  GET_FILENAME_COMPONENT(IRAD_INCPATH ${IRAD_HDR} PATH)
+  GET_FILENAME_COMPONENT(IRAD_EXEPATH ${RUNTEST} PATH)
+ENDIF()
+include_directories(${IRAD_INCPATH} include)
+
+# add some stubs for testing. this crap all gets removed
+# when we add the real tests for Rocstar
+
+ADD_LIBRARY(Rocstar SHARED src/ExampleSourceFile.C)
+TARGET_LINK_LIBRARIES(Rocstar ${IRAD_LIB})
+#ADD_EXECUTABLE(rocstar_test src/TestRocstar.C)
+#TARGET_LINK_LIBRARIES(rocstar_test Rocstar)
+ADD_EXECUTABLE(sep src/ExampleSerialProgram.C src/sep.C)
+TARGET_LINK_LIBRARIES(sep Rocstar)
+#ADD_EXECUTABLE(make_project src/MakeProject.C)
+#TARGET_LINK_LIBRARIES(make_project Rocstar)
+
+IF(MPI_CXX_COMPILER)
+  ADD_DEFINITIONS(-D_ROCSTAR_PARALLEL_)
+  ADD_EXECUTABLE(pepi src/ExampleParallelProgram.C src/pepi.C)
+  TARGET_LINK_LIBRARIES(pepi Rocstar)
+#  ADD_EXECUTABLE(rocstar_parallel_test src/ParallelTestRocstar.C)
+#  TARGET_LINK_LIBRARIES(rocstar_parallel_test Rocstar)
+ENDIF()
+#
+# original rocstar stuff below here
+#
+
 add_subdirectory(Roccom)
 add_subdirectory(Rocface)
 add_subdirectory(Rocprop)
@@ -30,9 +79,10 @@ add_subdirectory(RocfluidMP)
 add_subdirectory(Rocfrac)
 add_subdirectory(Rocburn)
 add_subdirectory(Rocprep)
+add_subdirectory(testing)
 
 include_directories(./Roccom/include ./Rocman/include)
 add_executable(rocstar src/rocstar.C)
-target_link_libraries(rocstar Rocman Roccomf Roccom)
+target_link_libraries(rocstar Rocman Roccomf Roccom ${IRAD_LIB})
 
 INSTALL(TARGETS rocstar RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)

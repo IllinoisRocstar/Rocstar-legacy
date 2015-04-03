@@ -1,6 +1,6 @@
 
 
-class FlotsamComLine : public ComLineObject
+class FlotsamComLine : public IRAD::Util::ComLineObject
 {
 public:
   FlotsamComLine(const char *args[])

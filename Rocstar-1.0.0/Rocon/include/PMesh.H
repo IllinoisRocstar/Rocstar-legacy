@@ -94,7 +94,7 @@ namespace Mesh {
   
   class Partition {
   private:
-    Comm::CommunicatorObject *_communicator;
+    IRAD::Comm::CommunicatorObject *_communicator;
   public:
     Partition() : _communicator(NULL), _mesh(),_info(),_borders() {};
     MeshUtilityObject _mesh;
@@ -103,9 +103,9 @@ namespace Mesh {
     PartInfo            _info;
     std::vector<Border> _borders;
     int Read(const std::string &meshname,int id);
-    int Read(const std::string &MeshName,Comm::CommunicatorObject &comm,
+    int Read(const std::string &MeshName,IRAD::Comm::CommunicatorObject &comm,
 	     bool allow_n2m,std::ostream &ErrOut);
-    //    Comm::CommunicatorObject *CommunicatorPtr(){ return(_communicator); };
+    //    IRAD::Comm::CommunicatorObject *CommunicatorPtr(){ return(_communicator); };
     //    std::ostream &Report(std::ostream &Ostr);
     MeshUtilityObject &Mesh() { return (_mesh); };
     const MeshUtilityObject &Mesh() const { return (_mesh); };
@@ -113,7 +113,7 @@ namespace Mesh {
     const PartInfo &Info() const { return(_info); };
     std::vector<Border> &Borders() { return(_borders); };
     const std::vector<Border> &Borders() const { return(_borders); };
-    Comm::CommunicatorObject *CommunicatorPtr(){ return(_communicator); };
+    IRAD::Comm::CommunicatorObject *CommunicatorPtr(){ return(_communicator); };
      //    std::ostream &Report(std::ostream &Ostr);
     int GetBorderElements(std::vector<Mesh::IndexType> &be) const;
   };

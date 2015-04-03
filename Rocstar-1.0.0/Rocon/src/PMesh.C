@@ -38,7 +38,7 @@ namespace Mesh {
     return(0);
   };
 
-  int Partition::Read(const std::string &MeshName,Comm::CommunicatorObject &comm,bool allow_n2m,std::ostream &ErrOut)
+  int Partition::Read(const std::string &MeshName,IRAD::Comm::CommunicatorObject &comm,bool allow_n2m,std::ostream &ErrOut)
   {
     unsigned int nproc = comm.Size();
     unsigned int rank = comm.Rank();

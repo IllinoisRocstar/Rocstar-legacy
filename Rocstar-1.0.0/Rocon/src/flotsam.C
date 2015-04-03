@@ -279,8 +279,8 @@ int main(int argc,char *argv[])
   std::ostream* ErrOut = NULL; // program errors
   std::ostream* LogOut = NULL; // log for each proc (if debugging on)
   std::ofstream LogFile;
-  Global::GlobalObj<std::string,Mesh::IndexType,Profiler::ProfilerObj> global;
-  Comm::CommunicatorObject comm(&argc,&argv);
+  IRAD::Global::GlobalObj<std::string,Mesh::IndexType,IRAD::Profiler::ProfilerObj> global;
+  IRAD::Comm::CommunicatorObject comm(&argc,&argv);
   unsigned int rank  = comm.Rank();
   unsigned int nproc = comm.Size();
   //  std::cout << "rank/nproc: " << rank << "/" << nproc << std::endl;
@@ -299,8 +299,8 @@ int main(int argc,char *argv[])
   bool debug           = !comline.GetOption("debug").empty();
   bool array_checking  = !comline.GetOption("checking").empty();
 
-  Comm::DataTypes IndexDT = (sizeof(Mesh::IndexType) == sizeof(size_t) ?
-			     Comm::DTSIZET : Comm::DTUINT);
+  IRAD::Comm::DataTypes IndexDT = (sizeof(Mesh::IndexType) == sizeof(size_t) ?
+			     IRAD::Comm::DTSIZET : IRAD::Comm::DTUINT);
   if(!comline.GetOption("help").empty()){
     if(StdOut) 
       *StdOut << comline.LongUsage() << std::endl;
@@ -599,15 +599,15 @@ int main(int argc,char *argv[])
     double minx, maxx, miny, maxy, minz, maxz;
     minx = miny = minz = std::numeric_limits<double>::max();
     maxx = maxy = maxz = -1 * std::numeric_limits<double>::max();
-    comm.Reduce(NTargetRegions,nregions,Comm::DTUINT,Comm::SUMOP,0);
-    comm.Reduce(total_target_cells,totalcells,Comm::DTUINT,Comm::SUMOP,0);
-    comm.Reduce(total_target_nodes,totalnodes,Comm::DTUINT,Comm::SUMOP,0);
-    comm.Reduce(targetbox.P1().x(),minx,Comm::DTDOUBLE,Comm::MINOP,0);
-    comm.Reduce(targetbox.P1().y(),miny,Comm::DTDOUBLE,Comm::MINOP,0);
-    comm.Reduce(targetbox.P1().z(),minz,Comm::DTDOUBLE,Comm::MINOP,0);
-    comm.Reduce(targetbox.P2().x(),maxx,Comm::DTDOUBLE,Comm::MAXOP,0);
-    comm.Reduce(targetbox.P2().y(),maxy,Comm::DTDOUBLE,Comm::MAXOP,0);
-    comm.Reduce(targetbox.P2().z(),maxz,Comm::DTDOUBLE,Comm::MAXOP,0);
+    comm.Reduce(NTargetRegions,nregions,IRAD::Comm::DTUINT,IRAD::Comm::SUMOP,0);
+    comm.Reduce(total_target_cells,totalcells,IRAD::Comm::DTUINT,IRAD::Comm::SUMOP,0);
+    comm.Reduce(total_target_nodes,totalnodes,IRAD::Comm::DTUINT,IRAD::Comm::SUMOP,0);
+    comm.Reduce(targetbox.P1().x(),minx,IRAD::Comm::DTDOUBLE,IRAD::Comm::MINOP,0);
+    comm.Reduce(targetbox.P1().y(),miny,IRAD::Comm::DTDOUBLE,IRAD::Comm::MINOP,0);
+    comm.Reduce(targetbox.P1().z(),minz,IRAD::Comm::DTDOUBLE,IRAD::Comm::MINOP,0);
+    comm.Reduce(targetbox.P2().x(),maxx,IRAD::Comm::DTDOUBLE,IRAD::Comm::MAXOP,0);
+    comm.Reduce(targetbox.P2().y(),maxy,IRAD::Comm::DTDOUBLE,IRAD::Comm::MAXOP,0);
+    comm.Reduce(targetbox.P2().z(),maxz,IRAD::Comm::DTDOUBLE,IRAD::Comm::MAXOP,0);
     GeoPrim::CBox domainbox(GeoPrim::CPoint(minx,miny,minz),GeoPrim::CPoint(maxx,maxy,maxz));
     
     if(StdOut && verblevel > 0) {
@@ -1438,9 +1438,9 @@ int main(int argc,char *argv[])
     std::cout << "Warning: Target soln extents indicate only " << ncells 
 	      << "/" << total_target_cells << " real cells." << std::endl;
 
-  comm.Reduce(targetmean,ttargetmean,Comm::DTDOUBLE,Comm::SUMOP,0);
-  comm.Reduce(targetmin,ttargetmin,Comm::DTDOUBLE,Comm::MINOP,0);
-  comm.Reduce(targetmax,ttargetmax,Comm::DTDOUBLE,Comm::MAXOP,0);
+  comm.Reduce(targetmean,ttargetmean,IRAD::Comm::DTDOUBLE,IRAD::Comm::SUMOP,0);
+  comm.Reduce(targetmin,ttargetmin,IRAD::Comm::DTDOUBLE,IRAD::Comm::MINOP,0);
+  comm.Reduce(targetmax,ttargetmax,IRAD::Comm::DTDOUBLE,IRAD::Comm::MAXOP,0);
   double scale = 1.0/static_cast<double>(ncells);
   targetmean[0] *= scale;
   targetmean[1] *= scale;
