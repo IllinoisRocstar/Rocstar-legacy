@@ -80,7 +80,7 @@ INTEGER FUNCTION RFLU_ComputeStencilSize(global,factor,order)
   RCSIdentString = '$RCSfile: RFLU_ComputeStencilSize.F90,v $ $Revision: 1.4 $'
 
   CALL RegisterFunction(global,'RFLU_ComputeStencilSize',&
-  __FILE__)
+  'RFLU_ComputeStencilSize.F90')
 
 ! *****************************************************************************
 ! Compute stencil size
@@ -118,6 +118,7 @@ END FUNCTION RFLU_ComputeStencilSize
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

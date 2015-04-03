@@ -89,7 +89,7 @@ SUBROUTINE INRT_BurnStatusUpdate( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_BurnStatusUpdate',&
-  __FILE__ )
+  'INRT_BurnStatusUpdate.F90' )
 
 #ifdef PLAG
 ! begin -----------------------------------------------------------------------
@@ -222,6 +222,7 @@ END SUBROUTINE INRT_BurnStatusUpdate
 ! Added After Update interactions
 !
 !******************************************************************************
+
 
 
 

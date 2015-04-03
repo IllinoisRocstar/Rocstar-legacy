@@ -97,7 +97,7 @@ SUBROUTINE PLAG_ReadSolution( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_ReadSolution',&
-  __FILE__ )
+  'PLAG_ReadSolution.F90' )
 
   IF (.NOT. global%plagUsed) GOTO 999
 
@@ -767,6 +767,7 @@ END SUBROUTINE PLAG_ReadSolution
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

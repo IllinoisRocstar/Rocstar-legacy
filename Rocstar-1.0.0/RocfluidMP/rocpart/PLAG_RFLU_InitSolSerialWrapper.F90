@@ -81,7 +81,7 @@ SUBROUTINE PLAG_RFLU_InitSolSerialWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_InitSolSerialWrapper', &
-                        __FILE__)
+                        'PLAG_RFLU_InitSolSerialWrapper.F90')
  
 ! ******************************************************************************
 ! Call appropriate routines
@@ -119,6 +119,7 @@ END SUBROUTINE PLAG_RFLU_InitSolSerialWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

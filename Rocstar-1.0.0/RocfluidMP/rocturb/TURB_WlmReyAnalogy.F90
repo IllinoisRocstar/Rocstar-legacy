@@ -96,7 +96,7 @@ SUBROUTINE TURB_WlmReyAnalogy( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_WlmReyAnalogy',&
-  __FILE__ )
+  'TURB_WlmReyAnalogy.F90' )
 
 ! get dimensions, pointers and parameters -------------------------------------
 
@@ -244,6 +244,7 @@ END SUBROUTINE TURB_WlmReyAnalogy
 !
 !
 !******************************************************************************
+
 
 
 

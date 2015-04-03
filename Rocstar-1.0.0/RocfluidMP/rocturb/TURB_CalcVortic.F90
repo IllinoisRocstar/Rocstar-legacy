@@ -85,7 +85,7 @@ SUBROUTINE TURB_CalcVortic( region )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_CalcVortic',&
-  __FILE__ )
+  'TURB_CalcVortic.F90' )
 
 #ifdef RFLO
 ! get RFLO dimensions, pointers and parameters --------------------------------
@@ -194,6 +194,7 @@ END SUBROUTINE TURB_CalcVortic
 !
 !
 !******************************************************************************
+
 
 
 

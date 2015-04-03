@@ -100,7 +100,7 @@ SUBROUTINE PLAG_CECellsExchange( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_CECellsExchange',&
-  __FILE__ )
+  'PLAG_CECellsExchange.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -565,6 +565,7 @@ END SUBROUTINE PLAG_CECellsExchange
 ! Initial import of Corner-Edge cells Infrastructure
 !
 !******************************************************************************
+
 
 
 

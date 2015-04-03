@@ -65,7 +65,7 @@ SUBROUTINE RVAV_ReadInputFile( global )
 !******************************************************************************
 
   CALL RegisterFunction( global, 'RVAV_ReadInputFile',&
-  __FILE__ )
+  'RVAV_ReadInputFile.F90' )
 
 ! open file
 
@@ -157,6 +157,7 @@ END SUBROUTINE RVAV_ReadInputFile
 ! Initial Import of RocVaV
 !
 !******************************************************************************
+
 
 
 

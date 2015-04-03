@@ -73,7 +73,7 @@ SUBROUTINE PLAG_PrintUserInput( region )
   global => region%global
 
   CALL RegisterFunction( global, 'PLAG_PrintUserInput',&
-  __FILE__ )
+  'PLAG_PrintUserInput.F90' )
 
 ! Print all PLAG input values -------------------------------------------------
 
@@ -212,6 +212,7 @@ END SUBROUTINE PLAG_PrintUserInput
 !
 !
 !******************************************************************************
+
 
 
 

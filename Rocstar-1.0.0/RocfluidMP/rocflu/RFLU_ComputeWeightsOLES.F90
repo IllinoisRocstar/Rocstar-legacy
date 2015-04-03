@@ -83,7 +83,7 @@ SUBROUTINE RFLU_ComputeWeightsOLES(region)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_ComputeWeightsOLES',&
-  __FILE__)
+  'RFLU_ComputeWeightsOLES.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -628,6 +628,7 @@ END SUBROUTINE RFLU_ComputeWeightsOLES
 ! global now under regions, several bug fixes
 !
 !*******************************************************************************
+
 
 
 

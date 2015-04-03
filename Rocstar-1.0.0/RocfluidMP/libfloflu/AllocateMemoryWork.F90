@@ -59,7 +59,7 @@ SUBROUTINE AllocateMemoryWork( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'AllocateMemoryWork',&
-  __FILE__ )
+  'AllocateMemoryWork.F90' )
 
 ! allocate work space
 
@@ -124,6 +124,7 @@ END SUBROUTINE AllocateMemoryWork
 ! Added flux computation (central scheme).
 !
 !******************************************************************************
+
 
 
 

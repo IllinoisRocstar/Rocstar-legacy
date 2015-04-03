@@ -66,7 +66,7 @@ SUBROUTINE PERI_UserInput( regions ) ! PUBLIC
 
   global => regions(1)%global
   CALL RegisterFunction( global,'PERI_UserInput',&
-  __FILE__ )
+  'PERI_UserInput.F90' )
 
 ! initialize parameters --------------------------------------------------
 
@@ -117,6 +117,7 @@ END SUBROUTINE PERI_UserInput
 !
 !
 !******************************************************************************
+
 
 
 

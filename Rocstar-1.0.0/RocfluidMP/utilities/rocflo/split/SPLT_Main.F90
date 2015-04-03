@@ -79,7 +79,7 @@ PROGRAM ROCFLO_Split
 
   globalOld%nFunTree = 0
   CALL RegisterFunction( globalOld,'ROCFLO_Split',&
-  __FILE__ )
+  'SPLT_Main.F90' )
 
 ! initialize global parameters ------------------------------------------------
 
@@ -278,6 +278,7 @@ END PROGRAM ROCFLO_Split
 ! Added tool to split single grid into multiple regions.
 !
 !******************************************************************************
+
 
 
 

@@ -99,7 +99,7 @@ SUBROUTINE AfterUpdateMP( pRegion,istage )
   global => pRegion%global
 
   CALL RegisterFunction( global,'AfterUpdateMP',&
-  __FILE__ )
+  'AfterUpdateMP.F90' )
 
   finalStage = (istage == global%nrkSteps)
 
@@ -192,6 +192,7 @@ END SUBROUTINE AfterUpdateMP
 ! Added After Update interactions
 !
 !******************************************************************************
+
 
 
 

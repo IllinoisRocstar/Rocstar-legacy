@@ -80,7 +80,7 @@ SUBROUTINE RFLU_AllocateMemoryTbc(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction( global,'RFLU_AllocateMemoryTbc',&
-  __FILE__ )
+  'RFLU_AllocateMemoryTbc.F90' )
 
 ! ******************************************************************************
 ! Allocate TBCs
@@ -174,6 +174,7 @@ END SUBROUTINE RFLU_AllocateMemoryTbc
 ! re-worked implementation of TBCs in unstructured code
 !
 ! ******************************************************************************
+
 
 
 

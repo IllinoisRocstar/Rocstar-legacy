@@ -96,7 +96,7 @@ SUBROUTINE TURB_RansSAVisFlux( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_RansSAVisFlux',&
-  __FILE__ )
+  'TURB_RansSAVisFlux.F90' )
 
 ! get dimensions and pointers ------------------------------------------------
 
@@ -369,6 +369,7 @@ END SUBROUTINE TURB_RansSAVisFlux
 !
 !
 !******************************************************************************
+
 
 
 

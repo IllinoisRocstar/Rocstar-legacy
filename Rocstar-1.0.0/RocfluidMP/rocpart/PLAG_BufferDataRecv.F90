@@ -100,7 +100,7 @@ SUBROUTINE PLAG_BufferDataRecv( regions, iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_BufferDataRecv',&
-  __FILE__ )
+  'PLAG_BufferDataRecv.F90' )
             
 ! receive data buffer from source to destination region 
   
@@ -442,6 +442,7 @@ END SUBROUTINE PLAG_BufferDataRecv
 ! Initial import
 !
 !******************************************************************************
+
 
 
 

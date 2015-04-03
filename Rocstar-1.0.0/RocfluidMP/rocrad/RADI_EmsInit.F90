@@ -65,7 +65,7 @@ SUBROUTINE RADI_EmsInit( region, istage ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'RADI_EmsInit',&
-  __FILE__ )
+  'RADI_EmsInit.F90' )
 
 ! extinction (emission, absorbsion, scattering) coefficients ------------------
 
@@ -109,6 +109,7 @@ END SUBROUTINE RADI_EmsInit
 !
 !
 !******************************************************************************
+
 
 
 

@@ -122,7 +122,7 @@ INTEGER FUNCTION RFLU_GetConstrType(pRegion,pPatch,var,ifl)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_GetConstrType',&
-  __FILE__)
+  'RFLU_ModConstraintUtils.F90')
 
   eqTol = 1.0E-6_RFREAL
 
@@ -384,7 +384,7 @@ FUNCTION RFLU_GetConstrValue(pRegion,pPatch,var,ifl)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_GetConstrValue',&
-  __FILE__)
+  'RFLU_ModConstraintUtils.F90')
 
   eqTol = 1.0E-6_RFREAL
 
@@ -780,6 +780,8 @@ END MODULE RFLU_ModConstraintUtils
 ! ******************************************************************************
   
   
+
+
 
 
 

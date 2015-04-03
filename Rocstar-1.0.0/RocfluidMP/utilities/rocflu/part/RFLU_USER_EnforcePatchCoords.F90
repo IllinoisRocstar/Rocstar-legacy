@@ -87,7 +87,7 @@ SUBROUTINE RFLU_USER_EnforcePatchCoords(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_USER_EnforcePatchCoords', &
-                        __FILE__)
+                        'RFLU_USER_EnforcePatchCoords.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Enforcing patch coordinates...'
@@ -246,12 +246,14 @@ END SUBROUTINE RFLU_USER_EnforcePatchCoords
 !
 ! Revision 1.2  2003/03/20 20:02:32  haselbac
 ! Modified RegFun call to avoid probs with
-! long __FILE__ names
+! long 'RFLU_USER_EnforcePatchCoords.F90' names
 !
 ! Revision 1.1  2003/02/01 01:14:42  haselbac
 ! Initial revision
 ! 
 !******************************************************************************
+
+
 
 
 

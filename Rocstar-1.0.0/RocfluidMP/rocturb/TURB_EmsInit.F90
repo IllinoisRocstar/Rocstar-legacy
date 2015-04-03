@@ -65,7 +65,7 @@ SUBROUTINE TURB_EmsInit( region, istage ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'TURB_EmsInit',&
-  __FILE__ )
+  'TURB_EmsInit.F90' )
   
 ! which class of model --------------------------------------------------------
 
@@ -101,6 +101,7 @@ END SUBROUTINE TURB_EmsInit
 !
 !
 !******************************************************************************
+
 
 
 

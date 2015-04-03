@@ -91,7 +91,7 @@ SUBROUTINE SPEC_RFLU_SourceTerms_GL(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_SourceTerms_GL',&
-  __FILE__)
+  'SPEC_RFLU_SourceTerms_GL.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -205,6 +205,7 @@ END SUBROUTINE SPEC_RFLU_SourceTerms_GL
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

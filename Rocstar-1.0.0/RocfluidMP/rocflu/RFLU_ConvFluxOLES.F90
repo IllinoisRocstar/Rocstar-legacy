@@ -81,7 +81,7 @@ SUBROUTINE RFLU_ConvFluxOLES(region)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_ConvFluxOLES',&
-  __FILE__)
+  'RFLU_ConvFluxOLES.F90')
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -240,6 +240,7 @@ END SUBROUTINE RFLU_ConvFluxOLES
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

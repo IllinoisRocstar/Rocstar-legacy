@@ -84,7 +84,7 @@ SUBROUTINE SPEC_RFLU_InitFlowScratch(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_InitFlowScratch',&
-  __FILE__)
+  'SPEC_RFLU_InitFlowScratch.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables 
@@ -136,6 +136,7 @@ END SUBROUTINE SPEC_RFLU_InitFlowScratch
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

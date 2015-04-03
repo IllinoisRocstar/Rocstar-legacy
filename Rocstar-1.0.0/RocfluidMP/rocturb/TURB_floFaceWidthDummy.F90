@@ -76,7 +76,7 @@ SUBROUTINE TURB_FloFaceWidthDummy( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloFaceWidthDummy',&
-  __FILE__ )
+  'TURB_floFaceWidthDummy.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -172,6 +172,7 @@ END SUBROUTINE TURB_FloFaceWidthDummy
 !
 !
 !******************************************************************************
+
 
 
 

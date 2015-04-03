@@ -80,7 +80,7 @@ SUBROUTINE RADI_FloFlimExchangeDummyConf( region,regionSrc,patch,patchSrc )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FloFlimExchangeDummyConf', &
-                         __FILE__ )
+                         'RADI_floFlimExchangeDummyConf.F90' )
 
 ! check if the source region is active
 
@@ -167,6 +167,7 @@ END SUBROUTINE RADI_FloFlimExchangeDummyConf
 !
 !
 !******************************************************************************
+
 
 
 

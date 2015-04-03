@@ -90,7 +90,7 @@ SUBROUTINE RADI_ReadRadiSection
 
   global => regions(1)%global
   CALL RegisterFunction( global,'RADI_ReadRadiSection',&
-  __FILE__ )
+  'RADI_ReadRadiSection.F90' )
 
 ! specify keywords
 
@@ -411,6 +411,7 @@ END SUBROUTINE RADI_ReadRadiSection
 !
 !
 !******************************************************************************
+
 
 
 

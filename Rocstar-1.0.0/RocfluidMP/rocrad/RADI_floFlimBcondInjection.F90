@@ -71,7 +71,7 @@ SUBROUTINE RADI_FloFlimBcondInjection( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FloFlimBcondInjection',&
-  __FILE__ )
+  'RADI_floFlimBcondInjection.F90' )
 
 ! get dimensions and pointers
 
@@ -131,6 +131,7 @@ END SUBROUTINE RADI_FloFlimBcondInjection
 !
 !
 !******************************************************************************
+
 
 
 

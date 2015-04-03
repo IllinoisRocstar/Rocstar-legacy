@@ -127,7 +127,7 @@ SUBROUTINE RFLO_ElliptGridSmoo( regions,resid )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ElliptGridSmoo',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! smooth grid region-wise -----------------------------------------------------
 
@@ -365,7 +365,7 @@ SUBROUTINE RFLO_ElliptGridSmooRegion( region,resid )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ElliptGridSmooRegion',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! compute gradients of grid coordinates ---------------------------------------
 
@@ -454,7 +454,7 @@ SUBROUTINE RFLO_ElliptGridPatch( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ElliptGridPatch',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! get dimensions and pointers
 
@@ -553,7 +553,7 @@ SUBROUTINE RFLO_ElliptMatrixCoeffs3D( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ElliptMatrixCoeffs3D',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -716,7 +716,7 @@ SUBROUTINE RFLO_ElliptMatrixCoeffs2D( region,patch,iPatch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ElliptMatrixCoeffs2D',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -834,7 +834,7 @@ SUBROUTINE RFLO_ElliptGridJac3D( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ElliptGridJac3D',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -975,7 +975,7 @@ SUBROUTINE RFLO_ElliptGridGauss3D( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ElliptGridGauss3D',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -1115,7 +1115,7 @@ SUBROUTINE RFLO_ElliptGridSOR3D( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ElliptGridSOR3D',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -1257,7 +1257,7 @@ SUBROUTINE RFLO_ElliptGridJac2D( region,patch,iPatch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ElliptGridJac2D',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -1428,7 +1428,7 @@ SUBROUTINE RFLO_ElliptGridGauss2D( region,patch,iPatch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ElliptGridGauss2D',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -1599,7 +1599,7 @@ SUBROUTINE RFLO_ElliptGridSOR2D( region,patch,iPatch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ElliptGridSOR2D',&
-       __FILE__ )
+       'RFLO_ModElliptSmoothing.F90' )
 
 ! get dimensions and parameters -----------------------------------------------
 
@@ -1786,6 +1786,17 @@ END MODULE RFLO_ModElliptSmoothing
 !
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
 
 
 

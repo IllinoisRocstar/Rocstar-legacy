@@ -89,7 +89,7 @@ SUBROUTINE PLAG_RFLU_InitSolutionScratch(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_InitSolutionScratch', &
-                        __FILE__)
+                        'PLAG_RFLU_InitSolutionScratch.F90')
  
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -220,6 +220,7 @@ END SUBROUTINE PLAG_RFLU_InitSolutionScratch
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -61,7 +61,7 @@ SUBROUTINE INRT_SetPermission( global,val,perm )
   RCSIdentString = '$RCSfile: INRT_SetPermission.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction( global,'INRT_SetPermission',&
-  __FILE__ )
+  'INRT_SetPermission.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -108,6 +108,7 @@ END SUBROUTINE INRT_SetPermission
 ! codified Activeness and Permission structures for rocinteract
 !
 !******************************************************************************
+
 
 
 

@@ -86,7 +86,7 @@ SUBROUTINE INRT_DefineDrag( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_DefineDrag',&
-  __FILE__ )
+  'INRT_DefineDrag.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -159,6 +159,7 @@ END SUBROUTINE INRT_DefineDrag
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

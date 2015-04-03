@@ -72,7 +72,7 @@ SUBROUTINE RFLO_ArcLengthBounds( region,xyz,arcLen12,arcLen34,arcLen56 )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ArcLengthBounds',&
-       __FILE__ )
+       'RFLO_ArcLengthBounds.F90' )
 
 ! get pointers and dimensions
 
@@ -168,6 +168,7 @@ END SUBROUTINE RFLO_ArcLengthBounds
 ! Implemented grid deformation capability.
 !
 !******************************************************************************
+
 
 
 

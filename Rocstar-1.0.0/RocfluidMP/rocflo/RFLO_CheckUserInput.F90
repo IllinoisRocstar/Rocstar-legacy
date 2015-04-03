@@ -68,7 +68,7 @@ SUBROUTINE RFLO_CheckUserInput( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_CheckUserInput',&
-  __FILE__ )
+  'RFLO_CheckUserInput.F90' )
 
 ! fixed parameters check ------------------------------------------------------
 
@@ -336,6 +336,7 @@ END SUBROUTINE RFLO_CheckUserInput
 ! Added routines to read BC input file.
 !
 !******************************************************************************
+
 
 
 

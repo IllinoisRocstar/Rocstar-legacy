@@ -134,7 +134,7 @@ SUBROUTINE RFLU_PETSC_CreateVectors(pRegion)
 
   global => pRegion%global
   CALL RegisterFunction(global,'RFLU_PETSC_CreateVectors',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
 
 ! ******************************************************************************
 ! Count the number of degrees of freedom
@@ -228,7 +228,7 @@ SUBROUTINE RFLU_PETSC_CreateJacobian(pRegion)
 
   global => pRegion%global
   CALL RegisterFunction(global,'RFLU_PETSC_CreateJacobian',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
 
 ! ******************************************************************************
 ! Create the Application Ordering context
@@ -377,7 +377,7 @@ SUBROUTINE RFLU_PETSC_DestroyVectors(pRegion)
 
   global => pRegion%global
   CALL RegisterFunction(global,'RFLU_PETSC_DestroyVectors',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
 
 ! ******************************************************************************
 ! Destroy the vectors
@@ -439,7 +439,7 @@ SUBROUTINE RFLU_PETSC_DestroyJacobian(pRegion)
 
   global => pRegion%global
   CALL RegisterFunction(global,'RFLU_PETSC_DestroyJacobian',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
 
 ! ******************************************************************************
 ! Destroy the matrices and solver context
@@ -534,7 +534,7 @@ SUBROUTINE RFLU_PETSC_FormJacobian(snes,v,J,pJ,flag,pRegion,ierr)
 
   global => pRegion%global
   CALL RegisterFunction(global,'RFLU_PETSC_FormJacobian',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
 
 ! ******************************************************************************
 ! Compute the preconditioning Jacobian matrix
@@ -650,7 +650,7 @@ SUBROUTINE RFLU_PETSC_FormResidual(snes,x,f,pRegion,ierr)
 
   global => pRegion%global
   CALL RegisterFunction(global,'RFLU_PETSC_FormResidual',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
 
 ! ******************************************************************************
 ! Get the vectors
@@ -823,7 +823,7 @@ SUBROUTINE RFLU_PETSC_FormResidualFirstOrder(snes,x,f,pRegion,ierr)
 
   global => pRegion%global
   CALL RegisterFunction(global,'RFLU_PETSC_FormResidualFirstOrder',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
 
 ! ==============================================================================
 ! Set the spacial order of accuracy to first order
@@ -915,7 +915,7 @@ SUBROUTINE RFLU_PETSC_CreateColoring(pRegion)
 
   global => pRegion%global
   CALL RegisterFunction(global,'RFLU_PETSC_CreateColoring',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
 
 ! ==============================================================================
 ! Create the Connectivity Array
@@ -1277,7 +1277,7 @@ SUBROUTINE RFLU_PETSC_CreateApplicationOrdering(pRegion)
 
   global => pRegion%global
   CALL RegisterFunction(global,'RFLU_PETSC_CreateApplicationOrdering',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
   
 ! ==============================================================================
 ! Allocate the numbering arrays
@@ -1392,7 +1392,7 @@ SUBROUTINE RFLU_PETSC_DestroyApplicationOrdering(pRegion)
 
   global => pRegion%global
   CALL RegisterFunction(global,'RFLU_PETSC_DestroyApplicationOrdering',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
   
 ! ==============================================================================
 ! Destroy the Application Ordering context
@@ -1447,7 +1447,7 @@ SUBROUTINE RFLU_PETSC_GetDtScale(global,dtscale)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_PETSC_GetDtScale',&
-  __FILE__)
+  'RFLU_ModPETScNewtonKrylov.F90')
   
 ! ==============================================================================
 ! Compute the dt scaling
@@ -1473,6 +1473,17 @@ END SUBROUTINE RFLU_PETSC_GetDtScale
 ! ******************************************************************************
   
 END MODULE RFLU_ModPETScNewtonKrylov
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -85,7 +85,7 @@ SUBROUTINE SourceTerms(region)
   global => region%global
 
   CALL RegisterFunction( global,'SourceTerms',&
-  __FILE__ )
+  'SourceTerms.F90' )
 
 ! ******************************************************************************
 ! Get dimensions and pointers
@@ -209,6 +209,7 @@ END SUBROUTINE SourceTerms
 ! Added low-level time-stepping routines.
 !
 ! *****************************************************************************
+
 
 
 

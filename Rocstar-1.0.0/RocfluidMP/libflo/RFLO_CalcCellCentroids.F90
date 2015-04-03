@@ -68,7 +68,7 @@ SUBROUTINE RFLO_CalcCellCentroids( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcCellCentroids',&
-       __FILE__ )
+       'RFLO_CalcCellCentroids.F90' )
 
 ! loop over all grid levels
 
@@ -158,6 +158,7 @@ END SUBROUTINE RFLO_CalcCellCentroids
 ! Added calculation of face vectors and volumes.
 !
 !******************************************************************************
+
 
 
 

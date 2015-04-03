@@ -76,7 +76,7 @@ SUBROUTINE GenxWriteSolution( gridLevel,iReg,region,wins,winv )
   global => region%global
 
   CALL RegisterFunction( global,'GenxWriteSolution',&
-  __FILE__ )
+  'PREP_GenxWriteSolution.F90' )
 
 ! obtain function handle ------------------------------------------------------
 
@@ -176,6 +176,7 @@ END SUBROUTINE GenxWriteSolution
 !
 !
 !******************************************************************************
+
 
 
 

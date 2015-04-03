@@ -81,7 +81,7 @@ SUBROUTINE RFLO_CalcGradDummyConn( region,lbound, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcGradDummyConn',&
-       __FILE__ )
+       'RFLO_CalcGradDummyConn.F90' )
 
 ! get dimensions -------------------------------------------------------------
 
@@ -191,6 +191,7 @@ END SUBROUTINE RFLO_CalcGradDummyConn
 ! made compliant with CODING RULE
 !
 !******************************************************************************
+
 
 
 

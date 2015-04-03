@@ -93,7 +93,7 @@ SUBROUTINE RFLO_MoveGridGlobal( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_MoveGridGlobal',&
-  __FILE__ )
+  'RFLO_MoveGridGlobal.F90' )
 
 #ifdef GENX
 ! update geometry buffers -----------------------------------------------------
@@ -321,6 +321,7 @@ END SUBROUTINE RFLO_MoveGridGlobal
 ! Added basic global grid smoothing scheme.
 !
 !******************************************************************************
+
 
 
 

@@ -93,7 +93,7 @@ SUBROUTINE RFLU_GetDeformationWrapper(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_GetDeformationWrapper',&
-  __FILE__)
+  'RFLU_GetDeformationWrapper.F90')
 
 ! *****************************************************************************
 ! Get deformation
@@ -138,6 +138,7 @@ END SUBROUTINE RFLU_GetDeformationWrapper
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

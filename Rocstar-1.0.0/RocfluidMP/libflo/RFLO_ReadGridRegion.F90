@@ -89,7 +89,7 @@ SUBROUTINE RFLO_ReadGridRegion( iReg,regions )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RFLO_ReadGridRegion',&
-  __FILE__ )
+  'RFLO_ReadGridRegion.F90' )
 
 ! allocate fixed-size temporary data arrays -----------------------------------
 
@@ -254,6 +254,7 @@ END SUBROUTINE RFLO_ReadGridRegion
 ! Grid & solution for all regions in one file.
 !
 !******************************************************************************
+
 
 
 

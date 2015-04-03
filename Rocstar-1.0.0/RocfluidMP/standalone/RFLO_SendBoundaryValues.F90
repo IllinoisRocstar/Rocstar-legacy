@@ -57,7 +57,7 @@ SUBROUTINE RFLO_SendBoundaryValues( region,initialize )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_SendBoundaryValues',&
-  __FILE__ )
+  'RFLO_SendBoundaryValues.F90' )
 
 ! give error message
 
@@ -101,6 +101,7 @@ END SUBROUTINE RFLO_SendBoundaryValues
 ! Prepared solver to be optionally linked with an external driver.
 !
 !******************************************************************************
+
 
 
 

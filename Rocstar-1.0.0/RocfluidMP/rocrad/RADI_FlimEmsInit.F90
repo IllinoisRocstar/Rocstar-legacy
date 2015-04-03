@@ -85,7 +85,7 @@ SUBROUTINE RADI_FlimEmsInit( region, istage )
   global => region%global
 
   CALL RegisterFunction( global,'RADI_FlimEmsInit',&
-  __FILE__ )
+  'RADI_FlimEmsInit.F90' )
   
 ! get parameters, dimensions and pointers -------------------------------------
 
@@ -164,6 +164,7 @@ END SUBROUTINE RADI_FlimEmsInit
 !
 !
 !******************************************************************************
+
 
 
 

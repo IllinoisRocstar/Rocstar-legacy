@@ -145,7 +145,7 @@ MODULE RFLU_ModForcesMoments
     global => regions(1)%global
     
     CALL RegisterFunction(global,'RFLU_ComputeGlobalForcesMoments',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
 
     nVals2 = (MASS_OUT-MASS_IN+1)*global%nPatches
     nVals3 = (ZCOORD-XCOORD+1)*(COMP_VISC-COMP_MOM+1)*global%nPatches
@@ -725,7 +725,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_ComputeLocalForcesMoments',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
     
     pGrid => pRegion%grid
             
@@ -936,7 +936,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_CreateForcesMoments',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
     
     pGrid => pRegion%grid
         
@@ -1097,7 +1097,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_CreateGlobalThrustFlags',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
     
 ! ******************************************************************************
 !   Allocate memory
@@ -1175,7 +1175,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_DestroyForcesMoments',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
     
     pGrid => pRegion%grid
         
@@ -1327,7 +1327,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_DestroyGlobalThrustFlag',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
     
 ! ******************************************************************************
 !   Deallocate memory
@@ -1404,7 +1404,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_InitForcesMoments',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
     
     pGrid => pRegion%grid
         
@@ -1557,7 +1557,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_InitGlobalThrustFlags',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
     
 ! ******************************************************************************
 !   Allocate memory
@@ -1627,7 +1627,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_NullifyForcesMoments',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
     
     pGrid => pRegion%grid
         
@@ -1709,7 +1709,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_NullifyGlobalThrustFlag',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
     
 ! ******************************************************************************
 !   Deallocate memory
@@ -1776,7 +1776,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_PrintGlobalForcesMoments',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
                 
 ! ******************************************************************************
 !   Print global force coefficients
@@ -1897,7 +1897,7 @@ MODULE RFLU_ModForcesMoments
     global => regions(1)%global
     
     CALL RegisterFunction(global,'RFLU_SetGlobalThrustFlags',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
 
 ! ******************************************************************************
 !   Set variables
@@ -2048,7 +2048,7 @@ MODULE RFLU_ModForcesMoments
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_WriteGlobalForcesMoments',&
-  __FILE__)
+  'RFLU_ModForcesMoments.F90')
 
 ! ******************************************************************************
 !   Increment counter
@@ -2254,6 +2254,19 @@ END MODULE RFLU_ModForcesMoments
 ! Initial revision                                                  
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -126,7 +126,7 @@ SUBROUTINE PERI_RFLO_ReadMean( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PERI_RFLO_ReadMean',&
-  __FILE__ )
+  'PERI_ModHybridDES.F90' )
 
 
 ! check if reading mean flow is applicable ------------------------------------
@@ -389,7 +389,7 @@ SUBROUTINE PERI_CoMeanCorrection( region )
   global => region%global
 
   CALL RegisterFunction( global,'PERI_CoMeanCorrection',&
-  __FILE__ )
+  'PERI_ModHybridDES.F90' )
 
 ! check if mean-flow correction is applicable ---------------------------------
 
@@ -965,6 +965,8 @@ END MODULE PERI_ModHybridDES
 !
 !
 ! ******************************************************************************
+
+
 
 
 

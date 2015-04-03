@@ -89,7 +89,7 @@ SUBROUTINE RFLO_ReadRandomState( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadRandomState',&
-  __FILE__ )
+  'RFLO_ReadRandomState.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -246,6 +246,7 @@ END SUBROUTINE RFLO_ReadRandomState
 ! Added Read capability for Random Number Generator
 !
 !******************************************************************************
+
 
 
 

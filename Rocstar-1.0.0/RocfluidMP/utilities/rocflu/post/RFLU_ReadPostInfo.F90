@@ -91,7 +91,7 @@ SUBROUTINE RFLU_ReadPostInfo(pRegion,readMode)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ReadPostInfo',&
-  __FILE__)
+  'RFLU_ReadPostInfo.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -273,6 +273,7 @@ END SUBROUTINE RFLU_ReadPostInfo
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

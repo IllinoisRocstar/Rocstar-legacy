@@ -91,7 +91,7 @@ SUBROUTINE RADI_RFLO_WriteSolution( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RADI_RFLO_WriteSolution',&
-  __FILE__ )
+  'RADI_rFLO_WriteSolution.F90' )
 
 ! allocate fixed-size temporary data arrays -----------------------------------
 
@@ -338,6 +338,7 @@ END SUBROUTINE RADI_RFLO_WriteSolution
 !
 !
 !******************************************************************************
+
 
 
 

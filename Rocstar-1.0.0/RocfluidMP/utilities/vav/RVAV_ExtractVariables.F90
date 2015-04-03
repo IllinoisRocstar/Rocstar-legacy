@@ -99,7 +99,7 @@ SUBROUTINE RVAV_ExtractVariables( global, region,            &
 !******************************************************************************
 
   CALL RegisterFunction( global, 'RVAV_ExtractVariables',&
-  __FILE__ )
+  'RVAV_ExtractVariables.F90' )
 
 ! ... set local pointers to the global pointers
 
@@ -304,6 +304,7 @@ END SUBROUTINE RVAV_ExtractVariables
 ! Revision 1.1.1.1  2002/06/03 21:41:29  f-najjar
 ! Initial Import of RocVaV
 !
+
 
 
 

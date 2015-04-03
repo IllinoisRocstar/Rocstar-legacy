@@ -97,7 +97,7 @@ SUBROUTINE PLAG_CECellsGetBufferSize( region, iReg )
   global => region%global
     
   CALL RegisterFunction( global, 'PLAG_CECellsGetBufferSize',&
-  __FILE__ )
+  'PLAG_CECellsGetBufferSize.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -407,6 +407,7 @@ END SUBROUTINE PLAG_CECellsGetBufferSize
 ! Initial import of Corner-Edge cells Infrastructure
 !
 !******************************************************************************
+
 
 
 

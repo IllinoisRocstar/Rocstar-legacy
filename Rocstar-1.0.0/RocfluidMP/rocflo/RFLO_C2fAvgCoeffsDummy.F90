@@ -73,7 +73,7 @@ SUBROUTINE RFLO_C2fAvgCoeffsDummy( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_C2fAvgCoeffsDummy',&
-  __FILE__ )
+  'RFLO_C2fAvgCoeffsDummy.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -167,6 +167,7 @@ END SUBROUTINE RFLO_C2fAvgCoeffsDummy
 !
 !
 !******************************************************************************
+
 
 
 

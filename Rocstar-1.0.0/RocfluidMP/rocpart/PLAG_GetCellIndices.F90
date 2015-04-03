@@ -95,7 +95,7 @@ SUBROUTINE PLAG_getCellIndices( region, iReg )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_getCellIndices',&
-  __FILE__ )
+  'PLAG_GetCellIndices.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -446,6 +446,7 @@ END SUBROUTINE PLAG_getCellIndices
 !
 !
 !******************************************************************************
+
 
 
 

@@ -97,7 +97,7 @@ SUBROUTINE RFLU_UpdateBoundaryValues(region,istage)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_UpdateBoundaryValues',&
-  __FILE__)
+  'RFLU_UpdateBoundaryValues.F90')
 
   trk(:) = region%mixtInput%trk(:)
 
@@ -164,6 +164,7 @@ END SUBROUTINE RFLU_UpdateBoundaryValues
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

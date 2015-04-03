@@ -76,7 +76,7 @@ SUBROUTINE RFLO_GridRemesh( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GridRemesh',&
-  __FILE__ )
+  'RFLO_GridRemesh.F90' )
 
 ! write to stdout -------------------------------------------------------------
 
@@ -439,6 +439,7 @@ END SUBROUTINE RFLO_GridRemesh
 !
 !
 !******************************************************************************
+
 
 
 

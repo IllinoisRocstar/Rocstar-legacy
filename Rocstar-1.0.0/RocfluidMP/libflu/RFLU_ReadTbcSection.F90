@@ -98,7 +98,7 @@ SUBROUTINE RFLU_ReadTbcSection(pRegion,tbcType)
   global => pRegion%global
 
   CALL RegisterFunction( global,'RFLU_ReadTbcSection',&
-  __FILE__ )
+  'RFLU_ReadTbcSection.F90' )
 
   IF ( global%flowType == FLOW_STEADY ) THEN
     CALL ErrorStop( global,ERR_STEADY,__LINE__ )
@@ -777,6 +777,7 @@ END SUBROUTINE RFLU_ReadTbcSection
 ! Implemented TBCs for ROCFLU
 !
 ! ******************************************************************************
+
 
 
 

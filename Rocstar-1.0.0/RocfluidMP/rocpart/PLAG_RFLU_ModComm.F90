@@ -130,7 +130,7 @@ MODULE PLAG_RFLU_ModComm
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'PLAG_RFLU_ClearRequest',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -207,7 +207,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_ClearRequestWrapper',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -304,7 +304,7 @@ MODULE PLAG_RFLU_ModComm
     global => regions(0)%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_CommDriver',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Initialize variables
@@ -729,7 +729,7 @@ MODULE PLAG_RFLU_ModComm
     global => regions(0)%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_CopyCounters',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
  
 ! ******************************************************************************
 !   Loop over borders
@@ -817,7 +817,7 @@ MODULE PLAG_RFLU_ModComm
     global => regions(0)%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_CopyData',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -932,7 +932,7 @@ MODULE PLAG_RFLU_ModComm
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'PLAG_RFLU_CopyDataInt',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set variables
@@ -1021,7 +1021,7 @@ MODULE PLAG_RFLU_ModComm
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'PLAG_RFLU_CopyDataReal',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set variables
@@ -1114,7 +1114,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_CreateBuffersRecv',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -1223,7 +1223,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_CreateBuffersSend',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -1330,7 +1330,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_DestroyBuffersRecv',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 !    IF ( global%myProcid == MASTERPROC .AND. &
 !         global%verbLevel > VERBOSE_NONE ) THEN
@@ -1438,7 +1438,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_DestroyBuffersSend',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -1534,7 +1534,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_InitRecvCounters',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
  
 ! ******************************************************************************
 !   Set pointers
@@ -1613,7 +1613,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_InitSendCounters',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
  
 ! ******************************************************************************
 !   Set pointers
@@ -1692,7 +1692,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_ISendCounters',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -1789,7 +1789,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_ISendData',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -1919,7 +1919,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_LoadBuffersSend',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -2101,7 +2101,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_RecvCounters',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -2196,7 +2196,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_RecvData',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -2323,7 +2323,7 @@ MODULE PLAG_RFLU_ModComm
     global => regions(0)%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_TotalnPclsComm',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Initialize variables
@@ -2459,7 +2459,7 @@ MODULE PLAG_RFLU_ModComm
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_UnloadBuffersRecv',&
-  __FILE__)
+  'PLAG_RFLU_ModComm.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -2619,6 +2619,26 @@ END MODULE PLAG_RFLU_ModComm
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

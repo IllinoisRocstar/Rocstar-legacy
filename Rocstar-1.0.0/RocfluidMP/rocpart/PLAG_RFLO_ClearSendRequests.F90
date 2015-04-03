@@ -78,7 +78,7 @@ SUBROUTINE PLAG_RFLO_ClearSendRequests( regions,iReg )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_RFLO_ClearSendRequests',&
-  __FILE__ )
+  'PLAG_RFLO_ClearSendRequests.F90' )
 
 #ifdef MPI
 
@@ -125,6 +125,7 @@ END SUBROUTINE PLAG_RFLO_ClearSendRequests
 ! Initial import for corner-edge cell metrics
 !
 !******************************************************************************
+
 
 
 

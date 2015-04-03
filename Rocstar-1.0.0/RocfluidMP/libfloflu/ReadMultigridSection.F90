@@ -63,7 +63,7 @@ SUBROUTINE ReadMultigridSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadMultigridSection',&
-  __FILE__ )
+  'ReadMultigridSection.F90' )
 
 ! specify keywords and search for them
 
@@ -127,6 +127,7 @@ END SUBROUTINE ReadMultigridSection
 ! Added input for multigrid parameters.
 !
 !******************************************************************************
+
 
 
 

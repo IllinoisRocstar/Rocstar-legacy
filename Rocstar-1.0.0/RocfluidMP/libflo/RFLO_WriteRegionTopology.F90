@@ -70,7 +70,7 @@ SUBROUTINE RFLO_WriteRegionTopology( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_WriteRegionTopology',&
-  __FILE__ )
+  'RFLO_WriteRegionTopology.F90' )
 
 ! open file & write number of regions
 
@@ -190,6 +190,7 @@ END SUBROUTINE RFLO_WriteRegionTopology
 ! Added tool to split single grid into multiple regions.
 !
 !******************************************************************************
+
 
 
 

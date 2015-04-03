@@ -88,7 +88,7 @@ SUBROUTINE TURB_CoRansWallDistOV( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'TURB_CoRansWallDistOV',&
-  __FILE__ )
+  'TURB_coRansWallDistOVFlo.F90' )
 
   IF (global%turbWallDim == 0) GOTO 888
 
@@ -338,6 +338,7 @@ END SUBROUTINE TURB_CoRansWallDistOV
 !
 !
 !******************************************************************************
+
 
 
 

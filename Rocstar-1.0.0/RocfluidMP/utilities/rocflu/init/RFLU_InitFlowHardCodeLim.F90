@@ -89,7 +89,7 @@ SUBROUTINE RFLU_InitFlowHardCodeLim(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_InitFlowHardCodeLim', &
-                        __FILE__)
+                        'RFLU_InitFlowHardCodeLim.F90')
  
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -292,6 +292,7 @@ END SUBROUTINE RFLU_InitFlowHardCodeLim
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

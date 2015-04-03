@@ -106,7 +106,7 @@ PROGRAM ROCPART_Post
   ALLOCATE( global )
 
   global%nFunTree = 0
-  CALL RegisterFunction( global,'ROCPART_Post', __FILE__ )
+  CALL RegisterFunction( global,'ROCPART_Post', 'PLAG_PostProcessing.F90' )
 
 ! initialize global parameters ------------------------------------------------
 
@@ -482,6 +482,7 @@ END PROGRAM ROCPART_Post
 ! Import of postprocessing tool for Rocpart
 !
 !******************************************************************************
+
 
 
 

@@ -81,7 +81,7 @@ SUBROUTINE TURB_FloLesUniFiltCCK( global,nDum,ibeg,iend,jbeg,jend,kbeg,kend, &
   RCSIdentString = '$RCSfile: TURB_floLesUniFiltCCK.F90,v $'
 
   CALL RegisterFunction( global,'TURB_FloLesUniFiltCCK',&
-  __FILE__ )
+  'TURB_floLesUniFiltCCK.F90' )
 
 ! integration over K-direction -----------------------------------------------
 
@@ -210,6 +210,7 @@ END SUBROUTINE TURB_FloLesUniFiltCCK
 ! Install Rocturb
 !
 !******************************************************************************
+
 
 
 

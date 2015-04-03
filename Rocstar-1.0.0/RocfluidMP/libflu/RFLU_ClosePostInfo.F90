@@ -76,7 +76,7 @@ SUBROUTINE RFLU_ClosePostInfo(global)
   RCSIdentString = '$RCSfile: RFLU_ClosePostInfo.F90,v $ $Revision: 1.5 $'
 
   CALL RegisterFunction(global,'RFLU_ClosePostInfo',&
-  __FILE__)
+  'RFLU_ClosePostInfo.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -132,6 +132,7 @@ END SUBROUTINE RFLU_ClosePostInfo
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -122,7 +122,7 @@ MODULE RFLU_ModRelatedPatches
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RELP_PeriodicWrapper',&
-  __FILE__)
+  'RFLU_ModRelatedPatches.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -268,7 +268,7 @@ MODULE RFLU_ModRelatedPatches
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RELP_SymmetryWrapper',&
-  __FILE__)
+  'RFLU_ModRelatedPatches.F90')
         
 ! ******************************************************************************
 !   Check boundary condition - defensive coding
@@ -380,7 +380,7 @@ MODULE RFLU_ModRelatedPatches
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RELP_TransformVector',&
-  __FILE__)
+  'RFLU_ModRelatedPatches.F90')
 
 ! ******************************************************************************
 !   Check boundary condition - defensive coding
@@ -464,7 +464,7 @@ MODULE RFLU_ModRelatedPatches
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RELP_TransformWrapper',&
-  __FILE__)
+  'RFLU_ModRelatedPatches.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -535,6 +535,10 @@ END MODULE RFLU_ModRelatedPatches
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

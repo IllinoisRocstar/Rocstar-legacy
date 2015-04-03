@@ -135,7 +135,7 @@ SUBROUTINE INRT_AugmentDisSources( region,iInrt )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_AugmentDisSources',&
-  __FILE__ )
+  'INRT_AugmentDisSources.F90' )
 
 #ifdef PLAG
 ! begin -----------------------------------------------------------------------
@@ -742,6 +742,7 @@ END SUBROUTINE INRT_AugmentDisSources
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

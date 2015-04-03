@@ -81,7 +81,7 @@ SUBROUTINE GetBndVertType( iReg,Regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'GetBndVertType',&
-  __FILE__ )
+  'TFLU_GetBndVertType.F90' )
 
 ! obtain parameters and pointers, and loop over region patches ----------------
 
@@ -153,6 +153,7 @@ END SUBROUTINE GetBndVertType
 !
 !
 !******************************************************************************
+
 
 
 

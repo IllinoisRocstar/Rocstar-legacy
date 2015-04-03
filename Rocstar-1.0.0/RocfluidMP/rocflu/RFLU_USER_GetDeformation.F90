@@ -85,7 +85,7 @@ SUBROUTINE RFLU_USER_GetDeformation(region)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_USER_GetDeformation',&
-  __FILE__)
+  'RFLU_USER_GetDeformation.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -524,6 +524,7 @@ END SUBROUTINE RFLU_USER_GetDeformation
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

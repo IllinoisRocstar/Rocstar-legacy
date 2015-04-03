@@ -118,7 +118,7 @@ SUBROUTINE RFLU_BXV_ConvertCvCons2Prim(pRegion,pPatch,cvStateFuture)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_ConvertCvCons2Prim',&
-  __FILE__)
+  'RFLU_ModBoundConvertCv.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -306,7 +306,7 @@ SUBROUTINE RFLU_BXV_ConvertCvPrim2Cons(pRegion,pPatch,cvStateFuture)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BXV_ConvertCvPrim2Cons',&
-  __FILE__)
+  'RFLU_ModBoundConvertCv.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -429,6 +429,8 @@ END MODULE RFLU_ModBoundConvertCv
 ! Initial revision
 !
 ! ******************************************************************************
+
+
 
 
 

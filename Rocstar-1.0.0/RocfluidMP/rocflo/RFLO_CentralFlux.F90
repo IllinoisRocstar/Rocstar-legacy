@@ -70,7 +70,7 @@ SUBROUTINE RFLO_CentralFlux( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CentralFlux',&
-  __FILE__ )
+  'RFLO_CentralFlux.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -290,6 +290,7 @@ END SUBROUTINE RFLO_CentralFlux
 ! Added low-level time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

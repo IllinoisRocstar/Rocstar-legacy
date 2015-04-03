@@ -114,7 +114,7 @@ SUBROUTINE PLAG_ReadStatPost(regions,iReg)
     global => regions(iReg)%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_ReadStatPost',&
-  __FILE__ )
+  'PLAG_ReadStatPost.F90' )
 
 ! ******************************************************************************
 !   Allocate temporary data arrays 
@@ -376,6 +376,7 @@ END SUBROUTINE PLAG_ReadStatPost
 ! Initial import
 !
 ! ******************************************************************************
+
 
 
 

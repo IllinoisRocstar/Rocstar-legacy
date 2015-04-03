@@ -92,7 +92,7 @@ SUBROUTINE RkUpdatePointScalar(region,iStage,ivBeg,ivEnd,var,varOld,rhs,rhsSum)
   global => region%global
 
   CALL RegisterFunction(global,'RkUpdatePointScalar',&
-  __FILE__)
+  'RkUpdatePointScalar.F90')
 
 ! *****************************************************************************
 ! Set pointers and variables
@@ -167,6 +167,7 @@ END SUBROUTINE RkUpdatePointScalar
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

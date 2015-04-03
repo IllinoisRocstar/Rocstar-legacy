@@ -138,7 +138,7 @@ SUBROUTINE RFLU_BuildPlottingVarMaps(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_BuildPlottingVarMaps', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building plotting variable maps...'
@@ -230,7 +230,7 @@ SUBROUTINE RFLU_BuildPlottingVarNames(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_BuildPlottingVarNames', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
 ! ******************************************************************************
 ! Set names of plotting variables
@@ -382,7 +382,7 @@ SUBROUTINE RFLU_ComputePlottingVarsCore(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_ComputePlottingVarsCore', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -731,7 +731,7 @@ SUBROUTINE RFLU_ComputePlottingVarsDisc(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_ComputePlottingVarsDisc', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -897,7 +897,7 @@ SUBROUTINE RFLU_ComputePlottingVarsGradErr(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_ComputePlottingVarsGradErr', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -1161,7 +1161,7 @@ SUBROUTINE RFLU_ComputePlottingVarsVort(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_ComputePlottingVarsVort', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -1326,7 +1326,7 @@ SUBROUTINE RFLU_ComputePlottingVarsWrapper(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_ComputePlottingVarsWrapper', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
 ! ******************************************************************************
 ! Mixture
@@ -1434,7 +1434,7 @@ SUBROUTINE RFLU_CountPlottingVars(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_CountPlottingVars', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Counting plotting variables...'
@@ -1601,7 +1601,7 @@ SUBROUTINE RFLU_CreatePlottingVarMaps(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CreatePlottingVarMaps', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating plotting variable maps...'
@@ -1682,7 +1682,7 @@ SUBROUTINE RFLU_CreatePlottingVars(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CreatePlottingVars', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating plotting variables...'
@@ -1767,7 +1767,7 @@ SUBROUTINE RFLU_CreatePlottingVarsVert(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CreatePlottingVarsVert', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
 ! ******************************************************************************
 ! Create plotting variables
@@ -1917,7 +1917,7 @@ SUBROUTINE RFLU_DestroyPlottingVarMaps(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DestroyPlottingVarMaps', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying plotting variable maps...'
@@ -1999,7 +1999,7 @@ SUBROUTINE RFLU_DestroyPlottingVars(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DestroyPlottingVars', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying plotting variables...'
@@ -2081,7 +2081,7 @@ SUBROUTINE RFLU_DestroyPlottingVarsVert(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DestroyPlottingVarsVert', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
   
 ! ******************************************************************************
 ! Destroy plotting variables
@@ -2153,7 +2153,7 @@ SUBROUTINE RFLU_InitPlottingVars(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_InitPlottingVars', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initializing plotting variables...'
@@ -2230,7 +2230,7 @@ SUBROUTINE RFLU_InitPlottingVarsVert(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_InitPlottingVarsVert', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -2309,7 +2309,7 @@ SUBROUTINE RFLU_NullifyPlottingVarMaps(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NullifyPlottingVarMaps', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
 ! ******************************************************************************
 ! Nullify plotting variables
@@ -2372,7 +2372,7 @@ SUBROUTINE RFLU_NullifyPlottingVars(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NullifyPlottingVars', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
 ! ******************************************************************************
 ! Nullify plotting variables
@@ -2436,7 +2436,7 @@ SUBROUTINE RFLU_NullifyPlottingVarsVert(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_NullifyPlottingVarsVert', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
 ! ******************************************************************************
 ! Nullify plotting variables
@@ -2500,7 +2500,7 @@ SUBROUTINE RFLU_PrintPlottingVarsInfo(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_PrintPlottingVarsInfo', & 
-                        __FILE__)
+                        'RFLU_ModPlottingVars.F90')
 
   IF ( global%verbLevel > VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -2595,6 +2595,26 @@ END MODULE RFLU_ModPlottingVars
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

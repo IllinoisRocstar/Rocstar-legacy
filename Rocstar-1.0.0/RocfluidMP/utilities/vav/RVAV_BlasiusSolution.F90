@@ -95,7 +95,7 @@ SUBROUTINE RVAV_BlasiusSolution( fname, regionsS1)
   global => regionsS1(1)%global
   
   CALL RegisterFunction( global, 'RVAV_BlasiusSolution',&
-  __FILE__ )
+  'RVAV_BlasiusSolution.F90' )
     
 ! generates Input DataStream for Blasius
 
@@ -305,6 +305,7 @@ END SUBROUTINE RVAV_BlasiusSolution
 !
 !
 !******************************************************************************
+
 
 
 

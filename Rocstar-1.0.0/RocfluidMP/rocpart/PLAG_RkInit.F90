@@ -79,7 +79,7 @@ SUBROUTINE PLAG_RkInit( region,iStage )
   global => region%global
 
   CALL RegisterFunction( global,'PLAG_RkInit',&
-  __FILE__ )
+  'PLAG_RkInit.F90' )
 
   IF (global%plagUsed) THEN
 
@@ -160,6 +160,7 @@ END SUBROUTINE PLAG_RkInit
 !
 !
 !******************************************************************************
+
 
 
 

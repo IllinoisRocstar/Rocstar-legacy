@@ -69,7 +69,7 @@ SUBROUTINE randInitGenxInterface( regions, wins, winv )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'randInitGenxInterface',&
-  __FILE__ )
+  'RandInitRocstarInterface.F90' )
 
 ! input data (currently none) -------------------------------------------------
 
@@ -132,6 +132,7 @@ END SUBROUTINE randInitGenxInterface
 ! Initial import
 !
 !******************************************************************************
+
 
 
 

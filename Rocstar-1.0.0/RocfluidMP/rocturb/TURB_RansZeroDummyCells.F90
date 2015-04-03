@@ -74,7 +74,7 @@ SUBROUTINE TURB_RansZeroDummyCells( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'TURB_RansZeroDummyCells',&
-  __FILE__ )
+  'TURB_RansZeroDummyCells.F90' )
 
 ! zero out residuals in dummy cells -------------------------------------------
 
@@ -146,6 +146,7 @@ END SUBROUTINE TURB_RansZeroDummyCells
 !
 !
 !******************************************************************************
+
 
 
 

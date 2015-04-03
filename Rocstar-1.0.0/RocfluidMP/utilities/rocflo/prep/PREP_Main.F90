@@ -85,7 +85,7 @@ PROGRAM ROCFLO_Init
 
   global%nFunTree = 0
   CALL RegisterFunction( global,'ROCFLO_Init',&
-  __FILE__ )
+  'PREP_Main.F90' )
 
 ! initialize global parameters ------------------------------------------------
 
@@ -340,7 +340,7 @@ END PROGRAM ROCFLO_Init
 ! Corrected mistake in phased check-in
 !
 ! Revision 1.16  2003/03/20 19:35:43  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'PREP_Main.F90' names
 !
 ! Revision 1.15  2002/10/12 03:20:51  jblazek
 ! Replaced [io]stat=global%error with local errorFlag for Rocflo.
@@ -388,6 +388,8 @@ END PROGRAM ROCFLO_Init
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
+
 
 
 

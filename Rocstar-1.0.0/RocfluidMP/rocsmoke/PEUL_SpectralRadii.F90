@@ -82,7 +82,7 @@ SUBROUTINE PEUL_SpectralRadii( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_SpectralRadii',&
-  __FILE__ )
+  'PEUL_SpectralRadii.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -183,6 +183,7 @@ END SUBROUTINE PEUL_SpectralRadii
 !
 !
 !******************************************************************************
+
 
 
 

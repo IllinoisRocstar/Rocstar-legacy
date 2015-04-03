@@ -76,7 +76,7 @@ SUBROUTINE RFLU_OpenTotalMassFile(global)
   RCSIdentString = '$RCSfile: RFLU_OpenTotalMassFile.F90,v $ $Revision: 1.5 $'
 
   CALL RegisterFunction(global,'RFLU_OpenTotalMassFile',&
-  __FILE__)
+  'RFLU_OpenTotalMassFile.F90')
 
 ! ==============================================================================
 ! Open file
@@ -135,6 +135,7 @@ END SUBROUTINE RFLU_OpenTotalMassFile
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

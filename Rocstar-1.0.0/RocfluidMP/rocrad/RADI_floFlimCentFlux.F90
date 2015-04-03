@@ -73,7 +73,7 @@ SUBROUTINE RADI_FloFlimCentFlux( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FloFlimCentFlux',&
-  __FILE__ )
+  'RADI_floFlimCentFlux.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -215,6 +215,7 @@ END SUBROUTINE RADI_FloFlimCentFlux
 !
 !
 !******************************************************************************
+
 
 
 

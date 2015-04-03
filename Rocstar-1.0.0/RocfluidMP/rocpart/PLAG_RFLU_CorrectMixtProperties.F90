@@ -94,7 +94,7 @@ SUBROUTINE PLAG_RFLU_CorrectMixtProperties(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction( global, 'PLAG_RFLU_CorrectMixtProperties',&
-  __FILE__ )
+  'PLAG_RFLU_CorrectMixtProperties.F90' )
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -231,6 +231,7 @@ END SUBROUTINE PLAG_RFLU_CorrectMixtProperties
 ! Initial version
 !
 !******************************************************************************
+
 
 
 

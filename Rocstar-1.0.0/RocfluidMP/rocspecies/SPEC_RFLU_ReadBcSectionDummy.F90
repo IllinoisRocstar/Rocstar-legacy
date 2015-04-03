@@ -93,7 +93,7 @@ SUBROUTINE SPEC_RFLU_ReadBcSectionDummy(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_ReadBcSectionDummy',&
-  __FILE__)
+  'SPEC_RFLU_ReadBcSectionDummy.F90')
 
 ! *****************************************************************************
 ! Allocate memory 
@@ -212,6 +212,7 @@ END SUBROUTINE SPEC_RFLU_ReadBcSectionDummy
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

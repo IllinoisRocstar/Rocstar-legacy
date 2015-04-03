@@ -80,7 +80,7 @@ SUBROUTINE RADI_RFLO_FlimSpectralRadii( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'RADI_RFLO_FlimSpectralRadii',&
-  __FILE__ )
+  'RADI_rFLO_FlimSpectralRadii.F90' )
 
   IF (region%radiInput%radiModel /= RADI_MODEL_FLDTRAN) GOTO 999
 
@@ -177,6 +177,7 @@ END SUBROUTINE RADI_RFLO_FlimSpectralRadii
 !
 !
 !******************************************************************************
+
 
 
 

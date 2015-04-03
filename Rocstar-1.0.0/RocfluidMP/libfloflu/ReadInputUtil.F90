@@ -94,7 +94,7 @@ SUBROUTINE ReadSection( global,fileID,nvals,keys,vals,defined )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadSection',&
-  __FILE__ )
+  'ReadInputUtil.F90' )
 
 ! read lines from file until # or EOF found
 
@@ -152,7 +152,7 @@ SUBROUTINE ReadStringSection( global,fileID,nvals,keys,vals,defined )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadStringSection',&
-  __FILE__ )
+  'ReadInputUtil.F90' )
 
 ! read lines from file until # or EOF found
 
@@ -214,7 +214,7 @@ SUBROUTINE ReadBothSection( global,fileID,nvals,nStrVals,keys,strKeys, &
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadBothSection',&
-  __FILE__ )
+  'ReadInputUtil.F90' )
 
 ! read lines from file until # or EOF found
 
@@ -288,7 +288,7 @@ SUBROUTINE ReadRegionSection( global,fileID,nvals,keys,vals, &
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadRegionSection',&
-  __FILE__ )
+  'ReadInputUtil.F90' )
 
 ! read lines from file until # or EOF found
 
@@ -356,7 +356,7 @@ SUBROUTINE ReadBothRegionSection( global,fileID,nvals,nStrVals,keys,strKeys, &
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadBothRegionSection',&
-  __FILE__ )
+  'ReadInputUtil.F90' )
 
 ! read lines from file until # or EOF found
 
@@ -456,7 +456,7 @@ SUBROUTINE ReadPatchSection( global,fileID,nvals,keys,vals, &
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadPatchSection',&
-  __FILE__ )
+  'ReadInputUtil.F90' )
 
 ! read lines from file until # or EOF found
 
@@ -561,7 +561,7 @@ SUBROUTINE ReadListSection( global,fileID,key,nCols,nRows,vals,defined )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadListSection',&
-  __FILE__ )
+  'ReadInputUtil.F90' )
 
 ! read lines from file until # or EOF found
 
@@ -631,7 +631,7 @@ SUBROUTINE ReadPrefixedListSection( global,fileID,key,nCols,nRows, &
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadListSection',&
-  __FILE__ )
+  'ReadInputUtil.F90' )
 
 ! read lines from file until # or EOF found
 
@@ -764,6 +764,14 @@ END SUBROUTINE ReadPrefixedListSection
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
+
+
+
+
+
+
+
 
 
 

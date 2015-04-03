@@ -79,7 +79,7 @@ SUBROUTINE TURB_FloLesGenCoFF( region )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloLesGenCoFF',&
-  __FILE__ )
+  'TURB_floLesGenCoFF.F90' )
 
 ! get indices, parameters and pointers ----------------------------------------
 
@@ -317,6 +317,7 @@ END SUBROUTINE TURB_FloLesGenCoFF
 !
 !
 !******************************************************************************
+
 
 
 

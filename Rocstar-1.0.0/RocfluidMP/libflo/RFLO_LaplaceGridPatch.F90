@@ -69,7 +69,7 @@ SUBROUTINE RFLO_LaplaceGridPatch( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_LaplaceGridPatch',&
-  __FILE__ )
+  'RFLO_LaplaceGridPatch.F90' )
 
 ! get dimensions and pointers
 
@@ -125,6 +125,7 @@ END SUBROUTINE RFLO_LaplaceGridPatch
 ! Added basic global grid smoothing scheme.
 !
 !******************************************************************************
+
 
 
 

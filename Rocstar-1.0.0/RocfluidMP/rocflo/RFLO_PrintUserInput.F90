@@ -84,7 +84,7 @@ SUBROUTINE RFLO_PrintUserInput( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_PrintUserInput',&
-  __FILE__ )
+  'RFLO_PrintUserInput.F90' )
 
 ! start -----------------------------------------------------------------------
 
@@ -582,6 +582,7 @@ END SUBROUTINE RFLO_PrintUserInput
 ! memory allocation added.
 !
 !******************************************************************************
+
 
 
 

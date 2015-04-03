@@ -71,7 +71,7 @@ SUBROUTINE PEUL_InitInputValues( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PEUL_InitInputValues',&
-  __FILE__ )
+  'PEUL_InitInputValues.F90' )
 
 ! global values ---------------------------------------------------------------
 
@@ -117,6 +117,7 @@ END SUBROUTINE PEUL_InitInputValues
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

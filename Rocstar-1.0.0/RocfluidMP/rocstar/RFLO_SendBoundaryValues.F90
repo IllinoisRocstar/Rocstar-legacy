@@ -85,7 +85,7 @@ SUBROUTINE RFLO_SendBoundaryValues( region,initialize )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_SendBoundaryValues',&
-  __FILE__ )
+  'RFLO_SendBoundaryValues.F90' )
 
 ! store pointers to variables -------------------------------------------------
 
@@ -398,6 +398,7 @@ END SUBROUTINE RFLO_SendBoundaryValues
 ! Finalized integration into GenX.
 !
 !******************************************************************************
+
 
 
 

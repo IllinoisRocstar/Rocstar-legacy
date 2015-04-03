@@ -81,7 +81,7 @@ SUBROUTINE PEUL_BoundaryConditionsSet( regions,iReg ) ! PUBLIC
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PEUL_BoundaryConditionsSet',&
-  __FILE__ )
+  'PEUL_BoundaryConditionsSet.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -230,6 +230,7 @@ END SUBROUTINE PEUL_BoundaryConditionsSet
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

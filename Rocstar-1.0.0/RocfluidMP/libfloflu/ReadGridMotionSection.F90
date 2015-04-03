@@ -114,7 +114,7 @@ SUBROUTINE ReadGridMotionSection(regions)
   nVals = NVALS_MAX
 
   CALL RegisterFunction( global,'ReadGridMotionSection',&
-  __FILE__ )
+  'ReadGridMotionSection.F90' )
 
   CALL ReadSection( global,IF_INPUT,nVals,keys,vals,defined )
 
@@ -188,7 +188,7 @@ SUBROUTINE ReadGridMotionSection(regions)
   nVals = 3
 
   CALL RegisterFunction(regions(1)%global,'ReadGridMotionSection',&
-  __FILE__)
+  'ReadGridMotionSection.F90')
 
   CALL ReadSection(regions(1)%global,IF_INPUT,nVals,keys,vals,defined) 
   
@@ -325,6 +325,8 @@ END SUBROUTINE ReadGridMotionSection
 ! Initial revision
 !
 ! ******************************************************************************
+
+
 
 
 

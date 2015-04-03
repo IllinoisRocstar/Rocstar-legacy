@@ -65,7 +65,7 @@ SUBROUTINE TURB_RkInit( region, istage ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'TURB_RkInit',&
-  __FILE__ )
+  'TURB_RkInit.F90' )
 
 ! global values ---------------------------------------------------------------
   
@@ -116,6 +116,7 @@ END SUBROUTINE TURB_RkInit
 !
 !
 !******************************************************************************
+
 
 
 

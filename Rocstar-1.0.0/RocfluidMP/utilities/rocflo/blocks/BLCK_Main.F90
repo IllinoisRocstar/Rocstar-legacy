@@ -87,7 +87,7 @@ PROGRAM ROCFLO_Blocks
 
   global%nFunTree = 0
   CALL RegisterFunction( global,'ROCFLO_Blocks',&
-  __FILE__ )
+  'BLCK_Main.F90' )
 
 ! initialize global parameters ------------------------------------------------
 
@@ -313,12 +313,14 @@ END PROGRAM ROCFLO_Blocks
 ! Corrected mistake in phased check-in
 !
 ! Revision 1.2  2003/03/20 19:33:08  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'BLCK_Main.F90' names
 !
 ! Revision 1.1  2002/12/20 19:38:02  jblazek
 ! Added tool to count blocks in a box.
 !
 !******************************************************************************
+
+
 
 
 

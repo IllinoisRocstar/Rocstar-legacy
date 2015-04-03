@@ -82,7 +82,7 @@ SUBROUTINE PEUL_BcondInflow( region,patch )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_BcondInflow',&
-  __FILE__ )
+  'PEUL_BcondInflow.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -181,6 +181,7 @@ END SUBROUTINE PEUL_BcondInflow
 ! added inflow boundary condition and initialization to a constant
 !
 !******************************************************************************
+
 
 
 

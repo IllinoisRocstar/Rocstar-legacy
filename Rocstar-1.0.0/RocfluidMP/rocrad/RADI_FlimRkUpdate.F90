@@ -83,7 +83,7 @@ SUBROUTINE RADI_FlimRkUpdate( region )
   global => region%global
 
   CALL RegisterFunction( global,'RADI_FlimRkUpdate',&
-  __FILE__ )
+  'RADI_FlimRkUpdate.F90' )
 
 ! get stage number ------------------------------------------------------------
 
@@ -235,6 +235,7 @@ END SUBROUTINE RADI_FlimRkUpdate
 !
 !
 !******************************************************************************
+
 
 
 

@@ -165,7 +165,7 @@ MODULE RFLU_ModTime
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SetTimeRK',&
-  __FILE__)  
+  'RFLU_ModTime.F90')  
 
 ! ******************************************************************************
 !   
@@ -212,6 +212,7 @@ END MODULE RFLU_ModTime
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

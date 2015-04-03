@@ -90,7 +90,7 @@ SUBROUTINE TURB_CalcStrainRate( region,ibn,ien,grIndx,gradf,sRateI )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_CalcStrainRate',&
-  __FILE__ )
+  'TURB_CalcStrainRate.F90' )
 
   oo3 = 1.0_RFREAL/3.0_RFREAL
 
@@ -215,6 +215,7 @@ END SUBROUTINE TURB_CalcStrainRate
 !
 !
 !******************************************************************************
+
 
 
 

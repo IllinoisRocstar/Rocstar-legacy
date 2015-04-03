@@ -110,7 +110,7 @@ SUBROUTINE PLAG_InCellTestRobust( region, posPlag, indexCurr, &
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_InCellTestRobust',&
-  __FILE__ )
+  'PLAG_InCellTestRobust.F90' )
 
 ! *****************************************************************************
 ! Set variables and pointers
@@ -263,6 +263,7 @@ END SUBROUTINE PLAG_InCellTestRobust
 ! Initial Import for robust cell search algorithm
 !
 !******************************************************************************
+
 
 
 

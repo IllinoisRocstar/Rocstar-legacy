@@ -75,7 +75,7 @@ SUBROUTINE ReadViscositySection( regions )
 !******************************************************************************
 
   CALL RegisterFunction( regions(1)%global,'ReadViscositySection',&
-  __FILE__ )
+  'ReadViscositySection.F90' )
 
 ! specify keywords and search for them
 
@@ -182,6 +182,7 @@ END SUBROUTINE ReadViscositySection
 ! Initial import for viscosity models
 !
 !******************************************************************************
+
 
 
 

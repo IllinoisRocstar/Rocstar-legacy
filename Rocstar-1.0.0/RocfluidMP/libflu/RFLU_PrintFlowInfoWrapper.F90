@@ -84,7 +84,7 @@ SUBROUTINE RFLU_PrintFlowInfoWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_PrintFlowInfoWrapper',&
-  __FILE__)
+  'RFLU_PrintFlowInfoWrapper.F90')
 
 ! ******************************************************************************
 ! Print flow info
@@ -133,6 +133,7 @@ END SUBROUTINE RFLU_PrintFlowInfoWrapper
 !   Initial revision
 !
 ! ******************************************************************************
+
 
 
 

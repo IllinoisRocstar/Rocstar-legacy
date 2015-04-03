@@ -70,7 +70,7 @@ SUBROUTINE TURB_FloRansSetCornEdgeCells( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_FloRansSetCornEdgeCells', &
-                         __FILE__ )
+                         'TURB_floRansSetCornEdgeCells.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -242,6 +242,7 @@ END SUBROUTINE TURB_FloRansSetCornEdgeCells
 !
 !
 !******************************************************************************
+
 
 
 

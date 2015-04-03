@@ -104,7 +104,7 @@ SUBROUTINE UpdateDependentVarsMP(region)
   global => region%global
 
   CALL RegisterFunction(global,'UpdateDependentVarsMP',&
-  __FILE__)
+  'UpdateDependentVarsMP.F90')
 
 ! *****************************************************************************
 ! Set variables
@@ -206,6 +206,7 @@ END SUBROUTINE UpdateDependentVarsMP
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

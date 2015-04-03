@@ -61,7 +61,7 @@ SUBROUTINE ReadRocketSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadRocketSection',&
-  __FILE__ )
+  'ReadRocketSection.F90' )
 ! specify keywords and search for them
 
   nVals = NVALS_MAX
@@ -188,6 +188,7 @@ SUBROUTINE ReadRocketSection( global )
   CALL DeregisterFunction( global )
 
 END SUBROUTINE ReadRocketSection
+
 
 
 

@@ -80,7 +80,7 @@ SUBROUTINE RFLO_C2fAvgCoeffsDummyPhys( region,lbound,idir,jdir,kdir, &
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_C2fAvgCoeffsDummyPhys',&
-  __FILE__ )
+  'RFLO_C2fAvgCoeffsDummyPhys.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -228,6 +228,7 @@ END SUBROUTINE RFLO_C2fAvgCoeffsDummyPhys
 !
 !
 !******************************************************************************
+
 
 
 

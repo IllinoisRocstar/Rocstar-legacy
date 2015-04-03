@@ -73,7 +73,7 @@ SUBROUTINE PLAG_StatMapping( global ) ! PUBLIC
   RCSIdentString = '$RCSfile: PLAG_StatMapping.F90,v $'
 
   CALL RegisterFunction( global,'PLAG_StatMapping',&
-  __FILE__ )
+  'PLAG_StatMapping.F90' )
 
 ! allocate PLAG variables and set pointers ---------------------------------
 
@@ -200,6 +200,7 @@ END SUBROUTINE PLAG_StatMapping
 !
 !
 !******************************************************************************
+
 
 
 

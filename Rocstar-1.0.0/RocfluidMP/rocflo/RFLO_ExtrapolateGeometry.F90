@@ -62,7 +62,7 @@ SUBROUTINE RFLO_ExtrapolateGeometry( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ExtrapolateGeometry',&
-  __FILE__ )
+  'RFLO_ExtrapolateGeometry.F90' )
 
 
 
@@ -100,6 +100,7 @@ END SUBROUTINE RFLO_ExtrapolateGeometry
 ! Added routines to generate geometry for dummy cells.
 !
 !******************************************************************************
+
 
 
 

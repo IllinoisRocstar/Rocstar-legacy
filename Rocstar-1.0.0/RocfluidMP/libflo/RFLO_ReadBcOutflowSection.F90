@@ -78,7 +78,7 @@ SUBROUTINE RFLO_ReadBcOutflowSection( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadBcOutflowSection',&
-  __FILE__ )
+  'RFLO_ReadBcOutflowSection.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -320,6 +320,7 @@ END SUBROUTINE RFLO_ReadBcOutflowSection
 ! Added routines to read BC input file.
 !
 !******************************************************************************
+
 
 
 

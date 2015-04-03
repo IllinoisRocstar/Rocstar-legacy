@@ -79,7 +79,7 @@ SUBROUTINE RFLO_CalcGradVector( region,iBegV,iEndV,iBegG,iEndG,var, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcGradVector',&
-  __FILE__ )
+  'RFLO_CalcGradVector.F90' )
 
 ! get some parameters and flags --------------------------------------------
 
@@ -348,6 +348,7 @@ END SUBROUTINE RFLO_CalcGradVector
 ! Renamed from libfloflu/calcGradVelT
 !
 !******************************************************************************
+
 
 
 

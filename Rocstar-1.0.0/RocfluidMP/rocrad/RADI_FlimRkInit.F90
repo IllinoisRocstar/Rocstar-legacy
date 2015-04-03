@@ -83,7 +83,7 @@ SUBROUTINE RADI_FlimRkInit( region, istage )
   global => region%global
 
   CALL RegisterFunction( global,'RADI_FlimRkInit',&
-  __FILE__ )
+  'RADI_FlimRkInit.F90' )
 
   IF (region%radiInput%radiModel /= RADI_MODEL_FLDTRAN) GOTO 999
   
@@ -161,6 +161,7 @@ END SUBROUTINE RADI_FlimRkInit
 !
 !
 !******************************************************************************
+
 
 
 

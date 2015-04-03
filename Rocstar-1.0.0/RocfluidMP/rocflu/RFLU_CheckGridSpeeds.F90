@@ -89,7 +89,7 @@ SUBROUTINE RFLU_CheckGridSpeeds(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CheckGridSpeeds',&
-  __FILE__)
+  'RFLU_CheckGridSpeeds.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -237,6 +237,7 @@ END SUBROUTINE RFLU_CheckGridSpeeds
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

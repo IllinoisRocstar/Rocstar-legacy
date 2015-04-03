@@ -74,7 +74,7 @@ SUBROUTINE RFLO_MoveGridInterfaces( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_MoveGridInterfaces',&
-  __FILE__ )
+  'RFLO_MoveGridInterfaces.F90' )
 
 ! fix interfaces between regions ----------------------------------------------
 
@@ -204,6 +204,7 @@ END SUBROUTINE RFLO_MoveGridInterfaces
 ! Added basic global grid smoothing scheme.
 !
 !******************************************************************************
+
 
 
 

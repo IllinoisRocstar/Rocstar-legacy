@@ -95,7 +95,7 @@ SUBROUTINE RFLU_ScalarFirstPatch(pRegion,pPatch,nVarScal,cvScal,valScal,resScal)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ScalarFirstPatch',&
-  __FILE__)
+  'RFLU_ScalarFirstPatch.F90')
 
 ! ******************************************************************************
 ! Checks: Defensive coding, should never occur
@@ -260,6 +260,7 @@ END SUBROUTINE RFLU_ScalarFirstPatch
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

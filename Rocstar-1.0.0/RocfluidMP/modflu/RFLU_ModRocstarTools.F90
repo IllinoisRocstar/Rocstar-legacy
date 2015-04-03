@@ -183,7 +183,7 @@ SUBROUTINE RFLU_GENX_ConstrainDisp(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_GENX_ConstrainDisp',&
-  __FILE__)
+  'RFLU_ModRocstarTools.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -589,7 +589,7 @@ SUBROUTINE RFLU_GENX_InitBFLAG(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_GENX_InitBFLAG',&
-  __FILE__)
+  'RFLU_ModRocstarTools.F90')
   
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -861,7 +861,7 @@ SUBROUTINE RFLU_GENX_MoveGrid(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_GENX_MoveGrid',&
-  __FILE__)
+  'RFLU_ModRocstarTools.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -1204,6 +1204,9 @@ END MODULE RFLU_ModRocstarTools
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
 
 
 

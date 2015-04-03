@@ -89,7 +89,7 @@ SUBROUTINE RFLU_BuildDataStruct(global,levels)
   RCSIdentString = '$RCSfile: RFLU_BuildDataStruct.F90,v $ $Revision: 1.8 $'
 
   CALL RegisterFunction(global,'RFLU_BuildDataStruct',&
-  __FILE__)
+  'RFLU_BuildDataStruct.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -204,6 +204,7 @@ END SUBROUTINE RFLU_BuildDataStruct
 ! Added RCS revision history section...
 !
 ! ******************************************************************************
+
 
 
 

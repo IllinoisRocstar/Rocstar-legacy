@@ -105,7 +105,7 @@ SUBROUTINE RFLU_ComputeVertexVariables(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeVertexVariables', &
-                        __FILE__)
+                        'RFLU_ComputeVertexVariables.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Computing vertex variables...'
@@ -318,12 +318,14 @@ END SUBROUTINE RFLU_ComputeVertexVariables
 ! Added clarifying comment under Notes
 !
 ! Revision 1.2  2003/03/20 20:07:19  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'RFLU_ComputeVertexVariables.F90' names
 !
 ! Revision 1.1  2003/03/15 19:16:54  haselbac
 ! Initial revision
 !
 ! ******************************************************************************
+
+
 
 
 

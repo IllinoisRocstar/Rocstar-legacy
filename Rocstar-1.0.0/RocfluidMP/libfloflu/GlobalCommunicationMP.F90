@@ -63,7 +63,7 @@ SUBROUTINE GlobalCommunicationMP( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'GlobalCommunicationMP',&
-  __FILE__ )
+  'GlobalCommunicationMP.F90' )
   
 ! perform global communication for MP -----------------------------------------
 
@@ -98,6 +98,7 @@ END SUBROUTINE GlobalCommunicationMP
 !
 !
 !******************************************************************************
+
 
 
 

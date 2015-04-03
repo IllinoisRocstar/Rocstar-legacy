@@ -71,7 +71,7 @@ SUBROUTINE TURB_FloRansBcondSymmetry( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_FloRansBcondSymmetry',&
-  __FILE__ )
+  'TURB_floRansBcondSymmetry.F90' )
 
 ! get dimensions and pointers
 
@@ -129,6 +129,7 @@ END SUBROUTINE TURB_FloRansBcondSymmetry
 !
 !
 !******************************************************************************
+
 
 
 

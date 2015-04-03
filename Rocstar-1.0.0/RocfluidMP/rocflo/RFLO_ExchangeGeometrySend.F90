@@ -82,7 +82,7 @@ SUBROUTINE RFLO_ExchangeGeometrySend( region,regionSrc,patch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ExchangeGeometrySend',&
-  __FILE__ )
+  'RFLO_ExchangeGeometrySend.F90' )
 
 ! check if the source region is active
 
@@ -552,6 +552,7 @@ END SUBROUTINE RFLO_ExchangeGeometrySend
 ! Finished multiblock and MPI.
 !
 !******************************************************************************
+
 
 
 

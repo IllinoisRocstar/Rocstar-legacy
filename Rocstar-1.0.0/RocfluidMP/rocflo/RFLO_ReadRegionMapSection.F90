@@ -66,7 +66,7 @@ SUBROUTINE RFLO_ReadRegionMapSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_ReadRegionMapSection',&
-  __FILE__ )
+  'RFLO_ReadRegionMapSection.F90' )
 
 ! open file and search for keywords
 
@@ -161,6 +161,7 @@ END SUBROUTINE RFLO_ReadRegionMapSection
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
 
 
 

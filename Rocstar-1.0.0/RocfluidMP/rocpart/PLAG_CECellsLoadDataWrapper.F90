@@ -80,7 +80,7 @@ SUBROUTINE PLAG_CECellsLoadDataWrapper( regions, iReg )
   global => regions(iReg)%global
     
   CALL RegisterFunction( global, 'PLAG_CECellsLoadDataWrapper',&
-  __FILE__ )
+  'PLAG_CECellsLoadDataWrapper.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -132,6 +132,7 @@ END SUBROUTINE PLAG_CECellsLoadDataWrapper
 ! Initial import for corner-edge cells to load buffer data
 !
 !******************************************************************************
+
 
 
 

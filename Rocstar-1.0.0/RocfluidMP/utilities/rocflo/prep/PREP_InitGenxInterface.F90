@@ -80,7 +80,7 @@ SUBROUTINE RFLO_InitGenxInterfacePrep( iReg,region,wins,winv )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_InitGenxInterfacePrep', &
-                         __FILE__ )
+                         'PREP_InitGenxInterface.F90' )
 
 ! open data windows and register variables ------------------------------------
 
@@ -433,6 +433,7 @@ END SUBROUTINE RFLO_InitGenxInterfacePrep
 !
 !
 !******************************************************************************
+
 
 
 

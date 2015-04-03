@@ -83,7 +83,7 @@ SUBROUTINE RFLU_SetVarInfoWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SetVarInfoWrapper',&
-  __FILE__)
+  'RFLU_SetVarInfoWrapper.F90')
 
 ! ******************************************************************************
 ! Set variable info 
@@ -128,6 +128,7 @@ END SUBROUTINE RFLU_SetVarInfoWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

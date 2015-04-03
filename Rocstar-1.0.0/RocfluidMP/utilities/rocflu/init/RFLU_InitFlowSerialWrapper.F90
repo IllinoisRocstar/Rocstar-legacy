@@ -83,7 +83,7 @@ SUBROUTINE RFLU_InitFlowSerialWrapper(pRegion,pRegionSerial)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_InitFlowSerialWrapper',&
-  __FILE__)
+  'RFLU_InitFlowSerialWrapper.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initializing from serial solution...'
@@ -156,6 +156,7 @@ END SUBROUTINE RFLU_InitFlowSerialWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

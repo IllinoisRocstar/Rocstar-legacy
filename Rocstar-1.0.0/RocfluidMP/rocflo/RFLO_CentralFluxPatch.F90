@@ -78,7 +78,7 @@ SUBROUTINE RFLO_CentralFluxPatch( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CentralFluxPatch',&
-  __FILE__ )
+  'RFLO_CentralFluxPatch.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -495,6 +495,7 @@ END SUBROUTINE RFLO_CentralFluxPatch
 ! Added flux computation (central scheme).
 !
 !******************************************************************************
+
 
 
 

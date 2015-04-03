@@ -144,7 +144,7 @@ SUBROUTINE RFLU_ComputeLineCellXSectFast(pRegion,xLoc,yLoc,zLoc,ex,ey,ez,icg, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeLineCellXSectFast',&
-  __FILE__)
+  'RFLU_ModGeometryTools.F90')
 
 ! ==============================================================================
 ! Set grid pointer and initialize variables
@@ -418,7 +418,7 @@ SUBROUTINE RFLU_ComputeLineCellXSectSafe(pRegion,xLoc,yLoc,zLoc,ex,ey,ez,icg, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeLineCellXSectSafe',&
-  __FILE__)
+  'RFLU_ModGeometryTools.F90')
 
 ! ==============================================================================
 ! Set grid pointer and initialize variables
@@ -683,7 +683,7 @@ LOGICAL FUNCTION RFLU_TestInBoundBox(global,xLoc,yLoc,zLoc,xMin,xMax, &
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_TestInBoundBox',&
-  __FILE__)
+  'RFLU_ModGeometryTools.F90')
 
 ! ******************************************************************************
 ! Determine whether point is in bounding box
@@ -770,7 +770,7 @@ LOGICAL FUNCTION RFLU_TestVectorCartAxisAligned(global,dr,dir)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_TestVectorCartAxisAligned',&
-  __FILE__)
+  'RFLU_ModGeometryTools.F90')
 
 ! ******************************************************************************
 ! Set tolerance
@@ -833,6 +833,10 @@ END MODULE RFLU_ModGeometryTools
 !
 ! ******************************************************************************
   
+
+
+
+
 
 
 

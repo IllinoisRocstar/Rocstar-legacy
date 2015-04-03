@@ -59,7 +59,7 @@ SUBROUTINE RFLO_InterpolToFinerLevel( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_InterpolToFinerLevel',&
-  __FILE__ )
+  'RFLO_InterpolToFinerLevel.F90' )
 
 
 
@@ -100,6 +100,7 @@ END SUBROUTINE RFLO_InterpolToFinerLevel
 ! Added time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

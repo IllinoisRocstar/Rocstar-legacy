@@ -85,7 +85,7 @@ SUBROUTINE RFLO_TimeStepViscous( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_TimeStepViscous',&
-  __FILE__ )
+  'RFLO_TimeStepViscous.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -279,6 +279,7 @@ END SUBROUTINE RFLO_TimeStepViscous
 ! Added multi-probe option, residual smoothing, physical time step.
 !
 !******************************************************************************
+
 
 
 

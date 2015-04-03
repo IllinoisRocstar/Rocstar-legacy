@@ -97,7 +97,7 @@ SUBROUTINE TURB_WlmTauWallMapping( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_WlmTauWallMapping',&
-  __FILE__ )
+  'TURB_WlmTauWallMapping.F90' )
 
 ! get dimensions and parameters -------------------------------------------------
 
@@ -300,6 +300,7 @@ END SUBROUTINE TURB_WlmTauWallMapping
 !
 !
 !******************************************************************************
+
 
 
 

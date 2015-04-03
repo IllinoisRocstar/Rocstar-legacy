@@ -112,7 +112,7 @@ MODULE RFLU_ModCellFaceEdgeInfo
 ! ******************************************************************************  
 
     CALL RegisterFunction(global,'RFLU_GetGlobalCellType',&
-  __FILE__) 
+  'RFLU_ModCellFaceEdgeInfo.F90') 
 
 ! ******************************************************************************  
 !   Determine global cell type
@@ -186,7 +186,7 @@ MODULE RFLU_ModCellFaceEdgeInfo
 ! ******************************************************************************  
 
     CALL RegisterFunction(global,'RFLU_GetGlobalCellKind',&
-  __FILE__)
+  'RFLU_ModCellFaceEdgeInfo.F90')
 
 ! ******************************************************************************  
 !   Get global cell kind
@@ -300,7 +300,7 @@ MODULE RFLU_ModCellFaceEdgeInfo
 ! ******************************************************************************  
 
     CALL RegisterFunction(global,'RFLU_GetVirtualCellReg',&
-  __FILE__) 
+  'RFLU_ModCellFaceEdgeInfo.F90') 
 
 ! ******************************************************************************  
 !   Determine global cell type
@@ -379,7 +379,7 @@ MODULE RFLU_ModCellFaceEdgeInfo
 ! ******************************************************************************  
 
     CALL RegisterFunction(global,'RFLU_GetFaceKind',&
-  __FILE__)
+  'RFLU_ModCellFaceEdgeInfo.F90')
 
 ! ******************************************************************************  
 !   Get face kind
@@ -455,7 +455,7 @@ MODULE RFLU_ModCellFaceEdgeInfo
 ! ******************************************************************************  
 
     CALL RegisterFunction(global,'RFLU_GetEdgeKind',&
-  __FILE__)
+  'RFLU_ModCellFaceEdgeInfo.F90')
 
 ! ******************************************************************************  
 !   Get face kind
@@ -553,6 +553,11 @@ END MODULE RFLU_ModCellFaceEdgeInfo
 ! Initial revision                                                             
 !
 ! ******************************************************************************
+
+
+
+
+
 
 
 

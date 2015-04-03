@@ -131,7 +131,7 @@ SUBROUTINE RFLU_COL_BuildColoringP(pRegion,pRegionSerial)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_COL_BuildColoringP', &
-                        __FILE__)
+                        'RFLU_ModColoring.F90')
 
   pGrid => pRegion%grid
 
@@ -209,7 +209,7 @@ SUBROUTINE RFLU_COL_BuildColoringS(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_COL_BuildColoringS', &
-                        __FILE__)
+                        'RFLU_ModColoring.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -509,7 +509,7 @@ SUBROUTINE RFLU_COL_CreateColoring(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_COL_CreateColoring', &
-                        __FILE__)
+                        'RFLU_ModColoring.F90')
 
   pGrid => pRegion%grid
 
@@ -582,7 +582,7 @@ SUBROUTINE RFLU_COL_DestroyColoring(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_COL_DestroyColoring', &
-                        __FILE__)
+                        'RFLU_ModColoring.F90')
 
   pGrid => pRegion%grid
 
@@ -658,7 +658,7 @@ END SUBROUTINE RFLU_COL_DestroyColoring
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COL_ReadColoring',&
-  __FILE__)
+  'RFLU_ModColoring.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -863,7 +863,7 @@ END SUBROUTINE RFLU_COL_DestroyColoring
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_COL_RecreateCellList',&
-  __FILE__)
+  'RFLU_ModColoring.F90')
 
 ! ******************************************************************************
 !   Increase maximum number of cells
@@ -1014,7 +1014,7 @@ END SUBROUTINE RFLU_COL_DestroyColoring
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_COL_WriteColoring',&
-  __FILE__)
+  'RFLU_ModColoring.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1158,6 +1158,13 @@ END MODULE RFLU_ModColoring
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
 
 
 

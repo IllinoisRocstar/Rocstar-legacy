@@ -137,7 +137,7 @@ SUBROUTINE rflupick(caseString,stampString,verbLevel)
   CALL RFLU_InitGlobal(casename,verbLevel,CRAZY_VALUE_INT,global)
 
   CALL RegisterFunction(global,'rflupick', &
-                        __FILE__)
+                        'rflupick.F90')
 
 ! ******************************************************************************
 ! Print header and write version string
@@ -463,6 +463,7 @@ END SUBROUTINE rflupick
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

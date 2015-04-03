@@ -71,7 +71,7 @@ SUBROUTINE TURB_StatMapping( global ) ! PUBLIC
   RCSIdentString = '$RCSfile: TURB_StatMapping.F90,v $'
 
   CALL RegisterFunction( global,'TURB_StatMapping',&
-  __FILE__ )
+  'TURB_StatMapping.F90' )
 
 ! allocate TURB variables and set pointers ---------------------------------
 
@@ -230,6 +230,7 @@ END SUBROUTINE TURB_StatMapping
 !
 !
 !******************************************************************************
+
 
 
 

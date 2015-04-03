@@ -74,7 +74,7 @@ SUBROUTINE RFLO_UpdateInbuffGm( globalGenx,dAlpha )
   regions => globalGenx%regions
 
   CALL RegisterFunction( global,'RFLO_UpdateInbuffGm',&
-  __FILE__ )
+  'RFLO_UpdateInbuffGm.F90' )
 
 ! fill geometry buffer
 
@@ -124,6 +124,7 @@ END SUBROUTINE RFLO_UpdateInbuffGm
 ! Finalized integration into GenX.
 !
 !******************************************************************************
+
 
 
 

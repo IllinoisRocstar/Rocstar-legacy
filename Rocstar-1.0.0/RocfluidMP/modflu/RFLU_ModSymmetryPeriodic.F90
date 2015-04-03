@@ -148,7 +148,7 @@ SUBROUTINE RFLU_SYPE_AddVirtualCells(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_AddVirtualCells',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -325,7 +325,7 @@ SUBROUTINE RFLU_SYPE_AddVirtualCellsInv1(pRegion,pPatch,vc,nCellsVirtMax, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_AddVirtualCellsInv1',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -446,7 +446,7 @@ SUBROUTINE RFLU_SYPE_AddVirtualCellsInv2(pRegion,pPatch,vc,nCellsVirtMax, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_AddVirtualCellsInv2',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -703,7 +703,7 @@ SUBROUTINE RFLU_SYPE_AugmentCellLists(pRegion,pPatch,vc,nCellsVirt)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_AugmentCellLists',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -1238,7 +1238,7 @@ SUBROUTINE RFLU_SYPE_AugmentVertexLists(pRegion,pGrid,pPatch,pBorder, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_AugmentVertexLists',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
  
 ! ******************************************************************************
 ! Get patch geometry and set patch index and pointer
@@ -1484,7 +1484,7 @@ END SUBROUTINE RFLU_SYPE_AugmentVertexLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SYPE_BuildP2VCList',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN   
@@ -1692,7 +1692,7 @@ END SUBROUTINE RFLU_SYPE_AugmentVertexLists
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SYPE_BuildP2VCListSerial',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN   
@@ -1809,7 +1809,7 @@ SUBROUTINE RFLU_SYPE_BuildTransforms(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_BuildTransforms',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN   
@@ -2012,7 +2012,7 @@ SUBROUTINE RFLU_SYPE_BuildVertexMaps(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_BuildVertexMaps',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN   
@@ -2301,7 +2301,7 @@ END SUBROUTINE RFLU_SYPE_BuildVertexMaps
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SYPE_CreateP2VCList',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
     
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN   
@@ -2399,7 +2399,7 @@ SUBROUTINE RFLU_SYPE_CreateVertexMaps(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_CreateVertexMaps',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN   
@@ -2490,7 +2490,7 @@ END SUBROUTINE RFLU_SYPE_CreateVertexMaps
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_SYPE_DestroyP2VCList',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
     
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN   
@@ -2596,7 +2596,7 @@ SUBROUTINE RFLU_SYPE_GetActualSerialCell(pRegionSerial,icgs,icgs2)
   global => pRegionSerial%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_GetActualSerialCell',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
 ! ******************************************************************************
 ! Set pointers 
@@ -2721,7 +2721,7 @@ SUBROUTINE RFLU_SYPE_GetRelatedVertex(pRegionSerial,pRegion,ivgs,ivg)
   global => pRegionSerial%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_GetRelatedVertex',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -2926,7 +2926,7 @@ LOGICAL FUNCTION RFLU_SYPE_HaveSyPePatches(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_HaveSyPePatches',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
 ! ******************************************************************************
 ! Set pointers 
@@ -3022,7 +3022,7 @@ SUBROUTINE RFLU_SYPE_ImposeVertexMap(pRegion,pPatch,ivg,ivgm)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_ImposeVertexMap',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
  
 ! ******************************************************************************
 ! Get related patch
@@ -3106,7 +3106,7 @@ SUBROUTINE RFLU_SYPE_ReadTransforms(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_ReadTransforms',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
   IF ( global%myProcid == MASTERPROC ) THEN
     IF ( global%verbLevel > VERBOSE_NONE ) THEN   
@@ -3335,7 +3335,7 @@ SUBROUTINE RFLU_SYPE_SetSyPePatchesFlag(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_SYPE_SetSyPePatchesFlag',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
 ! ******************************************************************************
 ! Set variables
@@ -3461,7 +3461,7 @@ SUBROUTINE RFLU_SYPE_WriteTransforms(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SYPE_WriteTransforms',&
-  __FILE__)
+  'RFLU_ModSymmetryPeriodic.F90')
 
   IF ( global%myProcid == MASTERPROC ) THEN
     IF ( global%verbLevel > VERBOSE_NONE ) THEN   
@@ -3600,6 +3600,25 @@ END MODULE RFLU_ModSymmetryPeriodic
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

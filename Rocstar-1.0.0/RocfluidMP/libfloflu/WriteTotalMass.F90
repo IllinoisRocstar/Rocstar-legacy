@@ -63,7 +63,7 @@ SUBROUTINE WriteTotalMass(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'WriteTotalMass',&
-  __FILE__)
+  'WriteTotalMass.F90')
 
 ! steady flow -----------------------------------------------------------------
 
@@ -118,6 +118,7 @@ END SUBROUTINE WriteTotalMass
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

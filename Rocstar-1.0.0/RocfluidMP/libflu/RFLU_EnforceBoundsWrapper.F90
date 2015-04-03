@@ -82,7 +82,7 @@ SUBROUTINE RFLU_EnforceBoundsWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_EnforceBoundsWrapper',&
-  __FILE__)
+  'RFLU_EnforceBoundsWrapper.F90')
 
 ! *****************************************************************************
 ! Mixture
@@ -132,6 +132,7 @@ END SUBROUTINE RFLU_EnforceBoundsWrapper
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

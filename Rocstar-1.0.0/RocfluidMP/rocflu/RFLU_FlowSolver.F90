@@ -131,7 +131,7 @@ SUBROUTINE RFLU_FlowSolver(dTimeSystem,dIterSystem,levels)
   global%dTimeSystem = dTimeSystem
 
   CALL RegisterFunction(global,'RFLU_FlowSolver',&
-  __FILE__)
+  'RFLU_FlowSolver.F90')
 
 #ifdef ROCPROF
   CALL FPROFILER_BEGINS("RFLU::FlowSolver")
@@ -295,6 +295,7 @@ END SUBROUTINE RFLU_FlowSolver
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

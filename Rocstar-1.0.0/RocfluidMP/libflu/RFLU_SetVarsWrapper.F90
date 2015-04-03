@@ -83,7 +83,7 @@ SUBROUTINE RFLU_SetVarsWrapper(pRegion,icgBeg,icgEnd)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SetVarsWrapper',&
-  __FILE__)
+  'RFLU_SetVarsWrapper.F90')
 
 ! ******************************************************************************
 ! Set variables
@@ -130,6 +130,7 @@ END SUBROUTINE RFLU_SetVarsWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

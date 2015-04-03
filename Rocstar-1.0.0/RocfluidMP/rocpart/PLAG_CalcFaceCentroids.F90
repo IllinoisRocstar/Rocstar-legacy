@@ -81,7 +81,7 @@ SUBROUTINE PLAG_CalcFaceCentroids( region )
   global => region%global
   
   CALL RegisterFunction( global,'PLAG_CalcFaceCentroids',&
-  __FILE__ )
+  'PLAG_CalcFaceCentroids.F90' )
     
 ! Loop over all grid levels ---------------------------------------------------
 
@@ -196,6 +196,7 @@ END SUBROUTINE PLAG_CalcFaceCentroids
 !
 !
 !******************************************************************************
+
 
 
 

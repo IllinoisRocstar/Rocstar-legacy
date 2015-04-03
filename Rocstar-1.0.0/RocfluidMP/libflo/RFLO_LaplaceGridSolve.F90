@@ -76,7 +76,7 @@ SUBROUTINE RFLO_LaplaceGridSolve( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_LaplaceGridSolve',&
-  __FILE__ )
+  'RFLO_LaplaceGridSolve.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -513,6 +513,7 @@ END SUBROUTINE RFLO_LaplaceGridSolve
 ! Added basic global grid smoothing scheme.
 !
 !******************************************************************************
+
 
 
 

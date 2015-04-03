@@ -121,7 +121,7 @@ SUBROUTINE RFLO_ComputePatchForceMomCo( region )
     
   global => region%global
   CALL RegisterFunction(global,'RFLO_ComputePatchForceMomCo',&
-       __FILE__)
+       'RFLO_ModForcesMoments.F90')
 
 ! get dimensions, parameters and pointers --------------------------------------
 
@@ -362,7 +362,7 @@ SUBROUTINE RFLO_ComputeIntegralForceMomCo( global )
 ! *****************************************************************************
     
   CALL RegisterFunction(global,'RFLO_ComputeIntegralForceMomCo',&
-       __FILE__)
+       'RFLO_ModForcesMoments.F90')
 
 ! Get constants ---------------------------------------------------------------
 
@@ -436,7 +436,7 @@ END SUBROUTINE RFLO_ComputeIntegralForceMomCo
 !******************************************************************************
     
   CALL RegisterFunction(global,'RFLO_WriteIntegralForceMomCo',&
-       __FILE__)
+       'RFLO_ModForcesMoments.F90')
                 
 ! Write global force and moment coefficients ----------------------------------
 
@@ -520,7 +520,7 @@ SUBROUTINE RFLO_OpenForceMomCoFile( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_OpenForceMomCoFile',&
-       __FILE__ )
+       'RFLO_ModForcesMoments.F90' )
 
 ! store id and generate file name ---------------------------------------------
 
@@ -670,7 +670,7 @@ SUBROUTINE RFLO_FindPatchCoeffsGlo( regions )
     
   global => regions(1)%global
   CALL RegisterFunction(global,'RFLO_FindPatchCoeffsGlo',&
-       __FILE__)
+       'RFLO_ModForcesMoments.F90')
 
 ! get needed parameters --------------------------------------------------------
 
@@ -786,7 +786,7 @@ SUBROUTINE RFLO_WritePatchCoeffsInfo( regions )
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLO_WritePatchCoeffsInfo',&
-       __FILE__)
+       'RFLO_ModForcesMoments.F90')
 
 ! open file --------------------------------------------------------------------
 
@@ -900,6 +900,12 @@ END MODULE RFLO_ModForcesMoments
 !
 !
 ! ******************************************************************************
+
+
+
+
+
+
 
 
 

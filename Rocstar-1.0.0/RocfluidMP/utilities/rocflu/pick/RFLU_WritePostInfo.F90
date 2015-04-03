@@ -81,7 +81,7 @@ SUBROUTINE RFLU_WritePostInfo(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_WritePostInfo',&
-  __FILE__)
+  'RFLU_WritePostInfo.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -167,6 +167,7 @@ END SUBROUTINE RFLU_WritePostInfo
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

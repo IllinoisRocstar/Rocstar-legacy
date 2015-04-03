@@ -146,7 +146,7 @@ SUBROUTINE RFLU_ExtractShockLocation1D(pRegion,icgBeg,icgEnd,nCellsX,xs)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ExtractShockLocation1D', &
-                        __FILE__)
+                        'RFLU_ModExtractFlowDataUtils.F90')
 
 ! ******************************************************************************
 ! Set 
@@ -268,6 +268,7 @@ END MODULE RFLU_ModExtractFlowDataUtils
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

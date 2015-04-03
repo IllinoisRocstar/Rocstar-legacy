@@ -114,7 +114,7 @@ MODULE RFLU_ModDimensionality
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_123D_CheckGeometryWrapper',&
-  __FILE__)
+  'RFLU_ModDimensionality.F90')
 
 ! ******************************************************************************
 !   Set pointers and variables
@@ -204,7 +204,7 @@ MODULE RFLU_ModDimensionality
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_123D_CheckGeometryKernel',&
-  __FILE__)
+  'RFLU_ModDimensionality.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -349,7 +349,7 @@ MODULE RFLU_ModDimensionality
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_123D_CheckTopology',&
-  __FILE__)
+  'RFLU_ModDimensionality.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -571,6 +571,9 @@ END MODULE RFLU_ModDimensionality
 ! 
 ! ******************************************************************************
   
+
+
+
 
 
 

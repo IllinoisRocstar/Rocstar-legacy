@@ -136,7 +136,7 @@ MODULE RFLU_ModCENTAUR
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CheckGridCENTAUR', &
-                          __FILE__)
+                          'RFLU_ModCENTAUR.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME, &
@@ -373,7 +373,7 @@ MODULE RFLU_ModCENTAUR
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ConvCENTAUR2ROCFLU', &
-                          __FILE__)
+                          'RFLU_ModCENTAUR.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -772,7 +772,7 @@ MODULE RFLU_ModCENTAUR
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridCENTAURASCII', &
-                          __FILE__)
+                          'RFLU_ModCENTAUR.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading ASCII CENTAUR grid file...'
@@ -1111,7 +1111,7 @@ MODULE RFLU_ModCENTAUR
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridCENTAURBinary', &
-                          __FILE__)
+                          'RFLU_ModCENTAUR.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading binary CENTAUR grid file...'
@@ -1419,6 +1419,10 @@ END MODULE RFLU_ModCENTAUR
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

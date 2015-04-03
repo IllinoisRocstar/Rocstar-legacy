@@ -79,7 +79,7 @@ SUBROUTINE RFLO_CopyEdgeFaceNorm( region,iFBeg,iFEnd,fvari,fvarj,fvark )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CopyEdgeFaceNorm',&
-  __FILE__ )
+  'RFLO_CopyEdgeFaceNorm.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -303,6 +303,7 @@ END SUBROUTINE RFLO_CopyEdgeFaceNorm
 ! add viscous terms
 !
 !******************************************************************************
+
 
 
 

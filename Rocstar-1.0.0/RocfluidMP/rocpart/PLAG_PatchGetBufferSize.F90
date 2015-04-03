@@ -85,7 +85,7 @@ SUBROUTINE PLAG_PatchGetBufferSize( region )
   global => region%global
     
   CALL RegisterFunction( global, 'PLAG_PatchGetBufferSize',&
-  __FILE__ )
+  'PLAG_PatchGetBufferSize.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -229,6 +229,7 @@ END SUBROUTINE PLAG_PatchGetBufferSize
 !
 !
 !******************************************************************************
+
 
 
 

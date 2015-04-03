@@ -79,7 +79,7 @@ SUBROUTINE RADI_MixtSourceTermsFlim( region )
 
   global => region%global
   CALL RegisterFunction( global,'RADI_MixtSourceTermsFlim',&
-  __FILE__ )
+  'RADI_MixtSourceTermsFlim.F90' )
 
 ! get coefficients and parameters ---------------------------------------------
 
@@ -159,6 +159,7 @@ END SUBROUTINE RADI_MixtSourceTermsFlim
 !
 !
 !******************************************************************************
+
 
 
 

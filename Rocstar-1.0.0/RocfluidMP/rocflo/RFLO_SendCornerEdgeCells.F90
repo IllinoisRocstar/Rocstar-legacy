@@ -74,7 +74,7 @@ SUBROUTINE RFLO_SendCornerEdgeCells( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RFLO_SendCornerEdgeCells',&
-  __FILE__ )
+  'RFLO_SendCornerEdgeCells.F90' )
 
   iLev =  regions(iReg)%currLevel
   cv   => regions(iReg)%levels(iLev)%mixt%cv
@@ -186,6 +186,7 @@ END SUBROUTINE RFLO_SendCornerEdgeCells
 ! Added treatment of edge & corner cells.
 !
 !******************************************************************************
+
 
 
 

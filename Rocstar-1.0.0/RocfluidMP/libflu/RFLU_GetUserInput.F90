@@ -112,7 +112,7 @@ SUBROUTINE RFLU_GetUserInput(regions,inPrep)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_GetUserInput',&
-  __FILE__)
+  'RFLU_GetUserInput.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -267,6 +267,7 @@ END SUBROUTINE RFLU_GetUserInput
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

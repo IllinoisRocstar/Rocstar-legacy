@@ -138,7 +138,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildBVertexNormals',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -327,7 +327,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildGeometry',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -1232,7 +1232,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeApproxCentroids',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -1476,7 +1476,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeFaceDist',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -1582,7 +1582,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateApproxCentroids',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -1673,7 +1673,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateFaceDist',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -1779,7 +1779,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateGeometry',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -1984,7 +1984,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyApproxCentroids',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -2076,7 +2076,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyFaceDist',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -2180,7 +2180,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyGeometry',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -2319,7 +2319,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyApproxCentroids',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -2401,7 +2401,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyFaceDist',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -2489,7 +2489,7 @@ MODULE RFLU_ModGeometry
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyGeometry',&
-  __FILE__)
+  'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -2659,6 +2659,19 @@ END MODULE RFLU_ModGeometry
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

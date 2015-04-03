@@ -90,7 +90,7 @@ SUBROUTINE RVAV_GAMMBumpSolution( fname,regionsS1 )
   global => regionsS1(1)%global
   
   CALL RegisterFunction( global,'RVAV_GAMMBUMPSolution',&
-  __FILE__ )
+  'RVAV_GammBumpSolution.F90' )
     
 ! generates Input DataStream for GAMM Bump
 
@@ -211,6 +211,7 @@ END SUBROUTINE RVAV_GAMMBumpSolution
 !
 !
 !******************************************************************************
+
 
 
 

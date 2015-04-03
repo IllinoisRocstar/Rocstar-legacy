@@ -680,8 +680,6 @@ IF(SPEC)
 ENDIF()
 
 SET(ALL_SRCS ${LIB_SRCS} ${INIT_SRCS} ${PART_SRCS} ${MAP_SRCS})
-#set_source_files_properties(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC -D__FILE__=\\'RocfluFile\\'" )
-#set(TEST_SRCS src/MANTest.C)
 
 # rpath settings
 SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")

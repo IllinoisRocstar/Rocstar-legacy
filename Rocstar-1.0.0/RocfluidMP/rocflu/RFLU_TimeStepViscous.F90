@@ -99,7 +99,7 @@ SUBROUTINE RFLU_TimeStepViscous(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TimeStepViscous',&
-  __FILE__)
+  'RFLU_TimeStepViscous.F90')
 
 ! ******************************************************************************
 ! Get dimensions and pointers
@@ -406,6 +406,7 @@ END SUBROUTINE RFLU_TimeStepViscous
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

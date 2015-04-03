@@ -82,7 +82,7 @@ SUBROUTINE PEUL_BcondSymmetry( region,patch )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_BcondSymmetry',&
-  __FILE__ )
+  'PEUL_BcondSymmetry.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -143,6 +143,7 @@ END SUBROUTINE PEUL_BcondSymmetry
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

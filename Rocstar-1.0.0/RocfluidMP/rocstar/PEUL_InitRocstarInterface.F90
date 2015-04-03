@@ -70,7 +70,7 @@ SUBROUTINE PEUL_InitGenxInterface( regions,wins,winv )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PEUL_InitGenxInterface',&
-  __FILE__ )
+  'PEUL_InitRocstarInterface.F90' )
 
 ! input data (currently none) -------------------------------------------------
 
@@ -151,6 +151,7 @@ END SUBROUTINE PEUL_InitGenxInterface
 ! Initial import of Rocsmoke GenX interfaces
 !
 !******************************************************************************
+
 
 
 

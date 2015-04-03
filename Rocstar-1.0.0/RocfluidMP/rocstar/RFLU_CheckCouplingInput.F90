@@ -81,7 +81,7 @@ SUBROUTINE RFLU_CheckCouplingInput(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_CheckCouplingInput',&
-  __FILE__)
+  'RFLU_CheckCouplingInput.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -151,6 +151,7 @@ END SUBROUTINE RFLU_CheckCouplingInput
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

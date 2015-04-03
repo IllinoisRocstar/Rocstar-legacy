@@ -84,7 +84,7 @@ SUBROUTINE TURB_PrintUserInput( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'TURB_PrintUserInput',&
-  __FILE__ )
+  'TURB_PrintUserInput.F90' )
 
 ! get pointers ---------------------------------------------------------------
 
@@ -350,6 +350,7 @@ END SUBROUTINE TURB_PrintUserInput
 !
 !
 !******************************************************************************
+
 
 
 

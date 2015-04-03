@@ -91,7 +91,7 @@ SUBROUTINE RFLO_CalcGradPhysBc( region,patch,iBegV,iEndV,iBegG,iEndG,var, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcGradPhysBc',&
-  __FILE__ )
+  'RFLO_CalcGradPhysBc.F90' )
 
 ! get dimensions and pointers-------------------------------------------------
 
@@ -337,6 +337,7 @@ END SUBROUTINE RFLO_CalcGradPhysBc
 ! made compliant with CODING RULE
 !
 !******************************************************************************
+
 
 
 

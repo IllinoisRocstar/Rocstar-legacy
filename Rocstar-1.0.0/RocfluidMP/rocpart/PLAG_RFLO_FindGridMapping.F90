@@ -95,7 +95,7 @@ SUBROUTINE PLAG_RFLO_FindGridMapping( regions )
   global => regions(1)%global
     
   CALL RegisterFunction( global, 'PLAG_RFLO_FindGridMapping',&
-  __FILE__ )
+  'PLAG_RFLO_FindGridMapping.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -252,7 +252,7 @@ SUBROUTINE PLAG_RFLO_FindSourceCell( regions,iReg,iLev,ic,jc,kc, &
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_RFLO_FindSourceCell',&
-  __FILE__ )
+  'PLAG_RFLO_FindGridMapping.F90' )
 
   found = .false.
 
@@ -521,7 +521,7 @@ SUBROUTINE PLAG_RFLO_SourceCell( region,regionSrc,patch,patchSrc, &
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_SourceCell',&
-  __FILE__ )
+  'PLAG_RFLO_FindGridMapping.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -674,6 +674,9 @@ END SUBROUTINE PLAG_RFLO_GetFaceMapping
 ! Initial import of index mapping capability for corner-edge regions
 !
 !******************************************************************************
+
+
+
 
 
 

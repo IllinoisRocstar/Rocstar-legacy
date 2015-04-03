@@ -84,7 +84,7 @@ SUBROUTINE PLAG_DerivedInputValues(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'PLAG_DerivedInputValues',&
-  __FILE__)
+  'PLAG_DerivedInputValues.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -178,6 +178,7 @@ END SUBROUTINE PLAG_DerivedInputValues
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

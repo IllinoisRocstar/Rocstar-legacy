@@ -73,7 +73,7 @@ SUBROUTINE RFLO_AllocateDataBuffers( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RFLO_AllocateDataBuffers',&
-  __FILE__ )
+  'RFLO_AllocateDataBuffers.F90' )
 
 ! data buffers for patches
 
@@ -203,6 +203,7 @@ END SUBROUTINE RFLO_AllocateDataBuffers
 ! memory allocation added.
 !
 !******************************************************************************
+
 
 
 

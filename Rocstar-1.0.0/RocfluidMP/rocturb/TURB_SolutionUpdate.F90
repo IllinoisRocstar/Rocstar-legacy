@@ -73,7 +73,7 @@ SUBROUTINE TURB_SolutionUpdate( region,istage,ibc,iec ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'TURB_SolutionUpdate',&
-  __FILE__ )
+  'TURB_SolutionUpdate.F90' )
 
 ! get pointers and parameters
 
@@ -172,6 +172,7 @@ END SUBROUTINE TURB_SolutionUpdate
 !
 !
 !******************************************************************************
+
 
 
 

@@ -81,7 +81,7 @@ SUBROUTINE PLAG_RFLO_SendRecvMetrics( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_RFLO_SendRecvMetrics',&
-  __FILE__ )
+  'PLAG_RFLO_SendRecvMetrics.F90' )
 
 ! Set dimensions --------------------------------------------------------------
 
@@ -257,6 +257,7 @@ END SUBROUTINE PLAG_RFLO_SendRecvMetrics
 ! Initial import for corner-edge cell metrics
 !
 !******************************************************************************
+
 
 
 

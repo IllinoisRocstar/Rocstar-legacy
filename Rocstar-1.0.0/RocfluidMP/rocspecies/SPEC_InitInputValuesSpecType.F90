@@ -82,7 +82,7 @@ SUBROUTINE SPEC_InitInputValuesSpecType(region,iSpecType)
   global => region%global
 
   CALL RegisterFunction(global,'SPEC_InitInputValuesSpecType',&
-  __FILE__)
+  'SPEC_InitInputValuesSpecType.F90')
 
 ! ******************************************************************************
 ! Initialize
@@ -146,6 +146,7 @@ END SUBROUTINE SPEC_InitInputValuesSpecType
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

@@ -162,7 +162,7 @@ MODULE PLAG_RFLO_ModStats
     global => regions(iReg)%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_ClearReqStatBuff',&
-  __FILE__ )
+  'PLAG_RFLO_ModStats.F90' )
 
 ! ******************************************************************************
 !   Set dimensions, variables, pointers
@@ -269,7 +269,7 @@ MODULE PLAG_RFLO_ModStats
     global => regions(iReg)%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_CreateStatBuff',&
-  __FILE__ )
+  'PLAG_RFLO_ModStats.F90' )
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -424,7 +424,7 @@ MODULE PLAG_RFLO_ModStats
     global => regions(1)%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_CommStatBuffWrapper',&
-  __FILE__ )
+  'PLAG_RFLO_ModStats.F90' )
 
     IF (.NOT. global%plagUsed) GOTO 999
 
@@ -608,7 +608,7 @@ MODULE PLAG_RFLO_ModStats
     global => pRegion%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_CopyStatBuff',&
-  __FILE__ )
+  'PLAG_RFLO_ModStats.F90' )
 
 ! ******************************************************************************
 !   Check if the source region is active
@@ -772,7 +772,7 @@ MODULE PLAG_RFLO_ModStats
     global => regions(1)%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_ReadStat',&
-  __FILE__ )
+  'PLAG_RFLO_ModStats.F90' )
 
 ! ******************************************************************************
 !   Allocate temporary data arrays 
@@ -1114,7 +1114,7 @@ MODULE PLAG_RFLO_ModStats
     global => regions(1)%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_RecvStatBuffWrapper',&
-  __FILE__ )
+  'PLAG_RFLO_ModStats.F90' )
 
 ! ******************************************************************************
 !   Set dimensions, variables, pointers
@@ -1226,7 +1226,7 @@ MODULE PLAG_RFLO_ModStats
     global => pRegion%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_RecvStatBuff',&
-  __FILE__ )
+  'PLAG_RFLO_ModStats.F90' )
 
 ! ******************************************************************************
 !   Check if the source region is active
@@ -1440,7 +1440,7 @@ MODULE PLAG_RFLO_ModStats
     global => regions(iReg)%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_SendStatBuffWrapper',&
-  __FILE__ )
+  'PLAG_RFLO_ModStats.F90' )
 
 ! ******************************************************************************
 !   Load communication buffers
@@ -1579,7 +1579,7 @@ MODULE PLAG_RFLO_ModStats
     global => pRegion%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_SendStatBuffConf',&
-  __FILE__ )
+  'PLAG_RFLO_ModStats.F90' )
 
 ! ******************************************************************************
 !   Check if the source region is active
@@ -1998,7 +1998,7 @@ MODULE PLAG_RFLO_ModStats
     global => regions(1)%global
 
     CALL RegisterFunction( global,'PLAG_RFLO_WriteStat',&
-  __FILE__ )
+  'PLAG_RFLO_ModStats.F90' )
 
     IF (.NOT. global%plagUsed) GOTO 999
 
@@ -2292,6 +2292,16 @@ END MODULE PLAG_RFLO_ModStats
 ! Initial import for PLAG statistics
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
 
 
 

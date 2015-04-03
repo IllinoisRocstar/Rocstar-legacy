@@ -95,7 +95,7 @@ SUBROUTINE RADI_ExtinctionCoef( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_ExtinctionCoef',&
-  __FILE__ )
+  'RADI_ExtinctionCoef.F90' )
 
 ! get dimensions, pointers and constants --------------------------------------
 
@@ -465,6 +465,7 @@ END SUBROUTINE RADI_ExtinctionCoef
 !
 !
 !******************************************************************************
+
 
 
 

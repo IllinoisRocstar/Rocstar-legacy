@@ -80,7 +80,7 @@ SUBROUTINE RFLU_CreateRegions(global,iLev,levels)
   RCSIdentString = '$RCSfile: RFLU_CreateRegions.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction(global,'RFLU_CreateRegions',&
-  __FILE__)
+  'RFLU_CreateRegions.F90')
 
 ! ******************************************************************************
 ! Allocate memory
@@ -123,6 +123,7 @@ END SUBROUTINE RFLU_CreateRegions
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

@@ -77,7 +77,7 @@ SUBROUTINE PLAG_AllocateMemoryPost( region, iReg )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_AllocateMemoryPost',&
-  __FILE__ )
+  'PLAG_AllocateMemoryPost.F90' )
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -216,6 +216,7 @@ END SUBROUTINE PLAG_AllocateMemoryPost
 ! Import of postprocessing tool for Rocpart
 !
 !******************************************************************************
+
 
 
 

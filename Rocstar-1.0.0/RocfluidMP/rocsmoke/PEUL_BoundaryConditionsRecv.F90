@@ -79,7 +79,7 @@ SUBROUTINE PEUL_BoundaryConditionsRecv( regions,iReg ) ! PUBLIC
 
   global => regions(iReg)%global
 
-  CALL RegisterFunction( global,'PEUL_BoundaryConditionsRecv', __FILE__ )
+  CALL RegisterFunction( global,'PEUL_BoundaryConditionsRecv', 'PEUL_BoundaryConditionsRecv.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -160,6 +160,7 @@ END SUBROUTINE PEUL_BoundaryConditionsRecv
 ! Initial Import of MPI-based rocsmoke
 !
 !******************************************************************************
+
 
 
 

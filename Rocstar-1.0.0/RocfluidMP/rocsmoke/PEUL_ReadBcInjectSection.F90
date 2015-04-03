@@ -90,7 +90,7 @@ SUBROUTINE PEUL_ReadBcInjectSection( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PEUL_ReadBcInjectSection',&
-  __FILE__ )
+  'PEUL_ReadBcInjectSection.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -286,6 +286,7 @@ END SUBROUTINE PEUL_ReadBcInjectSection
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

@@ -80,7 +80,7 @@ LOGICAL FUNCTION RFLU_DecideNeedBGradFace(pRegion,pPatch)
   RCSIdentString = '$RCSfile: RFLU_DecideNeedBGradFace.F90,v $'
 
   CALL RegisterFunction(global,'RFLU_DecideNeedBGradFace',&
-  __FILE__)
+  'RFLU_DecideNeedBGradFace.F90')
 
 ! *****************************************************************************
 ! Initialize
@@ -139,6 +139,7 @@ END FUNCTION RFLU_DecideNeedBGradFace
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

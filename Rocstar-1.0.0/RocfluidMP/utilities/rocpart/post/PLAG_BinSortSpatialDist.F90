@@ -93,7 +93,7 @@ SUBROUTINE PLAG_BinSortSpatialDist ( iReg, iLev, region, iRegBin )
 
   global => region%global
 
-  CALL RegisterFunction( global,'PLAG_BinSortSpatialDist', __FILE__ )
+  CALL RegisterFunction( global,'PLAG_BinSortSpatialDist', 'PLAG_BinSortSpatialDist.F90' )
 
 ! set parameters --------------------------------------------------------------
 
@@ -304,6 +304,7 @@ END SUBROUTINE PLAG_BinSortSpatialDist
 ! Initial import
 !
 !******************************************************************************
+
 
 
 

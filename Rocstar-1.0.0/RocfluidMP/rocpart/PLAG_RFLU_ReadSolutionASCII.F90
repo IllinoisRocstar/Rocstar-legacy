@@ -96,7 +96,7 @@ SUBROUTINE PLAG_RFLU_ReadSolutionASCII(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_ReadSolutionASCII',&
-  __FILE__)
+  'PLAG_RFLU_ReadSolutionASCII.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -556,6 +556,7 @@ END SUBROUTINE PLAG_RFLU_ReadSolutionASCII
 ! Initial revision                                                             
 !
 ! ******************************************************************************
+
 
 
 

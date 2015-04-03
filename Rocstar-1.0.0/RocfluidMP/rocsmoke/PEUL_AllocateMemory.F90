@@ -84,7 +84,7 @@ SUBROUTINE PEUL_AllocateMemory( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_AllocateMemory',&
-  __FILE__ )
+  'PEUL_AllocateMemory.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -216,6 +216,7 @@ END SUBROUTINE PEUL_AllocateMemory
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

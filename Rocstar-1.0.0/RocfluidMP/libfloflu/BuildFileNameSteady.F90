@@ -83,7 +83,7 @@ SUBROUTINE BuildFileNameSteady(global,dest,ext,id,it,fileName)
   RCSIdentString = '$RCSfile: BuildFileNameSteady.F90,v $ $Revision: 1.4 $'
 
   CALL RegisterFunction(global,'BuildFileNameSteady',&
-  __FILE__)
+  'BuildFileNameSteady.F90')
    
   IF ( dest == FILEDEST_INDIR ) THEN 
     WRITE(destString,'(A)') global%inDir
@@ -126,6 +126,7 @@ END SUBROUTINE BuildFileNameSteady
 !   Initial revision
 !
 ! ******************************************************************************
+
 
 
 

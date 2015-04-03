@@ -96,7 +96,7 @@ SUBROUTINE PLAG_CECellsClearRequestsSize( regions, iReg )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_CECellsClearRequestsSize',&
-  __FILE__ )
+  'PLAG_CECellsClearRequestsSize.F90' )
 
 #ifdef MPI
 
@@ -155,6 +155,7 @@ END SUBROUTINE PLAG_CECellsClearRequestsSize
 ! Initial import of routines to MPI-communicate buffer sizes
 !
 !******************************************************************************
+
 
 
 

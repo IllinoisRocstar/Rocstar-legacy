@@ -95,7 +95,7 @@ SUBROUTINE PLAG_intrpMixtProperties( region )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_IntrpMixtProperties',&
-  __FILE__ )
+  'PLAG_IntrpMixtProperties.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -229,6 +229,7 @@ END SUBROUTINE PLAG_intrpMixtProperties
 !
 !
 !******************************************************************************
+
 
 
 

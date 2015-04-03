@@ -135,7 +135,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_BuildSBC2PCMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
 ! ******************************************************************************
 !   Call appropriate routine depending on dimensionality
@@ -211,7 +211,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_BuildSBC2PCMap2D',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building sbc2pc mapping...' 
@@ -329,7 +329,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_BuildSBC2PCMap3D',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building sbc2pc mapping...' 
@@ -584,7 +584,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_BuildSC2PCMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building sc2pc mapping...' 
@@ -701,7 +701,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_BuildSV2PVMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building sv2pv mapping...' 
@@ -800,7 +800,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_CreateSC2RMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -894,7 +894,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_CreatePC2SCMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -995,7 +995,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_CreatePBF2SBFMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1112,7 +1112,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_CreatePV2SVMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1205,7 +1205,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_DestroyPC2SCMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1301,7 +1301,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_DestroyPBF2SBFMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1396,7 +1396,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_DestroyPV2SVMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1489,7 +1489,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_DestroySBC2PCMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1585,7 +1585,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_DestroySC2PCMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1678,7 +1678,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_DestroySC2RMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1771,7 +1771,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_DestroySV2PVMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1866,7 +1866,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_ReadSC2RMap',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -2066,7 +2066,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_ReadPxx2SxxMaps',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -2293,7 +2293,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_WriteSC2RMaps',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -2451,7 +2451,7 @@ MODULE RFLU_ModRenumberings
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_RNMB_WritePxx2SxxMaps',&
-  __FILE__)
+  'RFLU_ModRenumberings.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -2647,6 +2647,26 @@ END MODULE RFLU_ModRenumberings
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

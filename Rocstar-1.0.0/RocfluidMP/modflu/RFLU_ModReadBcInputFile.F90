@@ -125,7 +125,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcFarfSection',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -430,7 +430,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcInflowTotAngSection',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -773,7 +773,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcInflowVelTempSection',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -1103,7 +1103,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcInjectSection',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -1477,7 +1477,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcInputFile',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1661,7 +1661,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcInputFileWrapper',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! *****************************************************************************
 !   Call routines to read boundary condition information
@@ -1751,7 +1751,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcNoSlipWallHeatSect',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -2088,7 +2088,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcNoSlipWallTempSect',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -2438,7 +2438,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcOutflowSection',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -2775,7 +2775,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcPeriodicSection',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -2921,7 +2921,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcSlipWallSection',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -3182,7 +3182,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcSymmetrySection',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -3320,7 +3320,7 @@ MODULE RFLU_ModReadBcInputFile
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadBcVirtualSection',&
-  __FILE__)
+  'RFLU_ModReadBcInputFile.F90')
 
 ! ******************************************************************************
 !   Specify keywords and search for them
@@ -3489,6 +3489,19 @@ END MODULE RFLU_ModReadBcInputFile
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

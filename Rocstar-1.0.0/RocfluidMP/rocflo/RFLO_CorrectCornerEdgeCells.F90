@@ -84,7 +84,7 @@ SUBROUTINE RFLO_CorrectCornerEdgeCells( region,patch,bcType )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CorrectCornerEdgeCells', &
-                         __FILE__ )
+                         'RFLO_CorrectCornerEdgeCells.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -443,6 +443,7 @@ END SUBROUTINE RFLO_CorrectCornerEdgeCells
 ! Values in edge & corner cells now corrected at noslip and symmetry walls.
 !
 !******************************************************************************
+
 
 
 

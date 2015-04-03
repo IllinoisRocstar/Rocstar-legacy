@@ -74,7 +74,7 @@ SUBROUTINE RFLU_WriteStatsFileOLES(global)
   RCSIdentString = '$RCSfile: RFLU_WriteStatsFileOLES.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction(global,'RFLU_WriteStatsFileOLES',&
-  __FILE__)
+  'RFLU_WriteStatsFileOLES.F90')
 
 ! ******************************************************************************
 ! Write data
@@ -108,6 +108,7 @@ END SUBROUTINE RFLU_WriteStatsFileOLES
 !   Initial revision
 !
 ! ******************************************************************************
+
 
 
 

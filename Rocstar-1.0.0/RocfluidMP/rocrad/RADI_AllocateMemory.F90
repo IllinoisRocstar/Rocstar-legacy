@@ -76,7 +76,7 @@ SUBROUTINE RADI_AllocateMemory( region )
 
   global => region%global
   CALL RegisterFunction( global,'RADI_AllocateMemory',&
-  __FILE__ )
+  'RADI_AllocateMemory.F90' )
 
 #ifdef RFLO
 
@@ -278,6 +278,7 @@ END SUBROUTINE RADI_AllocateMemory
 !
 !
 !******************************************************************************
+
 
 
 

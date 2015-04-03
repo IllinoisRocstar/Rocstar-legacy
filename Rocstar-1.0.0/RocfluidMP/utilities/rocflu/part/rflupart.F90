@@ -152,7 +152,7 @@ SUBROUTINE rflupart(caseString,verbLevel)
   CALL RFLU_InitGlobal(casename,verbLevel,MPI_COMM_WORLD,global)
 
   CALL RegisterFunction(global,'rflupart', & 
-                        __FILE__)
+                        'rflupart.F90')
 
   CALL RFLU_SetModuleType(global,MODULE_TYPE_PART)
 
@@ -788,6 +788,7 @@ END SUBROUTINE rflupart
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

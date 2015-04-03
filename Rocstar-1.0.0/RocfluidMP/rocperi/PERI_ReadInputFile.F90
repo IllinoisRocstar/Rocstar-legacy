@@ -68,7 +68,7 @@ SUBROUTINE PERI_ReadInputFile( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'PERI_ReadInputFile',&
-  __FILE__ )
+  'PERI_ReadInputFile.F90' )
 
 ! open file
 
@@ -133,6 +133,7 @@ END SUBROUTINE PERI_ReadInputFile
 !
 !
 !******************************************************************************
+
 
 
 

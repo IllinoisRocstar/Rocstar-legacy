@@ -66,7 +66,7 @@ SUBROUTINE INRT_SetMaterial(global,material,name)
   RCSIdentString = '$RCSfile: INRT_SetMaterial.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction( global,'INRT_SetMaterial',&
-  __FILE__ )
+  'INRT_SetMaterial.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -108,6 +108,7 @@ END SUBROUTINE INRT_SetMaterial
 ! converted from libfloflu routine to rocinteract routine
 !
 !******************************************************************************
+
 
 
 

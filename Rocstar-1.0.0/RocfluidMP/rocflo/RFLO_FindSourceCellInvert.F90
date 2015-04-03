@@ -88,7 +88,7 @@ SUBROUTINE RFLO_FindSourceCellInvert( regions,iReg,iLev,ic,jc,kc,icell, &
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_FindSourceCellInvert',&
-  __FILE__ )
+  'RFLO_FindSourceCellInvert.F90' )
 
   found = .false.
 
@@ -346,6 +346,7 @@ END SUBROUTINE RFLO_FindSourceCellInvert
 ! Added treatment of edge and corner cells for one processor.
 !
 !******************************************************************************
+
 
 
 

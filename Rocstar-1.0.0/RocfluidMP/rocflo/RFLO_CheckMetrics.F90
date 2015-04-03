@@ -85,7 +85,7 @@ SUBROUTINE RFLO_CheckMetrics( iReg,region )
   skewness = 0.0
 
   CALL RegisterFunction( global,'RFLO_CheckMetrics',&
-  __FILE__ )
+  'RFLO_CheckMetrics.F90' )
 
 ! loop over all grid levels ---------------------------------------------------
 
@@ -487,6 +487,7 @@ END SUBROUTINE RFLO_CheckMetrics
 ! Added routines to read grid and solution.
 !
 !******************************************************************************
+
 
 
 

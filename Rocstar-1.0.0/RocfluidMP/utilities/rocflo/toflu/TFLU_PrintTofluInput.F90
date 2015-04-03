@@ -63,7 +63,7 @@ SUBROUTINE PrintTofluInput( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PrintTofluInput',&
-  __FILE__ )
+  'TFLU_PrintTofluInput.F90' )
 
 ! start -----------------------------------------------------------------------
 
@@ -150,6 +150,7 @@ END SUBROUTINE PrintTofluInput
 !
 !
 !******************************************************************************
+
 
 
 

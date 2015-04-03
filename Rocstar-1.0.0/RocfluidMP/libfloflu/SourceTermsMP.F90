@@ -97,7 +97,7 @@ SUBROUTINE SourceTermsMP( region )
   global => region%global
 
   CALL RegisterFunction( global,'SourceTermsMP',&
-  __FILE__ )
+  'SourceTermsMP.F90' )
 
 ! add source terms
   
@@ -249,6 +249,7 @@ END SUBROUTINE SourceTermsMP
 ! Initial import for RocfluidMP
 !
 ! ******************************************************************************
+
 
 
 

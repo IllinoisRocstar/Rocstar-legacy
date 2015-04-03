@@ -78,7 +78,7 @@ LOGICAL FUNCTION RFLU_DecideWrite(global)
   RCSIdentString = '$RCSfile: RFLU_DecideWrite.F90,v $ $Revision: 1.5 $'
 
   CALL RegisterFunction(global,'RFLU_DecideWrite',&
-  __FILE__)
+  'RFLU_DecideWrite.F90')
 
 ! *****************************************************************************
 ! Initialize
@@ -140,6 +140,7 @@ END FUNCTION RFLU_DecideWrite
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

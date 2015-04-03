@@ -82,7 +82,7 @@ SUBROUTINE RFLO_GetDimensDummy( region,iLev,idcbeg,idcend,jdcbeg,jdcend, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetDimensDummy',&
-  __FILE__ )
+  'RFLO_GetDimensions.F90' )
 
   IF (iLev<1 .OR. iLev>region%nGridLevels) THEN
     WRITE(msg,1000) iLev,region%nGridLevels
@@ -124,7 +124,7 @@ SUBROUTINE RFLO_GetDimensPhys( region,iLev,ipcbeg,ipcend,jpcbeg,jpcend, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetDimensPhys',&
-  __FILE__ )
+  'RFLO_GetDimensions.F90' )
 
   IF (iLev<1 .OR. iLev>region%nGridLevels) THEN
     WRITE(msg,1000) iLev,region%nGridLevels
@@ -166,7 +166,7 @@ SUBROUTINE RFLO_GetDimensDummyNodes( region,iLev,idnbeg,idnend,jdnbeg,jdnend, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetDimensDummyNodes',&
-  __FILE__ )
+  'RFLO_GetDimensions.F90' )
 
   IF (iLev<1 .OR. iLev>region%nGridLevels) THEN
     WRITE(msg,1000) iLev,region%nGridLevels
@@ -208,7 +208,7 @@ SUBROUTINE RFLO_GetDimensPhysNodes( region,iLev,ipnbeg,ipnend,jpnbeg,jpnend, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetDimensPhysNodes',&
-  __FILE__ )
+  'RFLO_GetDimensions.F90' )
 
   IF (iLev<1 .OR. iLev>region%nGridLevels) THEN
     WRITE(msg,1000) iLev,region%nGridLevels
@@ -249,7 +249,7 @@ SUBROUTINE RFLO_GetCellOffset( region,iLev,iCellOffset,ijCellOffset )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetCellOffset',&
-  __FILE__ )
+  'RFLO_GetDimensions.F90' )
 
   CALL RFLO_GetDimensDummy( region,iLev,idcbeg,idcend, &
                             jdcbeg,jdcend,kdcbeg,kdcend )
@@ -281,7 +281,7 @@ SUBROUTINE RFLO_GetNodeOffset( region,iLev,iNodeOffset,ijNodeOffset )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetNodeOffset',&
-  __FILE__ )
+  'RFLO_GetDimensions.F90' )
 
   CALL RFLO_GetDimensDummyNodes( region,iLev,idnbeg,idnend, &
                                  jdnbeg,jdnend,kdnbeg,kdnend )
@@ -316,7 +316,7 @@ SUBROUTINE RFLO_GetEdgeCellsIndices( region,iLev,iedge, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetEdgeCellsIndices',&
-  __FILE__ )
+  'RFLO_GetDimensions.F90' )
 
   IF (iedge<0 .OR. iedge>12) &
     CALL ErrorStop( region%global,ERR_VOLUME_EDGES,&
@@ -440,7 +440,7 @@ SUBROUTINE RFLO_GetCornerCellsIndices( region,iLev,icorner, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetCornerCellsIndices',&
-  __FILE__ )
+  'RFLO_GetDimensions.F90' )
 
   IF (icorner<0 .OR. icorner>8) &
     CALL ErrorStop( region%global,ERR_VOLUME_CORNERS,&
@@ -556,6 +556,14 @@ END SUBROUTINE RFLO_GetCornerCellsIndices
 ! memory allocation added.
 !
 !******************************************************************************
+
+
+
+
+
+
+
+
 
 
 

@@ -97,7 +97,7 @@ SUBROUTINE INRT_ReadBoilingRegulation( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'INRT_ReadBoilingRegulation',&
-  __FILE__ )
+  'INRT_ReadBoilingRegulation.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -286,6 +286,7 @@ END SUBROUTINE INRT_ReadBoilingRegulation
 ! implemented Boiling Regulation interaction
 !
 !******************************************************************************
+
 
 
 

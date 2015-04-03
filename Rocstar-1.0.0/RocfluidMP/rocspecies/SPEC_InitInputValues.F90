@@ -80,7 +80,7 @@ SUBROUTINE SPEC_InitInputValues(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'SPEC_InitInputValues',&
-  __FILE__)
+  'SPEC_InitInputValues.F90')
 
 ! ******************************************************************************
 ! Initialize
@@ -128,6 +128,7 @@ END SUBROUTINE SPEC_InitInputValues
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -93,7 +93,7 @@ SUBROUTINE SPEC_RFLU_SetEEv(pRegion,iSpec)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_SetEEv',&
-  __FILE__)
+  'SPEC_RFLU_SetEEv.F90')
 
 ! ******************************************************************************
 ! Set dimensions and pointers
@@ -209,6 +209,7 @@ END SUBROUTINE SPEC_RFLU_SetEEv
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

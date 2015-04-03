@@ -67,7 +67,7 @@ SUBROUTINE RFLO_ReadDataFileInt( global,fileId,form,nDim1,nDim2,ivar )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_ReadDataFileInt',&
-  __FILE__ )
+  'RFLO_ReadDataFile.F90' )
 
 ! read
 
@@ -116,7 +116,7 @@ SUBROUTINE RFLO_ReadDataFileReal( global,fileId,form,nDim1,nDim2,var )
 !******************************************************************************
 
   CALL RegisterFunction( global,'RFLO_ReadDataFileReal',&
-  __FILE__ )
+  'RFLO_ReadDataFile.F90' )
 
 ! read
 
@@ -169,6 +169,8 @@ END SUBROUTINE RFLO_ReadDataFileReal
 ! Grid & solution for all regions in one file.
 !
 !******************************************************************************
+
+
 
 
 

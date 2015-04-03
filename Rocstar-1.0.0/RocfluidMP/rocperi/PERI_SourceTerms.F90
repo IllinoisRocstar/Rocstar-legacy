@@ -66,7 +66,7 @@ SUBROUTINE PERI_SourceTerms( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'PERI_SourceTerms',&
-  __FILE__ )
+  'PERI_SourceTerms.F90' )
 
 ! collect PERI source terms -------- -----------------------------------------
 
@@ -107,6 +107,7 @@ END SUBROUTINE PERI_SourceTerms
 !
 !
 !******************************************************************************
+
 
 
 

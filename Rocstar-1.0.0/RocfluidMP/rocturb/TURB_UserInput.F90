@@ -76,7 +76,7 @@ SUBROUTINE TURB_UserInput( regions ) ! PUBLIC
 
   global => regions(1)%global
   CALL RegisterFunction( global,'TURB_UserInput',&
-  __FILE__ )
+  'TURB_UserInput.F90' )
 
 ! initialize parameters --------------------------------------------------
 
@@ -209,6 +209,7 @@ END SUBROUTINE TURB_UserInput
 !
 !
 !******************************************************************************
+
 
 
 

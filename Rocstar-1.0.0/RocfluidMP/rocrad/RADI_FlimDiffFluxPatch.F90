@@ -89,7 +89,7 @@ SUBROUTINE RADI_FlimDiffFluxPatch( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FlimDiffFluxPatch',&
-  __FILE__ )
+  'RADI_FlimDiffFluxPatch.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -268,6 +268,7 @@ END SUBROUTINE RADI_FlimDiffFluxPatch
 !
 !
 !******************************************************************************
+
 
 
 

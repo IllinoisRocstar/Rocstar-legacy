@@ -84,7 +84,7 @@ SUBROUTINE RFLU_OpenPostInfo(global,fileStatus,fileExists)
   RCSIdentString = '$RCSfile: RFLU_OpenPostInfo.F90,v $ $Revision: 1.6 $'
 
   CALL RegisterFunction(global,'RFLU_OpenPostInfo',&
-  __FILE__)
+  'RFLU_OpenPostInfo.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -160,6 +160,7 @@ END SUBROUTINE RFLU_OpenPostInfo
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

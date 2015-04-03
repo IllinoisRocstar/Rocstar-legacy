@@ -82,7 +82,7 @@ SUBROUTINE RFLU_ComputeEnerDissOLES(region)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_ComputeEnerDissOLES',&
-  __FILE__)
+  'RFLU_ComputeEnerDissOLES.F90')
 
 ! ******************************************************************************
 ! Start, check that have primitive variables
@@ -336,6 +336,7 @@ END SUBROUTINE RFLU_ComputeEnerDissOLES
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

@@ -85,7 +85,7 @@ SUBROUTINE PLAG_RkUpdateWrapper( region, iReg, istage )
   global => region%global
 
   CALL RegisterFunction( global,'PLAG_rkUpdateWrapper',&
-  __FILE__ )
+  'PLAG_RkUpdateWrapper.F90' )
 
 ! update tiles ----------------------------------------------------------------
 
@@ -137,6 +137,7 @@ END SUBROUTINE PLAG_RkUpdateWrapper
 ! Initial import of wrapper routines for RocfluidMP
 !
 !******************************************************************************
+
 
 
 

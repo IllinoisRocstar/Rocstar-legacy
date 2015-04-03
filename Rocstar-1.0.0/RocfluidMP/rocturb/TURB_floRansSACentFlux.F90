@@ -73,7 +73,7 @@ SUBROUTINE TURB_FloRansSACentFlux( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_FloRansSACentFlux',&
-  __FILE__ )
+  'TURB_floRansSACentFlux.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -229,6 +229,7 @@ END SUBROUTINE TURB_FloRansSACentFlux
 !
 !
 !******************************************************************************
+
 
 
 

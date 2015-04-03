@@ -71,7 +71,7 @@ SUBROUTINE PERI_CheckParamInput( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'PERI_CheckParamInput',&
-  __FILE__ )
+  'PERI_CheckParamInput.F90' )
 
 ! check fixed parameters setting ---------------------------------------------
 
@@ -229,6 +229,7 @@ END SUBROUTINE PERI_CheckParamInput
 !
 !
 !******************************************************************************
+
 
 
 

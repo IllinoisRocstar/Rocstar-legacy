@@ -68,7 +68,7 @@ SUBROUTINE RFLO_CopyTopologyLevels( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_CopyTopologyLevels',&
-  __FILE__ )
+  'RFLO_CopyTopologyLevels.F90' )
 
 ! loop over all regions
 
@@ -236,6 +236,7 @@ END SUBROUTINE RFLO_CopyTopologyLevels
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
 
 
 

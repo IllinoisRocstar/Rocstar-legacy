@@ -71,7 +71,7 @@ SUBROUTINE PLAG_SetSizeGenx( region )
   pGlobal => region%global
 
   CALL RegisterFunction( pGlobal,'PLAG_SetSizeGenx',&
-  __FILE__ )
+  'PLAG_SetSizeRocstar.F90' )
 
 !------------------------------------------------------------------------------
 ! Loop over all regions 
@@ -117,6 +117,7 @@ END SUBROUTINE PLAG_SetSizeGenx
 ! Initial import for Roccom3
 !
 !******************************************************************************
+
 
 
 

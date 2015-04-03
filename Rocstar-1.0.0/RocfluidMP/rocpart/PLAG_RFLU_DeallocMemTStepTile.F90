@@ -86,7 +86,7 @@ SUBROUTINE PLAG_RFLU_DeallocMemTStepTile(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_DeallocMemTStepTile',&
-  __FILE__)
+  'PLAG_RFLU_DeallocMemTStepTile.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables 
@@ -171,6 +171,7 @@ END SUBROUTINE PLAG_RFLU_DeallocMemTStepTile
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

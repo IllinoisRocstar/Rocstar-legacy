@@ -76,7 +76,7 @@ SUBROUTINE TURB_RFLU_DeallocateMemory(region)
   global => region%global
 
   CALL RegisterFunction(global,'TURB_RFLU_DeallocateMemory',&
-  __FILE__)
+  'TURB_rFLU_DeallocateMemory.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -123,6 +123,7 @@ END SUBROUTINE TURB_RFLU_DeallocateMemory
 !
 !
 ! ******************************************************************************
+
 
 
 

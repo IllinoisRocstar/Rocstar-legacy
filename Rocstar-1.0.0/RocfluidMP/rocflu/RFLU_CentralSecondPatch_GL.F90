@@ -121,7 +121,7 @@ SUBROUTINE RFLU_CentralSecondPatch_GL(pRegion,pPatch)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CentralSecondPatch_GL',&
-  __FILE__)
+  'RFLU_CentralSecondPatch_GL.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -849,6 +849,7 @@ END SUBROUTINE RFLU_CentralSecondPatch_GL
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

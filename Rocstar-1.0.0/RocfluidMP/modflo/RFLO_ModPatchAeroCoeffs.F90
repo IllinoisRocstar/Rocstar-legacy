@@ -105,7 +105,7 @@ MODULE RFLO_ModPatchAeroCoeffs
 
   CALL RegisterFunction( region%global,&
   'RFLO_InitPatchAeroCoeffs',&
-  __FILE__ )
+  'RFLO_ModPatchAeroCoeffs.F90' )
         
 ! set initial patch aero coeffs values to 0.0 -----------------------------------
         
@@ -176,7 +176,7 @@ SUBROUTINE RFLO_ReadPatchAeroCoeffs( regions )
 
   CALL RegisterFunction( global,&
   'RFLO_ReadPatchAeroCoeffs',&
-  __FILE__ )
+  'RFLO_ModPatchAeroCoeffs.F90' )
         
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN   
@@ -466,7 +466,7 @@ SUBROUTINE RFLO_WritePatchAeroCoeffs( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_WritePatchAeroCoeffs',&
-  __FILE__ )
+  'RFLO_ModPatchAeroCoeffs.F90' )
         
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN   
@@ -726,7 +726,7 @@ SUBROUTINE RFLO_ReadPatchAeroCoeffsReg( iReg,regions )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RFLO_ReadPatchAeroCoeffsReg',&
-  __FILE__ )
+  'RFLO_ModPatchAeroCoeffs.F90' )
         
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN   
@@ -942,6 +942,10 @@ END MODULE RFLO_ModPatchAeroCoeffs
 !
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

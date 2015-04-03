@@ -76,7 +76,7 @@ SUBROUTINE UpdateTbcSinusoidal( global,tbc,t )
 !******************************************************************************
 
   CALL RegisterFunction( global,'UpdateTbcSinusoidal',&
-  __FILE__ )
+  'UpdateTbcSinusoidal.F90' )
 
   tbc%svals(TBCSTO_VAL) = tbc%params(TBCDAT_AMP) * &
     sin(tbc%params(TBCDAT_FREQ) * t + tbc%params(TBCDAT_PHASE))
@@ -120,6 +120,7 @@ END SUBROUTINE UpdateTbcSinusoidal
 ! Added Time-dependent boundary conditions
 !
 !******************************************************************************
+
 
 
 

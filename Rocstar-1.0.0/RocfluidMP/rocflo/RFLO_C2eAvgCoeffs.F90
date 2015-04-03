@@ -75,7 +75,7 @@ SUBROUTINE RFLO_C2eAvgCoeffs( region )
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_C2eAvgCoeffs',&
-  __FILE__ )
+  'RFLO_C2eAvgCoeffs.F90' )
 
 ! get indices and pointers ---------------------------------------------------
 
@@ -219,6 +219,7 @@ END SUBROUTINE RFLO_C2eAvgCoeffs
 !
 !
 !******************************************************************************
+
 
 
 

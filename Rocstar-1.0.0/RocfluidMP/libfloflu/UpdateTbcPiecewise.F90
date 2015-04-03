@@ -113,7 +113,7 @@ SUBROUTINE UpdateTbcPiecewise( global,tbc,t )
 !******************************************************************************
 
   CALL RegisterFunction( global,'UpdateTbcPiecewise',&
-  __FILE__)
+  'UpdateTbcPiecewise.F90')
 
   order  = tbc%switches(TBCSWI_ORDER)
   njumps = tbc%switches(TBCSWI_NJUMPS)
@@ -186,6 +186,7 @@ END SUBROUTINE UpdateTbcPiecewise
 ! Added Piecewise TBC
 !
 !******************************************************************************
+
 
 
 

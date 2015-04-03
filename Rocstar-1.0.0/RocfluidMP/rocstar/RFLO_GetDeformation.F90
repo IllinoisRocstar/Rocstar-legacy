@@ -80,7 +80,7 @@ SUBROUTINE RFLO_GetDeformation( region,boundMoved,dNode )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_GetDeformation',&
-  __FILE__ )
+  'RFLO_GetDeformation.F90' )
 
 ! initialize variables --------------------------------------------------------
 
@@ -265,6 +265,7 @@ END SUBROUTINE RFLO_GetDeformation
 ! Finalized integration into GenX.
 !
 !******************************************************************************
+
 
 
 

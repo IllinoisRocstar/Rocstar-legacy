@@ -77,7 +77,7 @@ SUBROUTINE RFLU_ComputeIntegral2OLES(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeIntegral2OLES',&
-  __FILE__)
+  'RFLU_ComputeIntegral2OLES.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -314,6 +314,7 @@ END SUBROUTINE RFLU_ComputeIntegral2OLES
 ! Added footer
 !
 !*******************************************************************************
+
 
 
 

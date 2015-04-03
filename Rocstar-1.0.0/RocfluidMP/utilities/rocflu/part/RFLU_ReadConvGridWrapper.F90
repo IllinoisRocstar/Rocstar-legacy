@@ -89,7 +89,7 @@ SUBROUTINE RFLU_ReadConvGridWrapper(pRegion)
   global => pRegion%global
   
   CALL RegisterFunction(global,'RFLU_ReadConvGridWrapper',&
-  __FILE__)
+  'RFLU_ReadConvGridWrapper.F90')
 
 ! ******************************************************************************
 ! Read grid file and convert if necessary 
@@ -150,6 +150,7 @@ END SUBROUTINE RFLU_ReadConvGridWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

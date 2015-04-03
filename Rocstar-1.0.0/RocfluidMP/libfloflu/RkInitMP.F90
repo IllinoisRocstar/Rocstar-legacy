@@ -114,7 +114,7 @@ SUBROUTINE RKInitMP( region, istage )
   global => region%global
 
   CALL RegisterFunction( global,'RKInitMP',&
-  __FILE__ )
+  'RkInitMP.F90' )
 
 ! set flags ===================================================================
 
@@ -302,6 +302,7 @@ END SUBROUTINE rkInitMP
 ! Initial import for RocfluidMP
 !
 !******************************************************************************
+
 
 
 

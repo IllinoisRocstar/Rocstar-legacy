@@ -85,7 +85,7 @@ SUBROUTINE RFLO_ExchangeDnodeSend( region,regionSrc,patch,dNode )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_ExchangeDnodeSend',&
-  __FILE__ )
+  'RFLO_ExchangeDnodeSend.F90' )
 
 ! check if the source region is active
 
@@ -451,6 +451,7 @@ END SUBROUTINE RFLO_ExchangeDnodeSend
 ! Improved mesh motion algorithm - node movement exchaged between blocks.
 !
 !******************************************************************************
+
 
 
 

@@ -102,7 +102,7 @@ SUBROUTINE TURB_LesMij( region,ijk )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_LesMij',&
-  __FILE__ )
+  'TURB_LesMij.F90' )
 
 ! get indices and pointers --------------------------------------------------
 
@@ -305,6 +305,7 @@ END SUBROUTINE TURB_LesMij
 !
 !
 !******************************************************************************
+
 
 
 

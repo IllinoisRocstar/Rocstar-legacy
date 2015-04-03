@@ -69,7 +69,7 @@ SUBROUTINE RFLO_FindSourcePatches( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_FindSourcePatches',&
-  __FILE__ )
+  'RFLO_FindSourcePatches.F90' )
 
 ! loop over regions and patches
 
@@ -168,6 +168,7 @@ END SUBROUTINE RFLO_FindSourcePatches
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
 
 
 

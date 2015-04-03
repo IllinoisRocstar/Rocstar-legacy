@@ -139,7 +139,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_ClosePatchCoeffs',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
              
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -221,7 +221,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_CreatePatchCoeffs',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
     
     pGrid => pRegion%grid
         
@@ -330,7 +330,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_DestroyPatchCoeffs',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
     
     pGrid => pRegion%grid
         
@@ -435,7 +435,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_InitPatchCoeffs',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
     
     pGrid => pRegion%grid
         
@@ -518,7 +518,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_NullifyPatchCoeffs',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
     
     pGrid => pRegion%grid
         
@@ -600,7 +600,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_OpenPatchCoeffsASCII',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
          
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -736,7 +736,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_OpenPatchCoeffsBinary',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
          
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -868,7 +868,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_ReadPatchCoeffsASCII',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
         
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN   
@@ -1058,7 +1058,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_ReadPatchCoeffsBinary',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
    
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1242,7 +1242,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_ReadPatchCoeffsWrapper',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
 
 ! ******************************************************************************
 !   Read file (if it exists)
@@ -1339,7 +1339,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_WritePatchCoeffsASCII',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1500,7 +1500,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_WritePatchCoeffsBinary',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1657,7 +1657,7 @@ MODULE RFLU_ModPatchCoeffs
     global => pRegion%global
     
     CALL RegisterFunction(global,'RFLU_WritePatchCoeffsWrapper',&
-  __FILE__)
+  'RFLU_ModPatchCoeffs.F90')
     
     IF ( global%solutFormat == FORMAT_ASCII ) THEN
       CALL RFLU_OpenPatchCoeffsASCII(pRegion,FILE_STATUS_UNKNOWN)
@@ -1710,6 +1710,19 @@ END MODULE RFLU_ModPatchCoeffs
 !   Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

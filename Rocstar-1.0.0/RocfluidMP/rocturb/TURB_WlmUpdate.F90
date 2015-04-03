@@ -73,7 +73,7 @@ SUBROUTINE TURB_WlmUpdate( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_WlmUpdate',&
-  __FILE__ )
+  'TURB_WlmUpdate.F90' )
 
 #ifdef RFLO
   CALL TURB_FloWlmUpdateLoglay( region,patch )
@@ -119,6 +119,7 @@ END SUBROUTINE TURB_WlmUpdate
 !
 !
 !******************************************************************************
+
 
 
 

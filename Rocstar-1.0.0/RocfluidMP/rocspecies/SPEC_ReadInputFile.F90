@@ -85,7 +85,7 @@ SUBROUTINE SPEC_ReadInputFile(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'SPEC_ReadInputFile',&
-  __FILE__)
+  'SPEC_ReadInputFile.F90')
 
 ! ******************************************************************************
 ! Read user input for species
@@ -258,6 +258,7 @@ END SUBROUTINE SPEC_ReadInputFile
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

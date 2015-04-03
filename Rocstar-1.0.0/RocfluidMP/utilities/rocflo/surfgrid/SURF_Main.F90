@@ -82,7 +82,7 @@ PROGRAM ROCFLO_Surf
 
   global%nFunTree = 0
   CALL RegisterFunction( global,'ROCFLO_Surf',&
-  __FILE__ )
+  'SURF_Main.F90' )
 
 ! initialize global parameters ------------------------------------------------
 
@@ -303,6 +303,7 @@ END PROGRAM ROCFLO_Surf
 ! Added utility (rflosurf) to write out surface grids for GenX.
 !
 !******************************************************************************
+
 
 
 

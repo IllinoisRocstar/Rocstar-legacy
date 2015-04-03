@@ -93,7 +93,7 @@ SUBROUTINE RFLO_WriteStat( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_WriteStat',&
-  __FILE__ )
+  'RFLO_WriteStat.F90' )
 
 ! allocate temporary data arrays ---------------------------------------------
 
@@ -324,6 +324,7 @@ END SUBROUTINE RFLO_WriteStat
 ! add time avg statistics
 !
 !******************************************************************************
+
 
 
 

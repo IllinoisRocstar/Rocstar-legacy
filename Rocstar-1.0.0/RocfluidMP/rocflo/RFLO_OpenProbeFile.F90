@@ -86,7 +86,7 @@ SUBROUTINE RFLO_OpenProbeFile( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_OpenProbeFile',&
-  __FILE__ )
+  'RFLO_OpenProbeFile.F90' )
 
 ! open file
 
@@ -404,6 +404,7 @@ END SUBROUTINE RFLO_OpenProbeFile
 ! Simplified solver initialization routine.
 !
 !******************************************************************************
+
 
 
 

@@ -96,7 +96,7 @@ PROGRAM PEUL_ROCFLO_Post
 
   global%nFunTree = 0
   CALL RegisterFunction( global,'PEUL_ROCFLO_Post', &
-                        __FILE__ )
+                        'Main.F90' )
 
 ! initialize global parameters ------------------------------------------------
 
@@ -415,6 +415,7 @@ END PROGRAM PEUL_ROCFLO_Post
 !
 !
 !******************************************************************************
+
 
 
 

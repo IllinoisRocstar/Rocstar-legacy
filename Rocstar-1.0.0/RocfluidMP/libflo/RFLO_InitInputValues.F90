@@ -68,7 +68,7 @@ SUBROUTINE RFLO_InitInputValues( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_InitInputValues',&
-  __FILE__ )
+  'RFLO_InitInputValues.F90' )
 
 ! global values ---------------------------------------------------------------
 ! regions per processor
@@ -451,6 +451,7 @@ END SUBROUTINE RFLO_InitInputValues
 ! Added postprocessor.
 !
 !******************************************************************************
+
 
 
 

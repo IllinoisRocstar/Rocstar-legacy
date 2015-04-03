@@ -81,7 +81,7 @@ SUBROUTINE PLAG_ReadDisPartnContSection( regions )
   global => regions(1)%global
   
   CALL RegisterFunction( global, 'PLAG_ReadDisPartnContSection',&
-  __FILE__ )
+  'PLAG_ReadDisPartnContSection.F90' )
 
 ! Read section pertinent to constituents --------------------------------------
 
@@ -249,6 +249,7 @@ END SUBROUTINE PLAG_ReadDisPartnContSection
 !
 !
 !******************************************************************************
+
 
 
 

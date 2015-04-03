@@ -91,7 +91,7 @@ SUBROUTINE RFLO_ReadSolutionRegion( iReg,regions )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RFLO_ReadSolutionRegion',&
-  __FILE__ )
+  'RFLO_ReadSolutionRegion.F90' )
 
 ! allocate fixed-size temporary data arrays -----------------------------------
 
@@ -327,6 +327,7 @@ END SUBROUTINE RFLO_ReadSolutionRegion
 ! Grid & solution for all regions in one file.
 !
 !******************************************************************************
+
 
 
 

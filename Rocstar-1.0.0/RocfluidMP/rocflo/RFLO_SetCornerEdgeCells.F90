@@ -70,7 +70,7 @@ SUBROUTINE RFLO_SetCornerEdgeCells( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_SetCornerEdgeCells',&
-  __FILE__ )
+  'RFLO_SetCornerEdgeCells.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -275,6 +275,7 @@ END SUBROUTINE RFLO_SetCornerEdgeCells
 ! Added treatment of edge & corner cells.
 !
 !******************************************************************************
+
 
 
 

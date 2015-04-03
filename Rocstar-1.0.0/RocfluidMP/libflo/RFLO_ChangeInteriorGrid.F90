@@ -82,7 +82,7 @@ SUBROUTINE RFLO_ChangeInteriorGrid( region,boundMoved,edgeMoved, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ChangeInteriorGrid',&
-  __FILE__ )
+  'RFLO_ChangeInteriorGrid.F90' )
 
 ! get dimensions, allocate temporary storage ----------------------------------
 
@@ -238,6 +238,7 @@ END SUBROUTINE RFLO_ChangeInteriorGrid
 ! Implemented grid deformation capability.
 !
 !******************************************************************************
+
 
 
 

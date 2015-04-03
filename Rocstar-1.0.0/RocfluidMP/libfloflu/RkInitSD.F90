@@ -86,7 +86,7 @@ SUBROUTINE RkInitSD(region,icBeg,icEnd,ivBeg,ivEnd,sd)
   global => region%global
 
   CALL RegisterFunction(global,'RkInitSD',&
-  __FILE__)
+  'RkInitSD.F90')
 
 ! *****************************************************************************
 ! Initialize substantial derivative
@@ -124,6 +124,7 @@ END SUBROUTINE RkInitSD
 ! Implemented Equilibrium Eulerian method for Rocflu
 !
 !******************************************************************************
+
 
 
 

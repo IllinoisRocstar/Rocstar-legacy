@@ -79,7 +79,7 @@ PROGRAM ROCFLO_2Dto3D
 
   global%nFunTree = 0
   CALL RegisterFunction( global,'ROCFLO_2Dto3D',&
-  __FILE__ )
+  'TO3D_Main.F90' )
 
 ! initialize ------------------------------------------------------------------
 ! global parameters
@@ -321,6 +321,7 @@ END PROGRAM ROCFLO_2Dto3D
 ! Added utility to convert 2D grids to 3D.
 !
 !******************************************************************************
+
 
 
 

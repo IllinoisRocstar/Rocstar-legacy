@@ -93,7 +93,7 @@ SUBROUTINE PLAG_inCellTest(region, posPlag, indexSearch, &
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_inCellTest',&
-  __FILE__ )
+  'PLAG_InCellTest.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -212,6 +212,7 @@ END SUBROUTINE PLAG_inCellTest
 !
 !
 !******************************************************************************
+
 
 
 

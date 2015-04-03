@@ -67,7 +67,7 @@ SUBROUTINE RVAV_ComputeError( global,iCompare,iNodes,jNodes,kNodes )
 !******************************************************************************
 
   CALL RegisterFunction( global, 'RVAV_ComputeError',&
-  __FILE__ )
+  'RVAV_ComputeError.F90' )
 
 ! initialize variables
 
@@ -146,6 +146,7 @@ END SUBROUTINE RVAV_ComputeError
 ! Initial Import of RocVaV
 !
 !******************************************************************************
+
 
 
 

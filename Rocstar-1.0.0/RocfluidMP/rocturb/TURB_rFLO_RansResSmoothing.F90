@@ -75,7 +75,7 @@ SUBROUTINE TURB_RFLO_RansResSmoothing( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'TURB_RFLO_RansResSmoothing',&
-  __FILE__ )
+  'TURB_rFLO_RansResSmoothing.F90' )
 
   IF (region%turbInput%modelClass /= MODEL_RANS) GOTO 999
 
@@ -260,6 +260,7 @@ END SUBROUTINE TURB_RFLO_RansResSmoothing
 !
 !
 !******************************************************************************
+
 
 
 

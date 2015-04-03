@@ -72,7 +72,7 @@ SUBROUTINE RFLO_CheckBcInput( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_CheckBcInput',&
-  __FILE__ )
+  'RFLO_CheckBcInput.F90' )
 
 ! check if all BCs set (for all active modules), and allocate TBCs
 
@@ -172,6 +172,7 @@ END SUBROUTINE RFLO_CheckBcInput
 ! Re-worked BC and TBC input routines to add multi-physics capability
 !
 !******************************************************************************
+
 
 
 

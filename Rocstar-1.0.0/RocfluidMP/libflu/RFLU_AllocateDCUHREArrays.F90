@@ -59,7 +59,7 @@
 ! ==============================================================================
       
       CALL RegisterFunction( 'RFLU_AllocateDCUHREArrays',&
-  __FILE__ )
+  'RFLU_AllocateDCUHREArrays.F90' )
 
 ! ==============================================================================
 !     Allocate memory
@@ -118,7 +118,7 @@
 ! ==============================================================================
       
       CALL RegisterFunction( 'RFLU_DeallocateDCUHREArrays',&
-  __FILE__ )
+  'RFLU_AllocateDCUHREArrays.F90' )
 
 ! ==============================================================================
 !     Allocate memory
@@ -155,6 +155,8 @@
       CALL DeregisterFunction        
     
     END SUBROUTINE RFLU_DeallocateDCUHREArrays
+
+
 
 
 

@@ -94,7 +94,7 @@ SUBROUTINE PEUL_ExchangeDummyConf( region,regionSrc,patch,patchSrc )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_ExchangeDummyConf',&
-  __FILE__ )
+  'PEUL_ExchangeDummyConf.F90' )
 
 ! check if the source region is active ----------------------------------------
 
@@ -193,6 +193,7 @@ END SUBROUTINE PEUL_ExchangeDummyConf
 ! Initial Import of Multi-region rocsmoke
 !
 !******************************************************************************
+
 
 
 

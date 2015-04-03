@@ -103,7 +103,7 @@ SUBROUTINE ViscousFluxesMP(region)
   global => region%global
 
   CALL RegisterFunction( global,'ViscousFluxesMP',&
-  __FILE__ )
+  'ViscousFluxesMP.F90' )
 
 ! *****************************************************************************
 ! Compute viscous fluxes 
@@ -259,6 +259,7 @@ END SUBROUTINE ViscousFluxesMP
 ! Initial import for RocfluidMP
 !
 ! *****************************************************************************
+
 
 
 

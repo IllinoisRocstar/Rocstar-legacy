@@ -129,7 +129,7 @@ MODULE PLAG_ModDimensions
     global => regions(0)%global
 
     CALL RegisterFunction(global,'PLAG_CalcNPclsGlobal',&
-  __FILE__)
+  'PLAG_ModDimensions.F90')
 
 ! ******************************************************************************
 !   Initialize variables
@@ -245,7 +245,7 @@ MODULE PLAG_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_PrintDimensions',&
-  __FILE__)
+  'PLAG_ModDimensions.F90')
 
 ! ******************************************************************************
 !   Print information
@@ -325,7 +325,7 @@ MODULE PLAG_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_PrintNPclsGlobal',&
-  __FILE__)
+  'PLAG_ModDimensions.F90')
 
 ! ******************************************************************************
 !   Print information
@@ -414,7 +414,7 @@ MODULE PLAG_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_RFLU_ReadDimensions',&
-  __FILE__)
+  'PLAG_ModDimensions.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN  
@@ -675,7 +675,7 @@ MODULE PLAG_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_SetDimensions',&
-  __FILE__)
+  'PLAG_ModDimensions.F90')
 
 ! ******************************************************************************
 !   Set number of particles
@@ -742,7 +742,7 @@ MODULE PLAG_ModDimensions
     global => pRegion%global
 
     CALL RegisterFunction(global,'PLAG_SetMaxDimensions',&
-  __FILE__)
+  'PLAG_ModDimensions.F90')
 
 ! ******************************************************************************
 !   Set variables 
@@ -827,7 +827,7 @@ MODULE PLAG_ModDimensions
     global => pRegion%global
     
     CALL RegisterFunction(global,'PLAG_RFLU_WriteDimensions',&
-  __FILE__)
+  'PLAG_ModDimensions.F90')
     
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN  
@@ -998,6 +998,13 @@ END MODULE PLAG_ModDimensions
 ! Initial import
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
 
 
 

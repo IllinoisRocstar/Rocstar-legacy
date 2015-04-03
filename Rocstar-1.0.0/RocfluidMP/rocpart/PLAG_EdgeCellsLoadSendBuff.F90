@@ -107,7 +107,7 @@ SUBROUTINE PLAG_EdgeCellsLoadSendBuff( regions,iReg,ir,nBuffSizeEdge )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_EdgeCellsLoadSendBuff',&
-  __FILE__ )
+  'PLAG_EdgeCellsLoadSendBuff.F90' )
 
 ! ******************************************************************************
 ! Get dimensions 
@@ -405,6 +405,7 @@ END SUBROUTINE PLAG_EdgeCellsLoadSendBuff
 ! Initial import for MPI-based data buffer communication
 !
 !******************************************************************************
+
 
 
 

@@ -116,7 +116,7 @@ SUBROUTINE RFLU_MoveGridXyz(regions,context)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_MoveGridXyz',&
-  __FILE__)
+  'RFLU_MoveGridXyz.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel /= VERBOSE_LOW ) THEN
@@ -576,6 +576,7 @@ END SUBROUTINE RFLU_MoveGridXyz
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

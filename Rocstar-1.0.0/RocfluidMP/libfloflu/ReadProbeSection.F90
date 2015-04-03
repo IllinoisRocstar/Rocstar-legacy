@@ -65,7 +65,7 @@ SUBROUTINE ReadProbeSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadProbeSection',&
-  __FILE__ )
+  'ReadProbeSection.F90' )
 
 ! do not read probes a second time
 
@@ -311,6 +311,7 @@ END SUBROUTINE ReadProbeSection
 ! Added files to read user input.
 !
 !******************************************************************************
+
 
 
 

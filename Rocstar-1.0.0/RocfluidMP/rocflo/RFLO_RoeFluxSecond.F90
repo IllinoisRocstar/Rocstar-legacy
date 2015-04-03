@@ -81,7 +81,7 @@ SUBROUTINE RFLO_RoeFluxSecond( region )
                        3._RFREAL*eps+1.E-30_RFREAL)
 
   CALL RegisterFunction( region%global,'RFLO_RoeFluxSecond',&
-  __FILE__ )
+  'RFLO_RoeFluxSecond.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -443,6 +443,7 @@ END SUBROUTINE RFLO_RoeFluxSecond
 ! Implemented Roe scheme.
 !
 !******************************************************************************
+
 
 
 

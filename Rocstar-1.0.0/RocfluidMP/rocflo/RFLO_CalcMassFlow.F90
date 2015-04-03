@@ -77,7 +77,7 @@ SUBROUTINE RFLO_CalcMassFlow( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcMassFlow',&
-  __FILE__ )
+  'RFLO_CalcMassFlow.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -228,6 +228,7 @@ END SUBROUTINE RFLO_CalcMassFlow
 ! Added time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

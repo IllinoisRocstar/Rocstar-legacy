@@ -83,7 +83,7 @@ SUBROUTINE TURB_RansRkInit( region, istage )
   global => region%global
 
   CALL RegisterFunction( global,'TURB_RansRkInit',&
-  __FILE__ )
+  'TURB_RansRkInit.F90' )
 
   IF (region%turbInput%modelClass /= MODEL_RANS) GOTO 999
   
@@ -174,6 +174,7 @@ END SUBROUTINE TURB_RansRkInit
 !
 !
 !******************************************************************************
+
 
 
 

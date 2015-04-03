@@ -95,7 +95,7 @@ SUBROUTINE RFLU_UpdateInbuffWrapper(region,istage)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_UpdateInbuffWrapper',&
-  __FILE__)
+  'RFLU_UpdateInbuffWrapper.F90')
 
 #ifdef GENX 
 ! ******************************************************************************
@@ -145,6 +145,7 @@ END SUBROUTINE RFLU_UpdateInbuffWrapper
 ! Initial Import for RocfluidMP
 !
 ! ******************************************************************************
+
 
 
 

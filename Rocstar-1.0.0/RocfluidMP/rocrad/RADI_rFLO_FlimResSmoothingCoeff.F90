@@ -77,7 +77,7 @@ SUBROUTINE RADI_RFLO_FlimResSmoothingCoeff( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction( global,'RADI_RFLO_FlimResSmoothingCoeff',&
-  __FILE__ )
+  'RADI_rFLO_FlimResSmoothingCoeff.F90' )
 
   IF (region%radiInput%radiModel /= RADI_MODEL_FLDTRAN) GOTO 999
 
@@ -151,6 +151,7 @@ END SUBROUTINE RADI_RFLO_FlimResSmoothingCoeff
 !
 !
 !******************************************************************************
+
 
 
 

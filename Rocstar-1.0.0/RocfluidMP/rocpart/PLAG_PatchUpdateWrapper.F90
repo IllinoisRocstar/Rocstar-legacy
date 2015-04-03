@@ -75,7 +75,7 @@ SUBROUTINE PLAG_PatchUpdateWrapper( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_PatchUpdateWrapper',&
-  __FILE__ )
+  'PLAG_PatchUpdateWrapper.F90' )
 
 ! check if module is active in any region======================================
 
@@ -147,6 +147,7 @@ END SUBROUTINE PLAG_PatchUpdateWrapper
 ! Initial import of wrapper routines for RocfluidMP
 !
 !******************************************************************************
+
 
 
 

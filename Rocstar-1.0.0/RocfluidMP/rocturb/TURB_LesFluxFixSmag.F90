@@ -74,7 +74,7 @@ SUBROUTINE TURB_LesFluxFixSmag( region,ibn,ien )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_LesFluxFixSmag',&
-  __FILE__ )
+  'TURB_LesFluxFixSmag.F90' )
 
 ! obtain eddy viscosity in i, j and k faces ----------------------------------
   CALL TURB_LesCalcEddyVis( region,ibn,ien,DIRI )
@@ -128,6 +128,7 @@ END SUBROUTINE TURB_LesFluxFixSmag
 !
 !
 !******************************************************************************
+
 
 
 

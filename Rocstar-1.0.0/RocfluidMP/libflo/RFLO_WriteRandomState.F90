@@ -87,7 +87,7 @@ SUBROUTINE RFLO_WriteRandomState( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_WriteRandomState',&
-  __FILE__ )
+  'RFLO_WriteRandomState.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -221,6 +221,7 @@ END SUBROUTINE RFLO_WriteRandomState
 ! Added Write capability for Random Number Generator
 !
 !******************************************************************************
+
 
 
 

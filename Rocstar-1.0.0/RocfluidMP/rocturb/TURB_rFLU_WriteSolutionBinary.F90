@@ -82,7 +82,7 @@ SUBROUTINE TURB_RFLU_WriteSolutionBinary( region ) ! PUBLIC
   global => region%global
 
   CALL RegisterFunction(global,'TURB_RFLU_WriteSolutionBinary',&
-  __FILE__)
+  'TURB_rFLU_WriteSolutionBinary.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -282,6 +282,7 @@ END SUBROUTINE TURB_RFLU_WriteSolutionBinary
 ! added routines specific for Rocflu           
 !
 ! ******************************************************************************
+
 
 
 

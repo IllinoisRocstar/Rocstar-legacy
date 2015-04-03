@@ -76,7 +76,7 @@ SUBROUTINE INRT_FinishMomentumEdge(global,inrt,iXEdge,iEnd)
     '$RCSfile: INRT_FinishMomentumEdge.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction( global,'INRT_FinishMomentumEdge',&
-  __FILE__ )
+  'INRT_FinishMomentumEdge.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -124,6 +124,7 @@ END SUBROUTINE INRT_FinishMomentumEdge
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

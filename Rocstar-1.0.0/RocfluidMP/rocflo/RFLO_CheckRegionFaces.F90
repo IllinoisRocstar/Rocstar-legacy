@@ -78,7 +78,7 @@ SUBROUTINE RFLO_CheckRegionFaces( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_CheckRegionFaces',&
-  __FILE__ )
+  'RFLO_CheckRegionFaces.F90' )
 
   IF (global%myProcid > global%nRegions-1) RETURN
 
@@ -439,6 +439,7 @@ END SUBROUTINE RFLO_CheckRegionFaces
 ! Added routines to read grid and solution.
 !
 !******************************************************************************
+
 
 
 

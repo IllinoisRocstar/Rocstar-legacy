@@ -77,7 +77,7 @@ SUBROUTINE PEUL_BoundaryConditionsSend( regions,iReg ) ! PUBLIC
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PEUL_BoundaryConditionsSend',&
-  __FILE__ )
+  'PEUL_BoundaryConditionsSend.F90' )
 
 ! get dimensions --------------------------------------------------------------
 
@@ -173,6 +173,7 @@ END SUBROUTINE PEUL_BoundaryConditionsSend
 ! Initial Import of MPI-based rocsmoke
 !
 !******************************************************************************
+
 
 
 

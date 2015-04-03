@@ -73,7 +73,7 @@ SUBROUTINE RADI_FluxLimiter( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FluxLimiter',&
-  __FILE__ )
+  'RADI_FluxLimiter.F90' )
 
 ! get constants, dimensions and pointers --------------------------------------
 
@@ -247,6 +247,7 @@ END SUBROUTINE RADI_FluxLimiter
 !
 !
 !******************************************************************************
+
 
 
 

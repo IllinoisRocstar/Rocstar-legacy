@@ -104,7 +104,7 @@ SUBROUTINE RFLU_SetMoveGridOptions(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_SetMoveGridOptions',&
-  __FILE__)
+  'RFLU_SetMoveGridOptions.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -494,6 +494,7 @@ END SUBROUTINE RFLU_SetMoveGridOptions
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

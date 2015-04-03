@@ -110,7 +110,7 @@ SUBROUTINE TURB_VisFluxEddyPatch( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_VisFluxEddyPatch',&
-  __FILE__ )
+  'TURB_VisFluxEddyPatch.F90' )
 
 !$startcopy TURB_vFluxHybridPatch
 ! get dimensions and pointers -------------------------------------------------
@@ -474,6 +474,7 @@ END SUBROUTINE TURB_VisFluxEddyPatch
 ! Install Rocturb
 !
 !******************************************************************************
+
 
 
 

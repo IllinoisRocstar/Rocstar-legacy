@@ -78,7 +78,7 @@ SUBROUTINE RADI_RFLO_FlimClearSendRequests( regions,iReg ) ! PUBLIC
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RADI_RFLO_FlimClearSendRequests',&
-  __FILE__ )
+  'RADI_rFLO_FlimClearSendRequests.F90' )
 
   IF (regions(iReg)%radiInput%radiModel /= RADI_MODEL_FLDTRAN) GOTO 999
 
@@ -154,6 +154,7 @@ END SUBROUTINE RADI_RFLO_FlimClearSendRequests
 !
 !
 !******************************************************************************
+
 
 
 

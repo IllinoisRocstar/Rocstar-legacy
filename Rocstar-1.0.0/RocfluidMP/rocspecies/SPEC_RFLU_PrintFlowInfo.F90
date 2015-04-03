@@ -86,7 +86,7 @@ SUBROUTINE SPEC_RFLU_PrintFlowInfo(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_PrintFlowInfo',&
-  __FILE__)
+  'SPEC_RFLU_PrintFlowInfo.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing species information...'
@@ -195,6 +195,7 @@ END SUBROUTINE SPEC_RFLU_PrintFlowInfo
 !   Initial revision
 !
 ! ******************************************************************************
+
 
 
 

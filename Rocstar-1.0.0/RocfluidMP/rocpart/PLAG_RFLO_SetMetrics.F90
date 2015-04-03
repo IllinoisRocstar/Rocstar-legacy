@@ -76,7 +76,7 @@ SUBROUTINE PLAG_RFLO_SetMetrics( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_RFLO_SetMetrics',&
-  __FILE__ )
+  'PLAG_RFLO_SetMetrics.F90' )
 
 ! check if module is active in any region======================================
 
@@ -180,6 +180,7 @@ END SUBROUTINE PLAG_RFLO_SetMetrics
 ! Initial import of Corner-Edge cells Infrastructure
 !
 !******************************************************************************
+
 
 
 

@@ -79,7 +79,7 @@ SUBROUTINE RADI_InitSolution
 
   global => region%global
   CALL RegisterFunction( global,'RADI_InitSolution',&
-  __FILE__ )
+  'RADI_InitSolution.F90' )
 
 ! initiate solution, perform initial works and works needed to be done 
 ! everytime the grid change
@@ -140,6 +140,7 @@ END SUBROUTINE RADI_InitSolution
 !
 !
 !******************************************************************************
+
 
 
 

@@ -141,7 +141,7 @@ MODULE RFLU_ModMESH3D
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ConvMESH3D2ROCFLU', &
-                          __FILE__)
+                          'RFLU_ModMESH3D.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -572,7 +572,7 @@ MODULE RFLU_ModMESH3D
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridMESH3D', &
-                          __FILE__)
+                          'RFLU_ModMESH3D.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading MESH3D grid file...'
@@ -797,6 +797,8 @@ END MODULE RFLU_ModMESH3D
 !
 ! ******************************************************************************
   
+
+
 
 
 

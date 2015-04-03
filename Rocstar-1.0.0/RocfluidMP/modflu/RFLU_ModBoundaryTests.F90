@@ -141,7 +141,7 @@ LOGICAL FUNCTION RFLU_TestIsBoundaryCell(pRegion,icg)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TestIsBoundaryCell',&
-  __FILE__)
+  'RFLU_ModBoundaryTests.F90')
 
 ! ==============================================================================
 ! Set grid pointer and initialize RFLU_TestIsBoundaryCell
@@ -248,7 +248,7 @@ LOGICAL FUNCTION RFLU_TestIsBoundaryVertex(pRegion,ivg)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TestIsBoundaryVertex',&
-  __FILE__)
+  'RFLU_ModBoundaryTests.F90')
 
 ! ==============================================================================
 ! Set grid pointer and initialize RFLU_TestIsBoundaryVertex
@@ -304,6 +304,8 @@ END MODULE RFLU_ModBoundaryTests
 ! Initial revision
 !
 ! ******************************************************************************
+
+
 
 
 

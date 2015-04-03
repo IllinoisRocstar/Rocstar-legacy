@@ -77,7 +77,7 @@ SUBROUTINE RADI_CheckParamInput
 
   global => regions(1)%global
   CALL RegisterFunction( global,'RADI_CheckParamInput',&
-  __FILE__ )
+  'RADI_CheckParamInput.F90' )
 
 ! check fixed parameters setting ---------------------------------------------
 
@@ -346,6 +346,7 @@ END SUBROUTINE RADI_CheckParamInput
 !
 !
 !******************************************************************************
+
 
 
 

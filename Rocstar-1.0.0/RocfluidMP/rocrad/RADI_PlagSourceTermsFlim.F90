@@ -79,7 +79,7 @@ SUBROUTINE RADI_PlagSourceTermsFlim( region )
 
   global => region%global
   CALL RegisterFunction( global,'RADI_PlagSourceTermsFlim',&
-  __FILE__ )
+  'RADI_PlagSourceTermsFlim.F90' )
 
 ! get coefficients and parameters ---------------------------------------------
 
@@ -164,6 +164,7 @@ END SUBROUTINE RADI_PlagSourceTermsFlim
 !
 !
 !******************************************************************************
+
 
 
 

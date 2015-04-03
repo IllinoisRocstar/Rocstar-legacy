@@ -86,7 +86,7 @@ SUBROUTINE RFLU_ScalarInitRhs(pRegion,nVarScal,dissScal,resScal)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ScalarInitRhs',&
-  __FILE__)
+  'RFLU_ScalarInitRhs.F90')
   
 ! *****************************************************************************
 ! Set dimensions and pointers 
@@ -130,6 +130,7 @@ END SUBROUTINE RFLU_ScalarInitRhs
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

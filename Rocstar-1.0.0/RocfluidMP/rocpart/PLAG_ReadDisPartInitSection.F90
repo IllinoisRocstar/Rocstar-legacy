@@ -92,7 +92,7 @@ SUBROUTINE PLAG_ReadDisPartInitSection( regions )
   global => regions(1)%global
   
   CALL RegisterFunction( global, 'PLAG_ReadDisPartInitSection',&
-  __FILE__ )
+  'PLAG_ReadDisPartInitSection.F90' )
  
 ! ******************************************************************************
 ! Initialize
@@ -449,6 +449,7 @@ END SUBROUTINE PLAG_ReadDisPartInitSection
 ! Initial import of Plag prep tool
 !
 !******************************************************************************
+
 
 
 

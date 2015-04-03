@@ -81,7 +81,7 @@ SUBROUTINE TURB_InitInputValues( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'TURB_InitInputValues',&
-  __FILE__ )
+  'TURB_InitInputValues.F90' )
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -315,6 +315,7 @@ END SUBROUTINE TURB_InitInputValues
 !
 !
 !******************************************************************************
+
 
 
 

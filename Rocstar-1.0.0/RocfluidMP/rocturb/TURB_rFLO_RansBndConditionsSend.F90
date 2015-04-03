@@ -74,7 +74,7 @@ SUBROUTINE TURB_RFLO_RansBndConditionsSend( regions,iReg ) ! PUBLIC
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'TURB_RFLO_RansBndConditionsSend',&
-  __FILE__ )
+  'TURB_rFLO_RansBndConditionsSend.F90' )
 
   IF (regions(iReg)%turbInput%modelClass /= MODEL_RANS) GOTO 999
 
@@ -187,6 +187,7 @@ END SUBROUTINE TURB_RFLO_RansBndConditionsSend
 !
 !
 !******************************************************************************
+
 
 
 

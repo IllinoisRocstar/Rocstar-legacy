@@ -84,7 +84,7 @@ SUBROUTINE PERI_CoPgradUpdate( region )
 
   global => region%global
   CALL RegisterFunction( global,'PERI_CoPgradUpdate',&
-  __FILE__ )
+  'PERI_coPgradUpdateFlu.F90' )
 
 ! get dimensions, parameters and pointers -------------------------------------
  
@@ -354,6 +354,7 @@ END SUBROUTINE PERI_CoPgradUpdate
 !
 !
 !******************************************************************************
+
 
 
 

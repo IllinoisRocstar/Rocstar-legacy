@@ -106,7 +106,7 @@ SUBROUTINE TURB_VFluxHybrid( region )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_VFluxHybrid',&
-  __FILE__ )
+  'TURB_VFluxHybrid.F90' )
 
 !$startcopy TURB_VisFluxEddy
 ! get dimensions and pointers ------------------------------------------------
@@ -603,6 +603,7 @@ END SUBROUTINE TURB_VFluxHybrid
 ! Install Rocturb
 !
 !******************************************************************************
+
 
 
 

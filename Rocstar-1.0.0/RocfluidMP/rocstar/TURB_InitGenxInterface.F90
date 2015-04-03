@@ -77,7 +77,7 @@ SUBROUTINE TURB_InitGenxInterface( regions,wins,winv )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'TURB_InitGenxInterface',&
-  __FILE__ )
+  'TURB_InitGenxInterface.F90' )
 
 ! input data (currently none) -------------------------------------------------
 
@@ -242,6 +242,7 @@ END SUBROUTINE TURB_InitGenxInterface
 ! added TURB and RADI_initGenxInterface
 !
 !******************************************************************************
+
 
 
 

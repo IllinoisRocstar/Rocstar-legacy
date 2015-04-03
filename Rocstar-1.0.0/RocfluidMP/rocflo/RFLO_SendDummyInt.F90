@@ -71,7 +71,7 @@ SUBROUTINE RFLO_SendDummyInt( region,regionSrc,patch )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_SendDummyInt',&
-  __FILE__ )
+  'RFLO_SendDummyInt.F90' )
 
 
 
@@ -118,6 +118,7 @@ END SUBROUTINE RFLO_SendDummyInt
 ! Added flux computation (central scheme).
 !
 !******************************************************************************
+
 
 
 

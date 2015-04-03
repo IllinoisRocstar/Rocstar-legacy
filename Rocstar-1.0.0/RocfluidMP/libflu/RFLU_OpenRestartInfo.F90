@@ -87,7 +87,7 @@ SUBROUTINE RFLU_OpenRestartInfo(global,filePosition,fileExists)
   RCSIdentString = '$RCSfile: RFLU_OpenRestartInfo.F90,v $ $Revision: 1.6 $'
 
   CALL RegisterFunction(global,'RFLU_OpenRestartInfo',&
-  __FILE__)
+  'RFLU_OpenRestartInfo.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -161,6 +161,7 @@ END SUBROUTINE RFLU_OpenRestartInfo
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

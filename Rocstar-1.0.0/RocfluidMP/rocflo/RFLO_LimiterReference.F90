@@ -59,7 +59,7 @@ SUBROUTINE RFLO_LimiterReference( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_LimiterReference',&
-  __FILE__ )
+  'RFLO_LimiterReference.F90' )
 
   global%limRef(1) = global%refDensity
   global%limRef(2) = global%refVelocity
@@ -112,6 +112,7 @@ END SUBROUTINE RFLO_LimiterReference
 ! Added routines to read grid and solution.
 !
 !******************************************************************************
+
 
 
 

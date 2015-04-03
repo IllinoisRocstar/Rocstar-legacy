@@ -79,7 +79,7 @@ SUBROUTINE RADI_PrintUserInput
 
   global => region%global
   CALL RegisterFunction( global,'RADI_PrintUserInput',&
-  __FILE__ )
+  'RADI_PrintUserInput.F90' )
 
 ! input parameters ------------------------------------------------------------
 
@@ -310,6 +310,7 @@ END SUBROUTINE RADI_PrintUserInput
 !
 !
 !******************************************************************************
+
 
 
 

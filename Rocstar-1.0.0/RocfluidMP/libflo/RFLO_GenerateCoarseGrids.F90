@@ -69,7 +69,7 @@ SUBROUTINE RFLO_GenerateCoarseGrids( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GenerateCoarseGrids',&
-  __FILE__ )
+  'RFLO_GenerateCoarseGrids.F90' )
 
 ! loop over higher levels (>1)
 
@@ -135,6 +135,7 @@ END SUBROUTINE RFLO_GenerateCoarseGrids
 ! Grid & solution for all regions in one file.
 !
 !******************************************************************************
+
 
 
 

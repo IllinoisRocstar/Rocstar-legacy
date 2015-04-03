@@ -77,7 +77,7 @@ SUBROUTINE RADI_FloFlimExchCornEdgeCells( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RADI_FloFlimExchCornEdgeCells',&
-  __FILE__ )
+  'RADI_floFlimExchCornEdgeCells.F90' )
 
 ! get dimensions and pointers
 
@@ -178,6 +178,7 @@ END SUBROUTINE RADI_FloFlimExchCornEdgeCells
 !
 !
 !******************************************************************************
+
 
 
 

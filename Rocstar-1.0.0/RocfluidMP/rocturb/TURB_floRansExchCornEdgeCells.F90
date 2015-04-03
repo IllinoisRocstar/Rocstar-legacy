@@ -77,7 +77,7 @@ SUBROUTINE TURB_FloRansExchCornEdgeCells( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'TURB_FloRansExchCornEdgeCells',&
-  __FILE__ )
+  'TURB_floRansExchCornEdgeCells.F90' )
 
 ! get dimensions and pointers
 
@@ -191,6 +191,7 @@ END SUBROUTINE TURB_FloRansExchCornEdgeCells
 !
 !
 !******************************************************************************
+
 
 
 

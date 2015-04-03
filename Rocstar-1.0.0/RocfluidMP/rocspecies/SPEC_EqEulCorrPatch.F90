@@ -93,7 +93,7 @@ SUBROUTINE SPEC_EqEulCorrPatch(pRegion,pPatch,iSpec)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_EqEulCorrPatch',&
-  __FILE__)
+  'SPEC_EqEulCorrPatch.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -282,6 +282,7 @@ END SUBROUTINE SPEC_EqEulCorrPatch
 ! Implemented Equilibrium Eulerian method for Rocflu
 !
 ! ******************************************************************************
+
 
 
 

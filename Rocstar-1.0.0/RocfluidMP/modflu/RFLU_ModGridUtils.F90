@@ -131,7 +131,7 @@ SUBROUTINE RFLU_DistortGrid(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DistortGrid',&
-  __FILE__)
+  'RFLU_ModGridUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN       
@@ -201,6 +201,7 @@ END MODULE RFLU_ModGridUtils
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

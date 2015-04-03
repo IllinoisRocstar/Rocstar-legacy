@@ -67,7 +67,7 @@ SUBROUTINE RFLO_InitGridProcedures( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_GetGeometry',&
-  __FILE__ )
+  'RFLO_InitGridProcedures.F90' )
 
 ! broadcast block corners and remember closest six neighbors ------------------
 
@@ -116,6 +116,7 @@ END SUBROUTINE RFLO_InitGridProcedures
 !
 !
 !******************************************************************************
+
 
 
 

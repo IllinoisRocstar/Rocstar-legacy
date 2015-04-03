@@ -62,7 +62,7 @@ SUBROUTINE INRT_SetActiveness( global,val,actv )
   RCSIdentString = '$RCSfile: INRT_SetActiveness.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction( global,'INRT_SetActiveness',&
-  __FILE__ )
+  'INRT_SetActiveness.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -101,6 +101,7 @@ END SUBROUTINE INRT_SetActiveness
 ! codified Activeness and Permission structures for rocinteract
 !
 !******************************************************************************
+
 
 
 

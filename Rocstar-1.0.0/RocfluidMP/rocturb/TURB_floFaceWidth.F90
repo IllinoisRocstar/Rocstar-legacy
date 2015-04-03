@@ -78,7 +78,7 @@ SUBROUTINE TURB_FloFaceWidth( region )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloFaceWidth',&
-  __FILE__ )
+  'TURB_floFaceWidth.F90' )
 
 ! get indices and pointers ---------------------------------------------------
 
@@ -252,6 +252,7 @@ END SUBROUTINE TURB_FlofaceWidth
 !
 !
 !******************************************************************************
+
 
 
 

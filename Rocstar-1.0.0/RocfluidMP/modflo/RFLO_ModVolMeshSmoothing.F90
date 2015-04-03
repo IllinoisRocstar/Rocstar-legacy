@@ -132,7 +132,7 @@ SUBROUTINE RFLO_MoveGridVms( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_MoveGridVms',&
-       __FILE__ )
+       'RFLO_ModVolMeshSmoothing.F90' )
 
 #ifdef GENX
 ! update geometry buffers -----------------------------------------------------
@@ -284,7 +284,7 @@ SUBROUTINE RFLO_VmsInit( regions,someMoved )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_VmsInit',&
-       __FILE__ )
+       'RFLO_ModVolMeshSmoothing.F90' )
 
 ! move grid separately for each region ----------------------------------------
 
@@ -378,7 +378,7 @@ SUBROUTINE RFLO_VmsLaplaceIterate( regions,iter,resid )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_VmsLaplaceIterate',&
-       __FILE__ )
+       'RFLO_ModVolMeshSmoothing.F90' )
 
 ! smooth grid region-wise -----------------------------------------------------
 
@@ -585,7 +585,7 @@ SUBROUTINE RFLO_VmsAverageVertices( region,vxyz )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_VmsAverageVertices',&
-       __FILE__ )
+       'RFLO_ModVolMeshSmoothing.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -661,7 +661,7 @@ SUBROUTINE RFLO_VmsLaplacePerturb( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_VmsLaplacePerturb',&
-       __FILE__ )
+       'RFLO_ModVolMeshSmoothing.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -769,7 +769,7 @@ SUBROUTINE RFLO_VmsLaplaceProcedure( region,iter )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_VmsLaplaceProcedure',&
-       __FILE__ )
+       'RFLO_ModVolMeshSmoothing.F90' )
 
 ! allocate buffers ------------------------------------------------------------
 
@@ -910,7 +910,7 @@ SUBROUTINE RFLO_VmsProjectVertices( region,vxyz )
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_VmsProjectVertices',&
-       __FILE__ )
+       'RFLO_ModVolMeshSmoothing.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -1222,7 +1222,7 @@ SUBROUTINE RFLO_VmsRestoreBoundDeform( region,ibn,ien,dxyz )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_VmsRestoreBoundDeform',&
-       __FILE__ )
+       'RFLO_ModVolMeshSmoothing.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -1299,6 +1299,14 @@ END MODULE RFLO_ModVolMeshSmoothing
 !
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
 
 
 

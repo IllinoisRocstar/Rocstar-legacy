@@ -85,7 +85,7 @@ SUBROUTINE RFLU_UpdateInbuffGm(globalGenx,dAlpha)
   global => globalGenx%global
 
   CALL RegisterFunction(global,'RFLU_UpdateInbuffGm',&
-  __FILE__)
+  'RFLU_UpdateInbuffGm.F90')
 
 ! *****************************************************************************
 ! Fill displacement buffer
@@ -143,6 +143,7 @@ END SUBROUTINE RFLU_UpdateInbuffGm
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

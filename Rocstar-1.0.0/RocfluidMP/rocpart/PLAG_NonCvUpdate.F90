@@ -82,7 +82,7 @@ SUBROUTINE PLAG_nonCvUpdate( region )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_NonCvUpdate',&
-  __FILE__ )
+  'PLAG_NonCvUpdate.F90' )
   
 ! get dimensions and set pointer ----------------------------------------------
 
@@ -185,6 +185,7 @@ END SUBROUTINE PLAG_NonCvUpdate
 ! Initial Import
 !
 !******************************************************************************
+
 
 
 

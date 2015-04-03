@@ -82,7 +82,7 @@ SUBROUTINE TURB_RansSASourceTerms( region )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_RansSASourceTerms',&
-  __FILE__ )
+  'TURB_RansSASourceTerms.F90' )
 
 ! get coefficients and parameters ---------------------------------------------
 
@@ -219,6 +219,7 @@ END SUBROUTINE TURB_RansSASourceTerms
 !
 !
 !******************************************************************************
+
 
 
 

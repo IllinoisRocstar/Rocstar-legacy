@@ -110,7 +110,7 @@ SUBROUTINE PLAG_CECellsRecvData( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_CECellsRecvData',&
-  __FILE__ )
+  'PLAG_CECellsRecvData.F90' )
 
 ! ******************************************************************************
 ! Set pointers 
@@ -469,6 +469,7 @@ END SUBROUTINE PLAG_CECellsRecvData
 ! Initial import for MPI-based data buffer communication
 !
 !******************************************************************************
+
 
 
 

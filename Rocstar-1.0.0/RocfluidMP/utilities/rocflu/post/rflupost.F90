@@ -111,7 +111,7 @@ SUBROUTINE rflupost(caseString,stampString,verbLevel)
   CALL RFLU_InitGlobal(casename,verbLevel,CRAZY_VALUE_INT,global)
 
   CALL RegisterFunction(global,'rflupost', &
-                        __FILE__)
+                        'rflupost.F90')
 
   CALL RFLU_SetModuleType(global,MODULE_TYPE_POSTPROC)
 
@@ -247,6 +247,7 @@ END SUBROUTINE rflupost
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

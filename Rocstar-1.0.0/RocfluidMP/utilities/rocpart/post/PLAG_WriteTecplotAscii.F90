@@ -84,7 +84,7 @@ SUBROUTINE PLAG_WriteTecplotAscii( iReg, iLev, region )
 
   global => region%global
 
-  CALL RegisterFunction( global,'PLAG_WriteTecplotAscii', __FILE__ )
+  CALL RegisterFunction( global,'PLAG_WriteTecplotAscii', 'PLAG_WriteTecplotAscii.F90' )
 
 ! set parameters --------------------------------------------------------------
 
@@ -215,6 +215,7 @@ END SUBROUTINE PLAG_WriteTecplotAscii
 ! Import of postprocessing tool for Rocpart
 !
 !******************************************************************************
+
 
 
 

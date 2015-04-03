@@ -78,7 +78,7 @@ PROGRAM ROCFLO_toFlu
 
   global%nFunTree = 0
   CALL RegisterFunction( global,'ROCFLO_Init',&
-  __FILE__ )
+  'TFLU_Main.F90' )
 
 ! initialize global parameters ------------------------------------------------
 
@@ -338,6 +338,7 @@ END PROGRAM ROCFLO_toFlu
 !
 !
 !******************************************************************************
+
 
 
 

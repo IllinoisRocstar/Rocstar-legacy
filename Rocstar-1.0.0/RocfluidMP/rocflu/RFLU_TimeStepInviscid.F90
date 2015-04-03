@@ -99,7 +99,7 @@ SUBROUTINE RFLU_TimeStepInviscid(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_TimeStepInviscid',&
-  __FILE__)
+  'RFLU_TimeStepInviscid.F90')
 
 ! ******************************************************************************
 ! Get dimensions and pointers
@@ -382,6 +382,7 @@ END SUBROUTINE RFLU_TimeStepInviscid
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

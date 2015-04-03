@@ -69,7 +69,7 @@ SUBROUTINE RVAV_ReadSectionStream1( global )
 !******************************************************************************
 
   CALL RegisterFunction( global, 'RVAV_ReadSectiontream1',&
-  __FILE__ )
+  'RVAV_ReadSectionStream1.F90' )
 
 ! specify keywords and search for them
 
@@ -153,6 +153,7 @@ END SUBROUTINE RVAV_ReadSectionStream1
 !
 !
 !******************************************************************************
+
 
 
 

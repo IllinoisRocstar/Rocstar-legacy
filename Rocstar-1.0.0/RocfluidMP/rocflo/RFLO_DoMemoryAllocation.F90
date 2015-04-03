@@ -86,7 +86,7 @@ SUBROUTINE RFLO_DoMemoryAllocation( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_DoMemoryAllocation',&
-  __FILE__ )
+  'RFLO_DoMemoryAllocation.F90' )
 
 ! loop over all regions
 
@@ -248,6 +248,7 @@ END SUBROUTINE RFLO_DoMemoryAllocation
 ! Simplified solver initialization routine.
 !
 !******************************************************************************
+
 
 
 

@@ -657,7 +657,6 @@ add_executable(makemblock ${MAKEFLO_DIR}/makemblock.cpp ${MAKEFLO_CORE_SRCS} ${M
 target_link_libraries(makemblock ${MFHDF_LIB} ${HDF4_LIB} ${JPEG_LIB} ${ZLIB})
 add_executable(simpleblock ${MAKEFLO_DIR}/simpleblock.cpp ${MAKEFLO_CORE_SRCS} ${MAKEFLO_DIR}/read.cpp ${MAKEFLO_DIR}/readgrd.cpp ${MAKEFLO_DIR}/readreg.cpp ${MAKEFLO_DIR}/readhdf.cpp ${MAKEFLO_DIR}/write.cpp ${MAKEFLO_DIR}/writehdf.cpp ${MAKEFLO_DIR}/readmsh.f90 ${MAKEFLO_DIR}/writemsh.f90 ${MAKEFLO_DIR}/writegrda.f90 ${MAKEFLO_DIR}/writegrdb.f90)
 target_link_libraries(simpleblock ${MFHDF_LIB} ${HDF4_LIB} ${JPEG_LIB} ${ZLIB})
-#set_source_files_properties(${FLOPREP_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC -D__FILE__=\\'RocfloFile\\'" )
 add_executable(rfloprep ${FLOPREP_SRCS})
 set_property(TARGET rfloprep PROPERTY LINKER_LANGUAGE Fortran)
 target_link_libraries(rfloprep Rocflo Rocout Rocin Roccomf Roccom)

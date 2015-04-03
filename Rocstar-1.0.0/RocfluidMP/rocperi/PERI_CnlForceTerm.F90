@@ -81,7 +81,7 @@ SUBROUTINE PERI_CnlForceTerm( region )
   RCSIdentString = '$RCSfile: PERI_CnlForceTerm.F90,v $'
 
   CALL RegisterFunction( region%global,'PERI_CnlForceTerm',&
-  __FILE__ )
+  'PERI_CnlForceTerm.F90' )
 
 ! get dimensions, pointers and parameters -------------------------------------
 
@@ -164,6 +164,7 @@ END SUBROUTINE PERI_CnlForceTerm
 ! install ROCPERI
 !
 !******************************************************************************
+
 
 
 

@@ -72,7 +72,7 @@ SUBROUTINE TURB_RansSourceTerms( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'TURB_RansSourceTerms',&
-  __FILE__ )
+  'TURB_RansSourceTerms.F90' )
 
   IF (region%turbInput%modelClass /= MODEL_RANS) GOTO 999
 
@@ -137,6 +137,7 @@ END SUBROUTINE TURB_RansSourceTerms
 !
 !
 !******************************************************************************
+
 
 
 

@@ -101,7 +101,7 @@ SUBROUTINE PLAG_CECellsSendData( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_CECellsSendData',&
-  __FILE__ )
+  'PLAG_CECellsSendData.F90' )
 
 ! ******************************************************************************
 ! Get dimensions 
@@ -278,6 +278,7 @@ END SUBROUTINE PLAG_CECellsSendData
 ! Initial import for MPI-based data buffer communication
 !
 !******************************************************************************
+
 
 
 

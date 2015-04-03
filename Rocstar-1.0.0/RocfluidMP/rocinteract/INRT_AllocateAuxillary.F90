@@ -73,7 +73,7 @@ SUBROUTINE INRT_AllocateAuxillary( global,inrt,nEdges,nSwitches,nData )
     '$RCSfile: INRT_AllocateAuxillary.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction( global,'INRT_AllocateAuxillary',&
-  __FILE__ )
+  'INRT_AllocateAuxillary.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -146,6 +146,7 @@ END SUBROUTINE INRT_AllocateAuxillary
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

@@ -67,7 +67,7 @@ SUBROUTINE RFLO_ReadTbcInputFile( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadTbcInputFile',&
-  __FILE__ )
+  'RFLO_ReadTbcInputFile.F90' )
 
 ! open file
 
@@ -153,6 +153,7 @@ END SUBROUTINE RFLO_ReadTbcInputFile
 !
 !
 !******************************************************************************
+
 
 
 

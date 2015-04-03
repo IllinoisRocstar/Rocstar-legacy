@@ -140,7 +140,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegionSerial%global
 
     CALL RegisterFunction(global,'RFLU_PART_AddVirtualCells',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Adding virtual cells...' 
@@ -435,7 +435,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_BuildBorderFaceList',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building border face lists...' 
@@ -622,7 +622,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_BuildCellLists',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building cell lists...' 
@@ -852,7 +852,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_BuildPatchLists',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building patch lists...' 
@@ -1202,7 +1202,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_BuildReg2CellMap',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building region-to-cell map...' 
@@ -1314,7 +1314,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_BuildVertexData',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building vertex data...' 
@@ -1421,7 +1421,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_BuildVertexLists',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building vertex lists...' 
@@ -1748,7 +1748,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_CreateCellLists',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating cell lists...' 
@@ -1997,7 +1997,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_CreatePatchLists',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating patch lists...' 
@@ -2314,7 +2314,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_CreateReg2CellMap',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating region-to-cell mapping...' 
@@ -2415,7 +2415,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_DestroyBorderFaceList',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying border face lists...' 
@@ -2510,7 +2510,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_DestroyCellData',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying cell data...' 
@@ -2604,7 +2604,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_DestroyCellLists',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying cell lists...' 
@@ -2723,7 +2723,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_DestroyPatchLists',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying patch lists...' 
@@ -2837,7 +2837,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_DestroyVertexData',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying vertex data...' 
@@ -2935,7 +2935,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_PartitionRegion',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Partitioning region...' 
@@ -3252,7 +3252,7 @@ MODULE RFLU_ModPartitionRegion
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_PART_RecreateCellList',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
 ! ******************************************************************************
 !   Increase maximum number of cells
@@ -3408,7 +3408,7 @@ MODULE RFLU_ModPartitionRegion
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_PART_RenumberVertexLists',&
-  __FILE__)
+  'RFLU_ModPartitionRegion.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Renumbering vertex lists...' 
@@ -3603,6 +3603,24 @@ END MODULE RFLU_ModPartitionRegion
 ! Initial revision, work in progress
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

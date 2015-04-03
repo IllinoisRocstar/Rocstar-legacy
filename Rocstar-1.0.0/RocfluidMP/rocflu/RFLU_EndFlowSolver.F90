@@ -137,7 +137,7 @@ SUBROUTINE RFLU_EndFlowSolver(levels)
   global => levels(1)%regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_EndFlowSolver',&
-  __FILE__)
+  'RFLU_EndFlowSolver.F90')
 
 ! ******************************************************************************
 ! Determine whether have moving grid
@@ -652,6 +652,7 @@ END SUBROUTINE RFLU_EndFlowSolver
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

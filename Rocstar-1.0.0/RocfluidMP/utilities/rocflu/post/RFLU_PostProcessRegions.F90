@@ -100,7 +100,7 @@ SUBROUTINE RFLU_PostProcessRegions(levels)
   global => levels(1)%regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_PostProcessRegions',&
-  __FILE__)
+  'RFLU_PostProcessRegions.F90')
 
 ! ******************************************************************************  
 ! Open files
@@ -345,6 +345,7 @@ END SUBROUTINE RFLU_PostProcessRegions
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

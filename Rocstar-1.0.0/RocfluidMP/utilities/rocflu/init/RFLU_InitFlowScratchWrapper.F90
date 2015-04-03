@@ -88,7 +88,7 @@ SUBROUTINE RFLU_InitFlowScratchWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_InitFlowScratchWrapper',&
-  __FILE__)
+  'RFLU_InitFlowScratchWrapper.F90')
 
 #ifdef SPEC
 ! ******************************************************************************
@@ -169,6 +169,7 @@ END SUBROUTINE RFLU_InitFlowScratchWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

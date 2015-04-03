@@ -78,7 +78,7 @@ SUBROUTINE RFLO_ReadBcInjectAPNSection( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadBcInjectAPNSection',&
-  __FILE__ )
+  'RFLO_ReadBcInjectAPNSection.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -218,6 +218,7 @@ END SUBROUTINE RFLO_ReadBcInjectAPNSection
 !
 !
 !******************************************************************************
+
 
 
 

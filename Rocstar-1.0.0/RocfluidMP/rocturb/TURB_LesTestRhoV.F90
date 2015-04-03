@@ -82,7 +82,7 @@ SUBROUTINE TURB_LesTestRhoV( region,ibc,iec )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_LesTestRhoV',&
-  __FILE__ )
+  'TURB_LesTestRhoV.F90' )
 
 ! get indices and pointers --------------------------------------------------
 
@@ -179,6 +179,7 @@ END SUBROUTINE TURB_LesTestRhoV
 !
 !
 !******************************************************************************
+
 
 
 

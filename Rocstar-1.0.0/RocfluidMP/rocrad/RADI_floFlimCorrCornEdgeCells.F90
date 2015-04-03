@@ -81,7 +81,7 @@ SUBROUTINE RADI_FloFlimCorrCornEdgeCells( region,patch,radBcType )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FloFlimCorrCornEdgeCells', &
-                         __FILE__ )
+                         'RADI_floFlimCorrCornEdgeCells.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -351,6 +351,7 @@ END SUBROUTINE RADI_FloFlimCorrCornEdgeCells
 !
 !
 !******************************************************************************
+
 
 
 

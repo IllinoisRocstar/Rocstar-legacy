@@ -92,7 +92,7 @@ SUBROUTINE PEUL_ReadSolutionRegion( iReg,regions ) ! PUBLIC
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PEUL_ReadSolutionRegion',&
-  __FILE__ )
+  'PEUL_ReadSolutionRegion.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -290,6 +290,7 @@ END SUBROUTINE PEUL_ReadSolutionRegion
 ! Added routine PEUL_ReadSolutionRegion
 !
 !******************************************************************************
+
 
 
 

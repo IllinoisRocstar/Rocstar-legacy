@@ -86,7 +86,7 @@ SUBROUTINE NumericalDissipation(region)
   global => region%global
 
   CALL RegisterFunction( global,'NumericalDissipation',&
-  __FILE__ )
+  'NumericalDissipation.F90' )
 
 #ifdef RFLU
   pRegion => region
@@ -204,6 +204,7 @@ END SUBROUTINE NumericalDissipation
 ! Added low-level time-stepping routines.
 !
 ! ******************************************************************************
+
 
 
 

@@ -125,7 +125,7 @@ SUBROUTINE PLAG_CopyDimensions(global,pPlag,pPlagCopy)
   RCSIdentString = '$RCSfile: PLAG_ModReallocateMemory.F90,v $ $Revision: 1.9 $'
 
   CALL RegisterFunction(global,'PLAG_CopyDimensions',&
-  __FILE__)
+  'PLAG_ModReallocateMemory.F90')
 
 ! *****************************************************************************
 ! Copy particle dimensions from original datastructure to temporary datastructure
@@ -198,7 +198,7 @@ SUBROUTINE PLAG_CopyMemory(global,pPlag,pPlagCopy)
   RCSIdentString = '$RCSfile: PLAG_ModReallocateMemory.F90,v $ $Revision: 1.9 $'
 
   CALL RegisterFunction(global,'PLAG_CopyMemory',&
-  __FILE__)
+  'PLAG_ModReallocateMemory.F90')
 
 ! ******************************************************************************
 ! Set variables 
@@ -310,7 +310,7 @@ SUBROUTINE PLAG_DecideReallocMem(pRegion,pDecideReallocMem)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_DecideReallocMem',&
-  __FILE__)
+  'PLAG_ModReallocateMemory.F90')
 
 ! ******************************************************************************
 ! Set variables 
@@ -394,7 +394,7 @@ SUBROUTINE PLAG_ReallocMem(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_ReallocMem',&
-  __FILE__)
+  'PLAG_ModReallocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables 
@@ -516,7 +516,7 @@ SUBROUTINE PLAG_ReallocMemWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_ReallocMem',&
-  __FILE__)
+  'PLAG_ModReallocateMemory.F90')
 
 ! ******************************************************************************
 ! Set pointers  
@@ -594,6 +594,11 @@ END MODULE PLAG_ModReallocateMemory
 ! Initial import for dynamic memory reallocation
 !
 !******************************************************************************
+
+
+
+
+
 
 
 

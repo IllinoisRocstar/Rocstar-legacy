@@ -76,7 +76,7 @@ SUBROUTINE WriteSurfaceGrid( iReg,region )
   global => region%global
 
   CALL RegisterFunction( global,'WriteSurfaceGrid',&
-  __FILE__ )
+  'SURF_WriteSurfaceGrid.F90' )
 
 ! store pointer to coordinates ------------------------------------------------
 
@@ -213,6 +213,7 @@ END SUBROUTINE WriteSurfaceGrid
 ! Added utility (rflosurf) to write out surface grids for GenX.
 !
 !******************************************************************************
+
 
 
 

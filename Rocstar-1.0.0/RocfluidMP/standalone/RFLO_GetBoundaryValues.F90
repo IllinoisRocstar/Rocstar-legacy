@@ -54,7 +54,7 @@ SUBROUTINE RFLO_GetBoundaryValues( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_GetBoundaryValues',&
-  __FILE__ )
+  'RFLO_GetBoundaryValues.F90' )
 
 ! give error message
 
@@ -93,6 +93,7 @@ END SUBROUTINE RFLO_GetBoundaryValues
 ! Prepared solver to be optionally linked with an external driver.
 !
 !******************************************************************************
+
 
 
 

@@ -77,7 +77,7 @@ SUBROUTINE TURB_RansTotalTv( region,indxMu,indxTCo,tvt )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_RansTotalTv',&
-  __FILE__ )
+  'TURB_RansTotalTv.F90' )
 
 ! get dimensions and pointers ------------------------------------------------
 
@@ -133,6 +133,7 @@ END SUBROUTINE TURB_RansTotalTv
 !
 !
 !******************************************************************************
+
 
 
 

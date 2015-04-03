@@ -80,7 +80,7 @@ SUBROUTINE ReadPrepSection(global)
   RCSIdentString = '$RCSfile: ReadPrepSection.F90,v $ $Revision: 1.4 $'
 
   CALL RegisterFunction(global,'ReadPrepSection',&
-  __FILE__)
+  'ReadPrepSection.F90')
 
 ! ******************************************************************************
 ! Specify keywords and search for them
@@ -149,6 +149,7 @@ END SUBROUTINE ReadPrepSection
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -138,7 +138,7 @@ SUBROUTINE RFLO_FindDegeneratCell( regions,handleCorn,icount,iReg,iLev, &
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_FindDegeratCell',&
-       __FILE__ )
+       'RFLO_ModDegenerateCornEdge.F90' )
 
 ! get pointers ----------------------------------------------------------------
 
@@ -268,7 +268,7 @@ SUBROUTINE RFLO_MarkDegeneratVert( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_MarkDegeneratVert',&
-       __FILE__ )
+       'RFLO_ModDegenerateCornEdge.F90' )
 
 ! find degenerate vertices ====================================================
 
@@ -507,7 +507,7 @@ SUBROUTINE RFLO_WriteDegeneratEC( regions )
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLO_WriteDegeneratEC',&
-       __FILE__)
+       'RFLO_ModDegenerateCornEdge.F90')
 
 ! start ------------------------------------------------------------------------
 
@@ -610,6 +610,9 @@ END MODULE RFLO_ModDegenerateCornEdge
 !
 !
 ! ******************************************************************************
+
+
+
 
 
 

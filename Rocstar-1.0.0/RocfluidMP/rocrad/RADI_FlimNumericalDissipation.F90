@@ -59,7 +59,7 @@ SUBROUTINE RADI_FlimNumericalDissipation( region ) ! PUBLIC
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FlimNumericalDissipation', &
-                         __FILE__ )
+                         'RADI_FlimNumericalDissipation.F90' )
 
   IF (region%radiInput%radiModel /= RADI_MODEL_FLDTRAN) GOTO 999
 
@@ -102,6 +102,7 @@ END SUBROUTINE RADI_FlimNumericalDissipation
 !
 !
 !******************************************************************************
+
 
 
 

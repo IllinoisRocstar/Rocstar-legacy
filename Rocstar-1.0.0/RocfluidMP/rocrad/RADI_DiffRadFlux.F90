@@ -77,7 +77,7 @@ SUBROUTINE RADI_DiffRadFlux( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_DiffRadFlux',&
-  __FILE__ )
+  'RADI_DiffRadFlux.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -320,6 +320,7 @@ END SUBROUTINE RADI_DiffRadFlux
 !
 !
 !******************************************************************************
+
 
 
 

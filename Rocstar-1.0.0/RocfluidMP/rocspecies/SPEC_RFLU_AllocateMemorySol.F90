@@ -81,7 +81,7 @@ SUBROUTINE SPEC_RFLU_AllocateMemorySol(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_RFLU_AllocateMemorySol',&
-  __FILE__)
+  'SPEC_RFLU_AllocateMemorySol.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -157,6 +157,7 @@ END SUBROUTINE SPEC_RFLU_AllocateMemorySol
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

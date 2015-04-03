@@ -165,7 +165,7 @@ MODULE RFLU_ModCOBALT
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ConvCOBALT2ROCFLU', &
-                          __FILE__)
+                          'RFLU_ModCOBALT.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -1608,7 +1608,7 @@ MODULE RFLU_ModCOBALT
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridCOBALT', &
-                          __FILE__)
+                          'RFLU_ModCOBALT.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading COBALT grid file...'
@@ -1827,6 +1827,8 @@ END MODULE RFLU_ModCOBALT
 ! Initial revision
 !
 ! ******************************************************************************
+
+
 
 
 

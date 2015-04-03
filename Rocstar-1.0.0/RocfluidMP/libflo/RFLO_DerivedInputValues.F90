@@ -70,7 +70,7 @@ SUBROUTINE RFLO_DerivedInputValues( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_DerivedInputValues',&
-  __FILE__ )
+  'RFLO_DerivedInputValues.F90' )
 
 ! global values ---------------------------------------------------------------
 
@@ -311,6 +311,7 @@ END SUBROUTINE RFLO_DerivedInputValues
 ! Added postprocessor.
 !
 !******************************************************************************
+
 
 
 

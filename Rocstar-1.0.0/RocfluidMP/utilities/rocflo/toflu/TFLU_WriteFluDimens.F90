@@ -61,7 +61,7 @@ SUBROUTINE WriteFluDimens( global )
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'WriteFluDimens',&
-  __FILE__)
+  'TFLU_WriteFluDimens.F90')
 
 ! start ------------------------------------------------------------------------
 
@@ -194,6 +194,7 @@ END SUBROUTINE WriteFluDimens
 !
 !
 ! ******************************************************************************
+
 
 
 

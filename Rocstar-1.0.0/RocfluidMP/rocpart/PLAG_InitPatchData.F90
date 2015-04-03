@@ -95,7 +95,7 @@ SUBROUTINE PLAG_InitPatchData(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_InitPatchData',&
-  __FILE__)
+  'PLAG_InitPatchData.F90')
 
 #ifdef RFLO
   iLev     = pRegion%currLevel
@@ -204,6 +204,7 @@ END SUBROUTINE PLAG_InitPatchData
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

@@ -106,7 +106,7 @@ MODULE RFLU_ModBFaceGradAccessList
       global => pRegion%global  
         
       CALL RegisterFunction(global,'RFLU_NullifyBFaceGradAccessList',&
-  __FILE__) 
+  'RFLU_ModBFaceGradAccessList.F90') 
         
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN                 
@@ -183,7 +183,7 @@ MODULE RFLU_ModBFaceGradAccessList
       global => pRegion%global  
         
       CALL RegisterFunction(global,'RFLU_CreateBFaceGradAccessList',&
-  __FILE__) 
+  'RFLU_ModBFaceGradAccessList.F90') 
         
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN                 
@@ -271,7 +271,7 @@ MODULE RFLU_ModBFaceGradAccessList
       global => pRegion%global
 
       CALL RegisterFunction(global,'RFLU_BuildBFaceGradAccessList',&
-  __FILE__)
+  'RFLU_ModBFaceGradAccessList.F90')
 
       IF ( global%myProcid == MASTERPROC .AND. & 
            global%verbLevel > VERBOSE_NONE ) THEN    
@@ -371,7 +371,7 @@ MODULE RFLU_ModBFaceGradAccessList
       global => pRegion%global  
         
       CALL RegisterFunction(global,'RFLU_DestroyBFaceGradAccessList',&
-  __FILE__) 
+  'RFLU_ModBFaceGradAccessList.F90') 
         
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel > VERBOSE_NONE ) THEN                 
@@ -465,6 +465,10 @@ END MODULE RFLU_ModBFaceGradAccessList
 !   Initial revision
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

@@ -68,7 +68,7 @@ SUBROUTINE RFLO_ExchangeDummyIreg( region,regionSrc,patch,patchSrc )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ExchangeDummyIreg',&
-  __FILE__ )
+  'RFLO_ExchangeDummyIreg.F90' )
 
 
 
@@ -112,6 +112,7 @@ END SUBROUTINE RFLO_ExchangeDummyIreg
 ! Added flux computation (central scheme).
 !
 !******************************************************************************
+
 
 
 

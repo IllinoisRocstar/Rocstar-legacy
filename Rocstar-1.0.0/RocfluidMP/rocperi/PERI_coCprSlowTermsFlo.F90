@@ -83,7 +83,7 @@ SUBROUTINE PERI_CoCprSlowTerms( region )
   RCSIdentString = '$RCSfile: PERI_coCprSlowTermsFlo.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction( region%global,'PERI_CoCprSlowTerms',&
-  __FILE__ )
+  'PERI_coCprSlowTermsFlo.F90' )
 
 ! get dimensions, pointers and parameters -------------------------------------
 
@@ -287,6 +287,7 @@ END SUBROUTINE PERI_CoCprSlowTerms
 !
 !
 !******************************************************************************
+
 
 
 

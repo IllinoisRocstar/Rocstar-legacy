@@ -87,7 +87,7 @@ SUBROUTINE UpdateTbc(region,t,dt,final)
   global => region%global
 
   CALL RegisterFunction(global,'UpdateTbc',&
-  __FILE__)
+  'UpdateTbc.F90')
 
   finiteDt = (dt > 1.E-10_RFREAL*global%dtMin)
 
@@ -265,6 +265,7 @@ END SUBROUTINE UpdateTbc
 ! Added Time-dependent boundary conditions
 !
 ! ******************************************************************************
+
 
 
 

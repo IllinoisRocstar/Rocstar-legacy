@@ -102,7 +102,7 @@ SUBROUTINE RungeKuttaMP( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RungeKuttaMP',&
-  __FILE__ )
+  'RungeKuttaMP.F90' )
 
 ! loop over stages and regions ================================================
   
@@ -419,6 +419,7 @@ END SUBROUTINE RungeKuttaMP
 ! Initial import for RocfluidMP
 !
 ! ******************************************************************************
+
 
 
 

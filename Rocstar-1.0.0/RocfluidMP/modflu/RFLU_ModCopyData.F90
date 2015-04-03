@@ -119,7 +119,7 @@ MODULE RFLU_ModCopyData
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_COPY_CellDataP2S_R2D',&
-  __FILE__)
+  'RFLU_ModCopyData.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -202,7 +202,7 @@ MODULE RFLU_ModCopyData
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_COPY_CellDataP2S_R3D',&
-  __FILE__)
+  'RFLU_ModCopyData.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -293,7 +293,7 @@ MODULE RFLU_ModCopyData
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_COPY_CellDataS2P_I1D',&
-  __FILE__)
+  'RFLU_ModCopyData.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -366,7 +366,7 @@ MODULE RFLU_ModCopyData
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_COPY_CellDataS2P_R2D',&
-  __FILE__)
+  'RFLU_ModCopyData.F90')
 
 ! ******************************************************************************
 !   Set pointers
@@ -436,6 +436,10 @@ END MODULE RFLU_ModCopyData
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

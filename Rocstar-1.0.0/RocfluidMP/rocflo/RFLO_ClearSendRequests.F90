@@ -80,7 +80,7 @@ SUBROUTINE RFLO_ClearSendRequests( regions,iReg,geometry )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ClearSendRequests',&
-  __FILE__ )
+  'RFLO_ClearSendRequests.F90' )
 
 #ifdef MPI
 ! get dimensions --------------------------------------------------------------
@@ -192,6 +192,7 @@ END SUBROUTINE RFLO_ClearSendRequests
 ! Added routine to clear send requests.
 !
 !******************************************************************************
+
 
 
 

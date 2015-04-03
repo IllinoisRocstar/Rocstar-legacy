@@ -84,7 +84,7 @@ SUBROUTINE RFLU_ComputeFluxInv(pRegion,fluxPart)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeFluxInv',&
-  __FILE__)
+  'RFLU_ComputeFluxInv.F90')
           
 ! ******************************************************************************
 ! Compute fluxes
@@ -128,6 +128,7 @@ END SUBROUTINE RFLU_ComputeFluxInv
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

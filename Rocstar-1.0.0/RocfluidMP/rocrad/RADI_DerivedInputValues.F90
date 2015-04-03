@@ -79,7 +79,7 @@ SUBROUTINE RADI_DerivedInputValues
 
   global => regions(1)%global
   CALL RegisterFunction( global,'RADI_DerivedInputValues',&
-  __FILE__ )
+  'RADI_DerivedInputValues.F90' )
 
 ! set local constants ---------------------------------------------------------
 
@@ -231,6 +231,7 @@ END SUBROUTINE RADI_DerivedInputValues
 !
 !
 !******************************************************************************
+
 
 
 

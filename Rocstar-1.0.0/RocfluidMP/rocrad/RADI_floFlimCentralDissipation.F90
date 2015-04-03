@@ -75,7 +75,7 @@ SUBROUTINE RADI_FloFlimCentralDissipation( region )
   global => region%global
 
   CALL RegisterFunction( global,'RADI_FloFlimCentralDissipation',&
-  __FILE__ )
+  'RADI_floFlimCentralDissipation.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -267,6 +267,7 @@ END SUBROUTINE RADI_FloFlimCentralDissipation
 !
 !
 !******************************************************************************
+
 
 
 

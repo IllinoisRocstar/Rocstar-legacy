@@ -83,7 +83,7 @@ SUBROUTINE RFLO_ReceiveCornerEdgeCells( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'RFLO_ReceiveCornerEdgeCells',&
-  __FILE__ )
+  'RFLO_ReceiveCornerEdgeCells.F90' )
 
   iLev      =  regions(iReg)%currLevel
   gasModel =  regions(iReg)%mixtInput%gasModel
@@ -248,6 +248,7 @@ END SUBROUTINE RFLO_ReceiveCornerEdgeCells
 ! Added treatment of edge & corner cells.
 !
 !******************************************************************************
+
 
 
 

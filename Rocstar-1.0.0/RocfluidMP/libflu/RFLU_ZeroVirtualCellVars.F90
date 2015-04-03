@@ -79,7 +79,7 @@ SUBROUTINE RFLU_ZeroVirtualCellVars(pRegion,var)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ZeroVirtualCellVars',&
-  __FILE__)
+  'RFLU_ZeroVirtualCellVars.F90')
 
 ! ******************************************************************************
 ! Compute cell gradients
@@ -118,6 +118,7 @@ END SUBROUTINE RFLU_ZeroVirtualCellVars
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

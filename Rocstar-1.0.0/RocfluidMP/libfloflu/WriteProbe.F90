@@ -82,7 +82,7 @@ SUBROUTINE WriteProbe( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'WriteProbe',&
-  __FILE__ )
+  'WriteProbe.F90' )
 
 ! determine number of smoke/species types that exist (if any)
 
@@ -315,6 +315,7 @@ END SUBROUTINE WriteProbe
 ! Probe output moved to common library.
 !
 !******************************************************************************
+
 
 
 

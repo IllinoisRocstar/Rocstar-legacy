@@ -71,7 +71,7 @@ SUBROUTINE RFLO_CheckMinimumCells( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_CheckMinimumCells',&
-  __FILE__ )
+  'RFLO_CheckMinimumCells.F90' )
 
 ! loop over all regions
 
@@ -154,6 +154,7 @@ END SUBROUTINE RFLO_CheckMinimumCells
 ! Finished multiblock and MPI.
 !
 !******************************************************************************
+
 
 
 

@@ -66,7 +66,7 @@ SUBROUTINE RFLU_PrintProgressDots(nowValue,endValue)
   RCSIdentString = '$RCSfile: RFLU_PrintProgressDots.F90,v $ $Revision: 1.6 $'
 
   CALL RegisterFunction('RFLU_PrintProgressDots',&
-  __FILE__)
+  'RFLU_PrintProgressDots.F90')
 
 ! start -----------------------------------------------------------------------
 
@@ -112,6 +112,7 @@ END SUBROUTINE
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

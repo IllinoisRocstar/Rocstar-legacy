@@ -70,7 +70,7 @@ SUBROUTINE RFLO_CalcGridSpeeds( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcGridSpeeds',&
-  __FILE__ )
+  'RFLO_CalcGridSpeeds.F90' )
 
 ! loop over all grid levels ---------------------------------------------------
 
@@ -330,6 +330,7 @@ END SUBROUTINE RFLO_CalcGridSpeeds
 ! Implemented calculation of grid speeds.
 !
 !******************************************************************************
+
 
 
 

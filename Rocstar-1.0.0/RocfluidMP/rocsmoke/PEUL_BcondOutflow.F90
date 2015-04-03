@@ -81,7 +81,7 @@ SUBROUTINE PEUL_BcondOutflow( region,patch )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_BcondOutflow',&
-  __FILE__ )
+  'PEUL_BcondOutflow.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -171,6 +171,7 @@ END SUBROUTINE PEUL_BcondOutflow
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

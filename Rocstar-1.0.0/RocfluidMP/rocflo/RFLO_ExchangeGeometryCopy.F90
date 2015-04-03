@@ -84,7 +84,7 @@ SUBROUTINE RFLO_ExchangeGeometryCopy( region,regionSrc,patch,patchSrc )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ExchangeGeometryCopy',&
-  __FILE__ )
+  'RFLO_ExchangeGeometryCopy.F90' )
 
 ! check if the source region is active
 
@@ -325,6 +325,7 @@ END SUBROUTINE RFLO_ExchangeGeometryCopy
 ! Finished multiblock and MPI.
 !
 !******************************************************************************
+
 
 
 

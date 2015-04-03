@@ -137,7 +137,7 @@ SUBROUTINE RFLU_BuildPatchNeighborMaps(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_BuildPatchNeighborMaps',&
-  __FILE__)
+  'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN   
@@ -250,7 +250,7 @@ SUBROUTINE RFLU_CheckPatchBcConsistency(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CheckPatchBcConsistency',&
-  __FILE__)
+  'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN   
@@ -363,7 +363,7 @@ SUBROUTINE RFLU_ComputePatchNormalsGlobal(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_ComputePatchNormalsGlobal',&
-  __FILE__)
+  'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -662,7 +662,7 @@ SUBROUTINE RFLU_ComputePatchNormalsLocal(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputePatchNormalsLocal',&
-  __FILE__)
+  'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN 
@@ -821,7 +821,7 @@ SUBROUTINE RFLU_CreatePatchNeighborMaps(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CreatePatchNeighborMaps',&
-  __FILE__)
+  'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN   
@@ -914,7 +914,7 @@ SUBROUTINE RFLU_DestroyPatchNeighborMaps(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_DestroyPatchNeighborMaps',&
-  __FILE__)
+  'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN   
@@ -1008,7 +1008,7 @@ SUBROUTINE RFLU_SetPatchFlatFlags(global,nxMin,nxMax,nyMin,nyMax,nzMin,nzMax, &
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_SetPatchFlatFlags',&
-  __FILE__)
+  'RFLU_ModPatchUtils.F90')
 
 ! ******************************************************************************
 ! Determine flatness flags
@@ -1123,7 +1123,7 @@ SUBROUTINE RFLU_GetPatchNormalDirection(global,pPatch,pnDir,pnDirFlag)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLU_GetPatchNormalDirection',&
-  __FILE__)
+  'RFLU_ModPatchUtils.F90')
 
 ! ******************************************************************************
 ! 
@@ -1179,6 +1179,14 @@ END MODULE RFLU_ModPatchUtils
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
 
 
 

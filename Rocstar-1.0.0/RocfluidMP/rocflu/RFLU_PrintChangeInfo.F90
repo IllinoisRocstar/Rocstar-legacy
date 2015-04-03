@@ -89,7 +89,7 @@ SUBROUTINE RFLU_PrintChangeInfo(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_PrintChangeInfo',&
-  __FILE__)
+  'RFLU_PrintChangeInfo.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing relative change '// & 
@@ -256,6 +256,7 @@ END SUBROUTINE RFLU_PrintChangeInfo
 !   Initial revision
 !
 ! ******************************************************************************
+
 
 
 

@@ -150,7 +150,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 
   global%nFunTree = 0
   CALL RegisterFunction( global,'RFLO_InitFlowSolver',&
-  __FILE__ )
+  'RFLO_InitFlowSolver.F90' )
 
   global%nProcAlloc = 1
   global%myProcid   = MASTERPROC    ! default process number (if not MPI)
@@ -847,6 +847,7 @@ END SUBROUTINE RFLO_InitFlowSolver
 ! Simplified solver initialization routine.
 !
 !******************************************************************************
+
 
 
 

@@ -110,7 +110,7 @@ SUBROUTINE WriteTecplotBinary( iReg,region )
   global => region%global
 
   CALL RegisterFunction( global,'WriteTecplotBinary',&
-  __FILE__ )
+  'POST_WriteTecplotBinary.F90' )
 
 #ifdef NO_TECPLOT
   CALL ErrorStop( global,ERR_FILE_WRITE,__LINE__ )
@@ -704,7 +704,7 @@ END SUBROUTINE WriteTecplotBinary
 ! Corrected mistake in phased check-in
 !
 ! Revision 1.4  2003/03/20 19:34:37  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'POST_WriteTecplotBinary.F90' names
 !
 ! Revision 1.3  2002/10/12 03:20:51  jblazek
 ! Replaced [io]stat=global%error with local errorFlag for Rocflo.
@@ -731,6 +731,8 @@ END SUBROUTINE WriteTecplotBinary
 ! Added postprocessor.
 !
 !******************************************************************************
+
+
 
 
 

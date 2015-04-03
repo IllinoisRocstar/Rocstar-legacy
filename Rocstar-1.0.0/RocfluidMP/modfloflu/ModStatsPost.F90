@@ -115,7 +115,7 @@ SUBROUTINE STAT_RFLU_AllocMemPost(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'STAT_RFLU_AllocMemPost',&
-  __FILE__)
+  'ModStatsPost.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -209,7 +209,7 @@ SUBROUTINE STAT_RFLU_DeallocMemPost(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'STAT_RFLU_DeallocMemPost',&
-  __FILE__)
+  'ModStatsPost.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -302,7 +302,7 @@ SUBROUTINE STAT_RFLU_AllocMemPostVert(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'STAT_RFLU_AllocMemPostVert',&
-  __FILE__)
+  'ModStatsPost.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -396,7 +396,7 @@ SUBROUTINE STAT_RFLU_DeallocMemPostVert(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'STAT_RFLU_DeallocMemPostVert',&
-  __FILE__)
+  'ModStatsPost.F90')
 
 ! ******************************************************************************
 ! Set pointers and variables
@@ -467,6 +467,10 @@ END MODULE ModStatsPost
 !
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

@@ -134,7 +134,7 @@ SUBROUTINE PLAG_DSTR_BuildCell2PclList(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_DSTR_BuildCell2PclList',&
-  __FILE__)
+  'PLAG_ModDataStruct.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building cell-to-particle list...'
@@ -315,7 +315,7 @@ SUBROUTINE PLAG_DSTR_CopyParticle(global,pPlag,pPlag2,iPcl)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'PLAG_DSTR_CopyParticle',&
-  __FILE__)
+  'PLAG_ModDataStruct.F90')
 
 ! ******************************************************************************
 ! Start, increment counter, and check dimensions
@@ -416,7 +416,7 @@ SUBROUTINE PLAG_DSTR_CopyParticleWrapper(global,pPlag,pPlag2)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'PLAG_DSTR_CopyParticleWrapper',&
-  __FILE__)
+  'PLAG_ModDataStruct.F90')
 
 ! ******************************************************************************
 ! Start
@@ -484,7 +484,7 @@ SUBROUTINE PLAG_DSTR_CreateCell2PclList(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_DSTR_CreateCell2PclList',&
-  __FILE__)
+  'PLAG_ModDataStruct.F90')
 
 ! ******************************************************************************
 ! Allocate memory
@@ -566,7 +566,7 @@ SUBROUTINE PLAG_DSTR_CreatePclListCSR(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_DSTR_CreatePclListCSR',&
-  __FILE__)
+  'PLAG_ModDataStruct.F90')
 
 ! ******************************************************************************
 ! Allocate memory
@@ -639,7 +639,7 @@ SUBROUTINE PLAG_DSTR_DestroyCell2PclList(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_DSTR_DestroyCell2PclList',&
-  __FILE__)
+  'PLAG_ModDataStruct.F90')
 
 ! ******************************************************************************
 ! Deallocate memory
@@ -716,7 +716,7 @@ SUBROUTINE PLAG_DSTR_DestroyPclListCSR(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_DSTR_DestroyPclListCSR',&
-  __FILE__)
+  'PLAG_ModDataStruct.F90')
 
 ! ******************************************************************************
 ! Allocate memory
@@ -793,7 +793,7 @@ SUBROUTINE PLAG_DSTR_MergeParticleWrapper(pRegion,pPlag,pPlag2)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_DSTR_MergeParticleWrapper',&
-  __FILE__)
+  'PLAG_ModDataStruct.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -879,7 +879,7 @@ SUBROUTINE PLAG_DSTR_RecreateCell2PclList(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_DSTR_RecreateCell2PclList',&
-  __FILE__)
+  'PLAG_ModDataStruct.F90')
 
 ! ******************************************************************************
 ! Allocate temporary array and copy into it
@@ -976,6 +976,15 @@ END MODULE PLAG_ModDataStruct
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
 
 
 

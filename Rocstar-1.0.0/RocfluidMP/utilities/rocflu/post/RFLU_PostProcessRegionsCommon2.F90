@@ -102,7 +102,7 @@ SUBROUTINE RFLU_PostProcessRegionsCommon2(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_PostProcessRegionsCommon2',&
-  __FILE__)
+  'RFLU_PostProcessRegionsCommon2.F90')
 
 ! ******************************************************************************
 ! Deallocate memory
@@ -180,6 +180,7 @@ END SUBROUTINE RFLU_PostProcessRegionsCommon2
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

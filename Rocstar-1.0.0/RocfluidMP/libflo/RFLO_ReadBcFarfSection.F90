@@ -78,7 +78,7 @@ SUBROUTINE RFLO_ReadBcFarfSection( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadBcFarfSection',&
-  __FILE__ )
+  'RFLO_ReadBcFarfSection.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -249,6 +249,7 @@ END SUBROUTINE RFLO_ReadBcFarfSection
 ! Added routines to read BC input file.
 !
 !******************************************************************************
+
 
 
 

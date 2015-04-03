@@ -78,7 +78,7 @@ SUBROUTINE PLAG_zeroRhs( region )
   global => region%global
 
   CALL RegisterFunction( global, 'PLAG_ZeroRhs',&
-  __FILE__ )
+  'PLAG_ZeroRhs.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -141,6 +141,7 @@ END SUBROUTINE PLAG_ZeroRhs
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

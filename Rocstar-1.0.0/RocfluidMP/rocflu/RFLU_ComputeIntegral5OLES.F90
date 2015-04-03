@@ -76,7 +76,7 @@ SUBROUTINE RFLU_ComputeIntegral5OLES(pRegion)
 ! ==============================================================================
 
   CALL RegisterFunction(global,'RFLU_ComputeIntegral5OLES',&
-  __FILE__)
+  'RFLU_ComputeIntegral5OLES.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN 
@@ -343,6 +343,7 @@ SUBROUTINE RFLU_ComputeIntegral5OLES(pRegion)
   CALL DeregisterFunction(global)     
 
 END SUBROUTINE RFLU_ComputeIntegral5OLES
+
 
 
 

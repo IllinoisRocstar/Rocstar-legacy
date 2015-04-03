@@ -82,7 +82,7 @@ SUBROUTINE SPEC_UpdateDependentVars(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'SPEC_UpdateDependentVars',&
-  __FILE__)
+  'SPEC_UpdateDependentVars.F90')
 
 ! ******************************************************************************
 ! Update transport variables
@@ -133,6 +133,7 @@ END SUBROUTINE SPEC_UpdateDependentVars
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

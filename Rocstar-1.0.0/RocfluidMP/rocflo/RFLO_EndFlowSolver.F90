@@ -66,7 +66,7 @@ SUBROUTINE RFLO_EndFlowSolver( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_EndFlowSolver',&
-  __FILE__ )
+  'RFLO_EndFlowSolver.F90' )
 
 ! close convergence, probe & thrust file --------------------------------------
 
@@ -151,6 +151,7 @@ END SUBROUTINE RFLO_EndFlowSolver
 ! Simplified solver initialization routine.
 !
 !******************************************************************************
+
 
 
 

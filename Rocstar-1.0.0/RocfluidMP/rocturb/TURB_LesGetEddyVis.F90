@@ -105,7 +105,7 @@ SUBROUTINE TURB_LesGetEddyVis( region,ibc,iec,ibn,ien )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_LesGetEddyVis',&
-  __FILE__ )
+  'TURB_LesGetEddyVis.F90' )
 
 ! get pointers and parameters ------------------------------------------------
   nGrad =  region%turbInput%nGrad
@@ -293,6 +293,7 @@ END SUBROUTINE TURB_LesGetEddyVis
 !
 !
 !******************************************************************************
+
 
 
 

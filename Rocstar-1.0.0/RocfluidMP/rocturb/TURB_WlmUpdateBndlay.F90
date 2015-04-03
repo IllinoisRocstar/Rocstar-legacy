@@ -93,7 +93,7 @@ SUBROUTINE TURB_WlmUpdateBndlay( region,patch )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_WlmUpdateBndlay',&
-  __FILE__ )
+  'TURB_WlmUpdateBndlay.F90' )
 
 ! get pointers ----------------------------------------------------------------
 
@@ -179,6 +179,7 @@ END SUBROUTINE TURB_WlmUpdateBndlay
 !
 !
 !******************************************************************************
+
 
 
 

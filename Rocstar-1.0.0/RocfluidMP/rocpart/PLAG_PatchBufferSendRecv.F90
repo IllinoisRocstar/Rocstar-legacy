@@ -79,7 +79,7 @@ SUBROUTINE PLAG_PatchBufferSendRecv( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_PatchBufferSendRecv',&
-  __FILE__ )
+  'PLAG_PatchBufferSendRecv.F90' )
 
 ! communicate buffer size -----------------------------------------------------
                            
@@ -197,6 +197,7 @@ END SUBROUTINE PLAG_PatchBufferSendRecv
 ! Initial Import for MPI
 !
 !******************************************************************************
+
 
 
 

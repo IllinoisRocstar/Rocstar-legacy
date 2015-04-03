@@ -70,7 +70,7 @@ SUBROUTINE ReadTimestepSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadTimestepSection',&
-  __FILE__ )
+  'ReadTimestepSection.F90' )
 
 ! specify keywords and search for them
 
@@ -252,6 +252,7 @@ END SUBROUTINE ReadTimestepSection
 ! Added files to read user input.
 !
 !******************************************************************************
+
 
 
 

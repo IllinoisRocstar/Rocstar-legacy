@@ -66,7 +66,7 @@ SUBROUTINE WriteConvergence( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'WriteConvergence',&
-  __FILE__ )
+  'WriteConvergence.F90' )
 
 ! sum up data from other processors -------------------------------------------
 
@@ -207,6 +207,7 @@ END SUBROUTINE WriteConvergence
 ! Convergence output moved to common library.
 !
 !******************************************************************************
+
 
 
 

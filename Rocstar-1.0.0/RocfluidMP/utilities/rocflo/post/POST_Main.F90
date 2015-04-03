@@ -103,7 +103,7 @@ PROGRAM ROCFLO_Post
 
   global%nFunTree = 0
   CALL RegisterFunction( global,'ROCFLO_Post', &
-                        __FILE__ )
+                        'POST_Main.F90' )
 
 ! initialize global parameters ------------------------------------------------
 
@@ -550,7 +550,7 @@ END PROGRAM ROCFLO_Post
 ! Corrected mistake in phased check-in
 !
 ! Revision 1.23  2003/03/20 19:34:37  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'POST_Main.F90' names
 !
 ! Revision 1.22  2002/10/19 00:40:31  jblazek
 ! Added utility (rflosurf) to write out surface grids for GenX.
@@ -616,6 +616,8 @@ END PROGRAM ROCFLO_Post
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
+
 
 
 

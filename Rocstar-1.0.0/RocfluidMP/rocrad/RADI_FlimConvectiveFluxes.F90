@@ -74,7 +74,7 @@ SUBROUTINE RADI_FlimConvectiveFluxes( region ) ! PUBLIC
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_FlimConvectiveFluxes',&
-  __FILE__ )
+  'RADI_FlimConvectiveFluxes.F90' )
 
   IF (region%radiInput%radiModel /= RADI_MODEL_FLDTRAN) GOTO 999
 
@@ -151,6 +151,7 @@ END SUBROUTINE RADI_FlimConvectiveFluxes
 !
 !
 !******************************************************************************
+
 
 
 

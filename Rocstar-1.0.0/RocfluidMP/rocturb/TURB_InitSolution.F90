@@ -112,7 +112,7 @@ SUBROUTINE TURB_InitSolution( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'TURB_InitSolution',&
-  __FILE__ )
+  'TURB_InitSolution.F90' )
 
 ! pre procedures -----------------------------------------------------------
 
@@ -519,6 +519,7 @@ END SUBROUTINE TURB_InitSolution
 !
 !
 !******************************************************************************
+
 
 
 

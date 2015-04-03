@@ -113,7 +113,7 @@ SUBROUTINE RFLU_HLLC_ComputeFlux(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_HLLC_ComputeFlux',&
-  __FILE__)
+  'RFLU_ModHLLCFlux.F90')
 
 ! ******************************************************************************
 ! Call flux functions
@@ -249,7 +249,7 @@ SUBROUTINE RFLU_HLLC_ComputeFlux1_GL(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_HLLC_ComputeFlux1_GL',&
-  __FILE__)
+  'RFLU_ModHLLCFlux.F90')
 
 ! ******************************************************************************
 ! Set dimensions and pointers
@@ -613,7 +613,7 @@ SUBROUTINE RFLU_HLLC_ComputeFlux1_MTCP(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_HLLC_ComputeFlux1_MTCP',&
-  __FILE__)
+  'RFLU_ModHLLCFlux.F90')
 
 #ifdef ROCPROF 
   CALL FPROFILER_BEGINS("RFLU::HLLC_ComputeFlux1_MTCP")
@@ -942,7 +942,7 @@ SUBROUTINE RFLU_HLLC_ComputeFlux1_TCP(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_HLLC_ComputeFlux1_TCP',&
-  __FILE__)
+  'RFLU_ModHLLCFlux.F90')
 
 #ifdef ROCPROF 
   CALL FPROFILER_BEGINS("RFLU::HLLC_ComputeFlux1_TCP")
@@ -1232,7 +1232,7 @@ SUBROUTINE RFLU_HLLC_ComputeFlux2_GL(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_HLLC_ComputeFlux2_GL',&
-  __FILE__)
+  'RFLU_ModHLLCFlux.F90')
 
 ! ******************************************************************************
 ! Set dimensions and pointers
@@ -1747,7 +1747,7 @@ SUBROUTINE RFLU_HLLC_ComputeFlux2_MTCP(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_HLLC_ComputeFlux2_MTCP',&
-  __FILE__)
+  'RFLU_ModHLLCFlux.F90')
 
 #ifdef ROCPROF 
   CALL FPROFILER_BEGINS("RFLU::HLLC_ComputeFlux2_MTCP")
@@ -2166,7 +2166,7 @@ SUBROUTINE RFLU_HLLC_ComputeFlux2_TCP(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_HLLC_ComputeFlux2_TCP',&
-  __FILE__)
+  'RFLU_ModHLLCFlux.F90')
 
 #ifdef ROCPROF 
   CALL FPROFILER_BEGINS("RFLU::HLLC_ComputeFlux2_TCP")
@@ -2485,6 +2485,13 @@ END MODULE RFLU_ModHLLCFlux
 ! ******************************************************************************
   
   
+
+
+
+
+
+
+
 
 
 

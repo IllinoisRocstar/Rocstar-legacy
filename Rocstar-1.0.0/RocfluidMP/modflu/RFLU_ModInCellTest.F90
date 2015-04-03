@@ -120,7 +120,7 @@ SUBROUTINE RFLU_ICT_ComputeTolerance(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ICT_ComputeTolerance',&
-  __FILE__)
+  'RFLU_ModInCellTest.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -293,7 +293,7 @@ SUBROUTINE RFLU_ICT_TestFacePlanar(pRegion,xLoc,yLoc,zLoc,icg,iPatch,ifg,dotp)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ICT_TestFacePlanar',&
-  __FILE__)
+  'RFLU_ModInCellTest.F90')
 
 ! =============================================================================
 ! Set grid pointer
@@ -411,7 +411,7 @@ SUBROUTINE RFLU_ICT_TestFaceQuadBilinear(pRegion,xLoc,yLoc,zLoc,iPatch,ifg,dotp)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ICT_TestFaceQuadBilinear',&
-  __FILE__)
+  'RFLU_ModInCellTest.F90')
 
 ! ******************************************************************************
 ! Set pointer
@@ -574,7 +574,7 @@ LOGICAL FUNCTION RFLU_ICT_TestInCell(pRegion,xLoc,yLoc,zLoc,icg)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ICT_TestInCell',&
-  __FILE__)
+  'RFLU_ModInCellTest.F90')
 
 ! ==============================================================================
 ! Set grid pointer and initialize
@@ -812,7 +812,7 @@ SUBROUTINE RFLU_ICT_TestInCellFancy(pRegion,xLoc,yLoc,zLoc,icg,testInCell, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ICT_TestInCellFancy',&
-  __FILE__)
+  'RFLU_ModInCellTest.F90')
 
 ! =============================================================================
 ! Set grid pointer and initialize
@@ -1001,7 +1001,7 @@ SUBROUTINE RFLU_ICT_TestInCellLohner(pRegion,xLoc,yLoc,zLoc,icg,testInCell, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ICT_TestInCellLohner',&
-  __FILE__)
+  'RFLU_ModInCellTest.F90')
 
 ! ==============================================================================
 ! Set pointer and initialize 
@@ -1117,6 +1117,12 @@ END MODULE RFLU_ModInCellTest
 !
 ! ******************************************************************************
   
+
+
+
+
+
+
 
 
 

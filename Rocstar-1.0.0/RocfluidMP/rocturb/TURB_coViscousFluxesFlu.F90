@@ -92,7 +92,7 @@ SUBROUTINE TURB_coViscousFluxes( region ) ! PUBLIC
 
   global => region%global
   CALL RegisterFunction( global,'TURB_CoViscousFluxes',&
-  __FILE__ )
+  'TURB_coViscousFluxesFlu.F90' )
 
 ! Specific Rocflu ------------------------------------------------------------ 
 ! check the state of cv first and convert to conservative if not yet
@@ -297,6 +297,7 @@ END SUBROUTINE TURB_CoViscousFluxes
 !
 !
 !******************************************************************************
+
 
 
 

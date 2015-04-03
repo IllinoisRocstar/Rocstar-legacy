@@ -81,7 +81,7 @@ SUBROUTINE RFLU_WriteSpecialCells(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_WriteSpecialCells',&
-  __FILE__)
+  'RFLU_WriteSpecialCells.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -135,6 +135,7 @@ END SUBROUTINE RFLU_WriteSpecialCells
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

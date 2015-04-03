@@ -121,7 +121,7 @@ SUBROUTINE RFLO_OpenRestartInfo(global,filePosition,fileExists)
 ! *****************************************************************************
 
   CALL RegisterFunction(global,'RFLO_OpenRestartInfo',&
-       __FILE__)
+       'RFLO_ModRestartInfo.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -215,7 +215,7 @@ SUBROUTINE RFLO_CloseRestartInfo(global)
 ! *****************************************************************************
 
   CALL RegisterFunction(global,'RFLO_CloseRestartInfo',&
-       __FILE__)
+       'RFLO_ModRestartInfo.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_LOW ) THEN
@@ -289,7 +289,7 @@ SUBROUTINE RFLO_ReadRestartInfo(global)
 ! ******************************************************************************
 
   CALL RegisterFunction(global,'RFLO_ReadRestartInfo',&
-       __FILE__)
+       'RFLO_ModRestartInfo.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -415,7 +415,7 @@ SUBROUTINE RFLO_WriteRestartInfo(global)
 ! *****************************************************************************
 
   CALL RegisterFunction(global,'RFLO_WriteRestartInfo',&
-       __FILE__)
+       'RFLO_ModRestartInfo.F90')
 
 ! =============================================================================
 ! Write restart info to file
@@ -471,6 +471,10 @@ END MODULE RFLO_ModRestartInfo
 !
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

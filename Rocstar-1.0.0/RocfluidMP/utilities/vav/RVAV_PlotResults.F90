@@ -65,7 +65,7 @@ SUBROUTINE RVAV_PlotResults( global,iCompare,iNodes,jNodes,kNodes )
 !******************************************************************************
 
   CALL RegisterFunction( global, 'RVAV_PlotResults',&
-  __FILE__ )
+  'RVAV_PlotResults.F90' )
 
 ! initialize variables
 
@@ -111,6 +111,7 @@ END SUBROUTINE RVAV_PlotResults
 ! Initial Import of RocVaV
 !
 !******************************************************************************
+
 
 
 

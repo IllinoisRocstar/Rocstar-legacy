@@ -168,7 +168,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
     
     CALL RegisterFunction(global,'RFLU_GENX_BuildGridSurf',&
-  __FILE__)
+  'RFLU_ModRocstarAdmin.F90')
     
 ! ******************************************************************************
 !   Create locally-numbered boundary face lists
@@ -254,7 +254,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     CALL RegisterFunction(global,'RFLU_GENX_BuildPConn',&
-  __FILE__)
+  'RFLU_ModRocstarAdmin.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -508,7 +508,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_GENX_CloseRocinCtrlFiles', & 
-                          __FILE__)
+                          'RFLU_ModRocstarAdmin.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1156,7 +1156,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid 
 
     CALL RegisterFunction(global,'RFLU_GENX_CreateDataInterf',&
-  __FILE__)
+  'RFLU_ModRocstarAdmin.F90')
 
 ! ******************************************************************************
 !   Allocate memory 
@@ -1436,7 +1436,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     CALL RegisterFunction(global,'RFLU_GENX_CreateGridSurf',&
-  __FILE__)
+  'RFLU_ModRocstarAdmin.F90')
     
 ! ******************************************************************************
 !   Create locally-numbered boundary face lists
@@ -1543,7 +1543,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     CALL RegisterFunction(global,'RFLU_GENX_CreatePConn',&
-  __FILE__)
+  'RFLU_ModRocstarAdmin.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -1854,7 +1854,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid 
 
     CALL RegisterFunction(global,'RFLU_GENX_DestroyDataInterf',&
-  __FILE__)
+  'RFLU_ModRocstarAdmin.F90')
 
 ! ******************************************************************************
 !   Allocate memory 
@@ -2054,7 +2054,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     CALL RegisterFunction(global,'RFLU_GENX_DestroyGridSurf',&
-  __FILE__)
+  'RFLU_ModRocstarAdmin.F90')
     
 ! ******************************************************************************
 !   Create locally-numbered boundary face lists
@@ -2157,7 +2157,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     CALL RegisterFunction(global,'RFLU_GENX_DestroyPConn',&
-  __FILE__)     
+  'RFLU_ModRocstarAdmin.F90')     
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_NONE ) THEN 
@@ -2371,7 +2371,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_GENX_ReadCtrlFile',&
-  __FILE__)
+  'RFLU_ModRocstarAdmin.F90')
 
 ! ==============================================================================
 !   Open file
@@ -3936,6 +3936,16 @@ END MODULE RFLU_ModRocstarAdmin
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
 
 
 

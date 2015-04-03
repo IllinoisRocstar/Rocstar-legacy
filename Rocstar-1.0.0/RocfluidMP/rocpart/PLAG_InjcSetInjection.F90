@@ -81,7 +81,7 @@ SUBROUTINE PLAG_InjcSetInjection( region, pTilePlag, iTile, tCoeff,  tSum, &
   global => region%global
 
   CALL RegisterFunction( global, 'PLAG_InjcSetInjection',&
-  __FILE__ )
+  'PLAG_InjcSetInjection.F90' )
 
 ! Set pointer -----------------------------------------------------------------
 
@@ -153,6 +153,7 @@ END SUBROUTINE PLAG_InjcSetInjection
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

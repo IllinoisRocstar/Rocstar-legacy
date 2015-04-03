@@ -89,7 +89,7 @@ SUBROUTINE PLAG_injcTileRKUpdate( region, iStage )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_InjcTileRKUpdate',&
-  __FILE__ )
+  'PLAG_InjcTileRKUpdate.F90' )
  
 ! Get dimensions --------------------------------------------------------------
 
@@ -198,6 +198,7 @@ END SUBROUTINE PLAG_InjcTileRKUpdate
 !
 !
 !******************************************************************************
+
 
 
 

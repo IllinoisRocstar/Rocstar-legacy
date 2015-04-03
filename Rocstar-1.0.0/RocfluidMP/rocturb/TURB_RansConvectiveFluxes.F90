@@ -77,7 +77,7 @@ SUBROUTINE TURB_RansConvectiveFluxes( region ) ! PUBLIC
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_RansConvectiveFluxes',&
-  __FILE__ )
+  'TURB_RansConvectiveFluxes.F90' )
 
   IF (region%turbInput%modelClass /= MODEL_RANS) GOTO 999
 
@@ -197,6 +197,7 @@ END SUBROUTINE TURB_RansConvectiveFluxes
 !
 !
 !******************************************************************************
+
 
 
 

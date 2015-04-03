@@ -88,7 +88,7 @@ SUBROUTINE PEUL_CorrectCornerEdgeCells( region,patch,bcType )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_CorrectCornerEdgeCells',&
-  __FILE__ )
+  'PEUL_CorrectCornerEdgeCells.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -323,6 +323,7 @@ END SUBROUTINE PEUL_CorrectCornerEdgeCells
 ! Added corner and edge cell data structures and routines
 !
 !******************************************************************************
+
 
 
 

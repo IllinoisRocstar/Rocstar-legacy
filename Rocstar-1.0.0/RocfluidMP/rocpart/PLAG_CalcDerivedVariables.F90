@@ -82,7 +82,7 @@ SUBROUTINE PLAG_CalcDerivedVariables( region )
   global => region%global
   
   CALL RegisterFunction( global, 'PLAG_CalcDerivedVariables',&
-  __FILE__ )
+  'PLAG_CalcDerivedVariables.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -204,6 +204,7 @@ END SUBROUTINE PLAG_CalcDerivedVariables
 !
 !
 !******************************************************************************
+
 
 
 

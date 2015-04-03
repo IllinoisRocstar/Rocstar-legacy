@@ -86,7 +86,7 @@ SUBROUTINE RFLO_GetUserInput( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_GetUserInput',&
-  __FILE__ )
+  'RFLO_GetUserInput.F90' )
 
 ! input for mixture & base solver
 
@@ -217,6 +217,7 @@ END SUBROUTINE RFLO_GetUserInput
 ! Simplified solver initialization routine.
 !
 !******************************************************************************
+
 
 
 

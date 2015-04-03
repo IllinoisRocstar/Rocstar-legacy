@@ -97,7 +97,7 @@ SUBROUTINE RVAV_ReadFileStream2Comput ( regionsS1, regionsS2 )
   global => regionsS1(1)%global
 
   CALL RegisterFunction( global, 'RVAV_ReadFileStream2Comput',&
-  __FILE__ )
+  'RVAV_ReadFileStream2Comput.F90' )
 
 ! read region topology --------------------------------------------------------
 
@@ -352,6 +352,7 @@ END SUBROUTINE RVAV_readFileStream2Comput
 ! Initial Import
 !
 !******************************************************************************
+
 
 
 

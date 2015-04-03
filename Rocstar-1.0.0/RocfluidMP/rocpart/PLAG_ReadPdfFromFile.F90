@@ -67,7 +67,7 @@ SUBROUTINE PLAG_ReadPdfFromFile(regions, brbeg, brend )
   global => regions(1)%global
 
   CALL RegisterFunction( global, 'PLAG_ReadPdfFromFile',&
-  __FILE__ )
+  'PLAG_ReadPdfFromFile.F90' )
 
 !OPEN PDF file
   WRITE(fname,'(A,A,A)') TRIM(global%inDir),TRIM(global%casename),'.plag_injcpdf'
@@ -142,6 +142,7 @@ GOTO 999
 END SUBROUTINE PLAG_ReadPdfFromFile
 
 !******************************************************************************
+
 
 
 

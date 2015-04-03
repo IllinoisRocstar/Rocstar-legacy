@@ -97,7 +97,7 @@ SUBROUTINE TURB_LesFluxScalSim( region,ibn,ien )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_LesFluxScalSim',&
-  __FILE__ )
+  'TURB_LesFluxScalSim.F90' )
 
 ! get pointers and parameters ------------------------------------------------
 #ifdef RFLO
@@ -241,6 +241,7 @@ END SUBROUTINE TURB_LesFluxScalSim
 !
 !
 !******************************************************************************
+
 
 
 

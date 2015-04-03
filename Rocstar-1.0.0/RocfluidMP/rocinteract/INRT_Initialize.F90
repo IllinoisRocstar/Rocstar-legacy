@@ -78,7 +78,7 @@ SUBROUTINE INRT_Initialize( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_Initialize',&
-  __FILE__ )
+  'INRT_Initialize.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -276,6 +276,7 @@ END SUBROUTINE INRT_Initialize
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

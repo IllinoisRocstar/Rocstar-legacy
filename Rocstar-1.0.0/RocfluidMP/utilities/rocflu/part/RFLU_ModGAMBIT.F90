@@ -185,7 +185,7 @@ MODULE RFLU_ModGAMBIT
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CheckGridGAMBIT', &
-                          __FILE__)
+                          'RFLU_ModGAMBIT.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME, &
@@ -301,7 +301,7 @@ MODULE RFLU_ModGAMBIT
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ConvGAMBIT2ROCFLU', &
-                          __FILE__)
+                          'RFLU_ModGAMBIT.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
@@ -1049,7 +1049,7 @@ MODULE RFLU_ModGAMBIT
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadGridGAMBITNeutral', &
-                          __FILE__)
+                          'RFLU_ModGAMBIT.F90')
 
     IF ( global%verbLevel > VERBOSE_NONE ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading GAMBIT neutral grid file...'
@@ -1494,6 +1494,9 @@ END MODULE RFLU_ModGAMBIT
 ! Initial revision
 !
 ! ******************************************************************************
+
+
+
 
 
 

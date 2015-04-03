@@ -97,7 +97,7 @@ SUBROUTINE RFLU_InitBcDataHardCode(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_InitBcDataHardCode', &
-                        __FILE__)
+                        'RFLU_InitBcDataHardCode.F90')
  
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
@@ -341,6 +341,7 @@ END SUBROUTINE RFLU_InitBcDataHardCode
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

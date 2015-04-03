@@ -68,7 +68,7 @@ SUBROUTINE PERI_InitInputValues( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'PERI_InitInputValues',&
-  __FILE__ )
+  'PERI_InitInputValues.F90' )
 
 ! region related values -------------------------------------------------------
 
@@ -129,6 +129,7 @@ END SUBROUTINE PERI_InitInputValues
 !
 !
 !******************************************************************************
+
 
 
 

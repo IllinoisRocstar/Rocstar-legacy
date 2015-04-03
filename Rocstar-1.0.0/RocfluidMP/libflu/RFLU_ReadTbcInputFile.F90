@@ -84,7 +84,7 @@ SUBROUTINE RFLU_ReadTbcInputFile(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction( global,'RFLU_ReadTbcInputFile',&
-  __FILE__ )
+  'RFLU_ReadTbcInputFile.F90' )
 
 ! ******************************************************************************
 ! Open file
@@ -181,6 +181,7 @@ END SUBROUTINE RFLU_ReadTbcInputFile
 ! re-worked implementation of TBCs in unstructured code
 !
 ! ******************************************************************************
+
 
 
 

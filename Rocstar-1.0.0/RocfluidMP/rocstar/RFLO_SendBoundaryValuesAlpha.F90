@@ -77,7 +77,7 @@ SUBROUTINE RFLO_SendBoundaryValuesAlpha( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_SendBoundaryValuesAlpha',&
-  __FILE__ )
+  'RFLO_SendBoundaryValuesAlpha.F90' )
 
 ! store pointers to variables -------------------------------------------------
 
@@ -219,6 +219,7 @@ END SUBROUTINE RFLO_SendBoundaryValuesAlpha
 ! Added routine to send newest fluids density to GenX.
 !
 !******************************************************************************
+
 
 
 

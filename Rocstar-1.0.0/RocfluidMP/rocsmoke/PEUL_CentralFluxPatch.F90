@@ -91,7 +91,7 @@ SUBROUTINE PEUL_CentralFluxPatch( region,patch )
   global => region%global
 
   CALL RegisterFunction( global,'PEUL_CentralFluxPatch',&
-  __FILE__ )
+  'PEUL_CentralFluxPatch.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -335,6 +335,7 @@ END SUBROUTINE PEUL_CentralFluxPatch
 ! Initial import of Rocsmoke
 !
 !******************************************************************************
+
 
 
 

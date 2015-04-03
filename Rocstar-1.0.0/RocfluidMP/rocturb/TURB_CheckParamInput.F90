@@ -84,7 +84,7 @@ SUBROUTINE TURB_CheckParamInput( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'TURB_CheckParamInput',&
-  __FILE__ )
+  'TURB_CheckParamInput.F90' )
 
   IF ( global%myProcid == MASTERPROC .AND. &
        global%verbLevel > VERBOSE_NONE ) THEN
@@ -637,6 +637,7 @@ END SUBROUTINE TURB_CheckParamInput
 !
 !
 !******************************************************************************
+
 
 
 

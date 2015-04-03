@@ -72,7 +72,7 @@ SUBROUTINE RFLO_Multigrid( dIterSystem,regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_Multigrid',&
-  __FILE__ )
+  'RFLO_Multigrid.F90' )
 
   iter = 0
 
@@ -144,6 +144,7 @@ END SUBROUTINE RFLO_Multigrid
 ! Added time-stepping routines.
 !
 !******************************************************************************
+
 
 
 

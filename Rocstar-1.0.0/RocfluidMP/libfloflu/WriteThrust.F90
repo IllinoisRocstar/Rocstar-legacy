@@ -62,7 +62,7 @@ SUBROUTINE WriteThrust( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'WriteThrust',&
-  __FILE__ )
+  'WriteThrust.F90' )
 
 ! sum up data from other processors
 
@@ -133,6 +133,7 @@ END SUBROUTINE WriteThrust
 ! Added computation of thrust.
 !
 !******************************************************************************
+
 
 
 

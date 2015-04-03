@@ -91,7 +91,7 @@ SUBROUTINE PLAG_InitGenxInterface( regions, wins, inPlag, obtain_attribute )
   pGlobal => regions(1)%global
 
   CALL RegisterFunction( pGlobal,'PLAG_InitGenxInterface',&
-  __FILE__ )
+  'PLAG_InitRocstarInterface.F90' )
 
 ! set PLAG window -------------------------------------------------------------
 
@@ -400,6 +400,7 @@ END SUBROUTINE PLAG_InitGenxInterface
 ! Initial import of Rocpart GenX interfaces
 !
 !******************************************************************************
+
 
 
 

@@ -74,7 +74,7 @@ SUBROUTINE RFLO_FindSourceRegions( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_FindSourceRegions',&
-  __FILE__ )
+  'RFLO_FindSourceRegions.F90' )
 
 ! search for source regions ===================================================
 
@@ -418,6 +418,7 @@ END SUBROUTINE RFLO_FindSourceRegions
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
 
 
 

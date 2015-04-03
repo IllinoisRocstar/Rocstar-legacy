@@ -85,7 +85,7 @@ SUBROUTINE RFLU_PrintGridInfo(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_PrintGridInfo',&
-  __FILE__)
+  'RFLU_PrintGridInfo.F90')
 
   IF ( global%verbLevel > VERBOSE_NONE ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing grid information...'
@@ -271,6 +271,7 @@ END SUBROUTINE RFLU_PrintGridInfo
 ! Initial revision                                                    
 !
 ! ******************************************************************************
+
 
 
 

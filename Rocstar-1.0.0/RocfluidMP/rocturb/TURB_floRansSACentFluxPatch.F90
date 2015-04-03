@@ -78,7 +78,7 @@ SUBROUTINE TURB_FloRansSACentFluxPatch( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_FloRansSACentFluxPatch',&
-  __FILE__ )
+  'TURB_floRansSACentFluxPatch.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -291,6 +291,7 @@ END SUBROUTINE TURB_FloRansSACentFluxPatch
 !
 !
 !******************************************************************************
+
 
 
 

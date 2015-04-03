@@ -65,7 +65,7 @@ SUBROUTINE ReadReferenceSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadReferenceSection',&
-  __FILE__ )
+  'ReadReferenceSection.F90' )
 
 ! specify keywords and search for them
 
@@ -146,6 +146,7 @@ END SUBROUTINE ReadReferenceSection
 ! Added files to read user input.
 !
 !******************************************************************************
+
 
 
 

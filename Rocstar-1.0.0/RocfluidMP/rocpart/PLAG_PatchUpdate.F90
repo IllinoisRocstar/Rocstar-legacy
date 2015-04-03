@@ -74,7 +74,7 @@ SUBROUTINE PLAG_patchUpdate( regions, iReg )
   global => regions(iReg)%global
   
   CALL RegisterFunction( global, 'PLAG_patchUpdate',&
-  __FILE__ )
+  'PLAG_PatchUpdate.F90' )
 
 ! Obtain patch buffer size ----------------------------------------------------
 
@@ -134,6 +134,7 @@ END SUBROUTINE PLAG_patchUpdate
 !
 !
 !******************************************************************************
+
 
 
 

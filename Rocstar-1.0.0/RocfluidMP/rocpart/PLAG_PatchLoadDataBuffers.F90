@@ -100,7 +100,7 @@ SUBROUTINE PLAG_PatchLoadDataBuffers( region, iReg )
   global => region%global
     
   CALL RegisterFunction( global, 'PLAG_PatchLoadDataBuffers',&
-  __FILE__ )
+  'PLAG_PatchLoadDataBuffers.F90' )
 
 ! Get dimensions --------------------------------------------------------------
 
@@ -363,6 +363,7 @@ END SUBROUTINE PLAG_PatchLoadDataBuffers
 ! Initial Import of Rocpart
 !
 !******************************************************************************
+
 
 
 

@@ -83,7 +83,7 @@ SUBROUTINE RFLO_TimeStepInviscid( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_TimeStepInviscid',&
-  __FILE__ )
+  'RFLO_TimeStepInviscid.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -235,6 +235,7 @@ END SUBROUTINE RFLO_TimeStepInviscid
 ! Added multi-probe option, residual smoothing, physical time step.
 !
 !******************************************************************************
+
 
 
 

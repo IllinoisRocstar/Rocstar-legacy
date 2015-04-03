@@ -83,7 +83,7 @@ SUBROUTINE PERI_InitSolution( regions,iReg ) ! PUBLIC
 
   global => regions(iReg)%global
   CALL RegisterFunction( global,'PERI_InitSolution',&
-  __FILE__ )
+  'PERI_InitSolution.F90' )
 
 ! get initial solution depending on kind of periodic flow ---------------------
 
@@ -267,6 +267,7 @@ END SUBROUTINE PERI_InitSolution
 !
 !
 !******************************************************************************
+
 
 
 

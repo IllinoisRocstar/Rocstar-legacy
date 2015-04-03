@@ -80,7 +80,7 @@ SUBROUTINE RFLO_ExchangeDummyConf( region,regionSrc,patch,patchSrc )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ExchangeDummyConf',&
-  __FILE__ )
+  'RFLO_ExchangeDummyConf.F90' )
 
 ! check if the source region is active
 
@@ -202,6 +202,7 @@ END SUBROUTINE RFLO_ExchangeDummyConf
 ! Added flux computation (central scheme).
 !
 !******************************************************************************
+
 
 
 

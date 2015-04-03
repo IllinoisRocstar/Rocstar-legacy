@@ -116,7 +116,7 @@ SUBROUTINE RFLO_ArcLengthPatch( region,patch,xyzRef )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ArcLengthPatch',&
-       __FILE__ )
+       'RFLO_ModGridMetrics.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -264,7 +264,7 @@ SUBROUTINE RFLO_CalcGridMetrics( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'RFLO_CalcGridMetrics',&
-       __FILE__ )
+       'RFLO_ModGridMetrics.F90' )
 
 ! initialization some parameters ----------------------------------------------
 
@@ -341,7 +341,7 @@ SUBROUTINE RFLO_GridQualityGlobal( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'RFLO_GridQualityGlobal',&
-       __FILE__ )
+       'RFLO_ModGridMetrics.F90' )
 
 ! global skewness and minVol --------------------------------------------------
 
@@ -416,6 +416,9 @@ END MODULE RFLO_ModGridMetrics
 !
 !
 ! ******************************************************************************
+
+
+
 
 
 

@@ -75,7 +75,7 @@ SUBROUTINE RFLO_ReadBcSlipWallSection( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadBcSlipWallSection',&
-  __FILE__ )
+  'RFLO_ReadBcSlipWallSection.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -220,6 +220,7 @@ END SUBROUTINE RFLO_ReadBcSlipWallSection
 ! Changed extrapol. to dummy cells at injection boundaries and slip walls.
 !
 !******************************************************************************
+
 
 
 

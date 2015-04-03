@@ -80,7 +80,7 @@ SUBROUTINE GenxInitSolution( gridLevel,iReg,regions,wins,winv )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'GenxInitSolution',&
-  __FILE__ )
+  'PREP_RocstarInitSolution.F90' )
 
 ! read grid and initialize solution -------------------------------------------
 
@@ -222,6 +222,7 @@ END SUBROUTINE GenxInitSolution
 !
 !
 !******************************************************************************
+
 
 
 

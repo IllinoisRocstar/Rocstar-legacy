@@ -80,7 +80,7 @@ SUBROUTINE RFLO_ExchangeGeometryPrepare( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ExchangeGeometryPrepare',&
-  __FILE__ )
+  'RFLO_ExchangeGeometryPrepare.F90' )
 
 ! send direction vectors ------------------------------------------------------
 
@@ -225,6 +225,7 @@ END SUBROUTINE RFLO_ExchangeGeometryPrepare
 ! Corrected bug for geometry exchange between minimal patches.
 !
 !******************************************************************************
+
 
 
 

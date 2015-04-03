@@ -85,7 +85,7 @@ SUBROUTINE INRT_CalcDrag( region )
   global => region%global
 
   CALL RegisterFunction( global,'INRT_CalcDrag',&
-  __FILE__ )
+  'INRT_CalcDrag.F90' )
 
 #ifdef PLAG
 ! begin -----------------------------------------------------------------------
@@ -235,6 +235,7 @@ END SUBROUTINE INRT_CalcDrag
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

@@ -108,7 +108,7 @@ SUBROUTINE RFLO_InitNonCvSolution( region )
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_InitNonCvSolution',&
-       __FILE__ )
+       'RFLO_ModInitialization.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -157,6 +157,7 @@ END MODULE RFLO_ModInitialization
 !
 !
 ! ******************************************************************************
+
 
 
 

@@ -93,7 +93,7 @@ SUBROUTINE TURB_FloLesGenFiltFF( region,ijk,nDel,idBeg,idEnd,fVar,fbVar )
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloLesGenFiltFF',&
-  __FILE__ )
+  'TURB_floLesGenFiltFF.F90' )
 
 ! get indices, parameters and pointers ----------------------------------------
 
@@ -215,6 +215,7 @@ END SUBROUTINE TURB_FloLesGenFiltFF
 !
 !
 !******************************************************************************
+
 
 
 

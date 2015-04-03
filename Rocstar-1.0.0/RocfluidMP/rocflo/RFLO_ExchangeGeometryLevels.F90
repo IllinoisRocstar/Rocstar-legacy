@@ -76,7 +76,7 @@ SUBROUTINE RFLO_ExchangeGeometryLevels( region,iPatch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_ExchangeGeometryLevels',&
-  __FILE__ )
+  'RFLO_ExchangeGeometryLevels.F90' )
 
 ! loop over dummy nodes of current patch
 
@@ -154,6 +154,7 @@ END SUBROUTINE RFLO_ExchangeGeometryLevels
 ! Finished multiblock and MPI.
 !
 !******************************************************************************
+
 
 
 

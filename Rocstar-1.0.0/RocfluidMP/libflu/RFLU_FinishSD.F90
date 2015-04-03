@@ -90,7 +90,7 @@ SUBROUTINE RFLU_FinishSD(region)
   global => region%global
 
   CALL RegisterFunction(global,'RFLU_FinishSD',&
-  __FILE__)
+  'RFLU_FinishSD.F90')
 
 ! ******************************************************************************
 ! Checks: Defensive coding, should never occur
@@ -192,6 +192,7 @@ END SUBROUTINE RFLU_FinishSD
 ! Implemented Equilibrium Eulerian method for Rocflu
 !
 ! ******************************************************************************
+
 
 
 

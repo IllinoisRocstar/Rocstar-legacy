@@ -85,7 +85,7 @@ SUBROUTINE RFLU_CheckValidityWrapper(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_CheckValidityWrapper',&
-  __FILE__)
+  'RFLU_CheckValidityWrapper.F90')
 
 ! ******************************************************************************
 ! Mixture
@@ -161,6 +161,7 @@ END SUBROUTINE RFLU_CheckValidityWrapper
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

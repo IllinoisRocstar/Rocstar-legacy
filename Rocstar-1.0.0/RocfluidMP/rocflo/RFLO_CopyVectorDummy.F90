@@ -82,7 +82,7 @@ SUBROUTINE RFLO_copyVectorPatches( iLev,region,vec )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_copyVectorPatches',&
-  __FILE__ )
+  'RFLO_CopyVectorDummy.F90' )
 
 ! loop over patches (all but inter-region and periodic boundaries)
 
@@ -152,7 +152,7 @@ SUBROUTINE RFLO_copyVectorEdges( iLev,region,vec )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_copyVectorEdges',&
-  __FILE__ )
+  'RFLO_CopyVectorDummy.F90' )
 
 ! loop over edge cells without source region
 ! or with multiple source regions
@@ -227,7 +227,7 @@ SUBROUTINE RFLO_copyVectorCorners( iLev,region,vec )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_copyVectorCorners',&
-  __FILE__ )
+  'RFLO_CopyVectorDummy.F90' )
 
 ! loop over corner cells without source region
 ! or with multiple source regions
@@ -317,6 +317,9 @@ END SUBROUTINE RFLO_copyVectorCorners
 ! Added low-level time-stepping routines.
 !
 !******************************************************************************
+
+
+
 
 
 

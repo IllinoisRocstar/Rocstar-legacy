@@ -118,7 +118,7 @@ SUBROUTINE RFLO_FlowSolver( dTimeSystem,dIterSystem,regions )
   global%dTimeSystem = dTimeSystem
 
   CALL RegisterFunction( global,'RFLO_FlowSolver',&
-  __FILE__ )
+  'RFLO_FlowSolver.F90' )
 
 #ifdef GENX
 ! restore geometry if predictor-corrector iteration
@@ -381,6 +381,7 @@ END SUBROUTINE RFLO_FlowSolver
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
 
 
 

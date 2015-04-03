@@ -84,7 +84,7 @@ SUBROUTINE RFLO_ReadBcInflowVelSection( regions,bcTitle )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_ReadBcInflowVelSection',&
-  __FILE__ )
+  'RFLO_ReadBcInflowVelSection.F90' )
 
 ! specify keywords and search for them ----------------------------------------
 
@@ -366,6 +366,7 @@ END SUBROUTINE RFLO_ReadBcInflowVelSection
 !
 !
 !******************************************************************************
+
 
 
 

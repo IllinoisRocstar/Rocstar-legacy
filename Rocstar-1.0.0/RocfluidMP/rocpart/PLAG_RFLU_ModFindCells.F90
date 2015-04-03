@@ -150,7 +150,7 @@ SUBROUTINE PLAG_RFLU_ComputeDistTot(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_ComputeDistTot',&
-  __FILE__)
+  'PLAG_RFLU_ModFindCells.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -250,7 +250,7 @@ SUBROUTINE PLAG_RFLU_FindCellsBrute(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_FindCellsBrute',&
-  __FILE__)
+  'PLAG_RFLU_ModFindCells.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -363,7 +363,7 @@ SUBROUTINE PLAG_RFLU_FindCellsBruteKernel(pRegion,xLoc,yLoc,zLoc,icgOut)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_FindCellsBruteKernel',&
-  __FILE__)
+  'PLAG_RFLU_ModFindCells.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -451,7 +451,7 @@ SUBROUTINE PLAG_RFLU_FindCellsBruteMod(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_FindCellsBruteMod',&
-  __FILE__)
+  'PLAG_RFLU_ModFindCells.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -577,7 +577,7 @@ SUBROUTINE PLAG_RFLU_FindCellsLohner(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_FindCellsLohner',&
-  __FILE__)
+  'PLAG_RFLU_ModFindCells.F90')
 
 ! ******************************************************************************
 ! Set pointers
@@ -749,7 +749,7 @@ SUBROUTINE PLAG_RFLU_FindCellsOct(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_FindCellsOct',&
-  __FILE__)
+  'PLAG_RFLU_ModFindCells.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -948,7 +948,7 @@ SUBROUTINE PLAG_RFLU_FindCellsOctKernel(pRegion,xLoc,yLoc,zLoc,xMin,xMax,&
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_FindCellsOctKernel',&
-  __FILE__)
+  'PLAG_RFLU_ModFindCells.F90')
   
 ! ******************************************************************************
 ! Set variables and pointers
@@ -1099,7 +1099,7 @@ SUBROUTINE PLAG_RFLU_FindCellsOctMod(pRegion)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_FindCellsOctMod',&
-  __FILE__)
+  'PLAG_RFLU_ModFindCells.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -1322,7 +1322,7 @@ SUBROUTINE PLAG_RFLU_FindCellsTrajFast(pRegion,iPclBeg,iPclEnd)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_FindCellsTrajFast',&
-  __FILE__)
+  'PLAG_RFLU_ModFindCells.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -1695,7 +1695,7 @@ SUBROUTINE PLAG_RFLU_FindCellsTrajSafe(pRegion,iPclBeg,iPclEnd)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_FindCellsTrajSafe',&
-  __FILE__)
+  'PLAG_RFLU_ModFindCells.F90')
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -2066,6 +2066,16 @@ END MODULE PLAG_RFLU_ModFindCells
 ! Initial import
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
+
+
+
 
 
 

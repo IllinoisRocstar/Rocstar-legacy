@@ -110,7 +110,7 @@ SUBROUTINE RFLO_StatBcondCopy( region,patch,istbeg,istend,tav )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_StatBcondCopy',&
-  __FILE__ )
+  'RFLO_ModStatsBoundaryConditions.F90' )
 
 ! get dimensions and pointers
 
@@ -195,7 +195,7 @@ SUBROUTINE RFLO_StatBcondNegate( region,patch,istbeg,istend,tav )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_StatBcondNegate',&
-  __FILE__ )
+  'RFLO_ModStatsBoundaryConditions.F90' )
 
 ! get dimensions and pointers
 
@@ -280,7 +280,7 @@ SUBROUTINE RFLO_StatBcondExtrap( region,patch,istbeg,istend,tav )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_StatBcondExtrap',&
-  __FILE__ )
+  'RFLO_ModStatsBoundaryConditions.F90' )
 
 ! get dimensions and pointers
 
@@ -363,7 +363,7 @@ SUBROUTINE RFLO_StatBoundaryConditionsSet( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_StatBoundaryConditionsSet',&
-  __FILE__ )
+  'RFLO_ModStatsBoundaryConditions.F90' )
 
 ! start -----------------------------------------------------------------------
 
@@ -647,6 +647,10 @@ END MODULE RFLO_ModStatsBoundaryConditions
 !
 !
 ! ******************************************************************************
+
+
+
+
 
 
 

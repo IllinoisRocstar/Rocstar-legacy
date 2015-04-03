@@ -80,7 +80,7 @@ SUBROUTINE RFLO_FindThrustPatches( region,iReg )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_FindThrustPatches',&
-  __FILE__ )
+  'RFLO_FindThrustPatches.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -181,6 +181,7 @@ END SUBROUTINE RFLO_FindThrustPatches
 ! Added computation of thrust.
 !
 !******************************************************************************
+
 
 
 

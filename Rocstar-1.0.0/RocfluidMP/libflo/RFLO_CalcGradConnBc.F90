@@ -94,7 +94,7 @@ SUBROUTINE RFLO_CalcGradConnBc( region,patch,iConBc,iBegV,iEndV,iBegG,iEndG, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcGradConnBc',&
-       __FILE__ )
+       'RFLO_CalcGradConnBc.F90' )
  
 ! get cell indices and geometrical parameters --------------------------------
 
@@ -681,6 +681,7 @@ END SUBROUTINE RFLO_CalcGradConnBc
 ! made compliant with CODING RULE
 !
 !******************************************************************************
+
 
 
 

@@ -78,7 +78,7 @@ SUBROUTINE ReadRandomSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadRandomSection',&
-  __FILE__ )
+  'ReadRandomSection.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -135,6 +135,7 @@ END SUBROUTINE ReadRandomSection
 ! Updated Random Number Generator
 !
 !******************************************************************************
+
 
 
 

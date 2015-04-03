@@ -81,7 +81,7 @@ SUBROUTINE PEUL_ExchangeCornerEdgeCells( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PEUL_ExchangeCornerEdgeCells',&
-  __FILE__ )
+  'PEUL_ExchangeCornerEdgeCells.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -180,6 +180,7 @@ END SUBROUTINE PEUL_ExchangeCornerEdgeCells
 ! Added corner and edge cell data structures and routines
 !
 !******************************************************************************
+
 
 
 

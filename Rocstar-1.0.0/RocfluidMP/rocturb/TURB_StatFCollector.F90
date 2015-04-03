@@ -103,7 +103,7 @@ SUBROUTINE TURB_StatFCollector( region,ijk,iBegSt,iEndSt,colVar,colBVar )
 
   global => region%global
   CALL RegisterFunction( global,'Turb_StatFCollector',&
-  __FILE__ )
+  'TURB_StatFCollector.F90' )
 
 ! check some input arguments --------------------------------------------------
 
@@ -239,6 +239,7 @@ END SUBROUTINE TURB_StatFCollector
 !
 !
 !******************************************************************************
+
 
 
 

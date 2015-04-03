@@ -107,7 +107,7 @@ SUBROUTINE ViscousFluxes(region)
   global => region%global
 
   CALL RegisterFunction(global,'ViscousFluxes',&
-  __FILE__)
+  'ViscousFluxes.F90')
 
 ! ******************************************************************************
 ! Define input parameters and gridlevel
@@ -329,6 +329,7 @@ END SUBROUTINE ViscousFluxes
 ! Added low-level time-stepping routines.
 !
 ! ******************************************************************************
+
 
 
 

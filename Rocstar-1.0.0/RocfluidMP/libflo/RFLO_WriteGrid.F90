@@ -89,7 +89,7 @@ SUBROUTINE RFLO_WriteGrid( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_WriteGrid',&
-  __FILE__ )
+  'RFLO_WriteGrid.F90' )
 
 ! allocate fixed-size temporary data arrays -----------------------------------
 
@@ -293,6 +293,7 @@ END SUBROUTINE RFLO_WriteGrid
 ! Added routines to store grid and solution.
 !
 !******************************************************************************
+
 
 
 

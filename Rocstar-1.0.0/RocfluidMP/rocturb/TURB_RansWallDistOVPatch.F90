@@ -84,7 +84,7 @@ SUBROUTINE TURB_RansWallDistOVPatch( region,patch )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'TURB_RansWallDistOVPatch',&
-  __FILE__ )
+  'TURB_RansWallDistOVPatch.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -226,6 +226,7 @@ END SUBROUTINE TURB_RansWallDistOVPatch
 !
 !
 !******************************************************************************
+
 
 
 

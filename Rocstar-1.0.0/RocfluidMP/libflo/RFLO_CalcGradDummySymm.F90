@@ -94,7 +94,7 @@ SUBROUTINE RFLO_CalcGradDummySymm( region,lbound, &
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcGradDummySymm',&
-  __FILE__ )
+  'RFLO_CalcGradDummySymm.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -353,6 +353,7 @@ END SUBROUTINE RFLO_CalcGradDummySymm
 ! made compliant with CODING RULE
 !
 !******************************************************************************
+
 
 
 

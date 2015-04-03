@@ -98,7 +98,7 @@ SUBROUTINE INRT_ReadScouring( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'INRT_ReadScouring',&
-  __FILE__ )
+  'INRT_ReadScouring.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -299,6 +299,7 @@ END SUBROUTINE INRT_ReadScouring
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

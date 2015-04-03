@@ -66,7 +66,7 @@ SUBROUTINE InitInputValues( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'InitInputValues',&
-  __FILE__ )
+  'PREP_InitInputValues.F90' )
 
 ! global values ---------------------------------------------------------------
 ! level, formats and flow-type
@@ -168,7 +168,7 @@ END SUBROUTINE InitInputValues
 ! Inlined index function.
 !
 ! Revision 1.4  2003/03/20 19:35:43  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'PREP_InitInputValues.F90' names
 !
 ! Revision 1.3  2002/09/05 17:40:22  jblazek
 ! Variable global moved into regions().
@@ -180,6 +180,8 @@ END SUBROUTINE InitInputValues
 ! Added flow initialization.
 !
 !******************************************************************************
+
+
 
 
 

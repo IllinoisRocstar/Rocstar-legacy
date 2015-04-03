@@ -69,7 +69,7 @@ SUBROUTINE RFLO_CalcTotalMass( region,mass )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcTotalMass',&
-  __FILE__ )
+  'RFLO_CalcTotalMass.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -120,6 +120,7 @@ END SUBROUTINE RFLO_CalcTotalMass
 ! Corrected bug in moving noslip wall BC and grid speeds.
 !
 !******************************************************************************
+
 
 
 

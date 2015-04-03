@@ -83,7 +83,7 @@ SUBROUTINE RFLO_AllocateMemory( region )
   global => region%global
 
   CALL RegisterFunction( global,'RFLO_AllocateMemory',&
-  __FILE__ )
+  'RFLO_AllocateMemory.F90' )
 
 ! loop over all grid levels
 
@@ -569,6 +569,7 @@ END SUBROUTINE RFLO_AllocateMemory
 ! memory allocation added.
 !
 !******************************************************************************
+
 
 
 

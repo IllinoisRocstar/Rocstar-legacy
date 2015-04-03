@@ -100,7 +100,7 @@ SUBROUTINE PLAG_RFLU_Update(pRegion,iStage)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_Update',&
-  __FILE__)  
+  'PLAG_RFLU_Update.F90')  
 
 ! ******************************************************************************
 ! Set variables and pointers
@@ -297,6 +297,7 @@ END SUBROUTINE PLAG_RFLU_Update
 ! Initial import for RFLU-specific update routine
 !
 ! ******************************************************************************
+
 
 
 

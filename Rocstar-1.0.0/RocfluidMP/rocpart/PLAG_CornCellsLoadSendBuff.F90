@@ -110,7 +110,7 @@ SUBROUTINE PLAG_CornCellsLoadSendBuff( regions,iReg,ir,nBuffSizeEdge, &
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'PLAG_CornCellsLoadSendBuff',&
-  __FILE__ )
+  'PLAG_CornCellsLoadSendBuff.F90' )
 
 ! ******************************************************************************
 ! Get dimensions 
@@ -369,6 +369,7 @@ END SUBROUTINE PLAG_CornCellsLoadSendBuff
 ! Initial import for MPI-based data buffer communication
 !
 !******************************************************************************
+
 
 
 

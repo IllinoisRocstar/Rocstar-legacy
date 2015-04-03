@@ -84,7 +84,7 @@ SUBROUTINE RkInitPointScalar(region,iStage,ivBeg,ivEnd,var,varOld)
   global => region%global
 
   CALL RegisterFunction(global,'RkInitPointScalar',&
-  __FILE__)
+  'RkInitPointScalar.F90')
 
 ! *****************************************************************************
 ! Initialize Runge-Kutta scheme
@@ -128,6 +128,7 @@ END SUBROUTINE RkInitPointScalar
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

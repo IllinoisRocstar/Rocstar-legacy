@@ -86,7 +86,7 @@ SUBROUTINE TURB_FloFaceWidthDummyConn( region,lbound,idir,jdir,kdir, &
 
   global => region%global
   CALL RegisterFunction( global,'TURB_FloFaceWidthDummyConn',&
-  __FILE__ )
+  'TURB_floFaceWidthDummyConn.F90' )
 
 ! get dimensions -------------------------------------------------------------
 
@@ -190,6 +190,7 @@ END SUBROUTINE TURB_FloFaceWidthDummyConn
 !
 !
 !******************************************************************************
+
 
 
 

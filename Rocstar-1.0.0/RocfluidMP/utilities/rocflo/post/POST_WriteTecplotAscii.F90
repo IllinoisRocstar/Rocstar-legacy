@@ -98,7 +98,7 @@ SUBROUTINE WriteTecplotAscii( iReg,region )
   global => region%global
 
   CALL RegisterFunction( global,'WriteTecplotAscii',&
-  __FILE__ )
+  'POST_WriteTecplotAscii.F90' )
 
 ! set parameters --------------------------------------------------------------
 
@@ -573,7 +573,7 @@ END SUBROUTINE WriteTecplotAscii
 ! Corrected mistake in phased check-in
 !
 ! Revision 1.4  2003/03/20 19:34:37  haselbac
-! Modified RegFun call to avoid probs with long __FILE__ names
+! Modified RegFun call to avoid probs with long 'POST_WriteTecplotAscii.F90' names
 !
 ! Revision 1.3  2002/10/12 03:20:51  jblazek
 ! Replaced [io]stat=global%error with local errorFlag for Rocflo.
@@ -585,6 +585,8 @@ END SUBROUTINE WriteTecplotAscii
 ! Added ASCII Tecplot format.
 !
 !******************************************************************************
+
+
 
 
 

@@ -68,7 +68,7 @@ SUBROUTINE RADI_CalcEffTemp( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RADI_CalcEffTemp',&
-  __FILE__ )
+  'RADI_CalcEffTemp.F90' )
 
 ! get dimensions and pointers -------------------------------------------------
 
@@ -129,6 +129,7 @@ END SUBROUTINE RADI_CalcEffTemp
 !
 !
 !******************************************************************************
+
 
 
 

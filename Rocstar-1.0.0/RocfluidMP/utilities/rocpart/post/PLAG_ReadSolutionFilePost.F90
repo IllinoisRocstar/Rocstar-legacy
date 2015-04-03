@@ -93,7 +93,7 @@ SUBROUTINE PLAG_ReadSolutionFilePost( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'PLAG_ReadSolutionFilePost',&
-  __FILE__ )
+  'PLAG_ReadSolutionFilePost.F90' )
 
   IF (.NOT. global%plagUsed) GOTO 999
 
@@ -494,6 +494,7 @@ END SUBROUTINE PLAG_ReadSolutionFilePost
 ! Import of postprocessing tool for Rocpart
 !
 !******************************************************************************
+
 
 
 

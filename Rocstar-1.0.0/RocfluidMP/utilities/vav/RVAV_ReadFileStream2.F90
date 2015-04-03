@@ -76,7 +76,7 @@ SUBROUTINE RVAV_ReadFileStream2 ( regionsS1, regionsS2 )
   global => regionsS1(1)%global
   
   CALL RegisterFunction( global, 'RVAV_ReadFileStream2',&
-  __FILE__ )
+  'RVAV_ReadFileStream2.F90' )
 
 ! modify all global data pertinent to Rocflo for code reuse 
   
@@ -157,6 +157,7 @@ END SUBROUTINE RVAV_readFileStream2
 ! Initial Import of RocVaV
 !
 !******************************************************************************
+
 
 
 

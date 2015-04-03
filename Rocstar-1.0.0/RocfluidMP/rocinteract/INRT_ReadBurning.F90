@@ -109,7 +109,7 @@ SUBROUTINE INRT_ReadBurning( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'INRT_ReadBurning',&
-  __FILE__ )
+  'INRT_ReadBurning.F90' )
 
 ! begin -----------------------------------------------------------------------
 
@@ -514,6 +514,7 @@ END SUBROUTINE INRT_ReadBurning
 ! Initial import of Rocinteract
 !
 !******************************************************************************
+
 
 
 

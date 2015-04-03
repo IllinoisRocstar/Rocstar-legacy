@@ -83,7 +83,7 @@ SUBROUTINE PERI_CoCprInitSolution( region )
 
   global => region%global
   CALL RegisterFunction( global,'PERI_CoCprInitSolution',&
-  __FILE__ )
+  'PERI_coCprInitSolutionFlo.F90' )
 
 ! get parameters and pointers ----------------------------------------------
 
@@ -258,6 +258,7 @@ END SUBROUTINE PERI_CoCprInitSolution
 !
 !
 !******************************************************************************
+
 
 
 

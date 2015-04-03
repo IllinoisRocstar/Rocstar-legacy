@@ -90,7 +90,7 @@ SUBROUTINE ReadInitFlowSection(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'ReadInitFlowSection',&
-  __FILE__)
+  'ReadInitFlowSection.F90')
 
 ! specify keywords and search for them
 
@@ -450,6 +450,7 @@ END SUBROUTINE ReadInitFlowSection
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

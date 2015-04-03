@@ -73,7 +73,7 @@ SUBROUTINE RFLO_CalcControlVolumes( region )
 !******************************************************************************
 
   CALL RegisterFunction( region%global,'RFLO_CalcControlVolumes',&
-  __FILE__ )
+  'RFLO_CalcControlVolumes.F90' )
 
 ! volumes of all cells
 
@@ -177,6 +177,7 @@ END SUBROUTINE RFLO_CalcControlVolumes
 ! Added calculation of face vectors and volumes.
 !
 !******************************************************************************
+
 
 
 

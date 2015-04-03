@@ -97,7 +97,7 @@ SUBROUTINE PLAG_RFLU_InitSolFromSerial(pRegion,pRegionSerial)
   global => pRegion%global
 
   CALL RegisterFunction(global,'PLAG_RFLU_InitSolFromSerial', &
-                        __FILE__)
+                        'PLAG_RFLU_InitSolFromSerial.F90')
  
   IF ( global%verbLevel > VERBOSE_NONE ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initializing particle solution '// &
@@ -341,6 +341,7 @@ END SUBROUTINE PLAG_RFLU_InitSolFromSerial
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

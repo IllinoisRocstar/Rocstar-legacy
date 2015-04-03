@@ -65,7 +65,7 @@ SUBROUTINE TURB_LesCommunication( regions ) ! PUBLIC
   global => regions(1)%global
 
   CALL RegisterFunction( global,'TURB_LesCommunication',&
-  __FILE__ )
+  'TURB_LesCommunication.F90' )
   
 ! global sum of LES energy sgs model 1 and 4 ----------------------------------
 
@@ -123,6 +123,7 @@ END SUBROUTINE TURB_LesCommunication
 !
 !
 !******************************************************************************
+
 
 
 

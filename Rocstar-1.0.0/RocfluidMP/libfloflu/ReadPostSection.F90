@@ -76,7 +76,7 @@ SUBROUTINE ReadPostSection(global)
   RCSIdentString = '$RCSfile: ReadPostSection.F90,v $ $Revision: 1.15 $'
 
   CALL RegisterFunction(global,'ReadPostSection',&
-  __FILE__)
+  'ReadPostSection.F90')
 
 ! specify keywords and search for them
 
@@ -410,6 +410,7 @@ END SUBROUTINE ReadPostSection
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

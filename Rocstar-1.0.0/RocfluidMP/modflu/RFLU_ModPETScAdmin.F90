@@ -112,7 +112,7 @@ MODULE RFLU_ModPETScAdmin
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_PETSC_Finalize',&
-  __FILE__)
+  'RFLU_ModPETScAdmin.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -187,7 +187,7 @@ MODULE RFLU_ModPETScAdmin
 ! ******************************************************************************
 
     CALL RegisterFunction(global,'RFLU_PETSC_Init',&
-  __FILE__)
+  'RFLU_ModPETScAdmin.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%verbLevel > VERBOSE_LOW ) THEN
@@ -245,6 +245,8 @@ END MODULE RFLU_ModPETScAdmin
 ! Initial revision
 !
 ! ******************************************************************************
+
+
 
 
 

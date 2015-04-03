@@ -118,7 +118,7 @@ MODULE RFLU_ModCellMapping
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_NullifyCellMapping',&
-  __FILE__)
+  'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN             
@@ -207,7 +207,7 @@ MODULE RFLU_ModCellMapping
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_CreateCellMapping',&
-  __FILE__)
+  'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN             
@@ -334,7 +334,7 @@ MODULE RFLU_ModCellMapping
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildGlob2LocCellMapping',&
-  __FILE__)
+  'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN   
@@ -490,7 +490,7 @@ MODULE RFLU_ModCellMapping
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_BuildLoc2GlobCellMapping',&
-  __FILE__)
+  'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN   
@@ -674,7 +674,7 @@ MODULE RFLU_ModCellMapping
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_DestroyCellMapping',&
-  __FILE__)
+  'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -804,7 +804,7 @@ MODULE RFLU_ModCellMapping
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ReadLoc2GlobCellMapping',&
-  __FILE__)
+  'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1044,7 +1044,7 @@ MODULE RFLU_ModCellMapping
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteLoc2GlobCellMapping',&
-  __FILE__)
+  'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
          global%verbLevel > VERBOSE_NONE ) THEN
@@ -1254,6 +1254,13 @@ END MODULE RFLU_ModCellMapping
 ! Initial revision                                                                       
 !
 ! ******************************************************************************
+
+
+
+
+
+
+
 
 
 

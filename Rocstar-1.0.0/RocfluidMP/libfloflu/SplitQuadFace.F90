@@ -76,7 +76,7 @@ SUBROUTINE SplitQuadFace( global,xyz1,xyz2,xyz3,xyz4,splitFlag )
   RCSIdentString = '$RCSfile: SplitQuadFace.F90,v $ $Revision: 1.3 $'
 
   CALL RegisterFunction( global,'SplitQuadFace',&
-  __FILE__ )
+  'SplitQuadFace.F90' )
 
 ! Start -----------------------------------------------------------------------
  
@@ -162,6 +162,7 @@ END SUBROUTINE SplitQuadFace
 ! Initial revision
 !
 !******************************************************************************
+
 
 
 

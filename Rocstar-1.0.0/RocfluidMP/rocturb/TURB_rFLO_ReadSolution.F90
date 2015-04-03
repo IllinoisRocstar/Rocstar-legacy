@@ -91,7 +91,7 @@ SUBROUTINE TURB_RFLO_ReadSolution( regions ) ! PUBLIC
   global => regions(1)%global
 
   CALL RegisterFunction( global,'TURB_RFLO_ReadSolution',&
-  __FILE__ )
+  'TURB_rFLO_ReadSolution.F90' )
 
 ! allocate fixed-size temporary data arrays -----------------------------------
 
@@ -418,6 +418,7 @@ END SUBROUTINE TURB_RFLO_ReadSolution
 !
 !
 !******************************************************************************
+
 
 
 

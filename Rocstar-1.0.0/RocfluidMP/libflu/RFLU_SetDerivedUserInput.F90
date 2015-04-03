@@ -93,7 +93,7 @@ SUBROUTINE RFLU_SetDerivedUserInput(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLU_SetDerivedUserInput',&
-  __FILE__)
+  'RFLU_SetDerivedUserInput.F90')
 
 ! ******************************************************************************
 ! Region-dependent values
@@ -296,6 +296,7 @@ END SUBROUTINE RFLU_SetDerivedUserInput
 ! Initial revision
 !
 ! ******************************************************************************
+
 
 
 

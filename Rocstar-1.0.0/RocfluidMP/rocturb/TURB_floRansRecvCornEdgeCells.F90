@@ -84,7 +84,7 @@ SUBROUTINE TURB_FloRansRecvCornEdgeCells( regions,iReg )
   global => regions(iReg)%global
 
   CALL RegisterFunction( global,'TURB_FloRansRecvCornEdgeCells',&
-  __FILE__ )
+  'TURB_floRansRecvCornEdgeCells.F90' )
 
   iLev  =  regions(iReg)%currLevel
   nCv   =  regions(iReg)%turbInput%nCv
@@ -221,6 +221,7 @@ END SUBROUTINE TURB_FloRansRecvCornEdgeCells
 !
 !
 !******************************************************************************
+
 
 
 

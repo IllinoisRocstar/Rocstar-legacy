@@ -79,7 +79,7 @@ SUBROUTINE TURB_RFLO_RansClearSendRequests( regions,iReg ) ! PUBLIC
   global => regions(1)%global
 
   CALL RegisterFunction( global,'TURB_RFLO_RansClearSendRequests',&
-  __FILE__ )
+  'TURB_rFLO_RansClearSendRequests.F90' )
 
   IF (regions(iReg)%turbInput%modelClass /= MODEL_RANS) GOTO 999
 
@@ -170,6 +170,7 @@ END SUBROUTINE TURB_RFLO_RansClearSendRequests
 !
 !
 !******************************************************************************
+
 
 
 

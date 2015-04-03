@@ -83,7 +83,7 @@ SUBROUTINE TURB_FloRansRecvDummyVals( region,regionSrc,patch,patchSrc )
   global => region%global
 
   CALL RegisterFunction( global,'TURB_FloRansRecvDummyVals',&
-  __FILE__ )
+  'TURB_floRansRecvDummyVals.F90' )
 
 ! check if the source region is active
 
@@ -214,6 +214,7 @@ END SUBROUTINE TURB_FloRansRecvDummyVals
 !
 !
 !******************************************************************************
+
 
 
 

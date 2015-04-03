@@ -84,7 +84,7 @@ SUBROUTINE PERI_DerivedInputValues( regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'PERI_DerivedInputValues',&
-  __FILE__ )
+  'PERI_DerivedInputValues.F90' )
 
   pgTauWall = .false.
 
@@ -253,6 +253,7 @@ END SUBROUTINE PERI_DerivedInputValues
 !
 !
 !******************************************************************************
+
 
 
 

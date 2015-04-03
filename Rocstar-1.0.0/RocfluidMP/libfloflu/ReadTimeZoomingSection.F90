@@ -62,7 +62,7 @@ SUBROUTINE ReadTimeZoomingSection( global )
 !******************************************************************************
 
   CALL RegisterFunction( global,'ReadTimeZoomingSection',&
-  __FILE__ )
+  'ReadTimeZoomingSection.F90' )
 ! specify keywords and search for them
 
   nVals = NVALS_MAX
@@ -156,6 +156,7 @@ SUBROUTINE ReadTimeZoomingSection( global )
   CALL DeregisterFunction( global )
 
 END SUBROUTINE ReadTimeZoomingSection
+
 
 
 

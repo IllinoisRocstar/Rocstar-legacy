@@ -67,7 +67,7 @@ SUBROUTINE RFLO_MapRegionsProcessors( regions )
   global => regions(1)%global
 
   CALL RegisterFunction( global,'RFLO_MapRegionsProcessors',&
-  __FILE__ )
+  'RFLO_MapRegionsProcessors.F90' )
 
 ! "manual" region to processor mapping
 
@@ -192,6 +192,7 @@ END SUBROUTINE RFLO_MapRegionsProcessors
 ! Import of RocfluidMP
 !
 !******************************************************************************
+
 
 
 

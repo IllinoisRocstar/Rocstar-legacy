@@ -89,7 +89,7 @@ SUBROUTINE INRT_ReadMaterialInput(global)
   RCSIdentString = '$RCSfile: INRT_ReadMaterialInput.F90,v $ $Revision: 1.5 $'
 
   CALL RegisterFunction( global,'INRT_ReadMaterialInput',&
-  __FILE__ )
+  'INRT_ReadMaterialInput.F90' )
 
 ! ******************************************************************************
 ! Define keys for string-valued quantities
@@ -349,6 +349,7 @@ END SUBROUTINE INRT_ReadMaterialInput
 ! converted from libfloflu routine to rocinteract routine
 !
 ! *****************************************************************************
+
 
 
 

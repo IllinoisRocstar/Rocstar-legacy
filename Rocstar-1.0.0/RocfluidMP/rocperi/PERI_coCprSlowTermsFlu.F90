@@ -66,7 +66,7 @@ SUBROUTINE PERI_CoCprSlowTerms( region )
   RCSIdentString = '$RCSfile: PERI_coCprSlowTermsFlu.F90,v $ $Revision: 1.4 $'
 
   CALL RegisterFunction( region%global,'PERI_CoCprSlowTerms',&
-  __FILE__ )
+  'PERI_coCprSlowTermsFlu.F90' )
 
 ! under construction ----------------------------------------------------------
 
@@ -99,6 +99,7 @@ END SUBROUTINE PERI_CoCprSlowTerms
 !
 !
 !******************************************************************************
+
 
 
 

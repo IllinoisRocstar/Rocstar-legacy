@@ -79,7 +79,7 @@ SUBROUTINE RFLO_CheckDerivedUserInput(regions)
   global => regions(1)%global
 
   CALL RegisterFunction(global,'RFLO_CheckDerivedUserInput',&
-  __FILE__)
+  'RFLO_CheckDerivedUserInput.F90')
 
 ! *****************************************************************************
 ! Check region related data
@@ -154,6 +154,7 @@ END SUBROUTINE RFLO_CheckDerivedUserInput
 ! Initial import
 !
 ! *****************************************************************************
+
 
 
 

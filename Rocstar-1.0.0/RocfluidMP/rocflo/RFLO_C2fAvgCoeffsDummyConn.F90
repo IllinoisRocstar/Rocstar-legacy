@@ -81,7 +81,7 @@ SUBROUTINE RFLO_C2fAvgCoeffsDummyConn( region,lbound,idir,jdir,kdir, &
 
   global => region%global
   CALL RegisterFunction( global,'RFLO_C2fAvgCoeffsDummyConn',&
-  __FILE__ )
+  'RFLO_C2fAvgCoeffsDummyConn.F90' )
 
 ! get dimensions -------------------------------------------------------------
 
@@ -320,6 +320,7 @@ END SUBROUTINE RFLO_C2fAvgCoeffsDummyConn
 !
 !
 !******************************************************************************
+
 
 
 

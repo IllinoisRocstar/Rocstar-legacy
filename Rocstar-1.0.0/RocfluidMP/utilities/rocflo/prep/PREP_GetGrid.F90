@@ -77,7 +77,7 @@ SUBROUTINE GetGrid( gridLevel,iReg,regions )
 
   global => regions(1)%global
   CALL RegisterFunction( global,'GetGrid',&
-  __FILE__ )
+  'PREP_GetGrid.F90' )
 
 ! read grid -------------------------------------------------------------------
   
@@ -198,6 +198,7 @@ END SUBROUTINE GetGrid
 !
 !
 !******************************************************************************
+
 
 
 

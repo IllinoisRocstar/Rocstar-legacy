@@ -138,7 +138,7 @@ SUBROUTINE RFLU_ComputeGradBFaces_1D(pRegion,pPatch,iBegVar,iEndVar, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeGradBFaces_1D',&
-  __FILE__ )
+  'RFLU_ModDifferentiationBFaces.F90' )
 
 #ifdef ROCPROF
   CALL FPROFILER_BEGINS("RFLU::ComputeGradBFaces_1D")
@@ -380,7 +380,7 @@ SUBROUTINE RFLU_ComputeGradBFaces(pRegion,pPatch,iBegVar,iEndVar,iBegGrad, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeGradBFaces',&
-  __FILE__ )
+  'RFLU_ModDifferentiationBFaces.F90' )
 
   IF ( (iEndVar  - iBegVar) /= (iEndGrad - iBegGrad) ) THEN 
     CALL ErrorStop(global,ERR_GRAD_MISMATCH,__LINE__)
@@ -680,7 +680,7 @@ SUBROUTINE RFLU_ComputeBFGradConstr(pRegion,pPatch,iBegVar,iEndVar,iBegGrad, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeBFGradConstr',&
-  __FILE__ )
+  'RFLU_ModDifferentiationBFaces.F90' )
 
   IF ( (iEndVar  - iBegVar) /= (iEndGrad - iBegGrad) ) THEN 
     CALL ErrorStop(global,ERR_GRAD_MISMATCH,__LINE__)
@@ -1230,7 +1230,7 @@ SUBROUTINE RFLU_ComputeBFGradConstrWrapper(pRegion,pPatch,iBegVar,iEndVar, &
   global => pRegion%global
 
   CALL RegisterFunction(global,'RFLU_ComputeBFGradConstrWrapper',&
-  __FILE__ )
+  'RFLU_ModDifferentiationBFaces.F90' )
 
 ! ******************************************************************************    
 ! Call gradient routines
@@ -1315,7 +1315,7 @@ END SUBROUTINE RFLU_ComputeBFGradConstrWrapper
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_ComputeGradBFacesWrapper',&
-  __FILE__ )
+  'RFLU_ModDifferentiationBFaces.F90' )
 
 ! ******************************************************************************    
 !   Call gradient routines
@@ -1378,6 +1378,11 @@ END MODULE RFLU_ModDifferentiationBFaces
 !
 ! ******************************************************************************
   
+
+
+
+
+
 
 
 
