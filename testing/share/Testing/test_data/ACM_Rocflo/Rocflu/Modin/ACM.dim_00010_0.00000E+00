@@ -1,0 +1,21 @@
+# ROCFLU dimensions file
+# Vertices
+     611    1321    5284
+# Cells
+    2408    5522   22088
+# Tetrahedra
+    2408    5522   22088
+# Hexahedra
+       0       0       0
+# Prisms
+       0       0       0
+# Pyramids
+       0       0       0
+# Patches (v2)
+       3       7
+       1      46     175     700       0       0       0       0
+       3     273     485    1940       0       0       0       0
+       5     172     227     908       0       0       0       0
+# Borders
+       0
+# End

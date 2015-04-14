@@ -1,0 +1,655 @@
+RFLU>
+RFLU> ======================================
+RFLU>                                       
+RFLU>                rfluinit               
+RFLU>                                       
+RFLU>   Version: 4.18.0-0, Date: 04/04/07
+RFLU>  Copyright (c) University of Illinois 
+RFLU>                                       
+RFLU> ======================================
+RFLU>
+RFLU>
+RFLU> Reading region mapping file...
+RFLU>   Mapping file found.
+RFLU> Opening region mapping file...
+RFLU> Opening region mapping file done.
+RFLU> Closing region mapping file...
+RFLU> Closing region mapping file done.
+RFLU> Reading region mapping file done.
+RFLU> Setting serial region mapping...
+RFLU> Setting serial region mapping done.
+RFLU> Creating region mapping...
+RFLU> Creating region mapping done.
+RFLU> Imposing serial region mapping...
+RFLU> Imposing serial region mapping done.
+RFLU> Building data structure...
+RFLU> Building data structure done.
+RFLU> Applying region mapping...
+RFLU> Applying region mapping done.
+RFLU> Destroying region mapping...
+RFLU> Destroying region mapping done.
+RFLU> Creating windows...
+RFLU> Creating windows done.
+RFLU> Reading user input file...
+RFLU> Initializing input variables...
+RFLU> Initializing input variables done.
+RFLU> Setting derived input variables...
+RFLU> Setting derived input variables done.
+RFLU> Echoing user input...
+RFLU>   Formats:
+RFLU>     Grid:  0
+RFLU>     Solution:  0
+RFLU>     Grid source:  4
+RFLU>   Reference values:
+RFLU>     Velocity:  0.10000E+03
+RFLU>     Pressure:  0.10000E+06
+RFLU>     Density:  0.12000E+01
+RFLU>     Specific heat at constant pressure:  0.19050E+04
+RFLU>     Ratio of specific heats:  0.12444E+01
+RFLU>     Length:  0.10000E+01
+RFLU>     Reynolds number:  0.10000E+03
+RFLU>     Viscosity:  0.12000E+01
+RFLU>     Laminar Prandtl number:  0.72000E+00
+RFLU>     Turbulent Prandtl number:  0.90000E+00
+RFLU>     Laminar Schmidt number:  0.22000E+00
+RFLU>     Turbulent Schmidt number:  0.90000E+00
+RFLU>   Forces:
+RFLU>     Flag: F
+RFLU>     Patch coefficient flag: T
+RFLU>   Acceleration:
+RFLU>     Flag: F
+RFLU>     gravity:  0.98100E+01
+RFLU>   Time stepping:
+RFLU>     Solver type:  1
+RFLU>     Flow type: Unsteady
+RFLU>     Timestep:  0.10000E-05
+RFLU>     Current time:  0.00000E+00
+RFLU>     Maximum time:  0.20000E+00
+RFLU>     Writing interval:  0.10000E-02
+RFLU>     Printing interval:  0.50000E-07
+RFLU>     Runge-Kutta scheme:  1
+RFLU>   Time Zooming:
+RFLU>     Min Plane:  0.00000E+00
+RFLU>     Max Plane:  0.47625E-01
+RFLU>     Propellant Density:  0.17027E+04
+RFLU>     Burn A:  0.37899E-05
+RFLU>     Burn N:  0.46100E+00
+RFLU>     Throat Radius:  0.13208E-01
+RFLU>     Chamber Length:  0.00000E+00
+RFLU>     Submerged Nozzle: No
+RFLU>     Rocket Axis: X
+RFLU>   Case Constraints:
+RFLU>     Case Radius:  0.66167E-02
+RFLU>     Head End: -0.10000E+08
+RFLU>     Aft End:  0.10000E+08
+RFLU>     Ellipse Major:  0.10000E+01
+RFLU>     Ellipse Minor:  0.66167E-02
+RFLU>     Sub Nozzle Rad:  0.10000E+01
+RFLU>     Tolerance 1:  0.10000E-05
+RFLU>     Tolerance 2:  0.10000E-07
+RFLU>     Rocket Axis: X
+RFLU>   Random number generator values:
+RFLU>     SeedOffset:  0
+RFLU>     SeedType:  0
+RFLU>   Preprocessor:
+RFLU>     Partition mode:  1
+RFLU>   Postprocessor:
+RFLU>     Output format:  1
+RFLU>     Plot type:  1
+RFLU>     Merge flag: F
+RFLU>     Write merged files flag: F
+RFLU>     Plot volume flag: F
+RFLU>     Interpolation type:  2
+RFLU>     Interpolation order:  1
+RFLU>     Special cell flag: F
+RFLU>     Extraction flag: F
+RFLU>     Discontinuity flag: F
+RFLU>     Schlieren type:   0
+RFLU>     Schlieren exponent:  0.10000E+02
+RFLU>     Number of fringes:  32
+RFLU>     Vorticity flag: F
+RFLU>     Vortex core flag: F
+RFLU>     Error flag: F
+RFLU>     Number of servers:   1
+RFLU>     Patch plotting flag: T
+RFLU>     Lagrangian to Eulerian flag: F
+RFLU>     Gradient flag: F
+RFLU>   Flow type:
+RFLU>     Flow model: Euler
+RFLU>     Grid motion: Active
+RFLU>   Mixture:
+RFLU>     Frozen flag: F
+RFLU>     Gas model:  1
+RFLU>   Numerics:
+RFLU>     Time discretization: Explicit multistage
+RFLU>     CFL number:  0.10000E+01
+RFLU>     Inviscid flux function: HLLC
+RFLU>     Spatial order of accuracy:  2
+RFLU>     Reconstruction:  2
+RFLU>     Constrained reconstruction:
+RFLU>       Cells:  0  0.10000E+01
+RFLU>       Faces:  0  0.10000E+01
+RFLU>     Entropy fix coefficient:  0.50000E-01
+RFLU>     Dissipation factor:  0.10000E+01
+RFLU>     Dimensionality:  3
+RFLU>     Cell-stencil dimensionality:  3
+RFLU>     Face-stencil dimensionality:  3
+RFLU>     Boundary-face-stencil dimensionality:  3
+RFLU>     Boundary-face-stencil space Order  1
+RFLU>     In-cell test tolerance:  0.10000E-10
+RFLU>   Grid motion:
+RFLU>     Type:   3
+RFLU>   Initialization:
+RFLU>     Flag:        1
+RFLU>     Integer 1:    -987654321
+RFLU>     Integer 2:    -987654321
+RFLU>     Integer 3:    -987654321
+RFLU>     Integer 4:    -987654321
+RFLU>     Integer 5:    -987654321
+RFLU>     Integer 6:    -987654321
+RFLU>     Real  1:    -0.98765E+09
+RFLU>     Real  2:    -0.98765E+09
+RFLU>     Real  3:    -0.98765E+09
+RFLU>     Real  4:    -0.98765E+09
+RFLU>     Real  5:    -0.98765E+09
+RFLU>     Real  6:    -0.98765E+09
+RFLU>     Real  7:    -0.98765E+09
+RFLU>     Real  8:    -0.98765E+09
+RFLU>     Real  9:    -0.98765E+09
+RFLU>     Real 10:    -0.98765E+09
+RFLU>   Multi-physics modules:
+RFLU>     Species module: Not active
+RFLU>     Particle module: Not active
+RFLU>     Radiation module: Not active
+RFLU> Echoing user input done.
+RFLU> Reading user input files done.
+RFLU> Reading restart info file...
+RFLU> Reading restart info file done.
+RFLU> Setting restart time and flag...
+RFLU> Setting restart time and flag done.
+RFLU> Reading dimensions...
+RFLU>   Global region: 00001
+RFLU>   Current time: 0.00000E+00
+RFLU> Reading dimensions done.
+RFLU> Creating grid...
+RFLU> Creating grid done.
+RFLU> Reading ROCFLU boundary condition file...
+RFLU>   Boundary condition information:
+RFLU>     Local  Global  Type  Name            Order  Constr   Coupling               Motion
+RFLU>       1       1     90   InjectionWall     1       0     Coupled, burning          7
+RFLU>       2       2     60   AftFlatWall       1       0     Not coupled               0
+RFLU>       3       3     60   HeadEndSurface    1       0     Not coupled               0
+RFLU>       4       5     60   HeadEndRing       1       0     Not coupled               0
+RFLU>       5       6     60   AftEndRing        1       0     Not coupled               0
+RFLU>       6       7     60   NozzleSurface     1       0     Not coupled               0
+RFLU> Reading ROCFLU boundary condition file done.
+RFLU> Allocating memory...
+RFLU> Allocating memory done.
+RFLU> Initializing flow field from scratch...
+RFLU> Initializing flow field from scratch done.
+RFLU> Printing flow information...
+RFLU>   Global region: 00001
+RFLU>   Current time: 0.00000E+00
+RFLU>   Density (kg/m^3):      0.1160000000000000E+01  0.1160000000000000E+01         1         1
+RFLU>   X-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Y-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Z-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Energy (N/m^2):        0.4091653027823241E+06  0.4091653027823241E+06         1         1
+RFLU> Printing flow information done.
+RFLU> Setting conn size...
+RFLU> Setting conn size done.
+RFLU> Registering flow data...
+RFLU> Registering flow data done.
+RFLU> Deallocating memory...
+RFLU> Deallocating memory done.
+RFLU> Destroying grid...
+RFLU> Destroying grid done.
+RFLU> Reading dimensions...
+RFLU>   Global region: 00002
+RFLU>   Current time: 0.00000E+00
+RFLU> Reading dimensions done.
+RFLU> Creating grid...
+RFLU> Creating grid done.
+RFLU> Reading ROCFLU boundary condition file...
+RFLU>   Boundary condition information:
+RFLU>     Local  Global  Type  Name            Order  Constr   Coupling               Motion
+RFLU>       1       1     90   InjectionWall     1       0     Coupled, burning          7
+RFLU>       2       3     60   HeadEndSurface    1       0     Not coupled               0
+RFLU>       3       5     60   HeadEndRing       1       0     Not coupled               0
+RFLU> Reading ROCFLU boundary condition file done.
+RFLU> Allocating memory...
+RFLU> Allocating memory done.
+RFLU> Initializing flow field from scratch...
+RFLU> Initializing flow field from scratch done.
+RFLU> Printing flow information...
+RFLU>   Global region: 00002
+RFLU>   Current time: 0.00000E+00
+RFLU>   Density (kg/m^3):      0.1160000000000000E+01  0.1160000000000000E+01         1         1
+RFLU>   X-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Y-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Z-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Energy (N/m^2):        0.4091653027823241E+06  0.4091653027823241E+06         1         1
+RFLU> Printing flow information done.
+RFLU> Setting conn size...
+RFLU> Setting conn size done.
+RFLU> Registering flow data...
+RFLU> Registering flow data done.
+RFLU> Deallocating memory...
+RFLU> Deallocating memory done.
+RFLU> Destroying grid...
+RFLU> Destroying grid done.
+RFLU> Reading dimensions...
+RFLU>   Global region: 00003
+RFLU>   Current time: 0.00000E+00
+RFLU> Reading dimensions done.
+RFLU> Creating grid...
+RFLU> Creating grid done.
+RFLU> Reading ROCFLU boundary condition file...
+RFLU>   Boundary condition information:
+RFLU>     Local  Global  Type  Name            Order  Constr   Coupling               Motion
+RFLU>       1       1     90   InjectionWall     1       0     Coupled, burning          7
+RFLU>       2       2     60   AftFlatWall       1       0     Not coupled               0
+RFLU>       3       6     60   AftEndRing        1       0     Not coupled               0
+RFLU>       4       7     60   NozzleSurface     1       0     Not coupled               0
+RFLU> Reading ROCFLU boundary condition file done.
+RFLU> Allocating memory...
+RFLU> Allocating memory done.
+RFLU> Initializing flow field from scratch...
+RFLU> Initializing flow field from scratch done.
+RFLU> Printing flow information...
+RFLU>   Global region: 00003
+RFLU>   Current time: 0.00000E+00
+RFLU>   Density (kg/m^3):      0.1160000000000000E+01  0.1160000000000000E+01         1         1
+RFLU>   X-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Y-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Z-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Energy (N/m^2):        0.4091653027823241E+06  0.4091653027823241E+06         1         1
+RFLU> Printing flow information done.
+RFLU> Setting conn size...
+RFLU> Setting conn size done.
+RFLU> Registering flow data...
+RFLU> Registering flow data done.
+RFLU> Deallocating memory...
+RFLU> Deallocating memory done.
+RFLU> Destroying grid...
+RFLU> Destroying grid done.
+RFLU> Reading dimensions...
+RFLU>   Global region: 00004
+RFLU>   Current time: 0.00000E+00
+RFLU> Reading dimensions done.
+RFLU> Creating grid...
+RFLU> Creating grid done.
+RFLU> Reading ROCFLU boundary condition file...
+RFLU>   Boundary condition information:
+RFLU>     Local  Global  Type  Name            Order  Constr   Coupling               Motion
+RFLU>       1       4     20   NozzleOutlet      1       0     Not coupled               0
+RFLU>       2       7     60   NozzleSurface     1       0     Not coupled               0
+RFLU> Reading ROCFLU boundary condition file done.
+RFLU> Allocating memory...
+RFLU> Allocating memory done.
+RFLU> Initializing flow field from scratch...
+RFLU> Initializing flow field from scratch done.
+RFLU> Printing flow information...
+RFLU>   Global region: 00004
+RFLU>   Current time: 0.00000E+00
+RFLU>   Density (kg/m^3):      0.1160000000000000E+01  0.1160000000000000E+01         1         1
+RFLU>   X-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Y-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Z-momentum (kg/m^2s):  0.0000000000000000E+00  0.0000000000000000E+00         1         1
+RFLU>   Energy (N/m^2):        0.4091653027823241E+06  0.4091653027823241E+06         1         1
+RFLU> Printing flow information done.
+RFLU> Setting conn size...
+RFLU> Setting conn size done.
+RFLU> Registering flow data...
+RFLU> Registering flow data done.
+RFLU> Deallocating memory...
+RFLU> Deallocating memory done.
+RFLU> Destroying grid...
+RFLU> Destroying grid done.
+RFLU> Reading dimensions...
+RFLU>   Global region: 00001
+RFLU>   Current time: 0.00000E+00
+RFLU> Reading dimensions done.
+RFLU> Creating grid...
+RFLU> Creating grid done.
+RFLU> Reading ROCFLU boundary condition file...
+RFLU>   Boundary condition information:
+RFLU>     Local  Global  Type  Name            Order  Constr   Coupling               Motion
+RFLU>       1       1     90   InjectionWall     1       0     Coupled, burning          7
+RFLU>       2       2     60   AftFlatWall       1       0     Not coupled               0
+RFLU>       3       3     60   HeadEndSurface    1       0     Not coupled               0
+RFLU>       4       5     60   HeadEndRing       1       0     Not coupled               0
+RFLU>       5       6     60   AftEndRing        1       0     Not coupled               0
+RFLU>       6       7     60   NozzleSurface     1       0     Not coupled               0
+RFLU> Reading ROCFLU boundary condition file done.
+RFLU> Getting derived dimensions...
+RFLU> Getting derived dimensions done.
+RFLU> Creating local boundary-face lists...
+RFLU> Nullifying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists done.
+RFLU> Creating local boundary-face lists done.
+RFLU> Registering surface grid...
+RFLU> Registering surface grid done.
+RFLU> Registering volume grid...
+RFLU> Registering volume grid done.
+RFLU> Getting grid...
+RFLU> Getting grid done.
+RFLU> Destroying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists done.
+RFLU> Destroying local boundary-face lists done.
+RFLU> Creating cell mapping...
+RFLU> Nullifying cell mapping...
+RFLU> Nullifying cell mapping done.
+RFLU> Creating cell mappings done.
+RFLU> Reading local-to-global cell mapping...
+RFLU>   Global region: 00001
+RFLU> Reading local-to-global cell mapping done.
+RFLU> Building global-to-local cell mapping...
+RFLU>   Tetrahedra...
+RFLU> Building global-to-local cell mapping done.
+RFLU> Creating boundary vertex lists...
+RFLU> Nullifying boundary vertex lists...
+RFLU> Nullifying boundary vertex lists done.
+RFLU> Creating boundary vertex lists done.
+RFLU> Building boundary-vertex lists...
+RFLU>   Boundary:   1
+RFLU>     Estimated number of vertices:      2902
+RFLU>     Hash table size:                   6143
+RFLU>     Total number of vertices:          1525
+RFLU>       Actual vertices:                 1255
+RFLU>       Virtual vertices:                 270
+RFLU>   Boundary:   2
+RFLU>     Estimated number of vertices:       624
+RFLU>     Hash table size:                   1531
+RFLU>     Total number of vertices:           187
+RFLU>       Actual vertices:                  133
+RFLU>       Virtual vertices:                  54
+RFLU>   Boundary:   3
+RFLU>     Estimated number of vertices:      1228
+RFLU>     Hash table size:                   3067
+RFLU>     Total number of vertices:           342
+RFLU>       Actual vertices:                  222
+RFLU>       Virtual vertices:                 120
+RFLU>   Boundary:   4
+RFLU>     Estimated number of vertices:       572
+RFLU>     Hash table size:                   1531
+RFLU>     Total number of vertices:           180
+RFLU>       Actual vertices:                  133
+RFLU>       Virtual vertices:                  47
+RFLU>   Boundary:   5
+RFLU>     Estimated number of vertices:       604
+RFLU>     Hash table size:                   1531
+RFLU>     Total number of vertices:           192
+RFLU>       Actual vertices:                  130
+RFLU>       Virtual vertices:                  62
+RFLU>   Boundary:   6
+RFLU>     Estimated number of vertices:       380
+RFLU>     Hash table size:                    761
+RFLU>     Total number of vertices:           119
+RFLU>       Actual vertices:                   42
+RFLU>       Virtual vertices:                  77
+RFLU> Building boundary-vertex lists done.
+RFLU> Renumbering boundary-face lists...
+RFLU> Renumbering boundary-face lists done.
+RFLU> Registering grid speeds...
+RFLU> Registering grid speeds done.
+RFLU> Writing surface grid speeds through Rocout...
+RFLU> Writing surface grid speeds through Rocout done.
+RFLU> Writing volume grid speeds through Rocout...
+RFLU> Writing volume grid speeds through Rocout done.
+RFLU> Destroying boundary-vertex lists...
+RFLU> Nullifying boundary vertex lists...
+RFLU> Nullifying boundary vertex lists done.
+RFLU> Destroying boundary-vertex lists done.
+RFLU> Destroying cell mapping...
+RFLU> Nullifying cell mapping...
+RFLU> Nullifying cell mapping done.
+RFLU> Destroying cell mapping done.
+RFLU> Destroying grid...
+RFLU> Destroying grid done.
+RFLU> Reading dimensions...
+RFLU>   Global region: 00002
+RFLU>   Current time: 0.00000E+00
+RFLU> Reading dimensions done.
+RFLU> Creating grid...
+RFLU> Creating grid done.
+RFLU> Reading ROCFLU boundary condition file...
+RFLU>   Boundary condition information:
+RFLU>     Local  Global  Type  Name            Order  Constr   Coupling               Motion
+RFLU>       1       1     90   InjectionWall     1       0     Coupled, burning          7
+RFLU>       2       3     60   HeadEndSurface    1       0     Not coupled               0
+RFLU>       3       5     60   HeadEndRing       1       0     Not coupled               0
+RFLU> Reading ROCFLU boundary condition file done.
+RFLU> Getting derived dimensions...
+RFLU> Getting derived dimensions done.
+RFLU> Creating local boundary-face lists...
+RFLU> Nullifying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists done.
+RFLU> Creating local boundary-face lists done.
+RFLU> Registering surface grid...
+RFLU> Registering surface grid done.
+RFLU> Registering volume grid...
+RFLU> Registering volume grid done.
+RFLU> Getting grid...
+RFLU> Getting grid done.
+RFLU> Destroying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists done.
+RFLU> Destroying local boundary-face lists done.
+RFLU> Creating cell mapping...
+RFLU> Nullifying cell mapping...
+RFLU> Nullifying cell mapping done.
+RFLU> Creating cell mappings done.
+RFLU> Reading local-to-global cell mapping...
+RFLU>   Global region: 00002
+RFLU> Reading local-to-global cell mapping done.
+RFLU> Building global-to-local cell mapping...
+RFLU>   Tetrahedra...
+RFLU> Building global-to-local cell mapping done.
+RFLU> Creating boundary vertex lists...
+RFLU> Nullifying boundary vertex lists...
+RFLU> Nullifying boundary vertex lists done.
+RFLU> Creating boundary vertex lists done.
+RFLU> Building boundary-vertex lists...
+RFLU>   Boundary:   1
+RFLU>     Estimated number of vertices:      1002
+RFLU>     Hash table size:                   2039
+RFLU>     Total number of vertices:           572
+RFLU>       Actual vertices:                  398
+RFLU>       Virtual vertices:                 174
+RFLU>   Boundary:   2
+RFLU>     Estimated number of vertices:      1786
+RFLU>     Hash table size:                   4093
+RFLU>     Total number of vertices:           942
+RFLU>       Actual vertices:                  842
+RFLU>       Virtual vertices:                 100
+RFLU>   Boundary:   3
+RFLU>     Estimated number of vertices:      1540
+RFLU>     Hash table size:                   4093
+RFLU>     Total number of vertices:           461
+RFLU>       Actual vertices:                  425
+RFLU>       Virtual vertices:                  36
+RFLU> Building boundary-vertex lists done.
+RFLU> Renumbering boundary-face lists...
+RFLU> Renumbering boundary-face lists done.
+RFLU> Registering grid speeds...
+RFLU> Registering grid speeds done.
+RFLU> Writing surface grid speeds through Rocout...
+RFLU> Writing surface grid speeds through Rocout done.
+RFLU> Writing volume grid speeds through Rocout...
+RFLU> Writing volume grid speeds through Rocout done.
+RFLU> Destroying boundary-vertex lists...
+RFLU> Nullifying boundary vertex lists...
+RFLU> Nullifying boundary vertex lists done.
+RFLU> Destroying boundary-vertex lists done.
+RFLU> Destroying cell mapping...
+RFLU> Nullifying cell mapping...
+RFLU> Nullifying cell mapping done.
+RFLU> Destroying cell mapping done.
+RFLU> Destroying grid...
+RFLU> Destroying grid done.
+RFLU> Reading dimensions...
+RFLU>   Global region: 00003
+RFLU>   Current time: 0.00000E+00
+RFLU> Reading dimensions done.
+RFLU> Creating grid...
+RFLU> Creating grid done.
+RFLU> Reading ROCFLU boundary condition file...
+RFLU>   Boundary condition information:
+RFLU>     Local  Global  Type  Name            Order  Constr   Coupling               Motion
+RFLU>       1       1     90   InjectionWall     1       0     Coupled, burning          7
+RFLU>       2       2     60   AftFlatWall       1       0     Not coupled               0
+RFLU>       3       6     60   AftEndRing        1       0     Not coupled               0
+RFLU>       4       7     60   NozzleSurface     1       0     Not coupled               0
+RFLU> Reading ROCFLU boundary condition file done.
+RFLU> Getting derived dimensions...
+RFLU> Getting derived dimensions done.
+RFLU> Creating local boundary-face lists...
+RFLU> Nullifying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists done.
+RFLU> Creating local boundary-face lists done.
+RFLU> Registering surface grid...
+RFLU> Registering surface grid done.
+RFLU> Registering volume grid...
+RFLU> Registering volume grid done.
+RFLU> Getting grid...
+RFLU> Getting grid done.
+RFLU> Destroying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists done.
+RFLU> Destroying local boundary-face lists done.
+RFLU> Creating cell mapping...
+RFLU> Nullifying cell mapping...
+RFLU> Nullifying cell mapping done.
+RFLU> Creating cell mappings done.
+RFLU> Reading local-to-global cell mapping...
+RFLU>   Global region: 00003
+RFLU> Reading local-to-global cell mapping done.
+RFLU> Building global-to-local cell mapping...
+RFLU>   Tetrahedra...
+RFLU> Building global-to-local cell mapping done.
+RFLU> Creating boundary vertex lists...
+RFLU> Nullifying boundary vertex lists...
+RFLU> Nullifying boundary vertex lists done.
+RFLU> Creating boundary vertex lists done.
+RFLU> Building boundary-vertex lists...
+RFLU>   Boundary:   1
+RFLU>     Estimated number of vertices:      1232
+RFLU>     Hash table size:                   3067
+RFLU>     Total number of vertices:           370
+RFLU>       Actual vertices:                  229
+RFLU>       Virtual vertices:                 141
+RFLU>   Boundary:   2
+RFLU>     Estimated number of vertices:      1808
+RFLU>     Hash table size:                   4093
+RFLU>     Total number of vertices:           525
+RFLU>       Actual vertices:                  468
+RFLU>       Virtual vertices:                  57
+RFLU>   Boundary:   3
+RFLU>     Estimated number of vertices:      1544
+RFLU>     Hash table size:                   4093
+RFLU>     Total number of vertices:           465
+RFLU>       Actual vertices:                  422
+RFLU>       Virtual vertices:                  43
+RFLU>   Boundary:   4
+RFLU>     Estimated number of vertices:      1492
+RFLU>     Hash table size:                   3067
+RFLU>     Total number of vertices:           808
+RFLU>       Actual vertices:                  587
+RFLU>       Virtual vertices:                 221
+RFLU> Building boundary-vertex lists done.
+RFLU> Renumbering boundary-face lists...
+RFLU> Renumbering boundary-face lists done.
+RFLU> Registering grid speeds...
+RFLU> Registering grid speeds done.
+RFLU> Writing surface grid speeds through Rocout...
+RFLU> Writing surface grid speeds through Rocout done.
+RFLU> Writing volume grid speeds through Rocout...
+RFLU> Writing volume grid speeds through Rocout done.
+RFLU> Destroying boundary-vertex lists...
+RFLU> Nullifying boundary vertex lists...
+RFLU> Nullifying boundary vertex lists done.
+RFLU> Destroying boundary-vertex lists done.
+RFLU> Destroying cell mapping...
+RFLU> Nullifying cell mapping...
+RFLU> Nullifying cell mapping done.
+RFLU> Destroying cell mapping done.
+RFLU> Destroying grid...
+RFLU> Destroying grid done.
+RFLU> Reading dimensions...
+RFLU>   Global region: 00004
+RFLU>   Current time: 0.00000E+00
+RFLU> Reading dimensions done.
+RFLU> Creating grid...
+RFLU> Creating grid done.
+RFLU> Reading ROCFLU boundary condition file...
+RFLU>   Boundary condition information:
+RFLU>     Local  Global  Type  Name            Order  Constr   Coupling               Motion
+RFLU>       1       4     20   NozzleOutlet      1       0     Not coupled               0
+RFLU>       2       7     60   NozzleSurface     1       0     Not coupled               0
+RFLU> Reading ROCFLU boundary condition file done.
+RFLU> Getting derived dimensions...
+RFLU> Getting derived dimensions done.
+RFLU> Creating local boundary-face lists...
+RFLU> Nullifying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists done.
+RFLU> Creating local boundary-face lists done.
+RFLU> Registering surface grid...
+RFLU> Registering surface grid done.
+RFLU> Registering volume grid...
+RFLU> Registering volume grid done.
+RFLU> Getting grid...
+RFLU> Getting grid done.
+RFLU> Destroying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists...
+RFLU> Nullifying local boundary-face lists done.
+RFLU> Destroying local boundary-face lists done.
+RFLU> Creating cell mapping...
+RFLU> Nullifying cell mapping...
+RFLU> Nullifying cell mapping done.
+RFLU> Creating cell mappings done.
+RFLU> Reading local-to-global cell mapping...
+RFLU>   Global region: 00004
+RFLU> Reading local-to-global cell mapping done.
+RFLU> Building global-to-local cell mapping...
+RFLU>   Tetrahedra...
+RFLU> Building global-to-local cell mapping done.
+RFLU> Creating boundary vertex lists...
+RFLU> Nullifying boundary vertex lists...
+RFLU> Nullifying boundary vertex lists done.
+RFLU> Creating boundary vertex lists done.
+RFLU> Building boundary-vertex lists...
+RFLU>   Boundary:   1
+RFLU>     Estimated number of vertices:      1066
+RFLU>     Hash table size:                   3067
+RFLU>     Total number of vertices:           566
+RFLU>       Actual vertices:                  566
+RFLU>       Virtual vertices:                   0
+RFLU>   Boundary:   2
+RFLU>     Estimated number of vertices:      2048
+RFLU>     Hash table size:                   6143
+RFLU>     Total number of vertices:          1082
+RFLU>       Actual vertices:                  932
+RFLU>       Virtual vertices:                 150
+RFLU> Building boundary-vertex lists done.
+RFLU> Renumbering boundary-face lists...
+RFLU> Renumbering boundary-face lists done.
+RFLU> Registering grid speeds...
+RFLU> Registering grid speeds done.
+RFLU> Writing surface grid speeds through Rocout...
+RFLU> Writing surface grid speeds through Rocout done.
+RFLU> Writing volume grid speeds through Rocout...
+RFLU> Writing volume grid speeds through Rocout done.
+RFLU> Destroying boundary-vertex lists...
+RFLU> Nullifying boundary vertex lists...
+RFLU> Nullifying boundary vertex lists done.
+RFLU> Destroying boundary-vertex lists done.
+RFLU> Destroying cell mapping...
+RFLU> Nullifying cell mapping...
+RFLU> Nullifying cell mapping done.
+RFLU> Destroying cell mapping done.
+RFLU> Destroying grid...
+RFLU> Destroying grid done.
+RFLU>
+RFLU> *** WARNING *** This run generated      0 warning(s).

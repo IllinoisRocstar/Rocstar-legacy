@@ -1,0 +1,3 @@
+@Proc: *
+@Files: ifluid_%5b.hdf
+@Panes: @Block         34 100 100

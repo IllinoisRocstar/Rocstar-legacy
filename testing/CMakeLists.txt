@@ -68,13 +68,17 @@ ADD_TEST(MidPointQuadrature:Accurate ${TESTRESULT} MidPointQuadrature:Accurate r
 ADD_TEST(MidPointQuadrature:Order ${TESTRESULT} MidPointQuadrature:Order2 rocstar_testresults.txt)
 #Uncomment test below and add your Regression test name in the appropriate
 #spot if you have edited and used the regression test script
-#ADD_TEST(RegressionTest:Works ${TESTRESULT} YouRegressionTestNameHere rocstar_testresults.txt}
+#ADD_TEST(RegressionTest:Works ${TESTRESULT} YouRegressionTestNameHere rocstar_testresults.txt)
 
 IF(MPI_CXX_COMPILER)
+  ADD_TEST(ACMRocfluRegressionTest:Runs ${RUNTEST} -f ${PROJECT_SOURCE_DIR}/share/Testing/test_scripts/ACM_Rocflu.csh -s ${PROJECT_SOURCE_DIR} -b ${CMAKE_BINARY_DIR}/bin -v 2 -o rocstar_testresults.txt -a ${IRAD_EXEPATH})
+  ADD_TEST(ACMRocfloRegressionTest:Runs ${RUNTEST} -f ${PROJECT_SOURCE_DIR}/share/Testing/test_scripts/ACM_Rocflo.csh -s ${PROJECT_SOURCE_DIR} -b ${CMAKE_BINARY_DIR}/bin -v 2 -o rocstar_testresults.txt -a ${IRAD_EXEPATH})
   # The parallel tests are actually run by this command
   ADD_TEST(Rocstar::RunParallelPlatformTests ${RUNTEST} -p ${PROJECT_SOURCE_DIR}/share/Platforms/parallel_platforms -s ${PROJECT_SOURCE_DIR} -b ${CMAKE_BINARY_DIR}/bin -v 3 -o rocstar_testresults.txt)
 
   # The remainder use "testresults" utility to check the results of the parallel tests run above
+  ADD_TEST(ACMRocfluRegressionTest:Works ${TESTRESULT} ACMRocfluRegressionTest rocstar_testresults.txt)
+  ADD_TEST(ACMRocfloRegressionTest:Works ${TESTRESULT} ACMRocfloRegressionTest rocstar_testresults.txt)
   ADD_TEST(ParallelExample:Runs ${TESTRESULT} PEPI:Runs rocstar_testresults.txt)
   ADD_TEST(ParallelExample:Works ${TESTRESULT} PEPI:Works rocstar_testresults.txt)
   ADD_TEST(ParallelTrapezoidQuadrature:Runs ${TESTRESULT} ParallelTrapezoidQuadrature:Runs rocstar_testresults.txt)

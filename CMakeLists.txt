@@ -86,3 +86,39 @@ add_executable(rocstar src/rocstar.C)
 target_link_libraries(rocstar Rocman Roccomf Roccom ${IRAD_LIB})
 
 INSTALL(TARGETS rocstar RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
+
+# Add target to build the documentation
+option(BUILD_DOCUMENTATION "Create and install the HTML based API
+documentation (requires Doxygen)" ON)
+IF(BUILD_DOCUMENTATION)
+
+  FIND_PACKAGE(Doxygen)
+  IF(NOT DOXYGEN_FOUND)
+    MESSAGE(FATAL_ERROR "Doxygen is needed to build the documentation.")
+  ENDIF()
+  
+#  FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/doc DESTINATION
+#  ${CMAKE_CURRENT_BINARY_DIR})
+  
+  
+  SET( doxyfile_in          ${CMAKE_CURRENT_SOURCE_DIR}/Docs/Rocstar.cfg.in )
+  SET( doxyfile             ${CMAKE_CURRENT_BINARY_DIR}/Rocstar.cfg        )
+  SET( documentation        ${CMAKE_CURRENT_BINARY_DIR}/Docs                 )
+
+  CONFIGURE_FILE( ${doxyfile_in} ${doxyfile} @ONLY )
+
+  ADD_CUSTOM_COMMAND( OUTPUT ${documentation}
+                      COMMAND ${DOXYGEN_EXECUTABLE} ${doxyfile}
+                      MAIN_DEPENDENCY ${doxyfile} ${doxyfile_in}
+                      DEPENDS Rocstar ${doxy_extra_files}
+                      COMMENT "Generating documentation")
+
+  ADD_CUSTOM_TARGET( Docs DEPENDS ${documentation} )
+
+  INSTALL( DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Docs DESTINATION
+share/Rocstar )
+
+  FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/Docs/RocstarQuickStart.pdf DESTINATION
+${CMAKE_CURRENT_BINARY_DIR}/Docs/)
+
+ENDIF()
