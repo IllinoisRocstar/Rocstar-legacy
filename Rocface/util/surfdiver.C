@@ -38,25 +38,31 @@ using namespace std;
 
 void read_file( const char *fname, const string &wname, double alpha) {
   char *lastdot=strrchr( const_cast<char *>(fname), '.');
-
   COM_new_window( wname.c_str());
   // Read in HDF files or a Rocin control file
   std::cout << "Reading file " << fname << "..." << std::endl;
 
   // Read in HDF format
   COM_LOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
-    
   int IN_read;
+
   // Read in HDF format using Rocin::read_window or ::read_by_control_file 
-  if ( strcmp( lastdot, ".hdf")==0)
-    IN_read = COM_get_function_handle( "IN.read_window");
-  else
+  bool processed = false;
+  if(!(lastdot == NULL)){
+    if ( strcmp( lastdot, ".hdf")==0){
+      IN_read = COM_get_function_handle( "IN.read_window");
+      processed = true;
+    }
+  }
+  if(!processed){
     IN_read = COM_get_function_handle( "IN.read_by_control_file");
+  }
 
   // Pass MPI_COMM_NULL to Rocin so that the rank becomes a wildcard.
   MPI_Comm comm_null = MPI_COMM_NULL;
   std::string bufwin("bufwin");
   COM_call_function( IN_read, fname, bufwin.c_str(), &comm_null);
+
   int IN_obtain = COM_get_function_handle( "IN.obtain_attribute");
 
   // Check whether bcflag exists. If so, retain only the panes with flag<=1.

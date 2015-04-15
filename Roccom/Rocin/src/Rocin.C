@@ -2498,7 +2498,8 @@ void Rocin::read_by_control_file( const char* control_file_name,
   else {
     MPI_Comm_rank(*myComm, &myRank);
     MPI_Comm_size(*myComm, &comm_size);
-
+    if(comm_size == 1)
+      myRank = -1;
   }
 
   std::ifstream fin(control_file_name);
