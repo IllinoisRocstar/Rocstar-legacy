@@ -1,3 +1,0 @@
-@Proc: *
-@Files:
-@Panes: @Block         34 100 100

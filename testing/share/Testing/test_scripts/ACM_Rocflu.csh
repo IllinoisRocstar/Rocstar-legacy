@@ -4,7 +4,7 @@
 set OutFile=$1
 set TmpOut=${OutFile}_tmp.txt 
 set InputDir=ACM_Rocflu
-set Outputs=Rocflu/Modout/ACM.prb_0001
+set Outputs=ACM_4/Rocflu/Modout/ACM.prb_0001
 set OutputsCheck=ACM.prb_0001_check
 set TestName=ACMRocfluRegressionTest
 
@@ -22,7 +22,11 @@ cd ${InputDir}
 cp -r $2/share/Testing/test_data/${InputDir}/* .
 
 #Run executable to generate output data
+$3/rocprep -A -b -u 1 1 -n 4 -d ./ACM_data -t ./ACM_4
+cd ./ACM_4
 mpirun -np 4 $3/rocstar
+
+cd ..
 
 #Make sure the necesary output was generated
 foreach file (${Outputs})

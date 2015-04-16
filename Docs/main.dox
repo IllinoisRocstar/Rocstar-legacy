@@ -10,7 +10,7 @@
 /// @subsection Attitude Control Motor with Rocflu
 /// For information on setting up and running the Attitude Control Motor Rocflu example problem 
 /// please see the <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>. 
-/// Running the problem as described in the Quickstart Guide can take quick some time to 
+/// Running the problem as described in the Quickstart Guide can take a while to 
 /// complete. To shorten the problem to run in a more timely fashion, make the following
 /// changes after following the directions in the Guide.
 ///
