@@ -22,6 +22,7 @@ cd ${InputDir}
 cp -r $2/share/Testing/test_data/${InputDir}/* .
 
 #Run executable to generate output data
+setenv PATH ${3}:${PATH}
 $3/rocprep -A -b -o 1 1 -n 34 -d ./ACM_data -t ./ACM_34
 cd ./ACM_34
 mpirun -np 34 $3/rocstar

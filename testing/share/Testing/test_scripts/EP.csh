@@ -23,6 +23,7 @@ cp -r $2/share/Testing/test_data/${InputDir}/* .
 
 #Run executable to generate output data
 gunzip ./EP_data/Rocfrac/Grid9/ep.out.gz
+setenv PATH ${3}:${PATH}
 $3/rocprep -A -o 1 6 -f 3 9 -n 4 -d ./EP_data -t ./EP_4
 cd ./EP_4
 mpirun -np 4 $3/rocstar

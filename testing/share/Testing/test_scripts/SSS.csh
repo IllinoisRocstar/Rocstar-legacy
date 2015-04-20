@@ -23,6 +23,7 @@ cp -r $2/share/Testing/test_data/${InputDir}/* .
 
 #Run executable to generate output data
 gunzip ./SSS_data/Rocfrac/Grid5/sss.out.gz
+setenv PATH ${3}:${PATH}
 $3/rocprep -A -o 1 4 -f 4 5 -n 4 -d ./SSS_data -t ./SSS_4
 cd ./SSS_4
 mpirun -np 4 $3/rocstar
