@@ -53,3 +53,52 @@
 /// by plotting column one versus column six from the probe file Rocflo/Modout/ACM.prb_0001.
 ///
 /// \image html ACM_Rocflo_HeadEndPressure_Arial.png
+///
+/// @subsection Super Seismic Shock
+///
+/// This example can be run in the same manner as the ACM example discussed above. Follow the
+/// procedure from the 
+/// <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>
+/// but using the following commands specific to this example.
+///
+/// - Use the following command for rocprep:
+///	rocprep -A -o 1 4 -f 4 5 -d ${ROCSTAR_EXAMPLES}/SuperSeismicShock -t ./SSS_4 -n 4
+///
+/// This command should generate a directory called SSS_4, which should be ready for running
+/// the example. In order to shorten the run time of the example change the following variables.
+///
+/// - In RocstarControl.txt change the following variables:
+/// 	- MaximumTime = 5.0e-6
+/// 	- OutputIntervalTime = 5.0e-7
+///
+/// The results for running the
+/// simulation with the above changes are shown below for comparison. This graph is generated
+/// by plotting column one versus column six from the probe file Rocflo/Modout/sss.prb_0001.
+///
+/// \image html SSS_Probe_Pressure_Arial.png
+///
+// @subsection Elastic Piston
+//
+// This example can be run in the same manner as the ACM example discussed above. Follow the
+// procedure from the 
+// <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>
+// but using the following commands specific to this example.
+//
+// - Use the following command for rocprep:
+//	rocprep -A -o 1 6 -f 3 9 -d ${ROCSTAR_EXAMPLES}/ElasticPiston -t ./EP_4 -n 4
+//
+// This command should generate a directory called EP_4, which should be ready for running
+// the example. In order to shorten the run time of the example change the following variables.
+//
+// - In RocstarControl.txt change the following variables:
+// 	- MaximumTime = 1.0e-4
+// 	- OutputIntervalTime = 1.0e-5
+// - In Rocflo/Modin/ep.inp in the PROBE section change the following variable :
+// 	- WRITIME 1.0e-5
+//
+// The results for running the
+// simulation with the above changes are shown below for comparison. This graph is generated
+// by plotting column one versus column six from the probe file Rocflo/Modout/ep.prb_0001.
+//
+// \image html EP_Probe_Pressure_Arial.png
+//
