@@ -49,8 +49,8 @@ include_directories(${IRAD_INCPATH} include)
 # add some stubs for testing. this crap all gets removed
 # when we add the real tests for Rocstar
 
-ADD_LIBRARY(Rocstar SHARED src/ExampleSourceFile.C)
-TARGET_LINK_LIBRARIES(Rocstar ${IRAD_LIB})
+#ADD_LIBRARY(Rocstar SHARED src/ExampleSourceFile.C)
+#TARGET_LINK_LIBRARIES(Rocstar ${IRAD_LIB})
 #ADD_EXECUTABLE(rocstar_test src/TestRocstar.C)
 #TARGET_LINK_LIBRARIES(rocstar_test Rocstar)
 #ADD_EXECUTABLE(sep src/ExampleSerialProgram.C src/sep.C)
