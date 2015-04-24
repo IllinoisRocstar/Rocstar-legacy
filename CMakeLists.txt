@@ -44,7 +44,7 @@ ELSE()
   GET_FILENAME_COMPONENT(IRAD_INCPATH ${IRAD_HDR} PATH)
   GET_FILENAME_COMPONENT(IRAD_EXEPATH ${RUNTEST} PATH)
 ENDIF()
-include_directories(${IRAD_INCPATH} include)
+include_directories(${IRAD_INCPATH})
 
 # add some stubs for testing. this crap all gets removed
 # when we add the real tests for Rocstar

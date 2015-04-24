@@ -40,7 +40,7 @@ set_source_files_properties(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC" )
 SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
-include_directories( ../include ${ROCCOM_INC} ${ROCMAN_INC} ${HDF4_INC} ${METIS_INC})
+include_directories(${ROCCOM_INC} ${ROCMAN_INC} ${HDF4_INC} ${METIS_INC})
 add_definitions(-DUSE_HDF=1)
 
 IF(NOT BUILD_STATIC)
