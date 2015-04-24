@@ -674,4 +674,4 @@ target_link_libraries(rfloprep Rocflo Rocout Rocin Roccomf Roccom)
 #ADD_TEST(TestObject:ValidHandle ${TEST_RESULTS} TestObject:ValidHandle testresults.txt)
 #ADD_TEST(TestObject:Exists ${TEST_RESULTS} TestObject:Exists testresults.txt)
 
-INSTALL(TARGETS Rocflo makeflo RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
+INSTALL(TARGETS makemblock simpleblock rfloprep Rocflo makeflo RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)

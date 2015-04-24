@@ -111,4 +111,4 @@ target_link_libraries(plagprep Rocin)
 #ADD_TEST(TestObject:ValidHandle ${TEST_RESULTS} TestObject:ValidHandle testresults.txt)
 #ADD_TEST(TestObject:Exists ${TEST_RESULTS} TestObject:Exists testresults.txt)
 
-INSTALL(TARGETS Rocin hdf2plt printfeas hdf2vtk sepin plagprep RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
+INSTALL(TARGETS RHDF4 Rocin hdf2plt printfeas hdf2vtk sepin plagprep RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)

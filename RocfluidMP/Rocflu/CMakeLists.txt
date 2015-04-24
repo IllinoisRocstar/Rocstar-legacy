@@ -720,4 +720,4 @@ target_link_libraries(rflumap Rocflu Rocmop Rocout Rocin Roccomf Roccom)
 #ADD_TEST(TestObject:ValidHandle ${TEST_RESULTS} TestObject:ValidHandle testresults.txt)
 #ADD_TEST(TestObject:Exists ${TEST_RESULTS} TestObject:Exists testresults.txt)
 
-INSTALL(TARGETS Rocflu RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
+INSTALL(TARGETS rflupart rflumap rfluinit Rocflu RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
