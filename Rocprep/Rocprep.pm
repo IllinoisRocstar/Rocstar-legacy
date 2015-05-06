@@ -245,7 +245,7 @@ sub setDefaultProps {
    $RocProps->setKeyValuePair("ROCSTARVERS", "3.0");
 
    # physics modules
-   foreach $keyword qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ROCBURNAPN ROCBURNPY ROCBURNZN) {
+   foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ROCBURNAPN ROCBURNPY ROCBURNZN)) {
       unless ($RocProps->propExists($keyword)) {
          $RocProps->setKeyValuePair($keyword, $FALSE);
       }
@@ -257,7 +257,7 @@ sub setDefaultProps {
    }
 
    # surfdiver combinations
-   foreach $keyword qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID) {
+   foreach $keyword (qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID)) {
       unless ($RocProps->propExists($keyword)) {
          $RocProps->setKeyValuePair($keyword, $FALSE);
       }
@@ -299,13 +299,13 @@ sub checkInputConsistency {
 #   which we check for any surfdiver flags.
     my($keyword);
     my($doPrep)=0;
-    foreach $keyword qw(ROCFLO ROCFLU ROCFRAC ROCSOLID) {
+    foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID)) {
 	if ($RocProps->processModule($keyword)){
 	    $doPrep++;
 	    last;
 	}
     }
-    foreach $keyword qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID) {
+    foreach $keyword (qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID)) {
 	if ($RocProps->propExists($keyword)) {
 	    $doPrep++;
 	    last;
