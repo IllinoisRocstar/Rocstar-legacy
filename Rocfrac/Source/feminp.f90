@@ -133,6 +133,7 @@ SUBROUTINE feminp(glb, myid)
 
   glb%NumElOverlay = 0
   glb%NumNpOverlay = 0
+  glb%Verb = 1
 !
 ! -- Open Analysis Deck File
 
@@ -163,7 +164,7 @@ SUBROUTINE feminp(glb, myid)
 
   REWIND glb%io_input
 1 READ(glb%io_input,'(A)',IOSTAT=ios) keywd
-!  print*,keywd
+!  if(myid.EQ.0) print*,keywd
   IF(ios.LT.0) THEN ! Negative ios means end-of-file
      PRINT*,' *END parameter not found - STOPPING'
      CALL MPI_FINALIZE(glb%MPI_COMM_ROCFRAC,ierr)
@@ -288,7 +289,9 @@ SUBROUTINE feminp(glb, myid)
   ELSE IF(keywd(1:18).EQ.'*INITIAL CONDITION')THEN
      CALL INITIALCONDITION_SUB(glb,keywd)
      GOTO 1
-
+  ELSE IF(keywd(1: ).EQ.'*VERBOSITY')THEN
+     READ(glb%io_input,*)  glb%Verb
+     GOTO 1
   ELSE IF(keywd(1:6).EQ.'*DEBUG')THEN
      glb%debug_state = .TRUE.
      GOTO 1
@@ -1291,12 +1294,13 @@ SUBROUTINE MICROMECHANICAL_SUB(glb, keywd, &
 
         IF (glb%particle(1,1)-glb%particle(1,2).NE.0.d0 .OR. &
              glb%particle(2,1)-glb%particle(2,2).NE.0.d0) THEN
-           PRINT*,'ROCFRAC: the particles do not have the same moduli.'
+           PRINT*,'ROCFRAC: Error: the particles do not have the same moduli.'
            STOP
         END IF
 
         IF (ABS( glb%particle(3,1)+glb%particle(3,2) +glb%matrix(3)-1.d0).GT.0.001) THEN
-           PRINT*,' the volume fractions of particles and matrix do not add up to 1'
+           PRINT*,'ROCFRAC: Error: the volume fractions of particles and matrix'
+           PRINT*,'do not add up to 1'
            STOP
         END IF
 

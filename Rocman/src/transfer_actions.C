@@ -44,7 +44,7 @@ void _load_rocface(FluidAgent *fagent, SolidAgent *sagent, const RocmanControl_p
 {
     // INIT_ROCFACE of rocman.f90
   if (COM_get_window_handle( "RFC") <=0 ) {
-    MAN_DEBUG(1, ("Rocman: load module RocFace.\n"));
+    MAN_DEBUG(1, ("Rocstar: load module RocFace.\n"));
     COM_LOAD_MODULE_STATIC_DYNAMIC( Rocface, "RFC");
 
     int RFC_setv = COM_get_function_handle( "RFC.set_verbose");
@@ -52,7 +52,7 @@ void _load_rocface(FluidAgent *fagent, SolidAgent *sagent, const RocmanControl_p
 
 #if 0
       // if remeshed
-    MAN_DEBUG(1, ("Rocman: remeshed: %d.\n", param->remeshed));
+    MAN_DEBUG(1, ("Rocstar: remeshed: %d.\n", param->remeshed));
     if (param->remeshed) {
       double t = fagent->get_coupling()->get_control_param()->current_time;
       compute_overlay( fagent, sagent, t);
@@ -70,7 +70,7 @@ void _load_rocface(FluidAgent *fagent, SolidAgent *sagent, const RocmanControl_p
     std::string fluid_dir = rfc_dir+"ifluid";
     std::string solid_dir = rfc_dir+"isolid";
 
-    MAN_DEBUG(1, ("Rocman: read RocFace overlay mesh from %s.\n", rfc_dir.c_str()));
+    MAN_DEBUG(1, ("Rocstar: read RocFace overlay mesh from %s.\n", rfc_dir.c_str()));
 
     COM_call_function( RFC_read, &fluid_mesh, &solid_mesh, &comm, fluid_dir.c_str(), solid_dir.c_str(), "HDF");
 
@@ -167,7 +167,7 @@ void LoadTransfer_FS::init( double t) {
 }
 
 void LoadTransfer_FS::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocman: LoadTransfer_FS::run() with t:%e dt:%e.\n", t, dt));
+  MAN_DEBUG(2, ("Rocstar: LoadTransfer_FS::run() with t:%e dt:%e.\n", t, dt));
   // ts = tf + ( mdot*Vs
 
   // part 1  (POST_UPDATE_FLUID in fluid_agent.f90)
@@ -281,7 +281,7 @@ void LoadTransfer_FSc_ALE::init( double t) {
 }
 
 void LoadTransfer_FSc_ALE::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocman: LoadTransfer_FSc_ALE::run() with t:%e dt:%e.\n", t, dt));
+  MAN_DEBUG(2, ("Rocstar: LoadTransfer_FSc_ALE::run() with t:%e dt:%e.\n", t, dt));
   // ts = tf + ( mdot*Vs
 
 #if 1
@@ -420,7 +420,7 @@ void LoadTransferOnly_FSc_ALE::init( double t) {
 }
 
 void LoadTransferOnly_FSc_ALE::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocman: LoadTransferOnly_FSc_ALE::run() with t:%e dt:%e.\n", t, dt));
+  MAN_DEBUG(2, ("Rocstar: LoadTransferOnly_FSc_ALE::run() with t:%e dt:%e.\n", t, dt));
 
   // part 2  (solid_agent.f90 INIT_INBUFF_SOLID())
   if (traction_mode == NO_SHEER && size_ts == 3) {
@@ -508,7 +508,7 @@ void GetDeformedMesh::init( double t) {
 
 // POST_UPDATE_SOLID
 void GetDeformedMesh::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocman: calling GetDeformedMesh::run() with t:%e dt:%e alpha:%e.\n", t, dt, alpha));
+  MAN_DEBUG(2, ("Rocstar: calling GetDeformedMesh::run() with t:%e dt:%e alpha:%e.\n", t, dt, alpha));
   COM_call_function( RocBlas::add, &s_x_hdl, &s_uhat_hdl, &s_y_hdl);
 }
 
@@ -573,7 +573,7 @@ void GetDeformedMesh_ALE::init( double t) {
 
 // POST_UPDATE_SOLID
 void GetDeformedMesh_ALE::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocman: calling GetDeformedMesh_ALE::run() with t:%e dt:%e alpha:%e withALE=%d zoom=%e.\n", t, dt, alpha, withALE, zoom));
+  MAN_DEBUG(2, ("Rocstar: calling GetDeformedMesh_ALE::run() with t:%e dt:%e alpha:%e withALE=%d zoom=%e.\n", t, dt, alpha, withALE, zoom));
 
   double mdot_min;
 
@@ -598,7 +598,7 @@ void GetDeformedMesh_ALE::run( double t, double dt, double alpha) {
     COM_call_function( RocBlas::min_scalar_MPI, &s_mdot_hdl, &mdot_min, &comm);
 
     if ( mdot_min < 0) {
-          printf("Rocman ERROR: Negative mdot found %e. Aborting...\n", mdot_min);
+          printf("Rocstar ERROR: Negative mdot found %e. Aborting...\n", mdot_min);
           MPI_Abort( MPI_COMM_WORLD, -1);
     }
 #else
@@ -677,7 +677,7 @@ void MeshMotionTransfer_SF::init( double t) {
 
 // INIT_INBUFF_FLUID
 void MeshMotionTransfer_SF::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocman: calling MeshMotionTransfer_SF::run() with t:%e dt:%e alpha:%e.\n", t, dt, alpha));
+  MAN_DEBUG(2, ("Rocstar: calling MeshMotionTransfer_SF::run() with t:%e dt:%e alpha:%e.\n", t, dt, alpha));
 
     // b. Interpolates total displacement from solid nodes to fluid nodes
   //debug_print(sagent->solidBuf+".u", 109, 0, sagent->get_communicator(), "U");
@@ -721,7 +721,7 @@ void DeformationVelTransfer_SF::init( double t) {
 }
 
 void DeformationVelTransfer_SF::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocman: DeformationVelTransfer_SF::run() with t:%e dt:%e alpha:%e.\n", t, dt, alpha));
+  MAN_DEBUG(2, ("Rocstar: DeformationVelTransfer_SF::run() with t:%e dt:%e alpha:%e.\n", t, dt, alpha));
 
     // c. Transfer vs from solid nodes to fluid faces using Rocface
   COM_call_function( RFC_transfer, &s_vs_hdl, &f_vs_hdl);
@@ -780,7 +780,7 @@ void MeshMotionTransferISS::init( double t) {
 
 // INIT_INBUFF_FLUID
 void MeshMotionTransferISS::run( double t, double dt, double alpha_dummy) {
-  MAN_DEBUG(2, ("Rocman: calling MeshMotionTransferISS::run() with t:%e dt:%e.\n", t, dt));
+  MAN_DEBUG(2, ("Rocstar: calling MeshMotionTransferISS::run() with t:%e dt:%e.\n", t, dt));
   // fomular:  Vm = (un-un-1)/deltaT + (vsn - vsn-1) /2
 
   COM_call_function( RFC_interpolate, &s_u_hdl, &f_u_hdl);
@@ -826,7 +826,7 @@ TransferSolidDensity::TransferSolidDensity(FluidAgent *fag, SolidAgent *sag,
 }
 
 void TransferSolidDensity::init( double t) {
-  MAN_DEBUG(2, ("Rocman: TransferSolidDensity::init() with t:%e.\n", t));
+  MAN_DEBUG(2, ("Rocstar: TransferSolidDensity::init() with t:%e.\n", t));
   s_rhos_hdl = get_attribute_handle(0);
   f_rhos_hdl = get_attribute_handle(1);
 
@@ -838,7 +838,7 @@ void TransferSolidDensity::init( double t) {
 void TransferSolidDensity::run( double t, double dt, double alpha) {
   int rhos_mode = sagent->rhos_mode;
 
-  MAN_DEBUG(2, ("Rocman: TransferSolidDensity::run() with rhs_mode=%d t:%e dt:%e alpha:%e.\n", rhos_mode, t, dt, alpha));
+  MAN_DEBUG(2, ("Rocstar: TransferSolidDensity::run() with rhs_mode=%d t:%e dt:%e alpha:%e.\n", rhos_mode, t, dt, alpha));
 
   if (rhos_mode == 1)   // Constant density
     COM_call_function( RocBlas::copy, &s_rhos_hdl, &f_rhos_hdl);
@@ -888,7 +888,7 @@ void TransferBurnRate_FS_ALE::init( double t) {
 void TransferBurnRate_FS_ALE::run( double t, double dt, double alpha) {
   if (sagent->withALE == 0) return;
 
-  MAN_DEBUG(2, ("Rocman: TransferBurnRate_FS_ALE::run() with t:%e dt:%e alpha:%e.\n", t, dt, alpha));
+  MAN_DEBUG(2, ("Rocstar: TransferBurnRate_FS_ALE::run() with t:%e dt:%e alpha:%e.\n", t, dt, alpha));
 
     // Transfer rb from fluid faces to solid faces
   double zero = 0.0;
@@ -945,7 +945,7 @@ void MassTransfer_SF_ALE::init( double t) {
 }
 
 void MassTransfer_SF_ALE::run( double t, double dt, double alpha_dummy) {
-  MAN_DEBUG(2, ("[%d] Rocman: MassTransfer_SF_ALE::run() with t:%e dt:%e.\n", fagent->get_comm_rank(), t, dt));
+  MAN_DEBUG(2, ("[%d] Rocstar: MassTransfer_SF_ALE::run() with t:%e dt:%e.\n", fagent->get_comm_rank(), t, dt));
 
   if (sagent->withALE) {
     COM_call_function( RocBlas::add,  &f_nc_t0_hdl, &f_total_disp_hdl, &f_nc_hdl);
@@ -1001,7 +1001,7 @@ void TemperatureTransfer_SF::init( double t) {
 }
 
 void TemperatureTransfer_SF::run( double t, double dt, double alpha_dummy) {
-  MAN_DEBUG(2, ("[%d] Rocman: TemperatureTransfer_SF::run() with t:%e dt:%e.\n", fagent->get_comm_rank(), t, dt));
+  MAN_DEBUG(2, ("[%d] Rocstar: TemperatureTransfer_SF::run() with t:%e dt:%e.\n", fagent->get_comm_rank(), t, dt));
 
   //debug_print(sagent->solidBuf+".Ts", 102, 0);
   COM_call_function( RFC_transfer, &s_Ts_hdl, &f_Ts_hdl);
@@ -1071,12 +1071,12 @@ void HeatTransfer_FS::init( double t) {
   RFC_transfer = COM_get_function_handle("RFC.least_squares_transfer");
   RFC_interpolate = COM_get_function_handle("RFC.interpolate");
 
-  MAN_DEBUG(2, ("[%d] Rocman: HeatTransfer_FS::init() with t:%e with_qr=%d.\n", fagent->get_comm_rank(), t, with_qr));
+  MAN_DEBUG(2, ("[%d] Rocstar: HeatTransfer_FS::init() with t:%e with_qr=%d.\n", fagent->get_comm_rank(), t, with_qr));
 }
 
 // qc is 'e', qs is 'e'
 void HeatTransfer_FS::run( double t, double dt, double alpha_dummy) {
-  MAN_DEBUG(2, ("[%d] Rocman: HeatTransfer_FS::run() with t:%e dt:%e.\n", fagent->get_comm_rank(), t, dt));
+  MAN_DEBUG(2, ("[%d] Rocstar: HeatTransfer_FS::run() with t:%e dt:%e.\n", fagent->get_comm_rank(), t, dt));
 
   int size_ts = sagent->size_ts;
   int traction_mode = sagent->traction_mode;
@@ -1097,7 +1097,7 @@ void HeatTransfer_FS::run( double t, double dt, double alpha_dummy) {
     //debug_print(sagent->solidBuf+".qs", 101, 0, bagent->get_communicator(), "s_qs");
       // add qsource
     if (b_qev_hdl == -1) {
-      std::cerr << "Rocman> WARNING: No qev is obtained! " << std::endl;
+      std::cerr << "Rocstar WARNING: No qev is obtained! " << std::endl;
       // only on burn surface
       COM_call_function( RocBlas::neg, &s_qs_hdl, &s_qs_hdl);
     }
@@ -1152,7 +1152,7 @@ void RemeshInit::init( double t) {
 }
 
 void RemeshInit::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocman: calling RemeshInit::run() with t:%e dt:%e alpha:%e.\n", t, dt, alpha));
+  MAN_DEBUG(2, ("Rocstar: calling RemeshInit::run() with t:%e dt:%e alpha:%e.\n", t, dt, alpha));
 
   COM_call_function( RFC_interpolate, &s_u_hdl, &f_total_disp_hdl);
 

@@ -543,6 +543,9 @@ inline int COM_test( const int id)
 inline void COM_set_verbose( int i) 
 { COM_get_roccom()->set_verbose( i); }
 
+inline void COM_set_debug( bool debug) 
+{ COM_get_roccom()->set_debug( debug); }
+
 // Profiling tools
 inline void COM_set_profiling( int i) 
 { COM_get_roccom()->set_profiling( i); }

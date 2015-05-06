@@ -465,7 +465,8 @@ MODULE ROCSTAR_RocFrac
      INTEGER,  POINTER, DIMENSION(:) :: sd_subface_parents1,sd_subface_parents2
      REAL*4, POINTER, DIMENSION(:,:) :: sd_subface_nat_coors1,sd_subface_nat_coors2
      INTEGER,  POINTER, DIMENSION(:) :: sd_subface_counterparts1,sd_subface_counterparts2
-
+      
+     INTEGER :: Verb
 
      LOGICAL :: OverlayExist
 

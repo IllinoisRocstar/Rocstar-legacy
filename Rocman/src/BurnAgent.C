@@ -67,7 +67,7 @@ BurnAgent::BurnAgent(Coupling *coup, std::string mod, std::string obj, MPI_Comm 
 
 void BurnAgent::load_module()
 {
-  MAN_DEBUG(1, ("[%d] Rocman: BurnAgent::load_module %s %s.\n", comm_rank, rocmod_name.c_str(), mod_instance.c_str()));
+  MAN_DEBUG(1, ("[%d] Rocstar: BurnAgent::load_module %s %s.\n", comm_rank, rocmod_name.c_str(), mod_instance.c_str()));
 #ifdef STATIC_LINK
   COM_assertion_msg(rocmod_name == "Rocburn", "Unknown BurnAgent mod!");
   COM_F_FUNC2( rocburn_load_module, ROCBURN_LOAD_MODULE)( mod_instance.c_str(), mod_instance.length());
@@ -80,7 +80,7 @@ void BurnAgent::load_module()
 
 void BurnAgent::unload_module()
 {
-  MAN_DEBUG(1, ("Rocman: BurnAgent::unload_module %s %s.\n", rocmod_name.c_str(), mod_instance.c_str()));
+  MAN_DEBUG(1, ("Rocstar: BurnAgent::unload_module %s %s.\n", rocmod_name.c_str(), mod_instance.c_str()));
 #ifdef STATIC_LINK
   COM_assertion_msg(rocmod_name == "Rocburn", "Unknown BurnAgent mod!");
   COM_F_FUNC2( rocburn_unload_module, ROCBURN_UNLOAD_MODULE)( mod_instance.c_str(), mod_instance.length());

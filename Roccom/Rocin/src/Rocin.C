@@ -122,7 +122,7 @@ static void DebugDump(std::ofstream& fout, int n, int dType, void* data)
 static int glob_error(const char* epath, int gerrno)
 {
   if ( !COMMPI_Initialized())
-    std::cerr << "ROCIN ERROR -- glob: error in pattern `" << epath << "': " 
+    std::cerr << "Rocstar: Error (glob): error in pattern `" << epath << "': " 
               << strerror(gerrno) << std::endl;
   return 0;
 }
@@ -153,7 +153,7 @@ inline T cast_err_func( int (*glob)(const char *, int, T, glob_t*),
 	if((routine args) == FAIL) {	      \
 	  sleep(1);			      \
 	  if((routine args) == FAIL) {			    \
-	    std::cerr << "ROCIN ERROR: " #routine " (line "		\
+	    std::cerr << "Rocstar: Error: " #routine " (line "		\
 		      << __LINE__ << " in " << __FILE__ << ") failed: " \
 		      << HDF4::error_msg() << std::endl;		\
 	    retval;							\
@@ -163,7 +163,7 @@ inline T cast_err_func( int (*glob)(const char *, int, T, glob_t*),
 #define HDF4_CHECK_RET(routine, args, retval)	\
 { \
   if ((routine args) == FAIL) {  \
-    std::cerr << "ROCIN ERROR: " #routine " (line " \
+    std::cerr << "Rocstar: Error: " #routine " (line " \
               << __LINE__ << " in " << __FILE__ << ") failed: " \
               << HDF4::error_msg() << std::endl; \
     retval; \
@@ -204,7 +204,7 @@ class AutoCloser
 { \
   int ier = routine args; \
   if (ier != 0) { \
-    std::cerr << "ROCIN ERROR: " #routine " (line " \
+    std::cerr << "Rocstar: Error: " #routine " (line " \
               << __LINE__ << " in " << __FILE__ << ") failed: " \
               << cg_get_error() << std::endl; \
     retval; \
@@ -271,7 +271,7 @@ switch (etype)                  /* type of CGNS element */
       break;
       //case 19: roccom_elem = ":B27:";
       //break;
-    default: std::cerr << "ROCIN ERROR: CGNS element type of " << etype << "has no Roccom equivalent\n";
+    default: std::cerr << "Rocstar: Error: CGNS element type of " << etype << "has no Roccom equivalent\n";
       return false;
     }
  return true;
@@ -406,7 +406,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
 
         // Block header datasets should have only one dimension.
         if (rank != 1) {
-          std::cerr << "Dataset " << index << " in file " << pathv[i]
+          std::cerr << "Rocstar: Warning: Dataset " << index << " in file " << pathv[i]
                     << " is marked as a block header, but its rank is not 1 "
                     << "(rank ==  " << rank << ')' << std::endl;
           continue;
@@ -443,7 +443,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
                      || strcmp(grid, "5") == 0) {
             gridType = 5;
           } else {
-            std::cerr << "The block header (dataset " << index
+            std::cerr << "Rocstar: Warning: The block header (dataset " << index
                       << " in file " << pathv[i] << ") does not have a "
                       << "valid grid type (grid = " << grid << ')'
                       << std::endl;
@@ -471,13 +471,13 @@ static void scan_files_HDF4( int pathc, char* pathv[],
               sin2 >> gc;
             }
           }
-          if (gc < 0) std::cerr << "ERROR: Bad num ghosts " << gc << " from string: " << ghost << std::endl;
+          if (gc < 0) std::cerr << "Rocstar: Error: Bad num ghosts " << gc << " from string: " << ghost << std::endl;
           ghostCells.push_back(gc);
           // Check if there are more data.
           while (!sin2.eof()) {
             if (sin2.get() == ',') {
               sin2 >> gc;
-              if (gc < 0) std::cerr << "ERROR: Bad ghosts " << gc << std::endl;
+              if (gc < 0) std::cerr << "Rocstar: Error: Bad ghosts " << gc << std::endl;
               ghostCells.push_back(gc);
             }
           }
@@ -492,14 +492,14 @@ static void scan_files_HDF4( int pathc, char* pathv[],
             gc = atoi(c);
             c = strchr(c, ',');
           }
-          if (gc < 0) std::cerr << "ERROR: Bad num ghosts " << gc << " from string: " << ghost << std::endl;
+          if (gc < 0) std::cerr << "Rocstar: Warning: Bad num ghosts " << gc << " from string: " << ghost << std::endl;
           ghostCells.push_back(gc);
           // Check if there are more data.
           while (c != NULL) {
             ++c;
             gc = atoi(c);
             c = strchr(c, ',');
-            if (gc < 0) std::cerr << "ERROR: Bad ghosts " << gc << std::endl;
+            if (gc < 0) std::cerr << "Rocstar: Warning: Bad ghosts " << gc << std::endl;
             ghostCells.push_back(gc);
           }
 
@@ -528,7 +528,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
             // Make sure the file exists.
             struct stat sb;
             if (stat(geomFile.c_str(), &sb) != 0) {
-              std::cerr << "The block header (dataset " << index
+              std::cerr << "Rocstar: Warning: The block header (dataset " << index
                         << " in file " << pathv[i] << ") has an invalid "
                         << "filename for the external geometry data.  The "
                         << "file does not exist: " << geomFile << std::endl;
@@ -536,7 +536,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
             }
           }
         } else {
-          std::cerr << "Dataset " << index << " in file " << pathv[i]
+          std::cerr << "Rocstar: Warning: Dataset " << index << " in file " << pathv[i]
                     << " is marked as a block header, but its datatype is "
                     << "not char8." << std::endl;
           continue;
@@ -546,7 +546,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
       geom_id = FindFirstGeometryDataset(sd_id, geomFile, matName, label,
                                          index, &index3);
       if (geom_id == FAIL) {
-        std::cerr << "Could not open geometry dataset for section "
+        std::cerr << "Rocstar: Warning: Could not open geometry dataset for section "
                   << label << " of material " << matName << std::endl;
         continue;
       }
@@ -619,7 +619,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
                                 &dType, &nAttrs);
           if (sds_id == FAIL) {
             if (!ghostCells.empty())
-              std::cerr << "Select() failed on connectivity dataset "
+              std::cerr << "Rocstar: Warning: Select() failed on connectivity dataset "
                         << index3 << " in file "
                         << (geomFile.empty() ? pathv[i] : geomFile.c_str())
                         << std::endl;
@@ -675,7 +675,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
             }
 
             if (1) {
-              std::cerr << "WARNING: reading old-style connectivity dataset "
+              std::cerr << "Rocstar: Warning: reading old-style connectivity dataset "
                       << varName << " from " << index3 << " in file "
                       << (geomFile.empty() ? pathv[i] : geomFile.c_str())
                       << std::endl;
@@ -693,7 +693,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
           }
 
           if (size[1]<0 || ghostCount < 0) {
-            std::cerr << "ERROR: Bad number of element or ghosts for attribute " << varName << " nElem=" << size[1] << " nGhost=" << ghostCount << std::endl;
+            std::cerr << "Rocstar: Error: Bad number of element or ghosts for attribute " << varName << " nElem=" << size[1] << " nGhost=" << ghostCount << std::endl;
             COM_assertion_msg(0,
                         "Bad number of element or ghosts for attribute.");
           }
@@ -760,7 +760,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
             }
 
             if (0) { /* annoying compatability warning */
-               std::cerr << "Compatability warning: guessing variable '"
+               std::cerr << "Rocstar: Warning: Compatability warning: guessing variable '"
                       << varName << "' in dataset " << index << " in file "
                       << pathv[i] << " with label " << label 
                       << " is of type " << location 
@@ -808,7 +808,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
           VarInfo_HDF4 &vi = block->m_variables.back();
           if (vi.m_name != varName || vi.m_indices.size() != 3) {
             // We shouldn't be seeing 2 or 3 before we see 1.
-            std::cerr << "Found a vector component named " << varName
+            std::cerr << "Rocstar: Warning: Found a vector component named " << varName
                       << " for which there is no X component at "
                       << " dataset " << index << " (" << name
                       << ") in file " << pathv[i] << std::endl;
@@ -825,7 +825,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
           VarInfo_HDF4 &vi = block->m_variables.back();
           if (vi.m_name != varName || vi.m_indices.size() != 9) {
             // We shouldn't be seeing any of these before we see 11.
-            std::cerr << "Found a tensor component named " << varName
+            std::cerr << "Rocstar: Warning: Found a tensor component named " << varName
                       << " for which there is no (0,0) component at "
                       << "dataset " << index << " (" << name
                       << ") in file " << pathv[i] << std::endl;
@@ -855,7 +855,7 @@ static void scan_files_HDF4( int pathc, char* pathv[],
             if ( aName==NULL || vi.m_name != (aName+1) ||
                  vi.m_indices.size() != id-1) {
               // The individual components must be stored consecutively
-              std::cerr << "Found a vector named " << vi.m_name
+              std::cerr << "Rocstar: Warning: Found a vector named " << vi.m_name
                         << " whose components are not stored together "
                         << " in file " << pathv[i] << std::endl;
               continue;
@@ -1141,12 +1141,12 @@ static void scan_files_CGNS( int pathc, char* pathv[],
 
         int error_code = cg_biter_read(fn, B, buffer, &nSteps); 
         if (error_code == CG_NODE_NOT_FOUND) {
-          std::cerr << "cg_biter_read() failed with CG_NODE_NOT_FOUND on Base "
-                    << B << " in file " << pathv[i] << std::endl;
-          std::cerr << "No time steps given with Base "<< B  <<std::endl;
+          std::cerr << "Rocstar: Warning: cg_biter_read() failed with CG_NODE_NOT_FOUND"
+                    << " on Base " << B << " in file " << pathv[i] << std::endl;
+          std::cerr << "Rocstar: Warning: No time steps given with Base "<< B  <<std::endl;
           has_timesteps = false; //Boeing fix
         } else if (error_code == CG_ERROR) {
-          std::cerr << "cg_biter_read() failed  with CG_ERROR on Base " << B
+          std::cerr << "Rocstar: Warning: cg_biter_read() failed  with CG_ERROR on Base " << B
                     << " in file " << pathv[i] << std::endl;
           continue;
         }
@@ -1372,12 +1372,12 @@ static void scan_files_CGNS( int pathc, char* pathv[],
 
         // Get the window attributes.
         if (cg_goto(fn, B, "end") != 0) {
-          std::cerr << "cg_goto() failed to go to Base " << B << " in file "
+          std::cerr << "Rocstar: Warning: cg_goto() failed to go to Base " << B << " in file "
                     << pathv[i] << std::endl;
         } else {
           int nIntegrals;
           if (cg_nintegrals(&nIntegrals) != 0) {
-            std::cerr << "cg_nintegrals() failed in Base " << B << " in file "
+            std::cerr << "Rocstar: Warning: cg_nintegrals() failed in Base " << B << " in file "
                       << pathv[i] << std::endl;
           } else {
             int I;
@@ -1478,12 +1478,12 @@ static void scan_files_CGNS( int pathc, char* pathv[],
 
         // Get the pane and connectivity attributes.
         if (cg_goto(fn, B, "Zone_t", Z, "end") != 0) {
-          std::cerr << "cg_goto() failed to go to Zone " << Z << " of Base "
+          std::cerr << "Rocstar: Warning: cg_goto() failed to go to Zone " << Z << " of Base "
                     << B << " in file " << pathv[i] << std::endl;
         } else {
           int nIntegrals;
           if (cg_nintegrals(&nIntegrals) != 0) {
-            std::cerr << "cg_nintegrals() failed in Zone " << Z << " of Base "
+            std::cerr << "Rocstar: Warning: cg_nintegrals() failed in Zone " << Z << " of Base "
                       << B << " in file " << pathv[i] << std::endl;
           } else {
             int I, found = 0;
@@ -1596,7 +1596,7 @@ static void scan_files_CGNS( int pathc, char* pathv[],
         // Get the element and node attributes.
         int nSols;
         if (cg_nsols(fn, B, Z, &nSols) != 0) {
-          std::cerr << "cg_nsols() failed in Zone " << Z << " of Base "
+          std::cerr << "Rocstar: Warning: cg_nsols() failed in Zone " << Z << " of Base "
                     << B << " in file " << pathv[i] << std::endl;
         } else {
           GridLocation_t loc;
@@ -1703,10 +1703,10 @@ static void scan_files_CGNS( int pathc, char* pathv[],
                 // We assume that components are contiguous and in order.
                 VarInfo_CGNS &vi = block->m_variables.back();
                 if (vi.m_name != label)
-                  std::cerr << "ROCIN: attributes for " << label
+                  std::cerr << "Rocstar: Warning: attributes for " << label
                             << " are not contiguous." << std::endl;
                 else if (vi.m_indices.size() != nComps)
-                  std::cerr << "ROCIN: attribute " << label
+                  std::cerr << "Rocstar: Warning: attribute " << label
                             << " has inconsistent component count."
                             << std::endl;
                 vi.m_indices[comp] = F;
@@ -1723,7 +1723,7 @@ static void scan_files_CGNS( int pathc, char* pathv[],
         // Check for old node attributes.
         int nDiscrete;
         if (cg_ndiscrete(fn, B, Z, &nDiscrete) != 0) {
-          std::cerr << "cg_ndiscrete() failed in Zone " << Z << " of Base "
+          std::cerr << "Rocstar:Warning: cg_ndiscrete() failed in Zone " << Z << " of Base "
                     << B << " in file " << pathv[i] << std::endl;
         } else {
           int S;
@@ -2504,7 +2504,7 @@ void Rocin::read_by_control_file( const char* control_file_name,
 
   std::ifstream fin(control_file_name);
   if (!fin.is_open()) {
-    std::cerr << "read_by_control_file: unable to open " << control_file_name
+    std::cerr << "Rocstar: Error: read_by_control_file unable to open " << control_file_name
               << " for reading." << std::endl;
     return;
   }
@@ -2544,7 +2544,8 @@ void Rocin::read_by_control_file( const char* control_file_name,
 
     if (fin.eof()) {
       if ( rank != myRank)
-        std::cerr << "read_by_control_file: control file " << control_file_name
+        std::cerr << "Rocstar: Error (read_by_control_file): control file " 
+                  << control_file_name
                   << " does not contain information for process " << myRank
                   << std::endl;
       break;
@@ -2552,7 +2553,8 @@ void Rocin::read_by_control_file( const char* control_file_name,
 
     fin >> buffer;
     if (buffer != "@Files:") {
-      std::cerr << "read_by_control_file: in control file " << control_file_name
+      std::cerr << "Rocstar: Error (read_by_control_file): in control file "
+                << control_file_name
                 << ": expected '@Files' but found '" << buffer << '\''
                 << std::endl;
       return;
@@ -2671,7 +2673,7 @@ void Rocin::read_by_control_file( const char* control_file_name,
       m_is_local = NULL;
     } else if (buffer[0] == '@' && buffer != "@Panes:" ) {
       if ( buffer != "@Proc:") { // Skip empty @Panes section.
-        std::cerr << "read_by_control_file: in control file "
+        std::cerr << "Rocstar: Error (read_by_control_file): in control file "
                   << control_file_name << ": expected pane info but found '"
                   << buffer << '\'' << std::endl;
         return;
@@ -2710,7 +2712,7 @@ void Rocin::read_by_control_file( const char* control_file_name,
   fin.close();
 
   if ( myRank>=0 && rank != myRank) 
-    std::cerr << "Rocin warning: Did not find matching control blocks for process " << myRank << std::endl;
+    std::cerr << "Rocstar: Warning: Did not find matching control blocks for process " << myRank << std::endl;
 
   // If myRank is a wild card and panes aren't specified explicitly, then
   // make all panes local.
@@ -2847,7 +2849,7 @@ void Rocin::read_windows(const char* filename_patterns,
     }
 
     if ( globbuf.gl_pathc==0 && buffer[0]!='\0') 
-      std::cerr << "Rocin warning: Found no matching files for pattern "
+      std::cerr << "Rocstar: Warning: Found no matching files for pattern "
                 << buffer << std::endl;
 
     // Extracts metadata from a list of files.
@@ -2885,7 +2887,7 @@ void Rocin::read_windows(const char* filename_patterns,
       token = strtok(NULL, " \t\n");
     }
     if(matching_filenames.empty() && buffer[0] != '\0')
-      std::cerr << "Rocin warning: Found no matching files for pattern "
+      std::cerr << "Rocstar: Warning: Found no matching files for pattern "
 		<< buffer << std::endl;
     unsigned int nmatch = matching_filenames.size();
     std::vector<char *> matches(nmatch);
@@ -2979,7 +2981,7 @@ void Rocin::read_windows(const char* filename_patterns,
           && blocks_CGNS.count(*p) == 0
 #endif // USE_CGNS
           ) {
-        std::cerr << "read_windows: could not find '" << *p << "'."
+        std::cerr << "Rocstar: Warning (read_windows): could not find '" << *p << "'."
                   << std::endl;
         ++p; // Increment p.
         continue;

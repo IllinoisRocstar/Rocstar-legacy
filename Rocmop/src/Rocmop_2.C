@@ -143,19 +143,19 @@ void Rocmop::read_config_file(const std::string &cfname)
   std::ifstream Inf;
   Inf.open(cfname.c_str());
 
-  // If the file doesn't exist, fire off a warning and continue
-  if(!Inf){
-    std::cerr << "MOP> Warning: Could not open configfile, " 
-	      << cfname << "." << std::endl;
-    return;
-  }
-
   // We can't use the usual print_legible function here because the
   // buffer winodw may not be created yet.
   int rank =0;
   if(COMMPI_Initialized()){
     int ierr = MPI_Comm_rank(MPI_COMM_WORLD,&rank); 
     assert( ierr == 0);
+  }
+
+  // If the file doesn't exist, fire off a warning and continue
+  if(!Inf && rank==0){
+    std::cerr << "Rocmop: Warning: Could not open configfile, " 
+	      << cfname << "." << std::endl;
+    return;
   }
 
   std::string line;
@@ -176,7 +176,7 @@ void Rocmop::read_config_file(const std::string &cfname)
   //     before populating it with another string.
   Istr.clear();
   if(verbosity < 0 || verbosity > 10){
-    std::cerr << "MOP> Warning: Invalid verbosity from configfile. " 
+    std::cerr << "Rocmop: Warning: Invalid verbosity from configfile. " 
 	      << "Giving up on " << cfname << "." << std::endl;
     Inf.close();
     return;
@@ -184,8 +184,8 @@ void Rocmop::read_config_file(const std::string &cfname)
   _verb = verbosity;
   // Speak up if verbosity is turned on!
   if (rank==0 && _verb){
-    std::cout << "MOP> Found configfile, " << cfname << "." << std::endl
-	      << "MOP> Setting verbosity to " << _verb << "." << std::endl;
+    std::cout << "Rocmop: Found configfile, " << cfname << "." << std::endl
+	      << "Rocmop: Setting verbosity to " << _verb << "." << std::endl;
   }  
 
   // Load the next line from configfile and set smoothing method
@@ -194,14 +194,14 @@ void Rocmop::read_config_file(const std::string &cfname)
   Istr >> _method;
   Istr.clear();
   if(_method < 0 || _method > SMOOTH_NONE){
-    std::cerr << "MOP> Warning: Invalid smoothing method from configfile. " 
+    std::cerr << "Rocmop: Warning: Invalid smoothing method from configfile. " 
 	      << "Giving up on " << cfname << "." << std::endl;
     Inf.close();
     return;
   }
   // I love these ternary operators
   if (rank==0 && _verb){
-    std::cout << "MOP> Setting method to "
+    std::cout << "Rocmop: Setting method to "
 	      << (_method == SMOOTH_VOL_MESQ_WG ? "SMOOTH_VOL_MESQ_WG" :
 		  (_method == SMOOTH_VOL_MESQ_NG ? "SMOOTH_VOL_MESQ_NG" :
 		   (_method == SMOOTH_SURF_MEDIAL ? "SMOOTH_SURF_MEDIAL" :
@@ -217,7 +217,7 @@ void Rocmop::read_config_file(const std::string &cfname)
   if(lazy > 0) 
     _lazy = 1;
   if (rank==0 && _verb){
-    std::cout << "MOP> Setting lazy to " << _lazy << "." << std::endl;
+    std::cout << "Rocmop: Setting lazy to " << _lazy << "." << std::endl;
   }  
 
   // Load the next line and set tolerance for lazy threshold
@@ -227,7 +227,7 @@ void Rocmop::read_config_file(const std::string &cfname)
   Istr >> tol;
   Istr.clear();
   if(tol < 0. || tol > 180.){
-    std::cerr << "MOP> Warning: Invalid dihedral angle tolerance"
+    std::cerr << "Rocmop: Warning: Invalid dihedral angle tolerance"
 	      << " from configfile. " 
 	      << "Giving up on " << cfname << "." << std::endl;
     Inf.close();
@@ -235,7 +235,7 @@ void Rocmop::read_config_file(const std::string &cfname)
   }
   _tol = tol;
   if (rank==0 && _verb){
-    std::cout << "MOP> Setting tolerance to " << _tol << "." << std::endl;
+    std::cout << "Rocmop: Setting tolerance to " << _tol << "." << std::endl;
   }  
 
   // Load the next line and set node displacement constraint for Mesquite smoothing 
@@ -245,14 +245,14 @@ void Rocmop::read_config_file(const std::string &cfname)
   Istr >> max_disp;
   Istr.clear();
   if(max_disp < 0. || max_disp > 10.0){
-    std::cerr << "MOP> Warning: Invalid displacement constraint from configfile. " 
+    std::cerr << "Rocmop: Warning: Invalid displacement constraint from configfile. " 
 	      << "Giving up on " << cfname << "." << std::endl;
     Inf.close();
     return;
   }
   _maxdisp = max_disp;
   if (rank==0 && _verb){
-    std::cout << "MOP> Setting displacement constraint to " 
+    std::cout << "Rocmop: Setting displacement constraint to " 
 	      << _maxdisp << "." << std::endl;
   }  
 
@@ -265,11 +265,11 @@ void Rocmop::read_config_file(const std::string &cfname)
     _smoothfreq = 0;
   if (rank==0 && _verb){
     if(_method == SMOOTH_NONE){
-      std::cout << "MOP> No method selected, setting N to 0"
+      std::cout << "Rocmop: No method selected, setting N to 0"
 		<< ",disabling smoothing." << std::endl;
     }
     else{
-      std::cout << "MOP> Setting N to " << _smoothfreq 
+      std::cout << "Rocmop: Setting N to " << _smoothfreq 
 		<< (_smoothfreq==0 ? ", disabling smoothing." : ".") 
 		<< std::endl;
      
@@ -287,11 +287,11 @@ void Rocmop::read_config_file(const std::string &cfname)
   else if ((_smoothfreq > 1) && (_disp_thresh > 0.0) ){
     _smoothfreq = 1;
     if(rank==0 && _verb)
-      std::cout << "MOP> WARNING: N reset to 1 to enable displacement thresholding."
+      std::cout << "Rocmop: WARNING: N reset to 1 to enable displacement thresholding."
 		<< std::endl;
   }
   if (rank==0 && _verb){
-    std::cout << "MOP> Setting displacement threshold to " 
+    std::cout << "Rocmop: Setting displacement threshold to " 
 	      << _disp_thresh << "." << std::endl;
   }  
   
@@ -748,7 +748,7 @@ void Rocmop::smooth(const COM::Attribute *pmesh,
       pconnErr = check_input_pconn();
       agree_int(pconnErr, MPI_MAX);
       if (pconnErr == 1)
-	COM_assertion_msg(pconnErr == 0, "*** MOP>ERROR: PCONN incomplete ***");
+	COM_assertion_msg(pconnErr == 0, "*** Rocmop:ERROR: PCONN incomplete ***");
 
       // Create a buffer window by cloning from the user window
       std::string buf_name(_usr_window->name()+"-Rocmopbuf");
@@ -950,7 +950,7 @@ int Rocmop::check_input_pconn()
 
 	if (lid < minGhostNodeID || lid > maxGhostNodeID)
 	{
-	  std::cout << "MOP>Error in check_input_pconn(): Rank "
+	  std::cerr << "Rocmop: Error in check_input_pconn(): Rank "
 		    << rank << ", Ghost node " << lid 
 		    << " is out of ghost node range.\n" << std::endl;
 	  OORGhostNodes = true;
@@ -958,7 +958,7 @@ int Rocmop::check_input_pconn()
 	else if (isMarked[lid - minGhostNodeID] == 1)
 	{
 	  if (_verb > 0)
-	    std::cout << "MOP>Warning in check_input_pconn(): Rank "
+	    std::cerr << "Rocmop: Warning in check_input_pconn(): Rank "
 		      << rank << ", Ghost node " << lid 
 		      << " has > 1 owners.\n" << std::endl;
 	}
@@ -972,7 +972,7 @@ int Rocmop::check_input_pconn()
       if (isMarked[j] == 0)
       {
 	missGhostNodes = true;
-	std::cout << "MOP>Error in check_input_pconn(): Rank "
+	std::cerr << "Rocmop: Error in check_input_pconn(): Rank "
 		  << rank << ", Ghost node " << (j + minGhostNodeID)
 		  << " is not listed in pconn block 3.\n" << std::endl;
       }
@@ -1849,7 +1849,7 @@ void Rocmop::print_legible(int verb, const char *msg){
   }
 
   if (rank==0)
-    std::cout << "MOP> " << msg << std::endl;
+    std::cout << "Rocmop: " << msg << std::endl;
   }
 }
 
@@ -1953,8 +1953,8 @@ void Rocmop::print_extremal_dihedrals(COM::Window * window){
     MPI_Allreduce(&send,&recv,1,MPI_DOUBLE_INT,MPI_MINLOC,
 	       window->get_communicator());
   }
-    if(recv.rank == myrank){
-      std::cout << "MOP>" << std::endl << "MOP> " 
+    if(recv.rank == myrank && _verb > 1){
+      std::cout << "Rocmop:" << std::endl << "Rocmop: " 
 		<< std::setw(10) << min_angle << " on element "
 		<< min_elem << " of pane " << min_pane 
 		<< "." << std::endl;
@@ -1973,8 +1973,8 @@ void Rocmop::print_extremal_dihedrals(COM::Window * window){
     MPI_Allreduce(&send,&recv,1,MPI_DOUBLE_INT,MPI_MAXLOC,
 	       window->get_communicator());
   }
-  if(recv.rank == myrank){
-    std::cout << "MOP>" << std::endl << "MOP> " 
+  if(recv.rank == myrank && _verb > 1){
+    std::cout << "Rocmop:" << std::endl << "Rocmop: " 
 	      << std::setw(10) << max_angle << " on element "
 	      << max_elem << " of pane " << max_pane << std::endl;
   }
@@ -2136,10 +2136,11 @@ void Rocmop::print_mquality(std::string &s,
 
     file << std::left << std::setw(30) << s << std::setw(0)
 	 << "(" << min_angle << " , " << max_angle << ")";
-
-    std::cout << std::left << std::setw(30) << "MOP> " << s 
-	      << std::setw(0) << "(" << min_angle << " , " 
-	      << max_angle << ")" << std::endl;
+ 
+    if(_verb > 1)
+      std::cout << std::left << std::setw(30) << "Rocmop: " << s 
+                << std::setw(0) << "(" << min_angle << " , " 
+	        << max_angle << ")" << std::endl;
 
     file.close();
   }
@@ -2240,8 +2241,9 @@ void Rocmop::perturb_stationary(){
 
       if(fgpn_bnd_ptr[j]){
 	_dcs[i]->incident_elements(j+1,elist);
-	
-	std::cout << "MOP> Perturbing node " << j+1 << std::endl;
+
+        if(_verb > 1)	
+	std::cout << "Rocmop: Perturbing node " << j+1 << std::endl;
 	
 	//select a random element
 	int rand_el = (std::rand()%elist.size());

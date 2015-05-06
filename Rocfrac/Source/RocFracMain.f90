@@ -174,7 +174,7 @@ CONTAINS
 !
 ! -- Read the control deck file
 
-    IF(MyId.EQ.0) PRINT*,'ROCFRAC: Reading input deck'
+!    IF(MyId.EQ.0) PRINT*,'ROCFRAC: Reading input deck'
 
     glb%io_input = 10
     glb%io_sum   = 11
@@ -187,7 +187,7 @@ CONTAINS
 
     
     CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,ierr)
-    IF(MyId.eq.0) PRINT*,'ROCFRAC: ....Done Reading input deck.'
+    IF(MyId.eq.0 .AND. glb%debug_state) PRINT*,'ROCFRAC: ....Done Reading input deck.'
 
 
 ! -- Read in roc_face data structure for extracted 2D mesh.
@@ -209,7 +209,7 @@ CONTAINS
 
 !   glb%InterfaceSVbar = 0.d0
     
-   IF(myid.EQ.0) PRINT*,'ROCFRAC: Reading Mesh'
+   IF(myid.EQ.0 .AND. glb%debug_state) PRINT*,'ROCFRAC: Reading Mesh'
 
 ! - Start 
 ! - Process the 3D mesh
@@ -544,7 +544,9 @@ CONTAINS
 !!$    CLOSE(14)
     
    CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,ierr)
-   IF(MyId.EQ.0) PRINT*,'ROCFRAC: Finished Reading Solids Mesh'
+   IF(MyId.EQ.0 .AND. glb%debug_state) THEN
+     PRINT*,'ROCFRAC: Finished Reading Solids Mesh'
+   ENDIF
 
    IF((glb%DebondPart.eqv..false.).AND.(glb%DebondPart_Matous.eqv..false.))THEN
 
@@ -739,7 +741,7 @@ CONTAINS
     ENDIF
 
 
-    IF(InitialTime.NE.0.d0)THEN
+    IF(InitialTime.NE.0.d0 .AND. glb%Verb.gt.0)THEN
        PRINT*,'ROCFRAC: RESTARTING, SOLIDS'
        glb%ReStart = .TRUE.
     ENDIF
@@ -1180,7 +1182,7 @@ endif
     ALLOCATE(Rnet(1:3*glb%NumNP))
     IF(glb%HeatTransSoln) ALLOCATE(RnetHT(1:glb%NumNP))
 
-    IF(MyId.EQ.0)THEN
+    IF(MyId.EQ.0 .AND. glb%Verb.gt.0)THEN
        PRINT*,'ROCFRAC:  Time Step             Dt'
        PRINT*,'ROCFRAC: -------------------------'
     ENDIF
@@ -1213,8 +1215,9 @@ endif
 
        glb%CurrTime = CurrentTime + (CurrentTimestep-CurrentTimestepSolid)
 
-       IF(MyId.EQ.0) WRITE(*,'(a10,i10,4e12.4)')'ROCFRAC:', istep, &
-            (CurrentTimestep-CurrentTimestepSolid), glb%DT,CurrentTimestep,glb%CurrTime
+       IF(MyId.EQ.0 .AND. glb%Verb.gt.0) WRITE(*,'(a10,i10,4e12.4)')'ROCFRAC:',&
+             istep,(CurrentTimestep-CurrentTimestepSolid),&
+             glb%DT,CurrentTimestep,glb%CurrTime
 
 
 !-- (0) INITIALIZE
@@ -1508,7 +1511,8 @@ endif
                      glb%MapNodeS,glb%LwrBnd,glb%UppBnd,glb%Meshcoor,glb%Disp,glb%MapSElVolEl,&
                      glb%ElConnVol,glb%iElType,glb%NumElVol,glb%DummyTractVal*glb%prop)
 
-                IF(myid.EQ.0) PRINT*,'Pressure Solid =', glb%DummyTractVal*glb%prop
+                IF(myid.EQ.0 .AND. glb%Verb.gt.1) PRINT*,'Pressure Solid =',&
+                     glb%DummyTractVal*glb%prop
 
              ENDIF
 
@@ -1520,7 +1524,8 @@ endif
                      glb%MapNodeSF,glb%LwrBnd,glb%UppBnd,glb%Meshcoor,glb%Disp,glb%MapSFElVolEl,&
                      glb%ElConnVol,glb%iElType,glb%NumElVol,glb%DummyTractVal*glb%prop)
 
-                IF(myid.EQ.0) PRINT*,'Pressure Solid/Fluid =', glb%DummyTractVal*glb%prop
+                IF(myid.EQ.0 .AND. glb%Verb.gt.1) PRINT*,'Pressure Solid/Fluid =',&
+                     glb%DummyTractVal*glb%prop
 
                 
                 CALL TractPressLoad(Rnet,glb%NumNP, &
@@ -1765,7 +1770,7 @@ endif
        ENDIF
     ENDDO
 
-    IF(myid.EQ.0) PRINT*,'ROCFRAC: END SOLID STEP'
+    IF(myid.EQ.0 .AND. DEBUG) PRINT*,'ROCFRAC: END SOLID STEP'
 
     CALL RocFracInterfaceBuff(glb)
 
@@ -1925,7 +1930,7 @@ endif
  !   WRITE(*,*) 'AAA'
  !   CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,ierr)
  !   STOP
-    IF(glb%HeatTransSoln .eqv. .true.)THEN
+    IF(glb%HeatTransSoln .eqv. .true. .AND. glb%Verb.gt.1)THEN
        WRITE(*,*) 'Doing heat transfer'
        DO iInterfaceNode = 1, glb%InterfaceSFNumNodes
           k = glb%MapNodeSF(iInterfaceNode)

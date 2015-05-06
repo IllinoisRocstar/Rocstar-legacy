@@ -82,7 +82,7 @@ FluidAgent::FluidAgent(Coupling *cp, std::string mod, std::string obj, MPI_Comm 
 
 void FluidAgent::load_module() 
 {
-  MAN_DEBUG(1, ("[%d] Rocman: FluidAgent::load_module %s %s.\n", comm_rank, rocmod_name.c_str(), mod_instance.c_str()));
+  MAN_DEBUG(1, ("[%d] Rocstar: FluidAgent::load_module %s %s.\n", comm_rank, rocmod_name.c_str(), mod_instance.c_str()));
 
 #ifdef STATIC_LINK
 # ifdef RFLO
@@ -105,7 +105,7 @@ void FluidAgent::load_module()
 
 void FluidAgent::unload_module() 
 {
-  MAN_DEBUG(1, ("Rocman: FluidAgent::unload_module %s.\n", rocmod_name.c_str()));
+  MAN_DEBUG(1, ("Rocstar: FluidAgent::unload_module %s.\n", rocmod_name.c_str()));
 #ifdef STATIC_LINK
 # ifdef RFLO
   if (rocmod_name == "Rocflo")
@@ -157,7 +157,7 @@ void FluidAgent::input( double t) {
 
 // called in Coupling::init()
 void FluidAgent::init_module( double t, double dt) {
-  MAN_DEBUG(1, ("Rocman: FluidAgent::init_module t=%e dt=%e.\n", t, dt));
+  MAN_DEBUG(1, ("Rocstar: FluidAgent::init_module t=%e dt=%e.\n", t, dt));
 
   Agent::init_module(t, dt);
 
@@ -185,7 +185,7 @@ void FluidAgent::init_module( double t, double dt) {
 #ifdef NATIVE_MP_IO
   with_plag = false;
 #endif
-  MAN_DEBUG(2, ("Rocman: vol_window = %s with_plag = %d.\n", vol_window.c_str(), with_plag));
+  MAN_DEBUG(2, ("Rocstar: vol_window = %s with_plag = %d.\n", vol_window.c_str(), with_plag));
 
   // Split surface window for output
   // ifluid is fluidBuf in INITIALIZE_FLUID() ???
@@ -535,7 +535,7 @@ void FluidAgent::finalize()
 
 void FluidAgent::init_convergence( int iPredCorr) 
 {
-  MAN_DEBUG(1, ("Rocman: FluidAgent::init_convergence at %d.\n", iPredCorr));
+  MAN_DEBUG(1, ("Rocstar: FluidAgent::init_convergence at %d.\n", iPredCorr));
 
     // Copy current solution to pre for convergence check
   COM_call_function( RocBlas::copy, &f_mdot_hdl, &f_mdot_pre_hdl);
@@ -550,7 +550,7 @@ void FluidAgent::init_convergence( int iPredCorr)
 
 int FluidAgent::check_convergence( double tolerMass, double tolerTract, double tolerVelo) 
 {
-  MAN_DEBUG(1, ("Rocman: FluidAgent::check_convergence .\n"));
+  MAN_DEBUG(1, ("Rocstar: FluidAgent::check_convergence .\n"));
 
   int result = 0;
   if (!check_convergence_help(f_vm_hdl, f_vm_pre_hdl, tolerVelo, "vm")) return result;
@@ -562,7 +562,7 @@ int FluidAgent::check_convergence( double tolerMass, double tolerTract, double t
 int FluidAgent::compute_integrals()
 {
   if (compute_integrals_handle > 0) {
-    MAN_DEBUG(2, ("Rocman: FluidAgent::compute_integrals.\n"));
+    MAN_DEBUG(2, ("Rocstar: FluidAgent::compute_integrals.\n"));
     COM_call_function(compute_integrals_handle, integrals);
   }
   return 1;

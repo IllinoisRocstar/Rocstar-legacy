@@ -128,13 +128,9 @@ CONTAINS
     G_b%burn_iter = 0                    !start with zero also in case of restart
     CALL MPI_COMM_RANK(G_b%MPI_COMM_ROCBURN, G_b%rank, ierror)
 
-    IF(G_b%rank == 0) THEN
-       PRINT *,  '                                                  '
-       PRINT *,  '  ROCBURN_2D initialization starts                '
-       PRINT *,  '                                                  '
-       PRINT *,  '  ROCBURN_2D: received initial_time= ',G_b%pseudo_time
-       PRINT *,  '                                                  '
-    END IF
+!    IF(G_b%rank == 0 .AND. G_b%verbosity .gt. 1) THEN
+!       WRITE(*,*)  'Rocburn: received initial_time= ',G_b%pseudo_time
+!    END IF
  
 !
 !   Decode model_code
@@ -142,10 +138,10 @@ CONTAINS
     is_APN                = G_b%burn_model == MODEL_APN
     comp_filmcoeff        = G_b%TBL_flag == NO_TBL
 
-    IF(G_b%rank == 0) THEN
-       PRINT *,  '  TBL_flag      = ', G_b%TBL_flag
-       PRINT *,  '  burn_model    = ', G_b%burn_model
-    END IF
+!    IF(G_b%rank == 0 .AND. G_b%verbosity .gt. 1) THEN
+!       WRITE(*,*) 'Rocburn: TBL_flag      = ', G_b%TBL_flag
+!       WRITE(*,*) 'Rocburn: burn_model    = ', G_b%burn_model
+!    END IF
 
 !
 !   initialize global vairables (0D level) for inidividual 
@@ -634,6 +630,7 @@ CONTAINS
 !
        CALL MPI_ALLREDUCE(n_cell_ignited,G_b%burn_cell,1,MPI_INTEGER,&
             MPI_SUM, G_b%MPI_COMM_ROCBURN,ierror)
+       ! This statement needs access to the verbosity
        IF(G_b%rank == 0)  &
             write(*,*)'ROCBURN iter :: ',G_b%burn_iter,'CELLS IGNITED',G_b%burn_cell,'PERCENT',&
                dble(G_b%burn_cell)/dble(G_b%total_cell)*100.0d0,G_b%total_cell

@@ -95,47 +95,46 @@
 !RAF
 
     DO mat = 1, MATMAX
-
       READ(ir,*,IOSTAT=ioerr)   G_APN%a_p(mat)
       IF (ioerr /= 0) THEN
         G_APN%nmat = mat - 1
         EXIT
       ENDIF
       G_APN%nmat = mat
-
-      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  a_p(',mat,')  =',  &
-                                    G_APN%a_p(mat)
-
       READ(ir,*)   G_APN%n_p(mat)
-      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  n_p(',mat,')  =',  &
-                                    G_APN%n_p(mat)
-
       READ(ir,*)   G_APN%nxmax
-      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  nxmax= ',G_APN%nxmax
-
       READ(ir,*)   G_APN%Tf_adiabatic(mat)
-      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  Tf_adiabatic(',mat,') = ',  &
-                                    G_APN%Tf_adiabatic(mat)
-
       READ(ir,*)   G_APN%To
-      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  To= ',G_APN%To
-
       READ(ir,*,IOSTAT=ioerr) G_APN%xmax(mat)
       IF (ioerr /= 0) THEN
         G_APN%xmax(mat) = 1.0e+15
       ENDIF
-      IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  xmax(',mat,')  =',  &
-                                    G_APN%xmax(mat)
       IF (ioerr /= 0) EXIT
-
     END DO
-    IF (G_APN%rank==0) WRITE(*,*) 'ROCBURN_APN:  Found a total of ',G_APN%nmat,' materials'
 
-!RAF
+    READ(ir,*,IOSTAT=ioerr) G_APN%verbosity
+    IF(ioerr /= 0) THEN
+      G_APN%verbosity = 1
+    ENDIF
 
     CLOSE(ir)
 
-    IF (G_APN%rank==0) PRINT *,'ROCBURN_APN: rank=',G_APN%rank,       &
+    IF(G_APN%rank .eq. 0 .AND. G_APN%verbosity .gt. 0) THEN
+       WRITE(*,*) 'RocburnAPN: *********** Using APN Burn Model **************'
+    ENDIF
+    IF(G_APN%rank .eq. 0 .AND. G_APN%verbosity .gt. 1) THEN
+       WRITE(*,*) 'RocburnAPN:  Found a total of ',G_APN%nmat,' materials'
+       DO mat = 1, G_APN%nmat
+          WRITE(*,*) 'RocburnAPN:  a_p(',mat,')  =',G_APN%a_p(mat)
+          WRITE(*,*) 'RocburnAPN:  n_p(',mat,')  =',G_APN%n_p(mat)
+          WRITE(*,*) 'RocburnAPN:  nxmax= ',G_APN%nxmax
+          WRITE(*,*) 'RocburnAPN:  Tf_adiabatic(',mat,') = ',G_APN%Tf_adiabatic(mat)
+          WRITE(*,*) 'RocburnAPN:  To= ',G_APN%To
+          WRITE(*,*) 'RocburnAPN:  xmax(',mat,')  =',G_APN%xmax(mat)
+       END DO
+    END IF
+
+    IF (G_APN%verbosity.gt.2) PRINT *,'RocburnAPN: rank=',G_APN%rank,       &
             ' done input ', ControlFile
 
     RETURN 

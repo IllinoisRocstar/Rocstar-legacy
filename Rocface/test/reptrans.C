@@ -173,6 +173,7 @@ int main(int argc, char *argv[]) {
   for ( int i=initial+1; i<=niter; ++i) {
     int verbose=(i==nextdump), noop=0, two=2;
     double half=0.5, tol=1.e-15;
+ 
 
     COM_call_function( RFC_set_verbose, &noop);
     if ( scheme>0) {
@@ -192,8 +193,9 @@ int main(int argc, char *argv[]) {
       COM_call_function( BLAS_sub, &w1_fs, &w1_nc, &w1_err);
       COM_call_function( BLAS_add_scalar, &w1_err1, &neg1, &w1_err1);
       COM_call_function( BLAS_nrm2, &w1_err, &w1_nrms);
-      std::cout << "Error norms are: " << nrms[0] << ' ' << nrms[1] 
-		<< ' ' << nrms[2] << std::endl;
+      if(verbose)
+        std::cout << "Error norms are: " << nrms[0] << ' ' << nrms[1] 
+   		  << ' ' << nrms[2] << std::endl;
 
       std::sprintf( buf, "%05d", i+1);
       COM_call_function( OUT_write, (wnames[0]+buf).c_str(),

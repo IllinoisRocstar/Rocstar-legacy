@@ -54,7 +54,7 @@ void printStackBacktrace() {
 }
 
 std::ostream &operator<<( std::ostream& os, const COM_exception &ex) {
-  os << "ROCCOM: " << (ex.ierr<1000?"WARNING ":"ERROR ")
+  os << "Roccom: " << (ex.ierr<1000?"WARNING ":"ERROR ")
      << ex.ierr << ": ";
   std::string msg;
   switch (ex.ierr) {
@@ -181,8 +181,8 @@ std::ostream &operator<<( std::ostream& os, const COM_exception &ex) {
     msg = "Unknow error"; 
   }
 
-  os << msg << "\nROCCOM: Error encountered when processing " 
-     << ex.msg << std::endl << "ROCCOM: ";
+  os << msg << "\nRoccom: Error encountered when processing " 
+     << ex.msg << std::endl << "Roccom: ";
   return os;
 }
 
@@ -191,7 +191,7 @@ append_frame_info( const std::string &s, const char *frame,
 		   const char *file, int line) {
   char buf[1000];
   
-  std::sprintf( buf, "\nROCCOM: In %s of file %s at line %d",
+  std::sprintf( buf, "\nRoccom: In %s of file %s at line %d",
 		frame, file, line);
   return s+buf;
 }

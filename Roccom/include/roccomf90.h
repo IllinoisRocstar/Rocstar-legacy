@@ -1845,6 +1845,10 @@
            INTEGER, INTENT(IN) :: level
          END SUBROUTINE COM_SET_VERBOSE
 
+         SUBROUTINE COM_SET_DEBUG( debug)
+           LOGICAL, INTENT(IN) :: debug
+         END SUBROUTINE COM_SET_DEBUG
+
          SUBROUTINE COM_SET_PROFILING( level)
            INTEGER, INTENT(IN) :: level
          END SUBROUTINE COM_SET_PROFILING

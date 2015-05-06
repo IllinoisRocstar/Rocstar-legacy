@@ -83,7 +83,8 @@ inline static void remove_arg( int *argc, char ***argv, int i) {
 
 Roccom_base::Roccom_base( int *argc, char ***argv) throw( COM_exception, int)
   : _depth(0), _verbose(0), _verb1(0), _comm(MPI_COMM_WORLD),
-    _mpi_initialized(false), _errorcode(0), _exception_on(true), _profile_on(0)
+    _mpi_initialized(false), _errorcode(0), _exception_on(true), _profile_on(0),
+    _debug(false)
 {
   _attr_map.add_object("",NULL);
   _func_map.add_object("",NULL);
@@ -138,6 +139,7 @@ Roccom_base::Roccom_base( int *argc, char ***argv) throw( COM_exception, int)
       ++i;
   }
 
+
   // Initialize MPI if requested and MPI is not yet initialized.
   //  if ( _mpi_initialized){
     //    std::cout << "INITIALIZING MPI!!!" << std::endl;
@@ -164,7 +166,7 @@ Roccom_base::Roccom_base( int *argc, char ***argv) throw( COM_exception, int)
   _cppobj_casting = -1;
 #endif
 
-  if ( _verbose) {
+  if ( _debug && rank == 0) {
     std::cerr << "Roccom Version 3.0. CVS $Id: Roccom_base.C,v 1.93 2008/12/06 08:43:25 mtcampbe Exp $" << std::endl;
     std::cerr << "Roccom: Started with verbose level " << _verbose << std::endl;
 #ifndef DUMMY_MPI
@@ -210,8 +212,8 @@ Roccom_base::load_module( const std::string &lname,
 			  const std::string &wname) throw(int)
 {
 #ifndef STATIC_LINK
-  if ( _verb1>1) 
-    std::cerr << "Loading module " << lname 
+  if ( _debug) 
+    std::cerr << "Roccom: Loading module " << lname 
 	      << " with arguments " << wname << "..." << std::endl;
 
   void *handle;
@@ -226,12 +228,12 @@ Roccom_base::load_module( const std::string &lname,
     // Open the library
     handle = dlopen( lname_full.c_str(), RTLD_LAZY);
     if (handle == NULL)
-      printf("dlopen error: %s\n", dlerror());
+      std::cerr << "dlopen error: " << dlerror() << std::endl;
 
     if ( handle == NULL && !_libdir.empty()) {
       handle = dlopen( lname_short.c_str(), RTLD_LAZY);
       if (handle == NULL)
-        printf("dlopen error: %s\n", dlerror());
+        std::cerr << "dlopen error: " << dlerror() << std::endl;
       lname_found = lname_short;
     }
     else 
@@ -313,8 +315,8 @@ Roccom_base::load_module( const std::string &lname,
   // Restore the default communicator.
   std::swap(_comm, comm);
 
-  if ( _verb1>1) 
-    std::cerr << "Module " << lname << " loaded." << std::endl;
+  if ( _debug) 
+    std::cerr << "Roccom: Module " << lname << " loaded." << std::endl;
 #endif
 }
 
@@ -323,8 +325,8 @@ Roccom_base::unload_module( const std::string &lname,
 			    const std::string &wname, int dodl) throw(int) {
 
 #ifndef STATIC_LINK
-  if ( _verb1>1) 
-    std::cerr << "Unloading module " << lname << "..." << std::endl;
+  if ( _debug) 
+    std::cerr << "Roccom: Unloading module " << lname << "..." << std::endl;
 
   // Obtain the window name corresponding to the library
   int index = _module_map.find(lname).first;
@@ -388,8 +390,8 @@ Roccom_base::unload_module( const std::string &lname,
     _module_map.remove_object( lname);
   }
 
-  if ( _verb1>1) 
-    std::cerr << "Module " << lname << " unloaded" << std::endl;
+  if ( _debug) 
+    std::cerr << "Rocccom: Module " << lname << " unloaded" << std::endl;
 #endif
 }
 
@@ -400,8 +402,8 @@ void Roccom_base::new_window( const std::string &name, MPI_Comm comm) throw(int)
   if ( comm == MPI_COMM_NULL) comm = _comm;
 
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: Creating window \"" << name << '"' 
+    if ( _debug) 
+      std::cerr << "Roccom: Creating window \"" << name << '"' 
 		<< " with communicator " << comm << std::endl;
     
     if ( _window_map.find( name).second) 
@@ -431,16 +433,16 @@ window_init_done( const std::string &wname, bool panechanged) throw(int)
     std::string msg = std::string("When completing the init of window ")+wname;
     proc_exception( ex, msg);
   }
-  if ( _verb1>1) 
-    std::cerr << "ROCCOM: Done creating window \"" << wname 
+  if ( _debug) 
+    std::cerr << "Roccom: Done creating window \"" << wname 
 	      << '"' << std::endl;
 }
 
 void Roccom_base::delete_window( const std::string &name) throw(int) 
 {
   try {
-    if ( _verb1>1)
-      std::cerr << "ROCCOM: Deleting window \"" << name << '"' << std::endl;
+    if ( _debug)
+      std::cerr << "Roccom: Deleting window \"" << name << '"' << std::endl;
 
     _window_map.remove_object( name);
     _errorcode = 0;
@@ -458,8 +460,8 @@ void Roccom_base::delete_pane( const std::string &wname,
 			       const int pane_id) throw(int) 
 {
   try {
-    if ( _verb1>1)
-      std::cerr << "ROCCOM: Delete pane " << pane_id << " of window "
+    if ( _debug)
+      std::cerr << "Roccom: Delete pane " << pane_id << " of window "
 		<< std::endl;
 
     get_window( wname).delete_pane( pane_id);
@@ -518,11 +520,11 @@ new_attribute( const std::string &wa,
 	       const std::string &unit) throw(int) 
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: new attribute \"" << wa
-		<< "\"\n\tLocation: " << loc << "\n\tType: ";
+    if ( _debug) {
+      std::cerr << "Roccom: new attribute \"" << wa
+		<< "\"\nRoccom:\tLocation: " << loc << "\nRoccom:\tType: ";
       print_type( std::cerr, type);
-      std::cerr << "\n\tSize: " << size << "\n\tUnit: \"" << unit << "\""
+      std::cerr << "\nRoccom:\tSize: " << size << "\nRoccom:\tUnit: \"" << unit << "\""
 		<< std::endl;
     }
 
@@ -546,8 +548,8 @@ void Roccom_base::
 delete_attribute( const std::string &wa) throw(int) 
 {
   try {
-    if ( _verb1>1)
-      std::cerr << "ROCCOM: delete attribute \"" << wa << std::endl;
+    if ( _debug)
+      std::cerr << "Roccom: delete attribute \"" << wa << std::endl;
 
     // Invoke Window::new_attribute.
     std::string wname, aname;
@@ -568,8 +570,8 @@ void Roccom_base::set_size( const std::string &wa, int pid,
 			    int nitems, int ng) throw(int)
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Set size for attribute \"" 
+    if ( _debug) {
+      std::cerr << "Roccom: Set size for attribute \"" 
 		<< wa << '"' << " on pane " << pid 
 		<< " to " << nitems << " items with " << ng 
 		<< " ghosts" << std::endl;
@@ -658,8 +660,8 @@ void Roccom_base::set_array( const std::string &wa, const int pid,
 			     bool is_const) throw(int) 
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Set array for \"" << wa << "\" on pane " 
+    if ( _debug) {
+      std::cerr << "Roccom: Set array for \"" << wa << "\" on pane " 
 		<< pid << " to " << addr << " with stride ";
       if ( strd) std::cerr << strd;
       else std::cerr << "==#components";
@@ -694,8 +696,8 @@ void Roccom_base::allocate_array( const std::string &wa, const int pid,
 				  void **addr, int strd, int cap) throw(int) 
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Allocate array for \"" << wa << "\" on pane " 
+    if ( _debug) {
+      std::cerr << "Roccom: Allocate array for \"" << wa << "\" on pane " 
 		<< pid << " with stride ";
       if ( strd) std::cerr << strd;
       else std::cerr << "==#components";
@@ -725,8 +727,8 @@ void Roccom_base::allocate_array( const std::string &wa, const int pid,
 void Roccom_base::resize_array( const std::string &wa, const int pid, 
 				void **addr, int strd, int cap) throw(int) {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Resize array for \"" << wa << "\" on pane " 
+    if ( _debug) {
+      std::cerr << "Roccom: Resize array for \"" << wa << "\" on pane " 
 		<< pid << " with stride ";
       if ( strd<0) std::cerr << "==current";
       else if (strd) std::cerr << strd;
@@ -758,8 +760,8 @@ void Roccom_base::append_array( const std::string &wa, const int pid,
 				const void *val, int v_strd, int v_size) throw(int)
 {
   try {
-    if ( _verb1>1)
-      std::cerr << "ROCCOM: Appending array " << val << " for \"" << wa 
+    if ( _debug)
+      std::cerr << "Roccom: Appending array " << val << " for \"" << wa 
 		<< "\" on pane " << pid << " with stride " << v_strd 
 		<< " and size " << v_size << std::endl;
 
@@ -781,8 +783,8 @@ use_attribute( const std::string &waname, const std::string &pwaname,
 	       int withghost,const char *cndname, int val) throw(int)
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Using attribute \"" << pwaname 
+    if ( _debug) {
+      std::cerr << "Roccom: Using attribute \"" << pwaname 
 		<< "\" onto \"" << waname << '"' << std::endl;
     }
     std::string pawname, paaname;
@@ -821,8 +823,8 @@ clone_attribute( const std::string &waname, const std::string &pwaname,
 		 int withghost, const char *cndname, int val) throw(int)
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Cloning attribute \"" << pwaname 
+    if ( _debug) {
+      std::cerr << "Roccom: Cloning attribute \"" << pwaname 
 		<< "\" onto \"" << waname << '"' << std::endl;
     }
     std::string pawname, paaname;
@@ -861,8 +863,8 @@ copy_attribute( const std::string &waname, const std::string &pwaname,
 		int withghost, const char *cndname, int val) throw(int)
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Copying attribute \"" << pwaname 
+    if ( _debug) {
+      std::cerr << "Roccom: Copying attribute \"" << pwaname 
 		<< "\" onto \"" << waname << '"' << std::endl;
     }
     std::string pawname, paaname;
@@ -901,8 +903,8 @@ copy_attribute( int trg_hdl, int src_hdl,
 		int withghost, int ptn_hdl, int val) throw(int)
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Copying attribute with handle \"" << src_hdl 
+    if ( _debug) {
+      std::cerr << "Roccom: Copying attribute with handle \"" << src_hdl 
 		<< "\" onto \"" << trg_hdl << '"' << std::endl;
     }
 
@@ -933,8 +935,8 @@ void Roccom_base::deallocate_array( const std::string &wa,
 				    const int pid) throw(int) 
 {
   try {
-    if ( _verb1>1)
-      std::cerr << "ROCCOM: Deallocate array for \"" << wa << "\" on pane " 
+    if ( _debug)
+      std::cerr << "Roccom: Deallocate array for \"" << wa << "\" on pane " 
 		<< pid << " to" << std::endl;
 
     std::string wname, aname;
@@ -957,8 +959,8 @@ get_attribute( const std::string &wa, char *loc,
 	       int *type, int *size, std::string *unit) throw(int) 
 {
   try {
-    if ( _verb1>1) // Print debugging info
-      std::cerr << "ROCCOM: get attribute \"" << wa << "\"" << std::endl;
+    if ( _debug) // Print debugging info
+      std::cerr << "Roccom: get attribute \"" << wa << "\"" << std::endl;
 
     // Invoke Window::get_attribute.
     std::string wname, aname;
@@ -967,11 +969,12 @@ get_attribute( const std::string &wa, char *loc,
     get_window( wname).get_attribute( aname, loc, type, size, unit);
     _errorcode = 0;
 
-    if ( _verb1>1) { // Print debugging info
-      if (loc)  std::cerr << "\tLocation: " << *loc << "\n\tType: \n";
+    if ( _debug) { // Print debugging info
+      if (loc)  std::cerr << "Roccom:\tLocation: " << *loc 
+                          << "\nRoccom:\tType: ";
       if (type) print_type( std::cerr, *type);    
-      if ( size) std::cerr << "\tSize: " << *size << std::endl;
-      if ( unit) std::cerr << "\tUnit: \"" << *unit << "\"" << std::endl;
+      if ( size) std::cerr << "Roccom:\tSize: " << *size << std::endl;
+      if ( unit) std::cerr << "Roccom:\tUnit: \"" << *unit << "\"" << std::endl;
     }
   }
   catch ( COM_exception ex) {
@@ -986,8 +989,8 @@ void Roccom_base::get_size( const std::string &wa, int pid,
 			    int *nitems, int *ng) throw(int) 
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Get size for attribute \"" 
+    if ( _debug) {
+      std::cerr << "Roccom: Get size for attribute \"" 
 		<< wa << '"' << " for pane " << pid << std::endl;
     }
 
@@ -1020,8 +1023,8 @@ void Roccom_base::get_array( const std::string &wa, const int pid,
 			     Pointer_descriptor &addr, 
 			     int *strd, int *cap, bool is_const) throw(int) {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Get array for attribute \"" 
+    if ( _debug) {
+      std::cerr << "Roccom: Get array for attribute \"" 
 		<< wa << '"' << " on pane " << pid << std::endl;
     }
 
@@ -1031,8 +1034,8 @@ void Roccom_base::get_array( const std::string &wa, const int pid,
 
     get_window( wname).get_array( aname, pid, addr, strd, cap, is_const);
 
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: ";
+    if ( _debug) {
+      std::cerr << "Roccom: ";
       if ( strd) std::cerr << " stride is " << *strd;
       if ( cap) std::cerr << " capacity is " << *cap;
       std::cerr << std::endl;
@@ -1052,8 +1055,8 @@ void Roccom_base::get_array( const std::string &wa, const int pid,
 int Roccom_base::get_status( const std::string &wa, int pid) throw(int) 
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Get status for attribute \"" 
+    if ( _debug) {
+      std::cerr << "Roccom: Get status for attribute \"" 
 		<< wa << '"' << " on pane " << pid << std::endl;
     }
 
@@ -1069,8 +1072,8 @@ int Roccom_base::get_status( const std::string &wa, int pid) throw(int)
 
     int status = (**w).get_status( aname, pid);
 
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: ";
+    if ( _debug) {
+      std::cerr << "Roccom: ";
       std::cerr << " status is " << status << std::endl;
     }
 
@@ -1092,8 +1095,8 @@ void Roccom_base::copy_array( const std::string &wa, const int pid,
 			      int offset) throw(int) 
 {
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: Copy array for attribute \"" 
+    if ( _debug) {
+      std::cerr << "Roccom: Copy array for attribute \"" 
 		<< wa << '"' << " on pane " << pid << std::endl;
     }
 
@@ -1103,8 +1106,8 @@ void Roccom_base::copy_array( const std::string &wa, const int pid,
 
     get_window( wname).copy_array( aname, pid, val, v_strd, v_size, offset);
 
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: ";
+    if ( _debug) {
+      std::cerr << "Roccom: ";
       std::cerr << " stride is " << v_strd;
       std::cerr << " size is " << v_size;
       std::cerr << std::endl;
@@ -1144,8 +1147,8 @@ void Roccom_base::
 set_f90pointer( const std::string &waname, void *ptr, 
 		Func_ptr f, long int len) throw(int) {
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: set pointer \"" << waname 
+    if ( _debug) 
+      std::cerr << "Roccom: set pointer \"" << waname 
 		<< " to " << ptr << std::endl;
 
     std::string wname, aname;
@@ -1178,8 +1181,8 @@ set_f90pointer( const std::string &waname, void *ptr,
 	(*(Func2)f)( (char*)ptr+offs.first, a->pointer());
       }
 
-      if ( _verb1>1) {
-	std::cerr << "ROCCOM: copied values ";
+      if ( _debug) {
+	std::cerr << "Roccom: copied values ";
 	for ( int i=0, ni=n/sizeof(void*); i<ni; ++i) 
 	  std::cerr << ((void**)a->pointer())[i] << ' ';
 	std::cerr << std::endl;
@@ -1199,8 +1202,8 @@ void Roccom_base::
 get_f90pointer( const std::string &waname, void *ptr, 
 		Func_ptr f, long int len) throw(int) {
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: get pointer \"" << waname 
+    if ( _debug) 
+      std::cerr << "Roccom: get pointer \"" << waname 
 		<< " into " << ptr << std::endl;
 
     std::string wname, aname;
@@ -1237,8 +1240,8 @@ get_f90pointer( const std::string &waname, void *ptr,
 MPI_Comm Roccom_base::
 get_communicator( const std::string &wname) throw(int) {
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: get the communicator of window \"" 
+    if ( _debug) 
+      std::cerr << "Roccom: get the communicator of window \"" 
 		<< wname << std::endl;
     if ( COMMPI_Initialized()) {
       Window &w = get_window(wname);
@@ -1261,8 +1264,8 @@ void Roccom_base::
 get_panes( const std::string &wname, std::vector<int> &paneids_vec, 
 	   int rank, int **pane_ids) throw(int){
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: get pane ids of window \"" 
+    if ( _debug) {
+      std::cerr << "Roccom: get pane ids of window \"" 
 		<< wname << "\" on ";
       if ( rank==-2) std::cerr << " this process";
       else if ( rank==-1) std::cerr << " all processes";
@@ -1290,8 +1293,8 @@ get_panes( const std::string &wname, std::vector<int> &paneids_vec,
 void Roccom_base::
 get_windows(std::vector<std::string> &names) throw(int){
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: get windows";
+    if ( _debug) {
+      std::cerr << "Roccom: get windows";
       //      if ( rank==-2) std::cerr << " this process";
       //      else if ( rank==-1) std::cerr << " all processes";
       //      else std::cerr << " process " << rank;
@@ -1318,8 +1321,8 @@ get_windows(std::vector<std::string> &names) throw(int){
 void Roccom_base::
 get_modules(std::vector<std::string> &names) throw(int){
   try {
-    if ( _verb1>1) {
-      std::cerr << "ROCCOM: get modules";
+    if ( _debug) {
+      std::cerr << "Roccom: get modules";
       //      if ( rank==-2) std::cerr << " this process";
       //      else if ( rank==-1) std::cerr << " all processes";
       //      else std::cerr << " process " << rank;
@@ -1347,8 +1350,8 @@ void Roccom_base::get_attributes( const std::string &wname, int *natts,
 				  std::string &str, char **names) throw(int)
 {
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: get attributes of window \"" 
+    if ( _debug) 
+      std::cerr << "Roccom: get attributes of window \"" 
 		<< wname << '"' << std::endl;
 
     std::vector<Attribute*> as;
@@ -1369,8 +1372,8 @@ void Roccom_base::get_attributes( const std::string &wname, int *natts,
       (*names)[str.size()]=0;
     }
 
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: Got attribute names: " << str << std::endl;
+    if ( _debug) 
+      std::cerr << "Roccom: Got attribute names: " << str << std::endl;
 
     _errorcode = 0;
   }
@@ -1388,8 +1391,8 @@ get_connectivities( const std::string &wname, int pane_id, int *natts,
 		    std::string &str, char **names) throw(int)
 {
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: get connectivities of window \"" << wname 
+    if ( _debug) 
+      std::cerr << "Roccom: get connectivities of window \"" << wname 
 		<< "\" on pane " << pane_id << std::endl;
 
     std::vector<Connectivity*> as;
@@ -1411,8 +1414,8 @@ get_connectivities( const std::string &wname, int pane_id, int *natts,
       (*names)[str.size()]=0;
     }
 
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: Got connectivity names: " << str << std::endl;
+    if ( _debug) 
+      std::cerr << "Roccom: Got connectivity names: " << str << std::endl;
 
     _errorcode = 0;
   }
@@ -1429,8 +1432,8 @@ get_parent( const std::string &waname, int pane_id,
 	    std::string &str, char **name) throw(int)
 {
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: get parent of attribute \"" << waname 
+    if ( _debug) 
+      std::cerr << "Roccom: get parent of attribute \"" << waname 
 		<< "\" on pane " << pane_id << std::endl;
 
     std::string wname, aname;
@@ -1444,8 +1447,8 @@ get_parent( const std::string &waname, int pane_id,
       (*name)[str.size()]=0;
     }
 
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: Got parent name: " << str << std::endl;
+    if ( _debug) 
+      std::cerr << "Roccom: Got parent name: " << str << std::endl;
 
     _errorcode = 0;
   }
@@ -1468,15 +1471,15 @@ int Roccom_base::
 get_window_handle( const std::string &wname) throw(int) { 
   int n(-1);
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: get handle of window \"" << wname << "\": ";
+    if ( _debug) 
+      std::cerr << "Roccom: get handle of window \"" << wname << "\": ";
     std::pair<int,Window**> obj = _window_map.find( wname);
     COM_assertion(obj.first<0 || (*obj.second)->name()==wname);
 
     if ( obj.first>=0)
       n = obj.first+1; 
     
-    if ( _verb1>1) {
+    if ( _debug) {
       if ( n>0) std::cerr << n << std::endl;
       else std::cerr << " not found" << std::endl;      
     }
@@ -1510,8 +1513,8 @@ int Roccom_base::
 get_attribute_handle_const( const std::string &waname) throw(int) {
   int n(-1);
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: get const handle of attribute \"" 
+    if ( _debug) 
+      std::cerr << "Roccom: get const handle of attribute \"" 
 		<< waname << "\": ";
 
     std::string wname, aname;
@@ -1521,7 +1524,7 @@ get_attribute_handle_const( const std::string &waname) throw(int) {
     
     if ( a!=NULL) n=_attr_map.add_object( waname, a, true);
 
-    if ( _verb1>1) {
+    if ( _debug) {
       if ( n>0) std::cerr << n << std::endl;
       else std::cerr << " not found" << std::endl;      
     }
@@ -1537,8 +1540,8 @@ int Roccom_base::
 get_attribute_handle( const std::string &waname) throw(int) {
   int n(-1);
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: get handle of attribute \"" << waname << "\": ";
+    if ( _debug) 
+      std::cerr << "Roccom: get handle of attribute \"" << waname << "\": ";
     std::string wname, aname;
     split_name( waname, wname, aname);
     
@@ -1546,7 +1549,7 @@ get_attribute_handle( const std::string &waname) throw(int) {
     
     if ( a!=NULL) n=_attr_map.add_object( waname, a, false);
 
-    if ( _verb1>1) {
+    if ( _debug) {
       if ( n>0) std::cerr << n << std::endl;
       else std::cerr << " not found" << std::endl;      
     }
@@ -1562,8 +1565,8 @@ int Roccom_base::
 get_function_handle( const std::string &wfname) throw(int) {
   int n(-1);
   try {
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: get handle of function \"" << wfname << "\": ";
+    if ( _debug) 
+      std::cerr << "Roccom: get handle of function \"" << wfname << "\": ";
     std::string wname, fname;
     split_name( wfname, wname, fname);
     
@@ -1571,7 +1574,7 @@ get_function_handle( const std::string &wfname) throw(int) {
 
     if ( f!=NULL) n=_func_map.add_object( wfname, f);
 
-    if ( _verb1>1) {
+    if ( _debug) {
       if ( n>0) std::cerr << n << std::endl;
       else std::cerr << " not found" << std::endl;      
     }
@@ -1587,14 +1590,15 @@ void Roccom_base::set_function( const std::string &wfname,
 				Func_ptr ptr,
 				const std::string &intents,
 				const COM_Type *types, bool ff) throw(int) {
+  int rank = COMMPI_Comm_rank( MPI_COMM_WORLD);
   try { 
-    if ( _verb1>1) {
+    if ( _debug) {
       int n=intents.size();
-      std::cerr << "ROCCOM: init function \"" << wfname << '"'
+      std::cerr << "Roccom: init function \"" << wfname << '"'
 		<< " to " << ptr << " with " << n << " parameters";
 
       for ( int i=0; i<n; ++i) {
-	std::cerr << "\n\t" << intents[i] << ":";
+	std::cerr << "\nRoccom:\t" << intents[i] << ":";
 	print_type( std::cerr, types[i]);
       }
       std::cerr << std::endl;
@@ -1636,12 +1640,12 @@ set_member_function_helper( const std::string &wfname,
 			    const COM_Type *types, 
 			    bool ff) throw(int) {
   try {
-    if ( _verb1>1) {
+    if ( _debug) {
       int n=intents.size();
-      std::cerr << "ROCCOM: init function \"" << wfname  << '"'
+      std::cerr << "Roccom: init function \"" << wfname  << '"'
 		<< " to " << ptr << " with " << n << " parameters";
       for ( int i=0; i<n; ++i) {
-	std::cerr << "\n\t" << intents[i] << ":";
+	std::cerr << "\nRoccom:\t" << intents[i] << ":";
 	print_type( std::cerr, types[i]);
 	if ( i==0) std::cerr << "\t\"" << waname << "\"";
       }
@@ -1743,8 +1747,8 @@ call_function( int wf, int count,
   // If verb is even, then it will also print the arguments.
   try {
     if ( wf==0) { 
-      if ( _verbose) {
-	std::cerr << "ROCCOM: ************* CALL(" << _depth << ") " 
+      if ( _debug) {
+	std::cerr << "Roccom: ************* CALL(" << _depth << ") " 
 		  << "on NOOP with " << count << " arguments" << std::endl;
       }
       return;  // Null function
@@ -1755,10 +1759,10 @@ call_function( int wf, int count,
     int  verb = std::max(_verbose, int(_func_map.verbs[ wf]))-_depth*2;
     if ( verb<=0) verb = 0; 
     else verb = (verb+1)%2+1;
-    if ( verb) {
-      std::cerr << "ROCCOM: CALL(" << _depth << ") " 
+    if ( _debug) {
+      std::cerr << "Roccom: CALL(" << _depth << ") " 
 		<< _func_map.name(wf);
-      if ( verb>1) std::cerr << '(';
+      if ( _debug) std::cerr << '(';
     }
 
     std::vector<char> strs[Function::MAX_NUMARG+1];
@@ -1779,8 +1783,8 @@ call_function( int wf, int count,
       throw COM_exception(COM_ERR_TOO_MANY_ARGS);
 
     if ( offset) {
-      if ( verb>1)
-	std::cerr << std::endl << '\t' << func->intent(0) << ": ";
+      if ( _debug)
+	std::cerr << std::endl << "Roccom:\t" << func->intent(0) << ": ";
       
       if ( func->is_rawdata( 0)) {
 	if ( attr->is_const() && std::tolower(func->intent(0)) != 'i')
@@ -1802,21 +1806,21 @@ call_function( int wf, int count,
 	else 
 	  ps[0] = (char*)const_cast<void*>(attr->pointer());
 	
-	if ( verb>1)
+	if ( _debug)
 	  std::cerr << "VALUE OF\t@" << ps[0] << "\t\"" 
 		    << attr->window()->name() << '.' << attr->name() << '"';
       }
       else {
 	ps[0] = const_cast<Attribute*>(attr);
-	if ( verb>1)
+	if ( _debug)
 	  std::cerr << "METADATA\t@" << ps[0] << "\t\"" 
 		    << attr->window()->name() << '.' << attr->name() << '"';
       }
     }
 
     for ( int i=offset; i<count; ++i) {
-      if ( verb>1) {
-	std::cerr << std::endl << '\t' << func->intent(i) << ": ";
+      if ( _debug) {
+	std::cerr << std::endl << "Roccom:\t" << func->intent(i) << ": ";
       }
 
       if ( func->is_literal(i)) {
@@ -1861,7 +1865,7 @@ call_function( int wf, int count,
 	  if (intent=='o' || intent=='O' || intent=='b' || intent=='B') 
 	    needpostproc=true;
 	}
-	if (verb>1) {
+	if (_debug) {
 	  switch (type) {
 	  case COM_STRING:
 	    std::cerr << "STRING\t@" << args[i] << "\t";
@@ -1909,7 +1913,7 @@ call_function( int wf, int count,
 	if ( h == 0 && func->intent(i)<='Z') { 
 	  // Optional attribute received a 0 attribute handle
 	  ps[i] = NULL;
-	  if ( verb>1)
+	  if ( _debug)
 	    std::cerr << "ZERO ATTRIBUTE HANDLE";
 	  continue;
 	}
@@ -1921,13 +1925,13 @@ call_function( int wf, int count,
 
 	if ( func->is_rawdata( i)) {
 	  ps[i] = const_cast<void*>(attr->pointer());
-	  if ( verb>1)
+	  if ( _debug)
 	    std::cerr << "VALUE OF\t@" << ps[i] 
 		      << "\t\"" << _attr_map.name(h) << '"';
 	}
 	else {
 	  ps[i] = const_cast<Attribute*>(attr);
-	  if ( verb>1)
+	  if ( _debug)
 	    std::cerr << "METADATA\t@" << ps[i] 
 		      << "\t\"" << _attr_map.name(h) << '"';
 	}
@@ -1956,13 +1960,13 @@ call_function( int wf, int count,
     for ( int i=count, iend=func->num_of_args(); i<iend; ++i) {
       if ( !func->is_optional( i)) throw COM_exception(COM_ERR_TOO_FEW_ARGS);
       ps[i] = NULL;
-      if ( verb>1) {
-	std::cerr << std::endl << "OPT\t" << func->intent(i) << ": ";
+      if ( _debug) {
+	std::cerr << std::endl << "Roccom: OPT\t" << func->intent(i) << ": ";
 	std::cerr << ps[i];
       }
     }
-    if ( verb) {
-      if ( verb>1) std::cerr << std::endl << ')';
+    if ( _debug) {
+      if ( _debug) std::cerr << std::endl << "Roccom: )";
       std::cerr << std::endl;
     }
     
@@ -1977,15 +1981,15 @@ call_function( int wf, int count,
 #endif
     }
     ++_depth;
-    if ( verb>1 && lcount>0) {
-      std::cerr << "Invoking function with " << lcount 
+    if ( _debug && lcount>0) {
+      std::cerr << "Roccom: Invoking function with " << lcount 
 		<< " additional implicit arguments: " << std::endl;
       for ( int i=0; i<lcount; ++i) {
 	long int p=(long int)ps[func->num_of_args()+i];
 	if ( p<0 || p>MAX_NAMELEN)
-	  std::cerr << "\t@" << (void *)p << std::endl;
+	  std::cerr << "Roccom:\t@" << (void *)p << std::endl;
 	else
-	  std::cerr << '\t' << (long int)p << std::endl;
+	  std::cerr << "Roccom:\t" << (long int)p << std::endl;
       }
     }
 
@@ -2015,8 +2019,8 @@ call_function( int wf, int count,
       if (_depth==0) _func_map.wtimes_tree[0] += sec;
     }
 
-    if ( verb) {
-      std::cerr << "ROCCOM: DONE(" << _depth << ") " << std::endl;
+    if ( _debug) {
+      std::cerr << "Roccom: DONE(" << _depth << ") " << std::endl;
     }
 
     // Copy back strings
@@ -2063,8 +2067,8 @@ set_function_verbose( int i, int level) throw(int) {
 
 void Roccom_base::
 set_profiling( int i) {
-  if ( _verb1>1) 
-    std::cerr << "ROCCOM: init profiling level to " << i << std::endl; 
+  if ( _debug) 
+    std::cerr << "Roccom: init profiling level to " << i << std::endl; 
   _profile_on = i; 
   std::fill(_func_map.wtimes_tree.begin(),_func_map.wtimes_tree.end(), 0);
   std::fill(_func_map.wtimes_self.begin(),_func_map.wtimes_self.end(), 0);
@@ -2078,10 +2082,11 @@ set_profiling_barrier( int hdl, MPI_Comm comm) {
     if ( hdl < 0 || hdl>=_func_map.size()) 
       throw COM_exception( COM_ERR_INVALID_FUNCTION_HANDLE);
 
-    if ( _verb1>1) 
-      std::cerr << "ROCCOM: init profiling barrier for function handle " << hdl
-		<< std::endl << "\tFunction: " << _func_map.name(hdl)
+    if ( _debug){ 
+      std::cerr << "Roccom: init profiling barrier for function handle " << hdl
+		<< std::endl << "Roccom:\tFunction: " << _func_map.name(hdl)
 		<< " Communicator: " << comm << std::endl; 
+    }
 
     // Set the communicator only if MPI has been initialized. 
     if ( COMMPI_Initialized()) {
@@ -2101,9 +2106,10 @@ void Roccom_base::
 print_profile( const std::string &fname, const std::string &header) {
   if ( !_profile_on) return;
 
-  if ( _verb1>1)
-     std::cerr << "ROCCOM: Appending profile into file \"" << fname
+  if ( _debug){
+     std::cerr << "Roccom: Appending profile into file \"" << fname
                << '"' << std::endl;
+  }
   std::multimap< double, int>  profs;
   typedef std::multimap< double, int>::value_type MMVT;
 
@@ -2118,8 +2124,8 @@ print_profile( const std::string &fname, const std::string &header) {
   else {
     of = std::fopen( fname.c_str(), "a");
     if ( of == NULL) {
-      std::cerr << "ROCCOM: Could not open file \"" << fname
-		<< "\"\nROCCOM: Giving up profiling" << std::endl;
+      std::cerr << "Roccom: Could not open file \"" << fname
+		<< "\"\nRoccom: Giving up profiling" << std::endl;
       _profile_on = false; return;
     }
   }
@@ -2255,7 +2261,7 @@ proc_exception( const COM_exception &ex, const std::string &s) throw( int)
   extern void printStackBacktrace();
   _errorcode = ex.ierr;
 
-  std::cerr << '\n' << ex << s << std::endl;
+  std::cerr << "\nRoccom:" << ex << s << std::endl;
   if ( _exception_on && _errorcode>=1000) {
     printStackBacktrace();
     throw ex.ierr;

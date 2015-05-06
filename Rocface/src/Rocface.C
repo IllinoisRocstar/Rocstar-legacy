@@ -171,23 +171,23 @@ read_overlay( const COM::Attribute *a1,
   if ( prefix1 == NULL) prefix1 = n1.c_str();
   if ( prefix2 == NULL) prefix2 = n2.c_str();
 
-  if ( it1->second->comm_rank()==0) {
+  if ( it1->second->comm_rank()==0 &&  _ctrl.verb) {
     std::cout << "RFACE: Reading in subdivision of window " << n1 
 	      << " from files with prefix \"" 
 	      << prefix1 << "\"...." << std::flush;
   }
   it1->second->read_sdv( prefix1, format);
-  if ( it1->second->comm_rank()==0) {
+  if ( it1->second->comm_rank()==0 && _ctrl.verb) {
     std::cout << "Done" << std::endl;
   }
 
-  if ( it2->second->comm_rank()==0) {
+  if ( it2->second->comm_rank()==0 &&  _ctrl.verb) {
     std::cout << "RFACE: Reading in subdivision of window " << n2 
 	      << " from files with prefix \"" 
 	      << prefix2 << "\"...." << std::flush;
   }
   it2->second->read_sdv( prefix2, format);
-  if ( it2->second->comm_rank()==0) {
+  if ( it2->second->comm_rank()==0 && _ctrl.verb) {
     std::cout << "Done" << std::endl;
   }
 }
@@ -223,7 +223,7 @@ write_overlay( const COM::Attribute *a1,
   if ( prefix1 == NULL) prefix1 = n1.c_str();
   if ( prefix2 == NULL) prefix2 = n2.c_str();
 
-  if ( it1->second->comm_rank()==0) {
+  if ( it1->second->comm_rank()==0 && _ctrl.verb) {
     std::cout << "RFACE: Writing subdivision of window \"" 
 	      << n1 << "\"...." << std::flush;
   }
@@ -234,11 +234,11 @@ write_overlay( const COM::Attribute *a1,
   else 
     it1->second->write_sdv( prefix1, format);
 
-  if ( it1->second->comm_rank()==0) {
+  if ( it1->second->comm_rank()==0 && _ctrl.verb) {
     std::cout << "Done" << std::endl;
   }
 
-  if ( it2->second->comm_rank()==0) {
+  if ( it2->second->comm_rank()==0 && _ctrl.verb) {
     std::cout << "Writing subdivision of window \"" 
 	      << n2 << "\"...." << std::flush;
   }
@@ -250,7 +250,7 @@ write_overlay( const COM::Attribute *a1,
   else
     it2->second->write_sdv( prefix2, format);
 
-  if ( it2->second->comm_rank()==0) {
+  if ( it2->second->comm_rank()==0 && _ctrl.verb) {
     std::cout << "Done" << std::endl;
   }
 }
@@ -450,7 +450,7 @@ void Rocface::transfer( const COM::Attribute *src, COM::Attribute *trg,
     Vector_n integral(sf.dimension(),0);
     trans.integrate( *w1, sf, integral, order);
     
-    if ( w1->comm_rank()==0) {
+    if ( w1->comm_rank()==0 && _ctrl.verb) {
       std::cout << "RFACE: Before transfer\nRFACE:\tminimum:  " << min_v
 		<< "\nRFACE:\tmaximum:  " << max_v;
       if ( !load) 
@@ -471,7 +471,7 @@ void Rocface::transfer( const COM::Attribute *src, COM::Attribute *trg,
     Vector_n integral(sf.dimension(),0);			
     trans.integrate( *w2, tf, integral, order);
     
-    if ( w2->comm_rank()==0) {
+    if ( w2->comm_rank()==0 && _ctrl.verb) {
       std::cout << "RFACE: After transfer\nRFACE:\tminimum:  " << min_v
 		<< "\nRFACE:\tmaximum:  " << max_v;
       if ( !load) 

@@ -123,16 +123,16 @@ Coupling *create_coupling( Control_parameters &param, const RocmanControl_parame
     COM_LOAD_MODULE_STATIC_DYNAMIC(Rocfrac,"FRACTEST");
   }
   else  {
-    std::cout << "Rocman> ERROR: Unknown coupling scheme: " << name << std::endl;
-    std::cout << std::endl;
-    std::cout << "Rocman> Supported coupling schemes: " << std::endl;
-    std::cout << " FluidAlone:              Fluid alone with no burn" << std::endl;
-    std::cout << " FluidBurnAlone:          Fluid alone with burn" << std::endl;
-    std::cout << " SolidAlone:              Solid alone with no burn" << std::endl;
-    std::cout << " SolidFluidBurnSPC:       FullyCoupled simple staggered scheme with P-C" << std::endl;
-    std::cout << " SolidFluidSPC:           FullyCoupled no burn" << std::endl;
-    std::cout << " FluidSolidISS:           FullyCoupled no burn with improved staggered scheme" << std::endl;
-    std::cout << " SolidFluidBurnEnergySPC: FullyCoupled with burn energy" << std::endl;
+    std::cerr << "Rocstar: ERROR: Unknown coupling scheme: " << name << std::endl;
+    std::cerr << std::endl;
+    std::cerr << "Rocstar: Rocstar Supported coupling schemes: " << std::endl;
+    std::cerr << "Rocstar:    FluidAlone:              Fluid alone with no burn" << std::endl;
+    std::cerr << "Rocstar:    FluidBurnAlone:          Fluid alone with burn" << std::endl;
+    std::cerr << "Rocstar:    SolidAlone:              Solid alone with no burn" << std::endl;
+    std::cerr << "Rocstar:    SolidFluidBurnSPC:       FullyCoupled simple staggered scheme with P-C" << std::endl;
+    std::cerr << "Rocstar:    SolidFluidSPC:           FullyCoupled no burn" << std::endl;
+    std::cerr << "Rocstar:    FluidSolidISS:           FullyCoupled no burn with improved staggered scheme" << std::endl;
+    std::cerr << "Rocstar:    SolidFluidBurnEnergySPC: FullyCoupled with burn energy" << std::endl;
     COM_assertion_msg(0, "ERROR: Unknown coupling scheme!");
   }
   return NULL;
@@ -181,7 +181,7 @@ Control_parameters::Control_parameters()
   maxNumTimeSteps = std::numeric_limits<int>::max();
   strcpy(output_module,"Rocout");
   strcpy(timingDataDir,"Rocman/Profiles");
-  
+  controlVerb = 1;
 }
 
 void Control_parameters::read()
@@ -254,18 +254,19 @@ void Control_parameters::read()
     // load output module
   const std::string &outputModule = output_module;
   if (outputModule == "Rocout") {
-    MAN_DEBUG(1, ("[%d] Rocman: load_module Rocout.\n", COMMPI_Comm_rank(communicator)));
+    MAN_DEBUG(1, ("[%d] Rocstar: load_module Rocout.\n", COMMPI_Comm_rank(communicator)));
     COM_LOAD_MODULE_STATIC_DYNAMIC( Rocout, "OUT");
   }
 #ifdef WITH_PANDA
   else if (outputModule == "Rocpanda") {
-    MAN_DEBUG(1, ("[%d] Rocman: load_module Rocpanda.\n", COMMPI_Comm_rank(communicator)));
+    MAN_DEBUG(1, ("[%d] Rocstar: load_module Rocpanda.\n", COMMPI_Comm_rank(communicator)));
     COM_LOAD_MODULE_STATIC_DYNAMIC( Rocpanda, "OUT");
       // Rocpanda server processes won't return
   }
 #endif
   else {
-    printf("ERROR: Unknown output module %s!\n", output_module);
+    if(COMMPI_Comm_rank(communicator) == 0)
+      printf("Rocstar: Error: Unknown output module %s!\n", output_module);
     MPI_Abort(MPI_COMM_WORLD, -1);
   }
 
@@ -295,24 +296,24 @@ void Control_parameters::update_communicator()
 void Control_parameters::print()
 {
   printf("================  Rocstar Control file ================\n");
-  printf("CouplingScheme: '%s'\n", coupling_scheme);
-  printf("InitialTime: %f\n", current_time);
-  printf("MaximumTime: %f\n", simue_time);
-  printf("MaxWallTime: %f\n", maxwalltime);
-  printf("AutoRestart: %s\n",(AutoRestart ? "Yes" : "No")); 
-  printf("MaxNumPredCorrCycles: %d\n", maxNumPredCorrCycles);
-  printf("MaxNumTimeSteps: %d\n", maxNumTimeSteps);
+  printf("Rocstar: CouplingScheme: '%s'\n", coupling_scheme);
+  printf("Rocstar: InitialTime: %f\n", current_time);
+  printf("Rocstar: MaximumTime: %f\n", simue_time);
+  printf("Rocstar: MaxWallTime: %f\n", maxwalltime);
+  printf("Rocstar: AutoRestart: %s\n",(AutoRestart ? "Yes" : "No")); 
+  printf("Rocstar: MaxNumPredCorrCycles: %d\n", maxNumPredCorrCycles);
+  printf("Rocstar: MaxNumTimeSteps: %d\n", maxNumTimeSteps);
   if(maxNumDumps > 0)
-    printf("MaxNumOutputDumps: %d\n", maxNumDumps);
-  printf("CurrentTimeStep: %e\n", time_step);
-  printf("OutputIntervalTime: %e\n", outputIntervalTime);
-  printf("ZoomFactor: %f\n", zoomFactor);
-  printf("TolerTract: %f\n", tolerTract);
-  printf("TolerVelo: %f\n", tolerVelo);
-  printf("TolerMass: %f\n", tolerMass);
-  printf("TolerDisp: %f\n", tolerDisp);
-  printf("ProfileDir: %s\n", timingDataDir);
-  printf("ProfileFile: %s\n", timingDataFile.c_str());
+    printf("Rocstar: MaxNumOutputDumps: %d\n", maxNumDumps);
+  printf("Rocstar: CurrentTimeStep: %e\n", time_step);
+  printf("Rocstar: OutputIntervalTime: %e\n", outputIntervalTime);
+  printf("Rocstar: ZoomFactor: %f\n", zoomFactor);
+  printf("Rocstar: TolerTract: %f\n", tolerTract);
+  printf("Rocstar: TolerVelo: %f\n", tolerVelo);
+  printf("Rocstar: TolerMass: %f\n", tolerMass);
+  printf("Rocstar: TolerDisp: %f\n", tolerDisp);
+  printf("Rocstar: ProfileDir: %s\n", timingDataDir);
+  printf("Rocstar: ProfileFile: %s\n", timingDataFile.c_str());
   printf("=======================================================\n");
 }
 
@@ -447,27 +448,27 @@ void RocmanControl_parameters::read( MPI_Comm comm, int comm_rank)
 void RocmanControl_parameters::print()
 {
   printf("==========  Rocman Parameter file read ==========\n");
-  printf("Rocman: verbosity level is %d\n", verbose);
-  printf("Rocman: The order of interpolation is %d\n", order);
-  printf("Rocman: Traction mode is %d (1 for no sheer, 2 for with sheer)\n", traction_mode);
-  printf("Rocman: ambient pressure is %f\n", P_ambient);
-  printf("Rocman: Solid density (Rhoc) is %f kg/m^3\n", rhoc);
-  printf("Rocman: Pressure is %f Pa\n", pressure);
-  printf("Rocman: Burning rate is %f m/s\n", burn_rate);
-  printf("Rocman: RFC_verb: %d\n", rfc_verb);
-  printf("Rocman: Order of quadrature rule (RFC_order): %d\n", rfc_order);
-  printf("Rocman: Max iterations for iterative solver: %d\n", rfc_iter);
-  printf("Rocman: tolerance for iterative solver (RFC_tolerance): %f\n", rfc_tol);
+  printf("Rocstar: verbosity level is %d\n", verbose);
+  printf("Rocstar: The order of interpolation is %d\n", order);
+  printf("Rocstar: Traction mode is %d (1 for no sheer, 2 for with sheer)\n", traction_mode);
+  printf("Rocstar: ambient pressure is %f\n", P_ambient);
+  printf("Rocstar: Solid density (Rhoc) is %f kg/m^3\n", rhoc);
+  printf("Rocstar: Pressure is %f Pa\n", pressure);
+  printf("Rocstar: Burning rate is %f m/s\n", burn_rate);
+  printf("Rocstar: RFC_verb: %d\n", rfc_verb);
+  printf("Rocstar: Order of quadrature rule (RFC_order): %d\n", rfc_order);
+  printf("Rocstar: Max iterations for iterative solver: %d\n", rfc_iter);
+  printf("Rocstar: tolerance for iterative solver (RFC_tolerance): %f\n", rfc_tol);
   if (PROP_fom)
-    printf("Rocman: Using face-offsetting method for surface propagation.\n");
+    printf("Rocstar: Using face-offsetting method for surface propagation.\n");
   else
-    printf("Rocman: Using marker-particle method for surface propagation.\n");
+    printf("Rocstar: Using marker-particle method for surface propagation.\n");
   if(PROPCON_enabled)
-    printf("Rocman: Using Rocon propagation constraints, (ndiv = %d).\n",PROPCON_ndiv);
-  printf("Rocman: Number of smoothing iterations in Rocprop: %d\n", PROP_rediter);
-  printf("Rocman: Feature-angle threshold in Rocprop: %f\n", PROP_fangle);
-  printf("Rocman: Async Input: %c\n", async_in?'T':'F');
-  printf("Rocman: Async Output: %c\n", async_out?'T':'F');
+    printf("Rocstar: Using Rocon propagation constraints, (ndiv = %d).\n",PROPCON_ndiv);
+  printf("Rocstar: Number of smoothing iterations in Rocprop: %d\n", PROP_rediter);
+  printf("Rocstar: Feature-angle threshold in Rocprop: %f\n", PROP_fangle);
+  printf("Rocstar: Async Input: %c\n", async_in?'T':'F');
+  printf("Rocstar: Async Output: %c\n", async_out?'T':'F');
   printf("==================================================\n");
 }
 
@@ -475,9 +476,11 @@ void RocmanControl_parameters::print()
 bool reached_simulation_time( const Control_parameters &param) {
     // if exceed max num of steps
   if (param.cur_step>=param.maxNumTimeSteps) {
-    MAN_DEBUG(1, ("\n\nRocman: reached_simulation_time returns TRUE with cur_step: %d \n\n", param.cur_step));
+    MAN_DEBUG(3, ("\n\nRocstar: reached_simulation_time returns TRUE with cur_step: %d \n\n", param.cur_step));
     return true;
   }
+
+  int verb = param.controlVerb;
 
     // if exceed max wall time
   double startTimeLoopTime;
@@ -485,27 +488,27 @@ bool reached_simulation_time( const Control_parameters &param) {
   MPI_Bcast( &startTimeLoopTime, 1, MPI_DOUBLE, 0, param.communicator);
   const double elaped_time = startTimeLoopTime - param.startTime;
   if (elaped_time >= param.maxwalltime ) {
-    if (param.myRank == 0) 
-      printf("ROCSTAR: Quitting; elapsed wall clock time = %f\n", elaped_time);
+    if (param.myRank == 0 && verb > 1) 
+      printf("Rocstar: Quitting; elapsed wall clock time = %f\n", elaped_time);
     return true;
   }
   else {
     if (param.myRank == 0) {
-      MAN_DEBUG(1, ("\n\nRocman: reached_simulation_time: elapsed wall time = %f \n\n", elaped_time));
+      MAN_DEBUG(3, ("\n\nRocstar: reached_simulation_time: elapsed wall time = %f \n\n", elaped_time));
     }
   }
 
     // if exceed MaximumTime the simulation time
   if (param.current_time >= param.simue_time) {   // MaximumTime
-    if (param.myRank == 0)
-      printf("ROCSTAR: Quitting; CurrentTime = %e, MaximumTime = %e\n", param.current_time, param.simue_time);
+    if (param.myRank == 0 && verb > 0)
+      printf("Rocstar: Quitting; CurrentTime = %e, MaximumTime = %e\n", param.current_time, param.simue_time);
     return true;
   }
 
   // if exceed the Maximum Number of dumps
   if( (param.maxNumDumps > 0 ) && (param.current_dump >= param.maxNumDumps)){
-    if(param.myRank == 0)
-      printf("ROCSTAR: Quitting; Reached the maximum number of dumps for this run. (%d)\n",param.current_dump);
+    if(param.myRank == 0 && verb > 0)
+      printf("Rocstar: Quitting; Reached the maximum number of dumps for this run. (%d)\n",param.current_dump);
     return true;
   }
 
@@ -517,7 +520,7 @@ bool reached_restartdump_time( Control_parameters &param) {
            param.iOutput*param.outputIntervalTime;
   if (result == true) {
     param.iOutput++;
-    MAN_DEBUG(1, ("\n\nRocman: reached_restartdump_time with current_time: %e time_step: %e iOutput: %d outputIntervalTime: %e\n\n", param.current_time, param.time_step, param.iOutput, param.outputIntervalTime));
+    MAN_DEBUG(1, ("\n\nRocstar: reached_restartdump_time with current_time: %e time_step: %e iOutput: %d outputIntervalTime: %e\n\n", param.current_time, param.time_step, param.iOutput, param.outputIntervalTime));
   }
   return result;
 }
@@ -535,7 +538,7 @@ int check_for_interrupt(Coupling *coup,const Control_parameters &param)
     std::ifstream InterruptFile;
     InterruptFile.open("RocstarInterrupt.txt");
     if(InterruptFile){
-      std::cout << "Rocman: Processing interrupt from file." << std::endl;
+      std::cout << "Rocstar: Processing interrupt from file." << std::endl;
       InterruptFile >> interrupt_code;
       std::getline(InterruptFile,message);
       InterruptFile.close();
@@ -554,13 +557,16 @@ int check_for_interrupt(Coupling *coup,const Control_parameters &param)
   return(0);
 }
 
-void rocstar_driver( int verb, int remeshed) {
+void rocstar_driver( int verb, int remeshed, bool debug) {
   // Read in config files to initialize param
   Control_parameters  *param_ptr = new Control_parameters;
   Control_parameters  &param = *param_ptr;
   param.read();
 
   int comm_rank = param.myRank;
+
+  param.controlVerb = verb;
+  param.controlDebug = debug;
 
   // Read in rocman config files to initialize param
   RocmanControl_parameters  *rocman_param_ptr = new RocmanControl_parameters;
@@ -569,14 +575,16 @@ void rocstar_driver( int verb, int remeshed) {
   rocman_param.remeshed = remeshed;
 
   if ( comm_rank == 0 ) {
-    printf(" Rocstar version is 3.3\n");
-    printf("\n");
-    printf("ROCSTAR: CALL CouplingInitialize\n");
-
+    if(verb > 0)
+      printf("Rocstar: Rocstar version is 3.3\n\n");
+    if(debug)
+      printf("Rocstar: Call CouplingInitialize\n");
+    if(verb > 1){
      param.print();
      rocman_param.print();
-
-     COM_set_verbose( verb);  // shift by 2 to depress first level printing
+    }
+    COM_set_verbose( verb);  // shift by 2 to depress first level printing
+    COM_set_debug( debug);
   }
 
   MPI_Barrier(MPI_COMM_WORLD);
@@ -586,7 +594,8 @@ void rocstar_driver( int verb, int remeshed) {
   // Construct coupling object and schedule the actions
   Coupling *coup = create_coupling( param, rocman_param);
   if(!coup){
-    std::cout << "ROCSTAR: No coupling created. Exiting." << std::endl;
+    if(comm_rank == 0)
+      std::cerr << "Rocstar: Error: No coupling created. Exiting." << std::endl;
     return;
   }
   coup->schedule();
@@ -612,15 +621,15 @@ void rocstar_driver( int verb, int remeshed) {
   //    std::cout << "Rocstar: profiling set." << std::endl;
 
   int with_pciter = (param.maxNumPredCorrCycles > 1);
-  if ( comm_rank == 0) {
-    std::cout << "ROCSTAR: The maximum number of PC-iterations is " << param.maxNumPredCorrCycles << std::endl;
+  if ( comm_rank == 0 && verb > 1) {
+    std::cout << "Rocstar: The maximum number of PC-iterations is " << param.maxNumPredCorrCycles << std::endl;
   }
   
   // in case of restarting, reset cur_step and current_time from Restart.txt
   coup->read_restart_info();
   
   MPI_Barrier(MPI_COMM_WORLD);
-  if(!comm_rank)
+  if(!comm_rank && debug)
     std::cout << "Rocstar: Read restart information, initializing" << std::endl;
 
   // call input, init and run_initactions
@@ -633,22 +642,22 @@ void rocstar_driver( int verb, int remeshed) {
   
   if ( param.current_time == 0.0) {
     MPI_Barrier(param.communicator);
-    if(comm_rank == 0)
-      std::cout << "ROCSTAR: Performing time 0 dump..." << std::endl;
+    if(comm_rank == 0 && verb > 0)
+      std::cout << "Rocstar: Performing time 0 dump..." << std::endl;
     coup->update_integrals( param.current_time);
     coup->update_distances( param.current_time);
     coup->output_restart_files( param.current_time);
     MPI_Barrier(param.communicator);
-    if(comm_rank == 0)
-      std::cout << "ROCSTAR: done." << std::endl;
+    if(comm_rank == 0 && debug)
+      std::cout << "Rocstar: done." << std::endl;
   }
   
   MPI_Barrier(param.communicator);
   param.LastOutputTime = param.current_time;
   param.LastOutputStep = param.cur_step;
   
-  if (comm_rank == 0) {
-    std::cout << "ROCSTAR: Starting with step " << param.cur_step+1 << ", at time " << param.current_time << std::endl;
+  if (comm_rank == 0 && verb > 0) {
+    std::cout << "Rocstar: Starting with step " << param.cur_step+1 << ", at time " << param.current_time << std::endl;
   }
   
   char  header[100];
@@ -664,39 +673,43 @@ void rocstar_driver( int verb, int remeshed) {
   int InterfaceConverged;
   MPI_Barrier(param.communicator);
   //  if(comm_rank == 0)
-  //    std::cout << "ROCSTAR: Preparig to step..." << std::endl;
+  //    std::cout << "Rocstar: Preparig to step..." << std::endl;
   while ( !reached_simulation_time(param) ) {
     param.cur_step ++;
 
     for (int iPredCorr = 1; iPredCorr <= param.maxNumPredCorrCycles; iPredCorr++) 
     {
-      if ( comm_rank == 0 ) {
-        std::cout << "ROCSTAR:" << std::endl
-		  << "ROCSTAR: ================================================================" << std::endl
-		  << "ROCSTAR: System Time Step : " << param.cur_step << "   PC(" << iPredCorr << ")" << std::endl
-		  << "ROCSTAR: ================================================================" << std::endl
-		  << "ROCSTAR:" << std::endl
-		  << "ROCSTAR: CurrentTime, CurrentTimeStep, ZoomFactor: " 
+      if ( comm_rank == 0  && verb > 0) {
+        std::cout << "Rocstar:" << std::endl
+		  << "Rocstar: ================================================================" << std::endl
+		  << "Rocstar: System Time Step : " << param.cur_step << "   PC(" << iPredCorr << ")" << std::endl
+		  << "Rocstar: ================================================================" << std::endl
+		  << "Rocstar:" << std::endl
+		  << "Rocstar: CurrentTime, CurrentTimeStep";
+        if(verb > 1)
+          std::cout << ", ZoomFactor";
+        std::cout << ": " 
 		  << param.current_time << " " 
-		  << param.time_step << " " 
-		  << param.zoomFactor << std::endl
-		  << "ROCSTAR:" << std::endl;
+		  << param.time_step << " ";
+        if(verb > 1)     
+	  std::cout << param.zoomFactor;
+	std::cout << std::endl << "Rocstar:" << std::endl;
       }
 
       MPI_Barrier(param.communicator);
       //      if(comm_rank == 0)
-      //	std::cout << "ROCSTAR: initializing convergence checking" << std::endl;
+      //	std::cout << "Rocstar: initializing convergence checking" << std::endl;
       if ( with_pciter) 
         coup->init_convergence( iPredCorr);
       MPI_Barrier(param.communicator);
       //      if(comm_rank == 0)
-      //	std::cout << "ROCSTAR: convergence checking initialized" << std::endl;
+      //	std::cout << "Rocstar: convergence checking initialized" << std::endl;
 
       // invoke time integration of coupling scheme by passing in 
       // current time and desired time step and obtaining new time
       MPI_Barrier(param.communicator);
       //      if(comm_rank == 0)
-      //	std::cout << "ROCSTAR: Running coupling.." << std::endl;
+      //	std::cout << "Rocstar: Running coupling.." << std::endl;
       double new_current_time = coup->run( param.current_time, param.time_step, 
                                            iPredCorr, param.zoomFactor);
 
@@ -706,26 +719,26 @@ void rocstar_driver( int verb, int remeshed) {
       //      std::cout << comm_rank << ": solver done on this rank." << std::endl;
       MPI_Barrier(param.communicator);
       //      if(comm_rank == 0)
-      //	std::cout << "ROCSTAR: coupling done." << std::endl;
+      //	std::cout << "Rocstar: coupling done." << std::endl;
 
       InterfaceConverged = 1;
       if ( with_pciter) 
         InterfaceConverged = coup->check_convergence();
 
-      if ( comm_rank == 0 )
-        std::cout << "ROCSTAR:" << std::endl 
-		  << "ROCSTAR: iPredCorr = " << iPredCorr << " is done" << std::endl;
+      if ( comm_rank == 0 && debug )
+        std::cout << "Rocstar:" << std::endl 
+		  << "Rocstar: iPredCorr = " << iPredCorr << " is done" << std::endl;
       if ( InterfaceConverged ) {
           param.current_time = new_current_time;
-          if ( comm_rank == 0 ) 
-              std::cout << "ROCSTAR: Success: predictor-corrector converged at time " << param.current_time << std::endl;
+          if ( comm_rank == 0 && verb > 1) 
+              std::cout << "Rocstar: Success: predictor-corrector converged at time " << param.current_time << std::endl;
           break;
       }
       else { 
-          if ( comm_rank == 0 ) {
-	    std::cout << "ROCSTAR:" << std::endl
-		      << "ROCSTAR: Interface has -NOT- converged!" << std::endl
-		      << "ROCSTAR: iPredCorr = " << iPredCorr << " is done" << std::endl;
+          if ( comm_rank == 0 && debug ) {
+	    std::cout << "Rocstar:" << std::endl
+		      << "Rocstar: Interface has -NOT- converged!" << std::endl
+		      << "Rocstar: iPredCorr = " << iPredCorr << " is done" << std::endl;
 	  }
       }
     }   // end of iPredCorr
@@ -736,7 +749,7 @@ void rocstar_driver( int verb, int remeshed) {
 
     if ( !InterfaceConverged) {
       if (comm_rank == 0)
-        std::cout << "ROCSTAR: Disaster: predictor-corrector did not converge" << std::endl;
+        std::cerr << "Rocstar: Disaster: predictor-corrector did not converge" << std::endl;
       MPI_Abort( MPI_COMM_WORLD, -1);
     }
 
@@ -760,20 +773,20 @@ void rocstar_driver( int verb, int remeshed) {
       coup->update_distances( param.current_time);
       
       // invoke restart output (as well as visualization data)
-      if(comm_rank == 0)
-	std::cout << "ROCSTAR: Dumping restart files... ";
+      if(comm_rank == 0 && verb > 0)
+	std::cout << "Rocstar: Dumping restart files... " << std::endl;
       coup->output_restart_files( param.current_time);
       coup->write_restart_info( param.current_time, param.cur_step+1);
       param.LastOutputTime = param.current_time;
       param.LastOutputStep = param.cur_step;
       param.current_dump++;
       MPI_Barrier(param.communicator);
-      if(comm_rank == 0)
-	std::cout << "done." << std::endl;
+      //if(comm_rank == 0)
+	//std::cout << "done." << std::endl;
     }
     else if ( reached_visdump_time( param)) {
-      if(comm_rank == 0)
-	std::cout << "ROCSTAR: Dumping coupling viz files." << std::endl;
+      if(comm_rank == 0 && verb > 0)
+	std::cout << "Rocstar: Dumping coupling viz files." << std::endl;
       // output visualization files
       coup->output_visualization_files( param.current_time);
     }
@@ -784,20 +797,20 @@ void rocstar_driver( int verb, int remeshed) {
       COM_print_profile( param.timingDataFile.c_str(), header);
       COM_set_profiling( 1);     // Reset profiler;
     }
-    if(comm_rank == 0)
-      std::cout << "ROCSTAR:" << std::endl;
+    //if(comm_rank == 0)
+      //std::cout << "Rocstar:" << std::endl;
   }   // end time step
 
     // Write final solution.
   if (param.current_time != param.LastOutputTime) {
     MPI_Barrier(param.communicator);
-    if(comm_rank == 0)
-      std::cout << "ROCSTAR: Performing final dump..." << std::endl;
+    if(comm_rank == 0 && verb > 0)
+      std::cout << "Rocstar: Performing final dump..." << std::endl;
     coup->output_restart_files( param.current_time);
     coup->write_restart_info( param.current_time, std::min(param.cur_step, param.maxNumTimeSteps)+1);
     MPI_Barrier(param.communicator);
-    if(comm_rank == 0)
-      std::cout << "ROCSTAR: done." << std::endl;
+    if(comm_rank == 0 && debug)
+      std::cout << "Rocstar: done." << std::endl;
   }
 
     // Finalize coupling
@@ -806,7 +819,7 @@ void rocstar_driver( int verb, int remeshed) {
 #ifdef WITH_PANDA
     // unload Rocpanda to exit gracefully
   if ( strcasecmp(param.output_module, "Rocpanda") == 0) {
-    MAN_DEBUG(1, ("[%d] Rocman: unload_module Rocpanda.\n", param.myRank));
+    MAN_DEBUG(1, ("[%d] Rocstar: unload_module Rocpanda.\n", param.myRank));
     COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocpanda, "OUT");
   }
 #endif
@@ -865,11 +878,12 @@ void init_profiling(Control_parameters &param, int comm_rank)
         status = 0;
     }
     if (fd == NULL) {
-      printf("Rocman: Rank %d could not open %s!\n", comm_rank, param.timingDataFile.c_str());
+      std::cerr << "Rocstar: Rank " << comm_rank << " could not open " 
+                << param.timingDataFile.c_str() << "!" << std::endl;
       MPI_Abort( MPI_COMM_WORLD, -1);
     }
-    else 
-      printf("Rocman: Rank %d using %s instead for timing data!\n", comm_rank, param.timingDataFile.c_str());
+    else if(param.controlVerb > 1) 
+      printf("Rocstar: Rank %d using %s instead for timing data!\n", comm_rank, param.timingDataFile.c_str());
   }
 
   int NumProcs;

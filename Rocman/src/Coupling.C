@@ -244,7 +244,7 @@ double Coupling::run( double t, double dt, int pred, double zoom)
     dt = std::min( dt, agents[i]->max_timestep(t, dt));
   }
   
-  MAN_DEBUG(1, ("[%d] Rocman: Coupling::run with t: %f dt: %f.\n", comm_rank, t, dt));
+  MAN_DEBUG(1, ("[%d] Rocstar: Coupling::run with t: %f dt: %f.\n", comm_rank, t, dt));
 
   scheduler.run_actions( t, dt); 
 
@@ -257,7 +257,7 @@ double Coupling::run( double t, double dt, int pred, double zoom)
 
 void Coupling::run_initactions( double t, double dt)
 {
-  MAN_DEBUG(1, ("[%d] Rocman: %s::run_initactions called with t:%e dt:%e.\n", comm_rank, name(), t, dt));
+  MAN_DEBUG(1, ("[%d] Rocstar: %s::run_initactions called with t:%e dt:%e.\n", comm_rank, name(), t, dt));
   init_scheduler.set_alpha(0.0);
   init_scheduler.run_actions( t, dt); 
 
@@ -315,7 +315,7 @@ void Coupling::read_restart_info()
   if (param->current_time != 0.0) {
     FILE *fp = fopen(restartInfo.c_str(), "r");
     if (fp == NULL) {
-      std::cout << "READ_RESTART: Failed to read file " << restartInfo << std::endl;
+      std::cerr << "Rocstar: Error: READ_RESTART: Failed to read file " << restartInfo << std::endl;
       MPI_Abort( MPI_COMM_WORLD, -1);
     }
     int curStep;
@@ -325,12 +325,12 @@ void Coupling::read_restart_info()
     }
     fclose(fp);
     if (comm_rank == 0)
-      std::cout << "ROCSTAR: THIS RUN IS A RESTART CONTINUED AT ITERATION " << curStep << " WITH TIME " << initialTime << std::endl;
+      MAN_DEBUG(2,("Rocstar: This run is a restart continued at iteration %d with initial time %f.",curStep, initialTime));
     param->update_start_time(curStep - 1, initialTime);   // subtle - it starts from 0
   }
   else {
     if (comm_rank == 0)
-      std::cout << "ROCSTAR: THIS RUN IS NOT A RESTART" << std::endl;
+      MAN_DEBUG(2,("Rocstar: This run is not a restart.\n"));
   }
 }
 
@@ -343,7 +343,7 @@ void Coupling::write_restart_info(double CurrentTime, int iStep)
        else
          fp = fopen(restartInfo.c_str(), "a");
        if (fp == NULL) {
-         std::cout << "Rocman: Failed to open restart info file, " 
+         std::cerr << "Rocstar: Error: Failed to open restart info file, " 
 		   << restartInfo << "." << std::endl;
          MPI_Abort( MPI_COMM_WORLD, -1);
        }
@@ -373,7 +373,7 @@ void Coupling::restart_at_time(double t, int step)
 {
   int i, n;
 
-  MAN_DEBUG(1, ("Rocman: Coupling::restart_at_time with t: %f step:%d.\n", t, step));
+  MAN_DEBUG(1, ("Rocstar: Coupling::restart_at_time with t: %f step:%d.\n", t, step));
 
 #if 0
   // HACK
@@ -481,25 +481,25 @@ void Coupling::Interrupt(int *act,const char *message)
 {
   int action = *act;
   if(!param->myRank){
-    std::cout << "Rocman::Interrupt invoked." << std::endl
-	      << "Rocman: ***************************************************" 
+    std::cout << "Rocstar::Interrupt invoked." << std::endl
+	      << "Rocstar: ***************************************************" 
 	      << std::endl
-	      << "Rocman: " << (message ? message : "") << std::endl
-	      << "Rocman: ***************************************************" 
+	      << "Rocstar: " << (message ? message : "") << std::endl
+	      << "Rocstar: ***************************************************" 
 	      << std::endl;
   }
   switch(action){
   case 0:
     // Just stop
     if(!param->myRank)
-      std::cout << "Rocman: Halting simulation." << std::endl;
+      std::cout << "Rocstar: Halting simulation." << std::endl;
     finalize();
     RocstarShutdown();
     break;
   case 1:
     // Output solutions and stop.
     if(!param->myRank)
-      std::cout << "Rocman: Writing restart files and halting simulation." 
+      std::cout << "Rocstar: Writing restart files and halting simulation." 
 		<< std::endl;
     output_restart_files( param->current_time);
     finalize();
@@ -517,14 +517,14 @@ void Coupling::Interrupt(int *act,const char *message)
     //    to this one
     //
     if(!param->myRank){
-      std::cout << "Rocman: Directed to warm restart from last dump "
+      std::cout << "Rocstar: Directed to warm restart from last dump "
 		<< "and increase dump frequency." << std::endl;
     }
     param->InterruptFlag = 2;
     break;
   case 3:
     if(!param->myRank)
-      std::cout << "Rocman: Directed to remesh and warm restart from "
+      std::cout << "Rocstar: Directed to remesh and warm restart from "
 		<< "(time/step): ("
 		<< param->LastOutputTime << "," << param->LastOutputStep 
 		<< ")" << std::endl;
@@ -532,7 +532,7 @@ void Coupling::Interrupt(int *act,const char *message)
     break;
   case 4:
     if(!param->myRank)
-      std::cout << "Rocman: Directed to restart from "
+      std::cout << "Rocstar: Directed to restart from "
                << "(time/step): (" << param->LastOutputTime << ","
                << param->LastOutputStep << ")" << std::endl;
     if(message)
@@ -541,7 +541,7 @@ void Coupling::Interrupt(int *act,const char *message)
     break;
   case 5:
     if(!param->myRank)
-      std::cout << "Rocman: Directed to dump at (time/step): ("
+      std::cout << "Rocstar: Directed to dump at (time/step): ("
                << param->current_time << "," << param->cur_step
                << ")" << std::endl;
     output_restart_files( param->current_time);
@@ -549,7 +549,7 @@ void Coupling::Interrupt(int *act,const char *message)
     break;
   case 6:
     if(!param->myRank)
-      std::cout << "Rocman: Directed to dump and restart at (time/step): ("
+      std::cout << "Rocstar: Directed to dump and restart at (time/step): ("
                << param->current_time << "," << param->cur_step
                << ")" << std::endl;
     output_restart_files( param->current_time);
@@ -560,8 +560,8 @@ void Coupling::Interrupt(int *act,const char *message)
     break;
   default:
     if(param->myRank == 0)
-      std::cout << "Rocman: Unknown interrupt action." << std::endl;
-    MAN_DEBUG(0,("Rocman: Coupling::Interrupt(unknown action): %s.\n",
+      std::cout << "Rocstar: Unknown interrupt action." << std::endl;
+    MAN_DEBUG(0,("Rocstar: Coupling::Interrupt(unknown action): %s.\n",
 		 message));
     return;
   }
@@ -578,7 +578,7 @@ Coupling::ProcessInterrupt()
   param->InterruptFlag = 0;
   if(action > 0){
     if(param->myRank == 0)
-      std::cout << "Rocman: Processing interrupt." << std::endl;
+      std::cout << "Rocstar: Processing interrupt." << std::endl;
     switch(action){
     case 2:
       save_step = param->cur_step;
@@ -586,7 +586,7 @@ Coupling::ProcessInterrupt()
       param->maxNumTimeSteps = save_step;
       param->outputIntervalTime /= 10.0;
       if(!param->myRank){
-	std::cout << "Rocman: Restarting from (time/step): ("
+	std::cout << "Rocstar: Restarting from (time/step): ("
 		  << param->current_time << "," << param->cur_step 
 		  << ") with output"
 		  << " interval, " << param->outputIntervalTime << "." 
@@ -603,7 +603,7 @@ Coupling::ProcessInterrupt()
 	}
       }
       if(!done){
-	std::cerr << "Rocman: Could not find fluid agent.  Dying." 
+	std::cerr << "Rocstar: Could not find fluid agent.  Dying." 
 		  << std::endl;
 	RocstarShutdown(1);
       }
@@ -629,7 +629,7 @@ Coupling::ProcessInterrupt()
 			agents[fluid_agent_index]->get_communicator(),
 			4,0,2,2)){
 	if(!param->myRank)
-	  std::cout << "Rocman: Remeshing failed.  Stopping simulation." 
+	  std::cerr << "Rocstar: Remeshing failed.  Stopping simulation." 
 		    << std::endl;
 	RocstarShutdown(1);
       }
@@ -638,7 +638,7 @@ Coupling::ProcessInterrupt()
 	//	std::ofstream Ouf;
 	//	Ouf.open("needs_remesh");
 	//	Ouf.close();
-	std::cout << "Rocman: Online remeshing not enabled. Shutting down." << std::endl;
+	std::cerr << "Rocstar: Online remeshing not enabled. Shutting down." << std::endl;
       }
       RocstarShutdown(1);
 #endif
@@ -646,7 +646,7 @@ Coupling::ProcessInterrupt()
       restart_at_time(param->LastOutputTime,param->LastOutputStep);
       MPI_Barrier(MPI_COMM_WORLD);
       if(!param->myRank)
-	std::cout << "Rocman: Restarting after remesh at (time/step): ("
+	std::cout << "Rocstar: Restarting after remesh at (time/step): ("
 		  << param->current_time << "," << param->cur_step << ")"
 		  << std::endl;
       return(1);
@@ -656,14 +656,14 @@ Coupling::ProcessInterrupt()
       restart_at_time(param->LastOutputTime,param->LastOutputStep);
       MPI_Barrier(MPI_COMM_WORLD);
       if(!param->myRank)
-       std::cout << "Rocman: Warm restarting at (time/step): ("
+       std::cout << "Rocstar: Warm restarting at (time/step): ("
                  << param->current_time << "," << param->cur_step << ")"
                  << std::endl;
       return(1);
       break;
     default:
       if(!param->myRank)
-	std::cout << "Rocman: Unknown interrupt action: " << action << "." 
+	std::cout << "Rocstar: Unknown interrupt action: " << action << "." 
 		  << std::endl;
       return(0);
       break;
@@ -687,11 +687,11 @@ void FullyCoupling::update_integrals(double currentTime)
        else
          fp = fopen(integFname.c_str(), "a");
        if (fp == NULL) {
-         std::cout << "Rocman: Failed to open integral file, " 
+         std::cerr << "Rocstar: Failed to open integral file, " 
 		   << integFname << "." << std::endl;
          MPI_Abort( MPI_COMM_WORLD, -1);
        }
-       MAN_DEBUG(2, ("Rocman: FullyCoupling::update_integrals with t: %f.\n", currentTime));
+       MAN_DEBUG(2, ("Rocstar: FullyCoupling::update_integrals with t: %f.\n", currentTime));
        if ( overwrite_integ) {
          fprintf( fp, " time    f-volume        s-volume        f-mass          s-mass          f-burn area     s-burn area     f-non-burn area s-non-burn area s-volume-undef\n");
          overwrite_integ = 0;
@@ -732,11 +732,11 @@ void FullyCoupling::update_distances(double currentTime)
        else
          fp = fopen(distFname.c_str(), "a");
        if (fp == NULL) {
-         std::cout << "Rocman: Failed to open distance file, " << distFname 
+         std::cerr << "Rocstar: Failed to open distance file, " << distFname 
 		   << "." << std::endl;
          MPI_Abort( MPI_COMM_WORLD, -1);
        }
-       MAN_DEBUG(2, ("Rocman: FullyCoupling::update_distances with t: %f.\n", currentTime));
+       MAN_DEBUG(2, ("Rocstar: FullyCoupling::update_distances with t: %f.\n", currentTime));
        if ( overwrite_dist) {
          fprintf( fp, "# time    distance-min    distance-max    distance-norm2  \n");
          overwrite_dist = 0;

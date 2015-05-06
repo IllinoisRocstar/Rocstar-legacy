@@ -49,7 +49,7 @@ int Agent::write_ctrl_handle=0;
 // agent's main function
 void PhysicsAction::run(double t, double dt, double alpha)
 {
-  MAN_DEBUG(1, ("[%d] Rocman: Agent %s::PhysicsAction run with t:%e dt:%e alpha:%e.\n", agent->comm_rank, agent->get_agent_name().c_str(), t, dt, alpha));
+  MAN_DEBUG(3, ("[%d] Rocstar: Agent %s::PhysicsAction run with t:%e dt:%e alpha:%e.\n", agent->comm_rank, agent->get_agent_name().c_str(), t, dt, alpha));
 
     // store it, gm callback needs it
   agent->current_deltatime = dt;
@@ -115,13 +115,13 @@ void NewAttribute::create(std::string bufname)
     std::string unit_;
     COM_get_attribute( bufname+attr, &loc_, &type_, &ncomp_, &unit_);
     if (loc_ != loc || type_ != type || ncomp_ != ncomp || unit_ != unit) {
-      std::cout << "ROCMAN Error: NewAttribute::create(): Could not create " << bufname+attr << " in two different ways " << std::endl;
+      std::cerr << "Rocstar Error: NewAttribute::create(): Could not create " << bufname+attr << " in two different ways " << std::endl;
       MPI_Abort(MPI_COMM_WORLD, -1);
     }
     else
       return;
   }
-  MAN_DEBUG(2, ("NewAttribute::create: %s%s.\n", bufname.c_str(), attr.c_str()));
+  MAN_DEBUG(3, ("NewAttribute::create: %s%s.\n", bufname.c_str(), attr.c_str()));
   COM_new_attribute( bufname+attr, loc, type, ncomp, unit);
   COM_resize_array( bufname+attr);
 }
@@ -150,15 +150,15 @@ void CloneAttribute::create(std::string bufname)
     COM_get_attribute( bufname+attr, &loc1, &type1, &ncomp1, &unit1);
     COM_get_attribute( parent_window+parent_attr, &loc2, &type2, &ncomp2, &unit2);
     if (loc1 != loc2 || type1 != type2 || ncomp1 != ncomp2 || unit1 != unit2) {
-      std::cout << "ROCMAN Error: CloneAttribute::create(): Could not create " << target_window+attr << " in two different ways " << std::endl;
+      std::cerr << "Rocstar Error: CloneAttribute::create(): Could not create " << target_window+attr << " in two different ways " << std::endl;
       MPI_Abort(MPI_COMM_WORLD, -1);
     }
     else {
-      MAN_DEBUG(2, ("CloneAttribute::create: %s%s %s%s condition:%d handle:%d SKIPPED.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str(), condition, COM_get_attribute_handle( parent_window+parent_attr)));
+      MAN_DEBUG(3, ("CloneAttribute::create: %s%s %s%s condition:%d handle:%d SKIPPED.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str(), condition, COM_get_attribute_handle( parent_window+parent_attr)));
       return;
     }
   }
-  MAN_DEBUG(2, ("CloneAttribute::create: %s%s %s%s condition:%d handle:%d.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str(), condition, COM_get_attribute_handle( parent_window+parent_attr)));
+  MAN_DEBUG(3, ("CloneAttribute::create: %s%s %s%s condition:%d handle:%d.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str(), condition, COM_get_attribute_handle( parent_window+parent_attr)));
   if (condition) 
     if (COM_get_attribute_handle( parent_window+parent_attr) <= 0)  return;
   if (ptnname) {
@@ -188,13 +188,13 @@ void UseAttribute::create(std::string bufname)
     COM_get_attribute( bufname+attr, &loc1, &type1, &ncomp1, &unit1);
     COM_get_attribute( parent_window+parent_attr, &loc2, &type2, &ncomp2, &unit2);
     if (loc1 != loc2 || type1 != type2 || ncomp1 != ncomp2 || unit1 != unit2) {
-      std::cout << "ROCMAN Error: NewAttribute::create(): Could not create " << target_window+attr << " in two different ways " << std::endl;
+      std::cerr << "Rocstar Error: NewAttribute::create(): Could not create " << target_window+attr << " in two different ways " << std::endl;
       MPI_Abort(MPI_COMM_WORLD, -1);
     }
     else
       return;
   }
-  MAN_DEBUG(2, ("UseAttribute::create: %s%s %s%s.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str()));
+  MAN_DEBUG(3, ("UseAttribute::create: %s%s %s%s.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str()));
   COM_use_attribute( bufname+attr, parent_window+parent_attr, wg, ptnname, val);
 }
 
@@ -205,7 +205,7 @@ Agent::Agent(Coupling *cp, std::string mod, std::string obj,
 {
   MPI_Comm_rank( com, &comm_rank);
   
-  MAN_DEBUG(1, ("Rocman: Agent::Agent create window %s.\n", get_agent_name().c_str()));
+  MAN_DEBUG(3, ("Rocstar: Agent::Agent create window %s.\n", get_agent_name().c_str()));
   create_window(agent_name.c_str());
 
   inDir = obj;  inDir.append("/Rocin/");
@@ -340,7 +340,7 @@ void Agent::create_registered_attributes(std::string tmpBuf)
 {
   unsigned int n = attributeList.size();
   for (unsigned int i=0; i<n; i++) {
-    MAN_DEBUG(2, ("[%d] creating %s %s\n", comm_rank, attributeList[i]->target_window.c_str(), attributeList[i]->attr.c_str()));
+    MAN_DEBUG(3, ("[%d] creating %s %s\n", comm_rank, attributeList[i]->target_window.c_str(), attributeList[i]->attr.c_str()));
     attributeList[i]->create(attributeList[i]->target_window);
   }
   COM_window_init_done( tmpBuf);
@@ -351,7 +351,7 @@ void Agent::create_registered_window_attributes(std::string target_window)
   unsigned int n = attributeList.size();
   for (unsigned int i=0; i<n; i++) {
     if (attributeList[i]->target_window == target_window) {
-      MAN_DEBUG(2, ("[%d] creating %s %s\n", comm_rank, attributeList[i]->target_window.c_str(), attributeList[i]->attr.c_str()));
+      MAN_DEBUG(3, ("[%d] creating %s %s\n", comm_rank, attributeList[i]->target_window.c_str(), attributeList[i]->attr.c_str()));
       attributeList[i]->create(attributeList[i]->target_window);
     }
   }
@@ -359,7 +359,7 @@ void Agent::create_registered_window_attributes(std::string target_window)
 
 void Agent::create_buffer_all()
 {
-  MAN_DEBUG(1, ("Rocman: Agent %s::create_buffer_all called %s.\n", get_agent_name().c_str(), tmp_window.c_str()));
+  MAN_DEBUG(3, ("Rocstar: Agent %s::create_buffer_all called %s.\n", get_agent_name().c_str(), tmp_window.c_str()));
   COM_new_window( tmp_window);
 //  COM_use_attribute( tmp_window, surf_window+".all", 1);
   COM_use_attribute( tmp_window, surf_window+".mesh", 1);
@@ -414,7 +414,7 @@ void Agent::add_gmaction(Action *act)
 
 void Agent::init_module(double t, double dt)
 {
- MAN_DEBUG(1, ("[%d] Rocman: %s::init_module with current_time:%e current_deltatime:%e.\n", comm_rank, get_agent_name().c_str(), t, dt));
+ MAN_DEBUG(3, ("[%d] Rocstar: %s::init_module with current_time:%e current_deltatime:%e.\n", comm_rank, get_agent_name().c_str(), t, dt));
 
   current_time = initial_time = t;
   current_deltatime = dt;
@@ -423,11 +423,11 @@ void Agent::init_module(double t, double dt)
 
 void Agent::init_subscheduler(double t)
 {
-  MAN_DEBUG(1, ("Rocman: %sAgent::init_subscheduler called.\n", get_agent_name().c_str()));
+  MAN_DEBUG(3, ("Rocstar: %sAgent::init_subscheduler called.\n", get_agent_name().c_str()));
 
   callMethod(&Scheduler::init_actions, t);
 
-  MAN_DEBUG(1, ("Rocman: %sAgent::init_subscheduler done.\n", get_agent_name().c_str()));
+  MAN_DEBUG(3, ("Rocstar: %sAgent::init_subscheduler done.\n", get_agent_name().c_str()));
 }
 
 void Agent::callMethod(Scheduler_voidfn1_t fn, double t)
@@ -464,7 +464,7 @@ void Agent::schedule()
 
 void Agent::finalize()
 {
-  MAN_DEBUG(1, ("[%d] Rocman: %s::finalize called.\n", comm_rank, get_agent_name().c_str()));
+  MAN_DEBUG(3, ("[%d] Rocstar: %s::finalize called.\n", comm_rank, get_agent_name().c_str()));
 
   icScheduler.finalize_actions();
   bcInitScheduler.finalize_actions();
@@ -481,7 +481,7 @@ void Agent::finalize()
 void Agent::init_callback( const char *surf_win, const char *vol_win,
 			   void *option)
 {
-  MAN_DEBUG(1, ("Rocman: %s::init_callback called: surfwin: %s volwin: %s.\n", get_agent_name().c_str(), surf_win, vol_win));
+  MAN_DEBUG(3, ("Rocstar: %s::init_callback called: surfwin: %s volwin: %s.\n", get_agent_name().c_str(), surf_win, vol_win));
 
   surf_window = surf_win;
   vol_window = vol_win;
@@ -493,25 +493,25 @@ void Agent::init_callback( const char *surf_win, const char *vol_win,
 
   if (icScheduler.isEmpty()) {
     if (comm_rank==0)
-      std::cerr << "Rocman WARNING: No actions defined for "
+      std::cerr << "Rocstar: Warning: No actions defined for "
 	      << "Initialization callback for module "
 	      << rocmod_name << std::endl;
   }
   else {
-    MAN_DEBUG(1, ("[%d] Rocman: %s::init_callback called IC with current_time:%e current_deltatime:%e.\n", comm_rank, get_agent_name().c_str(), current_time, current_deltatime));
+    MAN_DEBUG(3, ("[%d] Rocstar: %s::init_callback called IC with current_time:%e current_deltatime:%e.\n", comm_rank, get_agent_name().c_str(), current_time, current_deltatime));
     icScheduler.set_alpha(0.0);
     icScheduler.init_actions(current_time);
     icScheduler.run_actions(current_time, current_deltatime);
-    MAN_DEBUG(1, ("[%d] Rocman: %s::init_callback called IC DONE.\n", comm_rank, get_agent_name().c_str()));
+    MAN_DEBUG(3, ("[%d] Rocstar: %s::init_callback called IC DONE.\n", comm_rank, get_agent_name().c_str()));
   }
 
-  MAN_DEBUG(1, ("Rocman: Agent::init_callback called: surfwin: %s volwin: %s DONE.\n", surf_win, vol_win));
+  MAN_DEBUG(3, ("Rocstar: Agent::init_callback called: surfwin: %s volwin: %s DONE.\n", surf_win, vol_win));
 }
 
 /*
 void Agent::run_initactions(double t, double dt)
 {
-  MAN_DEBUG(1, ("Rocman: %s::run_initactions called with t:%e dt:%e.\n", get_agent_name().c_str(), t, dt));
+  MAN_DEBUG(3, ("Rocstar: %s::run_initactions called with t:%e dt:%e.\n", get_agent_name().c_str(), t, dt));
   initScheduler.set_alpha(0.0);
   //initScheduler.init_actions(t);
   initScheduler.run_actions(t, dt);
@@ -523,14 +523,14 @@ void Agent::run_initactions(double t, double dt)
 void Agent::obtain_bc(double *a, int *l)
 {
   if ( l!=NULL && (unsigned int)(*l) > bcScheduler.size() && comm_rank==0) {
-    std::cerr << "Rocman WARNING: No actions defined for "
+    std::cerr << "Rocstar: Warning: No actions defined for "
 	      << "level-" << *l << " boundary condition "
 	      << "for module " << rocmod_name << std::endl;
     return;
   }
   
   int level = (l==NULL)?1:*l;
-  MAN_DEBUG(2, ("[%d] Rocman: Agent %s::obtain_bc called at level: %d t:%e.\n", comm_rank, get_agent_name().c_str(), level, timestamp))
+  MAN_DEBUG(3, ("[%d] Rocstar: Agent %s::obtain_bc called at level: %d t:%e.\n", comm_rank, get_agent_name().c_str(), level, timestamp))
   Scheduler *sched = get_bcScheduler(level);
   if (sched) {
     sched->set_alpha(*a);
@@ -542,12 +542,12 @@ void Agent::obtain_bc(double *a, int *l)
 void Agent::obtain_gm(double *da)
 {
   if (gmScheduler.isEmpty() && comm_rank==0) {
-    std::cerr << "Rocman WARNING: No actions defined for "
+    std::cerr << "Rocstar: Warning: No actions defined for "
 	      << "Grid Motion "
 	      << "for module " << rocmod_name << std::endl;
     return;
   }
-  MAN_DEBUG(2, ("[%d] Rocman: Agent::obtain_gm called with alpha: %e.\n", comm_rank, *da))
+  MAN_DEBUG(3, ("[%d] Rocstar: Agent::obtain_gm called with alpha: %e.\n", comm_rank, *da))
     // ???????????????
   gmScheduler.set_alpha(*da);
   gmScheduler.run_actions(0.0, current_deltatime);
@@ -560,7 +560,7 @@ void Agent::init_bcinitaction(double t)
 
 void Agent::run_bcinitaction(double t, double dt)
 {
-  MAN_DEBUG(1, ("Rocman: %s::run_bcinitaction called t=%e dt=%e.\n", get_agent_name().c_str(), t, dt));
+  MAN_DEBUG(3, ("Rocstar: %s::run_bcinitaction called t=%e dt=%e.\n", get_agent_name().c_str(), t, dt));
 
   // backup first
   if (get_coupling()->get_ipc() <= 1 && dobackup == 1)
@@ -594,7 +594,7 @@ read_by_control_file( double t, const std::string base, const std::string window
   std::string timeLevel; get_time_string( t, timeLevel);
   fname.append( timeLevel); fname.append( ".txt");
 
-  MAN_DEBUG(2, ("[%d] Agent %s::read_by_control_file run with file: %s t:%e.\n", comm_rank, get_agent_name().c_str(), fname.c_str(), t));
+  MAN_DEBUG(3, ("[%d] Agent %s::read_by_control_file run with file: %s t:%e.\n", comm_rank, get_agent_name().c_str(), fname.c_str(), t));
 
   bool ctrl_exist;
   FILE *fp = fopen( fname.c_str(), "r");
@@ -607,16 +607,16 @@ read_by_control_file( double t, const std::string base, const std::string window
 
   int comm_rank = COMMPI_Comm_rank(communicator);
   if ( ctrl_exist) {
-    if (comm_rank==0)
-      std::cout << "Rocman: Found control file " << fname << std::endl;
+    if (comm_rank==0 && man_verbose > 2)
+      std::cout << "Rocstar: Found control file " << fname << std::endl;
     
     COM_call_function( read_by_control_handle, fname.c_str(), 
 		       window.c_str(), &communicator);
     return 0;
   }
   else {
-    if (comm_rank==0)
-      std::cout << "Rocman: Did not find control file " << fname << std::endl;
+    if (comm_rank==0 && man_verbose > 2)
+      std::cout << "Rocstar: Did not find control file " << fname << std::endl;
     return -1;
   }
 }
@@ -645,7 +645,7 @@ write_data_files( double t, const std::string base, const std::string attr,
   std::string timeLevel; get_time_string( t, timeLevel);
   fname.append( timeLevel); fname.append("_");
 
-  MAN_DEBUG(2, ("[%d] Rocman: Agent %s::write_data_file with file prefix %s at t:%e.\n", comm_rank, get_agent_name().c_str(), fname.c_str(), t));
+  MAN_DEBUG(1, ("[%d] Rocstar: Agent %s::write_data_file with file prefix %s at t:%e.\n", comm_rank, get_agent_name().c_str(), fname.c_str(), t));
 
   int attr_hdl = COM_get_attribute_handle( attr);
   COM_call_function( write_attr_handle, fname.c_str(), &attr_hdl, 
@@ -678,7 +678,7 @@ write_control_file( double t, const std::string base, const std::string window) 
   ctrl_fname.append(".txt");
   
   if ( comm_rank == 0)
-    MAN_DEBUG(1, ("[%d] Rocman: Agent %s::write_control_file %s with file prefix %s at t:%e.\n", comm_rank, get_agent_name().c_str(), ctrl_fname.c_str(), fname.c_str(), t));
+    MAN_DEBUG(1, ("[%d] Rocstar: Agent %s::write_control_file %s with file prefix %s at t:%e.\n", comm_rank, get_agent_name().c_str(), ctrl_fname.c_str(), fname.c_str(), t));
 
   COM_call_function( write_ctrl_handle, window.c_str(), fname.c_str(), 
 		     ctrl_fname.c_str());
@@ -753,7 +753,7 @@ int Agent::check_convergence_help( int vcur, int vpre, double tol, std::string s
        ratio = nrm_diff;
   int result = (ratio <= tol);
                                                                                 
-  if ( comm_rank == 0) 
+  if (comm_rank==0 && man_verbose > 1)
          std::cout << " Convergence ratio of " << str << " is " << ratio << std::endl;
   return result;
 }

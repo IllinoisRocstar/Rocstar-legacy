@@ -56,9 +56,9 @@ void InterpolateBase::init(double t)
     }
   }
   if ( attr_hdls[1] <= 0 && attr_hdls[2] <= 0) 
-       std::cout << "ROCMAN Warning: Could not find attribute " << attr[2] << std::endl;
+       std::cout << "Rocstar Warning: Could not find attribute " << attr[2] << std::endl;
   else if (attr_hdls[2] <= 0) { 
-       std::cout << "ROCMAN Error: Could not find attribute " << attr[2] << std::endl;
+       std::cout << "Rocstar Error: Could not find attribute " << attr[2] << std::endl;
        COM_assertion_msg(0, "ERROR: Abort!");
   }
 
@@ -70,7 +70,7 @@ void InterpolateBase::init(double t)
 
 void InterpolateBase::backup()
 {
-  MAN_DEBUG(1, ("Rocman: InterpolateBase::backup (%s) called with dt_old:%e.\n", attr[0], agent->get_old_dt()));
+  MAN_DEBUG(1, ("Rocstar: InterpolateBase::backup (%s) called with dt_old:%e.\n", attr[0], agent->get_old_dt()));
 
   // BACKUP() in "man_basic.f90"
   if (bkup_hdls[0] > 0 && bkup_hdls[1] > 0) {
@@ -100,7 +100,7 @@ void InterpolateBase::extrapolate_Linear(double dt, double dt_old, double time_o
     COM_call_function( RocBlas::copy, &a_new, &a_out);
   }
   else if (a_old <= 0) {
-    printf("ROCMAN Error: Could not find the old attribute correspond to the attribute with handle %d\n", a_out);
+    printf("Rocstar Error: Could not find the old attribute correspond to the attribute with handle %d\n", a_out);
     COM_assertion_msg(0, "ERROR: Abort!");
   }
   else if (time_out == time_old) {
@@ -126,7 +126,7 @@ void InterpolateBase::extrapolate_Linear(double dt, double dt_old, double time_o
       COM_assertion_msg(0, "ERROR: Abort!");
     }
     else  {
-      printf("ROCMAN Error: Unsupported interpolation mode with old time stamp %f\n", time_old);
+      printf("Rocstar Error: Unsupported interpolation mode with old time stamp %f\n", time_old);
       COM_assertion_msg(0, "ERROR: Abort!");
     }
     COM_call_function( RocBlas::axpy_scalar, &a, &a_out, &a_new, &a_out);

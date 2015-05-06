@@ -102,7 +102,7 @@ SUBROUTINE RFLO_OpenProbeFile( regions )
 
       IF (global%probePos(iprobe,1)<1) THEN
 
-        IF (global%myProcid == 0) THEN
+        IF (global%myProcid == 0 .AND. global%verbLevel /= VERBOSE_NONE) THEN
           PRINT *,SOLVER_NAME,' Trying to find cell containing probe ',iProbe,' at'
           PRINT *,SOLVER_NAME,global%probeXYZ(iprobe,2),global%probeXYZ(iprobe,3), &
                   global%probeXYZ(iprobe,4)
@@ -176,9 +176,11 @@ regs:   DO iReg = 1,global%nRegions
 
 ! ----------------- yes; assign block number and cell indices to probePos
 
-                    PRINT *,SOLVER_NAME,' Found probe ',iprobe,' in block ',  &
-                            iReg,' cell ',i,j,k,' with bounding box'
-                    PRINT *,xmin, xmax, ymin, ymax,zmin, zmax
+                    IF (global%verbLevel /= VERBOSE_NONE) THEN
+                      PRINT *,SOLVER_NAME,' Found probe ',iprobe,' in block ',  &
+                              iReg,' cell ',i,j,k,' with bounding box'
+                      PRINT *,xmin, xmax, ymin, ymax,zmin, zmax
+                    ENDIF
                     global%probePos(iprobe,1) = iReg
                     global%probePos(iprobe,2) = i
                     global%probePos(iprobe,3) = j
@@ -225,18 +227,24 @@ regs:   DO iReg = 1,global%nRegions
           INQUIRE(file=fname,exist=fileExists)
           IF (fileExists) THEN
             fileAppend = .TRUE.
-            PRINT *,SOLVER_NAME,' Appending to ',TRIM(fname)
+            IF (global%verbLevel /= VERBOSE_NONE) THEN
+              PRINT *,SOLVER_NAME,' Appending to ',TRIM(fname)
+            ENDIF
             OPEN(IF_PROBE+iprobe-1,file=fname,form='formatted',status='old', &
                                    position='append',iostat=errorFlag)
           ELSE
             fileAppend = .FALSE.
-            PRINT *,SOLVER_NAME,' Overwriting ',TRIM(fname)
+            IF (global%verbLevel /= VERBOSE_NONE) THEN
+              PRINT *,SOLVER_NAME,' Overwriting ',TRIM(fname)
+            ENDIF
             OPEN(IF_PROBE+iprobe-1,file=fname,form='formatted', &
                                    status='unknown',iostat=errorFlag)
           ENDIF
         ELSE
           fileAppend = .FALSE.
-          PRINT *,SOLVER_NAME,' Creating new ',TRIM(fname)
+          IF (global%verbLevel /= VERBOSE_NONE) THEN
+            PRINT *,SOLVER_NAME,' Creating new ',TRIM(fname)
+          ENDIF
           OPEN(IF_PROBE+iprobe-1,file=fname,form='formatted',status='unknown', &
                                  iostat=errorFlag)
         ENDIF
@@ -304,7 +312,9 @@ regs:   DO iReg = 1,global%nRegions
                 IF (errorFlag /= ERR_NONE) EXIT LoopUnsteady
               ENDIF
             ENDDO LoopUnsteady
-            PRINT *,SOLVER_NAME,' positioned ',TRIM(fname),' at time ',probeTime
+            IF (global%verbLevel /= VERBOSE_NONE) THEN
+              PRINT *,SOLVER_NAME,' positioned ',TRIM(fname),' at time ',probeTime
+            ENDIF
           ELSE
             probeIter = HUGE(probeIter)
             LoopSteady: DO 

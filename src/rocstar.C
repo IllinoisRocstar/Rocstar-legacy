@@ -37,32 +37,36 @@ using namespace std;
 #include "Rocprof.H"
 #endif
 
-void rocstar_driver( int, int);
+void rocstar_driver( int, int, bool);
 
 struct Command_Options {
-  Command_Options() : verbose(1),nrun(0) {}
+  Command_Options() : verbose(1),nrun(0),debug(false) {}
 
   int  verbose;
   int  remeshed;
   int  nrun;
+  bool debug;
 };
 
 void
 ReportUsage()
 {
-  std::cout << "rocstar [-h -v [0-9] -r [n] ]" << std::endl
+  std::cout << "rocstar [-h -d -v [0-2] -r [n] ]" << std::endl
 	    << std::endl
 	    << "Rocstar Help" << std::endl
 	    << "------------------------" << std::endl
 	    << " -h: help - prints this message" << std::endl
 	    << " -v: verbosity - optional verbosity level (default = 1)" << std::endl
 	    << " -r: runs - number of times to automatically restart (default = 0)" << std::endl
+            << " -d: debug - turns on debugging messages for the run" << std::endl
 	    << "------------------------" << std::endl;
 
 }
 
 void
 parse_commandline( int argc, char *argv[], Command_Options &opts) {
+  int rank;
+  MPI_Comm_rank(MPI_COMM_WORLD,&rank);
   for ( int i=1; i<argc; ++i) {
     if ( std::strcmp(argv[i], "-v") == 0) {
       if ( argc>i+1 && argv[i+1][0]>='0' && argv[i+1][0]<='9')
@@ -76,7 +80,13 @@ parse_commandline( int argc, char *argv[], Command_Options &opts) {
       if ( argc>i+1 && argv[i+1][0]>='1' && argv[i+1][0]<='9')
       { opts.nrun = std::atoi( argv[i+1]); ++i; }
     }
-    else {
+    else if ( std::strcmp(argv[i], "-d") == 0){
+      opts.debug = true;
+    }
+    else if ( std::strcmp(argv[i], "-debug") == 0){
+      opts.debug = true;
+    }
+    else if (rank == 0) {
       if(std::strcmp(argv[i],"-h"))
 	std::cerr << "Rocstar: Unknown option " << argv[i] << std::endl;
       ReportUsage();
@@ -102,10 +112,10 @@ main( int argc, char *argv[]) {
   parse_commandline( argc, argv, opts);
 
   int nrun = 1;
-  rocstar_driver( opts.verbose, opts.remeshed);
+  rocstar_driver( opts.verbose, opts.remeshed, opts.debug);
   while (nrun < opts.nrun){
     if(rank == 0) std::cout << " Rocstar automatic restart " << nrun++ << std::endl;
-    rocstar_driver(opts.verbose,opts.remeshed);
+    rocstar_driver(opts.verbose,opts.remeshed, opts.debug);
   }
   /* Finalize Roccom. */
   COM_finalize();

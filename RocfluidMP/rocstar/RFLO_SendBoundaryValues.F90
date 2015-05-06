@@ -90,9 +90,9 @@ SUBROUTINE RFLO_SendBoundaryValues( region,initialize )
 ! store pointers to variables -------------------------------------------------
 
   iLev = region%currLevel
-  IF(initialize .eqv. .true.) THEN
-     WRITE(*,*) 'RFLO: WARNING!! INITIALIZING in SENDBOUNDARYVALS!!'
-  ENDIF
+  !IF(initialize .eqv. .true.) THEN
+  !   WRITE(*,*) 'RFLO: WARNING!! INITIALIZING in SENDBOUNDARYVALS!!'
+  !ENDIF
   CALL RFLO_GetCellOffset( region,iLev,iCOff,ijCOff )
   CALL RFLO_GetNodeOffset( region,iLev,iNOff,ijNOff )
 

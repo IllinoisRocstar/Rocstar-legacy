@@ -377,9 +377,17 @@ public:
   /// Determines whether verbose is on.
   int     get_verbose() const { return _verbose; }
 
+  /// Determines whether verbose is on.
+  int     get_debug() const { return _debug; }
+
   /// Changes the verbose setting.
   void    set_verbose( int v) { 
     _verbose = v; _verb1 = ( _verbose<=0) ? 0 :  (_verbose+1)%2+1;
+  }
+
+  /// Turns on debuging messages
+  void    set_debug( bool debug) {
+    _debug = debug;
   }
 
   void set_function_verbose( int i, int level) throw(int);
@@ -469,6 +477,7 @@ protected: // Protected data members
   int             _depth;              ///< Depth of procedure calls
   int             _verbose;            ///< Indicates whether verbose is on
   int             _verb1;              ///< Indicates whether to print detailed information
+  bool            _debug;              ///< Indicated whether debug mode is on
   MPI_Comm        _comm;               ///< Default communicator of Roccom
   bool            _mpi_initialized;    ///< Indicates whether MPI was initialized by Roccom
   int             _errorcode;          ///< Error code

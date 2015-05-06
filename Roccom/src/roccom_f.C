@@ -1658,6 +1658,9 @@ extern "C" void COM_F_FUNC2(com_get_object, COM_GET_OBJECT)
 extern "C" void COM_F_FUNC2(com_set_verbose,COM_SET_VERBOSE)( const int &i)
 { COM_get_roccom()->set_verbose( i); }
 
+extern "C" void COM_F_FUNC2(com_set_debug,COM_SET_DEBUG)( const bool &debug)
+{ COM_get_roccom()->set_debug( debug); }
+
 extern "C" void COM_F_FUNC2( com_set_profiling_barrier, COM_SET_PROFILING_BARRIER)
   ( const int &hdl, const int &comm) 
 {
@@ -1760,22 +1763,23 @@ extern "C" int COM_F_FUNC2( com_chkptr_c, COM_CHKPTR_C)
     break;
   case 2: { // This stage, the arguments are switched
     int verb = COM_get_roccom()->get_verbose();
+    bool debug = COM_get_roccom()->get_debug();
     if ( insert_or_append == Roccom_base::FPTR_INSERT) {
       COM_assertion_msg( ptrinfo1 == len2-((char*)ptr2-(char*)NULL) &&
 			 ptrinfo2 == len1-((char*)ptr1-(char*)NULL),
 			 "Incorrect handling of Fortran 90 pointers");
-      if ( verb) 
-	std::cerr << "ROCCOM: Setting f90 pointer treatment to INSERT" << std::endl;
+      if (debug) 
+	std::cerr << "Roccom: Setting f90 pointer treatment to INSERT" << std::endl;
     }
     else {
       if ( ptrinfo1 != 0 && ptrinfo1 == len4-((char*)ptr2-(char*)NULL) && 
 	   ptrinfo2 != 0 && ptrinfo2 == len3-((char*)ptr1-(char*)NULL)) {
-	if (  verb) 
-	  std::cerr << "ROCCOM: Setting f90 pointer treatment to APPEND. \n";
+	if (debug) 
+	  std::cerr << "Roccom: Setting f90 pointer treatment to APPEND. \n";
 	insert_or_append = Roccom_base::FPTR_APPEND;
       }
-      else if ( verb) 
-	std::cerr << "ROCCOM: Setting f90 pointer treatment to NONE.\n";
+      else if (debug) 
+	std::cerr << "Roccom: Setting f90 pointer treatment to NONE.\n";
       
       if ( verb && (verb|1)==0) 
 	std::cerr << "\tAt pass 1, " << "ptrinfo1 is " << ptrinfo1 

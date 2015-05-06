@@ -65,6 +65,7 @@
 
      INTEGER :: nxmax
      INTEGER :: nmat
+     INTEGER :: verbosity
 
    END TYPE G_BURN_1D
 !

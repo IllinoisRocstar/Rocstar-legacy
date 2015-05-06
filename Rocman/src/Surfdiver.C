@@ -42,7 +42,8 @@ void read_file( const char *fname, const string &wname, double alpha)
   COM_new_window( wname.c_str(), MPI_COMM_SELF);
 
   // Read in HDF files or a Rocin control file
-  std::cout << "Reading file " << fname << " " << wname << "..." << std::endl;
+  if(man_verbose > 2)
+    std::cout << "Reading file " << fname << " " << wname << std::endl;
 
   // Read in HDF format
   //COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
@@ -91,9 +92,9 @@ void read_file( const char *fname, const string &wname, double alpha)
   int buf_mesh = COM_get_attribute_handle((bufwin+".mesh").c_str());
   COM_call_function( IN_obtain, &buf_mesh, &buf_mesh);
   //COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
-  
-  std::cout << "Obtained window " << wname
-	    << " from file " << fname << std::endl;
+ 
+  if(man_verbose > 2) 
+    std::cout << "Obtained window " << wname << " from file " << fname << std::endl;
 
   // Change the memory layout to contiguous.
   COM_clone_attribute( (wname+".mesh").c_str(), (bufwin+".mesh").c_str(), 0);
@@ -125,12 +126,12 @@ void SurfDiver::init(double t)
 }
 
 void SurfDiver::run( double t, double dt, double alpha) {
-  MAN_DEBUG(1, ("[%d] Rocman: SurfDiver::run() with t:%e dt:%e.\n", fagent->get_comm_rank(), t, dt));
+  MAN_DEBUG(1, ("[%d] Rocstar: SurfDiver::run() with t:%e dt:%e.\n", fagent->get_comm_rank(), t, dt));
 
   MPI_Comm comm = fagent->get_communicator();
 
   //  dump meshes
-  MAN_DEBUG(1, ("[%d] Rocman: SurfDiver::run() dumping output files for time %e.\n", fagent->get_comm_rank(), t));
+  MAN_DEBUG(1, ("[%d] Rocstar: SurfDiver::run() dumping output files for time %e.\n", fagent->get_comm_rank(), t));
   fagent->output_restart_files( t);
   sagent->output_restart_files( t);
 
@@ -166,7 +167,7 @@ void SurfDiver::run( double t, double dt, double alpha) {
     const char *format = "HDF";
   
     // mesh overlay
-    std::cout << "Starting mesh overlay... "  << std::endl;
+    MAN_DEBUG(2,("Starting mesh overlay..."));
     COM_call_function( RFC_overlay, &fluid_mesh1, &solid_mesh1);
 
     // output overlay mesh
@@ -183,13 +184,13 @@ void SurfDiver::run( double t, double dt, double alpha) {
   std::string fluid_dir = outdir+"ifluid";
   std::string solid_dir = outdir+"isolid";
 
-  std::cout << "Reload partitioned mesh overlay... "  << std::endl;
+  MAN_DEBUG(2,("Reload partitioned mesh overlay... "));
   COM_call_function( RFC_read, &fluid_mesh, &solid_mesh, &comm, fluid_dir.c_str(), solid_dir.c_str(), "HDF");
 }
 
 //
 void compute_overlay( FluidAgent *fagent, SolidAgent *sagent, double t) {
-  MAN_DEBUG(1, ("[%d] Rocman: compute_overlay with t:%e .\n", fagent->get_comm_rank(), t));
+  MAN_DEBUG(1, ("[%d] Rocstar: compute_overlay with t:%e .\n", fagent->get_comm_rank(), t));
 
   MPI_Comm comm = fagent->get_communicator();
 
@@ -238,7 +239,7 @@ void compute_overlay( FluidAgent *fagent, SolidAgent *sagent, double t) {
     int RFC_write = COM_get_function_handle( "RFC.write_overlay");
 
     // mesh overlay
-    std::cout << "Starting mesh overlay... "  << std::endl;
+    MAN_DEBUG(2,("Starting mesh overlay... "));
     COM_call_function( RFC_overlay, &fluid_mesh1, &solid_mesh1);
 
     // output overlay mesh

@@ -277,6 +277,7 @@ extern "C" {
    *  \{
    */
   void COM_set_verbose( int i);
+  void COM_set_debug( bool debug);
   void COM_set_profiling( int i);
   void COM_set_profiling_barrier( int hdl, MPI_Comm comm);
   void COM_print_profile( const char *fname, const char *header);

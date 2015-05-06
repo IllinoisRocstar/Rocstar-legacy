@@ -78,6 +78,9 @@ public:
   int     InterruptFlag;
   int     AutoRestart;
 
+  int     controlVerb;
+  bool    controlDebug;
+
   // internal
   int     iOutput;
   int     myRank;

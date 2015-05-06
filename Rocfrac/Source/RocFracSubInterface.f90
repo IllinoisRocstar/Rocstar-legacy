@@ -88,9 +88,11 @@ CONTAINS
 
 ! Subroutine to register interface data.
     CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,i)
-    IF(myid.eq.0) THEN
+    IF(myid.eq.0 .AND. glb%debug_state) THEN
        WRITE (*,*) 'ROCFRAC: Calling RocFrac Register...'
+    ENDIF
 ! Get propellant density from Rocburn ! fix if more then one material
+    IF(myid.eq.0 .AND. glb%Verb.gt.1) THEN
        WRITE (*,*) 'ROCFRAC: Propellant density rho(1) is ', glb%rho(1)
     ENDIF
 !!$ CALL COM_create_window(surWin)
@@ -492,7 +494,7 @@ CONTAINS
            endif
                 
       ELSE
-          WRITE(*,*) 'Rocfrac: Invalid bcflag',bcflag,' on surface pane',pane
+          WRITE(*,*) 'Rocfrac: Error: Invalid bcflag',bcflag,' on surface pane',pane
           STOP
       ENDIF
 
@@ -542,7 +544,7 @@ CONTAINS
          COM_get_attribute_handle( surWin//".all"))
 
     CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,i)
-    IF(myid.eq.0) THEN
+    IF(myid.eq.0 .AND. glb%debug_state) THEN
        WRITE (*,*) 'ROCFRAC: Calling RocFrac Register... Done'
     ENDIF
 11  FORMAT(A,'_',A,A1)
