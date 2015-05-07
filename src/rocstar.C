@@ -20,14 +20,13 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE    *
  * USE OR OTHER DEALINGS WITH THE SOFTWARE.                          *
  *********************************************************************/
-/* $Id: rocstar.C,v 1.18 2009/11/10 15:36:28 mtcampbe Exp $ */
-/* Xiangmin Jiao: The main program for gen2 which calls genx_driver routine. */
 
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
 //#include <mpi.h>
 #include "roccom.h"
+#include "splash.h"
 
 //##include "makeopts.h"
 
@@ -92,10 +91,13 @@ parse_commandline( int argc, char *argv[], Command_Options &opts) {
       ReportUsage();
     }
   }
+  if(opts.verbose > 0)
+    std::cout << RocstarSplash << std::endl;
 }
 
 int
 main( int argc, char *argv[]) {
+
 
   /* Start MPI. */
   MPI_Init( &argc, &argv);
