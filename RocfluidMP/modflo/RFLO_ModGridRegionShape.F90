@@ -667,9 +667,9 @@ SUBROUTINE RFLO_BlockSkewedCell( region )
   IF (dprodm < 1.E-1_RFREAL) THEN
     region%blockShape = REGION_SHAPE_FUNKY
 
-    IF ( region%global%verbLevel > VERBOSE_NONE ) THEN
-      WRITE(STDOUT,'(A,1X,A,I6)') SOLVER_NAME,'  found funky block, region', &
-                                                 region%iRegionGlobal
+    IF ( region%global%verbLevel >= VERBOSE_NONE ) THEN
+      WRITE(STDOUT,'(A,1X,A,I6)') SOLVER_NAME, &
+           'Warning: found funky block, region',region%iRegionGlobal
     END IF ! global%verbLevel
   ENDIF
 

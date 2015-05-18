@@ -185,7 +185,7 @@ SUBROUTINE RFLO_MoveGridElliptFra( regions )
   IF (global%moveGridNiter < 1 .AND. &
       global%moveGridViter < 1 .AND. &
       global%moveGridSiter < 1) THEN                   ! TFI only
-    IF (global%verbLevel /= VERBOSE_NONE) THEN
+    IF (global%verbLevel >= VERBOSE_HIGH) THEN
       IF (global%myProcid == MASTERPROC) THEN
         WRITE(STDOUT,4000) SOLVER_NAME,global%skewness,global%minVol
         WRITE(STDOUT,1000) SOLVER_NAME, &
@@ -208,7 +208,7 @@ SUBROUTINE RFLO_MoveGridElliptFra( regions )
 !      CALL RFLO_ElliptGridSmoo( regions,resid )
 !    ENDDO
 
-    IF (global%verbLevel /= VERBOSE_NONE) THEN
+    IF (global%verbLevel >= VERBOSE_HIGH) THEN
 #ifdef MPI
       CALL MPI_Reduce( resid,globalResid,1,MPI_RFREAL,MPI_SUM, &
                        MASTERPROC,global%mpiComm,global%mpierr )
@@ -299,7 +299,7 @@ SUBROUTINE RFLO_MoveGridElliptFra( regions )
 
 ! print residual of 3D Elliptic PDE smoothing ---------------------------------
 
-  IF (global%verbLevel /= VERBOSE_NONE) THEN
+  IF (global%verbLevel >= VERBOSE_HIGH) THEN
 #ifdef MPI
     CALL MPI_Reduce( resid,globalResid,1,MPI_RFREAL,MPI_SUM, &
                      MASTERPROC,global%mpiComm,global%mpierr )

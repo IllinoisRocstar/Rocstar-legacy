@@ -141,7 +141,7 @@ SUBROUTINE RFLO_GetUserInput( regions )
 
 ! write user input
 
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel==VERBOSE_HIGH) THEN
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_MED) THEN
     CALL RFLO_PrintUserInput( regions )
   ENDIF
 

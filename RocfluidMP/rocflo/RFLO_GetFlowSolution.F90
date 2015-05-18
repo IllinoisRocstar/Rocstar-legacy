@@ -103,7 +103,7 @@ SUBROUTINE RFLO_GetFlowSolution( regions )
 
 ! read/receive solution for all regions on this processor
 
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//'   - mixture'
 
 #ifndef GENX

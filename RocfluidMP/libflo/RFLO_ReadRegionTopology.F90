@@ -327,7 +327,7 @@ SUBROUTINE RFLO_ReadRegionTopology( global,regions )
 
 ! print some info -------------------------------------------------------------
 
-  IF (global%myProcid==masterProc .AND. global%verbLevel/=VERBOSE_NONE) THEN
+  IF (global%myProcid==masterProc .AND. global%verbLevel>=VERBOSE_MED) THEN
     WRITE(STDOUT,'(/,A,I8)') SOLVER_NAME//' total no. of cells  = ',ncellsTot
     WRITE(STDOUT,'(A,I8,/)') SOLVER_NAME//' no. of grid regions = ', &
                              global%nRegions

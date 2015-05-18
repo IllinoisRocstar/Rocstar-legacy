@@ -447,6 +447,9 @@ SUBROUTINE RFLO_TimeStepping( dTimeSystem,dIterSystem,regions )
       IF (global%myProcid==MASTERPROC .AND. &
           global%verbLevel/=VERBOSE_NONE) THEN
         WRITE(STDOUT,'(/,A)') SOLVER_NAME//' Saving flow solution ...'
+      ENDIF
+      IF (global%myProcid==MASTERPROC .AND. &
+          global%verbLevel>=VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A)')   SOLVER_NAME//'   - mixture'
       ENDIF
       CALL RFLO_WriteSolution( regions )
@@ -454,7 +457,7 @@ SUBROUTINE RFLO_TimeStepping( dTimeSystem,dIterSystem,regions )
 
       IF (global%aeroCoeffs == ACTIVE) THEN
         IF (global%myProcid==MASTERPROC .AND. &
-            global%verbLevel/=VERBOSE_NONE) THEN
+            global%verbLevel>=VERBOSE_HIGH) THEN
           WRITE(STDOUT,'(A)')   SOLVER_NAME//'   - patch ac'
         ENDIF
         CALL RFLO_WritePatchAeroCoeffs( regions )

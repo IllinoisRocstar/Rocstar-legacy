@@ -242,18 +242,17 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 
     WRITE(STDOUT,'(/,A)') SOLVER_NAME//'  *****************************************************'
     WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *                                                   *'
-    WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *               R O C F L O  -  M P                 *'
-    WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *               ===================                 *'
+    WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *                     RocfloMP                      *'
     WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *                                                   *'
-    WRITE(STDOUT,  '(A)') SOLVER_NAME//'  '//TRIM(headerString)
-    WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *    Copyright (c) by the University of Illinois    *'
+!    WRITE(STDOUT,  '(A)') SOLVER_NAME//'  '//TRIM(headerString)
+    WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *    Copyright (C)2015 Illinois Rocstar LLC         *'
     WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *                                                   *'
     WRITE(STDOUT,'(A,/)') SOLVER_NAME//'  *****************************************************'
   ENDIF
 
 ! write out messages from conditional compilation -----------------------------
 
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) THEN
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_LOW) THEN
     headerWidth  = 32
     headerString = ' '
 
@@ -369,9 +368,11 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 
 ! read region topology --------------------------------------------------------
 
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) THEN
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_LOW) THEN
     WRITE(STDOUT,'(A,A,A,/)') SOLVER_NAME//' Case <', &
       TRIM(global%casename),'> running'
+  ENDIF
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) THEN
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Reading region topology ...'
   ENDIF
 
@@ -392,7 +393,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 
 ! get user parameters ---------------------------------------------------------
 
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_LOW) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Reading user input ...'
 
   CALL RFLO_GetUserInput( regions )
@@ -421,7 +422,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Checking BCs of regions ...'
 
   CALL RFLO_CheckRegionFaces( regions )
@@ -435,7 +436,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
 
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME// &
                         ' Searching source regions for edge & corner cells ...'
 
@@ -447,7 +448,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Allocating memory ...'
 
   CALL RFLO_DoMemoryAllocation( regions )
@@ -458,7 +459,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
   IF (global%degenrtEc .AND. global%myProcid==MASTERPROC) THEN
-    IF (global%verbLevel/=VERBOSE_NONE) &
+    IF (global%verbLevel>=VERBOSE_HIGH) &
       WRITE(STDOUT,'(A)') SOLVER_NAME// &
                         ' Write degenerated edges and corners into file ...'
 
@@ -473,7 +474,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
     IF (global%flowType == FLOW_UNSTEADY .AND. global%doStat==ACTIVE) THEN
-       IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+       IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
             WRITE(STDOUT,'(A)') SOLVER_NAME// &
             ' Doing stat mapping ...'
        CALL StatMapping( global )
@@ -485,7 +486,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME// &
                         ' Reading grid file, exchanging geometry ...'
 
@@ -497,7 +498,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME// &
                         ' Initializing Grid Procedures ...'
   CALL RFLO_InitGridProcedures( regions )
@@ -507,7 +508,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Preparing GenX interface ...'
 
   CALL RFLO_InitGenxInterface( regions,genxHandle,solver,inSurf,inVol, &
@@ -518,7 +519,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME// &
                         ' Getting geometry ...'
   CALL RFLO_GetGeometry( regions,0 )
@@ -529,7 +530,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Calculating & checking grid metrics ...'
 
   CALL RFLO_CalcGridMetrics( regions )
@@ -540,7 +541,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Calculating & checking turbulence metrics ...'
   IF (global%turbActive) CALL TURB_CalcMetrics( regions, 1 )
 #endif
@@ -549,7 +550,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Setting metrics for lagrangian particles ...'
   CALL PLAG_RFLO_SetMetrics( regions )
 #endif
@@ -559,7 +560,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Reading flow solution ...'
 
   CALL RFLO_GetFlowSolution( regions )
@@ -570,7 +571,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
   IF (global%thrustType /= THRUST_NONE) THEN
-    IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+    IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
       WRITE(STDOUT,'(A)') SOLVER_NAME//' Searching for thrust patches ...'
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
@@ -589,7 +590,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Initializing statistics ...'
   CALL InitStatistics( regions )
 #endif
@@ -599,7 +600,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Opening native output files ...'
   CALL RFLO_OpenConverFile( global )
 
@@ -631,7 +632,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' Sending boundary values to Rocstar ...'
   DO iReg=1,global%nRegions
     IF (regions(iReg)%procid==global%myProcid .AND. &  ! region active and
@@ -644,7 +645,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 #ifdef MPI
       CALL MPI_Barrier( global%mpiComm,global%mpierr )
 #endif
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME//' All processors initialized ...'
 ! finalize --------------------------------------------------------------------
 

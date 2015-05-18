@@ -185,7 +185,7 @@ SUBROUTINE RFLO_MoveGridFrame( regions )
 ! smooth grid by solving Laplace equation -------------------------------------
 
   IF (global%moveGridNiter < 1) THEN 
-    IF (global%verbLevel /= VERBOSE_NONE) THEN
+    IF (global%verbLevel >= VERBOSE_HIGH) THEN
       IF (global%myProcid == MASTERPROC) THEN
         WRITE(STDOUT,3000) SOLVER_NAME,global%skewness,global%minVol
         WRITE(STDOUT,1000) SOLVER_NAME, &
@@ -204,7 +204,7 @@ SUBROUTINE RFLO_MoveGridFrame( regions )
       CALL RFLO_LaplaceGridSmoo( regions,resid )
     ENDDO
 
-    IF (global%verbLevel /= VERBOSE_NONE) THEN
+    IF (global%verbLevel >= VERBOSE_HIGH) THEN
 #ifdef MPI
       CALL MPI_Reduce( resid,globalResid,1,MPI_RFREAL,MPI_SUM, &
                        MASTERPROC,global%mpiComm,global%mpierr )

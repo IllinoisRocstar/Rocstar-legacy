@@ -102,7 +102,7 @@ SUBROUTINE RFLO_GetDeformation( region,boundMoved,dNode )
 ! obtain displacements --------------------------------------------------------
 
   IF ( global%myProcid == 0 .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A,1X,I3)') SOLVER_NAME, &
                                    'Getting displacements from Rocstar....'
   END IF ! global%myProcid
@@ -177,7 +177,8 @@ SUBROUTINE RFLO_GetDeformation( region,boundMoved,dNode )
 
     ELSE  ! external BC
  !     IF(patch%bcMotion .ne. BC_EXTERNAL) THEN
-      IF (patch%mixt%setMotion) THEN
+      IF (patch%mixt%setMotion .AND. &
+         global%verbLevel >= VERBOSE_HIGH) THEN
          WRITE(*,*) 'SETTING MOTION ON PATCH '
         CALL RFLO_GetPatchIndicesNodes( region,patch,iLev, &
                                         ibeg,iend,jbeg,jend,kbeg,kend )
@@ -206,7 +207,7 @@ SUBROUTINE RFLO_GetDeformation( region,boundMoved,dNode )
 
 ! finalize --------------------------------------------------------------------
   IF ( global%myProcid == 0 .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A,1X,I3)') SOLVER_NAME, &
                                    'Getting displacements from Rocstar done.'
   END IF ! global%myProcid

@@ -335,7 +335,7 @@ SUBROUTINE RFLO_DualTimeStepping( dTimeSystem,regions )
       global%currentIter = subIter
       CALL ExplicitMultistage( regions,ftermNew,residFterm )
       CALL RFLO_ResidualNorm( regions )
-      IF (global%myProcid==MASTERPROC .AND. global%verbLevel==VERBOSE_HIGH) THEN
+      IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,1X,2I6,1PE13.4,E13.4)') &
           SOLVER_NAME,iter,subIter,global%residual/global%resInit,global%residual
       ENDIF
@@ -343,7 +343,7 @@ SUBROUTINE RFLO_DualTimeStepping( dTimeSystem,regions )
           global%residual/global%resInit<=global%tolSubIter .OR. &
           global%residual<100._RFREAL*EPSILON(1.0_RFREAL)) EXIT
     ENDDO
-    IF (global%myProcid == MASTERPROC .AND. global%verbLevel==VERBOSE_LOW) THEN
+    IF (global%myProcid == MASTERPROC .AND. global%verbLevel>=VERBOSE_LOW) THEN
       WRITE(STDOUT,'(A,1X,I6,1PE13.4,E13.4)') &
         SOLVER_NAME,subIter,global%residual/global%resInit,global%residual
     ENDIF
@@ -525,6 +525,9 @@ SUBROUTINE RFLO_DualTimeStepping( dTimeSystem,regions )
       IF (global%myProcid==MASTERPROC .AND. &
           global%verbLevel/=VERBOSE_NONE) THEN
         WRITE(STDOUT,'(/,A)') SOLVER_NAME//' Saving flow solution ...'
+      ENDIF
+      IF (global%myProcid==MASTERPROC .AND. &
+          global%verbLevel>=VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A)')   SOLVER_NAME//'   - mixture'
       ENDIF
       CALL RFLO_WriteSolution( regions )
@@ -532,7 +535,7 @@ SUBROUTINE RFLO_DualTimeStepping( dTimeSystem,regions )
 
       IF (global%aeroCoeffs == ACTIVE) THEN
         IF (global%myProcid==MASTERPROC .AND. &
-            global%verbLevel/=VERBOSE_NONE) THEN
+            global%verbLevel/=VERBOSE_HIGH) THEN
           WRITE(STDOUT,'(A)') SOLVER_NAME//'   - patch ac'
         ENDIF
         CALL RFLO_WritePatchAeroCoeffs( regions )

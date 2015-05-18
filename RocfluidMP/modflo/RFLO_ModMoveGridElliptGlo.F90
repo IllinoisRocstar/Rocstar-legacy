@@ -200,7 +200,8 @@ SUBROUTINE RFLO_MoveGridElliptGlo( regions )
 #else
       globalResid = resid
 #endif
-      IF (global%myProcid == MASTERPROC) THEN
+      IF (global%myProcid == MASTERPROC .AND. &
+          global%verbLevel>=VERBOSE_HIGH) THEN
         WRITE(STDOUT,2000) SOLVER_NAME,global%skewness,global%minVol
         WRITE(STDOUT,1000) SOLVER_NAME,global%moveGridNiter,SQRT(globalResid)
       ENDIF
@@ -286,7 +287,8 @@ SUBROUTINE RFLO_MoveGridElliptGlo( regions )
 #else
     globalResid = resid
 #endif
-    IF (global%myProcid == MASTERPROC) THEN
+    IF (global%myProcid == MASTERPROC .AND. &
+          global%verbLevel>=VERBOSE_HIGH) THEN
       WRITE(STDOUT,1000) SOLVER_NAME,global%moveGridViter,SQRT(globalResid)
     ENDIF
   ENDIF    ! verbLevel
