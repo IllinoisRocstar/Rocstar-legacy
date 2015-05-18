@@ -86,7 +86,7 @@ SUBROUTINE RFLU_DerivedInputValues(regions)
   'RFLU_DerivedInputValues.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Setting derived input variables...'
   END IF ! global%verbLevel
 
@@ -300,7 +300,7 @@ SUBROUTINE RFLU_DerivedInputValues(regions)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Setting derived input variables done.'
   END IF ! global%verbLevel
 

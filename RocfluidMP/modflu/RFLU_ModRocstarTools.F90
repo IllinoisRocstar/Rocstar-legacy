@@ -186,7 +186,7 @@ SUBROUTINE RFLU_GENX_ConstrainDisp(pRegion)
   'RFLU_ModRocstarTools.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Constraining displacements...'
   END IF ! global%myProcid
    
@@ -530,7 +530,7 @@ SUBROUTINE RFLU_GENX_ConstrainDisp(pRegion)
       CALL ErrorStop(global,ERR_MPI_TROUBLE,__LINE__)
     END IF ! global%errorFlag
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW) THEN
+         global%verbLevel >= VERBOSE_HIGH) THEN
       WRITE(STDOUT,'(A,3X,A,1X,I9)') SOLVER_NAME, &
            'Total number of constrained nodes:',cvTot
       WRITE(STDOUT,'(A,3X,A,1X,I9)') SOLVER_NAME, &
@@ -539,7 +539,7 @@ SUBROUTINE RFLU_GENX_ConstrainDisp(pRegion)
   ENDIF ! global%checkLevel
   
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Constraining displacements done.'
   END IF ! global%myProcid
   
@@ -592,7 +592,7 @@ SUBROUTINE RFLU_GENX_InitBFLAG(pRegion)
   'RFLU_ModRocstarTools.F90')
   
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initializing BFLAG...'
   END IF ! global%myProcid
   
@@ -787,7 +787,7 @@ SUBROUTINE RFLU_GENX_InitBFLAG(pRegion)
            CALL ErrorStop(global,ERR_MPI_TROUBLE,__LINE__)
         END IF ! global%errorFlag
         IF ( global%myProcid == MASTERPROC .AND. &
-             global%verbLevel > VERBOSE_LOW) THEN
+             global%verbLevel >= VERBOSE_HIGH) THEN
            WRITE(STDOUT,'(A,3X,A,1X,I9)') SOLVER_NAME, &
                 'Total number of burned out faces:',boTot
         END IF ! global%myProcid
@@ -796,7 +796,7 @@ SUBROUTINE RFLU_GENX_InitBFLAG(pRegion)
   ENDIF ! (global%cnstrCaseRad > 0)
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initializing BFLAG done.'
   END IF ! global%myProcid
   
@@ -864,7 +864,7 @@ SUBROUTINE RFLU_GENX_MoveGrid(regions)
   'RFLU_ModRocstarTools.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Moving grid...'
   END IF ! global%myProcid
    
@@ -974,7 +974,7 @@ SUBROUTINE RFLU_GENX_MoveGrid(regions)
         CALL ErrorStop(global,ERR_MPI_TROUBLE,__LINE__)
      END IF ! global%errorFlag
      IF ( global%myProcid == MASTERPROC .AND. &
-          global%verbLevel > VERBOSE_LOW) THEN
+          global%verbLevel >= VERBOSE_HIGH) THEN
         dispMax = SQRT(dispMax)
         WRITE(STDOUT,'(A,3X,A,1X,E13.6)') SOLVER_NAME, &
              'Maximum nodal displacement from Rocstar:',dispMax
@@ -986,7 +986,7 @@ SUBROUTINE RFLU_GENX_MoveGrid(regions)
 ! ******************************************************************************     
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Smoothing grid with Rocmop...'
   END IF ! global%myProcid
    
@@ -994,7 +994,7 @@ SUBROUTINE RFLU_GENX_MoveGrid(regions)
      
   CALL MPI_Barrier(global%mpiComm,global%error)
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Done smoothing grid with Rocmop.'
   END IF ! global%myProcid
 
@@ -1028,7 +1028,7 @@ SUBROUTINE RFLU_GENX_MoveGrid(regions)
      END IF ! global%errorFlag
      IF (dispMax /= 0.0) THEN
         IF ( global%myProcid == MASTERPROC .AND. &
-             global%verbLevel > VERBOSE_LOW) THEN
+             global%verbLevel >= VERBOSE_NONE) THEN
            dispMax = SQRT(dispMax)
            WRITE(STDOUT,'(A,3X,A,1X,E13.6)') SOLVER_NAME, &
                 '***WARNING - NONZERO SURFACE DISP FROM ROCMOP:',&
@@ -1078,7 +1078,7 @@ SUBROUTINE RFLU_GENX_MoveGrid(regions)
        CALL ErrorStop(global,ERR_MPI_TROUBLE,__LINE__)
     END IF ! global%errorFlag
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW) THEN
+         global%verbLevel >= VERBOSE_HIGH) THEN
        dispMax = SQRT(dispMax)
        WRITE(STDOUT,'(A,3X,A,1X,E13.6)') SOLVER_NAME, &
             'Maximum nodal displacement from Rocmop:',dispMax
@@ -1091,7 +1091,7 @@ SUBROUTINE RFLU_GENX_MoveGrid(regions)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Moving grid done.'
   END IF ! global%myProcid
 

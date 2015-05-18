@@ -121,7 +121,7 @@ MODULE RFLU_ModCellMapping
   'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN             
+         global%verbLevel >= VERBOSE_HIGH ) THEN             
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Nullifying cell mapping...' 
     END IF ! global%verbLevel
 
@@ -147,7 +147,7 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Nullifying cell mapping done.'        
     END IF ! global%verbLevel
 
@@ -210,7 +210,7 @@ MODULE RFLU_ModCellMapping
   'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN             
+         global%verbLevel >= VERBOSE_HIGH ) THEN             
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating cell mapping...' 
     END IF ! global%myProcid
 
@@ -273,7 +273,7 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating cell mappings done.'        
     END IF ! global%myProcid
 
@@ -337,7 +337,7 @@ MODULE RFLU_ModCellMapping
   'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building global-to-local cell mapping...' 
     END IF ! global%verbLevel
@@ -358,7 +358,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nTetsTot > 0 ) THEN 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Tetrahedra...' 
       END IF ! global%myProcid     
     END IF ! pGrid%nTetsTot
@@ -376,7 +376,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nHexsTot > 0 ) THEN       
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Hexahedra...' 
       END IF ! global%myProcid    
     END IF ! pGrid%nHexsTot 
@@ -394,7 +394,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nPrisTot > 0 ) THEN       
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Prisms...' 
       END IF ! global%myProcid 
     END IF ! pGrid%nPrisTot
@@ -412,7 +412,7 @@ MODULE RFLU_ModCellMapping
       
     IF ( pGrid%nPyrsTot > 0 ) THEN
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Pyramids...' 
       END IF ! global%myProcid     
     END IF ! pGrid%nPyrsTot
@@ -429,7 +429,7 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building global-to-local cell mapping done.'
     END IF ! global%myProcid
@@ -493,7 +493,7 @@ MODULE RFLU_ModCellMapping
   'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building local-to-global cell mapping...' 
     END IF ! global%verbLevel
@@ -517,7 +517,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nTetsTot > 0 ) THEN 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Tetrahedra...' 
       END IF ! global%myProcid     
     END IF ! pGrid%nTetsTot
@@ -542,7 +542,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nHexsTot > 0 ) THEN       
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Hexahedra...' 
       END IF ! global%myProcid  
     END IF ! pGrid%nHexsTot
@@ -567,7 +567,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nPrisTot > 0 ) THEN       
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Prisms...' 
       END IF ! global%myProcid  
     END IF ! pGrid%nPrisTot
@@ -592,7 +592,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nPyrsTot > 0 ) THEN
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Pyramids...' 
       END IF ! global%myProcid      
     END IF ! pGrid%nPyrsTot
@@ -616,7 +616,7 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building local-to-global cell mapping done.'
     END IF ! global%myProcid
@@ -677,7 +677,7 @@ MODULE RFLU_ModCellMapping
   'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying cell mapping...' 
     END IF ! global%myProcid
 
@@ -739,7 +739,7 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying cell mapping done.'
     END IF ! global%myProcid
 
@@ -807,7 +807,7 @@ MODULE RFLU_ModCellMapping
   'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Reading local-to-global cell mapping...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
@@ -830,7 +830,7 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH) THEN
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%myProcid
 
@@ -891,7 +891,7 @@ MODULE RFLU_ModCellMapping
 
         CASE ( '# Tetrahedra' ) 
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN 
+               global%verbLevel >= VERBOSE_HIGH) THEN 
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Tetrahedra...'
           END IF ! global%myProcid 
               
@@ -903,7 +903,7 @@ MODULE RFLU_ModCellMapping
 
         CASE ( '# Hexahedra' ) 
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Hexahedra...'
           END IF ! global%myProcid
               
@@ -915,7 +915,7 @@ MODULE RFLU_ModCellMapping
 
         CASE ( '# Prisms' ) 
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Prisms...'
           END IF ! global%myProcid
               
@@ -927,7 +927,7 @@ MODULE RFLU_ModCellMapping
 
         CASE ( '# Pyramids' ) 
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN 
+               global%verbLevel >= VERBOSE_HIGH) THEN 
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Pyramids...'
           END IF ! global%myProcid
               
@@ -939,7 +939,7 @@ MODULE RFLU_ModCellMapping
       
         CASE ( '# End' ) 
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
           END IF ! global%myProcid   
 
@@ -951,7 +951,7 @@ MODULE RFLU_ModCellMapping
       
         CASE DEFAULT
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(3X,A)') sectionString
           END IF ! global%myProcid        
 
@@ -982,7 +982,7 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Reading local-to-global cell mapping done.'
     END IF ! global%myProcid
@@ -1047,7 +1047,7 @@ MODULE RFLU_ModCellMapping
   'RFLU_ModCellMapping.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_MED ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Writing local-to-global cell mapping...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
@@ -1071,7 +1071,7 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH) THEN
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%myProcid
 
@@ -1095,7 +1095,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nTetsTot > 0 ) THEN 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Tetrahedra...'
       END IF ! global%myProcid    
     
@@ -1110,7 +1110,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nHexsTot > 0 ) THEN 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Hexahedra...'
       END IF ! global%myProcid       
     
@@ -1125,7 +1125,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nPrisTot > 0 ) THEN 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Prisms...'
       END IF ! global%myProcid 
 
@@ -1140,7 +1140,7 @@ MODULE RFLU_ModCellMapping
 
     IF ( pGrid%nPyrsTot > 0 ) THEN 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Pyramids...'
       END IF ! global%myProcid 
 
@@ -1154,7 +1154,7 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
     END IF ! global%myProcid
 
@@ -1176,7 +1176,7 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Writing local-to-global cell mapping done.'
     END IF ! global%myProcid

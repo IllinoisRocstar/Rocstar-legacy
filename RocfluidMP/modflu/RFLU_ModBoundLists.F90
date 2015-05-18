@@ -156,7 +156,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_MED ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building master boundary-cell list...'
     END IF ! global%verbLevel
@@ -199,7 +199,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A,1X,I9)') SOLVER_NAME,'Number of boundary cells:', &
                                      pGrid%nBCells
     END IF ! global%verbLevel    
@@ -209,7 +209,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
                                     'Building master boundary-cell list done.'
     END IF ! global%verbLevel
@@ -274,7 +274,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building local boundary-face lists...'
     END IF ! global%verbLevel
@@ -323,7 +323,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
                                     'Building local boundary-face lists done.'
     END IF ! global%verbLevel
@@ -388,7 +388,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building sorted boundary-face lists...'
     END IF ! global%verbLevel
@@ -418,7 +418,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
                                     'Building sorted boundary-face lists done.'
     END IF ! global%verbLevel
@@ -488,7 +488,8 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN    
+         global%verbLevel >= VERBOSE_MED ) THEN    
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building boundary-vertex lists...'
     END IF ! global%verbLevel
 
@@ -504,13 +505,13 @@ MODULE RFLU_ModBoundLists
       CALL RFLU_CreateHashTable(global,pPatch%nBVertEst)  
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_MED ) THEN
         WRITE(STDOUT,'(A,3X,A,1X,I3)') SOLVER_NAME,'Boundary:',iPatch
         WRITE(STDOUT,'(A,5X,A,2X,I8)') SOLVER_NAME,'Estimated number of '// & 
                                        'vertices:',pPatch%nBVertEst  
 
         IF ( global%myProcid == MASTERPROC .AND. & 
-             global%verbLevel > VERBOSE_NONE ) THEN
+             global%verbLevel >= VERBOSE_MED ) THEN
           WRITE(STDOUT,'(A,5X,A,13X,I9)') SOLVER_NAME,'Hash table size: ', & 
                                           hashTableSize
         END IF ! global%myProcid
@@ -570,13 +571,13 @@ MODULE RFLU_ModBoundLists
 ! ==============================================================================
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_MED) THEN
         WRITE(STDOUT,'(A,5X,A,18X,I9)') SOLVER_NAME,'Collisions: ', & 
                                         hashTableCollisions
       END IF ! global%myProcid
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_MED ) THEN
         WRITE(STDOUT,'(A,5X,A,6X,I8)') SOLVER_NAME,'Total number of '// & 
                                        'vertices:',pPatch%nBVertTot
       END IF ! global%myProcid
@@ -602,7 +603,7 @@ MODULE RFLU_ModBoundLists
       END DO ! ivg
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_NONE ) THEN
+           global%verbLevel >= VERBOSE_MED ) THEN
         WRITE(STDOUT,'(A,7X,A,13X,I8)') SOLVER_NAME,'Actual vertices:', &
                                         pPatch%nBVert
         WRITE(STDOUT,'(A,7X,A,12X,I8)') SOLVER_NAME,'Virtual vertices:', &
@@ -736,9 +737,10 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_MED ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building boundary-vertex lists done.'
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME 
     END IF ! global%verbLevel
 
     CALL DeregisterFunction(global)
@@ -802,7 +804,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building boundary-vertex master list...'   
     END IF ! global%verbLevel
@@ -827,7 +829,7 @@ MODULE RFLU_ModBoundLists
       pPatch => pRegion%patches(iPatch)
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,3X,A,1X,I3)') SOLVER_NAME,'Patch:',iPatch   
       END IF ! global%verbLevel      
 
@@ -874,7 +876,7 @@ MODULE RFLU_ModBoundLists
       END IF ! iPatch 
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,5X,A,1X,I6,1X,A)') SOLVER_NAME,'Contributed', & 
                                             nBVertTemp-bvmSize, & 
                                             'new vertices.' 
@@ -924,7 +926,7 @@ MODULE RFLU_ModBoundLists
 ! ==============================================================================    
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A,I9)') SOLVER_NAME, & 
                                   'Number of vertices:',pGrid%nBVert
     END IF ! global%verbLevel
@@ -934,7 +936,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building boundary-vertex master list done.'
     END IF ! global%verbLevel
@@ -1002,7 +1004,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Creating master boundary-cell list...'
     END IF ! global%verbLevel
@@ -1044,7 +1046,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
                                     'Creating master boundary-cell list done.'
     END IF ! global%verbLevel
@@ -1107,7 +1109,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Creating local boundary-face lists...'
     END IF ! global%verbLevel
@@ -1153,7 +1155,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
                                     'Creating local boundary-face lists done.'
     END IF ! global%verbLevel
@@ -1216,7 +1218,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Creating sorted boundary-face lists...'
     END IF ! global%verbLevel
@@ -1252,7 +1254,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
                                     'Creating sorted boundary-face lists done.'
     END IF ! global%verbLevel
@@ -1315,7 +1317,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating boundary vertex lists...'
     END IF ! global%verbLevel
 
@@ -1383,7 +1385,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME,'Creating boundary vertex', & 
                                     'lists done.'
     END IF ! global%verbLevel
@@ -1447,7 +1449,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Creating boundary vertex master list...'
     END IF ! global%verbLevel
@@ -1487,7 +1489,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, &
             'Creating master boundary vertex list done.'
     END IF ! global%verbLevel
@@ -1550,7 +1552,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Denumbering boundary-face lists...'   
     END IF ! global%verbLevel
@@ -1565,7 +1567,7 @@ MODULE RFLU_ModBoundLists
       pPatch => pRegion%patches(iPatch)
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,3X,A,1X,I3)') SOLVER_NAME,'Patch:',iPatch   
       END IF ! global%verbLevel    
 
@@ -1577,7 +1579,7 @@ MODULE RFLU_ModBoundLists
         global%warnCounter = global%warnCounter + 1
 
         IF ( global%myProcid == MASTERPROC .AND. & 
-             global%verbLevel > VERBOSE_LOW ) THEN 
+             global%verbLevel >= VERBOSE_NONE ) THEN 
           WRITE(STDOUT,'(A,5X,A,1X,A)') SOLVER_NAME, & 
              '*** WARNING *** Patch already denumbered. Skipping denumbering.'
           CYCLE
@@ -1589,7 +1591,7 @@ MODULE RFLU_ModBoundLists
 ! ==============================================================================
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Actual faces...'   
       END IF ! global%verbLevel 
 
@@ -1603,7 +1605,7 @@ MODULE RFLU_ModBoundLists
 
       IF ( pPatch%nBFacesTot > pPatch%nBFaces .AND. & 
            global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Virtual faces...'   
       END IF ! global%verbLevel           
 
@@ -1655,7 +1657,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Denumbering boundary-face lists done.'
     END IF ! global%verbLevel
@@ -1717,7 +1719,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Destroying master boundary-cell list...'
     END IF ! global%verbLevel
@@ -1749,7 +1751,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
                                     'Destroying master boundary-cell list done.'
     END IF ! global%verbLevel
@@ -1813,7 +1815,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Destroying local boundary-face lists...'
     END IF ! global%verbLevel
@@ -1859,7 +1861,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
                                     'Destroying local boundary-face lists done.'
     END IF ! global%verbLevel
@@ -1923,7 +1925,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Destroying sorted boundary-face lists...'
     END IF ! global%verbLevel
@@ -1959,7 +1961,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
             'Destroying sorted boundary-face lists done.'
     END IF ! global%verbLevel
@@ -2022,7 +2024,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')                
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN                 
+         global%verbLevel >= VERBOSE_HIGH ) THEN                 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying boundary-vertex lists...'
     END IF ! global%verbLevel
@@ -2058,7 +2060,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying boundary-vertex lists done.'
     END IF ! global%verbLevel  
@@ -2120,7 +2122,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN                 
+         global%verbLevel >= VERBOSE_HIGH ) THEN                 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying boundary-vertex master list...'
     END IF ! global%verbLevel
@@ -2152,7 +2154,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying boundary-vertex master list done.'
     END IF ! global%verbLevel  
@@ -2213,7 +2215,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Nullifying master boundary-cell list...'
     END IF ! global%verbLevel
@@ -2235,7 +2237,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
             'Nullifying master boundary-cell list done.'
     END IF ! global%verbLevel
@@ -2298,7 +2300,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Nullifying local boundary-face lists...'
     END IF ! global%verbLevel
@@ -2325,7 +2327,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
                                     'Nullifying local boundary-face lists done.'
     END IF ! global%verbLevel
@@ -2390,7 +2392,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Nullifying sorted boundary-face lists...'
     END IF ! global%verbLevel
@@ -2416,7 +2418,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
             'Nullifying sorted boundary-face lists done.'
     END IF ! global%verbLevel
@@ -2482,7 +2484,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Nullifying boundary vertex lists...'
     END IF ! global%verbLevel
@@ -2509,7 +2511,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A,1X,A)') SOLVER_NAME, & 
                                     'Nullifying boundary vertex lists done.'
     END IF ! global%verbLevel
@@ -2569,7 +2571,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Nullifying boundary vertex master list...'
     END IF ! global%verbLevel
@@ -2591,7 +2593,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Nullifying boundary vertex master list done.'
     END IF ! global%verbLevel
@@ -2654,7 +2656,7 @@ MODULE RFLU_ModBoundLists
   'RFLU_ModBoundLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Renumbering boundary-face lists...'   
     END IF ! global%verbLevel
@@ -2669,7 +2671,7 @@ MODULE RFLU_ModBoundLists
       pPatch => pRegion%patches(iPatch)
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,3X,A,1X,I3)') SOLVER_NAME,'Patch:',iPatch   
       END IF ! global%verbLevel    
 
@@ -2681,7 +2683,7 @@ MODULE RFLU_ModBoundLists
         global%warnCounter = global%warnCounter + 1
 
         IF ( global%myProcid == MASTERPROC .AND. & 
-             global%verbLevel > VERBOSE_LOW ) THEN 
+             global%verbLevel >= VERBOSE_NONE ) THEN 
           WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME, &
              '*** WARNING *** Patch already renumbered. Skipping renumbering.'
           CYCLE
@@ -2694,7 +2696,7 @@ MODULE RFLU_ModBoundLists
 
       IF ( pPatch%nBFaces > 0 .AND. &
            global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN                      
+           global%verbLevel >= VERBOSE_HIGH) THEN                      
         WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Actual faces...'   
       END IF ! global%verbLevel 
 
@@ -2710,7 +2712,7 @@ MODULE RFLU_ModBoundLists
 
       IF ( pPatch%nBFacesTot > pPatch%nBFaces .AND. &
            global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Virtual faces...'   
       END IF ! global%verbLevel 
 
@@ -2762,7 +2764,7 @@ MODULE RFLU_ModBoundLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Renumbering boundary-face lists done.'
     END IF ! global%verbLevel

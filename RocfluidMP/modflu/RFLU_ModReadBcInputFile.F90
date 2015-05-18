@@ -1480,9 +1480,10 @@ MODULE RFLU_ModReadBcInputFile
   'RFLU_ModReadBcInputFile.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_LOW ) THEN
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
-                               'Reading ROCFLU boundary condition file...'
+                               'Reading Rocflu boundary condition file...'
     END IF ! global%verbLevel
 
 ! ******************************************************************************
@@ -1569,7 +1570,7 @@ MODULE RFLU_ModReadBcInputFile
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_MED ) THEN
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Boundary condition information:'
       WRITE(STDOUT,'(A,5X,A,2X,A,2X,A,2X,A,12X,A,2X,A,3X,A,15X,A)') &
             SOLVER_NAME,'Local','Global','Type','Name','Order','Constr', &
@@ -1600,9 +1601,10 @@ MODULE RFLU_ModReadBcInputFile
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_MED ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
-                               'Reading ROCFLU boundary condition file done.'
+                               'Reading Rocflu boundary condition file done.'
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
     END IF ! global%verbLevel
 
     CALL DeregisterFunction(global)

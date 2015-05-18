@@ -120,7 +120,7 @@ SUBROUTINE RFLU_PutBoundaryValues(region)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A,1X,I3)') SOLVER_NAME, & 
                                    'Putting values into GENX buffers...'
   END IF ! global%myProcid
@@ -132,7 +132,7 @@ SUBROUTINE RFLU_PutBoundaryValues(region)
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%checkLevel == CHECK_HIGH .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       IF ( pPatch%bcCoupled == BC_NOT_COUPLED ) THEN
         WRITE(STDOUT,'(A,3X,A,1X,I3,1X,A)') SOLVER_NAME,'Patch:',iPatch, & 
 	                                    '(not interacting)'
@@ -165,7 +165,7 @@ SUBROUTINE RFLU_PutBoundaryValues(region)
 
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%checkLevel == CHECK_HIGH .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       IF ( pPatch%nBVert > 0 ) THEN 
         WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Minimum/maximum values:'    
         WRITE(STDOUT,'(A,7X,A,2(1X,E15.8))') SOLVER_NAME,'xyz.x:  ', & 
@@ -225,7 +225,7 @@ SUBROUTINE RFLU_PutBoundaryValues(region)
 
       IF ( global%myProcid == MASTERPROC .AND. & 
            global%checkLevel == CHECK_HIGH .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         IF ( pPatch%nBFaces > 0 ) THEN
           WRITE(STDOUT,'(A,7X,A,2(1X,E15.8))') SOLVER_NAME,'rhofAlp:', & 
                 MINVAL(pPatch%rhofAlp(1:pPatch%nBFaces)), & 
@@ -345,7 +345,7 @@ SUBROUTINE RFLU_PutBoundaryValues(region)
 
       IF ( global%myProcid == MASTERPROC .AND. & 
            global%checkLevel == CHECK_HIGH .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         IF ( pPatch%nBFaces > 0 ) THEN
           WRITE(STDOUT,'(A,7X,A,2(1X,E15.8))') SOLVER_NAME,'rhofAlp:', & 
                 MINVAL(pPatch%rhofAlp(1:pPatch%nBFaces)), & 
@@ -390,7 +390,7 @@ SUBROUTINE RFLU_PutBoundaryValues(region)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A,1X,I3)') SOLVER_NAME, &
                                    'Putting values into GENX buffers done.'
   END IF ! global%myProcid

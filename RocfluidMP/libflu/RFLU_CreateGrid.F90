@@ -94,7 +94,7 @@ SUBROUTINE RFLU_CreateGrid(pRegion)
   'RFLU_CreateGrid.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating grid...'
   END IF ! global%verbLevel
 
@@ -311,7 +311,7 @@ SUBROUTINE RFLU_CreateGrid(pRegion)
 ! ******************************************************************************  
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating grid done.'
   END IF ! global%verbLevel
 

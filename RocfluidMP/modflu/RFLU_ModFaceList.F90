@@ -145,7 +145,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Building av-face-to-border list...'
     END IF ! global%verbLevel
@@ -295,7 +295,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Building av-face-to-border list done.'
     END IF ! global%verbLevel
@@ -363,7 +363,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Building av-face-to-patch list...'
     END IF ! global%verbLevel
@@ -456,7 +456,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Building av-face-to-patch list done.'
     END IF ! global%verbLevel
@@ -522,7 +522,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building cell-to-face list...'
     END IF ! global%verbLevel
     
@@ -721,7 +721,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building cell-to-face list done.'
     END IF ! global%verbLevel
 
@@ -802,7 +802,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building face list...' 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal        
@@ -829,7 +829,7 @@ MODULE RFLU_ModFaceList
     CALL RFLU_CreateHashTable(global,pGrid%nFacesEst)
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN                              
+         global%verbLevel >= VERBOSE_HIGH ) THEN                              
       WRITE(STDOUT,'(A,5X,A,12X,I9)') SOLVER_NAME,'Hash table size:', &
                                       hashTableSize
     END IF ! global%verbLevel   
@@ -839,7 +839,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN                              
+         global%verbLevel >= VERBOSE_HIGH ) THEN                              
       WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Looping over cell types...'
     END IF ! global%verbLevel  
 
@@ -849,7 +849,7 @@ MODULE RFLU_ModFaceList
 
     IF ( pGrid%nTetsTot /= 0 ) THEN
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN   
+           global%verbLevel >= VERBOSE_HIGH ) THEN   
         WRITE(STDOUT,'(A,7X,A)') SOLVER_NAME,'Tetrahedra...'
       END IF ! global%verbLevel
     END IF ! pGrid%nTetsTot
@@ -880,7 +880,7 @@ MODULE RFLU_ModFaceList
 
     IF ( pGrid%nHexsTot /= 0 ) THEN
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN   
+           global%verbLevel >= VERBOSE_HIGH ) THEN   
         WRITE(STDOUT,'(A,7X,A)') SOLVER_NAME,'Hexahedra...'
       END IF ! global%verbLevel
     END IF ! pGrid%nHexsTot
@@ -912,7 +912,7 @@ MODULE RFLU_ModFaceList
 
     IF ( pGrid%nPrisTot /= 0 ) THEN
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN   
+           global%verbLevel >= VERBOSE_HIGH ) THEN   
         WRITE(STDOUT,'(A,7X,A)') SOLVER_NAME,'Prisms...'
       END IF ! global%verbLevel
     END IF ! pGrid%nPrisTot
@@ -951,7 +951,7 @@ MODULE RFLU_ModFaceList
 
     IF ( pGrid%nPyrsTot /= 0 ) THEN
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN   
+           global%verbLevel >= VERBOSE_HIGH ) THEN   
         WRITE(STDOUT,'(A,7X,A)') SOLVER_NAME,'Pyramids...'
       END IF ! global%verbLevel
     END IF ! pGrid%nPyrsTot
@@ -985,7 +985,7 @@ MODULE RFLU_ModFaceList
     END DO ! icl    
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,5X,A,5X,I9)') SOLVER_NAME,'Hash table collisions: ', & 
                                      hashTableCollisions  
     END IF ! global%myProcid
@@ -1010,7 +1010,7 @@ MODULE RFLU_ModFaceList
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Building boundary face lists...'
     END IF ! global%verbLevel  
 
@@ -1021,7 +1021,7 @@ MODULE RFLU_ModFaceList
       nBFacesQuad = nBFacesQuad + pPatch%nBQuadsTot      
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,5X,A,I4,1X,A,1X,I4,A)') SOLVER_NAME,'Patch: ',iPatch, & 
                                     '(Global patch:',pPatch%iPatchGlobal,')'
 
@@ -1124,7 +1124,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Determining face statistics...'
     END IF ! global%verbLevel  
     
@@ -1189,7 +1189,7 @@ MODULE RFLU_ModFaceList
 ! ==============================================================================
             
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,5X,A)')       SOLVER_NAME,'Face-type statistics:' 
       WRITE(STDOUT,'(A,7X,A,5X,I9)') SOLVER_NAME,'Total faces:           ', & 
                                      pGrid%nFacesTot
@@ -1255,7 +1255,7 @@ MODULE RFLU_ModFaceList
     END IF ! global%myProcid             
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Determining face statistics done.'
     END IF ! global%verbLevel 
           
@@ -1264,7 +1264,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Building non-boundary face '// & 
                                'lists...'
     END IF ! global%verbLevel
@@ -1536,7 +1536,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building face list done.'
     END IF ! global%verbLevel
 
@@ -1598,7 +1598,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating av-face-to-border list...'   
     END IF ! global%verbLevel  
      
@@ -1629,7 +1629,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Creating av-face-to-border list done.'
     END IF ! global%verbLevel
@@ -1691,7 +1691,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating av-face-to-patch list...'   
     END IF ! global%verbLevel  
      
@@ -1722,7 +1722,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Creating av-face-to-patch list done.'
     END IF ! global%verbLevel
@@ -1784,7 +1784,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating cell-to-face list...'   
     END IF ! global%verbLevel  
      
@@ -1841,7 +1841,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating cell-to-face list done.'
     END IF ! global%verbLevel
 
@@ -1908,7 +1908,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating face list...'   
     END IF ! global%verbLevel  
      
@@ -1954,14 +1954,14 @@ MODULE RFLU_ModFaceList
       pGrid%nFacesEst = 2*pGrid%nFacesEst
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Corrected estimate', & 
                                       'of number of faces.' 
       END IF ! global%verbLevel       
     END IF ! nBFaces
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,3X,A,3X,I9)') SOLVER_NAME,'Estimated number of '// & 
                                      'faces: ',pGrid%nFacesEst       
     END IF ! global%verbLevel      
@@ -2028,7 +2028,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating face list done.'
     END IF ! global%verbLevel
 
@@ -2086,7 +2086,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying av-face-to-border list...'   
     END IF ! global%verbLevel  
@@ -2114,7 +2114,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying av-face-to-border list done.'
     END IF ! global%verbLevel
@@ -2174,7 +2174,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying av-face-to-patch list...'   
     END IF ! global%verbLevel  
@@ -2202,7 +2202,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying av-face-to-patch list done.'
     END IF ! global%verbLevel
@@ -2260,7 +2260,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying cell-to-face list...'   
     END IF ! global%verbLevel  
      
@@ -2313,7 +2313,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying cell-to-face list done.'
     END IF ! global%verbLevel
@@ -2380,7 +2380,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')        
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying face lists...'
     END IF ! global%verbLevel
 
@@ -2444,7 +2444,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
       
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying face lists done.'
     END IF ! global%verbLevel  
 
@@ -3344,7 +3344,7 @@ MODULE RFLU_ModFaceList
   'RFLU_ModFaceList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Reorienting faces...'  
     END IF ! global%verbLevel  
@@ -3391,7 +3391,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
       
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,3X,A,1X,I6)') SOLVER_NAME, & 
                                      'Number of reoriented faces:',cntr
     END IF ! global%verbLevel      
@@ -3401,7 +3401,7 @@ MODULE RFLU_ModFaceList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Reorienting faces done.'
     END IF ! global%verbLevel

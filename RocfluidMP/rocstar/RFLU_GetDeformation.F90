@@ -89,7 +89,7 @@ SUBROUTINE RFLU_GetDeformation(region)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A,1X,I3)') SOLVER_NAME, &
                                    'Getting displacements from Rocstar...'
   END IF ! global%myProcid
@@ -110,7 +110,7 @@ SUBROUTINE RFLU_GetDeformation(region)
     END DO ! ibv
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       IF ( pPatch%nBVert > 0 ) THEN 
         WRITE(STDOUT,'(A,3X,A,1X,I3)') SOLVER_NAME,'Patch:',iPatch       
         WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Minimum/maximum values:'       
@@ -132,7 +132,7 @@ SUBROUTINE RFLU_GetDeformation(region)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A,1X,I3)') SOLVER_NAME, &
                                    'Getting displacements from Rocstar done.'
   END IF ! global%myProcid

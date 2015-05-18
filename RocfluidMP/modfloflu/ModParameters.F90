@@ -744,7 +744,8 @@ MODULE ModParameters
 
   INTEGER, PARAMETER :: VERBOSE_NONE = 0, &
                         VERBOSE_LOW  = 1, &
-                        VERBOSE_HIGH = 2
+                        VERBOSE_MED  = 2, &
+                        VERBOSE_HIGH = 3
 
 ! ******************************************************************************
 ! Checking level 
@@ -961,10 +962,10 @@ MODULE ModParameters
 
 #ifdef GENX
 #ifdef RFLO
-  CHARACTER(5), PARAMETER :: SOLVER_NAME = 'RFLO:'
+  CHARACTER(7), PARAMETER :: SOLVER_NAME = 'Rocflo:'
 #endif 
 #ifdef RFLU
-  CHARACTER(5), PARAMETER :: SOLVER_NAME = 'RFLU>'
+  CHARACTER(7), PARAMETER :: SOLVER_NAME = 'Rocflu:'
 #endif
 #else
 #ifdef RFLO

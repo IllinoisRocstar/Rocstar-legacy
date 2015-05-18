@@ -91,7 +91,7 @@ SUBROUTINE RFLU_GetBoundaryValues(region)
 
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A,1X,I3)') SOLVER_NAME, &
                                    'Getting values from GENX buffers...'
   END IF ! global%myProcid
@@ -102,7 +102,7 @@ SUBROUTINE RFLU_GetBoundaryValues(region)
  
     IF ( global%myProcid == MASTERPROC .AND. & 
          global%checkLevel == CHECK_HIGH .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       IF ( pPatch%bcCoupled == BC_NOT_COUPLED ) THEN
         WRITE(STDOUT,'(A,3X,A,1X,I3,1X,A)') SOLVER_NAME,'Patch:',iPatch, & 
 	                                    '(not interacting)'
@@ -147,7 +147,7 @@ SUBROUTINE RFLU_GetBoundaryValues(region)
 
       IF ( global%myProcid == MASTERPROC .AND. & 
            global%checkLevel == CHECK_HIGH .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
          IF ( pPatch%nBFaces > 0 ) THEN
             WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Minimum/maximum values:'      
             WRITE(STDOUT,'(A,7X,A,2(1X,E15.8))') SOLVER_NAME,'mdotAlp:    ', & 
@@ -188,7 +188,7 @@ SUBROUTINE RFLU_GetBoundaryValues(region)
 
 	IF ( global%myProcid == MASTERPROC .AND. & 
              global%checkLevel == CHECK_HIGH .AND. & 
-             global%verbLevel > VERBOSE_LOW ) THEN 
+             global%verbLevel >= VERBOSE_HIGH ) THEN 
           IF ( pPatch%nBFaces > 0 ) THEN
             WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Minimum/maximum values:'      
             WRITE(STDOUT,'(A,7X,A,2(1X,E15.8))') SOLVER_NAME,'TbAlp:    ', & 
@@ -228,7 +228,7 @@ SUBROUTINE RFLU_GetBoundaryValues(region)
   ENDIF
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
      WRITE(STDOUT,'(A,1X,A,1X,I3)') SOLVER_NAME, &
            'Getting values from GENX buffers done.'
   END IF ! global%myProcid

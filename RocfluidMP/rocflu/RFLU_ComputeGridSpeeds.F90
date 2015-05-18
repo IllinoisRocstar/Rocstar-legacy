@@ -106,7 +106,7 @@ SUBROUTINE RFLU_ComputeGridSpeeds(pRegion)
   'RFLU_ComputeGridSpeeds.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Computing grid speeds...'
     WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Grid speed extrema:'    
   END IF ! global%myProcid 
@@ -546,7 +546,7 @@ SUBROUTINE RFLU_ComputeGridSpeeds(pRegion)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     IF ( pGrid%nFaces > 0 ) THEN ! Have gm test case with 0 faces...
       WRITE(STDOUT,'(A,5X,A,2(1X,E24.15),2(1X,I9))') & 
             SOLVER_NAME,'Interior:', & 
@@ -984,7 +984,7 @@ SUBROUTINE RFLU_ComputeGridSpeeds(pRegion)
 ! ==============================================================================     
     
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       IF ( pPatch%nBFaces > 0 ) THEN ! can have zero faces   
         WRITE(STDOUT,'(A,5X,A,I3,A,2(1X,E24.15),2(1X,I9))') & 
               SOLVER_NAME,'Patch',iPatch,':', & 
@@ -1001,7 +1001,7 @@ SUBROUTINE RFLU_ComputeGridSpeeds(pRegion)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Computing grid speeds done.'
   END IF ! global%myProcid
 

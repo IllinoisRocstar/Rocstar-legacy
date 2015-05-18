@@ -257,7 +257,7 @@ MODULE RFLU_ModRocstarAdmin
   'RFLU_ModRocstarAdmin.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building pconn...'
     END IF ! global%verbLevel
 
@@ -453,7 +453,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building pconn done.'
     END IF ! global%verbLevel
 
@@ -511,7 +511,7 @@ MODULE RFLU_ModRocstarAdmin
                           'RFLU_ModRocstarAdmin.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing Rocin control files...'
     END IF ! global%verbLevel
      
@@ -550,7 +550,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing Rocin control files done.'
     END IF ! global%verbLevel
       
@@ -1546,7 +1546,7 @@ MODULE RFLU_ModRocstarAdmin
   'RFLU_ModRocstarAdmin.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating pconn...'
     END IF ! global%verbLevel
 
@@ -1640,7 +1640,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating pconn done.'
     END IF ! global%verbLevel
 
@@ -1699,7 +1699,7 @@ MODULE RFLU_ModRocstarAdmin
     global => pRegion%global
     
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating windows...'
     END IF ! global%myProcid
     
@@ -1711,7 +1711,7 @@ MODULE RFLU_ModRocstarAdmin
     global%volWinName = TRIM(global%winName)//'_vol'
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Surface window name:', & 
                                     TRIM(global%surfWinName)
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Volume window name:', & 
@@ -1731,7 +1731,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating windows done.'
     END IF ! global%myProcid  
   
@@ -2160,7 +2160,7 @@ MODULE RFLU_ModRocstarAdmin
   'RFLU_ModRocstarAdmin.F90')     
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying pconn...'
     END IF ! global%verbLevel
 
@@ -2179,7 +2179,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying pconn done.'
     END IF ! global%verbLevel
 
@@ -2295,7 +2295,7 @@ MODULE RFLU_ModRocstarAdmin
     global => pRegion%global
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initializing Rocman...'
     END IF ! global%verbLevel
     
@@ -2317,7 +2317,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initializing Rocman done.'
     END IF ! global%verbLevel 
   
@@ -2543,7 +2543,7 @@ MODULE RFLU_ModRocstarAdmin
     pMixtInput => pRegion%mixtInput    
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering flow data...'
     END IF ! global%verbLevel
     
@@ -2560,7 +2560,7 @@ MODULE RFLU_ModRocstarAdmin
     CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,0,paneId) 
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Window name:',TRIM(winName)
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Pane id:', paneId           
     END IF ! global%verbLevel
@@ -2608,7 +2608,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering flow data done.'
     END IF ! global%verbLevel 
   
@@ -2669,7 +2669,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering grid speeds...'
     END IF ! global%verbLevel
         
@@ -2686,7 +2686,7 @@ MODULE RFLU_ModRocstarAdmin
     CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,0,paneId) 
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Volume data...'
       WRITE(STDOUT,'(A,5X,A,1X,A)') SOLVER_NAME,'Window name:',TRIM(winName)
       WRITE(STDOUT,'(A,5X,A,1X,I5.5)') SOLVER_NAME,'Pane id:', paneId           
@@ -2704,7 +2704,7 @@ MODULE RFLU_ModRocstarAdmin
     winName = global%surfWinName
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Surface data...'
       WRITE(STDOUT,'(A,5X,A,1X,A)') SOLVER_NAME,'Window name:',TRIM(winName)   
     END IF ! global%verbLevel
@@ -2715,7 +2715,7 @@ MODULE RFLU_ModRocstarAdmin
       CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,iPatch,paneId) 
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,5X,A,1X,I2)')   SOLVER_NAME,'Patch:',iPatch
         WRITE(STDOUT,'(A,7X,A,1X,I5.5)') SOLVER_NAME,'Pane id:', paneId      
       END IF ! global%verbLevel
@@ -2730,7 +2730,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
  
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering grid speeds done.'
     END IF ! global%verbLevel 
   
@@ -2791,7 +2791,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering interface data...'
     END IF ! global%verbLevel
     
@@ -2802,7 +2802,7 @@ MODULE RFLU_ModRocstarAdmin
     winName = global%surfWinName
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Window name:',TRIM(winName)   
     END IF ! global%verbLevel
         
@@ -2812,7 +2812,7 @@ MODULE RFLU_ModRocstarAdmin
       CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,iPatch,paneId) 
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,3X,A,1X,I2)')   SOLVER_NAME,'Patch:',iPatch
         WRITE(STDOUT,'(A,5X,A,1X,I5.5)') SOLVER_NAME,'Pane id:',paneId      
       END IF ! global%verbLevel
@@ -2877,7 +2877,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering interface data done.'
     END IF ! global%verbLevel
   
@@ -3100,7 +3100,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering displacements...'
     END IF ! global%verbLevel
     
@@ -3113,7 +3113,7 @@ MODULE RFLU_ModRocstarAdmin
     CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,0,paneId) 
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN         
+         global%verbLevel >= VERBOSE_HIGH ) THEN         
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Window name:',TRIM(winName)
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Pane id:',paneId   
     END IF ! global%verbLevel
@@ -3125,7 +3125,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering displacements done.'
     END IF ! global%verbLevel
   
@@ -3184,7 +3184,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering grid...'
     END IF ! global%verbLevel
     
@@ -3211,7 +3211,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering grid done.'
     END IF ! global%verbLevel
   
@@ -3274,7 +3274,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering surface grid...'
     END IF ! global%verbLevel
     
@@ -3285,7 +3285,7 @@ MODULE RFLU_ModRocstarAdmin
     winName = global%surfWinName
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Window name:',TRIM(winName)   
     END IF ! global%verbLevel
    
@@ -3299,7 +3299,7 @@ MODULE RFLU_ModRocstarAdmin
       CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,iPatch,paneId) 
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,3X,A,1X,I2)')   SOLVER_NAME,'Patch:',iPatch
         WRITE(STDOUT,'(A,5X,A,1X,I2)')   SOLVER_NAME,'Global patch id:', & 
                                          pPatch%iPatchGlobal
@@ -3404,7 +3404,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering surface grid done.'
     END IF ! global%verbLevel
   
@@ -3465,7 +3465,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering volume grid...'
     END IF ! global%verbLevel
     
@@ -3478,7 +3478,7 @@ MODULE RFLU_ModRocstarAdmin
     CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,0,paneId) 
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN         
+         global%verbLevel >= VERBOSE_HIGH ) THEN         
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Window name:',TRIM(winName)
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Pane id:',paneId   
     END IF ! global%verbLevel
@@ -3576,7 +3576,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering volume grid done.'
     END IF ! global%verbLevel
   
@@ -3640,7 +3640,7 @@ MODULE RFLU_ModRocstarAdmin
     pGrid => pRegion%grid
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Setting conn size...'
     END IF ! global%verbLevel
     
@@ -3653,7 +3653,7 @@ MODULE RFLU_ModRocstarAdmin
     CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,0,paneId) 
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN         
+         global%verbLevel >= VERBOSE_HIGH ) THEN         
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Window name:',TRIM(winName)
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Pane id:',paneId   
     END IF ! global%verbLevel
@@ -3666,7 +3666,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Setting conn size done.'
     END IF ! global%verbLevel
   
@@ -3782,7 +3782,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Storing names and handles...'
     END IF ! global%myProcid
 
@@ -3793,7 +3793,7 @@ MODULE RFLU_ModRocstarAdmin
     global%surfWinNameInput = surfWinNameInput
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Input surface window name:', & 
                                     TRIM(global%surfWinNameInput)
     END IF ! global%myProcid
@@ -3815,7 +3815,7 @@ MODULE RFLU_ModRocstarAdmin
     global%volWinNameInput = TRIM(tempString1)
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Input volume window name:', & 
                                     TRIM(global%volWinNameInput)
     END IF ! global%myProcid
@@ -3836,7 +3836,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Storing names and handles done.'
     END IF ! global%myProcid
       

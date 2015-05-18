@@ -88,7 +88,7 @@ SUBROUTINE RFLU_DestroyGrid(pRegion)
   'RFLU_DestroyGrid.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying grid...'
   END IF ! global%verbLevel
 
@@ -227,7 +227,7 @@ SUBROUTINE RFLU_DestroyGrid(pRegion)
 ! ******************************************************************************  
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying grid done.'
   END IF ! global%verbLevel
 

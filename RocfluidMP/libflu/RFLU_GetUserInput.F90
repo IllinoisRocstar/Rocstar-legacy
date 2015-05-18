@@ -115,7 +115,7 @@ SUBROUTINE RFLU_GetUserInput(regions,inPrep)
   'RFLU_GetUserInput.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN
+       global%verbLevel >= VERBOSE_LOW ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading user input file...'
   END IF ! global%verbLevel
 
@@ -181,7 +181,7 @@ SUBROUTINE RFLU_GetUserInput(regions,inPrep)
 ! ******************************************************************************
 
   IF ( (global%myProcid == MASTERPROC) .AND. &
-       (global%verbLevel > VERBOSE_NONE) ) THEN
+       (global%verbLevel >= VERBOSE_MED) ) THEN
     CALL RFLU_PrintUserInput(regions)
   END IF ! global
 
@@ -190,7 +190,7 @@ SUBROUTINE RFLU_GetUserInput(regions,inPrep)
 ! ******************************************************************************
 
   IF ( (global%myProcid == MASTERPROC) .AND. &
-       (global%verbLevel > VERBOSE_NONE) ) THEN
+       (global%verbLevel >= VERBOSE_HIGH) ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading user input files done.'
   END IF ! global%verbLevel
 

@@ -87,7 +87,7 @@ SUBROUTINE RFLU_AllocateMemory(pRegion)
   'RFLU_AllocateMemory.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Allocating memory for mixture...'
   END IF ! global%verbLevel
 
@@ -130,7 +130,7 @@ SUBROUTINE RFLU_AllocateMemory(pRegion)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Allocating memory for mixture done.'
   END IF ! global%verbLevel
 

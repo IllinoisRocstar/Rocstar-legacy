@@ -87,7 +87,8 @@ SUBROUTINE RFLU_PrintGridInfo(pRegion)
   CALL RegisterFunction(global,'RFLU_PrintGridInfo',&
   'RFLU_PrintGridInfo.F90')
 
-  IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+  IF ( global%verbLevel >= VERBOSE_MED ) THEN 
+    WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing grid information...'
     WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                      pRegion%iRegionGlobal 
@@ -125,45 +126,49 @@ SUBROUTINE RFLU_PrintGridInfo(pRegion)
 ! Grid dimensions
 ! ==============================================================================
 
-  WRITE(STDOUT,'(A,3X,A)')                SOLVER_NAME,'Grid statistics:'
-  WRITE(STDOUT,'(A,5X,A,3X,2(1X,I9))')    SOLVER_NAME,'Vertices:      ', &
-        pGrid%nVert,pGrid%nVertTot-pGrid%nVert
-  WRITE(STDOUT,'(A,5X,A,3X,2(1X,I9))')    SOLVER_NAME,'Cells:         ', &
-        pGrid%nCells,pGrid%nCellsTot-pGrid%nCells
-  WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Tetrahedra:    ', &
-        pGrid%nTets,pGrid%nTetsTot-pGrid%nTets
-  WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Hexahedra:     ', &
-        pGrid%nHexs,pGrid%nHexsTot-pGrid%nHexs
-  WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Prisms:        ', & 
-        pGrid%nPris,pGrid%nPrisTot-pGrid%nPris
-  WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Pyramids:      ', & 
-        pGrid%nPyrs,pGrid%nPyrsTot-pGrid%nPyrs
-  WRITE(STDOUT,'(A,5X,A,4X,I9)')          SOLVER_NAME,'Patches:       ', & 
-        pGrid%nPatches
-  WRITE(STDOUT,'(A,5X,A,3X,2(1X,I9))')    SOLVER_NAME,'Patch faces:   ', & 
-        nBTris+nBQuads,nBTrisTot+nBQuadsTot-nBTris-nBQuads
-  WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Triangles:     ', & 
-        nBTris,nBTrisTot-nBTris
-  WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Quadrilaterals:', &
-        nBQuads,nBQuadsTot-nBQuads
+  IF ( global%verbLevel >= VERBOSE_MED ) THEN 
+    WRITE(STDOUT,'(A,3X,A)')                SOLVER_NAME,'Grid statistics:'
+    WRITE(STDOUT,'(A,5X,A,3X,2(1X,I9))')    SOLVER_NAME,'Vertices:      ', &
+          pGrid%nVert,pGrid%nVertTot-pGrid%nVert
+    WRITE(STDOUT,'(A,5X,A,3X,2(1X,I9))')    SOLVER_NAME,'Cells:         ', &
+          pGrid%nCells,pGrid%nCellsTot-pGrid%nCells
+    WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Tetrahedra:    ', &
+          pGrid%nTets,pGrid%nTetsTot-pGrid%nTets
+    WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Hexahedra:     ', &
+          pGrid%nHexs,pGrid%nHexsTot-pGrid%nHexs
+    WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Prisms:        ', & 
+          pGrid%nPris,pGrid%nPrisTot-pGrid%nPris
+    WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Pyramids:      ', & 
+          pGrid%nPyrs,pGrid%nPyrsTot-pGrid%nPyrs
+    WRITE(STDOUT,'(A,5X,A,4X,I9)')          SOLVER_NAME,'Patches:       ', & 
+          pGrid%nPatches
+    WRITE(STDOUT,'(A,5X,A,3X,2(1X,I9))')    SOLVER_NAME,'Patch faces:   ', & 
+          nBTris+nBQuads,nBTrisTot+nBQuadsTot-nBTris-nBQuads
+    WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Triangles:     ', & 
+          nBTris,nBTrisTot-nBTris
+    WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))')    SOLVER_NAME,'Quadrilaterals:', &
+          nBQuads,nBQuadsTot-nBQuads
+  END IF ! global%verbLevel
   
 ! ==============================================================================
 ! Patch dimensions
 ! ==============================================================================  
 
-  IF ( pGrid%nPatches > 0 ) THEN 
-    WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Patch statistics:'
+  IF ( global%verbLevel >= VERBOSE_MED ) THEN 
+    IF ( pGrid%nPatches > 0 ) THEN 
+      WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Patch statistics:'
 
-    DO iPatch = 1,pGrid%nPatches
-      pPatch => pRegion%patches(iPatch)
+      DO iPatch = 1,pGrid%nPatches
+        pPatch => pRegion%patches(iPatch)
 
-      WRITE(STDOUT,'(A,5X,A,2X,I4)')       SOLVER_NAME,'Patch:',iPatch   
-      WRITE(STDOUT,'(A,7X,A,6X,2(1X,I9))') SOLVER_NAME,'Triangles:', & 
-            pPatch%nBTris,pPatch%nBTrisTot-pPatch%nBTris
-      WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))') SOLVER_NAME,'Quadrilaterals:', &
-            pPatch%nBQuads,pPatch%nBQuadsTot-pPatch%nBQuads    
-    END DO ! iPatch
-  END IF ! pGrid%nPatches
+        WRITE(STDOUT,'(A,5X,A,2X,I4)')       SOLVER_NAME,'Patch:',iPatch   
+        WRITE(STDOUT,'(A,7X,A,6X,2(1X,I9))') SOLVER_NAME,'Triangles:', & 
+              pPatch%nBTris,pPatch%nBTrisTot-pPatch%nBTris
+        WRITE(STDOUT,'(A,7X,A,1X,2(1X,I9))') SOLVER_NAME,'Quadrilaterals:', &
+              pPatch%nBQuads,pPatch%nBQuadsTot-pPatch%nBQuads    
+      END DO ! iPatch
+    END IF ! pGrid%nPatches
+  END IF ! global%verbLevel
 
 ! ==============================================================================
 ! Find locations of extrema and print information on extrema: NOTE Asinine 
@@ -191,29 +196,32 @@ SUBROUTINE RFLU_PrintGridInfo(pRegion)
   loc(ZCOORD,MAX_VAL) = dummy(1)
 
 
-  WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Coordinate extrema:'
-  WRITE(STDOUT,'(A,5X,A,2(1X,E23.16),2(1X,I9))') & 
-                SOLVER_NAME,'X-coordinate:', & 
-                MINVAL(pGrid%xyz(XCOORD,1:pGrid%nVert)), & 
-                MAXVAL(pGrid%xyz(XCOORD,1:pGrid%nVert)), & 
-                loc(XCOORD,MIN_VAL),loc(XCOORD,MAX_VAL)
-  WRITE(STDOUT,'(A,5X,A,2(1X,E23.16),2(1X,I9))') & 
-                SOLVER_NAME,'Y-coordinate:', & 
-                MINVAL(pGrid%xyz(YCOORD,1:pGrid%nVert)), & 
-                MAXVAL(pGrid%xyz(YCOORD,1:pGrid%nVert)), & 
-                loc(YCOORD,MIN_VAL),loc(YCOORD,MAX_VAL)
-  WRITE(STDOUT,'(A,5X,A,2(1X,E23.16),2(1X,I9))') & 
-                SOLVER_NAME,'Z-coordinate:', & 
-                MINVAL(pGrid%xyz(ZCOORD,1:pGrid%nVert)), & 
-                MAXVAL(pGrid%xyz(ZCOORD,1:pGrid%nVert)), & 
-                loc(ZCOORD,MIN_VAL),loc(ZCOORD,MAX_VAL)
+  IF ( global%verbLevel >= VERBOSE_MED ) THEN 
+     WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Coordinate extrema:'
+     WRITE(STDOUT,'(A,5X,A,2(1X,E23.16),2(1X,I9))') & 
+                   SOLVER_NAME,'X-coordinate:', & 
+                   MINVAL(pGrid%xyz(XCOORD,1:pGrid%nVert)), & 
+                   MAXVAL(pGrid%xyz(XCOORD,1:pGrid%nVert)), & 
+                   loc(XCOORD,MIN_VAL),loc(XCOORD,MAX_VAL)
+     WRITE(STDOUT,'(A,5X,A,2(1X,E23.16),2(1X,I9))') & 
+                   SOLVER_NAME,'Y-coordinate:', & 
+                   MINVAL(pGrid%xyz(YCOORD,1:pGrid%nVert)), & 
+                   MAXVAL(pGrid%xyz(YCOORD,1:pGrid%nVert)), & 
+                   loc(YCOORD,MIN_VAL),loc(YCOORD,MAX_VAL)
+     WRITE(STDOUT,'(A,5X,A,2(1X,E23.16),2(1X,I9))') & 
+                   SOLVER_NAME,'Z-coordinate:', & 
+                   MINVAL(pGrid%xyz(ZCOORD,1:pGrid%nVert)), & 
+                   MAXVAL(pGrid%xyz(ZCOORD,1:pGrid%nVert)), & 
+                   loc(ZCOORD,MIN_VAL),loc(ZCOORD,MAX_VAL)
+  END IF ! global%verbLevel
                   
 ! ******************************************************************************
 ! End
 ! ******************************************************************************
 
-  IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+  IF ( global%verbLevel >= VERBOSE_MED ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing grid information done.'
+    WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
   END IF ! global%verbLevel    
   
   CALL DeregisterFunction(global)  

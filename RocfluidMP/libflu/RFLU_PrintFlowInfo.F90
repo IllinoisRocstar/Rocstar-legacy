@@ -98,7 +98,7 @@ SUBROUTINE RFLU_PrintFlowInfo(pRegion)
   CALL RegisterFunction(global,'RFLU_PrintFlowInfo',&
   'RFLU_PrintFlowInfo.F90')
 
-  IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+  IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing flow information...'
     WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                      pRegion%iRegionGlobal 
@@ -248,27 +248,29 @@ SUBROUTINE RFLU_PrintFlowInfo(pRegion)
       cvMixtYVel = RFLU_GetCvLoc(global,FLUID_MODEL_INCOMP,CV_MIXT_YVEL)
       cvMixtZVel = RFLU_GetCvLoc(global,FLUID_MODEL_INCOMP,CV_MIXT_ZVEL)
       cvMixtPres = RFLU_GetCvLoc(global,FLUID_MODEL_INCOMP,CV_MIXT_PRES)   
-  
-      WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                    SOLVER_NAME,'X-velocity (m/s):', & 
-                    MINVAL(pCv(cvMixtXVel,1:uppLim)), & 
-                    MAXVAL(pCv(cvMixtXVel,1:uppLim)), & 
-                    loc(cvMixtXVel,MIN_VAL),loc(cvMixtXVel,MAX_VAL)
-      WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                    SOLVER_NAME,'Y-velocity (m/s):', & 
-                    MINVAL(pCv(cvMixtYVel,1:uppLim)), & 
-                    MAXVAL(pCv(cvMixtYVel,1:uppLim)), & 
-                    loc(cvMixtYVel,MIN_VAL),loc(cvMixtYVel,MAX_VAL)
-      WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                    SOLVER_NAME,'Z-velocity (m/s):', & 
-                    MINVAL(pCv(cvMixtZVel,1:uppLim)), & 
-                    MAXVAL(pCv(cvMixtZVel,1:uppLim)), & 
-                    loc(cvMixtZVel,MIN_VAL),loc(cvMixtZVel,MAX_VAL)
-      WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                    SOLVER_NAME,'Pressure (N/m^2):', & 
-                    MINVAL(pCv(cvMixtPres,1:uppLim)), & 
-                    MAXVAL(pCv(cvMixtPres,1:uppLim)), & 
-                    loc(cvMixtPres,MIN_VAL),loc(cvMixtPres,MAX_VAL)  
+ 
+      IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
+        WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                      SOLVER_NAME,'X-velocity (m/s):', & 
+                      MINVAL(pCv(cvMixtXVel,1:uppLim)), & 
+                      MAXVAL(pCv(cvMixtXVel,1:uppLim)), & 
+                      loc(cvMixtXVel,MIN_VAL),loc(cvMixtXVel,MAX_VAL)
+        WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                      SOLVER_NAME,'Y-velocity (m/s):', & 
+                      MINVAL(pCv(cvMixtYVel,1:uppLim)), & 
+                      MAXVAL(pCv(cvMixtYVel,1:uppLim)), & 
+                      loc(cvMixtYVel,MIN_VAL),loc(cvMixtYVel,MAX_VAL)
+        WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                      SOLVER_NAME,'Z-velocity (m/s):', & 
+                      MINVAL(pCv(cvMixtZVel,1:uppLim)), & 
+                      MAXVAL(pCv(cvMixtZVel,1:uppLim)), & 
+                      loc(cvMixtZVel,MIN_VAL),loc(cvMixtZVel,MAX_VAL)
+        WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                      SOLVER_NAME,'Pressure (N/m^2):', & 
+                      MINVAL(pCv(cvMixtPres,1:uppLim)), & 
+                      MAXVAL(pCv(cvMixtPres,1:uppLim)), & 
+                      loc(cvMixtPres,MIN_VAL),loc(cvMixtPres,MAX_VAL) 
+      END IF !global%verbLevel 
   
 ! ==============================================================================
 !   Compressible fluid model
@@ -282,77 +284,87 @@ SUBROUTINE RFLU_PrintFlowInfo(pRegion)
   
       SELECT CASE ( pRegion%mixt%cvState ) 
         CASE ( CV_MIXT_STATE_CONS )
-          WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                        SOLVER_NAME,'Density (kg/m^3):    ', & 
-                        MINVAL(pCv(CV_MIXT_DENS,1:uppLim)), & 
-                        MAXVAL(pCv(CV_MIXT_DENS,1:uppLim)), & 
-                        loc(CV_MIXT_DENS,MIN_VAL),loc(CV_MIXT_DENS,MAX_VAL)
-          WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                        SOLVER_NAME,'X-momentum (kg/m^2s):', & 
-                        MINVAL(pCv(CV_MIXT_XMOM,1:uppLim)), & 
-                        MAXVAL(pCv(CV_MIXT_XMOM,1:uppLim)), & 
-                        loc(CV_MIXT_XMOM,MIN_VAL),loc(CV_MIXT_XMOM,MAX_VAL)
-          WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                        SOLVER_NAME,'Y-momentum (kg/m^2s):', & 
-                        MINVAL(pCv(CV_MIXT_YMOM,1:uppLim)), & 
-                        MAXVAL(pCv(CV_MIXT_YMOM,1:uppLim)), & 
-                        loc(CV_MIXT_YMOM,MIN_VAL),loc(CV_MIXT_YMOM,MAX_VAL)
-          WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                        SOLVER_NAME,'Z-momentum (kg/m^2s):', & 
-                        MINVAL(pCv(CV_MIXT_ZMOM,1:uppLim)), & 
-                        MAXVAL(pCv(CV_MIXT_ZMOM,1:uppLim)), & 
-                        loc(CV_MIXT_ZMOM,MIN_VAL),loc(CV_MIXT_ZMOM,MAX_VAL)
-          WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                        SOLVER_NAME,'Energy (N/m^2):      ', & 
-                        MINVAL(pCv(CV_MIXT_ENER,1:uppLim)), & 
-                        MAXVAL(pCv(CV_MIXT_ENER,1:uppLim)), & 
-                        loc(CV_MIXT_ENER,MIN_VAL),loc(CV_MIXT_ENER,MAX_VAL)
+          IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
+            WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                          SOLVER_NAME,'Density (kg/m^3):    ', & 
+                          MINVAL(pCv(CV_MIXT_DENS,1:uppLim)), & 
+                          MAXVAL(pCv(CV_MIXT_DENS,1:uppLim)), & 
+                          loc(CV_MIXT_DENS,MIN_VAL),loc(CV_MIXT_DENS,MAX_VAL)
+            WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                          SOLVER_NAME,'X-momentum (kg/m^2s):', & 
+                          MINVAL(pCv(CV_MIXT_XMOM,1:uppLim)), & 
+                          MAXVAL(pCv(CV_MIXT_XMOM,1:uppLim)), & 
+                          loc(CV_MIXT_XMOM,MIN_VAL),loc(CV_MIXT_XMOM,MAX_VAL)
+            WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                          SOLVER_NAME,'Y-momentum (kg/m^2s):', & 
+                          MINVAL(pCv(CV_MIXT_YMOM,1:uppLim)), & 
+                          MAXVAL(pCv(CV_MIXT_YMOM,1:uppLim)), & 
+                          loc(CV_MIXT_YMOM,MIN_VAL),loc(CV_MIXT_YMOM,MAX_VAL)
+            WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                          SOLVER_NAME,'Z-momentum (kg/m^2s):', & 
+                          MINVAL(pCv(CV_MIXT_ZMOM,1:uppLim)), & 
+                          MAXVAL(pCv(CV_MIXT_ZMOM,1:uppLim)), & 
+                          loc(CV_MIXT_ZMOM,MIN_VAL),loc(CV_MIXT_ZMOM,MAX_VAL)
+            WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                          SOLVER_NAME,'Energy (N/m^2):      ', & 
+                          MINVAL(pCv(CV_MIXT_ENER,1:uppLim)), & 
+                          MAXVAL(pCv(CV_MIXT_ENER,1:uppLim)), & 
+                          loc(CV_MIXT_ENER,MIN_VAL),loc(CV_MIXT_ENER,MAX_VAL)
+          END IF !global%verbLevel
 
 ! ------------------------------------------------------------------------------
 !       Primitive state vector
 ! ------------------------------------------------------------------------------
 
         CASE ( CV_MIXT_STATE_PRIM ) 
-          WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                        SOLVER_NAME,'Density (kg/m^3):', & 
-                        MINVAL(pCv(CV_MIXT_DENS,1:uppLim)), & 
-                        MAXVAL(pCv(CV_MIXT_DENS,1:uppLim)), & 
-                        loc(CV_MIXT_DENS,MIN_VAL),loc(CV_MIXT_DENS,MAX_VAL)
-          WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                        SOLVER_NAME,'X-velocity (m/s):', & 
-                        MINVAL(pCv(CV_MIXT_XVEL,1:uppLim)), & 
-                        MAXVAL(pCv(CV_MIXT_XVEL,1:uppLim)), & 
-                        loc(CV_MIXT_XVEL,MIN_VAL),loc(CV_MIXT_XVEL,MAX_VAL)
-          WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                        SOLVER_NAME,'Y-velocity (m/s):', & 
-                        MINVAL(pCv(CV_MIXT_YVEL,1:uppLim)), & 
-                        MAXVAL(pCv(CV_MIXT_YVEL,1:uppLim)), & 
-                        loc(CV_MIXT_YVEL,MIN_VAL),loc(CV_MIXT_YVEL,MAX_VAL)
-          WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                        SOLVER_NAME,'Z-velocity (m/s):', & 
-                        MINVAL(pCv(CV_MIXT_ZVEL,1:uppLim)), & 
-                        MAXVAL(pCv(CV_MIXT_ZVEL,1:uppLim)), & 
-                        loc(CV_MIXT_ZVEL,MIN_VAL),loc(CV_MIXT_ZVEL,MAX_VAL)
+          IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
+            WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                          SOLVER_NAME,'Density (kg/m^3):', & 
+                          MINVAL(pCv(CV_MIXT_DENS,1:uppLim)), & 
+                          MAXVAL(pCv(CV_MIXT_DENS,1:uppLim)), & 
+                          loc(CV_MIXT_DENS,MIN_VAL),loc(CV_MIXT_DENS,MAX_VAL)
+            WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                          SOLVER_NAME,'X-velocity (m/s):', & 
+                          MINVAL(pCv(CV_MIXT_XVEL,1:uppLim)), & 
+                          MAXVAL(pCv(CV_MIXT_XVEL,1:uppLim)), & 
+                          loc(CV_MIXT_XVEL,MIN_VAL),loc(CV_MIXT_XVEL,MAX_VAL)
+            WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                          SOLVER_NAME,'Y-velocity (m/s):', & 
+                          MINVAL(pCv(CV_MIXT_YVEL,1:uppLim)), & 
+                          MAXVAL(pCv(CV_MIXT_YVEL,1:uppLim)), & 
+                          loc(CV_MIXT_YVEL,MIN_VAL),loc(CV_MIXT_YVEL,MAX_VAL)
+            WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                          SOLVER_NAME,'Z-velocity (m/s):', & 
+                          MINVAL(pCv(CV_MIXT_ZVEL,1:uppLim)), & 
+                          MAXVAL(pCv(CV_MIXT_ZVEL,1:uppLim)), & 
+                          loc(CV_MIXT_ZVEL,MIN_VAL),loc(CV_MIXT_ZVEL,MAX_VAL)
+          END IF !global%verbLevel
 
           SELECT CASE ( pRegion%mixt%cvState )
 
 ! --------- Pressure as last entry ---------------------------------------------
 
             CASE ( CV_MIXT_STATE_DUVWP ) 
-              WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                            SOLVER_NAME,'Pressure (N/m^2):', & 
-                            MINVAL(pCv(CV_MIXT_PRES,1:uppLim)), & 
-                            MAXVAL(pCv(CV_MIXT_PRES,1:uppLim)), & 
-                            loc(CV_MIXT_PRES,MIN_VAL),loc(CV_MIXT_PRES,MAX_VAL)    
+              IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
+                WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                              SOLVER_NAME,'Pressure (N/m^2):', & 
+                              MINVAL(pCv(CV_MIXT_PRES,1:uppLim)), & 
+                              MAXVAL(pCv(CV_MIXT_PRES,1:uppLim)), & 
+                              loc(CV_MIXT_PRES,MIN_VAL), &
+                              loc(CV_MIXT_PRES,MAX_VAL)    
+              END IF !global%verbLevel
 
 ! --------- Temperature as last entry ------------------------------------------
 
             CASE ( CV_MIXT_STATE_DUVWT ) 
-              WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
-                            SOLVER_NAME,'Temperature (K): ', & 
-                            MINVAL(pCv(CV_MIXT_TEMP,1:uppLim)), & 
-                            MAXVAL(pCv(CV_MIXT_TEMP,1:uppLim)), & 
-                            loc(CV_MIXT_TEMP,MIN_VAL),loc(CV_MIXT_TEMP,MAX_VAL)     
+              IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
+                WRITE(STDOUT,'(A,3X,A,2(1X,E23.16),2(1X,I9))') & 
+                              SOLVER_NAME,'Temperature (K): ', & 
+                              MINVAL(pCv(CV_MIXT_TEMP,1:uppLim)), & 
+                              MAXVAL(pCv(CV_MIXT_TEMP,1:uppLim)), & 
+                              loc(CV_MIXT_TEMP,MIN_VAL), &
+                              loc(CV_MIXT_TEMP,MAX_VAL)     
+              END IF !global%verbLevel
             CASE DEFAULT  
               CALL ErrorStop(global,ERR_REACHED_DEFAULT,__LINE__)
           END SELECT ! pRegion%mixt%cvState         
@@ -373,7 +385,7 @@ SUBROUTINE RFLU_PrintFlowInfo(pRegion)
 ! memory.
 ! ******************************************************************************
      
-  IF ( global%verbLevel /= VERBOSE_LOW ) THEN   
+  IF ( global%verbLevel >= VERBOSE_MED ) THEN   
     CALL RFLU_PrintLocInfo(pRegion,loc,pRegion%mixtInput%nCv, & 
                            LOCINFO_MODE_SILENT,OUTPUT_MODE_MASTER_ONLY)
   END IF ! global%verbLevel
@@ -400,7 +412,7 @@ SUBROUTINE RFLU_PrintFlowInfo(pRegion)
 ! End
 ! ******************************************************************************  
 
-  IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+  IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing flow information done.'
   END IF ! global%verbLevel    
    

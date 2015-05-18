@@ -146,7 +146,7 @@ MODULE RFLU_ModDimensions
   'RFLU_ModDimensions.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading dimensions...'
     END IF ! global%verbLevel
 
@@ -168,7 +168,7 @@ MODULE RFLU_ModDimensions
         global%warnCounter = global%warnCounter + 1    
 
         IF ( global%myProcid == MASTERPROC .AND. &
-             global%verbLevel > VERBOSE_NONE ) THEN        
+             global%verbLevel >= VERBOSE_NONE ) THEN        
           WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'*** WARNING ***', & 
                                         'Hard-code - read file from time zero.'
         END IF ! global%myProcid
@@ -182,7 +182,7 @@ MODULE RFLU_ModDimensions
                                  iFileName)
                                  
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN        
+           global%verbLevel >= VERBOSE_HIGH ) THEN        
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal          
         WRITE(STDOUT,'(A,3X,A,1X,1PE11.5)') SOLVER_NAME,'Current time:', & 
@@ -193,7 +193,7 @@ MODULE RFLU_ModDimensions
                               pRegion%iRegionGlobal,iFileName) 
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal
       END IF ! global%verbLevel
@@ -211,7 +211,7 @@ MODULE RFLU_ModDimensions
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%verbLevel 
 
@@ -241,7 +241,7 @@ MODULE RFLU_ModDimensions
 
         CASE ( '# Vertices' )     
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Vertices...'
           END IF ! global%verbLevel          
 
@@ -253,7 +253,7 @@ MODULE RFLU_ModDimensions
     
         CASE ( '# Cells' )     
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Cells...'
           END IF ! global%verbLevel          
 
@@ -265,7 +265,7 @@ MODULE RFLU_ModDimensions
         
         CASE ( '# Tetrahedra' )     
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Tetrahedra...'
           END IF ! global%verbLevel          
 
@@ -277,7 +277,7 @@ MODULE RFLU_ModDimensions
 
         CASE ( '# Hexahedra' )     
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Hexahedra...'
           END IF ! global%verbLevel          
 
@@ -289,7 +289,7 @@ MODULE RFLU_ModDimensions
         
         CASE ( '# Prisms' )     
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Prisms...'
           END IF ! global%verbLevel          
 
@@ -301,7 +301,7 @@ MODULE RFLU_ModDimensions
 
         CASE ( '# Pyramids' )     
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Pyramids...'
           END IF ! global%verbLevel          
 
@@ -315,7 +315,7 @@ MODULE RFLU_ModDimensions
         
         CASE ( '# Patches' )     
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Patches...'
           END IF ! global%verbLevel          
 
@@ -346,7 +346,7 @@ MODULE RFLU_ModDimensions
         
         CASE ( '# Patches (v2)' )     
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Patches...'
           END IF ! global%verbLevel          
 
@@ -374,7 +374,7 @@ MODULE RFLU_ModDimensions
         
         CASE ( '# Borders' )     
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Borders...'
           END IF ! global%verbLevel          
 
@@ -397,7 +397,7 @@ MODULE RFLU_ModDimensions
       
         CASE ( '# End' ) 
           IF ( global%myProcid == MASTERPROC .AND. & 
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
           END IF ! global%verbLevel           
 
@@ -408,7 +408,7 @@ MODULE RFLU_ModDimensions
 ! ------------------------------------------------------------------------------ 
 
         CASE DEFAULT
-          IF ( global%verbLevel > VERBOSE_LOW ) THEN  
+          IF ( global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,sectionString
           END IF ! verbosityLevel           
 
@@ -442,7 +442,7 @@ MODULE RFLU_ModDimensions
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading dimensions done.'
     END IF ! global%verbLevel
 
@@ -643,7 +643,7 @@ MODULE RFLU_ModDimensions
   'RFLU_ModDimensions.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Setting maximum dimensions...'
     END IF ! global%verbLevel
 
@@ -658,7 +658,7 @@ MODULE RFLU_ModDimensions
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,3X,A,1X,I2)') SOLVER_NAME,'Ratio:',ratioMax2Tot
     END IF ! global%verbLevel
 
@@ -690,7 +690,7 @@ MODULE RFLU_ModDimensions
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Setting maximum dimensions done.'
     END IF ! global%verbLevel
     
@@ -755,7 +755,7 @@ MODULE RFLU_ModDimensions
   'RFLU_ModDimensions.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_MED ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing dimensions...'
     END IF ! global%verbLevel
 
@@ -768,7 +768,7 @@ MODULE RFLU_ModDimensions
                                  iFileName)
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN        
+           global%verbLevel >= VERBOSE_HIGH ) THEN        
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal          
         WRITE(STDOUT,'(A,3X,A,1X,1PE11.5)') SOLVER_NAME,'Current time:', & 
@@ -779,7 +779,7 @@ MODULE RFLU_ModDimensions
                               pRegion%iRegionGlobal,iFileName) 
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal                                 
       END IF ! global%verbLevel
@@ -797,7 +797,7 @@ MODULE RFLU_ModDimensions
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%verbLevel 
 
@@ -867,7 +867,7 @@ MODULE RFLU_ModDimensions
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
     END IF ! global%verbLevel
 
@@ -890,7 +890,7 @@ MODULE RFLU_ModDimensions
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing dimensions done.'
     END IF ! global%verbLevel
 
@@ -963,7 +963,7 @@ MODULE RFLU_ModDimensions
   'RFLU_ModDimensions.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_MED ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing border dimensions...'
     END IF ! global%verbLevel
 
@@ -976,7 +976,7 @@ MODULE RFLU_ModDimensions
                                  iFileName)
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN        
+           global%verbLevel >= VERBOSE_HIGH ) THEN        
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal          
         WRITE(STDOUT,'(A,3X,A,1X,1PE11.5)') SOLVER_NAME,'Current time:', & 
@@ -987,7 +987,7 @@ MODULE RFLU_ModDimensions
                               pRegion%iRegionGlobal,iFileName) 
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal                                 
       END IF ! global%verbLevel
@@ -1044,7 +1044,7 @@ MODULE RFLU_ModDimensions
       
         CASE ( '# End' ) 
           IF ( global%myProcid == MASTERPROC .AND. & 
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH ) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
           END IF ! global%verbLevel           
 
@@ -1076,7 +1076,7 @@ MODULE RFLU_ModDimensions
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing border dimensions done.'
     END IF ! global%verbLevel
 

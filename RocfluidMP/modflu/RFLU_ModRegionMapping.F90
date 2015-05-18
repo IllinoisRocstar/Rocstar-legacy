@@ -135,7 +135,7 @@ SUBROUTINE RFLU_ApplyRegionMapping(global,levels)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Applying region mapping...'
   END IF ! global%verbLevel
 
@@ -160,7 +160,7 @@ SUBROUTINE RFLU_ApplyRegionMapping(global,levels)
 ! ******************************************************************************
   
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Applying region mapping done.'    
   END IF ! global%verbLevel
   
@@ -219,7 +219,7 @@ SUBROUTINE RFLU_BuildRegionMappingSimple(global)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_MED) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building region mapping...'
     WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Method: Simple'
   END IF ! global%verbLevel  
@@ -262,7 +262,7 @@ SUBROUTINE RFLU_BuildRegionMappingSimple(global)
 ! ******************************************************************************  
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN    
+       global%verbLevel >= VERBOSE_HIGH ) THEN    
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building region mapping done.'
   END IF ! global%verbLevel 
 
@@ -321,7 +321,7 @@ SUBROUTINE RFLU_CheckRegionMapping(global)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking region mapping...'
   END IF ! global%verbLevel  
     
@@ -364,7 +364,7 @@ SUBROUTINE RFLU_CheckRegionMapping(global)
 ! ******************************************************************************  
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN    
+       global%verbLevel >= VERBOSE_HIGH ) THEN    
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking region mapping done.'
   END IF ! global%verbLevel 
 
@@ -421,7 +421,7 @@ SUBROUTINE RFLU_CloseRegionMappingFile(global)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing region mapping file...'
   END IF ! global%verbLevel  
     
@@ -442,7 +442,7 @@ SUBROUTINE RFLU_CloseRegionMappingFile(global)
 ! ******************************************************************************  
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN    
+       global%verbLevel >= VERBOSE_HIGH ) THEN    
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing region mapping file done.'
   END IF ! global%verbLevel 
 
@@ -499,7 +499,7 @@ SUBROUTINE RFLU_CreateRegionMapping(global,mapType)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating region mapping...'
   END IF ! global%verbLevel  
     
@@ -534,7 +534,7 @@ SUBROUTINE RFLU_CreateRegionMapping(global,mapType)
 ! ******************************************************************************  
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN    
+       global%verbLevel >= VERBOSE_HIGH ) THEN    
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating region mapping done.'
   END IF ! global%verbLevel 
 
@@ -591,7 +591,7 @@ SUBROUTINE RFLU_DestroyRegionMapping(global,mapType)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying region mapping...'
   END IF ! global%verbLevel  
     
@@ -626,7 +626,7 @@ SUBROUTINE RFLU_DestroyRegionMapping(global,mapType)
 ! ******************************************************************************  
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN    
+       global%verbLevel >= VERBOSE_HIGH ) THEN    
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying region mapping done.'
   END IF ! global%verbLevel 
 
@@ -837,7 +837,7 @@ SUBROUTINE RFLU_ImposeRegionMappingSerial(global)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Imposing serial region mapping...' 
   END IF ! global%myProcid
 
@@ -858,7 +858,7 @@ SUBROUTINE RFLU_ImposeRegionMappingSerial(global)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Imposing serial region mapping done.'
   END IF ! global%verbLevel
 
@@ -915,7 +915,7 @@ SUBROUTINE RFLU_OpenRegionMappingFile(global)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Opening region mapping file...'
   END IF ! global%verbLevel  
     
@@ -937,7 +937,7 @@ SUBROUTINE RFLU_OpenRegionMappingFile(global)
 ! ******************************************************************************  
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN    
+       global%verbLevel >= VERBOSE_HIGH ) THEN    
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Opening region mapping file done.'
   END IF ! global%verbLevel 
 
@@ -1009,10 +1009,10 @@ SUBROUTINE RFLU_ReadRegionMappingFile(global,readMode,myProcId)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC ) THEN 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading region mapping file...'
       
-      IF ( global%verbLevel > VERBOSE_LOW ) THEN 
+      IF ( global%verbLevel >= VERBOSE_MED ) THEN 
         IF ( readMode == MAPFILE_READMODE_ALL ) THEN 
           WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Read mode: All'
         ELSE IF ( readMode == MAPFILE_READMODE_PEEK ) THEN 
@@ -1040,7 +1040,7 @@ SUBROUTINE RFLU_ReadRegionMappingFile(global,readMode,myProcId)
   
   IF ( fileExists .EQV. .TRUE. ) THEN     
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Mapping file found.' 
     END IF ! global%verbLevel  
   
@@ -1124,7 +1124,7 @@ SUBROUTINE RFLU_ReadRegionMappingFile(global,readMode,myProcId)
     global%warnCounter = global%warnCounter + 1  
    
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_NONE ) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'*** WARNING ***', & 
                                     'Mapping file not found.'
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Initializing for', & 
@@ -1148,7 +1148,7 @@ SUBROUTINE RFLU_ReadRegionMappingFile(global,readMode,myProcId)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading region mapping file done.'
   END IF ! global%verbLevel
 
@@ -1208,7 +1208,7 @@ SUBROUTINE RFLU_SetRegionMappingSerial(global)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Setting serial region mapping...' 
   END IF ! global%myProcid
 
@@ -1223,7 +1223,7 @@ SUBROUTINE RFLU_SetRegionMappingSerial(global)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Setting serial region mapping done.'
   END IF ! global%verbLevel
 
@@ -1280,7 +1280,7 @@ SUBROUTINE RFLU_WriteRegionMappingFile(global)
   'RFLU_ModRegionMapping.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing region mapping file...'
   END IF ! global%verbLevel  
     
@@ -1316,7 +1316,7 @@ SUBROUTINE RFLU_WriteRegionMappingFile(global)
 ! ******************************************************************************  
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN    
+       global%verbLevel >= VERBOSE_HIGH ) THEN    
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing region mapping file done.'
   END IF ! global%verbLevel 
 

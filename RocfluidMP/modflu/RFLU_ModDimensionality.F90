@@ -207,7 +207,7 @@ MODULE RFLU_ModDimensionality
   'RFLU_ModDimensionality.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking geometry...'
       WRITE(STDOUT,'(A,3X,A,1X,I2)') SOLVER_NAME,'Component:',dir
     END IF ! global%myProcid
@@ -225,7 +225,7 @@ MODULE RFLU_ModDimensionality
       ndMax = MAXVAL(pGrid%fn(dir,1:pGrid%nFacesTot))      
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN     
+           global%verbLevel >= VERBOSE_HIGH) THEN     
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Extrema of face-normal vectors:'
         WRITE(STDOUT,'(A,5X,A,1X,E23.16)') SOLVER_NAME,'Tolerance:',nTol
         WRITE(STDOUT,'(A,7X,A,1X,2(1X,E23.16))') SOLVER_NAME,'Interior:', &
@@ -258,7 +258,7 @@ MODULE RFLU_ModDimensionality
         nxMax = MAXVAL(pPatch%fn(XCOORD,1:pPatch%nBFacesTot))  
 
         IF ( global%myProcid == MASTERPROC .AND. & 
-             global%verbLevel > VERBOSE_LOW ) THEN
+             global%verbLevel >= VERBOSE_HIGH) THEN
           WRITE(STDOUT,'(A,7X,A,1X,I2,A,1X,2(1X,E23.16))') & 
                 SOLVER_NAME,'Patch',iPatch,':',ndMin,ndMax
         END IF ! global%myProcid
@@ -291,7 +291,7 @@ MODULE RFLU_ModDimensionality
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking geometry done.'
     END IF ! global%verbLevel
 
@@ -352,7 +352,7 @@ MODULE RFLU_ModDimensionality
   'RFLU_ModDimensionality.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking topology...'
     END IF ! global%verbLevel
 
@@ -522,7 +522,7 @@ MODULE RFLU_ModDimensionality
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking topology done.'
     END IF ! global%verbLevel
 

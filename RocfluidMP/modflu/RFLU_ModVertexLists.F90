@@ -126,7 +126,7 @@ MODULE RFLU_ModVertexLists
   'RFLU_ModVertexLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building vertex-to-cell list...'            
     END IF ! global%verbLevel  
@@ -293,7 +293,7 @@ MODULE RFLU_ModVertexLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Building vertex-to-cell list done.'
     END IF ! global%verbLevel    
@@ -356,7 +356,7 @@ MODULE RFLU_ModVertexLists
   'RFLU_ModVertexLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Creating vertex-to-cell list...'            
     END IF ! global%verbLevel
@@ -388,7 +388,7 @@ MODULE RFLU_ModVertexLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Creating vertex-to-cell list done.'
     END IF ! global%verbLevel  
@@ -450,7 +450,7 @@ MODULE RFLU_ModVertexLists
   'RFLU_ModVertexLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Destroying vertex-to-cell list...'
     END IF ! global%verbLevel
@@ -482,7 +482,7 @@ MODULE RFLU_ModVertexLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying vertex-to-cell list done.'
     END IF ! global%verbLevel  
@@ -544,7 +544,7 @@ MODULE RFLU_ModVertexLists
   'RFLU_ModVertexLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Nullifying vertex-to-cell list...'
     END IF ! global%verbLevel
@@ -567,7 +567,7 @@ MODULE RFLU_ModVertexLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Nullifying vertex-to-cell list done.'
     END IF ! global%verbLevel  

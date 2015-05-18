@@ -77,7 +77,7 @@ SUBROUTINE RFLU_SetRestartTimeFlag(global)
   'RFLU_SetRestartTimeFlag.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                              'Setting restart time and flag...'
   END IF ! global%verbLevel
@@ -109,7 +109,7 @@ SUBROUTINE RFLU_SetRestartTimeFlag(global)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                              'Setting restart time and flag done.'
   END IF ! global%verbLevel

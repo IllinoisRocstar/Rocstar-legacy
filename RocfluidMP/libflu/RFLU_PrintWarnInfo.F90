@@ -80,8 +80,11 @@ SUBROUTINE RFLU_PrintWarnInfo(global)
 ! Write info on number of warnings
 ! ******************************************************************************
 
+  !IF ( (global%myProcid == MASTERPROC) .AND. & 
+  !     (global%verbLevel /= VERBOSE_NONE) ) THEN
   IF ( (global%myProcid == MASTERPROC) .AND. & 
-       (global%verbLevel /= VERBOSE_NONE) ) THEN
+       (global%verbLevel >= VERBOSE_NONE) .AND. &
+       (global%warnCounter /= 0) ) THEN
     WRITE(STDOUT,'(A)') SOLVER_NAME    
     WRITE(STDOUT,'(A,2(1X,A),1X,I6,1X,A)') SOLVER_NAME,'*** WARNING ***', & 
           'This run generated',global%warnCounter,'warning(s).'        

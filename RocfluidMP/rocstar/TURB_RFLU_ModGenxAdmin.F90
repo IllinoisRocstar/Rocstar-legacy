@@ -187,7 +187,7 @@ MODULE TURB_RFLU_ModRocstarAdmin
     pGrid  => pRegion%grid
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering turbulence data...'
     END IF ! global%verbLevel
     
@@ -231,7 +231,7 @@ MODULE TURB_RFLU_ModRocstarAdmin
     CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,0,paneId) 
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Window name:',TRIM(winv)
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Pane id:', paneId           
     END IF ! global%verbLevel
@@ -275,7 +275,7 @@ MODULE TURB_RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering turbulence data done.'
     END IF ! global%verbLevel 
   
@@ -348,7 +348,7 @@ MODULE TURB_RFLU_ModRocstarAdmin
     handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.mut')
     IF (handleIn <= 0) THEN
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Starting new turbulence...'
       END IF ! global%verbLevel
       GOTO 999
@@ -361,12 +361,12 @@ MODULE TURB_RFLU_ModRocstarAdmin
     handleObtain = global%handleObtain
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting turbulence data...'
     END IF ! global%verbLevel 
         
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -405,7 +405,7 @@ MODULE TURB_RFLU_ModRocstarAdmin
 ! ******************************************************************************
  
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting turbulence data done.'
     END IF ! global%verbLevel
 

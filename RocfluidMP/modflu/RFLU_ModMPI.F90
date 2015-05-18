@@ -699,7 +699,7 @@ MODULE RFLU_ModMPI
   'RFLU_ModMPI.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating buffers...'
     END IF ! global%verbLevel
 
@@ -750,7 +750,7 @@ MODULE RFLU_ModMPI
     CALL DeregisterFunction(global)
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating buffers done.'
     END IF ! global%verbLevel
       
@@ -983,7 +983,7 @@ MODULE RFLU_ModMPI
   'RFLU_ModMPI.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying buffers...'
     END IF ! global%verbLevel
     
@@ -1031,7 +1031,7 @@ MODULE RFLU_ModMPI
     CALL DeregisterFunction(global)
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying buffers done.'
     END IF ! global%verbLevel
       

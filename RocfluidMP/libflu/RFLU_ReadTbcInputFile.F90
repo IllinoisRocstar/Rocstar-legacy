@@ -147,8 +147,8 @@ SUBROUTINE RFLU_ReadTbcInputFile(pRegion)
 999 CONTINUE
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN    
-    WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading ROCFLU time-dependent '// & 
+       global%verbLevel >= VERBOSE_HIGH ) THEN    
+    WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading Rocflu time-dependent '// & 
                              'boundary condition file done.'
   END IF ! global%verbLevel
 

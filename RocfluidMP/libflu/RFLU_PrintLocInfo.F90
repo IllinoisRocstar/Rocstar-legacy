@@ -118,7 +118,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
   END IF ! outputMode
 
   IF ( (outputFlag .EQV. .TRUE.) .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN        
+       global%verbLevel >= VERBOSE_HIGH ) THEN        
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing location information...'
     WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                      pRegion%iRegionGlobal 
@@ -138,7 +138,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
     global%warnCounter = global%warnCounter + 1  
   
     IF ( (outputFlag .EQV. .TRUE.) .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_NONE ) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,A,1X,A)') SOLVER_NAME, & 
                    '*** WARNING *** Array cofg not allocated.', &
                    'Returning to calling procedure.'
@@ -152,7 +152,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
     global%warnCounter = global%warnCounter + 1       
         
     IF ( (outputFlag .EQV. .TRUE.) .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN        
+         global%verbLevel >= VERBOSE_NONE ) THEN        
       WRITE(STDOUT,'(A,3X,A,1X,A,1X,A)') SOLVER_NAME,'*** WARNING ***', & 
                    'Geometry apparently not computed yet.', & 
                    'Returning to calling procedure.'
@@ -172,7 +172,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
       global%warnCounter = global%warnCounter + 1    
     
       IF ( (outputFlag .EQV. .TRUE.) .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN        
+           global%verbLevel >= VERBOSE_NONE ) THEN        
         WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME, &
                      '*** WARNING *** Array bf2c not allocated.', & 
                      'Returning to calling procedure.'
@@ -185,7 +185,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
       global%warnCounter = global%warnCounter + 1    
     
       IF ( (outputFlag .EQV. .TRUE.) .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN        
+           global%verbLevel >= VERBOSE_NONE ) THEN        
         WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME, &
                      '*** WARNING *** Array bf2c apparently not yet filled.', & 
                      'Returning to calling procedure.'
@@ -218,7 +218,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
                            nLocSortedEst,nLocSorted,locSorted)
                                                  
   IF ( (outputFlag .EQV. .TRUE.) .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN  
+       global%verbLevel >= VERBOSE_HIGH ) THEN  
     WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Cell location information:'                                 
     WRITE(STDOUT,'(A,6X,A,6X,A,3X,A,2(4X,A),3X,A)') SOLVER_NAME,'#','Cell', & 
                  'x-coordinate','y-coordinate','z-coordinate','Location'
@@ -291,7 +291,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
     END IF ! icCntr       
           
     IF ( (outputFlag .EQV. .TRUE.) .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,4X,I3,1X,I9,3(1X,E15.8),2X,A)') SOLVER_NAME,il,ic, & 
                    pGrid%cofg(XCOORD:ZCOORD,ic),TRIM(locString)
     END IF ! global
@@ -308,7 +308,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
 ! ==============================================================================
 
     IF ( (outputFlag .EQV. .TRUE.) .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A,2(1X,A))') SOLVER_NAME,'Cell connectivity', &
                                        'information:'
       WRITE(STDOUT,'(A,6X,A,6X,A,2X,A,24X,A)') SOLVER_NAME,'#','Cell', & 
@@ -336,7 +336,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
           v(1:vLen) = pGrid%tet2v(1:vLen,icl)
 
           IF ( (outputFlag .EQV. .TRUE.) .AND. &
-               global%verbLevel > VERBOSE_NONE ) THEN       
+               global%verbLevel >= VERBOSE_HIGH ) THEN       
             WRITE(STDOUT,'(A,4X,I3,1X,I9,2X,A11,4(1X,I9))') SOLVER_NAME,il, & 
                   ic,cellTypeString,v(1:vLen)
           END IF ! global  
@@ -349,7 +349,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
           v(1:vLen) = pGrid%hex2v(1:vLen,icl) 
 
           IF ( (outputFlag .EQV. .TRUE.) .AND. &
-               global%verbLevel > VERBOSE_NONE ) THEN       
+               global%verbLevel >= VERBOSE_HIGH ) THEN       
             WRITE(STDOUT,'(A,4X,I3,1X,I9,2X,A11,8(1X,I9))') SOLVER_NAME,il, & 
                   ic,cellTypeString,v(1:vLen)
           END IF ! global    
@@ -363,7 +363,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
           v(1:vLen) = pGrid%pri2v(1:vLen,icl) 
 
           IF ( (outputFlag .EQV. .TRUE.) .AND. &
-               global%verbLevel > VERBOSE_NONE ) THEN       
+               global%verbLevel >= VERBOSE_HIGH ) THEN       
             WRITE(STDOUT,'(A,4X,I3,1X,I9,2X,A11,6(1X,I9))') SOLVER_NAME,il, & 
                   ic,cellTypeString,v(1:vLen)
           END IF ! global        
@@ -377,7 +377,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
           v(1:vLen) = pGrid%pyr2v(1:vLen,icl) 
 
           IF ( (outputFlag .EQV. .TRUE.) .AND. &
-               global%verbLevel > VERBOSE_NONE ) THEN       
+               global%verbLevel >= VERBOSE_HIGH ) THEN       
             WRITE(STDOUT,'(A,4X,I3,1X,I9,2X,A11,5(1X,I9))') SOLVER_NAME,il, & 
                   ic,cellTypeString,v(1:vLen)
           END IF ! global                
@@ -394,7 +394,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
 ! ==============================================================================
 
     IF ( (outputFlag .EQV. .TRUE.) .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A,2(1X,A))') SOLVER_NAME,'Vertex location', & 
                                        'information:'       
       WRITE(STDOUT,'(A,6X,A,4X,A,3X,A,2(4X,A),3X,A)') SOLVER_NAME,'#', & 
@@ -447,7 +447,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
       END IF ! ivCntr       
 
       IF ( (outputFlag .EQV. .TRUE.) .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN       
+           global%verbLevel >= VERBOSE_HIGH ) THEN       
         WRITE(STDOUT,'(A,4X,I3,1X,I9,3(1X,E15.8),2X,A)') SOLVER_NAME,iv, & 
               ivg,pGrid%xyz(XCOORD:ZCOORD,ivg),TRIM(locString)
       END IF ! global
@@ -479,7 +479,7 @@ SUBROUTINE RFLU_PrintLocInfo(pRegion,locUnsorted,nLocUnsorted,locInfoMode, &
 ! ******************************************************************************
   
   IF ( (outputFlag .EQV. .TRUE.) .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing location information done.'  
   END IF ! global
   

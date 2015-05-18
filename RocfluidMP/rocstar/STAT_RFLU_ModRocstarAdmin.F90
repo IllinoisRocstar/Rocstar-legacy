@@ -193,7 +193,7 @@ MODULE STAT_RFLU_ModRocstarAdmin
     global => pRegion%global
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering statistics data...'
     END IF ! global%verbLevel
     
@@ -250,7 +250,7 @@ MODULE STAT_RFLU_ModRocstarAdmin
     CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,0,paneId) 
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Window name:',TRIM(winv)
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Pane id:', paneId           
     END IF ! global%verbLevel
@@ -287,7 +287,7 @@ MODULE STAT_RFLU_ModRocstarAdmin
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering statistics data done.'
     END IF ! global%verbLevel 
   
@@ -353,12 +353,12 @@ MODULE STAT_RFLU_ModRocstarAdmin
     handleObtain = global%handleObtain
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting statistics data...'
     END IF ! global%verbLevel 
         
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -452,7 +452,7 @@ MODULE STAT_RFLU_ModRocstarAdmin
 ! ******************************************************************************
  
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting statistics data done.'
     END IF ! global%verbLevel   
   

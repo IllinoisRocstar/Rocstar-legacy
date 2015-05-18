@@ -575,8 +575,6 @@ void rocstar_driver( int verb, int remeshed, bool debug) {
   rocman_param.remeshed = remeshed;
 
   if ( comm_rank == 0 ) {
-    if(verb > 0)
-      printf("Rocstar: Rocstar version is 3.3\n\n");
     if(debug)
       printf("Rocstar: Call CouplingInitialize\n");
     if(verb > 1){

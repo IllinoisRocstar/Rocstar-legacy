@@ -140,7 +140,7 @@ SUBROUTINE RFLU_BuildPatchNeighborMaps(pRegion)
   'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building patch-neighbor maps...' 
   END IF ! global%myProcid
  
@@ -188,7 +188,7 @@ SUBROUTINE RFLU_BuildPatchNeighborMaps(pRegion)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building patch-neighbor maps done.' 
   END IF ! global%myProcid
   
@@ -253,7 +253,7 @@ SUBROUTINE RFLU_CheckPatchBcConsistency(pRegion)
   'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking patch/bc consistency...' 
   END IF ! global%myProcid
  
@@ -300,7 +300,7 @@ SUBROUTINE RFLU_CheckPatchBcConsistency(pRegion)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking patch/bc consistency done.'
   END IF ! global%myProcid
   
@@ -366,7 +366,7 @@ SUBROUTINE RFLU_ComputePatchNormalsGlobal(regions)
   'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                              'Computing global patch normal vectors...'                                                        
   END IF ! global%myProcid         
@@ -374,7 +374,7 @@ SUBROUTINE RFLU_ComputePatchNormalsGlobal(regions)
   eqTol = 1.0E-5_RFREAL
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_LOW ) THEN 
+       global%verbLevel >= VERBOSE_HIGH) THEN 
     WRITE(STDOUT,'(A,3X,A,1X,E15.8)') SOLVER_NAME,'Tolerance:',eqTol 
     WRITE(STDOUT,'(A,3X,A,2X,A,2X,A,2X,A)') SOLVER_NAME, 'Local','Global', &
                                             'Flat','Normal vector'
@@ -566,7 +566,7 @@ SUBROUTINE RFLU_ComputePatchNormalsGlobal(regions)
       END IF ! flatFlag
       
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         IF ( pPatch%flatFlag .EQV. .TRUE. ) THEN  
           WRITE(STDOUT,'(A,2X,I4,4X,I4,6X,L1,3(2X,E13.6))') & 
             SOLVER_NAME,iPatch,pPatch%iPatchGlobal,pPatch%flatFlag, & 
@@ -600,7 +600,7 @@ SUBROUTINE RFLU_ComputePatchNormalsGlobal(regions)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                              'Computing global patch normal vectors done.'
   END IF ! global%verbLevel
@@ -665,7 +665,7 @@ SUBROUTINE RFLU_ComputePatchNormalsLocal(pRegion)
   'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                              'Computing patch normal vectors...'                          
     WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
@@ -675,7 +675,7 @@ SUBROUTINE RFLU_ComputePatchNormalsLocal(pRegion)
   eqTol = 1.0E-5_RFREAL  
   
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_LOW ) THEN 
+       global%verbLevel >= VERBOSE_HIGH) THEN 
     WRITE(STDOUT,'(A,3X,A,1X,E15.8)') SOLVER_NAME,'Tolerance:',eqTol          
     WRITE(STDOUT,'(A,3X,A,2X,A,2X,A,2X,A)') SOLVER_NAME,'Local','Global', & 
                                             'Flat','Normal vector'
@@ -745,7 +745,7 @@ SUBROUTINE RFLU_ComputePatchNormalsLocal(pRegion)
     END IF ! xFlatFlag
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       IF ( pPatch%flatFlag .EQV. .TRUE. ) THEN  
         WRITE(STDOUT,'(A,2X,I4,4X,I4,6X,L1,3(2X,E13.6))') & 
           SOLVER_NAME,iPatch,pPatch%iPatchGlobal,pPatch%flatFlag, & 
@@ -762,7 +762,7 @@ SUBROUTINE RFLU_ComputePatchNormalsLocal(pRegion)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                              'Computing patch normal vectors done.'
   END IF ! global%verbLevel
@@ -824,7 +824,7 @@ SUBROUTINE RFLU_CreatePatchNeighborMaps(pRegion)
   'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating patch-neighbor maps...' 
   END IF ! global%myProcid
  
@@ -853,7 +853,7 @@ SUBROUTINE RFLU_CreatePatchNeighborMaps(pRegion)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating patch-neighbor maps done.' 
   END IF ! global%myProcid
   
@@ -917,7 +917,7 @@ SUBROUTINE RFLU_DestroyPatchNeighborMaps(pRegion)
   'RFLU_ModPatchUtils.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying patch-neighbor maps...' 
   END IF ! global%myProcid
  
@@ -942,7 +942,7 @@ SUBROUTINE RFLU_DestroyPatchNeighborMaps(pRegion)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying patch-neighbor maps done.' 
   END IF ! global%myProcid
   

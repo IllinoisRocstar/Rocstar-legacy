@@ -307,7 +307,7 @@ SUBROUTINE RFLU_FindProbeCells(pRegion)
   'RFLU_ModProbes.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_LOW ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Finding cells containing probes...'    
   END IF ! global%verbLevel
 
@@ -415,7 +415,7 @@ SUBROUTINE RFLU_FindProbeCells(pRegion)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_LOW ) THEN          
+       global%verbLevel >= VERBOSE_HIGH ) THEN          
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Finding cells containing probes done.'
   END IF ! global%verbLevel
 
@@ -665,7 +665,7 @@ SUBROUTINE RFLU_PrintProbeInfo(global)
   'RFLU_ModProbes.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_LOW ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing probe information...'
   END IF ! global%verbLevel
 
@@ -759,7 +759,7 @@ SUBROUTINE RFLU_PrintProbeInfo(global)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_LOW ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,5X,A,3X,A,8X,A)') SOLVER_NAME,'#','Region','Cell'
        
     DO iProbe = 1,global%nProbes
@@ -773,7 +773,7 @@ SUBROUTINE RFLU_PrintProbeInfo(global)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_LOW ) THEN   
+       global%verbLevel >= VERBOSE_HIGH ) THEN   
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Printing probe information done.'
   END IF ! global%verbLevel
 

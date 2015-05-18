@@ -126,7 +126,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
   'RFLU_ModReadWriteGridSpeeds.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading ASCII grid speeds file...'
     END IF ! global%verbLevel
 
@@ -139,7 +139,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
                                  iFileName)
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN    
+           global%verbLevel >= VERBOSE_HIGH ) THEN    
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal       
         WRITE(STDOUT,'(A,3X,A,1X,1PE11.5)') SOLVER_NAME,'Current time:', & 
@@ -150,7 +150,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
                               pRegion%iRegionGlobal,iFileName)    
 
         IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal  
       END IF ! global%verbLevel
@@ -167,7 +167,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%verbLevel 
 
@@ -254,7 +254,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 
         CASE ( '# Grid speeds' ) 
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN   
+               global%verbLevel >= VERBOSE_HIGH) THEN   
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Grid speeds...'
           END IF ! global%verbLevel
 
@@ -276,7 +276,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
       
         CASE ( '# End' ) 
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
           END IF ! global%verbLevel       
 
@@ -287,7 +287,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ------------------------------------------------------------------------------ 
       
         CASE DEFAULT
-          IF ( global%verbLevel > VERBOSE_LOW ) THEN  
+          IF ( global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(3X,A)') sectionString
           END IF ! global%verbLevel        
 
@@ -320,7 +320,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN    
+         global%verbLevel >= VERBOSE_HIGH ) THEN    
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading ASCII grid speeds file done.'
     END IF ! global%verbLevel           
 
@@ -387,7 +387,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
   'RFLU_ModReadWriteGridSpeeds.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading binary grid speeds file...'
     END IF ! global%verbLevel
 
@@ -400,7 +400,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
                                  iFileName)
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN    
+           global%verbLevel >= VERBOSE_HIGH ) THEN    
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal       
         WRITE(STDOUT,'(A,3X,A,1X,1PE11.5)') SOLVER_NAME,'Current time:', & 
@@ -411,7 +411,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
                               pRegion%iRegionGlobal,iFileName)    
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal  
       END IF ! global%verbLevel
@@ -428,7 +428,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%verbLevel 
 
@@ -515,7 +515,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 
         CASE ( '# Grid speeds' ) 
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN   
+               global%verbLevel >= VERBOSE_HIGH) THEN   
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Grid speeds...'
           END IF ! global%verbLevel
 
@@ -537,7 +537,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
       
         CASE ( '# End' ) 
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
           END IF ! global%verbLevel       
 
@@ -548,7 +548,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ------------------------------------------------------------------------------ 
       
         CASE DEFAULT
-          IF ( global%verbLevel > VERBOSE_LOW ) THEN  
+          IF ( global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(3X,A)') sectionString
           END IF ! global%verbLevel        
 
@@ -581,7 +581,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN    
+         global%verbLevel >= VERBOSE_HIGH ) THEN    
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading binary grid speeds file done.'
     END IF ! global%verbLevel           
 
@@ -726,7 +726,8 @@ MODULE RFLU_ModReadWriteGridSpeeds
   'RFLU_ModReadWriteGridSpeeds.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_LOW ) THEN 
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing ASCII grid speeds file...'
     END IF ! global%verbLevel
 
@@ -739,7 +740,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
                                  iFileName)
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN        
+           global%verbLevel >= VERBOSE_HIGH ) THEN        
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal          
         WRITE(STDOUT,'(A,3X,A,1X,1PE11.5)') SOLVER_NAME,'Current time:', & 
@@ -750,7 +751,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
                               pRegion%iRegionGlobal,iFileName)    
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal                                 
       END IF ! global%verbLevel
@@ -768,7 +769,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_MED) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%verbLevel 
 
@@ -799,7 +800,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 
     IF ( pRegion%mixtInput%moveGrid .EQV. .TRUE. ) THEN 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN  
+           global%verbLevel >= VERBOSE_MED) THEN  
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Grid speeds...'
       END IF ! global%verbLevel
 
@@ -824,7 +825,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_MED) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
     END IF ! global%verbLevel
 
@@ -847,9 +848,10 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_MED ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing ASCII grid speeds file done.'
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME 
     END IF ! global%verbLevel
 
     CALL DeregisterFunction(global)
@@ -913,7 +915,8 @@ MODULE RFLU_ModReadWriteGridSpeeds
   'RFLU_ModReadWriteGridSpeeds.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_LOW ) THEN 
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing binary grid speeds file...'
     END IF ! global%verbLevel
 
@@ -926,7 +929,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
                                  iFileName)
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN        
+           global%verbLevel >= VERBOSE_HIGH ) THEN        
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal          
         WRITE(STDOUT,'(A,3X,A,1X,1PE11.5)') SOLVER_NAME,'Current time:', & 
@@ -937,7 +940,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
                               pRegion%iRegionGlobal,iFileName)    
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal                                 
       END IF ! global%verbLevel
@@ -955,7 +958,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_MED) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%verbLevel 
 
@@ -986,7 +989,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 
     IF ( pRegion%mixtInput%moveGrid .EQV. .TRUE. ) THEN 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN 
+           global%verbLevel >= VERBOSE_MED) THEN 
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Grid speeds...'
       END IF ! global%verbLevel
 
@@ -1011,7 +1014,7 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_MED) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
     END IF ! global%verbLevel
 
@@ -1034,9 +1037,10 @@ MODULE RFLU_ModReadWriteGridSpeeds
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_MED ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing binary grid speeds file done.'
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME 
     END IF ! global%verbLevel
 
     CALL DeregisterFunction(global)

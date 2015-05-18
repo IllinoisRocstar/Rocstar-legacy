@@ -116,12 +116,12 @@ SUBROUTINE RFLU_PrintHeader(global)
   WRITE(STDOUT,'(A)')      SOLVER_NAME
   WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'======================================'
   WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'                                      '
-  WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'                rflump                '
+  WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'              RocfluidMP              '
   WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'                                      '
   
-  WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,TRIM(headerString)
+!  WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,TRIM(headerString)
  
-  WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,' Copyright (c) University of Illinois '
+  WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Copyright (C)2015 Illinois Rocstar LLC'
   WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'                                      '
   WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'======================================'
   WRITE(STDOUT,'(A)')      SOLVER_NAME

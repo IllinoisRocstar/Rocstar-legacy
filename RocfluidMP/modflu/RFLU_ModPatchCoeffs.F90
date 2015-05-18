@@ -142,7 +142,7 @@ MODULE RFLU_ModPatchCoeffs
   'RFLU_ModPatchCoeffs.F90')
              
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Closing patch-coefficients file...'
     END IF ! global%verbLevel             
@@ -162,7 +162,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Closing patch-coefficients file done.'
     END IF ! global%verbLevel
@@ -603,7 +603,7 @@ MODULE RFLU_ModPatchCoeffs
   'RFLU_ModPatchCoeffs.F90')
          
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Opening ASCII patch-coefficients file...'
     END IF ! global%verbLevel     
@@ -620,7 +620,7 @@ MODULE RFLU_ModPatchCoeffs
                                  iFileName)
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN                                             
+           global%verbLevel >= VERBOSE_HIGH ) THEN                                             
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal
         WRITE(STDOUT,'(A,3X,A,1X,1PE11.5)') SOLVER_NAME,'Current time:', & 
@@ -632,7 +632,7 @@ MODULE RFLU_ModPatchCoeffs
                                iFileName)  
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN                                      
+           global%verbLevel >= VERBOSE_HIGH ) THEN                                      
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal  
         WRITE(STDOUT,'(A,3X,A,1X,I6.6)') SOLVER_NAME,'Current iteration '// &
@@ -671,7 +671,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Opening ASCII patch-coefficients file done.'
     END IF ! global%verbLevel
@@ -739,7 +739,7 @@ MODULE RFLU_ModPatchCoeffs
   'RFLU_ModPatchCoeffs.F90')
          
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Opening binary patch-coefficients file...'
     END IF ! global%verbLevel     
@@ -756,7 +756,7 @@ MODULE RFLU_ModPatchCoeffs
                                  iFileName)
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN                                             
+           global%verbLevel >= VERBOSE_HIGH ) THEN                                             
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal
         WRITE(STDOUT,'(A,3X,A,1X,1PE11.5)') SOLVER_NAME,'Current time:', & 
@@ -768,7 +768,7 @@ MODULE RFLU_ModPatchCoeffs
                                iFileName)  
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_NONE ) THEN                                      
+           global%verbLevel >= VERBOSE_HIGH ) THEN                                      
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal  
         WRITE(STDOUT,'(A,3X,A,1X,I6.6)') SOLVER_NAME,'Current iteration '// &
@@ -807,7 +807,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Opening binary patch-coefficients file done.'
     END IF ! global%verbLevel
@@ -871,7 +871,8 @@ MODULE RFLU_ModPatchCoeffs
   'RFLU_ModPatchCoeffs.F90')
         
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_MED ) THEN   
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Reading ASCII patch-coefficients file...'
     END IF ! global%verbLevel        
@@ -885,7 +886,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_MED) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%verbLevel
 
@@ -913,7 +914,7 @@ MODULE RFLU_ModPatchCoeffs
 
         CASE ( '# Pressure coefficient' )
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_MED) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Pressure coefficient...'
           END IF ! global%verbLevel    
 
@@ -929,7 +930,7 @@ MODULE RFLU_ModPatchCoeffs
 
         CASE ( '# Skin-friction coefficient' )
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_MED) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Skin-friction coefficient...'
           END IF ! global%verbLevel    
 
@@ -950,7 +951,7 @@ MODULE RFLU_ModPatchCoeffs
 
         CASE ( '# Heat-transfer coefficient' )
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_MED) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Heat-transfer coefficient...'
           END IF ! global%verbLevel    
 
@@ -966,7 +967,7 @@ MODULE RFLU_ModPatchCoeffs
       
         CASE ( '# End' ) 
           IF ( global%myProcid == MASTERPROC .AND. & 
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_MED) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
           END IF ! global%verbLevel           
 
@@ -977,7 +978,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ==============================================================================
       
         CASE DEFAULT
-          IF ( global%verbLevel > VERBOSE_LOW ) THEN  
+          IF ( global%verbLevel >= VERBOSE_MED) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,sectionString
           END IF ! verbosityLevel           
 
@@ -998,9 +999,10 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_MED ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Reading ASCII patch-coefficients file done.'
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
     END IF ! global%verbLevel
 
     CALL DeregisterFunction(global)
@@ -1061,7 +1063,8 @@ MODULE RFLU_ModPatchCoeffs
   'RFLU_ModPatchCoeffs.F90')
    
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_MED ) THEN 
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Reading binary patch-coefficients file...'
     END IF ! global%verbLevel
@@ -1075,7 +1078,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_MED) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%verbLevel
 
@@ -1103,7 +1106,7 @@ MODULE RFLU_ModPatchCoeffs
 
         CASE ( '# Pressure coefficient' )
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_MED) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Pressure coefficient...'
           END IF ! global%verbLevel    
 
@@ -1119,7 +1122,7 @@ MODULE RFLU_ModPatchCoeffs
 
         CASE ( '# Skin-friction coefficient' )
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_MED) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Skin-friction coefficient...'
           END IF ! global%verbLevel    
 
@@ -1137,7 +1140,7 @@ MODULE RFLU_ModPatchCoeffs
 
         CASE ( '# Heat-transfer coefficient' )
           IF ( global%myProcid == MASTERPROC .AND. &
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_MED) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Heat-transfer coefficient...'
           END IF ! global%verbLevel    
 
@@ -1153,7 +1156,7 @@ MODULE RFLU_ModPatchCoeffs
       
         CASE ( '# End' ) 
           IF ( global%myProcid == MASTERPROC .AND. & 
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_MED) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
           END IF ! global%verbLevel           
 
@@ -1164,7 +1167,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ==============================================================================
       
         CASE DEFAULT
-          IF ( global%verbLevel > VERBOSE_LOW ) THEN  
+          IF ( global%verbLevel >= VERBOSE_MED) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,sectionString
           END IF ! verbosityLevel           
 
@@ -1185,9 +1188,10 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_MED ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Reading binary patch-coefficients file done.'
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
     END IF ! global%verbLevel
 
     CALL DeregisterFunction(global)
@@ -1274,7 +1278,7 @@ MODULE RFLU_ModPatchCoeffs
       global%warnCounter = global%warnCounter + 1
     
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_NONE ) THEN 
+           global%verbLevel >= VERBOSE_NONE ) THEN 
         WRITE(STDOUT,'(A,2(1X,A))') SOLVER_NAME,'*** WARNING ***', &
                                     'Patch coefficient file missing, not read.'        
       END IF ! global%myProcid
@@ -1342,7 +1346,8 @@ MODULE RFLU_ModPatchCoeffs
   'RFLU_ModPatchCoeffs.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_LOW ) THEN 
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing ASCII patch-coefficients file...'
     END IF ! global%verbLevel
@@ -1356,7 +1361,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_MED) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%verbLevel
 
@@ -1372,7 +1377,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_MED) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Pressure coefficient...'
     END IF ! global%verbLevel
 
@@ -1390,7 +1395,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_MED) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Skin-friction coefficient...'
     END IF ! global%verbLevel
 
@@ -1410,7 +1415,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_MED) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Heat-transfer coefficient...'
     END IF ! global%verbLevel
 
@@ -1428,7 +1433,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_MED) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
     END IF ! global%verbLevel
 
@@ -1440,9 +1445,10 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_MED ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Writing ASCII patch-coefficients file done.'
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
     END IF ! global%verbLevel
 
     CALL DeregisterFunction(global)
@@ -1503,7 +1509,8 @@ MODULE RFLU_ModPatchCoeffs
   'RFLU_ModPatchCoeffs.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_LOW ) THEN 
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing binary patch-coefficients file...'
     END IF ! global%verbLevel
@@ -1517,7 +1524,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_MED ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%verbLevel
 
@@ -1533,7 +1540,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_MED ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Pressure coefficient...'
     END IF ! global%verbLevel
 
@@ -1551,7 +1558,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_MED ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Skin-friction coefficient...'
     END IF ! global%verbLevel
 
@@ -1571,7 +1578,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_MED ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Heat-transfer coefficient...'
     END IF ! global%verbLevel
 
@@ -1589,7 +1596,7 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_MED ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
     END IF ! global%verbLevel
 
@@ -1601,9 +1608,10 @@ MODULE RFLU_ModPatchCoeffs
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_MED ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Writing binary patch-coefficients file done.'
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
     END IF ! global%verbLevel
 
     CALL DeregisterFunction(global)

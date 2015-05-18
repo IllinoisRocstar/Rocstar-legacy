@@ -92,7 +92,7 @@ SUBROUTINE RFLU_BuildDataStruct(global,levels)
   'RFLU_BuildDataStruct.F90')
 
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel > VERBOSE_NONE ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building data structure...'
   END IF ! global%verbLevel
   
@@ -130,7 +130,7 @@ SUBROUTINE RFLU_BuildDataStruct(global,levels)
 ! ******************************************************************************
       
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel > VERBOSE_NONE ) THEN 
+       global%verbLevel >= VERBOSE_HIGH ) THEN 
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building data structure done.'    
   END IF ! global%verbLevel
   

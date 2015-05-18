@@ -91,7 +91,7 @@ parse_commandline( int argc, char *argv[], Command_Options &opts) {
       ReportUsage();
     }
   }
-  if(opts.verbose > 0)
+  if(opts.verbose > 0 && rank == 0)
     std::cout << RocstarSplash << std::endl;
 }
 

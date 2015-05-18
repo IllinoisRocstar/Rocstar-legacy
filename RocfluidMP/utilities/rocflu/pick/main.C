@@ -41,9 +41,10 @@ Usage(const string &pn)
        << "   -c | --casename  :  Specifies the casename" << endl
        << "   -s | --stamp     :  Iteration or time stamp" << endl
        << "   -v | --verbosity :  Verbosity level:" << endl
-       << "                       0 - Quiet" << endl
-       << "                       1 - Moderately verbose" << endl
-       << "                       2 - Ridiculously verbose" << endl
+       << "                       0 - Nothing but warnings" << endl
+       << "                       1 - Normal verbosity" << endl
+       << "                       2 - More verbose" << endl
+       << "                       3 - Ridiculously verbose" << endl
        << endl;
 }
 
@@ -124,7 +125,7 @@ main(int argc,char *argv[])
     }
     istringstream Istr(sverb);
     Istr >> verbosity;
-    if(verbosity < 0 || verbosity > 2){ // Some jerk specified a non numeric or negative
+    if(verbosity < 0 || verbosity > 3){ // Some jerk specified a non numeric or negative
       cerr << program_name
 	   << ": Invalid verbosity value.  Use -h for usage "
 	   << "instructions." << endl;

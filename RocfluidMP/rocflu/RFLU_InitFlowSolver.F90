@@ -1077,7 +1077,7 @@ SUBROUTINE RFLU_InitFlowSolver(casename,verbLevel,global,levels)
 ! ******************************************************************************
 
   IF ( global%myProcid == MASTERPROC .AND. & 
-       global%verbLevel /= VERBOSE_NONE ) THEN
+       global%verbLevel >= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A)') SOLVER_NAME    
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initialization done.'
     WRITE(STDOUT,'(A)') SOLVER_NAME 

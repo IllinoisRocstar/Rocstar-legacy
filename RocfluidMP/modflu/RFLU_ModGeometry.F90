@@ -141,7 +141,8 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building boundary-vertex '// & 
                                'normals...' 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
@@ -189,7 +190,7 @@ MODULE RFLU_ModGeometry
       END DO ! ibv               
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         IF ( pPatch%nBVert > 0 ) THEN 
           WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Normal component extrema:'         
           WRITE(STDOUT,'(A,5X,A,1X,I3)') SOLVER_NAME,'Patch:',iPatch             
@@ -241,9 +242,10 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building boundary-vertex '// & 
                                'normals done.'
+      WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME 
     END IF ! global%verbLevel
 
     CALL DeregisterFunction(global)
@@ -330,7 +332,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building geometry...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                        pRegion%iRegionGlobal
@@ -404,7 +406,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Non-boundary faces...'
     END IF ! global%verbLevel
 
@@ -489,7 +491,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Boundary faces...'
     END IF ! global%verbLevel
 
@@ -497,7 +499,7 @@ MODULE RFLU_ModGeometry
       pPatch => pRegion%patches(iPatch)
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,5X,A,I3)') SOLVER_NAME,'Patch: ',iPatch
       END IF ! global%verbLevel       
 
@@ -634,7 +636,7 @@ MODULE RFLU_ModGeometry
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       dummyLoc  = MINLOC(pGrid%vol(1:pGrid%nCells))
       volLoc(1,MIN_VAL) = dummyLoc(1)
       volLoc(1,MAX_VAL) = dummyLoc(1)        
@@ -658,7 +660,7 @@ MODULE RFLU_ModGeometry
     END IF ! MINVAL
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       IF ( ASSOCIATED(pRegion%gridOld%vol) .EQV. .TRUE. ) THEN 
         IF ( MINVAL(pRegion%gridOld%vol(1:pGrid%nCells)) > 0.0_RFREAL ) THEN
           pGridOld => pRegion%gridOld
@@ -684,7 +686,7 @@ MODULE RFLU_ModGeometry
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,5X,A,1X,A)') SOLVER_NAME,'Boundary patch areas', & 
                                     '(actual faces only):'
 
@@ -728,7 +730,7 @@ MODULE RFLU_ModGeometry
 
     IF ( global%checkLevel > CHECK_NONE ) THEN
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN  
+           global%verbLevel >= VERBOSE_HIGH ) THEN  
         WRITE(STDOUT,'(A,3X,A,1X,A)') SOLVER_NAME,'Check total volume', & 
                                       '(actual cells only):'
       END IF ! global%verbLevel
@@ -783,7 +785,7 @@ MODULE RFLU_ModGeometry
       END DO ! ic
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN  
+           global%verbLevel >= VERBOSE_HIGH ) THEN  
         WRITE(STDOUT,'(A,5X,A,1X,E23.16)') SOLVER_NAME,& 
           'Total volume from sum of control volumes:',volSum1            
       END IF ! global%verbLevel
@@ -907,7 +909,7 @@ MODULE RFLU_ModGeometry
       volErr  = (volSum2-volSum1)/(0.5_RFREAL*(volSum1+volSum2)*100.0_RFREAL)
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,5X,A,4X,E23.16)') SOLVER_NAME,& 
           'Total volume from boundary polyhedron:',volSum2
         WRITE(STDOUT,'(A,5X,A,4X,E23.16)') SOLVER_NAME,& 
@@ -928,7 +930,7 @@ MODULE RFLU_ModGeometry
 
     IF ( global%checkLevel > CHECK_NONE ) THEN 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Check closedness of '// & 
                                  'control volumes (all cells):'
       END IF ! global%verbLevel
@@ -1011,7 +1013,7 @@ MODULE RFLU_ModGeometry
       END DO ! iPatch
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN 
+           global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Minimum/maximum value of '// & 
               'sum of face vectors:'
         WRITE(STDOUT,'(A,7X,A,2(1X,E23.16),2(1X,I8))') SOLVER_NAME, & 
@@ -1173,7 +1175,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building geometry done.'
     END IF ! global%verbLevel
 
@@ -1235,7 +1237,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A,A)') SOLVER_NAME,'Computing approximate ', & 
                                  'centroids...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
@@ -1417,7 +1419,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A,A)') SOLVER_NAME,'Computing approximate '// & 
                                  'centroids done.'
     END IF ! global%verbLevel
@@ -1479,7 +1481,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Computing face distance...' 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                        pRegion%iRegionGlobal
@@ -1525,7 +1527,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Computing face distance done.'
     END IF ! global%verbLevel
 
@@ -1585,7 +1587,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating approximate centroids...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                        pRegion%iRegionGlobal
@@ -1614,7 +1616,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A,A)') SOLVER_NAME,'Creating approximate '// & 
                                  'centroids done.'
     END IF ! global%verbLevel
@@ -1676,7 +1678,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating face distance...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                        pRegion%iRegionGlobal
@@ -1704,7 +1706,7 @@ MODULE RFLU_ModGeometry
       pPatch => pRegion%patches(iPatch)  
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,5X,A,1X,I3)') SOLVER_NAME,'Patch:',iPatch
       END IF ! global%verbLevel  
 
@@ -1720,7 +1722,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A,A)') SOLVER_NAME,'Creating face distance done.'
     END IF ! global%verbLevel
 
@@ -1782,7 +1784,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating geometry...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                        pRegion%iRegionGlobal
@@ -1801,7 +1803,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Interior geometry...'
     END IF ! global%verbLevel
 
@@ -1860,7 +1862,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Patch geometry...'
     END IF ! global%verbLevel  
 
@@ -1868,7 +1870,7 @@ MODULE RFLU_ModGeometry
       pPatch => pRegion%patches(iPatch)  
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,5X,A,1X,I3)') SOLVER_NAME,'Patch:',iPatch
       END IF ! global%verbLevel  
 
@@ -1925,7 +1927,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating geometry done.'
     END IF ! global%verbLevel
 
@@ -1987,7 +1989,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A,A)') SOLVER_NAME,'Destroying approximate ', & 
                                  'centroids...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
@@ -2017,7 +2019,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A,A)') SOLVER_NAME,'Destroying approximate '// & 
                                  'centroids done.'
     END IF ! global%verbLevel
@@ -2079,7 +2081,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying face distance...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                        pRegion%iRegionGlobal
@@ -2101,7 +2103,7 @@ MODULE RFLU_ModGeometry
       pPatch => pRegion%patches(iPatch)  
 
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH ) THEN
         WRITE(STDOUT,'(A,5X,A,1X,I3)') SOLVER_NAME,'Patch:',iPatch
       END IF ! global%verbLevel  
 
@@ -2123,7 +2125,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A,A)') SOLVER_NAME,'Destroying face distance done.'
     END IF ! global%verbLevel
 
@@ -2183,7 +2185,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying geometry...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                        pRegion%iRegionGlobal
@@ -2264,7 +2266,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying geometry done.'
     END IF ! global%verbLevel 
 
@@ -2322,7 +2324,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Nullifying approximate centroids...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
@@ -2342,7 +2344,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A,A)') SOLVER_NAME, & 
                                  'Nullifying approximate centroids done.'
     END IF ! global%verbLevel
@@ -2404,7 +2406,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Nullifying face distance...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
@@ -2430,7 +2432,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A,A)') SOLVER_NAME, & 
                                  'Nullifying face distance done.'
     END IF ! global%verbLevel
@@ -2492,7 +2494,7 @@ MODULE RFLU_ModGeometry
   'RFLU_ModGeometry.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Nullifying geometry...'
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                        pRegion%iRegionGlobal
@@ -2527,7 +2529,7 @@ MODULE RFLU_ModGeometry
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Nullifying geometry done.'
     END IF ! global%verbLevel
 

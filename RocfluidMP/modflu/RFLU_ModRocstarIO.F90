@@ -162,12 +162,12 @@ MODULE RFLU_ModRocstarIO
                           'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building Rocin pane strings...'
     END IF ! global%verbLevel
         
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -195,7 +195,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building Rocin pane strings done.'
     END IF ! global%verbLevel
       
@@ -254,7 +254,7 @@ MODULE RFLU_ModRocstarIO
                           'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing Rocin control files...'
     END IF ! global%verbLevel
      
@@ -293,7 +293,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Closing Rocin control files done.'
     END IF ! global%verbLevel
       
@@ -486,12 +486,12 @@ MODULE RFLU_ModRocstarIO
     pRegion%mixt%cvState = CV_MIXT_STATE_CONS
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting flow data...'
     END IF ! global%verbLevel 
         
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -528,7 +528,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
  
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting flow data done.'
     END IF ! global%verbLevel   
   
@@ -588,12 +588,12 @@ MODULE RFLU_ModRocstarIO
     handleObtain = global%handleObtain
     
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting surface grid speeds...'
     END IF ! global%verbLevel      
     
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -616,7 +616,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting surface grid speeds done.'
     END IF ! global%verbLevel  
   
@@ -676,12 +676,12 @@ MODULE RFLU_ModRocstarIO
     handleObtain = global%handleObtain
     
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting volume grid speeds...'
     END IF ! global%verbLevel      
     
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -704,7 +704,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting volume grid speeds done.'
     END IF ! global%verbLevel  
   
@@ -761,12 +761,12 @@ MODULE RFLU_ModRocstarIO
     handleObtain = global%handleObtain
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting interface data...'
     END IF ! global%verbLevel  
       
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -869,7 +869,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting interface data done.'
     END IF ! global%verbLevel  
   
@@ -932,12 +932,12 @@ MODULE RFLU_ModRocstarIO
     pGrid => pRegion%grid
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting dimensions...'
     END IF ! global%verbLevel 
         
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -1149,7 +1149,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
  
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting dimensions done.'
     END IF ! global%verbLevel   
   
@@ -1212,12 +1212,12 @@ MODULE RFLU_ModRocstarIO
     pGrid => pRegion%grid
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting derived dimensions...'
     END IF ! global%verbLevel 
         
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -1248,7 +1248,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
  
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting derived dimensions done.'
     END IF ! global%verbLevel   
   
@@ -1312,12 +1312,12 @@ MODULE RFLU_ModRocstarIO
     handleObtain = global%handleObtain
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting grid...'
     END IF ! global%verbLevel
         
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -1396,7 +1396,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting grid done.'
     END IF ! global%verbLevel  
   
@@ -1453,7 +1453,7 @@ MODULE RFLU_ModRocstarIO
                           'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_LOW ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Opening Rocin control files...'
     END IF ! global%verbLevel
     
@@ -1494,7 +1494,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Opening Rocin control files done.'
     END IF ! global%verbLevel
       
@@ -1704,13 +1704,13 @@ MODULE RFLU_ModRocstarIO
   'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing surface grid speeds through Rocout...'
     END IF ! global%myProcid
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -1784,7 +1784,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
             'Writing surface grid speeds through Rocout done.'
     END IF ! global%myProcid  
@@ -1851,13 +1851,13 @@ MODULE RFLU_ModRocstarIO
   'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing volume grid speeds through Rocout...'
     END IF ! global%myProcid
     
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -1914,7 +1914,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
             'Writing volume grid speeds through Rocout done.'
     END IF ! global%myProcid  
@@ -1979,13 +1979,13 @@ MODULE RFLU_ModRocstarIO
     global => pRegion%global
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing interface data through Roccom...'
     END IF ! global%verbLevel  
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -2122,7 +2122,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing interface data through Roccom done.'
     END IF ! global%verbLevel  
@@ -2254,13 +2254,13 @@ MODULE RFLU_ModRocstarIO
   'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing surface grid through Rocout...'
     END IF ! global%myProcid
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -2378,7 +2378,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
   
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing surface grid through Rocout done.'
     END IF ! global%myProcid  
@@ -2447,13 +2447,13 @@ MODULE RFLU_ModRocstarIO
   'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing volume grid through Rocout...'
     END IF ! global%myProcid
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN 
+         global%verbLevel >= VERBOSE_HIGH) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal
     END IF ! global%myProcid
@@ -2512,7 +2512,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, & 
                                'Writing volume grid through Rocout done.'
     END IF ! global%myProcid
@@ -2694,7 +2694,7 @@ MODULE RFLU_ModRocstarIO
                           'RFLU_ModRocstarIO.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_LOW ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing Rocin control files...'
     END IF ! global%verbLevel
 
@@ -2777,7 +2777,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing Rocin control files done.'
     END IF ! global%verbLevel
       
@@ -2833,7 +2833,7 @@ MODULE RFLU_ModRocstarIO
     
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting Global data...'
     END IF ! global%verbLevel 
         

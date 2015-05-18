@@ -229,7 +229,7 @@ MODULE RFLU_ModCommLists
     CALL RegisterFunction(global,'RFLU_COMM_BuildCommListsCells',&
   'RFLU_ModCommLists.F90')
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Building cell communication lists...'
     END IF ! global%verbLevel
@@ -245,7 +245,7 @@ MODULE RFLU_ModCommLists
 !   Determine cells to be received for each region
 ! ******************************************************************************
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME, &
                                'Determining cells to be received...'
     END IF ! global%verbLevel
@@ -254,7 +254,7 @@ MODULE RFLU_ModCommLists
       pRegion => regions(iReg)
       pGrid   => pRegion%grid
 
-      IF ( global%verbLevel > VERBOSE_LOW ) THEN 
+      IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,5X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                          pRegion%iRegionGlobal
       END IF ! global%verbLevel      
@@ -385,7 +385,7 @@ MODULE RFLU_ModCommLists
       END IF ! global%error
     END DO ! iReg
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME, &
                                'Determining cells to be received done.'
     END IF ! global%verbLevel
@@ -394,7 +394,7 @@ MODULE RFLU_ModCommLists
 !   Determine cells to be sent for each region and border of other region
 ! ******************************************************************************
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Determining cells to be sent...'
     END IF ! global%verbLevel
 
@@ -402,7 +402,7 @@ MODULE RFLU_ModCommLists
       pRegion => regions(iReg)
       pGrid   => pRegion%grid
           
-      IF ( global%verbLevel > VERBOSE_LOW ) THEN 
+      IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,5X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                          pRegion%iRegionGlobal
       END IF ! global%verbLevel
@@ -497,7 +497,7 @@ MODULE RFLU_ModCommLists
       END DO ! iBorder                 
     END DO ! iReg
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Determining cells to be sent done.'
     END IF ! global%verbLevel
 
@@ -505,7 +505,7 @@ MODULE RFLU_ModCommLists
 !   End
 ! ******************************************************************************
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN   
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Building cell communication lists done.'
     END IF ! global%verbLevel
@@ -585,7 +585,7 @@ MODULE RFLU_ModCommLists
     CALL RegisterFunction(global,'RFLU_COMM_BuildCommListsVert',&
   'RFLU_ModCommLists.F90')
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Building vertex communication lists...'
     END IF ! global%verbLevel
@@ -603,7 +603,7 @@ MODULE RFLU_ModCommLists
 !   Determine vertices to be received for each region
 ! ******************************************************************************
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Determining vertices to be '// &
                                'received and shared...'
     END IF ! global%verbLevel
@@ -612,7 +612,7 @@ MODULE RFLU_ModCommLists
       pRegion => regions(iReg)
       pGrid   => pRegion%grid
       
-      IF ( global%verbLevel > VERBOSE_LOW ) THEN 
+      IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
         WRITE(STDOUT,'(A,5X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                          pRegion%iRegionGlobal
       END IF ! global%verbLevel      
@@ -624,7 +624,7 @@ MODULE RFLU_ModCommLists
       DO iBorder = 1,pGrid%nBorders
         pBorder => pGrid%borders(iBorder)
 
-        IF ( global%verbLevel > VERBOSE_LOW ) THEN 
+        IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
           WRITE(STDOUT,'(A,7X,A,1X,I3)') SOLVER_NAME,'Border:',iBorder
         END IF ! global%verbLevel   
 
@@ -777,7 +777,7 @@ MODULE RFLU_ModCommLists
       END DO ! iBorder
     END DO ! iReg
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Determining vertices to be '// &
                                'received and shared done.'
     END IF ! global%verbLevel
@@ -786,7 +786,7 @@ MODULE RFLU_ModCommLists
 !   Make shared vertex lists consistent
 ! ******************************************************************************
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME, &
                                'Ensuring consistency of shared-vertex lists...'
     END IF ! global%verbLevel
@@ -795,7 +795,7 @@ MODULE RFLU_ModCommLists
       pRegion => regions(iReg)
       pGrid   => pRegion%grid
 
-      IF ( global%verbLevel > VERBOSE_LOW ) THEN 
+      IF ( global%verbLevel >= VERBOSE_HIGH) THEN 
         WRITE(STDOUT,'(A,5X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                          pRegion%iRegionGlobal
       END IF ! global%verbLevel
@@ -845,7 +845,7 @@ MODULE RFLU_ModCommLists
       END DO ! iBorder
     END DO ! iReg
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Ensuring consistency of '// &
                                'shared-vertex lists done.'
     END IF ! global%verbLevel
@@ -854,7 +854,7 @@ MODULE RFLU_ModCommLists
 !   Determine vertices to be sent for each region and border of other region
 ! ******************************************************************************
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME, &
                                'Determining vertices to be sent...'
     END IF ! global%verbLevel
@@ -863,7 +863,7 @@ MODULE RFLU_ModCommLists
       pRegion => regions(iReg)
       pGrid   => pRegion%grid
           
-      IF ( global%verbLevel > VERBOSE_LOW ) THEN 
+      IF ( global%verbLevel >= VERBOSE_HIGH) THEN 
         WRITE(STDOUT,'(A,5X,A,1X,I5.5)') SOLVER_NAME,'Global region:', &
                                          pRegion%iRegionGlobal
       END IF ! global%verbLevel          
@@ -937,7 +937,7 @@ MODULE RFLU_ModCommLists
       END DO ! iBorder
     END DO ! iReg
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME, &
                                'Determining vertices to be sent done.'
     END IF ! global%verbLevel
@@ -946,7 +946,7 @@ MODULE RFLU_ModCommLists
 !   End
 ! ******************************************************************************
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN   
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Building vertex communication lists done.'
     END IF ! global%verbLevel
@@ -1026,7 +1026,7 @@ MODULE RFLU_ModCommLists
     CALL RegisterFunction(global,'RFLU_COMM_CheckCountBorders',&
   'RFLU_ModCommLists.F90')
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN       
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking counting of borders...'      
     END IF ! global%verbLevel
 
@@ -1038,7 +1038,7 @@ MODULE RFLU_ModCommLists
       pRegion => regions(iReg)
       pGrid   => pRegion%grid
     
-      IF ( global%verbLevel > VERBOSE_LOW ) THEN        
+      IF ( global%verbLevel >= VERBOSE_HIGH) THEN        
         WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                          pRegion%iRegionGlobal          
       END IF ! global%verbLevel    
@@ -1055,7 +1055,7 @@ MODULE RFLU_ModCommLists
         IF ( iLoc == ELEMENT_NOT_FOUND ) THEN 
           global%warnCounter = global%warnCounter + 1
         
-          IF ( global%verbLevel > VERBOSE_NONE ) THEN       
+          IF ( global%verbLevel >= VERBOSE_NONE ) THEN       
             WRITE(STDOUT,'(A,3X,A,2(1X,A,1X,I5),A)') SOLVER_NAME, &
                   '*** WARNING ***','Border asymmetry between regions', &
                   iReg,'and',iReg2,'.'
@@ -1106,7 +1106,7 @@ MODULE RFLU_ModCommLists
 !   End
 ! ******************************************************************************
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN  
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Checking counting of borders done.'
     END IF ! global%verbLevel
 
@@ -1177,11 +1177,11 @@ MODULE RFLU_ModCommLists
     CALL RegisterFunction(global,'RFLU_COMM_CountBorders',&
   'RFLU_ModCommLists.F90')
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN       
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Counting borders...'      
     END IF ! global%verbLevel
 
-    IF ( global%verbLevel > VERBOSE_LOW ) THEN        
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN        
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal          
     END IF ! global%verbLevel
@@ -1299,7 +1299,7 @@ MODULE RFLU_ModCommLists
 !   Write info
 ! ******************************************************************************
     
-    IF ( global%verbLevel > VERBOSE_LOW ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I3)') SOLVER_NAME,'Number of borders:', & 
                                      pGrid%nBorders
     END IF ! global%verbLevel
@@ -1308,7 +1308,7 @@ MODULE RFLU_ModCommLists
 !   End
 ! ******************************************************************************
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN  
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Counting borders done.'
     END IF ! global%verbLevel
 
@@ -1372,7 +1372,7 @@ MODULE RFLU_ModCommLists
     CALL RegisterFunction(global,'RFLU_COMM_CountBordersSerial',&
   'RFLU_ModCommLists.F90')
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN       
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Counting serial borders...'      
     END IF ! global%verbLevel
 
@@ -1405,7 +1405,7 @@ MODULE RFLU_ModCommLists
       END IF ! pPatch%bcType
     END DO ! iPatch
         
-    IF ( global%verbLevel > VERBOSE_LOW ) THEN 
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,3X,A,1X,I3)') SOLVER_NAME,'Number of borders:', & 
                                      pGrid%nBorders
     END IF ! global%verbLevel        
@@ -1414,7 +1414,7 @@ MODULE RFLU_ModCommLists
 !   End
 ! ******************************************************************************
 
-    IF ( global%verbLevel > VERBOSE_NONE ) THEN  
+    IF ( global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Counting serial borders done.'
     END IF ! global%verbLevel
 
@@ -1568,12 +1568,12 @@ MODULE RFLU_ModCommLists
   'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. &  
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating borders...'      
     END IF ! global%myProcid 
 
     IF ( global%myProcid == MASTERPROC .AND. &  
-         global%verbLevel > VERBOSE_LOW ) THEN        
+         global%verbLevel >= VERBOSE_HIGH ) THEN        
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal          
     END IF ! global%myProcid 
@@ -1645,7 +1645,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &  
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating borders done.'
     END IF ! global%myProcid
 
@@ -1707,12 +1707,12 @@ MODULE RFLU_ModCommLists
   'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating communication lists...'      
     END IF ! global%myProcid
     
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN        
+         global%verbLevel >= VERBOSE_HIGH) THEN        
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal          
     END IF ! global%myProcid
@@ -1766,7 +1766,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating communication lists done.'      
     END IF ! global%myProcid
 
@@ -1907,12 +1907,12 @@ MODULE RFLU_ModCommLists
   'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN     
+         global%verbLevel >= VERBOSE_HIGH ) THEN     
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying borders...'      
     END IF ! global%myProcid
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN        
+         global%verbLevel >= VERBOSE_HIGH) THEN        
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal          
     END IF ! global%myProcid
@@ -1938,7 +1938,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying borders done.'
     END IF ! global%myProcid
 
@@ -1999,12 +1999,12 @@ MODULE RFLU_ModCommLists
   'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying communication lists...'      
     END IF !  global%myProcid
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN        
+         global%verbLevel >= VERBOSE_HIGH) THEN        
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal          
     END IF ! global%myProcid
@@ -2058,7 +2058,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying communication lists done.'      
     END IF !  global%myProcid
@@ -2128,12 +2128,12 @@ MODULE RFLU_ModCommLists
   'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN       
+         global%verbLevel >= VERBOSE_HIGH ) THEN       
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting border process ids..'      
     END IF ! global%myProcid
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN        
+         global%verbLevel >= VERBOSE_HIGH) THEN        
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal          
     END IF ! global%myProcid
@@ -2214,7 +2214,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting border process ids done.'
     END IF ! global%myProcid
 
@@ -2279,12 +2279,12 @@ MODULE RFLU_ModCommLists
   'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading communication lists...'
     END IF ! global%myProcid
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN        
+         global%verbLevel >= VERBOSE_HIGH) THEN        
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal          
     END IF ! global%myProcid
@@ -2310,7 +2310,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%myProcid
 
@@ -2363,7 +2363,7 @@ MODULE RFLU_ModCommLists
 
         CASE ( '# Information' ) 
           IF ( global%myProcid == MASTERPROC .AND. & 
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Information...'
           END IF ! global%myProcid 
               
@@ -2379,7 +2379,7 @@ MODULE RFLU_ModCommLists
 
         CASE ( '# Cells' ) 
           IF ( global%myProcid == MASTERPROC .AND. & 
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Cells...'
           END IF ! global%myProcid 
               
@@ -2405,7 +2405,7 @@ MODULE RFLU_ModCommLists
 
         CASE ( '# Vertices' ) 
           IF ( global%myProcid == MASTERPROC .AND. & 
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Vertices...'
           END IF ! global%myProcid 
               
@@ -2434,7 +2434,7 @@ MODULE RFLU_ModCommLists
       
         CASE ( '# End' ) 
           IF ( global%myProcid == MASTERPROC .AND. & 
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
           END IF ! global%myProcid      
 
@@ -2446,7 +2446,7 @@ MODULE RFLU_ModCommLists
       
         CASE DEFAULT
           IF ( global%myProcid == MASTERPROC .AND. & 
-               global%verbLevel > VERBOSE_LOW ) THEN  
+               global%verbLevel >= VERBOSE_HIGH) THEN  
             WRITE(STDOUT,'(3X,A)') sectionString
           END IF ! global%myProcid       
 
@@ -2477,7 +2477,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Reading communication lists done.'
     END IF ! global%myProcid
 
@@ -2542,12 +2542,12 @@ MODULE RFLU_ModCommLists
   'RFLU_ModCommLists.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN 
+         global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing communication lists...'
     END IF ! global%myProcid
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN        
+         global%verbLevel >= VERBOSE_HIGH) THEN        
       WRITE(STDOUT,'(A,3X,A,1X,I5.5)') SOLVER_NAME,'Global region:', & 
                                        pRegion%iRegionGlobal          
     END IF ! global%myProcid
@@ -2573,7 +2573,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Header information...'
     END IF ! global%myProcid 
 
@@ -2587,7 +2587,7 @@ MODULE RFLU_ModCommLists
     pGrid => pRegion%grid  
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Dimensions...'
     END IF ! global%myProcid    
     
@@ -2600,7 +2600,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
     
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Information...'
     END IF ! global%myProcid    
     
@@ -2618,7 +2618,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
     
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Cells...'
     END IF ! global%myProcid    
     
@@ -2638,7 +2638,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
     
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Vertices...'
     END IF ! global%myProcid    
     
@@ -2660,7 +2660,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN  
+         global%verbLevel >= VERBOSE_HIGH ) THEN  
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'End marker...'
     END IF ! global%myProcid
 
@@ -2682,7 +2682,7 @@ MODULE RFLU_ModCommLists
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Writing communication lists done.'
     END IF ! global%myProcid
 

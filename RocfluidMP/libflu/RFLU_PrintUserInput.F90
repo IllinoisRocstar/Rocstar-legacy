@@ -115,6 +115,7 @@ SUBROUTINE RFLU_PrintUserInput(regions)
 ! Echo user input
 ! ******************************************************************************
 
+  WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
   WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Echoing user input...'
 
 ! ==============================================================================
@@ -639,6 +640,7 @@ SUBROUTINE RFLU_PrintUserInput(regions)
 ! ******************************************************************************
 
   WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Echoing user input done.'
+  WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME
 
   CALL DeregisterFunction(global)
 

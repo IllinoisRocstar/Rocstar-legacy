@@ -129,7 +129,7 @@ MODULE RFLU_ModEdgeList
   'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Nullifying edge list...'         
     END IF ! global%verbLevel
 
@@ -150,7 +150,7 @@ MODULE RFLU_ModEdgeList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Nullifying edge list done.'
     END IF ! global%verbLevel
       
@@ -208,7 +208,7 @@ MODULE RFLU_ModEdgeList
   'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Nullifying edge-to-cell list...'         
     END IF ! global%verbLevel
 
@@ -230,7 +230,7 @@ MODULE RFLU_ModEdgeList
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Nullifying edge-to-cell list done.'
     END IF ! global%verbLevel
@@ -294,7 +294,7 @@ MODULE RFLU_ModEdgeList
   'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating edge list...'         
     END IF ! global%verbLevel
 
@@ -339,14 +339,14 @@ MODULE RFLU_ModEdgeList
       pGrid%nEdgesEst = 2*pGrid%nEdgesEst
 
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN
+           global%verbLevel >= VERBOSE_HIGH) THEN
         WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Corrected estimate of '// & 
                                  'number of edges.' 
       END IF ! global%verbLevel       
     END IF ! nBFaces
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,3X,A,3X,I9)') SOLVER_NAME,'Estimated number of '// & 
                                      'edges: ',pGrid%nEdgesEst        
     END IF ! global%verbLevel  
@@ -367,7 +367,7 @@ MODULE RFLU_ModEdgeList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating edge list done.'
     END IF ! global%verbLevel
 
@@ -426,7 +426,7 @@ MODULE RFLU_ModEdgeList
   'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating edge-to-cell list...'         
     END IF ! global%verbLevel
 
@@ -465,7 +465,7 @@ MODULE RFLU_ModEdgeList
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating edge-to-cell list done.'
     END IF ! global%verbLevel
 
@@ -536,7 +536,7 @@ MODULE RFLU_ModEdgeList
   'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building edge list...' 
       WRITE(STDOUT,'(A,3X,A)') SOLVER_NAME,'Building hash table...'         
     END IF ! global%verbLevel
@@ -556,7 +556,7 @@ MODULE RFLU_ModEdgeList
     CALL RFLU_CreateHashTable(global,pGrid%nEdgesEst)
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN                            
+         global%verbLevel >= VERBOSE_HIGH ) THEN                            
       WRITE(STDOUT,'(A,5X,A,1X,I9)') SOLVER_NAME,'Hash table size:    '// &
                                      '       ',hashTableSize
     END IF ! global%verbLevel
@@ -569,7 +569,7 @@ MODULE RFLU_ModEdgeList
     nEdges = 0
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_LOW ) THEN                              
+         global%verbLevel >= VERBOSE_HIGH) THEN                              
       WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Looping over cell types...'
     END IF ! global%verbLevel  
 
@@ -579,7 +579,7 @@ MODULE RFLU_ModEdgeList
 
     IF ( pGrid%nTetsTot /= 0 ) THEN
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN   
+           global%verbLevel >= VERBOSE_HIGH) THEN   
         WRITE(STDOUT,'(A,7X,A)') SOLVER_NAME,'Tetrahedra...'
       END IF ! global%verbLevel
     END IF ! pGrid%nTetsTot
@@ -605,7 +605,7 @@ MODULE RFLU_ModEdgeList
 
     IF ( pGrid%nHexsTot /= 0 ) THEN
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN   
+           global%verbLevel >= VERBOSE_HIGH) THEN   
         WRITE(STDOUT,'(A,7X,A)') SOLVER_NAME,'Hexahedra...'
       END IF ! global%verbLevel
     END IF ! pGrid%nHexsTot
@@ -631,7 +631,7 @@ MODULE RFLU_ModEdgeList
 
     IF ( pGrid%nPrisTot /= 0 ) THEN
       IF ( global%myProcid == MASTERPROC .AND. & 
-           global%verbLevel > VERBOSE_LOW ) THEN   
+           global%verbLevel >= VERBOSE_HIGH) THEN   
         WRITE(STDOUT,'(A,7X,A)') SOLVER_NAME,'Prisms...'
       END IF ! global%verbLevel
     END IF ! pGrid%nPrisTot
@@ -657,7 +657,7 @@ MODULE RFLU_ModEdgeList
 
     IF ( pGrid%nPyrsTot /= 0 ) THEN
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN   
+           global%verbLevel >= VERBOSE_HIGH) THEN   
         WRITE(STDOUT,'(A,7X,A)') SOLVER_NAME,'Pyramids...'
       END IF ! global%verbLevel
     END IF ! pGrid%nPyrsTot
@@ -684,7 +684,7 @@ MODULE RFLU_ModEdgeList
     pGrid%nEdgesTot = nEdges
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_LOW ) THEN
+         global%verbLevel >= VERBOSE_HIGH) THEN
       WRITE(STDOUT,'(A,5X,A,6X,I9)') SOLVER_NAME,'Hash table collisions:', & 
                                      hashTableCollisions  
     END IF ! global%verbLevel
@@ -733,8 +733,8 @@ MODULE RFLU_ModEdgeList
 ! ==============================================================================
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN
-      IF ( global%verbLevel > VERBOSE_LOW ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN
+      !IF ( global%verbLevel >= VERBOSE_LOW ) THEN   
         WRITE(STDOUT,'(A,5X,A)')       SOLVER_NAME,'Edge-type statistics:' 
         WRITE(STDOUT,'(A,7X,A,4X,I9)') SOLVER_NAME,'Total edges:          ', & 
                                        pGrid%nEdgesTot        
@@ -745,7 +745,7 @@ MODULE RFLU_ModEdgeList
                                        ekCntr(EDGE_KIND_AV)
         WRITE(STDOUT,'(A,7X,A,4X,I9)') SOLVER_NAME,'Virtual-virtual edges:', & 
                                        ekCntr(EDGE_KIND_VV)
-      END IF ! global%verbLevel
+      !END IF ! global%verbLevel
     END IF ! global%myProcid     
 
 ! ******************************************************************************
@@ -938,7 +938,7 @@ MODULE RFLU_ModEdgeList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building edge list done.'
     END IF ! global%verbLevel
 
@@ -1008,7 +1008,7 @@ MODULE RFLU_ModEdgeList
   'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building edge-to-cell list...'         
     END IF ! global%verbLevel      
 
@@ -1101,7 +1101,7 @@ MODULE RFLU_ModEdgeList
 
     DO iPass = 1,2
       IF ( global%myProcid == MASTERPROC .AND. &
-           global%verbLevel > VERBOSE_LOW ) THEN   
+           global%verbLevel >= VERBOSE_HIGH) THEN   
         WRITE(STDOUT,'(A,3X,A,1X,I1)') SOLVER_NAME,'Pass:',iPass
       END IF ! global%verbLevel
 
@@ -1121,7 +1121,7 @@ MODULE RFLU_ModEdgeList
     
       IF ( pGrid%nTetsTot /= 0 ) THEN
         IF ( global%myProcid == MASTERPROC .AND. &
-             global%verbLevel > VERBOSE_LOW ) THEN   
+             global%verbLevel >= VERBOSE_HIGH) THEN   
           WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Tetrahedra...'
         END IF ! global%verbLevel
       END IF ! pGrid%nTetsTot
@@ -1165,7 +1165,7 @@ MODULE RFLU_ModEdgeList
     
       IF ( pGrid%nHexsTot /= 0 ) THEN
         IF ( global%myProcid == MASTERPROC .AND. &
-             global%verbLevel > VERBOSE_LOW ) THEN   
+             global%verbLevel >= VERBOSE_HIGH) THEN   
           WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Hexahedra...'
         END IF ! global%verbLevel
       END IF ! pGrid%nHexsTot
@@ -1209,7 +1209,7 @@ MODULE RFLU_ModEdgeList
     
       IF ( pGrid%nPrisTot /= 0 ) THEN
         IF ( global%myProcid == MASTERPROC .AND. &
-             global%verbLevel > VERBOSE_LOW ) THEN   
+             global%verbLevel >= VERBOSE_HIGH) THEN   
           WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Prisms...'
         END IF ! global%verbLevel
       END IF ! pGrid%nPrisTot
@@ -1253,7 +1253,7 @@ MODULE RFLU_ModEdgeList
     
       IF ( pGrid%nPyrsTot /= 0 ) THEN
         IF ( global%myProcid == MASTERPROC .AND. &
-             global%verbLevel > VERBOSE_LOW ) THEN   
+             global%verbLevel >= VERBOSE_HIGH) THEN   
           WRITE(STDOUT,'(A,5X,A)') SOLVER_NAME,'Pyramids...'
         END IF ! global%verbLevel
       END IF ! pGrid%nPyrTot
@@ -1307,7 +1307,7 @@ MODULE RFLU_ModEdgeList
         END DO ! ieg
 
         IF ( global%myProcid == MASTERPROC .AND. & 
-             global%verbLevel > VERBOSE_LOW ) THEN 
+             global%verbLevel >= VERBOSE_HIGH) THEN 
           WRITE(STDOUT,'(A,5X,A,1X,I9)') SOLVER_NAME,'Size:',e2cSize
         END IF ! global%myProcid
 
@@ -1342,7 +1342,7 @@ MODULE RFLU_ModEdgeList
 ! ******************************************************************************  
     
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Building edge-to-cell list done.'
     END IF ! global%verbLevel
 
@@ -1404,7 +1404,7 @@ MODULE RFLU_ModEdgeList
   'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying edge list...'         
     END IF ! global%verbLevel
 
@@ -1435,7 +1435,7 @@ MODULE RFLU_ModEdgeList
 ! ******************************************************************************  
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying edge list done.'
     END IF ! global%verbLevel
 
@@ -1499,7 +1499,7 @@ MODULE RFLU_ModEdgeList
   'RFLU_ModEdgeList.F90')
 
     IF ( global%myProcid == MASTERPROC .AND. & 
-         global%verbLevel > VERBOSE_NONE ) THEN
+         global%verbLevel >= VERBOSE_HIGH ) THEN
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Destroying edge-to-cell list...'         
     END IF ! global%verbLevel
 
@@ -1544,7 +1544,7 @@ MODULE RFLU_ModEdgeList
 ! ******************************************************************************
 
     IF ( global%myProcid == MASTERPROC .AND. &
-         global%verbLevel > VERBOSE_NONE ) THEN   
+         global%verbLevel >= VERBOSE_HIGH ) THEN   
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME, &
                                'Destroying edge-to-cell list done.'
     END IF ! global%verbLevel
