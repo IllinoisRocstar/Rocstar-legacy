@@ -162,6 +162,8 @@ CONTAINS
 
     integer :: iprocs
 
+    logical :: meshError, meshErrorAll, restartAll
+
     glb%MPI_COMM_ROCFRAC = MPI_COMM_ROCSTAR
     rocstar_communicator = MPI_COMM_ROCSTAR
 
@@ -187,8 +189,9 @@ CONTAINS
 
     
     CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,ierr)
-    IF(MyId.eq.0 .AND. glb%debug_state) PRINT*,'ROCFRAC: ....Done Reading input deck.'
-
+    IF(MyId.eq.0 .AND. glb%debug_state) THEN
+      WRITE(6,'(A)') 'Rocfrac: ....Done Reading input deck.'
+    ENDIF
 
 ! -- Read in roc_face data structure for extracted 2D mesh.
 !    mapnode maps the surface nodes to the volume mesh's nodes
@@ -209,7 +212,9 @@ CONTAINS
 
 !   glb%InterfaceSVbar = 0.d0
     
-   IF(myid.EQ.0 .AND. glb%debug_state) PRINT*,'ROCFRAC: Reading Mesh'
+   IF(myid.EQ.0 .AND. glb%debug_state) THEN
+     WRITE(6,'(A)')'Rocfrac: Reading Mesh'
+   ENDIF
 
 ! - Start 
 ! - Process the 3D mesh
@@ -319,6 +324,9 @@ CONTAINS
       END DO 
 
       startPt = endPt + 1
+    
+      meshError = .false.
+      meshErrorAll = .false.
 
       IF(ChrElType(1:chrlngth).EQ.':T10')THEN
          CALL COM_get_size( VolIn//".:T10", MyId+1, glb%NumElVol)
@@ -330,10 +338,19 @@ CONTAINS
          CALL COM_get_size( VolIn//".:H8", MyId+1, glb%NumElVol)
          CALL COM_set_size( volWin//'.:H8', MyId+1, glb%NumElVol)
       ELSE
-         PRINT*,'ROCFRAC: ERROR: Volume mesh type element not supported'
-         PRINT*,'Read in Element Type :: ', ChrElType(1:chrlngth)
-         CALL MPI_FINALIZE(glb%MPI_COMM_ROCFRAC,ierr)
+         meshError = .true.
       ENDIF
+
+      CALL MPI_REDUCE(meshError, meshErrorAll, 1, MPI_LOGICAL, &
+           MPI_LOR,0,glb%MPI_COMM_ROCFRAC,ierr)    
+ 
+      IF( myid.eq.0 .and. meshErrorAll .eqv. .true.) THEN 
+         WRITE(0,'(A,A)')'Rocfrac: Error: Volume mesh type', &
+                         ' element not supported'
+         WRITE(0,'(A,A)')'Rocfrac: Read in Element Type :: ',&
+                         ChrElType(1:chrlngth)
+         CALL MPI_FINALIZE(glb%MPI_COMM_ROCFRAC,ierr)
+     END IF
 
    END DO
 
@@ -545,7 +562,7 @@ CONTAINS
     
    CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,ierr)
    IF(MyId.EQ.0 .AND. glb%debug_state) THEN
-     PRINT*,'ROCFRAC: Finished Reading Solids Mesh'
+     WRITE(6,'(A)') 'Rocfrac: Finished Reading Solids Mesh'
    ENDIF
 
    IF((glb%DebondPart.eqv..false.).AND.(glb%DebondPart_Matous.eqv..false.))THEN
@@ -740,11 +757,19 @@ CONTAINS
 
     ENDIF
 
-
-    IF(InitialTime.NE.0.d0 .AND. glb%Verb.gt.0)THEN
-       PRINT*,'ROCFRAC: RESTARTING, SOLIDS'
+    restartAll = .false.
+    IF(InitialTime.NE.0.d0)THEN
        glb%ReStart = .TRUE.
     ENDIF
+
+    CALL MPI_REDUCE(glb%ReStart, restartAll, 1, MPI_LOGICAL, &
+           MPI_LOR,0,glb%MPI_COMM_ROCFRAC,ierr)    
+
+    IF(glb%Verb.gt.0 .and. myid.eq.0 .and. &
+       restartAll .eqv. .true.) THEN
+      WRITE(6,'(A)') 'Rocfrac: Restarting, Solids'
+    END IF
+
    CALL COM_new_attribute(volwin//'.BCValue','p',COM_DOUBLE, 1, '')
    CALL COM_set_size( volwin//'.BCValue', MyId+1, glb%NumNdsBCcrypt*6)
    CALL COM_set_array( volwin//'.BCValue', MyId+1, glb%BCValueGlb, 1)
@@ -1183,8 +1208,12 @@ endif
     IF(glb%HeatTransSoln) ALLOCATE(RnetHT(1:glb%NumNP))
 
     IF(MyId.EQ.0 .AND. glb%Verb.gt.0)THEN
-       PRINT*,'ROCFRAC:  Time Step             Dt'
-       PRINT*,'ROCFRAC: -------------------------'
+       WRITE(6,'(A,A6,4(A15))')'Rocfrac:','Step',&
+             '(Current DT', 'Global DT',&
+             'Current DT','Global Time'
+       WRITE(6,'(A,A21)')'Rocfrac:','- Solid DT)'
+       WRITE(6,'(A,A)')'Rocfrac: ---------------------------',&
+                     '--------------------------------------'
     ENDIF
 
     glb%CurrTime = CurrentTime
@@ -1215,7 +1244,7 @@ endif
 
        glb%CurrTime = CurrentTime + (CurrentTimestep-CurrentTimestepSolid)
 
-       IF(MyId.EQ.0 .AND. glb%Verb.gt.0) WRITE(*,'(a10,i10,4e12.4)')'ROCFRAC:',&
+       IF(MyId.EQ.0 .AND. glb%Verb.gt.0) WRITE(6,'(a,i6,4e15.4)')'Rocfrac:',&
              istep,(CurrentTimestep-CurrentTimestepSolid),&
              glb%DT,CurrentTimestep,glb%CurrTime
 
@@ -1396,7 +1425,9 @@ endif
 
        ENDIF ! END ALE OPTION
 
-       IF(DEBUG) print*,'finished ale'
+       IF(MyId.Eq.0 .AND. DEBUG) THEN
+         WRITE(6,'(A)') 'Rocfrac: finished ale'
+       ENDIF
 
 
 
@@ -1424,7 +1455,9 @@ endif
 !!$
 !!$       ENDIF
 
-       IF(DEBUG) PRINT*,'Applying Pressure Loading'
+       IF(MyId.Eq.0 .AND. DEBUG) THEN
+         WRITE(6,'(A)') 'Rocfrac: Applying Pressure Loading'
+       ENDIF
 
        IF(glb%iElType.EQ.8)THEN
 
@@ -1462,8 +1495,9 @@ endif
        ENDIF
 
 
-       IF(DEBUG) PRINT*,'End Pressure Loading'
-
+       IF(MyId.Eq.0 .AND. DEBUG) THEN
+         WRITE(6,'(A)') 'Rocfrac: End Pressure Loading'
+       ENDIF
 !!$       CALL TractLoad(Rnet,glb%NumNP, &
 !!$            glb%InterfaceSFElemTract, &
 !!$            glb%InterfaceSFNumElems, glb%InterfaceSFNumNodes, &
@@ -1475,7 +1509,9 @@ endif
 !    Uses the non-solid/fluid surface mesh.
 
 
-       IF(DEBUG) PRINT*,'Start traction loading'
+       IF(MyId.Eq.0 .AND. DEBUG) THEN
+         WRITE(6,'(A)') 'Rocfrac: Start traction loading'
+       ENDIF
 
        IF(glb%EnforceTractionS.OR.glb%EnforceTractionSF)THEN    
  !         IF(glb%UnDefConfig)THEN
@@ -1511,8 +1547,10 @@ endif
                      glb%MapNodeS,glb%LwrBnd,glb%UppBnd,glb%Meshcoor,glb%Disp,glb%MapSElVolEl,&
                      glb%ElConnVol,glb%iElType,glb%NumElVol,glb%DummyTractVal*glb%prop)
 
-                IF(myid.EQ.0 .AND. glb%Verb.gt.1) PRINT*,'Pressure Solid =',&
-                     glb%DummyTractVal*glb%prop
+                IF(myid.EQ.0 .AND. glb%Verb.gt.1) THEN
+                  WRITE(6,'(A,F12.4)') 'Rocfrac: Pressure Solid =', &
+                         glb%DummyTractVal*glb%prop
+                ENDIF
 
              ENDIF
 
@@ -1524,8 +1562,10 @@ endif
                      glb%MapNodeSF,glb%LwrBnd,glb%UppBnd,glb%Meshcoor,glb%Disp,glb%MapSFElVolEl,&
                      glb%ElConnVol,glb%iElType,glb%NumElVol,glb%DummyTractVal*glb%prop)
 
-                IF(myid.EQ.0 .AND. glb%Verb.gt.1) PRINT*,'Pressure Solid/Fluid =',&
+                IF(myid.EQ.0 .AND. glb%Verb.gt.1) THEN
+                  WRITE(6,'(A,F12.4)') 'Rocfrac: Pressure Solid/Fluid =',&
                      glb%DummyTractVal*glb%prop
+                ENDIF
 
                 
                 CALL TractPressLoad(Rnet,glb%NumNP, &
@@ -1544,7 +1584,9 @@ endif
 
 ! -- Calculate R_in, R_damp
 
-       IF(DEBUG) print*,'start UpdateStructural'
+       IF(myid.EQ.0 .AND. DEBUG) THEN
+         WRITE(6,'(A)') 'Rocfrac: start UpdateStructural'
+       ENDIF
 
        IF(glb%HeatTransSoln)THEN
 
@@ -1562,7 +1604,9 @@ endif
 
 
 
-          IF(DEBUG) PRINT*,'MaxTemperature',MAXVAL(glb%Temperature)
+          IF(myid.EQ.0 .AND.glb%Verb.gt.1) THEN
+            WRITE(6,'(A)') 'Rocfrac: MaxTemperature',MAXVAL(glb%Temperature)
+          ENDIF
 
 ! should not you have updatestrural here
        ELSE
@@ -1570,7 +1614,9 @@ endif
        ENDIF
 
 
-       IF(DEBUG) print*,'finished UpdateStructural'
+       IF(myid.EQ.0 .AND. DEBUG) THEN
+         WRITE(6,'(A)') 'Rocfrac: finished UpdateStructural'
+       ENDIF
 
        CALL principal_stress(glb%S11,glb%S22,glb%S33, &
             glb%S12,glb%S23,glb%S13, &
@@ -1666,7 +1712,9 @@ endif
 ! -- (13) APPLY BOUNDARY CONDITIONS 
 !
 
-       IF(DEBUG) print*,'start bc'
+       IF(myid.EQ.0 .AND. DEBUG) THEN 
+         WRITE(6,'(A)') 'Rocfrac: start bc'
+       ENDIF
 
        IF(glb%NumNdsBC.NE.0)THEN
           CALL bc_enforce(glb%NumNdsBC,glb%NumNP,glb%BCFlag,glb%BCvalue,glb%slope,glb%prop,&
@@ -1675,8 +1723,9 @@ endif
        ENDIF
 
 
-       IF(DEBUG) print*,'finished bc'
-
+       IF(myid.EQ.0 .AND. DEBUG) THEN 
+         WRITE(6,'(A)') 'Rocfrac: finished bc'
+       ENDIF
 
 !-- (1) UPDATE VELOCITY AND DISPLACEMENT VECTORS (structural)
 
@@ -1698,8 +1747,9 @@ endif
           glb%Disp(:) = glb%DT*glb%DT*glb%Accel(:)*0.5d0 + glb%DT*glb%VeloHalf(:) + glb%Disp(:)
        ENDIF
 
-       IF(DEBUG) PRINT*,'MAX DISPLACEMENT =', MAXVAL(glb%Disp(:))
-
+       IF(myid.EQ.0 .AND. glb%Verb.gt.1) THEN 
+         WRITE(6,'(A,F12.4)') 'Rocfrac: MAX DISPLACEMENT =', MAXVAL(glb%Disp(:))
+       ENDIF
 !!$       DO i = 1, 3*glb%numnp
 !!$          IF(glb%Disp(i).NE.0.d0) PRINT*,i,glb%Disp(i)
 !!$       ENDDO
@@ -1721,8 +1771,9 @@ endif
 ! -- Mass/Volume Conservation
 
 
-       IF(DEBUG) print*,'finished mass volume conservation'
-
+       IF(myid.EQ.0 .AND. DEBUG) THEN 
+         WRITE(6,'(A)') 'Rocfrac: finished mass volume conservation'
+       ENDIF
        glb%TotalMassSolidp = 0.d0
        glb%TotalGeomVolp = 0.d0
 
@@ -1750,7 +1801,9 @@ endif
     DEALLOCATE(Rnet)
 
 
-    IF(DEBUG) print*,'structural boundary conditions start'
+    IF(myid.EQ.0 .AND. DEBUG) THEN  
+      WRITE(6,'(A)') 'Rocfrac: structural boundary conditions start'
+    ENDIF
 
     icnt1 = 1
     icnt5 = 0
@@ -1770,7 +1823,9 @@ endif
        ENDIF
     ENDDO
 
-    IF(myid.EQ.0 .AND. DEBUG) PRINT*,'ROCFRAC: END SOLID STEP'
+    IF(myid.EQ.0 .AND. DEBUG) THEN 
+      WRITE(6,'(A)') 'Rocfrac: END SOLID STEP'
+    ENDIF
 
     CALL RocFracInterfaceBuff(glb)
 
@@ -1930,8 +1985,10 @@ endif
  !   WRITE(*,*) 'AAA'
  !   CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,ierr)
  !   STOP
-    IF(glb%HeatTransSoln .eqv. .true. .AND. glb%Verb.gt.1)THEN
-       WRITE(*,*) 'Doing heat transfer'
+    IF(glb%HeatTransSoln .eqv. .true.)THEN
+       IF(myid.EQ.0 .AND. glb%Verb .gt. 1) THEN
+         WRITE(*,'(A)') 'Rocfrac: Doing heat transfer'
+       ENDIF
        DO iInterfaceNode = 1, glb%InterfaceSFNumNodes
           k = glb%MapNodeSF(iInterfaceNode)
   

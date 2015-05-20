@@ -89,11 +89,12 @@ CONTAINS
 ! Subroutine to register interface data.
     CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,i)
     IF(myid.eq.0 .AND. glb%debug_state) THEN
-       WRITE (*,*) 'ROCFRAC: Calling RocFrac Register...'
+       WRITE(6,'(A)') 'Rocfrac: Calling RocFrac Register...'
     ENDIF
 ! Get propellant density from Rocburn ! fix if more then one material
     IF(myid.eq.0 .AND. glb%Verb.gt.1) THEN
-       WRITE (*,*) 'ROCFRAC: Propellant density rho(1) is ', glb%rho(1)
+       WRITE(6,'(A,e11.4)') 'Rocfrac: Propellant density rho(1) is',&
+                       glb%rho(1)
     ENDIF
 !!$ CALL COM_create_window(surWin)
     CALL COM_new_window(surWin)
@@ -172,8 +173,10 @@ CONTAINS
                 CALL COM_set_size( surWin//".:q4", pane, glb%InterfaceSFNumElems)
                 glb%iElType2D = 4
              ELSE
-                PRINT*,'ROCFRAC ERROR: Surface mesh type element not supported'
-                PRINT*,'Read in Element Type :: ', ChrElType(1:chrlngth)
+                WRITE(0,'(A,A)') 'Rocfrac: Error: Surface mesh type',&
+                               ' element not supported'
+                WRITE(0,'(A,A)') 'Read in Element Type :: ',&
+                                 ChrElType(1:chrlngth)
                 CALL MPI_FINALIZE(glb%MPI_COMM_ROCFRAC,ierr)
              ENDIF
              
@@ -308,8 +311,10 @@ CONTAINS
                 CALL COM_set_size( surWin//".:q4", pane, glb%InterfaceSNumElems)
                 glb%iElType2D = 4
              ELSE
-                PRINT*,'ROCFRAC: ERROR: Surface mesh type element not supported'
-                PRINT*,'ROCFRAC: Read in Element Type :: ', ChrElType(1:chrlngth)
+                WRITE(0,'(A,A)') 'Rocfrac: Error: Surface mesh type',&
+                               ' element not supported'
+                WRITE(0,'(A,A)') 'Read in Element Type :: ',&
+                                 ChrElType(1:chrlngth)
                 CALL MPI_FINALIZE(glb%MPI_COMM_ROCFRAC,ierr)
              ENDIF
              
@@ -408,8 +413,10 @@ CONTAINS
                 CALL COM_set_size( surWin//".:q4", pane, glb%InterfaceSFnbNumElems)
                 glb%iElType2D = 4
              ELSE
-                PRINT*,'ROCFRAC: ERROR: Surface mesh type element not supported'
-                PRINT*,'ROCFRAC: Read in Element Type :: ', ChrElType(1:chrlngth)
+                WRITE(0,'(A,A)') 'Rocfrac: Error: Surface mesh type',&
+                               ' element not supported'
+                WRITE(0,'(A,A)') 'Read in Element Type :: ',&
+                                 ChrElType(1:chrlngth)
                 CALL MPI_FINALIZE(glb%MPI_COMM_ROCFRAC,ierr)
              ENDIF
              
@@ -494,7 +501,8 @@ CONTAINS
            endif
                 
       ELSE
-          WRITE(*,*) 'Rocfrac: Error: Invalid bcflag',bcflag,' on surface pane',pane
+          WRITE(0,'(A,i4,A,i4)') 'Rocfrac: Error: Invalid bcflag', &
+                                  bcflag,' on surface pane',pane
           STOP
       ENDIF
 
@@ -545,7 +553,7 @@ CONTAINS
 
     CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,i)
     IF(myid.eq.0 .AND. glb%debug_state) THEN
-       WRITE (*,*) 'ROCFRAC: Calling RocFrac Register... Done'
+       WRITE(6,'(A)') 'Rocfrac: Calling RocFrac Register... Done'
     ENDIF
 11  FORMAT(A,'_',A,A1)
 !---------------------------------------------------------------------------------------------------
