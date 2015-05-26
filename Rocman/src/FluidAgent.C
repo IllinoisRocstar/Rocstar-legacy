@@ -82,7 +82,7 @@ FluidAgent::FluidAgent(Coupling *cp, std::string mod, std::string obj, MPI_Comm 
 
 void FluidAgent::load_module() 
 {
-  MAN_DEBUG(1, ("[%d] Rocstar: FluidAgent::load_module %s %s.\n", comm_rank, rocmod_name.c_str(), mod_instance.c_str()));
+  MAN_DEBUG(3, ("[%d] Rocstar: FluidAgent::load_module %i %s %s.\n", comm_rank, rocmod_name.c_str(), mod_instance.c_str()));
 
 #ifdef STATIC_LINK
 # ifdef RFLO

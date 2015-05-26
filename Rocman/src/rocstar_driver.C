@@ -428,6 +428,8 @@ void RocmanControl_parameters::read( MPI_Comm comm, int comm_rank)
 
   man_verbose = verbose;
 
+  std::cout << "verbose = " << verbose << std::endl;
+  std::cout << "man_verbose = " << man_verbose << std::endl;
    // set options for Rocout
   int OUT_set_option = COM_get_function_handle( "OUT.set_option");
   const char *rankWidth = "4";
