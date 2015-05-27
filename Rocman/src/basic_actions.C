@@ -49,7 +49,7 @@ void SetValueDouble::init( double t) {
 }
 
 void SetValueDouble::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocstar: SetValueDouble::run() %s with %e.\n", attr[0], v));
+  MAN_DEBUG(3, ("Rocstar: SetValueDouble::run() %s with %e.\n", attr[0], v));
   COM_call_function( RocBlas::copy_scalar, &v, &attr_hdl);
 }
 
@@ -76,7 +76,7 @@ void CopyValue::init( double t) {
 }
 
 void CopyValue::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocstar: CopyValue::run() %s => %s.\n", attr[0], attr[1]));
+  MAN_DEBUG(3, ("Rocstar: CopyValue::run() %s => %s.\n", attr[0], attr[1]));
   if (!condition || *condition)
   COM_call_function( RocBlas::copy, &from_hdl, &to_hdl);
 }
@@ -92,11 +92,11 @@ DummyPrint::DummyPrint( BurnAgent *bag, SolidAgent *sag, FluidAgent *fag, const 
 
 // Obtain the attribute handles
 void DummyPrint::init( double t) {
-  MAN_DEBUG(2, ("Rocstar: DummyPrint::init() with %s.\n", label.c_str()));
+  MAN_DEBUG(3, ("Rocstar: DummyPrint::init() with %s.\n", label.c_str()));
 }
 
 void DummyPrint::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocstar: DummyPrint::run() with %s.\n", label.c_str()));
+  MAN_DEBUG(3, ("Rocstar: DummyPrint::run() with %s.\n", label.c_str()));
 
   //debug_print(sagent->solidBuf+".x", 202, 1, "DummyPrint");
   //debug_print(bagent->iburn_ng+".Tflm_alp", 102, 0);
@@ -123,13 +123,13 @@ void BCInvoker::init( double t) {
 }
 
 void BCInvoker::run( double t, double dt, double alpha) {
-  MAN_DEBUG(1, ("Rocstar: BCInvoker::run() agent: %s level: %d.\n", agent->get_agent_name().c_str(), level));
+  MAN_DEBUG(3, ("Rocstar: BCInvoker::run() agent: %s level: %d.\n", agent->get_agent_name().c_str(), level));
 
 //RAF pass alpha, not time!!
 //  agent->obtain_bc(&t, &level);
   agent->obtain_bc(&alpha, &level);
 
-  MAN_DEBUG(1, ("Rocstar: BCInvoker::run() agent: %s level: %d DONE.\n", agent->get_agent_name().c_str(), level));
+  MAN_DEBUG(3, ("Rocstar: BCInvoker::run() agent: %s level: %d DONE.\n", agent->get_agent_name().c_str(), level));
 }
 
 GMInvoker::GMInvoker( Agent *ag): 
@@ -146,11 +146,11 @@ void GMInvoker::init( double t) {
 }
 
 void GMInvoker::run( double t, double dt, double alpha) {
-  MAN_DEBUG(1, ("Rocstar: GMInvoker::run() agent: %s with alpha=%e.\n", agent->get_agent_name().c_str(), alpha));
+  MAN_DEBUG(3, ("Rocstar: GMInvoker::run() agent: %s with alpha=%e.\n", agent->get_agent_name().c_str(), alpha));
 
   agent->obtain_gm(&alpha);
 
-  MAN_DEBUG(1, ("Rocstar: GMInvoker::run() agent: %s with alpha=%e DONE.\n", agent->get_agent_name().c_str(), alpha));
+  MAN_DEBUG(3, ("Rocstar: GMInvoker::run() agent: %s with alpha=%e DONE.\n", agent->get_agent_name().c_str(), alpha));
 }
 
 BCInitInvoker::BCInitInvoker( Agent *ag): 
@@ -162,18 +162,18 @@ BCInitInvoker::BCInitInvoker( Agent *ag):
 }
 
 void BCInitInvoker::init( double t) {
-  MAN_DEBUG(1, ("Rocstar: BCInitInvoker::init() agent: %s .\n", agent->get_agent_name().c_str()));
+  MAN_DEBUG(3, ("Rocstar: BCInitInvoker::init() agent: %s .\n", agent->get_agent_name().c_str()));
     //  init bcactions
   agent->init_bcinitaction(t);
-  MAN_DEBUG(1, ("Rocstar: BCInitInvoker::init() agent: %s DONE.\n", agent->get_agent_name().c_str()));
+  MAN_DEBUG(3, ("Rocstar: BCInitInvoker::init() agent: %s DONE.\n", agent->get_agent_name().c_str()));
 }
 
 void BCInitInvoker::run( double t, double dt, double alpha) {
-  MAN_DEBUG(1, ("Rocstar: BCInitInvoker::run() agent: %s t:%e dt:%e alpha:%e.\n", agent->get_agent_name().c_str(), t, dt, alpha));
+  MAN_DEBUG(3, ("Rocstar: BCInitInvoker::run() agent: %s t:%e dt:%e alpha:%e.\n", agent->get_agent_name().c_str(), t, dt, alpha));
 
   agent->run_bcinitaction(t, dt);
 
-  MAN_DEBUG(1, ("Rocstar: BCInitInvoker::run() agent: %s DONE.\n", agent->get_agent_name().c_str()));
+  MAN_DEBUG(3, ("Rocstar: BCInitInvoker::run() agent: %s DONE.\n", agent->get_agent_name().c_str()));
 }
 
 // POST_UPDATE_FLUID
@@ -240,11 +240,11 @@ void ComputeFluidLoad_ALE::init( double t)
   fb_rhof_alp_hdl = COM_get_attribute_handle ( fagent->fluidBufB+".rhof_alp");
   fb_mdot_tmp_hdl = COM_get_attribute_handle ( fagent->fluidBufB+".mdot_tmp");
 
-  MAN_DEBUG(2, ("ComputeFluidLoad_ALE::init() called - traction_mode: %d .\n", traction_mode));
+  MAN_DEBUG(3, ("ComputeFluidLoad_ALE::init() called - traction_mode: %d .\n", traction_mode));
 }
 
 void ComputeFluidLoad_ALE::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocstar: ComputeFluidLoad_ALE::run() with t:%e dt:%e.\n", t, dt));
+  MAN_DEBUG(3, ("Rocstar: ComputeFluidLoad_ALE::run() with t:%e dt:%e.\n", t, dt));
   // ts = tf + ( mdot*Vs
 
   // part 1  (POST_UPDATE_FLUID in fluid_agent.f90)
@@ -320,7 +320,7 @@ void ComputeMeshMotion::init( double t) {
 
 // gm callback
 void ComputeMeshMotion::run( double t_dummy, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocstar: ComputeMeshMotion::run() with dt:%e alpha:%e.\n", dt, alpha));
+  MAN_DEBUG(3, ("Rocstar: ComputeMeshMotion::run() with dt:%e alpha:%e.\n", dt, alpha));
   
   COM_assertion_msg(alpha>=0.0, "ERROR: ComputeMeshMotion called with invalid alpha!");
 
@@ -359,7 +359,7 @@ static inline void load_rocon(const RocmanControl_parameters *param, MPI_Comm co
 static inline void load_rocprop(const RocmanControl_parameters *param, MPI_Comm comm)
 {
   if (COM_get_window_handle("PROP") <= 0) {
-    MAN_DEBUG(2, ("Rocstar: Loading module RocProp...\n"));
+    MAN_DEBUG(3, ("Rocstar: Loading module RocProp...\n"));
     COM_LOAD_MODULE_STATIC_DYNAMIC( Rocprop, "PROP");
 
     int PROP_set_option = COM_get_function_handle( "PROP.set_option");
@@ -383,7 +383,7 @@ static inline void load_rocprop(const RocmanControl_parameters *param, MPI_Comm 
 static inline void load_rocmap()
 {
   if (COM_get_window_handle("MAP") <= 0) {
-    MAN_DEBUG(2, ("Rocstar: Loading module RocMap...\n"));
+    MAN_DEBUG(3, ("Rocstar: Loading module RocMap...\n"));
     COM_LOAD_MODULE_STATIC_DYNAMIC( Rocmap, "MAP");
   }
 }
@@ -440,7 +440,7 @@ void ComputeFaceCenters::run( double t, double dt, double alpha_dummy) {
 
   if (b_cnts_hdl >= 0 || b_nrml_hdl >= 0) {
     load_rocsurf();
-    MAN_DEBUG(2, ("Rocstar: ComputeFaceCenters::run() with t:%e dt:%e b_cnts_hdl:%d b_nrml_hdl:%d.\n", t, dt, b_cnts_hdl, b_nrml_hdl));
+    MAN_DEBUG(3, ("Rocstar: ComputeFaceCenters::run() with t:%e dt:%e b_cnts_hdl:%d b_nrml_hdl:%d.\n", t, dt, b_cnts_hdl, b_nrml_hdl));
     if(b_cnts_hdl >= 0){
       SURF_n2f = COM_get_function_handle( "SURF.interpolate_to_centers");
       COM_call_function( SURF_n2f, &b_nc_hdl, &b_cnts_hdl);
@@ -513,7 +513,8 @@ void FluidPropagateSurface::run( double t, double dt, double alpha_dummy)
   int rank = 0;
   MPI_Comm mycomm = fagent->get_communicator();
   MPI_Comm_rank(mycomm,&rank);
-  MAN_DEBUG(2, ("Rocstar: FluidPropagateSurface::run() with t:%e dt:%e zoom:%f p_cnstr_type:%d.\n", t, dt, zoom, p_cnstr_type));
+  if(rank == 0)
+    MAN_DEBUG(2, ("Rocstar: FluidPropagateSurface::run() with t:%e dt:%e zoom:%f p_cnstr_type:%d.\n", t, dt, zoom, p_cnstr_type));
 
   double zero = 0.0;
   COM_call_function( RocBlas::copy_scalar, &zero, &p_rb_hdl);
@@ -678,7 +679,7 @@ void MassTransfer::init( double t) {
 }
 
 void MassTransfer::run( double t, double dt, double alpha_dummy) {
-  MAN_DEBUG(2, ("Rocstar: MassTransfer::run() with t:%e dt:%e.\n", t, dt));
+  MAN_DEBUG(3, ("Rocstar: MassTransfer::run() with t:%e dt:%e.\n", t, dt));
 
   double zero = 0.0;
   COM_call_function( RocBlas::copy_scalar, &zero, &f_mdot_hdl);
@@ -719,7 +720,7 @@ void ZoomInterface::run( double t, double dt, double alpha_dummy) {
 
   if (zoom <= 1.0) return;
 
-  MAN_DEBUG(2, ("Rocstar: ZoomInterface::run() with t:%e dt:%e zoom:%e.\n", t, dt, zoom));
+  MAN_DEBUG(3, ("Rocstar: ZoomInterface::run() with t:%e dt:%e zoom:%e.\n", t, dt, zoom));
 
   //  double z = zoom - 1;
 
@@ -761,7 +762,7 @@ void ComputeRhofvf::init( double t) {
 
 void ComputeRhofvf::run( double t, double dt, double alpha_dummy) {
 
-  MAN_DEBUG(2, ("Rocstar: ComputeRhofvf::run() with t:%e dt:%e.\n", t, dt));
+  MAN_DEBUG(3, ("Rocstar: ComputeRhofvf::run() with t:%e dt:%e.\n", t, dt));
 
   COM_call_function( RocBlas::mul, &f_vs_alp_hdl, &f_rhof_alp_hdl, &f_rhofvf_alp_hdl);
 }
@@ -795,7 +796,7 @@ void ComputeBurnPane::init( double t) {
 }
 
 void ComputeBurnPane::run( double t, double dt, double alpha_dummy) {
-  MAN_DEBUG(2, ("Rocstar: ComputeBurnPane::run() with t:%e dt:%e zoom:%f.\n", t, dt, zoom));
+  MAN_DEBUG(3, ("Rocstar: ComputeBurnPane::run() with t:%e dt:%e zoom:%f.\n", t, dt, zoom));
 
   // The rest of computation are on burning panes only
   // Note that b_rb_alp is used here as a temporary variable.
@@ -835,11 +836,11 @@ CopyBurnFromParentMesh::CopyBurnFromParentMesh(BurnAgent *bag, FluidAgent *fag):
 void CopyBurnFromParentMesh::init( double t) {
   burn_mesh = bagent->get_surface_window()+".mesh";
   parent_mesh = bagent->parentWin+".mesh";
-  MAN_DEBUG(2, ("Rocstar: CopyBurnFromParentMesh::init() with t:%e %s  %s.\n", t, burn_mesh.c_str(), parent_mesh.c_str()));
+  MAN_DEBUG(3, ("Rocstar: CopyBurnFromParentMesh::init() with t:%e %s  %s.\n", t, burn_mesh.c_str(), parent_mesh.c_str()));
 }
 
 void CopyBurnFromParentMesh::run( double t, double dt, double alpha_dummy) {
-  MAN_DEBUG(2, ("Rocstar: CopyBurnFromParentMesh::run() with t:%e dt:%e %s %s.\n", t, dt, burn_mesh.c_str(), parent_mesh.c_str()));
+  MAN_DEBUG(3, ("Rocstar: CopyBurnFromParentMesh::run() with t:%e dt:%e %s %s.\n", t, dt, burn_mesh.c_str(), parent_mesh.c_str()));
   COM_copy_attribute( burn_mesh.c_str(), parent_mesh.c_str());
 
 /*
@@ -865,7 +866,7 @@ void CopyBflagFromBurn::init( double t) {
 }
 
 void CopyBflagFromBurn::run( double t, double dt, double alpha_dummy) {
-  MAN_DEBUG(2, ("Rocstar: CopyBflagFromBurn::run() with t:%e dt:%e.\n", t, dt));
+  MAN_DEBUG(3, ("Rocstar: CopyBflagFromBurn::run() with t:%e dt:%e.\n", t, dt));
 
   
   if (!bagent->get_coupling()->initial_start() && 
@@ -909,7 +910,7 @@ void ComputePconn::run( double t, double dt, double alpha_dummy) {
 
   if (cond_addr && *cond_addr == 0) return;
 
-  MAN_DEBUG(2, ("Rocstar: (%s) ComputePconn::run() with t:%e dt:%e.\n", agent->get_agent_name().c_str(), t, dt));
+  MAN_DEBUG(3, ("Rocstar: (%s) ComputePconn::run() with t:%e dt:%e.\n", agent->get_agent_name().c_str(), t, dt));
 
   // Compute pconn for the whole surface, which will also be used
   // by surface propagation.
@@ -1030,7 +1031,7 @@ void Reset_du_alp::init( double t) {
 }
 
 void Reset_du_alp::run( double t, double dt, double alpha) {
-  MAN_DEBUG(2, ("Rocstar: Reset_du_alp::run().\n"));
+  MAN_DEBUG(3, ("Rocstar: Reset_du_alp::run().\n"));
   double zero = 0.0;
   COM_call_function( RocBlas::copy_scalar, &zero, &du_alp_hdl);
 }

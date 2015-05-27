@@ -365,7 +365,7 @@ SUBROUTINE RFLU_CentralSecondPatch_GL(pRegion,pPatch)
         END IF ! pRegion
 
         IF ( (global%checkLevel == CHECK_HIGH) .AND. &
-             (global%verbLevel == VERBOSE_HIGH) .AND. &
+             (global%verbLevel >= VERBOSE_HIGH) .AND. &
              (global%myProcid == MASTERPROC) .AND. &
              (decidePrintFlag .EQV. .TRUE.) ) THEN
           IF ( flx(1) > 0.0_RFREAL ) THEN
@@ -548,7 +548,7 @@ SUBROUTINE RFLU_CentralSecondPatch_GL(pRegion,pPatch)
         END IF ! pRegion
 
         IF ( (global%checkLevel == CHECK_HIGH) .AND. &
-             (global%verbLevel == VERBOSE_HIGH) .AND. &
+             (global%verbLevel >= VERBOSE_HIGH) .AND. &
              (global%myProcid == MASTERPROC) .AND. &
              (decidePrintFlag .EQV. .TRUE.) ) THEN
           IF ( flx(1) < 0.0_RFREAL ) THEN
@@ -588,7 +588,7 @@ SUBROUTINE RFLU_CentralSecondPatch_GL(pRegion,pPatch)
 ! ------------------------------------------------------------------------------
 
       IF ( (global%checkLevel == CHECK_HIGH) .AND. &
-           (global%verbLevel == VERBOSE_HIGH) .AND. &
+           (global%verbLevel >= VERBOSE_HIGH) .AND. &
            (global%myProcid == MASTERPROC) .AND. &
            (decidePrintFlag .EQV. .TRUE.) .AND. &
            (nLocs > 0) ) THEN

@@ -96,7 +96,7 @@ SUBROUTINE RFLO_PrintUserInput( regions )
   IF(global%nRegionsProc > 0) THEN
      WRITE(STDOUT,1010) SOLVER_NAME//' nRegions/Processor:',global%nRegionsProc
   ENDIF
-  IF (global%verbLevel.gt.VERBOSE_HIGH) then
+  IF (global%verbLevel.gt.VERBOSE_MED) then
      DO iProc=0,global%nProcAlloc-1
         WRITE(STDOUT,'(/,A,I5,A)',advance='no') SOLVER_NAME//' proc. ',iProc,': '
         DO iReg=1,global%nRegions
@@ -275,7 +275,7 @@ SUBROUTINE RFLO_PrintUserInput( regions )
 ! repeat for all regions ------------------------------------------------------
 
 
-  IF (global%verbLevel.gt.VERBOSE_HIGH) then
+  IF (global%verbLevel.gt.VERBOSE_MED) then
      DO iReg=1,global%nRegions
         WRITE(STDOUT,1025) SOLVER_NAME,iReg
         

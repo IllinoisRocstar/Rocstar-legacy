@@ -120,17 +120,19 @@
     CLOSE(ir)
 
     IF(G_APN%rank .eq. 0 .AND. G_APN%verbosity .gt. 0) THEN
-       WRITE(*,*) 'RocburnAPN: *********** Using APN Burn Model **************'
+       WRITE(6,'(A)') 'RocburnAPN: *********** Using APN Burn Model **************'
     ENDIF
     IF(G_APN%rank .eq. 0 .AND. G_APN%verbosity .gt. 1) THEN
-       WRITE(*,*) 'RocburnAPN:  Found a total of ',G_APN%nmat,' materials'
+       WRITE(6,'(A,i3,A)') 'RocburnAPN:  Found a total of ',G_APN%nmat,' materials'
        DO mat = 1, G_APN%nmat
-          WRITE(*,*) 'RocburnAPN:  a_p(',mat,')  =',G_APN%a_p(mat)
-          WRITE(*,*) 'RocburnAPN:  n_p(',mat,')  =',G_APN%n_p(mat)
-          WRITE(*,*) 'RocburnAPN:  nxmax= ',G_APN%nxmax
-          WRITE(*,*) 'RocburnAPN:  Tf_adiabatic(',mat,') = ',G_APN%Tf_adiabatic(mat)
-          WRITE(*,*) 'RocburnAPN:  To= ',G_APN%To
-          WRITE(*,*) 'RocburnAPN:  xmax(',mat,')  =',G_APN%xmax(mat)
+          WRITE(6,'(A,i3,A,f12.4)') 'RocburnAPN:  a_p(',mat,')  =',G_APN%a_p(mat)
+          WRITE(6,'(A,i3,A,f12.4)') 'RocburnAPN:  n_p(',mat,')  =',G_APN%n_p(mat)
+          WRITE(6,'(A,i3)') 'RocburnAPN:  nxmax= ',G_APN%nxmax
+          WRITE(6,'(A,i3,A,f12.4)') 'RocburnAPN:  Tf_adiabatic(',mat,') = ',&
+                                     G_APN%Tf_adiabatic(mat)
+          WRITE(6,'(A,f12.4)') 'RocburnAPN:  To= ',G_APN%To
+          WRITE(6,'(A,i3,A,f12.4)') 'RocburnAPN:  xmax(',mat,')  =',&
+                                    G_APN%xmax(mat)
        END DO
     END IF
 

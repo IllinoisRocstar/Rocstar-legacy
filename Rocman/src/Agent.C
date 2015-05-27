@@ -204,8 +204,9 @@ Agent::Agent(Coupling *cp, std::string mod, std::string obj,
     withgm(wgm), rocmod_name( mod), mod_instance(obj), skipInputIO(skipio)
 {
   MPI_Comm_rank( com, &comm_rank);
-  
-  MAN_DEBUG(3, ("Rocstar: Agent::Agent create window %s.\n", get_agent_name().c_str()));
+ 
+  if(comm_rank == 0) 
+    MAN_DEBUG(3, ("Rocstar: Agent::Agent create window %s.\n", get_agent_name().c_str()));
   create_window(agent_name.c_str());
 
   inDir = obj;  inDir.append("/Rocin/");
@@ -645,7 +646,7 @@ write_data_files( double t, const std::string base, const std::string attr,
   std::string timeLevel; get_time_string( t, timeLevel);
   fname.append( timeLevel); fname.append("_");
 
-  MAN_DEBUG(1, ("[%d] Rocstar: Agent %s::write_data_file with file prefix %s at t:%e.\n", comm_rank, get_agent_name().c_str(), fname.c_str(), t));
+  MAN_DEBUG(3, ("[%d] Rocstar: Agent %s::write_data_file with file prefix %s at t:%e.\n", comm_rank, get_agent_name().c_str(), fname.c_str(), t));
 
   int attr_hdl = COM_get_attribute_handle( attr);
   COM_call_function( write_attr_handle, fname.c_str(), &attr_hdl, 
@@ -677,8 +678,7 @@ write_control_file( double t, const std::string base, const std::string window) 
   ctrl_fname.append("_in_"); ctrl_fname.append( timeLevel); 
   ctrl_fname.append(".txt");
   
-  if ( comm_rank == 0)
-    MAN_DEBUG(1, ("[%d] Rocstar: Agent %s::write_control_file %s with file prefix %s at t:%e.\n", comm_rank, get_agent_name().c_str(), ctrl_fname.c_str(), fname.c_str(), t));
+  MAN_DEBUG(3, ("[%d] Rocstar: Agent %s::write_control_file %s with file prefix %s at t:%e.\n", comm_rank, get_agent_name().c_str(), ctrl_fname.c_str(), fname.c_str(), t));
 
   COM_call_function( write_ctrl_handle, window.c_str(), fname.c_str(), 
 		     ctrl_fname.c_str());
@@ -725,7 +725,8 @@ void Agent::init_convergence( int iPredCorr)
 void Agent::store_solutions( int converged)
 {
   int i;
-  MAN_DEBUG(1, ("[%d] Agent %s::store_solutions converged=%d.\n", comm_rank, get_agent_name().c_str(), converged));
+  if(comm_rank == 0)
+    MAN_DEBUG(3, ("[%d] Agent %s::store_solutions converged=%d.\n", comm_rank, get_agent_name().c_str(), converged));
 
   if ( converged) {   //  Store internal data
      for (i=0; i<pc_count; i++)

@@ -245,7 +245,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
     WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *                     RocfloMP                      *'
     WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *                                                   *'
 !    WRITE(STDOUT,  '(A)') SOLVER_NAME//'  '//TRIM(headerString)
-    WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *    Copyright (C)2015 Illinois Rocstar LLC         *'
+    WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *    Copyright (C) 2015 Illinois Rocstar LLC.       *'
     WRITE(STDOUT,  '(A)') SOLVER_NAME//'  *                                                   *'
     WRITE(STDOUT,'(A,/)') SOLVER_NAME//'  *****************************************************'
   ENDIF
@@ -620,6 +620,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
 ! write header for convergence history
 
   IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) THEN
+    WRITE(STDOUT,'(A)') SOLVER_NAME
     IF (global%flowType == FLOW_STEADY) &
       WRITE(STDOUT,1010) SOLVER_NAME,SOLVER_NAME
     IF (global%flowType == FLOW_UNSTEADY) &

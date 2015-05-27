@@ -133,6 +133,7 @@ SUBROUTINE RFLO_TimeStepping( dTimeSystem,dIterSystem,regions )
 ! write header for convergence history
 
   IF (global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE) THEN
+    WRITE(STDOUT,'(A)') SOLVER_NAME
     IF (global%flowType == FLOW_STEADY) &
       WRITE(STDOUT,1010) SOLVER_NAME,SOLVER_NAME
     IF (global%flowType == FLOW_UNSTEADY) &

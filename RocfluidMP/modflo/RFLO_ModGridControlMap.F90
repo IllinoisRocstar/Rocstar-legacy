@@ -1037,7 +1037,7 @@ SUBROUTINE RFLO_GridControlMap3D( region )
     ENDDO
 
     IF (global%myProcid == (global%nProcAlloc-1)/2 .AND. &
-        global%verbLevel == VERBOSE_HIGH) THEN
+        global%verbLevel >= VERBOSE_HIGH) THEN
       WRITE(STDOUT,*) SOLVER_NAME//' CtrParam_Vol:region,iter,residual', &
                                      region%iRegionGlobal,iter,resid
     ENDIF
@@ -1412,7 +1412,7 @@ SUBROUTINE RFLO_GridControlMap2D( region,patch,iPatch )
     ENDDO
 
     IF (global%myProcid == (global%nProcAlloc-1)/2 .AND. &
-        global%verbLevel == VERBOSE_HIGH) THEN
+        global%verbLevel >= VERBOSE_HIGH) THEN
       WRITE(STDOUT,*) SOLVER_NAME//' CtrParam_Surf:patch,iter,residual', &
                                      region%iRegionGlobal,iPatch,iter,resid
     ENDIF

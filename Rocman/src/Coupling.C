@@ -244,7 +244,7 @@ double Coupling::run( double t, double dt, int pred, double zoom)
     dt = std::min( dt, agents[i]->max_timestep(t, dt));
   }
   
-  MAN_DEBUG(1, ("[%d] Rocstar: Coupling::run with t: %f dt: %f.\n", comm_rank, t, dt));
+  MAN_DEBUG(3, ("[%d] Rocstar: Coupling::run with t: %f dt: %f.\n", comm_rank, t, dt));
 
   scheduler.run_actions( t, dt); 
 
@@ -257,7 +257,7 @@ double Coupling::run( double t, double dt, int pred, double zoom)
 
 void Coupling::run_initactions( double t, double dt)
 {
-  MAN_DEBUG(1, ("[%d] Rocstar: %s::run_initactions called with t:%e dt:%e.\n", comm_rank, name(), t, dt));
+  MAN_DEBUG(3, ("[%d] Rocstar: %s::run_initactions called with t:%e dt:%e.\n", comm_rank, name(), t, dt));
   init_scheduler.set_alpha(0.0);
   init_scheduler.run_actions( t, dt); 
 
@@ -325,7 +325,7 @@ void Coupling::read_restart_info()
     }
     fclose(fp);
     if (comm_rank == 0)
-      MAN_DEBUG(2,("Rocstar: This run is a restart continued at iteration %d with initial time %f.",curStep, initialTime));
+      MAN_DEBUG(1,("Rocstar: This run is a restart continued at iteration %d with initial time %f.",curStep, initialTime));
     param->update_start_time(curStep - 1, initialTime);   // subtle - it starts from 0
   }
   else {
@@ -373,7 +373,7 @@ void Coupling::restart_at_time(double t, int step)
 {
   int i, n;
 
-  MAN_DEBUG(1, ("Rocstar: Coupling::restart_at_time with t: %f step:%d.\n", t, step));
+  MAN_DEBUG(3, ("Rocstar: Coupling::restart_at_time with t: %f step:%d.\n", t, step));
 
 #if 0
   // HACK
@@ -691,7 +691,7 @@ void FullyCoupling::update_integrals(double currentTime)
 		   << integFname << "." << std::endl;
          MPI_Abort( MPI_COMM_WORLD, -1);
        }
-       MAN_DEBUG(2, ("Rocstar: FullyCoupling::update_integrals with t: %f.\n", currentTime));
+       MAN_DEBUG(3, ("Rocstar: FullyCoupling::update_integrals with t: %f.\n", currentTime));
        if ( overwrite_integ) {
          fprintf( fp, " time    f-volume        s-volume        f-mass          s-mass          f-burn area     s-burn area     f-non-burn area s-non-burn area s-volume-undef\n");
          overwrite_integ = 0;
@@ -736,7 +736,7 @@ void FullyCoupling::update_distances(double currentTime)
 		   << "." << std::endl;
          MPI_Abort( MPI_COMM_WORLD, -1);
        }
-       MAN_DEBUG(2, ("Rocstar: FullyCoupling::update_distances with t: %f.\n", currentTime));
+       MAN_DEBUG(3, ("Rocstar: FullyCoupling::update_distances with t: %f.\n", currentTime));
        if ( overwrite_dist) {
          fprintf( fp, "# time    distance-min    distance-max    distance-norm2  \n");
          overwrite_dist = 0;

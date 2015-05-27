@@ -172,7 +172,7 @@ SUBROUTINE PrintPostInput( region )
 
 888  CONTINUE
 
-  IF (global%verblevel == VERBOSE_HIGH .OR. iReg == 1) &
+  IF (global%verblevel >= VERBOSE_HIGH .OR. iReg == 1) &
     WRITE(STDOUT,1035) SOLVER_NAME
 
   CALL DeregisterFunction( global )

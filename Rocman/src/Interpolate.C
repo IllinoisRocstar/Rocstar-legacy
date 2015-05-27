@@ -42,7 +42,7 @@ InterpolateBase::InterpolateBase(Agent *ag, Agent *bkag, int cond):
 
 void InterpolateBase::init(double t)
 {
-  MAN_DEBUG(2, ("%s::init called.\n", name()));
+  MAN_DEBUG(3, ("%s::init called.\n", name()));
   // INIT_INTERP_HANDLES() in "man_basic.f90"
   attr_hdls[0] = get_attribute_handle(0);
   attr_hdls[1] = COM_get_attribute_handle_const(attr[1]);    // old
@@ -70,7 +70,7 @@ void InterpolateBase::init(double t)
 
 void InterpolateBase::backup()
 {
-  MAN_DEBUG(1, ("Rocstar: InterpolateBase::backup (%s) called with dt_old:%e.\n", attr[0], agent->get_old_dt()));
+  MAN_DEBUG(3, ("Rocstar: InterpolateBase::backup (%s) called with dt_old:%e.\n", attr[0], agent->get_old_dt()));
 
   // BACKUP() in "man_basic.f90"
   if (bkup_hdls[0] > 0 && bkup_hdls[1] > 0) {
@@ -166,7 +166,7 @@ void Extrapolate_Linear::run(double t, double dt, double alpha)
 {
   if (attr_hdls[2] <= 0) return;
 
-  MAN_DEBUG(2, ("Extrapolate_Linear::run (%s) called with t:%e dt:%e alpha:%e.\n", attr[0], t, dt, alpha));
+  MAN_DEBUG(3, ("Extrapolate_Linear::run (%s) called with t:%e dt:%e alpha:%e.\n", attr[0], t, dt, alpha));
 
   COM_assertion_msg(alpha>=-1.e-6 && alpha <= 1+1.e-6, "ERROR: Abort!");
 
@@ -243,7 +243,7 @@ void Extrapolate_Central::run(double t, double dt, double alpha)
 {
   if (attr_hdls[2] <= 0) return;
 
-  MAN_DEBUG(2, ("Extrapolate_Central::run (%s) called with t:%e dt:%e alpha:%e.\n", attr[0], t, dt, alpha));
+  MAN_DEBUG(3, ("Extrapolate_Central::run (%s) called with t:%e dt:%e alpha:%e.\n", attr[0], t, dt, alpha));
 
   COM_assertion_msg(alpha>=0.0, "ERROR: Extrapolate_Central called with invalid alpha!");
 
@@ -286,7 +286,7 @@ void Interpolate_Linear::run(double t, double dt, double alpha)
 {
   if (attr_hdls[2] <= 0) return;
 
-  MAN_DEBUG(2, ("Interpolate_Linear::run (%s) called with t:%e dt:%e alpha:%e.\n", attr[0], t, dt, alpha));
+  MAN_DEBUG(3, ("Interpolate_Linear::run (%s) called with t:%e dt:%e alpha:%e.\n", attr[0], t, dt, alpha));
 
   COM_assertion_msg(alpha>=0.0, "ERROR: Interpolate_Linear called with invalid alpha!");
 
@@ -337,7 +337,7 @@ void Interpolate_Constant::run(double t_dummy, double dt_dummy, double alpha)
 {
   if (attr_hdls[2] <= 0) return;
 
-  MAN_DEBUG(2, ("Interpolate_Constant::run (bc) called with alpha:%e.\n", alpha));
+  MAN_DEBUG(3, ("Interpolate_Constant::run (bc) called with alpha:%e.\n", alpha));
 
   COM_call_function( RocBlas::copy, &attr_hdls[0], &attr_hdls[2]);
 }
@@ -393,7 +393,7 @@ void Interpolate_Central::run(double t, double dt, double alpha)
 {
   if (attr_hdls[2] <= 0) return;
 
-  MAN_DEBUG(2, ("Interpolate_Central::run (%s) called with t:%e dt:%e alpha:%e.\n", attr[0], t, dt, alpha));
+  MAN_DEBUG(3, ("Interpolate_Central::run (%s) called with t:%e dt:%e alpha:%e.\n", attr[0], t, dt, alpha));
 
   COM_assertion_msg(alpha>=0.0, "ERROR: Extrapolate_Central called with invalid alpha!");
 

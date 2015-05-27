@@ -127,7 +127,7 @@ SUBROUTINE RFLU_WriteStat( region )
 
 ! write time averaged variables --------------------------------------------
 
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel==VERBOSE_HIGH) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME,'  - write statistics'
 
   ijkbeg = 1

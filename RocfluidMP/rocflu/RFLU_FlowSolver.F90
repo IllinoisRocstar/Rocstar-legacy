@@ -146,6 +146,7 @@ SUBROUTINE RFLU_FlowSolver(dTimeSystem,dIterSystem,levels)
 ! ==============================================================================
 
   IF ( global%myProcid==MASTERPROC .AND. global%verbLevel/=VERBOSE_NONE ) THEN
+    WRITE(STDOUT,'(A)') SOLVER_NAME
     IF ( global%flowType == FLOW_STEADY ) THEN 
       WRITE(STDOUT,1000) SOLVER_NAME,SOLVER_NAME
     ELSE IF ( global%flowType == FLOW_UNSTEADY ) THEN 

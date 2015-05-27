@@ -1208,10 +1208,11 @@ endif
     IF(glb%HeatTransSoln) ALLOCATE(RnetHT(1:glb%NumNP))
 
     IF(MyId.EQ.0 .AND. glb%Verb.gt.0)THEN
+       WRITE(6,'(A)') 'Rocfrac:'
+       WRITE(6,'(A,A21)')'Rocfrac:','(Current DT'
        WRITE(6,'(A,A6,4(A15))')'Rocfrac:','Step',&
-             '(Current DT', 'Global DT',&
+             '- Solid DT)', 'Global DT',&
              'Current DT','Global Time'
-       WRITE(6,'(A,A21)')'Rocfrac:','- Solid DT)'
        WRITE(6,'(A,A)')'Rocfrac: ---------------------------',&
                      '--------------------------------------'
     ENDIF

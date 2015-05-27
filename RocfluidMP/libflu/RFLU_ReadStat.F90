@@ -163,7 +163,7 @@ SUBROUTINE RFLU_ReadStat( region )
 
 ! read time averaged variables ----------------------------------------------
 
-  IF (global%myProcid==MASTERPROC .AND. global%verbLevel==VERBOSE_HIGH) &
+  IF (global%myProcid==MASTERPROC .AND. global%verbLevel>=VERBOSE_HIGH) &
     WRITE(STDOUT,'(A)') SOLVER_NAME,'  - read statistics'
 
   ijkbeg = 1

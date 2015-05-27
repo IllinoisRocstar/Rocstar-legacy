@@ -87,7 +87,7 @@ SolidAgent::SolidAgent(Coupling *coup, std::string mod, std::string obj, MPI_Com
 
 void SolidAgent::load_module()
 {
-  MAN_DEBUG(1, ("[%d] Rocstar: SolidAgent::load_module %s %s.\n", comm_rank, rocmod_name.c_str(), mod_instance.c_str()));
+  MAN_DEBUG(3, ("[%d] Rocstar: SolidAgent::load_module %s %s.\n", comm_rank, rocmod_name.c_str(), mod_instance.c_str()));
 
 #ifdef STATIC_LINK
   if (rocmod_name == "Rocsolid")
@@ -114,7 +114,7 @@ void SolidAgent::load_module()
 
 void SolidAgent::unload_module()
 {
-  MAN_DEBUG(1, ("[%d] Rocstar: SolidAgent::unload_module %s.\n", comm_rank, rocmod_name.c_str()));
+  MAN_DEBUG(3, ("[%d] Rocstar: SolidAgent::unload_module %s.\n", comm_rank, rocmod_name.c_str()));
 #ifdef STATIC_LINK
   if (rocmod_name == "Rocsolid")
     COM_F_FUNC2( rocsolid_unload_module, ROCSOLID_UNLOAD_MODULE)( mod_instance.c_str(), mod_instance.length());
@@ -139,7 +139,7 @@ void SolidAgent::input( double t) {
 }
 
 void SolidAgent::init_module( double t, double dt) {
-  MAN_DEBUG(1, ("Rocstar: SolidAgent::init_module t=%e dt=%e.\n", t, dt));
+  MAN_DEBUG(3, ("Rocstar: SolidAgent::init_module t=%e dt=%e.\n", t, dt));
 
   Agent::init_module(t, dt);
 
@@ -166,7 +166,7 @@ void SolidAgent::create_buffer_all()
   withALE = (dummy > 0);
 
   if (comm_rank == 0)
-   MAN_DEBUG(2, ("Rocstar: *** Solid with ALE is %d", withALE));
+   MAN_DEBUG(2, ("Rocstar: *** Solid with ALE is %d \n", withALE));
 
   Agent::create_buffer_all();
   split_surface_window( isolid_all, isolid_i, isolid_nb, isolid_b, isolid_ni);
@@ -417,7 +417,7 @@ void SolidAgent::finalize()
 int SolidAgent::compute_integrals()
 {
   if (compute_integrals_handle > 0) {
-    MAN_DEBUG(2, ("Rocstar: SolidAgent::compute_integrals.\n"));
+    MAN_DEBUG(3, ("Rocstar: SolidAgent::compute_integrals.\n"));
     COM_call_function(compute_integrals_handle, integrals);
   }
   return 1;

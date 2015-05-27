@@ -144,7 +144,7 @@ SUBROUTINE RFLO_FindThrustPatches( region,iReg )
       IF (found) patch%thrustCalc = .true.
 
     ENDIF   ! bcType
-    IF (global%verbLevel==VERBOSE_HIGH .AND. patch%thrustCalc) &
+    IF (global%verbLevel>=VERBOSE_HIGH .AND. patch%thrustCalc) &
       WRITE(STDOUT,'(A,I5,A,I3)') '   - region ',iReg,', patch ',iPatch
 
   ENDDO     ! iPatch

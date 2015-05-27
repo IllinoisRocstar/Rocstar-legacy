@@ -381,7 +381,7 @@ SUBROUTINE RFLU_NSCBC_CompFirstPatchFlux(pRegion,pPatch)
     END IF ! pRegion
 
     IF ( (global%checkLevel == CHECK_HIGH) .AND. &
-         (global%verbLevel == VERBOSE_HIGH) .AND. &
+         (global%verbLevel >= VERBOSE_HIGH) .AND. &
          (global%myProcid == MASTERPROC) .AND. &
          (decidePrintFlag .EQV. .TRUE.) ) THEN
       IF ( pPatch%bcType == BC_OUTFLOW ) THEN
@@ -423,7 +423,7 @@ SUBROUTINE RFLU_NSCBC_CompFirstPatchFlux(pRegion,pPatch)
 ! ------------------------------------------------------------------------------
 
   IF ( (global%checkLevel == CHECK_HIGH) .AND. &
-       (global%verbLevel == VERBOSE_HIGH) .AND. &
+       (global%verbLevel >= VERBOSE_HIGH) .AND. &
        (global%myProcid == MASTERPROC) .AND. &
        (decidePrintFlag .EQV. .TRUE.) .AND. &
        (nLocs > 0) ) THEN
@@ -710,7 +710,7 @@ SUBROUTINE RFLU_NSCBC_CompPatchFlux(pRegion,pPatch)
     END IF ! pRegion
 
     IF ( (global%checkLevel == CHECK_HIGH) .AND. &
-         (global%verbLevel == VERBOSE_HIGH) .AND. &
+         (global%verbLevel >= VERBOSE_HIGH) .AND. &
          (global%myProcid == MASTERPROC) .AND. &
          (decidePrintFlag .EQV. .TRUE.) ) THEN
       IF ( pPatch%bcType == BC_OUTFLOW ) THEN
@@ -753,7 +753,7 @@ SUBROUTINE RFLU_NSCBC_CompPatchFlux(pRegion,pPatch)
 ! ------------------------------------------------------------------------------
 
   IF ( (global%checkLevel == CHECK_HIGH) .AND. &
-       (global%verbLevel == VERBOSE_HIGH) .AND. &
+       (global%verbLevel >= VERBOSE_HIGH) .AND. &
        (global%myProcid == MASTERPROC) .AND. &
        (decidePrintFlag .EQV. .TRUE.) .AND. &
        (nLocs > 0) ) THEN
@@ -1060,7 +1060,7 @@ SUBROUTINE RFLU_NSCBC_CompSecondPatchFlux(pRegion,pPatch)
     END IF ! pRegion
 
     IF ( (global%checkLevel == CHECK_HIGH) .AND. &
-         (global%verbLevel == VERBOSE_HIGH) .AND. &
+         (global%verbLevel >= VERBOSE_HIGH) .AND. &
          (global%myProcid == MASTERPROC) .AND. &
          (decidePrintFlag .EQV. .TRUE.) ) THEN
       IF ( pPatch%bcType == BC_OUTFLOW ) THEN
@@ -1103,7 +1103,7 @@ SUBROUTINE RFLU_NSCBC_CompSecondPatchFlux(pRegion,pPatch)
 ! ------------------------------------------------------------------------------
 
   IF ( (global%checkLevel == CHECK_HIGH) .AND. &
-       (global%verbLevel == VERBOSE_HIGH) .AND. &
+       (global%verbLevel >= VERBOSE_HIGH) .AND. &
        (global%myProcid == MASTERPROC) .AND. &
        (decidePrintFlag .EQV. .TRUE.) .AND. &
        (nLocs > 0) ) THEN

@@ -254,12 +254,12 @@ void Control_parameters::read()
     // load output module
   const std::string &outputModule = output_module;
   if (outputModule == "Rocout") {
-    MAN_DEBUG(1, ("[%d] Rocstar: load_module Rocout.\n", COMMPI_Comm_rank(communicator)));
+    MAN_DEBUG(3, ("[%d] Rocstar: load_module Rocout.\n", COMMPI_Comm_rank(communicator)));
     COM_LOAD_MODULE_STATIC_DYNAMIC( Rocout, "OUT");
   }
 #ifdef WITH_PANDA
   else if (outputModule == "Rocpanda") {
-    MAN_DEBUG(1, ("[%d] Rocstar: load_module Rocpanda.\n", COMMPI_Comm_rank(communicator)));
+    MAN_DEBUG(3, ("[%d] Rocstar: load_module Rocpanda.\n", COMMPI_Comm_rank(communicator)));
     COM_LOAD_MODULE_STATIC_DYNAMIC( Rocpanda, "OUT");
       // Rocpanda server processes won't return
   }
@@ -428,8 +428,6 @@ void RocmanControl_parameters::read( MPI_Comm comm, int comm_rank)
 
   man_verbose = verbose;
 
-  std::cout << "verbose = " << verbose << std::endl;
-  std::cout << "man_verbose = " << man_verbose << std::endl;
    // set options for Rocout
   int OUT_set_option = COM_get_function_handle( "OUT.set_option");
   const char *rankWidth = "4";
@@ -478,7 +476,7 @@ void RocmanControl_parameters::print()
 bool reached_simulation_time( const Control_parameters &param) {
     // if exceed max num of steps
   if (param.cur_step>=param.maxNumTimeSteps) {
-    MAN_DEBUG(3, ("\n\nRocstar: reached_simulation_time returns TRUE with cur_step: %d \n\n", param.cur_step));
+    MAN_DEBUG(2, ("\nRocstar: reached_simulation_time returns TRUE with cur_step: %d\n", param.cur_step));
     return true;
   }
 
@@ -496,7 +494,7 @@ bool reached_simulation_time( const Control_parameters &param) {
   }
   else {
     if (param.myRank == 0) {
-      MAN_DEBUG(3, ("\n\nRocstar: reached_simulation_time: elapsed wall time = %f \n\n", elaped_time));
+      MAN_DEBUG(2, ("\nRocstar: reached_simulation_time: elapsed wall time = %f \n", elaped_time));
     }
   }
 
@@ -522,7 +520,8 @@ bool reached_restartdump_time( Control_parameters &param) {
            param.iOutput*param.outputIntervalTime;
   if (result == true) {
     param.iOutput++;
-    MAN_DEBUG(1, ("\n\nRocstar: reached_restartdump_time with current_time: %e time_step: %e iOutput: %d outputIntervalTime: %e\n\n", param.current_time, param.time_step, param.iOutput, param.outputIntervalTime));
+    if(param.myRank == 0) 
+      MAN_DEBUG(1, ("\nRocstar: reached_restartdump_time with current_time: %e time_step: %e iOutput: %d outputIntervalTime: %e\n", param.current_time, param.time_step, param.iOutput, param.outputIntervalTime));
   }
   return result;
 }
@@ -819,7 +818,7 @@ void rocstar_driver( int verb, int remeshed, bool debug) {
 #ifdef WITH_PANDA
     // unload Rocpanda to exit gracefully
   if ( strcasecmp(param.output_module, "Rocpanda") == 0) {
-    MAN_DEBUG(1, ("[%d] Rocstar: unload_module Rocpanda.\n", param.myRank));
+    MAN_DEBUG(3, ("[%d] Rocstar: unload_module Rocpanda.\n", param.myRank));
     COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocpanda, "OUT");
   }
 #endif

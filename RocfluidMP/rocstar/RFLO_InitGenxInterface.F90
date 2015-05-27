@@ -116,7 +116,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
-       regions(1)%global%verbLevel== VERBOSE_HIGH ) THEN
+       regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating Rocstar surface windows'
  ENDIF
 
@@ -124,7 +124,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
-       regions(1)%global%verbLevel== VERBOSE_HIGH ) THEN
+       regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating Rocstar surface input attributes'
  ENDIF
 ! input data
@@ -140,7 +140,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
-       regions(1)%global%verbLevel== VERBOSE_HIGH ) THEN
+       regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating Rocstar surface output attributes'
  ENDIF
 ! output data
@@ -173,7 +173,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
-       regions(1)%global%verbLevel== VERBOSE_HIGH ) THEN
+       regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating Rocstar volume windows'
  ENDIF
 
@@ -201,7 +201,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
-       regions(1)%global%verbLevel== VERBOSE_HIGH ) THEN
+       regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Main windows created.'
  ENDIF
 
@@ -210,7 +210,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 #ifdef STATS
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
-       regions(1)%global%verbLevel== VERBOSE_HIGH ) THEN
+       regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Adding statistics attributes'
  ENDIF
 
@@ -241,7 +241,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
-       regions(1)%global%verbLevel== VERBOSE_HIGH ) THEN
+       regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Processing Rocstar surface windows'
  ENDIF
 
@@ -553,7 +553,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 !      WRITE(*,*) 'now doing volume data'
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
-       regions(1)%global%verbLevel== VERBOSE_HIGH ) THEN
+       regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Processing Rocstar volume windows.'
  ENDIF
 
@@ -626,7 +626,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
-       regions(1)%global%verbLevel== VERBOSE_HIGH ) THEN
+       regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Initializing Rocstar interfaces for MP'
  ENDIF
 
@@ -654,7 +654,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel== VERBOSE_HIGH ) THEN
+       global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Window setup done.'
  ENDIF
 
@@ -664,7 +664,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
   
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel== VERBOSE_HIGH ) THEN
+       global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Populating volume windows.'
  ENDIF
 
@@ -685,7 +685,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
  
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
-       regions(1)%global%verbLevel== VERBOSE_HIGH ) THEN
+       regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Populating surface windows.'
  ENDIF
 
@@ -704,7 +704,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( global%myProcid == MASTERPROC .AND. &
-       global%verbLevel== VERBOSE_HIGH ) THEN
+       global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Done Populating all windows.'
  ENDIF
 !  WRITE(*,*) 'past attribute grabbing'

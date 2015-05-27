@@ -535,7 +535,7 @@ SUBROUTINE RFLO_DualTimeStepping( dTimeSystem,regions )
 
       IF (global%aeroCoeffs == ACTIVE) THEN
         IF (global%myProcid==MASTERPROC .AND. &
-            global%verbLevel/=VERBOSE_HIGH) THEN
+            global%verbLevel>=VERBOSE_HIGH) THEN
           WRITE(STDOUT,'(A)') SOLVER_NAME//'   - patch ac'
         ENDIF
         CALL RFLO_WritePatchAeroCoeffs( regions )
