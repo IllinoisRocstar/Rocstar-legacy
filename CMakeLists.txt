@@ -122,3 +122,9 @@ share/Rocstar )
 ${CMAKE_CURRENT_BINARY_DIR}/Docs/)
 
 ENDIF()
+
+INCLUDE(CPack)
+
+
+
+
