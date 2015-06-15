@@ -117,7 +117,7 @@ SET (LIBFLOFLU_SRCS
   ../libfloflu/ZeroDummyCellsMP.F90
   ../libfloflu/ZeroResidualsMP.F90 )
 IF(STATS)
-  SET (LIBFLOFLU_SRCS ${LIBFLOFLU_SRCS} ../libfloflu/ReadStatisticsSection.F90)
+  SET (LIBFLOFLU_SRCS ${LIBFLOFLU_SRCS} ../libfloflu/ReadStatisticSection.F90)
 ENDIF()
 SET (LIBFLO_SRCS 
   ../libflo/RFLO_ArcLengthBounds.F90

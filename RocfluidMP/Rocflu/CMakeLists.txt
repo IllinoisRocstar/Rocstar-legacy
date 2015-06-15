@@ -127,7 +127,7 @@ SET (LIBFLOFLU_SRCS
   ../libfloflu/ZeroDummyCellsMP.F90
   ../libfloflu/ZeroResidualsMP.F90)
 IF(STATS)
-  LIST (APPEND LIBFLOFLU_SRCS ../libfloflu/ReadStatisticsSection.F90)
+  LIST (APPEND LIBFLOFLU_SRCS ../libfloflu/ReadStatisticSection.F90)
 ENDIF()
 SET (LIBFLU_SRCS 
   ../libflu/clop.C
@@ -598,7 +598,7 @@ SET(ROCSTAR_SRCS
   ../rocstar/Rocflu_load_module.F90
   ../rocstar/Rocflu_unload_module.F90)
 IF(TURB)
-  LIST(APPEND ROCSTAR_SRCS TURB_RFLU_ModRocstarAdmin.F90)
+  LIST(APPEND ROCSTAR_SRCS ../rocstar/TURB_RFLU_ModRocstarAdmin.F90)
 ENDIF()
 IF(STATS)
   LIST(APPEND ROCSTAR_SRCS ../rocstar/STAT_RocstarStatNaming.F90
