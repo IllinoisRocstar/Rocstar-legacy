@@ -28,6 +28,7 @@
 #include <cstdio>
 #include <cassert>
 #include <sstream>
+#include <cmath>
 
 COM_EXTERN_MODULE( Rocface);
 COM_EXTERN_MODULE( Rocout);
@@ -180,6 +181,15 @@ int main(int argc, char *argv[]){
   COM_set_profiling( 1);
 
   COM_LOAD_MODULE_STATIC_DYNAMIC( Rocface, "RFC");
+  int RFC_clear    = COM_get_function_handle("RFC.clear_overlay");
+  int RFC_read     = COM_get_function_handle( "RFC.read_overlay");
+  int RFC_write    = COM_get_function_handle("RFC.write_overlay");
+  int RFC_overlay  = COM_get_function_handle("RFC.overlay");
+  int RFC_transfer = COM_get_function_handle( "RFC.least_squares_transfer");
+  int RFC_interp   = COM_get_function_handle( "RFC.interpolate");
+  int RFC_extrap   = COM_get_function_handle( "RFC.extrapolate");
+
+  
 
 
 
@@ -225,7 +235,7 @@ int main(int argc, char *argv[]){
       comp[i][j].resize( coords[i][j].size() );
 
       for(int k=0; k < soln[i][j].size(); k++){
-        soln[i][j][k] = coords[i][j][k] + 3.0;
+        soln[i][j][k] = coords[i][j][k];
         comp[i][j][k] = -1.0;
         // std::cout << "soln[" << i << "][" << j << "][" << k 
         //           << "] = " << coords[i][j][k] + 3.0 << std::endl;
@@ -295,82 +305,206 @@ int main(int argc, char *argv[]){
 
   // std::cout << "line " << __LINE__ << std::endl;
 
-  int tri0_mesh = COM_get_attribute_handle("Window0.mesh");
-  int tri1_mesh = COM_get_attribute_handle("Window1.mesh");
+  int tri0_mesh  = COM_get_attribute_handle("Window0.mesh");
+  int tri1_mesh  = COM_get_attribute_handle("Window1.mesh");
   int quad_mesh  = COM_get_attribute_handle("Window2.mesh");
-  int RFC_clear  = COM_get_function_handle("RFC.clear_overlay");
 
   // Perform mesh overlay
   const char *format = "HDF";
-  int RFC_write = COM_get_function_handle("RFC.write_overlay");
 
   if( comm_size == 1){
-    int RFC_overlay = COM_get_function_handle("RFC.overlay");
 
     std::cout << "Overlaying meshes..." << std::endl;
 
-    //COM_call_function( RFC_overlay, &tri0_mesh, &tri0_mesh);
-    //COM_call_function( RFC_write,   &tri0_mesh, &tri0_mesh, "tri0", "tri0", format);
-    //COM_call_function( RFC_clear,   "tri0", "tri0");
-
-    // std::cout << "line " << __LINE__ << std::endl;
-    // std::cout << "tri0_mesh " << tri0_mesh << std::endl;
-    // std::cout << "tri1_mesh " << tri1_mesh << std::endl;
-    // std::cout << "RFC_overlay " << RFC_overlay << std::endl;
-    COM_call_function( RFC_overlay, &tri0_mesh, &tri1_mesh);
+    // COM_call_function( RFC_overlay, &tri0_mesh, &tri0_mesh);
+    // COM_call_function( RFC_write,   &tri0_mesh, &tri0_mesh, "tri0", "tri_0", format);
+    // COM_call_function( RFC_clear,   "Window0", "Window0");
     
-    std::cout << "line " << __LINE__ << std::endl;
-    COM_call_function( RFC_write,   &tri0_mesh, &tri1_mesh, "tri0", "tri1", format);
-    std::cout << "line " << __LINE__ << std::endl;
+    COM_call_function( RFC_overlay, &tri0_mesh, &tri1_mesh);
+    COM_call_function( RFC_write,   &tri0_mesh, &tri1_mesh, "tri01", "tri10", format);
     COM_call_function( RFC_clear,   "Window0", "Window1");
-    std::cout << "line " << __LINE__ << std::endl;
 
-    //COM_call_function( RFC_overlay, &tri0_mesh, &quad_mesh);
-    //COM_call_function( RFC_write,   &tri0_mesh, &quad_mesh, "tri0", "quad", format);
-    //COM_call_function( RFC_clear,   "tri0", "quad");
+    COM_call_function( RFC_overlay, &tri0_mesh, &quad_mesh);
+    COM_call_function( RFC_write,   &tri0_mesh, &quad_mesh, "tri02", "quad20", format);
+    COM_call_function( RFC_clear,   "Window0", "Window2");
 
-    //COM_call_function( RFC_overlay, &tri1_mesh, &quad_mesh);
-    //COM_call_function( RFC_write,   &tri1_mesh, &quad_mesh, "tri1", "quad", format);
-    //COM_call_function( RFC_clear,   "tri1", "quad");
+    COM_call_function( RFC_overlay, &tri1_mesh, &quad_mesh);
+    COM_call_function( RFC_write,   &tri1_mesh, &quad_mesh, "tri12", "quad21", format);
+    COM_call_function( RFC_clear,   "Window1", "Window2");
     
   }
 
-#if 0
-  int RFC_read = COM_get_function_handle( "RFC.read_overlay");
-  //COM_call_function( RFC_read, &tri0_mesh, &tri0_mesh, NULL, "tri0", "tri0", format);
-  COM_call_function( RFC_read, &tri0_mesh, &tri1_mesh, NULL, "tri0", "tri1", format);
+  //COM_call_function( RFC_read, &tri0_mesh, &tri0_mesh, NULL, "tri0", "tri_0", format);
   //COM_call_function( RFC_read, &tri0_mesh, &quad_mesh, NULL, "tri0", "quad", format);
   //COM_call_function( RFC_read, &tri1_mesh, &quad_mesh, NULL, "tri1", "quad", format);
 
-  if ( comm_rank == 0){
-     int tri0_soln = COM_get_attribute_handle( "Window0.soln");
-     int tri1_soln = COM_get_attribute_handle( "Window1.soln");
-     int quad_soln = COM_get_attribute_handle( "Window2.soln");
-
-     int tri0_comp = COM_get_attribute_handle( "Window0.comp");
-     int tri1_comp = COM_get_attribute_handle( "Window1.comp");
-     int quad_comp = COM_get_attribute_handle( "Window2.comp");
-
-     int RFC_transfer = COM_get_function_handle( "RFC.least_squares_transfer");
-     COM_call_function( RFC_transfer, &tri0_soln, &tri1_comp);
-     
-     std::cout << "comp:" << std::endl;
-     for (int j=0 ; j < npanes; j++){
-        for(int k=0; k < comp[j].size(); k++){
-          std::cout << comp[j][k][0] << " " << comp[j][k][1] << " " 
-                    << comp[j][k][2] << std::endl;
-        }
-      }
-  }
+  int tri0_soln = COM_get_attribute_handle( "Window0.soln");
+  int tri1_soln = COM_get_attribute_handle( "Window1.soln");
+  int quad_soln = COM_get_attribute_handle( "Window2.soln");
   
-  for(int i=0; i < nwindows; i++)
-  {
-    COM_delete_window(windowNames[i]);
-  }
-#endif
+  int tri0_comp = COM_get_attribute_handle( "Window0.comp");
+  int tri1_comp = COM_get_attribute_handle( "Window1.comp");
+  int quad_comp = COM_get_attribute_handle( "Window2.comp");
+  
+  COM_call_function( RFC_read, &tri0_mesh, &tri1_mesh, NULL, "tri01", "tri10", format);
 
-  std::cout << "line " << __LINE__ << std::endl;
-  //COM_finalize();
+  COM_call_function( RFC_transfer, &tri1_soln, &tri0_comp);
+  int check_id = 0;
+  std::vector<std::vector< double > >::iterator paneIt = comp[check_id].begin();
+  std::vector<std::vector< double > >::iterator paneIt2 = coords[check_id].begin();
+  bool pass = true;
+  double compTol = 1e-5;
+  while(paneIt != comp[check_id].end()){
+    std::vector<double> &paneComp(*paneIt++);
+    std::vector<double> &paneCoords(*paneIt2++);
+    std::vector<double>::iterator pcIt = paneComp.begin();
+    std::vector<double>::iterator pcIt2 = paneCoords.begin();
+    while(pcIt != paneComp.end()){
+      double solnDiff = std::fabs(*pcIt - *pcIt2);
+      if(solnDiff > compTol){
+        pass = false;
+        std::cout << *pcIt << " != " << *pcIt2 
+                  << " (" << solnDiff << ")" << std::endl;
+      }
+      *pcIt++ = -1;
+      pcIt2++;
+    }
+  }
+  std::cout << "Nodal transfer from Triangles 1 to Triangles 0 "
+            << (pass ? "passed" : "failed") << "." << std::endl;
+
+  COM_call_function( RFC_transfer, &tri0_soln, &tri1_comp);
+  check_id = 1;
+  paneIt = comp[check_id].begin();
+  paneIt2 = coords[check_id].begin();
+  pass = true;
+  while(paneIt != comp[check_id].end()){
+    std::vector<double> &paneComp(*paneIt++);
+    std::vector<double> &paneCoords(*paneIt2++);
+    std::vector<double>::iterator pcIt = paneComp.begin();
+    std::vector<double>::iterator pcIt2 = paneCoords.begin();
+    while(pcIt != paneComp.end()){
+      double solnDiff = std::fabs(*pcIt - *pcIt2);
+      if(solnDiff > compTol){
+        pass = false;
+        std::cout << *pcIt << " != " << *pcIt2 
+                  << " (" << solnDiff << ")" << std::endl;
+      }
+      *pcIt++ = -1;
+      pcIt2++;
+    }
+  }
+  std::cout << "Nodal transfer from Triangles 0 to Triangles 1 "
+            << (pass ? "passed" : "failed") << "." << std::endl;
+
+  COM_call_function( RFC_clear,   "Window0", "Window1");  
+
+  COM_call_function( RFC_read, &tri0_mesh, &quad_mesh, NULL, "tri02", "quad20", format);
+  COM_call_function( RFC_transfer, &tri0_soln, &quad_comp);
+  check_id = 2;
+  paneIt = comp[check_id].begin();
+  paneIt2 = coords[check_id].begin();
+  pass = true;
+  while(paneIt != comp[check_id].end()){
+    std::vector<double> &paneComp(*paneIt++);
+    std::vector<double> &paneCoords(*paneIt2++);
+    std::vector<double>::iterator pcIt = paneComp.begin();
+    std::vector<double>::iterator pcIt2 = paneCoords.begin();
+    while(pcIt != paneComp.end()){
+      double solnDiff = std::fabs(*pcIt - *pcIt2);
+      if(solnDiff > compTol){
+        pass = false;
+        std::cout << *pcIt << " != " << *pcIt2 
+                  << " (" << solnDiff << ")" << std::endl;
+      }
+      *pcIt++ = -1;
+      pcIt2++;
+    }
+  }
+  std::cout << "Nodal transfer from Triangles 0 to Quads "
+            << (pass ? "passed" : "failed") << "." << std::endl;
+
+  COM_call_function( RFC_transfer, &quad_soln, &tri0_comp);
+  check_id = 0;
+  paneIt = comp[check_id].begin();
+  paneIt2 = coords[check_id].begin();
+  pass = true;
+  while(paneIt != comp[check_id].end()){
+    std::vector<double> &paneComp(*paneIt++);
+    std::vector<double> &paneCoords(*paneIt2++);
+    std::vector<double>::iterator pcIt = paneComp.begin();
+    std::vector<double>::iterator pcIt2 = paneCoords.begin();
+    while(pcIt != paneComp.end()){
+      double solnDiff = std::fabs(*pcIt - *pcIt2);
+      if(solnDiff > compTol){
+        pass = false;
+        std::cout << *pcIt << " != " << *pcIt2 
+                  << " (" << solnDiff << ")" << std::endl;
+      }
+      *pcIt++ = -1;
+      pcIt2++;
+    }
+  }
+  std::cout << "Nodal transfer from Quads to Triangles 0 "
+            << (pass ? "passed" : "failed") << "." << std::endl;
+
+  COM_call_function( RFC_clear,   "Window0", "Window2");  
+
+  COM_call_function( RFC_read, &tri1_mesh, &quad_mesh, NULL, "tri12", "quad21", format);
+  COM_call_function( RFC_transfer, &tri1_soln, &quad_comp);
+  check_id = 2;
+  paneIt = comp[check_id].begin();
+  paneIt2 = coords[check_id].begin();
+  pass = true;
+  while(paneIt != comp[check_id].end()){
+    std::vector<double> &paneComp(*paneIt++);
+    std::vector<double> &paneCoords(*paneIt2++);
+    std::vector<double>::iterator pcIt = paneComp.begin();
+    std::vector<double>::iterator pcIt2 = paneCoords.begin();
+    while(pcIt != paneComp.end()){
+      double solnDiff = std::fabs(*pcIt - *pcIt2);
+      if(solnDiff > compTol){
+        pass = false;
+        std::cout << *pcIt << " != " << *pcIt2 
+                  << " (" << solnDiff << ")" << std::endl;
+      }
+      *pcIt++ = -1;
+      pcIt2++;
+    }
+  }
+  std::cout << "Nodal transfer from Triangles 1 to Quads "
+            << (pass ? "passed" : "failed") << "." << std::endl;
+
+  COM_call_function( RFC_transfer, &quad_soln, &tri1_comp);
+  check_id = 1;
+  paneIt = comp[check_id].begin();
+  paneIt2 = coords[check_id].begin();
+  pass = true;
+  while(paneIt != comp[check_id].end()){
+    std::vector<double> &paneComp(*paneIt++);
+    std::vector<double> &paneCoords(*paneIt2++);
+    std::vector<double>::iterator pcIt = paneComp.begin();
+    std::vector<double>::iterator pcIt2 = paneCoords.begin();
+    while(pcIt != paneComp.end()){
+      double solnDiff = std::fabs(*pcIt - *pcIt2);
+      if(solnDiff > compTol){
+        pass = false;
+        std::cout << *pcIt << " != " << *pcIt2 
+                  << " (" << solnDiff << ")" << std::endl;
+      }
+      *pcIt++ = -1;
+      pcIt2++;
+    }
+  }
+  std::cout << "Nodal transfer from Quads to Triangles 1 "
+            << (pass ? "passed" : "failed") << "." << std::endl;
+
+  COM_call_function( RFC_clear,   "Window1", "Window2");  
+
+  for(int i=0; i < nwindows; i++){
+      COM_delete_window(windowNames[i]);
+  }
+  COM_finalize();
 
   return 0;
 }
