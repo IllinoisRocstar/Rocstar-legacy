@@ -195,7 +195,7 @@ SET (LIBFLU_SRCS
   ../libflu/RFLU_WriteRestartInfo.F90
   ../libflu/RFLU_ZeroVirtualCellVars.F90)
 IF (STATS)
-  SET (LIBFLU_SRCS ${LIBFLO_SRCS} ../libflu/RFLU_ReadStat.F90
+  SET (LIBFLU_SRCS ${LIBFLU_SRCS} ../libflu/RFLU_ReadStat.F90
     ../libflu/RFLU_WriteStat.F90)
 ENDIF()
 
