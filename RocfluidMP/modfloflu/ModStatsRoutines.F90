@@ -233,7 +233,7 @@ SUBROUTINE InitStatistics( regions )
 #ifdef RFLU
   USE ModInterfaces, ONLY : RFLU_ReadStat
 #ifdef GENX
-  USE STAT_RFLU_ModGenxAdmin, ONLY : STAT_RFLU_GenxGetData
+  USE STAT_RFLU_ModRocstarAdmin, ONLY : STAT_RFLU_GenxGetData
 #endif
 #endif
   IMPLICIT NONE
