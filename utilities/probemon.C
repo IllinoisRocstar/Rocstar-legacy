@@ -52,8 +52,10 @@ main(int argc,char *argv[])
     unsigned int nTimes = flowProbe.ReadProbeData(probeFile);
     probeFile.close();
     flowProbe.SetLocation(probeLocationX,probeLocationY,probeLocationZ);
+    probesData.push_back(flowProbe);
     std::cout << "probemon: Got " << nTimes << " probe values from " 
               << probeFileName << "." << std::endl;
+
 
     std::ofstream plotFile;
     std::ostringstream dataStreamOut;
