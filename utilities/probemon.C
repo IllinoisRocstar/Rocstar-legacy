@@ -97,5 +97,16 @@ main(int argc,char *argv[])
                  << std::endl;
     IR::GNUPlot(plotCommands.str());
   }
+
+  configFileName.assign(caseName+".derived_config");
+  configIn.open(configFileName.c_str());
+  if(configIn){
+    // Process derived quantities
+    std::vector<IR::derivedprobe> derivedProbes;
+    std::derivedprobe derivedProbe;
+    while(derivedProbe << configIn)
+      derivedProbes.push_back(derivedProbe);
+    
+  }
   return(0);
 }
