@@ -110,7 +110,6 @@ IF(BUILD_DOCUMENTATION)
   ADD_CUSTOM_COMMAND( OUTPUT ${documentation}
                       COMMAND ${DOXYGEN_EXECUTABLE} ${doxyfile}
                       MAIN_DEPENDENCY ${doxyfile} ${doxyfile_in}
-                      DEPENDS Rocstar ${doxy_extra_files}
                       COMMENT "Generating documentation")
 
   ADD_CUSTOM_TARGET( Docs DEPENDS ${documentation} )
