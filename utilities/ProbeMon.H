@@ -84,6 +84,10 @@ namespace IR {
     double locY;
     double locZ;
   };
+  class derivedprobe : public std::vector<std::vector<double> >
+  {
+
+  };
   inline int GNUPlot(const std::string &commands)
   {
     FILE *fp = popen("gnuplot -persist","w");

@@ -10,6 +10,7 @@ std::string BuildProbeFileName(const std::string &caseName,int probeNumber)
                   "000"))) << probeNumber;
   return(outString.str());
 }
+
 int 
 main(int argc,char *argv[])
 {
@@ -33,6 +34,23 @@ main(int argc,char *argv[])
   assert(nProbeCoordinates == nProbes*3);
   std::vector<double>::iterator coordinateIterator = probeLocations.begin();
 
+  std::ostringstream htmlOut;
+  htmlOut << "<html>" << std::endl
+	  << "  <head>" << std::endl
+	  << "    <title>" 
+	  << caseName << " Probe Monitor" 
+	  << "</title>" << std::endl
+	  << "    <meta http-equiv=\"refresh\" content=\"300\" />" 
+	  << std::endl
+	  << "  </head>" << std::endl
+	  << "  <body>" << std::endl
+	  << "    <p>" << std::endl
+	  << "      <h1><center>" << caseName 
+	  << " Probe Monitor</center></h1>" << std::endl
+	  << "    </p>" << std::endl << std::endl
+	  << "    <hr>" << std::endl << std::endl;
+
+  
   std::vector<IR::flowprobe> probesData;
   for(int iProbe = 1;iProbe <= nProbes;iProbe++){
 
@@ -40,11 +58,23 @@ main(int argc,char *argv[])
     double probeLocationY = *coordinateIterator++;
     double probeLocationZ = *coordinateIterator++;
 
+    htmlOut << "    <p>" << std::endl
+	    << "      <h2><center>Probe " 
+	    << iProbe << "</center></h2>" << std::endl
+	    << "      <img src=\"velocity_plot_" << iProbe << ".png\" "
+	    << "style=\"float: left; width: 50%\">" << std::endl 
+	    << "      <img src=\"pandt_plot_" << iProbe << ".png\" "
+	    << "style=\"float: left; width: 50%\">" << std::endl
+	    << "    </p>" << std::endl << std::endl 
+	    << "    <hr>" << std::endl
+	    << std::endl;
+    
     std::string probeFileName(BuildProbeFileName(caseName,iProbe));
     std::fstream probeFile;
     probeFile.open(probeFileName.c_str());
     if(!probeFile){
-      std::cout << "probemon: Unable to open probe file: " << probeFileName << std::endl;
+      std::cout << "probemon: Unable to open probe file: " 
+		<< probeFileName << std::endl;
       return(1);
     }
 
@@ -103,10 +133,16 @@ main(int argc,char *argv[])
   if(configIn){
     // Process derived quantities
     std::vector<IR::derivedprobe> derivedProbes;
-    std::derivedprobe derivedProbe;
-    while(derivedProbe << configIn)
-      derivedProbes.push_back(derivedProbe);
+    IR::derivedprobe derivedProbe;
+//     while(derivedProbe << configIn)
+//       derivedProbes.push_back(derivedProbe);
     
   }
+  htmlOut << "  </body>" << std::endl
+	  << "</html>" << std::endl;
+  std::ofstream htmlFile;
+  htmlFile.open("probemonitor.html");
+  htmlFile << htmlOut.str();
+  htmlFile.close();
   return(0);
 }
