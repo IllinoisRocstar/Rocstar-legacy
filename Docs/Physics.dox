@@ -1,0 +1,135 @@
+///
+/// @page physics Physics of Rocstar
+/// 
+/// @section multiphysics Rocstar Multiphysics
+/// This section is adapted from the <a href="../legacy/Tutorial/Section_03_Multiphysics.pdf" target="_blank"><b>Multiphysics</b></a> powerpoint.
+///
+/// In Rocstar there are two or more 3D physical domains abut at a common interface.
+/// - The domains do not overlap
+/// - The geometry of the interface is a 2D surface in space
+/// - The domains may move/deform but they do not come apart
+///
+/// The two domains have differing physical character and interact at the interface.
+/// - Mass, momentum, energy and charge are conserved in the interactions across the interface
+/// - Some physical quantities of interest “jump” at the interface (e.g. density).
+///
+/// The interface may have physics of its own.
+/// - The interface could be reactive with a combustion or other chemical process
+/// - The interface could propagate or move due to some process
+/// - Goal: Simulate two or more physical domains which interact across a moving, reacting interface
+/// \image html multiphysics_interface.png
+///
+/// Each domain is simulated numerically by methods observing the respective physics.
+/// - Rocstar implements a partitioned approach wherein each domain is simulated by a dedicated solver 
+/// - Rocstar solvers are independently developed and can stand alone as simulation applications in their own regard
+/// - Rocstar uses staggered stepping (i.e. stepping is centrally synchronized)
+///
+/// Partitioned and staggered: stepping and interactions are centrally synchronized
+/// - Fluids domain steps and calculates pressure loads the interface
+/// - The loads are then passed to the structures domain
+/// - The structures domain steps and calculates the deformation and interface velocities
+/// - Interface motion sent to fluids domain
+/// - The process is repeated to step the simulation through time
+/// \image html multiphysics_partitions.png
+///
+/// Each domain is decomposed into partitions to be distributed among processors.
+/// - Rocstar’s solvers implement their own parallelism and partitioning 
+/// - In general, the partitioning is disparate across the domains
+/// - In this example, 72 fluid partitions + 18 structures partitions implies 72 physical processors
+///
+/// The domains and shared interface are discretized by each solver application. 
+/// - Rocstar’s solvers each have their own mesh (i.e. non-conformal between interface discretizations). 
+/// - Each solver marches through time according to the domain-specific physics (i.e. time steps are disparate).
+/// - Getting the interface data transfer right is essential for accuracy and stability of the simulation.
+/// - The interface is reactive.  It catches on fire, injects materials, and propagates (burns). 
+///   - Combustion depends on solutions and geometry of other domains
+///   - Both geometries change drastically (propellant burns away completely!)
+/// \image html multiphysics_domains.png 
+///
+/// Each computer processor has one or more partitions of one or more solver’s domain.
+/// - The geometry and data of each domain is spread out among all the processors in the simulation.  
+/// - Not all processors have a piece of all domains
+/// - Not all processors have interface data
+/// \image html multiphysics_processing.png
+///
+/// A simulation processor may have an instance of each solver, its domain, and interface.
+/// There must be a control flow manager for synchronous stepping, to handle some jump conditions, unit conversions.
+/// To handle the burning, we need a combustion solver capable of operating on geometry and data from other solvers and their domains.
+/// We need sophisticated surface propagation capabilities to handle the interface motion due to burning.
+/// Mesh modification will be required for handling the extreme changes in geometry due to burning and deformations.
+/// Finally, all the pieces have to interact in an efficient manner, sharing data, methods, and working together to simulate the complete system.
+/// \image html multiphysics_mesh.png
+///
+/// The integration interface provides the mechanisms by which applications can publish and access methods and data. This is the “glue” of the Rocstar multiphysics simulation.
+/// \image html multiphysics_process.png
+///
+/// @section physics_modules Physics Modules
+/// This section is adapted from the <a href="../legacy/Tutorial/Section_07_PhysicsModules.pdf" target="_blank"><b>PhysicsModules</b></a> powerpoint.
+///
+/// Here is the Rocstar simulation suite architecture layout
+/// \image html physics_sim_modules.png
+/// 
+/// @subsection fluid_simulations Fluid Simulations
+/// Governing Equations are based off of the unsteady, compressible, Navier-Stokes or Euler equations.
+/// | Fluid Dynamics: Rocflo                                      | Unstructured mesh Fluids: Rocflu                 |
+/// | :-----------------                                          |:-----------------                                |
+/// |Numerical Formulation:                                       |Mesh:                                             |                                     
+/// |- Finite volume                                              | - Mixed tetrahedra, prisms, pyramids, hexahedra  |   
+/// |- Explicit Runge-Kutta                                       |                                                  |
+/// |- Arbitrary Lagrangian-Eulerian (ALE) method on moving meshes|Method:                                           |
+/// |- 2nd order central scheme                                   | - Explicit, finite-volume, ALE                   |
+/// |- Roe upwind scheme                                          | - First or second order                          |
+/// |                                                             | - Higher order WENO scheme                       |
+/// |Code Characteristics:                                        |                                                  |
+/// |- Structured, multi-block mesh                               |Models:                                           |
+/// |- Plug-in modules for turbulence, particles, smoke, radiation| - Lagrangian particles/super-particles           |
+/// |                                                             | - Eulerian smoke                                 |
+/// |                                                             | - Built-in propagation constraints               |
+/// |                                                             | - Time-zooming                                   |
+/// 
+/// @subsection files_fluid_sims Files Required for Fluid Simulations
+/// Both Rocflo and Rocflu require the same files, but have differences in format and naming
+/// ASCII-format Gridgen mesh files produced (Rocflo /Rocflu):
+/// - Mesh file (<casename>-PLOT3D.grd/ <casename>-COBALT.inp
+/// - Boundary condition file (<casename>-PLOT3D.inp/ <casename>-COBALT.bc
+/// Rocstar boundary condition File <casename>.bc
+/// Rocstar input file <casename>.inp
+/// Gridgen to Rocstar boundary condition map file
+/// - <casename>-PLOT3D.bcmp for Rocflo
+/// - <casename>.cgi for Rocflu
+///
+/// @subsection structural_dynamics Structural Dynamics 
+/// | Structural Dynamics: Rocfrac                                     |
+/// | :-----------------                                               |
+/// |Large strains, rotations with Explicit/Implicit, ALE              |
+/// |Non-linear material models                                        |  
+/// |- Hyperelastic: Arruda-Boyce & Neo-Hookean                        |
+/// |- Non-linear constitutive laws: Viscoplastic & Porous viscoelastic|
+/// |Mixed-enhanced elements                                           |
+/// |Transient thermal solver                                          |
+/// |Crack propagation                                                 |
+/// |- Cohesive elements allow failure                                 |
+/// |Stabilized and mixed displacement-pressure elements               |
+///
+/// @subsection files_rocfrac Files Required for Rocfrac Simulation
+/// Two files are required:
+/// - ASCII-format grid file produced by Patran: <casename>.out
+/// - ASCII-format input file: RocfracControl.txt
+///
+/// @subsection rocburn Rocburn Combustion Module
+/// | RocburnAPN                                      | RocburnPY                                                 |
+/// | :-----------------                              |:-----------------                                         |
+/// |1-D heat conduction into propellant              |1-D heat equation                                          |                                     
+/// |Uses gas pressure power law                      |Dynamic heating                                            |   
+/// |Provides regression rate for burning propellant  |Geometrically dependent film coefficient                   |
+/// |Burnout capabilities, no heating                 |Ignition modeling                                          |
+/// |                                                 |Burnout                                                    |
+/// |                                                 |Provides aP<SUP>n</SUP>regression rate for burning elements|
+/// |                                                 |Can use lookup tables                                      |
+///
+/// @subsection files_rocburn Files Required for Rocburn Simulation
+/// One file is required:
+/// - ASCII-format input file: RocburnAPNControl.txt \b -OR- ASCII-format input file: RocburnPYControl.txt
+///
+/// \b Please \b see \b the <a href="../legacy/Tutorial/Section_07_PhysicsModules.pdf" target="_blank"><b>PhysicsModules</b></a> \b powerpoint \b for
+/// \b the \b RocburnAPNControl.txt \b and \b RocburnPYControl.txt \textfiles.
