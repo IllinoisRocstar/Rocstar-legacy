@@ -24,7 +24,7 @@
 ///    - Provide subscale simulations of materials and accident scenarios
 ///    - Provide a software framework and computational infrastructure to facilitate component integration and support large-scale simulation
 ///
-/// The entire Rocstar Simuation Suite is layout as such:
+/// The entire Rocstar Simuation Suite is laid out as such:
 /// \image html physics_sim.png
 ///
 /// @section user User Guides
@@ -32,7 +32,7 @@
 /// 
 /// | \b User \b Guides                                                                     | \b Developer \b Guides                                                         |
 /// | :-----------------:                                                                   | :---------------------:                                                        |
-/// |<a href="../legacy/UG/Rocstar3_UG.pdf" target="_blank"><b>Rocstar Suite</b></a>        |                                                                                |
+/// |<a href="../legacy/UG/Rocstar3_UG.pdf" target="_blank"><b>Rocstar Suite</b></a>        | <a href="../html/extra_guides.html"><b>Additional Guides</b></a>               |
 /// |<a href="../legacy/UG/FileFormats.pdf" target="_blank"><b>FileFormats</b></a>          |                                                                                |
 /// |<a href="../legacy/UG/surfdiver.pdf" target="_blank"><b>Surfdiver</b></a>              |                                                                                |
 /// |<a href="../legacy/UG/Rocblas_ug.pdf" target="_blank"><b>Rocblas</b></a>               | <a href="../legacy/DG/Rocblas_dg.pdf" target="_blank"><b>Rocblas</b></a>       |

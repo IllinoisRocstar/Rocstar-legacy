@@ -49,3 +49,8 @@ div.image img[src="multiphysics_process.png"]{
 div.image img[src="physics_sim_modules.png"]{
   width:550px;
 }
+
+/*Visualization */
+div.image img[src="tecplot.png"]{
+  width:1050px;
+}

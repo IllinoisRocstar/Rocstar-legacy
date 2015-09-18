@@ -1,0 +1,16 @@
+///
+/// @page extra_guides Additional Guides
+///
+/// @section integration_interface Integration Interface
+/// The <a href="../legacy/Tutorial/Section_04_IntegrationInterface.pdf" target="_blank"><b>Integration Interface</b></a> presentation
+/// goes through the software integration substrate and integration through Roccom. Data attributes, inheritance, function and runtime
+/// are all discussed here.
+///
+/// @section orchestration Rocman Orchestration 
+/// The <a href="../legacy/Tutorial/Section_05_RocmanOrchestration.pdf" target="_blank"><b>Rocman Orchestration</b></a> presentation goes
+/// through the component management and orchestration framework of Rocman. The hierarchical architecture as well as an example are discussed.
+///
+/// @section service_components Service Components
+/// The <a href="../legacy/Tutorial/Section_06_ServiceComponents.pdf" target="_blank"><b>Service Components</b></a> presentation discusses
+/// the surface propagation and data transfer components of the Rocstar suite. Various aspects from the utilities and I/O services are mentioned 
+/// while interface data transfer and mesh enhancement and modification are also discussed in greater detail.
