@@ -14,3 +14,22 @@
 /// The <a href="../legacy/Tutorial/Section_06_ServiceComponents.pdf" target="_blank"><b>Service Components</b></a> presentation discusses
 /// the surface propagation and data transfer components of the Rocstar suite. Various aspects from the utilities and I/O services are mentioned 
 /// while interface data transfer and mesh enhancement and modification are also discussed in greater detail.
+///
+/// @section paper Rocman Paper
+/// The <a href="../legacy/UG/rocman3.pdf" target="_blank"><b>Rocman Paper</b></a> gives information into the upcoming generation of Rocman
+/// built on top of the Roccom integration framework.
+///
+/// @section fileformats Supported Roccom File Formats
+/// The <a href="../legacy/UG/FileFormats.pdf" target="_blank"><b>FileFormats</b></a> developer guide gives insight into the conventions used by 
+/// roccom-compliant data files and modules such as Rocin and Rocout. The guide delves into supported formats such as HDF4 and CGNS. 
+///
+/// @section surfdiver Rocface Surfdiver Module
+/// <a href="../legacy/UG/surfdiver.pdf" target="_blank"><b>Surfdiver</b></a> is an executable programs built on top of Rocface for constructing
+/// a common refinement or common tessellation of two nonmatching surface meshes. The documents describes the file formats, procedure for building and running,
+/// and advanced procedures for tuning feature-detection parameters for Surfdiver.
+///
+/// @section timezooming Rocstar Time Zooming and Rocket Burnout
+/// <a href="../legacy/UG/Rocstar_TimeZooming.pdf" target="_blank"><b>Time Zooming</b></a> gives a user and developer report for time zooming in Rocstar.
+/// The focus, here, in on testing, using and implementing the time zooming aspect of the Rocstar simulation suite. Tests, trials and behaviors are 
+/// summarized accordingly as well.  
+
