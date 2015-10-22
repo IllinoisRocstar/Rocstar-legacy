@@ -191,6 +191,11 @@ sub extract {
 	}
     }
 
+    #Make the Rocmop Directory
+    if(ModuleProcessor::makeDirIfNeeded($target."Rocmop")) {
+    	return(1); #if failed to make it
+    }
+
     #Make the Rocman Directories
     if(ModuleProcessor::makeDirIfNeeded($target."Rocman")) {
 	return(1); #if failed to make it
@@ -427,6 +432,7 @@ sub getNDAFiles {
 
     $NDAfiles{$sourcedir."RocstarControl.txt"} = $targetdir ;
  #   $NDAfiles{$sourcedir."Rocman/RocpandaControl.txt"} = $targetdir."Rocman/";
+    $NDAfiles{$sourcedir."Rocmop/RocmopControl.txt"} = $targetdir."Rocmop";
     $NDAfiles{$sourcedir."Rocman/RocmanControl.txt"} = $targetdir."Rocman";
 }
 

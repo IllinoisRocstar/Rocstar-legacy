@@ -1,7 +1,7 @@
 Overview
 
    Rocburn_2D is a upper level interface code that communicates
-   with Rocman for all avaiable individual burning models.   Rocman 
+   with Rocman for all available individual burning models.   Rocman 
    will call corresponding subroutines for the combustion model 
    to be used.
 
