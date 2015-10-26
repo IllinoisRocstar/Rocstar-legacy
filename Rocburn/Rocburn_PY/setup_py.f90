@@ -20,8 +20,7 @@
 ! * Arising FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE    *
 ! * USE OR OTHER DEALINGS WITH THE SOFTWARE.                          *
 ! *********************************************************************
-MODULE SETUP_PY
-
+MODULE  SETUP_PY
   USE data_py
 
 CONTAINS
@@ -585,9 +584,3 @@ CONTAINS
     END SUBROUTINE burn_finalize_0d
 
   END MODULE SETUP_PY
-
-
-
-
-
-

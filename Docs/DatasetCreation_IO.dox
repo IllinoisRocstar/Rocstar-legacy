@@ -1,11 +1,14 @@
 ///
-/// @page creationIO Dataset Creation and Sample I/O
+/// @page creationIO Dataset Creation
 /// 
 /// @section dataset Data Set Creation
-/// This section is adapted from the <a href="../legacy/Tutorial/Section_09_DatasetCreation.pdf" target="_blank"><b>Dataset Creation</b></a> powerpoint.
 ///
 /// @subsection rocprep Rocprep
 /// <b>Rocstar input data preparation tool : Rocstar/utilities/Rocprep</b> \n
+/// Rocprep is Rocstar's dataset preparation tool. 
+/// It takes an initial dataset and preprocesses it accordingly for a given problem.\n Datasets that have not yet 
+/// been preprocessed are referred to as Native Data Archives. These can contain: \n
+///
 /// Native Data Archives 
 /// - Output from Gridgen, Patran, etc.
 /// - Various grids (Grid1, Grid2, …)
@@ -31,42 +34,5 @@
 /// @subsection rocprep_usage Rocprep Usage
 /// \image html rocprep_usage.png
 ///
-/// @section io Sample I/O
-/// This section is adapted from the <a href="../legacy/Tutorial/Section_11_RocstarIO.pdf" target="_blank"><b>Sample I/O</b></a> powerpoint.
-/// 
-/// @subsection timestep1 Example System Time Step 1
-/// \image html timestep1.png
-/// @subsection timestep2 Example System Time Step 2
-/// \image html timestep2.png
-/// @subsection performance_data Performance Data
-/// \image html performance_data.png
-///
-/// @subsection output_data Physics Module Output Data
-/// <b>Module native data in Modout</b> \n
-/// <b>Probe files</b>: <casename>.prb_<probenum>
-/// - time, rho, u, v, w, p, T
-/// .
-/// \image html output_data.png
-/// <b>Rocstar format data</b> in Rocout \n
-/// <b> HDF4 files </b>:
-/// - Volume files: fluid_<timestamp>_<processor>.hdf
-/// - Surface files: ifluid_<type>_<timestamp>_<processor>.hdf
-/// - <type> = b (burning), nb (inert), ni (non-interface)
-/// - <timestamp>: xx.yyyyyy  y.yyyyy * 10^(xx-10)
-/// - Examples:
-/// | HDF                          | Type                   |
-/// | :-----------------           | :--------------------- |
-/// | fluid_07.800000_0000.hdf     | volume                 |
-/// | ifluid_b_07.800000_0000.hdf  | burning surface        | 
-/// | ifluid_nb_07.800000_0000.hdf | non-burning            | 
-/// | ifluid_ni 07.800000_0000.hdf | non-interacting        |
-/// \n
-/// - Similar solid, isolid and burn, iburn files
-///
-/// @subsection gnuplot_probe Using Gnuplot with Probe Files
-/// \image html gnuplot_shell.png
-/// \n
-/// \image html gnuplot_output.png
-/// \n
-///
+/// These page is adapted from the <a href="../legacy/Tutorial/Section_09_DatasetCreation.pdf" target="_blank"><b>Dataset Creation</b></a> powerpoint.
 

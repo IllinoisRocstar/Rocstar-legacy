@@ -2,7 +2,6 @@
 /// @page visualization Visualizations 
 /// 
 /// @section rocketeer_viz Visualizations with Rocketeer
-/// This section is adapted from the <a href="../legacy/Tutorial/Section_14_Rocketeer.pdf" target="_blank"><b>Rocketeer</b></a> powerpoint.
 ///
 /// @subsection prereqs Prerequsites on Linux
 /// Rocketeer needs:
@@ -89,23 +88,20 @@
 /// @subsection opacity Opacity
 /// \image html rocketeer_opacity.png
 /// @subsection final_display Final Display
-/// \image html rocketeer_final_display.jpg Two variables: Pressure and Velocity & Pressure volume and isosurfaces; colorbar & Velocity Glyphs & Translucent pressure volume
+/// \image html rocketeer_final_display.jpg Displaying translucent pressure, isosurfaces, and velocity glyphs.
 /// @subsection save_images Save Images and Movies
 /// \image html rocketeer_saving_images.png
-/// @subsection much_more Much More...
-/// - http://www.csar.uiuc.edu/F_software/rocketeer/v1.3/Rocketeer_Users_Guide.htm
-/// - Multiple materials (fluid and solid, surface)
-/// - Block Selection
-/// - Movie Fly-throughs
-/// - Slices
-/// - Bounding boxes
+///
+/// @subsection much_more Further Capabilities of Rocketeer
+/// - Ability to use multiple materials (fluid and solid, surface)
+/// - Enable block Selection and movie Fly-throughs
+/// - Visualize slices and bounding boxes
 ///
 /// @section tecplot Loading Rocstar Files into Tecplot
-/// This section is adapted from the last half of the <a href="../legacy/Tutorial/Section_12_Visualization.pdf" target="_blank"><b>Visualization</b></a> powerpoint.
 ///
 /// @subsection hdf4_tecplot HDF4 to Tecplot Conversion Utility
 /// HDF4 to Tecplot conversion utility: <build>/bin/hdf2plt \n
-/// Usage: hdf2plt –regex “hdf files to convert ” –o <filename>.dat \n
+/// Usage: <b> hdf2plt –regex “hdf files to convert ” –o <filename>.dat </b> \n
 /// Available command line flags for hdf2plt:
 /// - - -regex "{somestring}*.hdf": specifies a set of hdf files
 /// - -g: enables ghost node inclusion in the output file
@@ -140,4 +136,7 @@
 /// All of Tecplot’s visualization and analysis tools can now be applied to the Rocstar simulation \n
 /// Allows deriving new variables, etc. that Rocketeer does not do
 /// \image html tecplot.png
+///
+/// These sections are adapted from the <a href="../legacy/Tutorial/Section_14_Rocketeer.pdf" target="_blank"><b>Rocketeer</b></a> and
+/// <a href="../legacy/Tutorial/Section_12_Visualization.pdf" target="_blank"><b>Visualization</b></a> powerpoints respectively.
 

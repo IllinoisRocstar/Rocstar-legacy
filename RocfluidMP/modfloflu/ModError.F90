@@ -493,6 +493,8 @@ MODULE ModError
       CHARACTER(2*CHRLEN)     :: message
       TYPE(t_global), POINTER :: global
 
+      errorCode2 = 1
+
       SELECT CASE (errorCode)
 
 ! ------------------------------------------------------------------------------
@@ -998,7 +1000,7 @@ MODULE ModError
         CASE (ERR_POST_NSERVERS_INVALID)
           message = 'Number of servers invalid.'          
         CASE (ERR_EXCEED_DIMENS)
-          message = 'Exceedings dimensions of array:'
+          message = 'Exceeding dimensions of array:'
         CASE (ERR_STRING_READ)
           message = 'Cannot read string.'
 
@@ -1275,7 +1277,7 @@ MODULE ModError
         END IF ! global%nProcAlloc
       END IF ! flag
 
-      STOP
+      STOP 1
 #endif
 
 #ifdef RFLO
@@ -1286,7 +1288,7 @@ MODULE ModError
         CALL MPI_Abort( error )
       ENDIF
 #endif
-      STOP
+      STOP 1
 #endif
     END SUBROUTINE ErrorStop
 
