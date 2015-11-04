@@ -1,3 +1,13 @@
+/* main.dox */
+div.image img[src="physics_sim.png"]{
+  width:950px;
+}
+
+/* Dataset Creation */
+div.image img[src="gnuplot_output.png"]{
+  width:600px;
+}
+
 /* tutorials.dox */
 div.image img[src="rsrm_propellant.png"]{
   width:350px;
@@ -26,11 +36,10 @@ div.image img[src="rocstar_vs_atk.png"]{
 
 /*Physics.dox*/
 div.image img[src="multiphysics_interface.png"]{
-  width:550px;
+  width:500px;
 }
-
-div.image img[src="multiphysics_interface.png"]{
-  width:350px;
+div.image img[src="multiphysics_partitions.png"]{
+  width:500px;
 }
 div.image img[src="multiphysics_domains.png"]{
   width:550px;
@@ -47,10 +56,22 @@ div.image img[src="multiphysics_process.png"]{
 
 /*Physics Modules */
 div.image img[src="physics_sim_modules.png"]{
-  width:550px;
+  width:950px;
 }
 
 /*Visualization */
+div.image img[src="rocketeer_using.jpg"]{
+  width:900px;
+}
+div.image img[src="rocketeer_select_data.jpg"]{
+  width:900px;
+}
+div.image img[src="rocketeer_displ_vars.jpg"]{
+  width:900px;
+}
+div.image img[src="rocketeer_final_display.jpg"]{
+  width:900px;
+}
 div.image img[src="tecplot.png"]{
   width:1050px;
 }
