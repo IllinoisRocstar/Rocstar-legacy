@@ -62,11 +62,20 @@ sub checkNDA {
     # It is an error to have zero Rocburn models if the Rocburn flag is true. 
     # As of 9/16/04, the ROCBURN flag is forced to be true in Rocprep.pm. 
     if ($props->processModule("ROCBURN")) {
-	if (!analyzeRocburn($baseDir)) {
-          $log->processErrorCode(301, $baseDir);
-	  push(@error, 301);
-	};
+        if (!analyzeRocburn($baseDir)) {
+            $log->processErrorCode(301, $baseDir);
+            push(@error, 301);
+        };
     }
+
+    # check Rocmop files
+    if ($props->processModule("ROCMOP")) {
+        if (!analyzeRocburn($baseDir)) {
+            $log->processErrorCode(405, $baseDir);
+            push(@error, 405);
+        };
+    }
+
     $log->printSeparator();
     return (hasError(\@error));
 }
@@ -125,6 +134,29 @@ sub analyzeRocburn {
 
 }
 
+sub analyzeRocmop {
+    my ($basedir) = @_;
+    my ($log, $props, $badFileArray, $numBadFiles, $rbDir);
+    my ($numFound, @fileList, $targetDir);
+    $numFound = 0;
+
+    $props = ModuleProcessor::getProps();
+    $log  = ModuleProcessor::getLog();
+    $targetDir = $props->getTARGETDIR();
+
+    $rbDir = $basedir."Rocmop/";
+    @fileList = ($rbDir, $rbDir."RocmopControl.txt");
+    $badFileArray = ModuleProcessor::checkFilesExist(\@fileList);
+    $numBadFiles = @$badFileArray;
+    if (!$numBadFiles) {
+    $props->setKeyValuePair("ROCMOP", $TRUE);
+    $NDAfiles{$rbDir."RocmopControl.txt"} = $targetDir."Rocmop/";
+    $numFound++;
+    }
+
+    return ($numFound);
+
+}
 #************************************************************************************
 #************************************************************************************
 sub extract {
@@ -350,7 +382,7 @@ sub checkRocstarFiles {
 
     $props = ModuleProcessor::getProps();
     $log = ModuleProcessor::getLog();
-    
+
     my ($targetDir) = $props->getTARGETDIR();
 
     if ($props->processModule("ROCBURN")) {
@@ -362,6 +394,15 @@ sub checkRocstarFiles {
 	$error +=1;
 	$log->processErrorCode(27, "No Rocburn Modules Available");
     }
+    }
+
+    if ($props->processModule("ROCMOP")) {
+        analyzeRocmop($targetDir);
+        #If any of the three Rocburn models is there, then it's OK
+        unless ($props->processModule("ROCMOP")){
+            $error +=1;
+            $log->processErrorCode(27, "No Rocmop module available");
+        }
     }
 #    if (checkRocstarControlKey("Rocpanda")) {
 #	unless (ModuleProcessor::checkFileExists($targetDir."Rocman/RocpandaControl.txt")){
@@ -432,7 +473,9 @@ sub getNDAFiles {
 
     $NDAfiles{$sourcedir."RocstarControl.txt"} = $targetdir ;
  #   $NDAfiles{$sourcedir."Rocman/RocpandaControl.txt"} = $targetdir."Rocman/";
-    $NDAfiles{$sourcedir."Rocmop/RocmopControl.txt"} = $targetdir."Rocmop";
+    if($props->processModule("ROCMOP")){
+        $NDAfiles{$sourcedir."Rocmop/RocmopControl.txt"} = $targetdir."Rocmop";
+    }
     $NDAfiles{$sourcedir."Rocman/RocmanControl.txt"} = $targetdir."Rocman";
 }
 

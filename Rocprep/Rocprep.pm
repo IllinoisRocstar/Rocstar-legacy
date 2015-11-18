@@ -245,7 +245,7 @@ sub setDefaultProps {
    $RocProps->setKeyValuePair("ROCSTARVERS", "3.0");
 
    # physics modules
-   foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ROCBURNAPN ROCBURNPY ROCBURNZN)) {
+   foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ROCBURNAPN ROCBURNPY ROCBURNZN ROCMOP)) {
       unless ($RocProps->propExists($keyword)) {
          $RocProps->setKeyValuePair($keyword, $FALSE);
       }
@@ -254,6 +254,11 @@ sub setDefaultProps {
    # When genx no longer requires a rocburn module to be present, CHANGE THE DEFAULT TO $FALSE:
    unless ($RocProps->propExists("ROCBURN")) {
       $RocProps->setKeyValuePair("ROCBURN", $FALSE);
+   }
+
+   # Rocmop
+   unless ($RocProps->propExists("ROCMOP")) {
+     $RocProps->setKeyValuePair("ROCMOP", $FALSE);
    }
 
    # surfdiver combinations
@@ -499,8 +504,21 @@ sub b_command {
       return;
     }
 
-    #process Rocburn  
+    #process Rocburn
     $RocProps->setKeyValuePair("ROCBURN", $TRUE);
+}
+
+sub m_command {
+  my ($cline) = @_;
+
+  # if nothing is passed in, print the usage message for this option
+  unless (defined($cline)) {
+    print "  -m             Rocmop preprocessing\n";
+    return;
+  }
+
+  #process Rocmop
+  $RocProps->setKeyValuePair("ROCMOP", $TRUE);
 }
 
 sub A_command {
@@ -759,12 +777,13 @@ sub printUsage {
     E_command();
     P_command();
 
-    print "\nPhysics module selection:\n";
+    print "\nPhysics & service module selection:\n";
     o_command();
     u_command();
     f_command();
     s_command();
     b_command();
+    m_command();
 
     print "\nModule-specific flags:\n";
     r_command();

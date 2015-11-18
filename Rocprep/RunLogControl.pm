@@ -78,7 +78,7 @@ sub processErrorList {
 # Range 251-300; Rocsolid specific errors
 # Range 301-350; Rocburn specific errors
 # Range 351-400; Rocstar specific errors
-
+#
 # Code 22 is for a bad directory
 # Code 23 is for a bad file
 # Code 24 is for a bad parameter read from a file
@@ -129,11 +129,15 @@ sub processErrorCode {
 	    print LOGFILE "\n--->ERROR in $theCaller: No valid Rocburn Models found at: $msg\n\n";
 	    last SWITCH;
 	}
-	if ($errorCode == 404) {
-	    print LOGFILE "\n--->ERROR in $theCaller: unimplemented function: $msg\n\n";
-	    last SWITCH;
-	}
-	if ($errorCode == 512) {
+    if ($errorCode == 404) {
+        print LOGFILE "\n--->ERROR in $theCaller: unimplemented function: $msg\n\n";
+        last SWITCH;
+    }
+    if ($errorCode == 405) {
+        print LOGFILE "\n--->ERROR in $theCaller: No Rocmop config found at: $msg\n\n";
+        last SWITCH;
+    }
+    if ($errorCode == 512) {
 	    print LOGFILE "\n\nMajor Internal Program Error: Error code.  Contact Code Authors\n\n";
 	    printContactInfo();
 	    last SWITCH;
