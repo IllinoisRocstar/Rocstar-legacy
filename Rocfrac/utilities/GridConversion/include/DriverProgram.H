@@ -11,6 +11,7 @@
 #endif
 #include "Global.H"
 #include "Profiler.H"
+#include "Mesh.H"
 
 namespace GridConversion {
   
@@ -165,6 +166,8 @@ namespace GridConversion {
       std::string output_name;
       /// Name of input file.
       std::string input_name;
+      /// Name of bc input file
+      std::string bc_input_name;
       /// Verbosity level. 
       int verblevel;
       /// Outfile stream for output.
@@ -175,14 +178,40 @@ namespace GridConversion {
       int numNodes;
       /// vector for holding nodal coordinates read from input
       std::vector<double> nodes;
+      // vector of vectors to hold nodal bc flags
+      std::vector< std::vector<int> > nodeBCs;
+      /// vector to hold list of node bc values (these are different for
+      /// each bc type - see the Rocfrac documentation for more clarification)
+      std::vector< std::vector< std::vector<double> > > nodeBCValues;
       /// number of elements in mesh
       int numElems;
       /// vector for holding element connectivies read from input
-      std::vector<int> elems;
+      std::vector<unsigned int> elems;
+      /// vector to hold list of element bc values 
+      std::vector< std::vector<int> > elemBCs;
+      /// vector to hold list of element bc values (these are different for
+      /// each bc type - see the Rocfrac documentation for more clarification)
+      std::vector< std::vector< std::vector<double> > > elemBCValues;
       /// number of nodes per element
       int numNodesPerElem;
+      /// integer to denote the shape of elements used in the mesh
+      int elemShape;
       /// vector to hold the element shapes
       std::vector<std::string> shapes;
+      /// vector of vectors to hold the domains
+      std::vector< std::vector<unsigned int> > domains;
+      /// vector to hold list of domain bc flags
+      std::vector< std::vector<int> > domainBCs;
+      /// vector to hold list of domain bc values (these are different for
+      /// each bc type - see the Rocfrac documentation for more clarification)
+      std::vector< std::vector< std::vector<double> > > domainBCValues;
+      /// vector of vectors to hold the edges
+      std::vector< std::vector<int> > edges;
+      /// vector to hold list of edge bc flags
+      std::vector< std::vector<int> > edgeBCs;
+      /// vector to hold list of edge bc values (these are different for
+      /// each bc type - see the Rocfrac documentation for more clarification)
+      std::vector< std::vector< std::vector<double> > > edgeBCValues;
     public:
       ///
       /// Default constructor.
@@ -220,6 +249,7 @@ namespace GridConversion {
         numNodes = 0;
         numElems = 0;
         numNodesPerElem = 0;
+        elemShape = 0;
 
         //Set element shape vector (shape numbers are those used in Patran grid files)
         shapes.resize(10);
@@ -238,6 +268,7 @@ namespace GridConversion {
         // Set input file to first argument
         std::vector<std::string> args(_command_line.GetArgs());
         input_name = args[0];
+        bc_input_name = args[1];
 
         // Check the verbosity level
         std::string sverb(_command_line.GetOption("verbosity"));
@@ -255,7 +286,8 @@ namespace GridConversion {
           std::ostringstream Ostr;
           Ostr << "Configuration:" << std::endl
                << "verbosity           = " << verblevel << std::endl
-               << "input_name          = " << input_name << std::endl;
+               << "input_name          = " << input_name << std::endl
+               << "bc_input_name       = " << bc_input_name << std::endl;
           if(!output_name.empty())
             Ostr << "output file         = " << output_name << std::endl;
           Ostr << std::endl;
@@ -285,6 +317,10 @@ namespace GridConversion {
       /// This function parses the input file.
       /// 
       virtual int ReadInput();
+      ///
+      /// This function writes the output grid file
+      /// 
+      virtual int WriteOutput();
     };
     
 

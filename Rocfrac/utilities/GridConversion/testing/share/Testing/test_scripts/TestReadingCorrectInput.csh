@@ -31,7 +31,7 @@ cd ${InputDir}
 cp -r $2/share/Testing/test_data/${InputDir}/* .
 
 #Run executable to generate output data
-$3/gridConversion correct.grd -v 2 -o out.dat >& screen.dat
+$3/gridConversion correct.grd bcs.inp -v 2 -o out.dat >& screen.dat
 #ENTER YOUR COMMAND FOR RUNNING YOUR EXECUTABLE HERE
 #(HINT: $3 IS THE PATH TO THE BIN DIRECTORY GIVEN WHEN CALLING RUNTEST)
 
