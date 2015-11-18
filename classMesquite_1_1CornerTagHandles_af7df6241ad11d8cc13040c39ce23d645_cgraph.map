@@ -1,0 +1,19 @@
+<map id="save_load_tags" name="save_load_tags">
+<area shape="rect" id="node2" href="$classMesquite_1_1CornerTagHandles.html#a489633e6bd80350ca5ff72e08947d754" title="get_current_mesh" alt="" coords="199,73,326,100"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1PatchData.html#a3e94692727e2bf9bc09fd1625788e21c" title="Returns a pointer to the start of the element array. " alt="" coords="190,125,335,166"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1PatchData.html#aba4eb3742e5743e1fab06db4bf9e92fb" title="Mesquite::PatchData\l::get_element_handles_array" alt="" coords="168,190,357,231"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1CornerTagHandles.html#adc00281ce80b1ea948828771b19353ed" title="Get the tag handle for storing this tag type with the specified number of values (corners). " alt="" coords="220,256,305,283"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1CornerTagHandles.html#ab99522c4c22c04b58820e861b8d9e0b7" title="num_corners" alt="" coords="214,307,311,333"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1Mesh.html#a6ec792101a6e7991efee6cb1f20707ed" title="Get tag values on elements. " alt="" coords="192,358,333,399"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1Mesh.html#ad2de5f13b60db2a5980ee6b6882864ac" title="Set tag values on elements. " alt="" coords="192,423,333,465"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="406,459,581,501"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1MeshSet.html#a03ad2cffc7835597ac6114d96e457bca" title="Mesquite::MeshSet::\lget_current_mesh" alt="" coords="422,5,565,46"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1PatchData.html#ab3bb3a5a122f65cafdffc9b71af6d5ad" title="Returns the originating meshSet. " alt="" coords="421,70,566,111"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1CornerTagHandles.html#a1a6da75370a0b218f159e10ee804ffb8" title="size" alt="" coords="470,139,517,165"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1Mesh.html#a3835198ae19381628a362f89395ff30e" title="Create a tag. " alt="" coords="423,190,564,231"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1Mesh.html#a8db95295ff2a6b35460145105b20d825" title="Get handle for existing tag, by name. " alt="" coords="410,256,577,283"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1Mesh.html#afd0daa14076258d72d85c6df82c472ee" title="Get properites of tag. " alt="" coords="423,307,564,349"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1PatchData.html#a1b72722c733b2017737741384f8d4546" title="Mesquite::PatchData\l::element_by_index" alt="" coords="421,373,566,414"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1MsqMeshEntity.html#a0b552656e1b264732e90715ccba32b1f" title="Return number of nodes in element (number of corner vertices + number of higher&#45;order nodes)..." alt="" coords="630,426,805,467"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="638,491,797,533"/>
+</map>

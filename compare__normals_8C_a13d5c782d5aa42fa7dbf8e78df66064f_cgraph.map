@@ -1,0 +1,8 @@
+<map id="compute_weighted_normals" name="compute_weighted_normals">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="485,56,619,83"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="238,5,415,32"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="464,157,640,184"/>
+<area shape="rect" id="node6" href="$compare__normals_8C.html#aa6ed0bf462d23672e71c880d24613bc4" title="compute_vnormal_error" alt="" coords="247,107,406,133"/>
+<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="688,81,816,108"/>
+<area shape="rect" id="node7" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="530,107,574,133"/>
+</map>

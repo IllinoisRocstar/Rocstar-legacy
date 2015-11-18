@@ -1,0 +1,5 @@
+<map id="unit" name="unit">
+<area shape="rect" id="node2" href="$classGeoPrim_1_1CLine.html#a5a825f157fd23c389876bd1c54d57757" title="GeoPrim::CLine::has\l_point" alt="" coords="121,5,265,46"/>
+<area shape="rect" id="node4" href="$classGeoPrim_1_1CPlane.html#ad5886d99eaa33c5ef208c15d47ec3456" title="GeoPrim::CPlane::operator==" alt="" coords="96,71,291,97"/>
+<area shape="rect" id="node3" href="$classGeoPrim_1_1CLineSegment.html#aee8741ea7673428339de3f4d65d2d43a" title="GeoPrim::CLineSegment\l::has_point" alt="" coords="339,5,506,46"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="read_mesh" name="read_mesh">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="326,5,501,32"/>
+<area shape="rect" id="node4" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="142,56,277,83"/>
+<area shape="rect" id="node5" href="$classOBJ__Reader.html#a5c8cf2889cf1e089954cb2adb41cf0eb" title="get_nextline" alt="" coords="367,208,459,235"/>
+<area shape="rect" id="node6" href="$classOBJ__Reader.html#ab391b51f7003250d7bdcb5fc316950fa" title="read_pane_coors" alt="" coords="149,157,270,184"/>
+<area shape="rect" id="node9" href="$classOBJ__Reader.html#aeccf7cc5416589cf28bb30b338c637fd" title="read_pane_elems" alt="" coords="147,107,271,133"/>
+<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="549,81,677,108"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="359,107,468,133"/>
+<area shape="rect" id="node8" href="$roccom__c_09_09_8h.html#ad2daf16190cf965c0148d150e14a0273" title="Allocate space for an attribute on a specific pane and return the address by setting addr..." alt="" coords="343,157,484,184"/>
+</map>

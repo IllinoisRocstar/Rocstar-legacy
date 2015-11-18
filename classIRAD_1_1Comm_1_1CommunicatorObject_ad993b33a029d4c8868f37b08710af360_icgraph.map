@@ -1,0 +1,8 @@
+<map id="ResolveDataType" name="ResolveDataType">
+<area shape="rect" id="node2" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a8d1be5b57549ef0643506f95d2602aa8" title="AllReduce" alt="" coords="181,5,264,32"/>
+<area shape="rect" id="node6" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#afcf12962ba5515f1d7802573f764ee99" title="Reduce" alt="" coords="189,56,256,83"/>
+<area shape="rect" id="node3" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a68525b3d4b8bdc6d90e811ddd7fe4794" title="AllGatherv" alt="" coords="312,5,395,32"/>
+<area shape="rect" id="node4" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a3022a005f590568be595c8e47063dbde" title="_AllGatherMOV" alt="" coords="443,5,557,32"/>
+<area shape="rect" id="node5" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#af8875a37d3350bba6bc6836d5e52557b" title="AllGatherMOV" alt="" coords="605,5,712,32"/>
+<area shape="rect" id="node7" href="$flotsam_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="328,56,379,83"/>
+</map>

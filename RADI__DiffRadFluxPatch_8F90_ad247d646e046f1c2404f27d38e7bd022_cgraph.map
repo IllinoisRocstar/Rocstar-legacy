@@ -1,0 +1,16 @@
+<map id="radi_diffradfluxpatch" name="radi_diffradfluxpatch">
+<area shape="rect" id="node2" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="621,332,805,359"/>
+<area shape="rect" id="node3" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="628,79,799,105"/>
+<area shape="rect" id="node7" href="$RFLO__GetDimensions_8F90.html#a05181a2410be15ef34493a9b3a5a0638" title="rflo_getcelloffset" alt="" coords="206,256,325,283"/>
+<area shape="rect" id="node10" href="$RFLO__GetDimensions_8F90.html#a574ff4a131bdb63eac55b68f6ccb3e85" title="rflo_getnodeoffset" alt="" coords="202,155,329,181"/>
+<area shape="rect" id="node12" href="$RFLO__GetPatchDimens_8F90.html#a318ab6a72ca2e23e9d7500d785c0b95e" title="rflo_getpatchdirection" alt="" coords="192,509,339,536"/>
+<area shape="rect" id="node13" href="$RFLO__GetPatchDimens_8F90.html#a0ec3e4e7927962711817fb87f1f8db27" title="rflo_getpatchindices" alt="" coords="196,205,335,232"/>
+<area shape="rect" id="node15" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="243,560,287,587"/>
+<area shape="rect" id="node4" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="854,180,986,207"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="1042,139,1190,181"/>
+<area shape="rect" id="node6" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="1035,205,1197,246"/>
+<area shape="rect" id="node8" href="$RFLO__GetDimensions_8F90.html#ac02260aae73117efbd721b072247e542" title="rflo_getdimensdummy" alt="" coords="405,256,555,283"/>
+<area shape="rect" id="node9" href="$structCOM__exception.html#a7fc97963662ee96e7c885e9213fec030" title="COM_exception::msg" alt="" coords="639,180,788,207"/>
+<area shape="rect" id="node11" href="$RFLO__GetDimensions_8F90.html#af3840de18437855e47c7fcc0dd2db9b5" title="rflo_getdimensdummynodes" alt="" coords="387,155,573,181"/>
+<area shape="rect" id="node14" href="$RFLO__GetDimensions_8F90.html#aba5d7dd0b2f2e1086a6fc3293a20c8f1" title="rflo_getdimensphys" alt="" coords="413,205,547,232"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="projection" name="projection">
+<area shape="rect" id="node2" href="$classPlaneS3.html#af01d769ec65d399198c4eebf7d213ff9" title="PlaneS3::a" alt="" coords="157,5,243,32"/>
+<area shape="rect" id="node3" href="$classPlaneS3.html#afb78d3b27200791df64eb988b06f1ca0" title="PlaneS3::b" alt="" coords="157,56,243,83"/>
+<area shape="rect" id="node4" href="$classPlaneS3.html#ac431a30ef766daac859cfaf79928d98c" title="PlaneS3::c" alt="" coords="157,107,243,133"/>
+<area shape="rect" id="node5" href="$classPlaneS3.html#aaa89b1ab0d7e9266c59806d6e253f997" title="PlaneS3::d" alt="" coords="157,157,243,184"/>
+<area shape="rect" id="node6" href="$constructions_2kernel__ftC3_8h.html#a6d7d992049a02b8fd782ac0b008fa2a1" title="projection_planeC3" alt="" coords="133,208,267,235"/>
+<area shape="rect" id="node7" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="159,259,241,285"/>
+<area shape="rect" id="node8" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="159,309,241,336"/>
+<area shape="rect" id="node9" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="159,360,241,387"/>
+</map>

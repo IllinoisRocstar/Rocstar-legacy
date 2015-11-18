@@ -1,0 +1,13 @@
+<map id="integrate" name="integrate">
+<area shape="rect" id="node2" href="$classRFC__Window__transfer.html#a76864dbe260afa843d487fc5023cace8" title="RFC_Window_transfer\l::allreduce" alt="" coords="144,23,299,65"/>
+<area shape="rect" id="node5" href="$classRFC__Data__const.html#ad089a89a18aa50ad2c64712cf5fb5e3d" title="RFC_Data_const::dimension" alt="" coords="126,89,317,116"/>
+<area shape="rect" id="node6" href="$classTransfer__base.html#a2826d113a628f9c0a10ff096f066d737" title="interpolate" alt="" coords="180,140,263,167"/>
+<area shape="rect" id="node7" href="$classTransfer__base.html#af882df81a272c20738c2d0514b7d8b70" title="Construct a element&#45;wise accessor from nodal data and pointers. " alt="" coords="179,191,264,217"/>
+<area shape="rect" id="node12" href="$classRFC__Window__derived.html#ac93d54480f8b9621387f2edd745257ee" title="Get a vector of local panes contained in the window. " alt="" coords="145,242,298,283"/>
+<area shape="rect" id="node3" href="$classArray__n.html#afe81590cd27ee742610f663f8d77de53" title="Array_n::begin" alt="" coords="385,5,492,32"/>
+<area shape="rect" id="node4" href="$classArray__n.html#ab51a7bd0183d7f778112cdadf89d2087" title="Array_n::end" alt="" coords="391,56,487,83"/>
+<area shape="rect" id="node8" href="$classRFC__Pane__transfer.html#ac4352cefd69971574fd2edb3ee894899" title="RFC_Pane_transfer::\lpointer" alt="" coords="365,154,512,195"/>
+<area shape="rect" id="node11" href="$classRFC__Data__const.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Data_const::id" alt="" coords="367,220,510,247"/>
+<area shape="rect" id="node9" href="$classRFC__Pane__transfer.html#a584f868480e84dcf5750fe21c96c4dd8" title="RFC_Pane_transfer::\lis_master" alt="" coords="572,125,719,166"/>
+<area shape="rect" id="node10" href="$classRFC__Pane__base.html#ac4352cefd69971574fd2edb3ee894899" title="Get the address of a given attribute with id i. " alt="" coords="561,191,730,217"/>
+</map>

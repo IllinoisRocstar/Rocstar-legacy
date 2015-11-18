@@ -1,0 +1,5 @@
+<map id="geom_from_mesh" name="geom_from_mesh">
+<area shape="rect" id="node2" href="$classMesquite_1_1DomainTSTT.html#a37af5ccfaf6704d4ea8b2ea7c990d3a5" title="evaluate closest point and normal " alt="" coords="181,5,280,32"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1DomainTSTT.html#a12f5745d8da3b837184000330cf04136" title="Returns the normal of the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="191,56,270,83"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1DomainTSTT.html#a766c5ddaf349d9da51357569089c64cf" title="Modifies &quot;coordinate&quot; so that it lies on the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="197,107,265,133"/>
+</map>

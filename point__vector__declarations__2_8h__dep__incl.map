@@ -1,0 +1,25 @@
+<map id="point_vector_declarations_2.h" name="point_vector_declarations_2.h">
+<area shape="rect" id="node2" href="$Point__2_8h.html" title="Point_2.h" alt="" coords="849,80,927,107"/>
+<area shape="rect" id="node3" href="$Line__2__Line__2__intersection_8h.html" title="Line_2_Line_2_intersection.h" alt="" coords="635,304,825,331"/>
+<area shape="rect" id="node9" href="$Plane__3_8h.html" title="Plane_3.h" alt="" coords="257,155,337,181"/>
+<area shape="rect" id="node18" href="$predicates__on__points__2_8h.html" title="predicates_on_points_2.h" alt="" coords="803,155,973,181"/>
+<area shape="rect" id="node4" href="$Segment__2__Segment__2__intersection_8h.html" title="Segment_2_Segment_2\l_intersection.h" alt="" coords="549,379,709,421"/>
+<area shape="rect" id="node23" href="$Vector__2_8h.html" title="Vector_2.h" alt="" coords="997,155,1083,181"/>
+<area shape="rect" id="node6" href="$Triangulation_8h.html" title="Triangulation.h" alt="" coords="695,469,801,496"/>
+<area shape="rect" id="node5" href="$dep__helper_8C.html" title="dep_helper.C" alt="" coords="483,469,581,496"/>
+<area shape="rect" id="node7" href="$Overlay__IO_8C.html" title="Overlay_IO.C" alt="" coords="617,544,719,571"/>
+<area shape="rect" id="node8" href="$RFC__Window__overlay_8C.html" title="RFC_Window_overlay.C" alt="" coords="743,544,909,571"/>
+<area shape="rect" id="node10" href="$Aff__transformation__3_8h.html" title="Aff_transformation_3.h" alt="" coords="220,229,375,256"/>
+<area shape="rect" id="node12" href="$distance__predicates__3_8h.html" title="distance_predicates_3.h" alt="" coords="361,387,524,413"/>
+<area shape="rect" id="node13" href="$Line__3_8h.html" title="Line_3.h" alt="" coords="106,387,176,413"/>
+<area shape="rect" id="node11" href="$Point__3_8h.html" title="Point_3.h" alt="" coords="303,304,380,331"/>
+<area shape="rect" id="node16" href="$Vector__3_8h.html" title="Vector_3.h" alt="" coords="252,387,337,413"/>
+<area shape="rect" id="node14" href="$Ray__3_8h.html" title="Ray_3.h" alt="" coords="129,469,199,496"/>
+<area shape="rect" id="node15" href="$Segment__3_8h.html" title="Segment_3.h" alt="" coords="5,469,104,496"/>
+<area shape="rect" id="node17" href="$Direction__3_8h.html" title="Direction_3.h" alt="" coords="245,469,344,496"/>
+<area shape="rect" id="node19" href="$Line__2_8h.html" title="Line_2.h" alt="" coords="865,229,935,256"/>
+<area shape="rect" id="node20" href="$Aff__transformation__2_8h.html" title="Aff_transformation_2.h" alt="" coords="1075,304,1229,331"/>
+<area shape="rect" id="node21" href="$Segment__2_8h.html" title="Segment_2.h" alt="" coords="851,304,949,331"/>
+<area shape="rect" id="node22" href="$Ray__2_8h.html" title="Ray_2.h" alt="" coords="897,387,967,413"/>
+<area shape="rect" id="node24" href="$Direction__2_8h.html" title="Direction_2.h" alt="" coords="1016,229,1115,256"/>
+</map>

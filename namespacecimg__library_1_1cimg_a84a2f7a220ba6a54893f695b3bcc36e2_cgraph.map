@@ -1,0 +1,4 @@
+<map id="srand" name="srand">
+<area shape="rect" id="node2" href="$namespacecimg__library_1_1cimg.html#af31db729637ea4dad61e49e5729839c4" title="Return a random variable between [0,1] with respect to an uniform distribution. " alt="" coords="110,5,157,32"/>
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#af883131bbc64e996d212114cc2b2b21a" title="Get the value of a system timer with a millisecond precision. " alt="" coords="110,56,157,83"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="get_domain_normal_at_vertex" name="get_domain_normal_at_vertex">
+<area shape="rect" id="node2" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="422,5,575,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1MeshDomain.html#af51d0710f9894de362dd3d9aa1399d5c" title="Returns the normal of the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="419,223,579,265"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1Vector3D.html#acd0de676568888d848beb97dcc53ae47" title="Mesquite::Vector3D\l::normalize" alt="" coords="220,269,359,310"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1PatchData.html#a0ff7253ce513597da2d0189dd7deb3f6" title="update_cached_normals" alt="" coords="208,147,371,173"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1Vector3D.html#a058f132af4f5f050d134c24c6202c20b" title="Mesquite::Vector3D\l::set_length" alt="" coords="429,289,568,330"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1Vector3D.html#ad207cb443e371f73f07e874c504f60c1" title="Mesquite::Vector3D\l::length" alt="" coords="627,285,765,326"/>
+<area shape="rect" id="node7" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="814,260,858,287"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1PatchData.html#a4b465b048ea4219134d26ecc1d5981e6" title="Returns the start of the vertex&#45;&gt;element array. " alt="" coords="440,71,557,97"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="449,121,549,148"/>
+<area shape="rect" id="node11" href="$namespacenvc.html#a7ef4a2939f7598fd25136135eafb0ce6" title="nvc::norm" alt="" coords="459,172,539,199"/>
+<area shape="rect" id="node12" href="$namespacenvc.html#a4ea00221667e66f4029614e350ea5745" title="nvc::norm2" alt="" coords="653,172,739,199"/>
+</map>

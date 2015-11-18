@@ -1,0 +1,5 @@
+<map id="set_option" name="set_option">
+<area shape="rect" id="node2" href="$Rocout_8C.html#a4f41034bafb49b9810a2e53480a97ec9" title="Return true if the given string is the name of a Rocout option. " alt="" coords="137,5,250,32"/>
+<area shape="rect" id="node3" href="$Rocout_8C.html#a8ed0e45f99075ad3a0d94de39ed5dc12" title="Return true if the given Rocout option name/value pair is valid. " alt="" coords="137,56,249,83"/>
+<area shape="rect" id="node4" href="$Rocout_8C.html#a63a34f134b6080d28daf5c75420da894" title="is_whole" alt="" coords="299,56,373,83"/>
+</map>

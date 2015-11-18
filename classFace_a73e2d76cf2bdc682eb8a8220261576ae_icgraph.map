@@ -1,0 +1,13 @@
+<map id="getNodes" name="getNodes">
+<area shape="rect" id="node2" href="$classMesh.html#a96f8003c64bff21d807cea52f48db2a7" title="The addCohesive method is the driver for the entire process of adding cohesive elements to the mesh..." alt="" coords="133,5,272,32"/>
+<area shape="rect" id="node3" href="$Mesh_8cpp.html#a402c9ab1640ba544fc22415f9788a97e" title="operator\&gt;\&gt;" alt="" coords="160,56,245,83"/>
+<area shape="rect" id="node4" href="$classNode.html#a5ce4c9e45166eea96b4456217c243a29" title="Node::sharedFace" alt="" coords="138,107,267,133"/>
+<area shape="rect" id="node5" href="$classHexElement.html#af24a81bb88c9a41b19e016fecaccf8ae" title="HexElement::setFaceFromNodes" alt="" coords="322,31,539,57"/>
+<area shape="rect" id="node7" href="$classQCoElement.html#af24a81bb88c9a41b19e016fecaccf8ae" title="QCoElement::setFaceFromNodes" alt="" coords="321,81,541,108"/>
+<area shape="rect" id="node9" href="$classTCoElement.html#af24a81bb88c9a41b19e016fecaccf8ae" title="TCoElement::setFaceFromNodes" alt="" coords="321,132,540,159"/>
+<area shape="rect" id="node11" href="$classTetElement.html#af24a81bb88c9a41b19e016fecaccf8ae" title="TetElement::setFaceFromNodes" alt="" coords="325,183,537,209"/>
+<area shape="rect" id="node6" href="$classHexElement.html#ac9856c7c2ee35b1155368577de614249" title="HexElement::setFromMyNodes" alt="" coords="591,31,798,57"/>
+<area shape="rect" id="node8" href="$classQCoElement.html#ac9856c7c2ee35b1155368577de614249" title="QCoElement::setFromMyNodes" alt="" coords="590,81,799,108"/>
+<area shape="rect" id="node10" href="$classTCoElement.html#ac9856c7c2ee35b1155368577de614249" title="TCoElement::setFromMyNodes" alt="" coords="591,132,798,159"/>
+<area shape="rect" id="node12" href="$classTetElement.html#ac9856c7c2ee35b1155368577de614249" title="TetElement::setFromMyNodes" alt="" coords="594,183,795,209"/>
+</map>

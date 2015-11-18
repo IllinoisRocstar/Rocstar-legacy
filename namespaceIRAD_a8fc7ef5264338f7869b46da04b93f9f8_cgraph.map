@@ -1,0 +1,20 @@
+<map id="TestTCPInterface" name="TestTCPInterface">
+<area shape="rect" id="node2" href="$classIRAD_1_1Sys_1_1Net_1_1Server.html#ab158c345ccfb04b15e016d3f64254220" title="IRAD::Sys::Net::Server\l::Accept" alt="" coords="182,5,343,46"/>
+<area shape="rect" id="node3" href="$classIRAD_1_1Sys_1_1FDSetMan.html#ad0b3c83ce09c56bd95becfe51bdae86c" title="IRAD::Sys::FDSetMan\l::AddInDescriptor" alt="" coords="184,70,341,111"/>
+<area shape="rect" id="node5" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a3f4e456645b1123f45715ccbd1daabaa" title="IRAD::Sys::FDSetMan\l::AddIODescriptor" alt="" coords="184,135,341,177"/>
+<area shape="rect" id="node7" href="$classIRAD_1_1Sys_1_1Net_1_1Client.html#afc89b3b2e3d7a2af86dce02fe74c2345" title="IRAD::Sys::Net::Client\l::Connect" alt="" coords="184,201,341,242"/>
+<area shape="rect" id="node8" href="$classIRAD_1_1Sys_1_1Net_1_1Server.html#a0ee053af96200dc4effa1ef4d130f637" title="IRAD::Sys::Net::Server\l::Descriptor" alt="" coords="182,266,343,307"/>
+<area shape="rect" id="node9" href="$classIRAD_1_1Sys_1_1Net_1_1Client.html#a0ee053af96200dc4effa1ef4d130f637" title="IRAD::Sys::Net::Client\l::Descriptor" alt="" coords="184,331,341,373"/>
+<area shape="rect" id="node10" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a04812fb120501a37d113103fa5a32988" title="IRAD::Sys::FDSetMan\l::ReadyForInput" alt="" coords="184,397,341,438"/>
+<area shape="rect" id="node12" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a6c64340aea8aa56ab18aae9d7d4829e9" title="IRAD::Sys::FDSetMan\l::ReadyForOutput" alt="" coords="184,462,341,503"/>
+<area shape="rect" id="node13" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a4a5f7af65acef0284da146c0fb0a5cc1" title="IRAD::Sys::FDSetMan\l::Select" alt="" coords="184,527,341,569"/>
+<area shape="rect" id="node18" href="$classIRAD_1_1Sys_1_1Net_1_1Server.html#a0faceb454c83e4dbadbea38ee40f7d33" title="IRAD::Sys::Net::Server\l::SimpleInit" alt="" coords="182,593,343,634"/>
+<area shape="rect" id="node19" href="$namespacecimg__library_1_1cimg.html#a3ac7655e49556a90715f3532af221334" title="Sleep for a certain numbers of milliseconds. " alt="" coords="199,658,327,699"/>
+<area shape="rect" id="node4" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a80878055a9e0d0c28c0136a194d0b078" title="IRAD::Sys::FDSetMan\l::SetInDescriptor" alt="" coords="392,70,549,111"/>
+<area shape="rect" id="node6" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a73a5b587bfa37f9216c15bc5a4a30ffb" title="IRAD::Sys::FDSetMan\l::SetOutDescriptor" alt="" coords="392,135,549,177"/>
+<area shape="rect" id="node11" href="$classIRAD_1_1Sys_1_1FDSetMan.html#aff5fbdb60c956875d40149abf8d954df" title="IRAD::Sys::FDSetMan\l::NSet" alt="" coords="392,397,549,438"/>
+<area shape="rect" id="node14" href="$classIRAD_1_1Sys_1_1FDSetMan.html#abcae23803b7517cce5047494dfcdd2c8" title="IRAD::Sys::FDSetMan\l::Zero" alt="" coords="392,462,549,503"/>
+<area shape="rect" id="node15" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a8ff1bc1d59900d8e9f50614cd586171d" title="IRAD::Sys::FDSetMan\l::SetForRead" alt="" coords="392,527,549,569"/>
+<area shape="rect" id="node17" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a6015264b4f6d57005a1a4b4fa917bac7" title="IRAD::Sys::FDSetMan\l::SetForWrite" alt="" coords="392,593,549,634"/>
+<area shape="rect" id="node16" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a40d9714d71fc885c68d48f3f922152cd" title="IRAD::Sys::FDSetMan::Set" alt="" coords="598,568,783,595"/>
+</map>

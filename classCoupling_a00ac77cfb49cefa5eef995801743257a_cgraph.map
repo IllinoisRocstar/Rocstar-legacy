@@ -1,0 +1,14 @@
+<map id="Interrupt" name="Interrupt">
+<area shape="rect" id="node2" href="$classCoupling.html#a32d626626eee0bc4ade146973f6abb1c" title="Invoke finalization of the actions in the scheduler and the agents. " alt="" coords="161,41,223,68"/>
+<area shape="rect" id="node6" href="$classCoupling.html#a5eb8adb23317ad3995690c804e059197" title="output_restart_files" alt="" coords="125,92,259,119"/>
+<area shape="rect" id="node7" href="$Coupling_8C.html#a83f4e1cc14f5787ea19907b93f0cd5cb" title="RocstarShutdown" alt="" coords="129,143,255,169"/>
+<area shape="rect" id="node9" href="$classCoupling.html#a3f2bd05f213d9de47594822ade40d224" title="write_restart_info" alt="" coords="131,197,253,224"/>
+<area shape="rect" id="node3" href="$classScheduler.html#ab39dbbeb37b2db09bada87931cd462a5" title="Scheduler::finalize\l_actions" alt="" coords="307,34,437,75"/>
+<area shape="rect" id="node4" href="$structScheduler_1_1ActionItem.html#a4d53ef72c920649a6dcaf1ccb1392b5d" title="Scheduler::ActionItem\l::action" alt="" coords="486,5,637,46"/>
+<area shape="rect" id="node5" href="$classAction.html#a4e44143f72657f0e69d2a1816b6cc54d" title="Action::finalize" alt="" coords="507,71,615,97"/>
+<area shape="rect" id="node8" href="$roccom__c_09_09_8h.html#a47ed797bddcdd0aabcd9f8e47f326744" title="COM_finalize" alt="" coords="321,139,423,165"/>
+<area shape="rect" id="node10" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="308,190,436,231"/>
+<area shape="rect" id="node11" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="308,255,436,297"/>
+<area shape="rect" id="node12" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="497,255,625,297"/>
+<area shape="rect" id="node13" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="685,255,813,297"/>
+</map>

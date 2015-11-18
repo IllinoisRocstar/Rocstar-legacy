@@ -1,0 +1,8 @@
+<map id="TRAIL_FixRocstarData" name="TRAIL_FixRocstarData">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#ab5a8ac8121d23b45ad8c8354970a2130" title="COM_free_buffer" alt="" coords="233,5,356,32"/>
+<area shape="rect" id="node4" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="237,56,352,83"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a6e38c0b1f83c30b166b7500902e13be1" title="COM_get_panes" alt="" coords="235,107,355,133"/>
+<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#ab6a6d18043bc76f9a381084af49c6a9f" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="229,157,360,184"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="213,208,376,235"/>
+<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="424,132,552,159"/>
+</map>

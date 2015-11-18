@@ -1,0 +1,5 @@
+<map id="norm" name="norm">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#acbfab2bdc28e9a3e445bec479f47322b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_object3d" alt="" coords="105,5,279,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ab470ff84bcac27328430e271067570bd" title="cimg_library::CImg\l\&lt; uintT \&gt;::_get_select" alt="" coords="117,70,267,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a1bf68d76e4c29dde15607a212f6c1b1f" title="Return a 3x3 rotation matrix along the (x,y,z)&#45;axis with an angle w. " alt="" coords="126,136,258,192"/>
+</map>

@@ -1,0 +1,51 @@
+<map id="roccom_exception.h" name="roccom_exception.h">
+<area shape="rect" id="node2" href="$Attribute_8h.html" title="Contains the prototype of Attriubte. " alt="" coords="1170,80,1253,107"/>
+<area shape="rect" id="node48" href="$Function_8h.html" title="Contains the prototypes and implementation for the Funcion object. " alt="" coords="1486,229,1569,256"/>
+<area shape="rect" id="node49" href="$maps_8h.html" title="Contains declaration of mappings for module, window, function, attribute. " alt="" coords="1848,155,1913,181"/>
+<area shape="rect" id="node50" href="$roccom__exception_8C.html" title="roccom_exception.C" alt="" coords="1616,80,1758,107"/>
+<area shape="rect" id="node3" href="$Connectivity_8h.html" title="Contains the prototype of Connectivity. " alt="" coords="920,155,1026,181"/>
+<area shape="rect" id="node5" href="$roccom__devel_8h.html" title="roccom_devel.h" alt="" coords="1516,379,1630,405"/>
+<area shape="rect" id="node42" href="$Attribute_8C.html" title="Contains the implementation of the Attribute object. " alt="" coords="265,379,350,405"/>
+<area shape="rect" id="node4" href="$Pane_8h.html" title="Contains the prototypes for the Pane object. " alt="" coords="591,229,653,256"/>
+<area shape="rect" id="node45" href="$Connectivity_8C.html" title="Contains the implementation of the Connectivity object. " alt="" coords="30,304,140,331"/>
+<area shape="rect" id="node46" href="$Metric_8h.html" title="The Metric Base Class, from which algebraic and geometric metric clases are derived. " alt="" coords="881,229,950,256"/>
+<area shape="rect" id="node47" href="$metric__demo_8C.html" title="metric_demo.C" alt="" coords="975,229,1085,256"/>
+<area shape="rect" id="node41" href="$Window_8h.html" title="Contains the prototypes for the Window object. " alt="" coords="1101,304,1181,331"/>
+<area shape="rect" id="node12" href="$Pane__ghost__connectivity_8h.html" title="Utility for constructing pane ghost connecvtivities in parallel. " alt="" coords="932,603,1110,629"/>
+<area shape="rect" id="node13" href="$Pane__ghost__connectivity_8C.html" title="Utility for constructing pane ghost connecvtivities in parallel. " alt="" coords="930,677,1112,704"/>
+<area shape="rect" id="node43" href="$Pane_8C.html" title="Pane.C" alt="" coords="1025,379,1092,405"/>
+<area shape="rect" id="node22" href="$MesqPane_8h.html" title="MesqPane.h. " alt="" coords="307,603,401,629"/>
+<area shape="rect" id="node23" href="$MesqPane__1__1_8h.html" title="MesqPane_1_1.h" alt="" coords="642,603,765,629"/>
+<area shape="rect" id="node24" href="$MesqPane__95_8h.html" title="MesqPane_95.h" alt="" coords="462,603,577,629"/>
+<area shape="rect" id="node6" href="$Roccom__base_8h.html" title="Contains declaration of the base class for Roccom implementations. " alt="" coords="2590,453,2708,480"/>
+<area shape="rect" id="node19" href="$Rocblas_8h.html" title="Definition for Rocblas API. " alt="" coords="1930,453,2010,480"/>
+<area shape="rect" id="node20" href="$Rocin_8h.html" title="Rocin creates a series of Roccom windows by reading in a list of files. " alt="" coords="3000,453,3066,480"/>
+<area shape="rect" id="node9" href="$intest1_8C.html" title="intest1.C" alt="" coords="2886,528,2961,555"/>
+<area shape="rect" id="node10" href="$intest2_8C.html" title="intest2.C" alt="" coords="2985,528,3060,555"/>
+<area shape="rect" id="node11" href="$Rocin_2test_2param__test_8C.html" title="param_test.C" alt="" coords="3212,528,3313,555"/>
+<area shape="rect" id="node21" href="$Dual__connectivity_8h.html" title="Dual_connectivity.h" alt="" coords="762,453,898,480"/>
+<area shape="rect" id="node27" href="$Pane__boundary_8h.html" title="Utility for detecting boundaries of a pane. " alt="" coords="468,528,590,555"/>
+<area shape="rect" id="node28" href="$Simple__manifold__2_8h.html" title="Simple_manifold_2.h" alt="" coords="1026,453,1168,480"/>
+<area shape="rect" id="node30" href="$Pane__communicator_8h.html" title="Handles communication of shared nodes, ghost nodes or ghost cells across panes. " alt="" coords="1345,453,1497,480"/>
+<area shape="rect" id="node29" href="$Pane__connectivity_8h.html" title="Utility for constructing pane connectivities in parallel. " alt="" coords="1026,528,1165,555"/>
+<area shape="rect" id="node32" href="$Rocmap_8h.html" title="Rocmap.h" alt="" coords="868,528,950,555"/>
+<area shape="rect" id="node33" href="$Rocout_8h.html" title="Rocout creates a series of Roccom windows by reading in a list of files. " alt="" coords="3340,453,3414,480"/>
+<area shape="rect" id="node14" href="$outtest_8C.html" title="outtest.C" alt="" coords="2231,528,2306,555"/>
+<area shape="rect" id="node15" href="$Rocout_2test_2param__test_8C.html" title="param_test.C" alt="" coords="3337,528,3438,555"/>
+<area shape="rect" id="node16" href="$ghostbuster_8C.html" title="ghostbuster.C" alt="" coords="2332,528,2436,555"/>
+<area shape="rect" id="node34" href="$Rocsurf_8h.html" title="Rocsurf.h" alt="" coords="1572,453,1650,480"/>
+<area shape="rect" id="node35" href="$compute__bounded__volumes_8C.html" title="This file contains implementation for computing the volume bounded between two different locations of..." alt="" coords="1588,528,1786,555"/>
+<area shape="rect" id="node36" href="$compute__element__areas_8C.html" title="This file contains implementation for computing the area of each face of the surface mesh of a given ..." alt="" coords="1812,528,1990,555"/>
+<area shape="rect" id="node37" href="$compute__element__normals_8C.html" title="compute_element_normals.C" alt="" coords="2014,528,2206,555"/>
+<area shape="rect" id="node38" href="$RFC__Window__base_8h.html" title="RFC_Window_base.h" alt="" coords="2035,453,2185,480"/>
+<area shape="rect" id="node31" href="$Rocmop_8h.html" title="Rocmop.h" alt="" coords="1481,528,1564,555"/>
+<area shape="rect" id="node25" href="$Rocmop__1_8h.html" title="Rocmop_1.h" alt="" coords="1190,528,1286,555"/>
+<area shape="rect" id="node26" href="$Rocmop__2_8h.html" title="Rocmop_2.h" alt="" coords="1310,528,1406,555"/>
+<area shape="rect" id="node39" href="$Rocon_8H.html" title="Rocon.H" alt="" coords="2210,453,2285,480"/>
+<area shape="rect" id="node40" href="$Rocprop_8h.html" title="Rocprop.h" alt="" coords="2309,453,2392,480"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html" title="Contains the wrapper routines for C++ binding of Roccom API. " alt="" coords="2705,528,2812,555"/>
+<area shape="rect" id="node17" href="$project__test_8C.html" title="project_test.C" alt="" coords="3084,528,3188,555"/>
+<area shape="rect" id="node18" href="$Roccom__base_8C.html" title="Contains the base implementation of Roccom. " alt="" coords="2561,528,2681,555"/>
+<area shape="rect" id="node8" href="$roccom__c_8C.html" title="This file contains the wrapper routines for the C binding of Roccom implementation. " alt="" coords="2594,603,2688,629"/>
+<area shape="rect" id="node44" href="$Window_8C.html" title="This file contains the implementation of the Window object. " alt="" coords="1116,379,1198,405"/>
+</map>

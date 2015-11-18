@@ -1,0 +1,5 @@
+<map id="init_facial_buffers" name="init_facial_buffers">
+<area shape="rect" id="node2" href="$classRFC__Data__const.html#ad089a89a18aa50ad2c64712cf5fb5e3d" title="RFC_Data_const::dimension" alt="" coords="179,5,370,32"/>
+<area shape="rect" id="node3" href="$classRFC__Window__transfer.html#aad1f435b8a27014b3d4944dd3ceb6fd2" title="pane" alt="" coords="249,56,300,83"/>
+<area shape="rect" id="node4" href="$classRFC__Pane__base.html#af4f9a44cfa67dbbabecdefb99a081bc5" title="The total number of faces in the pane. " alt="" coords="197,107,352,149"/>
+</map>

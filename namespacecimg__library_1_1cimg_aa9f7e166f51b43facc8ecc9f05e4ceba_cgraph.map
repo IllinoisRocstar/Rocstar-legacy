@@ -1,0 +1,7 @@
+<map id="graphicsmagick_path" name="graphicsmagick_path">
+<area shape="rect" id="node2" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="231,5,289,32"/>
+<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="233,56,287,83"/>
+<area shape="rect" id="node6" href="$namespacecimg__library_1_1cimg.html#a6a835b5fd5ea1699929cb8a1f91e8729" title="winformat_string" alt="" coords="201,107,319,133"/>
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="368,5,419,32"/>
+<area shape="rect" id="node4" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="467,5,584,32"/>
+</map>

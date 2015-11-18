@@ -1,0 +1,7 @@
+<map id="seek_to_zone" name="seek_to_zone">
+<area shape="rect" id="node2" href="$classtecplot__data.html#af0834ba8162bc2178a7a3631d6c35fb9" title="Count the number of zones in the tecplot file, starting from the current location of the file stream..." alt="" coords="328,5,424,32"/>
+<area shape="rect" id="node4" href="$classtecplot__data.html#a7d387222d141f1116cf158a8d3f04118" title="Read the zone header. " alt="" coords="158,56,279,83"/>
+<area shape="rect" id="node6" href="$classtecplot__data.html#a9a64cf9f130ceb33125440c230319a50" title="Retrieve zone point data from the zone body. " alt="" coords="160,107,277,133"/>
+<area shape="rect" id="node3" href="$classtecplot__data.html#ad7c704b34912678d95c13243cacf9d7f" title="Parse the tecplot file. " alt="" coords="473,31,527,57"/>
+<area shape="rect" id="node5" href="$classtecplot__data.html#a3e7be56194aaa3b89550d9586975ff21" title="Read the header information for the specified zone, then create a new zone object based on the type o..." alt="" coords="329,56,423,83"/>
+</map>

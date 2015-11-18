@@ -1,0 +1,9 @@
+<map id="get_communicator" name="get_communicator">
+<area shape="rect" id="node2" href="$classRoccom__base.html#a52bdca9b27347e63319b7f526d996179" title="Roccom_base::get_communicator" alt="" coords="184,5,405,32"/>
+<area shape="rect" id="node3" href="$classRocout.html#a69466e6a13557ca6ac500e678f5f66a8" title="Does the actual writing to file. " alt="" coords="231,57,358,98"/>
+<area shape="rect" id="node4" href="$classRocout.html#a1c5203c5ca111c4b4177e04e216b1db3" title="Append a (possibly aggregate) attribute to a file. " alt="" coords="457,13,604,40"/>
+<area shape="rect" id="node7" href="$classRocout.html#a763364901e2c959922428b15356b3351" title="Write a (possibly aggregate) attribute to a new file. " alt="" coords="459,64,603,91"/>
+<area shape="rect" id="node8" href="$classRocout.html#a96dfaf0a6d6860d2c68466b2a993fa06" title="Write a (possibly aggregate) attribute to a file. " alt="" coords="453,115,608,141"/>
+<area shape="rect" id="node5" href="$classRocout.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="657,64,746,91"/>
+<area shape="rect" id="node6" href="$RFC__Window__base__IO_8C.html#a2913c79327ebc4516c9f2d79524e5c2e" title="Load the module Rocout into Roccom using the given module name. " alt="" coords="795,64,939,91"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="is_sameZ" name="is_sameZ">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a36a12bf20a1d6cf863f505877e30bdce" title="Return true if image (*this) has the specified width, height and depth. " alt="" coords="134,5,293,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a3d19709f9f46ca0ab06a5942f91b8ee4" title="Return true if image (*this) has the specified width and depth. " alt="" coords="139,70,288,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a229ee758d966e13dc65cc853b5bc2566" title="Return true if image (*this) has the specified height and depth. " alt="" coords="139,135,288,177"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#af244f794f1d0c9b624fbe5dd71cd1c1e" title="Return true if images (*this) and img have same depth. " alt="" coords="143,201,283,242"/>
+<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a45b15ba0da79440024af5428443c8a35" title="Return true if image (*this) has the specified depth and number of channels. " alt="" coords="139,266,288,307"/>
+</map>

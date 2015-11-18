@@ -1,0 +1,11 @@
+<map id="IdealWeightInverseMeanRatio.hpp" name="IdealWeightInverseMeanRatio.hpp">
+<area shape="rect" id="node2" href="$Mesquite__all__headers_8hpp.html" title="This file contains include directives for all mesquite headers. Including this header will maximize d..." alt="" coords="5,155,179,181"/>
+<area shape="rect" id="node3" href="$src_2Control_2Wrappers_2LaplacianIQ_8hpp.html" title="LaplacianIQ.hpp" alt="" coords="63,80,179,107"/>
+<area shape="rect" id="node4" href="$src_2Control_2Wrappers_2ShapeImprovementWrapper_8hpp.html" title="ShapeImprovementWrapper.hpp" alt="" coords="203,80,412,107"/>
+<area shape="rect" id="node7" href="$QualityImprover_2VertexMover_2LaplacianSmoothers_2SmartLaplacianSmoother_8cpp.html" title="SmartLaplacianSmoother.cpp" alt="" coords="437,80,629,107"/>
+<area shape="rect" id="node8" href="$QualityMetric_2Shape_2IdealWeightInverseMeanRatio_8cpp.html" title="IdealWeightInverseMeanRatio.cpp" alt="" coords="654,80,876,107"/>
+<area shape="rect" id="node9" href="$inks_2IdealWeightInverseMeanRatio_8cpp.html" title="IdealWeightInverseMeanRatio.cpp" alt="" coords="901,80,1123,107"/>
+<area shape="rect" id="node10" href="$inks_2SmartLaplacianSmoother_8cpp.html" title="SmartLaplacianSmoother.cpp" alt="" coords="1147,80,1340,107"/>
+<area shape="rect" id="node5" href="$Control_2Wrappers_2ShapeImprovementWrapper_8cpp.html" title="ShapeImprovementWrapper.cpp" alt="" coords="203,155,412,181"/>
+<area shape="rect" id="node6" href="$inks_2ShapeImprovementWrapper_8cpp.html" title="ShapeImprovementWrapper.cpp" alt="" coords="437,155,645,181"/>
+</map>

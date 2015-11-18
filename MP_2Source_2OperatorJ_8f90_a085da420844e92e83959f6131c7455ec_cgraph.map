@@ -1,0 +1,9 @@
+<map id="operatorj" name="operatorj">
+<area shape="rect" id="node2" href="$Constants__A2__B2_8f90.html#afd8c8244797fbe773ec0bf0c32ad3d78" title="constant_w" alt="" coords="126,20,215,47"/>
+<area shape="rect" id="node4" href="$HomogenizedMat_8f90.html#a3a0db7cca315b631530c8b14f02ae8e1" title="invert2" alt="" coords="140,100,201,127"/>
+<area shape="rect" id="node8" href="$classColor.html#a2cd31514360f55547e6cb3e94dfe6ad5" title="Color::r" alt="" coords="138,151,203,177"/>
+<area shape="rect" id="node3" href="$Constants__A2__B2_8f90.html#a7be673b24cfb163e4f43a817adf192e4" title="constants_a2_b2" alt="" coords="278,5,399,32"/>
+<area shape="rect" id="node5" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="301,56,376,83"/>
+<area shape="rect" id="node6" href="$classAff__transformation__repS2.html#a2758e8c9df83e803e7509d563733f531" title="Aff_transformation\l_repS2::print" alt="" coords="274,107,403,149"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="265,173,413,214"/>
+</map>

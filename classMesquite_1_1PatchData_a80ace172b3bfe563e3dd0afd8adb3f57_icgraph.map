@@ -1,0 +1,12 @@
+<map id="get_domain_normal_at_element" name="get_domain_normal_at_element">
+<area shape="rect" id="node2" href="$classMesquite_1_1IdealWeightInverseMeanRatio.html#a863e7798594aa345b6b94d2d209d450f" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="211,5,407,61"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1IdealWeightMeanRatio.html#a863e7798594aa345b6b94d2d209d450f" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="217,85,401,141"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1IdealWeightInverseMeanRatio.html#abf32bb8c226a49db5aee4184d181f9fa" title="Mesquite::IdealWeightInverse\lMeanRatio::compute_element\l_analytical_hessian" alt="" coords="211,165,407,221"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1IdealWeightMeanRatio.html#abf32bb8c226a49db5aee4184d181f9fa" title="Mesquite::IdealWeightMean\lRatio::compute_element\l_analytical_hessian" alt="" coords="217,245,401,301"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1MsqMeshEntity.html#a2eca612c67a370a3058f1427d14b1475" title="Computes the signed area of the element. " alt="" coords="222,326,397,367"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1IdealWeightInverseMeanRatio.html#afc1a16a1793ba9459a9b930b5292ffc5" title="evaluate using mesquite objects " alt="" coords="212,391,407,433"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1IdealWeightMeanRatio.html#afc1a16a1793ba9459a9b930b5292ffc5" title="evaluate using mesquite objects " alt="" coords="217,457,401,498"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1PatchData.html#a7a9fe9e96a509f27881d722b90845744" title="Alternative signature. Same functionality. " alt="" coords="233,522,386,563"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1UntangleBetaQualityMetric.html#a0bcf5f9afb3fee7732baa92c12829b69" title="Mesquite::UntangleBetaQuality\lMetric::untangle_function_2d" alt="" coords="208,587,411,629"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1UntangleBetaQualityMetric.html#afc1a16a1793ba9459a9b930b5292ffc5" title="Mesquite::UntangleBetaQuality\lMetric::evaluate_element" alt="" coords="459,587,661,629"/>
+</map>

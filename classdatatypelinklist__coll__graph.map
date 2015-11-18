@@ -1,0 +1,8 @@
+<map id="datatypelinklist" name="datatypelinklist">
+<area shape="rect" id="node2" href="$structdatatypelinklist_1_1surfmesh__tri3__ptr.html" title="surfmesh_tri3_ptr" alt="" coords="252,173,375,200"/>
+<area shape="rect" id="node3" href="$structdatatypelinklist_1_1procelemlist__data__type.html" title="procelemlist_data_type" alt="" coords="235,224,391,251"/>
+<area shape="rect" id="node4" href="$structdatatypelinklist_1_1procelemlist__data__ptr.html" title="procelemlist_data_ptr" alt="" coords="5,252,152,279"/>
+<area shape="rect" id="node5" href="$structdatatypelinklist_1_1surfmesh__tri6__ptr.html" title="surfmesh_tri6_ptr" alt="" coords="252,428,375,455"/>
+<area shape="rect" id="node6" href="$structdatatypelinklist_1_1bc__ptr.html" title="bc_ptr" alt="" coords="284,591,343,617"/>
+<area shape="rect" id="node7" href="$structdatatypelinklist_1_1surfmesh__hex8__ptr.html" title="surfmesh_hex8_ptr" alt="" coords="247,753,380,780"/>
+</map>

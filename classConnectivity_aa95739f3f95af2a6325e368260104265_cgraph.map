@@ -1,0 +1,5 @@
+<map id="size_of_ghost_nodes" name="size_of_ghost_nodes">
+<area shape="rect" id="node2" href="$classConnectivity.html#afc3d6a08a6436efe1af8e83699d4ca53" title="Determine whether the mesh is quadratic. " alt="" coords="222,5,319,32"/>
+<area shape="rect" id="node3" href="$classConnectivity.html#a3ab0f5b4dbc683714ef15ccfb16225ac" title="Get a constant pointer to the connectivity array. " alt="" coords="240,56,301,83"/>
+<area shape="rect" id="node4" href="$classPane.html#a9ad9b8a3c0462532e5976c4fba23500f" title="Get the number of ghost nodes. " alt="" coords="200,107,341,149"/>
+</map>

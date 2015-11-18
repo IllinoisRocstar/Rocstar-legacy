@@ -1,0 +1,18 @@
+<map id="get_doubles" name="get_doubles">
+<area shape="rect" id="node2" href="$classMesquite_1_1MeshImpl.html#adecee379d4bd8843653183bbc76e4bb2" title="Read file&#45;level field data. " alt="" coords="170,5,310,46"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MeshImpl.html#a415e9c8fdc76a3114f24231e01b35761" title="Read polydata mesh. " alt="" coords="170,70,310,111"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1MeshImpl.html#a9e788ff95e7bee64cd93d8489c96e373" title="Read rectilinear grid structured mesh. " alt="" coords="155,135,325,177"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1MeshImpl.html#aa8f1fb691efbf46f03ee41d62af9360b" title="Read scalar attribute data Initializes size and type fields of passed TagDescroption. " alt="" coords="383,366,542,407"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1MeshImpl.html#a526aede3d0f19b06a9b5ce6bffaccdfb" title="Read structured grid mesh. " alt="" coords="153,201,327,242"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1MeshImpl.html#aa3e37616a8c2fab2842ed80f87b561c7" title="Read structured point mesh. " alt="" coords="167,267,313,323"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1MeshImpl.html#a2f5593b1042c644d8656b18e0538bebf" title="Read a 2&#45;D array of data of the specified type from the file Initializes size and type fields of pass..." alt="" coords="165,465,315,506"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1MeshImpl.html#abf3d61c4087729a4ed6863c364ecb4ef" title="Read unstructured mesh. " alt="" coords="147,347,333,389"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1MeshImpl.html#ae7fe2105ae8c789562fd3bf9c4dbf339" title="Read a data block from the file. " alt="" coords="393,201,533,242"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1MeshImpl.html#a51c855a0e0885d47351793338f3074ba" title="Mesquite::MeshImpl\l::read_vtk" alt="" coords="985,366,1125,407"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1MeshImpl.html#a1e719c748082690d5d062df05c503daf" title="Read actual data for both vtk_read_point_data and vtk_read_cell_data Initializes all fields of passed..." alt="" coords="593,431,741,473"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1MeshImpl.html#a6438e58f0f7a06552623d6935f1616db" title="Read attribute data for vertices. " alt="" coords="789,366,936,407"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1MeshImpl.html#a9e900b891d5a060e227e576743db3493" title="Read attribute data for elements. " alt="" coords="793,431,933,473"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1MeshImpl.html#af0986dbb94df3099a9f4260a394e53b6" title="Read vector or normal attribute data Initializes size and type fields of passed TagDescroption. " alt="" coords="383,431,542,473"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1MeshImpl.html#ad891a95f1bcf02e47200bb410302d475" title="Read texture attribute data Initializes size and type fields of passed TagDescroption. " alt="" coords="381,497,544,538"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1MeshImpl.html#afc915a142588dbbd15f9683a7982323f" title="Read tensor (3x3 matrix) data Initializes size and type fields of passed TagDescroption. " alt="" coords="383,562,542,603"/>
+</map>

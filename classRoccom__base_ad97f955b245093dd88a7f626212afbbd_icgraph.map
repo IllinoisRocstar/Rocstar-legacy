@@ -1,0 +1,10 @@
+<map id="get_roccom" name="get_roccom">
+<area shape="rect" id="node2" href="$classRoccom__base.html#a32d626626eee0bc4ade146973f6abb1c" title="finalize" alt="" coords="201,5,263,32"/>
+<area shape="rect" id="node4" href="$classRoccom__base.html#a569a46caafdf09caea15bce1f59850b6" title="Get the default communicator of Roccom. " alt="" coords="145,56,319,83"/>
+<area shape="rect" id="node6" href="$classRoccom__base.html#a87753f5d050529932389515f11f80e7c" title="Checks whether Roccom has been initialized. " alt="" coords="194,107,270,133"/>
+<area shape="rect" id="node8" href="$classRoccom__base.html#a6f2cbe783c1786b2f70736669a1ce7bc" title="Set the default communicator of Roccom. " alt="" coords="145,157,319,184"/>
+<area shape="rect" id="node3" href="$roccom__f_8C.html#a103da8ec5c40f1c24720e95c19bed7ac" title="COM_F_FUNC2" alt="" coords="368,5,488,32"/>
+<area shape="rect" id="node5" href="$roccom__f_8C.html#a5a2105095fda2182c3471d6fe40bcbde" title="COM_F_FUNC2" alt="" coords="368,56,488,83"/>
+<area shape="rect" id="node7" href="$roccom__f_8C.html#ab90fa35b7012521506bb3edc117814eb" title="COM_F_FUNC2" alt="" coords="368,107,488,133"/>
+<area shape="rect" id="node9" href="$roccom__f_8C.html#afda1fcd6cc3631264c6991065b55fb54" title="COM_F_FUNC2" alt="" coords="368,157,488,184"/>
+</map>

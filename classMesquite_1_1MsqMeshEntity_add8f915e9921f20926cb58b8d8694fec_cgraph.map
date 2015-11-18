@@ -1,0 +1,7 @@
+<map id="compute_weighted_jacobian" name="compute_weighted_jacobian">
+<area shape="rect" id="node2" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="250,5,395,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1Vector3D.html#a0c8c0907d22080124c5e0348d9a61b57" title="Mesquite::Vector3D::set" alt="" coords="241,71,405,97"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1Vector3D.html#a9ccf82e6805fa3a2f34b977e1db6f4f9" title="Mesquite::Vector3D::x" alt="" coords="454,20,607,47"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1Vector3D.html#a0acce91d627a918ea20832d9b2fb8b93" title="Mesquite::Vector3D::y" alt="" coords="454,71,607,97"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1Vector3D.html#abe77460b0bada97d73fc158579294931" title="Mesquite::Vector3D::z" alt="" coords="454,121,607,148"/>
+</map>

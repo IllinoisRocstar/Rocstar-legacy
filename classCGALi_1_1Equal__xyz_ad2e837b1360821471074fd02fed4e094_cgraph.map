@@ -1,0 +1,6 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node2" href="$predicates__on__pointsS3_8h.html#a28a223eca4403a96472e95a769ac734a" title="equal_xyz" alt="" coords="131,56,213,83"/>
+<area shape="rect" id="node3" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="261,5,344,32"/>
+<area shape="rect" id="node4" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="261,56,344,83"/>
+<area shape="rect" id="node5" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="261,107,344,133"/>
+</map>

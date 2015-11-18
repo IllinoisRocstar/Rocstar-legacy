@@ -1,0 +1,9 @@
+<map id="TRAIL_FluRegisterSurfSoln" name="TRAIL_FluRegisterSurfSoln">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="697,5,836,32"/>
+<area shape="rect" id="node4" href="$TRAIL__Flu_8H.html#aebb009a6db275d7e1f31307218198bcb" title="TRAIL_FluRegisterSurfSoln" alt="" coords="237,81,421,108"/>
+<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="904,81,1032,108"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#adca6827f3c065859156fa3562c2cd9a8" title="Associates an array with an attribute for a specific pane. " alt="" coords="709,107,824,133"/>
+<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="495,161,604,188"/>
+<area shape="rect" id="node7" href="$classGEM__DomainBoundary.html#a3c6e93e760367a2187ba85b8c27f558e" title="GEM_DomainBoundary\l::Create_com_surfsoln" alt="" coords="470,45,629,86"/>
+<area shape="rect" id="node8" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="678,56,855,83"/>
+</map>

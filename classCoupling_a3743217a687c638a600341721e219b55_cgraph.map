@@ -1,0 +1,29 @@
+<map id="restart_at_time" name="restart_at_time">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="347,436,522,463"/>
+<area shape="rect" id="node4" href="$classCoupling.html#a32d626626eee0bc4ade146973f6abb1c" title="Invoke finalization of the actions in the scheduler and the agents. " alt="" coords="199,157,262,184"/>
+<area shape="rect" id="node8" href="$classCoupling.html#acca8f4e7c8b4e2d2c0d3f0693dffae7f" title="get_control_param" alt="" coords="166,385,295,412"/>
+<area shape="rect" id="node9" href="$classCoupling.html#a152013c4f4d029f84f09d02f5062298a" title="initialize" alt="" coords="196,284,265,311"/>
+<area shape="rect" id="node27" href="$namespacecimg__library_1_1cimg.html#a09e80f4d7a95f3d5c2282202d8526520" title="cimg_library::cimg\l::system" alt="" coords="167,437,295,478"/>
+<area shape="rect" id="node28" href="$classControl__parameters.html#aaebe643b1eed80b568bf52abbc6baeb3" title="Control_parameters\l::update_start_time" alt="" coords="163,502,299,543"/>
+<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="995,411,1123,437"/>
+<area shape="rect" id="node5" href="$classScheduler.html#ab39dbbeb37b2db09bada87931cd462a5" title="Scheduler::finalize\l_actions" alt="" coords="370,49,499,90"/>
+<area shape="rect" id="node6" href="$structScheduler_1_1ActionItem.html#a4d53ef72c920649a6dcaf1ccb1392b5d" title="Scheduler::ActionItem\l::action" alt="" coords="779,129,930,170"/>
+<area shape="rect" id="node7" href="$classAction.html#a4e44143f72657f0e69d2a1816b6cc54d" title="Action::finalize" alt="" coords="597,5,705,32"/>
+<area shape="rect" id="node10" href="$classCoupling.html#a26bc665db8e8a51e3aa6541646f165fb" title="Invoke initialization of the actions in the scheduler and the agents. " alt="" coords="415,309,454,336"/>
+<area shape="rect" id="node20" href="$classCoupling.html#a1ec0a709a179ca5a6fc3352994de431c" title="Invoke input functions of the agents. " alt="" coords="409,360,460,387"/>
+<area shape="rect" id="node21" href="$classCoupling.html#a3cb9c1ae4e18c8ebee176bcab84acdd1" title="reload_rocface" alt="" coords="381,259,488,285"/>
+<area shape="rect" id="node22" href="$classCoupling.html#af2a0914ea228ea5ac8e97ae91cf64fbf" title="run_initactions" alt="" coords="381,183,488,209"/>
+<area shape="rect" id="node11" href="$classCoupling.html#a58bf0e007e99edf6a2f6548abcf4b391" title="callMethod" alt="" coords="608,309,693,336"/>
+<area shape="rect" id="node12" href="$classScheduler.html#aa1afa161a5ce3091cb8c3a3c7a2c498e" title="Scheduler::init_actions" alt="" coords="573,259,728,285"/>
+<area shape="rect" id="node14" href="$classFluidAgent.html#a61c325d4cccecdbaed2b9cafec86cd6b" title="FluidAgent::init_module" alt="" coords="571,360,730,387"/>
+<area shape="rect" id="node19" href="$classScheduler.html#ad5b1c3a21573def355d267faa576be96" title="Scheduler::restarting" alt="" coords="579,411,722,437"/>
+<area shape="rect" id="node13" href="$classAction.html#aca8217b09074703304bc004e3b158e55" title="Action::init" alt="" coords="813,259,897,285"/>
+<area shape="rect" id="node15" href="$classAgent.html#a61c325d4cccecdbaed2b9cafec86cd6b" title="Agent::init_module" alt="" coords="789,309,920,336"/>
+<area shape="rect" id="node17" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="788,411,921,437"/>
+<area shape="rect" id="node18" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="781,360,928,387"/>
+<area shape="rect" id="node16" href="$classAgent.html#a7166b9d0c3321d1abf347377b32bf154" title="Agent::get_agent_name" alt="" coords="979,309,1139,336"/>
+<area shape="rect" id="node23" href="$classCoupling.html#a16e46e7c65078b1877d239968152a04e" title="name" alt="" coords="623,157,678,184"/>
+<area shape="rect" id="node24" href="$classScheduler.html#a1ddbe92dd7f68ea5db8d9957e6da0c0a" title="Scheduler::set_alpha" alt="" coords="579,208,723,235"/>
+<area shape="rect" id="node25" href="$classScheduler.html#ad2f7d0180654fc893a9dd4112cec8f3b" title="Scheduler::run_actions" alt="" coords="573,107,728,133"/>
+<area shape="rect" id="node26" href="$classAction.html#a32338f30828c8564d854ae856028b26a" title="Action::run" alt="" coords="812,77,897,104"/>
+</map>

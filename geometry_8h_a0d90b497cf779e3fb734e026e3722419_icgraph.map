@@ -1,0 +1,8 @@
+<map id="crossP" name="crossP">
+<area shape="rect" id="node2" href="$geometry_8C.html#af59662a6b46c35024e16e40c0f3bdbf4" title="Compute the volume of a tetrahedron given three edges from a point as vectors. " alt="" coords="132,16,193,43"/>
+<area shape="rect" id="node6" href="$geometry_8C.html#a9a7a9cea6a22d56b059e9ef2f733b620" title="Compute the unit vector normal to two input vectors. " alt="" coords="118,71,207,97"/>
+<area shape="rect" id="node3" href="$classGeo__Metric__Base__3.html#a18bc1c0de0237a4367c3fed594a6ffd9" title="Compute circumradius, inradius, and shortest edge length. " alt="" coords="257,5,405,46"/>
+<area shape="rect" id="node4" href="$classAspect__Metric__3.html#a9ae21718fd1b56efd4b3a617d2969fe0" title="Get the geometric aspects. " alt="" coords="453,12,648,39"/>
+<area shape="rect" id="node5" href="$classRocmop.html#ac32e390ae4937ffc3928b111a7842592" title="Rocmop::add_aspect\l_ratios" alt="" coords="696,5,843,46"/>
+<area shape="rect" id="node7" href="$classGeo__Metric__Base__3.html#aebeae4fdd86b085524c00f77bc254c1e" title="Compute min and max dihedral angles. " alt="" coords="257,70,405,111"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="MassTransfer_SF_ALE" name="MassTransfer_SF_ALE">
+<area shape="rect" id="node2" href="$classAgent.html#a667f8a34f85743720fc4a10b74b456c0" title="Agent::register_new\l_attribute" alt="" coords="213,5,352,46"/>
+<area shape="rect" id="node3" href="$classAgent.html#acfe4fea2b1087d9853907546e1fa3a0d" title="Agent::register_use\l_attribute" alt="" coords="215,70,350,111"/>
+<area shape="rect" id="node4" href="$classAction.html#a93a7d8df6f9dd31acc8942151c6a8564" title="Action::set_attr" alt="" coords="227,136,338,163"/>
+<area shape="rect" id="node5" href="$classAction.html#abd6cf6966581c38830b1d953db0b285a" title="Action::set_io" alt="" coords="231,187,334,213"/>
+</map>

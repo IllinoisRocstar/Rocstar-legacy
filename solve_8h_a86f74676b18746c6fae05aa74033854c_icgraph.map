@@ -1,0 +1,14 @@
+<map id="solve" name="solve">
+<area shape="rect" id="node2" href="$classOverlay__primitives.html#abb3a7edb33b71fe32f8df12c49ce85e8" title="Overlay_primitives\l::project_blue_feature" alt="" coords="117,5,264,46"/>
+<area shape="rect" id="node4" href="$classOverlay__primitives.html#aea27815600f3c4201aa2f6c38a1ff0bf" title="Overlay_primitives\l::project_green_feature" alt="" coords="113,70,268,111"/>
+<area shape="rect" id="node5" href="$classOverlay__primitives.html#a81e424ade97fdbde9769fd151299e605" title="Overlay_primitives\l::project_onto_element" alt="" coords="113,135,268,177"/>
+<area shape="rect" id="node12" href="$classPlaneS3.html#a242cd85600830ec39c5024075177e28e" title="PlaneS3::to_2d" alt="" coords="135,201,246,228"/>
+<area shape="rect" id="node13" href="$classPlaneS3.html#af9dc26c52a7138238f0c0e0f8af22b7a" title="PlaneS3::to_plane_basis" alt="" coords="107,252,274,279"/>
+<area shape="rect" id="node3" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="323,9,469,50"/>
+<area shape="rect" id="node6" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="739,129,864,170"/>
+<area shape="rect" id="node8" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="517,194,688,235"/>
+<area shape="rect" id="node10" href="$classOverlay.html#a6054035d0679586f98c8667b9951ae60" title="Overlay::get_green\l_parent" alt="" coords="330,77,462,118"/>
+<area shape="rect" id="node7" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="915,169,1032,196"/>
+<area shape="rect" id="node9" href="$classOverlay.html#af13f003d409781875438877fd15f4d81" title="Overlay::associate\l_green_vertices" alt="" coords="736,194,867,235"/>
+<area shape="rect" id="node11" href="$classOverlay.html#a7a0198e2249c3c9b0a02ecb297251546" title="Overlay::overlay_init" alt="" coords="532,88,673,115"/>
+</map>

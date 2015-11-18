@@ -1,0 +1,4 @@
+<map id="dijkstra" name="dijkstra">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a0f1388b116e859a02eaca39dfac290ff" title="Return minimal path in a graph, using the Dijkstra algorithm. " alt="" coords="127,5,259,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#af927ca7f7b76c1fd99cd20b9c494e51c" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_dijkstra" alt="" coords="118,70,269,111"/>
+</map>

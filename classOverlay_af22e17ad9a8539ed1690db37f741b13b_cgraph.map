@@ -1,0 +1,13 @@
+<map id="write_inodes_tec" name="write_inodes_tec">
+<area shape="rect" id="node2" href="$classOverlay__primitives.html#a52bf3d8a369225793dc1446b2f9e0841" title="Overlay_primitives\l::get_point" alt="" coords="173,70,304,111"/>
+<area shape="rect" id="node6" href="$classINode.html#a2dd3c88de5ba7b43671e1e9410418d58" title="INode::halfedge" alt="" coords="181,136,296,163"/>
+<area shape="rect" id="node9" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="217,187,260,213"/>
+<area shape="rect" id="node10" href="$classINode.html#a8cb08643a08c56ccb4684cd8a03dbaa7" title="INode::nat_coor" alt="" coords="181,237,296,264"/>
+<area shape="rect" id="node11" href="$io_8h.html#a322fbf11f7fd7af08851b8b390d0167f" title="set_ascii_mode" alt="" coords="182,288,295,315"/>
+<area shape="rect" id="node3" href="$classHalfedge__overlay.html#aa126fd94949c810d24869ad04cd97e15" title="Halfedge_overlay::is\l_border" alt="" coords="352,5,493,46"/>
+<area shape="rect" id="node4" href="$classPoint__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Point_set::size_of\l_edges" alt="" coords="359,70,486,111"/>
+<area shape="rect" id="node5" href="$classVertex__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Vertex_set::size_of\l_edges" alt="" coords="554,70,689,111"/>
+<area shape="rect" id="node7" href="$structHost__face.html#a2fdb4a913034dfc8a30c9019857d8173" title="Host_face::halfedge" alt="" coords="353,136,492,163"/>
+<area shape="rect" id="node8" href="$structHost__face.html#ad8e3d3c3b41c1da044381d5a758f1d7a" title="Host_face::parent_type" alt="" coords="542,136,701,163"/>
+<area shape="rect" id="node12" href="$io_8h.html#ad70e72a0428a76731bc9ebce34f32f13" title="get_mode" alt="" coords="383,288,462,315"/>
+</map>

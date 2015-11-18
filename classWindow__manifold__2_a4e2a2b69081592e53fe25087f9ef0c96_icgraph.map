@@ -1,0 +1,18 @@
+<map id="reduce_on_shared_nodes" name="reduce_on_shared_nodes">
+<area shape="rect" id="node2" href="$classWindow__manifold__2.html#a2de69b1dfeafce08ec7b515710fb76c4" title="compute_mcn" alt="" coords="261,5,365,32"/>
+<area shape="rect" id="node10" href="$classWindow__manifold__2.html#a7d0676e1f597d84fe53a8abf7d3a6da8" title="Obtain shortest edge length of incident edges of each nodes. " alt="" coords="224,74,403,115"/>
+<area shape="rect" id="node13" href="$classWindow__manifold__2.html#a2eebb41f1831723225ffd524188bcb54" title="Convert element values to nodal values using weighted averaging. " alt="" coords="246,191,381,217"/>
+<area shape="rect" id="node11" href="$classWindow__manifold__2.html#a63077b4a404ef8457c38c64b320323e7" title="Perturb the given mesh along its normal direction by length equal to a random number between &#45;range a..." alt="" coords="684,137,785,164"/>
+<area shape="rect" id="node3" href="$classRocsurf.html#a98cadabf2c5e377e91182ea5e6c2c567" title="Computes nodal or elemental normals of a given window. " alt="" coords="866,65,1025,92"/>
+<area shape="rect" id="node4" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="1083,188,1183,215"/>
+<area shape="rect" id="node5" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="1259,87,1407,113"/>
+<area shape="rect" id="node6" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="1262,137,1405,164"/>
+<area shape="rect" id="node7" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="1235,188,1431,215"/>
+<area shape="rect" id="node8" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="1259,239,1408,265"/>
+<area shape="rect" id="node9" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="1232,289,1435,316"/>
+<area shape="rect" id="node12" href="$classWindow__manifold__2.html#aefcb2d77906956b440e079a5a2b77c3c" title="Obtain shortest edge length of incident edges of each node or element. " alt="" coords="459,89,605,116"/>
+<area shape="rect" id="node14" href="$classWindow__manifold__2.html#ab5ca31d43bed67e02e89be167de9da7f" title="Compute nodal normals using one of the following weighting schemes: E2N_ONE, E2N_AREA, and E2N_ANGLE, and E2N_USER. " alt="" coords="451,191,613,217"/>
+<area shape="rect" id="node17" href="$classRocsurf.html#a4f24fa35a8c266187a6c07110f263313" title="Computes nodal or elemental normals of a given window. " alt="" coords="661,239,808,281"/>
+<area shape="rect" id="node15" href="$classWindow__manifold__2.html#a870e40efa9ab58452a354eaca2b75d30" title="Compute the normals at nodes or faces, depending on the type of the attribute normals. " alt="" coords="672,188,797,215"/>
+<area shape="rect" id="node16" href="$classRocsurf.html#ad345c59eea168babcd0976c9a7810b50" title="Computes nodal or elemental normals of a given window. " alt="" coords="856,188,1035,215"/>
+</map>

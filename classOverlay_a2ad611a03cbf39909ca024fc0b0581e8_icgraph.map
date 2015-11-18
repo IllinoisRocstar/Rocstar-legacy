@@ -1,0 +1,8 @@
+<map id="get_nat_coor" name="get_nat_coor">
+<area shape="rect" id="node2" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="insert_node_in_blue_edge" alt="" coords="153,84,325,111"/>
+<area shape="rect" id="node7" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="number_subfaces" alt="" coords="176,147,301,173"/>
+<area shape="rect" id="node3" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="intersect_blue_with\l_green" alt="" coords="374,5,509,46"/>
+<area shape="rect" id="node5" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="match_features_0" alt="" coords="378,71,505,97"/>
+<area shape="rect" id="node6" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="project_next_vertex" alt="" coords="373,121,509,148"/>
+<area shape="rect" id="node4" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="overlay" alt="" coords="557,71,621,97"/>
+</map>

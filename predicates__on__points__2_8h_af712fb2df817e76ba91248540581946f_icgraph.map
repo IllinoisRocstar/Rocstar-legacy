@@ -1,0 +1,21 @@
+<map id="orientation" name="orientation">
+<area shape="rect" id="node2" href="$predicates__on__pointsS3_8h.html#a7e84993db184b1927d166392ec7dd5b9" title="are_negative_oriented" alt="" coords="159,5,308,32"/>
+<area shape="rect" id="node3" href="$predicates__on__pointsS3_8h.html#a94d1f2927f4918b08dbce16b308d872f" title="are_positive_oriented" alt="" coords="161,56,306,83"/>
+<area shape="rect" id="node4" href="$predicates__on__pointsS2_8h.html#a7d0e48fafa8818a740a84b870f4f4ccc" title="collinear" alt="" coords="198,107,269,133"/>
+<area shape="rect" id="node5" href="$predicates__on__pointsS3_8h.html#ad63cb7acea75f12e7c713f69d48a84ea" title="coplanar" alt="" coords="198,157,269,184"/>
+<area shape="rect" id="node8" href="$predicates__on__pointsS2_8h.html#a24e1d76d8181ac4b7ddd13e22015fd8e" title="leftturn" alt="" coords="202,208,265,235"/>
+<area shape="rect" id="node9" href="$classp__Less__rotate__ccw.html#aca3a58c80fca53588151a342f5fafba8" title="p_Less_rotate_ccw::\loperator()" alt="" coords="162,259,305,301"/>
+<area shape="rect" id="node10" href="$classp__Less__rotate__ccw__safer.html#aca3a58c80fca53588151a342f5fafba8" title="p_Less_rotate_ccw_safer\l::operator()" alt="" coords="148,325,319,366"/>
+<area shape="rect" id="node11" href="$classp__Less__rotate__ccw__E.html#aca3a58c80fca53588151a342f5fafba8" title="p_Less_rotate_ccw_E\l::operator()" alt="" coords="158,390,309,431"/>
+<area shape="rect" id="node12" href="$structp__Orientation.html#a71bbe739db16927e26af965edc9634a0" title="p_Orientation::operator()" alt="" coords="152,456,315,483"/>
+<area shape="rect" id="node13" href="$namespaceCGAL.html#ab398a7776f68bca31e6ddf3f5f3b33b4" title="CGAL::seg_seg_do_intersect\l_contained" alt="" coords="137,507,330,549"/>
+<area shape="rect" id="node20" href="$namespaceCGAL.html#a92a7d80be7e802c19133183b6c56d3ce" title="CGAL::seg_seg_do_intersect\l_crossing" alt="" coords="137,573,330,614"/>
+<area shape="rect" id="node6" href="$classCGALi_1_1Coplanar.html#a41cfe03eff64fda99b8a8de7e2ed6535" title="CGALi::Coplanar::operator()" alt="" coords="379,132,563,159"/>
+<area shape="rect" id="node7" href="$predicates__on__pointsS3_8h.html#a9127ce3bd78a8d437b456e6988778656" title="coplanar_orientation" alt="" coords="401,183,540,209"/>
+<area shape="rect" id="node14" href="$namespaceCGAL.html#a95fc5b4707754cc44983d73bf683b920" title="CGAL::do_intersect" alt="" coords="402,547,539,573"/>
+<area shape="rect" id="node15" href="$classTriangulation.html#aba3f32dc957f5df74d9d2b4187083bb3" title="Triangulation::is_diagonalie" alt="" coords="611,547,789,573"/>
+<area shape="rect" id="node16" href="$classTriangulation.html#ac3001f56f94ec919c721c8d897931e1d" title="Triangulation::is_diagonal" alt="" coords="838,547,1007,573"/>
+<area shape="rect" id="node17" href="$classTriangulation.html#a614267789be8944cd704d0ee66e235c2" title="Main entry for triangulation. " alt="" coords="1057,547,1221,573"/>
+<area shape="rect" id="node18" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="1269,547,1448,573"/>
+<area shape="rect" id="node19" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="1496,547,1613,573"/>
+</map>

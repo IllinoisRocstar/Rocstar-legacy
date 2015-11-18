@@ -1,0 +1,12 @@
+<map id="read" name="read">
+<area shape="rect" id="node2" href="$CGAL_2include_2CGAL_2Bbox__2_8h.html#ad4b9c86de4da103624282325608fab20" title="operator\&gt;\&gt;" alt="" coords="140,5,225,32"/>
+<area shape="rect" id="node3" href="$classtpz__ordered.html#a07bfdacccc59f48b174d534523f9f531" title="tpz_ordered::parse_data" alt="" coords="101,56,264,83"/>
+<area shape="rect" id="node4" href="$classtpz__fequad.html#a07bfdacccc59f48b174d534523f9f531" title="tpz_fequad::parse_data" alt="" coords="103,107,262,133"/>
+<area shape="rect" id="node5" href="$io_8h.html#a2b7533e6bf1ed02267666a7dd076f07b" title="read" alt="" coords="159,157,206,184"/>
+<area shape="rect" id="node6" href="$classRFC__Pane__base.html#a91ce7d425b661073a4d6bd49dea92a10" title="RFC_Pane_base::read\l_binary" alt="" coords="105,209,260,250"/>
+<area shape="rect" id="node11" href="$classIRAD_1_1Sys_1_1fdinbuf.html#aead1e71e96cac9237c7a2aabdf0ea9fa" title="IRAD::Sys::fdinbuf\l::underflow" alt="" coords="116,274,249,315"/>
+<area shape="rect" id="node7" href="$classRFC__Window__base.html#a662a8e4f59317df7938eabb2f41850b0" title="Read in local panes in native binary format or using Rocin. " alt="" coords="312,187,512,213"/>
+<area shape="rect" id="node8" href="$classRFC__Window__transfer.html#a05e169ae7b2dd51b533d87ce429d604f" title="RFC_Window_transfer\l::init_recv_buffer" alt="" coords="335,238,489,279"/>
+<area shape="rect" id="node9" href="$classRFC__Window__transfer.html#a15aff7a74853c597fcbc121d53d29e0c" title="Replicate the metadata of a remote pane only the local process. " alt="" coords="560,238,715,279"/>
+<area shape="rect" id="node10" href="$classRFC__Window__transfer.html#a1e774716e97169d887a20f47339edfbb" title="Replicate the remote panes that are in contact with the local panes in opp_win. " alt="" coords="763,238,917,279"/>
+</map>

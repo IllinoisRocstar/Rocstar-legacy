@@ -1,0 +1,51 @@
+<map id="match_features_0" name="match_features_0">
+<area shape="rect" id="node2" href="$group__pifd.html#ga0156e4b303e476cd8c81295a59e642f2" title="RFC_Window_overlay\l::flist_0" alt="" coords="202,5,355,46"/>
+<area shape="rect" id="node3" href="$classHDS__accessor.html#ad55db01a1caf3cf35646fa3bd0f53569" title="HDS_accessor::get_halfedge" alt="" coords="182,71,375,97"/>
+<area shape="rect" id="node4" href="$classRFC__Pane__overlay.html#a8ec09b1da2ce631bfbca1670669cc963" title="RFC_Pane_overlay::get\l_index" alt="" coords="695,1623,857,1665"/>
+<area shape="rect" id="node5" href="$classHDS__accessor.html#a798b177ceda47c50a64035e61fde579a" title="HDS_accessor::get_inode" alt="" coords="437,223,611,249"/>
+<area shape="rect" id="node6" href="$classHDS__accessor.html#a0191908e68eeb08627b0887b5b24f42c" title="HDS_accessor::get_next" alt="" coords="691,391,861,417"/>
+<area shape="rect" id="node7" href="$classHDS__accessor.html#a50477e7dd3cdaf0967286546ca524a85" title="HDS_accessor::get_next\l_around_destination" alt="" coords="194,375,363,417"/>
+<area shape="rect" id="node8" href="$classHDS__accessor.html#a1c29741c2bbf0b7b1898d95fbd9d8ae6" title="HDS_accessor::get_next\l_around_origin" alt="" coords="439,274,609,315"/>
+<area shape="rect" id="node9" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="679,441,873,468"/>
+<area shape="rect" id="node10" href="$classHDS__accessor.html#a591425c5ea18f4820a812d753f3d6006" title="HDS_accessor::get_origin" alt="" coords="689,593,863,620"/>
+<area shape="rect" id="node11" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="438,1791,610,1817"/>
+<area shape="rect" id="node12" href="$classRFC__Pane__base.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Pane_base::id" alt="" coords="454,340,594,367"/>
+<area shape="rect" id="node13" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="insert_node_in_blue_edge" alt="" coords="193,1091,365,1117"/>
+<area shape="rect" id="node33" href="$classHDS__accessor.html#a42d9f6a4b4d4209023f0db986e7d1cd3" title="HDS_accessor::is_border" alt="" coords="690,1065,862,1092"/>
+<area shape="rect" id="node46" href="$classRFC__Window__base.html#a37627d5d5bba7f4a8690c71c2ab3cb07" title="The name of the window. " alt="" coords="189,1732,368,1759"/>
+<area shape="rect" id="node38" href="$classHalfedge__overlay.html#afe0045d3267c0730bd9ad1b640718f54" title="Halfedge_overlay::origin" alt="" coords="443,2068,605,2095"/>
+<area shape="rect" id="node40" href="$classVertex__overlay.html#a75cdd043830d07c6068d1f272f62287b" title="Vertex_overlay::point" alt="" coords="451,1959,597,1985"/>
+<area shape="rect" id="node47" href="$group__mf0.html#ga51d8a0f370912f7d085fde4445bb5b47" title="Remove the given 0&#45;feature from the list. " alt="" coords="202,1834,355,1875"/>
+<area shape="rect" id="node44" href="$classINode.html#a23dfb6cc889f28afe768ea7b8293f0a1" title="INode::set_parent" alt="" coords="461,1740,587,1767"/>
+<area shape="rect" id="node49" href="$group__pifd.html#ga3279008f4979adbb31e4dd2e313d89fa" title="RFC_Window_overlay\l::snap_on_features" alt="" coords="202,2002,355,2043"/>
+<area shape="rect" id="node50" href="$classOverlay.html#a3db98ba35d4a44af046eee3941c632f5" title="sq_length" alt="" coords="239,2068,318,2095"/>
+<area shape="rect" id="node25" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="754,1689,798,1716"/>
+<area shape="rect" id="node14" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="485,1167,563,1193"/>
+<area shape="rect" id="node15" href="$classIn__place__list__n.html#af71e6c1eccbc12e9339c00a86a981a43" title="In_place_list_n::back" alt="" coords="451,1217,597,1244"/>
+<area shape="rect" id="node16" href="$classOverlay.html#ad2947f4b049eabf5707786ef238720ff" title="contains" alt="" coords="489,492,559,519"/>
+<area shape="rect" id="node19" href="$classOverlay.html#a95c6bb6ddf999b1d47993c95c2505171" title="count_edges" alt="" coords="476,913,572,940"/>
+<area shape="rect" id="node21" href="$classHalfedge__overlay.html#a49a0ced46edaa808d9951d79b7e43d31" title="Halfedge_overlay::destination" alt="" coords="427,2017,621,2044"/>
+<area shape="rect" id="node23" href="$utilities_2rc__cmp_2util_8cpp.html#a20cb1d3b02ba93e67230bef14e0824b0" title="dist" alt="" coords="503,1487,545,1513"/>
+<area shape="rect" id="node26" href="$classIn__place__list__n.html#ac6e61de369e994009e36f344f99c15ad" title="In_place_list_n::empty" alt="" coords="447,1436,601,1463"/>
+<area shape="rect" id="node27" href="$classIn__place__list__n.html#a6a48363b4355f6f5b441637774f79a59" title="In_place_list_n::front" alt="" coords="453,1268,595,1295"/>
+<area shape="rect" id="node29" href="$classHDS__accessor.html#ac7fa8c54554338449b239a5e1acebcd0" title="HDS_accessor::get_inode_list" alt="" coords="425,1537,623,1564"/>
+<area shape="rect" id="node30" href="$classOverlay.html#a2ad611a03cbf39909ca024fc0b0581e8" title="get_nat_coor" alt="" coords="475,644,573,671"/>
+<area shape="rect" id="node37" href="$classOverlay__primitives.html#a52bf3d8a369225793dc1446b2f9e0841" title="Overlay_primitives\l::get_point" alt="" coords="459,695,589,737"/>
+<area shape="rect" id="node32" href="$classINode.html#a2dd3c88de5ba7b43671e1e9410418d58" title="INode::halfedge" alt="" coords="719,747,833,773"/>
+<area shape="rect" id="node34" href="$classINode.html#a8cb08643a08c56ccb4684cd8a03dbaa7" title="INode::nat_coor" alt="" coords="719,801,833,828"/>
+<area shape="rect" id="node20" href="$classHalfedge__overlay.html#ac47203886af9a8299b6a42da527e0e49" title="Halfedge_overlay::next" alt="" coords="698,913,854,940"/>
+<area shape="rect" id="node35" href="$classINode.html#a5e54505fb86e503aa014c5c79d4df1a3" title="INode::parent_type" alt="" coords="709,860,843,887"/>
+<area shape="rect" id="node41" href="$classIn__place__list__n.html#a058bda4957df6a97b1ea6c9fd783f672" title="In_place_list_n::pop_back" alt="" coords="437,1015,611,1041"/>
+<area shape="rect" id="node42" href="$classIn__place__list__n.html#a56f4ffbc6fd414b3c02a6c368e99594f" title="In_place_list_n::pop\l_front" alt="" coords="455,1319,593,1361"/>
+<area shape="rect" id="node43" href="$classHDS__accessor.html#ad1c9563180e4931c6f0231751defaa66" title="HDS_accessor::set_inode" alt="" coords="437,1116,611,1143"/>
+<area shape="rect" id="node17" href="$classHDS__accessor.html#a7454a9634b77e8853af6aac3167dea77" title="HDS_accessor::get_destination" alt="" coords="673,492,879,519"/>
+<area shape="rect" id="node18" href="$classHDS__accessor.html#a18eab6ffa92233a5ced127b70413239b" title="HDS_accessor::get_facet" alt="" coords="689,543,863,569"/>
+<area shape="rect" id="node22" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="693,2017,859,2044"/>
+<area shape="rect" id="node24" href="$namespaceMesquite.html#a158e89125c01402924b46cd1cefa5240" title="Mesquite::pow" alt="" coords="723,1487,829,1513"/>
+<area shape="rect" id="node28" href="$classIn__place__list__n.html#ad69bd11391be1a1dba5c8202259664f8" title="In_place_list_n::begin" alt="" coords="702,1297,850,1324"/>
+<area shape="rect" id="node31" href="$classHalfedge__overlay.html#a19b8ed647dec27c8a751cc52eaa6b5e1" title="Halfedge_overlay::facet" alt="" coords="696,695,856,721"/>
+<area shape="rect" id="node36" href="$classHalfedge__overlay.html#aa274ac14f207d82094a34345820a3058" title="Halfedge_overlay::prev" alt="" coords="698,644,854,671"/>
+<area shape="rect" id="node39" href="$classHalfedge__overlay.html#a1011f61879a1842b01d506a17e1c7914" title="Halfedge_overlay::opposite" alt="" coords="686,2068,866,2095"/>
+<area shape="rect" id="node45" href="$classINode.html#a56d2a90f3b88419fd83a2497fec6139d" title="INode::pt" alt="" coords="738,1740,814,1767"/>
+<area shape="rect" id="node48" href="$classRFC__Pane__overlay.html#ab1664c42e80ec2a43d7615cf828c44f0" title="RFC_Pane_overlay::unset\l_feature_0" alt="" coords="436,1842,612,1883"/>
+</map>

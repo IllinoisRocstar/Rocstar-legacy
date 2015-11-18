@@ -1,0 +1,6 @@
+<map id="sRI_DFT" name="sRI_DFT">
+<area shape="rect" id="node2" href="$classMesquite_1_1QualityMetric.html#a87ce799c5cef73c9c467cb509dfa602a" title="Mesquite::QualityMetric\l::set_averaging_method" alt="" coords="131,5,293,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#aade5b9a631e31103631f47d265fbb399" title="Sets gradType for this metric. " alt="" coords="132,70,292,111"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1QualityMetric.html#a4e962aa4592a88a626316efb2d4d1d65" title="Sets hessianType for this metric. " alt="" coords="132,135,292,177"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1QualityMetric.html#a892f2de77eacaf9d1e51cf2b29ee2d57" title="This function should be used in the constructor of every concrete quality metric. ..." alt="" coords="132,201,292,242"/>
+</map>

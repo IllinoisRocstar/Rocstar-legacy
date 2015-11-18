@@ -1,0 +1,17 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="127,5,260,32"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a47ed797bddcdd0aabcd9f8e47f326744" title="COM_finalize" alt="" coords="143,56,244,83"/>
+<area shape="rect" id="node4" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="136,107,251,133"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="105,157,282,184"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="105,208,281,235"/>
+<area shape="rect" id="node8" href="$roccom__c_09_09_8h.html#a6e38c0b1f83c30b166b7500902e13be1" title="COM_get_panes" alt="" coords="133,259,253,285"/>
+<area shape="rect" id="node9" href="$roccom__c_09_09_8h.html#a74e2d52abbc3b6532fc19b38deabba26" title="Get the sizes of an attribute. " alt="" coords="139,309,248,336"/>
+<area shape="rect" id="node10" href="$roccom__c_09_09_8h.html#ac0f80d6e63759a2afe40ed883cea3d5e" title="COM_init" alt="" coords="155,360,232,387"/>
+<area shape="rect" id="node11" href="$roccom__c_09_09_8h.html#a6cfafe1d27aaafabf9ae4bb3b3545db8" title="COM_load_module" alt="" coords="127,411,260,437"/>
+<area shape="rect" id="node12" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="124,461,263,488"/>
+<area shape="rect" id="node13" href="$roccom__c_09_09_8h.html#ab6a6d18043bc76f9a381084af49c6a9f" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="128,512,259,539"/>
+<area shape="rect" id="node14" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="112,563,275,589"/>
+<area shape="rect" id="node15" href="$pcommpartest_8C.html#a0a427da70037702aefd128d16ae274d2" title="get_comm_rank" alt="" coords="136,613,251,640"/>
+<area shape="rect" id="node16" href="$pcommpartest_8C.html#a58f00d7b4cb8ba898a0772035bcd0add" title="get_comm_size" alt="" coords="136,664,251,691"/>
+<area shape="rect" id="node6" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="331,360,459,387"/>
+</map>

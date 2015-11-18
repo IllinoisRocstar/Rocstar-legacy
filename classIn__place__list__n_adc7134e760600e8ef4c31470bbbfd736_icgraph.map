@@ -1,0 +1,11 @@
+<map id="insert" name="insert">
+<area shape="rect" id="node2" href="$classIn__place__list__n.html#ad5edc9a20c00c95f7d4ba398c5fca68f" title="assign" alt="" coords="134,5,194,32"/>
+<area shape="rect" id="node3" href="$classIn__place__list__n.html#ace9433b12ef306be686f0d2f0fe2ddb4" title="In_place_list_n" alt="" coords="109,56,219,83"/>
+<area shape="rect" id="node4" href="$classIn__place__list__n.html#a8690564a69cb491e6ba8670615030e66" title="insert" alt="" coords="137,107,191,133"/>
+<area shape="rect" id="node5" href="$classIn__place__list__n.html#a7beb5cec28ebf75565c257d275860768" title="push_back" alt="" coords="121,157,207,184"/>
+<area shape="rect" id="node8" href="$classIn__place__list__n.html#a5950064b6b40e6d795ec6667eb7a15be" title="push_front" alt="" coords="123,208,205,235"/>
+<area shape="rect" id="node10" href="$classIn__place__list__n.html#aad6706c6c0af26bf82479d1e1aa41331" title="resize" alt="" coords="135,259,193,285"/>
+<area shape="rect" id="node6" href="$classOverlay.html#a8c059d17f9626468b9470736ff7496ec" title="Overlay::sort_on_green\l_edges" alt="" coords="267,143,424,185"/>
+<area shape="rect" id="node7" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="472,184,589,211"/>
+<area shape="rect" id="node9" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="283,209,408,250"/>
+</map>

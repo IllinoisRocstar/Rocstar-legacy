@@ -1,0 +1,30 @@
+<map id="halfedge" name="halfedge">
+<area shape="rect" id="node2" href="$classOverlay.html#a9da7a2ebf65083d900d07ae5f6b46d8f" title="Overlay::convert_nat\l_coordinates" alt="" coords="834,587,977,629"/>
+<area shape="rect" id="node5" href="$classOverlay.html#ae2d27c67a5786284ccb5007b1302d688" title="Overlay::count_subnodes" alt="" coords="135,407,305,433"/>
+<area shape="rect" id="node7" href="$classOverlay.html#a1f4fcefec965f3551cf309fc3f1e2089" title="Overlay::get_edge_parent" alt="" coords="135,231,305,257"/>
+<area shape="rect" id="node17" href="$classOverlay.html#a2ad611a03cbf39909ca024fc0b0581e8" title="Overlay::get_nat_coor" alt="" coords="145,609,295,636"/>
+<area shape="rect" id="node10" href="$classOverlay.html#aa364cd769c3189a9df98b4c19a174de0" title="Overlay::get_next_inode_ccw" alt="" coords="363,121,557,148"/>
+<area shape="rect" id="node15" href="$classOverlay.html#a43283cf511c055dbb4b53d3cf89e1fbe" title="Overlay::get_next_inode_cw" alt="" coords="367,71,553,97"/>
+<area shape="rect" id="node21" href="$classOverlay.html#a01236ef2eb3bdd02b9cb73755f4cb622" title="Overlay::insert_edge\l_into_queue" alt="" coords="389,442,531,483"/>
+<area shape="rect" id="node18" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="Overlay::insert_node\l_in_blue_edge" alt="" coords="389,559,531,601"/>
+<area shape="rect" id="node22" href="$classOverlay.html#aad660d635b91d343373cbd57b35e01de" title="Overlay::insert_node\l_in_green_edge" alt="" coords="149,762,291,803"/>
+<area shape="rect" id="node8" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="624,443,749,485"/>
+<area shape="rect" id="node24" href="$classOverlay.html#a86c822d1abc50ecbc2701f4d408cbf5a" title="Overlay::number_a_subnode" alt="" coords="126,356,314,383"/>
+<area shape="rect" id="node25" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="375,5,545,46"/>
+<area shape="rect" id="node23" href="$classOverlay.html#a8c059d17f9626468b9470736ff7496ec" title="Overlay::sort_on_green\l_edges" alt="" coords="381,727,539,769"/>
+<area shape="rect" id="node27" href="$classOverlay.html#ac9f62be71dea998652001fb75752713e" title="Overlay::verify_inode" alt="" coords="147,13,293,40"/>
+<area shape="rect" id="node28" href="$classOverlay.html#af22e17ad9a8539ed1690db37f741b13b" title="Overlay::write_inodes_tec" alt="" coords="133,828,307,855"/>
+<area shape="rect" id="node29" href="$classOverlay.html#ac5a811521da524802065a5a62cf67341" title="Overlay::write_inodes_vec" alt="" coords="132,879,308,905"/>
+<area shape="rect" id="node3" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="1043,485,1221,512"/>
+<area shape="rect" id="node4" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="1269,511,1387,537"/>
+<area shape="rect" id="node6" href="$classOverlay.html#a54a9ce9d68b6243fc87eb9d5e54097c2" title="Overlay::number_subnodes" alt="" coords="369,391,551,417"/>
+<area shape="rect" id="node9" href="$classOverlay.html#a3f521ca05c00fd29e17b4fb388d78f6b" title="Overlay::get_edge_pair\l_parents" alt="" coords="382,223,538,265"/>
+<area shape="rect" id="node11" href="$classOverlay.html#acf750ca406005830bb060b4156fa2659" title="Overlay::get_next_inode" alt="" coords="605,149,768,176"/>
+<area shape="rect" id="node16" href="$classOverlay.html#ad9d6da6600b84c10dc492f9e0ec3214b" title="Overlay::get_parent_face" alt="" coords="821,375,989,401"/>
+<area shape="rect" id="node12" href="$classOverlay.html#a05e11ef1baa5319a53ae52088bcec955" title="Overlay::subdivide" alt="" coords="840,153,971,180"/>
+<area shape="rect" id="node13" href="$classOverlay.html#a0bd2163789be46cbefc1aa867d9ac420" title="Overlay::write_overlay_tec" alt="" coords="1043,132,1221,159"/>
+<area shape="rect" id="node14" href="$classOverlay.html#a356923154df51107408f9b11d92c21e5" title="Overlay::write_overlay_off" alt="" coords="1045,183,1219,209"/>
+<area shape="rect" id="node19" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="816,653,995,680"/>
+<area shape="rect" id="node20" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="613,509,760,550"/>
+<area shape="rect" id="node26" href="$classOverlay.html#af13f003d409781875438877fd15f4d81" title="Overlay::associate\l_green_vertices" alt="" coords="1067,53,1197,94"/>
+</map>

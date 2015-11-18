@@ -1,0 +1,6 @@
+<map id="finalize" name="finalize">
+<area shape="rect" id="node2" href="$classRocout.html#a5584fd8a3eb5c21ad725f4516fed8b7b" title="Finalize the module by deregistering it from Roccom. " alt="" coords="118,5,231,32"/>
+<area shape="rect" id="node4" href="$classRocin.html#a5584fd8a3eb5c21ad725f4516fed8b7b" title="Finalize the module by deregistering it from Roccom. " alt="" coords="122,56,227,83"/>
+<area shape="rect" id="node3" href="$RFC__Window__base__IO_8C.html#af1a862d5aa9d99ed873d9402ce36e8b8" title="Unload the module Rocout from Roccom. " alt="" coords="281,5,439,32"/>
+<area shape="rect" id="node5" href="$readsdv_8C.html#a818e8cb211bedde54818b238bb26dafe" title="Unload the module Rocin from Roccom. " alt="" coords="285,56,435,83"/>
+</map>

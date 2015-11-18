@@ -1,0 +1,51 @@
+<map id="loop_over_mesh" name="loop_over_mesh">
+<area shape="rect" id="node2" href="$classMesquite_1_1TerminationCriterion.html#a326094613366d5a66c3e67384322aa90" title="Mesquite::TerminationCriterion\l::accumulate_outer" alt="" coords="171,763,371,805"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1TerminationCriterion.html#a52e1a2e10a747dcb4c1343700df6bfb4" title="Common code for both inner and outer termination criteria during inner iteration. ..." alt="" coords="171,250,371,291"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1VertexMover.html#a8f94dc33a3804ab30f2d2289ccd0494a" title="cleanup" alt="" coords="237,1088,304,1115"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1TerminationCriterion.html#a39e2c84c1b98302041bb05df7fcb8952" title="Cleans up after the TerminationCriterion is finished. " alt="" coords="171,1190,371,1231"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1TerminationCriterion.html#a1759530e0df8fad8aa8cbbde98ec4eed" title="Function which determines whether this patch should be &#39;culled&#39;. " alt="" coords="171,446,371,487"/>
+<area shape="rect" id="node26" href="$classMesquite_1_1PatchDataUser.html#afdeb3f7cc84738470d0838d300ded313" title="Returns the Global Patch. " alt="" coords="184,1255,357,1297"/>
+<area shape="rect" id="node28" href="$classMesquite_1_1QualityImprover.html#a4573f7d8766d7d7bbd13ed9ff2684659" title="return the inner termination criterion pointer " alt="" coords="183,1321,358,1377"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1MeshSet.html#a07f501549939bc946dd771de5f06b2a3" title="Gets the next PatchData. " alt="" coords="454,894,597,935"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1QualityImprover.html#ab5da2bd6a7facf025c31c8fd3b8268b0" title="return the outer termination criterion pointer " alt="" coords="183,1401,358,1457"/>
+<area shape="rect" id="node30" href="$classMesquite_1_1PatchDataUser.html#a40660f57ae3b8ae0df25b03778c6a172" title="Returns the Patch Type. " alt="" coords="184,1482,357,1523"/>
+<area shape="rect" id="node32" href="$classMesquite_1_1VertexMover.html#a53f2865301b5b5e8a03fd487d676f606" title="initialize" alt="" coords="236,1548,305,1575"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1VertexMover.html#a36ee363919c20598df81e54159eff880" title="initialize_mesh_iteration" alt="" coords="190,1599,351,1625"/>
+<area shape="rect" id="node34" href="$classMesquite_1_1VertexMover.html#a2e09fa6545581fe44da888246fc76101" title="optimize_vertex_positions" alt="" coords="184,1649,357,1676"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1MeshSet.html#ae7f6e22ad7a7ae1216ff849eb1f0e6f5" title="Resets the MeshSet object so that get_next_patch() will restart its iterations at the first vertex..." alt="" coords="711,1150,854,1191"/>
+<area shape="rect" id="node35" href="$classMesquite_1_1TerminationCriterion.html#a411b1b5e226d5c66642273611393b539" title="Clear any data accumulated during an inner iteration. " alt="" coords="425,829,625,870"/>
+<area shape="rect" id="node41" href="$classMesquite_1_1TerminationCriterion.html#abb595efb30088610673b262261ada67c" title="Clear any data accumulated during an outer iteration. " alt="" coords="171,830,371,871"/>
+<area shape="rect" id="node42" href="$classMesquite_1_1TerminationCriterion.html#a07af71d69f8217bb2371a1d353bf5549" title="Shared inner and outer initialization during inner loop. " alt="" coords="425,633,625,674"/>
+<area shape="rect" id="node43" href="$classMesquite_1_1TerminationCriterion.html#a3d45ca05e3b46c529fcf83c1df01b313" title="Mesquite::TerminationCriterion\l::set_debug_output_level" alt="" coords="171,1701,371,1742"/>
+<area shape="rect" id="node44" href="$classMesquite_1_1QualityImprover.html#acb40d57ccfb348d486705fcf1bca8236" title="Mesquite::QualityImprover\l::set_mesh_set" alt="" coords="183,1766,358,1807"/>
+<area shape="rect" id="node45" href="$classMesquite_1_1TerminationCriterion.html#ab78db397b67d1ccfc887c0e11218f94d" title="Check if termination criterion has been met. " alt="" coords="171,1022,371,1063"/>
+<area shape="rect" id="node48" href="$classMesquite_1_1VertexMover.html#a20eb96cedb0200b2309a72bdd6664f80" title="terminate_mesh_iteration" alt="" coords="187,1832,355,1859"/>
+<area shape="rect" id="node49" href="$classMesquite_1_1PatchData.html#a9dbce5895323bbf4c3301494d899de76" title="Updates the underlying mesh (the Mesquite::Mesh implementation) with new node coordinates and flag va..." alt="" coords="198,1883,343,1925"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1TerminationCriterion.html#afd2c12358711995a576f8c8a9200c94a" title="Accumulate data during inner iteration. " alt="" coords="425,698,625,739"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1PatchDataParameters.html#a247c2678640754cdb0bd45ab6f777cd9" title="Tells the MeshSet what kind of data the patches should include. " alt="" coords="419,763,631,805"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1ObjectiveFunction.html#a91076d1dd1a59a6f3c00c46d9c16ad45" title="Calls either compute_numerical_gradient or compute_analytical_gradient depending on the value of grad..." alt="" coords="689,763,877,805"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1ObjectiveFunction.html#aa4022056de427aeed2972f46957a8cb9" title="Mesquite::ObjectiveFunction\l::evaluate" alt="" coords="689,633,877,674"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="941,473,1086,514"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1PatchDataUser.html#a8d971b50e78fc6139f03726bbba3008d" title="Returns the PatchDataParameters object. " alt="" coords="696,1033,869,1074"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1PatchData.html#a0c304342ea32a23debc99bf8ad579a88" title="Calculates the distance each vertex has moved from its original position as defined by the PatchDataV..." alt="" coords="430,243,621,299"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="453,5,598,46"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1PatchData.html#a4fa6913f1644e2aed4f96ff4dba66619" title="reinstantiates a memento to holds the current state of the PatchData coordinates. ..." alt="" coords="710,501,855,557"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1Vector3D.html#a49fe740d37400aba7d3cb91531cde7d1" title="Mesquite::Vector3D\l::length_squared" alt="" coords="713,253,852,294"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#a80870c233d0237e3588a2d6f8d176916" title="Increments the iterator. returns false if there is no more free vertex. " alt="" coords="681,318,885,359"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ad20897c5c8bd47f5d4005989bead0e55" title="Resets the iterator. " alt="" coords="681,122,885,163"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ae3a963bdd66247d38ad22d17fa121632" title="Returns an index corresponding to a free vertex. " alt="" coords="681,187,885,229"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1MeshSet.html#a5efb4cbca4d4d15b594568975e484948" title="Mesquite::MeshSet::\lclear_all_soft_fixed_flags" alt="" coords="441,1193,610,1234"/>
+<area shape="rect" id="node22" href="$classMesquite_1_1EntityIterator.html#aa8850ed68fa313e7a4f87647f106b754" title="Moves the iterator back to the first entity in the list. " alt="" coords="934,1150,1093,1191"/>
+<area shape="rect" id="node24" href="$classMesquite_1_1PatchData.html#a52bbea314d53d7190817b13404b51b66" title="Remove the soft_fixed flag from all vertices in the patch. " alt="" coords="693,435,872,477"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1PatchData.html#a23a7889611150e4016c857aeda6c4f2a" title="Add a soft_fixed flag to all free vertices in the patch. " alt="" coords="453,373,598,429"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1PatchDataParameters.html#afdeb3f7cc84738470d0838d300ded313" title="Returns the Global Patch. " alt="" coords="419,1258,631,1299"/>
+<area shape="rect" id="node31" href="$classMesquite_1_1PatchDataParameters.html#a40660f57ae3b8ae0df25b03778c6a172" title="Returns Patch Type (local around vertices, local around elements, global) " alt="" coords="419,1482,631,1523"/>
+<area shape="rect" id="node36" href="$classMesquite_1_1PatchData.html#a0bb57753499f14af261c370163a16a49" title="Creates a memento that holds the current state of the PatchData coordinates. " alt="" coords="693,698,873,739"/>
+<area shape="rect" id="node37" href="$namespaceMesquite.html#ac7fe4c546e08637612bd9b212daa45e9" title="Mesquite::length" alt="" coords="723,981,842,1008"/>
+<area shape="rect" id="node39" href="$namespaceMesquite.html#ae6da166f8221e1fd45131801086c94be" title="Mesquite::Linf" alt="" coords="731,829,835,856"/>
+<area shape="rect" id="node40" href="$classMesquite_1_1Timer.html#ad20897c5c8bd47f5d4005989bead0e55" title="Mesquite::Timer::reset" alt="" coords="706,880,859,907"/>
+<area shape="rect" id="node38" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="991,1040,1035,1067"/>
+<area shape="rect" id="node46" href="$classMesquite_1_1MsqInterrupt.html#adb55649f56913bbbf3aeef547a90db46" title="Check if an interrupt was seen. " alt="" coords="447,959,603,1001"/>
+<area shape="rect" id="node47" href="$classMesquite_1_1Timer.html#ac3f6cf620241299874ad6ba0de5fc5f7" title="Mesquite::Timer::since\l_birth" alt="" coords="448,1025,603,1066"/>
+<area shape="rect" id="node50" href="$classMesquite_1_1MeshSet.html#aa2332a8923a9e878e7ecb55bbe16c1db" title="Updates the coordinates in the underlying mesh with the coordinates stored in PatchData. " alt="" coords="454,1883,597,1925"/>
+</map>

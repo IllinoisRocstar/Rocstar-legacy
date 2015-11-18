@@ -1,0 +1,14 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a47ed797bddcdd0aabcd9f8e47f326744" title="COM_finalize" alt="" coords="119,5,220,32"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#ac0f80d6e63759a2afe40ed883cea3d5e" title="COM_init" alt="" coords="131,56,208,83"/>
+<area shape="rect" id="node4" href="$roccom__c_09_09_8h.html#a1c38d3b83185ed89dcc2d2e9424b0f8c" title="COM_set_profiling" alt="" coords="104,107,235,133"/>
+<area shape="rect" id="node6" href="$autosurfer_8C.html#a61aedb2ed2b960eb62f1ea07936ec18d" title="read_file" alt="" coords="134,233,205,260"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="509,259,637,285"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="305,107,439,133"/>
+<area shape="rect" id="node8" href="$roccom__c_09_09_8h.html#a2101b9a49179ad3af43eaefd6ff8ab0f" title="Clone the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="299,157,445,184"/>
+<area shape="rect" id="node9" href="$roccom__c_09_09_8h.html#a518de8c83ab277c8cdcb88635a27cefe" title="Delete an existing attribute. " alt="" coords="297,208,447,235"/>
+<area shape="rect" id="node10" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="299,259,445,285"/>
+<area shape="rect" id="node11" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="283,309,461,336"/>
+<area shape="rect" id="node12" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="284,360,460,387"/>
+<area shape="rect" id="node13" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="305,411,439,437"/>
+</map>

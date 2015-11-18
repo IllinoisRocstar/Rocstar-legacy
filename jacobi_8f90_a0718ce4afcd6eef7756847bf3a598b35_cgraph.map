@@ -1,0 +1,10 @@
+<map id="jacobi" name="jacobi">
+<area shape="rect" id="node2" href="$classLine__2.html#afe7f37893f080982762fded5aaca681c" title="Line_2::c" alt="" coords="155,5,229,32"/>
+<area shape="rect" id="node3" href="$classConnectivity.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Get the dimension of the mesh. " alt="" coords="111,56,273,83"/>
+<area shape="rect" id="node4" href="$classColor.html#a136e5e559949921576ae566cfea2e855" title="Color::g" alt="" coords="158,107,226,133"/>
+<area shape="rect" id="node5" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="169,157,215,184"/>
+<area shape="rect" id="node6" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="171,208,213,235"/>
+<area shape="rect" id="node7" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="170,259,214,285"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="118,310,266,351"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a77d222b4837c78aad604f3f0b5f1409c" title="Return the sum of all the pixel values in an image. " alt="" coords="109,376,275,403"/>
+</map>

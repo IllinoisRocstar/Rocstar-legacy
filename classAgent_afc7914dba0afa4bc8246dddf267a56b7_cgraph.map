@@ -1,0 +1,18 @@
+<map id="init_callback" name="init_callback">
+<area shape="rect" id="node2" href="$classAgent.html#ab599f18b970883e5876d00411ccb3c17" title="create_buffer_all" alt="" coords="167,147,286,173"/>
+<area shape="rect" id="node8" href="$classAgent.html#a7166b9d0c3321d1abf347377b32bf154" title="get_agent_name" alt="" coords="379,223,498,249"/>
+<area shape="rect" id="node9" href="$classScheduler.html#aa1afa161a5ce3091cb8c3a3c7a2c498e" title="Scheduler::init_actions" alt="" coords="149,273,304,300"/>
+<area shape="rect" id="node12" href="$classScheduler.html#af337ffd75e4f019ce15302c60715d84b" title="Scheduler::isEmpty" alt="" coords="159,324,295,351"/>
+<area shape="rect" id="node13" href="$namespacecimg__library_1_1cimg.html#ab9308a5128017dd92d3f602a19ca7611" title="cimg_library::cimg\l::option" alt="" coords="163,426,291,467"/>
+<area shape="rect" id="node15" href="$classScheduler.html#ad2f7d0180654fc893a9dd4112cec8f3b" title="Scheduler::run_actions" alt="" coords="149,375,304,401"/>
+<area shape="rect" id="node17" href="$classScheduler.html#a1ddbe92dd7f68ea5db8d9957e6da0c0a" title="Scheduler::set_alpha" alt="" coords="155,492,299,519"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="371,71,506,97"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#ac624fa4f91f2a6a33efd1d6a09ec3432" title="Use the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="371,121,506,148"/>
+<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="357,172,520,199"/>
+<area shape="rect" id="node7" href="$classAgent.html#aa6c678661c300897a1c55a171c020d61" title="create_registered_window\l_attributes" alt="" coords="352,5,525,46"/>
+<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="573,121,701,148"/>
+<area shape="rect" id="node10" href="$structScheduler_1_1ActionItem.html#a4d53ef72c920649a6dcaf1ccb1392b5d" title="Scheduler::ActionItem\l::action" alt="" coords="363,325,514,366"/>
+<area shape="rect" id="node11" href="$classAction.html#aca8217b09074703304bc004e3b158e55" title="Action::init" alt="" coords="397,273,481,300"/>
+<area shape="rect" id="node14" href="$namespacecimg__library_1_1cimg.html#abc491a5ed3a8d97e395138a379767a45" title="Compute the basename of a filename. " alt="" coords="375,442,503,483"/>
+<area shape="rect" id="node16" href="$classAction.html#a32338f30828c8564d854ae856028b26a" title="Action::run" alt="" coords="396,391,481,417"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="init_constraints" name="init_constraints">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="404,107,537,133"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="382,461,559,488"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="383,411,559,437"/>
+<area shape="rect" id="node6" href="$proptest_8C.html#a7ed0d93898956794ec0a60da47443c03" title="init_constraints_acmflu" alt="" coords="171,208,327,235"/>
+<area shape="rect" id="node11" href="$proptest_8C.html#af54dbefd05f407be142e509268eeb317" title="init_constraints_labscale" alt="" coords="167,259,332,285"/>
+<area shape="rect" id="node13" href="$proptest_8C.html#af00ffb0c56e6c2fc7f6a4dff9ce8367d" title="init_constraints_myacm" alt="" coords="169,360,329,387"/>
+<area shape="rect" id="node15" href="$proptest_8C.html#a96d5326ec0780c845dd5d409f67589b1" title="init_constraints_staraft" alt="" coords="172,157,327,184"/>
+<area shape="rect" id="node18" href="$proptest_8C.html#ab7c9c8dc0f1a5b1afb821d8afae7eb8e" title="init_constraints_starslice" alt="" coords="166,309,333,336"/>
+<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="608,259,736,285"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a6e38c0b1f83c30b166b7500902e13be1" title="COM_get_panes" alt="" coords="411,309,531,336"/>
+<area shape="rect" id="node8" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="413,157,528,184"/>
+<area shape="rect" id="node9" href="$roccom__c_09_09_8h.html#a74e2d52abbc3b6532fc19b38deabba26" title="Get the sizes of an attribute. " alt="" coords="416,208,525,235"/>
+<area shape="rect" id="node10" href="$roccom__c_09_09_8h.html#ab5a8ac8121d23b45ad8c8354970a2130" title="COM_free_buffer" alt="" coords="409,259,532,285"/>
+<area shape="rect" id="node12" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="431,360,510,387"/>
+<area shape="rect" id="node14" href="$Pane__boundary_8C.html#a435ef393d7d5394df67d5da81c108c7d" title="square" alt="" coords="440,512,501,539"/>
+<area shape="rect" id="node16" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="416,5,525,32"/>
+<area shape="rect" id="node17" href="$roccom__c_09_09_8h.html#ab6a6d18043bc76f9a381084af49c6a9f" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="405,56,536,83"/>
+</map>

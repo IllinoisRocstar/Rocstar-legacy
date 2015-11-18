@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIRAD_1_1Global_1_1GlobalObj.html" title="Base global object. " alt="" coords="5,13,179,54"/>
+<area shape="rect" id="node2" href="$classIRAD_1_1Global_1_1ParallelGlobalObj.html" title="ParallelGlobalObj\&lt;\l CommunicatorType, StackType,\l ErrorType, ProfilerType \&gt;" alt="" coords="227,5,442,61"/>
+<area shape="rect" id="node3" href="$classIRAD_1_1Global_1_1Program.html" title="Program\&lt; TestGlobal,\l TestComLine \&gt;" alt="" coords="491,13,642,54"/>
+<area shape="rect" id="node4" href="$classIRAD_1_1TestProgram.html" title="TestProgram" alt="" coords="691,20,789,47"/>
+</map>

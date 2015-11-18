@@ -1,0 +1,9 @@
+<map id="get_incident_edge" name="get_incident_edge">
+<area shape="rect" id="node2" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="368,5,469,32"/>
+<area shape="rect" id="node3" href="$classSimple__manifold__2.html#a678219ca5d2b29febb0820f195f668ba" title="Get an index for internal edges. " alt="" coords="194,56,307,83"/>
+<area shape="rect" id="node6" href="$classSimple__manifold__2.html#a96857d0e0525ef06c2590d22d2acf0c1" title="Get the ID of the origin of a given edge. " alt="" coords="211,107,290,133"/>
+<area shape="rect" id="node7" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="182,157,319,184"/>
+<area shape="rect" id="node8" href="$classSimple__manifold__2.html#ab10e70cbf6e6aeedb1e3dd1cab81ebf8" title="Is the given node a ghost node? " alt="" coords="197,208,304,235"/>
+<area shape="rect" id="node4" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="370,132,467,159"/>
+<area shape="rect" id="node5" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="391,56,446,83"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="get_crop" name="get_crop">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#ac1b0fa3e83defeb353d65e7094b3caa8" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display" alt="" coords="139,5,271,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a77085bb4dfa1622ac5de64eb5c6ed9d1" title="Get a square region of the image. " alt="" coords="139,70,271,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a4fddfa0c54a058a49bbbb23d99d00da0" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_blur\l_median" alt="" coords="139,136,271,192"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a29672ad8ee5cab6287d1a194f572ddc8" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_channels" alt="" coords="125,217,285,258"/>
+<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a1bc03749880ec2542c303c5c81eea0a2" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_columns" alt="" coords="127,282,284,323"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a9aee13f0b800292841931e93d5941850" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_crop" alt="" coords="139,347,272,389"/>
+<area shape="rect" id="node8" href="$structcimg__library_1_1CImg.html#a2c6818fae6258b622d30a284ec765827" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_index" alt="" coords="136,413,275,454"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a27cc2acc265a0ac0b96bf9b4ceb63d41" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_lines" alt="" coords="138,478,273,519"/>
+<area shape="rect" id="node10" href="$structcimg__library_1_1CImg.html#aeca37cd39cca6c4ff52d2f0bdd87e965" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_slices" alt="" coords="134,543,277,585"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#adc2e5a953d030fca9af7af17119262a9" title="Split image into a list. " alt="" coords="139,609,271,650"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="recreate_vertices_memento" name="recreate_vertices_memento">
+<area shape="rect" id="node2" href="$classMesquite_1_1TerminationCriterion.html#a52e1a2e10a747dcb4c1343700df6bfb4" title="Common code for both inner and outer termination criteria during inner iteration. ..." alt="" coords="237,70,437,111"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1ConjugateGradient.html#a39cf050d6c200ee4c7bb3a5755222dd7" title="Returns the step distance to take in the search direction. " alt="" coords="242,5,433,46"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1FeasibleNewton.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::FeasibleNewton\l::optimize_vertex_positions" alt="" coords="495,122,676,163"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1TerminationCriterion.html#a411b1b5e226d5c66642273611393b539" title="Clear any data accumulated during an inner iteration. " alt="" coords="237,187,437,229"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1TerminationCriterion.html#a07af71d69f8217bb2371a1d353bf5549" title="Shared inner and outer initialization during inner loop. " alt="" coords="485,305,685,346"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1ConjugateGradient.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::ConjugateGradient\l::optimize_vertex_positions" alt="" coords="490,5,681,46"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Improves the quality of the MeshSet, calling some methods specified in a class derived from VertexMov..." alt="" coords="733,217,891,258"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1ShapeImprovementWrapper.html#a52b954daacf72db4a8b0b8811e81bbb0" title="run_instructions runs the wrapper on the given MeshSet. " alt="" coords="939,217,1135,258"/>
+<area shape="rect" id="node7" href="$classRocmop.html#a2dbb41ea0da20e141ec61d8d4a726ddf" title="Smooth the panes of the working window using MESQUITE. " alt="" coords="1185,224,1367,251"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1TerminationCriterion.html#abb595efb30088610673b262261ada67c" title="Clear any data accumulated during an outer iteration. " alt="" coords="485,187,685,229"/>
+</map>

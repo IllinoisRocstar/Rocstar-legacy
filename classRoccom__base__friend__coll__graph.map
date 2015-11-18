@@ -1,0 +1,19 @@
+<map id="Roccom_base_friend" name="Roccom_base_friend">
+<area shape="rect" id="node2" href="$classRoccom__base.html" title="This file indirectly includes the following files: iostream, map, string, vector, and roccom_basic..." alt="" coords="2981,1133,3088,1160"/>
+<area shape="rect" id="node3" href="$classRoccom__map.html" title="Roccom_map\&lt; std::pair\l\&lt; void *, std::set\&lt; std\l::string \&gt; \&gt; \&gt;" alt="" coords="1761,1191,1924,1247"/>
+<area shape="rect" id="node15" href="$classRoccom__map.html" title="Supports mapping from names to handles and vice&#45;versa for a module, window, function, or attribute. " alt="" coords="1381,1196,1547,1223"/>
+<area shape="rect" id="node17" href="$classRoccom__map.html" title="Roccom_map\&lt; Window * \&gt;" alt="" coords="2059,1036,2242,1063"/>
+<area shape="rect" id="node32" href="$classRoccom__map.html" title="Roccom_map\&lt; Function * \&gt;" alt="" coords="1749,1407,1936,1433"/>
+<area shape="rect" id="node37" href="$classRoccom__map.html" title="Roccom_map\&lt; Attribute * \&gt;" alt="" coords="2683,827,2869,853"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="487,388,542,415"/>
+<area shape="rect" id="node21" href="$classFunction.html" title="A Function object corresponds to a function member of a window. " alt="" coords="772,479,844,505"/>
+<area shape="rect" id="node23" href="$classAttribute.html" title="An Attribute object is a data member of a window. " alt="" coords="2115,467,2186,493"/>
+<area shape="rect" id="node19" href="$classWindow.html" title="A Window object contains multiple panes and multiple data attributes. " alt="" coords="1429,308,1499,335"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="152,388,293,415"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="760,189,856,216"/>
+<area shape="rect" id="node11" title="STL class. " alt="" coords="177,1236,268,1263"/>
+<area shape="rect" id="node13" title="STL class. " alt="" coords="330,533,401,560"/>
+<area shape="rect" id="node24" href="$classPane.html" title="A Pane object contains a mesh, pane attribute, and field variables. " alt="" coords="1817,349,1869,376"/>
+<area shape="rect" id="node26" href="$classConnectivity.html" title="Encapsulates an element&#45;connectivity of a mesh. " alt="" coords="2402,439,2497,465"/>
+<area shape="rect" id="node31" href="$classFunction__map.html" title="A map functions. " alt="" coords="2099,1544,2203,1571"/>
+</map>

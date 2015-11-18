@@ -1,0 +1,7 @@
+<map id="print_type" name="print_type">
+<area shape="rect" id="node2" href="$classRoccom__base.html#a67a8cda3434d765686da450f67aa9faf" title="Information retrieval Get the information about an attribute. " alt="" coords="136,5,323,32"/>
+<area shape="rect" id="node4" href="$classRoccom__base.html#a1087c09dc31872fff2d2dc6cedd015ea" title="Creates a new attribute for a window. " alt="" coords="133,56,325,83"/>
+<area shape="rect" id="node5" href="$classRoccom__base.html#a3ec31b95cda9f51e298bc46b2af8cf6d" title="Registers a function to the window. " alt="" coords="137,107,322,133"/>
+<area shape="rect" id="node6" href="$classRoccom__base.html#a44e1fb907e2dfdf1ec75b4f86780f611" title="Roccom_base::set_member\l_function_helper" alt="" coords="373,125,560,166"/>
+<area shape="rect" id="node3" href="$classRoccom__base.html#a05de76e36ebce568257980f6d31165c1" title="Obtains a reference to an attribute from its handle. " alt="" coords="373,5,560,32"/>
+</map>

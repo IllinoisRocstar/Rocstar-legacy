@@ -1,0 +1,26 @@
+<map id="size_of_edges" name="size_of_edges">
+<area shape="rect" id="node2" href="$classOverlay__primitives.html#a1c20fa0c901b440606f581e1a031eff5" title="Overlay_primitives\l::get_face_normal" alt="" coords="351,185,481,226"/>
+<area shape="rect" id="node12" href="$classOverlay__primitives.html#a52bf3d8a369225793dc1446b2f9e0841" title="Overlay_primitives\l::get_point" alt="" coords="351,505,481,546"/>
+<area shape="rect" id="node21" href="$classOverlay__primitives.html#a54e0d464165e5e3e46115682d6f4d283" title="Overlay_primitives\l::get_tangent" alt="" coords="160,335,291,377"/>
+<area shape="rect" id="node25" href="$classOverlay__primitives.html#a81e424ade97fdbde9769fd151299e605" title="Overlay_primitives\l::project_onto_element" alt="" coords="339,257,493,298"/>
+<area shape="rect" id="node3" href="$group__fdp.html#ga26603d3c69ad54a093a6925f93d0afac" title="Compute the cosine of the face angle (dihedral angle) at an edge. " alt="" coords="562,5,715,46"/>
+<area shape="rect" id="node4" href="$classRFC__Pane__overlay.html#a7f96d32b13df97ab6783e01c97e4723f" title="RFC_Pane_overlay::evaluate\l_normals" alt="" coords="542,70,735,111"/>
+<area shape="rect" id="node5" href="$group__ntc.html#ga7f96d32b13df97ab6783e01c97e4723f" title="RFC_Window_overlay\l::evaluate_normals" alt="" coords="997,146,1150,187"/>
+<area shape="rect" id="node7" href="$classOverlay.html#a6054035d0679586f98c8667b9951ae60" title="Overlay::get_green\l_parent" alt="" coords="573,253,705,294"/>
+<area shape="rect" id="node10" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="553,187,724,229"/>
+<area shape="rect" id="node6" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="1211,273,1328,300"/>
+<area shape="rect" id="node8" href="$classOverlay.html#a7a0198e2249c3c9b0a02ecb297251546" title="Overlay::overlay_init" alt="" coords="789,264,931,291"/>
+<area shape="rect" id="node9" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="1011,310,1136,351"/>
+<area shape="rect" id="node11" href="$classOverlay.html#af13f003d409781875438877fd15f4d81" title="Overlay::associate\l_green_vertices" alt="" coords="795,193,925,234"/>
+<area shape="rect" id="node13" href="$classOverlay__primitives.html#afed21d8712a251c6215e3f55c900c5a9" title="Overlay_primitives\l::get_point" alt="" coords="573,639,704,681"/>
+<area shape="rect" id="node14" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="Overlay::insert_node\l_in_blue_edge" alt="" coords="789,427,931,469"/>
+<area shape="rect" id="node17" href="$classOverlay.html#af22e17ad9a8539ed1690db37f741b13b" title="Overlay::write_inodes_tec" alt="" coords="552,705,725,732"/>
+<area shape="rect" id="node18" href="$classOverlay.html#ac5a811521da524802065a5a62cf67341" title="Overlay::write_inodes_vec" alt="" coords="551,487,727,513"/>
+<area shape="rect" id="node19" href="$classOverlay.html#a356923154df51107408f9b11d92c21e5" title="Overlay::write_overlay_off" alt="" coords="551,537,726,564"/>
+<area shape="rect" id="node20" href="$classOverlay.html#a0bd2163789be46cbefc1aa867d9ac420" title="Overlay::write_overlay_tec" alt="" coords="550,588,727,615"/>
+<area shape="rect" id="node15" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="984,376,1163,403"/>
+<area shape="rect" id="node16" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="1000,427,1147,469"/>
+<area shape="rect" id="node22" href="$classOverlay__primitives.html#ada5e302cd6a3e775eae57519f932783b" title="Overlay_primitives\l::intersect" alt="" coords="351,365,481,406"/>
+<area shape="rect" id="node23" href="$classOverlay.html#a4e8602930d85d562fab07af05eddb855" title="Overlay::intersect\l_link_helper" alt="" coords="576,370,701,411"/>
+<area shape="rect" id="node24" href="$classOverlay.html#a41c1d5ad91477125ab8d20fdf2653724" title="Overlay::intersect_link" alt="" coords="784,372,936,399"/>
+</map>

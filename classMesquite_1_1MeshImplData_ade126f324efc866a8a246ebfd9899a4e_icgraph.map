@@ -1,0 +1,4 @@
+<map id="vertex_adjacencies" name="vertex_adjacencies">
+<area shape="rect" id="node2" href="$classMesquite_1_1MeshImpl.html#a7d784700d52039bbb92211efbefa2c45" title="Gets the number of elements attached to this vertex. " alt="" coords="190,5,338,61"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1MeshImpl.html#aac612177d49726b29f19e2418d69afe6" title="Gets the elements attached to this vertex. " alt="" coords="190,85,338,141"/>
+</map>

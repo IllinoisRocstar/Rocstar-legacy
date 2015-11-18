@@ -1,0 +1,51 @@
+<map id="ROCBLAS_LOAD_MODULE_" name="ROCBLAS_LOAD_MODULE_">
+<area shape="rect" id="node2" href="$classRocblas.html#a509324395eda15d55172c78cee1ae5fb" title="Creates window for Rocblas and registers functions. " alt="" coords="254,917,349,944"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="421,5,555,32"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#aa236d5c98c0ac8cc26b313b6ccd720a8" title="COM_set_function" alt="" coords="423,56,553,83"/>
+<area shape="rect" id="node6" href="$classRocblas.html#a56af5b37f32aa5646256710db7eb27aa" title="Operation wrapper for addition. " alt="" coords="439,664,537,691"/>
+<area shape="rect" id="node15" href="$classRocblas.html#a7c4e389cce4e1bb681a77878e6105f29" title="Operation wrapper for subtraction. " alt="" coords="439,563,537,589"/>
+<area shape="rect" id="node16" href="$classRocblas.html#a7b34280677ab5313abc1e2eae0c251df" title="Operation wrapper for multiplication. " alt="" coords="439,613,537,640"/>
+<area shape="rect" id="node17" href="$classRocblas.html#a065ad834f700affb4c861da75459325c" title="Operation wrapper for division. " alt="" coords="441,715,535,741"/>
+<area shape="rect" id="node18" href="$classRocblas.html#a404c00b368f71c2a52cbbcc32e39bee7" title="Operation wrapper for limit1. " alt="" coords="433,765,543,792"/>
+<area shape="rect" id="node19" href="$classRocblas.html#a3b80bb09c6e8803e400f77c0e6845171" title="Operation wrapper for addition with y as a scalar pointer. " alt="" coords="641,1019,783,1045"/>
+<area shape="rect" id="node20" href="$classRocblas.html#a28a74f2e61c20f6db18d72098bcdb9fb" title="Operation wrapper for subtraction with y as a scalar pointer. " alt="" coords="641,1069,783,1096"/>
+<area shape="rect" id="node21" href="$classRocblas.html#a446e16f562d2bcb780991916721bcba2" title="Operation wrapper for multiplication with y as a scalar pointer. " alt="" coords="641,1120,783,1147"/>
+<area shape="rect" id="node22" href="$classRocblas.html#a8ddb762562e041c1c7155a8eac24e996" title="Operation wrapper for division with y as a scalar pointer. " alt="" coords="643,1171,781,1197"/>
+<area shape="rect" id="node23" href="$classRocblas.html#a78af0a404baa34fa6aed8bf7de4864b5" title="Operation wrapper for addition with y as a scalar pointer. " alt="" coords="634,1221,790,1248"/>
+<area shape="rect" id="node24" href="$classRocblas.html#af789a9e3f0ea99898a984f69da97aac0" title="Wrapper for neg (y=&#45;x). " alt="" coords="663,360,761,387"/>
+<area shape="rect" id="node25" href="$classRocblas.html#a1d9103d1e9aaab469de3dd408423f4e3" title="Wrapper for sqrt (y=sqrt(x)). " alt="" coords="662,157,762,184"/>
+<area shape="rect" id="node26" href="$classRocblas.html#a99646496fb4ed287b9fa8af4e7a22458" title="Wrapper for acos (y=acos(x)). " alt="" coords="659,208,765,235"/>
+<area shape="rect" id="node27" href="$classRocblas.html#ac01c8d940c6c31ffb2231e11d9c4947a" title="Wrapper for dot product. " alt="" coords="440,309,536,336"/>
+<area shape="rect" id="node29" href="$classRocblas.html#a01cff6f7cd2ff9ccb346efe9f0ef816b" title="Wrapper for 2&#45;norm with z as a scalar pointer. " alt="" coords="419,1171,557,1197"/>
+<area shape="rect" id="node28" href="$classRocblas.html#a3a6a3ee0aa13f09b13e6918cfc89ffd0" title="Wrapper for dot product. " alt="" coords="649,259,775,285"/>
+<area shape="rect" id="node30" href="$classRocblas.html#a64eb1ad363d059ab26f4ac5fb1718140" title="Wrapper for 2&#45;norm with z as a scalar pointer. " alt="" coords="627,1272,797,1299"/>
+<area shape="rect" id="node31" href="$classRocblas.html#aae1cbead2b3ce638d59eae3dd176c932" title="Wrapper for 2&#45;norm. " alt="" coords="435,360,541,387"/>
+<area shape="rect" id="node32" href="$classRocblas.html#a2bb364d87a2ac749a2bdce326a2877a2" title="Wrapper for 2&#45;norm with y as a scalar pointer. " alt="" coords="413,1221,563,1248"/>
+<area shape="rect" id="node33" href="$classRocblas.html#a6545a6ce9324fe186ebc114475104ca2" title="Wrapper for 2&#45;norm with MPI. " alt="" coords="419,411,557,437"/>
+<area shape="rect" id="node34" href="$classRocblas.html#aeb667370e871bf138836c4bf7636ff36" title="Wrapper for 2&#45;norm with y as a scalar pointer with MPI. " alt="" coords="398,1272,578,1299"/>
+<area shape="rect" id="node35" href="$classRocblas.html#a998285477e689aeec0b71031297a5e90" title="Wrapper for swap. " alt="" coords="657,1525,767,1552"/>
+<area shape="rect" id="node38" href="$classRocblas.html#a29fe903b10fe8cd0f0bc37c01b63b83f" title="Wrapper for copy. " alt="" coords="659,1475,765,1501"/>
+<area shape="rect" id="node39" href="$classRocblas.html#a90bc5919b65b71778821b680c0a39926" title="Generate a random number between 0 and $a$ for each entry in z. " alt="" coords="661,1424,763,1451"/>
+<area shape="rect" id="node40" href="$classRocblas.html#a67987d3b72ffb73c5fa0cc2930822afd" title="Operation wrapper for copy (x is a scalar pointer). " alt="" coords="638,1323,786,1349"/>
+<area shape="rect" id="node41" href="$classRocblas.html#addae393b21579bf72aafc5e24970fbc1" title="Generate a random number between 0 and $a$ for each entry in z. " alt="" coords="639,1373,785,1400"/>
+<area shape="rect" id="node42" href="$classRocblas.html#abed415e0a0a24be94f2882cf94fd3d3b" title="Operation wrapper for z = a * x + y. " alt="" coords="659,309,765,336"/>
+<area shape="rect" id="node43" href="$classRocblas.html#a1a4eaf6066bc032342ff04164a0cda19" title="Operation wrapper for z = a * x + y (a is a scalar pointer). " alt="" coords="638,968,786,995"/>
+<area shape="rect" id="node44" href="$classRocblas.html#a87cc7fa009439de68a57dfb182f8f701" title="Wrapper for min. " alt="" coords="423,1576,553,1603"/>
+<area shape="rect" id="node45" href="$classRocblas.html#abe81520ab764024c4ec8f37053355584" title="Wrapper for max. " alt="" coords="421,1627,555,1653"/>
+<area shape="rect" id="node46" href="$classRocblas.html#aeaf07dfab863c7a5998676bd8a545541" title="Wrapper for sum. " alt="" coords="421,1677,555,1704"/>
+<area shape="rect" id="node47" href="$classRocblas.html#a42e3f07453714d45c665c9f796a8b1e7" title="Operation wrapper for min (y is a scalar pointer). " alt="" coords="402,1728,574,1755"/>
+<area shape="rect" id="node48" href="$classRocblas.html#a50b28ba9d09f03b264f74a595fab1374" title="Operation wrapper for max (y is a scalar pointer). " alt="" coords="400,1779,576,1805"/>
+<area shape="rect" id="node49" href="$classRocblas.html#ad29dc50417d7e1fc2bc8626f2bb037e3" title="Operation wrapper for sum (y is a scalar pointer). " alt="" coords="400,1829,576,1856"/>
+<area shape="rect" id="node50" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="407,107,569,133"/>
+<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="648,56,776,83"/>
+<area shape="rect" id="node7" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="855,993,991,1020"/>
+<area shape="rect" id="node8" href="$classRocblas.html#a014ebce01bb2ec4eacb969b142b13d97" title="Chooses which calc function to call based on type of y. " alt="" coords="639,613,785,640"/>
+<area shape="rect" id="node11" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="859,588,987,615"/>
+<area shape="rect" id="node9" href="$classAttribute.html#ab642771d1269b6ccb9e6ba87ec15de3b" title="Checks whether the attribute is associated with the window. " alt="" coords="845,280,1000,307"/>
+<area shape="rect" id="node10" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="862,331,983,373"/>
+<area shape="rect" id="node12" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="1048,1475,1171,1501"/>
+<area shape="rect" id="node13" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="1055,1323,1164,1349"/>
+<area shape="rect" id="node14" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="1054,588,1165,615"/>
+<area shape="rect" id="node36" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="878,1475,967,1501"/>
+<area shape="rect" id="node37" href="$classWindow.html#a4d18e272967ed99a266283d1c173a26a" title="Obtain all the attributes of the pane. " alt="" coords="857,1424,988,1451"/>
+</map>

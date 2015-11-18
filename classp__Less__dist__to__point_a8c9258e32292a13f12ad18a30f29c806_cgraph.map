@@ -1,0 +1,11 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node2" href="$distance__predicatesS3_8h.html#a8ca8e41bd612f62944e34f158f7fa354" title="has_smaller_dist_to\l_point" alt="" coords="131,107,269,149"/>
+<area shape="rect" id="node3" href="$predicates_2kernel__ftC3_8h.html#ae7cb5705037fa4e9ccc2467091fa28d9" title="has_smaller_dist_to\l_pointC3" alt="" coords="317,23,456,65"/>
+<area shape="rect" id="node8" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="345,89,428,116"/>
+<area shape="rect" id="node9" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="345,140,428,167"/>
+<area shape="rect" id="node10" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="345,191,428,217"/>
+<area shape="rect" id="node4" href="$predicates_2kernel__ftC3_8h.html#a6ce1de863edbbd2883b69b4c447c069d" title="cmp_dist_to_pointC3" alt="" coords="505,31,650,57"/>
+<area shape="rect" id="node5" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="711,5,827,32"/>
+<area shape="rect" id="node6" href="$constructions_2kernel__ftC3_8h.html#ac3bf4555560ae04cd01f79f5f40bd8da" title="squared_distanceC3" alt="" coords="699,56,840,83"/>
+<area shape="rect" id="node7" href="$Pane__boundary_8C.html#a435ef393d7d5394df67d5da81c108c7d" title="square" alt="" coords="888,56,949,83"/>
+</map>

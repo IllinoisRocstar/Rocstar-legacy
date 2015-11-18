@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classMesquite_1_1MsqError.html" title="Used to hold the error state and return it to the application. " alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node2" href="$classMesquite_1_1MsqPrintError.html" title="Utility class for printing error data &#45; used in Mesquite tests. " alt="" coords="129,5,231,32"/>
+</map>

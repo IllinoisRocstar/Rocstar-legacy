@@ -1,0 +1,6 @@
+<map id="find_plane_normal" name="find_plane_normal">
+<area shape="rect" id="node2" href="$classMesquite_1_1NonSmoothSteepestDescent.html#afbb1763bb4e34a5966e12faf9744cbdd" title="convex_hull_test" alt="" coords="181,5,301,32"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a3aa1796f8f5b7ca60892b6f98f632ed5" title="check_equilibrium" alt="" coords="350,5,477,32"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1NonSmoothSteepestDescent.html#aea5da29ae2e90ad56c2a56d62b63ab93" title="minmax_opt" alt="" coords="525,5,619,32"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="optimize_vertex_positions" alt="" coords="667,5,840,32"/>
+</map>

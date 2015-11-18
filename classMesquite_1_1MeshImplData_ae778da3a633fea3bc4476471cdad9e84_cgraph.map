@@ -1,0 +1,12 @@
+<map id="copy_higher_order" name="copy_higher_order">
+<area shape="rect" id="node2" href="$classMesquite_1_1MeshImplData.html#a104a1c4bbfb05d4cada7edbaff6f8f2b" title="Check if passed vertex index is valid. " alt="" coords="207,89,316,115"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1TopologyInfo.html#a9ead97b0e57cd82933092ac19db7d38c" title="Return which side the specified mid&#45;node lies on. " alt="" coords="390,271,549,312"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1TopologyInfo.html#a5b738e3650174610cf5944fd27c3997f" title="Get corner indices of side. " alt="" coords="182,140,341,181"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1TopologyInfo.html#a664028df04b3b8dbc5a453d5a2caf350" title="Get the number of edges in a given topology. " alt="" coords="598,107,757,148"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1TopologyInfo.html#a84d9816ff80027ce8775c0b4f43a86ab" title="Get the number of faces in a given topology. " alt="" coords="598,205,757,247"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1TopologyInfo.html#a795183830fb2002a37b11775c9605266" title="Number of adjacent entities of a specified dimension. " alt="" coords="806,107,965,148"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1TopologyInfo.html#a72e6b96dd3d457ef398ed6d62d9a50a6" title="Dimension of element topology. " alt="" coords="1014,61,1173,103"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="390,140,549,181"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1TopologyInfo.html#a5ac39b7eb646d0fe5edd84589809c90b" title="Get indices of edge ends in element connectivity array. " alt="" coords="390,75,549,116"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1TopologyInfo.html#a5c49c5c5052d8513249f899e8d2b738e" title="Get face corner indices in element connectivity array. " alt="" coords="390,205,549,247"/>
+</map>

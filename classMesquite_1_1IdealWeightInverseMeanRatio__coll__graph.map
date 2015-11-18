@@ -1,0 +1,7 @@
+<map id="IdealWeightInverseMeanRatio" name="IdealWeightInverseMeanRatio">
+<area shape="rect" id="node2" href="$classMesquite_1_1ShapeQualityMetric.html" title="ShapeQualityMetric" alt="" coords="5,83,141,109"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html" title="Base class for concrete quality metrics. " alt="" coords="24,5,123,32"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1Exponent.html" title="Exponent" alt="" coords="165,83,243,109"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1Vector3D.html" title="Vector3D is the object that effeciently stores information about about three&#45;deminsional vectors..." alt="" coords="267,83,344,109"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1Matrix3D.html" title="3*3 Matric class, row&#45;oriented, 0&#45;based [i][j] indexing. " alt="" coords="373,83,448,109"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Pane" name="Pane">
+<area shape="rect" id="node2" href="$classAttribute.html#ab642771d1269b6ccb9e6ba87ec15de3b" title="Checks whether the attribute is associated with the window. " alt="" coords="107,5,261,32"/>
+<area shape="rect" id="node3" href="$classAttribute.html#afaa016f7aa87969def6903a4a7e8490f" title="Obtain a constant pointer to the owner pane of the attribute. " alt="" coords="131,56,237,83"/>
+<area shape="rect" id="node4" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="123,107,245,149"/>
+</map>

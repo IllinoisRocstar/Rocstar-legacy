@@ -1,0 +1,24 @@
+<map id="init_communicator" name="init_communicator">
+<area shape="rect" id="node2" href="$classWindow__manifold__2.html#ab5ca31d43bed67e02e89be167de9da7f" title="Compute nodal normals using one of the following weighting schemes: E2N_ONE, E2N_AREA, and E2N_ANGLE, and E2N_USER. " alt="" coords="365,339,528,365"/>
+<area shape="rect" id="node12" href="$classWindow__manifold__2.html#a2eebb41f1831723225ffd524188bcb54" title="Convert element values to nodal values using weighted averaging. " alt="" coords="182,389,317,416"/>
+<area shape="rect" id="node14" href="$classRocsurf.html#a690441882f8d7100b177146402bb63b5" title="Constructs the communication patterns of a distributed mesh. " alt="" coords="577,237,700,264"/>
+<area shape="rect" id="node3" href="$classWindow__manifold__2.html#a870e40efa9ab58452a354eaca2b75d30" title="Compute the normals at nodes or faces, depending on the type of the attribute normals. " alt="" coords="576,339,701,365"/>
+<area shape="rect" id="node11" href="$classWindow__manifold__2.html#a63077b4a404ef8457c38c64b320323e7" title="Perturb the given mesh along its normal direction by length equal to a random number between &#45;range a..." alt="" coords="588,288,689,315"/>
+<area shape="rect" id="node4" href="$classRocsurf.html#ad345c59eea168babcd0976c9a7810b50" title="Computes nodal or elemental normals of a given window. " alt="" coords="765,335,944,361"/>
+<area shape="rect" id="node5" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="1010,335,1110,361"/>
+<area shape="rect" id="node6" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="1189,259,1337,285"/>
+<area shape="rect" id="node7" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="1191,309,1334,336"/>
+<area shape="rect" id="node8" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="1165,360,1361,387"/>
+<area shape="rect" id="node9" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="1188,411,1337,437"/>
+<area shape="rect" id="node10" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="1161,461,1364,488"/>
+<area shape="rect" id="node13" href="$classRocsurf.html#a4f24fa35a8c266187a6c07110f263313" title="Computes nodal or elemental normals of a given window. " alt="" coords="781,386,928,427"/>
+<area shape="rect" id="node15" href="$classRocprop.html#a0a4c364151a6f91c699f00b3ce815540" title="Initialize Rocprop with given mesh. " alt="" coords="791,183,918,209"/>
+<area shape="rect" id="node22" href="$classRocsurf.html#a4425eeff98e6b22e12140ea76f6023df" title="Serialize the mesh of a given window. " alt="" coords="773,233,936,260"/>
+<area shape="rect" id="node23" href="$classRocmop.html#aa4ccb82202e8cfdb21a511ff6336bab7" title="Perform smoother specific initialization. " alt="" coords="750,132,959,159"/>
+<area shape="rect" id="node16" href="$classRocprop.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Rocprop::load" alt="" coords="1009,132,1111,159"/>
+<area shape="rect" id="node17" href="$Rocprop_8C.html#ad9df38ab9916691f6c68fc70672d32ff" title="Rocprop_load_module" alt="" coords="1187,5,1338,32"/>
+<area shape="rect" id="node18" href="$Rocprop_8C.html#ad683118ebfe7e5bc0da6c649f9a91afb" title="rocprop_load_module" alt="" coords="1190,56,1335,83"/>
+<area shape="rect" id="node19" href="$Rocprop_8C.html#a1293b092211f43285a36171e71078dd6" title="ROCPROP_LOAD_MODULE" alt="" coords="1164,107,1361,133"/>
+<area shape="rect" id="node20" href="$Rocprop_8C.html#af271f1683a72f6d590aedc3bdb9f0630" title="rocprop_load_module_" alt="" coords="1187,157,1339,184"/>
+<area shape="rect" id="node21" href="$Rocprop_8C.html#a18742d0fd81e89caac223ad4e7127420" title="ROCPROP_LOAD_MODULE_" alt="" coords="1161,208,1365,235"/>
+</map>

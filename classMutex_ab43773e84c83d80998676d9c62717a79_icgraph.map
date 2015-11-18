@@ -1,0 +1,5 @@
+<map id="Unlock" name="Unlock">
+<area shape="rect" id="node2" href="$classSemaphore.html#a75b89ae344bccade98754cd1fedb13ac" title="Semaphore::Post" alt="" coords="128,5,251,32"/>
+<area shape="rect" id="node3" href="$classSemaphore.html#ae2945cc22d833db21688408a73e3487a" title="Semaphore::TryWait" alt="" coords="118,56,261,83"/>
+<area shape="rect" id="node4" href="$classSemaphore.html#ae5ccc0d2886026ce37e12604173a131d" title="Semaphore::Wait" alt="" coords="128,107,251,133"/>
+</map>

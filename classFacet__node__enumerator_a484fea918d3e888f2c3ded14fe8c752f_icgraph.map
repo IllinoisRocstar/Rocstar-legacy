@@ -1,0 +1,6 @@
+<map id="size_of_corners" name="size_of_corners">
+<area shape="rect" id="node2" href="$classFacet__node__enumerator.html#a3f5a45a9e773ec5ae34e325d6c7f5894" title="get_nodes" alt="" coords="197,15,280,41"/>
+<area shape="rect" id="node4" href="$classPane__boundary.html#ab04332e40d091826d17a18726d61cc0d" title="Compute the minimum squared edge length of given edges. " alt="" coords="168,67,309,109"/>
+<area shape="rect" id="node3" href="$classPane__boundary.html#a72c5c71114623b7045e74838753e8781" title="Determine the border nodes for a 3&#45;D mesh. " alt="" coords="358,5,535,46"/>
+<area shape="rect" id="node5" href="$classPane__connectivity.html#a675e82b5fc50f52bf4d2cea5a9964e47" title="Obtains the IDs and coordinates of boundary nodes of all local panes. " alt="" coords="359,70,535,111"/>
+</map>

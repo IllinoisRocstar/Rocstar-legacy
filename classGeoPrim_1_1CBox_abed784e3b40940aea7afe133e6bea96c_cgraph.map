@@ -1,0 +1,8 @@
+<map id="around" name="around">
+<area shape="rect" id="node2" href="$classGeoPrim_1_1CPoint.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CPoint::x" alt="" coords="119,5,255,32"/>
+<area shape="rect" id="node3" href="$classGeoPrim_1_1CVector.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CVector::x" alt="" coords="115,56,259,83"/>
+<area shape="rect" id="node4" href="$classGeoPrim_1_1CPoint.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CPoint::y" alt="" coords="119,107,255,133"/>
+<area shape="rect" id="node5" href="$classGeoPrim_1_1CVector.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CVector::y" alt="" coords="115,157,259,184"/>
+<area shape="rect" id="node6" href="$classGeoPrim_1_1CPoint.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CPoint::z" alt="" coords="119,208,255,235"/>
+<area shape="rect" id="node7" href="$classGeoPrim_1_1CVector.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CVector::z" alt="" coords="115,259,259,285"/>
+</map>

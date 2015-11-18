@@ -1,0 +1,5 @@
+<map id="reduce_diff_on_shared_nodes" name="reduce_diff_on_shared_nodes">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#ad0963775a018dcb83d982e5cfeeb3a22" title="COM_get_sizeof" alt="" coords="208,5,328,32"/>
+<area shape="rect" id="node4" href="$Pane__communicator_8C.html#ac097ba4bc05371c2680842b5a2f29713" title="reduce_diff" alt="" coords="225,56,311,83"/>
+<area shape="rect" id="node3" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="376,5,459,32"/>
+</map>

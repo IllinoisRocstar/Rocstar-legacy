@@ -1,0 +1,26 @@
+<map id="rflu_nscbc_comppatchflux" name="rflu_nscbc_comppatchflux">
+<area shape="rect" id="node2" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="465,44,649,71"/>
+<area shape="rect" id="node3" href="$classrflu__modentropyfixes.html#a752f62c9d7e6629c1e93c9e6d8ba04ec" title="rflu_modentropyfixes\l::entropyfixhartenhyman" alt="" coords="229,298,392,339"/>
+<area shape="rect" id="node4" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="287,364,334,391"/>
+<area shape="rect" id="node5" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="289,415,332,441"/>
+<area shape="rect" id="node6" href="$MixtPerf__C_8F90.html#a162cc17b37b58b16f70844c3863d5030" title="mixtperf_c_ghovm2" alt="" coords="243,516,379,543"/>
+<area shape="rect" id="node9" href="$MixtPerf__H_8F90.html#a0b164a48f060693abe0d0a0ac26130ad" title="mixtperf_ho_cptuvw" alt="" coords="241,617,380,644"/>
+<area shape="rect" id="node10" href="$MixtPerf__R_8F90.html#a31d76345906c1fb9e5a34497c0f4b904" title="mixtperf_r_cpg" alt="" coords="257,465,365,492"/>
+<area shape="rect" id="node11" href="$MixtPerf__T_8F90.html#a7a4fff7f38f5e5fdcc4a3d620eb4eaf7" title="mixtperf_t_dpr" alt="" coords="505,399,610,425"/>
+<area shape="rect" id="node13" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="472,95,643,121"/>
+<area shape="rect" id="node17" href="$RFLU__DecidePrint_8F90.html#a414528586945f47c4212e5b0490cdefb" title="rflu_decideprint" alt="" coords="255,95,366,121"/>
+<area shape="rect" id="node18" href="$RFLU__PrintLocInfo_8F90.html#ad586f7205393d095480433c395e95f6f" title="rflu_printlocinfo" alt="" coords="255,196,366,223"/>
+<area shape="rect" id="node8" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="535,553,579,580"/>
+<area shape="rect" id="node7" href="$classColor.html#a136e5e559949921576ae566cfea2e855" title="Color::g" alt="" coords="523,491,591,517"/>
+<area shape="rect" id="node12" href="$classColor.html#a2cd31514360f55547e6cb3e94dfe6ad5" title="Color::r" alt="" coords="811,399,877,425"/>
+<area shape="rect" id="node14" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="778,44,910,71"/>
+<area shape="rect" id="node15" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="1014,5,1175,46"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="1021,70,1169,111"/>
+<area shape="rect" id="node19" href="$classmodsortsearch.html#a46c39761d2c4f81992b7cf0d3cfabaf3" title="modsortsearch::binarysearchinteger" alt="" coords="729,297,959,324"/>
+<area shape="rect" id="node21" href="$classmodsortsearch.html#adf19c1a7479d765ce90b2ce17f812760" title="modsortsearch::mergesortedintegers" alt="" coords="440,196,675,223"/>
+<area shape="rect" id="node25" href="$classmodsortsearch.html#ae23a2e0a09c6d89f45c94ee82e6db57e" title="modsortsearch::quicksortinteger" alt="" coords="453,348,661,375"/>
+<area shape="rect" id="node24" href="$classmodsortsearch.html#aba32ba07f93d3ef24d6ef37e29d28815" title="modsortsearch::simplifysortedintegers" alt="" coords="723,247,965,273"/>
+<area shape="rect" id="node20" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="1057,272,1132,299"/>
+<area shape="rect" id="node22" href="$classColor.html#a6b4c47aed15e7f7a2f1e38311b98737e" title="Color::b" alt="" coords="810,145,878,172"/>
+<area shape="rect" id="node23" href="$classAff__transformation__2.html#a365f1affce6586f551082723758c0fcc" title="Aff_transformation_2::m" alt="" coords="1013,175,1176,201"/>
+</map>

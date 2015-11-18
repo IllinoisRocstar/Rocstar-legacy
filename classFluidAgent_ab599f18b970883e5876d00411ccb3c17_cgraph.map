@@ -1,0 +1,18 @@
+<map id="create_buffer_all" name="create_buffer_all">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="404,173,537,200"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a2101b9a49179ad3af43eaefd6ff8ab0f" title="Clone the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="398,123,543,149"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="382,5,559,32"/>
+<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="184,228,323,255"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="403,392,538,419"/>
+<area shape="rect" id="node8" href="$roccom__c_09_09_8h.html#ab6a6d18043bc76f9a381084af49c6a9f" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="188,279,319,305"/>
+<area shape="rect" id="node9" href="$roccom__c_09_09_8h.html#ac624fa4f91f2a6a33efd1d6a09ec3432" title="Use the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="403,493,538,520"/>
+<area shape="rect" id="node10" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="389,544,552,571"/>
+<area shape="rect" id="node11" href="$classAgent.html#ab599f18b970883e5876d00411ccb3c17" title="Agent::create_buffer_all" alt="" coords="173,431,333,457"/>
+<area shape="rect" id="node12" href="$classAgent.html#aa6c678661c300897a1c55a171c020d61" title="Agent::create_registered\l_window_attributes" alt="" coords="389,326,553,367"/>
+<area shape="rect" id="node14" href="$classAgent.html#a5d3576b9180e99959235980d580a4090" title="Agent::get_coupling" alt="" coords="185,583,322,609"/>
+<area shape="rect" id="node15" href="$classCoupling.html#a0ae34e30b1c6104e091ec287feb150db" title="Coupling::get_max_ipc" alt="" coords="176,633,331,660"/>
+<area shape="rect" id="node16" href="$classFluidAgent.html#a4b04d6f979afebb0bd330941672414aa" title="read_restart_data" alt="" coords="192,76,315,103"/>
+<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="608,249,736,276"/>
+<area shape="rect" id="node13" href="$classAgent.html#a7166b9d0c3321d1abf347377b32bf154" title="Agent::get_agent_name" alt="" coords="391,443,551,469"/>
+<area shape="rect" id="node17" href="$roccom__c_09_09_8h.html#a299161a8c4977e89b90876b670289762" title="COM_get_attribute_handle\l_const" alt="" coords="382,57,559,98"/>
+</map>

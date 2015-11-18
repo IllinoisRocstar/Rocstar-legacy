@@ -1,0 +1,22 @@
+<map id="buildPatches" name="buildPatches">
+<area shape="rect" id="node2" href="$classface.html#a37dba131985b82927f5917050a0459e8" title="fillNeighbors" alt="" coords="190,5,285,32"/>
+<area shape="rect" id="node3" href="$classface.html#a902ac18c9b4e3258b052e8c7b0d325fb" title="getBlock" alt="" coords="201,56,274,83"/>
+<area shape="rect" id="node4" href="$classblock.html#aad574e9481a04340d5013d0fbdd78e80" title="block::getBlockNumber" alt="" coords="386,107,545,133"/>
+<area shape="rect" id="node5" href="$classfacetOrientation.html#af6b231f8093c3932cd78bd5472eedb02" title="facetOrientation::getDestLoc" alt="" coords="371,563,560,589"/>
+<area shape="rect" id="node6" href="$classblock.html#ab16ba91c0ac566792b6dd28cc4977a99" title="block::getDim" alt="" coords="186,208,289,235"/>
+<area shape="rect" id="node7" href="$classfacet.html#a730e8dcab05eb6b74c4aa77b4760ff9b" title="facet::getFace" alt="" coords="184,259,291,285"/>
+<area shape="rect" id="node8" href="$classblock.html#a85dcfabe01d2b37a668742f233819986" title="block::getFaceNo" alt="" coords="175,309,300,336"/>
+<area shape="rect" id="node9" href="$classblock.html#a320776ca76b17ca11512e8d58deda57c" title="block::getOriginalNumber" alt="" coords="153,360,322,387"/>
+<area shape="rect" id="node10" href="$classface.html#abddcdc1f7e714a0eb56b27403845b1f2" title="getSourceLoc" alt="" coords="186,411,289,437"/>
+<area shape="rect" id="node11" href="$classorient__t.html#a271ce8133caa893f3917ba7057adb869" title="orient_t::inverse" alt="" coords="180,461,295,488"/>
+<area shape="rect" id="node12" href="$face_8cpp.html#ad4b461ff408291428e2615ff248437fb" title="isDisjoint" alt="" coords="199,512,275,539"/>
+<area shape="rect" id="node13" href="$classface.html#a188714f7a59e9dbd2dc21de800fffaf9" title="markPatched" alt="" coords="188,157,287,184"/>
+<area shape="rect" id="node15" href="$face_8cpp.html#a5636478708413fa859004ca64889e637" title="matchOrientations" alt="" coords="173,664,301,691"/>
+<area shape="rect" id="node18" href="$classface.html#ae50ecb1cdb94ef172277ddc911c6b18b" title="nodesMatch" alt="" coords="191,613,284,640"/>
+<area shape="rect" id="node21" href="$classpatch.html#a765983642694d42dcedce2b5652d06ed" title="patch::setFace" alt="" coords="183,715,292,741"/>
+<area shape="rect" id="node14" href="$classfacet.html#ac188d3fb3f45f1c99c991d4176bffe80" title="facet::markPatched" alt="" coords="397,157,533,184"/>
+<area shape="rect" id="node16" href="$face_8cpp.html#abeb746dda35e7ce13bf750183faa056a" title="findOther" alt="" coords="428,664,503,691"/>
+<area shape="rect" id="node17" href="$face_8cpp.html#ad56f85f8c79a9ba152146f179cb36d23" title="firstSet" alt="" coords="433,715,497,741"/>
+<area shape="rect" id="node19" href="$classadjList.html#a2c3463a21bceee04f83d3e7e541ac813" title="adjList::hasLoc" alt="" coords="410,613,521,640"/>
+<area shape="rect" id="node20" href="$classadjRec.html#a0aee7ca361720ef07d3fd80854fc35bc" title="adjRec::getNext" alt="" coords="608,613,725,640"/>
+</map>

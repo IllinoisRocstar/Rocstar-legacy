@@ -1,0 +1,12 @@
+<map id="sleep" name="sleep">
+<area shape="rect" id="node2" href="$namespacecimg__library_1_1cimg.html#aa2bee10628b1c7b505e1163ee7198a6e" title="_sleep" alt="" coords="161,159,221,185"/>
+<area shape="rect" id="node10" href="$namespaceIRAD.html#a8fc7ef5264338f7869b46da04b93f9f8" title="Test utility for the TCP Interface. " alt="" coords="107,213,274,240"/>
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#a3c8917c0f12139bff6de6e3e45fc5b77" title="Wait for a certain number of milliseconds since the last call. " alt="" coords="387,100,434,127"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImgDisplay.html#a79669a0b7bdc65aff8313c590c7faab0" title="Synchronized waiting function. Same as cimg::wait(). " alt="" coords="323,151,499,193"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#ac1b0fa3e83defeb353d65e7094b3caa8" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display" alt="" coords="573,5,705,46"/>
+<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a68ac25d3fda66263ff7b2d4a481b99d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display\l_object3d" alt="" coords="573,71,705,127"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#ab470ff84bcac27328430e271067570bd" title="cimg_library::CImg\l\&lt; uintT \&gt;::_get_select" alt="" coords="563,151,714,193"/>
+<area shape="rect" id="node8" href="$namespacecimg__library_1_1cimg.html#a62805bf0845c650a457cd78b3cd6488a" title="Display a dialog box, where a user can click standard buttons. " alt="" coords="611,217,667,244"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a2b77e436a48fd24c423e924c2dae4072" title="Select sub&#45;graph in a graph. " alt="" coords="547,269,730,310"/>
+<area shape="rect" id="node11" href="$TestTCPInterface_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="385,217,436,244"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="get_point" name="get_point">
+<area shape="rect" id="node2" href="$classOverlay.html#a6054035d0679586f98c8667b9951ae60" title="Overlay::get_green\l_parent" alt="" coords="133,5,265,46"/>
+<area shape="rect" id="node6" href="$classPoint__set.html#a3ef8d40b8c183b74aaa5a163fb140ec6" title="Point_set::operator[]" alt="" coords="129,71,269,97"/>
+<area shape="rect" id="node3" href="$classOverlay.html#a7a0198e2249c3c9b0a02ecb297251546" title="Overlay::overlay_init" alt="" coords="317,67,459,93"/>
+<area shape="rect" id="node4" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="507,59,632,101"/>
+<area shape="rect" id="node5" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="680,67,797,93"/>
+</map>

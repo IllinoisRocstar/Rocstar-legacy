@@ -1,0 +1,17 @@
+<map id="minmax" name="minmax">
+<area shape="rect" id="node2" href="$classRFC__Window__transfer.html#a76864dbe260afa843d487fc5023cace8" title="RFC_Window_transfer\l::allreduce" alt="" coords="141,23,296,65"/>
+<area shape="rect" id="node5" href="$classArray__n__const.html#ad089a89a18aa50ad2c64712cf5fb5e3d" title="Array_n_const::dimension" alt="" coords="132,89,305,116"/>
+<area shape="rect" id="node6" href="$classRFC__Data__const.html#ad089a89a18aa50ad2c64712cf5fb5e3d" title="RFC_Data_const::dimension" alt="" coords="123,140,314,167"/>
+<area shape="rect" id="node7" href="$classRFC__Data__const.html#a75fb8a244c33f3722a1f0afea452177f" title="RFC_Data_const::get\l_value" alt="" coords="143,191,294,233"/>
+<area shape="rect" id="node11" href="$classRFC__Data__const.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Data_const::id" alt="" coords="147,257,290,284"/>
+<area shape="rect" id="node12" href="$classTransfer__base.html#af52c8340663db639ff93d610e7bbbab5" title="isfinite" alt="" coords="189,308,249,335"/>
+<area shape="rect" id="node13" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="195,359,242,385"/>
+<area shape="rect" id="node14" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="197,409,240,436"/>
+<area shape="rect" id="node15" href="$classRFC__Window__base.html#a37627d5d5bba7f4a8690c71c2ab3cb07" title="The name of the window. " alt="" coords="129,460,308,487"/>
+<area shape="rect" id="node16" href="$classRFC__Window__derived.html#ac93d54480f8b9621387f2edd745257ee" title="Get a vector of local panes contained in the window. " alt="" coords="142,511,295,553"/>
+<area shape="rect" id="node3" href="$classArray__n.html#afe81590cd27ee742610f663f8d77de53" title="Array_n::begin" alt="" coords="383,5,489,32"/>
+<area shape="rect" id="node4" href="$classArray__n.html#ab51a7bd0183d7f778112cdadf89d2087" title="Array_n::end" alt="" coords="388,56,484,83"/>
+<area shape="rect" id="node8" href="$classRFC__Pane__transfer.html#ac4352cefd69971574fd2edb3ee894899" title="RFC_Pane_transfer::\lpointer" alt="" coords="363,191,509,233"/>
+<area shape="rect" id="node9" href="$classRFC__Pane__transfer.html#a584f868480e84dcf5750fe21c96c4dd8" title="RFC_Pane_transfer::\lis_master" alt="" coords="569,162,716,203"/>
+<area shape="rect" id="node10" href="$classRFC__Pane__base.html#ac4352cefd69971574fd2edb3ee894899" title="Get the address of a given attribute with id i. " alt="" coords="558,228,727,255"/>
+</map>

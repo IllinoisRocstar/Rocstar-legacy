@@ -1,0 +1,7 @@
+<map id="side_of_oriented_circle" name="side_of_oriented_circle">
+<area shape="rect" id="node2" href="$predicates_2kernel__ftC2_8h.html#a71a5507bbe2e7c394b8af6c37f9bcaff" title="side_of_oriented_circleC2" alt="" coords="209,5,381,32"/>
+<area shape="rect" id="node5" href="$classPointS2.html#a242e8b7096a678fdbb08e337420acb84" title="PointS2::x" alt="" coords="253,56,336,83"/>
+<area shape="rect" id="node6" href="$classPointS2.html#ae367a52fcb29c7638852621653fdb407" title="PointS2::y" alt="" coords="253,107,336,133"/>
+<area shape="rect" id="node3" href="$sign__of__determinant_8h.html#a178327b0b7b852c3ecf850dde3f93bc6" title="sign_of_determinant2x2" alt="" coords="429,5,589,32"/>
+<area shape="rect" id="node4" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="638,5,754,32"/>
+</map>

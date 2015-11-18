@@ -1,0 +1,5 @@
+<map id="Coupling" name="Coupling">
+<area shape="rect" id="node3" href="$classFluidAlone.html" title="FluidAlone" alt="" coords="5,155,88,181"/>
+<area shape="rect" id="node4" href="$classFluidBurnAlone.html" title="FluidBurnAlone" alt="" coords="113,155,223,181"/>
+<area shape="rect" id="node5" href="$classFullyCoupling.html" title="FullyCoupling" alt="" coords="248,155,349,181"/>
+</map>
