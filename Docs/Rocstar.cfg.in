@@ -671,23 +671,7 @@ WARN_LOGFILE           = doxywarn.txt
 # directories like "/usr/src/myproject". Separate the files or directories
 # with spaces.
 
-INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@ # CHANGED
-# INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/Docs \
-#                         @CMAKE_CURRENT_SOURCE_DIR@/src \
-#			 @CMAKE_CURRENT_SOURCE_DIR@/testing \
-#                         @CMAKE_CURRENT_SOURCE_DIR@/Rocburn \
-#                         @CMAKE_CURRENT_SOURCE_DIR@/Roccom \
-#			 @CMAKE_CURRENT_SOURCE_DIR@/Rocface \
-#                         @CMAKE_CURRENT_SOURCE_DIR@/RocfluidMP \
-#                         @CMAKE_CURRENT_SOURCE_DIR@/Rocfrac \
-#                         @CMAKE_CURRENT_SOURCE_DIR@/Rocman \
-#                         @CMAKE_CURRENT_SOURCE_DIR@/Rocmop \
-#			 @CMAKE_CURRENT_SOURCE_DIR@/Rocon \
-#			 @CMAKE_CURRENT_SOURCE_DIR@/Rocprep \
-#                         @CMAKE_CURRENT_SOURCE_DIR@/Rocprop \
-#                         @CMAKE_CURRENT_SOURCE_DIR@/testing/include \
-#                         @CMAKE_CURRENT_SOURCE_DIR@/testing/src \
-
+INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is
