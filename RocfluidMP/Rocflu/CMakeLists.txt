@@ -12,15 +12,15 @@ set (INRT    FALSE CACHE BOOL "Enable Particle Interactions")
 set (RADI    FALSE CACHE BOOL "Enable Radiation")
 set (SPEC    FALSE CACHE BOOL "Enable Species")
 add_definitions(-DNO_TECPLOT -DRFLU)
+
 IF(NOT ENABLE_MPI)
   add_definitions( -DDUMMY_MPI )
 ELSE()
   FIND_PACKAGE(MPI REQUIRED)
   add_definitions( -DMPICH_IGNORE_CXX_SEEK -DMPI)
-#  IF(MPI_CXX_COMPILER)
-#    set (CMAKE_CXX_COMPILER ${MPI_CXX_COMPILER})
-#  ENDIF(MPI_CXX_COMPILER)
+  INCLUDE_DIRECTORIES(${MPI_INCLUDE_PATH})
 ENDIF()
+
 FIND_PACKAGE(BLAS REQUIRED)
 FIND_PACKAGE(LAPACK REQUIRED)
 find_library(HDF4_LIB df HINTS /usr/lib/hdf /usr/lib64/hdf)
@@ -31,11 +31,12 @@ find_path(HDF4_INC hdf.h HINTS /usr/include/hdf)
 find_library(METIS_LIB metis)
 find_path(METIS_INC metis.h)
 #INCLUDE(CTest)
-find_path(ROCCOM_INC roccom.h HINTS ../../Roccom/include) 
+find_path(ROCCOM_INC roccom.h HINTS ../../Roccom/include)
 find_path(ROCMAN_INC rocman.h HINTS ../../Rocman/include)
 
 FILE (GLOB CORE_SRCS ../rocflu/*.F90)
-SET (LIBFLOFLU_SRCS 
+
+SET (LIBFLOFLU_SRCS
   ../libfloflu/AfterUpdateMP.F90
   ../libfloflu/BcondFarfieldPerf.F90
   ../libfloflu/BcondInflowPerf.F90
@@ -129,7 +130,7 @@ SET (LIBFLOFLU_SRCS
 IF(STATS)
   LIST (APPEND LIBFLOFLU_SRCS ../libfloflu/ReadStatisticSection.F90)
 ENDIF()
-SET (LIBFLU_SRCS 
+SET (LIBFLU_SRCS
   ../libflu/clop.C
   ../libflu/RFLU_AllocateMemoryTbc.F90
   ../libflu/RFLU_BuildDataStruct.F90
@@ -194,6 +195,7 @@ SET (LIBFLU_SRCS
   ../libflu/RFLU_UserInput.F90
   ../libflu/RFLU_WriteRestartInfo.F90
   ../libflu/RFLU_ZeroVirtualCellVars.F90)
+
 IF (STATS)
   SET (LIBFLU_SRCS ${LIBFLU_SRCS} ../libflu/RFLU_ReadStat.F90
     ../libflu/RFLU_WriteStat.F90)
@@ -226,7 +228,7 @@ SET ( MODFLOFLU_SRCS
   ../modfloflu/ModSpecies.F90
   ../modfloflu/ModStencil.F90
   ../modfloflu/ModTools.F90
-  ../modfloflu/ModTurbulence.F90 
+  ../modfloflu/ModTurbulence.F90
   ../modfloflu/ModBorder.F90
   ../modfloflu/ModColoring.F90
   ../modfloflu/ModPlotting.F90)
@@ -234,7 +236,7 @@ SET ( MODFLOFLU_SRCS
 IF(ROCSTAR)
   LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModRocstar.F90 )
 ENDIF()
-IF(INRT)                
+IF(INRT)
   LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesInteract.F90 )
 ENDIF()
 IF(PEUL)
@@ -244,7 +246,7 @@ IF(PLAG)
   LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesLagrangian.F90 )
 ENDIF()
 IF(PERI)
-  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesPeriodic.F90 ) 		
+  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesPeriodic.F90 )
 ENDIF()
 IF(RADI)
   LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesRadiation.F90 )
@@ -254,14 +256,14 @@ IF(SPEC)
 ENDIF()
 IF(STATS)
   LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesStatistics.F90
-    ../modfloflu/ModStatsRoutines.F90 
+    ../modfloflu/ModStatsRoutines.F90
     ../modfloflu/ModStatsPost.F90)
 ENDIF()
 IF(TURB)
-  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesTurbulence.F90 )  		
+  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesTurbulence.F90 )
 ENDIF()
 
-SET (MODFLU_SRCS 
+SET (MODFLU_SRCS
   ../modflu/RFLU_ModAllocateMemory.F90
   ../modflu/RFLU_ModAUSMFlux.F90
   ../modflu/RFLU_ModBessel.F90
@@ -357,7 +359,7 @@ ENDIF()
 IF(STATS)
   LIST (APPEND MODFLO_SRCS ../modflo/RFLO_ModStatsBoundaryConditions.F90 )
 ENDIF()
-SET (TURB_SRCS 
+SET (TURB_SRCS
   ../rocturb/TURB_ModInterfaces.F90
   ../rocturb/TURB_ModParameters.F90
   ../rocturb/TURB_AllocateMemory.F90
@@ -435,10 +437,10 @@ SET (TURB_SRCS
 IF(STATS)
   LIST (APPEND TURB_SRCS   ../rocturb/TURB_StatCCollector.F90
     ../rocturb/TURB_StatFCollector.F90
-    ../rocturb/TURB_StatMapping.F90 )                
+    ../rocturb/TURB_StatMapping.F90 )
 ENDIF()
 
-SET(RADI_SRCS 
+SET(RADI_SRCS
   ../rocrad/RADI_ModInterfaces.F90
   ../rocrad/RADI_ModParameters.F90
   ../rocrad/RADI_AllocateMemory.F90
@@ -475,7 +477,7 @@ SET(RADI_SRCS
   ../rocrad/RADI_SourceTerms.F90
   ../rocrad/RADI_UserInput.F90)
 
-SET(PLAG_SRCS 
+SET(PLAG_SRCS
   ../rocpart/PLAG_BuildVersionString.F90
   ../rocpart/PLAG_ModCheckVars.F90
   ../rocpart/PLAG_ModDataStruct.F90
@@ -583,7 +585,7 @@ SET(GLOB INRT_SRCS
   ../rocinteract/INRT_SourceTerms.F90
   ../rocinteract/INRT_UserInput.F90
   ../rocinteract/INRT_VaporEnergyConversion.F90)
-SET(ROCSTAR_SRCS 
+SET(ROCSTAR_SRCS
   ../rocstar/RFLU_CheckCouplingInput.F90
   ../rocstar/RFLU_GetBoundaryValues.F90
   ../rocstar/RFLU_GetDeformation.F90
@@ -621,7 +623,7 @@ SET(INIT_SRCS ../utilities/rocflu/init/main.C
   ../utilities/rocflu/init/RFLU_WriteVersionString.F90
   ../utilities/rocflu/init/rfluinit.F90
   ../libflu/dcuhre.f)
-  
+
 SET(PART_SRCS ../utilities/rocflu/part/main.C
   ../utilities/rocflu/part/RFLU_ModCENTAUR.F90
   ../utilities/rocflu/part/RFLU_ModCOBALT.F90
@@ -645,7 +647,10 @@ SET(MAP_SRCS ../utilities/rocflu/map/main.C
   ../utilities/rocflu/map/rflumap.F90
   ../libflu/dcuhre.f)
 
-SET(LIB_SRCS ${MODFLU_SRCS} ${MODFLOFLU_SRCS} ${LIBFLU_SRCS} ${LIBFLOFLU_SRCS} 
+SET_SOURCE_FILES_PROPERTIES(../utilities/rocflu/map/main.C ../utilities/rocflu/part/main.C
+  ../utilities/rocflu/init/main.C ../libflu/clop.C PROPERTIES COMPILE_FLAGS "-fPIC ${MPI_CXX_COMPILE_FLAGS}")
+
+SET(LIB_SRCS ${MODFLU_SRCS} ${MODFLOFLU_SRCS} ${LIBFLU_SRCS} ${LIBFLOFLU_SRCS}
   ${CORE_SRCS})
 IF(ROCSTAR)
   add_definitions(-DROCSTAR -DGENX)
@@ -682,7 +687,7 @@ IF(SPEC)
 ENDIF()
 
 SET(ALL_SRCS ${LIB_SRCS} ${INIT_SRCS} ${PART_SRCS} ${MAP_SRCS})
-
+SET_SOURCE_FILES_PROPERTIES(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "${MPI_Fortran_COMPILE_FLAGS}")
 # rpath settings
 SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
@@ -696,17 +701,18 @@ ELSE()
   add_definitions( -DSTATIC_LINK )
 ENDIF()
 SET( CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${BLAS_LINKER_FLAGS} ${LAPACK_LINKER_FLAGS}" )
-target_link_libraries(Rocflu Rocmop Roccomf Roccom ${LAPACK_LIBRARIES} ${BLAS_LIBRARIES})
+target_link_libraries(Rocflu Rocmop Roccomf Roccom ${LAPACK_LIBRARIES} ${BLAS_LIBRARIES} ${MPI_Fortran_LIBRARIES})
 
 add_executable(rfluinit ${INIT_SRCS})
-target_link_libraries(rfluinit Rocflu Rocmop Rocout Rocin Roccomf Roccom)
+target_link_libraries(rfluinit Rocflu Rocmop Rocout Rocin Roccomf Roccom ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
 
 add_executable(rflupart ${PART_SRCS})
-target_link_libraries(rflupart Rocflu Rocmop Rocout Rocin Roccomf Roccom ${METIS_LIB})
+target_link_libraries(rflupart Rocflu Rocmop Rocout Rocin Roccomf Roccom ${METIS_LIB} ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
 
 add_executable(rflumap ${MAP_SRCS})
-target_link_libraries(rflumap Rocflu Rocmop Rocout Rocin Roccomf Roccom)
+target_link_libraries(rflumap Rocflu Rocmop Rocout Rocin Roccomf Roccom ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
 
+SET_TARGET_PROPERTIES(Rocflu rfluinit rflupart rflumap PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS} ${MPI_Fortran_LINK_FLAGS}")
 #target_link_libraries(makeflo read write ${MFHDF_LIB} ${HDF4_LIB} ${JPEG_LIB} ${ZLIB})
 #target_link_libraries(rfloprep Rocflo Rocout Rocin Roccomf Roccom)
 
