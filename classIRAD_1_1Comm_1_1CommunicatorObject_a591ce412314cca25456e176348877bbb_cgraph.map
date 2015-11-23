@@ -1,7 +1,0 @@
-<map id="BroadCast" name="BroadCast">
-<area shape="rect" id="node2" href="$classIRAD_1_1Comm_1_1MobileObject.html#a0a37dd7cf30f6b492a71874725683753" title="IRAD::Comm::MobileObject\l::GetBuffer" alt="" coords="139,5,325,46"/>
-<area shape="rect" id="node3" href="$classIRAD_1_1Comm_1_1MobileObject.html#ade60cc96a2ccdfd59ba6c5c46aff012f" title="IRAD::Comm::MobileObject\l::Pack" alt="" coords="139,70,325,111"/>
-<area shape="rect" id="node5" href="$classIRAD_1_1Comm_1_1MobileObject.html#a2699a470298267cbea2007a3a9a60e30" title="IRAD::Comm::MobileObject\l::PrepareBuffer" alt="" coords="139,135,325,177"/>
-<area shape="rect" id="node6" href="$classIRAD_1_1Comm_1_1MobileObject.html#addf70cb685462badace7639869f9631c" title="IRAD::Comm::MobileObject\l::UnPack" alt="" coords="139,201,325,242"/>
-<area shape="rect" id="node4" href="$namespaceIRAD_1_1Util.html#a62ba8f21a926b0ccfc9f02546f1097b0" title="IRAD::Util::String2Buf" alt="" coords="373,77,525,104"/>
-</map>

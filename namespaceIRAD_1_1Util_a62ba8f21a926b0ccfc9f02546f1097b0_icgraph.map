@@ -1,8 +1,0 @@
-<map id="String2Buf" name="String2Buf">
-<area shape="rect" id="node2" href="$classIRAD_1_1Comm_1_1MobileObject.html#ade60cc96a2ccdfd59ba6c5c46aff012f" title="IRAD::Comm::MobileObject\l::Pack" alt="" coords="136,70,323,111"/>
-<area shape="rect" id="node3" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a943956fa2e50f8504cd585ffae9129a1" title="IRAD::Comm::Communicator\lObject::_AllGatherMO" alt="" coords="371,5,565,46"/>
-<area shape="rect" id="node5" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#afd68c33bb044878b1af720844da60b17" title="IRAD::Comm::Communicator\lObject::_GatherMO" alt="" coords="371,70,565,111"/>
-<area shape="rect" id="node7" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a591ce412314cca25456e176348877bbb" title="IRAD::Comm::Communicator\lObject::BroadCast" alt="" coords="371,135,565,177"/>
-<area shape="rect" id="node4" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#aa4b74d9a2ef5bb6a6380c6837256dfb5" title="IRAD::Comm::Communicator\lObject::AllGatherMO" alt="" coords="613,5,808,46"/>
-<area shape="rect" id="node6" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#ab611837a4e62df8161ccad1c2dd4e79d" title="IRAD::Comm::Communicator\lObject::GatherMO" alt="" coords="613,70,808,111"/>
-</map>

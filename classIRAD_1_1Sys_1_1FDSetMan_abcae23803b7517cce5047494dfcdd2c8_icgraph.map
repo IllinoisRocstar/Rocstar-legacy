@@ -1,7 +1,0 @@
-<map id="Zero" name="Zero">
-<area shape="rect" id="node2" href="$classIRAD_1_1Sys_1_1FDSetMan.html#ae8be13c2e52fd07dc30cb4434e9ad112" title="ListenForInput" alt="" coords="106,5,211,32"/>
-<area shape="rect" id="node3" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a09e7b441bf87dcf52f15e99248682272" title="ListenForOutput" alt="" coords="101,56,216,83"/>
-<area shape="rect" id="node4" href="$classIRAD_1_1Sys_1_1FDSetMan.html#a4a5f7af65acef0284da146c0fb0a5cc1" title="Select" alt="" coords="129,107,188,133"/>
-<area shape="rect" id="node5" href="$namespaceIRAD.html#a8fc7ef5264338f7869b46da04b93f9f8" title="Test utility for the TCP Interface. " alt="" coords="265,107,431,133"/>
-<area shape="rect" id="node6" href="$TestTCPInterface_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="480,107,531,133"/>
-</map>

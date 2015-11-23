@@ -1,7 +1,0 @@
-<map id="is_isolated_node" name="is_isolated_node">
-<area shape="rect" id="node2" href="$classSimple__manifold__2.html#ae2ce51fb4ad73fc6fb79e7db58d3f614" title="Obtain all the border nodes, isolated nodes, and border edges. " alt="" coords="189,5,280,32"/>
-<area shape="rect" id="node3" href="$classNode.html#a7848c75a20841d939579d8fd36a6026e" title="Is the node isolated? " alt="" coords="173,56,296,83"/>
-<area shape="rect" id="node4" href="$classWindow__manifold__2.html#aad647356fbd9bd7b27031859731bfaff" title="Determine the primary nodes for across&#45;pane access. " alt="" coords="344,49,491,90"/>
-<area shape="rect" id="node5" href="$classWindow__manifold__2.html#a90788e8f1ad84518370283bfdf635e7c" title="Initialize the manifold by inheriting the given mesh. " alt="" coords="539,56,703,83"/>
-<area shape="rect" id="node6" href="$classWindow__manifold__2.html#ad53f16aa8ca835f7435d37af4732bdbd" title="Construct a Window_manifold_2 from a given window. " alt="" coords="752,49,899,90"/>
-</map>

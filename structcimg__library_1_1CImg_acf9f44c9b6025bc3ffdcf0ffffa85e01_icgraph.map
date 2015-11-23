@@ -1,7 +1,0 @@
-<map id="atXY" name="atXY">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a9178dbccd4a22a5e2a3b41c243244eb8" title="Read a pixel value using cubic interpolation and Dirichlet boundary conditions. " alt="" coords="105,5,255,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ae003facae1c082f8409a1a7331ba6b95" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_rotate" alt="" coords="109,70,251,111"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a71f50d4be8cd4b71adb2ef611c8139b7" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_warp" alt="" coords="112,135,248,177"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#af152ffcc0cc8f55cda0d3199b97c0032" title="Read a pixel value using linear interpolation and Dirichlet boundary conditions (first coordinate)..." alt="" coords="109,201,251,242"/>
-<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a5b57f219b9ab6a0c7fe76f10c9ced45c" title="Read a pixel value using linear interpolation and Dirichlet boundary conditions (first two coordinate..." alt="" coords="105,266,255,307"/>
-</map>

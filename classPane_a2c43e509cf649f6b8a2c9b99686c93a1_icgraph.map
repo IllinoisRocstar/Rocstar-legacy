@@ -1,5 +1,0 @@
-<map id="reinit_attr" name="reinit_attr">
-<area shape="rect" id="node2" href="$classWindow.html#a2b587f782f50513ef3ef2b7f6d7c80f8" title="Implementation for setting (op==OP_SET or OP_SET_CONST), allocating (op==OP_ALLOC), resizing (op==OP_RESIZE) and deallocating (op==OP_DEALLOC) an array for a specific attribute. " alt="" coords="131,31,261,57"/>
-<area shape="rect" id="node3" href="$classWindow.html#a0f538db500b8f4fdc9b59ed48c9be803" title="Window::resize_array" alt="" coords="313,5,461,32"/>
-<area shape="rect" id="node4" href="$classWindow.html#ac99a217d3c3496398a00a4a8ee460ed8" title="Window::dealloc_array" alt="" coords="309,56,464,83"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="Vertex_set" name="Vertex_set">
-<area shape="rect" id="node2" href="$classHalfedge__overlay.html#a49a0ced46edaa808d9951d79b7e43d31" title="Halfedge_overlay::destination" alt="" coords="139,5,333,32"/>
-<area shape="rect" id="node4" href="$classRFC__Pane__overlay.html#a2ab79a6fafd98cec9e0fa8c8b6c578b5" title="RFC_Pane_overlay::get_lid" alt="" coords="145,56,327,83"/>
-<area shape="rect" id="node5" href="$classHalfedge__overlay.html#afe0045d3267c0730bd9ad1b640718f54" title="Halfedge_overlay::origin" alt="" coords="155,107,317,133"/>
-<area shape="rect" id="node3" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="389,31,555,57"/>
-<area shape="rect" id="node6" href="$classHalfedge__overlay.html#a1011f61879a1842b01d506a17e1c7914" title="Halfedge_overlay::opposite" alt="" coords="382,107,562,133"/>
-<area shape="rect" id="node7" href="$classHalfedge__overlay.html#acba595f65090d9721649cdf1f0999894" title="Halfedge_overlay::is\l_primary" alt="" coords="611,99,752,141"/>
-</map>

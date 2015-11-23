@@ -1,9 +1,0 @@
-<map id="freeBlock" name="freeBlock">
-<area shape="rect" id="node2" href="$readgrd_8cpp.html#af67bbca8dfb2bf102cde2534c4da7d27" title="read_general" alt="" coords="131,81,227,108"/>
-<area shape="rect" id="node7" href="$readhdf_8cpp.html#a7fa518a6e9eaf947f2d2c25129add9a5" title="read_hdf" alt="" coords="143,157,215,184"/>
-<area shape="rect" id="node8" href="$readreg_8cpp.html#a6c584c9ae103a5c4df3ff3006b3abadd" title="read_reg" alt="" coords="143,208,215,235"/>
-<area shape="rect" id="node3" href="$readgrd_8cpp.html#afdfe0ca82ee83f33bb7866de78faecad" title="read_grd" alt="" coords="279,5,351,32"/>
-<area shape="rect" id="node5" href="$readgrd_8cpp.html#aaa128d20465819ce9cb772438d607539" title="read_grdd" alt="" coords="275,56,354,83"/>
-<area shape="rect" id="node6" href="$readgrd_8cpp.html#ab7d62f1bae396829cf4ef3a53a2dc600" title="read_grds" alt="" coords="275,107,354,133"/>
-<area shape="rect" id="node4" href="$read_8cpp.html#a418ae3d7d77b8f4c89d0ba4db77d1bad" title="read_file" alt="" coords="403,107,474,133"/>
-</map>

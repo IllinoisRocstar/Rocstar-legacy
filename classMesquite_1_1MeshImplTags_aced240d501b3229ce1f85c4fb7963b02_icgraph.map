@@ -1,5 +1,0 @@
-<map id="set_vertex_data" name="set_vertex_data">
-<area shape="rect" id="node2" href="$classMesquite_1_1MeshImpl.html#a1e56ed0285cfdc6d01ad3b869ef009e0" title="Set tag values on vertices. " alt="" coords="169,5,317,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshImpl.html#a6438e58f0f7a06552623d6935f1616db" title="Read attribute data for vertices. " alt="" coords="169,70,316,111"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1MeshImpl.html#a51c855a0e0885d47351793338f3074ba" title="Mesquite::MeshImpl\l::read_vtk" alt="" coords="366,70,506,111"/>
-</map>

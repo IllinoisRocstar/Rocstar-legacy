@@ -1,7 +1,0 @@
-<map id="bc_enforce" name="bc_enforce">
-<area shape="rect" id="node2" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="181,5,256,32"/>
-<area shape="rect" id="node3" href="$classDirection__2.html#a47ac85db83850ecc4cc1ca25646a5842" title="Direction_2::delta" alt="" coords="157,56,281,83"/>
-<area shape="rect" id="node4" href="$Handle_8h.html#a459850cd445841d238d0af12068f45a3" title="id" alt="" coords="199,107,238,133"/>
-<area shape="rect" id="node5" href="$classColor.html#a2cd31514360f55547e6cb3e94dfe6ad5" title="Color::r" alt="" coords="186,157,251,184"/>
-<area shape="rect" id="node6" href="$classGeoPrim_1_1CLine.html#ace0714fea207254cf9ff1fff7f352511" title="GeoPrim::CLine::slope" alt="" coords="141,208,296,235"/>
-</map>

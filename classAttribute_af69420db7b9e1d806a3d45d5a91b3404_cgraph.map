@@ -1,8 +1,0 @@
-<map id="allocate" name="allocate">
-<area shape="rect" id="node2" href="$classAttribute.html#a2bf2f6a525b29b7a8f56005b1e7a5324" title="copy_array" alt="" coords="121,77,207,104"/>
-<area shape="rect" id="node3" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="256,26,339,53"/>
-<area shape="rect" id="node6" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="141,178,187,205"/>
-<area shape="rect" id="node5" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="276,128,319,154"/>
-<area shape="rect" id="node7" href="$classAttribute.html#afde4a4293812757caa4ed65cc71eab68" title="Set the physical address of the attribute values. " alt="" coords="121,26,207,53"/>
-<area shape="rect" id="node4" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="270,77,325,104"/>
-</map>

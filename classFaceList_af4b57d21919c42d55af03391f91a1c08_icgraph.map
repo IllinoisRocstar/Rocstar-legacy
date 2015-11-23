@@ -1,6 +1,0 @@
-<map id="size" name="size">
-<area shape="rect" id="node2" href="$classMesh.html#a96f8003c64bff21d807cea52f48db2a7" title="The addCohesive method is the driver for the entire process of adding cohesive elements to the mesh..." alt="" coords="496,18,635,45"/>
-<area shape="rect" id="node3" href="$classNode.html#aeb84ea6c6335f93cba82a5828debfadc" title="Node::getSeparateElements" alt="" coords="101,31,288,58"/>
-<area shape="rect" id="node5" href="$classMesh.html#a614a4adf598595b7126cdaa822a9bade" title="Mesh::replaceNode" alt="" coords="127,82,262,109"/>
-<area shape="rect" id="node4" href="$classNode.html#aea0042ea84160d091512051ea23d8e41" title="Node::separate" alt="" coords="337,55,447,82"/>
-</map>

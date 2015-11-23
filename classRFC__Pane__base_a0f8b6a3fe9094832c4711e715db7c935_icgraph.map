@@ -1,6 +1,0 @@
-<map id="is_border_node" name="is_border_node">
-<area shape="rect" id="node2" href="$classRFC__Window__derived.html#a372359a4f1aeb4c6576d8170bc98c8e4" title="Get a handle to the primary copy of a node contained in the pane p with local id vid. " alt="" coords="166,5,319,46"/>
-<area shape="rect" id="node4" href="$classRFC__Pane__base.html#a30ba1f6b3036bcc5467d8865edf36dc6" title="Is the node with given local id a primary one? " alt="" coords="184,71,301,97"/>
-<area shape="rect" id="node3" href="$classRFC__Pane__overlay.html#a4a3818f6d1222238d4f36eb5a23db143" title="RFC_Pane_overlay::determine\l_counterparts" alt="" coords="369,5,570,46"/>
-<area shape="rect" id="node5" href="$classRFC__Pane__base.html#aeaea29bff84c7c77f8df894c495cd15d" title="Get total number of primary nodes contained in the pane. " alt="" coords="391,71,547,97"/>
-</map>

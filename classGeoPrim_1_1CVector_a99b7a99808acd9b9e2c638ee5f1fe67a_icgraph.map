@@ -1,6 +1,0 @@
-<map id="init" name="init">
-<area shape="rect" id="node2" href="$test__2d_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="140,5,191,32"/>
-<area shape="rect" id="node3" href="$classMesh_1_1GenericElement.html#a4e8382e004c3810d61ca8631435f8168" title="Mesh::GenericElement\l::shapef_jacobian_at" alt="" coords="285,49,440,90"/>
-<area shape="rect" id="node4" href="$namespaceGeoPrim.html#aea1d8f8918c86c784b68cd39081c69d9" title="GeoPrim::Transpose" alt="" coords="94,107,237,133"/>
-<area shape="rect" id="node5" href="$classMesh_1_1GenericCell__2.html#a0fc9894f542923fe4bb0afb77879c801" title="Mesh::GenericCell_2\l::shapef_jacobian_at" alt="" coords="291,114,435,155"/>
-</map>

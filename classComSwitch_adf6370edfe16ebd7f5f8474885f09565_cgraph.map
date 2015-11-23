@@ -1,8 +1,0 @@
-<map id="parseValuesFromArguments" name="parseValuesFromArguments">
-<area shape="rect" id="node2" href="$namespacecimg__library_1_1cimg.html#a9ab0fcc7ef1bac330897fec51f617ae6" title="Read a float number from a C&#45;string. " alt="" coords="273,5,401,46"/>
-<area shape="rect" id="node3" href="$utilities_2rc__cmp_2util_8cpp.html#a634a77a74f8a4b2c3145e3009158450d" title="check_non_numeric_str" alt="" coords="257,71,417,97"/>
-<area shape="rect" id="node5" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="279,121,395,148"/>
-<area shape="rect" id="node6" href="$classBoundingBox.html#af6fca3d6b8c43c09c647e446aebb67e6" title="Sets the coordinates of this BoundingBox instance. " alt="" coords="240,172,435,199"/>
-<area shape="rect" id="node7" href="$utilities_2rc__cmp_2util_8cpp.html#a3dbbf1a2353dc5f4c045bd3ad6d82a5f" title="str_tokenize" alt="" coords="291,223,384,249"/>
-<area shape="rect" id="node4" href="$utilities_2rc__cmp_2util_8cpp.html#a0cdc4cc0b04893269ede578556381789" title="check_non_numeric_char" alt="" coords="483,71,653,97"/>
-</map>

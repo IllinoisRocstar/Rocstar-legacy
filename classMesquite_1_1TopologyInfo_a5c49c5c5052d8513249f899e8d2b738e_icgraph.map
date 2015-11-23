@@ -1,6 +1,0 @@
-<map id="face_vertices" name="face_vertices">
-<area shape="rect" id="node2" href="$classMesquite_1_1TopologyInfo.html#a5b738e3650174610cf5944fd27c3997f" title="Get corner indices of side. " alt="" coords="155,77,253,104"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1MeanMidNodeMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="This is the &quot;run&quot; function of PatchDataUser. It can do anything really. " alt="" coords="301,5,504,46"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1MeshImplData.html#ae778da3a633fea3bc4476471cdad9e84" title="Get all mid&#45;nodes and their adjacent corner vertices. " alt="" coords="319,70,487,111"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshImplData.html#a447dda45c4185d39ecd1456cfeed0125" title="Skin mesh. " alt="" coords="319,135,487,177"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="in_restart" name="in_restart">
-<area shape="rect" id="node2" href="$classBurnAgent.html#af638885571a679c8dc096029de6d0c20" title="BurnAgent::unload_module" alt="" coords="131,5,309,32"/>
-<area shape="rect" id="node3" href="$classFluidAgent.html#af638885571a679c8dc096029de6d0c20" title="FluidAgent::unload\l_module" alt="" coords="155,57,285,98"/>
-<area shape="rect" id="node4" href="$classSolidAgent.html#af638885571a679c8dc096029de6d0c20" title="SolidAgent::unload\l_module" alt="" coords="155,122,285,163"/>
-</map>

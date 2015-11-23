@@ -1,5 +1,0 @@
-<map id="Init" name="Init">
-<area shape="rect" id="node2" href="$classIRAD_1_1Profiler_1_1ProfilerObj.html#a2b542c38b1b76976c098429eb14bfcdc" title="integer only inteface for init " alt="" coords="93,35,133,61"/>
-<area shape="rect" id="node3" href="$namespaceIRAD_1_1Profiler.html#a73a4cf42c2e127d8a568f7a23ff10303" title="Simple timer. " alt="" coords="184,5,325,32"/>
-<area shape="rect" id="node4" href="$classIRAD_1_1Profiler_1_1Event.html#a434270d7b94aac9817e6df70ba8c3e33" title="IRAD::Profiler::Event\l::timestamp" alt="" coords="181,57,328,98"/>
-</map>

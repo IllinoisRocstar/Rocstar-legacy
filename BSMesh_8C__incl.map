@@ -1,7 +1,0 @@
-<map id="BSMesh.C" name="BSMesh.C">
-<area shape="rect" id="node6" href="$BSMesh_8H.html" title="Block Structured Mesh stuff. " alt="" coords="725,80,811,107"/>
-<area shape="rect" id="node7" href="$Mesh_8H.html" title="Mesh Stuff. " alt="" coords="371,155,439,181"/>
-<area shape="rect" id="node11" href="$GeoPrimitives_8H.html" title="Geometric Primitives interface. " alt="" coords="158,304,276,331"/>
-<area shape="rect" id="node17" href="$primitive__utilities_8H.html" title="Basic utility header. " alt="" coords="503,229,636,256"/>
-<area shape="rect" id="node21" href="$PrimitiveTypes_8H.html" title="Simple utility classes. " alt="" coords="387,304,509,331"/>
-</map>

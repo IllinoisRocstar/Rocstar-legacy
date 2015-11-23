@@ -1,7 +1,0 @@
-<map id="intersect" name="intersect">
-<area shape="rect" id="node2" href="$classGeoPrim_1_1CBox.html#a759b5184ce4ea5751b373803aba2a2b8" title="collide" alt="" coords="125,129,184,156"/>
-<area shape="rect" id="node4" href="$classGeoPrim_1_1CPoint.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CPoint::x" alt="" coords="339,129,475,156"/>
-<area shape="rect" id="node5" href="$classGeoPrim_1_1CPoint.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CPoint::y" alt="" coords="339,78,475,105"/>
-<area shape="rect" id="node6" href="$classGeoPrim_1_1CPoint.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CPoint::z" alt="" coords="339,230,475,257"/>
-<area shape="rect" id="node3" href="$classGeoPrim_1_1CBox.html#ac6e61de369e994009e36f344f99c15ad" title="empty" alt="" coords="232,129,291,156"/>
-</map>

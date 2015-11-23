@@ -1,6 +1,0 @@
-<map id="print_histogram" name="print_histogram">
-<area shape="rect" id="node2" href="$namespacecimg__library.html#a829d43876d7785694cc71a33c25d405a" title="cimg_library::log10" alt="" coords="165,12,296,39"/>
-<area shape="rect" id="node4" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="207,63,254,89"/>
-<area shape="rect" id="node5" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="209,113,252,140"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a3ddd3de58ea5fc9185f216e6e8c59010" title="cimg_library::CImg\l::get_log10" alt="" coords="345,5,477,46"/>
-</map>

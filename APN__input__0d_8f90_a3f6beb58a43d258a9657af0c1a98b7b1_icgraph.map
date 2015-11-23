@@ -1,9 +1,0 @@
-<map id="apn_input_0d" name="apn_input_0d">
-<area shape="rect" id="node2" href="$classm__rocburn__1d__apn.html#afed2cdc37404bd79a0bf19e59564b419" title="m_rocburn_1d_apn::initialize_0d" alt="" coords="152,77,360,104"/>
-<area shape="rect" id="node3" href="$classm__init__1dmodules.html#a990c9b95155cf5ca7508c92b59acda05" title="m_init_1dmodules::rocburn\l_init_funcs_apn" alt="" coords="408,5,587,46"/>
-<area shape="rect" id="node7" href="$classm__init__1dmodules.html#a30e430d7994aaeb872c72d69f69f06c2" title="m_init_1dmodules::rocburn\l_init_funcs_py" alt="" coords="408,70,587,111"/>
-<area shape="rect" id="node8" href="$classm__init__1dmodules.html#a3978a3d79440d016a9a12cf7c5ee81cc" title="m_init_1dmodules::rocburn\l_init_funcs_zn" alt="" coords="408,135,587,177"/>
-<area shape="rect" id="node4" href="$Rocburn__load__module_8f90.html#a675ba8dd79f01dd613b983a7b4790f70" title="rocburn_load_module" alt="" coords="635,77,781,104"/>
-<area shape="rect" id="node5" href="$classBurnAgent.html#a9497d3068e48dadd5f9423273833b167" title="BurnAgent::load_module" alt="" coords="830,77,994,104"/>
-<area shape="rect" id="node6" href="$classBurnAgent.html#ab2ccff943e01d5040f66ddb2f3499c66" title="BurnAgent::BurnAgent" alt="" coords="1043,77,1195,104"/>
-</map>

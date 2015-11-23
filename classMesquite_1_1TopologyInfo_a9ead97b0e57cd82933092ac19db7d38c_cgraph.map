@@ -1,6 +1,0 @@
-<map id="side_number" name="side_number">
-<area shape="rect" id="node2" href="$classMesquite_1_1TopologyInfo.html#a664028df04b3b8dbc5a453d5a2caf350" title="Get the number of edges in a given topology. " alt="" coords="150,5,207,32"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1TopologyInfo.html#a84d9816ff80027ce8775c0b4f43a86ab" title="Get the number of faces in a given topology. " alt="" coords="151,56,206,83"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1TopologyInfo.html#a795183830fb2002a37b11775c9605266" title="Number of adjacent entities of a specified dimension. " alt="" coords="257,31,327,57"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1TopologyInfo.html#a72e6b96dd3d457ef398ed6d62d9a50a6" title="Dimension of element topology. " alt="" coords="377,31,458,57"/>
-</map>

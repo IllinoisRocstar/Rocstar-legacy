@@ -1,4 +1,0 @@
-<map id="move_to" name="move_to">
-<area shape="rect" id="node2" href="$classMesquite_1_1DomainTSTT.html#a766c5ddaf349d9da51357569089c64cf" title="Modifies &quot;coordinate&quot; so that it lies on the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="130,5,291,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1GeomEntTSTT.html#a766c5ddaf349d9da51357569089c64cf" title="Modifies &quot;coordinate&quot; so that it lies on the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="125,70,296,111"/>
-</map>

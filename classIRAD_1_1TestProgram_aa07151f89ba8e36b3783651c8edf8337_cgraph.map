@@ -1,9 +1,0 @@
-<map id="Initialize" name="Initialize">
-<area shape="rect" id="node2" href="$classIRAD_1_1Util_1_1ComLineObject.html#aa433a792b5ff1791f801e99048c285bc" title="Error reporting. " alt="" coords="125,5,307,46"/>
-<area shape="rect" id="node4" href="$classIRAD_1_1Util_1_1ComLineObject.html#a2724b7e78e4a1650818395c714595738" title="Get the value of an option. " alt="" coords="125,70,307,111"/>
-<area shape="rect" id="node5" href="$classIRAD_1_1Global_1_1Program.html#aa07151f89ba8e36b3783651c8edf8337" title="IRAD::Global::Program\l::Initialize" alt="" coords="137,135,295,177"/>
-<area shape="rect" id="node6" href="$classIRAD_1_1Util_1_1ComLineObject.html#aa9cce130873f2d7d00a01053b5fc9f97" title="Generate long usage string. " alt="" coords="125,201,307,242"/>
-<area shape="rect" id="node7" href="$classIRAD_1_1Util_1_1ComLineObject.html#a91336093c461161b48bab405326d74b3" title="Generate short usage string. " alt="" coords="355,230,536,271"/>
-<area shape="rect" id="node3" href="$namespaceIRAD_1_1Util.html#a4ea296883ee0ef3abec17b7cd6730411" title="Dump container contents. " alt="" coords="356,12,535,39"/>
-<area shape="rect" id="node8" href="$classIRAD_1_1Util_1_1ComLineObject.html#a398ff1ba143da14ba67af1445f1ef83b" title="Obtains option strings by type. " alt="" coords="584,230,765,271"/>
-</map>

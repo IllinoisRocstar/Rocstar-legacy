@@ -1,7 +1,0 @@
-<map id="SetExit" name="SetExit">
-<area shape="rect" id="node2" href="$flotsam_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="189,5,240,32"/>
-<area shape="rect" id="node3" href="$namespaceRocstar.html#ac1e4084438cd90b41f070d1cacf00420" title="Drives the Rocstar::TestObject. " alt="" coords="142,56,287,83"/>
-<area shape="rect" id="node5" href="$namespaceGridConversion.html#ad06df63ea71c2a866efb3ff9c90d7190" title="Drives the GridConversion::TestObject. " alt="" coords="120,107,309,133"/>
-<area shape="rect" id="node4" href="$ParallelTestRocstar_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="357,56,408,83"/>
-<area shape="rect" id="node6" href="$ParallelTestGridConversion_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="357,107,408,133"/>
-</map>

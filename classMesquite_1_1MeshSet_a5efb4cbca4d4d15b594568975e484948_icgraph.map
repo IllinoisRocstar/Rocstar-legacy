@@ -1,6 +1,0 @@
-<map id="clear_all_soft_fixed_flags" name="clear_all_soft_fixed_flags">
-<area shape="rect" id="node2" href="$classMesquite_1_1TerminationCriterion.html#a39e2c84c1b98302041bb05df7fcb8952" title="Cleans up after the TerminationCriterion is finished. " alt="" coords="189,5,389,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Improves the quality of the MeshSet, calling some methods specified in a class derived from VertexMov..." alt="" coords="437,5,595,46"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1ShapeImprovementWrapper.html#a52b954daacf72db4a8b0b8811e81bbb0" title="run_instructions runs the wrapper on the given MeshSet. " alt="" coords="643,5,839,46"/>
-<area shape="rect" id="node5" href="$classRocmop.html#a2dbb41ea0da20e141ec61d8d4a726ddf" title="Smooth the panes of the working window using MESQUITE. " alt="" coords="889,12,1071,39"/>
-</map>

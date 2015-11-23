@@ -1,6 +1,0 @@
-<map id="DiffDataFiles.C" name="DiffDataFiles.C">
-<area shape="rect" id="node6" href="$UnixUtils_8H.html" title="Unix System Tools interface. " alt="" coords="655,80,745,107"/>
-<area shape="rect" id="node21" href="$ComLine_8H.html" title="ComLineObject header. " alt="" coords="1204,80,1292,107"/>
-<area shape="rect" id="node24" href="$FDUtils_8H.html" title="Implementation of stream object for Unix file descriptors. " alt="" coords="549,80,629,107"/>
-<area shape="rect" id="node25" href="$DiffDataFiles_8H.html" title="Implements a command&#45;line interface for ensuring that two data files are consistent. " alt="" coords="1317,80,1429,107"/>
-</map>

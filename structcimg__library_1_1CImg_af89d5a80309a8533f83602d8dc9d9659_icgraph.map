@@ -1,7 +1,0 @@
-<map id="_atXYZ" name="_atXYZ">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a341b51537773e271b846aa98bd24284f" title="Read a pixel value with Neumann boundary conditions for the three first coordinates (x..." alt="" coords="134,5,266,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ab05d33401b5b203bed94ed1bb42d0208" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_correlate" alt="" coords="121,70,279,111"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#af3760702bcc298c84d1f19649aca51d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_dilate" alt="" coords="131,135,269,177"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#acd937099772378466bc291da0ab9958f" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_erode" alt="" coords="130,201,270,242"/>
-<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a71f50d4be8cd4b71adb2ef611c8139b7" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_warp" alt="" coords="132,266,268,307"/>
-</map>

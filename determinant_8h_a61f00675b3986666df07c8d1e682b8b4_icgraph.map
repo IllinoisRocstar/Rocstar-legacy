@@ -1,9 +1,0 @@
-<map id="det2x2_by_formula" name="det2x2_by_formula">
-<area shape="rect" id="node2" href="$constructions_2kernel__ftC2_8h.html#ac679eba15bd8e27f79ce5540d7ed0a4b" title="circumcenter_translateC2" alt="" coords="187,31,357,57"/>
-<area shape="rect" id="node5" href="$predicates_2kernel__ftC2_8h.html#a836296a051b0de4e9d4377963c3ac68b" title="compare_xC2" alt="" coords="221,81,323,108"/>
-<area shape="rect" id="node6" href="$predicates_2kernel__ftC2_8h.html#ae34aec82a7df6a41f9cfd29a4b18e365" title="compare_y_at_xC2" alt="" coords="205,132,339,159"/>
-<area shape="rect" id="node7" href="$classAff__transformation__repS3.html#aeaeabc300b3c54b12399a7c9a4bd6e00" title="Aff_transformation\l_repS3::inverse" alt="" coords="207,183,337,225"/>
-<area shape="rect" id="node8" href="$constructions_2kernel__ftC2_8h.html#a43d11773605a6cab565fc0192f7cde1e" title="scaled_distance_to\l_lineC2" alt="" coords="205,249,339,290"/>
-<area shape="rect" id="node3" href="$constructions_2kernel__ftC2_8h.html#a8f0bf695e3cf91c819c16fb01bd360c7" title="circumcenterC2" alt="" coords="432,5,547,32"/>
-<area shape="rect" id="node4" href="$constructions_2kernel__ftC2_8h.html#ac00771311256499cf31ceac4827661a4" title="squared_circumradiusC2" alt="" coords="406,56,573,83"/>
-</map>

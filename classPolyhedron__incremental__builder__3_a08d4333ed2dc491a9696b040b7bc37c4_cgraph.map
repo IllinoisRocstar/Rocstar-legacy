@@ -1,6 +1,0 @@
-<map id="add_vertex" name="add_vertex">
-<area shape="rect" id="node2" href="$classHalfedge__data__structure__decorator.html#ae6e5f7563782793fc4c5bc8108d5e50b" title="Halfedge_data_structure\l_decorator::new_vertex" alt="" coords="145,5,309,46"/>
-<area shape="rect" id="node3" href="$classRandom__access__adaptor.html#aa06f6adbb9cdce8ad89d3a63750d79bc" title="Random_access_adaptor\l::push_back" alt="" coords="141,70,312,111"/>
-<area shape="rect" id="node4" href="$classPolyhedron__incremental__builder__3.html#a7af3771228d8f2b5e7bc70d4894ca136" title="push_back_vertex_to\l_edge_map" alt="" coords="153,135,300,177"/>
-<area shape="rect" id="node5" href="$classHalfedge__data__structure__decorator.html#a3cfa2d359aa61dc7e8ab9e4429e2d2e1" title="Halfedge_data_structure\l_decorator::set_vertex\l_halfedge" alt="" coords="145,201,309,257"/>
-</map>

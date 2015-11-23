@@ -1,7 +1,0 @@
-<map id="Process" name="Process">
-<area shape="rect" id="node2" href="$classIRAD_1_1Util_1_1TestingObject.html#aa25f45634aafbb580d94840ad8452745" title="Clean up any test fixtures that need cleaning. " alt="" coords="126,5,298,61"/>
-<area shape="rect" id="node3" href="$classIRAD_1_1Util_1_1TestObject.html#a08b34bff39859e304a7b042796714136" title="Set up the tests and any test fixture constructs. " alt="" coords="175,85,249,112"/>
-<area shape="rect" id="node4" href="$classIRAD_1_1Util_1_1TestObject.html#ac4bb02afa4130a5b06346fd1634f4095" title="Test__GetNextContent" alt="" coords="133,136,291,163"/>
-<area shape="rect" id="node5" href="$namespaceIRAD_1_1Util.html#a37cd996b53f5c34c0d44c244b5573168" title="IRAD::Util::GetNextContent" alt="" coords="347,107,533,133"/>
-<area shape="rect" id="node6" href="$classIRAD_1_1Util_1_1TestResults.html#a953659f20f9668c34ee7fde3341d5a9c" title="Updates an existing test result. " alt="" coords="359,158,521,199"/>
-</map>

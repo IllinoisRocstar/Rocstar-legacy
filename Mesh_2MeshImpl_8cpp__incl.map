@@ -1,8 +1,0 @@
-<map id="MeshImpl.cpp" name="MeshImpl.cpp">
-<area shape="rect" id="node2" href="$src_2Mesh_2MeshImpl_8hpp.html" title="MeshImpl.hpp" alt="" coords="28,80,132,107"/>
-<area shape="rect" id="node15" href="$src_2Mesh_2MsqVertex_8hpp.html" title="MsqVertex.hpp" alt="" coords="573,80,683,107"/>
-<area shape="rect" id="node16" href="$src_2Mesh_2MeshImplData_8hpp.html" title="MeshImplData.hpp" alt="" coords="365,80,496,107"/>
-<area shape="rect" id="node19" href="$src_2Mesh_2MeshImplTags_8hpp.html" title="MeshImplTags.hpp" alt="" coords="156,80,289,107"/>
-<area shape="rect" id="node3" href="$MeshInterface_8hpp.html" title="This file contains the Mesquite mesh interface. Many users will want to implement a concrete class de..." alt="" coords="76,155,207,181"/>
-<area shape="rect" id="node4" href="$Mesquite_8hpp.html" title="Mesquite.hpp" alt="" coords="293,229,392,256"/>
-</map>

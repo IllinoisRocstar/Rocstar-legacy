@@ -1,6 +1,0 @@
-<map id="reset_element" name="reset_element">
-<area shape="rect" id="node2" href="$classMesquite_1_1MeshImplData.html#a48c5dd96a87d3260d0c8d01c36283b60" title="Clear existing element data. " alt="" coords="158,12,261,39"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1MeshImplData.html#a006397f4d39d35cfda314202427dff37" title="Set cleared element. " alt="" coords="163,63,256,89"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="310,5,469,46"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshImplData.html#a104a1c4bbfb05d4cada7edbaff6f8f2b" title="Check if passed vertex index is valid. " alt="" coords="335,71,444,97"/>
-</map>

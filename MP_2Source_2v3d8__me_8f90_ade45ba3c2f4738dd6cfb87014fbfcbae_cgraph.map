@@ -1,5 +1,0 @@
-<map id="get_mixed_map" name="get_mixed_map">
-<area shape="rect" id="node2" href="$classConnectivity.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Get the dimension of the mesh. " alt="" coords="168,5,331,32"/>
-<area shape="rect" id="node3" href="$classColor.html#a2cd31514360f55547e6cb3e94dfe6ad5" title="Color::r" alt="" coords="217,56,282,83"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1Matrix3D.html#a0c4493a5d4723940d60164428f11adc3" title="Sets all entries to zero (more efficient than assignement). " alt="" coords="181,107,317,149"/>
-</map>

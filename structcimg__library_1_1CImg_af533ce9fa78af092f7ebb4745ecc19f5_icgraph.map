@@ -1,6 +1,0 @@
-<map id="sort" name="sort">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#acbfab2bdc28e9a3e445bec479f47322b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_object3d" alt="" coords="99,5,274,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a8df325f41606c6321736f95ca0a739c3" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_polygon" alt="" coords="101,70,272,111"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a551a1427d621a24887495b9c1093da65" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_sort" alt="" coords="121,135,253,177"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a1009c7eb1992bedd2cc6928ecef57722" title="Sort image values. " alt="" coords="121,201,253,242"/>
-</map>

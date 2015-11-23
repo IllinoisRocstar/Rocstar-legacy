@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classAttribute.html" title="An Attribute object is a data member of a window. " alt="" coords="6,37,77,64"/>
-<area shape="rect" id="node2" href="$classConnectivity.html" title="Encapsulates an element&#45;connectivity of a mesh. " alt="" coords="153,12,247,39"/>
-<area shape="rect" id="node4" href="$classPane_1_1Attribute__friend.html" title="Pane::Attribute_friend" alt="" coords="126,63,274,89"/>
-<area shape="rect" id="node3" href="$classPane_1_1Connectivity__friend.html" title="Pane::Connectivity\l_friend" alt="" coords="323,5,456,46"/>
-</map>

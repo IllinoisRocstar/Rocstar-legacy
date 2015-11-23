@@ -1,7 +1,0 @@
-<map id="rflu_petsc_createjacobian" name="rflu_petsc_createjacobian">
-<area shape="rect" id="node2" href="$RFLU__InitFlowSolver_8F90.html#af9c0da2d26f7bdb2bdee8507627f636c" title="rflu_initflowsolver" alt="" coords="224,31,347,57"/>
-<area shape="rect" id="node3" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="433,5,492,32"/>
-<area shape="rect" id="node4" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="395,56,530,83"/>
-<area shape="rect" id="node5" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="579,56,744,83"/>
-<area shape="rect" id="node6" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="792,56,947,83"/>
-</map>

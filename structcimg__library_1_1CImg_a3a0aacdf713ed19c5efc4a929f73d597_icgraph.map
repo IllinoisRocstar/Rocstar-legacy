@@ -1,4 +1,0 @@
-<map id="draw_rectangle" name="draw_rectangle">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a8c3dec0cd1433a84dbcb51bad950c0b9" title="Draw a 1D graph on the instance image. " alt="" coords="175,5,326,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a89227e6f66aa1bc57991bea53b90803c" title="Draw a 3D filled colored rectangle in the instance image, at coordinates (x0,y0,z0)&#45;(x1,y1,z1). " alt="" coords="165,70,336,111"/>
-</map>

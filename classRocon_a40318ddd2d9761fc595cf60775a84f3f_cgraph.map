@@ -1,8 +1,0 @@
-<map id="constrain_displacements" name="constrain_displacements">
-<area shape="rect" id="node2" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="241,5,356,32"/>
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a6e38c0b1f83c30b166b7500902e13be1" title="COM_get_panes" alt="" coords="239,56,359,83"/>
-<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a74e2d52abbc3b6532fc19b38deabba26" title="Get the sizes of an attribute. " alt="" coords="244,107,353,133"/>
-<area shape="rect" id="node6" href="$commpi_8h.html#a8a8389bc67ae874f8ec20c56f758c8bf" title="COMMPI_Comm_rank" alt="" coords="221,157,376,184"/>
-<area shape="rect" id="node7" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="229,208,368,235"/>
-<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="424,81,552,108"/>
-</map>

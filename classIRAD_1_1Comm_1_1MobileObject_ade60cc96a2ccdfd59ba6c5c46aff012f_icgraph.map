@@ -1,7 +1,0 @@
-<map id="Pack" name="Pack">
-<area shape="rect" id="node2" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a943956fa2e50f8504cd585ffae9129a1" title="IRAD::Comm::Communicator\lObject::_AllGatherMO" alt="" coords="107,5,301,46"/>
-<area shape="rect" id="node4" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#afd68c33bb044878b1af720844da60b17" title="IRAD::Comm::Communicator\lObject::_GatherMO" alt="" coords="107,70,301,111"/>
-<area shape="rect" id="node6" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a591ce412314cca25456e176348877bbb" title="IRAD::Comm::Communicator\lObject::BroadCast" alt="" coords="107,135,301,177"/>
-<area shape="rect" id="node3" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#aa4b74d9a2ef5bb6a6380c6837256dfb5" title="IRAD::Comm::Communicator\lObject::AllGatherMO" alt="" coords="349,5,544,46"/>
-<area shape="rect" id="node5" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#ab611837a4e62df8161ccad1c2dd4e79d" title="IRAD::Comm::Communicator\lObject::GatherMO" alt="" coords="349,70,544,111"/>
-</map>

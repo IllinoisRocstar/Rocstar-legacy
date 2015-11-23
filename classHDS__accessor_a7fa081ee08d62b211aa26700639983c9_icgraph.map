@@ -1,6 +1,0 @@
-<map id="get_counterpart" name="get_counterpart">
-<area shape="rect" id="node2" href="$classHDS__accessor.html#a42c5b8163f233bbcb78a29c7bc12fb1b" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_halfedge" alt="" coords="166,5,341,46"/>
-<area shape="rect" id="node3" href="$classHDS__accessor.html#a61e7c9793102999d6cbe0fa68888198b" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_next" alt="" coords="166,70,341,111"/>
-<area shape="rect" id="node4" href="$classHDS__accessor.html#a6af7b24e0dd3242098973e75cd6e0bbe" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_opposite" alt="" coords="166,135,341,177"/>
-<area shape="rect" id="node5" href="$classHDS__accessor.html#a3f444b61fde0f7435783bd2b04e96d4f" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_prev" alt="" coords="166,201,341,242"/>
-</map>

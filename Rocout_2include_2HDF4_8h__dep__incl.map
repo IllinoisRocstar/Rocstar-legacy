@@ -1,9 +1,0 @@
-<map id="HDF4.h" name="HDF4.h">
-<area shape="rect" id="node2" href="$HDF4_8C.html" title="HDF4.C" alt="" coords="241,80,311,107"/>
-<area shape="rect" id="node3" href="$Rocout_8h.html" title="Rocout creates a series of Roccom windows by reading in a list of files. " alt="" coords="336,80,411,107"/>
-<area shape="rect" id="node6" href="$Rocout__hdf4_8C.html" title="Implementation of Rocout HDF4 routines. " alt="" coords="549,155,659,181"/>
-<area shape="rect" id="node4" href="$Rocout_8C.html" title="Implementation of Rocout for creation of a data file from a Roccom window. " alt="" coords="5,155,83,181"/>
-<area shape="rect" id="node5" href="$Rocout__cgns_8C.html" title="Implementation of Rocout CGNS routines. " alt="" coords="107,155,220,181"/>
-<area shape="rect" id="node7" href="$write__parameter__file_8C.html" title="write_parameter_file.C" alt="" coords="245,155,397,181"/>
-<area shape="rect" id="node8" href="$Rocout_2test_2param__test_8C.html" title="param_test.C" alt="" coords="423,155,524,181"/>
-</map>

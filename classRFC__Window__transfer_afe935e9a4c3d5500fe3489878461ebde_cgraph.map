@@ -1,8 +1,0 @@
-<map id="reduce_to_all" name="reduce_to_all">
-<area shape="rect" id="node2" href="$classRFC__Data__const.html#ad089a89a18aa50ad2c64712cf5fb5e3d" title="RFC_Data_const::dimension" alt="" coords="153,5,343,32"/>
-<area shape="rect" id="node3" href="$classRFC__Data__const.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Data_const::id" alt="" coords="177,56,319,83"/>
-<area shape="rect" id="node4" href="$classRFC__Window__transfer.html#aad1f435b8a27014b3d4944dd3ceb6fd2" title="pane" alt="" coords="223,107,273,133"/>
-<area shape="rect" id="node5" href="$classRFC__Pane__transfer.html#ac4352cefd69971574fd2edb3ee894899" title="RFC_Pane_transfer::\lpointer" alt="" coords="175,158,321,199"/>
-<area shape="rect" id="node6" href="$classRFC__Pane__transfer.html#a584f868480e84dcf5750fe21c96c4dd8" title="RFC_Pane_transfer::\lis_master" alt="" coords="404,129,551,170"/>
-<area shape="rect" id="node7" href="$classRFC__Pane__base.html#ac4352cefd69971574fd2edb3ee894899" title="Get the address of a given attribute with id i. " alt="" coords="393,195,562,221"/>
-</map>

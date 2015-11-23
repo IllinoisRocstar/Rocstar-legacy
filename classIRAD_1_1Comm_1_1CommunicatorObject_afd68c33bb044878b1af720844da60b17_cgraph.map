@@ -1,9 +1,0 @@
-<map id="_GatherMO" name="_GatherMO">
-<area shape="rect" id="node2" href="$classIRAD_1_1Comm_1_1MobileObject.html#a93abd4519ab3761fab9e1966bbb82bc0" title="IRAD::Comm::MobileObject\l::DestroyBuffer" alt="" coords="144,5,331,46"/>
-<area shape="rect" id="node3" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a613f9cb226d1718e0569eec5ea1212b5" title="Gather" alt="" coords="207,71,268,97"/>
-<area shape="rect" id="node6" href="$classIRAD_1_1Comm_1_1MobileObject.html#a0a37dd7cf30f6b492a71874725683753" title="IRAD::Comm::MobileObject\l::GetBuffer" alt="" coords="144,122,331,163"/>
-<area shape="rect" id="node7" href="$classIRAD_1_1Comm_1_1MobileObject.html#ade60cc96a2ccdfd59ba6c5c46aff012f" title="IRAD::Comm::MobileObject\l::Pack" alt="" coords="144,187,331,229"/>
-<area shape="rect" id="node4" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a575c1da8fd55deeeb351cb509ddd3dda" title="Rank" alt="" coords="428,45,481,72"/>
-<area shape="rect" id="node5" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#af40990b9bd3d70d30e8ce7cdda1ad56f" title="Size" alt="" coords="431,96,479,123"/>
-<area shape="rect" id="node8" href="$namespaceIRAD_1_1Util.html#a62ba8f21a926b0ccfc9f02546f1097b0" title="IRAD::Util::String2Buf" alt="" coords="379,195,531,221"/>
-</map>

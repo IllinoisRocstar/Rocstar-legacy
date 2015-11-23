@@ -1,6 +1,0 @@
-<map id="add_icaction" name="add_icaction">
-<area shape="rect" id="node2" href="$builtin__couplings_8C.html#aae652ed0b25fcf6c8486f30999da49cf" title="declare_fluid_actions" alt="" coords="164,5,308,32"/>
-<area shape="rect" id="node4" href="$builtin__couplings_8C.html#a61cbf367c53ee680746cc1e9bceab86b" title="declare_solid_actions" alt="" coords="163,56,309,83"/>
-<area shape="rect" id="node5" href="$classFluidBurnAlone.html#aadd89b08ad96867a0512484d249ff3ee" title="FluidBurnAlone::FluidBurn\lAlone" alt="" coords="149,107,323,149"/>
-<area shape="rect" id="node3" href="$classFluidAlone.html#aa21baddf7dc0522aa90681d92106835e" title="FluidAlone::FluidAlone" alt="" coords="371,5,523,32"/>
-</map>

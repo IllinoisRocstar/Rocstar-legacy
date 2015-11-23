@@ -1,7 +1,0 @@
-<map id="rflu_sype_imposevertexmap" name="rflu_sype_imposevertexmap">
-<area shape="rect" id="node2" href="$classrflu__modsymmetryperiodic.html#abcff37d160575c45eab802b062312a00" title="rflu_sype_augmentvertexlists" alt="" coords="240,5,432,32"/>
-<area shape="rect" id="node3" href="$classrflu__modsymmetryperiodic.html#ab7405008fd4ed3b481e5874b0d43e835" title="rflu_sype_augmentcelllists" alt="" coords="480,5,656,32"/>
-<area shape="rect" id="node4" href="$classrflu__modsymmetryperiodic.html#aad4b082379b4e9c6f4b770d254d94f0d" title="rflu_sype_addvirtualcells" alt="" coords="704,5,869,32"/>
-<area shape="rect" id="node5" href="$rflupart_8F90.html#ac38eb419b65552c39bb418e806784f69" title="rflupart" alt="" coords="918,5,981,32"/>
-<area shape="rect" id="node6" href="$utilities_2rocflu_2part_2main_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1029,5,1080,32"/>
-</map>

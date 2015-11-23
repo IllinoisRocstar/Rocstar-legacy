@@ -1,7 +1,0 @@
-<map id="get_prev" name="get_prev">
-<area shape="rect" id="node2" href="$classHDS__accessor.html#a3f8daf32c954f78b7e250543e0ee4f22" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_prev_around_destination" alt="" coords="125,5,333,46"/>
-<area shape="rect" id="node3" href="$classHDS__accessor.html#a4c2c6c968f1d6f54d33584e9f96b6a67" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_prev_around_origin" alt="" coords="141,70,317,111"/>
-<area shape="rect" id="node4" href="$classOverlay.html#a41c1d5ad91477125ab8d20fdf2653724" title="Overlay::intersect_link" alt="" coords="153,136,305,163"/>
-<area shape="rect" id="node5" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="381,129,507,170"/>
-<area shape="rect" id="node6" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="555,136,672,163"/>
-</map>

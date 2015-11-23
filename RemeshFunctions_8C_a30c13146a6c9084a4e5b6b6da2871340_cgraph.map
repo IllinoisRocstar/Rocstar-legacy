@@ -1,6 +1,0 @@
-<map id="TRAIL_RemeshInitFluSurfData" name="TRAIL_RemeshInitFluSurfData">
-<area shape="rect" id="node2" href="$TRAIL__Flu_8H.html#ac7e0805ebf9b109cc2059e8e6330d7e6" title="TRAIL_FluInitSurfSoln" alt="" coords="513,12,666,39"/>
-<area shape="rect" id="node5" href="$TRAIL__Remesh_8H.html#a30c13146a6c9084a4e5b6b6da2871340" title="TRAIL_RemeshInitFluSurfData" alt="" coords="259,49,463,76"/>
-<area shape="rect" id="node3" href="$TRAIL__Flu_8H.html#a7e880c191dc2a07dcc0028d34fe64f9b" title="TRAIL_FluResizeSurfSoln" alt="" coords="715,12,891,39"/>
-<area shape="rect" id="node4" href="$classGEM__DomainBoundary.html#a07d2d16754ec3637e6a5fb7712903238" title="GEM_DomainBoundary\l::NNodes" alt="" coords="939,5,1098,46"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="AllGatherMO" name="AllGatherMO">
-<area shape="rect" id="node2" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a9f039d75c1cb0fb7a3daedc026228478" title="_GatherMOV" alt="" coords="152,5,251,32"/>
-<area shape="rect" id="node4" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a613f9cb226d1718e0569eec5ea1212b5" title="Gather" alt="" coords="416,31,477,57"/>
-<area shape="rect" id="node3" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#ac14d54654ce657276552aa315da5ab37" title="Gatherv" alt="" coords="299,5,367,32"/>
-<area shape="rect" id="node5" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#a575c1da8fd55deeeb351cb509ddd3dda" title="Rank" alt="" coords="525,5,579,32"/>
-<area shape="rect" id="node6" href="$classIRAD_1_1Comm_1_1CommunicatorObject.html#af40990b9bd3d70d30e8ce7cdda1ad56f" title="Size" alt="" coords="528,56,576,83"/>
-</map>

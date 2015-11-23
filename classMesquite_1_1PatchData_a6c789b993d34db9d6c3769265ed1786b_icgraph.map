@@ -1,9 +1,0 @@
-<map id="type" name="type">
-<area shape="rect" id="node2" href="$classMesquite_1_1MeshSet.html#aa2332a8923a9e878e7ecb55bbe16c1db" title="Updates the coordinates in the underlying mesh with the coordinates stored in PatchData. " alt="" coords="102,70,245,111"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a9dbce5895323bbf4c3301494d899de76" title="Updates the underlying mesh (the Mesquite::Mesh implementation) with new node coordinates and flag va..." alt="" coords="294,77,394,104"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1MeanMidNodeMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="This is the &quot;run&quot; function of PatchDataUser. It can do anything really. " alt="" coords="443,5,645,46"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshTransform.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Loop over the mesh and perform the affine transformation. " alt="" coords="457,70,631,111"/>
-<area shape="rect" id="node6" href="$classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Improves the quality of the MeshSet, calling some methods specified in a class derived from VertexMov..." alt="" coords="465,135,623,177"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1ShapeImprovementWrapper.html#a52b954daacf72db4a8b0b8811e81bbb0" title="run_instructions runs the wrapper on the given MeshSet. " alt="" coords="694,135,890,177"/>
-<area shape="rect" id="node8" href="$classRocmop.html#a2dbb41ea0da20e141ec61d8d4a726ddf" title="Smooth the panes of the working window using MESQUITE. " alt="" coords="939,143,1122,169"/>
-</map>

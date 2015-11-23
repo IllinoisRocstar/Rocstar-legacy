@@ -1,7 +1,0 @@
-<map id="reduce_coordinates_to_all" name="reduce_coordinates_to_all">
-<area shape="rect" id="node2" href="$classHDS__accessor.html#a71b1fc8c21f6fe8e57465aeb3250345f" title="HDS_accessor::get_primary" alt="" coords="189,5,376,32"/>
-<area shape="rect" id="node3" href="$classRFC__Pane__overlay.html#ac4c82a127856b6bc6092e299738dae65" title="RFC_Pane_overlay::hds" alt="" coords="200,56,365,83"/>
-<area shape="rect" id="node4" href="$classRFC__Window__derived.html#a8b62416fb3158e5a2a1e8a0b2b75560d" title="Get a reference to the pane with give id pid. " alt="" coords="203,107,363,163"/>
-<area shape="rect" id="node5" href="$classVertex__overlay.html#a75cdd043830d07c6068d1f272f62287b" title="Vertex_overlay::point" alt="" coords="210,187,355,213"/>
-<area shape="rect" id="node6" href="$classRFC__Pane__base.html#a35a62313d45990cfa4cab8caa1dfbff6" title="The total number of nodes in the pane. " alt="" coords="205,238,360,279"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="artificialdamping" name="artificialdamping">
-<area shape="rect" id="node2" href="$Handle_8h.html#a459850cd445841d238d0af12068f45a3" title="id" alt="" coords="189,5,227,32"/>
-<area shape="rect" id="node3" href="$v3d8__me_8f90.html#a283104d2eeab4a8a9dc86594abef11f4" title="invert3x3" alt="" coords="171,56,245,83"/>
-<area shape="rect" id="node6" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="185,107,231,133"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1Matrix3D.html#a0c4493a5d4723940d60164428f11adc3" title="Sets all entries to zero (more efficient than assignement). " alt="" coords="293,19,429,61"/>
-<area shape="rect" id="node5" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="324,85,399,112"/>
-</map>

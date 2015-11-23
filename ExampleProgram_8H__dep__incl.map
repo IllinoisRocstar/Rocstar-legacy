@@ -1,6 +1,0 @@
-<map id="ExampleProgram.H" name="ExampleProgram.H">
-<area shape="rect" id="node2" href="$ExampleParallelProgram_8C.html" title="Example parallel program. " alt="" coords="5,80,184,107"/>
-<area shape="rect" id="node3" href="$ExampleSerialProgram_8C.html" title="Example serial program. " alt="" coords="209,80,377,107"/>
-<area shape="rect" id="node4" href="$pepi_8C.html" title="Main for example parallel program. " alt="" coords="402,80,461,107"/>
-<area shape="rect" id="node5" href="$sep_8C.html" title="Main for example serial program. " alt="" coords="486,80,543,107"/>
-</map>

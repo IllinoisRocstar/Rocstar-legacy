@@ -1,9 +1,0 @@
-<map id="_sleep" name="_sleep">
-<area shape="rect" id="node2" href="$namespacecimg__library_1_1cimg.html#a3c8917c0f12139bff6de6e3e45fc5b77" title="Wait for a certain number of milliseconds since the last call. " alt="" coords="179,100,226,127"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImgDisplay.html#a79669a0b7bdc65aff8313c590c7faab0" title="Synchronized waiting function. Same as cimg::wait(). " alt="" coords="115,151,291,193"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#ac1b0fa3e83defeb353d65e7094b3caa8" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display" alt="" coords="365,5,497,46"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a68ac25d3fda66263ff7b2d4a481b99d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display\l_object3d" alt="" coords="365,71,497,127"/>
-<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#ab470ff84bcac27328430e271067570bd" title="cimg_library::CImg\l\&lt; uintT \&gt;::_get_select" alt="" coords="355,151,506,193"/>
-<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#a62805bf0845c650a457cd78b3cd6488a" title="Display a dialog box, where a user can click standard buttons. " alt="" coords="403,217,459,244"/>
-<area shape="rect" id="node8" href="$structcimg__library_1_1CImg.html#a2b77e436a48fd24c423e924c2dae4072" title="Select sub&#45;graph in a graph. " alt="" coords="339,269,522,310"/>
-</map>

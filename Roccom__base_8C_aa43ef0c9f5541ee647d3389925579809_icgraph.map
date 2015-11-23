@@ -1,4 +1,0 @@
-<map id="get_wtime" name="get_wtime">
-<area shape="rect" id="node2" href="$classRoccom__base.html#aa5691bb8a33c7fddd9e2708b36d6012b" title="Invoke a function with given arguments. " alt="" coords="136,12,323,39"/>
-<area shape="rect" id="node3" href="$classRoccom__base.html#a6f1e9cf115ad501e54c6d56b895c3502" title="Nonblockingly invoke a function with given arguments. " alt="" coords="371,5,509,46"/>
-</map>

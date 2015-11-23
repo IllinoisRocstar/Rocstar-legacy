@@ -1,8 +1,0 @@
-<map id="UserScheduler" name="UserScheduler">
-<area shape="rect" id="node2" href="$classScheduler.html" title="Scheduler" alt="" coords="101,411,181,437"/>
-<area shape="rect" id="node3" title="STL class. " alt="" coords="49,289,103,316"/>
-<area shape="rect" id="node4" title="STL class. " alt="" coords="5,187,147,213"/>
-<area shape="rect" id="node6" href="$structScheduler_1_1ActionItem.html" title="ActionItem" alt="" coords="397,411,483,437"/>
-<area shape="rect" id="node8" title="STL class. " alt="" coords="457,96,548,123"/>
-<area shape="rect" id="node10" href="$classAction.html" title="Action" alt="" coords="411,289,469,316"/>
-</map>

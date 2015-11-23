@@ -1,9 +1,0 @@
-<map id="rflo_blockskewedcell" name="rflo_blockskewedcell">
-<area shape="rect" id="node2" href="$classrflo__modgridregionshape.html#a6bfc1824471a17d9b4799d6812ebdb72" title="rflo_findfunkyblocks" alt="" coords="197,31,336,57"/>
-<area shape="rect" id="node3" href="$RFLO__GetGeometry_8F90.html#ae1196d91610c149949cfbd4c4b58fca2" title="rflo_getgeometry" alt="" coords="385,31,503,57"/>
-<area shape="rect" id="node4" href="$RFLO__InitFlowSolver_8F90.html#a8df8edf9779f18ecb2a16e732849794b" title="rflo_initflowsolver" alt="" coords="552,31,675,57"/>
-<area shape="rect" id="node5" href="$standalone_2Main_8F90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="765,5,816,32"/>
-<area shape="rect" id="node6" href="$Rocflo__load__module_8F90.html#aa074e41fe57cac388dc65b3398f25765" title="rocflo_load_module" alt="" coords="723,56,858,83"/>
-<area shape="rect" id="node7" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="907,56,1072,83"/>
-<area shape="rect" id="node8" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="1120,56,1275,83"/>
-</map>

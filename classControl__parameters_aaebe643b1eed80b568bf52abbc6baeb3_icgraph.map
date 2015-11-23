@@ -1,7 +1,0 @@
-<map id="update_start_time" name="update_start_time">
-<area shape="rect" id="node2" href="$classCoupling.html#a8cd3164575bb5cfde01584917503b1dc" title="Coupling::read_restart_info" alt="" coords="397,5,576,32"/>
-<area shape="rect" id="node5" href="$classCoupling.html#a3743217a687c638a600341721e219b55" title="Coupling::restart_at_time" alt="" coords="181,56,349,83"/>
-<area shape="rect" id="node3" href="$rocstar_8C.html#af2f826eaa12e02793cedd7fb3742ce79" title="rocstar_driver" alt="" coords="624,56,725,83"/>
-<area shape="rect" id="node4" href="$rocstar_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="773,56,824,83"/>
-<area shape="rect" id="node6" href="$classCoupling.html#a952d598b43dfc5742886e9e747aa7ca1" title="Coupling::ProcessInterrupt" alt="" coords="398,56,575,83"/>
-</map>

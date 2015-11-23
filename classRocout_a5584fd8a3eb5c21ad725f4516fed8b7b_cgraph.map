@@ -1,7 +1,0 @@
-<map id="finalize" name="finalize">
-<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="117,5,264,32"/>
-<area shape="rect" id="node4" href="$roccom__c_09_09_8h.html#a51cd80e32371211a6a01185579eff4ee" title="COM_get_object" alt="" coords="131,56,251,83"/>
-<area shape="rect" id="node5" href="$classHDF4.html#a32d626626eee0bc4ade146973f6abb1c" title="Destroy the I/O thread. " alt="" coords="137,107,244,133"/>
-<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="312,31,440,57"/>
-<area shape="rect" id="node6" href="$classHDF4.html#a9b848654502024dde7e46ab002f2c9dd" title="Terminate the I/O thread. " alt="" coords="315,107,437,133"/>
-</map>

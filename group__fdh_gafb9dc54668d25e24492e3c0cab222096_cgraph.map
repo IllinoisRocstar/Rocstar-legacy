@@ -1,6 +1,0 @@
-<map id="is_feature_1" name="is_feature_1">
-<area shape="rect" id="node2" href="$classRFC__Pane__overlay.html#afb9dc54668d25e24492e3c0cab222096" title="RFC_Pane_overlay::is\l_feature_1" alt="" coords="153,5,308,46"/>
-<area shape="rect" id="node4" href="$classVertex__overlay.html#a19d9c37a6dfdbf650d75a844710c9207" title="Vertex_overlay::pane" alt="" coords="158,71,303,97"/>
-<area shape="rect" id="node5" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="147,121,314,148"/>
-<area shape="rect" id="node3" href="$classRFC__Pane__overlay.html#a8ec09b1da2ce631bfbca1670669cc963" title="RFC_Pane_overlay::get\l_index" alt="" coords="363,5,525,46"/>
-</map>

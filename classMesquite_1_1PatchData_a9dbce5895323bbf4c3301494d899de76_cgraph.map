@@ -1,6 +1,0 @@
-<map id="update_mesh" name="update_mesh">
-<area shape="rect" id="node2" href="$classMesquite_1_1MeshSet.html#aa2332a8923a9e878e7ecb55bbe16c1db" title="Updates the coordinates in the underlying mesh with the coordinates stored in PatchData. " alt="" coords="155,63,298,105"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1EntityIterator.html#a456deebf707976f468785e7b02fdd059" title="Returns false until the iterator has been advanced PAST the last entity. " alt="" coords="347,5,506,46"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1PatchData.html#a7619ea708c552f119c4c1b9f35af8522" title="Get number of nodes (vertex + higher&#45;order nodes) " alt="" coords="382,71,471,97"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1PatchData.html#a6c789b993d34db9d6c3769265ed1786b" title="type" alt="" coords="403,121,450,148"/>
-</map>

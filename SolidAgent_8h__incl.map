@@ -1,8 +1,0 @@
-<map id="SolidAgent.h" name="SolidAgent.h">
-<area shape="rect" id="node2" href="$Agent_8h.html" title="Agent.h" alt="" coords="132,80,199,107"/>
-<area shape="rect" id="node5" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="174,155,249,181"/>
-<area shape="rect" id="node9" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="255,304,333,331"/>
-<area shape="rect" id="node6" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="156,229,247,256"/>
-<area shape="rect" id="node7" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="27,304,141,331"/>
-<area shape="rect" id="node8" href="$FC_8h.html" title="FC.h" alt="" coords="59,379,109,405"/>
-</map>

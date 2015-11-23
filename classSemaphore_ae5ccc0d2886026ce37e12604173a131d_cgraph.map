@@ -1,5 +1,0 @@
-<map id="Wait" name="Wait">
-<area shape="rect" id="node2" href="$classMutex.html#af4de80be5980dfc1a6702beade906a33" title="Mutex::Lock" alt="" coords="113,5,207,32"/>
-<area shape="rect" id="node3" href="$classMutex.html#ab43773e84c83d80998676d9c62717a79" title="Mutex::Unlock" alt="" coords="107,56,213,83"/>
-<area shape="rect" id="node4" href="$classCondition.html#a783cd177a25e02d90f6e558d7c5f6dee" title="Condition::Wait" alt="" coords="104,107,216,133"/>
-</map>

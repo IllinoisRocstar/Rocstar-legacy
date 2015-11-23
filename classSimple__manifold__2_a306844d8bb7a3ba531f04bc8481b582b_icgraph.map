@@ -1,7 +1,0 @@
-<map id="get_incident_edge" name="get_incident_edge">
-<area shape="rect" id="node2" href="$classNode.html#a0500c06abc68c6b8484b25ec347b5c2a" title="Get an incident halfedge originated from the node. " alt="" coords="182,41,293,68"/>
-<area shape="rect" id="node3" href="$classWindow__manifold__2.html#aad647356fbd9bd7b27031859731bfaff" title="Determine the primary nodes for across&#45;pane access. " alt="" coords="341,5,488,46"/>
-<area shape="rect" id="node6" href="$classNode.html#aa126fd94949c810d24869ad04cd97e15" title="Is the node on the physical boundary? " alt="" coords="357,71,472,97"/>
-<area shape="rect" id="node4" href="$classWindow__manifold__2.html#a90788e8f1ad84518370283bfdf635e7c" title="Initialize the manifold by inheriting the given mesh. " alt="" coords="537,12,701,39"/>
-<area shape="rect" id="node5" href="$classWindow__manifold__2.html#ad53f16aa8ca835f7435d37af4732bdbd" title="Construct a Window_manifold_2 from a given window. " alt="" coords="749,5,896,46"/>
-</map>

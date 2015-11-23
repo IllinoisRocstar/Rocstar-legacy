@@ -1,5 +1,0 @@
-<map id="draw_circle" name="draw_circle">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#acbfab2bdc28e9a3e445bec479f47322b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_object3d" alt="" coords="142,5,317,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a1e9ccb527da7e4c3faabcb2d31bbd482" title="Draw a filled circle. " alt="" coords="155,70,304,111"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a8c3dec0cd1433a84dbcb51bad950c0b9" title="Draw a 1D graph on the instance image. " alt="" coords="154,135,305,177"/>
-</map>

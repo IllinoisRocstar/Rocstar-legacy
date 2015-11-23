@@ -1,7 +1,0 @@
-<map id="get_primary" name="get_primary">
-<area shape="rect" id="node2" href="$classHDS__accessor.html#aec52c42d686b45071609bd0812e6ad86" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_vertex" alt="" coords="145,5,319,46"/>
-<area shape="rect" id="node3" href="$classHDS__accessor.html#a541e22567f6cb479647631ebddab3c17" title="HDS_accessor\&lt; Tag_true\l \&gt;::is_feature_0" alt="" coords="145,70,319,111"/>
-<area shape="rect" id="node4" href="$classHDS__accessor.html#a354e718ee1dd5a8669700be693afc762" title="HDS_accessor\&lt; Tag_true\l \&gt;::is_on_feature" alt="" coords="145,135,319,177"/>
-<area shape="rect" id="node5" href="$group__ntc.html#gaa2576922e2451c82be9775526d133835" title="Dump out the 0&#45; and 1&#45;features in Tecplot format into files &lt;name&gt;f0.plt, &lt;name&gt;f1.plt, respectively. " alt="" coords="155,201,309,242"/>
-<area shape="rect" id="node6" href="$group__ntc.html#gae21b9f36ccab3c6ef453e4e333b28dfa" title="RFC_Window_overlay\l::reduce_coordinates\l_to_all" alt="" coords="155,267,309,323"/>
-</map>

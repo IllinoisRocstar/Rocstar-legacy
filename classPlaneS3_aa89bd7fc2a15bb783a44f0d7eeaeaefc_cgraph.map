@@ -1,8 +1,0 @@
-<map id="PlaneS3" name="PlaneS3">
-<area shape="rect" id="node2" href="$classVectorS3.html#a242e8b7096a678fdbb08e337420acb84" title="VectorS3::x" alt="" coords="125,5,216,32"/>
-<area shape="rect" id="node3" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="129,56,212,83"/>
-<area shape="rect" id="node4" href="$classVectorS3.html#ae367a52fcb29c7638852621653fdb407" title="VectorS3::y" alt="" coords="125,107,216,133"/>
-<area shape="rect" id="node5" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="129,157,212,184"/>
-<area shape="rect" id="node6" href="$classVectorS3.html#a585581369640d7edc6c5a40277fba5d7" title="VectorS3::z" alt="" coords="125,208,216,235"/>
-<area shape="rect" id="node7" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="129,259,212,285"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="FILEEXISTS" name="FILEEXISTS">
-<area shape="rect" id="node2" href="$namespaceGridConversion.html#a7fee355c66fbd50914c4d5dbb8007fa7" title="Creates a new project from an GridConversion base. " alt="" coords="153,5,346,32"/>
-<area shape="rect" id="node4" href="$namespaceIRAD.html#a9e407584069166cbdd9ce1ed6e4f71d6" title="Runs test programs and scripts through a standard interface. " alt="" coords="193,56,306,83"/>
-<area shape="rect" id="node6" href="$namespaceIRAD_1_1Sys.html#a6332387efdb877c59e0aab5e39f45074" title="SafeRemove" alt="" coords="200,107,299,133"/>
-<area shape="rect" id="node3" href="$MakeProject_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="395,5,445,32"/>
-<area shape="rect" id="node5" href="$RunTest_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="395,56,445,83"/>
-</map>

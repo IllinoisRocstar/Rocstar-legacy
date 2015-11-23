@@ -1,8 +1,0 @@
-<map id="main" name="main">
-<area shape="rect" id="node2" href="$clop_8H.html#a15470eec8a7f7caa27ecc80b63a764f6" title="AddOp" alt="" coords="121,5,183,32"/>
-<area shape="rect" id="node3" href="$clop_8H.html#a12103c36a53978914a0264ddaa687e92" title="GetOp" alt="" coords="122,56,182,83"/>
-<area shape="rect" id="node4" href="$utilities_2rocflu_2conv_2main_8C.html#a9903bc08dadcc7693122af6a9685abcf" title="RFLUCONV" alt="" coords="104,107,200,133"/>
-<area shape="rect" id="node5" href="$clop_8H.html#af1f9f1f226a774401d2d86e729f96982" title="stripdir" alt="" coords="121,157,183,184"/>
-<area shape="rect" id="node6" href="$standalone_2main_8C.html#a45f7c4e47715aec55224770399ad8eb2" title="Usage" alt="" coords="122,208,182,235"/>
-<area shape="rect" id="node7" href="$clop_8H.html#aa7db459ce89e6cd3ae55b5a501514555" title="Vectize" alt="" coords="119,259,185,285"/>
-</map>

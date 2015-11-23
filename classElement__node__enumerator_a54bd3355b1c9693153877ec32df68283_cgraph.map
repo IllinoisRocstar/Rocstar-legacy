@@ -1,5 +1,0 @@
-<map id="Element_node_enumerator" name="Element_node_enumerator">
-<area shape="rect" id="node2" href="$classPane.html#afc3d6a08a6436efe1af8e83699d4ca53" title="Is mesh of the pane structured? " alt="" coords="377,21,511,47"/>
-<area shape="rect" id="node3" href="$classPane.html#a78f646f49fb83340032b735b056a19d3" title="Get the number of nodes in i&#45;dimension if the mesh is structured. " alt="" coords="233,21,327,47"/>
-<area shape="rect" id="node4" href="$classPane.html#aceba035151479eca5c69f9c88563e153" title="Get the number of nodes in j&#45;dimension if the mesh is structured. " alt="" coords="233,71,327,98"/>
-</map>

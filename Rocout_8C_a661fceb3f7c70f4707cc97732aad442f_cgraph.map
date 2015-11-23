@@ -1,8 +1,0 @@
-<map id="Rocout_unload_module" name="Rocout_unload_module">
-<area shape="rect" id="node2" href="$classRocout.html#a5584fd8a3eb5c21ad725f4516fed8b7b" title="Finalize the module by deregistering it from Roccom. " alt="" coords="214,56,327,83"/>
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a51cd80e32371211a6a01185579eff4ee" title="COM_get_object" alt="" coords="389,5,509,32"/>
-<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="376,56,523,83"/>
-<area shape="rect" id="node6" href="$classHDF4.html#a32d626626eee0bc4ade146973f6abb1c" title="Destroy the I/O thread. " alt="" coords="396,107,503,133"/>
-<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="571,31,699,57"/>
-<area shape="rect" id="node7" href="$classHDF4.html#a9b848654502024dde7e46ab002f2c9dd" title="Terminate the I/O thread. " alt="" coords="573,107,696,133"/>
-</map>

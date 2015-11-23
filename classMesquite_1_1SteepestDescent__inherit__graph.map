@@ -1,5 +1,0 @@
-<map id="SteepestDescent" name="SteepestDescent">
-<area shape="rect" id="node2" href="$classMesquite_1_1VertexMover.html" title="VertexMover" alt="" coords="19,155,115,181"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1QualityImprover.html" title="Base class for all quality improvers. Mote that the PatchData settings are inherited from the PathDat..." alt="" coords="9,80,124,107"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1PatchDataUser.html" title="This should be the parent class of all algorithms retrieving information from a MeshSet object..." alt="" coords="11,5,123,32"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="getNodesSharedWithRemotePane" name="getNodesSharedWithRemotePane">
-<area shape="rect" id="node2" href="$hdf2pltV2_8C.html#a6eae49536b45a5366bb1d63245a07e98" title="This method is called from getPaneConnectivity() to mask the flag the mesh points that are shared on ..." alt="" coords="277,5,368,32"/>
-<area shape="rect" id="node3" href="$hdf2pltV2_8C.html#a451ab3ab1211e3b77df3313d30b035b9" title="Computes the pane connectivity using Rocmap. " alt="" coords="417,5,559,32"/>
-<area shape="rect" id="node4" href="$hdf2pltV2_8C.html#af930a93afa8fd632cb87ca273362c742" title="Prints the window with the given name. " alt="" coords="609,5,703,32"/>
-<area shape="rect" id="node5" href="$hdf2pltV2_8C.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Program main. " alt="" coords="752,5,803,32"/>
-</map>

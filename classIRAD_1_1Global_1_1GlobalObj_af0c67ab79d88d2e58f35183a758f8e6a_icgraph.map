@@ -1,8 +1,0 @@
-<map id="FName" name="FName">
-<area shape="rect" id="node2" href="$classIRAD_1_1Global_1_1GlobalObj.html#abc35065c066d751a800b169ad565d005" title="DeRegister will pop from the stack only. " alt="" coords="128,5,216,32"/>
-<area shape="rect" id="node3" href="$classIRAD_1_1Global_1_1GlobalObj.html#a6abe3763e61b3cb7c5bf1fc5f7f5a747" title="FunctionEntry updates the Stack as well as the Profiler. " alt="" coords="121,56,223,83"/>
-<area shape="rect" id="node5" href="$classIRAD_1_1Global_1_1GlobalObj.html#a5c05946a616967b3ee6fdc755c31e33c" title="FunctionExit updates the Stack as well as the Profiler. " alt="" coords="125,107,219,133"/>
-<area shape="rect" id="node6" href="$classIRAD_1_1Global_1_1GlobalObj.html#afada907dd3acaaae2fae93340ba92d01" title="Register will push to the Stack only. " alt="" coords="137,157,207,184"/>
-<area shape="rect" id="node7" href="$classIRAD_1_1Global_1_1GlobalObj.html#a847d2f81d14b0005954aeb0d817a2187" title="SetName" alt="" coords="133,208,211,235"/>
-<area shape="rect" id="node4" href="$flotsam_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="272,81,323,108"/>
-</map>

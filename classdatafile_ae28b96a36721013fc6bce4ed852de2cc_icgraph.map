@@ -1,4 +1,0 @@
-<map id="error_out" name="error_out">
-<area shape="rect" id="node2" href="$classtecplot__data.html#ad7c704b34912678d95c13243cacf9d7f" title="Parse the tecplot file. " alt="" coords="307,5,440,32"/>
-<area shape="rect" id="node3" href="$classtecplot__data.html#aa9a5cf38353ea463d298c0ea21ffc299" title="Log an error message with appended zone information so the error can be located. " alt="" coords="129,27,258,69"/>
-</map>

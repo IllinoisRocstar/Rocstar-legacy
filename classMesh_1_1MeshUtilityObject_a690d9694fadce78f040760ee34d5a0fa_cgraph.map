@@ -1,7 +1,0 @@
-<map id="FormConnectivity" name="FormConnectivity">
-<area shape="rect" id="node2" href="$classMesh_1_1MeshUtilityObject.html#aaaa6c4a41ae628a7697343a69b2229a0" title="ECon" alt="" coords="219,5,274,32"/>
-<area shape="rect" id="node3" href="$classMesh_1_1Connectivity.html#a41299e7e87f3fea27cc28c5ea973c879" title="Mesh::Connectivity\l::Inverse" alt="" coords="179,57,314,98"/>
-<area shape="rect" id="node6" href="$classMesh_1_1MeshUtilityObject.html#a4ee6fd10b4878cb005f9eb3e11508cdc" title="NC" alt="" coords="225,123,268,149"/>
-<area shape="rect" id="node4" href="$classMesh_1_1Connectivity.html#a07c8a0d2aa0388b9eff23a632c27c68d" title="Mesh::Connectivity\l::Resize" alt="" coords="363,23,498,65"/>
-<area shape="rect" id="node5" href="$classMesh_1_1Connectivity.html#a93098eecf20d66124bd7bc8370ebe52e" title="Mesh::Connectivity\l::Sync" alt="" coords="363,89,498,130"/>
-</map>

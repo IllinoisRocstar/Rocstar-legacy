@@ -1,7 +1,0 @@
-<map id="is_physical_border" name="is_physical_border">
-<area shape="rect" id="node2" href="$classRFC__Pane__overlay.html#a4cb3196028ce0c9e2bf48997cdf0d216" title="get_border_index" alt="" coords="207,5,329,32"/>
-<area shape="rect" id="node4" href="$classHalfedge__overlay.html#aa126fd94949c810d24869ad04cd97e15" title="Halfedge_overlay::is\l_border" alt="" coords="197,57,339,98"/>
-<area shape="rect" id="node5" href="$classVertex__overlay.html#a19d9c37a6dfdbf650d75a844710c9207" title="Vertex_overlay::pane" alt="" coords="195,123,341,149"/>
-<area shape="rect" id="node6" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="185,173,351,200"/>
-<area shape="rect" id="node3" href="$classRFC__Pane__overlay.html#ac4c82a127856b6bc6092e299738dae65" title="hds" alt="" coords="400,5,443,32"/>
-</map>

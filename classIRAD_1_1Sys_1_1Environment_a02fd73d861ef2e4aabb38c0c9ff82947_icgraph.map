@@ -1,8 +1,0 @@
-<map id="init" name="init">
-<area shape="rect" id="node2" href="$classIRAD_1_1Sys_1_1Environment.html#a1ec62cbee155c27f1f53b782f1a43793" title="ClearEnv" alt="" coords="103,5,179,32"/>
-<area shape="rect" id="node3" href="$classIRAD_1_1Sys_1_1Environment.html#a0218891863cc545c2dcfda23f64248bc" title="Environment" alt="" coords="94,56,189,83"/>
-<area shape="rect" id="node4" href="$classIRAD_1_1Sys_1_1Environment.html#a7560a4739600d80af1c9e53401c08c2c" title="PutEnv" alt="" coords="109,107,174,133"/>
-<area shape="rect" id="node5" href="$classIRAD_1_1Sys_1_1Environment.html#ac3c6292a931287d34f6e353524a6a3d0" title="Refresh" alt="" coords="107,157,175,184"/>
-<area shape="rect" id="node6" href="$classIRAD_1_1Sys_1_1Environment.html#af78fa588cafb948e3d3e800450bab81d" title="SetEnv" alt="" coords="109,208,174,235"/>
-<area shape="rect" id="node7" href="$classIRAD_1_1Sys_1_1Environment.html#a6e890cfe0aff0aacb3748f1ae1b746e7" title="UnSetEnv" alt="" coords="100,259,183,285"/>
-</map>

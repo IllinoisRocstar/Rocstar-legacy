@@ -1,7 +1,0 @@
-<map id="eval_angle" name="eval_angle">
-<area shape="rect" id="node2" href="$classFaceOffset__3.html#af6ea285d2c94a53c160dfe64ee44282e" title="Build the list of ridge nighbors and obtain a list of weak&#45;ended vertices Return the number of obscen..." alt="" coords="139,20,303,47"/>
-<area shape="rect" id="node5" href="$classFaceOffset__3.html#a932f06459b53d1207fdbf1d78a4a09c6" title="compute_anisotropic\l_vertex_centers" alt="" coords="353,70,495,111"/>
-<area shape="rect" id="node6" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="157,132,285,159"/>
-<area shape="rect" id="node3" href="$classFaceOffset__3.html#a3fb81b9009e23436007ccd5c6f0931e9" title="Filter out isolated ridge vertices and identify ridge edges. " alt="" coords="362,5,486,46"/>
-<area shape="rect" id="node4" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="545,77,647,104"/>
-</map>

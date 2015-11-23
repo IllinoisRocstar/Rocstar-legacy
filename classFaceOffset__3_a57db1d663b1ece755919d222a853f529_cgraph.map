@@ -1,6 +1,0 @@
-<map id="eval_angle" name="eval_angle">
-<area shape="rect" id="node2" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="157,12,285,39"/>
-<area shape="rect" id="node4" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="199,63,243,89"/>
-<area shape="rect" id="node5" href="$classVector__3.html#a7905d5be1116a4920d9e7b85b2ef8834" title="Vector_3::squared_norm" alt="" coords="139,113,303,140"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="353,5,485,46"/>
-</map>

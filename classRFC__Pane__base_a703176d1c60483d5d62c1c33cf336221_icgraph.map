@@ -1,7 +1,0 @@
-<map id="coincident" name="coincident">
-<area shape="rect" id="node2" href="$classRFC__Pane__base.html#a1ff8388b47d2adebed1ee5ebcc2cbeae" title="get_lvid" alt="" coords="136,41,203,68"/>
-<area shape="rect" id="node3" href="$classOverlay.html#a9da7a2ebf65083d900d07ae5f6b46d8f" title="Overlay::convert_nat\l_coordinates" alt="" coords="263,5,406,46"/>
-<area shape="rect" id="node6" href="$classRFC__Pane__base.html#af97a16d7f0c1b7e850f5981830dcd2d1" title="Take a subnode id and an element, return the natrual coordinates within the element. " alt="" coords="251,71,418,97"/>
-<area shape="rect" id="node4" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="467,12,645,39"/>
-<area shape="rect" id="node5" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="693,12,811,39"/>
-</map>

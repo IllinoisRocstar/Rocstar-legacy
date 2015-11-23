@@ -1,9 +1,0 @@
-<map id="get_point_of_subnode" name="get_point_of_subnode">
-<area shape="rect" id="node2" href="$classRFC__Pane__base.html#a5cc6b9e1a2c7a24c0001127dc0ab9605" title="coordinates" alt="" coords="247,5,337,32"/>
-<area shape="rect" id="node3" href="$classRFC__Pane__base.html#aabf7aa9dcaff7168e721970b59323766" title="Take a subface id and a local subnode id, return the natual coordinates of the subnode within the par..." alt="" coords="209,56,375,83"/>
-<area shape="rect" id="node4" href="$classElement__node__enumerator.html#a3b0965f57d58cd0e85fab4b12a9d6899" title="Number of edges per element. " alt="" coords="203,107,381,149"/>
-<area shape="rect" id="node7" href="$classElement__node__enumerator.html#a35a62313d45990cfa4cab8caa1dfbff6" title="Number of nodes per element. " alt="" coords="203,173,381,214"/>
-<area shape="rect" id="node5" href="$classPane.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Dimension of the pane. " alt="" coords="434,147,553,173"/>
-<area shape="rect" id="node6" href="$classConnectivity.html#a85e2c3a17c45bc48b5613929dedb216a" title="Get the number of edges per element of the current connectivity table. " alt="" coords="430,81,557,122"/>
-<area shape="rect" id="node8" href="$classConnectivity.html#a6b814939135364a0cd18ee54799897ee" title="Get the number of nodes per element of the current connectivity table. " alt="" coords="430,198,557,239"/>
-</map>

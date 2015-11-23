@@ -1,9 +1,0 @@
-<map id="GridConversion.C" name="GridConversion.C">
-<area shape="rect" id="node2" href="$DriverProgram_8H.html" title="GridConversion interface. " alt="" coords="1136,80,1256,107"/>
-<area shape="rect" id="node3" href="$Global_8H.html" title="Base global object header. " alt="" coords="932,155,1005,181"/>
-<area shape="rect" id="node29" href="$Profiler_8H.html" title="Performance Profiling interface definition. " alt="" coords="1574,229,1652,256"/>
-<area shape="rect" id="node4" href="$ComLine_8H.html" title="ComLineObject header. " alt="" coords="106,229,194,256"/>
-<area shape="rect" id="node10" href="$UnixUtils_8H.html" title="Unix System Tools interface. " alt="" coords="734,229,825,256"/>
-<area shape="rect" id="node22" href="$primitive__utilities_8H.html" title="Basic utility header. " alt="" coords="1284,229,1417,256"/>
-<area shape="rect" id="node25" href="$PrimitiveTypes_8H.html" title="Simple utility classes. " alt="" coords="1701,304,1824,331"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="collect_nodes" name="collect_nodes">
-<area shape="rect" id="node2" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="157,5,259,32"/>
-<area shape="rect" id="node3" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="159,56,257,83"/>
-<area shape="rect" id="node4" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="185,107,231,133"/>
-<area shape="rect" id="node5" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="187,157,229,184"/>
-</map>

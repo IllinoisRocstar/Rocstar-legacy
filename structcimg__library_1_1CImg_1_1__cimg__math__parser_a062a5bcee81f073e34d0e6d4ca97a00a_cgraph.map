@@ -1,5 +1,0 @@
-<map id="opcode" name="opcode">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#aa930a4b0563d7d0794661231310b36c4" title="Resize an image. " alt="" coords="118,5,250,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a90ca964ebcc1b02bbcde225edd49e812" title="Return the number of image buffer elements. " alt="" coords="118,70,250,111"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a7a1fbbf9bb23d01f64a8ca3bd06b7c0f" title="Unroll all images values into a one&#45;column vector. " alt="" coords="118,135,250,177"/>
-</map>

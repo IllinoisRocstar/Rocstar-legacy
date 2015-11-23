@@ -1,8 +1,0 @@
-<map id="scaled_distance_to_directionC3" name="scaled_distance_to_directionC3">
-<area shape="rect" id="node2" href="$predicates_2kernel__ftC3_8h.html#a1ef6db02225522b85dbb76786a55f830" title="cmp_signed_dist_to\l_directionC3" alt="" coords="189,70,328,111"/>
-<area shape="rect" id="node3" href="$distance__predicatesS3_8h.html#a9f92b8425f9d2f78ce44bc8b92c6d3c5" title="cmp_signed_dist_to\l_plane" alt="" coords="384,5,523,46"/>
-<area shape="rect" id="node4" href="$predicates_2kernel__ftC3_8h.html#ab66b6a7dc94756818698f62e2311eae7" title="has_larger_signed_dist\l_to_directionC3" alt="" coords="376,70,531,111"/>
-<area shape="rect" id="node6" href="$predicates_2kernel__ftC3_8h.html#a9d56dd3218c82f4fe2f637ee4eee462c" title="has_smaller_signed\l_dist_to_directionC3" alt="" coords="383,135,524,177"/>
-<area shape="rect" id="node5" href="$distance__predicatesS3_8h.html#a297a46319b1a2fb0a93f7b53f9e306d2" title="has_larger_signed_dist\l_to_plane" alt="" coords="579,70,733,111"/>
-<area shape="rect" id="node7" href="$distance__predicatesS3_8h.html#af0daba215b97096374dc83c52c58e155" title="has_smaller_signed\l_dist_to_plane" alt="" coords="587,135,725,177"/>
-</map>

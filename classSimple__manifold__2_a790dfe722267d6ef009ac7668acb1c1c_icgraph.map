@@ -1,4 +1,0 @@
-<map id="get_prev_ghost_edge_interior" name="get_prev_ghost_edge_interior">
-<area shape="rect" id="node2" href="$classSimple__manifold__2.html#a5eec9a63bacfe67ed3ad93b2c4b20700" title="Get the ID of the next ghost edge of the element or along the boundary. " alt="" coords="200,5,347,32"/>
-<area shape="rect" id="node3" href="$classSimple__manifold__2.html#a987d8bf8fa3ba6a3bb530eb2bb54271a" title="Get the ID of the previous ghost edge of the element or along the boundary. " alt="" coords="200,56,347,83"/>
-</map>

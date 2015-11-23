@@ -1,4 +1,0 @@
-<map id="is_border_node" name="is_border_node">
-<area shape="rect" id="node2" href="$classSimple__manifold__2.html#ab0d9ef8fcaf5c4306b57958fadf8c8f1" title="Is a given edge on the boundary of the whole pane? " alt="" coords="166,5,277,32"/>
-<area shape="rect" id="node3" href="$classSimple__manifold__2.html#ab10e70cbf6e6aeedb1e3dd1cab81ebf8" title="Is the given node a ghost node? " alt="" coords="168,56,275,83"/>
-</map>

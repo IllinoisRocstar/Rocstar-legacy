@@ -1,5 +1,0 @@
-<map id="init_function_handles" name="init_function_handles">
-<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="197,5,373,32"/>
-<area shape="rect" id="node4" href="$roccom__c_09_09_8h.html#a475ddf97ad5873782ae1481718f2274b" title="COM_set_profiling_barrier" alt="" coords="199,56,372,83"/>
-<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="421,31,549,57"/>
-</map>

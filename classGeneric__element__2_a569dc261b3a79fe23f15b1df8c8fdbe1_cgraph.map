@@ -1,8 +1,0 @@
-<map id="gradients" name="gradients">
-<area shape="rect" id="node2" href="$classGeneric__element__2.html#ab57f1def40d75fc595395156f3e20237" title="Evaluates the Jacobian at a given point. " alt="" coords="153,5,228,32"/>
-<area shape="rect" id="node3" href="$classGeneric__element__2.html#ae42ad92b416ae6097730743fc323b10a" title="Evaluates the derivatives of the shape functions. " alt="" coords="129,56,253,83"/>
-<area shape="rect" id="node4" href="$classGeneric__element__2.html#a444949b3955cec847d77760a0cecaabb" title="solve" alt="" coords="164,107,217,133"/>
-<area shape="rect" id="node5" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="302,56,466,83"/>
-<area shape="rect" id="node6" href="$classVector__3.html#a7905d5be1116a4920d9e7b85b2ef8834" title="Vector_3::squared_norm" alt="" coords="302,107,466,133"/>
-<area shape="rect" id="node7" href="$classGeneric__element__2.html#a90701a7c4656a0296943ce2c7521ffe2" title="Number of nodes. " alt="" coords="331,157,437,184"/>
-</map>

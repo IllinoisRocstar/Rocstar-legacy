@@ -1,5 +1,0 @@
-<map id="load_rocmap" name="load_rocmap">
-<area shape="rect" id="node2" href="$classFluidPropagateSurface.html#a4450dac52a23ef113d95f80d5ed1a1a0" title="FluidPropagateSurface\l::init" alt="" coords="149,5,304,46"/>
-<area shape="rect" id="node3" href="$classComputePconn.html#a4450dac52a23ef113d95f80d5ed1a1a0" title="ComputePconn::init" alt="" coords="158,71,295,97"/>
-<area shape="rect" id="node4" href="$classSolidPropagateSurface__ALE.html#a4450dac52a23ef113d95f80d5ed1a1a0" title="SolidPropagateSurface\l_ALE::init" alt="" coords="149,122,304,163"/>
-</map>

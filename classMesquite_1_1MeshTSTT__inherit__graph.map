@@ -1,4 +1,0 @@
-<map id="MeshTSTT" name="MeshTSTT">
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshTSTTImpl.html" title="Implementation of MeshTSTT. " alt="" coords="5,155,117,181"/>
-<area shape="rect" id="node2" href="$classMesquite_1_1Mesh.html" title="A Mesquite::Mesh is a collection of mesh elements which are composed of mesh vertices. Intermediate objects are not accessible through this interface (where intermediate objects include things like the faces of a hex, or an element&#39;s edges). " alt="" coords="34,5,88,32"/>
-</map>

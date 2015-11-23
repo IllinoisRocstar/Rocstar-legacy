@@ -1,7 +1,0 @@
-<map id="compare_lexicographically_xyz" name="compare_lexicographically_xyz">
-<area shape="rect" id="node2" href="$predicates_2kernel__ftC3_8h.html#a37f7d792553e0774fd682390c29f90d0" title="compare_lexicographically\l_xyzC3" alt="" coords="257,5,431,46"/>
-<area shape="rect" id="node4" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="303,71,385,97"/>
-<area shape="rect" id="node5" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="303,121,385,148"/>
-<area shape="rect" id="node6" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="303,172,385,199"/>
-<area shape="rect" id="node3" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="481,12,597,39"/>
-</map>

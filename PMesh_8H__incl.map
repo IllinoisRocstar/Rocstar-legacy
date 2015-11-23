@@ -1,7 +1,0 @@
-<map id="PMesh.H" name="PMesh.H">
-<area shape="rect" id="node2" href="$Mesh_8H.html" title="Mesh Stuff. " alt="" coords="189,80,256,107"/>
-<area shape="rect" id="node21" href="$COMM_8H.html" title="Communication utilities. " alt="" coords="409,80,487,107"/>
-<area shape="rect" id="node6" href="$GeoPrimitives_8H.html" title="Geometric Primitives interface. " alt="" coords="62,229,180,256"/>
-<area shape="rect" id="node12" href="$primitive__utilities_8H.html" title="Basic utility header. " alt="" coords="321,155,455,181"/>
-<area shape="rect" id="node17" href="$PrimitiveTypes_8H.html" title="Simple utility classes. " alt="" coords="560,229,683,256"/>
-</map>

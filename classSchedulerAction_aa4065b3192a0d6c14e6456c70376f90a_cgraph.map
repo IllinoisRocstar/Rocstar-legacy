@@ -1,5 +1,0 @@
-<map id="run" name="run">
-<area shape="rect" id="node2" href="$classScheduler.html#ad2f7d0180654fc893a9dd4112cec8f3b" title="Scheduler::run_actions" alt="" coords="93,41,248,68"/>
-<area shape="rect" id="node3" href="$structScheduler_1_1ActionItem.html#a4d53ef72c920649a6dcaf1ccb1392b5d" title="Scheduler::ActionItem\l::action" alt="" coords="297,5,447,46"/>
-<area shape="rect" id="node4" href="$classAction.html#a32338f30828c8564d854ae856028b26a" title="Action::run" alt="" coords="329,71,415,97"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="read_properties" name="read_properties">
-<area shape="rect" id="node2" href="$classsetup__py.html#ab1e58fe06fd2d78c3a99b67ad745fc27" title="check_input_range" alt="" coords="165,44,296,71"/>
-<area shape="rect" id="node5" href="$classAttribute.html#a8bcf950a774cbd3106d4c68d3b2f38c9" title="Obtain the status of the attribute. " alt="" coords="173,95,288,121"/>
-<area shape="rect" id="node6" href="$classAttribute.html#a17407369cfeffaf5df87ff044e43af82" title="Obtain the unit of the attribute. " alt="" coords="181,145,281,172"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="345,5,493,46"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1Matrix3D.html#a0c4493a5d4723940d60164428f11adc3" title="Sets all entries to zero (more efficient than assignement). " alt="" coords="351,70,487,111"/>
-</map>

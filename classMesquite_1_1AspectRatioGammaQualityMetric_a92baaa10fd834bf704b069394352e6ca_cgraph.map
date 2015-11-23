@@ -1,6 +1,0 @@
-<map id="AspectRatioGammaQualityMetric" name="AspectRatioGammaQualityMetric">
-<area shape="rect" id="node2" href="$classMesquite_1_1QualityMetric.html#a3dd851786f1d533b752643c3193b2bba" title="Sets the evaluation mode for the ELEMENT_BASED metrics. " alt="" coords="273,5,479,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#a892f2de77eacaf9d1e51cf2b29ee2d57" title="This function should be used in the constructor of every concrete quality metric. ..." alt="" coords="296,70,456,111"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1QualityMetric.html#ab6c509dee736029280d9360d19a7919d" title="Sets the name of this metric. " alt="" coords="296,135,456,177"/>
-<area shape="rect" id="node5" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="354,201,398,228"/>
-</map>

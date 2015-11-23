@@ -1,7 +1,0 @@
-<map id="get_tangent" name="get_tangent">
-<area shape="rect" id="node2" href="$classOverlay__primitives.html#ada5e302cd6a3e775eae57519f932783b" title="intersect" alt="" coords="144,12,216,39"/>
-<area shape="rect" id="node3" href="$classOverlay.html#a4e8602930d85d562fab07af05eddb855" title="Overlay::intersect\l_link_helper" alt="" coords="264,5,389,46"/>
-<area shape="rect" id="node4" href="$classOverlay.html#a41c1d5ad91477125ab8d20fdf2653724" title="Overlay::intersect_link" alt="" coords="437,12,589,39"/>
-<area shape="rect" id="node5" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="637,5,763,46"/>
-<area shape="rect" id="node6" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="811,12,928,39"/>
-</map>

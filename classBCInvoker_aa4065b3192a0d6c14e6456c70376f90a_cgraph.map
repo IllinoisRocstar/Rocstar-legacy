@@ -1,9 +1,0 @@
-<map id="run" name="run">
-<area shape="rect" id="node2" href="$classAgent.html#a7166b9d0c3321d1abf347377b32bf154" title="Agent::get_agent_name" alt="" coords="263,5,423,32"/>
-<area shape="rect" id="node3" href="$classAgent.html#adb726f4c39e2e864882230494886f620" title="Agent::obtain_bc" alt="" coords="93,56,213,83"/>
-<area shape="rect" id="node4" href="$classAgent.html#a16224819e668060c9869c2ce43b99a80" title="Agent::get_bcScheduler" alt="" coords="262,56,423,83"/>
-<area shape="rect" id="node5" href="$classScheduler.html#ad2f7d0180654fc893a9dd4112cec8f3b" title="Scheduler::run_actions" alt="" coords="265,107,420,133"/>
-<area shape="rect" id="node8" href="$classScheduler.html#a1ddbe92dd7f68ea5db8d9957e6da0c0a" title="Scheduler::set_alpha" alt="" coords="271,157,415,184"/>
-<area shape="rect" id="node6" href="$structScheduler_1_1ActionItem.html#a4d53ef72c920649a6dcaf1ccb1392b5d" title="Scheduler::ActionItem\l::action" alt="" coords="473,70,623,111"/>
-<area shape="rect" id="node7" href="$classAction.html#a32338f30828c8564d854ae856028b26a" title="Action::run" alt="" coords="505,136,591,163"/>
-</map>

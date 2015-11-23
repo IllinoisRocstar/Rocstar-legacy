@@ -1,6 +1,0 @@
-<map id="LineS2" name="LineS2">
-<area shape="rect" id="node2" href="$classDirectionS2.html#aad295050e72b91f0286ffade50568beb" title="DirectionS2::dx" alt="" coords="117,5,229,32"/>
-<area shape="rect" id="node3" href="$classDirectionS2.html#a345e73bcb9e55c606345c63ccca66f25" title="DirectionS2::dy" alt="" coords="117,56,229,83"/>
-<area shape="rect" id="node4" href="$classPointS2.html#a242e8b7096a678fdbb08e337420acb84" title="PointS2::x" alt="" coords="132,107,215,133"/>
-<area shape="rect" id="node5" href="$classPointS2.html#ae367a52fcb29c7638852621653fdb407" title="PointS2::y" alt="" coords="132,157,215,184"/>
-</map>

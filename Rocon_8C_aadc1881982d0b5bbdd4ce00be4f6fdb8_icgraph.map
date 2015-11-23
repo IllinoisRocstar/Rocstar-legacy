@@ -1,9 +1,0 @@
-<map id="TransformCoordinates" name="TransformCoordinates">
-<area shape="rect" id="node2" href="$classRocon.html#ae3e24c73a282479d364e0124b7440788" title="Initialize Rocon with given mesh. " alt="" coords="205,107,320,133"/>
-<area shape="rect" id="node3" href="$classRocon.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Rocon::load" alt="" coords="369,107,461,133"/>
-<area shape="rect" id="node4" href="$Rocon_8C.html#a326129e0f59167a9d49b467d2ca62623" title="Rocon_load_module" alt="" coords="533,5,673,32"/>
-<area shape="rect" id="node5" href="$Rocon_8C.html#ad9318a39523276bf31292715c9d868a1" title="rocon_load_module" alt="" coords="535,56,670,83"/>
-<area shape="rect" id="node6" href="$Rocon_8C.html#aa761155575248a4e82dc54c5d1ac56c7" title="ROCON_LOAD_MODULE" alt="" coords="513,107,692,133"/>
-<area shape="rect" id="node7" href="$Rocon_8C.html#a6aac732f557d7efb2446d7c7ea0b4d1e" title="rocon_load_module_" alt="" coords="532,157,673,184"/>
-<area shape="rect" id="node8" href="$Rocon_8C.html#a9d1d1090b92f6f56fa1e50d194883268" title="ROCON_LOAD_MODULE_" alt="" coords="509,208,696,235"/>
-</map>

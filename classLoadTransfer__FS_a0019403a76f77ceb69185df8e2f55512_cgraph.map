@@ -1,9 +1,0 @@
-<map id="LoadTransfer_FS" name="LoadTransfer_FS">
-<area shape="rect" id="node2" href="$classAgent.html#a5d3576b9180e99959235980d580a4090" title="Agent::get_coupling" alt="" coords="202,5,339,32"/>
-<area shape="rect" id="node3" href="$classCoupling.html#a74d1138ae9a6c79d20343b54e30b051e" title="Coupling::get_rocmancontrol\l_param" alt="" coords="177,57,365,98"/>
-<area shape="rect" id="node4" href="$classAgent.html#a53931f667c53c71d0618eab67f6f9897" title="Agent::get_surface\l_window" alt="" coords="205,122,337,163"/>
-<area shape="rect" id="node5" href="$classAgent.html#a7d9d2d4af5e128d0f1f13ed1c8da2f4d" title="Agent::register_clone\l_attribute" alt="" coords="198,187,343,229"/>
-<area shape="rect" id="node6" href="$classAgent.html#a667f8a34f85743720fc4a10b74b456c0" title="Agent::register_new\l_attribute" alt="" coords="201,253,340,294"/>
-<area shape="rect" id="node7" href="$classAction.html#a93a7d8df6f9dd31acc8942151c6a8564" title="Action::set_attr" alt="" coords="215,319,326,345"/>
-<area shape="rect" id="node8" href="$classAction.html#abd6cf6966581c38830b1d953db0b285a" title="Action::set_io" alt="" coords="219,369,322,396"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="get_nextline" name="get_nextline">
-<area shape="rect" id="node2" href="$classOBJ__Reader.html#af7428445cfba82a662cceb4dba9394db" title="read_mesh" alt="" coords="321,23,407,50"/>
-<area shape="rect" id="node4" href="$classOBJ__Reader.html#ab391b51f7003250d7bdcb5fc316950fa" title="read_pane_coors" alt="" coords="149,23,270,50"/>
-<area shape="rect" id="node5" href="$classOBJ__Reader.html#aeccf7cc5416589cf28bb30b338c637fd" title="read_pane_elems" alt="" coords="147,74,271,100"/>
-<area shape="rect" id="node3" href="$obj2hdf_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="456,23,507,50"/>
-</map>

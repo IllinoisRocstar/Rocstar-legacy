@@ -1,9 +1,0 @@
-<map id="set_element_evaluation_mode" name="set_element_evaluation_mode">
-<area shape="rect" id="node2" href="$classMesquite_1_1ASMQualityMetric.html#a9a0739efeb462cc0c07c0c79912bb141" title="Mesquite::ASMQualityMetric\l::ASMQualityMetric" alt="" coords="293,5,483,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1AspectRatioGammaQualityMetric.html#a92baaa10fd834bf704b069394352e6ca" title="Mesquite::AspectRatioGamma\lQualityMetric::AspectRatioGamma\lQualityMetric" alt="" coords="275,71,501,127"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1ConditionNumberQualityMetric.html#a3dde89f54528d2b266183d16b918e118" title="Mesquite::ConditionNumber\lQualityMetric::ConditionNumber\lQualityMetric" alt="" coords="284,151,492,207"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1CornerJacobianQualityMetric.html#a49c14eda698ecb41ecc6bc4a8a45f9b8" title="Mesquite::CornerJacobian\lQualityMetric::CornerJacobian\lQualityMetric" alt="" coords="289,231,487,287"/>
-<area shape="rect" id="node6" href="$classMesquite_1_1IdealWeightInverseMeanRatio.html#aa7a708907723d22f17a93378ad297dc5" title="Mesquite::IdealWeightInverse\lMeanRatio::IdealWeightInverseMeanRatio" alt="" coords="254,311,522,353"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1IdealWeightMeanRatio.html#a68643c072bbb87bd063a375679c6878a" title="Mesquite::IdealWeightMean\lRatio::IdealWeightMeanRatio" alt="" coords="291,377,485,418"/>
-<area shape="rect" id="node8" href="$classMesquite_1_1UntangleBetaQualityMetric.html#aded550601ac7d7a4cc55fac1232c8b13" title="For untangle beta, the constructor defaults to the SUM averaging method, and to the ELEMENT_VERTICES ..." alt="" coords="277,442,499,483"/>
-</map>

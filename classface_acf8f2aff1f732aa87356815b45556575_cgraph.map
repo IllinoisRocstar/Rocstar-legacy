@@ -1,6 +1,0 @@
-<map id="nodeForCoord" name="nodeForCoord">
-<area shape="rect" id="node2" href="$face_8cpp.html#abeb746dda35e7ce13bf750183faa056a" title="findOther" alt="" coords="157,5,232,32"/>
-<area shape="rect" id="node3" href="$classface.html#a6cb86c38e0961cbebadc685acd62a194" title="loc2node" alt="" coords="157,56,232,83"/>
-<area shape="rect" id="node4" href="$classface.html#a8da414495f08ae54034a5f560368f684" title="loc2nodeX" alt="" coords="280,31,363,57"/>
-<area shape="rect" id="node5" href="$classface.html#a5e224d690e5e7f016a6ba8d809bd3457" title="loc2nodeY" alt="" coords="280,81,363,108"/>
-</map>

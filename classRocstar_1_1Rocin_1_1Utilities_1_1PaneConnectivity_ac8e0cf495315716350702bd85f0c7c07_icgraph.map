@@ -1,5 +1,0 @@
-<map id="hasLocalPoint" name="hasLocalPoint">
-<area shape="rect" id="node2" href="$classRocstar_1_1Rocin_1_1Utilities_1_1PaneConnectivity.html#a04a7b683c60bbeb0d298b22627ff31d9" title="This method returns the list of remote panes that share the point associated with the provided localP..." alt="" coords="157,5,360,46"/>
-<area shape="rect" id="node3" href="$classRocstar_1_1Rocin_1_1Utilities_1_1PaneConnectivity.html#ae9aef48160150bd04f138b5d43f40aff" title="Returns the index to the shared node list of the local point that is shared with the given remote pan..." alt="" coords="187,71,331,97"/>
-<area shape="rect" id="node4" href="$classRocstar_1_1Rocin_1_1Utilities_1_1PaneConnectivity.html#a13722633280c7eaeaf4107785e7312d0" title="This method returns the point connection pairs for the given local point. " alt="" coords="409,71,575,97"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="compute_signed_volume" name="compute_signed_volume">
-<area shape="rect" id="node2" href="$classMesquite_1_1MsqMeshEntity.html#add8f915e9921f20926cb58b8d8694fec" title="compute_weighted_jacobian" alt="" coords="221,63,408,89"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="466,5,611,46"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1Vector3D.html#a0c8c0907d22080124c5e0348d9a61b57" title="Mesquite::Vector3D::set" alt="" coords="457,71,621,97"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1Vector3D.html#a9ccf82e6805fa3a2f34b977e1db6f4f9" title="Mesquite::Vector3D::x" alt="" coords="670,20,823,47"/>
-<area shape="rect" id="node6" href="$classMesquite_1_1Vector3D.html#a0acce91d627a918ea20832d9b2fb8b93" title="Mesquite::Vector3D::y" alt="" coords="670,71,823,97"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1Vector3D.html#abe77460b0bada97d73fc158579294931" title="Mesquite::Vector3D::z" alt="" coords="670,121,823,148"/>
-</map>

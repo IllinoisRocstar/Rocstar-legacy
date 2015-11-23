@@ -1,5 +1,0 @@
-<map id="setMaterialType" name="setMaterialType">
-<area shape="rect" id="node2" href="$classMesh.html#a614a4adf598595b7126cdaa822a9bade" title="Mesh::replaceNode" alt="" coords="169,29,303,56"/>
-<area shape="rect" id="node3" href="$classNode.html#aea0042ea84160d091512051ea23d8e41" title="Node::separate" alt="" coords="353,29,463,56"/>
-<area shape="rect" id="node4" href="$classMesh.html#a96f8003c64bff21d807cea52f48db2a7" title="The addCohesive method is the driver for the entire process of adding cohesive elements to the mesh..." alt="" coords="512,29,651,56"/>
-</map>

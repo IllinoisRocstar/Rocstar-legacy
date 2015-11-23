@@ -1,6 +1,0 @@
-<map id="update_communicator" name="update_communicator">
-<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="245,5,379,32"/>
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="224,56,400,83"/>
-<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#af747aaa399bb2b11240e4a5631e1be93" title="COM_set_default_communicator" alt="" coords="205,107,419,133"/>
-<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="467,56,595,83"/>
-</map>

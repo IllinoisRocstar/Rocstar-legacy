@@ -1,7 +1,0 @@
-<map id="stripdirs" name="stripdirs">
-<area shape="rect" id="node2" href="$classIRAD_1_1Global_1_1GlobalObj.html#adf251a14e1706ac6e35680e832fe0c54" title="Default constructor. " alt="" coords="135,5,300,46"/>
-<area shape="rect" id="node3" href="$classIRAD_1_1Global_1_1ParallelGlobalObj.html#a5ee7c7369164c036badaf72405798782" title="IRAD::Global::ParallelGlobal\lObj::Init" alt="" coords="123,70,311,111"/>
-<area shape="rect" id="node4" href="$classIRAD_1_1Util_1_1ComLineObject.html#adca00a92f22899fa39ebe2f544e146c9" title="Minimal recording of command line. " alt="" coords="127,135,308,177"/>
-<area shape="rect" id="node5" href="$classIRAD_1_1Util_1_1ComLineObject.html#aab8b998dfe41f30d622ea4f0418ff254" title="Constructor. " alt="" coords="360,102,541,143"/>
-<area shape="rect" id="node6" href="$classIRAD_1_1Util_1_1ComLineObject.html#a23c350962544b3ce7497a8add2195eb8" title="One fell swoop processing of command line. " alt="" coords="360,167,541,209"/>
-</map>

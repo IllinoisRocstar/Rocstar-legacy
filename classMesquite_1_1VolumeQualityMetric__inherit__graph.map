@@ -1,5 +1,0 @@
-<map id="VolumeQualityMetric" name="VolumeQualityMetric">
-<area shape="rect" id="node3" href="$classMesquite_1_1CornerJacobianQualityMetric.html" title="Computes the volume or area of the element, as appropriate. This metric uses the average of the corne..." alt="" coords="5,155,195,181"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1LocalSizeQualityMetric.html" title="Computes the local size metric for a given vertex. " alt="" coords="219,155,375,181"/>
-<area shape="rect" id="node2" href="$classMesquite_1_1QualityMetric.html" title="Base class for concrete quality metrics. " alt="" coords="149,5,248,32"/>
-</map>

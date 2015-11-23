@@ -1,5 +1,0 @@
-<map id="PopulateFluPatches" name="PopulateFluPatches">
-<area shape="rect" id="node2" href="$classFluRegion.html#a174ca40684e7343168548af315435d89" title="BuildPatchMapping" alt="" coords="218,5,353,32"/>
-<area shape="rect" id="node3" href="$classGEM__Partition.html#a098980818cae2536e5d078724aaebd92" title="GEM_Partition::MapDomain\lBoundaries" alt="" coords="193,57,378,98"/>
-<area shape="rect" id="node4" href="$classGEM__DomainBoundary.html#afeb8272329bc2bf786b17489289bf7a9" title="GEM_DomainBoundary\l::debug" alt="" coords="427,57,586,98"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="size_of_real_items" name="size_of_real_items">
-<area shape="rect" id="node2" href="$classPane.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain the attribute from given name. " alt="" coords="184,81,291,108"/>
-<area shape="rect" id="node3" href="$classWindow.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain a pointer to the attribute metadata from its name. " alt="" coords="339,56,463,83"/>
-<area shape="rect" id="node6" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="565,107,603,133"/>
-<area shape="rect" id="node4" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="is_digit" alt="" coords="553,5,615,32"/>
-<area shape="rect" id="node5" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="513,56,655,83"/>
-</map>
