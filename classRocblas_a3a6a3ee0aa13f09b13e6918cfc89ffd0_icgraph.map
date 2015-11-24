@@ -1,0 +1,17 @@
+<map id="dot_MPI" name="dot_MPI">
+<area shape="rect" id="node3" href="$classRocblas.html#ac01c8d940c6c31ffb2231e11d9c4947a" title="Wrapper for dot product. " alt="" coords="147,69,187,99"/>
+<area shape="rect" id="node15" href="$classRocblas.html#a509324395eda15d55172c78cee1ae5fb" title="Creates window for Rocblas and registers functions. " alt="" coords="335,181,372,211"/>
+<area shape="rect" id="node30" href="$classRocblas.html#aae1cbead2b3ce638d59eae3dd176c932" title="Wrapper for 2&#45;norm. " alt="" coords="141,179,192,208"/>
+<area shape="rect" id="node33" href="$classRocblas.html#a6545a6ce9324fe186ebc114475104ca2" title="Wrapper for 2&#45;norm with MPI. " alt="" coords="125,232,208,261"/>
+<area shape="rect" id="node5" href="$angle__rad__3d_8f90.html#a0c5f8d4df4677876dd0a0865fb32e9d2" title="angle_rad_3d" alt="" coords="304,8,403,37"/>
+<area shape="rect" id="node9" href="$classFaceOffset__3.html#a255d78d7f60f9385c8941b65d6bd783b" title="FaceOffset_3::balance_mass" alt="" coords="257,68,449,97"/>
+<area shape="rect" id="node7" href="$MP_2Source_2angle__rad__3d_8f90.html#a0c5f8d4df4677876dd0a0865fb32e9d2" title="angle_rad_3d" alt="" coords="549,5,648,35"/>
+<area shape="rect" id="node11" href="$classFaceOffset__3.html#aeb4f96b70a0dc62dc10e186483d9180f" title="Decompose propagation directions based on constraints. " alt="" coords="520,58,677,105"/>
+<area shape="rect" id="node13" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="748,58,881,105"/>
+<area shape="rect" id="node17" href="$Rocblas_8C.html#ae10ad513c0ada8ae7f6c5dc632bb5235" title="Calls Rocblas initialization function. " alt="" coords="524,128,673,157"/>
+<area shape="rect" id="node21" href="$Rocblas_8C.html#a3c4a24d98fffbb732ea0b4bd7ed737d4" title="rocblas_load_module" alt="" coords="527,181,671,211"/>
+<area shape="rect" id="node23" href="$Rocblas_8C.html#a1f6d7891108aff593e5100e55fa6a21e" title="rocblas_load_module_" alt="" coords="524,235,673,264"/>
+<area shape="rect" id="node25" href="$Rocblas_8C.html#ac49885f516c860372a5f9a422fdffce8" title="ROCBLAS_LOAD_MODULE" alt="" coords="503,288,695,317"/>
+<area shape="rect" id="node27" href="$Rocblas_8C.html#a78ad5cca202ba6091c88095698f46652" title="ROCBLAS_LOAD_MODULE_" alt="" coords="499,341,699,371"/>
+<area shape="rect" id="node19" href="$blastest_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="789,128,840,157"/>
+</map>

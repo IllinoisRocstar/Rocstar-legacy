@@ -1,0 +1,22 @@
+<map id="TRAIL_AutoSurfer" name="TRAIL_AutoSurfer">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="393,693,527,723"/>
+<area shape="rect" id="node7" href="$roccom__c_8h.html#a44547c3eab1bf444e5f9bb23c13fc123" title="COM_free_buffer" alt="" coords="399,213,521,243"/>
+<area shape="rect" id="node9" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="403,267,517,296"/>
+<area shape="rect" id="node11" href="$roccom__c_8h.html#a0e53e9d4c7d8101b3aae8f2cbee190e0" title="Get the sizes of an attribute. " alt="" coords="188,84,319,113"/>
+<area shape="rect" id="node18" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="372,320,548,349"/>
+<area shape="rect" id="node20" href="$roccom__c_8h.html#a63c15a8e33b1498fd4bfdd8a50e8ba66" title="COM_get_attributes" alt="" coords="184,369,323,399"/>
+<area shape="rect" id="node22" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="372,373,548,403"/>
+<area shape="rect" id="node24" href="$roccom__c_8h.html#ad744816e73fae2aec731bcbe41b52a16" title="COM_get_panes" alt="" coords="400,747,520,776"/>
+<area shape="rect" id="node26" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="184,163,323,192"/>
+<area shape="rect" id="node29" href="$roccom__c_8h.html#a34c7c55b98221dbb95aba53c374cf596" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="188,577,319,607"/>
+<area shape="rect" id="node31" href="$TransferFunctions_8C.html#a8f9b7a78d589a5a33e981a86e7406a46" title="read_file" alt="" coords="219,473,288,503"/>
+<area shape="rect" id="node53" href="$TRAIL_8H.html#a4de17881c6e94055e09719728697be13" title="TRAIL_TimeString" alt="" coords="188,681,319,711"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="597,533,725,563"/>
+<area shape="rect" id="node14" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="437,5,483,35"/>
+<area shape="rect" id="node16" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="439,59,481,88"/>
+<area shape="rect" id="node34" href="$roccom__c_8h.html#a31a1cc99534b53b7d14992718739ff74" title="Clone the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="388,480,532,509"/>
+<area shape="rect" id="node36" href="$roccom__c_09_09_8h.html#a518de8c83ab277c8cdcb88635a27cefe" title="Delete an existing attribute. " alt="" coords="385,640,535,669"/>
+<area shape="rect" id="node39" href="$roccom__c_09_09_8h.html#ae6418b345decab4388bdd5f233d11964" title="COM_delete_pane" alt="" coords="395,427,525,456"/>
+<area shape="rect" id="node42" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="387,533,533,563"/>
+<area shape="rect" id="node50" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="393,587,527,616"/>
+</map>

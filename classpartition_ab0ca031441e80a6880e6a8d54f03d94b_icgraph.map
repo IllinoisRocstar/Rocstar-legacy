@@ -1,0 +1,4 @@
+<map id="get_num_points" name="get_num_points">
+<area shape="rect" id="node3" href="$classdatafile.html#ab0ca031441e80a6880e6a8d54f03d94b" title="Get the number of points in the file. " alt="" coords="169,5,332,35"/>
+<area shape="rect" id="node5" href="$classdatafile.html#a1357470588b94ec29fd3dbb148c4b436" title="Get the nth point of the file. " alt="" coords="381,32,507,61"/>
+</map>

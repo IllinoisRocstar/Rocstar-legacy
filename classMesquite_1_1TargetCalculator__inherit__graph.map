@@ -1,0 +1,15 @@
+<map id="TargetCalculator" name="TargetCalculator">
+<area shape="rect" id="node6" href="$classMesquite_1_1LVQDTargetCalculator.html" title="This is an intermediary class. Concrete classes will simply instantiate the various guide enums in th..." alt="" coords="333,219,488,248"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1WTargetCalculator.html" title="This is a concrete class. " alt="" coords="345,432,476,461"/>
+<area shape="rect" id="node2" href="$classMesquite_1_1PatchDataUser.html" title="This should be the parent class of all algorithms retrieving information from a MeshSet object..." alt="" coords="5,325,117,355"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1DeformingDomainGuides843.html" title="Deforming Domain with Angle Improvement. Use with I&#45;DFT or R&#45;DFT. " alt="" coords="536,5,725,35"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1DeformingDomainGuides844.html" title="Deforming Domain with Angle Improvement, non&#45;Unit AR. Use with R&#45;DFT. " alt="" coords="536,59,725,88"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1RezoneGuides832.html" title="Rezone with Angle Improvement. Use with I&#45;DFT. " alt="" coords="567,112,695,141"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1ShapeGuides812.html" title="Shape Improvement with non&#45;Unit Aspect Ratio. Use with sR&#45;DFT. " alt="" coords="571,165,691,195"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1ShapeSizeGuides821.html" title="Shape and Size Improvement with Unit Aspect Ratio and Equidistributed Size. Use with R&#45;DFT..." alt="" coords="557,219,704,248"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1ShapeSizeGuides822.html" title="Shape and Size Improvement with Unit Aspect Ratio and Preserved Size. Use with R&#45;DFT. " alt="" coords="557,272,704,301"/>
+<area shape="rect" id="node26" href="$classMesquite_1_1ShapeSizeGuides823.html" title="Shape and Size Improvement with non&#45;Unit Aspect Ratio and Equidistributed Size. Use with R&#45;DFT..." alt="" coords="557,325,704,355"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1ShapeSizeGuides824.html" title="Shape and Size Improvement with non&#45;Unit Aspect Ratio and Preserved Size. Use with R&#45;DFT..." alt="" coords="557,379,704,408"/>
+<area shape="rect" id="node35" href="$classMesquite_1_1DeformingDomainGuides841.html" title="Deforming Domain Mesh Tracking. Use with I&#45;DFT or R&#45;DFT. " alt="" coords="536,432,725,461"/>
+<area shape="rect" id="node38" href="$classMesquite_1_1ShapeGuides811.html" title="Shape Improvement with Unit Aspect Ratio. Use with sR&#45;DFT. " alt="" coords="571,485,691,515"/>
+</map>

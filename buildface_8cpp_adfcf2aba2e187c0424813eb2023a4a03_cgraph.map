@@ -1,0 +1,9 @@
+<map id="findPartner" name="findPartner">
+<area shape="rect" id="node3" href="$buildface_8cpp.html#ae890a171ab791abe926a97ba5da26cba" title="findPatch" alt="" coords="192,5,269,35"/>
+<area shape="rect" id="node5" href="$classblock.html#aad574e9481a04340d5013d0fbdd78e80" title="block::getBlockNumber" alt="" coords="152,59,309,88"/>
+<area shape="rect" id="node7" href="$classblock.html#a6ec0275d18d9313b9471c8a5ad18fc67" title="block::getFace" alt="" coords="177,112,284,141"/>
+<area shape="rect" id="node9" href="$classface.html#aee95dccf9c845c852109a7db005a01f4" title="face::getPatches" alt="" coords="171,165,291,195"/>
+<area shape="rect" id="node11" href="$classblockSpan.html#a6e679f19174d7a5da9bb82642577f52b" title="blockSpan::orient" alt="" coords="169,219,292,248"/>
+<area shape="rect" id="node15" href="$classinternalBCpatch.html#acd376287ba722fefaf0a471b7a923612" title="internalBCpatch::setPartner" alt="" coords="140,272,321,301"/>
+<area shape="rect" id="node13" href="$classblockSpan.html#ad26020ed801ccaed78853cb593479286" title="blockSpan::swapSpan" alt="" coords="371,219,523,248"/>
+</map>

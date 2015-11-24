@@ -1,0 +1,16 @@
+<map id="get_edge_pair_parents" name="get_edge_pair_parents">
+<area shape="rect" id="node3" href="$classOverlay.html#a1f4fcefec965f3551cf309fc3f1e2089" title="get_edge_parent" alt="" coords="209,250,327,280"/>
+<area shape="rect" id="node7" href="$structHost__face.html#a2fdb4a913034dfc8a30c9019857d8173" title="Host_face::halfedge" alt="" coords="632,85,771,114"/>
+<area shape="rect" id="node9" href="$structHost__face.html#ad8e3d3c3b41c1da044381d5a758f1d7a" title="Host_face::parent_type" alt="" coords="855,138,1012,168"/>
+<area shape="rect" id="node14" href="$classHDS__accessor.html#a42d9f6a4b4d4209023f0db986e7d1cd3" title="HDS_accessor::is_border" alt="" coords="377,32,548,61"/>
+<area shape="rect" id="node24" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="605,517,797,546"/>
+<area shape="rect" id="node5" href="$classINode.html#a2dd3c88de5ba7b43671e1e9410418d58" title="INode::halfedge" alt="" coords="405,85,520,114"/>
+<area shape="rect" id="node11" href="$classINode.html#a5e54505fb86e503aa014c5c79d4df1a3" title="INode::parent_type" alt="" coords="396,138,529,168"/>
+<area shape="rect" id="node16" href="$classOverlay.html#ad2947f4b049eabf5707786ef238720ff" title="contains" alt="" coords="428,416,497,445"/>
+<area shape="rect" id="node18" href="$classHDS__accessor.html#a7454a9634b77e8853af6aac3167dea77" title="HDS_accessor::get_destination" alt="" coords="599,357,804,386"/>
+<area shape="rect" id="node26" href="$classHDS__accessor.html#a591425c5ea18f4820a812d753f3d6006" title="HDS_accessor::get_origin" alt="" coords="615,248,788,277"/>
+<area shape="rect" id="node31" href="$classHDS__accessor.html#a1c29741c2bbf0b7b1898d95fbd9d8ae6" title="HDS_accessor::get_next\l_around_origin" alt="" coords="379,242,547,288"/>
+<area shape="rect" id="node33" href="$classINode.html#a8cb08643a08c56ccb4684cd8a03dbaa7" title="INode::nat_coor" alt="" coords="405,312,520,341"/>
+<area shape="rect" id="node20" href="$classHDS__accessor.html#a18eab6ffa92233a5ced127b70413239b" title="HDS_accessor::get_facet" alt="" coords="615,410,788,440"/>
+<area shape="rect" id="node22" href="$classHDS__accessor.html#a0191908e68eeb08627b0887b5b24f42c" title="HDS_accessor::get_next" alt="" coords="617,464,785,493"/>
+</map>

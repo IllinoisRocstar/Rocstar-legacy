@@ -1,0 +1,4 @@
+<map id="Semaphore" name="Semaphore">
+<area shape="rect" id="node3" href="$classMutex.html#ac750afc1fee2a7baa8809c8f4ac49dd4" title="Mutex::IsOk" alt="" coords="305,5,399,35"/>
+<area shape="rect" id="node5" href="$classCondition.html#ac750afc1fee2a7baa8809c8f4ac49dd4" title="Condition::IsOk" alt="" coords="143,31,255,60"/>
+</map>

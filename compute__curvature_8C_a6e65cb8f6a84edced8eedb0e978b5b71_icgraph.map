@@ -1,0 +1,10 @@
+<map id="compute_lbop_weights" name="compute_lbop_weights">
+<area shape="rect" id="node3" href="$classWindow__manifold__2.html#a2de69b1dfeafce08ec7b515710fb76c4" title="Window_manifold_2::\lcompute_mcn" alt="" coords="208,103,355,150"/>
+<area shape="rect" id="node5" href="$classRocsurf.html#a98cadabf2c5e377e91182ea5e6c2c567" title="Computes nodal or elemental normals of a given window. " alt="" coords="404,112,561,141"/>
+<area shape="rect" id="node7" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="612,112,711,141"/>
+<area shape="rect" id="node9" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="788,5,935,35"/>
+<area shape="rect" id="node11" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="791,59,932,88"/>
+<area shape="rect" id="node13" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="764,112,959,141"/>
+<area shape="rect" id="node15" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="787,165,936,195"/>
+<area shape="rect" id="node17" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="760,219,963,248"/>
+</map>

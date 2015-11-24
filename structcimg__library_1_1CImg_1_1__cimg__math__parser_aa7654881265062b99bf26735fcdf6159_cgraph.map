@@ -1,0 +1,9 @@
+<map id="compile" name="compile">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#acad38d52497a975bfb6f2f6acd76631f" title="Return an iterator pointing after the last image pixel (STL&#45;compliant name). " alt="" coords="121,5,281,35"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a062a5bcee81f073e34d0e6d4ca97a00a" title="opcode" alt="" coords="169,160,233,189"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a90ca964ebcc1b02bbcde225edd49e812" title="Return the number of image buffer elements. " alt="" coords="332,51,463,98"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#aa930a4b0563d7d0794661231310b36c4" title="Resize an image. " alt="" coords="332,122,463,169"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a7a1fbbf9bb23d01f64a8ca3bd06b7c0f" title="Unroll all images values into a one&#45;column vector. " alt="" coords="332,195,463,242"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#ab7d3a61366cf906c03af6c8fa13309a7" title="Return the type of the pixel values. " alt="" coords="136,263,267,310"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#abcd3f144ae47cc8c971c0c8bf72e416f" title="Transfer the content of the instance image into another one in a way that memory copies are avoided i..." alt="" coords="136,333,267,379"/>
+</map>

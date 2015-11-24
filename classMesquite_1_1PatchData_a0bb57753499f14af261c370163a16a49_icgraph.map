@@ -1,0 +1,11 @@
+<map id="create_vertices_memento" name="create_vertices_memento">
+<area shape="rect" id="node3" href="$classMesquite_1_1ConjugateGradient.html#a497a4645ccf251f6993261c5ecf88712" title="Initialize data for smoothing process. " alt="" coords="232,5,421,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1FeasibleNewton.html#a497a4645ccf251f6993261c5ecf88712" title="Mesquite::FeasibleNewton\l::initialize" alt="" coords="239,74,415,121"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1SteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::SteepestDescent\l::optimize_vertex_positions" alt="" coords="235,143,419,190"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1TerminationCriterion.html#a411b1b5e226d5c66642273611393b539" title="Clear any data accumulated during an inner iteration. " alt="" coords="227,213,427,259"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1TerminationCriterion.html#a07af71d69f8217bb2371a1d353bf5549" title="Shared inner and outer initialization during inner loop. " alt="" coords="475,273,675,319"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1TerminationCriterion.html#abb595efb30088610673b262261ada67c" title="Clear any data accumulated during an outer iteration. " alt="" coords="475,153,675,199"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Improves the quality of the MeshSet, calling some methods specified in a class derived from VertexMov..." alt="" coords="723,213,880,259"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1ShapeImprovementWrapper.html#a52b954daacf72db4a8b0b8811e81bbb0" title="run_instructions runs the wrapper on the given MeshSet. " alt="" coords="929,213,1124,259"/>
+<area shape="rect" id="node17" href="$classRocmop.html#a2dbb41ea0da20e141ec61d8d4a726ddf" title="Smooth the panes of the working window using MESQUITE. " alt="" coords="1175,221,1356,251"/>
+</map>

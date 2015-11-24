@@ -1,0 +1,33 @@
+<map id="add_aspect_ratios" name="add_aspect_ratios">
+<area shape="rect" id="node3" href="$classAngle__Metric__3.html#a4c0c7f4ce46f815fdc2f520c7b276d4f" title="Calculate the metric value on this element. " alt="" coords="193,167,364,196"/>
+<area shape="rect" id="node5" href="$classRocblas.html#a29fe903b10fe8cd0f0bc37c01b63b83f" title="Wrapper for copy. " alt="" coords="225,220,332,249"/>
+<area shape="rect" id="node31" href="$classAspect__Metric__3.html#a9ae21718fd1b56efd4b3a617d2969fe0" title="Get the geometric aspects. " alt="" coords="181,316,376,345"/>
+<area shape="rect" id="node54" href="$classGeo__Metric__Base__3.html#a6856f5e1b1b0d59db106f0524c5621b4" title="Initialize a 3D Geometric Metric by nodal coords and element type. " alt="" coords="205,369,352,415"/>
+<area shape="rect" id="node56" href="$classRocmap.html#a748dccffbd1a40c058a05982d3bf04b8" title="Update ghost nodal or elemental values for the given attribute. " alt="" coords="197,599,360,628"/>
+<area shape="rect" id="node7" href="$classWindow.html#a4d18e272967ed99a266283d1c173a26a" title="Obtain all the attributes of the pane. " alt="" coords="443,36,573,65"/>
+<area shape="rect" id="node15" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="440,89,576,119"/>
+<area shape="rect" id="node17" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="444,193,572,223"/>
+<area shape="rect" id="node19" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="668,139,777,168"/>
+<area shape="rect" id="node23" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="661,245,784,275"/>
+<area shape="rect" id="node27" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="464,297,552,327"/>
+<area shape="rect" id="node9" href="$classPane.html#a4d18e272967ed99a266283d1c173a26a" title="Obtain all the attributes of the pane. " alt="" coords="665,36,780,65"/>
+<area shape="rect" id="node11" href="$classAttribute.html#afaa016f7aa87969def6903a4a7e8490f" title="Obtain a constant pointer to the owner pane of the attribute. " alt="" coords="875,5,981,35"/>
+<area shape="rect" id="node13" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="868,58,988,105"/>
+<area shape="rect" id="node21" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="668,192,777,221"/>
+<area shape="rect" id="node25" href="$classPane.html#a05d1abca9cbb0ec7bdc59f58dd81797c" title="Obtain a constant pointer to its owner window object. " alt="" coords="876,245,980,275"/>
+<area shape="rect" id="node33" href="$classGeo__Metric__Base__3.html#a18bc1c0de0237a4367c3fed594a6ffd9" title="Compute circumradius, inradius, and shortest edge length. " alt="" coords="435,350,581,397"/>
+<area shape="rect" id="node35" href="$geometry_8h.html#a957066e3826ec7e30a4ec5df60a7cf0a" title="Compute the edge length of a vector. " alt="" coords="677,299,768,328"/>
+<area shape="rect" id="node37" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="1052,455,1095,484"/>
+<area shape="rect" id="node40" href="$geometry_8h.html#af59662a6b46c35024e16e40c0f3bdbf4" title="Compute the volume of a tetrahedron given three edges from a point as vectors. " alt="" coords="692,428,753,457"/>
+<area shape="rect" id="node48" href="$geometry_8h.html#aa018e9f54fcc4a6edd94244baf18dda0" title="Compute the area of a triangle defined by its three sides as vectors. " alt="" coords="691,560,755,589"/>
+<area shape="rect" id="node42" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="889,401,967,431"/>
+<area shape="rect" id="node44" href="$geometry_8h.html#a0d90b497cf779e3fb734e026e3722419" title="Compute the cross Product of two vectors. " alt="" coords="897,455,959,484"/>
+<area shape="rect" id="node46" href="$geometry_8h.html#a3f884839e02fce28dc24f56b4f121900" title="Compute the dot Product of two vectors. " alt="" coords="904,508,952,537"/>
+<area shape="rect" id="node50" href="$geometry_8C.html#a957066e3826ec7e30a4ec5df60a7cf0a" title="Compute the edge length of a vector. " alt="" coords="883,612,973,641"/>
+<area shape="rect" id="node58" href="$classPane__communicator.html#af84e5306d7677a0665fa35099278e534" title="Initialize the communication buffers. " alt="" coords="425,692,591,721"/>
+<area shape="rect" id="node60" href="$roccom__c_09_09_8h.html#ad0963775a018dcb83d982e5cfeeb3a22" title="COM_get_sizeof" alt="" coords="663,665,783,695"/>
+<area shape="rect" id="node64" href="$classPane__communicator.html#a0db778b55c3fc482ecf132594bd6b123" title="Initialize a Pane_comm_buffers for ghost information. " alt="" coords="641,769,804,815"/>
+<area shape="rect" id="node66" href="$classPane__communicator.html#a4327966d16b9b3012f1bb61ddc0673d3" title="For a given pane, obtain an internal pane ID which is unique and contiguous across processes..." alt="" coords="853,718,1003,765"/>
+<area shape="rect" id="node62" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="887,665,969,695"/>
+<area shape="rect" id="node68" href="$classPane__communicator.html#ae7eeea984bcf7fa59efa96d05a81a901" title="Obtain the process rank of a given pane. " alt="" coords="853,787,1003,834"/>
+</map>

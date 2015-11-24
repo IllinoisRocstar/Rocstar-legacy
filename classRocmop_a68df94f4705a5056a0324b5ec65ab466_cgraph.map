@@ -1,0 +1,5 @@
+<map id="obtain_extremal_dihedrals" name="obtain_extremal_dihedrals">
+<area shape="rect" id="node3" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="243,5,381,35"/>
+<area shape="rect" id="node5" href="$classAngle__Metric__3.html#a4c0c7f4ce46f815fdc2f520c7b276d4f" title="Calculate the metric value on this element. " alt="" coords="227,59,397,88"/>
+<area shape="rect" id="node7" href="$classGeo__Metric__Base__3.html#a6856f5e1b1b0d59db106f0524c5621b4" title="Initialize a 3D Geometric Metric by nodal coords and element type. " alt="" coords="239,111,385,158"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="compute_corner_normals" name="compute_corner_normals">
+<area shape="rect" id="node3" href="$classMesquite_1_1MsqMeshEntity.html#a17ab9e457ac1e170360fceeb6b25ab2b" title="Compute matrices which column are the vectors issued from a corner. " alt="" coords="232,139,403,168"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1I__DFT.html#aa71c0d57cadd2f8eeb540ab194c145b3" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="223,191,412,238"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1I__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::I_DFT::compute\l_element_analytical_hessian" alt="" coords="223,261,412,307"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1I__DFT.html#abc691c49e36734bba1ea2ecd14fe9a5b" title="Evaluate the metric for an element. " alt="" coords="229,330,405,377"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1TargetCalculator.html#ab066dc9db4106bf2adbafc8f7986aabc" title="Computes the guide corner matrices A for a given element index in the reference patch. " alt="" coords="473,51,652,98"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1TargetCalculator.html#a14179ad197e9a02f52380f1b0e6d0ec3" title="Compute the corner matrices for the reference mesh refMesh. " alt="" coords="471,121,655,185"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1DistanceFromTarget.html#a7189c3b4f0d361c88adf6e84b790053e" title="For a given element, compute each corner matrix A, and given a target corner matrix W..." alt="" coords="461,209,664,255"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1LVQDTargetCalculator.html#a7bebe2f2afb7cd9b6552569edd96e9a1" title="Function called by compute_target_matrices(PatchData&amp; pd, MsqError&amp; err) to compute the matrices afte..." alt="" coords="713,5,927,51"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1WTargetCalculator.html#af386ad951ad29a68944557ccfc6f18ec" title="Mesquite::WTargetCalculator\l::compute_target_matrices" alt="" coords="724,74,916,121"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1sI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="728,165,912,211"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1sRI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="748,234,892,281"/>
+</map>

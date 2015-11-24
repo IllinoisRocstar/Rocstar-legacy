@@ -1,0 +1,10 @@
+<map id="CollideCellsWithBox" name="CollideCellsWithBox">
+<area shape="rect" id="node3" href="$classMesh_1_1Connectivity.html#a4d957e11716fadea6c9a1f25c6e96301" title="Mesh::Connectivity\l::Esize" alt="" coords="217,30,351,77"/>
+<area shape="rect" id="node5" href="$classGeoPrim_1_1CBox.html#ab090d86f5e8f4a9a483c35075d9ff699" title="GeoPrim::CBox::intersect" alt="" coords="199,100,369,130"/>
+<area shape="rect" id="node23" href="$classMesh_1_1Connectivity.html#aa5aeb24567352395b62eafed993e013b" title="Mesh::Connectivity\l::Node" alt="" coords="217,153,351,200"/>
+<area shape="rect" id="node7" href="$classGeoPrim_1_1CBox.html#a759b5184ce4ea5751b373803aba2a2b8" title="GeoPrim::CBox::collide" alt="" coords="420,151,577,180"/>
+<area shape="rect" id="node11" href="$classGeoPrim_1_1CPoint.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CPoint::x" alt="" coords="835,152,971,182"/>
+<area shape="rect" id="node13" href="$classGeoPrim_1_1CPoint.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CPoint::y" alt="" coords="835,99,971,128"/>
+<area shape="rect" id="node15" href="$classGeoPrim_1_1CPoint.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CPoint::z" alt="" coords="835,254,971,283"/>
+<area shape="rect" id="node9" href="$classGeoPrim_1_1CBox.html#ac6e61de369e994009e36f344f99c15ad" title="GeoPrim::CBox::empty" alt="" coords="628,151,785,180"/>
+</map>

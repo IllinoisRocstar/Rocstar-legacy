@@ -1,0 +1,31 @@
+<map id="v3d4n_nl_arruda_boyce" name="v3d4n_nl_arruda_boyce">
+<area shape="rect" id="node3" href="$classColor.html#af94d15b3f5e32b9137fc219dcb16bd53" title="Color::alpha" alt="" coords="243,347,333,376"/>
+<area shape="rect" id="node5" href="$arruda__boyce_8cauchy_8f90.html#a0013203877547b83f004472e0e1ec347" title="arruda_boyce_cauchy" alt="" coords="213,400,363,429"/>
+<area shape="rect" id="node78" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="625,577,772,623"/>
+<area shape="rect" id="node7" href="$Handle_8h.html#a459850cd445841d238d0af12068f45a3" title="id" alt="" coords="475,453,512,483"/>
+<area shape="rect" id="node9" href="$classAff__transformation__repS2.html#a2758e8c9df83e803e7509d563733f531" title="Aff_transformation\l_repS2::print" alt="" coords="635,454,763,501"/>
+<area shape="rect" id="node11" href="$arruda__boyce_8f90.html#a2f31672ee5874935d96e7aea2c8371fe" title="rs" alt="" coords="475,277,512,307"/>
+<area shape="rect" id="node62" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="881,35,924,64"/>
+<area shape="rect" id="node72" href="$arruda__boyce_8f90.html#a1127ab947d7de906de1d7a52e9f752d2" title="solve_x" alt="" coords="460,507,527,536"/>
+<area shape="rect" id="node81" href="$structcimg__library_1_1CImg.html#a77d222b4837c78aad604f3f0b5f1409c" title="Return the sum of all the pixel values in an image. " alt="" coords="411,400,576,429"/>
+<area shape="rect" id="node13" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="1069,100,1144,129"/>
+<area shape="rect" id="node15" href="$arruda__boyce_8f90.html#a6fbc6c2163a4ca8b183d367f2bdf65c2" title="tql1" alt="" coords="677,401,720,431"/>
+<area shape="rect" id="node35" href="$arruda__boyce_8f90.html#a11625c0d4087813612fcea51e6bdc170" title="tql2" alt="" coords="677,348,720,377"/>
+<area shape="rect" id="node44" href="$arruda__boyce_8f90.html#af7b3c6cb5bad790aa302b90dfad59af9" title="tred1" alt="" coords="673,243,724,272"/>
+<area shape="rect" id="node64" href="$arruda__boyce_8f90.html#a40a1f383b8cd714b3c0d7dbe946d99eb" title="tred2" alt="" coords="673,189,724,219"/>
+<area shape="rect" id="node17" href="$classLine__2.html#afe7f37893f080982762fded5aaca681c" title="Line_2::c" alt="" coords="865,507,940,536"/>
+<area shape="rect" id="node19" href="$classPlane__3.html#a97cd7b8d2df14504c1422abd2bf8234c" title="Plane_3::d" alt="" coords="861,296,944,325"/>
+<area shape="rect" id="node21" href="$classColor.html#a136e5e559949921576ae566cfea2e855" title="Color::g" alt="" coords="869,349,936,379"/>
+<area shape="rect" id="node23" href="$classAff__transformation__2.html#a365f1affce6586f551082723758c0fcc" title="Aff_transformation_2::m" alt="" coords="821,560,984,589"/>
+<area shape="rect" id="node25" href="$arruda__boyce_8f90.html#aefdf2f56016974e7ae9cbb603784144d" title="pythag" alt="" coords="872,403,933,432"/>
+<area shape="rect" id="node30" href="$classColor.html#a2cd31514360f55547e6cb3e94dfe6ad5" title="Color::r" alt="" coords="1075,456,1139,485"/>
+<area shape="rect" id="node33" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="880,243,925,272"/>
+<area shape="rect" id="node28" href="$classColor.html#a6b4c47aed15e7f7a2f1e38311b98737e" title="Color::b" alt="" coords="1073,403,1140,432"/>
+<area shape="rect" id="node49" href="$classTransfer__base.html#aa4fb201c8061f6f1fd18361e4bd1737a" title="Transfer_base::scale" alt="" coords="831,189,975,219"/>
+<area shape="rect" id="node51" href="$classRFC__Data__const.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Data_const::id" alt="" coords="1036,177,1177,207"/>
+<area shape="rect" id="node53" href="$classRFC__Data.html#a2e1ff52eab3383077d032b5cfdbce9e3" title="RFC_Data::get_value" alt="" coords="1032,231,1181,260"/>
+<area shape="rect" id="node55" href="$classRFC__Pane__transfer.html#ac4352cefd69971574fd2edb3ee894899" title="RFC_Pane_transfer::\lpointer" alt="" coords="1229,222,1376,269"/>
+<area shape="rect" id="node57" href="$classRFC__Pane__transfer.html#a584f868480e84dcf5750fe21c96c4dd8" title="RFC_Pane_transfer::\lis_master" alt="" coords="1436,191,1583,238"/>
+<area shape="rect" id="node59" href="$classRFC__Pane__base.html#ac4352cefd69971574fd2edb3ee894899" title="Get the address of a given attribute with id i. " alt="" coords="1425,261,1593,291"/>
+<area shape="rect" id="node75" href="$classDirection__2.html#a82e09e27d748a78e36839ac8e2c91aa3" title="Direction_2::dx" alt="" coords="644,524,753,553"/>
+</map>

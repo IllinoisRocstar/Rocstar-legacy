@@ -1,0 +1,14 @@
+<map id="get_point" name="get_point">
+<area shape="rect" id="node3" href="$classOverlay.html#a6054035d0679586f98c8667b9951ae60" title="Overlay::get_green\l_parent" alt="" coords="152,5,283,51"/>
+<area shape="rect" id="node11" href="$classOverlay__primitives.html#afed21d8712a251c6215e3f55c900c5a9" title="get_point" alt="" coords="180,75,255,104"/>
+<area shape="rect" id="node13" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="Overlay::insert_node\l_in_blue_edge" alt="" coords="356,93,497,139"/>
+<area shape="rect" id="node21" href="$classOverlay.html#af22e17ad9a8539ed1690db37f741b13b" title="Overlay::write_inodes_tec" alt="" coords="131,179,304,208"/>
+<area shape="rect" id="node23" href="$classOverlay.html#ac5a811521da524802065a5a62cf67341" title="Overlay::write_inodes_vec" alt="" coords="129,232,305,261"/>
+<area shape="rect" id="node25" href="$classOverlay.html#a356923154df51107408f9b11d92c21e5" title="Overlay::write_overlay_off" alt="" coords="131,285,304,315"/>
+<area shape="rect" id="node27" href="$classOverlay.html#a0bd2163789be46cbefc1aa867d9ac420" title="Overlay::write_overlay_tec" alt="" coords="129,339,305,368"/>
+<area shape="rect" id="node5" href="$classOverlay.html#a7a0198e2249c3c9b0a02ecb297251546" title="Overlay::overlay_init" alt="" coords="356,27,497,56"/>
+<area shape="rect" id="node7" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="573,25,699,71"/>
+<area shape="rect" id="node9" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="773,64,891,93"/>
+<area shape="rect" id="node16" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="547,95,725,124"/>
+<area shape="rect" id="node19" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="563,147,709,194"/>
+</map>

@@ -1,0 +1,51 @@
+<map id="is_ghost_element" name="is_ghost_element">
+<area shape="rect" id="node3" href="$classSimple__manifold__2.html#ab192883c34a029fc51443dceb6b5a164" title="Determine the opposite halfedges of each halfedge, and identify border halfedge. " alt="" coords="189,421,323,467"/>
+<area shape="rect" id="node9" href="$classSimple__manifold__2.html#a71b06b680614a7e0c0947ec3899b913c" title="get_next_edge_interior" alt="" coords="180,696,332,725"/>
+<area shape="rect" id="node63" href="$classSimple__manifold__2.html#a3fff497bdfcdda219b941fffcedf3d41" title="get_next_ghost_edge\l_interior" alt="" coords="183,215,329,262"/>
+<area shape="rect" id="node84" href="$classSimple__manifold__2.html#a5a0839973515aaf6ec86f3e88d6e1034" title="get_next_real_edge\l_interior" alt="" coords="400,554,533,601"/>
+<area shape="rect" id="node94" href="$classSimple__manifold__2.html#a6e15b6072d8d66a8a41c33b1a1999976" title="Get the ID of the opposite ghost edge of a given real or border edge. " alt="" coords="381,125,552,155"/>
+<area shape="rect" id="node98" href="$classSimple__manifold__2.html#aa81d979ace76b3412a00645efe09cfff" title="Get the opposite edge of an interior edge of the ghost part. " alt="" coords="189,322,323,369"/>
+<area shape="rect" id="node106" href="$classSimple__manifold__2.html#a97484283cf37c9ffd5d002c22335d5db" title="Get the opposite edge of an interior edge of the real part. " alt="" coords="388,485,545,531"/>
+<area shape="rect" id="node114" href="$classSimple__manifold__2.html#ae3fa513cd4d468860658ba8f800ce661" title="get_prev_edge_interior" alt="" coords="180,643,332,672"/>
+<area shape="rect" id="node117" href="$classSimple__manifold__2.html#a790dfe722267d6ef009ac7668acb1c1c" title="get_prev_ghost_edge\l_interior" alt="" coords="393,5,540,51"/>
+<area shape="rect" id="node121" href="$classSimple__manifold__2.html#ac5bd537a36f17699f9410f428f154f40" title="get_prev_real_edge\l_interior" alt="" coords="400,623,533,670"/>
+<area shape="rect" id="node5" href="$classSimple__manifold__2.html#ad02b3f49c3fc55ea61095afaea1eefe1" title="Initialize the database for the pane, including ghost information, opposite halfedges, incident halfedges, and border halfedges. " alt="" coords="872,436,909,465"/>
+<area shape="rect" id="node7" href="$classSimple__manifold__2.html#a40c7966094160ec0043056b5b1b37ec8" title="Constructors. " alt="" coords="1015,436,1145,465"/>
+<area shape="rect" id="node11" href="$classSimple__manifold__2.html#a02859d542d6ec8221641cbfb4122a39d" title="Get the ID of the next edge of the element or along the boundary. " alt="" coords="413,693,520,723"/>
+<area shape="rect" id="node13" href="$classPane__manifold__2.html#ace7046cd7e020bb965f62ca3ac757e44" title="Obtain the next edge in a given access mode. " alt="" coords="817,643,964,690"/>
+<area shape="rect" id="node15" href="$classHalfedge.html#a04f82933d382b0e6c89b66c5e0622dd6" title="Get the next halfedge of its owner element. " alt="" coords="1027,1133,1133,1163"/>
+<area shape="rect" id="node17" href="$classPolyhedron__incremental__builder__3.html#a2c87480f89222776f7cbb1bfeca98e29" title="Polyhedron_incremental\l_builder_3::add_vertex\l_to_facet" alt="" coords="1451,636,1611,700"/>
+<area shape="rect" id="node19" href="$classRocsurf.html#ae33ff8b1e6981f1e9a7c7e9cca3a51c5" title="Computes edge lengths of a given window. " alt="" coords="1211,882,1371,929"/>
+<area shape="rect" id="node21" href="$classHalfedge__data__structure__decorator.html#a85628cd4f6e02c713a92300bfdc9fbb2" title="Halfedge_data_structure\l_decorator::erase_connected\l_component" alt="" coords="1436,1108,1625,1172"/>
+<area shape="rect" id="node23" href="$classHalfedge__data__structure__decorator.html#a54fb9412224a17a102a93ed275fcecb3" title="Halfedge_data_structure\l_decorator::erase_connected\l_component_face_cycle" alt="" coords="1196,1283,1385,1347"/>
+<area shape="rect" id="node26" href="$classHalfedge__data__structure__decorator.html#ac89f65b400729653ed4719b11ad2d278" title="Halfedge_data_structure\l_decorator::erase_facet" alt="" coords="1209,1002,1372,1049"/>
+<area shape="rect" id="node28" href="$classHalfedge.html#a8163e3cbeb05f5910a83a87dc062c895" title="Get the average value of the nodes of the incident face of a given halfedge. " alt="" coords="1211,1072,1371,1101"/>
+<area shape="rect" id="node30" href="$classHalfedge__data__structure__decorator.html#ac736359a7df18c1e33e8a7fda8be9b74" title="Halfedge_data_structure\l_decorator::find_prev" alt="" coords="1209,1125,1372,1171"/>
+<area shape="rect" id="node32" href="$classHalfedge__data__structure__decorator.html#af88532d732ff57487f3d404607afd736" title="Halfedge_data_structure\l_decorator::find_prev\l_around_vertex" alt="" coords="1209,1195,1372,1259"/>
+<area shape="rect" id="node34" href="$classHalfedge__data__structure__decorator.html#aa4cf771809bb8f620ad9bfb890f1fd13" title="Halfedge_data_structure\l_decorator::flip_edge" alt="" coords="1449,1799,1612,1846"/>
+<area shape="rect" id="node36" href="$Manifold__2_8C.html#aa67b3b6a5ff8411c6120e4f48161c837" title="Get the normal of the deformed shape (coordinates plus given displacements) of the incident facet of ..." alt="" coords="1217,1371,1364,1400"/>
+<area shape="rect" id="node38" href="$classPane__manifold__2.html#abb54afcf7f0ee218a75b6bd78f26b163" title="Obtain the previous edge in a given access mode. " alt="" coords="1217,554,1364,601"/>
+<area shape="rect" id="node43" href="$classHalfedge__data__structure__decorator.html#addbc80b1659c1d2d530daded925164ce" title="Halfedge_data_structure\l_decorator::insert_halfedge" alt="" coords="1201,1423,1380,1470"/>
+<area shape="rect" id="node45" href="$classHalfedge__data__structure__decorator.html#afffe364393a08d90806065605a3631ec" title="Halfedge_data_structure\l_decorator::insert_tip" alt="" coords="1209,1770,1372,1817"/>
+<area shape="rect" id="node48" href="$classHalfedge__data__structure__decorator.html#afc829f37729d999ae53972d9ee02aab8" title="Halfedge_data_structure\l_decorator::inside_out" alt="" coords="1209,1493,1372,1539"/>
+<area shape="rect" id="node50" href="$classHalfedge__data__structure__decorator.html#a7e526004db7136c40ff6a8708d0558c5" title="Halfedge_data_structure\l_decorator::is_valid" alt="" coords="1209,1562,1372,1609"/>
+<area shape="rect" id="node52" href="$classHalfedge__data__structure__decorator.html#acea850b1c2193ebbbe8839355d0fbfaf" title="Halfedge_data_structure\l_decorator::join_facet" alt="" coords="1209,1631,1372,1678"/>
+<area shape="rect" id="node54" href="$classHalfedge__data__structure__decorator.html#abac89554d5a5134b0252d56ef18711a0" title="Halfedge_data_structure\l_decorator::join_loop" alt="" coords="1209,1701,1372,1747"/>
+<area shape="rect" id="node56" href="$classHalfedge__data__structure__decorator.html#a8ef5c078e56ad37f0aa1423ed511fac0" title="Halfedge_data_structure\l_decorator::join_vertex" alt="" coords="1209,743,1372,790"/>
+<area shape="rect" id="node58" href="$classPolyhedron__incremental__builder__3.html#ad3a2652704bafb5cc2a95f08b370ff36" title="Polyhedron_incremental\l_builder_3::lookup_halfedge" alt="" coords="1200,674,1381,721"/>
+<area shape="rect" id="node61" href="$classPolyhedron__incremental__builder__3.html#ae34196e18098a7d7f2af0c4fd4394239" title="Polyhedron_incremental\l_builder_3::lookup_hole" alt="" coords="1211,813,1371,859"/>
+<area shape="rect" id="node40" href="$classHalfedge.html#a811d0a145b7a140c42effbd1b0869cd7" title="Get the previous halfedge of its owner element. " alt="" coords="1477,533,1584,563"/>
+<area shape="rect" id="node65" href="$classSimple__manifold__2.html#afaabce069f16be292e5dd4d8064bcd99" title="Get the ID of an incident real edge within the pane of a given node. " alt="" coords="389,331,544,360"/>
+<area shape="rect" id="node80" href="$classSimple__manifold__2.html#a5eec9a63bacfe67ed3ad93b2c4b20700" title="Get the ID of the next ghost edge of the element or along the boundary. " alt="" coords="611,87,757,116"/>
+<area shape="rect" id="node82" href="$classSimple__manifold__2.html#a987d8bf8fa3ba6a3bb530eb2bb54271a" title="Get the ID of the previous ghost edge of the element or along the boundary. " alt="" coords="611,165,757,195"/>
+<area shape="rect" id="node67" href="$classPane__manifold__2.html#a47b2d003e1ea97488de3d260080f1fe3" title="Obtain the border node index (equal to ID of incident border edge). " alt="" coords="611,243,757,290"/>
+<area shape="rect" id="node75" href="$classNode.html#a0500c06abc68c6b8484b25ec347b5c2a" title="Get an incident halfedge originated from the node. " alt="" coords="629,317,739,347"/>
+<area shape="rect" id="node69" href="$classWindow__manifold__2.html#aad647356fbd9bd7b27031859731bfaff" title="Determine the primary nodes for across&#45;pane access. " alt="" coords="817,309,964,355"/>
+<area shape="rect" id="node71" href="$classPane__manifold__2.html#a9e4f032cd87aefe723260942a9510b0c" title="Obtains a Node object corresponding to the primary copy of the given node. " alt="" coords="817,170,964,217"/>
+<area shape="rect" id="node73" href="$classPane__manifold__2.html#a2bf0e633b96118b896d76282140ae40b" title="Determines whether a given node is a primary copy. " alt="" coords="821,239,960,286"/>
+<area shape="rect" id="node78" href="$classNode.html#aa126fd94949c810d24869ad04cd97e15" title="Is the node on the physical boundary? " alt="" coords="833,379,948,408"/>
+<area shape="rect" id="node86" href="$classSimple__manifold__2.html#a5526ffd6e536b2c699cd80d42c05d534" title="Get the ID of an incident real edge within the pane of a given node The incident edge may encode an i..." alt="" coords="601,497,767,527"/>
+<area shape="rect" id="node88" href="$classSimple__manifold__2.html#a34afa4fb2467f7b53bfb153b728f08e0" title="Get the ID of the next real edge of the element or along the boundary. " alt="" coords="617,623,751,652"/>
+<area shape="rect" id="node91" href="$classSimple__manifold__2.html#ab2686d48e0f5957e3414e5e474803831" title="Get the ID of the previous real edge of the element or along the boundary. " alt="" coords="617,563,751,592"/>
+<area shape="rect" id="node100" href="$classSimple__manifold__2.html#a2091a9ef9a16dd71316e13e5e52d01be" title="Determine an incident halfedge for each node. " alt="" coords="619,370,749,417"/>
+</map>

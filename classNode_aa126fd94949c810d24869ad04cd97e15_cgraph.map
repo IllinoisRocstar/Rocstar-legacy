@@ -1,0 +1,24 @@
+<map id="is_border" name="is_border">
+<area shape="rect" id="node3" href="$classNode.html#a0500c06abc68c6b8484b25ec347b5c2a" title="Get an incident halfedge originated from the node. " alt="" coords="161,203,231,232"/>
+<area shape="rect" id="node60" href="$classHalfedge.html#aa126fd94949c810d24869ad04cd97e15" title="Is the edge a border edge? " alt="" coords="129,147,263,176"/>
+<area shape="rect" id="node5" href="$classPane__manifold__2.html#a293c0575cef30e28441550227a851354" title="Get the counterpart of an edge in the ACROSS_PANE mode, i.e. " alt="" coords="527,5,673,51"/>
+<area shape="rect" id="node13" href="$classSimple__manifold__2.html#a306844d8bb7a3ba531f04bc8481b582b" title="Get the ID of an incident edge within the pane of a given node that originated from the node..." alt="" coords="531,418,669,465"/>
+<area shape="rect" id="node27" href="$classSimple__manifold__2.html#afaabce069f16be292e5dd4d8064bcd99" title="Get the ID of an incident real edge within the pane of a given node. " alt="" coords="312,478,467,525"/>
+<area shape="rect" id="node58" href="$classHalfedge.html#ab72ff77eeb5b8645e86a4b4cb57138ce" title="Obtain the pane manifold that owns the edge. " alt="" coords="517,195,683,224"/>
+<area shape="rect" id="node7" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="736,308,872,337"/>
+<area shape="rect" id="node11" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="923,360,1024,389"/>
+<area shape="rect" id="node9" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="925,703,1021,732"/>
+<area shape="rect" id="node15" href="$classSimple__manifold__2.html#ab10e70cbf6e6aeedb1e3dd1cab81ebf8" title="Is the given node a ghost node? " alt="" coords="735,411,873,458"/>
+<area shape="rect" id="node19" href="$classSimple__manifold__2.html#a678219ca5d2b29febb0820f195f668ba" title="Get an index for internal edges. " alt="" coords="735,721,873,767"/>
+<area shape="rect" id="node25" href="$classSimple__manifold__2.html#a96857d0e0525ef06c2590d22d2acf0c1" title="Get the ID of the origin of a given edge. " alt="" coords="735,481,873,527"/>
+<area shape="rect" id="node22" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="947,756,1000,785"/>
+<area shape="rect" id="node29" href="$classSimple__manifold__2.html#ada174cc24bb104689a8ded70a6674ebb" title="Is the given node a real node? " alt="" coords="531,626,669,673"/>
+<area shape="rect" id="node33" href="$classSimple__manifold__2.html#a5dfd55a426d43af633d6f1d8788cb322" title="Get the opposite edge of a border edge for the ghost pane. " alt="" coords="515,539,685,603"/>
+<area shape="rect" id="node40" href="$classSimple__manifold__2.html#aa81d979ace76b3412a00645efe09cfff" title="Get the opposite edge of an interior edge of the ghost part. " alt="" coords="515,696,685,760"/>
+<area shape="rect" id="node47" href="$classSimple__manifold__2.html#a3fff497bdfcdda219b941fffcedf3d41" title="Simple_manifold_2::\lget_next_ghost_edge\l_interior" alt="" coords="527,784,673,848"/>
+<area shape="rect" id="node53" href="$classSimple__manifold__2.html#ab6d308f97d5fe32df4e31327bdf5fc3e" title="Determine whether a given edge is a border edge of real part of the pane (either on physical border o..." alt="" coords="531,247,669,294"/>
+<area shape="rect" id="node37" href="$classSimple__manifold__2.html#ae1611b1b5b6feb95d11d299ef4150866" title="Is the element incident on the give edge a real element? " alt="" coords="735,601,873,647"/>
+<area shape="rect" id="node43" href="$classSimple__manifold__2.html#ab06c9b0093094a1e15b3c1d91b6d7012" title="Is the element incident on the give edge a ghost element? " alt="" coords="735,790,873,837"/>
+<area shape="rect" id="node62" href="$classPane__manifold__2.html#ad58eac8ab7a4df54a891be56771473ba" title="Is the edge on the boundary of a given mode? " alt="" coords="320,134,459,181"/>
+<area shape="rect" id="node65" href="$classSimple__manifold__2.html#a7638d97609333036c513638fbba068aa" title="Determine whether a given edge is a border edge of real part of the whole pane (on physical border)..." alt="" coords="515,74,685,121"/>
+</map>

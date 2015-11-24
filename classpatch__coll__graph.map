@@ -1,0 +1,16 @@
+<map id="patch" name="patch">
+<area shape="rect" id="node44" href="$classexternalBCpatch.html" title="externalBCpatch" alt="" coords="461,320,579,349"/>
+<area shape="rect" id="node2" href="$classblock.html" title="block" alt="" coords="588,608,641,637"/>
+<area shape="rect" id="node10" href="$classface.html" title="face" alt="" coords="475,512,520,541"/>
+<area shape="rect" id="node4" href="$classvector3d.html" title="vector3d" alt="" coords="811,512,883,541"/>
+<area shape="rect" id="node12" href="$classnode.html" title="node" alt="" coords="357,800,408,829"/>
+<area shape="rect" id="node6" href="$classblockDim.html" title="blockDim" alt="" coords="147,171,224,200"/>
+<area shape="rect" id="node8" href="$classblockLoc.html" title="blockLoc" alt="" coords="148,5,223,35"/>
+<area shape="rect" id="node16" href="$classadjRec.html" title="adjRec" alt="" coords="155,608,216,637"/>
+<area shape="rect" id="node32" href="$classblockSpan.html" title="blockSpan" alt="" coords="555,117,637,147"/>
+<area shape="rect" id="node27" href="$classallocPool.html" title="allocPool\&lt; node \&gt;" alt="" coords="260,896,385,925"/>
+<area shape="rect" id="node14" href="$classadjList.html" title="adjList" alt="" coords="303,704,361,733"/>
+<area shape="rect" id="node18" href="$classallocPool.html" title="allocPool\&lt; adjRec \&gt;" alt="" coords="116,704,255,733"/>
+<area shape="rect" id="node21" href="$classallocPool.html" title="allocPool\&lt; T \&gt;" alt="" coords="5,608,112,637"/>
+<area shape="rect" id="node38" title="STL class. " alt="" coords="231,320,321,349"/>
+</map>

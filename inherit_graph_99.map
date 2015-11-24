@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structcimg__library_1_1CImgException.html" title="Instances of this class are thrown when errors occur during a CImg library function call..." alt="" coords="5,112,117,141"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgArgumentException.html" title="CImgArgumentException" alt="" coords="165,5,333,35"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImgDisplayException.html" title="CImgDisplayException" alt="" coords="172,59,327,88"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImgInstanceException.html" title="CImgInstanceException" alt="" coords="168,112,331,141"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImgIOException.html" title="CImgIOException" alt="" coords="187,165,312,195"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImgWarningException.html" title="CImgWarningException" alt="" coords="169,219,329,248"/>
+</map>

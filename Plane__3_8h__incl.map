@@ -1,0 +1,22 @@
+<map id="Plane_3.h" name="Plane_3.h">
+<area shape="rect" id="node3" href="$Line__3_8h.html" title="CGAL/Line_3.h" alt="" coords="188,83,297,112"/>
+<area shape="rect" id="node32" href="$Point__2_8h.html" title="CGAL/Point_2.h" alt="" coords="1033,83,1151,112"/>
+<area shape="rect" id="node5" href="$Segment__3_8h.html" title="CGAL/Segment_3.h" alt="" coords="25,160,164,189"/>
+<area shape="rect" id="node8" href="$Point__3_8h.html" title="CGAL/Point_3.h" alt="" coords="321,160,439,189"/>
+<area shape="rect" id="node28" href="$Ray__3_8h.html" title="CGAL/Ray_3.h" alt="" coords="188,160,297,189"/>
+<area shape="rect" id="node10" href="$point__vector__declarations__3_8h.html" title="CGAL/point_vector_declarations_3.h" alt="" coords="549,237,784,267"/>
+<area shape="rect" id="node14" href="$Vector__3_8h.html" title="CGAL/Vector_3.h" alt="" coords="231,324,356,353"/>
+<area shape="rect" id="node20" href="$point__vector__definitions__3_8C.html" title="CGAL/point_vector_definitions_3.C" alt="" coords="5,237,232,267"/>
+<area shape="rect" id="node22" href="$Aff__transformation__3_8h.html" title="CGAL/Aff_transformation_3.h" alt="" coords="331,237,525,267"/>
+<area shape="rect" id="node12" href="$user__classes_8h.html" title="CGAL/user_classes.h" alt="" coords="721,324,871,353"/>
+<area shape="rect" id="node17" href="$Direction__3_8h.html" title="CGAL/Direction_3.h" alt="" coords="224,411,363,440"/>
+<area shape="rect" id="node34" href="$point__vector__declarations__2_8h.html" title="CGAL/point_vector_declarations_2.h" alt="" coords="808,237,1043,267"/>
+<area shape="rect" id="node37" href="$Vector__2_8h.html" title="CGAL/Vector_2.h" alt="" coords="1029,324,1155,353"/>
+<area shape="rect" id="node43" href="$point__vector__definitions__2_8C.html" title="CGAL/point_vector_definitions_2.C" alt="" coords="1360,160,1587,189"/>
+<area shape="rect" id="node45" href="$Aff__transformation__2_8h.html" title="CGAL/Aff_transformation_2.h" alt="" coords="1141,160,1336,189"/>
+<area shape="rect" id="node40" href="$Direction__2_8h.html" title="CGAL/Direction_2.h" alt="" coords="1023,411,1161,440"/>
+<area shape="rect" id="node47" href="$Line__2_8h.html" title="CGAL/Line_2.h" alt="" coords="1192,237,1301,267"/>
+<area shape="rect" id="node49" href="$predicates__on__points__2_8h.html" title="CGAL/predicates_on\l_points_2.h" alt="" coords="1487,315,1628,362"/>
+<area shape="rect" id="node53" href="$Segment__2_8h.html" title="CGAL/Segment_2.h" alt="" coords="1185,411,1324,440"/>
+<area shape="rect" id="node56" href="$Ray__2_8h.html" title="CGAL/Ray_2.h" alt="" coords="1296,324,1405,353"/>
+</map>

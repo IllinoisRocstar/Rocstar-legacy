@@ -1,0 +1,13 @@
+<map id="Pane_ghost_connectivity" name="Pane_ghost_connectivity">
+<area shape="rect" id="node3" href="$classPane__ghost__connectivity.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="init" alt="" coords="223,32,260,61"/>
+<area shape="rect" id="node5" href="$classPane__ghost__connectivity.html#a7ab9ce2c2abc714470af5935a1253b51" title="determine_shared_border" alt="" coords="309,5,477,35"/>
+<area shape="rect" id="node9" href="$classPane__ghost__connectivity.html#a0d0ae3464afda95e99e86ba9ad306c3b" title="get_cpanes" alt="" coords="349,59,437,88"/>
+<area shape="rect" id="node7" href="$classPane__ghost__connectivity.html#ad5c86012e49ffd3488beacec5a4f5f03" title="mark_elems_from_nodes" alt="" coords="525,5,693,35"/>
+<area shape="rect" id="node11" href="$classAttribute.html#a2e7d4fe5a490266aed5667444935490f" title="Obtain a constant pointer to the physical address. " alt="" coords="551,59,668,88"/>
+<area shape="rect" id="node13" href="$classAttribute.html#a376398cab240594dd4ec0d158b658172" title="Obtain the number of real items in the attribute. " alt="" coords="549,135,669,182"/>
+<area shape="rect" id="node15" href="$classPane.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain the attribute from given name. " alt="" coords="741,144,848,173"/>
+<area shape="rect" id="node17" href="$classWindow.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain a pointer to the attribute metadata from its name. " alt="" coords="897,116,1020,145"/>
+<area shape="rect" id="node23" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="1087,175,1175,204"/>
+<area shape="rect" id="node19" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="Attribute::is_digit" alt="" coords="1071,52,1191,81"/>
+<area shape="rect" id="node21" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="1071,105,1191,151"/>
+</map>

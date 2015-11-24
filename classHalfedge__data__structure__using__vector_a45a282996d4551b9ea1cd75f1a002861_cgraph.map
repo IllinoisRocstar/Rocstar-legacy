@@ -1,0 +1,12 @@
+<map id="reserve" name="reserve">
+<area shape="rect" id="node3" href="$CGAL_2include_2CGAL_2basic_8h.html#a9266e7a4cb58d4a3714eeb49db31bfa9" title="check_tag" alt="" coords="132,208,215,237"/>
+<area shape="rect" id="node5" href="$classHalfedge__data__structure__using__vector.html#aa4d122d3e5f7546947f48e00be7b5bba" title="pointer_update" alt="" coords="120,261,227,291"/>
+<area shape="rect" id="node7" href="$classHalfedge__data__structure__decorator.html#a18eab6ffa92233a5ced127b70413239b" title="Halfedge_data_structure\l_decorator::get_facet" alt="" coords="276,5,439,51"/>
+<area shape="rect" id="node9" href="$classHalfedge__data__structure__decorator.html#a1634820d4da5242e51ef3b0495b711aa" title="Halfedge_data_structure\l_decorator::get_prev" alt="" coords="276,74,439,121"/>
+<area shape="rect" id="node11" href="$classHalfedge__data__structure__decorator.html#ae49e3000eb72d0e5313cb4f0b70c4059" title="Halfedge_data_structure\l_decorator::get_vertex" alt="" coords="276,143,439,190"/>
+<area shape="rect" id="node13" href="$classHalfedge__data__structure__decorator.html#a25262e291b543249ff07aaf26c0e0682" title="Halfedge_data_structure\l_decorator::set_facet" alt="" coords="276,213,439,259"/>
+<area shape="rect" id="node15" href="$classHalfedge__data__structure__decorator.html#aa64facdc6ab6224220f2fd4562c8e971" title="Halfedge_data_structure\l_decorator::set_facet\l_halfedge" alt="" coords="276,283,439,347"/>
+<area shape="rect" id="node17" href="$classHalfedge__data__structure__decorator.html#a92be4eb032a27bd7913c110c83b69b19" title="Halfedge_data_structure\l_decorator::set_prev" alt="" coords="276,370,439,417"/>
+<area shape="rect" id="node19" href="$classHalfedge__data__structure__decorator.html#a60256e1bd382a30958cc523b831b8874" title="Halfedge_data_structure\l_decorator::set_vertex" alt="" coords="276,439,439,486"/>
+<area shape="rect" id="node21" href="$classHalfedge__data__structure__decorator.html#a3cfa2d359aa61dc7e8ab9e4429e2d2e1" title="Halfedge_data_structure\l_decorator::set_vertex\l_halfedge" alt="" coords="276,509,439,573"/>
+</map>

@@ -1,0 +1,36 @@
+<map id="imagemagick_path" name="imagemagick_path">
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#ac1b66fe77173de9e5e8542b2823d6071" title="Print informations about CImg environement variables. " alt="" coords="260,395,303,424"/>
+<area shape="rect" id="node74" href="$structcimg__library_1_1CImg.html#a841db22435a4f77bf3e4c9fc65ecbb6e" title="Load an image using ImageMagick&#39;s external tool &#39;convert&#39;. " alt="" coords="187,448,376,512"/>
+<area shape="rect" id="node76" href="$structcimg__library_1_1CImg.html#ab0ff4f35fc74d40fda4893b7e2fdbe7b" title="Save the image using ImageMagick&#39;s convert. " alt="" coords="184,536,379,600"/>
+<area shape="rect" id="node5" href="$meshtest1_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="507,264,557,293"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1PatchData.html#abf395c48f00dbb49d4a000d371e78483" title="Mesquite::PatchData\l::have_computed_info" alt="" coords="457,386,607,433"/>
+<area shape="rect" id="node47" href="$classMesquite_1_1PatchData.html#ac7404d8ad2d834bfb4f3d0620bba16ee" title="Mesquite::PatchData\l::note_have_info" alt="" coords="460,317,604,363"/>
+<area shape="rect" id="node52" href="$classFaceOffset__3.html#a7cd0e18f9d180971a5c656207a67a464" title="FaceOffset_3::compute\l_eigenvectors" alt="" coords="453,683,611,730"/>
+<area shape="rect" id="node66" href="$classRocmop.html#a77616b2e5e1035b58e2e4438abea5cb7" title="Rocmop::compute_eigenvectors" alt="" coords="427,824,637,853"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1PatchData.html#afe0e319026493905ea7ff7e2b3709eac" title="Returns the maximum volume or area out of all the elements in the patch This information is stored in..." alt="" coords="696,229,851,293"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1PatchData.html#ac9aa16ae4424ea8003292f7e6b28bde8" title="Returns delta based on the minimum and maximum corner determinant over all elements in the patch This..." alt="" coords="701,386,845,433"/>
+<area shape="rect" id="node41" href="$classMesquite_1_1PatchData.html#a73c2dc4cba0a22073185a097000d315c" title="Returns average corner determinant over all corners in the patch This information is stored in the pa..." alt="" coords="687,317,860,363"/>
+<area shape="rect" id="node45" href="$namespaceMesquite.html#a3f6e349e871fa0ed9ba56863380bbc14" title="Mesquite::operator\&lt;\&lt;" alt="" coords="700,456,847,485"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1DistanceFromTarget.html#aa835b7b26215274c9f7edd291145a723" title="Mesquite::DistanceFromTarget\l::get_barrier_function" alt="" coords="916,351,1119,398"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1I__DFT.html#abc691c49e36734bba1ea2ecd14fe9a5b" title="Evaluate the metric for an element. " alt="" coords="929,421,1105,467"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1I__DFT.html#aa71c0d57cadd2f8eeb540ab194c145b3" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="923,490,1112,537"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1I__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::I_DFT::compute\l_element_analytical_hessian" alt="" coords="923,559,1112,606"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1RI__DFT.html#abc691c49e36734bba1ea2ecd14fe9a5b" title="Evaluate the metric for an element. " alt="" coords="924,629,1111,675"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1RI__DFT.html#aa71c0d57cadd2f8eeb540ab194c145b3" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="923,74,1112,121"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1RI__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::RI_DFT::compute\l_element_analytical_hessian" alt="" coords="923,143,1112,190"/>
+<area shape="rect" id="node31" href="$classMesquite_1_1ShapeQualityMetric.html#a049c8172101b823d31ecf9a6f1a19244" title="Given the 2&#45;d jacobian matrix, compute the condition number, fval. " alt="" coords="919,213,1116,259"/>
+<area shape="rect" id="node37" href="$classMesquite_1_1ShapeQualityMetric.html#ace5b090da0ae07d4aa1dde27027533ba" title="Given the 3&#45;d jacobian matrix, compute the condition number, fval. " alt="" coords="919,282,1116,329"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1sI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="1204,351,1388,398"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1sRI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="1224,421,1368,467"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1ConditionNumberQualityMetric.html#afc1a16a1793ba9459a9b930b5292ffc5" title="evaluate using mesquite objects " alt="" coords="1204,195,1388,259"/>
+<area shape="rect" id="node35" href="$classMesquite_1_1VertexConditionNumberQualityMetric.html#a5a90f78516fa587f85daf4011bfb1ba8" title="evaluate using mesquite objects " alt="" coords="1173,282,1419,329"/>
+<area shape="rect" id="node43" href="$classMesquite_1_1LVQDTargetCalculator.html#a7bebe2f2afb7cd9b6552569edd96e9a1" title="Function called by compute_target_matrices(PatchData&amp; pd, MsqError&amp; err) to compute the matrices afte..." alt="" coords="911,5,1124,51"/>
+<area shape="rect" id="node54" href="$classFaceOffset__3.html#a56aca8e1560d76b750545f7f33890551" title="FaceOffset_3::denoise\l_surface" alt="" coords="696,683,851,730"/>
+<area shape="rect" id="node58" href="$classFaceOffset__3.html#ae567b553d4a9a500996a8211c9202a9c" title="FaceOffset_3::eigen\l_analyze_vertex" alt="" coords="704,753,843,799"/>
+<area shape="rect" id="node56" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="1229,749,1363,795"/>
+<area shape="rect" id="node60" href="$classFaceOffset__3.html#a932f06459b53d1207fdbf1d78a4a09c6" title="FaceOffset_3::compute\l_anisotropic_vertex_centers" alt="" coords="925,818,1109,865"/>
+<area shape="rect" id="node63" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="939,749,1096,795"/>
+<area shape="rect" id="node68" href="$classRocmop.html#a951f6a38a9e200878fabe2fe295d23ed" title="Rocmop::eigen_analyze\l_vertex" alt="" coords="692,855,855,902"/>
+<area shape="rect" id="node70" href="$classRocmop.html#a4c6e496385e479c044a89f1e545edaa5" title="Compute medial quadric for every vertex. " alt="" coords="931,887,1104,934"/>
+<area shape="rect" id="node72" href="$classRocmop.html#a679bfb8c7da7e819b00dc132ba57dc8f" title="Smooths a surface using the medial quadric. " alt="" coords="1221,887,1371,934"/>
+</map>

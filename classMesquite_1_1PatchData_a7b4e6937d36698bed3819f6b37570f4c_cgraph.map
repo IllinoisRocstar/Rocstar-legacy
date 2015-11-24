@@ -1,0 +1,11 @@
+<map id="move_free_vertices_constrained" name="move_free_vertices_constrained">
+<area shape="rect" id="node3" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#a80870c233d0237e3588a2d6f8d176916" title="Increments the iterator. returns false if there is no more free vertex. " alt="" coords="191,11,393,58"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="473,75,572,104"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ad20897c5c8bd47f5d4005989bead0e55" title="Resets the iterator. " alt="" coords="191,131,393,178"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1PatchData.html#a68de345feb47d7fc0d410d65ff68098e" title="Adjust the position of the specified vertex so that it lies on its constraining domain. " alt="" coords="212,201,372,231"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ae3a963bdd66247d38ad22d17fa121632" title="Returns an index corresponding to a free vertex. " alt="" coords="191,254,393,301"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MsqVertex.html#a181f1717ea1cab3613ff39c6969600dc" title="Mesquite::MsqVertex\l::is_flag_set" alt="" coords="449,5,596,51"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="447,127,599,174"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1MeshDomain.html#a80270d76f2b78f92d7a2086bfe493d53" title="evaluate closest point and normal " alt="" coords="443,197,603,243"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1MeshDomain.html#afe4742b0194c0a8b7fcff80860cdbc0b" title="Modifies &quot;coordinate&quot; so that it lies on the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="443,266,603,313"/>
+</map>

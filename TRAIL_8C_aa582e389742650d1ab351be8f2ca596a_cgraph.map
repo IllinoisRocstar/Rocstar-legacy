@@ -1,0 +1,15 @@
+<map id="TRAIL_WriteWindow" name="TRAIL_WriteWindow">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="223,5,356,35"/>
+<area shape="rect" id="node7" href="$roccom__c_8h.html#a44547c3eab1bf444e5f9bb23c13fc123" title="COM_free_buffer" alt="" coords="228,59,351,88"/>
+<area shape="rect" id="node9" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="201,112,377,141"/>
+<area shape="rect" id="node11" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="201,165,377,195"/>
+<area shape="rect" id="node13" href="$roccom__c_8h.html#ad744816e73fae2aec731bcbe41b52a16" title="COM_get_panes" alt="" coords="229,219,349,248"/>
+<area shape="rect" id="node15" href="$Handle_8h.html#a459850cd445841d238d0af12068f45a3" title="id" alt="" coords="271,272,308,301"/>
+<area shape="rect" id="node17" href="$TRAIL__UnixUtils_8H.html#adfa66fced7c6ea0eb21304b5f9ac48ae" title="TRAIL_CD" alt="" coords="449,348,535,377"/>
+<area shape="rect" id="node21" href="$TRAIL__UnixUtils_8H.html#adcf3eb6bd3dae10529b75101855089be" title="TRAIL_CWD" alt="" coords="443,407,541,436"/>
+<area shape="rect" id="node23" href="$TRAIL_8C.html#a4499180953af6dcc781b7172ac3b1c05" title="TRAIL_MergeRocinFiles" alt="" coords="207,427,372,456"/>
+<area shape="rect" id="node27" href="$TRAIL_8C.html#a4de17881c6e94055e09719728697be13" title="TRAIL_TimeString" alt="" coords="427,472,557,501"/>
+<area shape="rect" id="node30" href="$TRAIL_8C.html#abe177767f35ecdcb734c278d807187c4" title="TRAIL_WriteRocinControl" alt="" coords="203,531,376,560"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="428,5,556,35"/>
+<area shape="rect" id="node19" href="$TRAIL__UnixUtils_8C.html#adcf3eb6bd3dae10529b75101855089be" title="TRAIL_CWD" alt="" coords="607,348,705,377"/>
+</map>

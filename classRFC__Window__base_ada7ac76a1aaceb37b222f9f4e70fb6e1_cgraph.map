@@ -1,0 +1,51 @@
+<map id="write_sdv" name="write_sdv">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="371,5,504,35"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#ae6418b345decab4388bdd5f233d11964" title="COM_delete_pane" alt="" coords="372,59,503,88"/>
+<area shape="rect" id="node10" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="584,108,731,137"/>
+<area shape="rect" id="node13" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="135,421,311,451"/>
+<area shape="rect" id="node15" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="135,475,311,504"/>
+<area shape="rect" id="node17" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="591,215,724,244"/>
+<area shape="rect" id="node20" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="576,268,739,297"/>
+<area shape="rect" id="node23" href="$classRFC__Window__base.html#af5f8445c6edad26fd91a2909d1f86073" title="get_prefix_base" alt="" coords="165,528,280,557"/>
+<area shape="rect" id="node25" href="$classRFC__Window__base.html#a1a940cf5d49e7cd9589fa6a88fa344d0" title="get_sdv_fname" alt="" coords="168,581,277,611"/>
+<area shape="rect" id="node27" href="$classRFC__Window__base.html#a5c8a9fdd5e7f3c28db5eccf0b23f3bd6" title="get_sdv_format" alt="" coords="167,635,279,664"/>
+<area shape="rect" id="node29" href="$classRFC__Window__base.html#a37627d5d5bba7f4a8690c71c2ab3cb07" title="The name of the window. " alt="" coords="196,688,249,717"/>
+<area shape="rect" id="node31" href="$classRFC__Window__base.html#a887424dcad4c5daeff1aed235474c78e" title="New attributes. " alt="" coords="371,320,504,349"/>
+<area shape="rect" id="node36" href="$classRFC__Window__base.html#a273c492cf3d20d71cef06e522c262bde" title="pane" alt="" coords="197,741,248,771"/>
+<area shape="rect" id="node38" href="$RFC__Window__base__IO_8C.html#a2913c79327ebc4516c9f2d79524e5c2e" title="Load the module Rocout into Roccom using the given module name. " alt="" coords="151,368,295,397"/>
+<area shape="rect" id="node101" href="$RFC__Window__base__IO_8C.html#af1a862d5aa9d99ed873d9402ce36e8b8" title="Unload the module Rocout from Roccom. " alt="" coords="144,163,301,192"/>
+<area shape="rect" id="node113" href="$classRFC__Pane__base.html#a5b498f613d5e240c161da5c1231179f9" title="RFC_Pane_base::write\l_binary" alt="" coords="144,794,301,841"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="843,215,971,244"/>
+<area shape="rect" id="node33" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="588,321,727,351"/>
+<area shape="rect" id="node40" href="$classRocout.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="393,588,481,617"/>
+<area shape="rect" id="node42" href="$classHDF4.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="Create and start the I/O thread. " alt="" coords="616,535,699,564"/>
+<area shape="rect" id="node46" href="$roccom__c_09_09_8h.html#a5e5321de4f0f8940ea99b25b0060afe3" title="COM_set_object" alt="" coords="597,375,717,404"/>
+<area shape="rect" id="node49" href="$roccom__c_8h.html#ab41e262f86b991f367a93a005e0694b8" title="COM_set_member_function" alt="" coords="565,588,749,617"/>
+<area shape="rect" id="node51" href="$classRocout.html#a96dfaf0a6d6860d2c68466b2a993fa06" title="Write a (possibly aggregate) attribute to a file. " alt="" coords="580,641,735,671"/>
+<area shape="rect" id="node61" href="$classRocout.html#a763364901e2c959922428b15356b3351" title="Write a (possibly aggregate) attribute to a new file. " alt="" coords="585,695,729,724"/>
+<area shape="rect" id="node65" href="$classRocout.html#a1c5203c5ca111c4b4177e04e216b1db3" title="Append a (possibly aggregate) attribute to a file. " alt="" coords="584,748,731,777"/>
+<area shape="rect" id="node69" href="$classRocout.html#ac677af3eb8dee075026bfb259b95b195" title="Generate a control file for Rocin. " alt="" coords="591,801,724,847"/>
+<area shape="rect" id="node80" href="$classRocout.html#ad55f80ed3cd8b6c4f247763b747016af" title="Wait for the completion of an asychronous write operation. " alt="" coords="608,871,707,900"/>
+<area shape="rect" id="node82" href="$classRocout.html#ac83c6eda0a78d658ac8f12d3dde2b9b0" title="Set an option for Rocout, such as controlling the output format. " alt="" coords="841,1012,972,1041"/>
+<area shape="rect" id="node88" href="$classRocout.html#af161b7590c573735e6470735602b0e46" title="Write out the parameters defined in the fiven window into a parameter file. " alt="" coords="563,428,752,457"/>
+<area shape="rect" id="node95" href="$classRocout.html#a6b02360a0612b0fe9dc2d5e9e402f005" title="Set options for Rocout via a control file. " alt="" coords="575,1064,740,1093"/>
+<area shape="rect" id="node53" href="$classRocout.html#a69466e6a13557ca6ac500e678f5f66a8" title="Does the actual writing to file. " alt="" coords="844,625,969,671"/>
+<area shape="rect" id="node59" href="$Handle_8h.html#a459850cd445841d238d0af12068f45a3" title="id" alt="" coords="888,695,925,724"/>
+<area shape="rect" id="node55" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="1061,633,1184,663"/>
+<area shape="rect" id="node57" href="$roccom__c_8h.html#ad744816e73fae2aec731bcbe41b52a16" title="COM_get_panes" alt="" coords="1063,717,1183,747"/>
+<area shape="rect" id="node71" href="$roccom__c_09_09_8h.html#a6ebf7d3be61b364094596342a1d64827" title="COM_get_default_communicator" alt="" coords="800,799,1013,828"/>
+<area shape="rect" id="node73" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="837,852,976,881"/>
+<area shape="rect" id="node76" href="$namespacecimg__library.html#a35f28010f1c3f5a5668974c5ea8d6be3" title="cimg_library::sin" alt="" coords="848,905,965,935"/>
+<area shape="rect" id="node78" href="$vinci_8h.html#a9d685369a20ad2d6f5c2256b857614f6" title="empty" alt="" coords="877,959,936,988"/>
+<area shape="rect" id="node84" href="$Rocout_8C.html#a4f41034bafb49b9810a2e53480a97ec9" title="Return true if the given string is the name of a Rocout option. " alt="" coords="1067,1036,1179,1065"/>
+<area shape="rect" id="node86" href="$Rocout_8C.html#a8ed0e45f99075ad3a0d94de39ed5dc12" title="Return true if the given Rocout option name/value pair is valid. " alt="" coords="1067,1101,1179,1131"/>
+<area shape="rect" id="node91" href="$roccom__c_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="820,367,993,396"/>
+<area shape="rect" id="node93" href="$namespacecimg__library_1_1cimg.html#ab9308a5128017dd92d3f602a19ca7611" title="cimg_library::cimg\l::option" alt="" coords="843,419,971,466"/>
+<area shape="rect" id="node103" href="$classRocout.html#a5584fd8a3eb5c21ad725f4516fed8b7b" title="Finalize the module by deregistering it from Roccom. " alt="" coords="381,163,493,192"/>
+<area shape="rect" id="node105" href="$roccom__c_09_09_8h.html#a51cd80e32371211a6a01185579eff4ee" title="COM_get_object" alt="" coords="597,161,717,191"/>
+<area shape="rect" id="node109" href="$classHDF4.html#a32d626626eee0bc4ade146973f6abb1c" title="Destroy the I/O thread. " alt="" coords="604,481,711,511"/>
+<area shape="rect" id="node111" href="$classHDF4.html#a9b848654502024dde7e46ab002f2c9dd" title="Terminate the I/O thread. " alt="" coords="845,489,968,519"/>
+<area shape="rect" id="node115" href="$classRFC__Pane__base.html#af4f9a44cfa67dbbabecdefb99a081bc5" title="The total number of faces in the pane. " alt="" coords="360,725,515,771"/>
+<area shape="rect" id="node117" href="$classRFC__Pane__base.html#a35a62313d45990cfa4cab8caa1dfbff6" title="The total number of nodes in the pane. " alt="" coords="360,794,515,841"/>
+<area shape="rect" id="node119" href="$RFC__Window__base__IO__binary_8C.html#a791b8a9674a27272bd7e1a059517500d" title="write" alt="" coords="412,864,463,893"/>
+</map>

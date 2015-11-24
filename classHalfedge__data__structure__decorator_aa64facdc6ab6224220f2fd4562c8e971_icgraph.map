@@ -1,0 +1,18 @@
+<map id="set_facet_halfedge" name="set_facet_halfedge">
+<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#a0e1b81fe3e981790e43f669628bf76c5" title="create_loop" alt="" coords="225,5,313,35"/>
+<area shape="rect" id="node5" href="$classHalfedge__data__structure__decorator.html#ae1fcad81753bb4a391980b6b52eab474" title="create_segment" alt="" coords="212,59,327,88"/>
+<area shape="rect" id="node7" href="$classPolyhedron__incremental__builder__3.html#a74cfc3317835a62d5b15d795a44cc86c" title="Polyhedron_incremental\l_builder_3::end_facet" alt="" coords="189,111,349,158"/>
+<area shape="rect" id="node12" href="$classHalfedge__data__structure__decorator.html#a2554a0943a90c58faa4d4b79a09f1d0a" title="fill_hole" alt="" coords="236,181,303,211"/>
+<area shape="rect" id="node14" href="$classHalfedge__data__structure__decorator.html#aa4cf771809bb8f620ad9bfb890f1fd13" title="flip_edge" alt="" coords="232,235,307,264"/>
+<area shape="rect" id="node16" href="$classHalfedge__data__structure__decorator.html#acea850b1c2193ebbbe8839355d0fbfaf" title="join_facet" alt="" coords="231,288,308,317"/>
+<area shape="rect" id="node18" href="$classHalfedge__data__structure__decorator.html#abac89554d5a5134b0252d56ef18711a0" title="join_loop" alt="" coords="233,341,305,371"/>
+<area shape="rect" id="node20" href="$classHalfedge__data__structure__decorator.html#a8ef5c078e56ad37f0aa1423ed511fac0" title="join_vertex" alt="" coords="227,395,312,424"/>
+<area shape="rect" id="node22" href="$classHalfedge__data__structure__using__vector.html#aa4d122d3e5f7546947f48e00be7b5bba" title="Halfedge_data_structure\l_using_vector::pointer\l_update" alt="" coords="188,448,351,512"/>
+<area shape="rect" id="node30" href="$classHalfedge__data__structure__decorator.html#a11a33149eee5db60535056dd7db91df3" title="set_facet_halfedge" alt="" coords="204,536,335,565"/>
+<area shape="rect" id="node32" href="$classHalfedge__data__structure__decorator.html#aca2d0496443d5a09dd089c054121ea7b" title="split_facet" alt="" coords="228,589,311,619"/>
+<area shape="rect" id="node34" href="$classHalfedge__data__structure__decorator.html#a4acbdd996b87bb4287c5c40a4d89569f" title="split_loop" alt="" coords="231,643,308,672"/>
+<area shape="rect" id="node9" href="$classPolyhedron__incremental__builder__3.html#a2c87480f89222776f7cbb1bfeca98e29" title="Polyhedron_incremental\l_builder_3::add_vertex\l_to_facet" alt="" coords="417,103,577,167"/>
+<area shape="rect" id="node24" href="$classHalfedge__data__structure__using__vector.html#a45a282996d4551b9ea1cd75f1a002861" title="Halfedge_data_structure\l_using_vector::reserve" alt="" coords="416,378,579,425"/>
+<area shape="rect" id="node26" href="$classHalfedge__data__structure__using__vector.html#a16322812cdf581bde2c90c08867989f9" title="Halfedge_data_structure\l_using_vector::Halfedge\l_data_structure_using_vector" alt="" coords="401,448,593,512"/>
+<area shape="rect" id="node28" href="$classHalfedge__data__structure__using__vector.html#a867e7a31f9f9e73cb19040a0e374ae92" title="Halfedge_data_structure\l_using_vector::operator=" alt="" coords="415,535,580,582"/>
+</map>

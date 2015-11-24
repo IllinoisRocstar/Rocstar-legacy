@@ -1,0 +1,5 @@
+<map id="SteepestDescent" name="SteepestDescent">
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityImprover.html#a23b93d0c05b5ccd5162eaafbd9e612ac" title="provides a name to the QualityImprover (use it in constructor). " alt="" coords="177,5,351,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1PatchDataUser.html#a7870d253a83673c6ad2794c41cc1e821" title="Sets the Patch Type. " alt="" coords="177,74,351,121"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1PatchDataParameters.html#a247c2678640754cdb0bd45ab6f777cd9" title="Tells the MeshSet what kind of data the patches should include. " alt="" coords="401,74,612,121"/>
+</map>

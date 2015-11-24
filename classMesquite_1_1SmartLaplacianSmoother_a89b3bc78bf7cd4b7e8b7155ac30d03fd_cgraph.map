@@ -1,0 +1,16 @@
+<map id="optimize_vertex_positions" name="optimize_vertex_positions">
+<area shape="rect" id="node3" href="$namespaceMesquite.html#a11c0b436557deff6d2a4a6c56032b708" title="Mesquite::centroid\l_smooth_mesh" alt="" coords="265,5,393,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="503,30,647,77"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1ObjectiveFunction.html#aa4022056de427aeed2972f46957a8cb9" title="Mesquite::ObjectiveFunction\l::evaluate" alt="" coords="236,125,423,171"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1PatchData.html#a4dc5049ec802b16415eeeb2215de96f5" title="Mesquite::PatchData\l::get_adjacent_vertex\l_indices" alt="" coords="256,195,403,259"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#a80870c233d0237e3588a2d6f8d176916" title="Increments the iterator. returns false if there is no more free vertex. " alt="" coords="228,282,431,329"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ad20897c5c8bd47f5d4005989bead0e55" title="Resets the iterator. " alt="" coords="228,351,431,398"/>
+<area shape="rect" id="node22" href="$classMesquite_1_1PatchData.html#a68de345feb47d7fc0d410d65ff68098e" title="Adjust the position of the specified vertex so that it lies on its constraining domain. " alt="" coords="245,421,413,467"/>
+<area shape="rect" id="node30" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ae3a963bdd66247d38ad22d17fa121632" title="Returns an index corresponding to a free vertex. " alt="" coords="228,490,431,537"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1ObjectiveFunction.html#a0f076c7d1b01e9357370c3c7116eaeb2" title="Mesquite::ObjectiveFunction\l::concrete_evaluate" alt="" coords="481,125,668,171"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1MsqVertex.html#a181f1717ea1cab3613ff39c6969600dc" title="Mesquite::MsqVertex\l::is_flag_set" alt="" coords="501,213,648,259"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="503,282,647,329"/>
+<area shape="rect" id="node24" href="$classMesquite_1_1MeshDomain.html#a80270d76f2b78f92d7a2086bfe493d53" title="evaluate closest point and normal " alt="" coords="495,351,655,398"/>
+<area shape="rect" id="node26" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="499,421,651,467"/>
+<area shape="rect" id="node28" href="$classMesquite_1_1MeshDomain.html#afe4742b0194c0a8b7fcff80860cdbc0b" title="Modifies &quot;coordinate&quot; so that it lies on the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="495,490,655,537"/>
+</map>

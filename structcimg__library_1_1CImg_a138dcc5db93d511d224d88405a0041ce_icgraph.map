@@ -1,0 +1,6 @@
+<map id="load" name="load">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a78c78d152f5012d2e8fdcc35235c62a4" title="In&#45;place version of the previous constructor. " alt="" coords="105,5,236,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a149e94256155d10130a088f8219edd04" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_load" alt="" coords="105,74,236,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a1b8bf7e0b1371dbdc0d845a39f6451a8" title="Load a gzipped image file, using external tool &#39;gunzip&#39;. " alt="" coords="101,144,240,208"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#ac60a8646dac49ffcb08783717b6338b0" title="Operator=(). " alt="" coords="101,231,240,278"/>
+</map>

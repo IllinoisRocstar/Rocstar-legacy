@@ -1,0 +1,51 @@
+<map id="max" name="max">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a5c6b079ef78bd63a892316187f38aa02" title="cimg_library::CImg\l\&lt; uintT \&gt;::_cubic_atX" alt="" coords="136,5,283,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a244ac624497cc8050986562d66c0d2d1" title="cimg_library::CImg\l\&lt; uintT \&gt;::_cubic_atXY" alt="" coords="131,74,288,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#ac1b0fa3e83defeb353d65e7094b3caa8" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display" alt="" coords="144,143,275,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a68ac25d3fda66263ff7b2d4a481b99d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display\l_object3d" alt="" coords="144,213,275,277"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a62faf37e4aca4feab4ed5b9fd135d00a" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_ellipse" alt="" coords="128,301,291,347"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#acbfab2bdc28e9a3e445bec479f47322b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_object3d" alt="" coords="123,370,296,417"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg.html#a1a88d32d9537df9d104bfc51e801eeec" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_scanline" alt="" coords="123,439,296,486"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#a7d2928ef353cf9c90d4ef8b67b56e617" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_dlm" alt="" coords="139,509,280,555"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImgList.html#a6157637aebbb3b6680ae06ca7d2a2281" title="In&#45;place version of the corresponding constructor. " alt="" coords="133,578,285,625"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#af8acc159cf6c641dc8568d7f4ec6b670" title="Autocrop an image, regarding of the specified backround color. " alt="" coords="143,647,276,694"/>
+<area shape="rect" id="node23" href="$structcimg__library_1_1CImg.html#a0da5be77c4b3829690661df2561b6c12" title="Return a blurred version of the image, using a Canny&#45;Deriche filter. " alt="" coords="144,717,275,763"/>
+<area shape="rect" id="node25" href="$structcimg__library_1_1CImg.html#a2ef033809467273e98c94ddb6b8fe78d" title="Blur an image using the bilateral filter. " alt="" coords="132,786,287,833"/>
+<area shape="rect" id="node27" href="$structcimg__library_1_1CImgList.html#a32d594cbd3687a11f87b96be504e54ba" title="Construct an image list containing n empty images. " alt="" coords="133,855,285,902"/>
+<area shape="rect" id="node29" href="$structcimg__library_1_1CImg.html#a7a303858f458aad58535cbf2f5ca2326" title="Read a pixel value using cubic interpolation and Dirichlet boundary conditions (first coordinates)..." alt="" coords="139,925,280,971"/>
+<area shape="rect" id="node31" href="$structcimg__library_1_1CImg.html#a9178dbccd4a22a5e2a3b41c243244eb8" title="Read a pixel value using cubic interpolation and Dirichlet boundary conditions. " alt="" coords="135,994,284,1041"/>
+<area shape="rect" id="node33" href="$namespacecimg__library_1_1cimg.html#a62805bf0845c650a457cd78b3cd6488a" title="Display a dialog box, where a user can click standard buttons. " alt="" coords="181,1064,237,1093"/>
+<area shape="rect" id="node37" href="$structcimg__library_1_1CImg.html#a2ac17a49491c76e73310270931e88d46" title="Compute distance function from 0&#45;valued isophotes by the application of an Hamilton&#45;Jacobi PDE..." alt="" coords="144,1117,275,1181"/>
+<area shape="rect" id="node39" href="$structcimg__library_1_1CImg.html#a2cb550d68c74bcd08b23b4d0f447fc47" title="Draw a 3D filled region starting from a point (x,y,\ z) in the instance image. " alt="" coords="144,1205,275,1251"/>
+<area shape="rect" id="node41" href="$structcimg__library_1_1CImg.html#a5e51f88a4f5eee481ea9f446feac602c" title="Draw a 1D gaussian function in the instance image. " alt="" coords="124,1274,295,1321"/>
+<area shape="rect" id="node43" href="$structcimg__library_1_1CImg.html#a2170d6c4cc190779dfc5ca12bb502de3" title="Draw an image. " alt="" coords="133,1343,285,1390"/>
+<area shape="rect" id="node45" href="$structcimg__library_1_1CImg.html#a093c5fb816594834ba279e21005675fc" title="Draw a 2D colored line. " alt="" coords="140,1413,279,1459"/>
+<area shape="rect" id="node47" href="$structcimg__library_1_1CImg.html#a808ff142809b77fa8424699c2062e5c3" title="Draw a quadratic Mandelbrot or Julia fractal set, computed using the Escape Time Algorithm. " alt="" coords="119,1482,300,1529"/>
+<area shape="rect" id="node49" href="$structcimg__library_1_1CImg.html#aaaf8df45b2e20d132a28cbdffef77c18" title="Draw a plasma random texture. " alt="" coords="129,1551,289,1598"/>
+<area shape="rect" id="node51" href="$structcimg__library_1_1CImg.html#afbc21912a8c9419411d9fa82372056e3" title="Draw a 3D colored point (voxel). " alt="" coords="136,1621,283,1667"/>
+<area shape="rect" id="node53" href="$structcimg__library_1_1CImg.html#a9f35dd03284e33d519af3b713186df7e" title="Draw a vector field in the instance image, using a colormap. " alt="" coords="133,1690,285,1737"/>
+<area shape="rect" id="node55" href="$structcimg__library_1_1CImg.html#a3a0aacdf713ed19c5efc4a929f73d597" title="Draw a 4D filled rectangle in the instance image, at coordinates (x0,y0,z0,v0)&#45;(x1,y1,z1,v1). " alt="" coords="124,1759,295,1806"/>
+<area shape="rect" id="node57" href="$structcimg__library_1_1CImg.html#ad39968d941b03c67f1d02d2827a1ae5e" title="Draw a cubic spline curve in the instance image. " alt="" coords="133,1829,285,1875"/>
+<area shape="rect" id="node59" href="$structcimg__library_1_1CImg.html#a9717338fbc492b3baa9563147eaad7a3" title="Draw a 2D filled colored triangle, with z&#45;buffering. " alt="" coords="129,1898,289,1945"/>
+<area shape="rect" id="node61" href="$structcimg__library_1_1CImg.html#a9211d99716b9ac5c33db2486f27c0bcd" title="Get a diffusion tensor for edge&#45;preserving anisotropic smoothing of an image. " alt="" coords="129,1967,289,2014"/>
+<area shape="rect" id="node63" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a0d684ffed0cafbfb2ac08af28a718c34" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="121,2037,297,2083"/>
+<area shape="rect" id="node69" href="$structcimg__library_1_1CImgList.html#a563eced0a41cdb792b2b151b682f7ae5" title="Return a single image which is the concatenation of all images of the current CImgList instance..." alt="" coords="133,2106,285,2153"/>
+<area shape="rect" id="node71" href="$structcimg__library_1_1CImg.html#a8c23ee1a41a1bafbeb99c18e6bbaceae" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_blur_patch" alt="" coords="125,2175,293,2222"/>
+<area shape="rect" id="node73" href="$structcimg__library_1_1CImg.html#a9cc232f8621f88008bd2b6cea2b1c16c" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_displacement_field" alt="" coords="101,2245,317,2291"/>
+<area shape="rect" id="node75" href="$structcimg__library_1_1CImg.html#ada7d6ed59321d50bcef3a3158d4fcbf1" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_distance" alt="" coords="131,2314,288,2361"/>
+<area shape="rect" id="node77" href="$structcimg__library_1_1CImg.html#a511692deba5af28d058753c4daed1bc1" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_identity\l_matrix" alt="" coords="135,2384,284,2448"/>
+<area shape="rect" id="node79" href="$structcimg__library_1_1CImg.html#a51767ae18962a8fcce1486b99c6300a4" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_resize" alt="" coords="139,2471,280,2518"/>
+<area shape="rect" id="node81" href="$structcimg__library_1_1CImg.html#ae8522bad57316bb719ef93774fcd77ea" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_rotate" alt="" coords="139,2541,280,2587"/>
+<area shape="rect" id="node83" href="$structcimg__library_1_1CImg.html#a187aa670727bb4d1a9160702fcf9a418" title="Get an identity matrix having same dimension than instance image. " alt="" coords="144,2611,275,2675"/>
+<area shape="rect" id="node85" href="$structcimg__library_1_1CImg.html#ab943c007a92b463ec458b4be80e80460" title="Load an image from a TIFF file. " alt="" coords="144,2698,275,2745"/>
+<area shape="rect" id="node87" href="$namespacecimg__library_1_1cimg.html#a33c9e11706369e7e3e4509804798c07f" title="Return the maximum value between three numbers. " alt="" coords="187,2768,232,2797"/>
+<area shape="rect" id="node89" href="$structcimg__library_1_1CImg.html#a88c9c06c49658060a2766f865e14c0eb" title="Pointwise max operator between an image and a value. " alt="" coords="144,2821,275,2867"/>
+<area shape="rect" id="node91" href="$structcimg__library_1_1CImg.html#aedb6c6dc25f669f5af7d3fe55978addc" title="Resize a 3D object so that its max dimension if one. " alt="" coords="123,2890,296,2937"/>
+<area shape="rect" id="node93" href="$structcimg__library_1_1CImg.html#a3b76b35625d85926b4e88227f89f734e" title="Convert color pixels from (R,G,B) to (H,S,L). " alt="" coords="135,2959,284,3006"/>
+<area shape="rect" id="node95" href="$structcimg__library_1_1CImg.html#a6c0ab36ca2418c9b62590cdfdcbdc793" title="Convert color pixels from (R,G,B) to (H,S,V). " alt="" coords="135,3029,284,3075"/>
+<area shape="rect" id="node97" href="$structcimg__library_1_1CImg.html#a4ecd4ea634e87995ef1d309b8ffe91de" title="Sharpen image using anisotropic shock filters or inverse diffusion. " alt="" coords="144,3098,275,3145"/>
+<area shape="rect" id="node99" href="$structcimg__library_1_1CImg.html#a63464350c0645889ff30736b2e95a034" title="Compute the SVD of a general matrix. " alt="" coords="144,3167,275,3214"/>
+<area shape="rect" id="node35" href="$namespacecimg__library_1_1cimg.html#a75e89e248c2e97f459e176d7a5cfeaf4" title="dialog" alt="" coords="425,1064,481,1093"/>
+<area shape="rect" id="node65" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a95045af3dbd37ce54b03914a367d9a55" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="365,1998,541,2045"/>
+<area shape="rect" id="node67" href="$structcimg__library_1_1CImg_1_1__marching2d__func__expr.html#a63538257e8d4ca79962c14f1bddbd418" title="cimg_library::CImg\l::_marching2d_func_expr\l::operator()" alt="" coords="369,2068,537,2132"/>
+</map>

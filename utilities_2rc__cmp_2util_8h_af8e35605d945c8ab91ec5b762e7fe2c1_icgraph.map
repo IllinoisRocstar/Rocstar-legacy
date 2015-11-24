@@ -1,0 +1,4 @@
+<map id="readQuoteExpression" name="readQuoteExpression">
+<area shape="rect" id="node3" href="$classtecplot__data.html#abbc2b0210cc0184a9ad28498e9deb3a0" title="Read the tecplot header from the file and retrieve the title, variable names, and number of variables..." alt="" coords="201,5,327,51"/>
+<area shape="rect" id="node5" href="$classtecplot__data.html#ad7c704b34912678d95c13243cacf9d7f" title="Parse the tecplot file. " alt="" coords="376,13,509,43"/>
+</map>

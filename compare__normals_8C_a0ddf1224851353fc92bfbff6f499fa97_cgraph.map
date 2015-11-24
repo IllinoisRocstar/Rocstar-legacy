@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="577,581,711,611"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a47ed797bddcdd0aabcd9f8e47f326744" title="COM_finalize" alt="" coords="141,1096,243,1125"/>
+<area shape="rect" id="node9" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="556,1005,732,1035"/>
+<area shape="rect" id="node11" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="556,685,732,715"/>
+<area shape="rect" id="node13" href="$roccom__c_09_09_8h.html#ac0f80d6e63759a2afe40ed883cea3d5e" title="COM_init" alt="" coords="153,1149,231,1179"/>
+<area shape="rect" id="node15" href="$roccom__c_09_09_8h.html#ae231f40abf373de8e0f0c62e6dd3c6fb" title="COM_print_profile" alt="" coords="1244,5,1369,35"/>
+<area shape="rect" id="node18" href="$commpi_8h.html#a8a8389bc67ae874f8ec20c56f758c8bf" title="COMMPI_Comm_rank" alt="" coords="115,1203,269,1232"/>
+<area shape="rect" id="node20" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="575,1059,713,1088"/>
+<area shape="rect" id="node22" href="$compare__normals_8C.html#a67fefd8a9af4b3b861a1cd027dc367e2" title="compute_quadric_normals" alt="" coords="105,735,279,764"/>
+<area shape="rect" id="node33" href="$compare__normals_8C.html#ad582a3088d031d8e580cf9ef1371a919" title="init_attributes" alt="" coords="368,133,467,163"/>
+<area shape="rect" id="node43" href="$compare__normals_8C.html#a0c9e47b8e6802e7222dff0c885ac402b" title="init_normals" alt="" coords="372,839,463,868"/>
+<area shape="rect" id="node75" href="$compare__normals_8C.html#a3ba4bf08bffbe1c2741a7a3e0abf7687" title="init_parameters" alt="" coords="363,580,472,609"/>
+<area shape="rect" id="node79" href="$compare__normals_8C.html#a639bf77c5d44349be023a717ae1f5f2d" title="load_modules" alt="" coords="141,1256,243,1285"/>
+<area shape="rect" id="node81" href="$compare__normals_8C.html#a130fb75442a72e9a932a1d9b99a88634" title="output_solution" alt="" coords="363,943,472,972"/>
+<area shape="rect" id="node87" href="$compare__normals_8C.html#ad543987b29848aeb99edb2244c51341a" title="print_usage" alt="" coords="148,1309,236,1339"/>
+<area shape="rect" id="node89" href="$compare__normals_8C.html#a733a908bb5366080d79e6292260119ea" title="read_control_file" alt="" coords="133,1363,251,1392"/>
+<area shape="rect" id="node91" href="$compare__normals_8C.html#af64a3a4f0604657e1be05e6ea478e92f" title="read_in_mesh" alt="" coords="141,476,243,505"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="1437,188,1565,217"/>
+<area shape="rect" id="node27" href="$compare__normals_8C.html#aa6ed0bf462d23672e71c880d24613bc4" title="compute_vnormal_error" alt="" coords="339,684,496,713"/>
+<area shape="rect" id="node31" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="852,744,895,773"/>
+<area shape="rect" id="node35" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="1237,59,1376,88"/>
+<area shape="rect" id="node38" href="$roccom__c_8h.html#a34c7c55b98221dbb95aba53c374cf596" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="579,160,709,189"/>
+<area shape="rect" id="node40" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="1013,107,1176,136"/>
+<area shape="rect" id="node46" href="$roccom__c_8h.html#a44547c3eab1bf444e5f9bb23c13fc123" title="COM_free_buffer" alt="" coords="583,845,705,875"/>
+<area shape="rect" id="node48" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="587,899,701,928"/>
+<area shape="rect" id="node52" href="$roccom__c_8h.html#ad744816e73fae2aec731bcbe41b52a16" title="COM_get_panes" alt="" coords="584,528,704,557"/>
+<area shape="rect" id="node54" href="$compare__normals_8C.html#a2735c50ad58d081ce17303c38e5c2684" title="func1" alt="" coords="617,739,671,768"/>
+<area shape="rect" id="node59" href="$compare__normals_8C.html#ab02d521dfa0be9ea1bf41cf52dd2b8d8" title="func2" alt="" coords="617,792,671,821"/>
+<area shape="rect" id="node70" href="$compare__normals_8C.html#a84051587b6103d3fac3bdbede2d199d4" title="func3" alt="" coords="617,952,671,981"/>
+<area shape="rect" id="node56" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="792,797,955,827"/>
+<area shape="rect" id="node61" href="$namespacecimg__library.html#afdae8d98c82d052cc3aedd3a9e0304a8" title="cimg_library::cos" alt="" coords="813,869,933,899"/>
+<area shape="rect" id="node66" href="$namespacecimg__library.html#a35f28010f1c3f5a5668974c5ea8d6be3" title="cimg_library::sin" alt="" coords="815,943,932,972"/>
+<area shape="rect" id="node63" href="$structcimg__library_1_1CImg.html#ab42d865499ba41609ea43d53a062cd2f" title="cimg_library::CImg\l::get_cos" alt="" coords="1029,861,1160,907"/>
+<area shape="rect" id="node68" href="$structcimg__library_1_1CImg.html#a7c5c1b92e02d4286b19fd6ea054ba0e8" title="cimg_library::CImg\l::get_sin" alt="" coords="1029,934,1160,981"/>
+<area shape="rect" id="node93" href="$classIM__Reader.html#a570c8e9f7f674fc78f3b6244cc5554d2" title="IM_Reader::read_winmesh" alt="" coords="328,476,507,505"/>
+<area shape="rect" id="node99" href="$roccom__c_09_09_8h.html#a518de8c83ab277c8cdcb88635a27cefe" title="Delete an existing attribute. " alt="" coords="1020,160,1169,189"/>
+<area shape="rect" id="node103" href="$classIM__Reader.html#abd0a93a1e2fd56330cffbca2f8bbc3a5" title="IM_Reader::read_mesh" alt="" coords="565,475,723,504"/>
+<area shape="rect" id="node105" href="$roccom__c_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="787,640,960,669"/>
+<area shape="rect" id="node107" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="1240,557,1373,587"/>
+<area shape="rect" id="node110" href="$classIM__Reader.html#a5c8cf2889cf1e089954cb2adb41cf0eb" title="IM_Reader::get_nextline" alt="" coords="1225,444,1388,473"/>
+<area shape="rect" id="node112" href="$bordertest__struc_8C.html#adbefa474b566ff7262aefc2f21fb2808" title="is_local" alt="" coords="840,352,907,381"/>
+<area shape="rect" id="node114" href="$classIM__Reader.html#a819fa8284cc3bb53fabca9490abc0e64" title="IM_Reader::read_pane_ij" alt="" coords="791,272,956,301"/>
+<area shape="rect" id="node128" href="$classIM__Reader.html#a0b1c08338d87ec242d77ac40732778f2" title="IM_Reader::read_pane_uns" alt="" coords="783,475,964,504"/>
+<area shape="rect" id="node137" href="$classIM__Reader.html#a97b1c80249b1c5b49bb6d4cd46e4c9df" title="IM_Reader::read_pane\l_mixed" alt="" coords="796,405,951,451"/>
+<area shape="rect" id="node117" href="$roccom__c_09_09_8h.html#adca6827f3c065859156fa3562c2cd9a8" title="Associates an array with an attribute for a specific pane. " alt="" coords="1037,213,1152,243"/>
+<area shape="rect" id="node120" href="$classIM__Reader.html#ada409e59cc155b5189acb79c158eb115" title="IM_Reader::read_pane\l_coors" alt="" coords="1017,317,1172,363"/>
+<area shape="rect" id="node122" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="1252,379,1361,408"/>
+<area shape="rect" id="node125" href="$roccom__c_8h.html#a989b969be3cb07c32a05d4aad3a0f710" title="Allocate space for an attribute on a specific pane and return the address by setting addr..." alt="" coords="1236,325,1377,355"/>
+<area shape="rect" id="node132" href="$classIM__Reader.html#a0b3eb68ce5f9ab1fdb2a22a920c15f54" title="IM_Reader::read_pane\l_elems" alt="" coords="1017,386,1172,433"/>
+</map>

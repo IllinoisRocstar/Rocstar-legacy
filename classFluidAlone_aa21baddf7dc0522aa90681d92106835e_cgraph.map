@@ -1,0 +1,15 @@
+<map id="FluidAlone" name="FluidAlone">
+<area shape="rect" id="node3" href="$classUserScheduler.html#ab45f61051944a767a4870ef6d33a6b66" title="UserScheduler::add\l_action" alt="" coords="540,61,676,108"/>
+<area shape="rect" id="node16" href="$classCoupling.html#a841b3924bcf7c211bda60f960ce80946" title="Add new agent. " alt="" coords="145,46,287,75"/>
+<area shape="rect" id="node18" href="$builtin__couplings_8C.html#aae652ed0b25fcf6c8486f30999da49cf" title="declare_fluid_actions" alt="" coords="144,99,288,128"/>
+<area shape="rect" id="node32" href="$classAgent.html#a319b36b582c4dfad1e78cea448e26a8f" title="Agent::get_main_action" alt="" coords="137,152,295,182"/>
+<area shape="rect" id="node5" href="$classScheduler.html#ab45f61051944a767a4870ef6d33a6b66" title="Scheduler::add_action" alt="" coords="727,70,876,99"/>
+<area shape="rect" id="node7" href="$classAction.html#a0d266ca3c89fae98335f440d3bf579e0" title="Action::declare" alt="" coords="925,70,1035,99"/>
+<area shape="rect" id="node9" href="$classScheduler.html#aace076722f7a2c6975fcfc660070ac6a" title="Scheduler::reads" alt="" coords="1084,47,1204,76"/>
+<area shape="rect" id="node13" href="$classScheduler.html#a071ba1e78fdf36ccff32c4688b05641b" title="Scheduler::writes" alt="" coords="1083,100,1205,130"/>
+<area shape="rect" id="node11" href="$classAction.html#ad116f378d988ba583f13bfa8519f05f0" title="Action::name" alt="" coords="1253,100,1352,130"/>
+<area shape="rect" id="node20" href="$classAgent.html#a067d392f8d0b76112eb95ced42d942fc" title="Agent::add_bcaction" alt="" coords="347,152,488,182"/>
+<area shape="rect" id="node26" href="$classAgent.html#ae8d0ad86a1e0c23adb9d2aaad7562c59" title="Agent::add_gmaction" alt="" coords="345,46,489,75"/>
+<area shape="rect" id="node29" href="$classAgent.html#ab567c093a04cf97dfe6c0eaf4570e844" title="Agent::add_icaction" alt="" coords="349,99,485,128"/>
+<area shape="rect" id="node23" href="$classScheduler.html#a67937abfc45a19cc385d5a92785f5629" title="Scheduler::set_name" alt="" coords="729,152,873,182"/>
+</map>

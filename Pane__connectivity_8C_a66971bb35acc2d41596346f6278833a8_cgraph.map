@@ -1,0 +1,6 @@
+<map id="collect_coincident_nodes" name="collect_coincident_nodes">
+<area shape="rect" id="node3" href="$Pane__connectivity_8C.html#a6775cd6991b395d8b55b2ab0b8566e2e" title="intersect_bbox" alt="" coords="181,51,288,80"/>
+<area shape="rect" id="node5" href="$classPoint__3.html#a3bdf357b9d5503b2de25431eff70aa52" title="Point_3::x" alt="" coords="337,5,417,35"/>
+<area shape="rect" id="node7" href="$classPoint__3.html#a9d1baab38d1d918b84896b1dbefb83d5" title="Point_3::y" alt="" coords="337,64,417,93"/>
+<area shape="rect" id="node9" href="$classPoint__3.html#ac8aaef9a7e2811484a4000df39425d34" title="Point_3::z" alt="" coords="337,129,417,159"/>
+</map>

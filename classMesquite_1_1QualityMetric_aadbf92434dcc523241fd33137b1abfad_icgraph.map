@@ -1,0 +1,6 @@
+<map id="vertex_barrier_function" name="vertex_barrier_function">
+<area shape="rect" id="node3" href="$classMesquite_1_1ShapeQualityMetric.html#a049c8172101b823d31ecf9a6f1a19244" title="Given the 2&#45;d jacobian matrix, compute the condition number, fval. " alt="" coords="208,19,405,66"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1ShapeQualityMetric.html#ace5b090da0ae07d4aa1dde27027533ba" title="Given the 3&#45;d jacobian matrix, compute the condition number, fval. " alt="" coords="208,89,405,135"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1ConditionNumberQualityMetric.html#afc1a16a1793ba9459a9b930b5292ffc5" title="evaluate using mesquite objects " alt="" coords="484,5,668,69"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1VertexConditionNumberQualityMetric.html#a5a90f78516fa587f85daf4011bfb1ba8" title="evaluate using mesquite objects " alt="" coords="453,93,699,139"/>
+</map>

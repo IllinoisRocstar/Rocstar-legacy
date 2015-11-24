@@ -1,0 +1,19 @@
+<map id="halfedge" name="halfedge">
+<area shape="rect" id="node3" href="$classOverlay.html#ae2d27c67a5786284ccb5007b1302d688" title="Overlay::count_subnodes" alt="" coords="137,5,308,35"/>
+<area shape="rect" id="node9" href="$classRFC__Pane__overlay.html#a7f96d32b13df97ab6783e01c97e4723f" title="RFC_Pane_overlay::evaluate\l_normals" alt="" coords="127,58,319,105"/>
+<area shape="rect" id="node11" href="$classHDS__accessor.html#acf7149aa4b2f381533c5e745f3008e76" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_halfedge" alt="" coords="136,127,309,174"/>
+<area shape="rect" id="node13" href="$classRFC__Pane__overlay.html#a2c490c8e6a75dbbdbce4b8889b47a980" title="RFC_Pane_overlay::get\l_primary" alt="" coords="141,250,304,297"/>
+<area shape="rect" id="node19" href="$group__pio.html#gac3a50a4da55168502baa70eb0d9e52a1" title="Check whether given two vertices correspond to the same physical point. " alt="" coords="383,319,535,366"/>
+<area shape="rect" id="node21" href="$classHDS__accessor.html#aed3d624ba426d81aef1b5d42d493a2cc" title="HDS_accessor\&lt; Tag_true\l \&gt;::is_border" alt="" coords="136,319,309,366"/>
+<area shape="rect" id="node23" href="$classRFC__Pane__overlay.html#a597ca1863e39c9f53cb506222aff7031" title="RFC_Pane_overlay::is\l_primary" alt="" coords="145,449,300,495"/>
+<area shape="rect" id="node36" href="$classOverlay.html#a86c822d1abc50ecbc2701f4d408cbf5a" title="Overlay::number_a_subnode" alt="" coords="129,197,316,227"/>
+<area shape="rect" id="node5" href="$classOverlay.html#a54a9ce9d68b6243fc87eb9d5e54097c2" title="Overlay::number_subnodes" alt="" coords="368,67,549,96"/>
+<area shape="rect" id="node7" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="627,67,744,96"/>
+<area shape="rect" id="node15" href="$classRFC__Pane__overlay.html#aa014ee3e719a48664808b72d17497036" title="RFC_Pane_overlay::get\l_primary" alt="" coords="377,250,540,297"/>
+<area shape="rect" id="node17" href="$classHDS__accessor.html#af58475981fe5c8ebd7dbab77065a45ac" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_primary" alt="" coords="372,181,545,227"/>
+<area shape="rect" id="node25" href="$classRFC__Pane__overlay.html#a41a73a231b94a897d7dd709c90d70c95" title="RFC_Pane_overlay::get\l_inode" alt="" coords="377,458,540,505"/>
+<area shape="rect" id="node29" href="$classHDS__accessor.html#a597ca1863e39c9f53cb506222aff7031" title="HDS_accessor\&lt; Tag_true\l \&gt;::is_primary" alt="" coords="372,527,545,574"/>
+<area shape="rect" id="node31" href="$classRFC__Pane__overlay.html#addb43c35694cf2e5b68ff37753d7aca0" title="RFC_Pane_overlay::set\l_inode" alt="" coords="377,389,540,435"/>
+<area shape="rect" id="node27" href="$classHDS__accessor.html#a798b177ceda47c50a64035e61fde579a" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_inode" alt="" coords="599,458,772,505"/>
+<area shape="rect" id="node33" href="$classHDS__accessor.html#ad1c9563180e4931c6f0231751defaa66" title="HDS_accessor\&lt; Tag_true\l \&gt;::set_inode" alt="" coords="599,389,772,435"/>
+</map>

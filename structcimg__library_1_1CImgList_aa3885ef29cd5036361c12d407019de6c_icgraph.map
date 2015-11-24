@@ -1,0 +1,4 @@
+<map id="load_ffmpeg_external" name="load_ffmpeg_external">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgList.html#ae59117119fcf4c35eb85890c1699b037" title="cimg_library::CImgList\l\&lt; uintT \&gt;::get_load_ffmpeg\l_external" alt="" coords="200,5,379,69"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImgList.html#ac90b30e0027691debb81df26216b81c0" title="Load an image from a video file, using ffmpeg libraries. " alt="" coords="212,93,367,139"/>
+</map>

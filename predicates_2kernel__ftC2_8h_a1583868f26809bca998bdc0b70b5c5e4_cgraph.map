@@ -1,0 +1,5 @@
+<map id="has_smaller_signed_dist_to_directionC2" name="has_smaller_signed_dist_to_directionC2">
+<area shape="rect" id="node3" href="$predicates_2kernel__ftC2_8h.html#a7fff4ca4e317ca3f344ac4e51a991f76" title="cmp_signed_dist_to\l_directionC2" alt="" coords="195,27,333,74"/>
+<area shape="rect" id="node5" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="392,5,507,35"/>
+<area shape="rect" id="node7" href="$constructions_2kernel__ftC2_8h.html#ac92c3e84c01c64224f9fc97b7e660892" title="scaled_distance_to\l_directionC2" alt="" coords="383,58,516,105"/>
+</map>

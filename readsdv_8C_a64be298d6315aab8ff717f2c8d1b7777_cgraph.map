@@ -1,0 +1,51 @@
+<map id="read_pane_sp" name="read_pane_sp">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="969,1207,1103,1236"/>
+<area shape="rect" id="node7" href="$roccom__c_8h.html#ad48f4fb5b3a3c580cdad0074ed235a3a" title="Copy an array from an attribute on a specific pane into a given buffer. " alt="" coords="185,1477,308,1507"/>
+<area shape="rect" id="node9" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="559,1451,705,1480"/>
+<area shape="rect" id="node12" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="159,1531,335,1560"/>
+<area shape="rect" id="node14" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="159,1584,335,1613"/>
+<area shape="rect" id="node16" href="$roccom__c_8h.html#aa2b647076100c442c949a67e8484270b" title="Get the sizes of an attribute. " alt="" coords="192,1637,301,1667"/>
+<area shape="rect" id="node18" href="$readsdv_8C.html#a1e1668934356b578ddd0a0cdaae423f1" title="Load the module Rocin into Roccom using the given module name. " alt="" coords="179,780,315,809"/>
+<area shape="rect" id="node117" href="$readsdv_8C.html#a818e8cb211bedde54818b238bb26dafe" title="Unload the module Rocin from Roccom. " alt="" coords="172,1373,321,1403"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="1643,389,1771,419"/>
+<area shape="rect" id="node20" href="$classRocin.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="397,317,477,347"/>
+<area shape="rect" id="node22" href="$classHDF4.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="Create and start the I/O thread. " alt="" coords="591,161,673,191"/>
+<area shape="rect" id="node24" href="$classRocin.html#a1fb1950bf94483e622c985088961ca5d" title="Default constructor. " alt="" coords="583,215,681,244"/>
+<area shape="rect" id="node26" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="1440,5,1573,35"/>
+<area shape="rect" id="node29" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="1437,389,1576,419"/>
+<area shape="rect" id="node32" href="$roccom__c_09_09_8h.html#a5e5321de4f0f8940ea99b25b0060afe3" title="COM_set_object" alt="" coords="976,264,1096,293"/>
+<area shape="rect" id="node35" href="$roccom__c_8h.html#ab41e262f86b991f367a93a005e0694b8" title="COM_set_member_function" alt="" coords="540,471,724,500"/>
+<area shape="rect" id="node37" href="$classRocin.html#a047b46290d1e21123ec029fb4660de28" title="Create a series of Roccom windows by reading in a list of files. " alt="" coords="963,588,1109,617"/>
+<area shape="rect" id="node76" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="1425,59,1588,88"/>
+<area shape="rect" id="node81" href="$classRocin.html#a1dd937ec0c005ce85561ccfe548bc6d0" title="Create a single Roccom window by reading in a list of files. " alt="" coords="775,588,913,617"/>
+<area shape="rect" id="node84" href="$classRocin.html#a1b089e18b401f74035c6574e3a95f95e" title="Create a single Roccom window by reading in the files specified by the given control file..." alt="" coords="543,965,721,995"/>
+<area shape="rect" id="node100" href="$classRocin.html#a499d65c820d018e6bf8e92a9872026ed" title="Fill the destination (second) attribute from files using the data corresponding to the source (first)..." alt="" coords="556,1019,708,1048"/>
+<area shape="rect" id="node102" href="$classRocin.html#a30b4d3fe811f97579c9ab38d6ecf3e64" title="Read in parameters from a given file into the given window. " alt="" coords="1175,212,1353,241"/>
+<area shape="rect" id="node39" href="$roccom__c_09_09_8h.html#a6ebf7d3be61b364094596342a1d64827" title="COM_get_default_communicator" alt="" coords="1157,1017,1371,1047"/>
+<area shape="rect" id="node41" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="1437,964,1576,993"/>
+<area shape="rect" id="node43" href="$namespacecimg__library_1_1cimg.html#af883131bbc64e996d212114cc2b2b21a" title="Get the value of a system timer with a millisecond precision. " alt="" coords="1200,579,1328,626"/>
+<area shape="rect" id="node45" href="$Rocin_8C.html#a5a835ba1a84e5f4229a6d3f1141a78e1" title="Cast glob_error for portability (IBMSP has a different prototype) " alt="" coords="1213,649,1315,679"/>
+<area shape="rect" id="node47" href="$Rocin_8C.html#a53de10c8bd013ab3efff2bb23fb788dc" title="Error callback for glob. " alt="" coords="1225,964,1303,993"/>
+<area shape="rect" id="node50" href="$Rocin_8C.html#ab7a7fab44f0d3b76372865fb1442f1b7" title="Extract metadata from the list of files. " alt="" coords="1203,809,1325,839"/>
+<area shape="rect" id="node54" href="$Rocin_8C.html#adcf9504db90c57c3d46217ab38ceb3e1" title="CWD" alt="" coords="1237,703,1291,732"/>
+<area shape="rect" id="node57" href="$Rocin_8C.html#a36b7bd15403ab8de3715be512908e87e" title="new_attributes" alt="" coords="1211,473,1317,503"/>
+<area shape="rect" id="node66" href="$classRocin.html#a659d336e9114a812b984f1b326b6be90" title="Rocin::register_panes" alt="" coords="1189,367,1339,396"/>
+<area shape="rect" id="node70" href="$Rocin_8C.html#a47c0cc95b287e4a13de0621aba5472e3" title="load_data_HDF4" alt="" coords="1204,527,1324,556"/>
+<area shape="rect" id="node74" href="$Rocin_8C.html#ad4aa2b88f82fbfeba72baeafec5b52c9" title="broadcast_win_attributes" alt="" coords="1181,756,1347,785"/>
+<area shape="rect" id="node79" href="$Rocin_8C.html#a64721ab1a1fa246b6d226dcb98fddc28" title="free_blocks" alt="" coords="1220,420,1308,449"/>
+<area shape="rect" id="node52" href="$namespacecimg__library.html#a35f28010f1c3f5a5668974c5ea8d6be3" title="cimg_library::sin" alt="" coords="1448,680,1565,709"/>
+<area shape="rect" id="node61" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="1452,443,1561,472"/>
+<area shape="rect" id="node64" href="$roccom__c_8h.html#a34c7c55b98221dbb95aba53c374cf596" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="1441,496,1572,525"/>
+<area shape="rect" id="node89" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="823,1120,865,1149"/>
+<area shape="rect" id="node91" href="$classRocin.html#ac084d787d2e876785d26530c43b9c6e3" title="Rocin::cyclic_local" alt="" coords="779,1173,909,1203"/>
+<area shape="rect" id="node93" href="$classRocin.html#a6515875aef3878ecfd6c0d9ae6b93846" title="Rocin::blockcyclic\l_local" alt="" coords="780,1226,908,1273"/>
+<area shape="rect" id="node95" href="$classRocin.html#af089378a801c08c01a6ea82caace7426" title="Rocin::explicit_local" alt="" coords="775,912,913,941"/>
+<area shape="rect" id="node97" href="$roccomf90_8h.html#ac872f1a4316fc244856e99b23b123ff3" title="files" alt="" coords="821,965,867,995"/>
+<area shape="rect" id="node104" href="$read__parameter__file_8C.html#ada8bf50cc804cbc69e0b33f498288c76" title="get_parameter_list" alt="" coords="1443,163,1571,192"/>
+<area shape="rect" id="node107" href="$roccom__c_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="1420,216,1593,245"/>
+<area shape="rect" id="node109" href="$namespacecimg__library_1_1cimg.html#a9ab0fcc7ef1bac330897fec51f617ae6" title="Read a float number from a C&#45;string. " alt="" coords="1443,269,1571,315"/>
+<area shape="rect" id="node119" href="$classRocin.html#a5584fd8a3eb5c21ad725f4516fed8b7b" title="Finalize the module by deregistering it from Roccom. " alt="" coords="385,1373,489,1403"/>
+<area shape="rect" id="node121" href="$roccom__c_09_09_8h.html#a51cd80e32371211a6a01185579eff4ee" title="COM_get_object" alt="" coords="976,1399,1096,1428"/>
+<area shape="rect" id="node125" href="$classHDF4.html#a32d626626eee0bc4ade146973f6abb1c" title="Destroy the I/O thread. " alt="" coords="579,1347,685,1376"/>
+<area shape="rect" id="node127" href="$classHDF4.html#a9b848654502024dde7e46ab002f2c9dd" title="Terminate the I/O thread. " alt="" coords="783,1347,905,1376"/>
+</map>

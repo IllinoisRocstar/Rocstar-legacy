@@ -1,0 +1,19 @@
+<map id="parseOptions" name="parseOptions">
+<area shape="rect" id="node3" href="$classComSwitch.html#ace05d2f5f43d59f10199db53956d0ae6" title="Initialize file streams. " alt="" coords="152,69,291,99"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a9c060806d82dd0ca64b7c3627e846762" title="Print the rc_cmp usage message. " alt="" coords="389,69,475,99"/>
+<area shape="rect" id="node14" href="$classComSwitch.html#aba6445c2ed1951691e0d03070060a264" title="Set option string and long opts struct then parse arguments. " alt="" coords="176,173,267,203"/>
+<area shape="rect" id="node34" href="$classComSwitch.html#a56b1a959c4423975928ca922b6fdcb53" title="Check if required arguments are set. " alt="" coords="164,227,279,256"/>
+<area shape="rect" id="node36" href="$classComSwitch.html#a478618a6c918707e4eb52a512090af36" title="Write the log file header Program Name &#45; switches Input files. " alt="" coords="165,280,277,309"/>
+<area shape="rect" id="node7" href="$main_8h.html#a1fa4b27f37a726b81fec0f1ed70cb9cb" title="gUsage" alt="" coords="637,5,704,35"/>
+<area shape="rect" id="node9" href="$metric_8cpp.html#ae21a1ccbc943e9acfe0ee84010fadab1" title="Sample Correlation Coefficient. " alt="" coords="623,59,719,88"/>
+<area shape="rect" id="node11" href="$classFileselect.html#a690cf448fda55cdec2386772531525cd" title="Print list valid filetypes to stdout. " alt="" coords="589,112,752,141"/>
+<area shape="rect" id="node16" href="$namespacecimg__library_1_1cimg.html#ab9308a5128017dd92d3f602a19ca7611" title="cimg_library::cimg\l::option" alt="" coords="368,165,496,211"/>
+<area shape="rect" id="node20" href="$classComSwitch.html#adf6370edfe16ebd7f5f8474885f09565" title="Read and parse options from array. " alt="" coords="339,315,525,344"/>
+<area shape="rect" id="node18" href="$namespacecimg__library_1_1cimg.html#abc491a5ed3a8d97e395138a379767a45" title="Compute the basename of a filename. " alt="" coords="607,165,735,211"/>
+<area shape="rect" id="node22" href="$utilities_2rc__cmp_2util_8cpp.html#a3dbbf1a2353dc5f4c045bd3ad6d82a5f" title="str_tokenize" alt="" coords="624,235,717,264"/>
+<area shape="rect" id="node24" href="$utilities_2rc__cmp_2util_8cpp.html#a634a77a74f8a4b2c3145e3009158450d" title="check_non_numeric_str" alt="" coords="591,288,751,317"/>
+<area shape="rect" id="node28" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="613,341,728,371"/>
+<area shape="rect" id="node30" href="$namespacecimg__library_1_1cimg.html#a9ab0fcc7ef1bac330897fec51f617ae6" title="Read a float number from a C&#45;string. " alt="" coords="607,394,735,441"/>
+<area shape="rect" id="node32" href="$classBoundingBox.html#af6fca3d6b8c43c09c647e446aebb67e6" title="Sets the coordinates of this BoundingBox instance. " alt="" coords="573,464,768,493"/>
+<area shape="rect" id="node26" href="$utilities_2rc__cmp_2util_8cpp.html#a0cdc4cc0b04893269ede578556381789" title="check_non_numeric_char" alt="" coords="816,288,987,317"/>
+</map>

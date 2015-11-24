@@ -1,0 +1,11 @@
+<map id="get_face_normal" name="get_face_normal">
+<area shape="rect" id="node3" href="$group__fdp.html#ga26603d3c69ad54a093a6925f93d0afac" title="Compute the cosine of the face angle (dihedral angle) at an edge. " alt="" coords="195,5,347,51"/>
+<area shape="rect" id="node5" href="$classRFC__Pane__overlay.html#a7f96d32b13df97ab6783e01c97e4723f" title="RFC_Pane_overlay::evaluate\l_normals" alt="" coords="175,74,367,121"/>
+<area shape="rect" id="node7" href="$group__ntc.html#ga7f96d32b13df97ab6783e01c97e4723f" title="RFC_Window_overlay\l::evaluate_normals" alt="" coords="607,134,759,181"/>
+<area shape="rect" id="node11" href="$classOverlay.html#a6054035d0679586f98c8667b9951ae60" title="Overlay::get_green\l_parent" alt="" coords="205,194,336,241"/>
+<area shape="rect" id="node18" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="185,263,356,310"/>
+<area shape="rect" id="node9" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="808,212,925,241"/>
+<area shape="rect" id="node13" href="$classOverlay.html#a7a0198e2249c3c9b0a02ecb297251546" title="Overlay::overlay_init" alt="" coords="416,207,557,236"/>
+<area shape="rect" id="node15" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="620,203,745,250"/>
+<area shape="rect" id="node20" href="$classOverlay.html#af13f003d409781875438877fd15f4d81" title="Overlay::associate\l_green_vertices" alt="" coords="421,263,552,310"/>
+</map>

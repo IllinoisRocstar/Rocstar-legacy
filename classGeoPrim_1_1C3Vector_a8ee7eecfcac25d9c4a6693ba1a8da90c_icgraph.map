@@ -1,0 +1,8 @@
+<map id="Norm" name="Norm">
+<area shape="rect" id="node3" href="$classGeoPrim_1_1C3Vector.html#ab34babf13d8cbe9273af91a2b4d9ba52" title="Mag" alt="" coords="128,5,173,35"/>
+<area shape="rect" id="node7" href="$classGeoPrim_1_1C3Vector.html#a3741036359d9b40c94a44acaef2bee31" title="Normalize" alt="" coords="111,59,191,88"/>
+<area shape="rect" id="node5" href="$namespaceGeoPrim.html#aa24e2d750bcbeb8ad7e790d68dfc7e77" title="GeoPrim::Distance" alt="" coords="268,5,401,35"/>
+<area shape="rect" id="node9" href="$classGeoPrim_1_1C3Vector.html#ac9824a858358ee06d122c0bcbf06e4fe" title="Unit" alt="" coords="312,59,357,88"/>
+<area shape="rect" id="node13" href="$classGeoPrim_1_1C3Plane.html#aba3e4120cb4b5b32164cddf75c28b014" title="GeoPrim::C3Plane::C3Plane" alt="" coords="240,112,429,141"/>
+<area shape="rect" id="node11" href="$classGeoPrim_1_1C3Plane.html#aefbe051711c8b698dc5f7a484ba83d82" title="GeoPrim::C3Plane::operator==" alt="" coords="477,59,680,88"/>
+</map>

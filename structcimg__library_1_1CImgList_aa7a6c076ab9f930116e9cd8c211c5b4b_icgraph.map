@@ -1,0 +1,6 @@
+<map id="ptr" name="ptr">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgList.html#a301155b753f6ab13ff25f164f389e142" title="Return a reference to the maximum pixel value of the instance list. " alt="" coords="95,5,247,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImgList.html#a71d45b81231629bd177f4f21ad725867" title="Return a reference to the minimum pixel value of the instance list. " alt="" coords="95,74,247,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImgList.html#a4dfdacede15a60eb00a588a9f3d4839a" title="Return a reference to the minimum pixel value of the instance list. " alt="" coords="95,143,247,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImgList.html#aa14552d1b2967381b50f6f277048986f" title="Return a reference to the minimum pixel value of the instance list. " alt="" coords="95,213,247,259"/>
+</map>

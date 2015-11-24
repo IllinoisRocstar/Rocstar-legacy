@@ -1,0 +1,5 @@
+<map id="retrievePoints" name="retrievePoints">
+<area shape="rect" id="node3" href="$classdatafile.html#a957f481335828778f3e0634ead9d131a" title="Get number of partition in the file. " alt="" coords="340,5,521,35"/>
+<area shape="rect" id="node5" href="$classdatafile.html#a1a17d8579ad2d3f3a72ffcdaff20cd56" title="Get a partitions&#39; points. " alt="" coords="159,57,289,87"/>
+<area shape="rect" id="node8" href="$classpartition.html#ab644e7adae9d85f99a33a0226560c669" title="partition::get_points" alt="" coords="363,59,499,88"/>
+</map>

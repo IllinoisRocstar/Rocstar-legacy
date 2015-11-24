@@ -1,0 +1,15 @@
+<map id="get_nat_coor" name="get_nat_coor">
+<area shape="rect" id="node3" href="$classHalfedge__overlay.html#a19b8ed647dec27c8a751cc52eaa6b5e1" title="Halfedge_overlay::facet" alt="" coords="169,5,329,35"/>
+<area shape="rect" id="node5" href="$classHDS__accessor.html#a0191908e68eeb08627b0887b5b24f42c" title="HDS_accessor::get_next" alt="" coords="165,59,333,88"/>
+<area shape="rect" id="node7" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="153,112,345,141"/>
+<area shape="rect" id="node9" href="$classHDS__accessor.html#a591425c5ea18f4820a812d753f3d6006" title="HDS_accessor::get_origin" alt="" coords="163,165,336,195"/>
+<area shape="rect" id="node11" href="$classINode.html#a2dd3c88de5ba7b43671e1e9410418d58" title="INode::halfedge" alt="" coords="192,219,307,248"/>
+<area shape="rect" id="node17" href="$classHDS__accessor.html#a42d9f6a4b4d4209023f0db986e7d1cd3" title="HDS_accessor::is_border" alt="" coords="164,272,335,301"/>
+<area shape="rect" id="node19" href="$classINode.html#a8cb08643a08c56ccb4684cd8a03dbaa7" title="INode::nat_coor" alt="" coords="192,325,307,355"/>
+<area shape="rect" id="node21" href="$classHalfedge__overlay.html#ac47203886af9a8299b6a42da527e0e49" title="Halfedge_overlay::next" alt="" coords="172,379,327,408"/>
+<area shape="rect" id="node23" href="$classINode.html#a5e54505fb86e503aa014c5c79d4df1a3" title="INode::parent_type" alt="" coords="399,347,532,376"/>
+<area shape="rect" id="node26" href="$classHalfedge__overlay.html#aa274ac14f207d82094a34345820a3058" title="Halfedge_overlay::prev" alt="" coords="172,483,327,512"/>
+<area shape="rect" id="node13" href="$structHost__face.html#a2fdb4a913034dfc8a30c9019857d8173" title="Host_face::halfedge" alt="" coords="396,256,535,285"/>
+<area shape="rect" id="node15" href="$structHost__face.html#ad8e3d3c3b41c1da044381d5a758f1d7a" title="Host_face::parent_type" alt="" coords="585,301,743,331"/>
+<area shape="rect" id="node28" href="$classHalfedge__overlay.html#acba595f65090d9721649cdf1f0999894" title="Halfedge_overlay::is\l_primary" alt="" coords="395,474,536,521"/>
+</map>

@@ -1,0 +1,25 @@
+<map id="VOLUME_LASSERRE_FILE_" name="VOLUME_LASSERRE_FILE_">
+<area shape="rect" id="node3" href="$vinci__lass_8c.html#aea17787f82f878c73a2b606d7445a535" title="VOLUME_LASSERRE_FILE" alt="" coords="253,326,445,355"/>
+<area shape="rect" id="node5" href="$vinci__lass_8c.html#a02a841599277186deacc0c52c2a93358" title="compact" alt="" coords="501,168,573,198"/>
+<area shape="rect" id="node7" href="$vinci__lass_8c.html#a72b4982ce0483db07a040cb40f231933" title="my_malloc" alt="" coords="1051,64,1136,94"/>
+<area shape="rect" id="node9" href="$vinci__lass_8c.html#a002da1cf445c026c4d04b924e13b9b68" title="create_key" alt="" coords="495,379,580,408"/>
+<area shape="rect" id="node11" href="$vinci__lass_8c.html#a895a8a94582edf767cd3ff9b8ecc39b1" title="free_key" alt="" coords="501,432,573,462"/>
+<area shape="rect" id="node13" href="$vinci__lass_8c.html#aa30e0b024a44019f862d16d34f7684c2" title="lass" alt="" coords="515,326,560,355"/>
+<area shape="rect" id="node15" href="$vinci__lass_8c.html#a5c725713948e814bfbe34cc1bca228f4" title="add_hypervar" alt="" coords="675,195,773,224"/>
+<area shape="rect" id="node17" href="$vinci__lass_8c.html#abd92a54aa4e2b3df749d15145f337c32" title="add_reduced_index" alt="" coords="868,248,1001,278"/>
+<area shape="rect" id="node19" href="$vinci__lass_8c.html#a71661f85721126fdc9d033e10da4730e" title="del_original" alt="" coords="892,410,977,439"/>
+<area shape="rect" id="node21" href="$vinci__lass_8c.html#aae1462fb4e977d69b59668ae3f10739c" title="del_original_indices" alt="" coords="657,472,791,502"/>
+<area shape="rect" id="node23" href="$vinci__lass_8c.html#a37e7406bcb6fa9f9c79539326e0e9148" title="delete_hypervar" alt="" coords="667,526,781,555"/>
+<area shape="rect" id="node25" href="$vinci__lass_8c.html#a643088af7dea4ac55a3b2c43a32b24f8" title="my_free" alt="" coords="689,579,759,608"/>
+<area shape="rect" id="node28" href="$vinci__lass_8c.html#a5b952ae848c2e484fffe80956cc92642" title="norm_and_clean_constraints" alt="" coords="631,299,817,328"/>
+<area shape="rect" id="node35" href="$vinci__lass_8c.html#a7ee7e0b5b0d38c82400d77cd0a81f039" title="rm_original_inElAll\l_index" alt="" coords="660,402,788,449"/>
+<area shape="rect" id="node38" href="$vinci__lass_8c.html#a2c4d0e3091541a62946c958d0860a9ce" title="shift_P" alt="" coords="693,142,755,171"/>
+<area shape="rect" id="node45" href="$vinci__lass_8c.html#af2c1fc71404c159d0d016affb2d8e7e9" title="tree_out" alt="" coords="689,632,759,662"/>
+<area shape="rect" id="node47" href="$split_8cpp.html#a8f6e1162754447ba2dbd3dfeb042bb35" title="volume" alt="" coords="692,686,756,715"/>
+<area shape="rect" id="node31" href="$vinci__lass_8c.html#afea0e8557a53b9e279b37cf0587d9f74" title="rm_constraint" alt="" coords="884,302,985,331"/>
+<area shape="rect" id="node33" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="913,355,956,384"/>
+<area shape="rect" id="node40" href="$vinci__lass_8c.html#a1c9422594ad53536623dbb04f7927b98" title="create_int_vector" alt="" coords="873,142,996,171"/>
+<area shape="rect" id="node43" href="$vinci__lass_8c.html#a6f0a8c26fad58b1bded924e3366844c7" title="notInPivot" alt="" coords="895,195,975,224"/>
+<area shape="rect" id="node49" href="$classblock.html#ab16ba91c0ac566792b6dd28cc4977a99" title="block::getDim" alt="" coords="884,659,985,688"/>
+<area shape="rect" id="node51" href="$classblockDim.html#a5efe04c03b0d0e0a33d3d95026cfe2cd" title="blockDim::getSize" alt="" coords="871,712,999,742"/>
+</map>

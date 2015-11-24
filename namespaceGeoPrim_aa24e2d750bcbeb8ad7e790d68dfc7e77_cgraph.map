@@ -1,0 +1,15 @@
+<map id="Distance" name="Distance">
+<area shape="rect" id="node3" href="$classGeoPrim_1_1C3Vector.html#ab34babf13d8cbe9273af91a2b4d9ba52" title="GeoPrim::C3Vector::Mag" alt="" coords="129,5,297,35"/>
+<area shape="rect" id="node9" href="$classGeoPrim_1_1CVector.html#a5c5e868b143ad0c0a1efa06c9e9adad3" title="GeoPrim::CVector::mag2" alt="" coords="129,59,297,88"/>
+<area shape="rect" id="node11" href="$classGeoPrim_1_1CPoint.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CPoint::x" alt="" coords="145,112,281,141"/>
+<area shape="rect" id="node13" href="$classGeoPrim_1_1CVector.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CVector::x" alt="" coords="141,165,285,195"/>
+<area shape="rect" id="node15" href="$classGeoPrim_1_1C3Vector.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::C3Vector::x" alt="" coords="139,219,288,248"/>
+<area shape="rect" id="node17" href="$classGeoPrim_1_1CPoint.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CPoint::y" alt="" coords="145,272,281,301"/>
+<area shape="rect" id="node19" href="$classGeoPrim_1_1CVector.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CVector::y" alt="" coords="141,325,285,355"/>
+<area shape="rect" id="node21" href="$classGeoPrim_1_1C3Vector.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::C3Vector::y" alt="" coords="139,379,288,408"/>
+<area shape="rect" id="node23" href="$classGeoPrim_1_1CPoint.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CPoint::z" alt="" coords="145,432,281,461"/>
+<area shape="rect" id="node25" href="$classGeoPrim_1_1CVector.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CVector::z" alt="" coords="141,485,285,515"/>
+<area shape="rect" id="node27" href="$classGeoPrim_1_1C3Vector.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::C3Vector::z" alt="" coords="139,539,288,568"/>
+<area shape="rect" id="node5" href="$classGeoPrim_1_1C3Vector.html#a8ee7eecfcac25d9c4a6693ba1a8da90c" title="GeoPrim::C3Vector::Norm" alt="" coords="347,5,523,35"/>
+<area shape="rect" id="node7" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="572,5,615,35"/>
+</map>

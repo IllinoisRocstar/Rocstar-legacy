@@ -1,0 +1,26 @@
+var classplag__rflu__modcomm =
+[
+    [ "plag_rflu_clearrequest", "classplag__rflu__modcomm.html#af5a75b6f5d4223b6bcad9d94abe7089f", null ],
+    [ "plag_rflu_clearrequestwrapper", "classplag__rflu__modcomm.html#abb790215ef7d69a16116e13e13d20403", null ],
+    [ "plag_rflu_commdriver", "classplag__rflu__modcomm.html#a4fd8c81f4cc6dc233e51f0f0e6b85f93", null ],
+    [ "plag_rflu_copycounters", "classplag__rflu__modcomm.html#ac543a13dbf21b8b24e4b42dd217f80e7", null ],
+    [ "plag_rflu_copydata", "classplag__rflu__modcomm.html#ac2f7c71a98e9fb851592790e77c1c300", null ],
+    [ "plag_rflu_copydataint", "classplag__rflu__modcomm.html#a5e3f5caa77048fe06c1e831c3a812ea0", null ],
+    [ "plag_rflu_copydatareal", "classplag__rflu__modcomm.html#ac21fba073be226354ef2b75b1d5e0b10", null ],
+    [ "plag_rflu_createbuffersrecv", "classplag__rflu__modcomm.html#ab65fcc1a5fa9cf816cd401209dc69740", null ],
+    [ "plag_rflu_createbufferssend", "classplag__rflu__modcomm.html#a7c692fe54590f0d3f1ec33f5b8e9b5e1", null ],
+    [ "plag_rflu_destroybuffersrecv", "classplag__rflu__modcomm.html#a8141bac1f7c306a8adf0702f14eec547", null ],
+    [ "plag_rflu_destroybufferssend", "classplag__rflu__modcomm.html#a97cf79f2f3f698079305fa9622c430a9", null ],
+    [ "plag_rflu_initrecvcounters", "classplag__rflu__modcomm.html#acc24743efca6ee9a3e785c1c639cebf7", null ],
+    [ "plag_rflu_initsendcounters", "classplag__rflu__modcomm.html#a5118f6b6f00b476ed277c60291eaeaba", null ],
+    [ "plag_rflu_isendcounters", "classplag__rflu__modcomm.html#ada4e6f58fd578c8ed4032db2d6444d2c", null ],
+    [ "plag_rflu_isenddata", "classplag__rflu__modcomm.html#aa0d1182b1e1c661fb54bbfea6e84db12", null ],
+    [ "plag_rflu_loadbufferssend", "classplag__rflu__modcomm.html#a873e5a9882ef688f61bd7bfe70f1b39b", null ],
+    [ "plag_rflu_recvcounters", "classplag__rflu__modcomm.html#a8bd298fb04db67a34a4b2f48fa0a0f1f", null ],
+    [ "plag_rflu_recvdata", "classplag__rflu__modcomm.html#aa2f4ccc77980b5bfb0120be23510111e", null ],
+    [ "plag_rflu_totalnpclscomm", "classplag__rflu__modcomm.html#ab91772cb84fe0e4f98a36d6b520ee343", null ],
+    [ "plag_rflu_unloadbuffersrecv", "classplag__rflu__modcomm.html#a8c9ef56fcedbfa807408b4b3f2b1321b", null ],
+    [ "rcsidentstring", "classplag__rflu__modcomm.html#a7a1ae310ae3fe7169e9de9c1ddd9288f", null ],
+    [ "request_type_counter", "classplag__rflu__modcomm.html#a9e38af016151f5e94d864d10fea667df", null ],
+    [ "request_type_data", "classplag__rflu__modcomm.html#a2823ee34411c4f00e9b2111e843a2e59", null ]
+];

@@ -1,0 +1,8 @@
+<map id="get_global_patch" name="get_global_patch">
+<area shape="rect" id="node3" href="$classMesquite_1_1PatchDataUser.html#afdeb3f7cc84738470d0838d300ded313" title="Returns the Global Patch. " alt="" coords="173,74,347,121"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MeanMidNodeMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="This is the &quot;run&quot; function of PatchDataUser. It can do anything really. " alt="" coords="395,5,597,51"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1TargetCalculator.html#a74331070fa7c1042f17b7d3583e7bcb9" title="This is the &quot;run&quot; function of PatchDataUser. It can do anything really. " alt="" coords="407,74,585,121"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Improves the quality of the MeshSet, calling some methods specified in a class derived from VertexMov..." alt="" coords="417,143,575,190"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1ShapeImprovementWrapper.html#a52b954daacf72db4a8b0b8811e81bbb0" title="run_instructions runs the wrapper on the given MeshSet. " alt="" coords="647,143,841,190"/>
+<area shape="rect" id="node13" href="$classRocmop.html#a2dbb41ea0da20e141ec61d8d4a726ddf" title="Smooth the panes of the working window using MESQUITE. " alt="" coords="892,152,1073,181"/>
+</map>

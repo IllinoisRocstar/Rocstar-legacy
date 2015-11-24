@@ -1,0 +1,22 @@
+<map id="point" name="point">
+<area shape="rect" id="node3" href="$group__pifd.html#ga62b78979d2f09f83c3015f2e8dc232d5" title="The main entry of feature detection. " alt="" coords="535,21,687,67"/>
+<area shape="rect" id="node7" href="$group__ntc.html#ga7f96d32b13df97ab6783e01c97e4723f" title="RFC_Window_overlay\l::evaluate_normals" alt="" coords="737,130,889,177"/>
+<area shape="rect" id="node10" href="$classOverlay__primitives.html#a2373ef6a40c6f6e3d79c43dd1a2d1988" title="Overlay_primitives\l::get_point" alt="" coords="116,586,247,633"/>
+<area shape="rect" id="node12" href="$group__ntc.html#ga5faa857c8882eb872c8304d9c72e8d23" title="RFC_Window_overlay\l::get_tangent" alt="" coords="105,655,257,702"/>
+<area shape="rect" id="node14" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="Overlay::insert_node\l_in_blue_edge" alt="" coords="111,415,252,462"/>
+<area shape="rect" id="node16" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="751,265,876,311"/>
+<area shape="rect" id="node19" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="307,353,485,383"/>
+<area shape="rect" id="node22" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="323,457,469,503"/>
+<area shape="rect" id="node25" href="$classOverlay.html#a41c1d5ad91477125ab8d20fdf2653724" title="Overlay::intersect_link" alt="" coords="320,231,472,260"/>
+<area shape="rect" id="node28" href="$classOverlay.html#a4e8602930d85d562fab07af05eddb855" title="Overlay::intersect\l_link_helper" alt="" coords="119,242,244,289"/>
+<area shape="rect" id="node32" href="$classRFC__Window__overlay_1_1Feature__0.html#af18aabe061eb7474213b1f2c690ec45a" title="RFC_Window_overlay\l::Feature_0::operator\&lt;" alt="" coords="105,725,257,771"/>
+<area shape="rect" id="node34" href="$classRFC__Window__overlay_1_1Feature__0.html#a6a890ba2660b3eb10805d701e41ca15c" title="RFC_Window_overlay\l::Feature_0::point" alt="" coords="105,794,257,841"/>
+<area shape="rect" id="node36" href="$group__ntc.html#gaa2576922e2451c82be9775526d133835" title="Dump out the 0&#45; and 1&#45;features in Tecplot format into files &lt;name&gt;f0.plt, &lt;name&gt;f1.plt, respectively. " alt="" coords="105,863,257,910"/>
+<area shape="rect" id="node38" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="311,526,481,573"/>
+<area shape="rect" id="node44" href="$group__ntc.html#gae21b9f36ccab3c6ef453e4e333b28dfa" title="RFC_Window_overlay\l::reduce_coordinates\l_to_all" alt="" coords="105,933,257,997"/>
+<area shape="rect" id="node46" href="$classOverlay.html#a3db98ba35d4a44af046eee3941c632f5" title="Overlay::sq_length" alt="" coords="116,312,247,341"/>
+<area shape="rect" id="node5" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="939,273,1056,303"/>
+<area shape="rect" id="node40" href="$classOverlay.html#af13f003d409781875438877fd15f4d81" title="Overlay::associate\l_green_vertices" alt="" coords="545,517,676,563"/>
+<area shape="rect" id="node48" href="$classOverlay.html#a6054035d0679586f98c8667b9951ae60" title="Overlay::get_green\l_parent" alt="" coords="331,283,461,330"/>
+<area shape="rect" id="node50" href="$classOverlay.html#a7a0198e2249c3c9b0a02ecb297251546" title="Overlay::overlay_init" alt="" coords="540,289,681,319"/>
+</map>

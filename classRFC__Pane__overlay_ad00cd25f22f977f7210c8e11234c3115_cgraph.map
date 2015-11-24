@@ -1,0 +1,8 @@
+<map id="build_hds" name="build_hds">
+<area shape="rect" id="node3" href="$classRFC__Pane__overlay.html#a73dc1ae09878b3cea88956db004473f1" title="get_vertex_from_id" alt="" coords="147,5,280,35"/>
+<area shape="rect" id="node5" href="$classFacet__overlay.html#a6c7de39ffbd6429552ea91d5df673a13" title="Facet_overlay::halfedge" alt="" coords="133,59,293,88"/>
+<area shape="rect" id="node7" href="$classHalfedge__overlay.html#ac47203886af9a8299b6a42da527e0e49" title="Halfedge_overlay::next" alt="" coords="136,112,291,141"/>
+<area shape="rect" id="node9" href="$classHDS__overlay.html#ad324292cd4a00f9b36c79e3f34c9047a" title="HDS_overlay::normalize\l_border_vertices" alt="" coords="132,165,295,211"/>
+<area shape="rect" id="node11" href="$classVertex__overlay.html#a59239401a7f98615d86dc44724892a99" title="Vertex_overlay::set\l_halfedge" alt="" coords="147,234,280,281"/>
+<area shape="rect" id="node13" href="$classRFC__Pane__base.html#a35a62313d45990cfa4cab8caa1dfbff6" title="The total number of nodes in the pane. " alt="" coords="136,303,291,350"/>
+</map>

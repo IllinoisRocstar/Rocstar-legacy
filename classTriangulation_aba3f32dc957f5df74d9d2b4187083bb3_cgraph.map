@@ -1,0 +1,16 @@
+<map id="is_diagonalie" name="is_diagonalie">
+<area shape="rect" id="node3" href="$namespaceCGAL.html#a95fc5b4707754cc44983d73bf683b920" title="CGAL::do_intersect" alt="" coords="153,224,289,253"/>
+<area shape="rect" id="node28" href="$classTriangulation.html#a71a45664175172f9f69976fd0a633fa3" title="get_next" alt="" coords="185,299,257,328"/>
+<area shape="rect" id="node30" href="$classTriangulation.html#ac632912d8b116d5018ccf2c42142b39a" title="get_point" alt="" coords="184,395,259,424"/>
+<area shape="rect" id="node5" href="$classSegment__2.html#a49b9fbfcdad16b7351061eb0fbc58aad" title="Segment_2::source" alt="" coords="371,197,504,227"/>
+<area shape="rect" id="node7" href="$classSegment__2.html#a2bd34e74df0c83e7ced8d4bb08597ba1" title="Segment_2::target" alt="" coords="373,251,501,280"/>
+<area shape="rect" id="node9" href="$predicates__on__points__2_8h.html#a3cd6d8bbf4de6546c74e82926ebf46df" title="lexicographically_yx\l_smaller" alt="" coords="368,303,507,350"/>
+<area shape="rect" id="node11" href="$predicates__on__points__2_8h.html#a395e8607549c6a3209a3459c51260aa7" title="lexicographically_xy\l_smaller" alt="" coords="368,373,507,419"/>
+<area shape="rect" id="node13" href="$predicates__on__points__2_8h.html#ad83ebe1a4f72f9d3dea2ca7ed26bde21" title="compare_lexicographically_xy" alt="" coords="340,5,535,35"/>
+<area shape="rect" id="node15" href="$namespaceCGAL.html#a92a7d80be7e802c19133183b6c56d3ce" title="CGAL::seg_seg_do_intersect\l_crossing" alt="" coords="341,58,533,105"/>
+<area shape="rect" id="node23" href="$namespaceCGAL.html#ab398a7776f68bca31e6ddf3f5f3b33b4" title="CGAL::seg_seg_do_intersect\l_contained" alt="" coords="341,127,533,174"/>
+<area shape="rect" id="node17" href="$predicates__on__points__2_8h.html#af712fb2df817e76ba91248540581946f" title="orientation" alt="" coords="584,48,667,77"/>
+<area shape="rect" id="node19" href="$predicates__on__points__2_8h.html#aed83adc4ca19091d54c40aebca43dacc" title="rightturn" alt="" coords="591,101,660,131"/>
+<area shape="rect" id="node21" href="$predicates__on__points__2_8h.html#a16334c49148a60050463e5f516ee3304" title="leftturn" alt="" coords="595,155,656,184"/>
+<area shape="rect" id="node32" href="$classTriangulation_1_1Node.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Triangulation::Node::id" alt="" coords="361,443,513,472"/>
+</map>

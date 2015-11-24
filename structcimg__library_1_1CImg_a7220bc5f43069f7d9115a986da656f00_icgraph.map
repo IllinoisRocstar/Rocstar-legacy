@@ -1,0 +1,7 @@
+<map id="offset" name="offset">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ae664a2dfc77ba22eda62c0984dda9153" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_bmp" alt="" coords="127,5,273,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a770b28a6ddc3c11af056d27f8dede3d7" title="Return a shared&#45;memory image referencing a set of channels (v0&#45;&gt;v1) of the instance image..." alt="" coords="127,75,273,139"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#acb22178b8e77a784d443fd7a6fad7836" title="Return a shared&#45;memory image referencing a set of lines of the instance image. " alt="" coords="109,162,291,209"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a321bd9cc21a2f658df1dcc5b95eb6fd6" title="Return a shared memory image referencing a set of planes (z0&#45;&gt;z1,v0) of the instance image..." alt="" coords="127,232,273,296"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a2bec31726ee3647345577b893c102dea" title="Get a shared&#45;memory image referencing a set of points of the instance image. " alt="" coords="127,320,273,384"/>
+</map>

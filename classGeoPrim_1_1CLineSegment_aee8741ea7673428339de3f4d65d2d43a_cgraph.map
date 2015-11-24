@@ -1,0 +1,10 @@
+<map id="has_point" name="has_point">
+<area shape="rect" id="node3" href="$classGeoPrim_1_1CLine.html#a5a825f157fd23c389876bd1c54d57757" title="GeoPrim::CLine::has\l_point" alt="" coords="133,23,277,70"/>
+<area shape="rect" id="node14" href="$classGeoPrim_1_1CPoint.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CPoint::x" alt="" coords="137,93,273,123"/>
+<area shape="rect" id="node16" href="$classGeoPrim_1_1CPoint.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CPoint::y" alt="" coords="137,147,273,176"/>
+<area shape="rect" id="node18" href="$classGeoPrim_1_1CPoint.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CPoint::z" alt="" coords="137,200,273,229"/>
+<area shape="rect" id="node5" href="$classGeoPrim_1_1CVector.html#a0126d0fe9bd09bf10febcb659a2bf1a6" title="GeoPrim::CVector::normalize" alt="" coords="327,5,519,35"/>
+<area shape="rect" id="node11" href="$classGeoPrim_1_1CVector.html#a2c751c0ebacf0090e671ebd938c879bf" title="GeoPrim::CVector::unit" alt="" coords="344,59,501,88"/>
+<area shape="rect" id="node7" href="$classGeoPrim_1_1CVector.html#a0c08e460a130fd3b8eff7eb7484e878a" title="GeoPrim::CVector::norm" alt="" coords="569,32,735,61"/>
+<area shape="rect" id="node9" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="785,32,828,61"/>
+</map>

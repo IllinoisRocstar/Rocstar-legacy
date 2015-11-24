@@ -1,0 +1,10 @@
+<map id="SQR" name="SQR">
+<area shape="rect" id="node3" href="$quadric__analysis_8C.html#ac59a848fa2ab164102030221f21de474" title="dsyevq3" alt="" coords="220,48,289,77"/>
+<area shape="rect" id="node19" href="$quadric__analysis_8C.html#a064649646f4641b48463cf641b032e32" title="dsytrd3" alt="" coords="105,73,169,103"/>
+<area shape="rect" id="node5" href="$classFaceOffset__3.html#a7cd0e18f9d180971a5c656207a67a464" title="FaceOffset_3::compute\l_eigenvectors" alt="" coords="340,39,497,86"/>
+<area shape="rect" id="node7" href="$classFaceOffset__3.html#a56aca8e1560d76b750545f7f33890551" title="FaceOffset_3::denoise\l_surface" alt="" coords="547,5,701,51"/>
+<area shape="rect" id="node11" href="$classFaceOffset__3.html#ae567b553d4a9a500996a8211c9202a9c" title="FaceOffset_3::eigen\l_analyze_vertex" alt="" coords="555,74,693,121"/>
+<area shape="rect" id="node9" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="985,65,1119,111"/>
+<area shape="rect" id="node13" href="$classFaceOffset__3.html#a932f06459b53d1207fdbf1d78a4a09c6" title="FaceOffset_3::compute\l_anisotropic_vertex_centers" alt="" coords="751,65,935,111"/>
+<area shape="rect" id="node16" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="764,134,921,181"/>
+</map>

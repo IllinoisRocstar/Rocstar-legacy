@@ -1,0 +1,36 @@
+<map id="get_origin" name="get_origin">
+<area shape="rect" id="node3" href="$classOverlay.html#af13f003d409781875438877fd15f4d81" title="Overlay::associate\l_green_vertices" alt="" coords="816,293,947,339"/>
+<area shape="rect" id="node7" href="$group__mf1.html#ga1bfa9d0660cadb6960a564bbd6350f94" title="Determine whether a curve is false strong. " alt="" coords="133,65,291,111"/>
+<area shape="rect" id="node9" href="$classOverlay.html#ad2947f4b049eabf5707786ef238720ff" title="Overlay::contains" alt="" coords="151,633,273,663"/>
+<area shape="rect" id="node11" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="Overlay::insert_node\l_in_blue_edge" alt="" coords="353,790,495,837"/>
+<area shape="rect" id="node13" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="819,1010,944,1057"/>
+<area shape="rect" id="node16" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="565,965,744,995"/>
+<area shape="rect" id="node21" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="569,293,740,339"/>
+<area shape="rect" id="node24" href="$classOverlay.html#ac9f62be71dea998652001fb75752713e" title="Overlay::verify_inode" alt="" coords="352,356,496,385"/>
+<area shape="rect" id="node27" href="$classOverlay.html#a4e8602930d85d562fab07af05eddb855" title="Overlay::intersect\l_link_helper" alt="" coords="361,1011,487,1058"/>
+<area shape="rect" id="node29" href="$classOverlay.html#a41c1d5ad91477125ab8d20fdf2653724" title="Overlay::intersect_link" alt="" coords="579,1019,731,1048"/>
+<area shape="rect" id="node33" href="$classOverlay.html#a1f4fcefec965f3551cf309fc3f1e2089" title="Overlay::get_edge_parent" alt="" coords="339,584,509,613"/>
+<area shape="rect" id="node51" href="$classOverlay.html#a43283cf511c055dbb4b53d3cf89e1fbe" title="Overlay::get_next_inode_cw" alt="" coords="561,413,748,443"/>
+<area shape="rect" id="node60" href="$group__fdp.html#ga467038cc0c762d1b0c66f82fee014302" title="Compute the cosine of the edge angle at a vertex between two incident feature edges. " alt="" coords="136,739,288,786"/>
+<area shape="rect" id="node62" href="$group__pifd.html#ga62b78979d2f09f83c3015f2e8dc232d5" title="The main entry of feature detection. " alt="" coords="1012,65,1164,111"/>
+<area shape="rect" id="node66" href="$classOverlay.html#aaf221c2c0b098d770af84f913e42aca3" title="Overlay::get_inodes\l_of_face" alt="" coords="1019,491,1157,538"/>
+<area shape="rect" id="node71" href="$classOverlay.html#a2ad611a03cbf39909ca024fc0b0581e8" title="Overlay::get_nat_coor" alt="" coords="137,687,287,716"/>
+<area shape="rect" id="node76" href="$group__mf0.html#gae22fcae679230d8ed039da0b697dd2ed" title="Identify the 0&#45;features. " alt="" coords="136,961,288,1007"/>
+<area shape="rect" id="node79" href="$classOverlay.html#aad660d635b91d343373cbd57b35e01de" title="Overlay::insert_node\l_in_green_edge" alt="" coords="141,134,283,181"/>
+<area shape="rect" id="node81" href="$classOverlay.html#a8c059d17f9626468b9470736ff7496ec" title="Overlay::sort_on_green\l_edges" alt="" coords="345,182,503,229"/>
+<area shape="rect" id="node87" href="$group__fdp.html#ga70ba464e00daae7c237f502538b38e92" title="Determine whether a vertex is strong (either theta&#45;strong or relatively strong) in angle defect..." alt="" coords="136,1131,288,1178"/>
+<area shape="rect" id="node90" href="$group__mf1.html#ga8eb4442cb61211ecda6806544e5efd15" title="Merge two feature curves into one at vertex v. " alt="" coords="136,1201,288,1247"/>
+<area shape="rect" id="node93" href="$classOverlay__primitives.html#abd8b39d16a6ffd05dc3fe8f61daa0916" title="Overlay_primitives\l::snap_blue_ridge_edge" alt="" coords="345,1081,503,1127"/>
+<area shape="rect" id="node96" href="$classOverlay__primitives.html#aaf3a9b82fdde10fa43a9375665a3c05e" title="Overlay_primitives\l::snap_blue_ridge_vertex" alt="" coords="341,1321,507,1367"/>
+<area shape="rect" id="node100" href="$group__mf1.html#ga801530386e562f5f7793accf33b91278" title="Subdivide a feature curve by splitting it at 0&#45;features. " alt="" coords="135,1371,289,1418"/>
+<area shape="rect" id="node5" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="1440,496,1557,525"/>
+<area shape="rect" id="node40" href="$classOverlay.html#acf750ca406005830bb060b4156fa2659" title="Overlay::get_next_inode" alt="" coords="800,561,963,591"/>
+<area shape="rect" id="node55" href="$classOverlay.html#ad9d6da6600b84c10dc492f9e0ec3214b" title="Overlay::get_parent_face" alt="" coords="571,741,739,771"/>
+<area shape="rect" id="node19" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="581,845,728,891"/>
+<area shape="rect" id="node36" href="$classOverlay.html#a3f521ca05c00fd29e17b4fb388d78f6b" title="Overlay::get_edge_pair\l_parents" alt="" coords="577,466,732,513"/>
+<area shape="rect" id="node38" href="$classOverlay.html#aa364cd769c3189a9df98b4c19a174de0" title="Overlay::get_next_inode_ccw" alt="" coords="557,536,752,565"/>
+<area shape="rect" id="node42" href="$classOverlay.html#a05e11ef1baa5319a53ae52088bcec955" title="Overlay::subdivide" alt="" coords="1023,561,1153,591"/>
+<area shape="rect" id="node44" href="$classOverlay.html#a0bd2163789be46cbefc1aa867d9ac420" title="Overlay::write_overlay_tec" alt="" coords="1215,553,1391,583"/>
+<area shape="rect" id="node46" href="$classOverlay.html#a356923154df51107408f9b11d92c21e5" title="Overlay::write_overlay_off" alt="" coords="1216,500,1389,529"/>
+<area shape="rect" id="node48" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="1213,607,1392,636"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="tet_vol" name="tet_vol">
+<area shape="rect" id="node3" href="$classGeo__Metric__Base__3.html#a18bc1c0de0237a4367c3fed594a6ffd9" title="Compute circumradius, inradius, and shortest edge length. " alt="" coords="116,5,263,51"/>
+<area shape="rect" id="node5" href="$classAspect__Metric__3.html#a9ae21718fd1b56efd4b3a617d2969fe0" title="Get the geometric aspects. " alt="" coords="312,13,507,43"/>
+<area shape="rect" id="node7" href="$classRocmop.html#ac32e390ae4937ffc3928b111a7842592" title="Rocmop::add_aspect\l_ratios" alt="" coords="555,5,701,51"/>
+</map>

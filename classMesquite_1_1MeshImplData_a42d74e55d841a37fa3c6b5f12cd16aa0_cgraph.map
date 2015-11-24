@@ -1,0 +1,5 @@
+<map id="has_adjacent_elements" name="has_adjacent_elements">
+<area shape="rect" id="node3" href="$classMesquite_1_1TopologyInfo.html#a72e6b96dd3d457ef398ed6d62d9a50a6" title="Dimension of element topology. " alt="" coords="215,5,372,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MeshImplData.html#a94ea849b392ac8799beab4d0b3e064a6" title="Get elements adjacent to ALL of the passed nodes. " alt="" coords="216,75,371,104"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1MeshImplData.html#a104a1c4bbfb05d4cada7edbaff6f8f2b" title="Check if passed vertex index is valid. " alt="" coords="421,75,531,104"/>
+</map>

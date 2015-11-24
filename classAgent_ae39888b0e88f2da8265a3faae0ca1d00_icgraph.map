@@ -1,0 +1,5 @@
+<map id="read_by_control_file" name="read_by_control_file">
+<area shape="rect" id="node3" href="$classBurnAgent.html#a1ec0a709a179ca5a6fc3352994de431c" title="BurnAgent::input" alt="" coords="195,5,312,35"/>
+<area shape="rect" id="node5" href="$classFluidAgent.html#a1ec0a709a179ca5a6fc3352994de431c" title="FluidAgent::input" alt="" coords="193,59,313,88"/>
+<area shape="rect" id="node7" href="$classSolidAgent.html#a1ec0a709a179ca5a6fc3352994de431c" title="SolidAgent::input" alt="" coords="193,112,313,141"/>
+</map>

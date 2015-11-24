@@ -1,0 +1,14 @@
+<map id="rightturn" name="rightturn">
+<area shape="rect" id="node3" href="$classTriangulation.html#a7d32bce24b14a48ab3fb2b96d49c64e5" title="Triangulation::in_cone" alt="" coords="365,82,515,111"/>
+<area shape="rect" id="node13" href="$classp__Right__of__line__2p.html#a7e8ce3877d3f7dd80ac2f4ba909b28ee" title="p_Right_of_line_2p\l::operator()" alt="" coords="153,41,287,88"/>
+<area shape="rect" id="node15" href="$structp__Rightturn.html#a2bfe32db11c0a6ee1439bc18a9e416e0" title="p_Rightturn::operator()" alt="" coords="144,111,296,140"/>
+<area shape="rect" id="node17" href="$predicates__on__points__2_8h.html#ad0893b3c1190918ed24500689388aa02" title="rightturn" alt="" coords="185,164,255,194"/>
+<area shape="rect" id="node19" href="$namespaceCGAL.html#ab398a7776f68bca31e6ddf3f5f3b33b4" title="CGAL::seg_seg_do_intersect\l_contained" alt="" coords="124,217,316,264"/>
+<area shape="rect" id="node26" href="$namespaceCGAL.html#a92a7d80be7e802c19133183b6c56d3ce" title="CGAL::seg_seg_do_intersect\l_crossing" alt="" coords="124,286,316,333"/>
+<area shape="rect" id="node5" href="$classTriangulation.html#ac3001f56f94ec919c721c8d897931e1d" title="Triangulation::is_diagonal" alt="" coords="791,143,959,172"/>
+<area shape="rect" id="node7" href="$classTriangulation.html#a614267789be8944cd704d0ee66e235c2" title="Main entry for triangulation. " alt="" coords="1009,143,1172,172"/>
+<area shape="rect" id="node9" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="1221,143,1400,172"/>
+<area shape="rect" id="node11" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="1448,143,1565,172"/>
+<area shape="rect" id="node21" href="$namespaceCGAL.html#a95fc5b4707754cc44983d73bf683b920" title="CGAL::do_intersect" alt="" coords="372,226,508,255"/>
+<area shape="rect" id="node23" href="$classTriangulation.html#aba3f32dc957f5df74d9d2b4187083bb3" title="Triangulation::is_diagonalie" alt="" coords="563,180,741,210"/>
+</map>

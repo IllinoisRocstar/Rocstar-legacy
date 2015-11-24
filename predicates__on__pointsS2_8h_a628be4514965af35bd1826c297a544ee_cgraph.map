@@ -1,0 +1,7 @@
+<map id="orientation" name="orientation">
+<area shape="rect" id="node3" href="$predicates_2kernel__ftC2_8h.html#ad8180ddeada6f820f8d216486de6ff02" title="orientationC2" alt="" coords="136,5,235,35"/>
+<area shape="rect" id="node9" href="$classPointS2.html#a242e8b7096a678fdbb08e337420acb84" title="PointS2::x" alt="" coords="144,59,227,88"/>
+<area shape="rect" id="node11" href="$classPointS2.html#ae367a52fcb29c7638852621653fdb407" title="PointS2::y" alt="" coords="144,112,227,141"/>
+<area shape="rect" id="node5" href="$sign__of__determinant_8h.html#a178327b0b7b852c3ecf850dde3f93bc6" title="sign_of_determinant2x2" alt="" coords="283,5,443,35"/>
+<area shape="rect" id="node7" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="492,5,607,35"/>
+</map>

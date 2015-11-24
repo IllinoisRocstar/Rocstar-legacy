@@ -1,0 +1,13 @@
+<map id="cull_vertices" name="cull_vertices">
+<area shape="rect" id="node3" href="$classMesquite_1_1ObjectiveFunction.html#aa4022056de427aeed2972f46957a8cb9" title="Mesquite::ObjectiveFunction\l::evaluate" alt="" coords="152,70,339,117"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1PatchData.html#a0c304342ea32a23debc99bf8ad579a88" title="Calculates the distance each vertex has moved from its original position as defined by the PatchDataV..." alt="" coords="151,204,340,268"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1PatchData.html#a52bbea314d53d7190817b13404b51b66" title="Remove the soft_fixed flag from all vertices in the patch. " alt="" coords="156,297,335,343"/>
+<area shape="rect" id="node24" href="$classMesquite_1_1PatchData.html#a23a7889611150e4016c857aeda6c4f2a" title="Add a soft_fixed flag to all free vertices in the patch. " alt="" coords="173,377,317,441"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1ObjectiveFunction.html#a0f076c7d1b01e9357370c3c7116eaeb2" title="Mesquite::ObjectiveFunction\l::concrete_evaluate" alt="" coords="399,5,585,51"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1Vector3D.html#a49fe740d37400aba7d3cb91531cde7d1" title="Mesquite::Vector3D\l::length_squared" alt="" coords="423,74,561,121"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#a80870c233d0237e3588a2d6f8d176916" title="Increments the iterator. returns false if there is no more free vertex. " alt="" coords="391,143,593,190"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ad20897c5c8bd47f5d4005989bead0e55" title="Resets the iterator. " alt="" coords="391,213,593,259"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ae3a963bdd66247d38ad22d17fa121632" title="Returns an index corresponding to a free vertex. " alt="" coords="391,282,593,329"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1MsqVertex.html#a181f1717ea1cab3613ff39c6969600dc" title="Mesquite::MsqVertex\l::is_flag_set" alt="" coords="643,143,789,190"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="644,342,788,389"/>
+</map>

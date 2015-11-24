@@ -1,0 +1,19 @@
+<map id="verify_inode" name="verify_inode">
+<area shape="rect" id="node3" href="$classIn__place__list__n.html#af71e6c1eccbc12e9339c00a86a981a43" title="In_place_list_n::back" alt="" coords="175,5,319,35"/>
+<area shape="rect" id="node5" href="$classOverlay.html#ad2947f4b049eabf5707786ef238720ff" title="contains" alt="" coords="212,160,281,189"/>
+<area shape="rect" id="node7" href="$classHDS__accessor.html#a7454a9634b77e8853af6aac3167dea77" title="HDS_accessor::get_destination" alt="" coords="396,53,601,83"/>
+<area shape="rect" id="node11" href="$classHDS__accessor.html#a0191908e68eeb08627b0887b5b24f42c" title="HDS_accessor::get_next" alt="" coords="415,107,583,136"/>
+<area shape="rect" id="node13" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="403,213,595,243"/>
+<area shape="rect" id="node15" href="$classHDS__accessor.html#a591425c5ea18f4820a812d753f3d6006" title="HDS_accessor::get_origin" alt="" coords="412,267,585,296"/>
+<area shape="rect" id="node17" href="$classIn__place__list__n.html#ac6e61de369e994009e36f344f99c15ad" title="In_place_list_n::empty" alt="" coords="171,315,323,344"/>
+<area shape="rect" id="node19" href="$classIn__place__list__n.html#a6a48363b4355f6f5b441637774f79a59" title="In_place_list_n::front" alt="" coords="176,368,317,397"/>
+<area shape="rect" id="node24" href="$classHDS__accessor.html#a798b177ceda47c50a64035e61fde579a" title="HDS_accessor::get_inode" alt="" coords="160,421,333,451"/>
+<area shape="rect" id="node26" href="$classHDS__accessor.html#ac7fa8c54554338449b239a5e1acebcd0" title="HDS_accessor::get_inode_list" alt="" coords="148,475,345,504"/>
+<area shape="rect" id="node31" href="$classINode.html#a2dd3c88de5ba7b43671e1e9410418d58" title="INode::halfedge" alt="" coords="189,528,304,557"/>
+<area shape="rect" id="node37" href="$classINode.html#a5e54505fb86e503aa014c5c79d4df1a3" title="INode::parent_type" alt="" coords="432,581,565,611"/>
+<area shape="rect" id="node40" href="$classIn__place__list__n.html#a503ab01f6c0142145d3434f6924714e7" title="In_place_list_n::size" alt="" coords="176,632,317,661"/>
+<area shape="rect" id="node9" href="$classHDS__accessor.html#a18eab6ffa92233a5ced127b70413239b" title="HDS_accessor::get_facet" alt="" coords="412,160,585,189"/>
+<area shape="rect" id="node21" href="$classIn__place__list__n.html#ad69bd11391be1a1dba5c8202259664f8" title="In_place_list_n::begin" alt="" coords="425,368,572,397"/>
+<area shape="rect" id="node33" href="$structHost__face.html#a2fdb4a913034dfc8a30c9019857d8173" title="Host_face::halfedge" alt="" coords="429,528,568,557"/>
+<area shape="rect" id="node35" href="$structHost__face.html#ad8e3d3c3b41c1da044381d5a758f1d7a" title="Host_face::parent_type" alt="" coords="652,555,809,584"/>
+</map>

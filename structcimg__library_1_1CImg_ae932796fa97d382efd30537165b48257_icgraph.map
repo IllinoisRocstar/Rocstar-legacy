@@ -1,0 +1,7 @@
+<map id="atXYZ" name="atXYZ">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ab05d33401b5b203bed94ed1bb42d0208" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_correlate" alt="" coords="113,5,271,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#af3760702bcc298c84d1f19649aca51d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_dilate" alt="" coords="123,74,261,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#acd937099772378466bc291da0ab9958f" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_erode" alt="" coords="123,143,261,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a71f50d4be8cd4b71adb2ef611c8139b7" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_warp" alt="" coords="124,213,260,259"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#aa070b89df5e2ff8b70e2d74cc498d622" title="Read a pixel value using linear interpolation and Dirichlet boundary conditions (first three coordina..." alt="" coords="113,282,271,329"/>
+</map>

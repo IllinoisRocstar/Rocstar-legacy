@@ -1,0 +1,32 @@
+<map id="COM_get_object" name="COM_get_object">
+<area shape="rect" id="node3" href="$classRocout.html#a5584fd8a3eb5c21ad725f4516fed8b7b" title="Finalize the module by deregistering it from Roccom. " alt="" coords="176,79,288,108"/>
+<area shape="rect" id="node11" href="$classRocin.html#a5584fd8a3eb5c21ad725f4516fed8b7b" title="Finalize the module by deregistering it from Roccom. " alt="" coords="180,172,284,201"/>
+<area shape="rect" id="node21" href="$classRocsurf.html#ab6e6c6506a9299b4bcb446a399ebf06d" title="Unloads Rocsurf from Roccom. " alt="" coords="175,305,289,335"/>
+<area shape="rect" id="node33" href="$classRocmop.html#ab6e6c6506a9299b4bcb446a399ebf06d" title="Unloads Rocmop from Roccom. " alt="" coords="173,432,291,461"/>
+<area shape="rect" id="node39" href="$classRocon.html#ab6e6c6506a9299b4bcb446a399ebf06d" title="Rocon::unload" alt="" coords="179,619,285,648"/>
+<area shape="rect" id="node51" href="$classRocprop.html#ab6e6c6506a9299b4bcb446a399ebf06d" title="Rocprop::unload" alt="" coords="173,885,291,915"/>
+<area shape="rect" id="node5" href="$RFC__Window__base__IO_8C.html#af1a862d5aa9d99ed873d9402ce36e8b8" title="Unload the module Rocout from Roccom. " alt="" coords="372,59,529,88"/>
+<area shape="rect" id="node7" href="$Rocout_8C.html#a349d3b74b47658f6cdea3d9aa3fe25b4" title="COM_F_FUNC2" alt="" coords="652,5,772,35"/>
+<area shape="rect" id="node9" href="$classRFC__Window__base.html#ada7ac76a1aaceb37b222f9f4e70fb6e1" title="Write out panes in native binary format or using Rocout. " alt="" coords="611,59,813,88"/>
+<area shape="rect" id="node13" href="$readsdv_8C.html#a818e8cb211bedde54818b238bb26dafe" title="Unload the module Rocin from Roccom. " alt="" coords="376,112,525,141"/>
+<area shape="rect" id="node15" href="$Rocin_8C.html#a21daf7fbbe4024bcf1217c110526750d" title="COM_F_FUNC2" alt="" coords="652,112,772,141"/>
+<area shape="rect" id="node17" href="$readsdv_8C.html#a64be298d6315aab8ff717f2c8d1b7777" title="read_pane_sp" alt="" coords="661,165,763,195"/>
+<area shape="rect" id="node19" href="$readsdv_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="861,165,912,195"/>
+<area shape="rect" id="node23" href="$Rocsurf_8C.html#a13cb6ac6f29834398a18f8a631462fb0" title="Rocsurf_unload_module" alt="" coords="369,165,532,195"/>
+<area shape="rect" id="node25" href="$Rocsurf_8C.html#ae942799a7f7d7371c58e9a7e1d5a415d" title="rocsurf_unload_module" alt="" coords="373,219,528,248"/>
+<area shape="rect" id="node27" href="$Rocsurf_8C.html#af7092a66d4aed8e9f74524f3bd4c3dc4" title="ROCSURF_UNLOAD_MODULE" alt="" coords="343,272,559,301"/>
+<area shape="rect" id="node29" href="$Rocsurf_8C.html#aaa65514252affd89bf614d402b9ff112" title="rocsurf_unload_module_" alt="" coords="369,325,532,355"/>
+<area shape="rect" id="node31" href="$Rocsurf_8C.html#a3b42bd2d78389382920bf22fbb2b61c2" title="ROCSURF_UNLOAD_MODULE_" alt="" coords="340,379,561,408"/>
+<area shape="rect" id="node35" href="$Rocmop_8C.html#aff9b80ee686a6124c5c520327ddf43f3" title="Rocmop_unload_module" alt="" coords="368,432,533,461"/>
+<area shape="rect" id="node37" href="$Rocmop_8C.html#ab159fb2f196fd2d679a26fa10495d256" title="COM_F_FUNC2" alt="" coords="391,485,511,515"/>
+<area shape="rect" id="node41" href="$Rocon_8C.html#a63645a5f69b9b4e9cb012f74c7f90a98" title="Rocon_unload_module" alt="" coords="373,539,528,568"/>
+<area shape="rect" id="node43" href="$Rocon_8C.html#acae2fc6200229aec2813b408c7c8cab7" title="rocon_unload_module" alt="" coords="377,592,524,621"/>
+<area shape="rect" id="node45" href="$Rocon_8C.html#ab67e05caa35008decac4ae8c347ce11d" title="ROCON_UNLOAD_MODULE" alt="" coords="352,645,549,675"/>
+<area shape="rect" id="node47" href="$Rocon_8C.html#a1c0015aa0c01e709bd75dbf1cfae6d4e" title="rocon_unload_module_" alt="" coords="373,699,528,728"/>
+<area shape="rect" id="node49" href="$Rocon_8C.html#a297b9bd82cccb529369829aadc909b8d" title="ROCON_UNLOAD_MODULE_" alt="" coords="348,752,553,781"/>
+<area shape="rect" id="node53" href="$Rocprop_8C.html#a234976e7dd8be122574ff7de82eefba1" title="Rocprop_unload_module" alt="" coords="368,805,533,835"/>
+<area shape="rect" id="node55" href="$Rocprop_8C.html#a078d7572e34a2f82e0353c9137e7b078" title="rocprop_unload_module" alt="" coords="372,859,529,888"/>
+<area shape="rect" id="node57" href="$Rocprop_8C.html#a02a1e05d912f6ff07b08c580efec8abe" title="ROCPROP_UNLOAD_MODULE" alt="" coords="343,912,559,941"/>
+<area shape="rect" id="node59" href="$Rocprop_8C.html#a61d104fc990ad67d1738db7b6050d773" title="rocprop_unload_module_" alt="" coords="368,965,533,995"/>
+<area shape="rect" id="node61" href="$Rocprop_8C.html#aec37e43638670dfd917c17e5fe56b9dd" title="ROCPROP_UNLOAD_MODULE_" alt="" coords="339,1019,563,1048"/>
+</map>

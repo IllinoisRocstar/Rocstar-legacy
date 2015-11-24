@@ -1,0 +1,23 @@
+<map id="TerminationCriterion" name="TerminationCriterion">
+<area shape="rect" id="node2" href="$classMesquite_1_1PatchDataVerticesMemento.html" title="Contains a copy of the coordinates of a PatchData. " alt="" coords="1197,337,1384,367"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1PatchData.html" title="PatchData" alt="" coords="1000,337,1083,367"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; Mesquite\l::Vector3D \&gt;" alt="" coords="632,7,811,54"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1Vector3D.html" title="Vector3D is the object that effeciently stores information about about three&#45;deminsional vectors..." alt="" coords="32,79,109,108"/>
+<area shape="rect" id="node32" href="$classMesquite_1_1MsqVertex.html" title="MsqVertex is the Mesquite object that stores information about the vertices in the mesh..." alt="" coords="287,79,372,108"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; X \&gt;" alt="" coords="256,337,403,367"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; Mesquite\l::Mesh::ElementHandle \&gt;" alt="" coords="632,350,811,397"/>
+<area shape="rect" id="node30" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; Mesquite\l::MsqVertex \&gt;" alt="" coords="632,211,811,258"/>
+<area shape="rect" id="node37" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; size_t \&gt;" alt="" coords="636,420,807,449"/>
+<area shape="rect" id="node40" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; Mesquite\l::Mesh::VertexHandle \&gt;" alt="" coords="632,473,811,519"/>
+<area shape="rect" id="node43" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; Mesquite\l::MsqMeshEntity \&gt;" alt="" coords="632,281,811,327"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1MeshSet.html" title="The MeshSet class stores one or more Mesquite::Mesh pointers and manages access to the mesh informati..." alt="" coords="684,543,759,572"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1EntityIterator.html" title="Iterates through a set of entities. An EntityIterator is typically obtained via Mesh::vertex_iterator..." alt="" coords="281,529,377,559"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1MeshDomain.html" title="MeshDomain" alt="" coords="280,583,379,612"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1CornerTag.html" title="CornerTag\&lt; Mesquite\l::TargetMatrix \&gt;" alt="" coords="648,630,795,677"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1CornerTagHandles.html" title="Utility class to manage tag handles for corner tags. " alt="" coords="5,663,136,692"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1CornerTag.html" title="A class for caching and managing Tags on element corners. " alt="" coords="272,701,387,731"/>
+<area shape="rect" id="node45" href="$classMesquite_1_1MsqMeshEntity.html" title="MsqMeshEntity is the Mesquite object that stores information about the elements in the mesh..." alt="" coords="273,161,385,191"/>
+<area shape="rect" id="node49" href="$classMesquite_1_1ObjectiveFunction.html" title="Base class for concrete Objective Functions ObjectiveFunction contains a pointer to a QualityMetric..." alt="" coords="1228,391,1353,420"/>
+<area shape="rect" id="node51" href="$classMesquite_1_1QualityMetric.html" title="Base class for concrete quality metrics. " alt="" coords="992,391,1091,420"/>
+<area shape="rect" id="node53" href="$classMesquite_1_1Timer.html" title="Timer" alt="" coords="1264,444,1317,473"/>
+</map>

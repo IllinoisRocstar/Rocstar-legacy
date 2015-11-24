@@ -1,0 +1,11 @@
+<map id="stat_rflu_genxgetdata" name="stat_rflu_genxgetdata">
+<area shape="rect" id="node3" href="$classmodstatsroutines.html#a9e92578ef0a8066055f5d9397b5bb70a" title="modstatsroutines::initstatistics" alt="" coords="200,85,400,115"/>
+<area shape="rect" id="node5" href="$RFLO__InitFlowSolver_8F90.html#a8df8edf9779f18ecb2a16e732849794b" title="rflo_initflowsolver" alt="" coords="448,59,571,88"/>
+<area shape="rect" id="node15" href="$RFLU__InitFlowSolver_8F90.html#af9c0da2d26f7bdb2bdee8507627f636c" title="rflu_initflowsolver" alt="" coords="448,112,571,141"/>
+<area shape="rect" id="node7" href="$standalone_2Main_8F90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="661,5,712,35"/>
+<area shape="rect" id="node9" href="$Rocflo__load__module_8F90.html#aa074e41fe57cac388dc65b3398f25765" title="rocflo_load_module" alt="" coords="620,59,753,88"/>
+<area shape="rect" id="node11" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="803,112,968,141"/>
+<area shape="rect" id="node13" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="1016,112,1171,141"/>
+<area shape="rect" id="node17" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="657,112,716,141"/>
+<area shape="rect" id="node19" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="620,165,753,195"/>
+</map>

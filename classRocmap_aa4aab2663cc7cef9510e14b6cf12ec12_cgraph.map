@@ -1,0 +1,24 @@
+<map id="load" name="load">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="125,5,259,35"/>
+<area shape="rect" id="node7" href="$roccom__c_8h.html#aa236d5c98c0ac8cc26b313b6ccd720a8" title="COM_set_function" alt="" coords="127,59,257,88"/>
+<area shape="rect" id="node9" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="111,112,273,141"/>
+<area shape="rect" id="node12" href="$classRocmap.html#a5c0ec42b1000f3d01b3f2b5438d4eb32" title="Compute pane connectivity map between shared nodes. " alt="" coords="135,165,249,195"/>
+<area shape="rect" id="node16" href="$classRocmap.html#a1bc1db5eb69b6b83b1ce5774540bddf1" title="Determine the nodes at pane boundaries of a given mesh. " alt="" coords="125,219,259,248"/>
+<area shape="rect" id="node24" href="$classRocmap.html#a6e07bbad3d29b50c52eeddc56fe81c5c" title="Perform an average&#45;reduction on the shared nodes for the given attribute. " alt="" coords="101,271,283,318"/>
+<area shape="rect" id="node39" href="$classRocmap.html#a4669730c9a3a6f95b39f36ac44ce2718" title="Perform a maxabs&#45;reduction on the shared nodes for the given attribute. " alt="" coords="101,341,283,387"/>
+<area shape="rect" id="node42" href="$classRocmap.html#ab5551ac3ff43ae55dd239caf6632e243" title="Perform a minabs&#45;reduction on the shared nodes for the given attribute. " alt="" coords="104,410,280,457"/>
+<area shape="rect" id="node45" href="$classRocmap.html#a79dd23302bd865402082c0492af1b703" title="Get the number of communicating panes. " alt="" coords="136,533,248,563"/>
+<area shape="rect" id="node49" href="$classRocmap.html#a748dccffbd1a40c058a05982d3bf04b8" title="Update ghost nodal or elemental values for the given attribute. " alt="" coords="139,480,245,509"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="356,55,484,84"/>
+<area shape="rect" id="node14" href="$classPane__connectivity.html#accaa2c156be9bda857170acdac72d29d" title="Create b2v mapping for nodes and facets (edges or faces) correspondence. " alt="" coords="352,157,488,203"/>
+<area shape="rect" id="node18" href="$classPane__boundary.html#ab0b93fcbb7c9167f394b691a54e05af2" title="Determine the nodes at pane boundaries of a given mesh. " alt="" coords="332,226,508,273"/>
+<area shape="rect" id="node20" href="$roccom__c_09_09_8h.html#a701c22c997913a2773d36a0b47683716" title="COM_compatible_types" alt="" coords="565,235,728,264"/>
+<area shape="rect" id="node22" href="$classPane__boundary.html#a2e082b0e846c99a3ba6669dadbd85645" title="Determine the border nodes (excluding isolated nodes) " alt="" coords="559,287,735,334"/>
+<area shape="rect" id="node26" href="$classPane__communicator.html#af84e5306d7677a0665fa35099278e534" title="Initialize the communication buffers. " alt="" coords="337,416,503,445"/>
+<area shape="rect" id="node28" href="$roccom__c_09_09_8h.html#ad0963775a018dcb83d982e5cfeeb3a22" title="COM_get_sizeof" alt="" coords="587,361,707,391"/>
+<area shape="rect" id="node32" href="$classPane__communicator.html#a0db778b55c3fc482ecf132594bd6b123" title="Initialize a Pane_comm_buffers for ghost information. " alt="" coords="565,467,728,514"/>
+<area shape="rect" id="node34" href="$classPane__communicator.html#a4327966d16b9b3012f1bb61ddc0673d3" title="For a given pane, obtain an internal pane ID which is unique and contiguous across processes..." alt="" coords="784,409,933,455"/>
+<area shape="rect" id="node30" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="817,356,900,385"/>
+<area shape="rect" id="node36" href="$classPane__communicator.html#ae7eeea984bcf7fa59efa96d05a81a901" title="Obtain the process rank of a given pane. " alt="" coords="784,478,933,525"/>
+<area shape="rect" id="node47" href="$classPane__connectivity.html#a79dd23302bd865402082c0492af1b703" title="Get the number of communicating panes. " alt="" coords="352,525,488,571"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="create_loop" name="create_loop">
+<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#ae49e3000eb72d0e5313cb4f0b70c4059" title="get_vertex" alt="" coords="172,5,255,35"/>
+<area shape="rect" id="node5" href="$classHalfedge__data__structure__decorator.html#a89cc20b2b3c07073c2f3ae93a8685501" title="new_facet" alt="" coords="172,59,255,88"/>
+<area shape="rect" id="node7" href="$classHalfedge__data__structure__decorator.html#ae6e5f7563782793fc4c5bc8108d5e50b" title="new_vertex" alt="" coords="169,112,257,141"/>
+<area shape="rect" id="node9" href="$classHalfedge.html#ab4def96f7b16673e4f64958282db7522" title="Get the ID of the opposite edge of a given edge. " alt="" coords="148,165,279,195"/>
+<area shape="rect" id="node35" href="$classHalfedge__data__structure__decorator.html#a25262e291b543249ff07aaf26c0e0682" title="set_facet" alt="" coords="176,219,251,248"/>
+<area shape="rect" id="node37" href="$classHalfedge__data__structure__decorator.html#aa64facdc6ab6224220f2fd4562c8e971" title="set_facet_halfedge" alt="" coords="148,272,279,301"/>
+<area shape="rect" id="node39" href="$classHalfedge__data__structure__decorator.html#a92be4eb032a27bd7913c110c83b69b19" title="set_prev" alt="" coords="177,325,249,355"/>
+<area shape="rect" id="node41" href="$classHalfedge__data__structure__decorator.html#a60256e1bd382a30958cc523b831b8874" title="set_vertex" alt="" coords="172,379,255,408"/>
+<area shape="rect" id="node43" href="$classHalfedge__data__structure__decorator.html#a3cfa2d359aa61dc7e8ab9e4429e2d2e1" title="set_vertex_halfedge" alt="" coords="144,432,283,461"/>
+<area shape="rect" id="node11" href="$classPane__manifold__2.html#acc9ac2df851c2e7d04073c72d6706dc1" title="Obtain the opposite edge in a given access mode. " alt="" coords="332,157,479,203"/>
+<area shape="rect" id="node13" href="$classSimple__manifold__2.html#a388807b9a6d8f961084b971ad0967d6e" title="Get the ID of the opposite real edge of a given real or border edge. " alt="" coords="533,7,691,54"/>
+<area shape="rect" id="node15" href="$classSimple__manifold__2.html#ab2f2bcc3b156c06ca00d323ad90c5be3" title="Get the ID of the opposite edge of a given interior or border edge. " alt="" coords="543,157,681,203"/>
+<area shape="rect" id="node17" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="972,227,1108,256"/>
+<area shape="rect" id="node29" href="$classPane__manifold__2.html#a293c0575cef30e28441550227a851354" title="Get the counterpart of an edge in the ACROSS_PANE mode, i.e. " alt="" coords="760,317,907,363"/>
+<area shape="rect" id="node33" href="$classHalfedge.html#ab72ff77eeb5b8645e86a4b4cb57138ce" title="Obtain the pane manifold that owns the edge. " alt="" coords="529,277,695,307"/>
+<area shape="rect" id="node21" href="$classSimple__manifold__2.html#aef03f5e4c6a6a5d7c98c42ae04a241e2" title="Get the opposite edge of a border edge for the whole pane. " alt="" coords="747,247,920,294"/>
+<area shape="rect" id="node26" href="$classSimple__manifold__2.html#a1250f39747158bc5a1ed2fa7a7013978" title="Get the opposite edge of an interior edge of the whole pane. " alt="" coords="745,127,921,174"/>
+<area shape="rect" id="node19" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="1159,227,1255,256"/>
+<area shape="rect" id="node24" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="989,288,1091,317"/>
+</map>

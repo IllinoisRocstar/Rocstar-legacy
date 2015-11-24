@@ -1,0 +1,11 @@
+<map id="projection_planeC3" name="projection_planeC3">
+<area shape="rect" id="node3" href="$basic__constructionsS3_8h.html#ace1c08f9d66d9b1b3ebc726f2290a8c9" title="projection" alt="" coords="188,112,265,141"/>
+<area shape="rect" id="node5" href="$classPlaneS3.html#ac2fd16852dbcba04e8b0133854e302c4" title="PlaneS3::projection" alt="" coords="351,5,484,35"/>
+<area shape="rect" id="node7" href="$classLine__3.html#a7e77586a6e2d9abe1fc61a9229916273" title="Line_3::projection" alt="" coords="356,59,479,88"/>
+<area shape="rect" id="node9" href="$classPlane__3.html#a7e77586a6e2d9abe1fc61a9229916273" title="Plane_3::projection" alt="" coords="351,112,484,141"/>
+<area shape="rect" id="node11" href="$classLine__2.html#aba1a19c6aeb81ae334f1267393838c60" title="Line_2\&lt; R \&gt;::projection" alt="" coords="339,165,496,195"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a5d842d37f2ddc8779aba8565144b9d18" title="Mesquite::NonSmoothSteepest\lDescent::search_edges_faces" alt="" coords="316,218,519,265"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1NonSmoothSteepestDescent.html#afc229e33dbf2794855a1bea19e45ede1" title="Mesquite::NonSmoothSteepest\lDescent::search_direction" alt="" coords="569,218,772,265"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1NonSmoothSteepestDescent.html#aea5da29ae2e90ad56c2a56d62b63ab93" title="Mesquite::NonSmoothSteepest\lDescent::minmax_opt" alt="" coords="823,218,1025,265"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::NonSmoothSteepest\lDescent::optimize_vertex\l_positions" alt="" coords="1076,209,1279,273"/>
+</map>

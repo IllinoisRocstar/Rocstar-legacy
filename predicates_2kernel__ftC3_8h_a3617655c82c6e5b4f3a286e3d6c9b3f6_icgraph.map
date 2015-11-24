@@ -1,0 +1,11 @@
+<map id="orientationC3" name="orientationC3">
+<area shape="rect" id="node3" href="$predicates__on__pointsS3_8h.html#a87041305cd5b162b6c0a1830bf8f31da" title="orientation" alt="" coords="203,99,285,128"/>
+<area shape="rect" id="node15" href="$predicates_2kernel__ftC3_8h.html#a4fa0959bd3681a74c4b1a00f7e93c466" title="side_of_bounded_sphereC3" alt="" coords="153,179,335,208"/>
+<area shape="rect" id="node5" href="$predicates__on__pointsS3_8h.html#ad63cb7acea75f12e7c713f69d48a84ea" title="coplanar" alt="" coords="433,32,503,61"/>
+<area shape="rect" id="node11" href="$predicates__on__pointsS3_8h.html#a94d1f2927f4918b08dbce16b308d872f" title="are_positive_oriented" alt="" coords="396,85,540,115"/>
+<area shape="rect" id="node13" href="$predicates__on__pointsS3_8h.html#a7e84993db184b1927d166392ec7dd5b9" title="are_negative_oriented" alt="" coords="393,139,543,168"/>
+<area shape="rect" id="node7" href="$classCGALi_1_1Coplanar.html#a41cfe03eff64fda99b8a8de7e2ed6535" title="CGALi::Coplanar::operator()" alt="" coords="600,5,784,35"/>
+<area shape="rect" id="node9" href="$predicates__on__pointsS3_8h.html#a9127ce3bd78a8d437b456e6988778656" title="coplanar_orientation" alt="" coords="623,59,761,88"/>
+<area shape="rect" id="node17" href="$predicates__on__pointsS3_8h.html#a186f4668be3a27c76c0cd92a12e648cb" title="side_of_bounded_sphere" alt="" coords="385,192,551,221"/>
+<area shape="rect" id="node19" href="$classCGALi_1_1Side__of__bounded__sphere.html#ac628e42116de57529c3d54355bdb5716" title="CGALi::Side_of_bounded\l_sphere::operator()" alt="" coords="608,183,776,230"/>
+</map>

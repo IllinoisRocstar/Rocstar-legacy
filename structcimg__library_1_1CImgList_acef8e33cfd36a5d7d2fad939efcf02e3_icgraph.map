@@ -1,0 +1,28 @@
+<map id="is_empty" name="is_empty">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgList.html#a6ecd490e3fa388ad3ab4386205d6fac6" title="Save an image list into a .cimg file. " alt="" coords="141,5,293,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImgList.html#a26015642cf27f630ff74e3a247872019" title="cimg_library::CImgList\l\&lt; uintT \&gt;::_save_yuv" alt="" coords="141,74,293,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImgList.html#aaeb0702ae0c8ed0835dcdd51480c73cd" title="Read an image in specified position. " alt="" coords="141,143,293,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImgList.html#a9248375ca3602e32c072d3eca0c9ba32" title="Read a pixel value with Neumann boundary conditions for the first coordinates (pos). " alt="" coords="141,213,293,259"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImgList.html#a9c856833fe38cbd63f04fea05dbd6830" title="Read a pixel value with Neumann boundary conditions for the two first coordinates (pos..." alt="" coords="141,282,293,329"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImgList.html#a433f3d1a58a8344b446721f3b69b5aea" title="Read a pixel value with Neumann boundary conditions for the three first coordinates (pos..." alt="" coords="141,351,293,398"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImgList.html#a0e24413cb9105985c80854aee51e23f8" title="Read a pixel value with Neumann boundary conditions for the four first coordinates (pos..." alt="" coords="141,421,293,467"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImgList.html#a740d9f591d08fa655bbefcd310975bdb" title="Read a pixel value with Neumann boundary conditions. " alt="" coords="141,490,293,537"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImgList.html#a35af7c10335a06d8f3107f55f814f693" title="Return true if one of the image list contains the specified referenced value. If true, set coordinates (n,x,y,z,v). " alt="" coords="141,559,293,606"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImgList.html#a974d8aafd86ec4b19b6725e1fd02dfa9" title="Return true if the list contains the image (n). " alt="" coords="141,629,293,675"/>
+<area shape="rect" id="node23" href="$structcimg__library_1_1CImgList.html#a007e914bacada535af80ff52f763f732" title="Return true if the list contains the pixel (n,x,y,z,v). " alt="" coords="129,698,305,745"/>
+<area shape="rect" id="node25" href="$structcimg__library_1_1CImgList.html#ac670d063ffced544589167ae7541e3f3" title="Display the current CImgList instance in a new display window. " alt="" coords="141,767,293,814"/>
+<area shape="rect" id="node27" href="$structcimg__library_1_1CImgList.html#a231161b57fc1e5d813f254f65afefd8b" title="Compute a 1&#45;D Fast Fourier Transform, along specified axis. " alt="" coords="141,837,293,883"/>
+<area shape="rect" id="node29" href="$structcimg__library_1_1CImgList.html#a563eced0a41cdb792b2b151b682f7ae5" title="Return a single image which is the concatenation of all images of the current CImgList instance..." alt="" coords="141,906,293,953"/>
+<area shape="rect" id="node31" href="$structcimg__library_1_1CImgList.html#a8ee71f92f35cc9e24d9d3a09456be2ae" title="Load an image list from a file. " alt="" coords="141,975,293,1022"/>
+<area shape="rect" id="node33" href="$structcimg__library_1_1CImgList.html#aa3885ef29cd5036361c12d407019de6c" title="Load an image from a video file (MPEG,AVI) using the external tool &#39;ffmpeg&#39;. " alt="" coords="140,1045,295,1109"/>
+<area shape="rect" id="node35" href="$structcimg__library_1_1CImgList.html#a301155b753f6ab13ff25f164f389e142" title="Return a reference to the maximum pixel value of the instance list. " alt="" coords="141,1133,293,1179"/>
+<area shape="rect" id="node37" href="$structcimg__library_1_1CImgList.html#a71d45b81231629bd177f4f21ad725867" title="Return a reference to the minimum pixel value of the instance list. " alt="" coords="141,1202,293,1249"/>
+<area shape="rect" id="node39" href="$structcimg__library_1_1CImgList.html#a4dfdacede15a60eb00a588a9f3d4839a" title="Return a reference to the minimum pixel value of the instance list. " alt="" coords="141,1271,293,1318"/>
+<area shape="rect" id="node41" href="$structcimg__library_1_1CImgList.html#aa14552d1b2967381b50f6f277048986f" title="Return a reference to the minimum pixel value of the instance list. " alt="" coords="141,1341,293,1387"/>
+<area shape="rect" id="node43" href="$structcimg__library_1_1CImgList.html#aa385aa18f5e42db5a415c25a90f4193d" title="Return true if list is not empty. " alt="" coords="139,1410,296,1457"/>
+<area shape="rect" id="node45" href="$structcimg__library_1_1CImgList.html#a814fe09c21090e7673d96c6145fc64bf" title="Save an image list into a file. " alt="" coords="141,1479,293,1526"/>
+<area shape="rect" id="node47" href="$structcimg__library_1_1CImgList.html#a08addbada69513e00079ff437b669138" title="Save an image sequence, using FFMPEG library. " alt="" coords="139,1549,296,1595"/>
+<area shape="rect" id="node49" href="$structcimg__library_1_1CImgList.html#a3b4ad0233afe8d38700bb1d0d0dc6ecc" title="Save an image sequence using the external tool &#39;ffmpeg&#39;. " alt="" coords="139,1619,296,1683"/>
+<area shape="rect" id="node51" href="$structcimg__library_1_1CImgList.html#a68a5e651dc373ac4012de6daf15d3d0a" title="cimg_library::CImgList\l\&lt; uintT \&gt;::transfer_to" alt="" coords="141,1706,293,1753"/>
+<area shape="rect" id="node53" href="$structcimg__library_1_1CImgList.html#a2d70c422e3e75e6cd810358486387300" title="Return a C&#45;string containing the values of all images in the instance list. " alt="" coords="141,1775,293,1822"/>
+</map>

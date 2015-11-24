@@ -1,0 +1,32 @@
+<map id="ProcessInterrupt" name="ProcessInterrupt">
+<area shape="rect" id="node3" href="$classCoupling.html#a3743217a687c638a600341721e219b55" title="restart_at_time" alt="" coords="183,473,292,503"/>
+<area shape="rect" id="node62" href="$Coupling_8C.html#a83f4e1cc14f5787ea19907b93f0cd5cb" title="RocstarShutdown" alt="" coords="175,596,300,625"/>
+<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a09e80f4d7a95f3d5c2282202d8526520" title="cimg_library::cimg\l::system" alt="" coords="373,595,501,642"/>
+<area shape="rect" id="node7" href="$classCoupling.html#acca8f4e7c8b4e2d2c0d3f0693dffae7f" title="get_control_param" alt="" coords="373,313,501,343"/>
+<area shape="rect" id="node9" href="$classCoupling.html#a32d626626eee0bc4ade146973f6abb1c" title="Invoke finalization of the actions in the scheduler and the agents. " alt="" coords="407,367,468,396"/>
+<area shape="rect" id="node17" href="$roccom__c_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="351,473,524,503"/>
+<area shape="rect" id="node19" href="$classControl__parameters.html#aaebe643b1eed80b568bf52abbc6baeb3" title="Control_parameters\l::update_start_time" alt="" coords="369,526,505,573"/>
+<area shape="rect" id="node21" href="$classCoupling.html#a152013c4f4d029f84f09d02f5062298a" title="initialize" alt="" coords="403,420,472,449"/>
+<area shape="rect" id="node11" href="$classScheduler.html#ab39dbbeb37b2db09bada87931cd462a5" title="Scheduler::finalize\l_actions" alt="" coords="575,350,703,397"/>
+<area shape="rect" id="node13" href="$structScheduler_1_1ActionItem.html#a4d53ef72c920649a6dcaf1ccb1392b5d" title="Scheduler::ActionItem\l::action" alt="" coords="961,355,1111,402"/>
+<area shape="rect" id="node15" href="$classAction.html#a4e44143f72657f0e69d2a1816b6cc54d" title="Action::finalize" alt="" coords="779,312,885,341"/>
+<area shape="rect" id="node23" href="$classCoupling.html#a26bc665db8e8a51e3aa6541646f165fb" title="Invoke initialization of the actions in the scheduler and the agents. " alt="" coords="620,205,657,235"/>
+<area shape="rect" id="node47" href="$classCoupling.html#a1ec0a709a179ca5a6fc3352994de431c" title="Invoke input functions of the agents. " alt="" coords="613,473,664,503"/>
+<area shape="rect" id="node49" href="$classCoupling.html#a3cb9c1ae4e18c8ebee176bcab84acdd1" title="reload_rocface" alt="" coords="585,527,692,556"/>
+<area shape="rect" id="node51" href="$classCoupling.html#af2a0914ea228ea5ac8e97ae91cf64fbf" title="run_initactions" alt="" coords="585,420,692,449"/>
+<area shape="rect" id="node25" href="$classCoupling.html#a58bf0e007e99edf6a2f6548abcf4b391" title="callMethod" alt="" coords="789,259,875,288"/>
+<area shape="rect" id="node27" href="$classScheduler.html#aa1afa161a5ce3091cb8c3a3c7a2c498e" title="Scheduler::init_actions" alt="" coords="755,152,909,181"/>
+<area shape="rect" id="node32" href="$classFluidAgent.html#a61c325d4cccecdbaed2b9cafec86cd6b" title="FluidAgent::init_module" alt="" coords="753,72,911,101"/>
+<area shape="rect" id="node45" href="$classScheduler.html#ad5b1c3a21573def355d267faa576be96" title="Scheduler::restarting" alt="" coords="761,205,903,235"/>
+<area shape="rect" id="node30" href="$classAction.html#aca8217b09074703304bc004e3b158e55" title="Action::init" alt="" coords="995,165,1077,195"/>
+<area shape="rect" id="node34" href="$classAgent.html#a61c325d4cccecdbaed2b9cafec86cd6b" title="Agent::init_module" alt="" coords="971,5,1101,35"/>
+<area shape="rect" id="node38" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="969,59,1103,88"/>
+<area shape="rect" id="node42" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="963,112,1109,141"/>
+<area shape="rect" id="node36" href="$classAgent.html#a7166b9d0c3321d1abf347377b32bf154" title="Agent::get_agent_name" alt="" coords="1160,5,1320,35"/>
+<area shape="rect" id="node40" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="1176,85,1304,115"/>
+<area shape="rect" id="node53" href="$classCoupling.html#a16e46e7c65078b1877d239968152a04e" title="name" alt="" coords="805,469,859,499"/>
+<area shape="rect" id="node55" href="$classScheduler.html#a1ddbe92dd7f68ea5db8d9957e6da0c0a" title="Scheduler::set_alpha" alt="" coords="760,416,904,445"/>
+<area shape="rect" id="node57" href="$classScheduler.html#ad2f7d0180654fc893a9dd4112cec8f3b" title="Scheduler::run_actions" alt="" coords="755,523,909,552"/>
+<area shape="rect" id="node60" href="$classAction.html#a32338f30828c8564d854ae856028b26a" title="Action::run" alt="" coords="993,523,1079,552"/>
+<area shape="rect" id="node64" href="$roccom__c_09_09_8h.html#a47ed797bddcdd0aabcd9f8e47f326744" title="COM_finalize" alt="" coords="387,665,488,695"/>
+</map>

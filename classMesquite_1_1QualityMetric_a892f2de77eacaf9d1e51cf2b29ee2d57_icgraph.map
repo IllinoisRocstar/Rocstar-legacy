@@ -1,0 +1,22 @@
+<map id="set_metric_type" name="set_metric_type">
+<area shape="rect" id="node3" href="$classMesquite_1_1AddQualityMetric.html#a75a67bdf19ad1060d130bd0c8bbb48b4" title="Mesquite::AddQualityMetric\l::AddQualityMetric" alt="" coords="212,5,393,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1ASMQualityMetric.html#a9a0739efeb462cc0c07c0c79912bb141" title="Mesquite::ASMQualityMetric\l::ASMQualityMetric" alt="" coords="208,74,397,121"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1AspectRatioGammaQualityMetric.html#a92baaa10fd834bf704b069394352e6ca" title="Mesquite::AspectRatioGamma\lQualityMetric::AspectRatioGamma\lQualityMetric" alt="" coords="191,144,415,208"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1ConditionNumberQualityMetric.html#a3dde89f54528d2b266183d16b918e118" title="Mesquite::ConditionNumber\lQualityMetric::ConditionNumber\lQualityMetric" alt="" coords="199,232,407,296"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1CornerJacobianQualityMetric.html#a49c14eda698ecb41ecc6bc4a8a45f9b8" title="Mesquite::CornerJacobian\lQualityMetric::CornerJacobian\lQualityMetric" alt="" coords="204,320,401,384"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1EdgeLengthQualityMetric.html#a5ac7cd830ae7fbd1e4daeb31ed117cc4" title="Mesquite::EdgeLengthQuality\lMetric::EdgeLengthQualityMetric" alt="" coords="197,407,408,454"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1EdgeLengthRangeQualityMetric.html#ae100405816877845249d9fc6a53300df" title="Mesquite::EdgeLengthRange\lQualityMetric::EdgeLengthRange\lQualityMetric" alt="" coords="196,477,409,541"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1I__DFT.html#a44189d7e8279c4da2ee3670d52ccb2eb" title="Mesquite::I_DFT::I_DFT" alt="" coords="220,565,385,595"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1IdealWeightInverseMeanRatio.html#aa7a708907723d22f17a93378ad297dc5" title="Mesquite::IdealWeightInverse\lMeanRatio::IdealWeightInverseMeanRatio" alt="" coords="169,618,436,665"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1IdealWeightMeanRatio.html#a68643c072bbb87bd063a375679c6878a" title="Mesquite::IdealWeightMean\lRatio::IdealWeightMeanRatio" alt="" coords="207,687,399,734"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1LocalSizeQualityMetric.html#ac4fcbb5568249864456ff7bcd2b455f8" title="Mesquite::LocalSizeQuality\lMetric::LocalSizeQualityMetric" alt="" coords="203,757,403,803"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1MultiplyQualityMetric.html#aaccec112f94e09ff7a75618342227870" title="Mesquite::MultiplyQuality\lMetric::MultiplyQualityMetric" alt="" coords="209,826,396,873"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1PowerQualityMetric.html#ae71607f7dfd32e752dc37978b4bd398a" title="Mesquite::PowerQualityMetric\l::PowerQualityMetric" alt="" coords="204,895,401,942"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1RI__DFT.html#acf37fe33c14c3dbc98ce9b2bdb17a0cd" title="Mesquite::RI_DFT::RI_DFT" alt="" coords="211,965,395,995"/>
+<area shape="rect" id="node31" href="$classMesquite_1_1ScalarAddQualityMetric.html#a7eee4e46bb1f8fc1c70dff79827db145" title="Mesquite::ScalarAddQuality\lMetric::ScalarAddQualityMetric" alt="" coords="201,1018,404,1065"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1ScalarMultiplyQualityMetric.html#a9cc409be5d0b1283e29c5effda9d8434" title="Mesquite::ScalarMultiply\lQualityMetric::ScalarMultiply\lQualityMetric" alt="" coords="208,1088,397,1152"/>
+<area shape="rect" id="node35" href="$classMesquite_1_1sI__DFT.html#aac197266913c27ad682c0d6502868e32" title="Mesquite::sI_DFT::sI_DFT" alt="" coords="213,1176,392,1205"/>
+<area shape="rect" id="node37" href="$classMesquite_1_1sRI__DFT.html#aa64ab5bce8df47e3e311c5a4f4e0cc73" title="Mesquite::sRI_DFT::\lsRI_DFT" alt="" coords="231,1229,375,1275"/>
+<area shape="rect" id="node39" href="$classMesquite_1_1UntangleBetaQualityMetric.html#aded550601ac7d7a4cc55fac1232c8b13" title="For untangle beta, the constructor defaults to the SUM averaging method, and to the ELEMENT_VERTICES ..." alt="" coords="192,1298,413,1345"/>
+<area shape="rect" id="node41" href="$classMesquite_1_1VertexConditionNumberQualityMetric.html#a81069d8cbf46f717c3e2cc957669ffee" title="Mesquite::VertexCondition\lNumberQualityMetric::VertexCondition\lNumberQualityMetric" alt="" coords="180,1368,425,1432"/>
+</map>

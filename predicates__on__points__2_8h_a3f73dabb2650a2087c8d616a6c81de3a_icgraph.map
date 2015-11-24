@@ -1,0 +1,9 @@
+<map id="collinear" name="collinear">
+<area shape="rect" id="node3" href="$classSegmentS2.html#a1d1e457a0d304a26d6b4a24fd4e3ce0e" title="SegmentS2::collinear\l_has_on" alt="" coords="144,5,291,51"/>
+<area shape="rect" id="node5" href="$classRayS3.html#a44627e2627e2aab0c4f329843cd44d1e" title="RayS3::collinear_has_on" alt="" coords="135,75,300,104"/>
+<area shape="rect" id="node7" href="$classSegmentS2.html#acb5f570ffbcece0a5c09a991b034fecd" title="SegmentS2::has_on" alt="" coords="148,128,287,157"/>
+<area shape="rect" id="node9" href="$classRayS3.html#a1db00f8562d8a67fec62f523fd1e8390" title="RayS3::has_on" alt="" coords="161,181,273,211"/>
+<area shape="rect" id="node11" href="$classLineS3.html#a1db00f8562d8a67fec62f523fd1e8390" title="LineS3::has_on" alt="" coords="161,235,273,264"/>
+<area shape="rect" id="node13" href="$classRayS2.html#acb5f570ffbcece0a5c09a991b034fecd" title="RayS2::has_on" alt="" coords="161,288,273,317"/>
+<area shape="rect" id="node15" href="$classCGALi_1_1Collinear.html#a4e89f3e1aa3fb557b6f3b7bf00f29321" title="CGALi::Collinear::operator()" alt="" coords="127,341,308,371"/>
+</map>

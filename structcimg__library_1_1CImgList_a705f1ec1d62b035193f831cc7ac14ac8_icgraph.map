@@ -1,0 +1,9 @@
+<map id="transfer_to" name="transfer_to">
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#a62805bf0845c650a457cd78b3cd6488a" title="Display a dialog box, where a user can click standard buttons. " alt="" coords="156,5,284,51"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImgList.html#aa240a3e4e9713b62189f8df7fa47a988" title="cimg_library::CImgList\l\&lt; uintT \&gt;::get_crop_font" alt="" coords="139,74,301,121"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#acdae64c0c93793df8b0a0b28a34d9694" title="Load an image (list) from a .cimg file. " alt="" coords="149,143,291,190"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a9e3446fd647fcb9fc95a462435f42784" title="Load an image from a PAR&#45;REC (Philips) file. " alt="" coords="145,213,295,259"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImgList.html#a4991be1e15f3c49a4fa24870bd67d09b" title="Load an image list from a PAR/REC (Philips) file. " alt="" coords="144,282,296,329"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImgList.html#a2d70c422e3e75e6cd810358486387300" title="Return a C&#45;string containing the values of all images in the instance list. " alt="" coords="144,351,296,398"/>
+<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a75e89e248c2e97f459e176d7a5cfeaf4" title="cimg_library::cimg\l::dialog" alt="" coords="349,5,477,51"/>
+</map>

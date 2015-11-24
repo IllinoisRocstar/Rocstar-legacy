@@ -1,0 +1,36 @@
+<map id="denoise_surface" name="denoise_surface">
+<area shape="rect" id="node3" href="$classFaceOffset__3.html#a7cd0e18f9d180971a5c656207a67a464" title="compute_eigenvectors" alt="" coords="173,325,325,355"/>
+<area shape="rect" id="node58" href="$classRocblas.html#a67987d3b72ffb73c5fa0cc2930822afd" title="Operation wrapper for copy (x is a scalar pointer). " alt="" coords="176,480,323,509"/>
+<area shape="rect" id="node62" href="$classRocblas.html#a065ad834f700affb4c861da75459325c" title="Operation wrapper for division. " alt="" coords="203,533,296,563"/>
+<area shape="rect" id="node81" href="$classFaceOffset__3.html#aa253be8fd0d4e93df02615eb7e909371" title="get_nonuniform_weight" alt="" coords="172,587,327,616"/>
+<area shape="rect" id="node83" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="223,640,276,669"/>
+<area shape="rect" id="node5" href="$quadric__analysis_8C.html#ac59a848fa2ab164102030221f21de474" title="dsyevq3" alt="" coords="415,71,484,100"/>
+<area shape="rect" id="node15" href="$namespacecimg__library_1_1cimg.html#ac1b66fe77173de9e5e8542b2823d6071" title="Print informations about CImg environement variables. " alt="" coords="385,286,513,333"/>
+<area shape="rect" id="node56" href="$buildface_8cpp.html#a34cd8fd4d99fbdd4ef97fcc94070b460" title="swap" alt="" coords="423,356,476,385"/>
+<area shape="rect" id="node7" href="$quadric__analysis_8C.html#a064649646f4641b48463cf641b032e32" title="dsytrd3" alt="" coords="616,44,680,73"/>
+<area shape="rect" id="node9" href="$quadric__analysis_8C.html#a008137b55395036613fb97c40e7ba8b5" title="SQR" alt="" coords="812,71,863,100"/>
+<area shape="rect" id="node11" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="816,5,859,35"/>
+<area shape="rect" id="node17" href="$namespacecimg__library_1_1cimg.html#a0d2a283a3aa2572e9d343f040c8c4c6b" title="Return the current endianness of the CPU. " alt="" coords="584,425,712,471"/>
+<area shape="rect" id="node19" href="$namespacecimg__library_1_1cimg.html#ad0db1003e37cc111d9eddd282c1ab27b" title="Return or set path to the ImageMagick&#39;s convert tool. " alt="" coords="579,286,717,333"/>
+<area shape="rect" id="node31" href="$namespacecimg__library_1_1cimg.html#aa9f7e166f51b43facc8ecc9f05e4ceba" title="Return path of the GraphicsMagick&#39;s gm tool. " alt="" coords="572,217,724,263"/>
+<area shape="rect" id="node36" href="$namespacecimg__library_1_1cimg.html#aaedba1291890f50edb5be58ef662e516" title="Return or set path of the XMedcon tool. " alt="" coords="584,147,712,194"/>
+<area shape="rect" id="node41" href="$namespacecimg__library_1_1cimg.html#a797797a309ca40aa28cdfbb92f4d1621" title="Return or set path to store temporary files. " alt="" coords="584,355,712,402"/>
+<area shape="rect" id="node21" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="773,286,901,333"/>
+<area shape="rect" id="node23" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="773,147,901,194"/>
+<area shape="rect" id="node29" href="$namespacecimg__library_1_1cimg.html#a6a835b5fd5ea1699929cb8a1f91e8729" title="cimg_library::cimg\l::winformat_string" alt="" coords="773,217,901,263"/>
+<area shape="rect" id="node25" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="949,147,1077,194"/>
+<area shape="rect" id="node27" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="1125,147,1253,194"/>
+<area shape="rect" id="node43" href="$namespacecimg__library_1_1cimg.html#a7748b6c9db13b5262f059994f0b8c117" title="cimg_library::cimg\l::filenamerand" alt="" coords="773,355,901,402"/>
+<area shape="rect" id="node45" href="$namespacecimg__library_1_1cimg.html#a84a2f7a220ba6a54893f695b3bcc36e2" title="cimg_library::cimg\l::srand" alt="" coords="949,325,1077,371"/>
+<area shape="rect" id="node49" href="$namespacecimg__library_1_1cimg.html#af31db729637ea4dad61e49e5729839c4" title="Return a random variable between [0,1] with respect to an uniform distribution. " alt="" coords="1125,354,1253,401"/>
+<area shape="rect" id="node47" href="$namespacecimg__library_1_1cimg.html#af883131bbc64e996d212114cc2b2b21a" title="Get the value of a system timer with a millisecond precision. " alt="" coords="1125,285,1253,331"/>
+<area shape="rect" id="node60" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="381,480,517,509"/>
+<area shape="rect" id="node65" href="$classRocblas.html#a014ebce01bb2ec4eacb969b142b13d97" title="Chooses which calc function to call based on type of y. " alt="" coords="376,533,523,563"/>
+<area shape="rect" id="node71" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="385,644,513,673"/>
+<area shape="rect" id="node67" href="$classAttribute.html#ab642771d1269b6ccb9e6ba87ec15de3b" title="Checks whether the attribute is associated with the window. " alt="" coords="571,564,725,593"/>
+<area shape="rect" id="node69" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="588,494,708,541"/>
+<area shape="rect" id="node73" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="593,617,703,647"/>
+<area shape="rect" id="node75" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="593,671,703,700"/>
+<area shape="rect" id="node77" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="587,724,709,753"/>
+<area shape="rect" id="node79" href="$classPane.html#a05d1abca9cbb0ec7bdc59f58dd81797c" title="Obtain a constant pointer to its owner window object. " alt="" coords="785,724,889,753"/>
+</map>

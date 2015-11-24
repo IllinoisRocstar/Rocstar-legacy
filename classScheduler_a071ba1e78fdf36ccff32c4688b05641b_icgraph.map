@@ -1,0 +1,18 @@
+<map id="writes" name="writes">
+<area shape="rect" id="node3" href="$classActionA.html#a0ca623436d811d7656cf7de7858e8399" title="ActionA::declare" alt="" coords="281,160,399,189"/>
+<area shape="rect" id="node7" href="$classActionB.html#a0ca623436d811d7656cf7de7858e8399" title="ActionB::declare" alt="" coords="281,5,399,35"/>
+<area shape="rect" id="node10" href="$classActionC.html#a0ca623436d811d7656cf7de7858e8399" title="ActionC::declare" alt="" coords="113,56,231,85"/>
+<area shape="rect" id="node13" href="$classAction.html#a0d266ca3c89fae98335f440d3bf579e0" title="Action::declare" alt="" coords="117,213,227,243"/>
+<area shape="rect" id="node45" href="$classActionF.html#a0ca623436d811d7656cf7de7858e8399" title="ActionF::declare" alt="" coords="113,109,231,139"/>
+<area shape="rect" id="node5" href="$test_8C.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="492,108,543,137"/>
+<area shape="rect" id="node15" href="$classScheduler.html#ab45f61051944a767a4870ef6d33a6b66" title="add_action" alt="" coords="297,213,383,243"/>
+<area shape="rect" id="node17" href="$classUserScheduler.html#ab45f61051944a767a4870ef6d33a6b66" title="UserScheduler::add\l_action" alt="" coords="449,205,585,251"/>
+<area shape="rect" id="node19" href="$classAgent.html#ab567c093a04cf97dfe6c0eaf4570e844" title="Agent::add_icaction" alt="" coords="647,291,783,320"/>
+<area shape="rect" id="node23" href="$classFluidAlone.html#aa21baddf7dc0522aa90681d92106835e" title="FluidAlone::FluidAlone" alt="" coords="1064,119,1216,148"/>
+<area shape="rect" id="node27" href="$classFluidBurnAlone.html#aadd89b08ad96867a0512484d249ff3ee" title="FluidBurnAlone::FluidBurn\lAlone" alt="" coords="843,226,1016,273"/>
+<area shape="rect" id="node29" href="$classAgent.html#a57229cb5117b7f9037fc4b2943a7ff0d" title="Agent::add_bcinitaction" alt="" coords="636,344,793,373"/>
+<area shape="rect" id="node33" href="$classAgent.html#a067d392f8d0b76112eb95ced42d942fc" title="Agent::add_bcaction" alt="" coords="644,187,785,216"/>
+<area shape="rect" id="node38" href="$classAgent.html#ae8d0ad86a1e0c23adb9d2aaad7562c59" title="Agent::add_gmaction" alt="" coords="643,133,787,163"/>
+<area shape="rect" id="node21" href="$builtin__couplings_8C.html#aae652ed0b25fcf6c8486f30999da49cf" title="declare_fluid_actions" alt="" coords="857,155,1001,184"/>
+<area shape="rect" id="node25" href="$builtin__couplings_8C.html#a61cbf367c53ee680746cc1e9bceab86b" title="declare_solid_actions" alt="" coords="856,296,1003,325"/>
+</map>

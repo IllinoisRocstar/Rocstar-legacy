@@ -1,0 +1,4 @@
+<map id="size_of_faces" name="size_of_faces">
+<area shape="rect" id="node3" href="$classPane.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Dimension of the pane. " alt="" coords="163,5,280,35"/>
+<area shape="rect" id="node5" href="$classConnectivity.html#ad6201ce90f65e758f3cac750b0f96e2c" title="Get the number of faces per element of the current connectivity table. " alt="" coords="159,58,284,105"/>
+</map>

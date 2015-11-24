@@ -1,0 +1,33 @@
+<map id="evaluate_normals" name="evaluate_normals">
+<area shape="rect" id="node3" href="$classRFC__Pane__overlay.html#ab7ea2290150c22963050ec6a0d3f5aa8" title="RFC_Pane_overlay::add\l_tangent" alt="" coords="436,52,601,98"/>
+<area shape="rect" id="node5" href="$classRFC__Pane__overlay.html#a8ec09b1da2ce631bfbca1670669cc963" title="RFC_Pane_overlay::get\l_index" alt="" coords="651,86,813,133"/>
+<area shape="rect" id="node7" href="$classHalfedge__overlay.html#a49a0ced46edaa808d9951d79b7e43d31" title="Halfedge_overlay::destination" alt="" coords="185,306,380,335"/>
+<area shape="rect" id="node11" href="$rfc__basic_8h.html#a795ce3604512c9a6faeb5ee7129703a1" title="free_vector" alt="" coords="240,359,325,388"/>
+<area shape="rect" id="node13" href="$classHDS__accessor.html#a7454a9634b77e8853af6aac3167dea77" title="HDS_accessor::get_destination" alt="" coords="180,412,385,442"/>
+<area shape="rect" id="node15" href="$classOverlay__primitives.html#a1c20fa0c901b440606f581e1a031eff5" title="Overlay_primitives\l::get_face_normal" alt="" coords="217,465,348,512"/>
+<area shape="rect" id="node31" href="$classHDS__accessor.html#ad55db01a1caf3cf35646fa3bd0f53569" title="HDS_accessor::get_halfedge" alt="" coords="187,588,379,618"/>
+<area shape="rect" id="node34" href="$classHDS__accessor.html#a50477e7dd3cdaf0967286546ca524a85" title="HDS_accessor::get_next\l_around_destination" alt="" coords="199,641,367,688"/>
+<area shape="rect" id="node36" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="187,711,379,740"/>
+<area shape="rect" id="node38" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="197,764,368,794"/>
+<area shape="rect" id="node40" href="$classRFC__Pane__overlay.html#ac4c82a127856b6bc6092e299738dae65" title="RFC_Pane_overlay::hds" alt="" coords="200,818,365,847"/>
+<area shape="rect" id="node42" href="$classHalfedge__overlay.html#aa126fd94949c810d24869ad04cd97e15" title="Halfedge_overlay::is\l_border" alt="" coords="212,870,353,917"/>
+<area shape="rect" id="node44" href="$group__fdh.html#ga541e22567f6cb479647631ebddab3c17" title="is_feature_0" alt="" coords="236,191,329,220"/>
+<area shape="rect" id="node51" href="$group__fdh.html#gafb9dc54668d25e24492e3c0cab222096" title="is_feature_1" alt="" coords="236,252,329,282"/>
+<area shape="rect" id="node58" href="$classRFC__Pane__base.html#a584f868480e84dcf5750fe21c96c4dd8" title="Is this pane a master copy? " alt="" coords="189,940,376,970"/>
+<area shape="rect" id="node60" href="$classRFC__Window__overlay.html#a6c7879c8b9d026cbf6f8e39dd6274fd2" title="Miscellaneous Helpers. " alt="" coords="244,535,321,564"/>
+<area shape="rect" id="node63" href="$classRFC__Window__derived.html#a8b62416fb3158e5a2a1e8a0b2b75560d" title="Get a reference to the pane with give id pid. " alt="" coords="439,1000,599,1064"/>
+<area shape="rect" id="node65" href="$classVertex__overlay.html#a75cdd043830d07c6068d1f272f62287b" title="Vertex_overlay::point" alt="" coords="211,1098,355,1127"/>
+<area shape="rect" id="node67" href="$group__ntc.html#ga538732807f091378dd015c578ff0528d" title="reduce_normals_to_all" alt="" coords="207,1044,359,1074"/>
+<area shape="rect" id="node70" href="$buildface_8cpp.html#a34cd8fd4d99fbdd4ef97fcc94070b460" title="swap" alt="" coords="256,1151,309,1180"/>
+<area shape="rect" id="node9" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="436,314,601,343"/>
+<area shape="rect" id="node17" href="$classPoint__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Point_set::size_of\l_edges" alt="" coords="456,366,581,413"/>
+<area shape="rect" id="node21" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="437,436,600,466"/>
+<area shape="rect" id="node23" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="449,490,588,519"/>
+<area shape="rect" id="node25" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="497,596,540,626"/>
+<area shape="rect" id="node27" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="455,543,583,572"/>
+<area shape="rect" id="node19" href="$classVertex__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Vertex_set::size_of\l_edges" alt="" coords="665,366,799,413"/>
+<area shape="rect" id="node29" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="667,534,797,581"/>
+<area shape="rect" id="node46" href="$classVertex__overlay.html#a19d9c37a6dfdbf650d75a844710c9207" title="Vertex_overlay::pane" alt="" coords="447,191,591,220"/>
+<area shape="rect" id="node48" href="$classRFC__Pane__overlay.html#a541e22567f6cb479647631ebddab3c17" title="RFC_Pane_overlay::is\l_feature_0" alt="" coords="441,121,596,168"/>
+<area shape="rect" id="node55" href="$classRFC__Pane__overlay.html#afb9dc54668d25e24492e3c0cab222096" title="RFC_Pane_overlay::is\l_feature_1" alt="" coords="441,244,596,290"/>
+</map>

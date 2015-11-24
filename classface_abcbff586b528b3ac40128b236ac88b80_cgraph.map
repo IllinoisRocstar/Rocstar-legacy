@@ -1,0 +1,17 @@
+<map id="face" name="face">
+<area shape="rect" id="node3" href="$classadjList.html#ab59a384ca5674d2775b25830a757d99c" title="adjList::addFace" alt="" coords="128,5,245,35"/>
+<area shape="rect" id="node9" href="$face_8cpp.html#abeb746dda35e7ce13bf750183faa056a" title="findOther" alt="" coords="149,59,224,88"/>
+<area shape="rect" id="node11" href="$classadjList.html#a4cfbbbefc783465b846c856ffcef669f" title="adjList::getLength" alt="" coords="320,97,445,127"/>
+<area shape="rect" id="node14" href="$classblock.html#a3fbcc2b1d8a875a409b0af0a4297d484" title="block::getLoc" alt="" coords="137,163,236,192"/>
+<area shape="rect" id="node16" href="$classblock.html#a320776ca76b17ca11512e8d58deda57c" title="block::getOriginalNumber" alt="" coords="103,216,271,245"/>
+<area shape="rect" id="node18" href="$classface.html#a6cb86c38e0961cbebadc685acd62a194" title="loc2node" alt="" coords="149,269,224,299"/>
+<area shape="rect" id="node24" href="$classnodeMatcher.html#adc1ac1a20010e7ef61148db728b19ae5" title="nodeMatcher::loc2node" alt="" coords="108,323,265,352"/>
+<area shape="rect" id="node26" href="$classadjList.html#af17e305864faf75163e7b2e80f597f0f" title="adjList::print" alt="" coords="140,376,233,405"/>
+<area shape="rect" id="node5" href="$classadjList.html#a2c3463a21bceee04f83d3e7e541ac813" title="adjList::hasLoc" alt="" coords="328,19,437,48"/>
+<area shape="rect" id="node7" href="$classadjRec.html#a0aee7ca361720ef07d3fd80854fc35bc" title="adjRec::getNext" alt="" coords="515,59,632,88"/>
+<area shape="rect" id="node20" href="$classface.html#a8da414495f08ae54034a5f560368f684" title="loc2nodeX" alt="" coords="341,231,424,260"/>
+<area shape="rect" id="node22" href="$classface.html#a5e224d690e5e7f016a6ba8d809bd3457" title="loc2nodeY" alt="" coords="341,284,424,313"/>
+<area shape="rect" id="node28" href="$classadjRec.html#a7e8442e7139d840c15bdee83789f7ae8" title="adjRec::print" alt="" coords="335,376,431,405"/>
+<area shape="rect" id="node30" href="$classface.html#a902ac18c9b4e3258b052e8c7b0d325fb" title="getBlock" alt="" coords="537,349,609,379"/>
+<area shape="rect" id="node32" href="$classblock.html#aad574e9481a04340d5013d0fbdd78e80" title="block::getBlockNumber" alt="" coords="495,403,652,432"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="search_direction" name="search_direction">
+<area shape="rect" id="node3" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a1f90abc5c6cfdefc58c7fe3973ccc0ca" title="form_grammian" alt="" coords="188,5,300,35"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a0ab1c27ad6e9bc7640446d3f18bc6074" title="form_PD_grammian" alt="" coords="175,59,313,88"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1NonSmoothSteepestDescent.html#abb9e0144d2d3e92e16290a7331cf89a1" title="singular_test" alt="" coords="365,84,461,113"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1NonSmoothSteepestDescent.html#aeeffdb246b5281ae0d840678440fec4f" title="form_reduced_matrix" alt="" coords="172,163,316,192"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a2572d0598499a4fe7d41b7a0f70b779b" title="get_active_directions" alt="" coords="172,216,316,245"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a870d1628ed5b7b6fb68f10e703d8b7b0" title="print_active_set" alt="" coords="187,269,301,299"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a5d842d37f2ddc8779aba8565144b9d18" title="search_edges_faces" alt="" coords="173,323,315,352"/>
+<area shape="rect" id="node40" href="$classMesquite_1_1NonSmoothSteepestDescent.html#aef256c1064a8c0a4bbf8ae30a89c8008" title="solve2x2" alt="" coords="207,376,281,405"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a0c04418f1d2422005d709b3d13f479fe" title="condition3x3" alt="" coords="529,84,623,113"/>
+<area shape="rect" id="node11" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="692,84,735,113"/>
+<area shape="rect" id="node21" href="$basic__constructionsS3_8h.html#ace1c08f9d66d9b1b3ebc726f2290a8c9" title="projection" alt="" coords="375,323,452,352"/>
+<area shape="rect" id="node23" href="$classPlaneS3.html#af01d769ec65d399198c4eebf7d213ff9" title="PlaneS3::a" alt="" coords="533,149,619,179"/>
+<area shape="rect" id="node25" href="$classPlaneS3.html#afb78d3b27200791df64eb988b06f1ca0" title="PlaneS3::b" alt="" coords="533,203,619,232"/>
+<area shape="rect" id="node27" href="$classPlaneS3.html#ac431a30ef766daac859cfaf79928d98c" title="PlaneS3::c" alt="" coords="533,256,619,285"/>
+<area shape="rect" id="node29" href="$classPlaneS3.html#aaa89b1ab0d7e9266c59806d6e253f997" title="PlaneS3::d" alt="" coords="533,309,619,339"/>
+<area shape="rect" id="node31" href="$constructions_2kernel__ftC3_8h.html#a6d7d992049a02b8fd782ac0b008fa2a1" title="projection_planeC3" alt="" coords="509,363,643,392"/>
+<area shape="rect" id="node33" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="535,416,617,445"/>
+<area shape="rect" id="node35" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="535,469,617,499"/>
+<area shape="rect" id="node37" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="535,523,617,552"/>
+</map>

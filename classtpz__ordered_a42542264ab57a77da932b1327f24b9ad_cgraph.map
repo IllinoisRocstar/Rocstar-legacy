@@ -1,0 +1,11 @@
+<map id="build_point_index" name="build_point_index">
+<area shape="rect" id="node3" href="$classpartition.html#a1357470588b94ec29fd3dbb148c4b436" title="partition::get_point" alt="" coords="200,5,328,35"/>
+<area shape="rect" id="node9" href="$classpartition.html#a88030b6f10a1553d23587755f5fca106" title="partition::GetFieldMapping" alt="" coords="177,59,351,88"/>
+<area shape="rect" id="node11" href="$classmanual__index__pts.html#a0e87e584d2e366b4abff98a2e699c92b" title="manual_index_pts::set\l_index" alt="" coords="188,111,340,158"/>
+<area shape="rect" id="node17" href="$classmanual__index__pts.html#a9c737704a5309373111603f2b32282a5" title="manual_index_pts::set\l_layout" alt="" coords="188,181,340,227"/>
+<area shape="rect" id="node5" href="$classpoints.html#a1357470588b94ec29fd3dbb148c4b436" title="points::get_point" alt="" coords="423,5,540,35"/>
+<area shape="rect" id="node7" href="$classbitmap.html#ae230a87f1404e1ae0c90a42e6ea3a51c" title="bitmap::check_value" alt="" coords="628,5,769,35"/>
+<area shape="rect" id="node13" href="$structVariableDimensionArray.html#a964f6d7bfad78fa420e2ebd13c6ff739" title="Set the value at the given coordinates. " alt="" coords="400,111,563,158"/>
+<area shape="rect" id="node15" href="$structVariableDimensionArray.html#aba63dd88aca3abdf24b5e73af3f85f07" title="Translate coordinates to the flat index actually used for storage. " alt="" coords="612,111,785,158"/>
+<area shape="rect" id="node19" href="$structVariableDimensionArray.html#a646f271930d779e925fc19f52651d818" title="Initialize the array with the specified dimensions. " alt="" coords="400,181,563,227"/>
+</map>

@@ -1,0 +1,25 @@
+<map id="ROCMAP_LOAD_MODULE_" name="ROCMAP_LOAD_MODULE_">
+<area shape="rect" id="node3" href="$classRocmap.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocmap onto Roccom with a given module name. " alt="" coords="249,277,351,307"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="419,5,552,35"/>
+<area shape="rect" id="node9" href="$roccom__c_8h.html#aa236d5c98c0ac8cc26b313b6ccd720a8" title="COM_set_function" alt="" coords="420,59,551,88"/>
+<area shape="rect" id="node11" href="$classRocmap.html#a6e07bbad3d29b50c52eeddc56fe81c5c" title="Perform an average&#45;reduction on the shared nodes for the given attribute. " alt="" coords="400,165,571,211"/>
+<area shape="rect" id="node26" href="$classRocmap.html#a4669730c9a3a6f95b39f36ac44ce2718" title="Perform a maxabs&#45;reduction on the shared nodes for the given attribute. " alt="" coords="400,234,571,281"/>
+<area shape="rect" id="node29" href="$classRocmap.html#ab5551ac3ff43ae55dd239caf6632e243" title="Perform a minabs&#45;reduction on the shared nodes for the given attribute. " alt="" coords="403,303,568,350"/>
+<area shape="rect" id="node32" href="$classRocmap.html#a748dccffbd1a40c058a05982d3bf04b8" title="Update ghost nodal or elemental values for the given attribute. " alt="" coords="404,373,567,403"/>
+<area shape="rect" id="node35" href="$classRocmap.html#a5c0ec42b1000f3d01b3f2b5438d4eb32" title="Compute pane connectivity map between shared nodes. " alt="" coords="400,427,571,456"/>
+<area shape="rect" id="node39" href="$classRocmap.html#a1bc1db5eb69b6b83b1ce5774540bddf1" title="Determine the nodes at pane boundaries of a given mesh. " alt="" coords="411,479,560,526"/>
+<area shape="rect" id="node47" href="$classRocmap.html#a79dd23302bd865402082c0492af1b703" title="Get the number of communicating panes. " alt="" coords="400,553,571,583"/>
+<area shape="rect" id="node51" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="404,112,567,141"/>
+<area shape="rect" id="node7" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="644,59,772,88"/>
+<area shape="rect" id="node13" href="$classPane__communicator.html#af84e5306d7677a0665fa35099278e534" title="Initialize the communication buffers. " alt="" coords="625,309,791,339"/>
+<area shape="rect" id="node15" href="$roccom__c_09_09_8h.html#ad0963775a018dcb83d982e5cfeeb3a22" title="COM_get_sizeof" alt="" coords="875,253,995,283"/>
+<area shape="rect" id="node19" href="$classPane__communicator.html#a4327966d16b9b3012f1bb61ddc0673d3" title="For a given pane, obtain an internal pane ID which is unique and contiguous across processes..." alt="" coords="1072,303,1221,350"/>
+<area shape="rect" id="node21" href="$classPane__communicator.html#a0db778b55c3fc482ecf132594bd6b123" title="Initialize a Pane_comm_buffers for ghost information. " alt="" coords="853,361,1016,407"/>
+<area shape="rect" id="node17" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="1105,251,1188,280"/>
+<area shape="rect" id="node23" href="$classPane__communicator.html#ae7eeea984bcf7fa59efa96d05a81a901" title="Obtain the process rank of a given pane. " alt="" coords="1072,373,1221,419"/>
+<area shape="rect" id="node37" href="$classPane__connectivity.html#accaa2c156be9bda857170acdac72d29d" title="Create b2v mapping for nodes and facets (edges or faces) correspondence. " alt="" coords="640,410,776,457"/>
+<area shape="rect" id="node41" href="$classPane__boundary.html#ab0b93fcbb7c9167f394b691a54e05af2" title="Determine the nodes at pane boundaries of a given mesh. " alt="" coords="620,479,796,526"/>
+<area shape="rect" id="node43" href="$roccom__c_09_09_8h.html#a701c22c997913a2773d36a0b47683716" title="COM_compatible_types" alt="" coords="853,459,1016,488"/>
+<area shape="rect" id="node45" href="$classPane__boundary.html#a2e082b0e846c99a3ba6669dadbd85645" title="Determine the border nodes (excluding isolated nodes) " alt="" coords="847,511,1023,558"/>
+<area shape="rect" id="node49" href="$classPane__connectivity.html#a79dd23302bd865402082c0492af1b703" title="Get the number of communicating panes. " alt="" coords="640,549,776,595"/>
+</map>

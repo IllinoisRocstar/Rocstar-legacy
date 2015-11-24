@@ -1,0 +1,11 @@
+<map id="getAspects" name="getAspects">
+<area shape="rect" id="node3" href="$classGeo__Metric__Base__3.html#a18bc1c0de0237a4367c3fed594a6ffd9" title="Compute circumradius, inradius, and shortest edge length. " alt="" coords="143,126,289,173"/>
+<area shape="rect" id="node5" href="$geometry_8h.html#aa018e9f54fcc4a6edd94244baf18dda0" title="Compute the area of a triangle defined by its three sides as vectors. " alt="" coords="353,56,417,85"/>
+<area shape="rect" id="node9" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="623,83,665,112"/>
+<area shape="rect" id="node12" href="$geometry_8h.html#a957066e3826ec7e30a4ec5df60a7cf0a" title="Compute the edge length of a vector. " alt="" coords="340,160,431,189"/>
+<area shape="rect" id="node16" href="$geometry_8h.html#af59662a6b46c35024e16e40c0f3bdbf4" title="Compute the volume of a tetrahedron given three edges from a point as vectors. " alt="" coords="355,239,416,268"/>
+<area shape="rect" id="node7" href="$geometry_8C.html#a957066e3826ec7e30a4ec5df60a7cf0a" title="Compute the edge length of a vector. " alt="" coords="481,5,572,35"/>
+<area shape="rect" id="node18" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="488,211,565,240"/>
+<area shape="rect" id="node20" href="$geometry_8h.html#a0d90b497cf779e3fb734e026e3722419" title="Compute the cross Product of two vectors. " alt="" coords="496,264,557,293"/>
+<area shape="rect" id="node22" href="$geometry_8h.html#a3f884839e02fce28dc24f56b4f121900" title="Compute the dot Product of two vectors. " alt="" coords="503,317,551,347"/>
+</map>

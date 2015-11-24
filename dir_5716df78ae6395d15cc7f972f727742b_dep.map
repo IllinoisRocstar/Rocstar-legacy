@@ -1,0 +1,17 @@
+<map id="VertexMover" name="VertexMover">
+<area shape="rect" id="node4" href="dir_0f108231ea9a4863e2f11ff66172e57f.html" title="ConjugateGradient" alt="" coords="813,65,944,113"/>
+<area shape="rect" id="node10" href="dir_5f4e2010b013239e9bcf67232f034f58.html" title="include" alt="" coords="451,161,523,209"/>
+<area shape="rect" id="edge6" href="dir_000088_000127.html" title="1" alt="" coords="538,182,546,200"/>
+<area shape="rect" id="node5" href="dir_bf6a76e231726363545bec31d645b5a9.html" title="FeasibleNewton" alt="" coords="675,65,789,113"/>
+<area shape="rect" id="edge4" href="dir_000104_000127.html" title="1" alt="" coords="538,174,546,191"/>
+<area shape="rect" id="node6" href="dir_746c05ffea5d922b1f7cbcdb99eb73b3.html" title="LaplacianSmoothers" alt="" coords="512,65,651,113"/>
+<area shape="rect" id="edge14" href="dir_000119_000127.html" title="2" alt="" coords="526,145,534,162"/>
+<area shape="rect" id="node7" href="dir_8f64788a7a11eb1e5f26a3912569b70d.html" title="NonSmoothSteepestDescent" alt="" coords="296,65,488,113"/>
+<area shape="rect" id="edge12" href="dir_000123_000127.html" title="1" alt="" coords="452,133,460,151"/>
+<area shape="rect" id="node8" href="dir_e90ef025b55f845158de024ddfebd92b.html" title="Randomize" alt="" coords="184,65,272,113"/>
+<area shape="rect" id="edge8" href="dir_000124_000127.html" title="1" alt="" coords="430,161,438,179"/>
+<area shape="rect" id="node9" href="dir_d1ea95d30049c4035d378c299cd122c3.html" title="SteepestDescent" alt="" coords="37,65,160,113"/>
+<area shape="rect" id="edge10" href="dir_000125_000127.html" title="1" alt="" coords="429,166,437,183"/>
+<area shape="rect" id="graph3" href="dir_5716df78ae6395d15cc7f972f727742b.html" alt="" coords="27,55,1075,124"/>
+<area shape="rect" id="graph2" href="dir_e978f123c6a3667c924c1642b5af6022.html" title="QualityImprover" alt="" coords="16,16,1085,135"/>
+</map>

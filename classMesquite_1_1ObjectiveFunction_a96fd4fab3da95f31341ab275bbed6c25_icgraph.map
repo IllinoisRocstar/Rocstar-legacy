@@ -1,0 +1,17 @@
+<map id="compute_analytical_gradient" name="compute_analytical_gradient">
+<area shape="rect" id="node3" href="$classMesquite_1_1ObjectiveFunction.html#a91076d1dd1a59a6f3c00c46d9c16ad45" title="Calls either compute_numerical_gradient or compute_analytical_gradient depending on the value of grad..." alt="" coords="189,319,315,348"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1CompositeOFAdd.html#a96fd4fab3da95f31341ab275bbed6c25" title="Mesquite::CompositeOFAdd\l::compute_analytical_gradient" alt="" coords="371,5,565,51"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1CompositeOFMultiply.html#a96fd4fab3da95f31341ab275bbed6c25" title="Implement the scalar multiply analytic gradient. " alt="" coords="364,74,572,121"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1CompositeOFScalarAdd.html#a96fd4fab3da95f31341ab275bbed6c25" title="Mesquite::CompositeOFScalar\lAdd::compute_analytical\l_gradient" alt="" coords="368,144,568,208"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1CompositeOFScalarMultiply.html#a96fd4fab3da95f31341ab275bbed6c25" title="Implement the scalar multiply analytic gradient. " alt="" coords="368,232,568,296"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1ConjugateGradient.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::ConjugateGradient\l::optimize_vertex_positions" alt="" coords="627,286,816,333"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1FeasibleNewton.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::FeasibleNewton\l::optimize_vertex_positions" alt="" coords="631,355,812,402"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1SteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::SteepestDescent\l::optimize_vertex_positions" alt="" coords="629,494,813,541"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1TerminationCriterion.html#a411b1b5e226d5c66642273611393b539" title="Clear any data accumulated during an inner iteration. " alt="" coords="368,554,568,601"/>
+<area shape="rect" id="node30" href="$classMesquite_1_1TerminationCriterion.html#afd2c12358711995a576f8c8a9200c94a" title="Accumulate data during inner iteration. " alt="" coords="368,421,568,467"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1TerminationCriterion.html#abb595efb30088610673b262261ada67c" title="Clear any data accumulated during an outer iteration. " alt="" coords="621,614,821,661"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Improves the quality of the MeshSet, calling some methods specified in a class derived from VertexMov..." alt="" coords="869,554,1027,601"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1ShapeImprovementWrapper.html#a52b954daacf72db4a8b0b8811e81bbb0" title="run_instructions runs the wrapper on the given MeshSet. " alt="" coords="1076,554,1271,601"/>
+<area shape="rect" id="node27" href="$classRocmop.html#a2dbb41ea0da20e141ec61d8d4a726ddf" title="Smooth the panes of the working window using MESQUITE. " alt="" coords="1321,563,1503,592"/>
+<area shape="rect" id="node35" href="$classMesquite_1_1TerminationCriterion.html#a326094613366d5a66c3e67384322aa90" title="Mesquite::TerminationCriterion\l::accumulate_outer" alt="" coords="621,425,821,471"/>
+</map>

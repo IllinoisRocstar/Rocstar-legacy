@@ -1,0 +1,8 @@
+<map id="I_circulator_distance" name="I_circulator_distance">
+<area shape="rect" id="node3" href="$circulator_8h.html#ace4875f4d500fd0d6be9d2fc3d1d2253" title="I_min_circulator_size" alt="" coords="199,44,343,73"/>
+<area shape="rect" id="node5" href="$circulator_8h.html#af7aabe097e77139488c0d0efb0730e62" title="Assert_circulator" alt="" coords="412,75,532,104"/>
+<area shape="rect" id="node13" href="$circulator_8h.html#a5e85ea567e86420dc09ec6d2e3e273b2" title="Assert_random_access\l_category" alt="" coords="393,5,551,51"/>
+<area shape="rect" id="node7" href="$circulator_8h.html#a6e7943bd7f543e8ff60e13dfba99697f" title="Assert_compile_time_tag" alt="" coords="601,13,769,43"/>
+<area shape="rect" id="node11" href="$circulator_8h.html#aa3f8594d0c7cfe1647576d361f738b9c" title="query_circulator_or\l_iterator" alt="" coords="620,66,751,113"/>
+<area shape="rect" id="node9" href="$structI__Assert__tag__class.html#adbe96fdc59aed6da6967ad8a2c2c6d35" title="I_Assert_tag_class\l::match_compile_time_tag" alt="" coords="820,5,993,51"/>
+</map>

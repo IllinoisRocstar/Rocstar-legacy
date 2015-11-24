@@ -1,0 +1,21 @@
+<map id="SegmentS2.h" name="SegmentS2.h">
+<area shape="rect" id="node3" href="$LineS2_8h.html" title="CGAL/SimpleCartesian\l/LineS2.h" alt="" coords="521,83,679,130"/>
+<area shape="rect" id="node6" href="$RayS2_8h.html" title="CGAL/SimpleCartesian\l/RayS2.h" alt="" coords="521,179,679,226"/>
+<area shape="rect" id="node11" href="$predicates__on__pointsS2_8h.html" title="CGAL/SimpleCartesian\l/predicates_on_pointsS2.h" alt="" coords="704,179,880,226"/>
+<area shape="rect" id="node13" href="$simple__cartesian__classes_8h.html" title="CGAL/SimpleCartesian\l/simple_cartesian_classes.h" alt="" coords="700,275,887,322"/>
+<area shape="rect" id="node35" href="$predicates_2kernel__ftC2_8h.html" title="CGAL/predicates/kernel\l_ftC2.h" alt="" coords="1019,275,1179,322"/>
+<area shape="rect" id="node15" href="$basic__classes_8h.html" title="CGAL/basic_classes.h" alt="" coords="336,467,491,496"/>
+<area shape="rect" id="node17" href="$Origin_8h.html" title="CGAL/Origin.h" alt="" coords="5,553,112,583"/>
+<area shape="rect" id="node29" href="$representation__tags_8h.html" title="CGAL/representation\l_tags.h" alt="" coords="419,545,563,591"/>
+<area shape="rect" id="node31" href="$aff__transformation__tags_8h.html" title="CGAL/aff_transformation\l_tags.h" alt="" coords="587,545,752,591"/>
+<area shape="rect" id="node19" href="$config_8h.html" title="CGAL/config.h" alt="" coords="676,640,783,669"/>
+<area shape="rect" id="node21" href="$compiler__config_8h.html" title="CGAL/compiler_config.h" alt="" coords="551,717,713,747"/>
+<area shape="rect" id="node23" href="$workaround__casts_8h.html" title="CGAL/workaround_casts.h" alt="" coords="737,717,916,747"/>
+<area shape="rect" id="node37" href="$number__utils_8h.html" title="CGAL/number_utils.h" alt="" coords="939,380,1085,409"/>
+<area shape="rect" id="node50" href="$sign__of__determinant_8h.html" title="CGAL/predicates/sign\l_of_determinant.h" alt="" coords="1109,371,1259,418"/>
+<area shape="rect" id="node55" href="$constructions_2kernel__ftC2_8h.html" title="CGAL/constructions\l/kernel_ftC2.h" alt="" coords="1283,371,1421,418"/>
+<area shape="rect" id="node40" href="$enum_8h.html" title="CGAL/enum.h" alt="" coords="848,467,952,496"/>
+<area shape="rect" id="node46" href="$kernel__basic_8h.html" title="CGAL/kernel_basic.h" alt="" coords="976,467,1123,496"/>
+<area shape="rect" id="node42" href="$functions__on__enums_8h.html" title="CGAL/functions_on_enums.h" alt="" coords="827,553,1019,583"/>
+<area shape="rect" id="node52" href="$determinant_8h.html" title="CGAL/determinant.h" alt="" coords="1245,467,1387,496"/>
+</map>

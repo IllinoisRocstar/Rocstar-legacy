@@ -1,0 +1,4 @@
+<map id="init_pane_comm_buffers" name="init_pane_comm_buffers">
+<area shape="rect" id="node3" href="$classPane__communicator.html#a4327966d16b9b3012f1bb61ddc0673d3" title="For a given pane, obtain an internal pane ID which is unique and contiguous across processes..." alt="" coords="233,5,295,35"/>
+<area shape="rect" id="node5" href="$classPane__communicator.html#ae7eeea984bcf7fa59efa96d05a81a901" title="Obtain the process rank of a given pane. " alt="" coords="220,59,308,88"/>
+</map>

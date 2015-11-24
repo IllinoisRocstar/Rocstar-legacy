@@ -1,0 +1,4 @@
+<map id="Semaphore" name="Semaphore">
+<area shape="rect" id="node2" href="$classMutex.html" title="Mutex" alt="" coords="40,5,99,35"/>
+<area shape="rect" id="node4" href="$classCondition.html" title="Condition" alt="" coords="111,101,188,131"/>
+</map>

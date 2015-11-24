@@ -1,0 +1,5 @@
+<map id="get_edge_index" name="get_edge_index">
+<area shape="rect" id="node3" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="168,5,269,35"/>
+<area shape="rect" id="node5" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="171,59,267,88"/>
+<area shape="rect" id="node7" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="192,112,245,141"/>
+</map>

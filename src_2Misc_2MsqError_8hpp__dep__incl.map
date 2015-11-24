@@ -1,0 +1,51 @@
+<map id="MsqError.hpp" name="MsqError.hpp">
+<area shape="rect" id="node3" href="$Mesquite__all__headers_8hpp.html" title="This file contains include directives for all mesquite headers. Including this header will maximize d..." alt="" coords="923,411,1096,440"/>
+<area shape="rect" id="node5" href="$Control_2InstructionQueue_8cpp.html" title="InstructionQueue.cpp" alt="" coords="2247,411,2393,440"/>
+<area shape="rect" id="node7" href="$Control_2TerminationCriterion_8cpp.html" title="TerminationCriterion.cpp" alt="" coords="1053,160,1216,189"/>
+<area shape="rect" id="node9" href="$src_2Mesh_2CornerTag_8hpp.html" title="CornerTag.hpp" alt="" coords="2343,83,2449,112"/>
+<area shape="rect" id="node16" href="$src_2Mesh_2PatchDataUser_8hpp.html" title="PatchDataUser.hpp" alt="" coords="1984,237,2120,267"/>
+<area shape="rect" id="node19" href="$src_2QualityImprover_2QualityImprover_8hpp.html" title="QualityImprover.hpp" alt="" coords="2216,324,2355,353"/>
+<area shape="rect" id="node23" href="$Mesh_2MeshSet_8cpp.html" title="MeshSet.cpp" alt="" coords="2555,411,2653,440"/>
+<area shape="rect" id="node25" href="$inks_2InstructionQueue_8cpp.html" title="InstructionQueue.cpp" alt="" coords="1665,411,1812,440"/>
+<area shape="rect" id="node27" href="$inks_2MeshSet_8cpp.html" title="MeshSet.cpp" alt="" coords="2745,411,2844,440"/>
+<area shape="rect" id="node29" href="$src_2TargetCalculator_2TargetCalculator_8hpp.html" title="TargetCalculator.hpp" alt="" coords="2005,324,2147,353"/>
+<area shape="rect" id="node33" href="$ObjectiveFunction_2CompositeOFScalarMultiply_8cpp.html" title="CompositeOFScalarMultiply.cpp" alt="" coords="2144,237,2355,267"/>
+<area shape="rect" id="node35" href="$src_2QualityMetric_2DFT_2DistanceFromTarget_8hpp.html" title="DistanceFromTarget.hpp" alt="" coords="1541,237,1707,267"/>
+<area shape="rect" id="node37" href="$src_2QualityMetric_2DFT_2I__DFT_8hpp.html" title="I_DFT.hpp" alt="" coords="1440,324,1523,353"/>
+<area shape="rect" id="node39" href="$src_2QualityMetric_2DFT_2RI__DFT_8hpp.html" title="RI_DFT.hpp" alt="" coords="1547,324,1640,353"/>
+<area shape="rect" id="node41" href="$src_2QualityMetric_2DFT_2sI__DFT_8hpp.html" title="sI_DFT.hpp" alt="" coords="1664,324,1755,353"/>
+<area shape="rect" id="node43" href="$src_2QualityMetric_2DFT_2sRI__DFT_8hpp.html" title="sRI_DFT.hpp" alt="" coords="1779,324,1880,353"/>
+<area shape="rect" id="node45" href="$src_2QualityMetric_2Shape_2ShapeQualityMetric_8hpp.html" title="ShapeQualityMetric.hpp" alt="" coords="755,237,915,267"/>
+<area shape="rect" id="node48" href="$src_2QualityMetric_2Shape_2AspectRatioGammaQualityMetric_8hpp.html" title="AspectRatioGammaQualityMetric.hpp" alt="" coords="451,324,693,353"/>
+<area shape="rect" id="node51" href="$src_2QualityMetric_2Shape_2GeneralizedConditionNumberQualityMetric_8hpp.html" title="GeneralizedConditionNumber\lQualityMetric.hpp" alt="" coords="717,315,909,362"/>
+<area shape="rect" id="node54" href="$src_2QualityMetric_2Shape_2IdealWeightMeanRatio_8hpp.html" title="IdealWeightMeanRatio.hpp" alt="" coords="984,324,1163,353"/>
+<area shape="rect" id="node59" href="$inks_2CompositeOFScalarMultiply_8cpp.html" title="CompositeOFScalarMultiply.cpp" alt="" coords="2429,237,2640,267"/>
+<area shape="rect" id="node64" href="$GeomTSTT_8cpp.html" title="Mesquite::MeshDomain implemented on TSTT interfaces. " alt="" coords="2575,83,2689,112"/>
+<area shape="rect" id="node66" href="$Mesh_2MeshImpl_8cpp.html" title="MeshImpl.cpp" alt="" coords="2713,83,2817,112"/>
+<area shape="rect" id="node68" href="$Mesh_2MeshImplData_8cpp.html" title="MeshImplData.cpp" alt="" coords="2841,83,2972,112"/>
+<area shape="rect" id="node70" href="$Mesh_2MeshImplTags_8cpp.html" title="MeshImplTags.cpp" alt="" coords="2996,83,3129,112"/>
+<area shape="rect" id="node73" href="$MeshTSTT_8cpp.html" title="MeshTSTT.cpp" alt="" coords="3153,83,3265,112"/>
+<area shape="rect" id="node75" href="$Mesh_2TopologyInfo_8cpp.html" title="TopologyInfo.cpp" alt="" coords="3289,83,3412,112"/>
+<area shape="rect" id="node77" href="$Misc_2FileTokenizer_8cpp.html" title="FileTokenizer.cpp" alt="" coords="3436,83,3561,112"/>
+<area shape="rect" id="node79" href="$Misc_2MsqError_8cpp.html" title="MsqError.cpp" alt="" coords="3585,83,3684,112"/>
+<area shape="rect" id="node81" href="$src_2Misc_2MsqInterrupt_8hpp.html" title="MsqInterrupt.hpp" alt="" coords="1383,83,1503,112"/>
+<area shape="rect" id="node87" href="$inks_2TerminationCriterion_8cpp.html" title="TerminationCriterion.cpp" alt="" coords="1240,160,1403,189"/>
+<area shape="rect" id="node89" href="$src_2Misc_2ParameterSet_8hpp.html" title="ParameterSet.hpp" alt="" coords="393,237,519,267"/>
+<area shape="rect" id="node92" href="$Misc_2Vector3D_8cpp.html" title="Vector3D.cpp" alt="" coords="3708,83,3809,112"/>
+<area shape="rect" id="node94" href="$src_2ObjectiveFunction_2ObjectiveFunction_8hpp.html" title="ObjectiveFunction.hpp" alt="" coords="1059,83,1211,112"/>
+<area shape="rect" id="node98" href="$src_2ObjectiveFunction_2LPtoPTemplate_8hpp.html" title="LPtoPTemplate.hpp" alt="" coords="493,160,629,189"/>
+<area shape="rect" id="node105" href="$QualityImprover_2VertexMover_2MeanMidNodeMover_8cpp.html" title="MeanMidNodeMover.cpp" alt="" coords="3833,83,3999,112"/>
+<area shape="rect" id="node107" href="$src_2QualityMetric_2QualityMetric_8hpp.html" title="QualityMetric.hpp" alt="" coords="856,160,979,189"/>
+<area shape="rect" id="node121" href="$src_2QualityMetric_2Smoothness_2EdgeLengthRangeQualityMetric_8hpp.html" title="EdgeLengthRangeQualityMetric.hpp" alt="" coords="140,237,369,267"/>
+<area shape="rect" id="node126" href="$inks_2FileTokenizer_8cpp.html" title="FileTokenizer.cpp" alt="" coords="4023,83,4148,112"/>
+<area shape="rect" id="node129" href="$inks_2MeanMidNodeMover_8cpp.html" title="MeanMidNodeMover.cpp" alt="" coords="4172,83,4337,112"/>
+<area shape="rect" id="node131" href="$inks_2MeshImpl_8cpp.html" title="MeshImpl.cpp" alt="" coords="4361,83,4465,112"/>
+<area shape="rect" id="node133" href="$inks_2MeshImplData_8cpp.html" title="MeshImplData.cpp" alt="" coords="4489,83,4620,112"/>
+<area shape="rect" id="node135" href="$inks_2MeshImplTags_8cpp.html" title="MeshImplTags.cpp" alt="" coords="4644,83,4777,112"/>
+<area shape="rect" id="node138" href="$inks_2MsqError_8cpp.html" title="MsqError.cpp" alt="" coords="4801,83,4900,112"/>
+<area shape="rect" id="node141" href="$inks_2TopologyInfo_8cpp.html" title="TopologyInfo.cpp" alt="" coords="4924,83,5047,112"/>
+<area shape="rect" id="node143" href="$inks_2Vector3D_8cpp.html" title="Vector3D.cpp" alt="" coords="5071,83,5172,112"/>
+<area shape="rect" id="node11" href="$Mesh_2CornerTag_8cpp.html" title="CornerTag.cpp" alt="" coords="2473,160,2580,189"/>
+<area shape="rect" id="node13" href="$src_2Mesh_2PatchData_8hpp.html" title="PatchData.hpp" alt="" coords="1892,160,2001,189"/>
+<area shape="rect" id="node61" href="$inks_2CornerTag_8cpp.html" title="CornerTag.cpp" alt="" coords="2343,160,2449,189"/>
+</map>

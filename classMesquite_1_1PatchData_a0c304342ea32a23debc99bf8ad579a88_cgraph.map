@@ -1,0 +1,8 @@
+<map id="get_max_vertex_movement_squared" name="get_max_vertex_movement_squared">
+<area shape="rect" id="node3" href="$classMesquite_1_1Vector3D.html#a49fe740d37400aba7d3cb91531cde7d1" title="Mesquite::Vector3D\l::length_squared" alt="" coords="271,5,409,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#a80870c233d0237e3588a2d6f8d176916" title="Increments the iterator. returns false if there is no more free vertex. " alt="" coords="239,74,441,121"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ad20897c5c8bd47f5d4005989bead0e55" title="Resets the iterator. " alt="" coords="239,143,441,190"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ae3a963bdd66247d38ad22d17fa121632" title="Returns an index corresponding to a free vertex. " alt="" coords="239,213,441,259"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1MsqVertex.html#a181f1717ea1cab3613ff39c6969600dc" title="Mesquite::MsqVertex\l::is_flag_set" alt="" coords="491,43,637,90"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="515,113,613,143"/>
+</map>

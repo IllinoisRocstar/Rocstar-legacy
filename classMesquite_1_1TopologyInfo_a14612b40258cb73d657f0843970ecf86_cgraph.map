@@ -1,0 +1,6 @@
+<map id="higher_order" name="higher_order">
+<area shape="rect" id="node3" href="$classMesquite_1_1TopologyInfo.html#a664028df04b3b8dbc5a453d5a2caf350" title="Get the number of edges in a given topology. " alt="" coords="148,5,204,35"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1TopologyInfo.html#a84d9816ff80027ce8775c0b4f43a86ab" title="Get the number of faces in a given topology. " alt="" coords="149,59,203,88"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1TopologyInfo.html#a795183830fb2002a37b11775c9605266" title="Number of adjacent entities of a specified dimension. " alt="" coords="255,32,324,61"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1TopologyInfo.html#a72e6b96dd3d457ef398ed6d62d9a50a6" title="Dimension of element topology. " alt="" coords="375,32,455,61"/>
+</map>

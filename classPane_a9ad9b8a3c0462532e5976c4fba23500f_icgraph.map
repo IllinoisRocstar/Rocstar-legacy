@@ -1,0 +1,13 @@
+<map id="size_of_ghost_nodes" name="size_of_ghost_nodes">
+<area shape="rect" id="node3" href="$classPane.html#ae804a5a70d259c0897eb35d276dc044f" title="Update offsets and sizes of connectivity of an unstructured mesh. " alt="" coords="200,5,339,35"/>
+<area shape="rect" id="node5" href="$classConnectivity.html#aa95739f3f95af2a6325e368260104265" title="Get the number of ghost nodes of the owner pane. " alt="" coords="207,58,332,105"/>
+<area shape="rect" id="node7" href="$Rocout__cgns_8C.html#a6534706b894689f28aff4cf77f77176a" title="Write the data for the given attribute to file. " alt="" coords="208,128,331,157"/>
+<area shape="rect" id="node9" href="$classRocout.html#a69466e6a13557ca6ac500e678f5f66a8" title="Does the actual writing to file. " alt="" coords="388,119,513,166"/>
+<area shape="rect" id="node11" href="$classRocout.html#a96dfaf0a6d6860d2c68466b2a993fa06" title="Write a (possibly aggregate) attribute to a file. " alt="" coords="563,75,717,104"/>
+<area shape="rect" id="node21" href="$classRocout.html#a763364901e2c959922428b15356b3351" title="Write a (possibly aggregate) attribute to a new file. " alt="" coords="568,128,712,157"/>
+<area shape="rect" id="node24" href="$classRocout.html#a1c5203c5ca111c4b4177e04e216b1db3" title="Append a (possibly aggregate) attribute to a file. " alt="" coords="567,181,713,211"/>
+<area shape="rect" id="node13" href="$classRocout.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="767,128,855,157"/>
+<area shape="rect" id="node15" href="$RFC__Window__base__IO_8C.html#a2913c79327ebc4516c9f2d79524e5c2e" title="Load the module Rocout into Roccom using the given module name. " alt="" coords="904,128,1048,157"/>
+<area shape="rect" id="node17" href="$Rocout_8C.html#a166c6f5da3ed2a1b8a46b13b28a09e0c" title="COM_F_FUNC2" alt="" coords="1137,101,1257,131"/>
+<area shape="rect" id="node19" href="$classRFC__Window__base.html#ada7ac76a1aaceb37b222f9f4e70fb6e1" title="Write out panes in native binary format or using Rocout. " alt="" coords="1096,155,1299,184"/>
+</map>

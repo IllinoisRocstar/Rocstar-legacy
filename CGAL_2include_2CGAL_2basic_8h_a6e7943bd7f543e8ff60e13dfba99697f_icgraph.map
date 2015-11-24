@@ -1,0 +1,11 @@
+<map id="Assert_compile_time_tag" name="Assert_compile_time_tag">
+<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#a85628cd4f6e02c713a92300bfdc9fbb2" title="Halfedge_data_structure\l_decorator::erase_connected\l_component" alt="" coords="225,5,415,69"/>
+<area shape="rect" id="node5" href="$classHalfedge__data__structure__decorator.html#ac89f65b400729653ed4719b11ad2d278" title="Halfedge_data_structure\l_decorator::erase_facet" alt="" coords="239,93,401,139"/>
+<area shape="rect" id="node7" href="$classHalfedge__data__structure__decorator.html#acea850b1c2193ebbbe8839355d0fbfaf" title="Halfedge_data_structure\l_decorator::join_facet" alt="" coords="239,162,401,209"/>
+<area shape="rect" id="node9" href="$classHalfedge__data__structure__decorator.html#abac89554d5a5134b0252d56ef18711a0" title="Halfedge_data_structure\l_decorator::join_loop" alt="" coords="239,231,401,278"/>
+<area shape="rect" id="node11" href="$classHalfedge__data__structure__decorator.html#a8ef5c078e56ad37f0aa1423ed511fac0" title="Halfedge_data_structure\l_decorator::join_vertex" alt="" coords="239,301,401,347"/>
+<area shape="rect" id="node13" href="$classPolyhedron__incremental__builder__3.html#ad3a2652704bafb5cc2a95f08b370ff36" title="Polyhedron_incremental\l_builder_3::lookup_halfedge" alt="" coords="229,370,411,417"/>
+<area shape="rect" id="node20" href="$classHalfedge__data__structure__decorator.html#a4319328bbaa6705603a732a1592a5d97" title="Halfedge_data_structure\l_decorator::make_hole" alt="" coords="239,439,401,486"/>
+<area shape="rect" id="node15" href="$classPolyhedron__incremental__builder__3.html#a2c87480f89222776f7cbb1bfeca98e29" title="Polyhedron_incremental\l_builder_3::add_vertex\l_to_facet" alt="" coords="465,361,625,425"/>
+<area shape="rect" id="node17" href="$classPolyhedron__incremental__builder__3.html#a74cfc3317835a62d5b15d795a44cc86c" title="Polyhedron_incremental\l_builder_3::end_facet" alt="" coords="676,370,836,417"/>
+</map>

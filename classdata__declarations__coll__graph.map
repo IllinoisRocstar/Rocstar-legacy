@@ -1,0 +1,11 @@
+<map id="data_declarations" name="data_declarations">
+<area shape="rect" id="node2" href="$structdata__declarations_1_1elem__list.html" title="elem_list" alt="" coords="25,64,100,93"/>
+<area shape="rect" id="node5" href="$structdata__declarations_1_1id__struct.html" title="id_struct" alt="" coords="27,123,99,152"/>
+<area shape="rect" id="node7" href="$structdata__declarations_1_1face__struct.html" title="face_struct" alt="" coords="20,217,105,247"/>
+<area shape="rect" id="node10" href="$structdata__declarations_1_1file__struct.html" title="file_struct" alt="" coords="24,271,101,300"/>
+<area shape="rect" id="node12" href="$structdata__declarations_1_1element__struct.html" title="element_struct" alt="" coords="9,324,116,353"/>
+<area shape="rect" id="node14" href="$structdata__declarations_1_1node__struct.html" title="node_struct" alt="" coords="17,379,108,408"/>
+<area shape="rect" id="node16" href="$structdata__declarations_1_1surface__struct.html" title="surface_struct" alt="" coords="11,432,115,461"/>
+<area shape="rect" id="node18" href="$structdata__declarations_1_1surfscale__struct.html" title="surfscale_struct" alt="" coords="5,544,120,573"/>
+<area shape="rect" id="node21" href="$structdata__declarations_1_1scale__struct.html" title="scale_struct" alt="" coords="16,667,109,696"/>
+</map>

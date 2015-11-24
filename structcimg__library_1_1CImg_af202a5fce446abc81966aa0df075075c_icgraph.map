@@ -1,0 +1,8 @@
+<map id="is_sameXY" name="is_sameXY">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a6a2cf3ec4e975498dbbbac04e093378f" title="cimg_library::CImg\l\&lt; uintT \&gt;::__draw_object3d" alt="" coords="144,5,325,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a883a1d80cb49cab417478aad7c48a835" title="Draw a 2D colored line, with z&#45;buffering. " alt="" coords="165,74,304,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a9717338fbc492b3baa9563147eaad7a3" title="Draw a 2D filled colored triangle, with z&#45;buffering. " alt="" coords="155,143,315,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a26d868df92542026e0ab60df4c7f286a" title="Create and return a 3D elevation of the instance image. " alt="" coords="148,213,321,259"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#af79477b4ed4ba3e40f96363eeb735049" title="Return true if image (*this) has the specified width, height and depth. " alt="" coords="156,282,313,329"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#a36a12bf20a1d6cf863f505877e30bdce" title="Return true if image (*this) has the specified width, height and depth. " alt="" coords="156,351,313,398"/>
+</map>

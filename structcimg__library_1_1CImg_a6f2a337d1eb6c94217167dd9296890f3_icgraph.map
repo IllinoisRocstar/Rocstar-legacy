@@ -1,0 +1,5 @@
+<map id="unroll" name="unroll">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#aff149b1cf2670a8fefda51c0636634b9" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_split" alt="" coords="111,5,241,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a0d9c7fb0da448c7615d82755b9a17f9b" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_unroll" alt="" coords="107,74,245,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a7a1fbbf9bb23d01f64a8ca3bd06b7c0f" title="Unroll all images values into a one&#45;column vector. " alt="" coords="111,143,241,190"/>
+</map>

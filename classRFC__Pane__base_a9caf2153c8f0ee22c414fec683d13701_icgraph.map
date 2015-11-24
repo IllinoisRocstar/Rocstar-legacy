@@ -1,0 +1,9 @@
+<map id="is_isolated_node" name="is_isolated_node">
+<area shape="rect" id="node3" href="$classRFC__Pane__base.html#a54e7a803a0fd7f979a607a09298f3458" title="Build pane connectivity. " alt="" coords="181,17,320,47"/>
+<area shape="rect" id="node9" href="$classRFC__Window__derived.html#a372359a4f1aeb4c6576d8170bc98c8e4" title="Get a handle to the primary copy of a node contained in the pane p with local id vid. " alt="" coords="175,74,327,121"/>
+<area shape="rect" id="node13" href="$classRFC__Pane__base.html#a30ba1f6b3036bcc5467d8865edf36dc6" title="Is the node with given local id a primary one? " alt="" coords="192,144,309,173"/>
+<area shape="rect" id="node5" href="$classRFC__Window__base.html#a2d0de96ef7d95d453c1f21f1a3f27bf3" title="Build the pane connectivity table. " alt="" coords="391,5,564,51"/>
+<area shape="rect" id="node7" href="$classRFC__Window__overlay.html#ab6b4d82171a24be49d79b501c5e21fa1" title="RFC_Window_overlay\l::RFC_Window_overlay" alt="" coords="628,5,788,51"/>
+<area shape="rect" id="node11" href="$classRFC__Pane__overlay.html#a4a3818f6d1222238d4f36eb5a23db143" title="RFC_Pane_overlay::determine\l_counterparts" alt="" coords="377,74,577,121"/>
+<area shape="rect" id="node15" href="$classRFC__Pane__base.html#aeaea29bff84c7c77f8df894c495cd15d" title="Get total number of primary nodes contained in the pane. " alt="" coords="400,144,555,173"/>
+</map>

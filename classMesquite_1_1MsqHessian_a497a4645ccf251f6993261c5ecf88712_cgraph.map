@@ -1,0 +1,30 @@
+<map id="initialize" name="initialize">
+<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a3e94692727e2bf9bc09fd1625788e21c" title="Returns a pointer to the start of the element array. " alt="" coords="139,132,283,179"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MsqMeshEntity.html#ad71b653bcc409c99d990a688e45f25d6" title="Very efficient retrieval of vertices indexes (corresponding to the PatchData vertex array)..." alt="" coords="124,201,297,248"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1PatchData.html#a3f7ed6a14a98f283aa700342b9cc2a01" title="number of elements in the Patch. " alt="" coords="139,271,283,317"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="139,340,283,387"/>
+<area shape="rect" id="node11" href="$arruda__boyce_8f90.html#a2f31672ee5874935d96e7aea2c8371fe" title="rs" alt="" coords="192,410,229,439"/>
+<area shape="rect" id="node72" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="124,669,297,716"/>
+<area shape="rect" id="node13" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="819,447,893,477"/>
+<area shape="rect" id="node15" href="$arruda__boyce_8f90.html#a6fbc6c2163a4ca8b183d367f2bdf65c2" title="tql1" alt="" coords="413,251,456,281"/>
+<area shape="rect" id="node35" href="$arruda__boyce_8f90.html#a11625c0d4087813612fcea51e6bdc170" title="tql2" alt="" coords="413,198,456,227"/>
+<area shape="rect" id="node44" href="$arruda__boyce_8f90.html#af7b3c6cb5bad790aa302b90dfad59af9" title="tred1" alt="" coords="409,383,460,413"/>
+<area shape="rect" id="node64" href="$arruda__boyce_8f90.html#a40a1f383b8cd714b3c0d7dbe946d99eb" title="tred2" alt="" coords="409,437,460,466"/>
+<area shape="rect" id="node17" href="$classLine__2.html#afe7f37893f080982762fded5aaca681c" title="Line_2::c" alt="" coords="615,41,689,70"/>
+<area shape="rect" id="node19" href="$classPlane__3.html#a97cd7b8d2df14504c1422abd2bf8234c" title="Plane_3::d" alt="" coords="611,305,693,334"/>
+<area shape="rect" id="node21" href="$classColor.html#a136e5e559949921576ae566cfea2e855" title="Color::g" alt="" coords="619,358,685,387"/>
+<area shape="rect" id="node23" href="$classAff__transformation__2.html#a365f1affce6586f551082723758c0fcc" title="Aff_transformation_2::m" alt="" coords="571,94,733,123"/>
+<area shape="rect" id="node25" href="$arruda__boyce_8f90.html#aefdf2f56016974e7ae9cbb603784144d" title="pythag" alt="" coords="621,198,683,227"/>
+<area shape="rect" id="node30" href="$classColor.html#a2cd31514360f55547e6cb3e94dfe6ad5" title="Color::r" alt="" coords="824,146,888,175"/>
+<area shape="rect" id="node33" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="629,251,675,281"/>
+<area shape="rect" id="node28" href="$classColor.html#a6b4c47aed15e7f7a2f1e38311b98737e" title="Color::b" alt="" coords="823,199,889,229"/>
+<area shape="rect" id="node49" href="$classTransfer__base.html#aa4fb201c8061f6f1fd18361e4bd1737a" title="Transfer_base::scale" alt="" coords="580,566,724,595"/>
+<area shape="rect" id="node62" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="631,462,673,491"/>
+<area shape="rect" id="node51" href="$classRFC__Data.html#a2e1ff52eab3383077d032b5cfdbce9e3" title="RFC_Data::get_value" alt="" coords="781,539,931,569"/>
+<area shape="rect" id="node59" href="$classRFC__Data__const.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Data_const::id" alt="" coords="785,593,927,622"/>
+<area shape="rect" id="node53" href="$classRFC__Pane__transfer.html#ac4352cefd69971574fd2edb3ee894899" title="RFC_Pane_transfer::\lpointer" alt="" coords="979,531,1125,577"/>
+<area shape="rect" id="node55" href="$classRFC__Pane__transfer.html#a584f868480e84dcf5750fe21c96c4dd8" title="RFC_Pane_transfer::\lis_master" alt="" coords="1185,500,1332,547"/>
+<area shape="rect" id="node57" href="$classRFC__Pane__base.html#ac4352cefd69971574fd2edb3ee894899" title="Get the address of a given attribute with id i. " alt="" coords="1175,570,1343,599"/>
+<area shape="rect" id="node74" href="$classMesquite_1_1MsqMeshEntity.html#a0b552656e1b264732e90715ccba32b1f" title="Return number of nodes in element (number of corner vertices + number of higher&#45;order nodes)..." alt="" coords="348,669,521,716"/>
+<area shape="rect" id="node76" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="356,739,513,785"/>
+</map>

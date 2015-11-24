@@ -1,0 +1,9 @@
+<map id="nrm2_scalar" name="nrm2_scalar">
+<area shape="rect" id="node3" href="$classRocblas.html#a509324395eda15d55172c78cee1ae5fb" title="Creates window for Rocblas and registers functions. " alt="" coords="148,112,185,141"/>
+<area shape="rect" id="node5" href="$Rocblas_8C.html#ae10ad513c0ada8ae7f6c5dc632bb5235" title="Calls Rocblas initialization function. " alt="" coords="260,5,409,35"/>
+<area shape="rect" id="node9" href="$Rocblas_8C.html#a3c4a24d98fffbb732ea0b4bd7ed737d4" title="rocblas_load_module" alt="" coords="263,59,407,88"/>
+<area shape="rect" id="node11" href="$Rocblas_8C.html#ac49885f516c860372a5f9a422fdffce8" title="ROCBLAS_LOAD_MODULE" alt="" coords="239,112,431,141"/>
+<area shape="rect" id="node13" href="$Rocblas_8C.html#a1f6d7891108aff593e5100e55fa6a21e" title="rocblas_load_module_" alt="" coords="260,165,409,195"/>
+<area shape="rect" id="node15" href="$Rocblas_8C.html#a78ad5cca202ba6091c88095698f46652" title="ROCBLAS_LOAD_MODULE_" alt="" coords="235,219,435,248"/>
+<area shape="rect" id="node7" href="$blastest_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="483,5,533,35"/>
+</map>

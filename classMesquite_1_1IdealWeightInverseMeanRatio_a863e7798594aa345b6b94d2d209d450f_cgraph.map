@@ -1,0 +1,21 @@
+<map id="compute_element_analytical_gradient" name="compute_element_analytical_gradient">
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#a2819108c0f4c15dc6d2e8a9c0d613244" title="Given a list of metric values, calculate the average metric valude according to the current avgMethod..." alt="" coords="241,66,439,113"/>
+<area shape="rect" id="node15" href="$namespaceMesquite.html#ad648b7b4d803f61f5c3e9cc0eb40c475" title="Mesquite::g_fcn_2e" alt="" coords="272,312,408,341"/>
+<area shape="rect" id="node21" href="$namespaceMesquite.html#a7f4ba795c26e206c80a4fa50b1154a91" title="Mesquite::g_fcn_2i" alt="" coords="275,365,405,395"/>
+<area shape="rect" id="node24" href="$namespaceMesquite.html#ad805fe8fff4b5787c7e64649ddeeab28" title="Mesquite::g_fcn_3e" alt="" coords="272,205,408,235"/>
+<area shape="rect" id="node27" href="$namespaceMesquite.html#a5336b5ccb8124c4dfbc461893ee07e14" title="Mesquite::g_fcn_3i" alt="" coords="275,259,405,288"/>
+<area shape="rect" id="node30" href="$classMesquite_1_1PatchData.html#a80ace172b3bfe563e3dd0afd8adb3f57" title="Mesquite::PatchData\l::get_domain_normal\l_at_element" alt="" coords="268,627,412,691"/>
+<area shape="rect" id="node36" href="$classMesquite_1_1MsqMeshEntity.html#a06bdcd1ba605937676eadd289f3ecdf1" title="Returns element type. " alt="" coords="253,418,427,465"/>
+<area shape="rect" id="node38" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="268,487,412,534"/>
+<area shape="rect" id="node40" href="$classMesquite_1_1MsqMeshEntity.html#ad71b653bcc409c99d990a688e45f25d6" title="Very efficient retrieval of vertices indexes (corresponding to the PatchData vertex array)..." alt="" coords="253,557,427,603"/>
+<area shape="rect" id="node42" href="$classMesquite_1_1Vector3D.html#ad207cb443e371f73f07e874c504f60c1" title="Mesquite::Vector3D\l::length" alt="" coords="271,135,409,182"/>
+<area shape="rect" id="node5" href="$namespacecimg__library.html#aca249598083f7870a45cbfdf055e61f7" title="cimg_library::log" alt="" coords="509,17,627,47"/>
+<area shape="rect" id="node9" href="$namespacecimg__library.html#aef2cba8d354b44debb42e1b7c30b8808" title="cimg_library::exp" alt="" coords="508,79,628,108"/>
+<area shape="rect" id="node13" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="547,140,589,169"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a3d2943c90d7b5faaa71c758a0d153560" title="cimg_library::CImg\l::get_log" alt="" coords="700,5,831,51"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#ae129c419df5ecb2d37803c41e87b8b27" title="cimg_library::CImg\l::get_exp" alt="" coords="700,74,831,121"/>
+<area shape="rect" id="node17" href="$namespaceMesquite.html#a158e89125c01402924b46cd1cefa5240" title="Mesquite::pow" alt="" coords="515,285,621,315"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1Exponent.html#a665516b85c2af1c1e62945896e9178b2" title="Mesquite::Exponent\l::raise" alt="" coords="696,277,835,323"/>
+<area shape="rect" id="node32" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="492,601,644,647"/>
+<area shape="rect" id="node34" href="$classMesquite_1_1MeshDomain.html#af51d0710f9894de362dd3d9aa1399d5c" title="Returns the normal of the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="488,670,648,717"/>
+</map>

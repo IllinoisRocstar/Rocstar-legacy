@@ -1,0 +1,9 @@
+<map id="send_pane_info" name="send_pane_info">
+<area shape="rect" id="node3" href="$commpi_8h.html#a8a8389bc67ae874f8ec20c56f758c8bf" title="COMMPI_Comm_rank" alt="" coords="168,5,323,35"/>
+<area shape="rect" id="node5" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="371,111,509,140"/>
+<area shape="rect" id="node7" href="$commpi_8h.html#ad6fa7197f23c104706e70381e5c766b5" title="Begins a nonblocking receive. " alt="" coords="189,59,301,88"/>
+<area shape="rect" id="node14" href="$commpi_8h.html#aa00bccf22112317d8ff7784ce592a6df" title="Begins a nonblocking send. " alt="" coords="188,163,303,192"/>
+<area shape="rect" id="node9" href="$commpi_8C.html#a78389db06a6bd6c7f0ca305c8399923a" title="COM_recv" alt="" coords="397,57,483,87"/>
+<area shape="rect" id="node11" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="557,111,640,140"/>
+<area shape="rect" id="node16" href="$commpi_8C.html#aec45fe584c7f0bc5e1f583e2f5945648" title="COM_send" alt="" coords="396,164,484,193"/>
+</map>

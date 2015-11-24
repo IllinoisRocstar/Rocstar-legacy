@@ -1,0 +1,14 @@
+<map id="close_tip" name="close_tip">
+<area shape="rect" id="node3" href="$classHalfedge.html#ab4def96f7b16673e4f64958282db7522" title="Get the ID of the opposite edge of a given edge. " alt="" coords="128,163,259,192"/>
+<area shape="rect" id="node29" href="$classHalfedge__data__structure__decorator.html#a92be4eb032a27bd7913c110c83b69b19" title="set_prev" alt="" coords="157,216,229,245"/>
+<area shape="rect" id="node5" href="$classPane__manifold__2.html#acc9ac2df851c2e7d04073c72d6706dc1" title="Obtain the opposite edge in a given access mode. " alt="" coords="308,154,455,201"/>
+<area shape="rect" id="node7" href="$classSimple__manifold__2.html#a388807b9a6d8f961084b971ad0967d6e" title="Get the ID of the opposite real edge of a given real or border edge. " alt="" coords="509,5,667,51"/>
+<area shape="rect" id="node9" href="$classSimple__manifold__2.html#ab2f2bcc3b156c06ca00d323ad90c5be3" title="Get the ID of the opposite edge of a given interior or border edge. " alt="" coords="519,154,657,201"/>
+<area shape="rect" id="node11" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="948,224,1084,253"/>
+<area shape="rect" id="node23" href="$classPane__manifold__2.html#a293c0575cef30e28441550227a851354" title="Get the counterpart of an edge in the ACROSS_PANE mode, i.e. " alt="" coords="736,314,883,361"/>
+<area shape="rect" id="node27" href="$classHalfedge.html#ab72ff77eeb5b8645e86a4b4cb57138ce" title="Obtain the pane manifold that owns the edge. " alt="" coords="505,275,671,304"/>
+<area shape="rect" id="node15" href="$classSimple__manifold__2.html#aef03f5e4c6a6a5d7c98c42ae04a241e2" title="Get the opposite edge of a border edge for the whole pane. " alt="" coords="723,245,896,291"/>
+<area shape="rect" id="node20" href="$classSimple__manifold__2.html#a1250f39747158bc5a1ed2fa7a7013978" title="Get the opposite edge of an interior edge of the whole pane. " alt="" coords="721,125,897,171"/>
+<area shape="rect" id="node13" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="1135,224,1231,253"/>
+<area shape="rect" id="node18" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="965,285,1067,315"/>
+</map>

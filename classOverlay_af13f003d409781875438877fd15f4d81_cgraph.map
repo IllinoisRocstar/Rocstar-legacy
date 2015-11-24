@@ -1,0 +1,49 @@
+<map id="associate_green_vertices" name="associate_green_vertices">
+<area shape="rect" id="node3" href="$classIn__place__list__n.html#ad69bd11391be1a1dba5c8202259664f8" title="In_place_list_n::begin" alt="" coords="988,215,1135,244"/>
+<area shape="rect" id="node5" href="$classIn__place__list__n.html#ac6e61de369e994009e36f344f99c15ad" title="In_place_list_n::empty" alt="" coords="733,1705,885,1735"/>
+<area shape="rect" id="node7" href="$classIn__place__list__n.html#acad38d52497a975bfb6f2f6acd76631f" title="In_place_list_n::end" alt="" coords="495,84,633,113"/>
+<area shape="rect" id="node9" href="$classHDS__accessor.html#ad55db01a1caf3cf35646fa3bd0f53569" title="HDS_accessor::get_halfedge" alt="" coords="225,163,417,192"/>
+<area shape="rect" id="node11" href="$classHDS__accessor.html#a798b177ceda47c50a64035e61fde579a" title="HDS_accessor::get_inode" alt="" coords="723,377,896,407"/>
+<area shape="rect" id="node13" href="$classHDS__accessor.html#ac7fa8c54554338449b239a5e1acebcd0" title="HDS_accessor::get_inode_list" alt="" coords="711,481,908,511"/>
+<area shape="rect" id="node15" href="$classHDS__accessor.html#a0191908e68eeb08627b0887b5b24f42c" title="HDS_accessor::get_next" alt="" coords="977,961,1145,991"/>
+<area shape="rect" id="node17" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="965,507,1157,536"/>
+<area shape="rect" id="node19" href="$classHDS__accessor.html#a591425c5ea18f4820a812d753f3d6006" title="HDS_accessor::get_origin" alt="" coords="975,1240,1148,1269"/>
+<area shape="rect" id="node21" href="$classHDS__accessor.html#a42d9f6a4b4d4209023f0db986e7d1cd3" title="HDS_accessor::is_border" alt="" coords="236,991,407,1020"/>
+<area shape="rect" id="node23" href="$classRFC__Window__derived.html#ac93d54480f8b9621387f2edd745257ee" title="Get a vector of local panes contained in the window. " alt="" coords="245,1043,397,1090"/>
+<area shape="rect" id="node25" href="$classINode.html#a5e54505fb86e503aa014c5c79d4df1a3" title="INode::parent_type" alt="" coords="743,1759,876,1788"/>
+<area shape="rect" id="node29" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="244,921,399,967"/>
+<area shape="rect" id="node121" href="$classIn__place__list__n.html#acea44ed500a54b2bb93e16b86e81afa8" title="In_place_list_n::rbegin" alt="" coords="245,109,397,139"/>
+<area shape="rect" id="node124" href="$classIn__place__list__n.html#a68c599ddcbfddc65170de524ac165e44" title="In_place_list_n::rend" alt="" coords="251,5,392,35"/>
+<area shape="rect" id="node27" href="$structHost__face.html#ad8e3d3c3b41c1da044381d5a758f1d7a" title="Host_face::parent_type" alt="" coords="1215,1199,1372,1228"/>
+<area shape="rect" id="node31" href="$classINode.html#a2dd3c88de5ba7b43671e1e9410418d58" title="INode::halfedge" alt="" coords="752,639,867,668"/>
+<area shape="rect" id="node38" href="$classHDS__accessor.html#a7454a9634b77e8853af6aac3167dea77" title="HDS_accessor::get_destination" alt="" coords="959,741,1164,771"/>
+<area shape="rect" id="node42" href="$classIn__place__list__n.html#af71e6c1eccbc12e9339c00a86a981a43" title="In_place_list_n::back" alt="" coords="737,948,881,977"/>
+<area shape="rect" id="node44" href="$classIn__place__list__n.html#a503ab01f6c0142145d3434f6924714e7" title="In_place_list_n::size" alt="" coords="739,1001,880,1031"/>
+<area shape="rect" id="node48" href="$classIn__place__list__n.html#a6a48363b4355f6f5b441637774f79a59" title="In_place_list_n::front" alt="" coords="739,535,880,564"/>
+<area shape="rect" id="node51" href="$classOverlay.html#ad2947f4b049eabf5707786ef238720ff" title="contains" alt="" coords="775,793,844,823"/>
+<area shape="rect" id="node59" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="479,520,649,549"/>
+<area shape="rect" id="node61" href="$classRFC__Pane__overlay.html#ae8d317b4396ab3fdc415215555068a4a" title="RFC_Pane_overlay::get\l_normal" alt="" coords="483,1138,645,1185"/>
+<area shape="rect" id="node63" href="$classHalfedge__overlay.html#a49a0ced46edaa808d9951d79b7e43d31" title="Halfedge_overlay::destination" alt="" coords="467,1035,661,1064"/>
+<area shape="rect" id="node67" href="$classOverlay__primitives.html#a81e424ade97fdbde9769fd151299e605" title="Overlay_primitives\l::project_onto_element" alt="" coords="487,1538,641,1585"/>
+<area shape="rect" id="node81" href="$classVertex__overlay.html#a75cdd043830d07c6068d1f272f62287b" title="Vertex_overlay::point" alt="" coords="492,1208,636,1237"/>
+<area shape="rect" id="node83" href="$classOverlay__primitives.html#a1c20fa0c901b440606f581e1a031eff5" title="Overlay_primitives\l::get_face_normal" alt="" coords="499,1418,629,1465"/>
+<area shape="rect" id="node90" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="788,1212,831,1241"/>
+<area shape="rect" id="node97" href="$classOverlay.html#a7be277fd220871e1f1bc5fc8f79bd74c" title="logical_xor" alt="" coords="523,1312,605,1341"/>
+<area shape="rect" id="node99" href="$classINode.html#a23dfb6cc889f28afe768ea7b8293f0a1" title="INode::set_parent" alt="" coords="501,981,627,1011"/>
+<area shape="rect" id="node103" href="$classOverlay.html#ac9f62be71dea998652001fb75752713e" title="verify_inode" alt="" coords="519,776,609,805"/>
+<area shape="rect" id="node118" href="$classHDS__accessor.html#ad1c9563180e4931c6f0231751defaa66" title="HDS_accessor::set_inode" alt="" coords="477,1365,651,1395"/>
+<area shape="rect" id="node33" href="$structHost__face.html#a2fdb4a913034dfc8a30c9019857d8173" title="Host_face::halfedge" alt="" coords="992,663,1131,692"/>
+<area shape="rect" id="node53" href="$classHDS__accessor.html#a18eab6ffa92233a5ced127b70413239b" title="HDS_accessor::get_facet" alt="" coords="975,795,1148,824"/>
+<area shape="rect" id="node65" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="727,1108,892,1137"/>
+<area shape="rect" id="node69" href="$classPoint__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Point_set::size_of\l_edges" alt="" coords="747,1475,872,1522"/>
+<area shape="rect" id="node73" href="$solve_8h.html#a86f74676b18746c6fae05aa74033854c" title="solve" alt="" coords="783,1545,836,1575"/>
+<area shape="rect" id="node75" href="$classHalfedge__overlay.html#ac47203886af9a8299b6a42da527e0e49" title="Halfedge_overlay::next" alt="" coords="732,1599,887,1628"/>
+<area shape="rect" id="node77" href="$classHalfedge__overlay.html#aa274ac14f207d82094a34345820a3058" title="Halfedge_overlay::prev" alt="" coords="732,1652,887,1681"/>
+<area shape="rect" id="node71" href="$classVertex__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Vertex_set::size_of\l_edges" alt="" coords="995,1479,1128,1526"/>
+<area shape="rect" id="node79" href="$classHalfedge__overlay.html#acba595f65090d9721649cdf1f0999894" title="Halfedge_overlay::is\l_primary" alt="" coords="991,1643,1132,1690"/>
+<area shape="rect" id="node86" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="728,1319,891,1348"/>
+<area shape="rect" id="node88" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="740,1265,879,1295"/>
+<area shape="rect" id="node92" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="745,1423,873,1452"/>
+<area shape="rect" id="node94" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="996,1410,1127,1457"/>
+<area shape="rect" id="node101" href="$classINode.html#a56d2a90f3b88419fd83a2497fec6139d" title="INode::pt" alt="" coords="772,1055,847,1084"/>
+</map>

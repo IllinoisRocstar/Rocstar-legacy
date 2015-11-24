@@ -1,0 +1,8 @@
+<map id="set_facet_in_facet_loop" name="set_facet_in_facet_loop">
+<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#a54fb9412224a17a102a93ed275fcecb3" title="erase_connected_component\l_face_cycle" alt="" coords="213,5,405,51"/>
+<area shape="rect" id="node7" href="$classHalfedge__data__structure__decorator.html#a2554a0943a90c58faa4d4b79a09f1d0a" title="fill_hole" alt="" coords="276,75,343,104"/>
+<area shape="rect" id="node9" href="$classHalfedge__data__structure__decorator.html#a4319328bbaa6705603a732a1592a5d97" title="make_hole" alt="" coords="267,128,352,157"/>
+<area shape="rect" id="node11" href="$classHalfedge__data__structure__decorator.html#a1c7edc87af0458afd58fcf7d348cdbbe" title="set_facet_in_facet_loop" alt="" coords="229,181,389,211"/>
+<area shape="rect" id="node13" href="$classHalfedge__data__structure__decorator.html#aca2d0496443d5a09dd089c054121ea7b" title="split_facet" alt="" coords="268,235,351,264"/>
+<area shape="rect" id="node5" href="$classHalfedge__data__structure__decorator.html#a85628cd4f6e02c713a92300bfdc9fbb2" title="erase_connected_component" alt="" coords="453,13,645,43"/>
+</map>

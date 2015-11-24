@@ -1,0 +1,28 @@
+<map id="basic.h" name="basic.h">
+<area shape="rect" id="node3" href="$config_8h.html" title="CGAL/config.h" alt="" coords="637,565,744,595"/>
+<area shape="rect" id="node15" href="$assertions_8h.html" title="CGAL/assertions.h" alt="" coords="239,488,372,517"/>
+<area shape="rect" id="node18" href="$kernel__assertions_8h.html" title="CGAL/kernel_assertions.h" alt="" coords="1639,83,1812,112"/>
+<area shape="rect" id="node20" href="$Handle_8h.html" title="CGAL/Handle.h" alt="" coords="1417,83,1532,112"/>
+<area shape="rect" id="node28" href="$Object_8h.html" title="CGAL/Object.h" alt="" coords="1388,160,1497,189"/>
+<area shape="rect" id="node31" href="$enum_8h.html" title="CGAL/enum.h" alt="" coords="772,401,876,431"/>
+<area shape="rect" id="node37" href="$tags_8h.html" title="CGAL/tags.h" alt="" coords="555,237,653,267"/>
+<area shape="rect" id="node47" href="$misc_8h.html" title="CGAL/misc.h" alt="" coords="919,83,1020,112"/>
+<area shape="rect" id="node50" href="$number__type__basic_8h.html" title="CGAL/number_type_basic.h" alt="" coords="600,83,787,112"/>
+<area shape="rect" id="node52" href="$number__utils_8h.html" title="CGAL/number_utils.h" alt="" coords="969,160,1116,189"/>
+<area shape="rect" id="node56" href="$kernel__basic_8h.html" title="CGAL/kernel_basic.h" alt="" coords="1080,237,1227,267"/>
+<area shape="rect" id="node86" href="$io_8h.html" title="CGAL/IO/io.h" alt="" coords="1241,83,1343,112"/>
+<area shape="rect" id="node5" href="$compiler__config_8h.html" title="CGAL/compiler_config.h" alt="" coords="512,643,675,672"/>
+<area shape="rect" id="node7" href="$workaround__casts_8h.html" title="CGAL/workaround_casts.h" alt="" coords="699,643,877,672"/>
+<area shape="rect" id="node22" href="$Handle__for_8h.html" title="CGAL/Handle_for.h" alt="" coords="1427,237,1563,267"/>
+<area shape="rect" id="node24" href="$memory_8h.html" title="CGAL/memory.h" alt="" coords="1435,315,1555,344"/>
+<area shape="rect" id="node33" href="$functions__on__enums_8h.html" title="CGAL/functions_on_enums.h" alt="" coords="728,488,920,517"/>
+<area shape="rect" id="node39" href="$aff__transformation__tags_8h.html" title="CGAL/aff_transformation\l_tags.h" alt="" coords="488,393,653,439"/>
+<area shape="rect" id="node42" href="$number__type__tags_8h.html" title="CGAL/number_type_tags.h" alt="" coords="735,315,913,344"/>
+<area shape="rect" id="node45" href="$io__tags_8h.html" title="CGAL/IO/io_tags.h" alt="" coords="1131,315,1264,344"/>
+<area shape="rect" id="node59" href="$number__utils__classes_8h.html" title="CGAL/number_utils_classes.h" alt="" coords="537,160,735,189"/>
+<area shape="rect" id="node65" href="$double_8h.html" title="CGAL/double.h" alt="" coords="231,160,340,189"/>
+<area shape="rect" id="node76" href="$float_8h.html" title="CGAL/float.h" alt="" coords="364,160,463,189"/>
+<area shape="rect" id="node82" href="$int_8h.html" title="CGAL/int.h" alt="" coords="759,160,844,189"/>
+<area shape="rect" id="node72" href="$IEEE__754__unions_8h.html" title="CGAL/IEEE_754_unions.h" alt="" coords="355,237,531,267"/>
+<area shape="rect" id="node90" href="$Color_8h.html" title="CGAL/IO/Color.h" alt="" coords="1184,488,1307,517"/>
+</map>

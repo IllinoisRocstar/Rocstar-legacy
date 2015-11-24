@@ -1,0 +1,26 @@
+<map id="assign_global_nodeIDs" name="assign_global_nodeIDs">
+<area shape="rect" id="node3" href="$classNode.html#a2c11dfbc1098d936083b01c5508021ce" title="Get the primary copy of the node. " alt="" coords="212,292,340,321"/>
+<area shape="rect" id="node52" href="$classNode.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the node ID within its Pane_manifold_2. " alt="" coords="241,345,311,374"/>
+<area shape="rect" id="node54" href="$classNode.html#ab944b155156144ffb9cb73cad9eef7cc" title="Obtain the owner Pane_manifold_2 of the node. " alt="" coords="232,398,320,428"/>
+<area shape="rect" id="node58" href="$classWindow__manifold__2.html#afc72f337226a2bd9c048dab670fb320a" title="Obtain an iterator to the first pane manifold of the window. " alt="" coords="435,464,512,493"/>
+<area shape="rect" id="node60" href="$classWindow__manifold__2.html#a036407c8e0e5dc7109664644e0138d2e" title="Obtain an iterator to the past&#45;the&#45;last pane manifold of the window. " alt="" coords="440,541,507,570"/>
+<area shape="rect" id="node62" href="$classWindow__manifold__2.html#a7fc28c2009d7d099a791f570a70a5b74" title="Obtain the number of nodes (shared nodes are counted only once. " alt="" coords="223,502,329,532"/>
+<area shape="rect" id="node66" href="$classWindow__manifold__2.html#a513f810370723a47dbd532b0240086f0" title="Obtain the number of panes. " alt="" coords="223,606,329,636"/>
+<area shape="rect" id="node5" href="$classPane__manifold__2.html#a9e4f032cd87aefe723260942a9510b0c" title="Obtains a Node object corresponding to the primary copy of the given node. " alt="" coords="400,283,547,330"/>
+<area shape="rect" id="node7" href="$classPane__manifold__2.html#a47b2d003e1ea97488de3d260080f1fe3" title="Obtain the border node index (equal to ID of incident border edge). " alt="" coords="607,283,753,330"/>
+<area shape="rect" id="node9" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="1413,364,1515,393"/>
+<area shape="rect" id="node11" href="$classSimple__manifold__2.html#afaabce069f16be292e5dd4d8064bcd99" title="Get the ID of an incident real edge within the pane of a given node. " alt="" coords="803,283,957,330"/>
+<area shape="rect" id="node31" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="1227,586,1363,616"/>
+<area shape="rect" id="node14" href="$classSimple__manifold__2.html#a3fff497bdfcdda219b941fffcedf3d41" title="Simple_manifold_2::\lget_next_ghost_edge\l_interior" alt="" coords="1017,224,1164,288"/>
+<area shape="rect" id="node27" href="$classSimple__manifold__2.html#a5dfd55a426d43af633d6f1d8788cb322" title="Get the opposite edge of a border edge for the ghost pane. " alt="" coords="1005,318,1176,382"/>
+<area shape="rect" id="node36" href="$classSimple__manifold__2.html#aa81d979ace76b3412a00645efe09cfff" title="Get the opposite edge of an interior edge of the ghost part. " alt="" coords="1005,406,1176,470"/>
+<area shape="rect" id="node42" href="$classSimple__manifold__2.html#a96857d0e0525ef06c2590d22d2acf0c1" title="Get the ID of the origin of a given edge. " alt="" coords="1021,34,1160,80"/>
+<area shape="rect" id="node45" href="$classSimple__manifold__2.html#ab6d308f97d5fe32df4e31327bdf5fc3e" title="Determine whether a given edge is a border edge of real part of the pane (either on physical border o..." alt="" coords="1021,494,1160,540"/>
+<area shape="rect" id="node49" href="$classSimple__manifold__2.html#ada174cc24bb104689a8ded70a6674ebb" title="Is the given node a real node? " alt="" coords="1021,103,1160,150"/>
+<area shape="rect" id="node17" href="$classSimple__manifold__2.html#a678219ca5d2b29febb0820f195f668ba" title="Get an index for internal edges. " alt="" coords="1225,415,1364,462"/>
+<area shape="rect" id="node20" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="1416,421,1512,450"/>
+<area shape="rect" id="node24" href="$classSimple__manifold__2.html#ab06c9b0093094a1e15b3c1d91b6d7012" title="Is the element incident on the give edge a ghost element? " alt="" coords="1225,226,1364,272"/>
+<area shape="rect" id="node22" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="1437,474,1491,504"/>
+<area shape="rect" id="node34" href="$classSimple__manifold__2.html#ae1611b1b5b6feb95d11d299ef4150866" title="Is the element incident on the give edge a real element? " alt="" coords="1225,295,1364,342"/>
+<area shape="rect" id="node56" href="$classSimple__manifold__2.html#ab944b155156144ffb9cb73cad9eef7cc" title="Obtain a const pointer to the pane. " alt="" coords="389,398,557,428"/>
+</map>

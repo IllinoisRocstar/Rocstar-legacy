@@ -1,0 +1,11 @@
+<map id="setFromMyNodes" name="setFromMyNodes">
+<area shape="rect" id="node3" href="$classNode.html#abeb5107bfd6de1d458adc903461e76c9" title="Node::addNextLink" alt="" coords="184,5,317,35"/>
+<area shape="rect" id="node5" href="$classQCoElement.html#af24a81bb88c9a41b19e016fecaccf8ae" title="setFaceFromNodes" alt="" coords="183,59,319,88"/>
+<area shape="rect" id="node7" href="$classMesh.html#afb83351c01256fbcf0750a996adcff5a" title="Mesh::addFace" alt="" coords="377,5,489,35"/>
+<area shape="rect" id="node11" href="$classElement.html#a92bc875a732062cebbc19ef0cd6282a0" title="Element::setFace" alt="" coords="371,59,496,88"/>
+<area shape="rect" id="node15" href="$classNode.html#a5ce4c9e45166eea96b4456217c243a29" title="Node::sharedFace" alt="" coords="369,112,497,141"/>
+<area shape="rect" id="node9" href="$classFace.html#a1d4659e5c5caba7e864b6f1a57c92471" title="Sets the serial ID for the face. " alt="" coords="573,5,664,35"/>
+<area shape="rect" id="node13" href="$classFace.html#ad368cbfd7be4e4a14255190776a48830" title="Face::addElement" alt="" coords="555,59,683,88"/>
+<area shape="rect" id="node17" href="$classFace.html#a73e2d76cf2bdc682eb8a8220261576ae" title="Returns the array of nodes. " alt="" coords="561,112,676,141"/>
+<area shape="rect" id="node19" href="$classFace.html#a6c707b13ee25c7a3c73965cb4bdeee75" title="Retrieves the number of nodes that make up the face. " alt="" coords="548,165,689,195"/>
+</map>

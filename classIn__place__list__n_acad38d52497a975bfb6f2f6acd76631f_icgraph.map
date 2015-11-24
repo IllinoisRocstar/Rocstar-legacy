@@ -1,0 +1,29 @@
+<map id="end" name="end">
+<area shape="rect" id="node3" href="$classIn__place__list__n.html#ad5edc9a20c00c95f7d4ba398c5fca68f" title="assign" alt="" coords="125,5,184,35"/>
+<area shape="rect" id="node5" href="$classOverlay.html#af13f003d409781875438877fd15f4d81" title="Overlay::associate\l_green_vertices" alt="" coords="275,247,405,294"/>
+<area shape="rect" id="node9" href="$classIn__place__list__n.html#ac8bb3912a3ce86b15842e79d0b421204" title="clear" alt="" coords="129,421,180,451"/>
+<area shape="rect" id="node11" href="$classOverlay.html#aaf221c2c0b098d770af84f913e42aca3" title="Overlay::get_inodes\l_of_face" alt="" coords="271,153,409,199"/>
+<area shape="rect" id="node20" href="$classIn__place__list__n.html#ad9eb62266e483bc2edcf7977fda2c360" title="In_place_list_n" alt="" coords="100,475,209,504"/>
+<area shape="rect" id="node22" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="493,307,619,354"/>
+<area shape="rect" id="node25" href="$classIn__place__list__n.html#a54984a990504fc5328effbdfdf684933" title="merge" alt="" coords="125,528,184,557"/>
+<area shape="rect" id="node29" href="$classIn__place__list__n.html#a4e9e8111063e9592259ddd55250b86c0" title="operator!=" alt="" coords="115,635,195,664"/>
+<area shape="rect" id="node31" href="$classIn__place__list__n.html#a4b920a852bc9873887124d21586cf65f" title="operator\&lt;" alt="" coords="116,688,193,717"/>
+<area shape="rect" id="node33" href="$classIn__place__list__n.html#a36b386531fc375a5327377d1ecff4c0a" title="operator=" alt="" coords="116,741,193,771"/>
+<area shape="rect" id="node35" href="$classIn__place__list__n.html#a8a2760051d2acd31bbf7a968426c4b39" title="operator==" alt="" coords="112,795,197,824"/>
+<area shape="rect" id="node37" href="$classIn__place__list__n.html#a058bda4957df6a97b1ea6c9fd783f672" title="pop_back" alt="" coords="116,368,193,397"/>
+<area shape="rect" id="node47" href="$classIn__place__list__n.html#a7beb5cec28ebf75565c257d275860768" title="push_back" alt="" coords="112,59,197,88"/>
+<area shape="rect" id="node49" href="$classOverlay.html#a8c059d17f9626468b9470736ff7496ec" title="Overlay::sort_on_green\l_edges" alt="" coords="261,67,419,114"/>
+<area shape="rect" id="node52" href="$classIn__place__list__n.html#acea44ed500a54b2bb93e16b86e81afa8" title="rbegin" alt="" coords="127,213,183,243"/>
+<area shape="rect" id="node57" href="$classIn__place__list__n.html#aad6706c6c0af26bf82479d1e1aa41331" title="resize" alt="" coords="127,848,183,877"/>
+<area shape="rect" id="node60" href="$classIn__place__list__n.html#a48745f2de5ae4861ab79e693e3d525d8" title="splice" alt="" coords="127,581,183,611"/>
+<area shape="rect" id="node65" href="$classIn__place__list__n.html#a8b7b80f1fb4be803301be2f4e8cdd37b" title="~In_place_list_n" alt="" coords="96,901,213,931"/>
+<area shape="rect" id="node7" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="693,256,811,285"/>
+<area shape="rect" id="node13" href="$classOverlay.html#a0bd2163789be46cbefc1aa867d9ac420" title="Overlay::write_overlay_tec" alt="" coords="468,151,644,180"/>
+<area shape="rect" id="node15" href="$classOverlay.html#a356923154df51107408f9b11d92c21e5" title="Overlay::write_overlay_off" alt="" coords="469,97,643,127"/>
+<area shape="rect" id="node17" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="467,204,645,233"/>
+<area shape="rect" id="node27" href="$classIn__place__list__n.html#a47fdc9eea42b6975cdc835bb2e08810e" title="sort" alt="" coords="319,528,361,557"/>
+<area shape="rect" id="node39" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="Overlay::insert_node\l_in_blue_edge" alt="" coords="269,371,411,418"/>
+<area shape="rect" id="node42" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="467,447,645,476"/>
+<area shape="rect" id="node45" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="483,377,629,423"/>
+<area shape="rect" id="node62" href="$classIn__place__list__n.html#a1a5c8b5378076e10f31de5c5492e620c" title="splice" alt="" coords="312,581,368,611"/>
+</map>

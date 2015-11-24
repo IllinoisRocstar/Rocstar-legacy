@@ -1,0 +1,12 @@
+<map id="get_stride" name="get_stride">
+<area shape="rect" id="node3" href="$classAttribute.html#a61bd804508cb1f9b4c33fd54351b315e" title="Obtain the number of items in the attribute. " alt="" coords="135,95,255,142"/>
+<area shape="rect" id="node23" href="$classAttribute.html#a2f0529f7f5ff03b8a26e3a3d1925bb2b" title="Obtain the stride of the attribute in base datatype. " alt="" coords="140,187,249,216"/>
+<area shape="rect" id="node5" href="$classPane.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain the attribute from given name. " alt="" coords="488,100,595,129"/>
+<area shape="rect" id="node16" href="$classPane.html#a20818cc1edd59ab35c1eded37741f6ee" title="Pane::ignore_ghost" alt="" coords="305,83,439,112"/>
+<area shape="rect" id="node19" href="$classAttribute.html#a376398cab240594dd4ec0d158b658172" title="Obtain the number of real items in the attribute. " alt="" coords="312,159,432,206"/>
+<area shape="rect" id="node7" href="$classWindow.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain a pointer to the attribute metadata from its name. " alt="" coords="644,69,767,99"/>
+<area shape="rect" id="node13" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="833,128,921,157"/>
+<area shape="rect" id="node9" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="Attribute::is_digit" alt="" coords="817,5,937,35"/>
+<area shape="rect" id="node11" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="817,58,937,105"/>
+<area shape="rect" id="node25" href="$classAttribute.html#a77f06f41441a97714ec0acf49c89b568" title="Root of use&#45;inheritance. " alt="" coords="321,229,423,259"/>
+</map>

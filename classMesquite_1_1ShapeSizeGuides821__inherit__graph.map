@@ -1,0 +1,5 @@
+<map id="ShapeSizeGuides821" name="ShapeSizeGuides821">
+<area shape="rect" id="node2" href="$classMesquite_1_1LVQDTargetCalculator.html" title="This is an intermediary class. Concrete classes will simply instantiate the various guide enums in th..." alt="" coords="5,160,160,189"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1TargetCalculator.html" title="Base class that provides the interface for computing the target corner matrices used in the context b..." alt="" coords="24,83,141,112"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1PatchDataUser.html" title="This should be the parent class of all algorithms retrieving information from a MeshSet object..." alt="" coords="27,5,139,35"/>
+</map>

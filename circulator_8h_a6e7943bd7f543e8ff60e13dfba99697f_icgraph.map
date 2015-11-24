@@ -1,0 +1,14 @@
+<map id="Assert_compile_time_tag" name="Assert_compile_time_tag">
+<area shape="rect" id="node3" href="$circulator_8h.html#abc3a5e8c32926d0d1df0a7ba11626d88" title="Assert_bidirectional\l_category" alt="" coords="240,5,376,51"/>
+<area shape="rect" id="node5" href="$circulator_8h.html#af7aabe097e77139488c0d0efb0730e62" title="Assert_circulator" alt="" coords="248,75,368,104"/>
+<area shape="rect" id="node15" href="$circulator_8h.html#a8f947afcd58be9954ccf9a6901bde5d3" title="Assert_circulator_or\l_iterator" alt="" coords="239,127,377,174"/>
+<area shape="rect" id="node17" href="$circulator_8h.html#a312cc24dcc6db042a4f7b076e8c75d61" title="Assert_forward_category" alt="" coords="225,197,391,227"/>
+<area shape="rect" id="node19" href="$circulator_8h.html#a45fdce640c3d1b4ffbb9b64284e3c939" title="Assert_input_category" alt="" coords="232,251,384,280"/>
+<area shape="rect" id="node21" href="$circulator_8h.html#a217568fcc5c12611d02c299e8902d32b" title="Assert_iterator" alt="" coords="255,304,361,333"/>
+<area shape="rect" id="node23" href="$circulator_8h.html#a663996ba5a9c5bde03e6b3981d455900" title="Assert_output_category" alt="" coords="228,357,388,387"/>
+<area shape="rect" id="node25" href="$circulator_8h.html#a5e85ea567e86420dc09ec6d2e3e273b2" title="Assert_random_access\l_category" alt="" coords="229,410,387,457"/>
+<area shape="rect" id="node7" href="$circulator_8h.html#ace4875f4d500fd0d6be9d2fc3d1d2253" title="I_min_circulator_size" alt="" coords="441,247,585,276"/>
+<area shape="rect" id="node9" href="$circulator_8h.html#a6212acbdfda2d6c21010bb19b5624331" title="I_circulator_size" alt="" coords="655,193,772,223"/>
+<area shape="rect" id="node11" href="$circulator_8h.html#a70c0ca2d4eb062ce60499224049a9819" title="I_circulator_distance" alt="" coords="643,247,784,276"/>
+<area shape="rect" id="node13" href="$classIterator__from__circulator.html#a5257659ecdbbdaee7504978c2054b09a" title="Iterator_from_circulator\l::operator&#45;" alt="" coords="636,299,791,346"/>
+</map>

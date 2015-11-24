@@ -1,0 +1,19 @@
+<map id="lexicographically_xy_smaller" name="lexicographically_xy_smaller">
+<area shape="rect" id="node3" href="$namespaceCGAL.html#a95fc5b4707754cc44983d73bf683b920" title="CGAL::do_intersect" alt="" coords="215,5,351,35"/>
+<area shape="rect" id="node15" href="$predicates__on__points__2_8h.html#ad9d527ac96cdd851cb56899bc3980870" title="lexicographically_xy\l_larger_or_equal" alt="" coords="213,58,352,105"/>
+<area shape="rect" id="node17" href="$classSegmentS2.html#ac86e590b43fd376091cef7cc13e0c403" title="SegmentS2::max" alt="" coords="221,128,344,157"/>
+<area shape="rect" id="node19" href="$classSegmentS2.html#afa9906916d795d1d284711f10eb7a062" title="SegmentS2::min" alt="" coords="224,181,341,211"/>
+<area shape="rect" id="node21" href="$structp__Less__xy.html#a8c9258e32292a13f12ad18a30f29c806" title="p_Less_xy::operator()" alt="" coords="209,235,356,264"/>
+<area shape="rect" id="node23" href="$classp__Less__dist__to__line__2p.html#add1bf724e5f5f6d265625f0cc8a5183a" title="p_Less_dist_to_line\l_2p::operator()" alt="" coords="215,287,351,334"/>
+<area shape="rect" id="node25" href="$classp__Less__negative__dist__to__line__2p.html#add1bf724e5f5f6d265625f0cc8a5183a" title="p_Less_negative_dist\l_to_line_2p::operator()" alt="" coords="208,357,357,403"/>
+<area shape="rect" id="node27" href="$classr__Less__negative__dist__to__line.html#add1bf724e5f5f6d265625f0cc8a5183a" title="r_Less_negative_dist\l_to_line::operator()" alt="" coords="211,426,355,473"/>
+<area shape="rect" id="node29" href="$classr__Less__dist__to__line.html#add1bf724e5f5f6d265625f0cc8a5183a" title="r_Less_dist_to_line\l::operator()" alt="" coords="216,495,349,542"/>
+<area shape="rect" id="node31" href="$classr__Less__in__direction.html#add1bf724e5f5f6d265625f0cc8a5183a" title="r_Less_in_direction\l::operator()" alt="" coords="216,565,349,611"/>
+<area shape="rect" id="node33" href="$classCGALi_1_1Less__xy.html#ad2e837b1360821471074fd02fed4e094" title="CGALi::Less_xy::operator()" alt="" coords="192,635,373,664"/>
+<area shape="rect" id="node35" href="$classPointS2.html#adc5f28be184274f49bbe647a3e70d78b" title="PointS2::operator\&lt;" alt="" coords="217,688,348,717"/>
+<area shape="rect" id="node5" href="$classTriangulation.html#aba3f32dc957f5df74d9d2b4187083bb3" title="Triangulation::is_diagonalie" alt="" coords="421,5,600,35"/>
+<area shape="rect" id="node7" href="$classTriangulation.html#ac3001f56f94ec919c721c8d897931e1d" title="Triangulation::is_diagonal" alt="" coords="649,5,817,35"/>
+<area shape="rect" id="node9" href="$classTriangulation.html#a614267789be8944cd704d0ee66e235c2" title="Main entry for triangulation. " alt="" coords="868,5,1031,35"/>
+<area shape="rect" id="node11" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="1080,5,1259,35"/>
+<area shape="rect" id="node13" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="1307,5,1424,35"/>
+</map>

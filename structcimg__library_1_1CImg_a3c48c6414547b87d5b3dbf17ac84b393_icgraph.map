@@ -1,0 +1,6 @@
+<map id="save_other" name="save_other">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a88d114e68bb4a0fd1d9412202d7766c7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_jpeg" alt="" coords="141,5,291,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#ab37ce77846d08edbac60502f3a286175" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_png" alt="" coords="143,74,289,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a4fd91f4fb021d20c5b62329c49733bd9" title="Save the image as a file. " alt="" coords="151,143,281,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#ac6d72526b5d249df6148680b3521b26d" title="Save a file in TIFF format. " alt="" coords="149,213,283,259"/>
+</map>

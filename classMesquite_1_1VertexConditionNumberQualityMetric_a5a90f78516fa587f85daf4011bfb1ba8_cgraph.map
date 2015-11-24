@@ -1,0 +1,51 @@
+<map id="evaluate_vertex" name="evaluate_vertex">
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#aff0a0e82b899873b3a9c6ed485092012" title="average_metrics takes an array of length num_values and averages the contents using averaging method ..." alt="" coords="187,65,347,111"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1ShapeQualityMetric.html#a049c8172101b823d31ecf9a6f1a19244" title="Given the 2&#45;d jacobian matrix, compute the condition number, fval. " alt="" coords="168,542,365,589"/>
+<area shape="rect" id="node90" href="$classMesquite_1_1ShapeQualityMetric.html#ace5b090da0ae07d4aa1dde27027533ba" title="Given the 3&#45;d jacobian matrix, compute the condition number, fval. " alt="" coords="168,689,365,735"/>
+<area shape="rect" id="node95" href="$classMesquite_1_1MsqMeshEntity.html#aeaf5a6f186ac6a5cc01a62b921147520" title="Fills a vector&lt;size_t&gt; with vertices connected to the given vertex through the edges of this MsqMeshE..." alt="" coords="180,758,353,805"/>
+<area shape="rect" id="node97" href="$classMesquite_1_1PatchData.html#a3e94692727e2bf9bc09fd1625788e21c" title="Returns a pointer to the start of the element array. " alt="" coords="195,827,339,874"/>
+<area shape="rect" id="node99" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="195,897,339,943"/>
+<area shape="rect" id="node101" href="$classMesquite_1_1PatchData.html#a4367259cd09575525ccb70d68a6cb1c4" title="Mesquite::PatchData\l::get_vertex_element\l_adjacencies" alt="" coords="195,975,339,1039"/>
+<area shape="rect" id="node118" href="$classMesquite_1_1PatchData.html#ac7e854784f3106e9421332c48b7d9e94" title="Mesquite::PatchData\l::get_vertex_index" alt="" coords="195,1062,339,1109"/>
+<area shape="rect" id="node5" href="$namespaceMesquite.html#a158e89125c01402924b46cd1cefa5240" title="Mesquite::pow" alt="" coords="441,17,548,47"/>
+<area shape="rect" id="node9" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="1328,464,1371,493"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1Exponent.html#a665516b85c2af1c1e62945896e9178b2" title="Mesquite::Exponent\l::raise" alt="" coords="656,5,795,51"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1PatchData.html#a8b377a9b1b8eaafb7bad02e4151666cd" title="Mesquite::PatchData\l::domain_set" alt="" coords="423,342,567,389"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1PatchData.html#ac9aa16ae4424ea8003292f7e6b28bde8" title="Returns delta based on the minimum and maximum corner determinant over all elements in the patch This..." alt="" coords="423,689,567,735"/>
+<area shape="rect" id="node61" href="$classMesquite_1_1PatchData.html#ae26e6453176884d8c3947adf7b174212" title="Mesquite::PatchData\l::get_domain_normal\l_at_vertex" alt="" coords="423,412,567,476"/>
+<area shape="rect" id="node87" href="$classMesquite_1_1QualityMetric.html#aadbf92434dcc523241fd33137b1abfad" title="Escobar Barrier Function for Shape and Other Metrics. " alt="" coords="413,542,576,589"/>
+<area shape="rect" id="node17" href="$namespaceMesquite.html#a1703b490e5c06b6f3b453b87d4e5afd0" title="Mesquite::det" alt="" coords="675,697,776,727"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1PatchData.html#abf395c48f00dbb49d4a000d371e78483" title="Mesquite::PatchData\l::have_computed_info" alt="" coords="651,854,800,901"/>
+<area shape="rect" id="node52" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="703,751,748,780"/>
+<area shape="rect" id="node54" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="704,575,747,604"/>
+<area shape="rect" id="node56" href="$classMesquite_1_1PatchData.html#ac7404d8ad2d834bfb4f3d0620bba16ee" title="Mesquite::PatchData\l::note_have_info" alt="" coords="653,923,797,970"/>
+<area shape="rect" id="node59" href="$classMesquite_1_1PatchData.html#a3f7ed6a14a98f283aa700342b9cc2a01" title="number of elements in the Patch. " alt="" coords="653,627,797,674"/>
+<area shape="rect" id="node21" href="$namespacecimg__library_1_1cimg.html#ac1b66fe77173de9e5e8542b2823d6071" title="Print informations about CImg environement variables. " alt="" coords="891,923,1019,970"/>
+<area shape="rect" id="node23" href="$namespacecimg__library_1_1cimg.html#a0d2a283a3aa2572e9d343f040c8c4c6b" title="Return the current endianness of the CPU. " alt="" coords="1096,854,1224,901"/>
+<area shape="rect" id="node25" href="$namespacecimg__library_1_1cimg.html#aa9f7e166f51b43facc8ecc9f05e4ceba" title="Return path of the GraphicsMagick&#39;s gm tool. " alt="" coords="1084,1131,1236,1178"/>
+<area shape="rect" id="node35" href="$namespacecimg__library_1_1cimg.html#ad0db1003e37cc111d9eddd282c1ab27b" title="Return or set path to the ImageMagick&#39;s convert tool. " alt="" coords="1091,993,1229,1039"/>
+<area shape="rect" id="node40" href="$namespacecimg__library_1_1cimg.html#aaedba1291890f50edb5be58ef662e516" title="Return or set path of the XMedcon tool. " alt="" coords="1096,1062,1224,1109"/>
+<area shape="rect" id="node45" href="$namespacecimg__library_1_1cimg.html#a797797a309ca40aa28cdfbb92f4d1621" title="Return or set path to store temporary files. " alt="" coords="1096,923,1224,970"/>
+<area shape="rect" id="node27" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="1285,1131,1413,1178"/>
+<area shape="rect" id="node31" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="1285,993,1413,1039"/>
+<area shape="rect" id="node33" href="$namespacecimg__library_1_1cimg.html#a6a835b5fd5ea1699929cb8a1f91e8729" title="cimg_library::cimg\l::winformat_string" alt="" coords="1285,1062,1413,1109"/>
+<area shape="rect" id="node29" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="1461,1131,1589,1178"/>
+<area shape="rect" id="node48" href="$namespacecimg__library_1_1cimg.html#a7748b6c9db13b5262f059994f0b8c117" title="cimg_library::cimg\l::filenamerand" alt="" coords="1285,923,1413,970"/>
+<area shape="rect" id="node63" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="879,125,1031,171"/>
+<area shape="rect" id="node65" href="$classMesquite_1_1MeshDomain.html#af51d0710f9894de362dd3d9aa1399d5c" title="Returns the normal of the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="875,386,1035,433"/>
+<area shape="rect" id="node67" href="$classMesquite_1_1Vector3D.html#acd0de676568888d848beb97dcc53ae47" title="Mesquite::Vector3D\l::normalize" alt="" coords="656,450,795,497"/>
+<area shape="rect" id="node74" href="$classMesquite_1_1PatchData.html#a0ff7253ce513597da2d0189dd7deb3f6" title="Mesquite::PatchData\l::update_cached_normals" alt="" coords="640,294,811,341"/>
+<area shape="rect" id="node69" href="$classMesquite_1_1Vector3D.html#a058f132af4f5f050d134c24c6202c20b" title="Mesquite::Vector3D\l::set_length" alt="" coords="885,455,1024,502"/>
+<area shape="rect" id="node71" href="$classMesquite_1_1Vector3D.html#ad207cb443e371f73f07e874c504f60c1" title="Mesquite::Vector3D\l::length" alt="" coords="1091,455,1229,502"/>
+<area shape="rect" id="node77" href="$namespacenvc.html#a7ef4a2939f7598fd25136135eafb0ce6" title="nvc::norm" alt="" coords="915,333,995,363"/>
+<area shape="rect" id="node83" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="883,194,1027,241"/>
+<area shape="rect" id="node85" href="$classMesquite_1_1PatchData.html#a4b465b048ea4219134d26ecc1d5981e6" title="Returns the start of the vertex&#45;&gt;element array. " alt="" coords="883,263,1027,310"/>
+<area shape="rect" id="node80" href="$namespacenvc.html#a4ea00221667e66f4029614e350ea5745" title="nvc::norm2" alt="" coords="1117,333,1203,363"/>
+<area shape="rect" id="node103" href="$classMesquite_1_1PatchDataMem.html#ac6e61de369e994009e36f344f99c15ad" title="Mesquite::PatchDataMem\l::empty" alt="" coords="639,993,812,1039"/>
+<area shape="rect" id="node105" href="$classMesquite_1_1PatchData.html#ac289a4bb6ad171017babaa1d98ed0c0c" title="Mesquite::PatchData\l::generate_vertex_to\l_element_data" alt="" coords="423,1123,567,1187"/>
+<area shape="rect" id="node107" href="$classMesquite_1_1PatchDataMem.html#af5afe4022b20578032b8c24b352d6e8b" title="Mesquite::PatchDataMem\l::begin" alt="" coords="639,1270,812,1317"/>
+<area shape="rect" id="node110" href="$classMesquite_1_1PatchDataMem.html#a9a82678493835431e099c71066bda062" title="Mesquite::PatchDataMem::end" alt="" coords="624,1340,827,1369"/>
+<area shape="rect" id="node112" href="$classMesquite_1_1PatchData.html#a7619ea708c552f119c4c1b9f35af8522" title="Get number of nodes (vertex + higher&#45;order nodes) " alt="" coords="653,1062,797,1109"/>
+<area shape="rect" id="node114" href="$classMesquite_1_1PatchDataMem.html#a5d264785c6b1332458969367996bdf92" title="Mesquite::PatchDataMem\l::resize" alt="" coords="639,1131,812,1178"/>
+<area shape="rect" id="node116" href="$classMesquite_1_1PatchDataMem.html#aac782da1f912bceb5d8ad00c8dc892ac" title="Mesquite::PatchDataMem\l::size" alt="" coords="639,1201,812,1247"/>
+</map>

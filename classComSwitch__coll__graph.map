@@ -1,0 +1,17 @@
+<map id="ComSwitch" name="ComSwitch">
+<area shape="rect" id="node4" href="$structcmp__map.html" title="Used by cmd parser to store comparison information. " alt="" coords="788,128,865,157"/>
+<area shape="rect" id="node19" href="$structindex__order.html" title="Used to store index order information. " alt="" coords="783,75,871,104"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="207,180,297,209"/>
+<area shape="rect" id="node23" title="STL class. " alt="" coords="1141,547,1211,576"/>
+<area shape="rect" id="node25" title="STL class. " alt="" coords="749,543,904,572"/>
+<area shape="rect" id="node27" title="STL class. " alt="" coords="445,456,600,485"/>
+<area shape="rect" id="node29" title="STL class. " alt="" coords="188,401,316,431"/>
+<area shape="rect" id="node48" title="STL class. " alt="" coords="444,373,601,403"/>
+<area shape="rect" id="node31" title="STL class. " alt="" coords="5,401,80,431"/>
+<area shape="rect" id="node35" href="$structadj__map.html" title="Used to store adjustment (normalization factor, conversion factor) information. " alt="" coords="217,320,287,349"/>
+<area shape="rect" id="node38" href="$classBoundingBox.html" title="A concrete object that provides the functionality for representing a bounding box geometric primitive..." alt="" coords="1127,425,1225,455"/>
+<area shape="rect" id="node40" title="STL class. " alt="" coords="1149,488,1203,517"/>
+<area shape="rect" id="node42" title="STL class. " alt="" coords="756,488,897,517"/>
+<area shape="rect" id="node44" title="STL class. " alt="" coords="1140,372,1212,401"/>
+<area shape="rect" id="node46" title="STL class. " alt="" coords="747,372,907,401"/>
+</map>

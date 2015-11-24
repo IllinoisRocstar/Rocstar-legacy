@@ -1,0 +1,18 @@
+<map id="propagate" name="propagate">
+<area shape="rect" id="node3" href="$classRocblas.html#a56af5b37f32aa5646256710db7eb27aa" title="Operation wrapper for addition. " alt="" coords="137,59,236,88"/>
+<area shape="rect" id="node23" href="$classRocblas.html#a29fe903b10fe8cd0f0bc37c01b63b83f" title="Wrapper for copy. " alt="" coords="133,165,240,195"/>
+<area shape="rect" id="node38" href="$classRocblas.html#a7c4e389cce4e1bb681a77878e6105f29" title="Operation wrapper for subtraction. " alt="" coords="137,112,236,141"/>
+<area shape="rect" id="node5" href="$classRocblas.html#a014ebce01bb2ec4eacb969b142b13d97" title="Chooses which calc function to call based on type of y. " alt="" coords="288,5,435,35"/>
+<area shape="rect" id="node11" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="293,59,429,88"/>
+<area shape="rect" id="node13" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="297,112,425,141"/>
+<area shape="rect" id="node7" href="$classAttribute.html#ab642771d1269b6ccb9e6ba87ec15de3b" title="Checks whether the attribute is associated with the window. " alt="" coords="483,5,637,35"/>
+<area shape="rect" id="node9" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="687,233,807,279"/>
+<area shape="rect" id="node15" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="505,235,615,264"/>
+<area shape="rect" id="node17" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="505,111,615,140"/>
+<area shape="rect" id="node19" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="499,164,621,193"/>
+<area shape="rect" id="node21" href="$classPane.html#a05d1abca9cbb0ec7bdc59f58dd81797c" title="Obtain a constant pointer to its owner window object. " alt="" coords="695,164,799,193"/>
+<area shape="rect" id="node25" href="$classWindow.html#a4d18e272967ed99a266283d1c173a26a" title="Obtain all the attributes of the pane. " alt="" coords="296,320,427,349"/>
+<area shape="rect" id="node34" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="317,216,405,245"/>
+<area shape="rect" id="node27" href="$classPane.html#a4d18e272967ed99a266283d1c173a26a" title="Obtain all the attributes of the pane. " alt="" coords="503,312,617,341"/>
+<area shape="rect" id="node29" href="$classAttribute.html#afaa016f7aa87969def6903a4a7e8490f" title="Obtain a constant pointer to the owner pane of the attribute. " alt="" coords="693,312,800,341"/>
+</map>

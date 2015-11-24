@@ -1,0 +1,11 @@
+<map id="get_atan" name="get_atan">
+<area shape="rect" id="node3" href="$namespacecimg__library.html#a2ff3d5bed4426af215f53f21b5ae68cf" title="cimg_library::atan" alt="" coords="125,83,251,112"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a1de850b33bf304ba192bd84b7197426d" title="Compute the arc&#45;tangent of each pixel. " alt="" coords="321,5,452,51"/>
+<area shape="rect" id="node7" href="$classRocmop.html#a951f6a38a9e200878fabe2fe295d23ed" title="Rocmop::eigen_analyze\l_vertex" alt="" coords="305,74,468,121"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a0d684ffed0cafbfb2ac08af28a718c34" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="299,182,475,229"/>
+<area shape="rect" id="node9" href="$classRocmop.html#a4c6e496385e479c044a89f1e545edaa5" title="Compute medial quadric for every vertex. " alt="" coords="524,54,697,101"/>
+<area shape="rect" id="node11" href="$classRocmop.html#a679bfb8c7da7e819b00dc132ba57dc8f" title="Smooths a surface using the medial quadric. " alt="" coords="748,54,897,101"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a95045af3dbd37ce54b03914a367d9a55" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="523,123,699,170"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg_1_1__marching2d__func__expr.html#a63538257e8d4ca79962c14f1bddbd418" title="cimg_library::CImg\l::_marching2d_func_expr\l::operator()" alt="" coords="527,193,695,257"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImg_1_1__marching3d__func__expr.html#a4839e5b7a8568395b7c8e6fb4d4cf957" title="cimg_library::CImg\l::_marching3d_func_expr\l::operator()" alt="" coords="527,281,695,345"/>
+</map>

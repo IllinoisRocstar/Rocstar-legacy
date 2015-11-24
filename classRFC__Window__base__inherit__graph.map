@@ -1,0 +1,7 @@
+<map id="RFC_Window_base" name="RFC_Window_base">
+<area shape="rect" id="node3" href="$classRFC__Window__derived.html" title="Reusable implementation for derived class of RFC_Window_base. " alt="" coords="196,49,348,95"/>
+<area shape="rect" id="node5" href="$classRFC__Window__derived.html" title="RFC_Window_derived\l\&lt; RFC_Pane_overlay \&gt;" alt="" coords="545,5,705,51"/>
+<area shape="rect" id="node9" href="$classRFC__Window__derived.html" title="RFC_Window_derived\l\&lt; RFC_Pane_transfer \&gt;" alt="" coords="544,85,707,131"/>
+<area shape="rect" id="node7" href="$classRFC__Window__overlay.html" title="A window is a collection of panes. " alt="" coords="759,13,911,43"/>
+<area shape="rect" id="node11" href="$classRFC__Window__transfer.html" title="RFC_Window_transfer" alt="" coords="757,93,912,123"/>
+</map>

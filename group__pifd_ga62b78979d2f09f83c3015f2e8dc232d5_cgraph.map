@@ -1,0 +1,51 @@
+<map id="detect_features" name="detect_features">
+<area shape="rect" id="node3" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="205,17,333,47"/>
+<area shape="rect" id="node7" href="$namespacecimg__library.html#afdae8d98c82d052cc3aedd3a9e0304a8" title="cimg_library::cos" alt="" coords="209,79,329,108"/>
+<area shape="rect" id="node11" href="$read_8cpp.html#a29a6f4df6d80bf4e2df7d62ea9926242" title="for" alt="" coords="251,132,288,161"/>
+<area shape="rect" id="node13" href="$rfc__basic_8h.html#a795ce3604512c9a6faeb5ee7129703a1" title="free_vector" alt="" coords="227,185,312,215"/>
+<area shape="rect" id="node15" href="$classHDS__accessor.html#a7454a9634b77e8853af6aac3167dea77" title="HDS_accessor::get_destination" alt="" coords="167,239,372,268"/>
+<area shape="rect" id="node17" href="$classHDS__accessor.html#a1c29741c2bbf0b7b1898d95fbd9d8ae6" title="HDS_accessor::get_next\l_around_origin" alt="" coords="185,291,353,338"/>
+<area shape="rect" id="node19" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="173,361,365,391"/>
+<area shape="rect" id="node21" href="$classHDS__accessor.html#a591425c5ea18f4820a812d753f3d6006" title="HDS_accessor::get_origin" alt="" coords="183,415,356,444"/>
+<area shape="rect" id="node23" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="184,468,355,497"/>
+<area shape="rect" id="node25" href="$Manifold__2_8h.html#ab7fe7c92789b1a3b0ba18f2ae189af40" title="Get the tangent of the given halfedge. " alt="" coords="224,521,315,551"/>
+<area shape="rect" id="node98" href="$Timing_8h.html#ac22e6dd75e231747e5713d9ecb150d8f" title="get_wtime" alt="" coords="228,575,311,604"/>
+<area shape="rect" id="node100" href="$classRFC__Pane__overlay.html#ac4c82a127856b6bc6092e299738dae65" title="RFC_Pane_overlay::hds" alt="" coords="187,628,352,657"/>
+<area shape="rect" id="node102" href="$classRFC__Pane__base.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Pane_base::id" alt="" coords="200,681,339,711"/>
+<area shape="rect" id="node104" href="$classRFC__Pane__overlay.html#ad78815f25f1ce4a1fa8a3b4ed01d1db1" title="RFC_Pane_overlay::init\l_angle_defect" alt="" coords="189,734,349,781"/>
+<area shape="rect" id="node106" href="$classRFC__Pane__overlay.html#a8ff5e708b4afbc6ed3ea2f29e3fa78a2" title="RFC_Pane_overlay::init\l_edge_angle" alt="" coords="189,803,349,850"/>
+<area shape="rect" id="node108" href="$classRFC__Pane__overlay.html#a26a4a5443fadb2efadbb64c0fd4a6f09" title="RFC_Pane_overlay::init\l_face_angle" alt="" coords="189,873,349,919"/>
+<area shape="rect" id="node110" href="$classHDS__accessor.html#a28e22a8803047ff830d11a300c6e6ec1" title="HDS_accessor::mark" alt="" coords="196,943,343,972"/>
+<area shape="rect" id="node112" href="$classHDS__accessor.html#a58739abca0fbeefccb54776db35f1398" title="HDS_accessor::marked" alt="" coords="188,996,351,1025"/>
+<area shape="rect" id="node114" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="247,1049,292,1079"/>
+<area shape="rect" id="node116" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="248,1103,291,1132"/>
+<area shape="rect" id="node118" href="$classVertex__overlay.html#a75cdd043830d07c6068d1f272f62287b" title="Vertex_overlay::point" alt="" coords="197,1156,341,1185"/>
+<area shape="rect" id="node120" href="$classRFC__Pane__overlay.html#a5a78628d9706c77b51ff2bd8fa5d31ec" title="RFC_Pane_overlay::set\l_strong_edge" alt="" coords="188,1209,351,1255"/>
+<area shape="rect" id="node124" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="248,1279,291,1308"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="437,5,568,51"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#ab42d865499ba41609ea43d53a062cd2f" title="cimg_library::CImg\l::get_cos" alt="" coords="437,74,568,121"/>
+<area shape="rect" id="node27" href="$classHalfedge.html#afe868c12813c184a147c1ddd7812fd03" title="Get the tangent of the given halfedge. " alt="" coords="440,521,565,551"/>
+<area shape="rect" id="node29" href="$classHalfedge.html#a3a641bee4ab38c773562303bc32f0988" title="Obtain the (primary copy of the) destination of the edge. " alt="" coords="633,521,777,551"/>
+<area shape="rect" id="node90" href="$classNode.html#a33ca30e6b1bc538e87254b5f8fd39352" title="Obtain the coordinates of a node. " alt="" coords="661,465,749,495"/>
+<area shape="rect" id="node94" href="$classHalfedge.html#af15a42599ef8e122c9b7d94073f2481f" title="Obtain the (primary copy of the) origin of the edge. " alt="" coords="649,576,761,605"/>
+<area shape="rect" id="node31" href="$classPane__manifold__2.html#a9e4f032cd87aefe723260942a9510b0c" title="Obtains a Node object corresponding to the primary copy of the given node. " alt="" coords="837,567,984,614"/>
+<area shape="rect" id="node78" href="$classSimple__manifold__2.html#af44ed2c338be4e7d6ba15c813ac6ac42" title="Get the ID of the destination of a given edge. " alt="" coords="1248,338,1387,385"/>
+<area shape="rect" id="node33" href="$classPane__manifold__2.html#a47b2d003e1ea97488de3d260080f1fe3" title="Obtain the border node index (equal to ID of incident border edge). " alt="" coords="1044,567,1191,614"/>
+<area shape="rect" id="node35" href="$classSimple__manifold__2.html#afaabce069f16be292e5dd4d8064bcd99" title="Get the ID of an incident real edge within the pane of a given node. " alt="" coords="1240,567,1395,614"/>
+<area shape="rect" id="node39" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="1664,495,1800,524"/>
+<area shape="rect" id="node43" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="1851,319,1952,348"/>
+<area shape="rect" id="node37" href="$classSimple__manifold__2.html#ada174cc24bb104689a8ded70a6674ebb" title="Is the given node a real node? " alt="" coords="1459,597,1597,643"/>
+<area shape="rect" id="node45" href="$classSimple__manifold__2.html#a5dfd55a426d43af633d6f1d8788cb322" title="Get the opposite edge of a border edge for the ghost pane. " alt="" coords="1443,408,1613,472"/>
+<area shape="rect" id="node57" href="$classSimple__manifold__2.html#aa81d979ace76b3412a00645efe09cfff" title="Get the opposite edge of an interior edge of the ghost part. " alt="" coords="1443,717,1613,781"/>
+<area shape="rect" id="node64" href="$classSimple__manifold__2.html#a3fff497bdfcdda219b941fffcedf3d41" title="Simple_manifold_2::\lget_next_ghost_edge\l_interior" alt="" coords="1455,805,1601,869"/>
+<area shape="rect" id="node70" href="$classSimple__manifold__2.html#ab6d308f97d5fe32df4e31327bdf5fc3e" title="Determine whether a given edge is a border edge of real part of the pane (either on physical border o..." alt="" coords="1459,338,1597,385"/>
+<area shape="rect" id="node74" href="$classSimple__manifold__2.html#a96857d0e0525ef06c2590d22d2acf0c1" title="Get the ID of the origin of a given edge. " alt="" coords="1459,893,1597,939"/>
+<area shape="rect" id="node41" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="1853,524,1949,553"/>
+<area shape="rect" id="node49" href="$classSimple__manifold__2.html#ae1611b1b5b6feb95d11d299ef4150866" title="Is the element incident on the give edge a real element? " alt="" coords="1663,370,1801,417"/>
+<area shape="rect" id="node51" href="$classSimple__manifold__2.html#a678219ca5d2b29febb0820f195f668ba" title="Get an index for internal edges. " alt="" coords="1663,598,1801,645"/>
+<area shape="rect" id="node54" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="1875,607,1928,636"/>
+<area shape="rect" id="node60" href="$classSimple__manifold__2.html#ab06c9b0093094a1e15b3c1d91b6d7012" title="Is the element incident on the give edge a ghost element? " alt="" coords="1663,714,1801,761"/>
+<area shape="rect" id="node82" href="$classSimple__manifold__2.html#aaadb5ad421b2b96276a92c40c3331517" title="Get the opposite edge of a border edge for the real pane. " alt="" coords="1449,251,1607,315"/>
+<area shape="rect" id="node92" href="$classSimple__manifold__2.html#ab944b155156144ffb9cb73cad9eef7cc" title="Obtain a const pointer to the pane. " alt="" coords="827,464,995,493"/>
+<area shape="rect" id="node122" href="$classRFC__Pane__overlay.html#a8ec09b1da2ce631bfbca1670669cc963" title="RFC_Pane_overlay::get\l_index" alt="" coords="421,1209,584,1255"/>
+</map>

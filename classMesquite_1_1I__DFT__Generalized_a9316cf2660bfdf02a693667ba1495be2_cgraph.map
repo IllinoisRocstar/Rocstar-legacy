@@ -1,0 +1,7 @@
+<map id="I_DFT_Generalized" name="I_DFT_Generalized">
+<area shape="rect" id="node3" href="$classMesquite_1_1I__DFT.html#ae6dc85ba5a6d49dfb56d4ac376ee1094" title="access function to set mAlpha " alt="" coords="203,5,336,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1I__DFT.html#aec43345769e1559ffe45da1b46631bac" title="access function to set mBeta " alt="" coords="203,74,336,121"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1I__DFT.html#afe40690756117e8d356c07c985348426" title="access function to set mGamma " alt="" coords="203,143,336,190"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1I__DFT.html#a14d18ccae158328ee338e67689f3bf06" title="access function to set useBarrierDelta " alt="" coords="193,213,345,259"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1QualityMetric.html#ab6c509dee736029280d9360d19a7919d" title="Sets the name of this metric. " alt="" coords="189,282,349,329"/>
+</map>

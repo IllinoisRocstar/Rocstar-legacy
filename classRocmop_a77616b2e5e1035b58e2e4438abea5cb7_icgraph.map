@@ -1,0 +1,5 @@
+<map id="compute_eigenvectors" name="compute_eigenvectors">
+<area shape="rect" id="node3" href="$classRocmop.html#a951f6a38a9e200878fabe2fe295d23ed" title="eigen_analyze_vertex" alt="" coords="209,5,356,35"/>
+<area shape="rect" id="node5" href="$classRocmop.html#a4c6e496385e479c044a89f1e545edaa5" title="Compute medial quadric for every vertex. " alt="" coords="407,5,572,35"/>
+<area shape="rect" id="node7" href="$classRocmop.html#a679bfb8c7da7e819b00dc132ba57dc8f" title="Smooths a surface using the medial quadric. " alt="" coords="621,5,760,35"/>
+</map>
