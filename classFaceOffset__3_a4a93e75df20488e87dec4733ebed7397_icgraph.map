@@ -1,5 +1,0 @@
-<map id="remove_obscure_curves" name="remove_obscure_curves">
-<area shape="rect" id="node3" href="$classFaceOffset__3.html#a584b6a34dce4cb0706ca29baa8a3b91c" title="Filter out weak&#45;ended curves. " alt="" coords="219,13,371,43"/>
-<area shape="rect" id="node5" href="$classFaceOffset__3.html#a3fb81b9009e23436007ccd5c6f0931e9" title="Filter out isolated ridge vertices and identify ridge edges. " alt="" coords="420,5,543,51"/>
-<area shape="rect" id="node7" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="593,13,695,43"/>
-</map>

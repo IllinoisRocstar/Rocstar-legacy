@@ -1,7 +1,0 @@
-<map id="hdf2plt.C" name="hdf2plt.C">
-<area shape="rect" id="node19" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="709,83,784,112"/>
-<area shape="rect" id="node21" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="701,160,792,189"/>
-<area shape="rect" id="node23" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="569,237,684,267"/>
-<area shape="rect" id="node27" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="708,237,785,267"/>
-<area shape="rect" id="node25" href="$FC_8h.html" title="FC.h" alt="" coords="601,315,652,344"/>
-</map>

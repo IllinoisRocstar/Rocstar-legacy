@@ -1,5 +1,0 @@
-<map id="COM_F_FUNC2" name="COM_F_FUNC2">
-<area shape="rect" id="node3" href="$commpi_8h.html#a02c2beefb210fecb8b4c0adfc9d0537f" title="COMMPI_Comm_f2c" alt="" coords="189,5,336,35"/>
-<area shape="rect" id="node5" href="$classRoccom__base.html#a6f2cbe783c1786b2f70736669a1ce7bc" title="Set the default communicator of Roccom. " alt="" coords="173,58,352,105"/>
-<area shape="rect" id="node7" href="$classRoccom__base.html#ad97f955b245093dd88a7f626212afbbd" title="Get a pointer to the Roccom object. " alt="" coords="401,67,583,96"/>
-</map>

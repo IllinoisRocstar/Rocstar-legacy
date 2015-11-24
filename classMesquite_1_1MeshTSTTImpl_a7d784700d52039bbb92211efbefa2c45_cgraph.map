@@ -1,7 +1,0 @@
-<map id="vertex_get_attached_element_count" name="vertex_get_attached_element_count">
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshTSTTImpl.html#a38538c33b7954738d409124a8cb15978" title="Get elements adjacent to vertex and store in vertexAdjElements. " alt="" coords="195,75,368,104"/>
-<area shape="rect" id="node5" href="$namespaceMesquite.html#afe40d6f45beeeaf8137069f275560b59" title="Mesquite::convert_from\l_sidl_vector" alt="" coords="423,5,580,51"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1MeshTSTTImpl.html#ad4e8958b19f15c21d98e89d4bc1527c0" title="Populate inputElements from elemetnSet. " alt="" coords="416,75,587,104"/>
-<area shape="rect" id="node11" href="$namespaceMesquite.html#ae7ef86a5edb5fe3e014097d7de54ef75" title="Mesquite::process_tstt\l_error" alt="" coords="424,127,579,174"/>
-<area shape="rect" id="node9" href="$namespaceMesquite.html#a99797e9c01665ed468aae78612346f18" title="Mesquite::convert_to\l_sidl_vector" alt="" coords="635,66,779,113"/>
-</map>

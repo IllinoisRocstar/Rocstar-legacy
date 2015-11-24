@@ -1,8 +1,0 @@
-<map id="empty" name="empty">
-<area shape="rect" id="node3" href="$classGeoPrim_1_1CBox.html#a759b5184ce4ea5751b373803aba2a2b8" title="collide" alt="" coords="112,8,171,37"/>
-<area shape="rect" id="node9" href="$flotsam_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="651,85,701,115"/>
-<area shape="rect" id="node11" href="$namespaceMesh.html#a41148701c9698341daa6558c78ff1300" title="Mesh::CollideMeshWithBox" alt="" coords="419,59,603,88"/>
-<area shape="rect" id="node15" href="$namespaceMesh.html#aadc9f701b155b82713c597f80cad29b4" title="Bounding boxes for a mesh. " alt="" coords="219,163,371,192"/>
-<area shape="rect" id="node5" href="$classGeoPrim_1_1CBox.html#ab090d86f5e8f4a9a483c35075d9ff699" title="intersect" alt="" coords="259,8,331,37"/>
-<area shape="rect" id="node7" href="$namespaceMesh.html#a885e4240b3636263c8cabf20eaa3a497" title="Mesh::CollideCellsWithBox" alt="" coords="420,5,601,35"/>
-</map>

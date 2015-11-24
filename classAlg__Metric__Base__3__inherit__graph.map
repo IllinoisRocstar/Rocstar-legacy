@@ -1,8 +1,0 @@
-<map id="Alg_Metric_Base_3" name="Alg_Metric_Base_3">
-<area shape="rect" id="node5" href="$classShape__Metric__3.html" title="3D Shape Metric Class " alt="" coords="5,160,120,189"/>
-<area shape="rect" id="node7" href="$classSize__Metric__3.html" title="3D Size Metric Class " alt="" coords="144,160,248,189"/>
-<area shape="rect" id="node9" href="$classSize__Shape__Metric__3.html" title="3D Size&#45;Shape Metric Class " alt="" coords="272,160,421,189"/>
-<area shape="rect" id="node11" href="$classSize__Skew__Metric__3.html" title="3D Size&#45;Skew Metric Class " alt="" coords="445,160,589,189"/>
-<area shape="rect" id="node13" href="$classSkew__Metric__3.html" title="3D Skew Metric Class " alt="" coords="613,160,725,189"/>
-<area shape="rect" id="node2" href="$classMetric.html" title="Metric Base Class. " alt="" coords="317,5,376,35"/>
-</map>

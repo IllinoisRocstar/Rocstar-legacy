@@ -1,7 +1,0 @@
-<map id="rocfracinterfacebuff" name="rocfracinterfacebuff">
-<area shape="rect" id="node3" href="$classrocfracmain.html#a528eefffb0ac5281d70ae23fb12b9350" title="rocfracinitialize" alt="" coords="189,5,299,35"/>
-<area shape="rect" id="node11" href="$classrocfracmain.html#af8df50c77956c23e6df0da51df12145d" title="rocfracsoln" alt="" coords="201,59,287,88"/>
-<area shape="rect" id="node5" href="$RocFracLoadModule_8f90.html#a16e800ab5efa22b8818dd983fcf0a5b4" title="rocfrac_load_module" alt="" coords="348,32,489,61"/>
-<area shape="rect" id="node7" href="$classSolidAgent.html#a9497d3068e48dadd5f9423273833b167" title="SolidAgent::load_module" alt="" coords="540,32,705,61"/>
-<area shape="rect" id="node9" href="$classSolidAgent.html#a12aa521bb6210f24828b2b5b49064fd3" title="SolidAgent::SolidAgent" alt="" coords="756,32,911,61"/>
-</map>

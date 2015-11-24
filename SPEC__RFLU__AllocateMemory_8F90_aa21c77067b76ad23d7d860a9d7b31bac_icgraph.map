@@ -1,9 +1,0 @@
-<map id="spec_rflu_allocatememory" name="spec_rflu_allocatememory">
-<area shape="rect" id="node3" href="$rocflu_2RFLU__AllocateMemoryWrapper_8F90.html#a0c6e62b21720ddee02cfc2825c96bba5" title="rflu_allocatememorywrapper" alt="" coords="231,59,415,88"/>
-<area shape="rect" id="node5" href="$RFLU__InitFlowSolver_8F90.html#af9c0da2d26f7bdb2bdee8507627f636c" title="rflu_initflowsolver" alt="" coords="464,32,587,61"/>
-<area shape="rect" id="node15" href="$main_8F90.html#a495d26dab4cd2a7dd36ce536316f8739" title="rflucells" alt="" coords="492,85,559,115"/>
-<area shape="rect" id="node7" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="673,5,732,35"/>
-<area shape="rect" id="node9" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="636,59,769,88"/>
-<area shape="rect" id="node11" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="819,59,984,88"/>
-<area shape="rect" id="node13" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="1032,59,1187,88"/>
-</map>

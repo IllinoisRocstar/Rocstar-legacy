@@ -1,7 +1,0 @@
-<map id="reached_nodal_bound" name="reached_nodal_bound">
-<area shape="rect" id="node3" href="$classPropagation__3.html#a8c8501a74fb8adee97186a50ed214ec1" title="check_axial_bound" alt="" coords="216,5,349,35"/>
-<area shape="rect" id="node5" href="$classPropagation__3.html#a379a16835b439ff35e6b1c6f22965bbe" title="check_radial_bound" alt="" coords="215,59,351,88"/>
-<area shape="rect" id="node9" href="$classPropagation__3.html#ad30222460b27d9a96161d70c751d47b1" title="check_spherical_bound" alt="" coords="204,112,361,141"/>
-<area shape="rect" id="node12" href="$classPropagation__3.html#a68622870a7c988449483ea1d6c5d197a" title="in_bounding_box" alt="" coords="224,165,341,195"/>
-<area shape="rect" id="node7" href="$classPropagation__3.html#ab14acda17eb07a638824bb5e3873c586" title="square" alt="" coords="411,85,472,115"/>
-</map>

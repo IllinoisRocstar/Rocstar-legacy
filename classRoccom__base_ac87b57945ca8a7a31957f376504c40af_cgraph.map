@@ -1,5 +1,0 @@
-<map id="get_f90pointer" name="get_f90pointer">
-<area shape="rect" id="node3" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="157,5,293,35"/>
-<area shape="rect" id="node5" href="$classAttribute.html#af855cd7842b895de519db24e29663baa" title="Obtain the location of the attribute. " alt="" coords="164,59,287,88"/>
-<area shape="rect" id="node7" href="$classAttribute.html#a2e7d4fe5a490266aed5667444935490f" title="Obtain a constant pointer to the physical address. " alt="" coords="167,112,284,141"/>
-</map>

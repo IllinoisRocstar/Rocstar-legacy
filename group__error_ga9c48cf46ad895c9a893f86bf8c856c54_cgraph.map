@@ -1,5 +1,0 @@
-<map id="operator&lt;&lt;" name="operator&lt;&lt;">
-<area shape="rect" id="node3" href="$classMesquite_1_1MsqError.html#ad42c93e88c8862d8cdd0d90f2fe7b380" title="Get error code. " alt="" coords="139,5,275,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MsqError.html#ad65b7ae8f527a85d0c9ac434e1601301" title="Get error message. " alt="" coords="139,74,275,121"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1MsqError.html#a38966f947e954dc7655654e0c1212c23" title="Get stack trace. " alt="" coords="139,143,275,190"/>
-</map>

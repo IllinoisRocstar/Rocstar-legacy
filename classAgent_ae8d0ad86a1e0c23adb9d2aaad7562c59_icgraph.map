@@ -1,5 +1,0 @@
-<map id="add_gmaction" name="add_gmaction">
-<area shape="rect" id="node3" href="$builtin__couplings_8C.html#aae652ed0b25fcf6c8486f30999da49cf" title="declare_fluid_actions" alt="" coords="172,5,316,35"/>
-<area shape="rect" id="node7" href="$classFluidBurnAlone.html#aadd89b08ad96867a0512484d249ff3ee" title="FluidBurnAlone::FluidBurn\lAlone" alt="" coords="157,58,331,105"/>
-<area shape="rect" id="node5" href="$classFluidAlone.html#aa21baddf7dc0522aa90681d92106835e" title="FluidAlone::FluidAlone" alt="" coords="379,5,531,35"/>
-</map>

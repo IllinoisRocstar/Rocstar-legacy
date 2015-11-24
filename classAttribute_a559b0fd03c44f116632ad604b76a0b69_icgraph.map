@@ -1,7 +1,0 @@
-<map id="deallocate" name="deallocate">
-<area shape="rect" id="node3" href="$classPane.html#a2c43e509cf649f6b8a2c9b99686c93a1" title="Pane::reinit_attr" alt="" coords="136,32,251,61"/>
-<area shape="rect" id="node11" href="$classAttribute.html#a12d651ea9e4ebb43e75245903d0fbffb" title="Destructors. " alt="" coords="155,85,232,115"/>
-<area shape="rect" id="node5" href="$classWindow.html#a2b587f782f50513ef3ef2b7f6d7c80f8" title="Implementation for setting (op==OP_SET or OP_SET_CONST), allocating (op==OP_ALLOC), resizing (op==OP_RESIZE) and deallocating (op==OP_DEALLOC) an array for a specific attribute. " alt="" coords="299,32,429,61"/>
-<area shape="rect" id="node7" href="$classWindow.html#a0f538db500b8f4fdc9b59ed48c9be803" title="Window::resize_array" alt="" coords="481,5,628,35"/>
-<area shape="rect" id="node9" href="$classWindow.html#ac99a217d3c3496398a00a4a8ee460ed8" title="Window::dealloc_array" alt="" coords="477,59,632,88"/>
-</map>

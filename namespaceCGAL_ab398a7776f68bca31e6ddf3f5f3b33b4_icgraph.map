@@ -1,8 +1,0 @@
-<map id="seg_seg_do_intersect_contained" name="seg_seg_do_intersect_contained">
-<area shape="rect" id="node3" href="$namespaceCGAL.html#a95fc5b4707754cc44983d73bf683b920" title="do_intersect" alt="" coords="203,13,296,43"/>
-<area shape="rect" id="node5" href="$classTriangulation.html#aba3f32dc957f5df74d9d2b4187083bb3" title="Triangulation::is_diagonalie" alt="" coords="344,13,523,43"/>
-<area shape="rect" id="node7" href="$classTriangulation.html#ac3001f56f94ec919c721c8d897931e1d" title="Triangulation::is_diagonal" alt="" coords="572,13,740,43"/>
-<area shape="rect" id="node9" href="$classTriangulation.html#a614267789be8944cd704d0ee66e235c2" title="Main entry for triangulation. " alt="" coords="791,13,953,43"/>
-<area shape="rect" id="node11" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="1003,13,1181,43"/>
-<area shape="rect" id="node13" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="1229,13,1347,43"/>
-</map>

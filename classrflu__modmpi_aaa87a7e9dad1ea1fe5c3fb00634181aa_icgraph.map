@@ -1,8 +1,0 @@
-<map id="rflu_mpi_createbuffers" name="rflu_mpi_createbuffers">
-<area shape="rect" id="node3" href="$classrflu__modmpi.html#a047642a4ee618f50e1489239c3a58ad8" title="rflu_mpi_createbufferswrapper" alt="" coords="205,32,403,61"/>
-<area shape="rect" id="node5" href="$RFLU__InitFlowSolver_8F90.html#af9c0da2d26f7bdb2bdee8507627f636c" title="rflu_initflowsolver" alt="" coords="451,32,573,61"/>
-<area shape="rect" id="node7" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="660,5,719,35"/>
-<area shape="rect" id="node9" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="623,59,756,88"/>
-<area shape="rect" id="node11" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="805,59,971,88"/>
-<area shape="rect" id="node13" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="1019,59,1173,88"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="is_primary" name="is_primary">
-<area shape="rect" id="node3" href="$classRFC__Pane__overlay.html#a41a73a231b94a897d7dd709c90d70c95" title="get_inode" alt="" coords="185,13,263,43"/>
-<area shape="rect" id="node7" href="$classHDS__accessor.html#a597ca1863e39c9f53cb506222aff7031" title="HDS_accessor\&lt; Tag_true\l \&gt;::is_primary" alt="" coords="137,66,311,113"/>
-<area shape="rect" id="node9" href="$classRFC__Pane__overlay.html#addb43c35694cf2e5b68ff37753d7aca0" title="set_inode" alt="" coords="185,136,263,165"/>
-<area shape="rect" id="node5" href="$classHDS__accessor.html#a798b177ceda47c50a64035e61fde579a" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_inode" alt="" coords="361,5,535,51"/>
-<area shape="rect" id="node11" href="$classHDS__accessor.html#ad1c9563180e4931c6f0231751defaa66" title="HDS_accessor\&lt; Tag_true\l \&gt;::set_inode" alt="" coords="361,127,535,174"/>
-</map>

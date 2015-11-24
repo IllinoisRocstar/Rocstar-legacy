@@ -1,7 +1,0 @@
-<map id="input" name="input">
-<area shape="rect" id="node3" href="$classCoupling.html#a152013c4f4d029f84f09d02f5062298a" title="initialize" alt="" coords="104,83,173,112"/>
-<area shape="rect" id="node5" href="$classCoupling.html#a3743217a687c638a600341721e219b55" title="restart_at_time" alt="" coords="221,56,331,85"/>
-<area shape="rect" id="node9" href="$rocstar_8C.html#af2f826eaa12e02793cedd7fb3742ce79" title="rocstar_driver" alt="" coords="547,57,648,87"/>
-<area shape="rect" id="node7" href="$classCoupling.html#a952d598b43dfc5742886e9e747aa7ca1" title="ProcessInterrupt" alt="" coords="380,5,497,35"/>
-<area shape="rect" id="node11" href="$rocstar_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="696,57,747,87"/>
-</map>

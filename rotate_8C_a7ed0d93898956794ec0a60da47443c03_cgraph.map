@@ -1,8 +1,0 @@
-<map id="init_constraints_acmflu" name="init_constraints_acmflu">
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="233,5,367,35"/>
-<area shape="rect" id="node7" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="243,59,357,88"/>
-<area shape="rect" id="node9" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="212,112,388,141"/>
-<area shape="rect" id="node11" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="212,165,388,195"/>
-<area shape="rect" id="node13" href="$roccom__c_8h.html#aa2b647076100c442c949a67e8484270b" title="Get the sizes of an attribute. " alt="" coords="245,219,355,248"/>
-<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="437,5,565,35"/>
-</map>

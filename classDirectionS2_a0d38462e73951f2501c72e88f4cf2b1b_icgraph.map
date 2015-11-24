@@ -1,6 +1,0 @@
-<map id="vector" name="vector">
-<area shape="rect" id="node3" href="$classRayS2.html#af8b96762358fe450c7900539c4c0ea0f" title="RayS2::RayS2" alt="" coords="145,5,255,35"/>
-<area shape="rect" id="node5" href="$classRotation__repS2.html#aa9fce40875bd3d90b4d6067471749db6" title="Rotation_repS2::Rotation\l_repS2" alt="" coords="116,58,284,105"/>
-<area shape="rect" id="node7" href="$classAff__transformation__repS2.html#a660be8d853e626d15b1fa298916f25bc" title="Aff_transformation\l_repS2::transform" alt="" coords="136,127,264,174"/>
-<area shape="rect" id="node9" href="$classRotation__repS2.html#a47a0dec28435b2fed40d05c9566f5f72" title="Rotation_repS2::transform" alt="" coords="113,197,287,227"/>
-</map>

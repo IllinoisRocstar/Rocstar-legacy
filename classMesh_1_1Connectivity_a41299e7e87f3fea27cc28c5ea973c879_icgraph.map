@@ -1,8 +1,0 @@
-<map id="Inverse" name="Inverse">
-<area shape="rect" id="node3" href="$meshtest1_8C.html#a885b3275be8f0e211f3c48a35741a7ce" title="BuildBorderStiffness" alt="" coords="140,5,281,35"/>
-<area shape="rect" id="node5" href="$meshtest1_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="408,57,459,87"/>
-<area shape="rect" id="node7" href="$classMesh_1_1MeshUtilityObject.html#a690d9694fadce78f040760ee34d5a0fa" title="Mesh::MeshUtilityObject\l::FormConnectivity" alt="" coords="128,162,293,209"/>
-<area shape="rect" id="node13" href="$meshtest1_8C.html#a5e3d33cfe5082d4fb118b130e04309ea" title="GlobalDofReMapExchange" alt="" coords="121,109,300,139"/>
-<area shape="rect" id="node9" href="$classMesh_1_1MeshUtilityObject.html#a7da73d5c19d1f188ce5f3badea22175d" title="Mesh::MeshUtilityObject\l::GetCon" alt="" coords="351,162,516,209"/>
-<area shape="rect" id="node11" href="$classMesh_1_1Partition.html#a5ca3937857156bda510899f9b3a011ec" title="Mesh::Partition::GetBorder\lElements" alt="" coords="567,162,743,209"/>
-</map>

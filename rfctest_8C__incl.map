@@ -1,7 +1,0 @@
-<map id="rfctest.C" name="rfctest.C">
-<area shape="rect" id="node9" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="269,92,344,121"/>
-<area shape="rect" id="node11" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="261,179,352,208"/>
-<area shape="rect" id="node13" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="129,256,244,285"/>
-<area shape="rect" id="node17" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="268,256,345,285"/>
-<area shape="rect" id="node15" href="$FC_8h.html" title="FC.h" alt="" coords="161,333,212,363"/>
-</map>

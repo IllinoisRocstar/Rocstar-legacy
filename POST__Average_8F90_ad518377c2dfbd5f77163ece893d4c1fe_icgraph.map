@@ -1,8 +1,0 @@
-<map id="aver1d" name="aver1d">
-<area shape="rect" id="node3" href="$rocpart_2post_2Average_8F90.html#ad518377c2dfbd5f77163ece893d4c1fe" title="aver1d" alt="" coords="147,5,208,35"/>
-<area shape="rect" id="node5" href="$POST__WriteGeneric_8F90.html#a213ce75ac8d54e65b7f7714768137c1d" title="writegeneric" alt="" coords="132,59,223,88"/>
-<area shape="rect" id="node9" href="$POST__WriteTecplotAscii_8F90.html#a39b6d042fe84f1582c1c621792f4ca9b" title="writetecplotascii" alt="" coords="120,165,235,195"/>
-<area shape="rect" id="node14" href="$POST__WriteTecplotBinary_8F90.html#abd411ccb9f9f2015f13911350da535d2" title="writetecplotbinary" alt="" coords="116,112,239,141"/>
-<area shape="rect" id="node7" href="$POST__Main_8F90.html#ac0ed2118bf0733a30e670a8a9df0ccbe" title="rocflo_post" alt="" coords="304,112,389,141"/>
-<area shape="rect" id="node11" href="$utilities_2rocsmoke_2post_2Main_8F90.html#a73695b7f352f3a0c358f5078564852f1" title="peul_rocflo_post" alt="" coords="288,165,405,195"/>
-</map>

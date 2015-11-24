@@ -1,7 +1,0 @@
-<map id="untangle_function_2d" name="untangle_function_2d">
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a80ace172b3bfe563e3dd0afd8adb3f57" title="Mesquite::PatchData\l::get_domain_normal\l_at_element" alt="" coords="201,56,345,120"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1Vector3D.html#ad207cb443e371f73f07e874c504f60c1" title="Mesquite::Vector3D\l::length" alt="" coords="204,143,343,190"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="399,5,551,51"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1MeshDomain.html#af51d0710f9894de362dd3d9aa1399d5c" title="Returns the normal of the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="395,74,555,121"/>
-<area shape="rect" id="node11" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="453,152,496,181"/>
-</map>

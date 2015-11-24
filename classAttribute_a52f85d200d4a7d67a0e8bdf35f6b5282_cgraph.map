@@ -1,8 +1,0 @@
-<map id="maxsize_of_ghost_items" name="maxsize_of_ghost_items">
-<area shape="rect" id="node3" href="$classPane.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain the attribute from given name. " alt="" coords="236,85,343,115"/>
-<area shape="rect" id="node14" href="$classPane.html#a20818cc1edd59ab35c1eded37741f6ee" title="Pane::ignore_ghost" alt="" coords="223,139,356,168"/>
-<area shape="rect" id="node5" href="$classWindow.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain a pointer to the attribute metadata from its name. " alt="" coords="407,60,529,89"/>
-<area shape="rect" id="node11" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="632,112,669,141"/>
-<area shape="rect" id="node7" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="is_digit" alt="" coords="620,5,681,35"/>
-<area shape="rect" id="node9" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="580,59,721,88"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="operator+" name="operator+">
-<area shape="rect" id="node3" href="$classBbox__2.html#a9d3b498f45b7b66d63cc5b76d02f1b7b" title="Bbox_2" alt="" coords="131,5,197,35"/>
-<area shape="rect" id="node5" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="141,59,187,88"/>
-<area shape="rect" id="node7" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="143,112,185,141"/>
-<area shape="rect" id="node9" href="$classBbox__2.html#a9fc84e6da4a37412b5d7af2ce8b22588" title="xmax" alt="" coords="137,165,191,195"/>
-<area shape="rect" id="node11" href="$classBbox__2.html#a2afe2f5c6ed73686631520ab5304503e" title="xmin" alt="" coords="139,219,189,248"/>
-<area shape="rect" id="node13" href="$classBbox__2.html#a47fe6cd25d5ca9d1f11ee5059d825201" title="ymax" alt="" coords="137,272,191,301"/>
-<area shape="rect" id="node15" href="$classBbox__2.html#ae0cae337f47f3e2a5187d3a4594fcd53" title="ymin" alt="" coords="139,325,189,355"/>
-</map>

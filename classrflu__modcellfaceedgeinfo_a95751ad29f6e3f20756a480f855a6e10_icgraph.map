@@ -1,9 +1,0 @@
-<map id="rflu_getedgekind" name="rflu_getedgekind">
-<area shape="rect" id="node3" href="$classrflu__modedgelist.html#a72ee6e87a19a2085d07d5594574e36d8" title="rflu_modedgelist::rflu\l_buildedge2celllist" alt="" coords="172,5,313,51"/>
-<area shape="rect" id="node15" href="$classrflu__modedgelist.html#a0054fbfb8f24e0eff993bf68dbf1b2ec" title="rflu_modedgelist::rflu\l_buildedgelist" alt="" coords="172,74,313,121"/>
-<area shape="rect" id="node5" href="$RFLU__InitFlowSolver_8F90.html#af9c0da2d26f7bdb2bdee8507627f636c" title="rflu_initflowsolver" alt="" coords="363,48,485,77"/>
-<area shape="rect" id="node7" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="572,21,631,51"/>
-<area shape="rect" id="node9" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="535,75,668,104"/>
-<area shape="rect" id="node11" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="717,75,883,104"/>
-<area shape="rect" id="node13" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="931,75,1085,104"/>
-</map>

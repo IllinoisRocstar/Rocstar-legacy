@@ -1,6 +1,0 @@
-<map id="Initialize" name="Initialize">
-<area shape="rect" id="node3" href="$namespaceRocstar.html#ac1e4084438cd90b41f070d1cacf00420" title="Drives the Rocstar::TestObject. " alt="" coords="127,5,271,35"/>
-<area shape="rect" id="node7" href="$namespaceRocstar.html#ac58c7e5e7cd5720ad50c1f715b3e4315" title="Drives the Rocstar::TestObject. " alt="" coords="148,59,249,88"/>
-<area shape="rect" id="node5" href="$ParallelTestRocstar_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="320,5,371,35"/>
-<area shape="rect" id="node9" href="$TestRocstar_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="320,59,371,88"/>
-</map>

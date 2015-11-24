@@ -1,7 +1,0 @@
-<map id="compare_y_at_xC2" name="compare_y_at_xC2">
-<area shape="rect" id="node3" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="441,59,487,88"/>
-<area shape="rect" id="node5" href="$sign__of__determinant_8h.html#a178327b0b7b852c3ecf850dde3f93bc6" title="sign_of_determinant2x2" alt="" coords="189,7,349,36"/>
-<area shape="rect" id="node9" href="$sign__of__determinant_8h.html#a063681dd64daa131f0fed8267cfbe968" title="sign_of_determinant3x3" alt="" coords="189,111,349,140"/>
-<area shape="rect" id="node7" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="407,5,521,35"/>
-<area shape="rect" id="node12" href="$determinant_8h.html#a32ff8e72a47ae6e0aba9b51b37080bcb" title="det3x3_by_formula" alt="" coords="399,112,529,141"/>
-</map>

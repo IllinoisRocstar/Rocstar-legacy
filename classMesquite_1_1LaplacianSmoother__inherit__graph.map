@@ -1,5 +1,0 @@
-<map id="LaplacianSmoother" name="LaplacianSmoother">
-<area shape="rect" id="node2" href="$classMesquite_1_1VertexMover.html" title="VertexMover" alt="" coords="24,160,120,189"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1QualityImprover.html" title="Base class for all quality improvers. Mote that the PatchData settings are inherited from the PathDat..." alt="" coords="15,83,129,112"/>
-<area shape="rect" id="node6" href="$classMesquite_1_1PatchDataUser.html" title="This should be the parent class of all algorithms retrieving information from a MeshSet object..." alt="" coords="16,5,128,35"/>
-</map>

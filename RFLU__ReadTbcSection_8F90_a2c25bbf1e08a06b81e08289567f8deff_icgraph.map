@@ -1,8 +1,0 @@
-<map id="rflu_readtbcsection" name="rflu_readtbcsection">
-<area shape="rect" id="node3" href="$RFLU__ReadTbcInputFile_8F90.html#ae3704d7e9d760fb130e0b08ac33fb113" title="rflu_readtbcinputfile" alt="" coords="188,32,321,61"/>
-<area shape="rect" id="node5" href="$RFLU__InitFlowSolver_8F90.html#af9c0da2d26f7bdb2bdee8507627f636c" title="rflu_initflowsolver" alt="" coords="371,32,493,61"/>
-<area shape="rect" id="node7" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="580,5,639,35"/>
-<area shape="rect" id="node9" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="543,59,676,88"/>
-<area shape="rect" id="node11" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="725,59,891,88"/>
-<area shape="rect" id="node13" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="939,59,1093,88"/>
-</map>

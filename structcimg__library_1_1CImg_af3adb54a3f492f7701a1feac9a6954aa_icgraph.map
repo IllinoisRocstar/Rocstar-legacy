@@ -1,6 +1,0 @@
-<map id="sequence" name="sequence">
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a77f803f0793ce035feabdedbb772aa86" title="Draw grid. " alt="" coords="156,5,295,51"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a2b77e436a48fd24c423e924c2dae4072" title="Select sub&#45;graph in a graph. " alt="" coords="135,74,316,121"/>
-<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a2b0951189bd17a05ace85720d379537e" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_sequence" alt="" coords="144,143,307,190"/>
-<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a87cb488d5c29e94e13ff5a6af3112034" title="Return a N&#45;numbered sequence vector from a0 to a1. " alt="" coords="156,213,295,259"/>
-</map>

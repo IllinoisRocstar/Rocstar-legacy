@@ -1,6 +1,0 @@
-<map id="is_acute_ridge" name="is_acute_ridge">
-<area shape="rect" id="node3" href="$classFaceOffset__3.html#ac9e1c527e399bcf96c28a0cc4875b9e8" title="get_tangents" alt="" coords="161,13,257,43"/>
-<area shape="rect" id="node9" href="$classFaceOffset__3.html#a2abdfc6cbf6e4696b695a184b0752629" title="is_strong" alt="" coords="172,67,247,96"/>
-<area shape="rect" id="node5" href="$classFaceOffset__3.html#a932f06459b53d1207fdbf1d78a4a09c6" title="compute_anisotropic\l_vertex_centers" alt="" coords="308,5,449,51"/>
-<area shape="rect" id="node7" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="500,13,601,43"/>
-</map>

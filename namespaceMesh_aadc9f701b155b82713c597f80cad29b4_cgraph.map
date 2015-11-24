@@ -1,7 +1,0 @@
-<map id="GetMeshBoxes" name="GetMeshBoxes">
-<area shape="rect" id="node3" href="$classGeoPrim_1_1CBox.html#ac6e61de369e994009e36f344f99c15ad" title="GeoPrim::CBox::empty" alt="" coords="167,32,324,61"/>
-<area shape="rect" id="node11" href="$classGeoPrim_1_1CBox.html#a8c3f81df6348bbe00b4dc2d0206ba1bf" title="GeoPrim::CBox::init" alt="" coords="176,85,315,115"/>
-<area shape="rect" id="node5" href="$classGeoPrim_1_1CPoint.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CPoint::x" alt="" coords="373,5,509,35"/>
-<area shape="rect" id="node7" href="$classGeoPrim_1_1CPoint.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CPoint::y" alt="" coords="373,59,509,88"/>
-<area shape="rect" id="node9" href="$classGeoPrim_1_1CPoint.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CPoint::z" alt="" coords="373,112,509,141"/>
-</map>

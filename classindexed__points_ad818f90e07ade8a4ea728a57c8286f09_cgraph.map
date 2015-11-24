@@ -1,4 +1,0 @@
-<map id="get_indexed_point" name="get_indexed_point">
-<area shape="rect" id="node3" href="$structVariableDimensionArray.html#a564def818636608f4f5c9508293051ab" title="Get the value specified by the loc coordinates. " alt="" coords="181,5,344,51"/>
-<area shape="rect" id="node5" href="$structVariableDimensionArray.html#aba63dd88aca3abdf24b5e73af3f85f07" title="Translate coordinates to the flat index actually used for storage. " alt="" coords="393,5,567,51"/>
-</map>

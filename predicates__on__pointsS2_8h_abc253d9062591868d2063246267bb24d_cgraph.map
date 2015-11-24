@@ -1,7 +1,0 @@
-<map id="compare_deltax_deltay" name="compare_deltax_deltay">
-<area shape="rect" id="node3" href="$predicates_2kernel__ftC2_8h.html#ab8abefe6be288ab2ec5b31bbd1d09ba1" title="compare_deltax_deltayC2" alt="" coords="211,32,384,61"/>
-<area shape="rect" id="node9" href="$classPointS2.html#a242e8b7096a678fdbb08e337420acb84" title="PointS2::x" alt="" coords="256,85,339,115"/>
-<area shape="rect" id="node11" href="$classPointS2.html#ae367a52fcb29c7638852621653fdb407" title="PointS2::y" alt="" coords="256,139,339,168"/>
-<area shape="rect" id="node5" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="452,5,529,35"/>
-<area shape="rect" id="node7" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="433,59,548,88"/>
-</map>

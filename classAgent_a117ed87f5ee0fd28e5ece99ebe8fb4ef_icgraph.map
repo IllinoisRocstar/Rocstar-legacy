@@ -1,7 +1,0 @@
-<map id="get_old_dt" name="get_old_dt">
-<area shape="rect" id="node3" href="$classInterpolateBase.html#a24de714b53d0c69d3aae18154b208c62" title="InterpolateBase::backup" alt="" coords="136,5,299,35"/>
-<area shape="rect" id="node5" href="$classExtrapolate__Linear.html#aa4065b3192a0d6c14e6456c70376f90a" title="Extrapolate_Linear::run" alt="" coords="140,59,295,88"/>
-<area shape="rect" id="node7" href="$classExtrapolate__Central.html#aa4065b3192a0d6c14e6456c70376f90a" title="Extrapolate_Central::run" alt="" coords="136,112,299,141"/>
-<area shape="rect" id="node9" href="$classInterpolate__Linear.html#aa4065b3192a0d6c14e6456c70376f90a" title="Interpolate_Linear::run" alt="" coords="143,165,292,195"/>
-<area shape="rect" id="node11" href="$classInterpolate__Central.html#aa4065b3192a0d6c14e6456c70376f90a" title="Interpolate_Central::run" alt="" coords="139,219,296,248"/>
-</map>

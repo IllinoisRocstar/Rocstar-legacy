@@ -1,9 +1,0 @@
-<map id="do_match" name="do_match">
-<area shape="rect" id="node3" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="135,5,212,35"/>
-<area shape="rect" id="node5" href="$classBbox__3.html#a9fc84e6da4a37412b5d7af2ce8b22588" title="xmax" alt="" coords="147,59,200,88"/>
-<area shape="rect" id="node7" href="$classBbox__3.html#a2afe2f5c6ed73686631520ab5304503e" title="xmin" alt="" coords="148,112,199,141"/>
-<area shape="rect" id="node9" href="$classBbox__3.html#a47fe6cd25d5ca9d1f11ee5059d825201" title="ymax" alt="" coords="147,165,200,195"/>
-<area shape="rect" id="node11" href="$classBbox__3.html#ae0cae337f47f3e2a5187d3a4594fcd53" title="ymin" alt="" coords="148,219,199,248"/>
-<area shape="rect" id="node13" href="$classBbox__3.html#ab4b1ffe24e0aa15ac62cf745d99919bd" title="zmax" alt="" coords="147,272,200,301"/>
-<area shape="rect" id="node15" href="$classBbox__3.html#ae2a83c8b65e0d8f652ffd6c1c3e0bcd0" title="zmin" alt="" coords="148,325,199,355"/>
-</map>

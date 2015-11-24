@@ -1,7 +1,0 @@
-<map id="Rocout.h" name="Rocout.h">
-<area shape="rect" id="node3" href="$Rocout_8C.html" title="Implementation of Rocout for creation of a data file from a Roccom window. " alt="" coords="5,83,83,112"/>
-<area shape="rect" id="node5" href="$Rocout__cgns_8C.html" title="Implementation of Rocout CGNS routines. " alt="" coords="107,83,219,112"/>
-<area shape="rect" id="node7" href="$Rocout__hdf4_8C.html" title="Implementation of Rocout HDF4 routines. " alt="" coords="243,83,352,112"/>
-<area shape="rect" id="node9" href="$write__parameter__file_8C.html" title="write_parameter_file.C" alt="" coords="376,83,528,112"/>
-<area shape="rect" id="node11" href="$Rocout_2test_2param__test_8C.html" title="param_test.C" alt="" coords="552,83,653,112"/>
-</map>

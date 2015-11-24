@@ -1,5 +1,0 @@
-<map id="edge_average" name="edge_average">
-<area shape="rect" id="node3" href="$classHalfedge.html#a43bcadba216fea994f85e6001bcea9bc" title="Get the edge center of the given halfedge. " alt="" coords="161,5,255,35"/>
-<area shape="rect" id="node5" href="$classHalfedge.html#a8163e3cbeb05f5910a83a87dc062c895" title="Get the average value of the nodes of the incident face of a given halfedge. " alt="" coords="159,59,257,88"/>
-<area shape="rect" id="node7" href="$classHalfedge.html#a1f1feb77a1a85baa1114b4b5ab7af874" title="Get the face center of the incident face of a given halfedge. " alt="" coords="307,59,397,88"/>
-</map>

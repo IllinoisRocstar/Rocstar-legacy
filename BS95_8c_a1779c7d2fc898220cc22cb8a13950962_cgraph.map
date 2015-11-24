@@ -1,7 +1,0 @@
-<map id="serialbs95tridiag_" name="serialbs95tridiag_">
-<area shape="rect" id="node3" href="$BS95_8c.html#af5c166f12e702eef671eeb03d851033d" title="bs95free_" alt="" coords="183,5,260,35"/>
-<area shape="rect" id="node5" href="$BS95_8c.html#ae0e94c0ad0fc24006dfb2b1eb95d6389" title="bs95setup_" alt="" coords="177,59,265,88"/>
-<area shape="rect" id="node11" href="$BS95_8c.html#a03ab9cd7ab907a965b89f16193684303" title="bs95solve_" alt="" coords="177,112,265,141"/>
-<area shape="rect" id="node7" href="$BS95_8c.html#acff33c7b5234ce407fed0af83921d839" title="GetCommunicator" alt="" coords="315,59,443,88"/>
-<area shape="rect" id="node9" href="$roccom__c_09_09_8h.html#a6ebf7d3be61b364094596342a1d64827" title="COM_get_default_communicator" alt="" coords="491,59,704,88"/>
-</map>

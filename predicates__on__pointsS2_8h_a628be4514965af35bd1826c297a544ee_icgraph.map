@@ -1,6 +1,0 @@
-<map id="orientation" name="orientation">
-<area shape="rect" id="node3" href="$predicates__on__pointsS2_8h.html#a7d0e48fafa8818a740a84b870f4f4ccc" title="collinear" alt="" coords="137,36,207,65"/>
-<area shape="rect" id="node9" href="$predicates__on__pointsS2_8h.html#a24e1d76d8181ac4b7ddd13e22015fd8e" title="leftturn" alt="" coords="141,89,203,119"/>
-<area shape="rect" id="node5" href="$predicates__on__pointsS2_8h.html#a43d45a7260b99b3310fd65ffcd55a8c6" title="are_ordered_along_line" alt="" coords="256,5,411,35"/>
-<area shape="rect" id="node7" href="$predicates__on__pointsS2_8h.html#adf9589592785677721413bd50f902104" title="are_strictly_ordered\l_along_line" alt="" coords="265,58,401,105"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="COM_F_FUNC2" name="COM_F_FUNC2">
-<area shape="rect" id="node3" href="$roccom__f_8C.html#af748519b6388fb3c50213ba79d090875" title="COM_F_FUNC2" alt="" coords="180,5,300,35"/>
-<area shape="rect" id="node9" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="176,59,304,88"/>
-<area shape="rect" id="node11" href="$utilities_8f90.html#a9ff53df26894ab621f3b50d795610727" title="com_getptr_chr1d" alt="" coords="177,112,303,141"/>
-<area shape="rect" id="node13" href="$utilities_8f90.html#af48a4fde18d7d296b709b2ed7e875f09" title="com_mapptr_chr1d" alt="" coords="173,165,307,195"/>
-<area shape="rect" id="node5" href="$classRoccom__base.html#a89e9e7b84f463584a7310466b478fe20" title="Roccom_base::init" alt="" coords="355,5,485,35"/>
-<area shape="rect" id="node7" href="$roccom__exception_8C.html#a968f8230d3a737acba9bc9b878b0f57d" title="Print the stack backtrace. " alt="" coords="535,5,673,35"/>
-</map>

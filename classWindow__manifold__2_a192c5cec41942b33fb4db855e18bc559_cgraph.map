@@ -1,7 +1,0 @@
-<map id="accumulate_bd_values" name="accumulate_bd_values">
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#ad0963775a018dcb83d982e5cfeeb3a22" title="COM_get_sizeof" alt="" coords="208,5,328,35"/>
-<area shape="rect" id="node7" href="$read_8cpp.html#a29a6f4df6d80bf4e2df7d62ea9926242" title="for" alt="" coords="249,59,287,88"/>
-<area shape="rect" id="node9" href="$classWindow__manifold__2.html#afc72f337226a2bd9c048dab670fb320a" title="Obtain an iterator to the first pane manifold of the window. " alt="" coords="229,112,307,141"/>
-<area shape="rect" id="node11" href="$classWindow__manifold__2.html#a036407c8e0e5dc7109664644e0138d2e" title="Obtain an iterator to the past&#45;the&#45;last pane manifold of the window. " alt="" coords="235,165,301,195"/>
-<area shape="rect" id="node5" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="376,5,459,35"/>
-</map>

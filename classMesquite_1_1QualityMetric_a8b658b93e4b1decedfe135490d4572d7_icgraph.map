@@ -1,4 +1,0 @@
-<map id="compute_vertex_numerical_gradient" name="compute_vertex_numerical_gradient">
-<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#ad2d178b19ea4e405d4bbe31fefdd7799" title="Calls compute_vertex_numerical_gradient if gradType equals NUMERCIAL_GRADIENT. Calls compute_vertex_a..." alt="" coords="232,13,400,43"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1LPtoPTemplate.html#a96fd4fab3da95f31341ab275bbed6c25" title="Mesquite::LPtoPTemplate\l::compute_analytical_gradient" alt="" coords="448,5,643,51"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="file_type" name="file_type">
-<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="127,5,183,35"/>
-<area shape="rect" id="node9" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="128,59,181,88"/>
-<area shape="rect" id="node11" href="$namespacecimg__library_1_1cimg.html#a4429d578e86edc9147af5a8f307c5f30" title="Read file data, and check for possible errors. " alt="" coords="129,112,180,141"/>
-<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="232,59,283,88"/>
-<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="331,59,448,88"/>
-</map>

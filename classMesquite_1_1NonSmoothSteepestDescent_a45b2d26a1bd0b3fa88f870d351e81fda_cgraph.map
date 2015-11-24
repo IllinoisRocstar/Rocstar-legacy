@@ -1,7 +1,0 @@
-<map id="compute_gradient" name="compute_gradient">
-<area shape="rect" id="node3" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a8b6c6c50103bed1999d40375163916dd" title="compute_function" alt="" coords="179,105,304,135"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1ObjectiveFunction.html#a836e8d40b1fab46ac9a8658667d582a6" title="Mesquite::ObjectiveFunction\l::get_quality_metric" alt="" coords="353,143,540,190"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1ObjectiveFunction.html#aa1c2b955804364e4d65b2e31998b8acf" title="Mesquite::ObjectiveFunction\l::get_quality_metric_list" alt="" coords="353,213,540,259"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1PatchData.html#a1b72722c733b2017737741384f8d4546" title="Mesquite::PatchData\l::element_by_index" alt="" coords="375,5,519,51"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1QualityMetric.html#aa107d74c3c8fd542bc19e5a4a0ecc65e" title="Evaluate the metric for an element. " alt="" coords="367,74,527,121"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="get_time_step_1d" name="get_time_step_1d">
-<area shape="rect" id="node3" href="$classm__init__1dmodules.html#a30e430d7994aaeb872c72d69f69f06c2" title="m_init_1dmodules::rocburn\l_init_funcs_py" alt="" coords="179,5,357,51"/>
-<area shape="rect" id="node11" href="$classm__init__1dmodules.html#a3978a3d79440d016a9a12cf7c5ee81cc" title="m_init_1dmodules::rocburn\l_init_funcs_zn" alt="" coords="179,74,357,121"/>
-<area shape="rect" id="node14" href="$classm__rocburn__2d.html#a3ae27a87ed6f1982b6824fdd6676153b" title="m_rocburn_2d::update" alt="" coords="193,144,343,173"/>
-<area shape="rect" id="node5" href="$Rocburn__load__module_8f90.html#a675ba8dd79f01dd613b983a7b4790f70" title="rocburn_load_module" alt="" coords="407,83,551,112"/>
-<area shape="rect" id="node7" href="$classBurnAgent.html#a9497d3068e48dadd5f9423273833b167" title="BurnAgent::load_module" alt="" coords="601,83,764,112"/>
-<area shape="rect" id="node9" href="$classBurnAgent.html#ab2ccff943e01d5040f66ddb2f3499c66" title="BurnAgent::BurnAgent" alt="" coords="813,83,965,112"/>
-</map>

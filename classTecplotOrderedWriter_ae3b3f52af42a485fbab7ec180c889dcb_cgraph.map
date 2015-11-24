@@ -1,8 +1,0 @@
-<map id="writePoints" name="writePoints">
-<area shape="rect" id="node3" href="$classindexed__points.html#abacb2f30337a8fb22c55745197df162c" title="indexed_points::get_dim" alt="" coords="153,5,316,35"/>
-<area shape="rect" id="node5" href="$classpoints.html#a34128b5f321f17f30ef89e84cdb41690" title="points::get_num_indep_vars" alt="" coords="143,59,327,88"/>
-<area shape="rect" id="node7" href="$classpoints.html#ab0ca031441e80a6880e6a8d54f03d94b" title="points::get_num_points" alt="" coords="156,112,313,141"/>
-<area shape="rect" id="node9" href="$classpoints.html#ac7ebef84858a4aea3034c0dc49863af2" title="points::get_num_vars" alt="" coords="161,165,308,195"/>
-<area shape="rect" id="node11" href="$classpoints.html#a1357470588b94ec29fd3dbb148c4b436" title="points::get_point" alt="" coords="176,219,293,248"/>
-<area shape="rect" id="node13" href="$classbitmap.html#ae230a87f1404e1ae0c90a42e6ea3a51c" title="bitmap::check_value" alt="" coords="377,219,519,248"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="closest_point" name="closest_point">
-<area shape="rect" id="node3" href="$classMesquite_1_1GeomTSTTCommon.html#a591c22aab9698ec7971d3f3629312ef2" title="Given a geometric entity and a position, get point on the geometric entity closest to the input posit..." alt="" coords="153,39,356,86"/>
-<area shape="rect" id="node9" href="$namespaceMesquite.html#ae7ef86a5edb5fe3e014097d7de54ef75" title="Mesquite::process_tstt\l_error" alt="" coords="177,109,332,155"/>
-<area shape="rect" id="node5" href="$namespaceMesquite.html#afe40d6f45beeeaf8137069f275560b59" title="Mesquite::convert_from\l_sidl_vector" alt="" coords="407,5,564,51"/>
-<area shape="rect" id="node7" href="$namespaceMesquite.html#a99797e9c01665ed468aae78612346f18" title="Mesquite::convert_to\l_sidl_vector" alt="" coords="413,74,557,121"/>
-</map>

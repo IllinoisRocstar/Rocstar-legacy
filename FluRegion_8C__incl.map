@@ -1,9 +1,0 @@
-<map id="FluRegion.C" name="FluRegion.C">
-<area shape="rect" id="node23" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="837,83,912,112"/>
-<area shape="rect" id="node37" href="$GEM_8H.html" title="GEM.H" alt="" coords="929,160,996,189"/>
-<area shape="rect" id="node40" href="$FluRegion_8H.html" title="FluRegion.H" alt="" coords="987,83,1080,112"/>
-<area shape="rect" id="node25" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="784,160,875,189"/>
-<area shape="rect" id="node27" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="637,237,752,267"/>
-<area shape="rect" id="node31" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="776,237,853,267"/>
-<area shape="rect" id="node29" href="$FC_8h.html" title="FC.h" alt="" coords="669,315,720,344"/>
-</map>

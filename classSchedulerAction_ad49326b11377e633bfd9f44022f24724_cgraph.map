@@ -1,8 +1,0 @@
-<map id="print" name="print">
-<area shape="rect" id="node3" href="$classAction.html#ad116f378d988ba583f13bfa8519f05f0" title="Action::name" alt="" coords="109,5,208,35"/>
-<area shape="rect" id="node5" href="$classScheduler.html#a1b73d1723583526f3f2988057bfecc0b" title="Scheduler::print" alt="" coords="103,59,215,88"/>
-<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="264,15,392,62"/>
-<area shape="rect" id="node13" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="264,85,392,131"/>
-<area shape="rect" id="node9" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="440,15,568,62"/>
-<area shape="rect" id="node11" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="616,15,744,62"/>
-</map>

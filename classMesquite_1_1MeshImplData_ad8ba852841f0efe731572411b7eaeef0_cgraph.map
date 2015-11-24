@@ -1,5 +1,0 @@
-<map id="add_element" name="add_element">
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshImplData.html#a006397f4d39d35cfda314202427dff37" title="Set cleared element. " alt="" coords="149,36,243,65"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshImplData.html#a104a1c4bbfb05d4cada7edbaff6f8f2b" title="Check if passed vertex index is valid. " alt="" coords="316,5,425,35"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="292,58,449,105"/>
-</map>

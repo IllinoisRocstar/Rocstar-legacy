@@ -1,7 +1,0 @@
-<map id="heat_transfer_sub" name="heat_transfer_sub">
-<area shape="rect" id="node3" href="$feminp_8f90.html#aabc13a47fa60757716526f304ff82ad6" title="feminp" alt="" coords="181,5,243,35"/>
-<area shape="rect" id="node5" href="$classrocfracmain.html#a528eefffb0ac5281d70ae23fb12b9350" title="rocfracmain::rocfracinitialize" alt="" coords="292,5,476,35"/>
-<area shape="rect" id="node7" href="$RocFracLoadModule_8f90.html#a16e800ab5efa22b8818dd983fcf0a5b4" title="rocfrac_load_module" alt="" coords="527,5,668,35"/>
-<area shape="rect" id="node9" href="$classSolidAgent.html#a9497d3068e48dadd5f9423273833b167" title="SolidAgent::load_module" alt="" coords="719,5,884,35"/>
-<area shape="rect" id="node11" href="$classSolidAgent.html#a12aa521bb6210f24828b2b5b49064fd3" title="SolidAgent::SolidAgent" alt="" coords="935,5,1089,35"/>
-</map>

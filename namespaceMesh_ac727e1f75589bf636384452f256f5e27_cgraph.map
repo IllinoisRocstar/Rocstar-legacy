@@ -1,6 +1,0 @@
-<map id="FindElementsInBox" name="FindElementsInBox">
-<area shape="rect" id="node3" href="$classGeoPrim_1_1CBox.html#aa5648cf99802669261d7da5ae5133965" title="GeoPrim::CBox::contains" alt="" coords="189,59,360,88"/>
-<area shape="rect" id="node5" href="$classGeoPrim_1_1CPoint.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CPoint::x" alt="" coords="408,5,544,35"/>
-<area shape="rect" id="node7" href="$classGeoPrim_1_1CPoint.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CPoint::y" alt="" coords="408,59,544,88"/>
-<area shape="rect" id="node9" href="$classGeoPrim_1_1CPoint.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CPoint::z" alt="" coords="408,112,544,141"/>
-</map>

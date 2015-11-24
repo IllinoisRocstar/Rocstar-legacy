@@ -1,8 +1,0 @@
-<map id="ROCPROP_UNLOAD_MODULE_" name="ROCPROP_UNLOAD_MODULE_">
-<area shape="rect" id="node3" href="$classRocprop.html#ab6e6c6506a9299b4bcb446a399ebf06d" title="Rocprop::unload" alt="" coords="277,59,395,88"/>
-<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a51cd80e32371211a6a01185579eff4ee" title="COM_get_object" alt="" coords="467,5,587,35"/>
-<area shape="rect" id="node9" href="$classRocprop.html#a3767bcdb4b06619283e47da0d17b1378" title="Rocprop::validate_object" alt="" coords="444,112,609,141"/>
-<area shape="rect" id="node13" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="453,59,600,88"/>
-<area shape="rect" id="node7" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="676,32,804,61"/>
-<area shape="rect" id="node11" href="$classRocsurf.html#a3767bcdb4b06619283e47da0d17b1378" title="Rocsurf::validate_object" alt="" coords="659,112,821,141"/>
-</map>

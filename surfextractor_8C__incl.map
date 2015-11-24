@@ -1,7 +1,0 @@
-<map id="surfextractor.C" name="surfextractor.C">
-<area shape="rect" id="node17" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="627,83,701,112"/>
-<area shape="rect" id="node19" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="619,160,709,189"/>
-<area shape="rect" id="node21" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="487,237,601,267"/>
-<area shape="rect" id="node25" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="625,237,703,267"/>
-<area shape="rect" id="node23" href="$FC_8h.html" title="FC.h" alt="" coords="519,315,569,344"/>
-</map>

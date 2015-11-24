@@ -1,8 +1,0 @@
-<map id="output_solution" name="output_solution">
-<area shape="rect" id="node3" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="216,5,293,35"/>
-<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="188,59,321,88"/>
-<area shape="rect" id="node7" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="392,85,520,115"/>
-<area shape="rect" id="node9" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="167,163,343,192"/>
-<area shape="rect" id="node11" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="167,216,343,245"/>
-<area shape="rect" id="node14" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="185,269,324,299"/>
-</map>

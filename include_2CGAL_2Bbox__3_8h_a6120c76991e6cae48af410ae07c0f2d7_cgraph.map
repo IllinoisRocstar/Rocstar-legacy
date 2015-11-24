@@ -1,8 +1,0 @@
-<map id="do_overlap" name="do_overlap">
-<area shape="rect" id="node3" href="$classBbox__3.html#a9fc84e6da4a37412b5d7af2ce8b22588" title="Bbox_3::xmax" alt="" coords="139,5,245,35"/>
-<area shape="rect" id="node5" href="$classBbox__3.html#a2afe2f5c6ed73686631520ab5304503e" title="Bbox_3::xmin" alt="" coords="141,59,243,88"/>
-<area shape="rect" id="node7" href="$classBbox__3.html#a47fe6cd25d5ca9d1f11ee5059d825201" title="Bbox_3::ymax" alt="" coords="139,112,245,141"/>
-<area shape="rect" id="node9" href="$classBbox__3.html#ae0cae337f47f3e2a5187d3a4594fcd53" title="Bbox_3::ymin" alt="" coords="141,165,243,195"/>
-<area shape="rect" id="node11" href="$classBbox__3.html#ab4b1ffe24e0aa15ac62cf745d99919bd" title="Bbox_3::zmax" alt="" coords="139,219,245,248"/>
-<area shape="rect" id="node13" href="$classBbox__3.html#ae2a83c8b65e0d8f652ffd6c1c3e0bcd0" title="Bbox_3::zmin" alt="" coords="141,272,243,301"/>
-</map>

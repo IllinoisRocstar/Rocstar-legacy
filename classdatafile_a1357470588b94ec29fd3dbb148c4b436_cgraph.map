@@ -1,8 +1,0 @@
-<map id="get_point" name="get_point">
-<area shape="rect" id="node3" href="$classpartition.html#ab0ca031441e80a6880e6a8d54f03d94b" title="partition::get_num\l_points" alt="" coords="308,5,433,51"/>
-<area shape="rect" id="node7" href="$classdatafile.html#ab0ca031441e80a6880e6a8d54f03d94b" title="Get the number of points in the file. " alt="" coords="136,43,251,72"/>
-<area shape="rect" id="node10" href="$classpartition.html#a1357470588b94ec29fd3dbb148c4b436" title="partition::get_point" alt="" coords="129,96,257,125"/>
-<area shape="rect" id="node5" href="$classpoints.html#ab0ca031441e80a6880e6a8d54f03d94b" title="points::get_num_points" alt="" coords="483,13,640,43"/>
-<area shape="rect" id="node12" href="$classpoints.html#a1357470588b94ec29fd3dbb148c4b436" title="points::get_point" alt="" coords="312,96,429,125"/>
-<area shape="rect" id="node14" href="$classbitmap.html#ae230a87f1404e1ae0c90a42e6ea3a51c" title="bitmap::check_value" alt="" coords="491,96,632,125"/>
-</map>

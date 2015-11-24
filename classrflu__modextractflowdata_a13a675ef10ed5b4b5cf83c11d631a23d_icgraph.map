@@ -1,8 +1,0 @@
-<map id="rflu_extractflowdatasod" name="rflu_extractflowdatasod">
-<area shape="rect" id="node3" href="$classrflu__modextractflowdata.html#a2bf5d824ef67b7bfdb7df56c490cc786" title="rflu_extractflowdata" alt="" coords="211,32,347,61"/>
-<area shape="rect" id="node5" href="$RFLU__MergePostProcessRegions_8F90.html#aad32813854d30e96172f9c6473f36d13" title="rflu_mergepostprocessregions" alt="" coords="407,5,601,35"/>
-<area shape="rect" id="node9" href="$RFLU__PostProcessRegionsCommon1_8F90.html#a2aa51692edb90f12e9d87e18c1e23e9c" title="rflu_postprocessregionscommon1" alt="" coords="396,59,612,88"/>
-<area shape="rect" id="node7" href="$rflupost_8F90.html#a447a7bd838753a9486e979638b6d2efc" title="rflupost" alt="" coords="900,57,964,87"/>
-<area shape="rect" id="node11" href="$RFLU__PostProcessRegions_8F90.html#a7cd294d63c1acf6c6f8516131cacc8d4" title="rflu_postprocessregions" alt="" coords="676,57,836,87"/>
-<area shape="rect" id="node14" href="$RFLU__PostProcessRegions__ENS_8F90.html#a08a8c2289b58c60d093516a4f5605050" title="rflu_postprocessregions_ens" alt="" coords="663,111,849,140"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="attribute" name="attribute">
-<area shape="rect" id="node3" href="$classPane.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain the attribute from given name. " alt="" coords="123,97,192,127"/>
-<area shape="rect" id="node5" href="$classWindow.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain a pointer to the attribute metadata from its name. " alt="" coords="241,69,364,99"/>
-<area shape="rect" id="node11" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="431,128,519,157"/>
-<area shape="rect" id="node7" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="Attribute::is_digit" alt="" coords="415,5,535,35"/>
-<area shape="rect" id="node9" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="415,58,535,105"/>
-</map>

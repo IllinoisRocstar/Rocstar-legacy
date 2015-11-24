@@ -1,6 +1,0 @@
-<map id="new_start" name="new_start">
-<area shape="rect" id="node3" href="$classExtrapolate__Linear.html#aa4065b3192a0d6c14e6456c70376f90a" title="Extrapolate_Linear::run" alt="" coords="137,5,292,35"/>
-<area shape="rect" id="node5" href="$classExtrapolate__Central.html#aa4065b3192a0d6c14e6456c70376f90a" title="Extrapolate_Central::run" alt="" coords="133,59,296,88"/>
-<area shape="rect" id="node7" href="$classInterpolate__Linear.html#aa4065b3192a0d6c14e6456c70376f90a" title="Interpolate_Linear::run" alt="" coords="140,112,289,141"/>
-<area shape="rect" id="node9" href="$classInterpolate__Central.html#aa4065b3192a0d6c14e6456c70376f90a" title="Interpolate_Central::run" alt="" coords="136,165,293,195"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="get_vertex_index" name="get_vertex_index">
-<area shape="rect" id="node3" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="177,36,273,65"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MsqMeshEntity.html#a0b552656e1b264732e90715ccba32b1f" title="Return number of nodes in element (number of corner vertices + number of higher&#45;order nodes)..." alt="" coords="359,5,447,35"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="324,58,481,105"/>
-</map>

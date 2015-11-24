@@ -1,6 +1,0 @@
-<map id="in_cone" name="in_cone">
-<area shape="rect" id="node3" href="$classTriangulation.html#ac3001f56f94ec919c721c8d897931e1d" title="is_diagonal" alt="" coords="121,5,207,35"/>
-<area shape="rect" id="node5" href="$classTriangulation.html#a614267789be8944cd704d0ee66e235c2" title="Main entry for triangulation. " alt="" coords="256,5,339,35"/>
-<area shape="rect" id="node7" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="387,5,565,35"/>
-<area shape="rect" id="node9" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="613,5,731,35"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="draw_image" name="draw_image">
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a6a2cf3ec4e975498dbbbac04e093378f" title="cimg_library::CImg\l\&lt; uintT \&gt;::__draw_object3d" alt="" coords="149,5,331,51"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a2f93b9f80b54af61d563843647804b7b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_text" alt="" coords="167,74,313,121"/>
-<area shape="rect" id="node8" href="$structcimg__library_1_1CImg.html#ae4e42b0c1cb1f4ed377e9048e4ab463c" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_projections2d" alt="" coords="148,143,332,190"/>
-<area shape="rect" id="node10" href="$structcimg__library_1_1CImg.html#ab943c007a92b463ec458b4be80e80460" title="Load an image from a TIFF file. " alt="" coords="175,213,305,259"/>
-</map>

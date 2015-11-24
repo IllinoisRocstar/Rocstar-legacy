@@ -1,6 +1,0 @@
-<map id="display" name="display">
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ab470ff84bcac27328430e271067570bd" title="cimg_library::CImg\l\&lt; uintT \&gt;::_get_select" alt="" coords="119,5,268,51"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImgDisplay.html#ab34d9d88b5fbb32dbcb206818d32d829" title="Display an image list CImgList&lt;T&gt; into a display window. " alt="" coords="163,75,224,104"/>
-<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#aea0592215c6068e617a975a1fe5b7b7b" title="Display an image into a CImgDisplay window. " alt="" coords="128,127,259,174"/>
-<area shape="rect" id="node9" href="$structcimg__library_1_1CImgDisplay.html#a00b22a049bc63bbbb31ce3b7a152cf9b" title="operator=" alt="" coords="155,197,232,227"/>
-</map>

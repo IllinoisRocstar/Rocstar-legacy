@@ -1,6 +1,0 @@
-<map id="cleanup" name="cleanup">
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshSet.html#a5efb4cbca4d4d15b594568975e484948" title="Mesquite::MeshSet::\lclear_all_soft_fixed_flags" alt="" coords="121,39,289,86"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1EntityIterator.html#a456deebf707976f468785e7b02fdd059" title="Returns false until the iterator has been advanced PAST the last entity. " alt="" coords="340,5,497,51"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1MeshSet.html#ae7f6e22ad7a7ae1216ff849eb1f0e6f5" title="Resets the MeshSet object so that get_next_patch() will restart its iterations at the first vertex..." alt="" coords="348,74,489,121"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1EntityIterator.html#aa8850ed68fa313e7a4f87647f106b754" title="Moves the iterator back to the first entity in the list. " alt="" coords="548,74,705,121"/>
-</map>

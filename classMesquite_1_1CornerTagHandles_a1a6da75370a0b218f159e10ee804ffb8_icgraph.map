@@ -1,5 +1,0 @@
-<map id="size" name="size">
-<area shape="rect" id="node3" href="$classMesquite_1_1CornerTag.html#a84d2cacf532597770d28a69bfbab7dfc" title="Initialize. " alt="" coords="101,5,245,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1CornerTagHandles.html#adc00281ce80b1ea948828771b19353ed" title="Get the tag handle for storing this tag type with the specified number of values (corners). " alt="" coords="131,75,216,104"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1CornerTagHandles.html#af7df6241ad11d8cc13040c39ce23d645" title="save_load_tags" alt="" coords="295,75,407,104"/>
-</map>

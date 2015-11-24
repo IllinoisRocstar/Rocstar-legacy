@@ -1,9 +1,0 @@
-<map id="get_cpanes" name="get_cpanes">
-<area shape="rect" id="node3" href="$classAttribute.html#a2e7d4fe5a490266aed5667444935490f" title="Obtain a constant pointer to the physical address. " alt="" coords="147,12,264,41"/>
-<area shape="rect" id="node5" href="$classAttribute.html#a376398cab240594dd4ec0d158b658172" title="Obtain the number of real items in the attribute. " alt="" coords="145,89,265,135"/>
-<area shape="rect" id="node7" href="$classPane.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain the attribute from given name. " alt="" coords="315,97,421,127"/>
-<area shape="rect" id="node9" href="$classWindow.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain a pointer to the attribute metadata from its name. " alt="" coords="471,69,593,99"/>
-<area shape="rect" id="node15" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="660,128,748,157"/>
-<area shape="rect" id="node11" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="Attribute::is_digit" alt="" coords="644,5,764,35"/>
-<area shape="rect" id="node13" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="644,58,764,105"/>
-</map>

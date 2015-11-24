@@ -1,9 +1,0 @@
-<map id="rflu_setinfostencilvert2cell" name="rflu_setinfostencilvert2cell">
-<area shape="rect" id="node3" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="435,5,619,35"/>
-<area shape="rect" id="node5" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="441,128,612,157"/>
-<area shape="rect" id="node13" href="$RFLU__ComputeStencilSize_8F90.html#aeedf3a12464260b72c6a210763b2e7a0" title="rflu_computestencilsize" alt="" coords="228,67,385,96"/>
-<area shape="rect" id="node7" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="668,128,799,157"/>
-<area shape="rect" id="node9" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="849,85,1009,131"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="856,154,1003,201"/>
-<area shape="rect" id="node16" href="$classGeneric__element__2.html#a5d16723c3caf3e13e78d037a9505b79b" title="Degree of the element. 1 for linear and 2 for quadratic. " alt="" coords="456,58,597,105"/>
-</map>

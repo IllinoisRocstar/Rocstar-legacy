@@ -1,9 +1,0 @@
-<map id="Generic_element_2.h" name="Generic_element_2.h">
-<area shape="rect" id="node3" href="$surfbasic_8h.html" title="surfbasic.h" alt="" coords="272,83,357,112"/>
-<area shape="rect" id="node9" href="$Element__accessors_8h.html" title="Element_accessors.h" alt="" coords="309,160,456,189"/>
-<area shape="rect" id="node11" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="251,237,325,267"/>
-<area shape="rect" id="node13" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="243,315,333,344"/>
-<area shape="rect" id="node15" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="111,392,225,421"/>
-<area shape="rect" id="node19" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="249,392,327,421"/>
-<area shape="rect" id="node17" href="$FC_8h.html" title="FC.h" alt="" coords="143,469,193,499"/>
-</map>

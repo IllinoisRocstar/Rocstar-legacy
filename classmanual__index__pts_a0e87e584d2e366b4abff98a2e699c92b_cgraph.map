@@ -1,4 +1,0 @@
-<map id="set_index" name="set_index">
-<area shape="rect" id="node3" href="$structVariableDimensionArray.html#a964f6d7bfad78fa420e2ebd13c6ff739" title="Set the value at the given coordinates. " alt="" coords="133,5,296,51"/>
-<area shape="rect" id="node5" href="$structVariableDimensionArray.html#aba63dd88aca3abdf24b5e73af3f85f07" title="Translate coordinates to the flat index actually used for storage. " alt="" coords="345,5,519,51"/>
-</map>

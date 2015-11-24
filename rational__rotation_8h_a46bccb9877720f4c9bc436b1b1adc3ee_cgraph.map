@@ -1,9 +1,0 @@
-<map id="rational_rotation_approximation" name="rational_rotation_approximation">
-<area shape="rect" id="node3" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="279,5,356,35"/>
-<area shape="rect" id="node5" href="$namespacecimg__library.html#afdae8d98c82d052cc3aedd3a9e0304a8" title="cimg_library::cos" alt="" coords="257,59,377,88"/>
-<area shape="rect" id="node9" href="$namespacecimg__library.html#a35f28010f1c3f5a5668974c5ea8d6be3" title="cimg_library::sin" alt="" coords="259,112,376,141"/>
-<area shape="rect" id="node13" href="$buildface_8cpp.html#a34cd8fd4d99fbdd4ef97fcc94070b460" title="swap" alt="" coords="291,165,344,195"/>
-<area shape="rect" id="node15" href="$double_8h.html#a5c003ce2119a36062728281db95ac088" title="to_double" alt="" coords="279,219,356,248"/>
-<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#ab42d865499ba41609ea43d53a062cd2f" title="cimg_library::CImg\l::get_cos" alt="" coords="428,42,559,89"/>
-<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a7c5c1b92e02d4286b19fd6ea054ba0e8" title="cimg_library::CImg\l::get_sin" alt="" coords="428,111,559,158"/>
-</map>

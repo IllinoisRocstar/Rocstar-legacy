@@ -1,7 +1,0 @@
-<map id="collinear" name="collinear">
-<area shape="rect" id="node3" href="$predicates__on__pointsS3_8h.html#a24b28c50765ad0001a34cf10b027ae63" title="are_ordered_along_line" alt="" coords="320,29,475,59"/>
-<area shape="rect" id="node5" href="$predicates__on__pointsS3_8h.html#a7b57c5ec574eed5e8ffcf45ad0da4f9b" title="are_strictly_ordered\l_along_line" alt="" coords="329,111,465,158"/>
-<area shape="rect" id="node7" href="$predicates__on__pointsS3_8h.html#a897ca8e77add2950561cd72ce13fbbec" title="collinear_are_ordered\l_along_line" alt="" coords="127,35,271,82"/>
-<area shape="rect" id="node10" href="$predicates__on__pointsS3_8h.html#a7cca0e66620ddc64f489e64ad16eabfd" title="collinear_are_strictly\l_ordered_along_line" alt="" coords="128,155,269,202"/>
-<area shape="rect" id="node13" href="$predicates__on__pointsS3_8h.html#a9127ce3bd78a8d437b456e6988778656" title="coplanar_orientation" alt="" coords="129,225,268,255"/>
-</map>

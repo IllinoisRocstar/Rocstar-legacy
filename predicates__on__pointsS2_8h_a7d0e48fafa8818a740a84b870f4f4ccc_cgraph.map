@@ -1,8 +1,0 @@
-<map id="collinear" name="collinear">
-<area shape="rect" id="node3" href="$predicates__on__pointsS2_8h.html#a628be4514965af35bd1826c297a544ee" title="orientation" alt="" coords="125,59,208,88"/>
-<area shape="rect" id="node5" href="$predicates_2kernel__ftC2_8h.html#ad8180ddeada6f820f8d216486de6ff02" title="orientationC2" alt="" coords="256,5,355,35"/>
-<area shape="rect" id="node11" href="$classPointS2.html#a242e8b7096a678fdbb08e337420acb84" title="PointS2::x" alt="" coords="264,59,347,88"/>
-<area shape="rect" id="node13" href="$classPointS2.html#ae367a52fcb29c7638852621653fdb407" title="PointS2::y" alt="" coords="264,112,347,141"/>
-<area shape="rect" id="node7" href="$sign__of__determinant_8h.html#a178327b0b7b852c3ecf850dde3f93bc6" title="sign_of_determinant2x2" alt="" coords="403,5,563,35"/>
-<area shape="rect" id="node9" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="612,5,727,35"/>
-</map>

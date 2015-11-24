@@ -1,6 +1,0 @@
-<map id="smoother_specific_init" name="smoother_specific_init">
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a701c22c997913a2773d36a0b47683716" title="COM_compatible_types" alt="" coords="205,5,368,35"/>
-<area shape="rect" id="node5" href="$classRocsurf.html#a690441882f8d7100b177146402bb63b5" title="Constructs the communication patterns of a distributed mesh. " alt="" coords="225,59,348,88"/>
-<area shape="rect" id="node7" href="$classRocsurf.html#a3767bcdb4b06619283e47da0d17b1378" title="Rocsurf::validate_object" alt="" coords="416,28,579,57"/>
-<area shape="rect" id="node9" href="$classWindow__manifold__2.html#a5f81facb36f7b18c987fd9a735bef1e2" title="Initialize a pane communicator. " alt="" coords="424,81,571,127"/>
-</map>

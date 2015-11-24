@@ -1,9 +1,0 @@
-<map id="read_windows" name="read_windows">
-<area shape="rect" id="node3" href="$classRocin.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="495,32,532,61"/>
-<area shape="rect" id="node13" href="$classRocin.html#a1dd937ec0c005ce85561ccfe548bc6d0" title="Create a single Roccom window by reading in a list of files. " alt="" coords="160,33,259,63"/>
-<area shape="rect" id="node5" href="$readsdv_8C.html#a1e1668934356b578ddd0a0cdaae423f1" title="Load the module Rocin into Roccom using the given module name. " alt="" coords="581,32,717,61"/>
-<area shape="rect" id="node7" href="$Rocin_8C.html#a4251ae394606db828455fee9ca27d3a6" title="COM_F_FUNC2" alt="" coords="765,5,885,35"/>
-<area shape="rect" id="node9" href="$readsdv_8C.html#a64be298d6315aab8ff717f2c8d1b7777" title="read_pane_sp" alt="" coords="775,59,876,88"/>
-<area shape="rect" id="node11" href="$readsdv_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="933,59,984,88"/>
-<area shape="rect" id="node16" href="$classRocin.html#a1b089e18b401f74035c6574e3a95f95e" title="Create a single Roccom window by reading in the files specified by the given control file..." alt="" coords="307,84,445,113"/>
-</map>

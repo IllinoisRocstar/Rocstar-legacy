@@ -1,5 +1,0 @@
-<map id="Post" name="Post">
-<area shape="rect" id="node3" href="$classMutex.html#af4de80be5980dfc1a6702beade906a33" title="Mutex::Lock" alt="" coords="119,5,212,35"/>
-<area shape="rect" id="node5" href="$classCondition.html#a8ca58aa36c90bb82daf5dffc24fede5d" title="Condition::Signal" alt="" coords="105,59,225,88"/>
-<area shape="rect" id="node7" href="$classMutex.html#ab43773e84c83d80998676d9c62717a79" title="Mutex::Unlock" alt="" coords="112,112,219,141"/>
-</map>

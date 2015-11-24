@@ -1,8 +1,0 @@
-<map id="partition" name="partition">
-<area shape="rect" id="node2" href="$classpoints.html" title="points" alt="" coords="83,197,139,227"/>
-<area shape="rect" id="node4" href="$classbitmap.html" title="bitmap" alt="" coords="5,101,67,131"/>
-<area shape="rect" id="node6" href="$structpnt.html" title="Point object that represents a single point. " alt="" coords="91,101,131,131"/>
-<area shape="rect" id="node8" title="STL class. " alt="" coords="199,197,252,227"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="155,101,296,131"/>
-<area shape="rect" id="node14" title="STL class. " alt="" coords="320,101,411,131"/>
-</map>

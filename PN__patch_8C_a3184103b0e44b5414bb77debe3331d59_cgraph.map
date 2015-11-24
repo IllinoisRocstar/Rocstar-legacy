@@ -1,7 +1,0 @@
-<map id="PN_project" name="PN_project">
-<area shape="rect" id="node3" href="$PN__patch_8C.html#aeab866e38efbaed6e9a9787f4a04226b" title="project_edge" alt="" coords="141,87,237,116"/>
-<area shape="rect" id="node5" href="$PN__patch_8C.html#affd09ecd0b72b469c35274631960a127" title="one_sided_normal" alt="" coords="287,60,412,89"/>
-<area shape="rect" id="node9" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="475,112,613,141"/>
-<area shape="rect" id="node7" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="463,5,625,35"/>
-<area shape="rect" id="node11" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="523,59,565,88"/>
-</map>

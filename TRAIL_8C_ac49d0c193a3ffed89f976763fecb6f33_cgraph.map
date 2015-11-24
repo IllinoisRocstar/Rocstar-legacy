@@ -1,9 +1,0 @@
-<map id="TRAIL_ExtractSurf0" name="TRAIL_ExtractSurf0">
-<area shape="rect" id="node3" href="$roccom__c_8h.html#a31a1cc99534b53b7d14992718739ff74" title="Clone the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="204,5,348,35"/>
-<area shape="rect" id="node5" href="$roccom__c_8h.html#a44547c3eab1bf444e5f9bb23c13fc123" title="COM_free_buffer" alt="" coords="215,59,337,88"/>
-<area shape="rect" id="node7" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="219,112,333,141"/>
-<area shape="rect" id="node9" href="$roccom__c_8h.html#ad744816e73fae2aec731bcbe41b52a16" title="COM_get_panes" alt="" coords="216,165,336,195"/>
-<area shape="rect" id="node11" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="209,219,343,248"/>
-<area shape="rect" id="node15" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="195,272,357,301"/>
-<area shape="rect" id="node13" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="405,245,533,275"/>
-</map>

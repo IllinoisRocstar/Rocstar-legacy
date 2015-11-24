@@ -1,9 +1,0 @@
-<map id="print" name="print">
-<area shape="rect" id="node3" href="$classCkSampleT.html#a1de20ce8bef7866e876cf801bfca308f" title="Return the number of values in this sample. " alt="" coords="105,5,180,35"/>
-<area shape="rect" id="node5" href="$classCkSampleT.html#a39de69562334ebcb6443a820defb1a5d" title="Return the largest value encountered. " alt="" coords="111,59,175,88"/>
-<area shape="rect" id="node7" href="$classCkSampleT.html#a15121533e35f10fdcc9bdac4ccaf1076" title="Return the mean value of this sample–the &quot;average&quot; value, in (value) units. " alt="" coords="107,112,179,141"/>
-<area shape="rect" id="node9" href="$classCkSampleT.html#aa77f67c9a9060d90326a95018df345f9" title="Return the smallest value encountered. " alt="" coords="112,165,173,195"/>
-<area shape="rect" id="node11" href="$classCkSampleT.html#a881ec972fa942f8f0f7ad68f202564c5" title="Return the standard deviation of this sample, in (value) units. " alt="" coords="103,219,183,248"/>
-<area shape="rect" id="node13" href="$classCkSampleT.html#a8f733855b58d7e0656d2d647f799c44a" title="Return the variance of this sample, in (value^2) units. " alt="" coords="232,192,323,221"/>
-<area shape="rect" id="node15" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="256,245,299,275"/>
-</map>

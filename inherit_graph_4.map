@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node3" href="$structAbs.html" title="Abs\&lt; NT \&gt;" alt="" coords="183,5,268,35"/>
-<area shape="rect" id="node5" href="$structIs__negative.html" title="Is_negative\&lt; NT \&gt;" alt="" coords="160,59,291,88"/>
-<area shape="rect" id="node7" href="$structIs__one.html" title="Is_one\&lt; NT \&gt;" alt="" coords="175,112,276,141"/>
-<area shape="rect" id="node9" href="$structIs__positive.html" title="Is_positive\&lt; NT \&gt;" alt="" coords="163,165,288,195"/>
-<area shape="rect" id="node11" href="$structIs__zero.html" title="Is_zero\&lt; NT \&gt;" alt="" coords="172,219,279,248"/>
-<area shape="rect" id="node13" href="$structSgn.html" title="Sgn\&lt; NT \&gt;" alt="" coords="183,272,268,301"/>
-<area shape="rect" id="node15" href="$structSquare.html" title="Square\&lt; NT \&gt;" alt="" coords="173,325,277,355"/>
-</map>

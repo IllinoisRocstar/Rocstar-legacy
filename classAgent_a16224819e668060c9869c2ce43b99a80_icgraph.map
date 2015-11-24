@@ -1,6 +1,0 @@
-<map id="get_bcScheduler" name="get_bcScheduler">
-<area shape="rect" id="node3" href="$classAgent.html#adb726f4c39e2e864882230494886f620" title="obtain_bc" alt="" coords="175,32,252,61"/>
-<area shape="rect" id="node5" href="$classAgent.html#ad3c8c70a29f18aa8a37ddf31b6cb2bc0" title="create_window" alt="" coords="303,5,412,35"/>
-<area shape="rect" id="node9" href="$classBCInvoker.html#aa4065b3192a0d6c14e6456c70376f90a" title="BCInvoker::run" alt="" coords="303,59,412,88"/>
-<area shape="rect" id="node7" href="$classAgent.html#ae8cc2ba44a17a30a34df7e7b1710764a" title="Agent" alt="" coords="461,5,517,35"/>
-</map>

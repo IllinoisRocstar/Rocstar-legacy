@@ -1,7 +1,0 @@
-<map id="transpose" name="transpose">
-<area shape="rect" id="node3" href="$classMesquite_1_1RI__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::RI_DFT::compute\l_element_analytical_hessian" alt="" coords="137,5,327,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1IdealWeightInverseMeanRatio.html#abf32bb8c226a49db5aee4184d181f9fa" title="Mesquite::IdealWeightInverse\lMeanRatio::compute_element\l_analytical_hessian" alt="" coords="135,75,329,139"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1IdealWeightMeanRatio.html#abf32bb8c226a49db5aee4184d181f9fa" title="Mesquite::IdealWeightMean\lRatio::compute_element\l_analytical_hessian" alt="" coords="140,163,324,227"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1I__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::I_DFT::compute\l_element_analytical_hessian" alt="" coords="137,250,327,297"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1sRI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="160,319,304,366"/>
-</map>

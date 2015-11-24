@@ -1,7 +1,0 @@
-<map id="write_boundary" name="write_boundary">
-<area shape="rect" id="node3" href="$classFace.html#ada622dbdc3455c54b4d36df9d14f3685" title="Get the pointer to the first element that this face is associated with. " alt="" coords="180,5,311,35"/>
-<area shape="rect" id="node5" href="$classElement.html#a40b80e3b6f05f0e0731083d485e09448" title="Element::getFaces" alt="" coords="180,59,311,88"/>
-<area shape="rect" id="node7" href="$classFace.html#a2a22975799b5d14560890b11a4734a8a" title="Gets the flag for the face. " alt="" coords="195,112,296,141"/>
-<area shape="rect" id="node9" href="$classElement.html#af947cd10ac1bf98deb3ccce888ddd573" title="Element::getID" alt="" coords="191,165,300,195"/>
-<area shape="rect" id="node11" href="$classElement.html#a4d7c643cc4af41905df358150df0bd45" title="Element::getNumFaces" alt="" coords="165,219,325,248"/>
-</map>

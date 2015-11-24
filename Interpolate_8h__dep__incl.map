@@ -1,9 +1,0 @@
-<map id="Interpolate.h" name="Interpolate.h">
-<area shape="rect" id="node3" href="$Agent_8C.html" title="Agent.C" alt="" coords="5,83,75,112"/>
-<area shape="rect" id="node5" href="$builtin__couplings_8C.html" title="builtin_couplings.C" alt="" coords="99,83,229,112"/>
-<area shape="rect" id="node7" href="$BurnAgent_8C.html" title="BurnAgent.C" alt="" coords="253,83,349,112"/>
-<area shape="rect" id="node9" href="$derived__couplings_8C.html" title="derived_couplings.C" alt="" coords="373,83,512,112"/>
-<area shape="rect" id="node11" href="$FluidAgent_8C.html" title="FluidAgent.C" alt="" coords="536,83,635,112"/>
-<area shape="rect" id="node13" href="$Interpolate_8C.html" title="Interpolate.C" alt="" coords="659,83,755,112"/>
-<area shape="rect" id="node15" href="$SolidAgent_8C.html" title="SolidAgent.C" alt="" coords="779,83,877,112"/>
-</map>

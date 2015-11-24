@@ -1,7 +1,0 @@
-<map id="tanh" name="tanh">
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a0d684ffed0cafbfb2ac08af28a718c34" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="101,83,277,130"/>
-<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a52308dc94ca98f9a20d9bce54ea066ac" title="Compute the hyperbolic tangent of each pixel value. " alt="" coords="124,153,255,199"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a95045af3dbd37ce54b03914a367d9a55" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="325,5,501,51"/>
-<area shape="rect" id="node7" href="$structcimg__library_1_1CImg_1_1__marching2d__func__expr.html#a63538257e8d4ca79962c14f1bddbd418" title="cimg_library::CImg\l::_marching2d_func_expr\l::operator()" alt="" coords="329,75,497,139"/>
-<area shape="rect" id="node9" href="$structcimg__library_1_1CImg_1_1__marching3d__func__expr.html#a4839e5b7a8568395b7c8e6fb4d4cf957" title="cimg_library::CImg\l::_marching3d_func_expr\l::operator()" alt="" coords="329,163,497,227"/>
-</map>

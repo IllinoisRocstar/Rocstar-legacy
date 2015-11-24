@@ -1,9 +1,0 @@
-<map id="contains_point" name="contains_point">
-<area shape="rect" id="node3" href="$classGeoPrim_1_1CPlane.html#a59d61124cf2c200bc9417c5e5f3ca029" title="D" alt="" coords="161,157,199,187"/>
-<area shape="rect" id="node5" href="$classGeoPrim_1_1CVector.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CVector::x" alt="" coords="248,5,392,35"/>
-<area shape="rect" id="node7" href="$classGeoPrim_1_1CPoint.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CPoint::x" alt="" coords="252,59,388,88"/>
-<area shape="rect" id="node9" href="$classGeoPrim_1_1CVector.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CVector::y" alt="" coords="248,113,392,143"/>
-<area shape="rect" id="node11" href="$classGeoPrim_1_1CPoint.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CPoint::y" alt="" coords="252,169,388,199"/>
-<area shape="rect" id="node13" href="$classGeoPrim_1_1CVector.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CVector::z" alt="" coords="248,228,392,257"/>
-<area shape="rect" id="node15" href="$classGeoPrim_1_1CPoint.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CPoint::z" alt="" coords="252,291,388,320"/>
-</map>

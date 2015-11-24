@@ -1,6 +1,0 @@
-<map id="findOther" name="findOther">
-<area shape="rect" id="node3" href="$classface.html#abcbff586b528b3ac40128b236ac88b80" title="face::face" alt="" coords="157,5,237,35"/>
-<area shape="rect" id="node5" href="$face_8cpp.html#a5636478708413fa859004ca64889e637" title="matchOrientations" alt="" coords="133,59,261,88"/>
-<area shape="rect" id="node9" href="$classface.html#acf8f2aff1f732aa87356815b45556575" title="face::nodeForCoord" alt="" coords="129,112,265,141"/>
-<area shape="rect" id="node7" href="$classface.html#a3ae3e427e0e26eb33a26a5be54933feb" title="face::buildPatches" alt="" coords="315,59,445,88"/>
-</map>

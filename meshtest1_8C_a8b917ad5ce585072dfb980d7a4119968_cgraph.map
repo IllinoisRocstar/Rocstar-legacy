@@ -1,6 +1,0 @@
-<map id="GetStatistics" name="GetStatistics">
-<area shape="rect" id="node3" href="$classMesh_1_1Connectivity.html#a4d957e11716fadea6c9a1f25c6e96301" title="Mesh::Connectivity\l::Esize" alt="" coords="153,5,287,51"/>
-<area shape="rect" id="node5" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="197,75,243,104"/>
-<area shape="rect" id="node7" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="199,128,241,157"/>
-<area shape="rect" id="node9" href="$classMesh_1_1Connectivity.html#a3da71a0df236dddaeeabc0815b176ef5" title="Mesh::Connectivity\l::Nelem" alt="" coords="153,181,287,227"/>
-</map>

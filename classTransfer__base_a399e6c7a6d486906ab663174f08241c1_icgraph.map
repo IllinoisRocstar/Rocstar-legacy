@@ -1,6 +1,0 @@
-<map id="transfer_2f" name="transfer_2f">
-<area shape="rect" id="node3" href="$classTransfer__n2f.html#af28f961dfd0af8a4a8415e490c3dabd4" title="The main entry to the data transfer algorithm. " alt="" coords="139,32,285,61"/>
-<area shape="rect" id="node7" href="$classTransfer__f2f.html#ab179827bbccbc173bfe6b9a6ce87e880" title="The main entry to the data transfer algorithm. " alt="" coords="140,93,284,123"/>
-<area shape="rect" id="node5" href="$classTransfer__traits_3_01Nodal__data__const_00_01Facial__data_00_01true_01_4.html#af6f4a1679016e42a61a309074e59375c" title="Transfer_traits\&lt; Nodal\l_data_const, Facial_data,\l true \&gt;::transfer" alt="" coords="335,5,505,69"/>
-<area shape="rect" id="node9" href="$classTransfer__traits_3_01Facial__data__const_00_01Facial__data_00_01true_01_4.html#a791a778ef78955907c5cf602168a0e26" title="Transfer_traits\&lt; Facial\l_data_const, Facial_data,\l true \&gt;::transfer" alt="" coords="335,93,505,157"/>
-</map>

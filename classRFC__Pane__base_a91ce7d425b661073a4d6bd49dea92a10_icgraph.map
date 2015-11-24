@@ -1,6 +1,0 @@
-<map id="read_binary" name="read_binary">
-<area shape="rect" id="node3" href="$classRFC__Window__transfer.html#a05e169ae7b2dd51b533d87ce429d604f" title="RFC_Window_transfer\l::init_recv_buffer" alt="" coords="167,5,321,51"/>
-<area shape="rect" id="node9" href="$classRFC__Window__base.html#a662a8e4f59317df7938eabb2f41850b0" title="Read in local panes in native binary format or using Rocin. " alt="" coords="144,75,344,104"/>
-<area shape="rect" id="node5" href="$classRFC__Window__transfer.html#a15aff7a74853c597fcbc121d53d29e0c" title="Replicate the metadata of a remote pane only the local process. " alt="" coords="392,5,547,51"/>
-<area shape="rect" id="node7" href="$classRFC__Window__transfer.html#a1e774716e97169d887a20f47339edfbb" title="Replicate the remote panes that are in contact with the local panes in opp_win. " alt="" coords="595,5,749,51"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="compute_target_matrices_and_check_det" name="compute_target_matrices_and_check_det">
-<area shape="rect" id="node3" href="$classMesquite_1_1TargetCalculator.html#ad5807fa7fe0f1b28eff2133a10fdc345" title="This function provides the corner matrices for all elements on the Patch. " alt="" coords="228,5,396,35"/>
-<area shape="rect" id="node5" href="$namespaceMesquite.html#a1703b490e5c06b6f3b453b87d4e5afd0" title="Mesquite::det" alt="" coords="261,59,363,88"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1PatchData.html#a3e94692727e2bf9bc09fd1625788e21c" title="Returns a pointer to the start of the element array. " alt="" coords="240,111,384,158"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1PatchData.html#a3f7ed6a14a98f283aa700342b9cc2a01" title="number of elements in the Patch. " alt="" coords="240,181,384,227"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="225,250,399,297"/>
-<area shape="rect" id="node13" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="457,215,615,262"/>
-<area shape="rect" id="node15" href="$classMesquite_1_1MsqMeshEntity.html#a0b552656e1b264732e90715ccba32b1f" title="Return number of nodes in element (number of corner vertices + number of higher&#45;order nodes)..." alt="" coords="449,285,623,331"/>
-</map>

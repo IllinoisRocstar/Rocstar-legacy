@@ -1,6 +1,0 @@
-<map id="add_ghost_nodes2D" name="add_ghost_nodes2D">
-<area shape="rect" id="node3" href="$Pconn__util_8C.html#ad8ac41e9613e81f1f1b1699ad2cdbbbc" title="abs_val" alt="" coords="219,5,285,35"/>
-<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#adca6827f3c065859156fa3562c2cd9a8" title="Associates an array with an attribute for a specific pane. " alt="" coords="195,59,309,88"/>
-<area shape="rect" id="node9" href="$Handle_8h.html#a459850cd445841d238d0af12068f45a3" title="id" alt="" coords="233,112,271,141"/>
-<area shape="rect" id="node7" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="357,59,485,88"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="init" name="init">
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="115,5,248,35"/>
-<area shape="rect" id="node7" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="319,115,495,144"/>
-<area shape="rect" id="node9" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="93,109,269,139"/>
-<area shape="rect" id="node11" href="$classAction.html#af0750c1b2d7d6be0edf70b32d082ce44" title="Action::get_attribute\l_handle" alt="" coords="112,162,251,209"/>
-<area shape="rect" id="node14" href="$transfer__actions_8C.html#afb8b7516a9b24cf4d700fea920bb1521" title="load_rocsurf" alt="" coords="135,232,228,261"/>
-<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="343,5,471,35"/>
-<area shape="rect" id="node16" href="$roccom__c_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="320,232,493,261"/>
-</map>

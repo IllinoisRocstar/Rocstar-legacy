@@ -1,5 +1,0 @@
-<map id="CornerJacobianQualityMetric" name="CornerJacobianQualityMetric">
-<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#a3dd851786f1d533b752643c3193b2bba" title="Sets the evaluation mode for the ELEMENT_BASED metrics. " alt="" coords="247,5,452,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1QualityMetric.html#a892f2de77eacaf9d1e51cf2b29ee2d57" title="This function should be used in the constructor of every concrete quality metric. ..." alt="" coords="269,74,429,121"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1QualityMetric.html#ab6c509dee736029280d9360d19a7919d" title="Sets the name of this metric. " alt="" coords="269,143,429,190"/>
-</map>

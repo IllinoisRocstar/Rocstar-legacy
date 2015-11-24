@@ -1,7 +1,0 @@
-<map id="round" name="round">
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a0d684ffed0cafbfb2ac08af28a718c34" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="109,83,285,130"/>
-<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a3619f9d2043ebaa67d21eb373ab4d22e" title="Compute image with rounded pixel values. " alt="" coords="132,153,263,199"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a95045af3dbd37ce54b03914a367d9a55" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="333,5,509,51"/>
-<area shape="rect" id="node7" href="$structcimg__library_1_1CImg_1_1__marching2d__func__expr.html#a63538257e8d4ca79962c14f1bddbd418" title="cimg_library::CImg\l::_marching2d_func_expr\l::operator()" alt="" coords="337,75,505,139"/>
-<area shape="rect" id="node9" href="$structcimg__library_1_1CImg_1_1__marching3d__func__expr.html#a4839e5b7a8568395b7c8e6fb4d4cf957" title="cimg_library::CImg\l::_marching3d_func_expr\l::operator()" alt="" coords="337,163,505,227"/>
-</map>

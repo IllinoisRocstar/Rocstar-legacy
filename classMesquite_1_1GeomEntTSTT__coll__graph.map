@@ -1,5 +1,0 @@
-<map id="GeomEntTSTT" name="GeomEntTSTT">
-<area shape="rect" id="node2" href="$classMesquite_1_1GeomTSTT.html" title="A base class describing a Mesquite::MeshDomain implemented on top of the TSTT geometry and classifica..." alt="" coords="9,83,100,112"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1MeshDomain.html" title="MeshDomain" alt="" coords="5,5,104,35"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1GeomTSTTCommon.html" title="Common code for specific implementations of MeshDomain on TSTT interfaces. " alt="" coords="124,83,265,112"/>
-</map>

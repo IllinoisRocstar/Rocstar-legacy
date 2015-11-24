@@ -1,8 +1,0 @@
-<map id="collinear_has_on" name="collinear_has_on">
-<area shape="rect" id="node3" href="$predicates__on__points__2_8h.html#a3f73dabb2650a2087c8d616a6c81de3a" title="collinear" alt="" coords="183,5,252,35"/>
-<area shape="rect" id="node5" href="$predicates__on__points__2_8h.html#ac94386b20abec447e23fc73213d9610e" title="compare_x" alt="" coords="175,59,260,88"/>
-<area shape="rect" id="node7" href="$predicates__on__points__2_8h.html#a620c3351efa8071511296b06587eec45" title="compare_y" alt="" coords="175,112,260,141"/>
-<area shape="rect" id="node9" href="$predicates__on__pointsS3_8h.html#aa26431d5022e9dfb70be437c333c36a5" title="compare_z" alt="" coords="175,165,260,195"/>
-<area shape="rect" id="node11" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="311,139,425,168"/>
-<area shape="rect" id="node13" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="327,192,409,221"/>
-</map>

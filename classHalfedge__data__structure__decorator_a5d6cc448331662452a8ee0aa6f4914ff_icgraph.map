@@ -1,5 +1,0 @@
-<map id="delete_vertex" name="delete_vertex">
-<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#ac89f65b400729653ed4719b11ad2d278" title="erase_facet" alt="" coords="155,5,245,35"/>
-<area shape="rect" id="node5" href="$classHalfedge__data__structure__decorator.html#abac89554d5a5134b0252d56ef18711a0" title="join_loop" alt="" coords="164,59,236,88"/>
-<area shape="rect" id="node7" href="$classHalfedge__data__structure__decorator.html#a8ef5c078e56ad37f0aa1423ed511fac0" title="join_vertex" alt="" coords="157,112,243,141"/>
-</map>
