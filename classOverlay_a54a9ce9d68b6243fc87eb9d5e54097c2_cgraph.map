@@ -1,0 +1,21 @@
+<map id="number_subnodes" name="number_subnodes">
+<area shape="rect" id="node3" href="$classOverlay.html#ae2d27c67a5786284ccb5007b1302d688" title="count_subnodes" alt="" coords="200,216,317,245"/>
+<area shape="rect" id="node32" href="$classOverlay.html#a86c822d1abc50ecbc2701f4d408cbf5a" title="number_a_subnode" alt="" coords="192,269,325,299"/>
+<area shape="rect" id="node48" href="$classRFC__Window__derived.html#ac93d54480f8b9621387f2edd745257ee" title="Get a vector of local panes contained in the window. " alt="" coords="183,322,335,369"/>
+<area shape="rect" id="node5" href="$classHDS__accessor.html#a1c29741c2bbf0b7b1898d95fbd9d8ae6" title="HDS_accessor::get_next\l_around_origin" alt="" coords="397,234,565,281"/>
+<area shape="rect" id="node7" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="396,304,567,333"/>
+<area shape="rect" id="node9" href="$classVertex__overlay.html#a6c7de39ffbd6429552ea91d5df673a13" title="Vertex_overlay::halfedge" alt="" coords="399,357,564,387"/>
+<area shape="rect" id="node11" href="$classINode.html#a2dd3c88de5ba7b43671e1e9410418d58" title="INode::halfedge" alt="" coords="424,181,539,211"/>
+<area shape="rect" id="node17" href="$classRFC__Pane__base.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Pane_base::id" alt="" coords="412,59,551,88"/>
+<area shape="rect" id="node19" href="$classHalfedge__overlay.html#aa126fd94949c810d24869ad04cd97e15" title="Halfedge_overlay::is\l_border" alt="" coords="411,111,552,158"/>
+<area shape="rect" id="node21" href="$classHalfedge__overlay.html#afe0045d3267c0730bd9ad1b640718f54" title="Halfedge_overlay::origin" alt="" coords="400,411,563,440"/>
+<area shape="rect" id="node29" href="$classINode.html#a5e54505fb86e503aa014c5c79d4df1a3" title="INode::parent_type" alt="" coords="415,5,548,35"/>
+<area shape="rect" id="node13" href="$structHost__face.html#a2fdb4a913034dfc8a30c9019857d8173" title="Host_face::halfedge" alt="" coords="648,151,787,180"/>
+<area shape="rect" id="node15" href="$structHost__face.html#ad8e3d3c3b41c1da044381d5a758f1d7a" title="Host_face::parent_type" alt="" coords="857,95,1015,124"/>
+<area shape="rect" id="node23" href="$classHalfedge__overlay.html#a1011f61879a1842b01d506a17e1c7914" title="Halfedge_overlay::opposite" alt="" coords="628,437,807,467"/>
+<area shape="rect" id="node27" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="635,384,800,413"/>
+<area shape="rect" id="node25" href="$classHalfedge__overlay.html#acba595f65090d9721649cdf1f0999894" title="Halfedge_overlay::is\l_primary" alt="" coords="865,429,1007,475"/>
+<area shape="rect" id="node35" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="385,464,577,493"/>
+<area shape="rect" id="node44" href="$classOverlay.html#a399250339dce3f3c1b0007c30019c455" title="set_subnode_id" alt="" coords="425,517,537,547"/>
+<area shape="rect" id="node46" href="$classINode.html#ae0c063cfb2479f614be43b9d2f92ba63" title="INode::id" alt="" coords="680,517,755,547"/>
+</map>

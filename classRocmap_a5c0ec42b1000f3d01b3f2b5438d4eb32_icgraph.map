@@ -1,0 +1,8 @@
+<map id="compute_pconn" name="compute_pconn">
+<area shape="rect" id="node3" href="$classRocmap.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocmap onto Roccom with a given module name. " alt="" coords="169,112,215,141"/>
+<area shape="rect" id="node5" href="$Rocmap_8C.html#a98b54bf7124d16ea02e9863ada55574f" title="Rocmap_load_module" alt="" coords="287,5,436,35"/>
+<area shape="rect" id="node7" href="$Rocmap_8C.html#a2fa2491d8ff629e655372d4a37a21b6b" title="rocmap_load_module" alt="" coords="289,59,433,88"/>
+<area shape="rect" id="node9" href="$Rocmap_8C.html#a741814e614967188ffab8357b03871c0" title="ROCMAP_LOAD_MODULE" alt="" coords="268,112,455,141"/>
+<area shape="rect" id="node11" href="$Rocmap_8C.html#ae4eabf51a6ef8d2d4e62e3c3f0d4d730" title="rocmap_load_module_" alt="" coords="285,165,437,195"/>
+<area shape="rect" id="node13" href="$Rocmap_8C.html#a849ab8b944ec8c331d0047cf8e022832" title="ROCMAP_LOAD_MODULE_" alt="" coords="264,219,459,248"/>
+</map>

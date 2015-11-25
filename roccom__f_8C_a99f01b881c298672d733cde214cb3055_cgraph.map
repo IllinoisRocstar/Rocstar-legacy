@@ -1,0 +1,17 @@
+<map id="com_get_address_f" name="com_get_address_f">
+<area shape="rect" id="node3" href="$roccom__f_8C.html#af748519b6388fb3c50213ba79d090875" title="COM_F_FUNC2" alt="" coords="192,5,312,35"/>
+<area shape="rect" id="node9" href="$utilities_8f90.html#a8c727b5a4ac94b8bd464abcf4a3ccb7c" title="com_getptr_dbl0d" alt="" coords="189,59,315,88"/>
+<area shape="rect" id="node11" href="$utilities_8f90.html#a00858abe264198b803ad18d3e30ba06f" title="com_getptr_dbl1d" alt="" coords="189,112,315,141"/>
+<area shape="rect" id="node13" href="$utilities_8f90.html#a0c3bf02355bd51e396c45c6cce9742c3" title="com_getptr_dbl2d" alt="" coords="189,165,315,195"/>
+<area shape="rect" id="node15" href="$utilities_8f90.html#aa442fd97e2e9856ba4a3d3e2d1fb4021" title="com_getptr_dbl3d" alt="" coords="189,219,315,248"/>
+<area shape="rect" id="node17" href="$utilities_8f90.html#a4f95ba130515606f9e0f53fe6477fdc4" title="com_getptr_flt0d" alt="" coords="193,272,311,301"/>
+<area shape="rect" id="node19" href="$utilities_8f90.html#ad5d3d5a36ae472a7f11cbea9c4cf27dd" title="com_getptr_flt1d" alt="" coords="193,325,311,355"/>
+<area shape="rect" id="node21" href="$utilities_8f90.html#acaae4de8b987e924ec5cce195eb56d86" title="com_getptr_flt2d" alt="" coords="193,379,311,408"/>
+<area shape="rect" id="node23" href="$utilities_8f90.html#a5bc166a7ac3b72a8164a0ff009c6321a" title="com_getptr_flt3d" alt="" coords="193,432,311,461"/>
+<area shape="rect" id="node25" href="$utilities_8f90.html#ab197ba8ed7a652c7263166dd7df04331" title="com_getptr_int0d" alt="" coords="191,485,313,515"/>
+<area shape="rect" id="node27" href="$utilities_8f90.html#ae042a2ee599945f650d9f598bf65da47" title="com_getptr_int1d" alt="" coords="191,539,313,568"/>
+<area shape="rect" id="node29" href="$utilities_8f90.html#aa130a5586bf17eab865594bc937c6a83" title="com_getptr_int2d" alt="" coords="191,592,313,621"/>
+<area shape="rect" id="node31" href="$utilities_8f90.html#a260d04deb654706770318fbb72aaab19" title="com_getptr_int3d" alt="" coords="191,645,313,675"/>
+<area shape="rect" id="node5" href="$classRoccom__base.html#a89e9e7b84f463584a7310466b478fe20" title="Roccom_base::init" alt="" coords="363,5,493,35"/>
+<area shape="rect" id="node7" href="$roccom__exception_8C.html#a968f8230d3a737acba9bc9b878b0f57d" title="Print the stack backtrace. " alt="" coords="543,5,681,35"/>
+</map>

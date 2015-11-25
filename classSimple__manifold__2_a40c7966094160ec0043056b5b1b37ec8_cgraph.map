@@ -1,0 +1,45 @@
+<map id="Simple_manifold_2" name="Simple_manifold_2">
+<area shape="rect" id="node3" href="$classSimple__manifold__2.html#ad02b3f49c3fc55ea61095afaea1eefe1" title="Initialize the database for the pane, including ghost information, opposite halfedges, incident halfedges, and border halfedges. " alt="" coords="188,508,225,537"/>
+<area shape="rect" id="node5" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="1139,92,1184,121"/>
+<area shape="rect" id="node7" href="$classSimple__manifold__2.html#af41dfaeb21ef28614144dbf5a331b937" title="Determine the ghost nodes and elements. " alt="" coords="280,477,405,507"/>
+<area shape="rect" id="node9" href="$classSimple__manifold__2.html#ab192883c34a029fc51443dceb6b5a164" title="Determine the opposite halfedges of each halfedge, and identify border halfedge. " alt="" coords="276,530,409,577"/>
+<area shape="rect" id="node87" href="$classSimple__manifold__2.html#a2091a9ef9a16dd71316e13e5e52d01be" title="Determine an incident halfedge for each node. " alt="" coords="277,825,408,871"/>
+<area shape="rect" id="node11" href="$classElement__node__enumerator.html#a041249f802c5bf4c2deae666610e03c4" title="Go to the next element within the connectivity tables of a pane. " alt="" coords="468,411,644,458"/>
+<area shape="rect" id="node60" href="$classElement__node__enumerator.html#a3b0965f57d58cd0e85fab4b12a9d6899" title="Number of edges per element. " alt="" coords="468,685,644,731"/>
+<area shape="rect" id="node65" href="$classPane__dual__connectivity.html#a742e083b48923b27b68030001c67e70f" title="Obtain the IDs of the elements incident on a given node. " alt="" coords="476,207,636,254"/>
+<area shape="rect" id="node67" href="$classElement__node__enumerator.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Get the local id of the element within the pane. " alt="" coords="459,277,653,307"/>
+<area shape="rect" id="node74" href="$classSimple__manifold__2.html#ae1611b1b5b6feb95d11d299ef4150866" title="Is the element incident on the give edge a real element? " alt="" coords="713,747,825,776"/>
+<area shape="rect" id="node76" href="$classSimple__manifold__2.html#ab06c9b0093094a1e15b3c1d91b6d7012" title="Is the element incident on the give edge a ghost element? " alt="" coords="893,851,1016,880"/>
+<area shape="rect" id="node78" href="$classSimple__manifold__2.html#a678219ca5d2b29febb0820f195f668ba" title="Get an index for internal edges. " alt="" coords="899,959,1011,988"/>
+<area shape="rect" id="node80" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="1111,852,1212,881"/>
+<area shape="rect" id="node13" href="$classPane.html#a62d5a7a3e02da8c334472006166d67ea" title="Obtain the connectivity table containing the element with the given ID. " alt="" coords="704,299,835,328"/>
+<area shape="rect" id="node15" href="$classConnectivity.html#a69bd059da8cf335fbee896488f5c1e97" title="Get the index of the first element. " alt="" coords="888,238,1021,285"/>
+<area shape="rect" id="node21" href="$classConnectivity.html#a89f1396a7f4dc43120977a9a42c3ceef" title="Get the total number of elements (including ghost elements) in the table. " alt="" coords="892,453,1017,499"/>
+<area shape="rect" id="node28" href="$classConnectivity.html#a3ab0f5b4dbc683714ef15ccfb16225ac" title="Get a constant pointer to the connectivity array. " alt="" coords="1091,361,1232,391"/>
+<area shape="rect" id="node49" href="$classPane.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Dimension of the pane. " alt="" coords="711,624,828,653"/>
+<area shape="rect" id="node53" href="$classPane.html#a78f646f49fb83340032b735b056a19d3" title="Get the number of nodes in i&#45;dimension if the mesh is structured. " alt="" coords="723,144,816,173"/>
+<area shape="rect" id="node58" href="$classConnectivity.html#a6b814939135364a0cd18ee54799897ee" title="Get the number of nodes per element of the current connectivity table. " alt="" coords="707,351,832,398"/>
+<area shape="rect" id="node17" href="$classConnectivity.html#aafbe63b1107c964c3673375df9a7472a" title="Root of use&#45;inheritance. " alt="" coords="1099,247,1224,276"/>
+<area shape="rect" id="node19" href="$classAttribute.html#a77f06f41441a97714ec0acf49c89b568" title="Root of use&#45;inheritance. " alt="" coords="1316,247,1417,276"/>
+<area shape="rect" id="node23" href="$classPane.html#a20818cc1edd59ab35c1eded37741f6ee" title="Pane::ignore_ghost" alt="" coords="1300,561,1433,591"/>
+<area shape="rect" id="node25" href="$classConnectivity.html#afc3d6a08a6436efe1af8e83699d4ca53" title="Determine whether the mesh is quadratic. " alt="" coords="1072,415,1251,444"/>
+<area shape="rect" id="node30" href="$classAttribute.html#a61bd804508cb1f9b4c33fd54351b315e" title="Obtain the number of items in the attribute. " alt="" coords="1101,491,1221,538"/>
+<area shape="rect" id="node32" href="$classPane.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain the attribute from given name. " alt="" coords="1483,459,1589,488"/>
+<area shape="rect" id="node45" href="$classAttribute.html#a376398cab240594dd4ec0d158b658172" title="Obtain the number of real items in the attribute. " alt="" coords="1307,491,1427,538"/>
+<area shape="rect" id="node34" href="$classWindow.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain a pointer to the attribute metadata from its name. " alt="" coords="1639,432,1761,461"/>
+<area shape="rect" id="node40" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="1828,484,1916,513"/>
+<area shape="rect" id="node36" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="Attribute::is_digit" alt="" coords="1812,431,1932,460"/>
+<area shape="rect" id="node38" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="1812,361,1932,407"/>
+<area shape="rect" id="node55" href="$classPane.html#afc3d6a08a6436efe1af8e83699d4ca53" title="Is mesh of the pane structured? " alt="" coords="888,119,1021,148"/>
+<area shape="rect" id="node63" href="$classConnectivity.html#a85e2c3a17c45bc48b5613929dedb216a" title="Get the number of edges per element of the current connectivity table. " alt="" coords="707,677,832,723"/>
+<area shape="rect" id="node82" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="1135,959,1188,988"/>
+<area shape="rect" id="node84" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="1113,1012,1209,1041"/>
+<area shape="rect" id="node93" href="$classSimple__manifold__2.html#a97484283cf37c9ffd5d002c22335d5db" title="Get the opposite edge of an interior edge of the real part. " alt="" coords="477,855,635,902"/>
+<area shape="rect" id="node102" href="$classSimple__manifold__2.html#aa81d979ace76b3412a00645efe09cfff" title="Get the opposite edge of an interior edge of the ghost part. " alt="" coords="703,951,836,998"/>
+<area shape="rect" id="node109" href="$classSimple__manifold__2.html#ab0d9ef8fcaf5c4306b57958fadf8c8f1" title="Is a given edge on the boundary of the whole pane? " alt="" coords="501,976,611,1005"/>
+<area shape="rect" id="node111" href="$classSimple__manifold__2.html#a96857d0e0525ef06c2590d22d2acf0c1" title="Get the ID of the origin of a given edge. " alt="" coords="517,1080,595,1109"/>
+<area shape="rect" id="node113" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="535,1133,577,1163"/>
+<area shape="rect" id="node115" href="$classElement__node__enumerator.html#a35a62313d45990cfa4cab8caa1dfbff6" title="Number of nodes per element. " alt="" coords="468,615,644,662"/>
+<area shape="rect" id="node119" href="$classSimple__manifold__2.html#ada174cc24bb104689a8ded70a6674ebb" title="Is the given node a real node? " alt="" coords="509,1187,603,1216"/>
+<area shape="rect" id="node95" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="887,1012,1023,1041"/>
+</map>

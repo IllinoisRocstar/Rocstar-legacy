@@ -1,0 +1,12 @@
+<map id="initialize" name="initialize">
+<area shape="rect" id="node3" href="$classRocmop.html#ac32e390ae4937ffc3928b111a7842592" title="Rocmop::add_aspect\l_ratios" alt="" coords="141,5,288,51"/>
+<area shape="rect" id="node5" href="$classRocmop.html#ab8a56d10bd215a994da860edae29be78" title="Get the largest dihedral angle of all real elements. " alt="" coords="131,74,299,121"/>
+<area shape="rect" id="node7" href="$classRocmop.html#a5b230d9e1d42e381af9441a2041520ce" title="Get the largest dihedral angle of marked real elements. " alt="" coords="133,143,296,190"/>
+<area shape="rect" id="node9" href="$metric__demo_8C.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="189,213,240,243"/>
+<area shape="rect" id="node11" href="$classRocmop.html#a68df94f4705a5056a0324b5ec65ab466" title="Obtain the min and max dihedral angles. " alt="" coords="129,266,300,313"/>
+<area shape="rect" id="node13" href="$classRocmop.html#a124effafd55e3f6b6c663e771b1f7f31" title="Randomly perturn stationary nodes on pane boundary, not on phys. surface. " alt="" coords="124,336,305,365"/>
+<area shape="rect" id="node15" href="$classRocmop.html#a3398a11c308e88338e4799033b97acc9" title="Print the min and max dihedral angles along with their locations. " alt="" coords="135,389,295,435"/>
+<area shape="rect" id="node17" href="$classRocmop.html#a7acd2506a68d3e766370f6f60e827e81" title="Print the quality range of marked elements, for debugging. " alt="" coords="135,459,295,488"/>
+<area shape="rect" id="node19" href="$classRocmop.html#a849151f093b2ba49f390acfb835e97da" title="Print the quality range of all elements, for debugging. " alt="" coords="140,512,289,541"/>
+<area shape="rect" id="node21" href="$classRocmop.html#a43639cc2a34d3141d58cba623fc42826" title="Smooths a volume using Mesquite with only shared node information. " alt="" coords="141,565,288,611"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a47ed797bddcdd0aabcd9f8e47f326744" title="COM_finalize" alt="" coords="119,5,220,35"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#ac0f80d6e63759a2afe40ed883cea3d5e" title="COM_init" alt="" coords="131,59,208,88"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a1c38d3b83185ed89dcc2d2e9424b0f8c" title="COM_set_profiling" alt="" coords="104,112,235,141"/>
+<area shape="rect" id="node11" href="$surfextractor_8C.html#a61aedb2ed2b960eb62f1ea07936ec18d" title="read_file" alt="" coords="135,271,204,300"/>
+<area shape="rect" id="node9" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="509,164,637,193"/>
+<area shape="rect" id="node13" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="305,57,439,87"/>
+<area shape="rect" id="node16" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="284,111,460,140"/>
+<area shape="rect" id="node18" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="305,164,439,193"/>
+<area shape="rect" id="node21" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="284,217,460,247"/>
+<area shape="rect" id="node23" href="$roccom__c_8h.html#a31a1cc99534b53b7d14992718739ff74" title="Clone the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="300,271,444,300"/>
+<area shape="rect" id="node25" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="291,324,453,353"/>
+<area shape="rect" id="node28" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="299,377,445,407"/>
+<area shape="rect" id="node31" href="$roccom__c_8h.html#ad744816e73fae2aec731bcbe41b52a16" title="COM_get_panes" alt="" coords="312,431,432,460"/>
+<area shape="rect" id="node33" href="$roccom__c_8h.html#a44547c3eab1bf444e5f9bb23c13fc123" title="COM_free_buffer" alt="" coords="311,484,433,513"/>
+<area shape="rect" id="node35" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="315,537,429,567"/>
+</map>

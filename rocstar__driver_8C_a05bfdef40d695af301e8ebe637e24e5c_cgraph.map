@@ -1,0 +1,15 @@
+<map id="check_for_interrupt" name="check_for_interrupt">
+<area shape="rect" id="node3" href="$classCoupling.html#a00ac77cfb49cefa5eef995801743257a" title="Coupling::Interrupt" alt="" coords="188,135,316,164"/>
+<area shape="rect" id="node5" href="$classCoupling.html#a32d626626eee0bc4ade146973f6abb1c" title="Invoke finalization of the actions in the scheduler and the agents. " alt="" coords="395,47,517,76"/>
+<area shape="rect" id="node13" href="$Coupling_8C.html#a83f4e1cc14f5787ea19907b93f0cd5cb" title="RocstarShutdown" alt="" coords="393,104,519,133"/>
+<area shape="rect" id="node17" href="$classCoupling.html#a5eb8adb23317ad3995690c804e059197" title="Coupling::output_restart\l_files" alt="" coords="376,157,536,203"/>
+<area shape="rect" id="node19" href="$classCoupling.html#a3f2bd05f213d9de47594822ade40d224" title="Coupling::write_restart_info" alt="" coords="365,227,547,256"/>
+<area shape="rect" id="node7" href="$classScheduler.html#ab39dbbeb37b2db09bada87931cd462a5" title="Scheduler::finalize\l_actions" alt="" coords="596,35,724,82"/>
+<area shape="rect" id="node9" href="$structScheduler_1_1ActionItem.html#a4d53ef72c920649a6dcaf1ccb1392b5d" title="Scheduler::ActionItem\l::action" alt="" coords="775,5,924,51"/>
+<area shape="rect" id="node11" href="$classAction.html#a4e44143f72657f0e69d2a1816b6cc54d" title="Action::finalize" alt="" coords="796,75,903,104"/>
+<area shape="rect" id="node15" href="$roccom__c_09_09_8h.html#a47ed797bddcdd0aabcd9f8e47f326744" title="COM_finalize" alt="" coords="609,105,711,135"/>
+<area shape="rect" id="node21" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="596,189,724,235"/>
+<area shape="rect" id="node23" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="596,258,724,305"/>
+<area shape="rect" id="node25" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="785,258,913,305"/>
+<area shape="rect" id="node27" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="973,258,1101,305"/>
+</map>

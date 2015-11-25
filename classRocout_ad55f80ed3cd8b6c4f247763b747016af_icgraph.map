@@ -1,0 +1,6 @@
+<map id="sync" name="sync">
+<area shape="rect" id="node3" href="$classRocout.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="105,32,143,61"/>
+<area shape="rect" id="node5" href="$RFC__Window__base__IO_8C.html#a2913c79327ebc4516c9f2d79524e5c2e" title="Load the module Rocout into Roccom using the given module name. " alt="" coords="192,32,336,61"/>
+<area shape="rect" id="node7" href="$Rocout_8C.html#a166c6f5da3ed2a1b8a46b13b28a09e0c" title="COM_F_FUNC2" alt="" coords="425,5,545,35"/>
+<area shape="rect" id="node9" href="$classRFC__Window__base.html#ada7ac76a1aaceb37b222f9f4e70fb6e1" title="Write out panes in native binary format or using Rocout. " alt="" coords="384,59,587,88"/>
+</map>

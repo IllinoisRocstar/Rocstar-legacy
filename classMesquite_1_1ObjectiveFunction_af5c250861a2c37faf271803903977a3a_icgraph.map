@@ -1,0 +1,4 @@
+<map id="compute_analytical_hessian" name="compute_analytical_hessian">
+<area shape="rect" id="node3" href="$classMesquite_1_1ObjectiveFunction.html#a60fd681a69d03dd7e44e4e40338aab61" title="Calls compute_analytical_hessian. Function returns &#39;false&#39; if the patch is not within a required feas..." alt="" coords="191,13,313,43"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1FeasibleNewton.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::FeasibleNewton\l::optimize_vertex_positions" alt="" coords="363,5,544,51"/>
+</map>

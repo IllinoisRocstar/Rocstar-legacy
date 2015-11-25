@@ -1,0 +1,15 @@
+<map id="count_subnodes" name="count_subnodes">
+<area shape="rect" id="node3" href="$classHDS__accessor.html#a1c29741c2bbf0b7b1898d95fbd9d8ae6" title="HDS_accessor::get_next\l_around_origin" alt="" coords="173,5,341,51"/>
+<area shape="rect" id="node5" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="172,75,343,104"/>
+<area shape="rect" id="node7" href="$classVertex__overlay.html#a6c7de39ffbd6429552ea91d5df673a13" title="Vertex_overlay::halfedge" alt="" coords="175,128,340,157"/>
+<area shape="rect" id="node9" href="$classINode.html#a2dd3c88de5ba7b43671e1e9410418d58" title="INode::halfedge" alt="" coords="200,408,315,437"/>
+<area shape="rect" id="node15" href="$classRFC__Pane__base.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Pane_base::id" alt="" coords="188,235,327,264"/>
+<area shape="rect" id="node17" href="$classHalfedge__overlay.html#aa126fd94949c810d24869ad04cd97e15" title="Halfedge_overlay::is\l_border" alt="" coords="187,287,328,334"/>
+<area shape="rect" id="node19" href="$classHalfedge__overlay.html#afe0045d3267c0730bd9ad1b640718f54" title="Halfedge_overlay::origin" alt="" coords="176,181,339,211"/>
+<area shape="rect" id="node27" href="$classINode.html#a5e54505fb86e503aa014c5c79d4df1a3" title="INode::parent_type" alt="" coords="416,355,549,384"/>
+<area shape="rect" id="node11" href="$structHost__face.html#a2fdb4a913034dfc8a30c9019857d8173" title="Host_face::halfedge" alt="" coords="413,408,552,437"/>
+<area shape="rect" id="node13" href="$structHost__face.html#ad8e3d3c3b41c1da044381d5a758f1d7a" title="Host_face::parent_type" alt="" coords="623,381,780,411"/>
+<area shape="rect" id="node21" href="$classHalfedge__overlay.html#a1011f61879a1842b01d506a17e1c7914" title="Halfedge_overlay::opposite" alt="" coords="393,155,572,184"/>
+<area shape="rect" id="node25" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="400,208,565,237"/>
+<area shape="rect" id="node23" href="$classHalfedge__overlay.html#acba595f65090d9721649cdf1f0999894" title="Halfedge_overlay::is\l_primary" alt="" coords="631,146,772,193"/>
+</map>

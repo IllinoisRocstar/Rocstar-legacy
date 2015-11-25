@@ -1,0 +1,5 @@
+<map id="COMMPI_Comm_f2c" name="COMMPI_Comm_f2c">
+<area shape="rect" id="node3" href="$classRoccom__base.html#aa5691bb8a33c7fddd9e2708b36d6012b" title="Invoke a function with given arguments. " alt="" coords="203,13,389,43"/>
+<area shape="rect" id="node7" href="$roccom__f_8C.html#afda1fcd6cc3631264c6991065b55fb54" title="COM_F_FUNC2" alt="" coords="236,67,356,96"/>
+<area shape="rect" id="node5" href="$classRoccom__base.html#a6f1e9cf115ad501e54c6d56b895c3502" title="Nonblockingly invoke a function with given arguments. " alt="" coords="439,5,575,51"/>
+</map>

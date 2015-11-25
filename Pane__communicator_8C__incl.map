@@ -1,0 +1,20 @@
+<map id="Pane_communicator.C" name="Pane_communicator.C">
+<area shape="rect" id="node7" href="$Pane__communicator_8h.html" title="Handles communication of shared nodes, ghost nodes or ghost cells across panes. " alt="" coords="457,160,609,189"/>
+<area shape="rect" id="node19" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="915,392,989,421"/>
+<area shape="rect" id="node74" href="$Pane__connectivity_8h.html" title="Utility for constructing pane connectivities in parallel. " alt="" coords="739,83,877,112"/>
+<area shape="rect" id="node9" href="$mapbasic_8h.html" title="mapbasic.h" alt="" coords="935,237,1023,267"/>
+<area shape="rect" id="node27" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="52,547,129,576"/>
+<area shape="rect" id="node36" href="$roccom__devel_8h.html" title="roccom_devel.h" alt="" coords="476,237,591,267"/>
+<area shape="rect" id="node57" href="$roccom__assertion_8h.html" title="This file contains a set of routines for error assertion. " alt="" coords="93,469,229,499"/>
+<area shape="rect" id="node17" href="$Element__accessors_8h.html" title="Element_accessors.h" alt="" coords="789,315,936,344"/>
+<area shape="rect" id="node21" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="771,469,861,499"/>
+<area shape="rect" id="node23" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="284,701,399,731"/>
+<area shape="rect" id="node25" href="$FC_8h.html" title="FC.h" alt="" coords="316,779,367,808"/>
+<area shape="rect" id="node38" href="$Attribute_8h.html" title="Contains the prototype of Attriubte. " alt="" coords="589,547,672,576"/>
+<area shape="rect" id="node46" href="$Connectivity_8h.html" title="Contains the prototype of Connectivity. " alt="" coords="589,469,696,499"/>
+<area shape="rect" id="node49" href="$Function_8h.html" title="Contains the prototypes and implementation for the Funcion object. " alt="" coords="327,392,409,421"/>
+<area shape="rect" id="node60" href="$Pane_8h.html" title="Contains the prototypes for the Pane object. " alt="" coords="503,392,564,421"/>
+<area shape="rect" id="node65" href="$Window_8h.html" title="Contains the prototypes for the Window object. " alt="" coords="416,315,496,344"/>
+<area shape="rect" id="node42" href="$roccom__exception_8h.html" title="roccom_exception.h" alt="" coords="405,624,544,653"/>
+<area shape="rect" id="node80" href="$Simple__manifold__2_8h.html" title="Simple_manifold_2.h" alt="" coords="800,160,941,189"/>
+</map>

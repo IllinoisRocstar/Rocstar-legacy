@@ -1,0 +1,6 @@
+<map id="draw_arrow" name="draw_arrow">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ab470ff84bcac27328430e271067570bd" title="cimg_library::CImg\l\&lt; uintT \&gt;::_get_select" alt="" coords="147,5,296,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#aeacbe53af5f8cc1760496c4ca5d9ea16" title="Draw a colored arrow in the instance image. " alt="" coords="147,74,296,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a9a5bc1ed014471eb07a752622701e1bf" title="Draw a labeled horizontal axis on the instance image. " alt="" coords="151,143,292,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a9f35dd03284e33d519af3b713186df7e" title="Draw a vector field in the instance image, using a colormap. " alt="" coords="145,213,297,259"/>
+</map>

@@ -1,0 +1,32 @@
+<map id="Overlay_IO.C" name="Overlay_IO.C">
+<area shape="rect" id="node3" href="$Overlay_8h.html" title="Overlay.h" alt="" coords="552,83,629,112"/>
+<area shape="rect" id="node101" href="$Triangulation_8h.html" title="Triangulation.h" alt="" coords="1684,315,1791,344"/>
+<area shape="rect" id="node13" href="$HDS__overlay_8h.html" title="HDS_overlay.h" alt="" coords="324,401,433,431"/>
+<area shape="rect" id="node42" href="$HDS__accessor_8h.html" title="HDS_accessor.h" alt="" coords="693,237,816,267"/>
+<area shape="rect" id="node45" href="$RFC__Window__overlay_8h.html" title="RFC_Window_overlay.h" alt="" coords="647,315,809,344"/>
+<area shape="rect" id="node95" href="$Overlay__primitives_8h.html" title="Overlay_primitives.h" alt="" coords="347,160,488,189"/>
+<area shape="rect" id="node15" href="$rfc__basic_8h.html" title="rfc_basic.h" alt="" coords="1405,593,1491,623"/>
+<area shape="rect" id="node30" href="$In__place__list__n_8h.html" title="In_place_list_n.h" alt="" coords="563,497,683,527"/>
+<area shape="rect" id="node17" href="$Simple__cartesian_8h.html" title="CGAL/Simple_cartesian.h" alt="" coords="1427,689,1600,719"/>
+<area shape="rect" id="node21" href="$user__classes_8h.html" title="CGAL/user_classes.h" alt="" coords="1535,785,1684,815"/>
+<area shape="rect" id="node23" href="$simple__cartesian__classes_8h.html" title="CGAL/SimpleCartesian\l/simple_cartesian_classes.h" alt="" coords="1324,777,1511,823"/>
+<area shape="rect" id="node47" href="$RFC__Window__base_8h.html" title="RFC_Window_base.h" alt="" coords="1185,401,1335,431"/>
+<area shape="rect" id="node72" href="$Polyhedron__incremental__builder__3_8h.html" title="CGAL/Polyhedron_incremental\l_builder_3.h" alt="" coords="288,489,488,535"/>
+<area shape="rect" id="node90" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="664,401,741,431"/>
+<area shape="rect" id="node50" href="$roccom__devel_8h.html" title="roccom_devel.h" alt="" coords="955,497,1069,527"/>
+<area shape="rect" id="node52" href="$Tuple_8h.html" title="Tuple.h" alt="" coords="1595,497,1659,527"/>
+<area shape="rect" id="node55" href="$Vector__n_8h.html" title="Vector_n.h" alt="" coords="1485,497,1571,527"/>
+<area shape="rect" id="node66" href="$Element__accessors_8h.html" title="Element_accessors.h" alt="" coords="1784,497,1931,527"/>
+<area shape="rect" id="node74" href="$Random__access__value__adaptor_8h.html" title="CGAL/Random_access\l_value_adaptor.h" alt="" coords="289,585,449,631"/>
+<area shape="rect" id="node77" href="$Halfedge__data__structure__decorator_8h.html" title="CGAL/Halfedge_data\l_structure_decorator.h" alt="" coords="113,585,265,631"/>
+<area shape="rect" id="node81" href="$Verbose__ostream_8h.html" title="CGAL/IO/Verbose_ostream.h" alt="" coords="43,689,235,719"/>
+<area shape="rect" id="node105" href="$predicates__on__points__2_8h.html" title="CGAL/predicates_on\l_points_2.h" alt="" coords="2540,681,2681,727"/>
+<area shape="rect" id="node109" href="$Line__2__Line__2__intersection_8h.html" title="CGAL/Line_2_Line_2\l_intersection.h" alt="" coords="2056,489,2200,535"/>
+<area shape="rect" id="node125" href="$Segment__2__Segment__2__intersection_8h.html" title="CGAL/Segment_2_Segment\l_2_intersection.h" alt="" coords="2169,393,2356,439"/>
+<area shape="rect" id="node107" href="$Point__2_8h.html" title="CGAL/Point_2.h" alt="" coords="2281,785,2399,815"/>
+<area shape="rect" id="node111" href="$Line__2_8h.html" title="CGAL/Line_2.h" alt="" coords="2428,593,2537,623"/>
+<area shape="rect" id="node118" href="$utils_8h.html" title="CGAL/utils.h" alt="" coords="2207,593,2303,623"/>
+<area shape="rect" id="node120" href="$number__utils_8h.html" title="CGAL/number_utils.h" alt="" coords="1852,593,1999,623"/>
+<area shape="rect" id="node123" href="$Object_8h.html" title="CGAL/Object.h" alt="" coords="2073,593,2183,623"/>
+<area shape="rect" id="node114" href="$Segment__2_8h.html" title="CGAL/Segment_2.h" alt="" coords="2377,689,2516,719"/>
+</map>

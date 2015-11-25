@@ -1,0 +1,7 @@
+<map id="get_append" name="get_append">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgDisplay.html#ab34d9d88b5fbb32dbcb206818d32d829" title="Display an image list CImgList&lt;T&gt; into a display window. " alt="" coords="144,5,320,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImgList.html#abfa17448c3a4985faba1e30c32a04005" title="Display the current CImgList instance in an existing CImgDisplay window (by reference). " alt="" coords="156,74,308,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#acdae64c0c93793df8b0a0b28a34d9694" title="Load an image (list) from a .cimg file. " alt="" coords="161,143,303,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a9e3446fd647fcb9fc95a462435f42784" title="Load an image from a PAR&#45;REC (Philips) file. " alt="" coords="157,213,307,259"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImgList.html#a6eed4f177047ce79eb3b30f5b713be88" title="Operator&gt;(). " alt="" coords="156,282,308,329"/>
+</map>

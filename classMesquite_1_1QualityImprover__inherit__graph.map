@@ -1,0 +1,13 @@
+<map id="QualityImprover" name="QualityImprover">
+<area shape="rect" id="node6" href="$classMesquite_1_1TopologyModifier.html" title="TopologyModifier" alt="" coords="329,139,449,168"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1VertexMover.html" title="VertexMover" alt="" coords="341,192,437,221"/>
+<area shape="rect" id="node2" href="$classMesquite_1_1PatchDataUser.html" title="This should be the parent class of all algorithms retrieving information from a MeshSet object..." alt="" coords="5,165,117,195"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1ConjugateGradient.html" title="Optimizes the objective function using the Polack&#45;Ribiere scheme. " alt="" coords="529,5,660,35"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1FeasibleNewton.html" title="High Performance implementation of the Feasible Newton algorythm. " alt="" coords="537,59,652,88"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1LaplacianSmoother.html" title="LaplacianSmoother" alt="" coords="528,112,661,141"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1NonSmoothSteepestDescent.html" title="NonSmoothSteepestDescent" alt="" coords="499,165,691,195"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1NullImprover.html" title="NullImprover" alt="" coords="547,219,643,248"/>
+<area shape="rect" id="node26" href="$classMesquite_1_1Randomize.html" title="Randomly perftubs the (un&#45;culled) vertices. " alt="" coords="551,272,639,301"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1SmartLaplacianSmoother.html" title="SmartLaplacianSmoother" alt="" coords="511,325,679,355"/>
+<area shape="rect" id="node32" href="$classMesquite_1_1SteepestDescent.html" title="SteepestDescent" alt="" coords="533,379,656,408"/>
+</map>

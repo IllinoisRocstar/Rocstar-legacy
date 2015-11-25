@@ -1,0 +1,8 @@
+<map id="InterpolateBase" name="InterpolateBase">
+<area shape="rect" id="node5" href="$classExtrapolate__Central.html" title="Extrapolate_Central" alt="" coords="279,5,415,35"/>
+<area shape="rect" id="node7" href="$classExtrapolate__Linear.html" title="Extrapolate_Linear" alt="" coords="281,59,412,88"/>
+<area shape="rect" id="node9" href="$classInterpolate__Central.html" title="Interpolate_Central" alt="" coords="281,112,412,141"/>
+<area shape="rect" id="node11" href="$classInterpolate__Constant.html" title="Interpolate_Constant" alt="" coords="276,165,417,195"/>
+<area shape="rect" id="node13" href="$classInterpolate__Linear.html" title="Interpolate_Linear" alt="" coords="284,219,409,248"/>
+<area shape="rect" id="node2" href="$classAction.html" title="Action" alt="" coords="5,112,64,141"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="are_ordered_along_line" name="are_ordered_along_line">
+<area shape="rect" id="node3" href="$predicates__on__pointsS3_8h.html#adba1cd4f7eeba9020bc482542745ffdf" title="collinear" alt="" coords="441,59,511,88"/>
+<area shape="rect" id="node17" href="$predicates__on__pointsS3_8h.html#a897ca8e77add2950561cd72ce13fbbec" title="collinear_are_ordered\l_along_line" alt="" coords="209,107,353,154"/>
+<area shape="rect" id="node5" href="$predicates_2kernel__ftC3_8h.html#aa72b0a571534e62d775c18c72e238fae" title="collinearC3" alt="" coords="599,59,684,88"/>
+<area shape="rect" id="node11" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="600,5,683,35"/>
+<area shape="rect" id="node13" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="600,112,683,141"/>
+<area shape="rect" id="node15" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="600,165,683,195"/>
+<area shape="rect" id="node7" href="$sign__of__determinant_8h.html#a178327b0b7b852c3ecf850dde3f93bc6" title="sign_of_determinant2x2" alt="" coords="733,59,893,88"/>
+<area shape="rect" id="node9" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="943,59,1057,88"/>
+<area shape="rect" id="node20" href="$predicates_2kernel__ftC3_8h.html#a7ebcde7050471c9499cdf4d311406146" title="collinear_are_ordered\l_along_lineC3" alt="" coords="404,214,548,261"/>
+</map>

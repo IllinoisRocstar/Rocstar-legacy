@@ -1,0 +1,42 @@
+<map id="copy_scalar" name="copy_scalar">
+<area shape="rect" id="node3" href="$classFaceOffset__3.html#a255d78d7f60f9385c8941b65d6bd783b" title="FaceOffset_3::balance_mass" alt="" coords="420,249,612,279"/>
+<area shape="rect" id="node7" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="933,271,1067,318"/>
+<area shape="rect" id="node9" href="$classFaceOffset__3.html#af6ea285d2c94a53c160dfe64ee44282e" title="Build the list of ridge nighbors and obtain a list of weak&#45;ended vertices Return the number of obscen..." alt="" coords="189,430,325,477"/>
+<area shape="rect" id="node11" href="$classFaceOffset__3.html#a3fb81b9009e23436007ccd5c6f0931e9" title="Filter out isolated ridge vertices and identify ridge edges. " alt="" coords="428,405,604,451"/>
+<area shape="rect" id="node14" href="$classFaceOffset__3.html#a932f06459b53d1207fdbf1d78a4a09c6" title="FaceOffset_3::compute\l_anisotropic_vertex_centers" alt="" coords="665,494,849,541"/>
+<area shape="rect" id="node17" href="$classWindow__manifold__2.html#a2de69b1dfeafce08ec7b515710fb76c4" title="Window_manifold_2::\lcompute_mcn" alt="" coords="184,1297,331,1343"/>
+<area shape="rect" id="node33" href="$classRocmop.html#a4c6e496385e479c044a89f1e545edaa5" title="Compute medial quadric for every vertex. " alt="" coords="171,979,344,1026"/>
+<area shape="rect" id="node37" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="679,1138,836,1185"/>
+<area shape="rect" id="node40" href="$classWindow__manifold__2.html#a7d0676e1f597d84fe53a8abf7d3a6da8" title="Obtain shortest edge length of incident edges of each nodes. " alt="" coords="148,601,367,647"/>
+<area shape="rect" id="node46" href="$classPropagation__3.html#a521659f6a2ab3aa7d5b64ea41a1798fa" title="Convert facial constraints to nodal constraints. " alt="" coords="180,739,335,786"/>
+<area shape="rect" id="node50" href="$classFaceOffset__3.html#a56aca8e1560d76b750545f7f33890551" title="FaceOffset_3::denoise\l_surface" alt="" coords="680,30,835,77"/>
+<area shape="rect" id="node53" href="$classPropagation__3.html#a15d00c9e496bf270f69300d645c7abfb" title="Convert facial or panel constraints to nodal constraints. " alt="" coords="172,670,343,717"/>
+<area shape="rect" id="node56" href="$classFaceOffset__3.html#ad57ad28e5d35ff4b3a026aa4cbd8c946" title="FaceOffset_3::distribute\l_volume_e2n" alt="" coords="176,190,339,237"/>
+<area shape="rect" id="node60" href="$classRocmop.html#a4fb274a52abfb27d778d4c6d5c690866" title="Rocmop::get_redist\l_safe_factor" alt="" coords="189,859,325,906"/>
+<area shape="rect" id="node62" href="$classRocmop.html#ad736dd98cc6ca328994641cb3939fc7c" title="Redistribute ridge vertices within their tangent spaces. " alt="" coords="445,863,587,910"/>
+<area shape="rect" id="node65" href="$classRocmop.html#aaff38c32926fd43f2c63d0f359a31f77" title="Redistribute smooth vertices within their tangent spaces. " alt="" coords="445,794,587,841"/>
+<area shape="rect" id="node68" href="$classRocblas.html#a509324395eda15d55172c78cee1ae5fb" title="Creates window for Rocblas and registers functions. " alt="" coords="239,1072,276,1101"/>
+<area shape="rect" id="node82" href="$classFaceOffset__3.html#a72d3b494f9c00e4e0bb641475858677e" title="Mark vertices that are weak. " alt="" coords="688,99,827,146"/>
+<area shape="rect" id="node85" href="$classFaceOffset__3.html#a495fc0cb53571fbaed964fe1608dce61" title="Redistribute smooth vertices by NuLaplacian smoothing. " alt="" coords="671,170,844,217"/>
+<area shape="rect" id="node88" href="$classFaceOffset__3.html#aa001a0386a35495dfa3f3b8fcdf6310e" title="FaceOffset_3::reclassify\l_ridge_vertices" alt="" coords="175,361,340,407"/>
+<area shape="rect" id="node93" href="$classRocblas.html#ac2c1e3cf0b99174a3f35baea136165ab" title="reduce_MPI" alt="" coords="212,1367,303,1396"/>
+<area shape="rect" id="node95" href="$classRocmop.html#a43639cc2a34d3141d58cba623fc42826" title="Smooths a volume using Mesquite with only shared node information. " alt="" coords="184,1419,331,1466"/>
+<area shape="rect" id="node5" href="$classFaceOffset__3.html#aeb4f96b70a0dc62dc10e186483d9180f" title="Decompose propagation directions based on constraints. " alt="" coords="679,241,836,287"/>
+<area shape="rect" id="node19" href="$classRocsurf.html#a98cadabf2c5e377e91182ea5e6c2c567" title="Computes nodal or elemental normals of a given window. " alt="" coords="437,1305,595,1335"/>
+<area shape="rect" id="node21" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="708,1305,807,1335"/>
+<area shape="rect" id="node23" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="927,1252,1073,1281"/>
+<area shape="rect" id="node25" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="929,1305,1071,1335"/>
+<area shape="rect" id="node27" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="903,1359,1097,1388"/>
+<area shape="rect" id="node29" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="925,1412,1075,1441"/>
+<area shape="rect" id="node31" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="899,1199,1101,1228"/>
+<area shape="rect" id="node35" href="$classRocmop.html#a679bfb8c7da7e819b00dc132ba57dc8f" title="Smooths a surface using the medial quadric. " alt="" coords="683,863,832,910"/>
+<area shape="rect" id="node42" href="$classWindow__manifold__2.html#aefcb2d77906956b440e079a5a2b77c3c" title="Obtain shortest edge length of incident edges of each node or element. " alt="" coords="443,586,589,633"/>
+<area shape="rect" id="node44" href="$classWindow__manifold__2.html#a63077b4a404ef8457c38c64b320323e7" title="Perturb the given mesh along its normal direction by length equal to a random number between &#45;range a..." alt="" coords="443,655,589,702"/>
+<area shape="rect" id="node48" href="$classPropagation__3.html#a5b18ea2b57dc03155d6c6fde2817333c" title="Set the types and directions of nodal constraints. " alt="" coords="451,725,581,771"/>
+<area shape="rect" id="node70" href="$Rocblas_8C.html#ae10ad513c0ada8ae7f6c5dc632bb5235" title="Calls Rocblas initialization function. " alt="" coords="441,984,591,1013"/>
+<area shape="rect" id="node74" href="$Rocblas_8C.html#a3c4a24d98fffbb732ea0b4bd7ed737d4" title="rocblas_load_module" alt="" coords="444,1037,588,1067"/>
+<area shape="rect" id="node76" href="$Rocblas_8C.html#a1f6d7891108aff593e5100e55fa6a21e" title="rocblas_load_module_" alt="" coords="441,1091,591,1120"/>
+<area shape="rect" id="node78" href="$Rocblas_8C.html#ac49885f516c860372a5f9a422fdffce8" title="ROCBLAS_LOAD_MODULE" alt="" coords="420,1144,612,1173"/>
+<area shape="rect" id="node80" href="$Rocblas_8C.html#a78ad5cca202ba6091c88095698f46652" title="ROCBLAS_LOAD_MODULE_" alt="" coords="416,1197,616,1227"/>
+<area shape="rect" id="node72" href="$blastest_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="732,984,783,1013"/>
+</map>

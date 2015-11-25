@@ -1,0 +1,12 @@
+<map id="COM_get_connectivities" name="COM_get_connectivities">
+<area shape="rect" id="node3" href="$classRocon.html#a4ff09dbebe15042c754641dc8a4294eb" title="Sets bflag = 0 for every element for which every node&#39;s cflag = 1. " alt="" coords="232,112,341,141"/>
+<area shape="rect" id="node17" href="$cgns2smf_8C.html#a897d7dd45ba9658d41466dc966bba99d" title="COM_print_window" alt="" coords="219,165,355,195"/>
+<area shape="rect" id="node21" href="$intest2_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="261,219,312,248"/>
+<area shape="rect" id="node5" href="$classRocon.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Rocon::load" alt="" coords="404,112,495,141"/>
+<area shape="rect" id="node7" href="$Rocon_8C.html#a326129e0f59167a9d49b467d2ca62623" title="Rocon_load_module" alt="" coords="568,5,707,35"/>
+<area shape="rect" id="node9" href="$Rocon_8C.html#ad9318a39523276bf31292715c9d868a1" title="rocon_load_module" alt="" coords="571,59,704,88"/>
+<area shape="rect" id="node11" href="$Rocon_8C.html#aa761155575248a4e82dc54c5d1ac56c7" title="ROCON_LOAD_MODULE" alt="" coords="548,112,727,141"/>
+<area shape="rect" id="node13" href="$Rocon_8C.html#a6aac732f557d7efb2446d7c7ea0b4d1e" title="rocon_load_module_" alt="" coords="567,165,708,195"/>
+<area shape="rect" id="node15" href="$Rocon_8C.html#a9d1d1090b92f6f56fa1e50d194883268" title="ROCON_LOAD_MODULE_" alt="" coords="544,219,731,248"/>
+<area shape="rect" id="node19" href="$cgns2smf_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="424,165,475,195"/>
+</map>

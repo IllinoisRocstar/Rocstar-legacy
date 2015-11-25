@@ -1,0 +1,6 @@
+<map id="initialize_default_target_matrices" name="initialize_default_target_matrices">
+<area shape="rect" id="node3" href="$classMesquite_1_1TargetCalculator.html#adffb8528b2cfc1e23168aa2c44c5cfd0" title="Compute the default &quot;isotropic&quot; target matrices that are often used in the computation of reference&#45;b..." alt="" coords="179,5,336,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1TargetCalculator.html#ab066dc9db4106bf2adbafc8f7986aabc" title="Computes the guide corner matrices A for a given element index in the reference patch. " alt="" coords="175,75,340,104"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1WTargetCalculator.html#af386ad951ad29a68944557ccfc6f18ec" title="Mesquite::WTargetCalculator\l::compute_target_matrices" alt="" coords="401,31,593,78"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1LVQDTargetCalculator.html#a7bebe2f2afb7cd9b6552569edd96e9a1" title="Function called by compute_target_matrices(PatchData&amp; pd, MsqError&amp; err) to compute the matrices afte..." alt="" coords="391,101,604,147"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="get_primary" name="get_primary">
+<area shape="rect" id="node3" href="$classRFC__Pane__overlay.html#a4cb3196028ce0c9e2bf48997cdf0d216" title="get_border_index" alt="" coords="168,5,288,35"/>
+<area shape="rect" id="node7" href="$classVertex__overlay.html#a6c7de39ffbd6429552ea91d5df673a13" title="Vertex_overlay::halfedge" alt="" coords="145,59,311,88"/>
+<area shape="rect" id="node9" href="$classHalfedge__overlay.html#aa126fd94949c810d24869ad04cd97e15" title="Halfedge_overlay::is\l_border" alt="" coords="157,111,299,158"/>
+<area shape="rect" id="node5" href="$classRFC__Pane__overlay.html#ac4c82a127856b6bc6092e299738dae65" title="hds" alt="" coords="360,5,403,35"/>
+</map>

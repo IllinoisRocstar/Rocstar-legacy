@@ -1,0 +1,11 @@
+<map id="search_edges_faces" name="search_edges_faces">
+<area shape="rect" id="node3" href="$basic__constructionsS3_8h.html#ace1c08f9d66d9b1b3ebc726f2290a8c9" title="projection" alt="" coords="199,192,276,221"/>
+<area shape="rect" id="node5" href="$classPlaneS3.html#af01d769ec65d399198c4eebf7d213ff9" title="PlaneS3::a" alt="" coords="349,5,435,35"/>
+<area shape="rect" id="node7" href="$classPlaneS3.html#afb78d3b27200791df64eb988b06f1ca0" title="PlaneS3::b" alt="" coords="349,59,435,88"/>
+<area shape="rect" id="node9" href="$classPlaneS3.html#ac431a30ef766daac859cfaf79928d98c" title="PlaneS3::c" alt="" coords="349,112,435,141"/>
+<area shape="rect" id="node11" href="$classPlaneS3.html#aaa89b1ab0d7e9266c59806d6e253f997" title="PlaneS3::d" alt="" coords="349,165,435,195"/>
+<area shape="rect" id="node13" href="$constructions_2kernel__ftC3_8h.html#a6d7d992049a02b8fd782ac0b008fa2a1" title="projection_planeC3" alt="" coords="325,219,459,248"/>
+<area shape="rect" id="node15" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="351,272,433,301"/>
+<area shape="rect" id="node17" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="351,325,433,355"/>
+<area shape="rect" id="node19" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="351,379,433,408"/>
+</map>

@@ -1,0 +1,24 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$namespacecimg__library.html#ab9973803c98195c477e28f6233963a4a" title="cimg_library::asin" alt="" coords="132,13,255,43"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="127,67,260,96"/>
+<area shape="rect" id="node11" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="120,120,267,149"/>
+<area shape="rect" id="node14" href="$roccom__c_09_09_8h.html#a47ed797bddcdd0aabcd9f8e47f326744" title="COM_finalize" alt="" coords="143,173,244,203"/>
+<area shape="rect" id="node16" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="136,227,251,256"/>
+<area shape="rect" id="node18" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="105,280,281,309"/>
+<area shape="rect" id="node20" href="$roccom__c_8h.html#a299161a8c4977e89b90876b670289762" title="COM_get_attribute_handle\l_const" alt="" coords="105,333,281,379"/>
+<area shape="rect" id="node22" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="105,403,281,432"/>
+<area shape="rect" id="node24" href="$roccom__c_09_09_8h.html#ac0f80d6e63759a2afe40ed883cea3d5e" title="COM_init" alt="" coords="155,456,232,485"/>
+<area shape="rect" id="node26" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="124,509,263,539"/>
+<area shape="rect" id="node29" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="127,563,260,592"/>
+<area shape="rect" id="node32" href="$roccom__c_8h.html#a34c7c55b98221dbb95aba53c374cf596" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="128,616,259,645"/>
+<area shape="rect" id="node34" href="$roccom__c_09_09_8h.html#adca6827f3c065859156fa3562c2cd9a8" title="Associates an array with an attribute for a specific pane. " alt="" coords="136,669,251,699"/>
+<area shape="rect" id="node37" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="139,723,248,752"/>
+<area shape="rect" id="node40" href="$roccom__c_09_09_8h.html#acac8419a87efe55e985100251e731bce" title="COM_set_verbose" alt="" coords="128,776,259,805"/>
+<area shape="rect" id="node43" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="112,829,275,859"/>
+<area shape="rect" id="node46" href="$namespacecimg__library.html#afdae8d98c82d052cc3aedd3a9e0304a8" title="cimg_library::cos" alt="" coords="133,883,253,912"/>
+<area shape="rect" id="node50" href="$namespacecimg__library.html#a35f28010f1c3f5a5668974c5ea8d6be3" title="cimg_library::sin" alt="" coords="135,940,252,969"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a4ff91920cd29bdfe6c8a04c9fb9a5f45" title="cimg_library::CImg\l::get_asin" alt="" coords="332,5,463,51"/>
+<area shape="rect" id="node9" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="333,616,461,645"/>
+<area shape="rect" id="node48" href="$structcimg__library_1_1CImg.html#ab42d865499ba41609ea43d53a062cd2f" title="cimg_library::CImg\l::get_cos" alt="" coords="332,870,463,917"/>
+<area shape="rect" id="node52" href="$structcimg__library_1_1CImg.html#a7c5c1b92e02d4286b19fd6ea054ba0e8" title="cimg_library::CImg\l::get_sin" alt="" coords="332,939,463,986"/>
+</map>

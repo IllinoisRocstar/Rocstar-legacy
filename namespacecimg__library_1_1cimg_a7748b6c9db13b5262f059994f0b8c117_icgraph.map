@@ -1,0 +1,48 @@
+<map id="filenamerand" name="filenamerand">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a67cf88da9c1122b55ebcef3d223bccbe" title="Load a RAW Color Camera image file, using external tool &#39;dcraw&#39;. " alt="" coords="393,5,543,69"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImgList.html#aa3885ef29cd5036361c12d407019de6c" title="Load an image from a video file (MPEG,AVI) using the external tool &#39;ffmpeg&#39;. " alt="" coords="391,93,545,157"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#aad5a1ff332f904a39b3ea2035d3a94dc" title="Load an image using GraphicsMagick&#39;s external tool &#39;gm&#39;. " alt="" coords="365,181,571,245"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a1b8bf7e0b1371dbdc0d845a39f6451a8" title="Load a gzipped image file, using external tool &#39;gunzip&#39;. " alt="" coords="399,269,537,333"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImgList.html#a0ab64a5a6414629623467ad5ee80b6fe" title="Load a gzipped list, using external tool &#39;gunzip&#39;. " alt="" coords="373,357,563,403"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#a841db22435a4f77bf3e4c9fc65ecbb6e" title="Load an image using ImageMagick&#39;s external tool &#39;convert&#39;. " alt="" coords="373,480,563,544"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg.html#a38df90ee1c431b684fcb5ed8248464b1" title="Load a DICOM image file, using XMedcon&#39;s external tool &#39;medcon&#39;. " alt="" coords="152,803,312,867"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImgList.html#a3b4ad0233afe8d38700bb1d0d0dc6ecc" title="Save an image sequence using the external tool &#39;ffmpeg&#39;. " alt="" coords="389,568,547,632"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImg.html#afdab21cdc4ef778bfaf4e123b28c9aa0" title="Save the image using GraphicsMagick&#39;s gm. " alt="" coords="364,656,572,720"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#a882ef6fb0c2487da8598e36c45b8eeab" title="Save an image as a gzipped file, using external tool &#39;gzip&#39;. " alt="" coords="397,744,539,808"/>
+<area shape="rect" id="node23" href="$structcimg__library_1_1CImgList.html#ae9d11f1d698df3ffe1ef4a9ede594e1e" title="Save a file in TIFF format. " alt="" coords="371,831,565,878"/>
+<area shape="rect" id="node25" href="$structcimg__library_1_1CImg.html#ab0ff4f35fc74d40fda4893b7e2fdbe7b" title="Save the image using ImageMagick&#39;s convert. " alt="" coords="371,901,565,965"/>
+<area shape="rect" id="node27" href="$structcimg__library_1_1CImg.html#af3608edc3098e7c850c69cd347d4f9e8" title="Save an image as a Dicom file (need &#39;(X)Medcon&#39; : http://xmedcon.sourceforge.net ) ..." alt="" coords="151,891,313,955"/>
+<area shape="rect" id="node29" href="$namespacecimg__library_1_1cimg.html#a797797a309ca40aa28cdfbb92f4d1621" title="Return or set path to store temporary files. " alt="" coords="176,445,288,475"/>
+<area shape="rect" id="node31" href="$namespacecimg__library_1_1cimg.html#ac1b66fe77173de9e5e8542b2823d6071" title="Print informations about CImg environement variables. " alt="" coords="447,427,489,456"/>
+<area shape="rect" id="node33" href="$meshtest1_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="701,296,752,325"/>
+<area shape="rect" id="node35" href="$classMesquite_1_1PatchData.html#abf395c48f00dbb49d4a000d371e78483" title="Mesquite::PatchData\l::have_computed_info" alt="" coords="652,418,801,465"/>
+<area shape="rect" id="node75" href="$classMesquite_1_1PatchData.html#ac7404d8ad2d834bfb4f3d0620bba16ee" title="Mesquite::PatchData\l::note_have_info" alt="" coords="655,349,799,395"/>
+<area shape="rect" id="node80" href="$classFaceOffset__3.html#a7cd0e18f9d180971a5c656207a67a464" title="FaceOffset_3::compute\l_eigenvectors" alt="" coords="648,715,805,762"/>
+<area shape="rect" id="node94" href="$classRocmop.html#a77616b2e5e1035b58e2e4438abea5cb7" title="Rocmop::compute_eigenvectors" alt="" coords="621,856,832,885"/>
+<area shape="rect" id="node37" href="$classMesquite_1_1PatchData.html#afe0e319026493905ea7ff7e2b3709eac" title="Returns the maximum volume or area out of all the elements in the patch This information is stored in..." alt="" coords="891,261,1045,325"/>
+<area shape="rect" id="node39" href="$classMesquite_1_1PatchData.html#ac9aa16ae4424ea8003292f7e6b28bde8" title="Returns delta based on the minimum and maximum corner determinant over all elements in the patch This..." alt="" coords="896,418,1040,465"/>
+<area shape="rect" id="node69" href="$classMesquite_1_1PatchData.html#a73c2dc4cba0a22073185a097000d315c" title="Returns average corner determinant over all corners in the patch This information is stored in the pa..." alt="" coords="881,349,1055,395"/>
+<area shape="rect" id="node73" href="$namespaceMesquite.html#a3f6e349e871fa0ed9ba56863380bbc14" title="Mesquite::operator\&lt;\&lt;" alt="" coords="895,488,1041,517"/>
+<area shape="rect" id="node41" href="$classMesquite_1_1DistanceFromTarget.html#aa835b7b26215274c9f7edd291145a723" title="Mesquite::DistanceFromTarget\l::get_barrier_function" alt="" coords="1111,383,1313,430"/>
+<area shape="rect" id="node47" href="$classMesquite_1_1I__DFT.html#abc691c49e36734bba1ea2ecd14fe9a5b" title="Evaluate the metric for an element. " alt="" coords="1124,453,1300,499"/>
+<area shape="rect" id="node49" href="$classMesquite_1_1I__DFT.html#aa71c0d57cadd2f8eeb540ab194c145b3" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="1117,522,1307,569"/>
+<area shape="rect" id="node51" href="$classMesquite_1_1I__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::I_DFT::compute\l_element_analytical_hessian" alt="" coords="1117,591,1307,638"/>
+<area shape="rect" id="node53" href="$classMesquite_1_1RI__DFT.html#abc691c49e36734bba1ea2ecd14fe9a5b" title="Evaluate the metric for an element. " alt="" coords="1119,661,1305,707"/>
+<area shape="rect" id="node55" href="$classMesquite_1_1RI__DFT.html#aa71c0d57cadd2f8eeb540ab194c145b3" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="1117,106,1307,153"/>
+<area shape="rect" id="node57" href="$classMesquite_1_1RI__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::RI_DFT::compute\l_element_analytical_hessian" alt="" coords="1117,175,1307,222"/>
+<area shape="rect" id="node59" href="$classMesquite_1_1ShapeQualityMetric.html#a049c8172101b823d31ecf9a6f1a19244" title="Given the 2&#45;d jacobian matrix, compute the condition number, fval. " alt="" coords="1113,245,1311,291"/>
+<area shape="rect" id="node65" href="$classMesquite_1_1ShapeQualityMetric.html#ace5b090da0ae07d4aa1dde27027533ba" title="Given the 3&#45;d jacobian matrix, compute the condition number, fval. " alt="" coords="1113,314,1311,361"/>
+<area shape="rect" id="node43" href="$classMesquite_1_1sI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="1399,383,1583,430"/>
+<area shape="rect" id="node45" href="$classMesquite_1_1sRI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="1419,453,1563,499"/>
+<area shape="rect" id="node61" href="$classMesquite_1_1ConditionNumberQualityMetric.html#afc1a16a1793ba9459a9b930b5292ffc5" title="evaluate using mesquite objects " alt="" coords="1399,227,1583,291"/>
+<area shape="rect" id="node63" href="$classMesquite_1_1VertexConditionNumberQualityMetric.html#a5a90f78516fa587f85daf4011bfb1ba8" title="evaluate using mesquite objects " alt="" coords="1368,314,1613,361"/>
+<area shape="rect" id="node71" href="$classMesquite_1_1LVQDTargetCalculator.html#a7bebe2f2afb7cd9b6552569edd96e9a1" title="Function called by compute_target_matrices(PatchData&amp; pd, MsqError&amp; err) to compute the matrices afte..." alt="" coords="1105,37,1319,83"/>
+<area shape="rect" id="node82" href="$classFaceOffset__3.html#a56aca8e1560d76b750545f7f33890551" title="FaceOffset_3::denoise\l_surface" alt="" coords="891,715,1045,762"/>
+<area shape="rect" id="node86" href="$classFaceOffset__3.html#ae567b553d4a9a500996a8211c9202a9c" title="FaceOffset_3::eigen\l_analyze_vertex" alt="" coords="899,785,1037,831"/>
+<area shape="rect" id="node84" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="1424,781,1557,827"/>
+<area shape="rect" id="node88" href="$classFaceOffset__3.html#a932f06459b53d1207fdbf1d78a4a09c6" title="FaceOffset_3::compute\l_anisotropic_vertex_centers" alt="" coords="1120,850,1304,897"/>
+<area shape="rect" id="node91" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="1133,781,1291,827"/>
+<area shape="rect" id="node96" href="$classRocmop.html#a951f6a38a9e200878fabe2fe295d23ed" title="Rocmop::eigen_analyze\l_vertex" alt="" coords="887,887,1049,934"/>
+<area shape="rect" id="node98" href="$classRocmop.html#a4c6e496385e479c044a89f1e545edaa5" title="Compute medial quadric for every vertex. " alt="" coords="1125,919,1299,966"/>
+<area shape="rect" id="node100" href="$classRocmop.html#a679bfb8c7da7e819b00dc132ba57dc8f" title="Smooths a surface using the medial quadric. " alt="" coords="1416,919,1565,966"/>
+</map>

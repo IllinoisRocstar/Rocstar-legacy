@@ -1,0 +1,16 @@
+<map id="WriteRocstar" name="WriteRocstar">
+<area shape="rect" id="node3" href="$TRAIL__UnixUtils_8H.html#adcf3eb6bd3dae10529b75101855089be" title="TRAIL_CWD" alt="" coords="589,9,688,39"/>
+<area shape="rect" id="node5" href="$TRAIL_8H.html#a79e9fc3f09da4ebe4619555d948a268b" title="TRAIL_WriteWindow" alt="" coords="153,244,297,273"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="369,536,503,565"/>
+<area shape="rect" id="node11" href="$roccom__c_8h.html#a44547c3eab1bf444e5f9bb23c13fc123" title="COM_free_buffer" alt="" coords="375,269,497,299"/>
+<area shape="rect" id="node13" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="348,323,524,352"/>
+<area shape="rect" id="node15" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="348,376,524,405"/>
+<area shape="rect" id="node17" href="$roccom__c_8h.html#ad744816e73fae2aec731bcbe41b52a16" title="COM_get_panes" alt="" coords="376,429,496,459"/>
+<area shape="rect" id="node19" href="$Handle_8h.html#a459850cd445841d238d0af12068f45a3" title="id" alt="" coords="417,483,455,512"/>
+<area shape="rect" id="node21" href="$TRAIL__UnixUtils_8H.html#adfa66fced7c6ea0eb21304b5f9ac48ae" title="TRAIL_CD" alt="" coords="596,205,681,235"/>
+<area shape="rect" id="node26" href="$TRAIL_8C.html#a4499180953af6dcc781b7172ac3b1c05" title="TRAIL_MergeRocinFiles" alt="" coords="353,115,519,144"/>
+<area shape="rect" id="node30" href="$TRAIL_8C.html#a4de17881c6e94055e09719728697be13" title="TRAIL_TimeString" alt="" coords="573,128,704,157"/>
+<area shape="rect" id="node33" href="$TRAIL_8C.html#abe177767f35ecdcb734c278d807187c4" title="TRAIL_WriteRocinControl" alt="" coords="349,61,523,91"/>
+<area shape="rect" id="node9" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="575,536,703,565"/>
+<area shape="rect" id="node23" href="$TRAIL__UnixUtils_8C.html#adcf3eb6bd3dae10529b75101855089be" title="TRAIL_CWD" alt="" coords="753,205,852,235"/>
+</map>

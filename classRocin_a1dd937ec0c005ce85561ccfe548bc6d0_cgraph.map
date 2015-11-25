@@ -1,0 +1,51 @@
+<map id="read_window" name="read_window">
+<area shape="rect" id="node3" href="$classRocin.html#a047b46290d1e21123ec029fb4660de28" title="Create a series of Roccom windows by reading in a list of files. " alt="" coords="153,797,257,827"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a6ebf7d3be61b364094596342a1d64827" title="COM_get_default_communicator" alt="" coords="307,184,520,213"/>
+<area shape="rect" id="node7" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="587,5,725,35"/>
+<area shape="rect" id="node9" href="$namespacecimg__library_1_1cimg.html#af883131bbc64e996d212114cc2b2b21a" title="Get the value of a system timer with a millisecond precision. " alt="" coords="349,287,477,334"/>
+<area shape="rect" id="node11" href="$Rocin_8C.html#a5a835ba1a84e5f4229a6d3f1141a78e1" title="Cast glob_error for portability (IBMSP has a different prototype) " alt="" coords="363,357,464,387"/>
+<area shape="rect" id="node13" href="$Rocin_8C.html#a53de10c8bd013ab3efff2bb23fb788dc" title="Error callback for glob. " alt="" coords="375,411,452,440"/>
+<area shape="rect" id="node16" href="$Rocin_8C.html#ab7a7fab44f0d3b76372865fb1442f1b7" title="Extract metadata from the list of files. " alt="" coords="352,464,475,493"/>
+<area shape="rect" id="node64" href="$Rocin_8C.html#adcf9504db90c57c3d46217ab38ceb3e1" title="CWD" alt="" coords="387,771,440,800"/>
+<area shape="rect" id="node66" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="347,1348,480,1377"/>
+<area shape="rect" id="node70" href="$Rocin_8C.html#a36b7bd15403ab8de3715be512908e87e" title="new_attributes" alt="" coords="360,1005,467,1035"/>
+<area shape="rect" id="node81" href="$classRocin.html#a659d336e9114a812b984f1b326b6be90" title="register_panes" alt="" coords="360,1165,467,1195"/>
+<area shape="rect" id="node90" href="$Rocin_8C.html#a47c0cc95b287e4a13de0621aba5472e3" title="load_data_HDF4" alt="" coords="353,824,473,853"/>
+<area shape="rect" id="node105" href="$Rocin_8C.html#ad4aa2b88f82fbfeba72baeafec5b52c9" title="broadcast_win_attributes" alt="" coords="331,1453,496,1483"/>
+<area shape="rect" id="node124" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="332,1244,495,1273"/>
+<area shape="rect" id="node127" href="$Rocin_8C.html#a64721ab1a1fa246b6d226dcb98fddc28" title="free_blocks" alt="" coords="369,1507,457,1536"/>
+<area shape="rect" id="node18" href="$Rocin_8C.html#a168ceb3da43ff476c81ba29160c5f26f" title="Find the first geometry dataset for the given block. " alt="" coords="568,333,744,363"/>
+<area shape="rect" id="node20" href="$classHDF4.html#a1a415b4d82a02e9d1ec09ea92357d892" title="HDF4::SDend" alt="" coords="815,491,919,520"/>
+<area shape="rect" id="node22" href="$classHDF4.html#ae12690d2dcacced803400a03d68b3413" title="HDF4::SDendaccess" alt="" coords="989,465,1136,495"/>
+<area shape="rect" id="node24" href="$classHDF4.html#aa2a560333ba396b84bde6194f11f5b70" title="HDF4::SDfileinfo" alt="" coords="1001,280,1124,309"/>
+<area shape="rect" id="node28" href="$classHDF4.html#a071f52bd4df585ad6ad2441ca4990a7d" title="HDF4::SDgetdatastrs" alt="" coords="792,179,941,208"/>
+<area shape="rect" id="node32" href="$classHDF4.html#a1630ace5c27ebbcfdc08ac8db4c8ecd7" title="HDF4::SDstart" alt="" coords="812,437,921,467"/>
+<area shape="rect" id="node34" href="$classHDF4.html#a7251388f9a04d111412c2d0c39a88b92" title="&quot;Open&quot; and &quot;close&quot; HDF files efficiently. " alt="" coords="816,333,917,363"/>
+<area shape="rect" id="node42" href="$namespacecimg__library_1_1cimg.html#a43334b3df38ff7c4369a503a4fc3a9f9" title="Compare two C&#45;strings, ignoring the case. " alt="" coords="803,109,931,155"/>
+<area shape="rect" id="node44" href="$namespacecimg__library_1_1cimg.html#a747de40c911c42d60e1a4ee3f0c69c6c" title="Compare the first n characters of two C&#45;strings, ignoring the case. " alt="" coords="999,79,1127,126"/>
+<area shape="rect" id="node48" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="629,387,683,416"/>
+<area shape="rect" id="node54" href="$classHDF4.html#a34c4915e2cacdc86dcecc9ab8e5c5b13" title="HDF4::SDreaddata" alt="" coords="589,592,723,621"/>
+<area shape="rect" id="node58" href="$namespacecimg__library.html#a35f28010f1c3f5a5668974c5ea8d6be3" title="cimg_library::sin" alt="" coords="597,797,715,827"/>
+<area shape="rect" id="node26" href="$Handle_8h.html#a459850cd445841d238d0af12068f45a3" title="id" alt="" coords="1229,280,1267,309"/>
+<area shape="rect" id="node30" href="$namespaceMesquite.html#ac7fe4c546e08637612bd9b212daa45e9" title="Mesquite::length" alt="" coords="1004,179,1121,208"/>
+<area shape="rect" id="node38" href="$classHDF4.html#a693236d8dea93c614269a287189cefd1" title="HDF4::SDgetinfo" alt="" coords="1001,333,1124,363"/>
+<area shape="rect" id="node40" href="$classHDF4.html#aa954bbdec5c2a589b7171404dc29df2b" title="HDF4::SDselect" alt="" coords="1004,645,1121,675"/>
+<area shape="rect" id="node46" href="$namespacecimg__library_1_1cimg.html#a5a028d4d4de4e1894263a29a6de8e2ee" title="Remove the &#39;case&#39; of an ASCII character. " alt="" coords="1184,79,1312,126"/>
+<area shape="rect" id="node60" href="$structcimg__library_1_1CImg.html#a7c5c1b92e02d4286b19fd6ea054ba0e8" title="cimg_library::CImg\l::get_sin" alt="" coords="801,781,932,827"/>
+<area shape="rect" id="node68" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="803,1297,931,1327"/>
+<area shape="rect" id="node72" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="587,1112,725,1141"/>
+<area shape="rect" id="node75" href="$roccom__c_8h.html#a34c7c55b98221dbb95aba53c374cf596" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="591,1005,721,1035"/>
+<area shape="rect" id="node77" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="601,1165,711,1195"/>
+<area shape="rect" id="node83" href="$bordertest__struc_8C.html#adbefa474b566ff7262aefc2f21fb2808" title="is_local" alt="" coords="623,1219,689,1248"/>
+<area shape="rect" id="node87" href="$roccom__c_09_09_8h.html#adca6827f3c065859156fa3562c2cd9a8" title="Associates an array with an attribute for a specific pane. " alt="" coords="599,1272,713,1301"/>
+<area shape="rect" id="node92" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="599,1059,713,1088"/>
+<area shape="rect" id="node94" href="$roccom__c_8h.html#a1da9106f23205e969ae8407deebbfdfe" title="COM_get_status" alt="" coords="596,952,716,981"/>
+<area shape="rect" id="node97" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="844,1085,889,1115"/>
+<area shape="rect" id="node107" href="$roccom__c_8h.html#a44547c3eab1bf444e5f9bb23c13fc123" title="COM_free_buffer" alt="" coords="595,1587,717,1616"/>
+<area shape="rect" id="node110" href="$roccom__c_8h.html#a0e53e9d4c7d8101b3aae8f2cbee190e0" title="Get the sizes of an attribute. " alt="" coords="591,1427,721,1456"/>
+<area shape="rect" id="node116" href="$roccom__c_8h.html#a63c15a8e33b1498fd4bfdd8a50e8ba66" title="COM_get_attributes" alt="" coords="587,1480,725,1509"/>
+<area shape="rect" id="node118" href="$roccom__c_09_09_8h.html#ad0963775a018dcb83d982e5cfeeb3a22" title="COM_get_sizeof" alt="" coords="596,1640,716,1669"/>
+<area shape="rect" id="node122" href="$vinci_8h.html#a9d685369a20ad2d6f5c2256b857614f6" title="empty" alt="" coords="627,1533,685,1563"/>
+<area shape="rect" id="node114" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="845,1427,888,1456"/>
+<area shape="rect" id="node120" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="825,1640,908,1669"/>
+</map>

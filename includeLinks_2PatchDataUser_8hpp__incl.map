@@ -1,0 +1,15 @@
+<map id="PatchDataUser.hpp" name="PatchDataUser.hpp">
+<area shape="rect" id="node3" href="$Mesquite_8hpp.html" title="Mesquite.hpp" alt="" coords="880,469,979,499"/>
+<area shape="rect" id="node13" href="$includeLinks_2MsqError_8hpp.html" title="MsqError.hpp" alt="" coords="159,315,257,344"/>
+<area shape="rect" id="node22" href="$includeLinks_2PatchData_8hpp.html" title="PatchData.hpp" alt="" coords="668,83,777,112"/>
+<area shape="rect" id="node25" href="$includeLinks_2MsqVertex_8hpp.html" title="MsqVertex.hpp" alt="" coords="865,315,975,344"/>
+<area shape="rect" id="node35" href="$includeLinks_2MsqMeshEntity_8hpp.html" title="MsqMeshEntity.hpp" alt="" coords="931,160,1069,189"/>
+<area shape="rect" id="node62" href="$MeshInterface_8hpp.html" title="This file contains the Mesquite mesh interface. Many users will want to implement a concrete class de..." alt="" coords="427,237,557,267"/>
+<area shape="rect" id="node70" href="$includeLinks_2PatchDataMem_8hpp.html" title="PatchDataMem.hpp" alt="" coords="197,160,336,189"/>
+<area shape="rect" id="node76" href="$includeLinks_2CornerTag_8hpp.html" title="CornerTag.hpp" alt="" coords="371,160,477,189"/>
+<area shape="rect" id="node83" href="$includeLinks_2TargetMatrix_8hpp.html" title="TargetMatrix.hpp" alt="" coords="936,237,1056,267"/>
+<area shape="rect" id="node28" href="$includeLinks_2Vector3D_8hpp.html" title="Vector3D.hpp" alt="" coords="1068,392,1169,421"/>
+<area shape="rect" id="node38" href="$includeLinks_2QualityMetric_8hpp.html" title="QualityMetric.hpp" alt="" coords="1131,237,1253,267"/>
+<area shape="rect" id="node55" href="$includeLinks_2TopologyInfo_8hpp.html" title="TopologyInfo.hpp" alt="" coords="668,315,791,344"/>
+<area shape="rect" id="node45" href="$includeLinks_2Matrix3D_8hpp.html" title="Matrix3D.hpp" alt="" coords="1201,315,1300,344"/>
+</map>

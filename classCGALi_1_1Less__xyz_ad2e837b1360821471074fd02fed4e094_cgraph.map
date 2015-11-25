@@ -1,0 +1,9 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node3" href="$predicates__on__pointsS3_8h.html#af81bcfa8f9aa6aac9dd7b247a1f08ebc" title="lexicographically_xyz\l_smaller" alt="" coords="131,93,277,139"/>
+<area shape="rect" id="node5" href="$predicates__on__pointsS3_8h.html#af723b40f19f4c7f2f64ba13e427a00a5" title="compare_lexicographically_xyz" alt="" coords="325,101,528,131"/>
+<area shape="rect" id="node7" href="$predicates_2kernel__ftC3_8h.html#a37f7d792553e0774fd682390c29f90d0" title="compare_lexicographically\l_xyzC3" alt="" coords="577,5,751,51"/>
+<area shape="rect" id="node11" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="623,75,705,104"/>
+<area shape="rect" id="node13" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="623,128,705,157"/>
+<area shape="rect" id="node15" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="623,181,705,211"/>
+<area shape="rect" id="node9" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="801,13,916,43"/>
+</map>

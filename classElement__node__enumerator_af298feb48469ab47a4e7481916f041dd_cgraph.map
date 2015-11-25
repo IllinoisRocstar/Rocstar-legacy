@@ -1,0 +1,7 @@
+<map id="vertex" name="vertex">
+<area shape="rect" id="node3" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="137,5,215,35"/>
+<area shape="rect" id="node5" href="$classPane.html#afc3d6a08a6436efe1af8e83699d4ca53" title="Is mesh of the pane structured? " alt="" coords="289,109,423,139"/>
+<area shape="rect" id="node7" href="$classPane.html#a78f646f49fb83340032b735b056a19d3" title="Get the number of nodes in i&#45;dimension if the mesh is structured. " alt="" coords="129,109,223,139"/>
+<area shape="rect" id="node10" href="$classPane.html#aceba035151479eca5c69f9c88563e153" title="Get the number of nodes in j&#45;dimension if the mesh is structured. " alt="" coords="129,163,223,192"/>
+<area shape="rect" id="node13" href="$classConnectivity.html#a6b814939135364a0cd18ee54799897ee" title="Get the number of nodes per element of the current connectivity table. " alt="" coords="113,215,239,262"/>
+</map>

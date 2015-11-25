@@ -1,0 +1,9 @@
+<map id="angle" name="angle">
+<area shape="rect" id="node3" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="107,17,235,47"/>
+<area shape="rect" id="node7" href="$utilities_2rc__cmp_2util_8cpp.html#a0d9256a364d8efaad23e52d4042654e0" title="dot_product" alt="" coords="125,72,216,101"/>
+<area shape="rect" id="node11" href="$geometry_8h.html#a3f884839e02fce28dc24f56b4f121900" title="Compute the dot Product of two vectors. " alt="" coords="147,125,195,155"/>
+<area shape="rect" id="node13" href="$namespacenvc.html#a4ea00221667e66f4029614e350ea5745" title="nvc::norm2" alt="" coords="128,179,213,208"/>
+<area shape="rect" id="node15" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="149,232,192,261"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="284,5,415,51"/>
+<area shape="rect" id="node9" href="$utilities_2rc__cmp_2util_8cpp.html#a7198ddaeac1d22c06c4daf75de4ceaef" title="nan" alt="" coords="328,75,371,104"/>
+</map>

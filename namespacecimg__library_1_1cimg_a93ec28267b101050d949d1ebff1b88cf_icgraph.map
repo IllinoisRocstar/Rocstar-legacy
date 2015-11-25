@@ -1,0 +1,51 @@
+<map id="warn" name="warn">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ae3332011e1af19ca1c64a12a47ceaa17" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_analyze" alt="" coords="352,213,517,259"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#ad6b7f1f5147061c82cffd66396962abe" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_ascii" alt="" coords="361,5,508,51"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#af0ef73cee458f69f6738c2e50697dcff" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_jpeg" alt="" coords="363,74,507,121"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a109ebf2200cf420c95008aab6272c16b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_off" alt="" coords="367,143,503,190"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a89a714d19421509ace0741984d065b47" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_pnm" alt="" coords="361,282,508,329"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImgList.html#a0b5a78e00d9c9f1b9426851ca9abcd81" title="cimg_library::CImgList\l\&lt; uintT \&gt;::_load_yuv" alt="" coords="359,351,511,398"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg.html#a9396f0090a7fd57ef0578f7cbf782132" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_bmp" alt="" coords="360,1810,509,1857"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImgList.html#a6ecd490e3fa388ad3ab4386205d6fac6" title="Save an image list into a .cimg file. " alt="" coords="359,2087,511,2134"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImg.html#ab5a7ba0a1e798327358d769cb06f5e7e" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_dlm" alt="" coords="361,2157,508,2203"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#a88d114e68bb4a0fd1d9412202d7766c7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_jpeg" alt="" coords="360,2226,509,2273"/>
+<area shape="rect" id="node23" href="$structcimg__library_1_1CImg.html#ab37ce77846d08edbac60502f3a286175" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_png" alt="" coords="361,2295,508,2342"/>
+<area shape="rect" id="node25" href="$structcimg__library_1_1CImg.html#a30b53145248d40e0e374d248e4f1ca14" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_pnm" alt="" coords="360,2018,509,2065"/>
+<area shape="rect" id="node27" href="$structcimg__library_1_1CImg.html#a501b7918d00f235497cea4312ada079c" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_rgb" alt="" coords="364,1949,505,1995"/>
+<area shape="rect" id="node29" href="$structcimg__library_1_1CImg.html#ae40ad9552fb0343cd5cde4a724e1eada" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_rgba" alt="" coords="360,1879,509,1926"/>
+<area shape="rect" id="node31" href="$structcimg__library_1_1CImg.html#a512dca5945c08a2daaed3d78ceee33a5" title="cimg_library::CImg\l\&lt; uintT \&gt;::assign" alt="" coords="131,2234,261,2281"/>
+<area shape="rect" id="node33" href="$structcimg__library_1_1CImg.html#a615523f1cb390544b146aa8c836728d2" title="Compute the eigenvalues and eigenvectors of a matrix. " alt="" coords="131,2303,261,2350"/>
+<area shape="rect" id="node35" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="168,1195,224,1224"/>
+<area shape="rect" id="node91" href="$structcimg__library_1_1CImgList.html#a231161b57fc1e5d813f254f65afefd8b" title="Compute a 1&#45;D Fast Fourier Transform, along specified axis. " alt="" coords="120,2373,272,2419"/>
+<area shape="rect" id="node93" href="$namespacecimg__library_1_1cimg.html#a4429d578e86edc9147af5a8f307c5f30" title="Read file data, and check for possible errors. " alt="" coords="171,557,221,587"/>
+<area shape="rect" id="node104" href="$namespacecimg__library_1_1cimg.html#afbc8d43d7f8c482392873aeeb2c4d9a5" title="Write data to a file, and check for possible errors. " alt="" coords="169,1827,223,1856"/>
+<area shape="rect" id="node114" href="$structcimg__library_1_1CImg.html#a930302996a00b75e7e4ea7b4d6dea821" title="Invert the current matrix. " alt="" coords="131,2442,261,2489"/>
+<area shape="rect" id="node116" href="$structcimg__library_1_1CImgList.html#ac90b30e0027691debb81df26216b81c0" title="Load an image from a video file, using ffmpeg libraries. " alt="" coords="119,2511,273,2558"/>
+<area shape="rect" id="node118" href="$structcimg__library_1_1CImg.html#ab943c007a92b463ec458b4be80e80460" title="Load an image from a TIFF file. " alt="" coords="131,2581,261,2627"/>
+<area shape="rect" id="node120" href="$structcimg__library_1_1CImgList.html#a9195765cb9bde15990a29ccd9306532c" title="Load a TIFF file. " alt="" coords="120,2650,272,2697"/>
+<area shape="rect" id="node122" href="$structcimg__library_1_1CImgList.html#a9ec177b1d2c3d017a88fb1b2efbdc1b6" title="Return a reference to the i&#45;th element of the image list. " alt="" coords="120,2719,272,2766"/>
+<area shape="rect" id="node124" href="$structcimg__library_1_1CImgList.html#a2116e4ad3f06244c088451bfc7069474" title="Remove the images from positions pos1 to pos2. " alt="" coords="120,2789,272,2835"/>
+<area shape="rect" id="node126" href="$structcimg__library_1_1CImg.html#ac770a70466ad46bd7c2fd6c604974b6c" title="Save the image using built&#45;in ImageMagick++ library. " alt="" coords="116,2858,276,2905"/>
+<area shape="rect" id="node128" href="$structcimg__library_1_1CImg.html#acd193feee786d4f6b49e19fb1096daab" title="Solve a linear system AX=B where B=*this. " alt="" coords="131,2927,261,2974"/>
+<area shape="rect" id="node130" href="$structcimg__library_1_1CImg.html#a105a278049e2a6b08d42052b4519262d" title="Compute the eigenvalues and eigenvectors of a symmetric matrix. " alt="" coords="105,2997,287,3043"/>
+<area shape="rect" id="node37" href="$structcimg__library_1_1CImg.html#a68ac25d3fda66263ff7b2d4a481b99d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display\l_object3d" alt="" coords="369,1029,500,1093"/>
+<area shape="rect" id="node39" href="$structcimg__library_1_1CImg.html#ab470ff84bcac27328430e271067570bd" title="cimg_library::CImg\l\&lt; uintT \&gt;::_get_select" alt="" coords="360,1117,509,1163"/>
+<area shape="rect" id="node43" href="$structcimg__library_1_1CImg.html#ae664a2dfc77ba22eda62c0984dda9153" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_bmp" alt="" coords="361,490,508,537"/>
+<area shape="rect" id="node45" href="$structcimg__library_1_1CImgList.html#ad2a62637967b943da88017d1b9a167f4" title="cimg_library::CImgList\l\&lt; uintT \&gt;::_load_cimg" alt="" coords="359,1186,511,1233"/>
+<area shape="rect" id="node47" href="$structcimg__library_1_1CImg.html#a7d2928ef353cf9c90d4ef8b67b56e617" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_dlm" alt="" coords="364,1255,505,1302"/>
+<area shape="rect" id="node49" href="$structcimg__library_1_1CImg.html#af1af3aa331a329541525934b3e2651a7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_inr" alt="" coords="368,1325,501,1371"/>
+<area shape="rect" id="node53" href="$structcimg__library_1_1CImg.html#ad5eebb63db8c28d3a4f11ef5590ea89b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_pandore" alt="" coords="352,559,517,606"/>
+<area shape="rect" id="node55" href="$structcimg__library_1_1CImg.html#a5449ce8c13f2a71d0897cb483ac97e57" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_png" alt="" coords="364,629,505,675"/>
+<area shape="rect" id="node58" href="$structcimg__library_1_1CImg.html#a88c1723f62a9466565842f646e28b64c" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_raw" alt="" coords="364,698,505,745"/>
+<area shape="rect" id="node60" href="$structcimg__library_1_1CImg.html#a8d09c361da2d3bafb268d0c4194ed578" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_rgb" alt="" coords="365,767,504,814"/>
+<area shape="rect" id="node62" href="$structcimg__library_1_1CImg.html#a6f1b2ecd682e00d592fc48c73a59491a" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_rgba" alt="" coords="361,421,508,467"/>
+<area shape="rect" id="node65" href="$structcimg__library_1_1CImg.html#a5ce97b485cd79a0ec7b05170bc30a69e" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_ascii" alt="" coords="359,1394,511,1441"/>
+<area shape="rect" id="node69" href="$structcimg__library_1_1CImg.html#a8408d210d000f23f1c3b9bb443198046" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_cpp" alt="" coords="361,1463,508,1510"/>
+<area shape="rect" id="node72" href="$structcimg__library_1_1CImgList.html#ae998cedbc00a9a278448948806b5b390" title="cimg_library::CImgList\l\&lt; uintT \&gt;::_save_empty_cimg" alt="" coords="337,1533,532,1579"/>
+<area shape="rect" id="node74" href="$structcimg__library_1_1CImg.html#a7a59fe2bc9733b35ad1f6b69011e99d9" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_inr" alt="" coords="365,1671,504,1718"/>
+<area shape="rect" id="node77" href="$structcimg__library_1_1CImg.html#aeb6d1bc68dfcca7722538cc53d25bcf9" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_off" alt="" coords="365,837,504,883"/>
+<area shape="rect" id="node79" href="$structcimg__library_1_1CImg.html#a179799afd71d695e6cbfc979c431ed21" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_pandore" alt="" coords="349,906,520,953"/>
+<area shape="rect" id="node83" href="$structcimg__library_1_1CImg.html#a811f3a65214ee196d5b4cf2de6f34605" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_raw" alt="" coords="361,1741,508,1787"/>
+<area shape="rect" id="node87" href="$structcimg__library_1_1CImgList.html#a26015642cf27f630ff74e3a247872019" title="cimg_library::CImgList\l\&lt; uintT \&gt;::_save_yuv" alt="" coords="359,1602,511,1649"/>
+<area shape="rect" id="node89" href="$namespacecimg__library_1_1cimg.html#ae36d7a689692ac5663afe1bbdab5d9fa" title="Return or set path to the &#39;dcraw&#39; command. " alt="" coords="391,976,479,1005"/>
+</map>

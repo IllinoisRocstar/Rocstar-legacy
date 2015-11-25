@@ -1,0 +1,19 @@
+<map id="dialog" name="dialog">
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#a62805bf0845c650a457cd78b3cd6488a" title="Display a dialog box, where a user can click standard buttons. " alt="" coords="109,413,165,443"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#abcd3f144ae47cc8c971c0c8bf72e416f" title="Transfer the content of the instance image into another one in a way that memory copies are avoided i..." alt="" coords="236,5,367,51"/>
+<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#a3283b6107f321f7a5780b1555745ba4d" title="Return the maximum value between two numbers. " alt="" coords="279,75,324,104"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImgList.html#aafae58d5a77ea4190e6f2c818238bd1a" title="Return the size of the list. " alt="" coords="225,127,377,174"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImgList.html#a705f1ec1d62b035193f831cc7ac14ac8" title="Transfer the content of the instance image list into another one. " alt="" coords="225,197,377,243"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#a093c5fb816594834ba279e21005675fc" title="Draw a 2D colored line. " alt="" coords="236,266,367,313"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImgDisplay.html#a27714e5f8da060a36e6614ada9d8df25" title="Move window. " alt="" coords="213,335,389,382"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImgDisplay.html#a0fc1bfce258738698d77e0e5690a3d6d" title="Return the width of the screen resolution. " alt="" coords="213,405,389,451"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImgDisplay.html#aafae58d5a77ea4190e6f2c818238bd1a" title="Return display width. " alt="" coords="213,474,389,521"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImgDisplay.html#afc1eab600c6dd77bdbde330fcd27d396" title="Return the height of the screen resolution. " alt="" coords="213,543,389,590"/>
+<area shape="rect" id="node23" href="$structcimg__library_1_1CImgDisplay.html#afc3244815fd1b4cea186b6a63bfb635d" title="Return display height. " alt="" coords="213,613,389,659"/>
+<area shape="rect" id="node25" href="$structcimg__library_1_1CImg.html#aea0592215c6068e617a975a1fe5b7b7b" title="Display an image into a CImgDisplay window. " alt="" coords="236,682,367,729"/>
+<area shape="rect" id="node27" href="$structcimg__library_1_1CImgDisplay.html#a79669a0b7bdc65aff8313c590c7faab0" title="Synchronized waiting function. Same as cimg::wait(). " alt="" coords="213,751,389,798"/>
+<area shape="rect" id="node35" href="$structcimg__library_1_1CImgDisplay.html#a8e85ddca38b9cbf553835fbc0cc3d724" title="Resize a display window with the size of an image. " alt="" coords="213,821,389,867"/>
+<area shape="rect" id="node29" href="$namespacecimg__library_1_1cimg.html#aa2bee10628b1c7b505e1163ee7198a6e" title="_sleep" alt="" coords="439,760,497,789"/>
+<area shape="rect" id="node31" href="$namespacecimg__library_1_1cimg.html#a3ac7655e49556a90715f3532af221334" title="Sleep for a certain numbers of milliseconds. " alt="" coords="547,733,600,763"/>
+<area shape="rect" id="node33" href="$namespacecimg__library_1_1cimg.html#af883131bbc64e996d212114cc2b2b21a" title="Get the value of a system timer with a millisecond precision. " alt="" coords="551,787,596,816"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$classAgent.html" title="Agent" alt="" coords="197,72,253,101"/>
+<area shape="rect" id="node11" href="$classCOM__Object__derived.html" title="COM_Object_derived" alt="" coords="152,152,299,181"/>
+<area shape="rect" id="node13" href="$classCoupling.html" title="Coupling" alt="" coords="189,205,261,235"/>
+<area shape="rect" id="node21" href="$classRocin.html" title="Rocin" alt="" coords="197,259,253,288"/>
+<area shape="rect" id="node23" href="$classRocon.html" title="Rocon" alt="" coords="196,312,255,341"/>
+<area shape="rect" id="node25" href="$classRocout.html" title="Rocout" alt="" coords="193,365,257,395"/>
+<area shape="rect" id="node27" href="$classRocsurf.html" title="Rocsurf" alt="" coords="192,419,259,448"/>
+<area shape="rect" id="node5" href="$classBurnAgent.html" title="BurnAgent" alt="" coords="361,5,444,35"/>
+<area shape="rect" id="node7" href="$classFluidAgent.html" title="FluidAgent" alt="" coords="361,59,444,88"/>
+<area shape="rect" id="node9" href="$classSolidAgent.html" title="SolidAgent" alt="" coords="360,112,445,141"/>
+<area shape="rect" id="node15" href="$classFluidAlone.html" title="FluidAlone" alt="" coords="361,165,444,195"/>
+<area shape="rect" id="node17" href="$classFluidBurnAlone.html" title="FluidBurnAlone" alt="" coords="348,219,457,248"/>
+<area shape="rect" id="node19" href="$classFullyCoupling.html" title="FullyCoupling" alt="" coords="352,272,453,301"/>
+</map>

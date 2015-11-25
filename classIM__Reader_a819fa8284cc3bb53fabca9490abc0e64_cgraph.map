@@ -1,0 +1,9 @@
+<map id="read_pane_ij" name="read_pane_ij">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#adca6827f3c065859156fa3562c2cd9a8" title="Associates an array with an attribute for a specific pane. " alt="" coords="153,5,268,35"/>
+<area shape="rect" id="node7" href="$classIM__Reader.html#a5c8cf2889cf1e089954cb2adb41cf0eb" title="get_nextline" alt="" coords="345,57,436,87"/>
+<area shape="rect" id="node9" href="$classIM__Reader.html#ada409e59cc155b5189acb79c158eb115" title="read_pane_coors" alt="" coords="151,111,271,140"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="509,85,637,115"/>
+<area shape="rect" id="node11" href="$roccom__c_8h.html#a989b969be3cb07c32a05d4aad3a0f710" title="Allocate space for an attribute on a specific pane and return the address by setting addr..." alt="" coords="320,111,461,140"/>
+<area shape="rect" id="node13" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="336,164,445,193"/>
+<area shape="rect" id="node17" href="$classIM__Reader.html#a21c12adced240d78991978d0d5153789" title="isfinite" alt="" coords="361,217,420,247"/>
+</map>

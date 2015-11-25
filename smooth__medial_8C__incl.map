@@ -1,0 +1,27 @@
+<map id="smooth_medial.C" name="smooth_medial.C">
+<area shape="rect" id="node3" href="$Rocmop_8h.html" title="Rocmop.h" alt="" coords="608,83,691,112"/>
+<area shape="rect" id="node17" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="71,488,145,517"/>
+<area shape="rect" id="node63" href="$Pane_8h.html" title="Contains the prototypes for the Pane object. " alt="" coords="729,411,791,440"/>
+<area shape="rect" id="node90" href="$Rocsurf_8h.html" title="Rocsurf.h" alt="" coords="664,160,741,189"/>
+<area shape="rect" id="node96" href="$Rocblas_8h.html" title="Definition for Rocblas API. " alt="" coords="69,160,149,189"/>
+<area shape="rect" id="node102" href="$Rocmap_8h.html" title="Rocmap.h" alt="" coords="816,160,899,189"/>
+<area shape="rect" id="node106" href="$geometry_8h.html" title="Geometric helper function header file. " alt="" coords="1069,83,1155,112"/>
+<area shape="rect" id="node112" href="$Generic__element__2_8h.html" title="Generic_element_2.h" alt="" coords="1552,237,1696,267"/>
+<area shape="rect" id="node5" href="$mopbasic_8h.html" title="mopbasic.h" alt="" coords="1137,160,1225,189"/>
+<area shape="rect" id="node7" href="$Manifold__2_8h.html" title="Manifold_2.h" alt="" coords="1133,237,1229,267"/>
+<area shape="rect" id="node25" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="199,643,276,672"/>
+<area shape="rect" id="node39" href="$roccom__devel_8h.html" title="roccom_devel.h" alt="" coords="516,237,631,267"/>
+<area shape="rect" id="node75" href="$Pane__communicator_8h.html" title="Handles communication of shared nodes, ghost nodes or ghost cells across panes. " alt="" coords="437,160,589,189"/>
+<area shape="rect" id="node15" href="$Element__accessors_8h.html" title="Element_accessors.h" alt="" coords="1331,411,1477,440"/>
+<area shape="rect" id="node9" href="$surfbasic_8h.html" title="surfbasic.h" alt="" coords="1341,324,1427,353"/>
+<area shape="rect" id="node19" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="59,565,149,595"/>
+<area shape="rect" id="node21" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="309,720,424,749"/>
+<area shape="rect" id="node23" href="$FC_8h.html" title="FC.h" alt="" coords="341,797,392,827"/>
+<area shape="rect" id="node41" href="$Attribute_8h.html" title="Contains the prototype of Attriubte. " alt="" coords="657,565,740,595"/>
+<area shape="rect" id="node49" href="$Connectivity_8h.html" title="Contains the prototype of Connectivity. " alt="" coords="688,488,795,517"/>
+<area shape="rect" id="node52" href="$Function_8h.html" title="Contains the prototypes and implementation for the Funcion object. " alt="" coords="431,411,513,440"/>
+<area shape="rect" id="node60" href="$roccom__assertion_8h.html" title="This file contains a set of routines for error assertion. " alt="" coords="275,488,411,517"/>
+<area shape="rect" id="node68" href="$Window_8h.html" title="Contains the prototypes for the Window object. " alt="" coords="611,324,691,353"/>
+<area shape="rect" id="node45" href="$roccom__exception_8h.html" title="roccom_exception.h" alt="" coords="476,643,615,672"/>
+<area shape="rect" id="node77" href="$mapbasic_8h.html" title="mapbasic.h" alt="" coords="849,237,937,267"/>
+</map>

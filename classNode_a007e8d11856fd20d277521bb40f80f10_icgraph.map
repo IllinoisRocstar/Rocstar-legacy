@@ -1,0 +1,11 @@
+<map id="removeFace" name="removeFace">
+<area shape="rect" id="node3" href="$classFace.html#a2f274474f46c3b963a33d16617ce1826" title="Face::replaceNode" alt="" coords="164,59,295,88"/>
+<area shape="rect" id="node18" href="$classQuadFace.html#adb800727c866d166d683294629e2c394" title="Destructor. " alt="" coords="151,112,308,141"/>
+<area shape="rect" id="node20" href="$classTriFace.html#ac5dc4042a87752bb9235c384e36242a0" title="Destructor. " alt="" coords="167,165,292,195"/>
+<area shape="rect" id="node5" href="$classQCoElement.html#ab23575966f713faa40dc0aeea1c414fb" title="QCoElement::replaceFaceNode" alt="" coords="359,5,564,35"/>
+<area shape="rect" id="node7" href="$classTCoElement.html#ab23575966f713faa40dc0aeea1c414fb" title="TCoElement::replaceFaceNode" alt="" coords="359,59,564,88"/>
+<area shape="rect" id="node9" href="$classElement.html#a2f274474f46c3b963a33d16617ce1826" title="Element::replaceNode" alt="" coords="387,112,536,141"/>
+<area shape="rect" id="node11" href="$classMesh.html#a614a4adf598595b7126cdaa822a9bade" title="Mesh::replaceNode" alt="" coords="615,112,748,141"/>
+<area shape="rect" id="node13" href="$classNode.html#aea0042ea84160d091512051ea23d8e41" title="separate" alt="" coords="797,112,869,141"/>
+<area shape="rect" id="node15" href="$classMesh.html#a96f8003c64bff21d807cea52f48db2a7" title="The addCohesive method is the driver for the entire process of adding cohesive elements to the mesh..." alt="" coords="917,112,1056,141"/>
+</map>

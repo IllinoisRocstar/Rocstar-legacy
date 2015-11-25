@@ -1,0 +1,7 @@
+<map id="halfspace3d" name="halfspace3d">
+<area shape="rect" id="node3" href="$classhalfspace3d.html#a7217e2804519880a89d0ea830b7dbb73" title="initCheck" alt="" coords="147,32,224,61"/>
+<area shape="rect" id="node5" href="$classhalfspace3d.html#ae485a3a10862e04cd62b6a384647823e" title="init" alt="" coords="277,5,315,35"/>
+<area shape="rect" id="node11" href="$classhalfspace3d.html#aef7512396424a5a2d3508e1e2754c332" title="side" alt="" coords="273,59,319,88"/>
+<area shape="rect" id="node7" href="$namespacenvc.html#a9c3758ec1c466c87f7665d13c0160ce8" title="nvc::cross" alt="" coords="376,5,459,35"/>
+<area shape="rect" id="node9" href="$classvector3d.html#a47828ecf0103e5e1f7b3bc4a8a1930a8" title="vector3d::dot" alt="" coords="368,59,467,88"/>
+</map>

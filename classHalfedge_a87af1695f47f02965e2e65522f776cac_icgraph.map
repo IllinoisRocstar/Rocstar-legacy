@@ -1,0 +1,11 @@
+<map id="id" name="id">
+<area shape="rect" id="node3" href="$Manifold__2_8C.html#a305742238b48caccbf60160496982547" title="Get the face normal of a point in the element incident on h. " alt="" coords="95,40,180,69"/>
+<area shape="rect" id="node5" href="$classHalfedge.html#a426503a7405cd1382edbb3d51017de1c" title="Get the normal of the incident facet. " alt="" coords="229,40,291,69"/>
+<area shape="rect" id="node7" href="$c3d6nm_8f90.html#a09b2c78e5569e72d53e60d480ea44fea" title="c3d6nm" alt="" coords="359,13,425,43"/>
+<area shape="rect" id="node19" href="$classHalfedge.html#a65b3779cc62f4ddefa17ae4a7b27c35c" title="Return the dihedral angle at the edge. " alt="" coords="340,67,444,96"/>
+<area shape="rect" id="node9" href="$classupdatestructuralsoln.html#af792599935a3fa32e73badfcbc480db2" title="updatestructuralsoln\l::updatestructural" alt="" coords="493,5,632,51"/>
+<area shape="rect" id="node11" href="$classrocfracmain.html#af8df50c77956c23e6df0da51df12145d" title="rocfracmain::rocfracsoln" alt="" coords="680,13,843,43"/>
+<area shape="rect" id="node13" href="$RocFracLoadModule_8f90.html#a16e800ab5efa22b8818dd983fcf0a5b4" title="rocfrac_load_module" alt="" coords="892,13,1033,43"/>
+<area shape="rect" id="node15" href="$classSolidAgent.html#a9497d3068e48dadd5f9423273833b167" title="SolidAgent::load_module" alt="" coords="1084,13,1249,43"/>
+<area shape="rect" id="node17" href="$classSolidAgent.html#a12aa521bb6210f24828b2b5b49064fd3" title="SolidAgent::SolidAgent" alt="" coords="1300,13,1455,43"/>
+</map>

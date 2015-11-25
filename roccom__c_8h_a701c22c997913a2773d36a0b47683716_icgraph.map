@@ -1,0 +1,36 @@
+<map id="COM_compatible_types" name="COM_compatible_types">
+<area shape="rect" id="node3" href="$classRocblas.html#ace017665f31c9d6f0014a8525dc23186" title="Performs the operation: z = a*x + y. " alt="" coords="255,5,388,35"/>
+<area shape="rect" id="node5" href="$classPropagation__3.html#a96878798f4dd364ff3147f80edf628da" title="Propagation_3::bound\l_facial_speed" alt="" coords="248,58,395,105"/>
+<area shape="rect" id="node7" href="$classRocblas.html#a00d4d076d5fccefdc28efb76818f03b9" title="Performs the operation: z = x op y. " alt="" coords="271,128,372,157"/>
+<area shape="rect" id="node9" href="$classRocblas.html#ae88ede45a76282310c4e05c4c20e2d28" title="Performs the operation: z = &lt;x, y&gt; " alt="" coords="260,181,383,211"/>
+<area shape="rect" id="node11" href="$classRocsurf.html#a05963147113fea919a6ba70630b364a3" title="Computes the area of each face of the surface mesh of window areas&#45;&gt;window and saves the results in a..." alt="" coords="475,211,653,258"/>
+<area shape="rect" id="node25" href="$classWindow__manifold__2.html#a870e40efa9ab58452a354eaca2b75d30" title="Compute the normals at nodes or faces, depending on the type of the attribute normals. " alt="" coords="701,266,848,313"/>
+<area shape="rect" id="node30" href="$classPane__boundary.html#ab0b93fcbb7c9167f394b691a54e05af2" title="Determine the nodes at pane boundaries of a given mesh. " alt="" coords="233,455,409,502"/>
+<area shape="rect" id="node46" href="$classRocmop.html#a305b7c02548073fc9d94384645dee746" title="Determine which nodes are on the physical border. " alt="" coords="227,525,416,571"/>
+<area shape="rect" id="node48" href="$classWindow__manifold__2.html#a2eebb41f1831723225ffd524188bcb54" title="Convert element values to nodal values using weighted averaging. " alt="" coords="248,335,395,382"/>
+<area shape="rect" id="node58" href="$classRocblas.html#a38c3cbbf2ed9eb4d377722215d670877" title="Performs the operation opp(x, y) " alt="" coords="260,595,383,624"/>
+<area shape="rect" id="node60" href="$classRocsurf.html#ad7f516b084625440ce8b38db72c0a1a3" title="Integrate a function given by an elemental attribute over surface z is an array of size equal to numb..." alt="" coords="501,468,627,497"/>
+<area shape="rect" id="node63" href="$classPropagation__3.html#a1c55b96c3e3174b890f91c0ac26edd1c" title="Set the bounds. " alt="" coords="256,647,387,694"/>
+<area shape="rect" id="node65" href="$classWindow__manifold__2.html#aefcb2d77906956b440e079a5a2b77c3c" title="Obtain shortest edge length of incident edges of each node or element. " alt="" coords="248,717,395,763"/>
+<area shape="rect" id="node67" href="$classRocmop.html#aa4ccb82202e8cfdb21a511ff6336bab7" title="Perform smoother specific initialization. " alt="" coords="217,787,425,816"/>
+<area shape="rect" id="node69" href="$classWindow__manifold__2.html#a7743f0e6ccd5891b6febca7e9cee2f01" title="Update the flags for border faces. " alt="" coords="248,839,395,886"/>
+<area shape="rect" id="node71" href="$classWindow__manifold__2.html#a70491a2110c5673154a2e2a75da3cd2c" title="Update the normals for border faces. " alt="" coords="248,909,395,955"/>
+<area shape="rect" id="node73" href="$classWindow__manifold__2.html#a8c689deb3faf8ec8f929cdef65039551" title="Update bitmap for border edges. " alt="" coords="244,978,399,1025"/>
+<area shape="rect" id="node13" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="1140,335,1239,364"/>
+<area shape="rect" id="node15" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="1316,228,1463,257"/>
+<area shape="rect" id="node17" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="1319,281,1460,311"/>
+<area shape="rect" id="node19" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="1292,335,1487,364"/>
+<area shape="rect" id="node21" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="1315,388,1464,417"/>
+<area shape="rect" id="node23" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="1288,441,1491,471"/>
+<area shape="rect" id="node27" href="$classRocsurf.html#ad345c59eea168babcd0976c9a7810b50" title="Computes nodal or elemental normals of a given window. " alt="" coords="904,297,1083,327"/>
+<area shape="rect" id="node32" href="$classRocmap.html#a1bc1db5eb69b6b83b1ce5774540bddf1" title="Determine the nodes at pane boundaries of a given mesh. " alt="" coords="489,565,639,611"/>
+<area shape="rect" id="node34" href="$classRocmap.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocmap onto Roccom with a given module name. " alt="" coords="724,605,825,635"/>
+<area shape="rect" id="node36" href="$Rocmap_8C.html#a98b54bf7124d16ea02e9863ada55574f" title="Rocmap_load_module" alt="" coords="919,525,1068,555"/>
+<area shape="rect" id="node38" href="$Rocmap_8C.html#a2fa2491d8ff629e655372d4a37a21b6b" title="rocmap_load_module" alt="" coords="921,579,1065,608"/>
+<area shape="rect" id="node40" href="$Rocmap_8C.html#a741814e614967188ffab8357b03871c0" title="ROCMAP_LOAD_MODULE" alt="" coords="900,632,1087,661"/>
+<area shape="rect" id="node42" href="$Rocmap_8C.html#ae4eabf51a6ef8d2d4e62e3c3f0d4d730" title="rocmap_load_module_" alt="" coords="917,685,1069,715"/>
+<area shape="rect" id="node44" href="$Rocmap_8C.html#a849ab8b944ec8c331d0047cf8e022832" title="ROCMAP_LOAD_MODULE_" alt="" coords="896,739,1091,768"/>
+<area shape="rect" id="node50" href="$classWindow__manifold__2.html#ab5ca31d43bed67e02e89be167de9da7f" title="Compute nodal normals using one of the following weighting schemes: E2N_ONE, E2N_AREA, and E2N_ANGLE, and E2N_USER. " alt="" coords="483,335,645,382"/>
+<area shape="rect" id="node55" href="$classRocsurf.html#a4f24fa35a8c266187a6c07110f263313" title="Computes nodal or elemental normals of a given window. " alt="" coords="701,405,848,451"/>
+<area shape="rect" id="node53" href="$classWindow__manifold__2.html#a63077b4a404ef8457c38c64b320323e7" title="Perturb the given mesh along its normal direction by length equal to a random number between &#45;range a..." alt="" coords="701,335,848,382"/>
+</map>

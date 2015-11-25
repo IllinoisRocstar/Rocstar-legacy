@@ -1,0 +1,6 @@
+<map id="LInfTemplate" name="LInfTemplate">
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#aa530b53b6a4f1bc675af6017b5f35ed1" title="Returns negateFlag. " alt="" coords="167,5,327,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1ObjectiveFunction.html#aade5b9a631e31103631f47d265fbb399" title="Set gradType to either NUMERICAL_GRADIENT or ANALYTICAL_GRADIENT. " alt="" coords="153,74,340,121"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1ObjectiveFunction.html#a3a6d316bcee1e7712001aa9f7e2b92aa" title="Set the value of ObjectiveFunction&#39;s negateFlag. Unless composite, concrete ObjectiveFunctions should..." alt="" coords="153,143,340,190"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1ObjectiveFunction.html#aa006f0dc94937f23b836bcf9f454386f" title="Set the value of qMetric. " alt="" coords="153,213,340,259"/>
+</map>

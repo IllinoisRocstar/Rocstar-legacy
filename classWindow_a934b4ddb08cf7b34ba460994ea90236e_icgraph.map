@@ -1,0 +1,7 @@
+<map id="panes" name="panes">
+<area shape="rect" id="node3" href="$classRocblas.html#ace017665f31c9d6f0014a8525dc23186" title="Performs the operation: z = a*x + y. " alt="" coords="113,5,247,35"/>
+<area shape="rect" id="node5" href="$classRocblas.html#a00d4d076d5fccefdc28efb76818f03b9" title="Performs the operation: z = x op y. " alt="" coords="129,59,231,88"/>
+<area shape="rect" id="node7" href="$classRocblas.html#ae88ede45a76282310c4e05c4c20e2d28" title="Performs the operation: z = &lt;x, y&gt; " alt="" coords="119,112,241,141"/>
+<area shape="rect" id="node9" href="$classRocblas.html#a38c3cbbf2ed9eb4d377722215d670877" title="Performs the operation opp(x, y) " alt="" coords="119,165,241,195"/>
+<area shape="rect" id="node11" href="$classWindow.html#a6c5b6a97fa0f42c673959d78b365ce03" title="Obtain all the local panes of the window. " alt="" coords="152,219,208,248"/>
+</map>

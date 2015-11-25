@@ -1,0 +1,12 @@
+<map id="maxmin" name="maxmin">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ab37ce77846d08edbac60502f3a286175" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_png" alt="" coords="157,5,304,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a30b53145248d40e0e374d248e4f1ca14" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_pnm" alt="" coords="156,74,305,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a42321139d023b6603e197799d16b6ead" title="Blur an image using the bilateral filter. " alt="" coords="153,143,308,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a9cc232f8621f88008bd2b6cea2b1c16c" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_displacement_field" alt="" coords="123,213,339,259"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a26d868df92542026e0ab60df4c7f286a" title="Create and return a 3D elevation of the instance image. " alt="" coords="144,282,317,329"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#a2c6818fae6258b622d30a284ec765827" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_index" alt="" coords="161,351,300,398"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg.html#ab7943be99d0d4cfc6550d70039ecbf24" title="Linearly normalize values of the instance image between value_min and value_max. " alt="" coords="161,421,300,467"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#a1116d54202176967de05d00169f2363e" title="Uniformly quantize values of the instance image into nb_levels levels. " alt="" coords="165,490,296,537"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImg.html#ac770a70466ad46bd7c2fd6c604974b6c" title="Save the image using built&#45;in ImageMagick++ library. " alt="" coords="151,559,311,606"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#a4ecd4ea634e87995ef1d309b8ffe91de" title="Sharpen image using anisotropic shock filters or inverse diffusion. " alt="" coords="165,629,296,675"/>
+</map>

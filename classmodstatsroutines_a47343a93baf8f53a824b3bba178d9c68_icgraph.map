@@ -1,0 +1,14 @@
+<map id="getstatistics" name="getstatistics">
+<area shape="rect" id="node3" href="$RFLO__DualTimeStepping_8F90.html#a73f007a0e4aeb09fa84cc4a4379a8426" title="rflo_dualtimestepping" alt="" coords="151,5,295,35"/>
+<area shape="rect" id="node15" href="$RFLO__TimeStepping_8F90.html#ae59b3992e81a23b053ee513b0ca6dec6" title="rflo_timestepping" alt="" coords="163,59,283,88"/>
+<area shape="rect" id="node18" href="$classrflu__modnewtonkrylov.html#adbaf8c46263db1aa756e23d77faefc43" title="rflu_modnewtonkrylov\l::rflu_nk_timestepping" alt="" coords="148,111,297,158"/>
+<area shape="rect" id="node27" href="$RFLU__TimeStepping_8F90.html#aecdbd052b646bc67613a3df3aa797697" title="rflu_timestepping" alt="" coords="163,181,283,211"/>
+<area shape="rect" id="node5" href="$RFLO__FlowSolver_8F90.html#ad883067488e8a9f7901a241687d37e5a" title="rflo_flowsolver" alt="" coords="347,36,453,65"/>
+<area shape="rect" id="node7" href="$standalone_2Main_8F90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="544,7,595,36"/>
+<area shape="rect" id="node9" href="$Rocflo__load__module_8F90.html#aa074e41fe57cac388dc65b3398f25765" title="rocflo_load_module" alt="" coords="503,60,636,89"/>
+<area shape="rect" id="node11" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="685,113,851,143"/>
+<area shape="rect" id="node13" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="899,113,1053,143"/>
+<area shape="rect" id="node20" href="$RFLU__FlowSolver_8F90.html#a5fe6972c37889c9bedd7763013340055" title="rflu_flowsolver" alt="" coords="347,156,453,185"/>
+<area shape="rect" id="node22" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="540,113,599,143"/>
+<area shape="rect" id="node24" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="503,167,636,196"/>
+</map>

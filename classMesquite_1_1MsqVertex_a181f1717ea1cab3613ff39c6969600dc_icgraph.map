@@ -1,0 +1,20 @@
+<map id="is_flag_set" name="is_flag_set">
+<area shape="rect" id="node3" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#a80870c233d0237e3588a2d6f8d176916" title="Increments the iterator. returns false if there is no more free vertex. " alt="" coords="140,430,343,477"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1PatchData.html#a0c304342ea32a23debc99bf8ad579a88" title="Calculates the distance each vertex has moved from its original position as defined by the PatchDataV..." alt="" coords="400,219,589,283"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1ConjugateGradient.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::ConjugateGradient\l::optimize_vertex_positions" alt="" coords="895,64,1084,110"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1FeasibleNewton.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::FeasibleNewton\l::optimize_vertex_positions" alt="" coords="899,332,1080,378"/>
+<area shape="rect" id="node24" href="$classMesquite_1_1PatchData.html#a7b4e6937d36698bed3819f6b37570f4c" title="Moves free vertices and then snaps the free vertices to the domain. " alt="" coords="423,387,567,451"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1SteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::SteepestDescent\l::optimize_vertex_positions" alt="" coords="653,461,837,508"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1SmartLaplacianSmoother.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::SmartLaplacian\lSmoother::optimize_vertex\l_positions" alt="" coords="405,526,584,590"/>
+<area shape="rect" id="node31" href="$classMesquite_1_1Randomize.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::Randomize\l::optimize_vertex_positions" alt="" coords="404,613,585,660"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1LaplacianSmoother.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::LaplacianSmoother\l::optimize_vertex_positions" alt="" coords="397,682,592,729"/>
+<area shape="rect" id="node38" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::NonSmoothSteepest\lDescent::optimize_vertex\l_positions" alt="" coords="393,752,596,816"/>
+<area shape="rect" id="node40" href="$classMesquite_1_1PatchData.html#a888025f8c7511a160f1d95df3217b1b1" title="Mesquite::PatchData\l::set_free_vertices\l_constrained" alt="" coords="423,84,567,148"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1TerminationCriterion.html#ae9196f579b7db353439402e9bac267f1" title="Accumulate data during inner iteration. " alt="" coords="645,133,845,180"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1TerminationCriterion.html#a52e1a2e10a747dcb4c1343700df6bfb4" title="Common code for both inner and outer termination criteria during inner iteration. ..." alt="" coords="645,202,845,249"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1TerminationCriterion.html#a1759530e0df8fad8aa8cbbde98ec4eed" title="Function which determines whether this patch should be &#39;culled&#39;. " alt="" coords="645,272,845,318"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Improves the quality of the MeshSet, calling some methods specified in a class derived from VertexMov..." alt="" coords="911,233,1068,280"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1ShapeImprovementWrapper.html#a52b954daacf72db4a8b0b8811e81bbb0" title="run_instructions runs the wrapper on the given MeshSet. " alt="" coords="1135,233,1329,280"/>
+<area shape="rect" id="node19" href="$classRocmop.html#a2dbb41ea0da20e141ec61d8d4a726ddf" title="Smooth the panes of the working window using MESQUITE. " alt="" coords="1380,242,1561,271"/>
+<area shape="rect" id="node42" href="$classMesquite_1_1ConjugateGradient.html#a39cf050d6c200ee4c7bb3a5755222dd7" title="Returns the step distance to take in the search direction. " alt="" coords="651,64,840,110"/>
+</map>

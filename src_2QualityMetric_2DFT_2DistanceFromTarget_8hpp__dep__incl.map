@@ -1,0 +1,18 @@
+<map id="DistanceFromTarget.hpp" name="DistanceFromTarget.hpp">
+<area shape="rect" id="node3" href="$src_2QualityMetric_2DFT_2I__DFT_8hpp.html" title="I_DFT.hpp" alt="" coords="640,83,723,112"/>
+<area shape="rect" id="node19" href="$src_2QualityMetric_2DFT_2RI__DFT_8hpp.html" title="RI_DFT.hpp" alt="" coords="1288,83,1381,112"/>
+<area shape="rect" id="node25" href="$src_2QualityMetric_2DFT_2sI__DFT_8hpp.html" title="sI_DFT.hpp" alt="" coords="1405,83,1496,112"/>
+<area shape="rect" id="node29" href="$src_2QualityMetric_2DFT_2sRI__DFT_8hpp.html" title="sRI_DFT.hpp" alt="" coords="1520,83,1621,112"/>
+<area shape="rect" id="node5" href="$QualityMetric_2DFT_2I__DFT_8cpp.html" title="I_DFT.cpp" alt="" coords="5,160,88,189"/>
+<area shape="rect" id="node7" href="$src_2QualityMetric_2DFT_2I__DFT__Generalized_8hpp.html" title="I_DFT_Generalized.hpp" alt="" coords="112,160,272,189"/>
+<area shape="rect" id="node9" href="$src_2QualityMetric_2DFT_2I__DFT__InverseMeanRatio_8hpp.html" title="I_DFT_InverseMeanRatio.hpp" alt="" coords="296,160,493,189"/>
+<area shape="rect" id="node11" href="$src_2QualityMetric_2DFT_2I__DFT__NoBarrier_8hpp.html" title="I_DFT_NoBarrier.hpp" alt="" coords="517,160,664,189"/>
+<area shape="rect" id="node13" href="$src_2QualityMetric_2DFT_2I__DFT__StrongBarrier_8hpp.html" title="I_DFT_StrongBarrier.hpp" alt="" coords="688,160,853,189"/>
+<area shape="rect" id="node15" href="$src_2QualityMetric_2DFT_2I__DFT__WeakBarrier_8hpp.html" title="I_DFT_WeakBarrier.hpp" alt="" coords="877,160,1040,189"/>
+<area shape="rect" id="node17" href="$inks_2I__DFT_8cpp.html" title="I_DFT.cpp" alt="" coords="1064,160,1147,189"/>
+<area shape="rect" id="node21" href="$QualityMetric_2DFT_2RI__DFT_8cpp.html" title="RI_DFT.cpp" alt="" coords="1171,160,1264,189"/>
+<area shape="rect" id="node23" href="$inks_2RI__DFT_8cpp.html" title="RI_DFT.cpp" alt="" coords="1288,160,1381,189"/>
+<area shape="rect" id="node27" href="$sI__DFT_8cpp.html" title="sI_DFT.cpp" alt="" coords="1405,160,1496,189"/>
+<area shape="rect" id="node31" href="$QualityMetric_2DFT_2sRI__DFT_8cpp.html" title="sRI_DFT.cpp" alt="" coords="1520,160,1621,189"/>
+<area shape="rect" id="node33" href="$inks_2sRI__DFT_8cpp.html" title="sRI_DFT.cpp" alt="" coords="1645,160,1747,189"/>
+</map>

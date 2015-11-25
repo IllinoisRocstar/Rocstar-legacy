@@ -1,0 +1,6 @@
+<map id="get_all_sizes" name="get_all_sizes">
+<area shape="rect" id="node3" href="$classMesquite_1_1MeshImplData.html#a3f7ed6a14a98f283aa700342b9cc2a01" title="Get number of elements. " alt="" coords="152,5,320,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MeshImplData.html#ac55e6f852718d86914fcd391c9f0c6ff" title="Get number of vertex uses (sum of connectivity length for all elements) Does not count mid&#45;nodes..." alt="" coords="152,74,320,121"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1MeshImplData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="Get number of vertices, does not include mid&#45;nodes. " alt="" coords="152,143,320,190"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="369,74,527,121"/>
+</map>

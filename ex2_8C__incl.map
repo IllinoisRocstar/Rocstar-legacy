@@ -1,0 +1,19 @@
+<map id="ex2.C" name="ex2.C">
+<area shape="rect" id="node3" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="351,83,425,112"/>
+<area shape="rect" id="node17" href="$Tuple_8h.html" title="Tuple.h" alt="" coords="728,83,792,112"/>
+<area shape="rect" id="node5" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="184,160,275,189"/>
+<area shape="rect" id="node7" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="5,247,120,276"/>
+<area shape="rect" id="node11" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="144,247,221,276"/>
+<area shape="rect" id="node9" href="$FC_8h.html" title="FC.h" alt="" coords="37,343,88,372"/>
+<area shape="rect" id="node19" href="$rfc__basic_8h.html" title="rfc_basic.h" alt="" coords="712,160,797,189"/>
+<area shape="rect" id="node21" href="$Simple__cartesian_8h.html" title="CGAL/Simple_cartesian.h" alt="" coords="415,247,588,276"/>
+<area shape="rect" id="node25" href="$user__classes_8h.html" title="CGAL/user_classes.h" alt="" coords="339,343,488,372"/>
+<area shape="rect" id="node27" href="$simple__cartesian__classes_8h.html" title="CGAL/SimpleCartesian\l/simple_cartesian_classes.h" alt="" coords="512,334,699,381"/>
+<area shape="rect" id="node29" href="$basic__classes_8h.html" title="CGAL/basic_classes.h" alt="" coords="593,429,748,459"/>
+<area shape="rect" id="node31" href="$Origin_8h.html" title="CGAL/Origin.h" alt="" coords="340,516,447,545"/>
+<area shape="rect" id="node43" href="$representation__tags_8h.html" title="CGAL/representation\l_tags.h" alt="" coords="753,507,897,554"/>
+<area shape="rect" id="node45" href="$aff__transformation__tags_8h.html" title="CGAL/aff_transformation\l_tags.h" alt="" coords="921,507,1087,554"/>
+<area shape="rect" id="node33" href="$config_8h.html" title="CGAL/config.h" alt="" coords="645,603,752,632"/>
+<area shape="rect" id="node35" href="$compiler__config_8h.html" title="CGAL/compiler_config.h" alt="" coords="520,680,683,709"/>
+<area shape="rect" id="node37" href="$workaround__casts_8h.html" title="CGAL/workaround_casts.h" alt="" coords="707,680,885,709"/>
+</map>

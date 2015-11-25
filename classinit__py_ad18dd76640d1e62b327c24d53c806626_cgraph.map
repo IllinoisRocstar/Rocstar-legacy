@@ -1,0 +1,8 @@
+<map id="burn_init_1d" name="burn_init_1d">
+<area shape="rect" id="node3" href="$classblock.html#af62747600572a423dfb0e074ed0f0df8" title="block::pin" alt="" coords="164,5,241,35"/>
+<area shape="rect" id="node5" href="$classdata__py.html#aecc3067551818452f3e28ef87ccd7586" title="data_py::polin2" alt="" coords="148,59,257,88"/>
+<area shape="rect" id="node11" href="$classdata__py.html#a57f6f1b9a745d86ea8c6c97f3ad4a7c4" title="data_py::polint" alt="" coords="149,112,256,141"/>
+<area shape="rect" id="node7" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="351,5,425,35"/>
+<area shape="rect" id="node9" href="$classAff__transformation__2.html#a365f1affce6586f551082723758c0fcc" title="Aff_transformation_2::m" alt="" coords="307,59,469,88"/>
+<area shape="rect" id="node13" href="$classDirection__2.html#a82e09e27d748a78e36839ac8e2c91aa3" title="Direction_2::dx" alt="" coords="333,112,443,141"/>
+</map>

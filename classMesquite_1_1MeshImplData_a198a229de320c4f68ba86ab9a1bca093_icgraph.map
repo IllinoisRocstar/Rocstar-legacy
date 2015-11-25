@@ -1,0 +1,4 @@
+<map id="vertex_is_fixed" name="vertex_is_fixed">
+<area shape="rect" id="node3" href="$classMesquite_1_1MeshImpl.html#a0baa03760a5d206156f4110d3078d46b" title="Returns true or false, indicating whether the vertex is on the boundary. " alt="" coords="167,5,348,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MeshImpl.html#a8e99e3eafb55cbc23747378308e63057" title="Mesquite::MeshImpl\l::write_vtk" alt="" coords="188,74,327,121"/>
+</map>

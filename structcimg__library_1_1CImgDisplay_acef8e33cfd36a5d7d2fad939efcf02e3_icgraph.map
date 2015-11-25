@@ -1,0 +1,10 @@
+<map id="is_empty" name="is_empty">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgDisplay.html#a6a0faa0d39524f5d5dac7297777dcdf1" title="Set fullscreen mode. " alt="" coords="140,64,217,93"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImgDisplay.html#a971f4ac8d406a926d71f18c21c869f90" title="Set normal screen mode. " alt="" coords="129,117,228,147"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImgDisplay.html#aa385aa18f5e42db5a415c25a90f4193d" title="Return true if display is not empty. " alt="" coords="131,171,227,200"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImgDisplay.html#ab16d9d312efaecc3630dc6539269bab9" title="Wait for an event occuring on the current display. " alt="" coords="156,224,201,253"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#ab470ff84bcac27328430e271067570bd" title="cimg_library::CImg\l\&lt; uintT \&gt;::_get_select" alt="" coords="295,5,444,51"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a2b77e436a48fd24c423e924c2dae4072" title="Select sub&#45;graph in a graph. " alt="" coords="279,74,460,121"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#ac1b0fa3e83defeb353d65e7094b3caa8" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display" alt="" coords="304,143,435,190"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#a68ac25d3fda66263ff7b2d4a481b99d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display\l_object3d" alt="" coords="304,213,435,277"/>
+</map>

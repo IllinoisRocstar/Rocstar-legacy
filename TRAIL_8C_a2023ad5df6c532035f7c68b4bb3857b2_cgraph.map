@@ -1,0 +1,6 @@
+<map id="TRAIL_SetAttribute" name="TRAIL_SetAttribute">
+<area shape="rect" id="node3" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="197,5,312,35"/>
+<area shape="rect" id="node5" href="$roccom__c_8h.html#a34c7c55b98221dbb95aba53c374cf596" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="189,59,320,88"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="200,112,309,141"/>
+<area shape="rect" id="node9" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="368,112,496,141"/>
+</map>

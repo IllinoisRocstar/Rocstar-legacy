@@ -1,0 +1,18 @@
+<map id="Dual_connectivity.C" name="Dual_connectivity.C">
+<area shape="rect" id="node5" href="$Dual__connectivity_8h.html" title="Dual_connectivity.h" alt="" coords="129,83,265,112"/>
+<area shape="rect" id="node7" href="$mapbasic_8h.html" title="mapbasic.h" alt="" coords="153,160,241,189"/>
+<area shape="rect" id="node34" href="$roccom__devel_8h.html" title="roccom_devel.h" alt="" coords="715,160,829,189"/>
+<area shape="rect" id="node15" href="$Element__accessors_8h.html" title="Element_accessors.h" alt="" coords="296,237,443,267"/>
+<area shape="rect" id="node17" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="332,315,407,344"/>
+<area shape="rect" id="node19" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="292,392,383,421"/>
+<area shape="rect" id="node21" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="529,624,644,653"/>
+<area shape="rect" id="node25" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="351,469,428,499"/>
+<area shape="rect" id="node23" href="$FC_8h.html" title="FC.h" alt="" coords="561,701,612,731"/>
+<area shape="rect" id="node36" href="$Attribute_8h.html" title="Contains the prototype of Attriubte. " alt="" coords="899,469,981,499"/>
+<area shape="rect" id="node44" href="$Connectivity_8h.html" title="Contains the prototype of Connectivity. " alt="" coords="887,392,993,421"/>
+<area shape="rect" id="node47" href="$Function_8h.html" title="Contains the prototypes and implementation for the Funcion object. " alt="" coords="627,392,709,421"/>
+<area shape="rect" id="node55" href="$roccom__assertion_8h.html" title="This file contains a set of routines for error assertion. " alt="" coords="452,469,588,499"/>
+<area shape="rect" id="node58" href="$Pane_8h.html" title="Contains the prototypes for the Pane object. " alt="" coords="819,315,880,344"/>
+<area shape="rect" id="node63" href="$Window_8h.html" title="Contains the prototypes for the Window object. " alt="" coords="732,237,812,267"/>
+<area shape="rect" id="node40" href="$roccom__exception_8h.html" title="roccom_exception.h" alt="" coords="713,547,852,576"/>
+</map>

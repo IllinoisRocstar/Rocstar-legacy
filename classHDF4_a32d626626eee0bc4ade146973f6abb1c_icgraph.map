@@ -1,0 +1,11 @@
+<map id="finalize" name="finalize">
+<area shape="rect" id="node3" href="$classRocout.html#a5584fd8a3eb5c21ad725f4516fed8b7b" title="Finalize the module by deregistering it from Roccom. " alt="" coords="119,59,231,88"/>
+<area shape="rect" id="node11" href="$classRocin.html#a5584fd8a3eb5c21ad725f4516fed8b7b" title="Finalize the module by deregistering it from Roccom. " alt="" coords="123,112,227,141"/>
+<area shape="rect" id="node5" href="$RFC__Window__base__IO_8C.html#af1a862d5aa9d99ed873d9402ce36e8b8" title="Unload the module Rocout from Roccom. " alt="" coords="281,59,439,88"/>
+<area shape="rect" id="node7" href="$Rocout_8C.html#a349d3b74b47658f6cdea3d9aa3fe25b4" title="COM_F_FUNC2" alt="" coords="529,5,649,35"/>
+<area shape="rect" id="node9" href="$classRFC__Window__base.html#ada7ac76a1aaceb37b222f9f4e70fb6e1" title="Write out panes in native binary format or using Rocout. " alt="" coords="488,59,691,88"/>
+<area shape="rect" id="node13" href="$readsdv_8C.html#a818e8cb211bedde54818b238bb26dafe" title="Unload the module Rocin from Roccom. " alt="" coords="285,112,435,141"/>
+<area shape="rect" id="node15" href="$Rocin_8C.html#a21daf7fbbe4024bcf1217c110526750d" title="COM_F_FUNC2" alt="" coords="529,112,649,141"/>
+<area shape="rect" id="node17" href="$readsdv_8C.html#a64be298d6315aab8ff717f2c8d1b7777" title="read_pane_sp" alt="" coords="539,165,640,195"/>
+<area shape="rect" id="node19" href="$readsdv_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="739,165,789,195"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="compute_angles" name="compute_angles">
+<area shape="rect" id="node3" href="$geometry_8h.html#a2f642138fc2786ca05a687aa45a352f2" title="Compute the angle between two vectors. " alt="" coords="185,132,239,161"/>
+<area shape="rect" id="node19" href="$geometry_8h.html#a21ead7a5521ed5e3c4e05cc296c3a5c9" title="Find minimum and maximum of 3 numbers. " alt="" coords="171,192,253,221"/>
+<area shape="rect" id="node21" href="$geometry_8h.html#a57df0bb1c012a582752b1e1bb0ef50e9" title="Find minimum and maximum of 4 numbers. " alt="" coords="171,259,253,288"/>
+<area shape="rect" id="node5" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="301,15,429,44"/>
+<area shape="rect" id="node9" href="$utilities_2rc__cmp_2util_8cpp.html#a0d9256a364d8efaad23e52d4042654e0" title="dot_product" alt="" coords="320,72,411,101"/>
+<area shape="rect" id="node13" href="$geometry_8h.html#a3f884839e02fce28dc24f56b4f121900" title="Compute the dot Product of two vectors. " alt="" coords="341,125,389,155"/>
+<area shape="rect" id="node15" href="$namespacenvc.html#a4ea00221667e66f4029614e350ea5745" title="nvc::norm2" alt="" coords="323,179,408,208"/>
+<area shape="rect" id="node17" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="344,232,387,261"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="479,5,609,51"/>
+<area shape="rect" id="node11" href="$utilities_2rc__cmp_2util_8cpp.html#a7198ddaeac1d22c06c4daf75de4ceaef" title="nan" alt="" coords="523,75,565,104"/>
+<area shape="rect" id="node23" href="$geometry_8C.html#a71bdaed851d24bcaf3dcc82ad1f76e14" title="Find minimum and maximum of 3 numbers. " alt="" coords="324,285,407,315"/>
+</map>

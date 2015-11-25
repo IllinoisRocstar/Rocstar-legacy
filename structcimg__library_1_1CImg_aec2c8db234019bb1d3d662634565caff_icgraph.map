@@ -1,0 +1,5 @@
+<map id="_linear_atXYZ" name="_linear_atXYZ">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#af525ec71f12648d5b2fda67988342c64" title="Blur the image anisotropically following a field of diffusion tensors. " alt="" coords="159,5,332,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a71f50d4be8cd4b71adb2ef611c8139b7" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_warp" alt="" coords="177,74,313,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a2d78999f0afa9e61068fb7ab0a4dc490" title="Read a pixel value using linear interpolation and Neumann boundary conditions (first three coordinate..." alt="" coords="167,143,324,190"/>
+</map>

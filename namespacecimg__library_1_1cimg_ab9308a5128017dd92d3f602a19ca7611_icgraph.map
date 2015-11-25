@@ -1,0 +1,33 @@
+<map id="option" name="option">
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#af585c7f586c0aac96ff0e2ca52a1e2e1" title="argument" alt="" coords="169,21,244,51"/>
+<area shape="rect" id="node5" href="$read__parameter__file_8C.html#ada8bf50cc804cbc69e0b33f498288c76" title="get_parameter_list" alt="" coords="143,75,271,104"/>
+<area shape="rect" id="node19" href="$classAgent.html#afc7914dba0afa4bc8246dddf267a56b7" title="Agent::init_callback" alt="" coords="139,128,275,157"/>
+<area shape="rect" id="node25" href="$namespacecimg__library_1_1cimg.html#acfbffa9cc7042c132ba276814af8ca03" title="option" alt="" coords="179,181,235,211"/>
+<area shape="rect" id="node27" href="$classComSwitch.html#aba6445c2ed1951691e0d03070060a264" title="Set option string and long opts struct then parse arguments. " alt="" coords="123,235,291,264"/>
+<area shape="rect" id="node33" href="$classRocprop.html#aadd67fc400e515e71a0c5331aea7759e" title="Set options for propagation. " alt="" coords="137,295,276,324"/>
+<area shape="rect" id="node47" href="$classRocmop.html#ad7b8e28a93fe2b5fa69d4b896aaddcb2" title="Set a Rocomp option. " alt="" coords="140,405,273,435"/>
+<area shape="rect" id="node55" href="$classRocout.html#af161b7590c573735e6470735602b0e46" title="Write out the parameters defined in the fiven window into a parameter file. " alt="" coords="112,485,301,515"/>
+<area shape="rect" id="node7" href="$classRocin.html#a30b4d3fe811f97579c9ab38d6ecf3e64" title="Read in parameters from a given file into the given window. " alt="" coords="349,35,528,64"/>
+<area shape="rect" id="node9" href="$classRocin.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="639,32,719,61"/>
+<area shape="rect" id="node11" href="$readsdv_8C.html#a1e1668934356b578ddd0a0cdaae423f1" title="Load the module Rocin into Roccom using the given module name. " alt="" coords="863,32,999,61"/>
+<area shape="rect" id="node13" href="$Rocin_8C.html#a4251ae394606db828455fee9ca27d3a6" title="COM_F_FUNC2" alt="" coords="1080,5,1200,35"/>
+<area shape="rect" id="node15" href="$readsdv_8C.html#a64be298d6315aab8ff717f2c8d1b7777" title="read_pane_sp" alt="" coords="1089,59,1191,88"/>
+<area shape="rect" id="node17" href="$readsdv_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1248,59,1299,88"/>
+<area shape="rect" id="node21" href="$classAgent.html#ad3c8c70a29f18aa8a37ddf31b6cb2bc0" title="Agent::create_window" alt="" coords="364,115,513,144"/>
+<area shape="rect" id="node23" href="$classAgent.html#ae8cc2ba44a17a30a34df7e7b1710764a" title="Agent::Agent" alt="" coords="629,85,728,115"/>
+<area shape="rect" id="node29" href="$classComSwitch.html#aecfaecb5617461bf011eeb11e36a11e9" title="Parse command options, begin logging. " alt="" coords="352,195,525,224"/>
+<area shape="rect" id="node31" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="653,139,704,168"/>
+<area shape="rect" id="node35" href="$classRocprop.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Rocprop::load" alt="" coords="388,297,489,327"/>
+<area shape="rect" id="node37" href="$Rocprop_8C.html#ad9df38ab9916691f6c68fc70672d32ff" title="Rocprop_load_module" alt="" coords="604,192,753,221"/>
+<area shape="rect" id="node39" href="$Rocprop_8C.html#ad683118ebfe7e5bc0da6c649f9a91afb" title="rocprop_load_module" alt="" coords="607,245,751,275"/>
+<area shape="rect" id="node41" href="$Rocprop_8C.html#a1293b092211f43285a36171e71078dd6" title="ROCPROP_LOAD_MODULE" alt="" coords="580,299,777,328"/>
+<area shape="rect" id="node43" href="$Rocprop_8C.html#af271f1683a72f6d590aedc3bdb9f0630" title="rocprop_load_module_" alt="" coords="603,352,755,381"/>
+<area shape="rect" id="node45" href="$Rocprop_8C.html#a18742d0fd81e89caac223ad4e7127420" title="ROCPROP_LOAD_MODULE_" alt="" coords="577,405,780,435"/>
+<area shape="rect" id="node49" href="$classRocmop.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocmop onto Roccom with a given module name. " alt="" coords="388,459,489,488"/>
+<area shape="rect" id="node51" href="$Rocmop_8C.html#a22b71c82a1713e49ad1aae9533033f29" title="COM_F_FUNC2" alt="" coords="619,459,739,488"/>
+<area shape="rect" id="node53" href="$Rocmop_8C.html#a30f9b111edcdc155ec96cd08ab117b18" title="Rocmop_load_module" alt="" coords="604,512,753,541"/>
+<area shape="rect" id="node57" href="$classRocout.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="395,552,483,581"/>
+<area shape="rect" id="node59" href="$RFC__Window__base__IO_8C.html#a2913c79327ebc4516c9f2d79524e5c2e" title="Load the module Rocout into Roccom using the given module name. " alt="" coords="607,565,751,595"/>
+<area shape="rect" id="node61" href="$Rocout_8C.html#a166c6f5da3ed2a1b8a46b13b28a09e0c" title="COM_F_FUNC2" alt="" coords="871,539,991,568"/>
+<area shape="rect" id="node63" href="$classRFC__Window__base.html#ada7ac76a1aaceb37b222f9f4e70fb6e1" title="Write out panes in native binary format or using Rocout. " alt="" coords="829,592,1032,621"/>
+</map>

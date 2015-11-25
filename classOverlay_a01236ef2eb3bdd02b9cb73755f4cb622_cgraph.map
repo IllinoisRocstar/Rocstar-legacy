@@ -1,0 +1,18 @@
+<map id="insert_edge_into_queue" name="insert_edge_into_queue">
+<area shape="rect" id="node3" href="$classHalfedge__overlay.html#a49a0ced46edaa808d9951d79b7e43d31" title="Halfedge_overlay::destination" alt="" coords="213,120,408,149"/>
+<area shape="rect" id="node7" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="215,67,407,96"/>
+<area shape="rect" id="node9" href="$classINode.html#a2dd3c88de5ba7b43671e1e9410418d58" title="INode::halfedge" alt="" coords="253,509,368,539"/>
+<area shape="rect" id="node15" href="$classHDS__accessor.html#a42d9f6a4b4d4209023f0db986e7d1cd3" title="HDS_accessor::is_border" alt="" coords="225,173,396,203"/>
+<area shape="rect" id="node17" href="$classHDS__accessor.html#a541e22567f6cb479647631ebddab3c17" title="HDS_accessor::is_feature_0" alt="" coords="216,227,405,256"/>
+<area shape="rect" id="node19" href="$classHDS__accessor.html#afb9dc54668d25e24492e3c0cab222096" title="HDS_accessor::is_feature_1" alt="" coords="216,280,405,309"/>
+<area shape="rect" id="node21" href="$classHDS__accessor.html#a354e718ee1dd5a8669700be693afc762" title="HDS_accessor::is_on\l_feature" alt="" coords="236,333,385,379"/>
+<area shape="rect" id="node23" href="$classHDS__accessor.html#a28e22a8803047ff830d11a300c6e6ec1" title="HDS_accessor::mark" alt="" coords="237,403,384,432"/>
+<area shape="rect" id="node25" href="$classHDS__accessor.html#a58739abca0fbeefccb54776db35f1398" title="HDS_accessor::marked" alt="" coords="229,456,392,485"/>
+<area shape="rect" id="node27" href="$classHalfedge__overlay.html#afe0045d3267c0730bd9ad1b640718f54" title="Halfedge_overlay::origin" alt="" coords="229,13,392,43"/>
+<area shape="rect" id="node34" href="$classINode.html#a5e54505fb86e503aa014c5c79d4df1a3" title="INode::parent_type" alt="" coords="480,561,613,591"/>
+<area shape="rect" id="node5" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="464,93,629,123"/>
+<area shape="rect" id="node11" href="$structHost__face.html#a2fdb4a913034dfc8a30c9019857d8173" title="Host_face::halfedge" alt="" coords="477,508,616,537"/>
+<area shape="rect" id="node13" href="$structHost__face.html#ad8e3d3c3b41c1da044381d5a758f1d7a" title="Host_face::parent_type" alt="" coords="687,535,844,564"/>
+<area shape="rect" id="node29" href="$classHalfedge__overlay.html#a1011f61879a1842b01d506a17e1c7914" title="Halfedge_overlay::opposite" alt="" coords="457,13,636,43"/>
+<area shape="rect" id="node31" href="$classHalfedge__overlay.html#acba595f65090d9721649cdf1f0999894" title="Halfedge_overlay::is\l_primary" alt="" coords="695,5,836,51"/>
+</map>

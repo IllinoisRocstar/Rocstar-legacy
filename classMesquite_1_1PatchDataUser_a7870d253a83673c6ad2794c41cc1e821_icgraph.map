@@ -1,0 +1,14 @@
+<map id="set_patch_type" name="set_patch_type">
+<area shape="rect" id="node3" href="$classMesquite_1_1FeasibleNewton.html#af084937ad770153d4aa8a569253f99a1" title="Mesquite::FeasibleNewton\l::FeasibleNewton" alt="" coords="199,5,375,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1Randomize.html#a497a4645ccf251f6993261c5ecf88712" title="Mesquite::Randomize\l::initialize" alt="" coords="212,74,361,121"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a497a4645ccf251f6993261c5ecf88712" title="Mesquite::NonSmoothSteepest\lDescent::initialize" alt="" coords="185,143,388,190"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1LaplacianSmoother.html#abac96533aa3ec59b1e5f75f91a64e413" title="Mesquite::LaplacianSmoother\l::LaplacianSmoother" alt="" coords="189,213,384,259"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1MeanMidNodeMover.html#ad0df42fb635ccbd16916b66a5ffa08fa" title="Mesquite::MeanMidNodeMover\l::MeanMidNodeMover" alt="" coords="185,282,388,329"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1ConjugateGradient.html#a4f79c846e29b586523b0f56128d5b376" title="Set the patch type. " alt="" coords="192,351,381,398"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1MeshTransform.html#aeaf6e8479b3ba52618346392dc2b4ce1" title="MeshTransform is built to use ELEMETNS_ON_VERTEX_PATCH with a depth one. " alt="" coords="200,421,373,467"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1ShapeImprovementWrapper.html#aa7ce1cbaeadd6a731684a28b816982ca" title="Mesquite::ShapeImprovement\lWrapper::ShapeImprovementWrapper" alt="" coords="167,490,407,537"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1SmartLaplacianSmoother.html#af1ec05fef8a7a8b54f78a1b7e487debd" title="Mesquite::SmartLaplacian\lSmoother::SmartLaplacianSmoother" alt="" coords="171,559,403,606"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1SteepestDescent.html#ae4e695a1bbf781785b10a79d2cb08e72" title="Mesquite::SteepestDescent\l::SteepestDescent" alt="" coords="195,629,379,675"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1ConjugateGradient.html#a33be9188cf4a81bf06a4f82636e209a2" title="Mesquite::ConjugateGradient\l::ConjugateGradient" alt="" coords="457,351,647,398"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1MeshTransform.html#aef043e0bba56ccb1d2187c556e848ae6" title="Mesquite::MeshTransform\l::MeshTransform" alt="" coords="465,421,639,467"/>
+</map>

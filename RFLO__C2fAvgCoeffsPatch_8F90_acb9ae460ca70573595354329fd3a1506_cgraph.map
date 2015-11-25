@@ -1,0 +1,14 @@
+<map id="rflo_c2favgcoeffspatch" name="rflo_c2favgcoeffspatch">
+<area shape="rect" id="node3" href="$RFLO__C2fAvgCoeffsPatch_8F90.html#a1ae284d687783b73a19cd130f1fca645" title="avgcopatchconstant" alt="" coords="212,5,351,35"/>
+<area shape="rect" id="node5" href="$RFLO__C2fAvgCoeffsPatch_8F90.html#aae79a8fde2af2a62fe218dde0d573a2d" title="avgcopatchlinear" alt="" coords="221,59,341,88"/>
+<area shape="rect" id="node7" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="637,212,821,241"/>
+<area shape="rect" id="node9" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="644,367,815,396"/>
+<area shape="rect" id="node17" href="$RFLO__GetDimensions_8F90.html#a574ff4a131bdb63eac55b68f6ccb3e85" title="rflo_getnodeoffset" alt="" coords="219,341,344,371"/>
+<area shape="rect" id="node26" href="$RFLO__GetPatchDimens_8F90.html#a318ab6a72ca2e23e9d7500d785c0b95e" title="rflo_getpatchdirection" alt="" coords="208,523,355,552"/>
+<area shape="rect" id="node28" href="$RFLO__GetPatchDimens_8F90.html#a0ec3e4e7927962711817fb87f1f8db27" title="rflo_getpatchindices" alt="" coords="212,264,351,293"/>
+<area shape="rect" id="node11" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="871,367,1001,396"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="1059,323,1205,370"/>
+<area shape="rect" id="node15" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="1052,393,1212,439"/>
+<area shape="rect" id="node19" href="$RFLO__GetDimensions_8F90.html#af3840de18437855e47c7fcc0dd2db9b5" title="rflo_getdimensdummynodes" alt="" coords="404,419,588,448"/>
+<area shape="rect" id="node30" href="$RFLO__GetDimensions_8F90.html#aba5d7dd0b2f2e1086a6fc3293a20c8f1" title="rflo_getdimensphys" alt="" coords="429,264,563,293"/>
+</map>

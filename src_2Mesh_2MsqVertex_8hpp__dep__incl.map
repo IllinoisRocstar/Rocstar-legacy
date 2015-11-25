@@ -1,0 +1,51 @@
+<map id="MsqVertex.hpp" name="MsqVertex.hpp">
+<area shape="rect" id="node3" href="$Mesquite__all__headers_8hpp.html" title="This file contains include directives for all mesquite headers. Including this header will maximize d..." alt="" coords="1532,333,1705,363"/>
+<area shape="rect" id="node5" href="$Control_2TerminationCriterion_8cpp.html" title="TerminationCriterion.cpp" alt="" coords="72,160,235,189"/>
+<area shape="rect" id="node7" href="$src_2Mesh_2PatchData_8hpp.html" title="PatchData.hpp" alt="" coords="3313,83,3423,112"/>
+<area shape="rect" id="node19" href="$src_2Mesh_2MsqFreeVertexIndexIterator_8hpp.html" title="MsqFreeVertexIndexIterator.hpp" alt="" coords="1275,160,1483,189"/>
+<area shape="rect" id="node23" href="$ObjectiveFunction_2ObjectiveFunction_8cpp.html" title="ObjectiveFunction.cpp" alt="" coords="195,247,347,276"/>
+<area shape="rect" id="node25" href="$inks_2ObjectiveFunction_8cpp.html" title="ObjectiveFunction.cpp" alt="" coords="371,247,523,276"/>
+<area shape="rect" id="node27" href="$Mesh_2MsqMeshEntity_8cpp.html" title="MsqMeshEntity.cpp" alt="" coords="1557,160,1696,189"/>
+<area shape="rect" id="node48" href="$QualityAssessor_2QualityAssessor_8cpp.html" title="QualityAssessor.cpp" alt="" coords="4024,160,4165,189"/>
+<area shape="rect" id="node53" href="$MesqPane_8h.html" title="MesqPane.h. " alt="" coords="232,333,325,363"/>
+<area shape="rect" id="node61" href="$QualityMetric_2QualityMetric_8cpp.html" title="QualityMetric.cpp" alt="" coords="4189,160,4312,189"/>
+<area shape="rect" id="node72" href="$QualityMetric_2Smoothness_2EdgeLengthQualityMetric_8cpp.html" title="EdgeLengthQualityMetric.cpp" alt="" coords="4336,160,4528,189"/>
+<area shape="rect" id="node74" href="$QualityMetric_2Smoothness_2EdgeLengthRangeQualityMetric_8cpp.html" title="EdgeLengthRangeQualityMetric.cpp" alt="" coords="4552,160,4781,189"/>
+<area shape="rect" id="node82" href="$QualityMetric_2Volume_2LocalSizeQualityMetric_8cpp.html" title="LocalSizeQualityMetric.cpp" alt="" coords="3523,247,3704,276"/>
+<area shape="rect" id="node84" href="$inks_2LocalSizeQualityMetric_8cpp.html" title="LocalSizeQualityMetric.cpp" alt="" coords="3944,247,4125,276"/>
+<area shape="rect" id="node89" href="$inks_2EdgeLengthQualityMetric_8cpp.html" title="EdgeLengthQualityMetric.cpp" alt="" coords="4805,160,4997,189"/>
+<area shape="rect" id="node91" href="$inks_2EdgeLengthRangeQualityMetric_8cpp.html" title="EdgeLengthRangeQualityMetric.cpp" alt="" coords="5021,160,5251,189"/>
+<area shape="rect" id="node94" href="$inks_2MsqMeshEntity_8cpp.html" title="MsqMeshEntity.cpp" alt="" coords="5275,160,5413,189"/>
+<area shape="rect" id="node96" href="$inks_2QualityAssessor_8cpp.html" title="QualityAssessor.cpp" alt="" coords="5437,160,5579,189"/>
+<area shape="rect" id="node98" href="$inks_2QualityMetric_8cpp.html" title="QualityMetric.cpp" alt="" coords="5603,160,5725,189"/>
+<area shape="rect" id="node100" href="$GeomTSTT_8cpp.html" title="Mesquite::MeshDomain implemented on TSTT interfaces. " alt="" coords="5059,83,5173,112"/>
+<area shape="rect" id="node102" href="$Mesh_2MeshImpl_8cpp.html" title="MeshImpl.cpp" alt="" coords="5197,83,5301,112"/>
+<area shape="rect" id="node104" href="$MeshTSTT_8cpp.html" title="MeshTSTT.cpp" alt="" coords="5325,83,5437,112"/>
+<area shape="rect" id="node108" href="$Mesh_2MsqVertex_8cpp.html" title="MsqVertex.cpp" alt="" coords="5461,83,5571,112"/>
+<area shape="rect" id="node110" href="$src_2ObjectiveFunction_2ObjectiveFunction_8hpp.html" title="ObjectiveFunction.hpp" alt="" coords="581,83,733,112"/>
+<area shape="rect" id="node121" href="$inks_2TerminationCriterion_8cpp.html" title="TerminationCriterion.cpp" alt="" coords="259,160,421,189"/>
+<area shape="rect" id="node132" href="$inks_2MeshImpl_8cpp.html" title="MeshImpl.cpp" alt="" coords="5595,83,5699,112"/>
+<area shape="rect" id="node135" href="$inks_2MsqVertex_8cpp.html" title="MsqVertex.cpp" alt="" coords="5723,83,5832,112"/>
+<area shape="rect" id="node142" href="$MesqPane__1__1_8C.html" title="MesqPane_1_1.C" alt="" coords="5856,83,5981,112"/>
+<area shape="rect" id="node144" href="$MesqPane__95_8C.html" title="MesqPane_95.C" alt="" coords="6005,83,6123,112"/>
+<area shape="rect" id="node10" href="$src_2Mesh_2PatchDataUser_8hpp.html" title="PatchDataUser.hpp" alt="" coords="3405,160,3541,189"/>
+<area shape="rect" id="node13" href="$src_2TargetCalculator_2TargetCalculator_8hpp.html" title="TargetCalculator.hpp" alt="" coords="3779,247,3920,276"/>
+<area shape="rect" id="node15" href="$Mesh_2PatchData_8cpp.html" title="PatchData.cpp" alt="" coords="3795,333,3904,363"/>
+<area shape="rect" id="node17" href="$TargetCalculator_2LVQDTargetCalculator_8cpp.html" title="LVQDTargetCalculator.cpp" alt="" coords="3219,247,3397,276"/>
+<area shape="rect" id="node30" href="$src_2Misc_2MeshTransform_8hpp.html" title="MeshTransform.hpp" alt="" coords="965,160,1104,189"/>
+<area shape="rect" id="node32" href="$src_2Misc_2MsqHessian_8hpp.html" title="MsqHessian.hpp" alt="" coords="1559,247,1679,276"/>
+<area shape="rect" id="node35" href="$ObjectiveFunction_2CompositeOFAdd_8cpp.html" title="CompositeOFAdd.cpp" alt="" coords="792,160,941,189"/>
+<area shape="rect" id="node37" href="$ObjectiveFunction_2CompositeOFMultiply_8cpp.html" title="CompositeOFMultiply.cpp" alt="" coords="2107,160,2280,189"/>
+<area shape="rect" id="node39" href="$ObjectiveFunction_2CompositeOFScalarAdd_8cpp.html" title="CompositeOFScalarAdd.cpp" alt="" coords="2304,160,2491,189"/>
+<area shape="rect" id="node41" href="$ObjectiveFunction_2CompositeOFScalarMultiply_8cpp.html" title="CompositeOFScalarMultiply.cpp" alt="" coords="2515,160,2725,189"/>
+<area shape="rect" id="node43" href="$src_2ObjectiveFunction_2LInfTemplate_8hpp.html" title="LInfTemplate.hpp" alt="" coords="1128,160,1251,189"/>
+<area shape="rect" id="node46" href="$ObjectiveFunction_2MaxTemplate_8cpp.html" title="MaxTemplate.cpp" alt="" coords="2749,160,2875,189"/>
+<area shape="rect" id="node50" href="$src_2QualityImprover_2VertexMover_2ConjugateGradient_2ConjugateGradient_8hpp.html" title="ConjugateGradient.hpp" alt="" coords="547,247,701,276"/>
+<area shape="rect" id="node55" href="$src_2QualityImprover_2VertexMover_2VertexMover_8hpp.html" title="VertexMover.hpp" alt="" coords="597,160,717,189"/>
+<area shape="rect" id="node59" href="$src_2QualityMetric_2DFT_2DistanceFromTarget_8hpp.html" title="DistanceFromTarget.hpp" alt="" coords="2899,160,3064,189"/>
+<area shape="rect" id="node63" href="$src_2QualityMetric_2Shape_2ShapeQualityMetric_8hpp.html" title="ShapeQualityMetric.hpp" alt="" coords="1821,160,1981,189"/>
+<area shape="rect" id="node66" href="$src_2QualityMetric_2Shape_2GeneralizedConditionNumberQualityMetric_8hpp.html" title="GeneralizedConditionNumber\lQualityMetric.hpp" alt="" coords="1804,238,1996,285"/>
+<area shape="rect" id="node69" href="$QualityMetric_2Shape_2AspectRatioGammaQualityMetric_8cpp.html" title="AspectRatioGammaQualityMetric.cpp" alt="" coords="3088,160,3331,189"/>
+<area shape="rect" id="node76" href="$src_2QualityMetric_2Untangle_2UntangleBetaQualityMetric_8hpp.html" title="UntangleBetaQualityMetric.hpp" alt="" coords="2020,247,2223,276"/>
+<area shape="rect" id="node79" href="$src_2QualityMetric_2Volume_2LocalSizeQualityMetric_8hpp.html" title="LocalSizeQualityMetric.hpp" alt="" coords="3616,160,3797,189"/>
+</map>

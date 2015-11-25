@@ -1,0 +1,19 @@
+<map id="Propagation_3.h" name="Propagation_3.h">
+<area shape="rect" id="node3" href="$FaceOffset__3_8h.html" title="FaceOffset_3.h" alt="" coords="547,83,659,112"/>
+<area shape="rect" id="node21" href="$MarkerParticles__3_8h.html" title="MarkerParticles_3.h" alt="" coords="1045,83,1184,112"/>
+<area shape="rect" id="node26" href="$Rocprop_8h.html" title="Rocprop.h" alt="" coords="1208,83,1291,112"/>
+<area shape="rect" id="node37" href="$Propagation__3_8C.html" title="Propagation_3.C" alt="" coords="1315,83,1432,112"/>
+<area shape="rect" id="node5" href="$AngleBasedSmoothing_8C.html" title="AngleBasedSmoothing.C" alt="" coords="693,160,861,189"/>
+<area shape="rect" id="node7" href="$AnisotropicSmoothing_8C.html" title="AnisotropicSmoothing.C" alt="" coords="885,160,1048,189"/>
+<area shape="rect" id="node9" href="$cons__diff_8C.html" title="cons_diff.C" alt="" coords="5,160,93,189"/>
+<area shape="rect" id="node11" href="$detect__features_8C.html" title="detect_features.C" alt="" coords="117,160,243,189"/>
+<area shape="rect" id="node13" href="$FaceOffset__3_8C.html" title="FaceOffset_3.C" alt="" coords="267,160,381,189"/>
+<area shape="rect" id="node15" href="$NuLaplacian_8C.html" title="NuLaplacian.C" alt="" coords="405,160,512,189"/>
+<area shape="rect" id="node17" href="$quadric__analysis_8C.html" title="quadric_analysis.C" alt="" coords="536,160,669,189"/>
+<area shape="rect" id="node19" href="$Rocprop_8C.html" title="Rocprop.C" alt="" coords="1072,160,1157,189"/>
+<area shape="rect" id="node23" href="$MarkerParticles__3_8C.html" title="MarkerParticles_3.C" alt="" coords="1181,160,1323,189"/>
+<area shape="rect" id="node28" href="$Remesher__Simmetrix_8h.html" title="Remesher_Simmetrix.h" alt="" coords="1347,160,1504,189"/>
+<area shape="rect" id="node30" href="$Remesher__Simmetrix_8C.html" title="Remesher_Simmetrix.C" alt="" coords="1200,237,1363,267"/>
+<area shape="rect" id="node32" href="$remesh_8C.html" title="remesh.C" alt="" coords="1387,237,1464,267"/>
+<area shape="rect" id="node34" href="$startest_8C.html" title="startest.C" alt="" coords="1488,237,1568,267"/>
+</map>

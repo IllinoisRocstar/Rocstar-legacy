@@ -1,0 +1,6 @@
+<map id="new_attribute" name="new_attribute">
+<area shape="rect" id="node3" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="Attribute::is_digit" alt="" coords="197,5,317,35"/>
+<area shape="rect" id="node5" href="$classConnectivity.html#ade666cebe147628563d7c3255ebe1d67" title="Connectivity::is_element_name" alt="" coords="155,59,360,88"/>
+<area shape="rect" id="node7" href="$classPane.html#ab51201ae8304f63787f2e59ae083197a" title="Pane::new_attribute" alt="" coords="188,112,327,141"/>
+<area shape="rect" id="node9" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="409,112,519,141"/>
+</map>

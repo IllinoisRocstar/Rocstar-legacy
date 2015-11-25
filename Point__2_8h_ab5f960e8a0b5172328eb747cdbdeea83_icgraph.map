@@ -1,0 +1,14 @@
+<map id="operator==" name="operator==">
+<area shape="rect" id="node3" href="$classRay__3.html#acfe961985194a01c481176d1365b8035" title="Ray_3::operator==" alt="" coords="172,5,303,35"/>
+<area shape="rect" id="node5" href="$classSegment__3.html#a03cadb62042724643144bf9a1a1bf117" title="Segment_3::operator==" alt="" coords="159,59,316,88"/>
+<area shape="rect" id="node7" href="$classDirection__3.html#ab0a9ebd0e34ff0710e24a4f0b5359ac2" title="Direction_3::operator==" alt="" coords="159,112,316,141"/>
+<area shape="rect" id="node9" href="$classVector__2.html#a9287ea13a26a02def1ec638458d95756" title="Vector_2\&lt; T \&gt;::operator==" alt="" coords="149,165,325,195"/>
+<area shape="rect" id="node11" href="$classVector__3.html#aad1c821213e3a0dad9155f95ed909163" title="Vector_3\&lt; Real \&gt;::operator==" alt="" coords="140,219,335,248"/>
+<area shape="rect" id="node13" href="$classDirection__2.html#a728adc524a5570ca52de5430bc16fdb8" title="Direction_2::operator==" alt="" coords="159,272,316,301"/>
+<area shape="rect" id="node15" href="$classLine__3.html#a057baf6f97c0521ff42cfd566e3503ee" title="Line_3::operator==" alt="" coords="172,325,303,355"/>
+<area shape="rect" id="node17" href="$classPoint__2.html#abb1e239d00f437a648a1865ddbf03c8a" title="Point_2\&lt; R \&gt;::operator==" alt="" coords="152,379,323,408"/>
+<area shape="rect" id="node19" href="$classRay__2.html#a7e11b79e9749782632ea387f974a2f1a" title="Ray_2::operator==" alt="" coords="172,432,303,461"/>
+<area shape="rect" id="node21" href="$classSegment__2.html#a4247e7d4375360b660a7fd63fb712b27" title="Segment_2\&lt; R \&gt;::operator==" alt="" coords="141,485,333,515"/>
+<area shape="rect" id="node23" href="$classPlane__3.html#a9e0ba2b9425aa6d5029e0c4ccba6b93e" title="Plane_3::operator==" alt="" coords="168,539,307,568"/>
+<area shape="rect" id="node25" href="$classLine__2.html#a94aa73f6c665d0f53a0b85e0172f0551" title="Line_2\&lt; R \&gt;::operator==" alt="" coords="155,592,320,621"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="rflu_nullifyplottingvars" name="rflu_nullifyplottingvars">
+<area shape="rect" id="node3" href="$classrflu__modplottingvars.html#af1d09419f472f6dd86c3d6892b249048" title="rflu_createplottingvars" alt="" coords="207,85,356,115"/>
+<area shape="rect" id="node17" href="$classrflu__modplottingvars.html#a8c25e53107cbccbd41e08b95595d3f0a" title="rflu_destroyplottingvars" alt="" coords="203,32,360,61"/>
+<area shape="rect" id="node5" href="$RFLU__MergePostProcessRegions_8F90.html#aad32813854d30e96172f9c6473f36d13" title="rflu_mergepostprocessregions" alt="" coords="420,5,615,35"/>
+<area shape="rect" id="node9" href="$RFLU__PostProcessRegionsCommon1_8F90.html#a2aa51692edb90f12e9d87e18c1e23e9c" title="rflu_postprocessregionscommon1" alt="" coords="409,112,625,141"/>
+<area shape="rect" id="node7" href="$rflupost_8F90.html#a447a7bd838753a9486e979638b6d2efc" title="rflupost" alt="" coords="913,59,977,88"/>
+<area shape="rect" id="node11" href="$RFLU__PostProcessRegions_8F90.html#a7cd294d63c1acf6c6f8516131cacc8d4" title="rflu_postprocessregions" alt="" coords="689,112,849,141"/>
+<area shape="rect" id="node14" href="$RFLU__PostProcessRegions__ENS_8F90.html#a08a8c2289b58c60d093516a4f5605050" title="rflu_postprocessregions_ens" alt="" coords="676,59,863,88"/>
+<area shape="rect" id="node20" href="$RFLU__PostProcessRegionsCommon2_8F90.html#a8954372a12b015aa5ea3addeb6339f21" title="rflu_postprocessregionscommon2" alt="" coords="409,59,625,88"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="ConjugateGradient" name="ConjugateGradient">
+<area shape="rect" id="node3" href="$classMesquite_1_1TerminationCriterion.html#ac7d1f649bf0b634a6c2774ce3ac3c62b" title="Sets the criterion by specifing the TCType and the integer value. " alt="" coords="184,5,384,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1QualityImprover.html#a4573f7d8766d7d7bbd13ed9ff2684659" title="return the inner termination criterion pointer " alt="" coords="197,75,371,139"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1ConjugateGradient.html#acec65109ee86ceb3b7a0523d28edc441" title="Just for debugging purposes or for obtaining more data during the optimization process. " alt="" coords="215,163,353,192"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1QualityImprover.html#a23b93d0c05b5ccd5162eaafbd9e612ac" title="provides a name to the QualityImprover (use it in constructor). " alt="" coords="197,215,371,262"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1ConjugateGradient.html#a4f79c846e29b586523b0f56128d5b376" title="Set the patch type. " alt="" coords="229,285,339,315"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1PatchDataUser.html#a7870d253a83673c6ad2794c41cc1e821" title="Sets the Patch Type. " alt="" coords="432,277,605,323"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1PatchDataParameters.html#a247c2678640754cdb0bd45ab6f777cd9" title="Tells the MeshSet what kind of data the patches should include. " alt="" coords="655,277,865,323"/>
+</map>

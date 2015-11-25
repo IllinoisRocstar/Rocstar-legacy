@@ -1,0 +1,20 @@
+<map id="PointS3.h" name="PointS3.h">
+<area shape="rect" id="node3" href="$Origin_8h.html" title="CGAL/Origin.h" alt="" coords="475,380,581,409"/>
+<area shape="rect" id="node13" href="$Aff__transformationS3_8h.html" title="CGAL/SimpleCartesian\l/Aff_transformationS3.h" alt="" coords="691,83,851,130"/>
+<area shape="rect" id="node45" href="$number__utils_8h.html" title="CGAL/number_utils.h" alt="" coords="253,188,400,217"/>
+<area shape="rect" id="node5" href="$config_8h.html" title="CGAL/config.h" alt="" coords="429,467,536,496"/>
+<area shape="rect" id="node7" href="$compiler__config_8h.html" title="CGAL/compiler_config.h" alt="" coords="304,544,467,573"/>
+<area shape="rect" id="node9" href="$workaround__casts_8h.html" title="CGAL/workaround_casts.h" alt="" coords="491,544,669,573"/>
+<area shape="rect" id="node17" href="$Handle_8h.html" title="CGAL/Handle.h" alt="" coords="1108,188,1223,217"/>
+<area shape="rect" id="node25" href="$simple__cartesian__classes_8h.html" title="CGAL/SimpleCartesian\l/simple_cartesian_classes.h" alt="" coords="725,179,912,226"/>
+<area shape="rect" id="node39" href="$determinant_8h.html" title="CGAL/determinant.h" alt="" coords="936,188,1077,217"/>
+<area shape="rect" id="node19" href="$Handle__for_8h.html" title="CGAL/Handle_for.h" alt="" coords="1171,284,1307,313"/>
+<area shape="rect" id="node21" href="$memory_8h.html" title="CGAL/memory.h" alt="" coords="1245,380,1365,409"/>
+<area shape="rect" id="node27" href="$basic__classes_8h.html" title="CGAL/basic_classes.h" alt="" coords="741,284,896,313"/>
+<area shape="rect" id="node34" href="$representation__tags_8h.html" title="CGAL/representation\l_tags.h" alt="" coords="747,371,891,418"/>
+<area shape="rect" id="node36" href="$aff__transformation__tags_8h.html" title="CGAL/aff_transformation\l_tags.h" alt="" coords="915,371,1080,418"/>
+<area shape="rect" id="node41" href="$sign__of__determinant_8h.html" title="CGAL/predicates/sign\l_of_determinant.h" alt="" coords="932,275,1081,322"/>
+<area shape="rect" id="node48" href="$enum_8h.html" title="CGAL/enum.h" alt="" coords="275,284,379,313"/>
+<area shape="rect" id="node54" href="$kernel__basic_8h.html" title="CGAL/kernel_basic.h" alt="" coords="5,284,152,313"/>
+<area shape="rect" id="node50" href="$functions__on__enums_8h.html" title="CGAL/functions_on_enums.h" alt="" coords="208,380,400,409"/>
+</map>

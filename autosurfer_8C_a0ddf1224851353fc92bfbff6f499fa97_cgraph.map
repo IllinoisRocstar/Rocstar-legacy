@@ -1,0 +1,16 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="337,5,471,35"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a47ed797bddcdd0aabcd9f8e47f326744" title="COM_finalize" alt="" coords="135,111,236,140"/>
+<area shape="rect" id="node9" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="316,59,492,88"/>
+<area shape="rect" id="node11" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="316,325,492,355"/>
+<area shape="rect" id="node13" href="$roccom__c_09_09_8h.html#ac0f80d6e63759a2afe40ed883cea3d5e" title="COM_init" alt="" coords="147,268,224,297"/>
+<area shape="rect" id="node15" href="$roccom__c_09_09_8h.html#ae231f40abf373de8e0f0c62e6dd3c6fb" title="COM_print_profile" alt="" coords="123,372,248,401"/>
+<area shape="rect" id="node18" href="$roccom__c_09_09_8h.html#a1c38d3b83185ed89dcc2d2e9424b0f8c" title="COM_set_profiling" alt="" coords="120,425,251,455"/>
+<area shape="rect" id="node21" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="104,479,267,508"/>
+<area shape="rect" id="node24" href="$autosurfer_8C.html#a61aedb2ed2b960eb62f1ea07936ec18d" title="read_file" alt="" coords="151,215,220,244"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="541,272,669,301"/>
+<area shape="rect" id="node26" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="337,112,471,141"/>
+<area shape="rect" id="node31" href="$roccom__c_09_09_8h.html#a518de8c83ab277c8cdcb88635a27cefe" title="Delete an existing attribute. " alt="" coords="329,165,479,195"/>
+<area shape="rect" id="node35" href="$roccom__c_8h.html#a31a1cc99534b53b7d14992718739ff74" title="Clone the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="332,219,476,248"/>
+<area shape="rect" id="node37" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="331,272,477,301"/>
+</map>

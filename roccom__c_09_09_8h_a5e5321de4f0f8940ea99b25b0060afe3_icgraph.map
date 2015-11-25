@@ -1,0 +1,36 @@
+<map id="COM_set_object" name="COM_set_object">
+<area shape="rect" id="node3" href="$classCoupling.html#a8caa2607aa668edf0edb8a5e4535f80a" title="Coupling::baseInit" alt="" coords="187,9,312,39"/>
+<area shape="rect" id="node7" href="$classAgent.html#ad3c8c70a29f18aa8a37ddf31b6cb2bc0" title="Agent::create_window" alt="" coords="175,69,324,99"/>
+<area shape="rect" id="node11" href="$classRocout.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="205,136,293,165"/>
+<area shape="rect" id="node19" href="$classRocin.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="209,216,289,245"/>
+<area shape="rect" id="node29" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="200,323,299,352"/>
+<area shape="rect" id="node41" href="$classRocmop.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocmop onto Roccom with a given module name. " alt="" coords="199,485,300,515"/>
+<area shape="rect" id="node47" href="$classRocon.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Rocon::load" alt="" coords="204,672,295,701"/>
+<area shape="rect" id="node59" href="$classRocprop.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Rocprop::load" alt="" coords="199,939,300,968"/>
+<area shape="rect" id="node5" href="$classCoupling.html#a22e859d76ef20e728e4dfd51940e55ca" title="Constructor. Derived class will add actions for the coupling scheme. " alt="" coords="411,5,541,35"/>
+<area shape="rect" id="node9" href="$classAgent.html#ae8cc2ba44a17a30a34df7e7b1710764a" title="Agent::Agent" alt="" coords="427,59,525,88"/>
+<area shape="rect" id="node13" href="$RFC__Window__base__IO_8C.html#a2913c79327ebc4516c9f2d79524e5c2e" title="Load the module Rocout into Roccom using the given module name. " alt="" coords="404,112,548,141"/>
+<area shape="rect" id="node15" href="$Rocout_8C.html#a166c6f5da3ed2a1b8a46b13b28a09e0c" title="COM_F_FUNC2" alt="" coords="668,59,788,88"/>
+<area shape="rect" id="node17" href="$classRFC__Window__base.html#ada7ac76a1aaceb37b222f9f4e70fb6e1" title="Write out panes in native binary format or using Rocout. " alt="" coords="627,112,829,141"/>
+<area shape="rect" id="node21" href="$readsdv_8C.html#a1e1668934356b578ddd0a0cdaae423f1" title="Load the module Rocin into Roccom using the given module name. " alt="" coords="408,165,544,195"/>
+<area shape="rect" id="node23" href="$Rocin_8C.html#a4251ae394606db828455fee9ca27d3a6" title="COM_F_FUNC2" alt="" coords="668,165,788,195"/>
+<area shape="rect" id="node25" href="$readsdv_8C.html#a64be298d6315aab8ff717f2c8d1b7777" title="read_pane_sp" alt="" coords="677,219,779,248"/>
+<area shape="rect" id="node27" href="$readsdv_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="877,219,928,248"/>
+<area shape="rect" id="node31" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="403,219,549,248"/>
+<area shape="rect" id="node33" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="405,272,547,301"/>
+<area shape="rect" id="node35" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="379,325,573,355"/>
+<area shape="rect" id="node37" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="401,379,551,408"/>
+<area shape="rect" id="node39" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="375,432,577,461"/>
+<area shape="rect" id="node43" href="$Rocmop_8C.html#a30f9b111edcdc155ec96cd08ab117b18" title="Rocmop_load_module" alt="" coords="401,485,551,515"/>
+<area shape="rect" id="node45" href="$Rocmop_8C.html#a22b71c82a1713e49ad1aae9533033f29" title="COM_F_FUNC2" alt="" coords="416,539,536,568"/>
+<area shape="rect" id="node49" href="$Rocon_8C.html#a326129e0f59167a9d49b467d2ca62623" title="Rocon_load_module" alt="" coords="407,592,545,621"/>
+<area shape="rect" id="node51" href="$Rocon_8C.html#ad9318a39523276bf31292715c9d868a1" title="rocon_load_module" alt="" coords="409,645,543,675"/>
+<area shape="rect" id="node53" href="$Rocon_8C.html#aa761155575248a4e82dc54c5d1ac56c7" title="ROCON_LOAD_MODULE" alt="" coords="387,699,565,728"/>
+<area shape="rect" id="node55" href="$Rocon_8C.html#a6aac732f557d7efb2446d7c7ea0b4d1e" title="rocon_load_module_" alt="" coords="405,752,547,781"/>
+<area shape="rect" id="node57" href="$Rocon_8C.html#a9d1d1090b92f6f56fa1e50d194883268" title="ROCON_LOAD_MODULE_" alt="" coords="383,805,569,835"/>
+<area shape="rect" id="node61" href="$Rocprop_8C.html#ad9df38ab9916691f6c68fc70672d32ff" title="Rocprop_load_module" alt="" coords="401,859,551,888"/>
+<area shape="rect" id="node63" href="$Rocprop_8C.html#ad683118ebfe7e5bc0da6c649f9a91afb" title="rocprop_load_module" alt="" coords="404,912,548,941"/>
+<area shape="rect" id="node65" href="$Rocprop_8C.html#a1293b092211f43285a36171e71078dd6" title="ROCPROP_LOAD_MODULE" alt="" coords="377,965,575,995"/>
+<area shape="rect" id="node67" href="$Rocprop_8C.html#af271f1683a72f6d590aedc3bdb9f0630" title="rocprop_load_module_" alt="" coords="400,1019,552,1048"/>
+<area shape="rect" id="node69" href="$Rocprop_8C.html#a18742d0fd81e89caac223ad4e7127420" title="ROCPROP_LOAD_MODULE_" alt="" coords="375,1072,577,1101"/>
+</map>

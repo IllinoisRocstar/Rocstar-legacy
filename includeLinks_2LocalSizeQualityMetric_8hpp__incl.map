@@ -1,0 +1,16 @@
+<map id="LocalSizeQualityMetric.hpp" name="LocalSizeQualityMetric.hpp">
+<area shape="rect" id="node3" href="$Mesquite_8hpp.html" title="Mesquite.hpp" alt="" coords="547,469,646,499"/>
+<area shape="rect" id="node13" href="$includeLinks_2VolumeQualityMetric_8hpp.html" title="VolumeQualityMetric.hpp" alt="" coords="484,160,652,189"/>
+<area shape="rect" id="node30" href="$includeLinks_2Vector3D_8hpp.html" title="Vector3D.hpp" alt="" coords="432,392,534,421"/>
+<area shape="rect" id="node48" href="$includeLinks_2PatchData_8hpp.html" title="PatchData.hpp" alt="" coords="1010,83,1119,112"/>
+<area shape="rect" id="node55" href="$includeLinks_2MsqMeshEntity_8hpp.html" title="MsqMeshEntity.hpp" alt="" coords="322,160,460,189"/>
+<area shape="rect" id="node16" href="$includeLinks_2QualityMetric_8hpp.html" title="QualityMetric.hpp" alt="" coords="471,237,594,267"/>
+<area shape="rect" id="node21" href="$includeLinks_2MsqError_8hpp.html" title="MsqError.hpp" alt="" coords="1102,315,1200,344"/>
+<area shape="rect" id="node37" href="$includeLinks_2Matrix3D_8hpp.html" title="Matrix3D.hpp" alt="" coords="803,315,902,344"/>
+<area shape="rect" id="node51" href="$includeLinks_2MsqVertex_8hpp.html" title="MsqVertex.hpp" alt="" coords="670,315,779,344"/>
+<area shape="rect" id="node66" href="$MeshInterface_8hpp.html" title="This file contains the Mesquite mesh interface. Many users will want to implement a concrete class de..." alt="" coords="1235,237,1366,267"/>
+<area shape="rect" id="node74" href="$includeLinks_2PatchDataMem_8hpp.html" title="PatchDataMem.hpp" alt="" coords="1406,160,1544,189"/>
+<area shape="rect" id="node80" href="$includeLinks_2CornerTag_8hpp.html" title="CornerTag.hpp" alt="" coords="1259,160,1366,189"/>
+<area shape="rect" id="node87" href="$includeLinks_2TargetMatrix_8hpp.html" title="TargetMatrix.hpp" alt="" coords="856,237,976,267"/>
+<area shape="rect" id="node59" href="$includeLinks_2TopologyInfo_8hpp.html" title="TopologyInfo.hpp" alt="" coords="371,315,494,344"/>
+</map>

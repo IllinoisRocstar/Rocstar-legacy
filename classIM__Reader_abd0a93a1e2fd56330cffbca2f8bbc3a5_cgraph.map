@@ -1,0 +1,16 @@
+<map id="read_mesh" name="read_mesh">
+<area shape="rect" id="node3" href="$roccom__c_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="143,33,316,63"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="367,5,500,35"/>
+<area shape="rect" id="node9" href="$classIM__Reader.html#a5c8cf2889cf1e089954cb2adb41cf0eb" title="get_nextline" alt="" coords="575,268,665,297"/>
+<area shape="rect" id="node11" href="$bordertest__struc_8C.html#adbefa474b566ff7262aefc2f21fb2808" title="is_local" alt="" coords="196,421,263,451"/>
+<area shape="rect" id="node13" href="$classIM__Reader.html#a819fa8284cc3bb53fabca9490abc0e64" title="read_pane_ij" alt="" coords="183,137,276,167"/>
+<area shape="rect" id="node29" href="$classIM__Reader.html#a97b1c80249b1c5b49bb6d4cd46e4c9df" title="read_pane_mixed" alt="" coords="168,191,291,220"/>
+<area shape="rect" id="node38" href="$classIM__Reader.html#a0b1c08338d87ec242d77ac40732778f2" title="read_pane_uns" alt="" coords="175,244,284,273"/>
+<area shape="rect" id="node7" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="739,56,867,85"/>
+<area shape="rect" id="node16" href="$roccom__c_09_09_8h.html#adca6827f3c065859156fa3562c2cd9a8" title="Associates an array with an attribute for a specific pane. " alt="" coords="376,59,491,88"/>
+<area shape="rect" id="node19" href="$classIM__Reader.html#ada409e59cc155b5189acb79c158eb115" title="read_pane_coors" alt="" coords="373,112,493,141"/>
+<area shape="rect" id="node21" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="565,215,675,244"/>
+<area shape="rect" id="node24" href="$roccom__c_8h.html#a989b969be3cb07c32a05d4aad3a0f710" title="Allocate space for an attribute on a specific pane and return the address by setting addr..." alt="" coords="549,161,691,191"/>
+<area shape="rect" id="node27" href="$classIM__Reader.html#a21c12adced240d78991978d0d5153789" title="isfinite" alt="" coords="591,108,649,137"/>
+<area shape="rect" id="node33" href="$classIM__Reader.html#a0b3eb68ce5f9ab1fdb2a22a920c15f54" title="read_pane_elems" alt="" coords="372,216,495,245"/>
+</map>

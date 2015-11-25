@@ -1,0 +1,11 @@
+<map id="select_bbx" name="select_bbx">
+<area shape="rect" id="node3" href="$classAttribute.html#a8bcf950a774cbd3106d4c68d3b2f38c9" title="Obtain the status of the attribute. " alt="" coords="156,5,271,35"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="140,58,287,105"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1cimg_1_1type.html#adbb5c22494c7f40ad743a507c41fc766" title="cimg_library::cimg\l::type::string" alt="" coords="149,127,277,174"/>
+<area shape="rect" id="node9" href="$classBbox__2.html#a9fc84e6da4a37412b5d7af2ce8b22588" title="Bbox_2::xmax" alt="" coords="160,197,267,227"/>
+<area shape="rect" id="node11" href="$classBbox__2.html#a2afe2f5c6ed73686631520ab5304503e" title="Bbox_2::xmin" alt="" coords="163,251,264,280"/>
+<area shape="rect" id="node13" href="$classBbox__2.html#a47fe6cd25d5ca9d1f11ee5059d825201" title="Bbox_2::ymax" alt="" coords="160,304,267,333"/>
+<area shape="rect" id="node15" href="$classBbox__2.html#ae0cae337f47f3e2a5187d3a4594fcd53" title="Bbox_2::ymin" alt="" coords="163,357,264,387"/>
+<area shape="rect" id="node17" href="$classBbox__3.html#ab4b1ffe24e0aa15ac62cf745d99919bd" title="Bbox_3::zmax" alt="" coords="160,411,267,440"/>
+<area shape="rect" id="node19" href="$classBbox__3.html#ae2a83c8b65e0d8f652ffd6c1c3e0bcd0" title="Bbox_3::zmin" alt="" coords="163,464,264,493"/>
+</map>

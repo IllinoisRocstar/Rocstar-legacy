@@ -1,0 +1,7 @@
+<map id="edge_length" name="edge_length">
+<area shape="rect" id="node3" href="$classGeo__Metric__Base__2.html#a18bc1c0de0237a4367c3fed594a6ffd9" title="Compute the circumradius, inradius, and shortest edge length. " alt="" coords="148,5,295,51"/>
+<area shape="rect" id="node5" href="$classGeo__Metric__Base__3.html#a18bc1c0de0237a4367c3fed594a6ffd9" title="Compute circumradius, inradius, and shortest edge length. " alt="" coords="345,91,492,138"/>
+<area shape="rect" id="node11" href="$geometry_8C.html#aa018e9f54fcc4a6edd94244baf18dda0" title="Compute the area of a triangle defined by its three sides as vectors. " alt="" coords="189,125,253,155"/>
+<area shape="rect" id="node7" href="$classAspect__Metric__3.html#a9ae21718fd1b56efd4b3a617d2969fe0" title="Get the geometric aspects. " alt="" coords="541,100,736,129"/>
+<area shape="rect" id="node9" href="$classRocmop.html#ac32e390ae4937ffc3928b111a7842592" title="Rocmop::add_aspect\l_ratios" alt="" coords="784,91,931,138"/>
+</map>

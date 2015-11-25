@@ -1,0 +1,12 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node3" href="$distance__predicatesS3_8h.html#ac0c9c1903ecd7f8e2d2b6b302146fc2c" title="has_larger_dist_to\l_point" alt="" coords="131,111,259,158"/>
+<area shape="rect" id="node21" href="$predicates__on__points__2_8h.html#af712fb2df817e76ba91248540581946f" title="orientation" alt="" coords="153,181,236,211"/>
+<area shape="rect" id="node5" href="$predicates_2kernel__ftC3_8h.html#a86d04ec258ded3a4ce03783c23ed43c8" title="has_larger_dist_to\l_pointC3" alt="" coords="307,23,435,70"/>
+<area shape="rect" id="node15" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="329,93,412,123"/>
+<area shape="rect" id="node17" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="329,147,412,176"/>
+<area shape="rect" id="node19" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="329,200,412,229"/>
+<area shape="rect" id="node7" href="$predicates_2kernel__ftC3_8h.html#a6ce1de863edbbd2883b69b4c447c069d" title="cmp_dist_to_pointC3" alt="" coords="484,32,628,61"/>
+<area shape="rect" id="node9" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="691,5,805,35"/>
+<area shape="rect" id="node11" href="$constructions_2kernel__ftC3_8h.html#ac3bf4555560ae04cd01f79f5f40bd8da" title="squared_distanceC3" alt="" coords="677,59,819,88"/>
+<area shape="rect" id="node13" href="$Pane__boundary_8C.html#a435ef393d7d5394df67d5da81c108c7d" title="square" alt="" coords="867,59,928,88"/>
+</map>

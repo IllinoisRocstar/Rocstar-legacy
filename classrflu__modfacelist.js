@@ -1,0 +1,26 @@
+var classrflu__modfacelist =
+[
+    [ "rflu_buildavface2borderlist", "classrflu__modfacelist.html#a61912fd3822c18a3333598b9549471e6", null ],
+    [ "rflu_buildavface2patchlist", "classrflu__modfacelist.html#ae3daa6f1fcf689fcbf238b17c870d31d", null ],
+    [ "rflu_buildcell2facelist", "classrflu__modfacelist.html#aae32d23fb97172beacbcd8179154c401", null ],
+    [ "rflu_buildfacelist", "classrflu__modfacelist.html#ad366426b9baff542515f6d43d6b0f406", null ],
+    [ "rflu_createavface2borderlist", "classrflu__modfacelist.html#ae3b3d14543078ddc7aa576a2ea9f71c1", null ],
+    [ "rflu_createavface2patchlist", "classrflu__modfacelist.html#adb72b788d758815842d0772fe092a0ae", null ],
+    [ "rflu_createcell2facelist", "classrflu__modfacelist.html#a186cb296e72a1b677d76ee8849152d7d", null ],
+    [ "rflu_createfacelist", "classrflu__modfacelist.html#acd81fb0b76709546665ee33ebd45fa01", null ],
+    [ "rflu_destroyavface2borderlist", "classrflu__modfacelist.html#a8484ce1e7b3c350372356860890bc716", null ],
+    [ "rflu_destroyavface2patchlist", "classrflu__modfacelist.html#aa906cc09a2a6e1e37b64af79a709ab4d", null ],
+    [ "rflu_destroycell2facelist", "classrflu__modfacelist.html#a2cc3b88967d71265684af49871335c59", null ],
+    [ "rflu_destroyfacelist", "classrflu__modfacelist.html#a2216dce383088ea52efc21f28e07581f", null ],
+    [ "rflu_getopposingfaces", "classrflu__modfacelist.html#a19281f686c8ad9673b359c550aa0e2d4", null ],
+    [ "rflu_insertintocell2facelist", "classrflu__modfacelist.html#aefecb2172b498c53d58b897836cd9024", null ],
+    [ "rflu_nullifyavface2borderlist", "classrflu__modfacelist.html#a178d4b80e83f56054c775680da69ab7f", null ],
+    [ "rflu_nullifyavface2patchlist", "classrflu__modfacelist.html#a5779800cbd374d2b404d26da06c3e296", null ],
+    [ "rflu_nullifycell2facelist", "classrflu__modfacelist.html#a5d14d298b0fd8fa1c79ddbd77106a12b", null ],
+    [ "rflu_nullifyfacelist", "classrflu__modfacelist.html#a020dffac34a6dddf4faf9fa2b97cbade", null ],
+    [ "rflu_reorientfaces", "classrflu__modfacelist.html#a633639e56975f9c058289e84273fb8b9", null ],
+    [ "destroy_face_all", "classrflu__modfacelist.html#af82b676b775959c35b47d90462146fc1", null ],
+    [ "destroy_face_ext", "classrflu__modfacelist.html#a1c343da4f95d4d649fb7a2dfdd445635", null ],
+    [ "destroy_face_int", "classrflu__modfacelist.html#a3618654d03923d33d006fc1910d379f5", null ],
+    [ "rcsidentstring", "classrflu__modfacelist.html#a7a1ae310ae3fe7169e9de9c1ddd9288f", null ]
+];

@@ -1,0 +1,13 @@
+<map id="GetBorderElements" name="GetBorderElements">
+<area shape="rect" id="node3" href="$classMesh_1_1MeshUtilityObject.html#a7da73d5c19d1f188ce5f3badea22175d" title="Mesh::MeshUtilityObject\l::GetCon" alt="" coords="191,43,356,90"/>
+<area shape="rect" id="node19" href="$classMesh_1_1MeshUtilityObject.html#a4eea84f4f53a1ce0a109d8a945a343e0" title="Mesh::MeshUtilityObject\l::NumberOfElements" alt="" coords="191,113,356,159"/>
+<area shape="rect" id="node21" href="$classMesh_1_1MeshUtilityObject.html#a7569dc62bd248c630f6745d61c7e17ec" title="Mesh::MeshUtilityObject\l::NumberOfNodes" alt="" coords="191,182,356,229"/>
+<area shape="rect" id="node5" href="$vinci_8h.html#a9d685369a20ad2d6f5c2256b857614f6" title="empty" alt="" coords="460,21,519,51"/>
+<area shape="rect" id="node7" href="$classMesh_1_1MeshUtilityObject.html#a690d9694fadce78f040760ee34d5a0fa" title="Mesh::MeshUtilityObject\l::FormConnectivity" alt="" coords="407,74,572,121"/>
+<area shape="rect" id="node9" href="$classMesh_1_1MeshUtilityObject.html#aaaa6c4a41ae628a7697343a69b2229a0" title="Mesh::MeshUtilityObject\l::ECon" alt="" coords="636,5,801,51"/>
+<area shape="rect" id="node11" href="$classMesh_1_1Connectivity.html#a41299e7e87f3fea27cc28c5ea973c879" title="Mesh::Connectivity\l::Inverse" alt="" coords="652,74,785,121"/>
+<area shape="rect" id="node17" href="$classMesh_1_1MeshUtilityObject.html#a4ee6fd10b4878cb005f9eb3e11508cdc" title="Mesh::MeshUtilityObject::NC" alt="" coords="621,144,816,173"/>
+<area shape="rect" id="node13" href="$classMesh_1_1Connectivity.html#a07c8a0d2aa0388b9eff23a632c27c68d" title="Mesh::Connectivity\l::Resize" alt="" coords="865,39,999,86"/>
+<area shape="rect" id="node15" href="$classMesh_1_1Connectivity.html#a93098eecf20d66124bd7bc8370ebe52e" title="Mesh::Connectivity\l::Sync" alt="" coords="865,109,999,155"/>
+<area shape="rect" id="node23" href="$classMesh_1_1NodalCoordinates.html#a3dc03243fcc53453e160252efee8e232" title="Mesh::NodalCoordinates\l::Size" alt="" coords="407,182,572,229"/>
+</map>

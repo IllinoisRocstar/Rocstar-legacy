@@ -1,0 +1,51 @@
+<map id="cross_product" name="cross_product">
+<area shape="rect" id="node3" href="$classRocsurf.html#acb8b27b7f15d698939c53fc13a1f3389" title="Computes elemental normals of a given window. " alt="" coords="157,40,336,87"/>
+<area shape="rect" id="node12" href="$compute__curvature_8C.html#a6e65cb8f6a84edced8eedb0e978b5b71" title="compute_lbop_weights" alt="" coords="169,448,324,477"/>
+<area shape="rect" id="node16" href="$classRocmop.html#a4c6e496385e479c044a89f1e545edaa5" title="Compute medial quadric for every vertex. " alt="" coords="395,486,568,532"/>
+<area shape="rect" id="node20" href="$classPropagation__3.html#a521659f6a2ab3aa7d5b64ea41a1798fa" title="Convert facial constraints to nodal constraints. " alt="" coords="169,763,324,810"/>
+<area shape="rect" id="node24" href="$classWindow__manifold__2.html#a2eebb41f1831723225ffd524188bcb54" title="Convert element values to nodal values using weighted averaging. " alt="" coords="173,139,320,186"/>
+<area shape="rect" id="node30" href="$classRocmop.html#a800007d963d8c7320124ed29897db40a" title="Evaluate face normals (copied from FaceOffset_3.[hC]. " alt="" coords="401,555,561,602"/>
+<area shape="rect" id="node33" href="$compare__normals_8C.html#a2735c50ad58d081ce17303c38e5c2684" title="func1" alt="" coords="220,833,273,862"/>
+<area shape="rect" id="node37" href="$compare__normals_8C.html#ab02d521dfa0be9ea1bf41cf52dd2b8d8" title="func2" alt="" coords="220,886,273,916"/>
+<area shape="rect" id="node40" href="$compare__normals_8C.html#a84051587b6103d3fac3bdbede2d199d4" title="func3" alt="" coords="220,940,273,969"/>
+<area shape="rect" id="node43" href="$Manifold__2_8C.html#aa67b3b6a5ff8411c6120e4f48161c837" title="Get the normal of the deformed shape (coordinates plus given displacements) of the incident facet of ..." alt="" coords="173,993,320,1022"/>
+<area shape="rect" id="node47" href="$classOverlay__primitives.html#a1c20fa0c901b440606f581e1a031eff5" title="Overlay_primitives\l::get_face_normal" alt="" coords="181,1046,312,1092"/>
+<area shape="rect" id="node59" href="$compute__bounded__volumes_8C.html#a979ce84eb276bc57b7c0be1341e27b5e" title="get_face_volume" alt="" coords="187,321,307,350"/>
+<area shape="rect" id="node70" href="$Manifold__2_8C.html#a305742238b48caccbf60160496982547" title="Get the face normal of a point in the element incident on h. " alt="" coords="204,1116,289,1145"/>
+<area shape="rect" id="node74" href="$classRocmop.html#a4fb274a52abfb27d778d4c6d5c690866" title="Rocmop::get_redist\l_safe_factor" alt="" coords="179,694,315,740"/>
+<area shape="rect" id="node82" href="$classOverlay__primitives.html#ada5e302cd6a3e775eae57519f932783b" title="Overlay_primitives\l::intersect" alt="" coords="181,1168,312,1215"/>
+<area shape="rect" id="node86" href="$classGeneric__element__2.html#af37bfbd7645d25cf92fd1b1bec9c7069" title="Evaluates the determinant of the Jacobian (dx/dxi,dx/deta). " alt="" coords="176,1238,317,1284"/>
+<area shape="rect" id="node88" href="$classFaceOffset__3.html#a495fc0cb53571fbaed964fe1608dce61" title="Redistribute smooth vertices by NuLaplacian smoothing. " alt="" coords="160,1307,333,1354"/>
+<area shape="rect" id="node92" href="$classFaceOffset__3.html#aeb4f96b70a0dc62dc10e186483d9180f" title="Decompose propagation directions based on constraints. " alt="" coords="168,1376,325,1423"/>
+<area shape="rect" id="node95" href="$classFaceOffset__3.html#ac6379f4a2faa5ed80e6acc4d28e9b110" title="FaceOffset_3::obtain\l_face_offset" alt="" coords="175,1446,319,1492"/>
+<area shape="rect" id="node100" href="$PN__patch_8C.html#affd09ecd0b72b469c35274631960a127" title="one_sided_normal" alt="" coords="184,1585,309,1614"/>
+<area shape="rect" id="node104" href="$classOverlay__primitives.html#abb3a7edb33b71fe32f8df12c49ce85e8" title="Overlay_primitives\l::project_blue_feature" alt="" coords="173,1638,320,1684"/>
+<area shape="rect" id="node108" href="$classOverlay__primitives.html#aea27815600f3c4201aa2f6c38a1ff0bf" title="Overlay_primitives\l::project_green_feature" alt="" coords="169,1707,324,1754"/>
+<area shape="rect" id="node111" href="$classFaceOffset__3.html#a16c27dfdaf18ec8ac3ccd60bdf84e313" title="Reduce time step based on stability limit, and rescale displacements by the reduced time step and dif..." alt="" coords="172,1515,321,1562"/>
+<area shape="rect" id="node114" href="$classGeneric__element__2.html#a444949b3955cec847d77760a0cecaabb" title="Generic_element_2::\lsolve" alt="" coords="176,1776,317,1823"/>
+<area shape="rect" id="node5" href="$classWindow__manifold__2.html#ab5ca31d43bed67e02e89be167de9da7f" title="Compute nodal normals using one of the following weighting schemes: E2N_ONE, E2N_AREA, and E2N_ANGLE, and E2N_USER. " alt="" coords="400,70,563,116"/>
+<area shape="rect" id="node7" href="$classWindow__manifold__2.html#a870e40efa9ab58452a354eaca2b75d30" title="Compute the normals at nodes or faces, depending on the type of the attribute normals. " alt="" coords="629,15,776,62"/>
+<area shape="rect" id="node10" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="653,217,752,246"/>
+<area shape="rect" id="node14" href="$classWindow__manifold__2.html#a2de69b1dfeafce08ec7b515710fb76c4" title="Window_manifold_2::\lcompute_mcn" alt="" coords="408,416,555,463"/>
+<area shape="rect" id="node18" href="$classRocmop.html#a679bfb8c7da7e819b00dc132ba57dc8f" title="Smooths a surface using the medial quadric. " alt="" coords="628,590,777,636"/>
+<area shape="rect" id="node22" href="$classPropagation__3.html#a5b18ea2b57dc03155d6c6fde2817333c" title="Set the types and directions of nodal constraints. " alt="" coords="416,763,547,810"/>
+<area shape="rect" id="node27" href="$classRocsurf.html#a4f24fa35a8c266187a6c07110f263313" title="Computes nodal or elemental normals of a given window. " alt="" coords="408,139,555,186"/>
+<area shape="rect" id="node35" href="$compare__normals_8C.html#a0c9e47b8e6802e7222dff0c885ac402b" title="init_normals" alt="" coords="436,833,527,862"/>
+<area shape="rect" id="node45" href="$classHalfedge.html#a55880ffb32c91532daac993962af44aa" title="Get the normal of the deformed shape (coordinates plus given displacements) of the incident facet of ..." alt="" coords="413,886,549,932"/>
+<area shape="rect" id="node49" href="$group__fdp.html#ga26603d3c69ad54a093a6925f93d0afac" title="Compute the cosine of the face angle (dihedral angle) at an edge. " alt="" coords="405,1232,557,1279"/>
+<area shape="rect" id="node51" href="$classRFC__Pane__overlay.html#a7f96d32b13df97ab6783e01c97e4723f" title="RFC_Pane_overlay::evaluate\l_normals" alt="" coords="385,955,577,1002"/>
+<area shape="rect" id="node53" href="$group__ntc.html#ga7f96d32b13df97ab6783e01c97e4723f" title="RFC_Window_overlay\l::evaluate_normals" alt="" coords="405,1024,557,1071"/>
+<area shape="rect" id="node55" href="$classOverlay.html#a6054035d0679586f98c8667b9951ae60" title="Overlay::get_green\l_parent" alt="" coords="416,1094,547,1140"/>
+<area shape="rect" id="node57" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="396,1163,567,1210"/>
+<area shape="rect" id="node61" href="$classRocsurf.html#a75fbdc31631afdd7fadf0f5a8ae6b963" title="Computes the volume bounded between two different locations of each face of the surface mesh of windo..." alt="" coords="391,208,572,255"/>
+<area shape="rect" id="node64" href="$classRocsurf.html#a105ada0c2358cfcc9aa226a62ad573c0" title="Computes the signed volume of a body. " alt="" coords="396,278,567,324"/>
+<area shape="rect" id="node67" href="$classRocsurf.html#a9184eb38a332f27f061237455dcdf6bd" title="Computes the swept volume by a given displacement of each face of the surface mesh of window volumes&#45;..." alt="" coords="397,347,565,394"/>
+<area shape="rect" id="node72" href="$classHalfedge.html#a426503a7405cd1382edbb3d51017de1c" title="Get the normal of the incident facet. " alt="" coords="421,1302,541,1332"/>
+<area shape="rect" id="node76" href="$classRocmop.html#ad736dd98cc6ca328994641cb3939fc7c" title="Redistribute ridge vertices within their tangent spaces. " alt="" coords="411,624,552,671"/>
+<area shape="rect" id="node79" href="$classRocmop.html#aaff38c32926fd43f2c63d0f359a31f77" title="Redistribute smooth vertices within their tangent spaces. " alt="" coords="411,694,552,740"/>
+<area shape="rect" id="node84" href="$classOverlay.html#a4e8602930d85d562fab07af05eddb855" title="Overlay::intersect\l_link_helper" alt="" coords="419,1355,544,1402"/>
+<area shape="rect" id="node90" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="636,1496,769,1543"/>
+<area shape="rect" id="node97" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="403,1526,560,1572"/>
+<area shape="rect" id="node102" href="$PN__patch_8C.html#aeab866e38efbaed6e9a9787f4a04226b" title="project_edge" alt="" coords="433,1646,529,1676"/>
+<area shape="rect" id="node106" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="408,1703,555,1750"/>
+</map>

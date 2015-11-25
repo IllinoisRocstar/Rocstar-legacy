@@ -1,0 +1,8 @@
+<map id="count_edges" name="count_edges">
+<area shape="rect" id="node3" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="insert_node_in_blue_edge" alt="" coords="151,88,321,117"/>
+<area shape="rect" id="node14" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="number_subfaces" alt="" coords="173,155,299,184"/>
+<area shape="rect" id="node5" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="intersect_blue_with\l_green" alt="" coords="372,5,505,51"/>
+<area shape="rect" id="node9" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="match_features_0" alt="" coords="376,75,501,104"/>
+<area shape="rect" id="node12" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="project_next_vertex" alt="" coords="371,128,507,157"/>
+<area shape="rect" id="node7" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="overlay" alt="" coords="555,75,619,104"/>
+</map>

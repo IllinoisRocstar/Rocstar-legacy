@@ -1,0 +1,39 @@
+<map id="reorient_facet" name="reorient_facet">
+<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#ae49e3000eb72d0e5313cb4f0b70c4059" title="get_vertex" alt="" coords="183,527,265,556"/>
+<area shape="rect" id="node5" href="$classHalfedge.html#a04f82933d382b0e6c89b66c5e0622dd6" title="Get the next halfedge of its owner element. " alt="" coords="171,580,277,609"/>
+<area shape="rect" id="node123" href="$classHalfedge__data__structure__decorator.html#a92be4eb032a27bd7913c110c83b69b19" title="set_prev" alt="" coords="188,633,260,663"/>
+<area shape="rect" id="node125" href="$classHalfedge__data__structure__decorator.html#a60256e1bd382a30958cc523b831b8874" title="set_vertex" alt="" coords="183,687,265,716"/>
+<area shape="rect" id="node127" href="$classHalfedge__data__structure__decorator.html#a3cfa2d359aa61dc7e8ab9e4429e2d2e1" title="set_vertex_halfedge" alt="" coords="155,740,293,769"/>
+<area shape="rect" id="node7" href="$classPane__manifold__2.html#ace7046cd7e020bb965f62ca3ac757e44" title="Obtain the next edge in a given access mode. " alt="" coords="343,519,489,566"/>
+<area shape="rect" id="node9" href="$classSimple__manifold__2.html#a34afa4fb2467f7b53bfb153b728f08e0" title="Get the ID of the next real edge of the element or along the boundary. " alt="" coords="1085,1149,1224,1195"/>
+<area shape="rect" id="node50" href="$classSimple__manifold__2.html#a02859d542d6ec8221641cbfb4122a39d" title="Get the ID of the next edge of the element or along the boundary. " alt="" coords="1288,527,1427,574"/>
+<area shape="rect" id="node71" href="$classSimple__manifold__2.html#ab6d308f97d5fe32df4e31327bdf5fc3e" title="Determine whether a given edge is a border edge of real part of the pane (either on physical border o..." alt="" coords="1507,5,1645,51"/>
+<area shape="rect" id="node75" href="$classPane__manifold__2.html#acc9ac2df851c2e7d04073c72d6706dc1" title="Obtain the opposite edge in a given access mode. " alt="" coords="1081,525,1228,571"/>
+<area shape="rect" id="node90" href="$classHalfedge.html#aa126fd94949c810d24869ad04cd97e15" title="Is the edge a border edge? " alt="" coords="895,400,1028,429"/>
+<area shape="rect" id="node102" href="$classHalfedge.html#a811d0a145b7a140c42effbd1b0869cd7" title="Get the previous halfedge of its owner element. " alt="" coords="539,605,645,635"/>
+<area shape="rect" id="node119" href="$classHalfedge.html#ab4def96f7b16673e4f64958282db7522" title="Get the ID of the opposite edge of a given edge. " alt="" coords="896,555,1027,584"/>
+<area shape="rect" id="node11" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="1717,573,1853,603"/>
+<area shape="rect" id="node15" href="$classSimple__manifold__2.html#a5a0839973515aaf6ec86f3e88d6e1034" title="Simple_manifold_2::\lget_next_real_edge_interior" alt="" coords="1485,1258,1667,1305"/>
+<area shape="rect" id="node28" href="$classSimple__manifold__2.html#a388807b9a6d8f961084b971ad0967d6e" title="Get the ID of the opposite real edge of a given real or border edge. " alt="" coords="1279,907,1436,954"/>
+<area shape="rect" id="node30" href="$classSimple__manifold__2.html#a97484283cf37c9ffd5d002c22335d5db" title="Get the opposite edge of an interior edge of the real part. " alt="" coords="1279,977,1436,1041"/>
+<area shape="rect" id="node44" href="$classSimple__manifold__2.html#ac5bd537a36f17699f9410f428f154f40" title="Simple_manifold_2::\lget_prev_real_edge_interior" alt="" coords="1485,1327,1667,1374"/>
+<area shape="rect" id="node13" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="1907,860,2003,889"/>
+<area shape="rect" id="node17" href="$classSimple__manifold__2.html#ab06c9b0093094a1e15b3c1d91b6d7012" title="Is the element incident on the give edge a ghost element? " alt="" coords="1716,847,1855,894"/>
+<area shape="rect" id="node19" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="1904,644,2005,673"/>
+<area shape="rect" id="node22" href="$classSimple__manifold__2.html#a678219ca5d2b29febb0820f195f668ba" title="Get an index for internal edges. " alt="" coords="1716,967,1855,1014"/>
+<area shape="rect" id="node25" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="1928,976,1981,1005"/>
+<area shape="rect" id="node33" href="$classSimple__manifold__2.html#ae1611b1b5b6feb95d11d299ef4150866" title="Is the element incident on the give edge a real element? " alt="" coords="1507,986,1645,1033"/>
+<area shape="rect" id="node38" href="$classSimple__manifold__2.html#aa81d979ace76b3412a00645efe09cfff" title="Get the opposite edge of an interior edge of the ghost part. " alt="" coords="1491,899,1661,963"/>
+<area shape="rect" id="node53" href="$classSimple__manifold__2.html#a71b06b680614a7e0c0947ec3899b913c" title="Simple_manifold_2::\lget_next_edge_interior" alt="" coords="1500,709,1652,755"/>
+<area shape="rect" id="node59" href="$classSimple__manifold__2.html#aef03f5e4c6a6a5d7c98c42ae04a241e2" title="Get the opposite edge of a border edge for the whole pane. " alt="" coords="1489,367,1663,414"/>
+<area shape="rect" id="node63" href="$classSimple__manifold__2.html#a1250f39747158bc5a1ed2fa7a7013978" title="Get the opposite edge of an interior edge of the whole pane. " alt="" coords="1488,487,1664,534"/>
+<area shape="rect" id="node65" href="$classSimple__manifold__2.html#ae3fa513cd4d468860658ba8f800ce661" title="Simple_manifold_2::\lget_prev_edge_interior" alt="" coords="1500,778,1652,825"/>
+<area shape="rect" id="node78" href="$classSimple__manifold__2.html#ab2f2bcc3b156c06ca00d323ad90c5be3" title="Get the ID of the opposite edge of a given interior or border edge. " alt="" coords="1288,447,1427,494"/>
+<area shape="rect" id="node84" href="$classPane__manifold__2.html#a293c0575cef30e28441550227a851354" title="Get the counterpart of an edge in the ACROSS_PANE mode, i.e. " alt="" coords="1503,74,1649,121"/>
+<area shape="rect" id="node88" href="$classHalfedge.html#ab72ff77eeb5b8645e86a4b4cb57138ce" title="Obtain the pane manifold that owns the edge. " alt="" coords="1493,315,1659,344"/>
+<area shape="rect" id="node92" href="$classPane__manifold__2.html#ad58eac8ab7a4df54a891be56771473ba" title="Is the edge on the boundary of a given mode? " alt="" coords="1288,234,1427,281"/>
+<area shape="rect" id="node95" href="$classSimple__manifold__2.html#a7638d97609333036c513638fbba068aa" title="Determine whether a given edge is a border edge of real part of the whole pane (on physical border)..." alt="" coords="1491,194,1661,241"/>
+<area shape="rect" id="node104" href="$classPane__manifold__2.html#abb54afcf7f0ee218a75b6bd78f26b163" title="Obtain the previous edge in a given access mode. " alt="" coords="695,626,841,673"/>
+<area shape="rect" id="node106" href="$classSimple__manifold__2.html#ab2686d48e0f5957e3414e5e474803831" title="Get the ID of the previous real edge of the element or along the boundary. " alt="" coords="1085,1021,1224,1067"/>
+<area shape="rect" id="node113" href="$classSimple__manifold__2.html#ac3df0761c16cb79996daeeec4dec8b42" title="Get the ID of the previous edge of the element or along the boundary. " alt="" coords="892,709,1031,755"/>
+</map>

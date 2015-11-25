@@ -1,0 +1,8 @@
+<map id="reduce_on_shared_nodes" name="reduce_on_shared_nodes">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#ad0963775a018dcb83d982e5cfeeb3a22" title="COM_get_sizeof" alt="" coords="224,5,344,35"/>
+<area shape="rect" id="node7" href="$Pane__communicator_8C.html#af6611d12c8cae97823c7366929385918" title="Local level implementation of reduce operations. " alt="" coords="243,112,325,141"/>
+<area shape="rect" id="node13" href="$Pane__communicator_8C.html#aed0b0238d1296f65b4684c099aebb962" title="Local level implementation of reduce operations. " alt="" coords="240,59,328,88"/>
+<area shape="rect" id="node5" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="392,5,475,35"/>
+<area shape="rect" id="node9" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="411,112,456,141"/>
+<area shape="rect" id="node11" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="412,59,455,88"/>
+</map>

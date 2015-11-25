@@ -1,0 +1,51 @@
+<map id="load" name="load">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="125,59,264,88"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="128,112,261,141"/>
+<area shape="rect" id="node10" href="$roccom__c_09_09_8h.html#aa0fa484a786fcaec5c8cefc71d83049c" title="COM_set_array_const" alt="" coords="119,165,271,195"/>
+<area shape="rect" id="node13" href="$roccom__c_8h.html#aa236d5c98c0ac8cc26b313b6ccd720a8" title="COM_set_function" alt="" coords="129,272,260,301"/>
+<area shape="rect" id="node15" href="$roccom__c_8h.html#ab41e262f86b991f367a93a005e0694b8" title="COM_set_member_function" alt="" coords="103,325,287,355"/>
+<area shape="rect" id="node17" href="$roccom__c_09_09_8h.html#a5e5321de4f0f8940ea99b25b0060afe3" title="COM_set_object" alt="" coords="135,219,255,248"/>
+<area shape="rect" id="node20" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="113,5,276,35"/>
+<area shape="rect" id="node23" href="$classRocsurf.html#a75fbdc31631afdd7fadf0f5a8ae6b963" title="Computes the volume bounded between two different locations of each face of the surface mesh of windo..." alt="" coords="531,355,715,384"/>
+<area shape="rect" id="node44" href="$classRocsurf.html#ae33ff8b1e6981f1e9a7c7e9cca3a51c5" title="Computes edge lengths of a given window. " alt="" coords="545,1097,700,1127"/>
+<area shape="rect" id="node68" href="$classRocsurf.html#a05963147113fea919a6ba70630b364a3" title="Computes the area of each face of the surface mesh of window areas&#45;&gt;window and saves the results in a..." alt="" coords="541,572,704,601"/>
+<area shape="rect" id="node76" href="$classRocsurf.html#acb8b27b7f15d698939c53fc13a1f3389" title="Computes elemental normals of a given window. " alt="" coords="533,625,712,655"/>
+<area shape="rect" id="node85" href="$classRocsurf.html#a98cadabf2c5e377e91182ea5e6c2c567" title="Computes nodal or elemental normals of a given window. " alt="" coords="357,803,461,832"/>
+<area shape="rect" id="node94" href="$classRocsurf.html#ad345c59eea168babcd0976c9a7810b50" title="Computes nodal or elemental normals of a given window. " alt="" coords="132,929,257,959"/>
+<area shape="rect" id="node100" href="$classRocsurf.html#a690441882f8d7100b177146402bb63b5" title="Constructs the communication patterns of a distributed mesh. " alt="" coords="375,1008,444,1037"/>
+<area shape="rect" id="node104" href="$classRocsurf.html#a105ada0c2358cfcc9aa226a62ad573c0" title="Computes the signed volume of a body. " alt="" coords="536,415,709,444"/>
+<area shape="rect" id="node113" href="$classRocsurf.html#a9184eb38a332f27f061237455dcdf6bd" title="Computes the swept volume by a given displacement of each face of the surface mesh of window volumes&#45;..." alt="" coords="537,245,708,275"/>
+<area shape="rect" id="node122" href="$classRocsurf.html#a4f24fa35a8c266187a6c07110f263313" title="Computes nodal or elemental normals of a given window. " alt="" coords="128,876,261,905"/>
+<area shape="rect" id="node135" href="$classRocsurf.html#ad7f516b084625440ce8b38db72c0a1a3" title="Integrate a function given by an elemental attribute over surface z is an array of size equal to numb..." alt="" coords="587,503,659,532"/>
+<area shape="rect" id="node143" href="$classRocsurf.html#a4bd8c4bd71a33fabfb1a4798a408bc5e" title="Interpolates nodal coordinates to element centers. " alt="" coords="120,1087,269,1116"/>
+<area shape="rect" id="node145" href="$classRocsurf.html#a1dfd9c707aaf0e223ffe45e8dc4d884a" title="Rocsurf" alt="" coords="161,1140,228,1169"/>
+<area shape="rect" id="node147" href="$classRocsurf.html#a4425eeff98e6b22e12140ea76f6023df" title="Serialize the mesh of a given window. " alt="" coords="140,1033,249,1063"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="345,112,473,141"/>
+<area shape="rect" id="node25" href="$compute__bounded__volumes_8C.html#a52b26a37fd56e4672e101974bcaeb3b5" title="arrange" alt="" coords="820,113,884,143"/>
+<area shape="rect" id="node27" href="$compute__bounded__volumes_8C.html#a979ce84eb276bc57b7c0be1341e27b5e" title="get_face_volume" alt="" coords="792,217,912,247"/>
+<area shape="rect" id="node31" href="$split_8cpp.html#a8f6e1162754447ba2dbd3dfeb042bb35" title="volume" alt="" coords="1047,165,1111,195"/>
+<area shape="rect" id="node33" href="$classElement__node__enumerator.html#a041249f802c5bf4c2deae666610e03c4" title="Go to the next element within the connectivity tables of a pane. " alt="" coords="764,494,940,541"/>
+<area shape="rect" id="node35" href="$compute__bounded__volumes_8C.html#ad94e27b617bd99ddce238af0ee2ff5e9" title="normalize_coor" alt="" coords="797,60,907,89"/>
+<area shape="rect" id="node37" href="$classElement__node__vectors__k__const.html#a012daf687ea85e9da2bc2d064de92aa6" title="initialize the accessor with a pointer and a specific stride. " alt="" coords="775,374,929,421"/>
+<area shape="rect" id="node41" href="$classElement__node__enumerator.html#a3b0965f57d58cd0e85fab4b12a9d6899" title="Number of edges per element. " alt="" coords="764,563,940,610"/>
+<area shape="rect" id="node29" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="997,941,1160,971"/>
+<area shape="rect" id="node39" href="$classElement__node__enumerator.html#a35a62313d45990cfa4cab8caa1dfbff6" title="Number of nodes per element. " alt="" coords="991,623,1167,670"/>
+<area shape="rect" id="node46" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="1009,323,1148,352"/>
+<area shape="rect" id="node48" href="$classHalfedge.html#aa126fd94949c810d24869ad04cd97e15" title="Is the edge a border edge? " alt="" coords="785,1519,919,1548"/>
+<area shape="rect" id="node50" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="829,1572,875,1601"/>
+<area shape="rect" id="node52" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="831,1097,873,1127"/>
+<area shape="rect" id="node54" href="$classHalfedge.html#a04f82933d382b0e6c89b66c5e0622dd6" title="Get the next halfedge of its owner element. " alt="" coords="799,1151,905,1180"/>
+<area shape="rect" id="node56" href="$classVector__3.html#afc75c733aff7cb9c0216f363888b1dff" title="Vector_3::norm" alt="" coords="797,1044,907,1073"/>
+<area shape="rect" id="node58" href="$classHalfedge.html#ab4def96f7b16673e4f64958282db7522" title="Get the ID of the opposite edge of a given edge. " alt="" coords="787,1204,917,1233"/>
+<area shape="rect" id="node60" href="$classWindow__manifold__2.html#afc72f337226a2bd9c048dab670fb320a" title="Obtain an iterator to the first pane manifold of the window. " alt="" coords="779,1257,925,1303"/>
+<area shape="rect" id="node62" href="$classWindow__manifold__2.html#a036407c8e0e5dc7109664644e0138d2e" title="Obtain an iterator to the past&#45;the&#45;last pane manifold of the window. " alt="" coords="779,1326,925,1373"/>
+<area shape="rect" id="node64" href="$classHalfedge.html#afe868c12813c184a147c1ddd7812fd03" title="Get the tangent of the given halfedge. " alt="" coords="789,1396,915,1425"/>
+<area shape="rect" id="node66" href="$classWindow__manifold__2.html#a488afeb6f144268114ca88de91eaf9ff" title="Obtain the underlying window object. " alt="" coords="779,1449,925,1495"/>
+<area shape="rect" id="node70" href="$roccom__c_09_09_8h.html#a701c22c997913a2773d36a0b47683716" title="COM_compatible_types" alt="" coords="771,737,933,767"/>
+<area shape="rect" id="node80" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="783,684,921,713"/>
+<area shape="rect" id="node87" href="$classWindow__manifold__2.html#a2de69b1dfeafce08ec7b515710fb76c4" title="Window_manifold_2::\lcompute_mcn" alt="" coords="549,747,696,794"/>
+<area shape="rect" id="node92" href="$classRocsurf.html#a3767bcdb4b06619283e47da0d17b1378" title="validate_object" alt="" coords="568,1151,677,1180"/>
+<area shape="rect" id="node96" href="$classWindow__manifold__2.html#a870e40efa9ab58452a354eaca2b75d30" title="Compute the normals at nodes or faces, depending on the type of the attribute normals. " alt="" coords="336,733,483,779"/>
+<area shape="rect" id="node106" href="$classRocsurf.html#aa10b0333a94238638675866db8a30542" title="Computes the center of a body. " alt="" coords="795,271,909,300"/>
+<area shape="rect" id="node124" href="$classWindow__manifold__2.html#a2eebb41f1831723225ffd524188bcb54" title="Convert element values to nodal values using weighted averaging. " alt="" coords="549,678,696,725"/>
+</map>

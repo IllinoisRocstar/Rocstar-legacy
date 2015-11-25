@@ -1,0 +1,26 @@
+<map id="determinant.h" name="determinant.h">
+<area shape="rect" id="node3" href="$constructions_2kernel__ftC2_8h.html" title="kernel_ftC2.h" alt="" coords="479,83,577,112"/>
+<area shape="rect" id="node40" href="$constructions_2kernel__ftC3_8h.html" title="kernel_ftC3.h" alt="" coords="219,160,317,189"/>
+<area shape="rect" id="node44" href="$sign__of__determinant_8h.html" title="sign_of_determinant.h" alt="" coords="305,83,455,112"/>
+<area shape="rect" id="node49" href="$Aff__transformationS2_8h.html" title="Aff_transformationS2.h" alt="" coords="601,83,756,112"/>
+<area shape="rect" id="node60" href="$Aff__transformationS3_8h.html" title="Aff_transformationS3.h" alt="" coords="717,392,872,421"/>
+<area shape="rect" id="node5" href="$predicates_2kernel__ftC2_8h.html" title="kernel_ftC2.h" alt="" coords="423,160,521,189"/>
+<area shape="rect" id="node7" href="$predicates_2kernel__ftC3_8h.html" title="kernel_ftC3.h" alt="" coords="301,237,400,267"/>
+<area shape="rect" id="node30" href="$predicates__on__pointsS2_8h.html" title="predicates_on_pointsS2.h" alt="" coords="424,237,595,267"/>
+<area shape="rect" id="node9" href="$distance__predicatesS3_8h.html" title="distance_predicatesS3.h" alt="" coords="432,547,597,576"/>
+<area shape="rect" id="node11" href="$predicates__on__pointsS3_8h.html" title="predicates_on_pointsS3.h" alt="" coords="129,315,300,344"/>
+<area shape="rect" id="node13" href="$LineS3_8h.html" title="LineS3.h" alt="" coords="179,392,251,421"/>
+<area shape="rect" id="node20" href="$SegmentS3_8h.html" title="SegmentS3.h" alt="" coords="143,624,244,653"/>
+<area shape="rect" id="node15" href="$PlaneS3_8h.html" title="PlaneS3.h" alt="" coords="264,469,347,499"/>
+<area shape="rect" id="node25" href="$RayS3_8h.html" title="RayS3.h" alt="" coords="93,469,165,499"/>
+<area shape="rect" id="node17" href="$basic__constructionsS3_8h.html" title="basic_constructionsS3.h" alt="" coords="243,547,408,576"/>
+<area shape="rect" id="node32" href="$LineS2_8h.html" title="LineS2.h" alt="" coords="473,315,545,344"/>
+<area shape="rect" id="node34" href="$RayS2_8h.html" title="RayS2.h" alt="" coords="523,392,595,421"/>
+<area shape="rect" id="node37" href="$SegmentS2_8h.html" title="SegmentS2.h" alt="" coords="397,392,499,421"/>
+<area shape="rect" id="node51" href="$CGAL_2include_2CGAL_2SimpleCartesian_2PointS2_8h.html" title="PointS2.h" alt="" coords="557,160,635,189"/>
+<area shape="rect" id="node53" href="$include_2CGAL_2SimpleCartesian_2PointS2_8h.html" title="PointS2.h" alt="" coords="659,160,736,189"/>
+<area shape="rect" id="node58" href="$CGAL_2include_2CGAL_2SimpleCartesian_2VectorS2_8h.html" title="VectorS2.h" alt="" coords="669,237,755,267"/>
+<area shape="rect" id="node62" href="$CGAL_2include_2CGAL_2SimpleCartesian_2PointS3_8h.html" title="PointS3.h" alt="" coords="756,469,833,499"/>
+<area shape="rect" id="node64" href="$include_2CGAL_2SimpleCartesian_2PointS3_8h.html" title="PointS3.h" alt="" coords="551,469,628,499"/>
+<area shape="rect" id="node68" href="$CGAL_2include_2CGAL_2SimpleCartesian_2VectorS3_8h.html" title="VectorS3.h" alt="" coords="621,547,707,576"/>
+</map>

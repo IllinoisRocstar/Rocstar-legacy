@@ -1,0 +1,11 @@
+<map id="readOptions" name="readOptions">
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#ab9308a5128017dd92d3f602a19ca7611" title="cimg_library::cimg\l::option" alt="" coords="176,39,304,86"/>
+<area shape="rect" id="node7" href="$classComSwitch.html#adf6370edfe16ebd7f5f8474885f09565" title="Read and parse options from array. " alt="" coords="147,171,333,200"/>
+<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#abc491a5ed3a8d97e395138a379767a45" title="Compute the basename of a filename. " alt="" coords="415,5,543,51"/>
+<area shape="rect" id="node9" href="$namespacecimg__library_1_1cimg.html#a9ab0fcc7ef1bac330897fec51f617ae6" title="Read a float number from a C&#45;string. " alt="" coords="415,74,543,121"/>
+<area shape="rect" id="node11" href="$utilities_2rc__cmp_2util_8cpp.html#a634a77a74f8a4b2c3145e3009158450d" title="check_non_numeric_str" alt="" coords="399,144,559,173"/>
+<area shape="rect" id="node15" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="421,197,536,227"/>
+<area shape="rect" id="node17" href="$classBoundingBox.html#af6fca3d6b8c43c09c647e446aebb67e6" title="Sets the coordinates of this BoundingBox instance. " alt="" coords="381,251,576,280"/>
+<area shape="rect" id="node19" href="$utilities_2rc__cmp_2util_8cpp.html#a3dbbf1a2353dc5f4c045bd3ad6d82a5f" title="str_tokenize" alt="" coords="432,304,525,333"/>
+<area shape="rect" id="node13" href="$utilities_2rc__cmp_2util_8cpp.html#a0cdc4cc0b04893269ede578556381789" title="check_non_numeric_char" alt="" coords="624,144,795,173"/>
+</map>

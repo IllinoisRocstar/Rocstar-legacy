@@ -1,0 +1,36 @@
+<map id="copy_attribute" name="copy_attribute">
+<area shape="rect" id="node3" href="$classWindow.html#aa49b8825d169c54c62b6cda74c8ac273" title="Inherit the attributes of another window with a different name. " alt="" coords="159,811,215,840"/>
+<area shape="rect" id="node5" href="$classAttribute.html#a21e126a1a188012532afb158c6fbd562" title="Inherit from parent. If depth&gt;0, then the procedure is for the subcomponents. " alt="" coords="428,242,543,271"/>
+<area shape="rect" id="node28" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="619,1110,741,1139"/>
+<area shape="rect" id="node32" href="$classPane.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain the attribute from given name. " alt="" coords="816,674,923,703"/>
+<area shape="rect" id="node43" href="$classAttribute.html#a2e7d4fe5a490266aed5667444935490f" title="Obtain a constant pointer to the physical address. " alt="" coords="427,1084,544,1114"/>
+<area shape="rect" id="node45" href="$classPane.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Get the ID of the pane. " alt="" coords="277,1188,347,1218"/>
+<area shape="rect" id="node47" href="$classPane.html#a82d9b88af823382ccc86ead7520ac6d4" title="Inherit an attribute from another pane onto the current pane: " alt="" coords="265,702,359,731"/>
+<area shape="rect" id="node7" href="$classAttribute.html#af69420db7b9e1d806a3d45d5a91b3404" title="Allocate memory for the attribute. " alt="" coords="619,114,741,143"/>
+<area shape="rect" id="node11" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="989,167,1072,196"/>
+<area shape="rect" id="node26" href="$classAttribute.html#a77f06f41441a97714ec0acf49c89b568" title="Root of use&#45;inheritance. " alt="" coords="629,399,731,428"/>
+<area shape="rect" id="node9" href="$classAttribute.html#a2bf2f6a525b29b7a8f56005b1e7a5324" title="Attribute::copy_array" alt="" coords="799,34,940,63"/>
+<area shape="rect" id="node13" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="1009,8,1052,38"/>
+<area shape="rect" id="node18" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="847,87,892,116"/>
+<area shape="rect" id="node21" href="$classAttribute.html#afde4a4293812757caa4ed65cc71eab68" title="Set the physical address of the attribute values. " alt="" coords="799,140,940,170"/>
+<area shape="rect" id="node15" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="1004,87,1057,116"/>
+<area shape="rect" id="node30" href="$classPane.html#a05d1abca9cbb0ec7bdc59f58dd81797c" title="Obtain a constant pointer to its owner window object. " alt="" coords="817,1110,921,1139"/>
+<area shape="rect" id="node34" href="$classWindow.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain a pointer to the attribute metadata from its name. " alt="" coords="996,706,1065,735"/>
+<area shape="rect" id="node36" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="1137,652,1225,682"/>
+<area shape="rect" id="node38" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="Attribute::is_digit" alt="" coords="1121,706,1241,735"/>
+<area shape="rect" id="node40" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="1121,770,1241,817"/>
+<area shape="rect" id="node50" href="$classAttribute.html#ad0bab55101a0b9f709a773d4d207eab6" title="Attribute::compatible\l_types" alt="" coords="415,854,556,901"/>
+<area shape="rect" id="node55" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="417,924,553,954"/>
+<area shape="rect" id="node57" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="421,978,549,1007"/>
+<area shape="rect" id="node66" href="$classAttribute.html#ab642771d1269b6ccb9e6ba87ec15de3b" title="Checks whether the attribute is associated with the window. " alt="" coords="408,1031,563,1060"/>
+<area shape="rect" id="node68" href="$classAttribute.html#af855cd7842b895de519db24e29663baa" title="Obtain the location of the attribute. " alt="" coords="424,346,547,375"/>
+<area shape="rect" id="node70" href="$classAttribute.html#afaa016f7aa87969def6903a4a7e8490f" title="Obtain a constant pointer to the owner pane of the attribute. " alt="" coords="432,399,539,428"/>
+<area shape="rect" id="node73" href="$classConnectivity.html#a3ab0f5b4dbc683714ef15ccfb16225ac" title="Get a constant pointer to the connectivity array. " alt="" coords="415,452,556,482"/>
+<area shape="rect" id="node76" href="$classAttribute.html#a61bd804508cb1f9b4c33fd54351b315e" title="Obtain the number of items in the attribute. " alt="" coords="425,633,545,680"/>
+<area shape="rect" id="node82" href="$classAttribute.html#a376398cab240594dd4ec0d158b658172" title="Obtain the number of real items in the attribute. " alt="" coords="620,684,740,730"/>
+<area shape="rect" id="node87" href="$classAttribute.html#a2f0529f7f5ff03b8a26e3a3d1925bb2b" title="Obtain the stride of the attribute in base datatype. " alt="" coords="431,506,540,535"/>
+<area shape="rect" id="node52" href="$classAttribute.html#ac02f199a0fd4632231e3d98222d553cd" title="Attribute::get_sizeof" alt="" coords="611,863,749,892"/>
+<area shape="rect" id="node59" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="653,951,707,980"/>
+<area shape="rect" id="node61" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="625,1004,735,1034"/>
+<area shape="rect" id="node79" href="$classPane.html#a20818cc1edd59ab35c1eded37741f6ee" title="Pane::ignore_ghost" alt="" coords="613,607,747,636"/>
+</map>

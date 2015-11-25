@@ -1,0 +1,4 @@
+<map id="set_element" name="set_element">
+<area shape="rect" id="node3" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="148,5,305,51"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MeshImplData.html#a104a1c4bbfb05d4cada7edbaff6f8f2b" title="Check if passed vertex index is valid. " alt="" coords="172,75,281,104"/>
+</map>

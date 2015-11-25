@@ -1,0 +1,12 @@
+<map id="fill" name="fill">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ad9537f2633ed952c7598df52e0e6ec33" title="cimg_library::CImg\l\&lt; uintT \&gt;::_LU" alt="" coords="97,5,228,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#aa1909d94c489ed7ba0bbc82ee47855c2" title="Construct an image with given size (dx,dy,dz,dv) and with pixel having a default value val..." alt="" coords="97,74,228,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a07b87161f045a75bb879ce59883f545d" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_fill" alt="" coords="97,143,228,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#ae013418464582ff6a70adfe74148935c" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_stats" alt="" coords="95,213,231,259"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a930302996a00b75e7e4ea7b4d6dea821" title="Invert the current matrix. " alt="" coords="97,282,228,329"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#ab7943be99d0d4cfc6550d70039ecbf24" title="Linearly normalize values of the instance image between value_min and value_max. " alt="" coords="93,351,232,398"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg.html#a4ab78af35f2f570dafec8e449652e539" title="Operator=(). " alt="" coords="93,421,232,467"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#ae2f27aee992cf2189c56fdbaaf72ef76" title="Compute the power by p of each pixel value. " alt="" coords="97,490,228,537"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImg.html#acd193feee786d4f6b49e19fb1096daab" title="Solve a linear system AX=B where B=*this. " alt="" coords="97,559,228,606"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#a32ca7979d4a8792f7274ab07b8b80fdd" title="Translate the image. " alt="" coords="96,629,229,675"/>
+</map>

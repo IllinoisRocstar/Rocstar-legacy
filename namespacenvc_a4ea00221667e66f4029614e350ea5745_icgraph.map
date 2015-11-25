@@ -1,0 +1,51 @@
+<map id="norm2" name="norm2">
+<area shape="rect" id="node3" href="$geometry_8C.html#a2f642138fc2786ca05a687aa45a352f2" title="Compute the angle between two vectors. " alt="" coords="116,335,169,364"/>
+<area shape="rect" id="node30" href="$namespacenvc.html#a7ef4a2939f7598fd25136135eafb0ce6" title="norm" alt="" coords="117,1016,168,1045"/>
+<area shape="rect" id="node100" href="$namespacenvc.html#ad1648fb073f4371884b16ed95cf22591" title="unitize" alt="" coords="113,1069,172,1099"/>
+<area shape="rect" id="node5" href="$classGeo__Metric__Base__2.html#aebeae4fdd86b085524c00f77bc254c1e" title="Compute the min and max angles. " alt="" coords="260,266,407,313"/>
+<area shape="rect" id="node7" href="$classGeo__Metric__Base__3.html#aebeae4fdd86b085524c00f77bc254c1e" title="Compute min and max dihedral angles. " alt="" coords="496,226,643,273"/>
+<area shape="rect" id="node9" href="$classRocmop.html#a4c6e496385e479c044a89f1e545edaa5" title="Compute medial quadric for every vertex. " alt="" coords="247,386,420,433"/>
+<area shape="rect" id="node13" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="255,455,412,502"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#a744a584d87f069fb5b2511a4b6449425" title="Create and return a 3D cone. " alt="" coords="268,525,399,571"/>
+<area shape="rect" id="node19" href="$classGeoPrim_1_1CFacet.html#a005d826749c8ee06238e1f29b295d690" title="GeoPrim::CFacet::contains\l_point" alt="" coords="243,594,424,641"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#ab924fbf66b85c9ff9bfbb1e31f0640c7" title="Create and return a 3D cylinder. " alt="" coords="263,5,404,51"/>
+<area shape="rect" id="node23" href="$structcimg__library_1_1CImg.html#a06caa7f5d6a6671d3e08fc79a9b2fcc4" title="Draw a colored arrow in the instance image. " alt="" coords="259,74,408,121"/>
+<area shape="rect" id="node25" href="$geometry_8C.html#a94536a931753d2f5dfa0e91c2e2e9eac" title="Compute the angle between two faces. " alt="" coords="301,144,365,173"/>
+<area shape="rect" id="node28" href="$structcimg__library_1_1CImg.html#a949ac315fc855dd9e5ac3377d19b01b2" title="Compute a 1D Fast Fourier Transform, along a specified axis. " alt="" coords="268,197,399,243"/>
+<area shape="rect" id="node11" href="$classRocmop.html#a679bfb8c7da7e819b00dc132ba57dc8f" title="Smooths a surface using the medial quadric. " alt="" coords="495,386,644,433"/>
+<area shape="rect" id="node15" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="503,455,636,502"/>
+<area shape="rect" id="node32" href="$namespacenvc.html#aaf814d661f9cecef5334805d441bef38" title="angle" alt="" coords="307,1261,360,1291"/>
+<area shape="rect" id="node34" href="$Rocon_2src_2ray-triangle_8C.html#a1777c933a2b2e5e8461bbbe8771ba352" title="c2005" alt="" coords="305,1315,361,1344"/>
+<area shape="rect" id="node36" href="$classRocmop.html#adf2947c5f78ec2dadcea64e25ab079f2" title="Rocmop::check_displacements" alt="" coords="231,1368,436,1397"/>
+<area shape="rect" id="node38" href="$classMesh_1_1NodalCoordinates.html#a34b2813dd36d5c3fd52703849b35dda0" title="Mesh::NodalCoordinates\l::closest_node" alt="" coords="251,1421,416,1467"/>
+<area shape="rect" id="node40" href="$classMesh_1_1NodalCoordinates.html#a31b796219da68e2c42640cbb265aedae" title="Mesh::NodalCoordinates\l::closest_point" alt="" coords="251,663,416,710"/>
+<area shape="rect" id="node42" href="$classRocmop.html#a272987fd152d3b11f597ec0c6936fb29" title="Contrain displacements to _maxdisp. " alt="" coords="223,733,444,763"/>
+<area shape="rect" id="node44" href="$namespacenvc.html#ad38cc89ff5e8117c4a0a5015fddb2e63" title="euclid_distance" alt="" coords="277,787,389,816"/>
+<area shape="rect" id="node48" href="$classhalfspace3d.html#a7f76d87eb9f94e44fd3a659dcc02ee5c" title="halfspace3d::halfspace3d" alt="" coords="248,840,419,869"/>
+<area shape="rect" id="node50" href="$flotsam_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="308,893,359,923"/>
+<area shape="rect" id="node52" href="$classMesquite_1_1SteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::SteepestDescent\l::optimize_vertex_positions" alt="" coords="241,946,425,993"/>
+<area shape="rect" id="node54" href="$classtpz__ordered.html#a07bfdacccc59f48b174d534523f9f531" title="tpz_ordered::parse_data" alt="" coords="252,1016,415,1045"/>
+<area shape="rect" id="node56" href="$classtpz__fequad.html#a07bfdacccc59f48b174d534523f9f531" title="tpz_fequad::parse_data" alt="" coords="255,1069,412,1099"/>
+<area shape="rect" id="node58" href="$classRocmop.html#a43639cc2a34d3141d58cba623fc42826" title="Smooths a volume using Mesquite with only shared node information. " alt="" coords="260,1122,407,1169"/>
+<area shape="rect" id="node60" href="$classMesquite_1_1PatchData.html#a0ff7253ce513597da2d0189dd7deb3f6" title="Mesquite::PatchData\l::update_cached_normals" alt="" coords="248,1191,419,1238"/>
+<area shape="rect" id="node46" href="$classKNN__Grid.html#ad7edecf0c61df5ecd47a037ffdaee357" title="KNN_Grid\&lt; Tri \&gt;::k\l_nearest" alt="" coords="501,778,637,825"/>
+<area shape="rect" id="node62" href="$classMesquite_1_1PatchData.html#ae26e6453176884d8c3947adf7b174212" title="Mesquite::PatchData\l::get_domain_normal\l_at_vertex" alt="" coords="497,1109,641,1173"/>
+<area shape="rect" id="node78" href="$classMesquite_1_1PatchData.html#ac4f04aa25ce8f550811c073724ea0640" title="Get surface normal at a point where the surface is the domain of an element and the point is the loca..." alt="" coords="495,1257,644,1321"/>
+<area shape="rect" id="node64" href="$classMesquite_1_1GeneralizedConditionNumberQualityMetric.html#a0259c6341f47e0d2dbd2494f5723c42f" title="Mesquite::GeneralizedCondition\lNumberQualityMetric::compute\l_condition_number" alt="" coords="695,996,900,1060"/>
+<area shape="rect" id="node66" href="$classMesquite_1_1RI__DFT.html#aa71c0d57cadd2f8eeb540ab194c145b3" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="703,1083,892,1130"/>
+<area shape="rect" id="node68" href="$classMesquite_1_1RI__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::RI_DFT::compute\l_element_analytical_hessian" alt="" coords="703,1153,892,1199"/>
+<area shape="rect" id="node70" href="$classMesquite_1_1ShapeQualityMetric.html#a049c8172101b823d31ecf9a6f1a19244" title="Given the 2&#45;d jacobian matrix, compute the condition number, fval. " alt="" coords="699,1222,896,1269"/>
+<area shape="rect" id="node76" href="$classMesquite_1_1RI__DFT.html#abc691c49e36734bba1ea2ecd14fe9a5b" title="Evaluate the metric for an element. " alt="" coords="704,926,891,973"/>
+<area shape="rect" id="node72" href="$classMesquite_1_1ConditionNumberQualityMetric.html#afc1a16a1793ba9459a9b930b5292ffc5" title="evaluate using mesquite objects " alt="" coords="980,1135,1164,1199"/>
+<area shape="rect" id="node74" href="$classMesquite_1_1VertexConditionNumberQualityMetric.html#a5a90f78516fa587f85daf4011bfb1ba8" title="evaluate using mesquite objects " alt="" coords="949,1222,1195,1269"/>
+<area shape="rect" id="node80" href="$classMesquite_1_1MsqMeshEntity.html#a630d97bcef1b6af59d33b7a64190e455" title="Uses a MeshDomain call&#45;back function to compute the normal at the corner. " alt="" coords="709,1361,885,1407"/>
+<area shape="rect" id="node82" href="$classMesquite_1_1MsqMeshEntity.html#a17ab9e457ac1e170360fceeb6b25ab2b" title="Compute matrices which column are the vectors issued from a corner. " alt="" coords="983,1430,1161,1477"/>
+<area shape="rect" id="node94" href="$classMesquite_1_1I__DFT.html#aa71c0d57cadd2f8eeb540ab194c145b3" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="977,1499,1167,1546"/>
+<area shape="rect" id="node96" href="$classMesquite_1_1I__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::I_DFT::compute\l_element_analytical_hessian" alt="" coords="977,1291,1167,1338"/>
+<area shape="rect" id="node98" href="$classMesquite_1_1I__DFT.html#abc691c49e36734bba1ea2ecd14fe9a5b" title="Evaluate the metric for an element. " alt="" coords="984,1361,1160,1407"/>
+<area shape="rect" id="node84" href="$classMesquite_1_1TargetCalculator.html#ab066dc9db4106bf2adbafc8f7986aabc" title="Computes the guide corner matrices A for a given element index in the reference patch. " alt="" coords="1255,1351,1433,1398"/>
+<area shape="rect" id="node90" href="$classMesquite_1_1TargetCalculator.html#a14179ad197e9a02f52380f1b0e6d0ec3" title="Compute the corner matrices for the reference mesh refMesh. " alt="" coords="1252,1421,1436,1485"/>
+<area shape="rect" id="node92" href="$classMesquite_1_1DistanceFromTarget.html#a7189c3b4f0d361c88adf6e84b790053e" title="For a given element, compute each corner matrix A, and given a target corner matrix W..." alt="" coords="1243,1509,1445,1555"/>
+<area shape="rect" id="node86" href="$classMesquite_1_1WTargetCalculator.html#af386ad951ad29a68944557ccfc6f18ec" title="Mesquite::WTargetCalculator\l::compute_target_matrices" alt="" coords="1505,1317,1697,1363"/>
+<area shape="rect" id="node88" href="$classMesquite_1_1LVQDTargetCalculator.html#a7bebe2f2afb7cd9b6552569edd96e9a1" title="Function called by compute_target_matrices(PatchData&amp; pd, MsqError&amp; err) to compute the matrices afte..." alt="" coords="1495,1386,1708,1433"/>
+</map>

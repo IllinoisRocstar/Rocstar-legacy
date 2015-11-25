@@ -1,0 +1,17 @@
+<map id="draw_line" name="draw_line">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#aa697687ebf982291c1dbeabd741e0f74" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_line" alt="" coords="151,5,295,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#acbfab2bdc28e9a3e445bec479f47322b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_object3d" alt="" coords="136,74,309,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a5931feea835dad5a084ca50bc7cf0ae1" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_polygon" alt="" coords="137,143,308,190"/>
+<area shape="rect" id="node9" href="$namespacecimg__library_1_1cimg.html#a62805bf0845c650a457cd78b3cd6488a" title="Display a dialog box, where a user can click standard buttons. " alt="" coords="159,213,287,259"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#a06caa7f5d6a6671d3e08fc79a9b2fcc4" title="Draw a colored arrow in the instance image. " alt="" coords="148,282,297,329"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg.html#a9a5bc1ed014471eb07a752622701e1bf" title="Draw a labeled horizontal axis on the instance image. " alt="" coords="152,351,293,398"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#a8c3dec0cd1433a84dbcb51bad950c0b9" title="Draw a 1D graph on the instance image. " alt="" coords="148,421,297,467"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImg.html#a03edc2867d87b10bbf2a22400cefdc6f" title="Draw grid. " alt="" coords="153,490,292,537"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#ae365307a3b2229256d40bcebc390450d" title="Draw a 2D colored line. " alt="" coords="153,559,292,606"/>
+<area shape="rect" id="node23" href="$structcimg__library_1_1CImg.html#a9f35dd03284e33d519af3b713186df7e" title="Draw a vector field in the instance image, using a colormap. " alt="" coords="147,629,299,675"/>
+<area shape="rect" id="node25" href="$structcimg__library_1_1CImg.html#ad92b9033da3c227bce8527b3da7807f3" title="Draw a 3D outlined colored rectangle in the instance image. " alt="" coords="137,698,308,745"/>
+<area shape="rect" id="node27" href="$structcimg__library_1_1CImg.html#ad39968d941b03c67f1d02d2827a1ae5e" title="Draw a cubic spline curve in the instance image. " alt="" coords="147,767,299,814"/>
+<area shape="rect" id="node29" href="$structcimg__library_1_1CImg.html#a815ca9379c480492a7d18056783eabe9" title="Draw a 2D outlined colored triangle. " alt="" coords="143,837,303,883"/>
+<area shape="rect" id="node31" href="$structcimg__library_1_1CImg.html#a2b77e436a48fd24c423e924c2dae4072" title="Select sub&#45;graph in a graph. " alt="" coords="132,906,313,953"/>
+<area shape="rect" id="node11" href="$namespacecimg__library_1_1cimg.html#a75e89e248c2e97f459e176d7a5cfeaf4" title="cimg_library::cimg\l::dialog" alt="" coords="363,213,491,259"/>
+</map>

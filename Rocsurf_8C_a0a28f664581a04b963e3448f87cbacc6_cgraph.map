@@ -1,0 +1,51 @@
+<map id="rocsurf_load_module" name="rocsurf_load_module">
+<area shape="rect" id="node3" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="199,548,297,577"/>
+<area shape="rect" id="node5" href="$classRocsurf.html#a1dfd9c707aaf0e223ffe45e8dc4d884a" title="Rocsurf::Rocsurf" alt="" coords="379,5,501,35"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="373,165,507,195"/>
+<area shape="rect" id="node11" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="371,341,509,371"/>
+<area shape="rect" id="node14" href="$roccom__c_09_09_8h.html#a5e5321de4f0f8940ea99b25b0060afe3" title="COM_set_object" alt="" coords="380,395,500,424"/>
+<area shape="rect" id="node17" href="$roccom__c_8h.html#aa236d5c98c0ac8cc26b313b6ccd720a8" title="COM_set_function" alt="" coords="375,219,505,248"/>
+<area shape="rect" id="node19" href="$classRocsurf.html#a4bd8c4bd71a33fabfb1a4798a408bc5e" title="Interpolates nodal coordinates to element centers. " alt="" coords="372,271,508,318"/>
+<area shape="rect" id="node21" href="$classRocsurf.html#a05963147113fea919a6ba70630b364a3" title="Computes the area of each face of the surface mesh of window areas&#45;&gt;window and saves the results in a..." alt="" coords="792,675,971,722"/>
+<area shape="rect" id="node34" href="$classRocsurf.html#a75fbdc31631afdd7fadf0f5a8ae6b963" title="Computes the volume bounded between two different locations of each face of the surface mesh of windo..." alt="" coords="791,354,972,401"/>
+<area shape="rect" id="node50" href="$classRocsurf.html#a9184eb38a332f27f061237455dcdf6bd" title="Computes the swept volume by a given displacement of each face of the surface mesh of window volumes&#45;..." alt="" coords="797,439,965,486"/>
+<area shape="rect" id="node59" href="$classRocsurf.html#ad7f516b084625440ce8b38db72c0a1a3" title="Integrate a function given by an elemental attribute over surface z is an array of size equal to numb..." alt="" coords="819,609,944,639"/>
+<area shape="rect" id="node68" href="$classRocsurf.html#a105ada0c2358cfcc9aa226a62ad573c0" title="Computes the signed volume of a body. " alt="" coords="796,539,967,586"/>
+<area shape="rect" id="node77" href="$classRocsurf.html#acb8b27b7f15d698939c53fc13a1f3389" title="Computes elemental normals of a given window. " alt="" coords="792,745,971,791"/>
+<area shape="rect" id="node86" href="$roccom__c_8h.html#ab41e262f86b991f367a93a005e0694b8" title="COM_set_member_function" alt="" coords="348,651,532,680"/>
+<area shape="rect" id="node88" href="$classRocsurf.html#a690441882f8d7100b177146402bb63b5" title="Constructs the communication patterns of a distributed mesh. " alt="" coords="600,1080,723,1109"/>
+<area shape="rect" id="node94" href="$classRocsurf.html#ad345c59eea168babcd0976c9a7810b50" title="Computes nodal or elemental normals of a given window. " alt="" coords="351,885,529,915"/>
+<area shape="rect" id="node102" href="$classRocsurf.html#a98cadabf2c5e377e91182ea5e6c2c567" title="Computes nodal or elemental normals of a given window. " alt="" coords="583,925,740,955"/>
+<area shape="rect" id="node111" href="$classRocsurf.html#a4f24fa35a8c266187a6c07110f263313" title="Computes nodal or elemental normals of a given window. " alt="" coords="367,950,513,997"/>
+<area shape="rect" id="node124" href="$roccom__c_09_09_8h.html#aa0fa484a786fcaec5c8cefc71d83049c" title="COM_set_array_const" alt="" coords="364,59,516,88"/>
+<area shape="rect" id="node127" href="$classRocsurf.html#ae33ff8b1e6981f1e9a7c7e9cca3a51c5" title="Computes edge lengths of a given window. " alt="" coords="801,1395,961,1442"/>
+<area shape="rect" id="node145" href="$classRocsurf.html#a4425eeff98e6b22e12140ea76f6023df" title="Serialize the mesh of a given window. " alt="" coords="359,1080,521,1109"/>
+<area shape="rect" id="node149" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="359,112,521,141"/>
+<area shape="rect" id="node9" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="597,165,725,195"/>
+<area shape="rect" id="node23" href="$roccom__c_09_09_8h.html#a701c22c997913a2773d36a0b47683716" title="COM_compatible_types" alt="" coords="1029,813,1192,843"/>
+<area shape="rect" id="node25" href="$classElement__node__enumerator.html#a041249f802c5bf4c2deae666610e03c4" title="Go to the next element within the connectivity tables of a pane. " alt="" coords="1023,693,1199,739"/>
+<area shape="rect" id="node27" href="$classElement__node__enumerator.html#a3b0965f57d58cd0e85fab4b12a9d6899" title="Number of edges per element. " alt="" coords="1023,623,1199,670"/>
+<area shape="rect" id="node29" href="$classElement__node__enumerator.html#a35a62313d45990cfa4cab8caa1dfbff6" title="Number of nodes per element. " alt="" coords="1249,753,1425,799"/>
+<area shape="rect" id="node31" href="$classElement__node__vectors__k__const.html#a012daf687ea85e9da2bc2d064de92aa6" title="initialize the accessor with a pointer and a specific stride. " alt="" coords="1033,554,1188,601"/>
+<area shape="rect" id="node37" href="$split_8cpp.html#a8f6e1162754447ba2dbd3dfeb042bb35" title="volume" alt="" coords="1305,295,1369,324"/>
+<area shape="rect" id="node41" href="$compute__bounded__volumes_8C.html#ad94e27b617bd99ddce238af0ee2ff5e9" title="normalize_coor" alt="" coords="1056,243,1165,272"/>
+<area shape="rect" id="node43" href="$compute__bounded__volumes_8C.html#a52b26a37fd56e4672e101974bcaeb3b5" title="arrange" alt="" coords="1079,189,1143,219"/>
+<area shape="rect" id="node45" href="$compute__bounded__volumes_8C.html#a979ce84eb276bc57b7c0be1341e27b5e" title="get_face_volume" alt="" coords="1051,347,1171,376"/>
+<area shape="rect" id="node47" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="1256,1020,1419,1049"/>
+<area shape="rect" id="node66" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="1268,452,1407,481"/>
+<area shape="rect" id="node70" href="$classRocsurf.html#aa10b0333a94238638675866db8a30542" title="Computes the center of a body. " alt="" coords="1027,400,1195,429"/>
+<area shape="rect" id="node84" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="1041,917,1180,947"/>
+<area shape="rect" id="node90" href="$classRocsurf.html#a3767bcdb4b06619283e47da0d17b1378" title="Rocsurf::validate_object" alt="" coords="800,1028,963,1057"/>
+<area shape="rect" id="node92" href="$classWindow__manifold__2.html#a5f81facb36f7b18c987fd9a735bef1e2" title="Initialize a pane communicator. " alt="" coords="1037,1122,1184,1169"/>
+<area shape="rect" id="node98" href="$classWindow__manifold__2.html#a870e40efa9ab58452a354eaca2b75d30" title="Compute the normals at nodes or faces, depending on the type of the attribute normals. " alt="" coords="588,805,735,851"/>
+<area shape="rect" id="node105" href="$classWindow__manifold__2.html#a2de69b1dfeafce08ec7b515710fb76c4" title="Window_manifold_2::\lcompute_mcn" alt="" coords="808,934,955,981"/>
+<area shape="rect" id="node109" href="$classVector__3.html#afc75c733aff7cb9c0216f363888b1dff" title="Vector_3::norm" alt="" coords="1056,1192,1165,1221"/>
+<area shape="rect" id="node115" href="$classWindow__manifold__2.html#a2eebb41f1831723225ffd524188bcb54" title="Convert element values to nodal values using weighted averaging. " alt="" coords="808,865,955,911"/>
+<area shape="rect" id="node129" href="$classWindow__manifold__2.html#afc72f337226a2bd9c048dab670fb320a" title="Obtain an iterator to the first pane manifold of the window. " alt="" coords="1037,1295,1184,1342"/>
+<area shape="rect" id="node131" href="$classWindow__manifold__2.html#a036407c8e0e5dc7109664644e0138d2e" title="Obtain an iterator to the past&#45;the&#45;last pane manifold of the window. " alt="" coords="1037,1365,1184,1411"/>
+<area shape="rect" id="node133" href="$classHalfedge.html#ab4def96f7b16673e4f64958282db7522" title="Get the ID of the opposite edge of a given edge. " alt="" coords="1045,1435,1176,1464"/>
+<area shape="rect" id="node135" href="$classHalfedge.html#aa126fd94949c810d24869ad04cd97e15" title="Is the edge a border edge? " alt="" coords="1044,1488,1177,1517"/>
+<area shape="rect" id="node137" href="$classHalfedge.html#afe868c12813c184a147c1ddd7812fd03" title="Get the tangent of the given halfedge. " alt="" coords="1048,1541,1173,1571"/>
+<area shape="rect" id="node140" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="1089,1595,1132,1624"/>
+<area shape="rect" id="node142" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="1088,1648,1133,1677"/>
+</map>

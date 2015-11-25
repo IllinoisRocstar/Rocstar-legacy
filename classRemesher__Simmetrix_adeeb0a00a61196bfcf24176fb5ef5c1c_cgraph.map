@@ -1,0 +1,7 @@
+<map id="remesh_serial" name="remesh_serial">
+<area shape="rect" id="node3" href="$classRemesher__Simmetrix.html#af485a5aa41184a77cf0fa46d7ad42407" title="set_fangle" alt="" coords="192,5,275,35"/>
+<area shape="rect" id="node5" href="$classRemesher__Simmetrix.html#ae9bf74eb8b5f768807fd8d05695bf0bf" title="set_global_mesh_size" alt="" coords="159,59,308,88"/>
+<area shape="rect" id="node7" href="$classRemesher__Simmetrix.html#a9a4de3c043ff2e313e85b3ee219dfed9" title="set_short_ratio" alt="" coords="180,112,287,141"/>
+<area shape="rect" id="node9" href="$classRemesher__Simmetrix.html#a05b2cce1b7e4091ca924223d671865ac" title="simmesh_to_window" alt="" coords="161,165,305,195"/>
+<area shape="rect" id="node11" href="$classRemesher__Simmetrix.html#a63d4675ca2bc149dbac4582cc0558d03" title="window_to_simmesh" alt="" coords="161,219,305,248"/>
+</map>

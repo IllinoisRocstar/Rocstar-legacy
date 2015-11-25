@@ -1,0 +1,18 @@
+<map id="read" name="read">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="352,109,485,139"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="345,269,492,299"/>
+<area shape="rect" id="node10" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="331,216,507,245"/>
+<area shape="rect" id="node12" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="116,5,249,35"/>
+<area shape="rect" id="node15" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="101,59,264,88"/>
+<area shape="rect" id="node18" href="$commpi_8h.html#a8a8389bc67ae874f8ec20c56f758c8bf" title="COMMPI_Comm_rank" alt="" coords="105,317,260,347"/>
+<area shape="rect" id="node20" href="$rocstar__driver_8C.html#aee06a1a237cac4a5fd821178d7ea5b91" title="get_restart_time" alt="" coords="125,371,240,400"/>
+<area shape="rect" id="node30" href="$rocstar__driver_8C.html#a978493ed4516b9914e068ed0a88492b0" title="init_profiling" alt="" coords="137,424,228,453"/>
+<area shape="rect" id="node36" href="$classControl__parameters.html#a3d7a47742376fe9fba2888a2daae910e" title="update_communicator" alt="" coords="108,163,257,192"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="573,84,701,113"/>
+<area shape="rect" id="node22" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="355,346,483,393"/>
+<area shape="rect" id="node28" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="355,415,483,462"/>
+<area shape="rect" id="node24" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="573,346,701,393"/>
+<area shape="rect" id="node26" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="749,346,877,393"/>
+<area shape="rect" id="node32" href="$commpi_8h.html#a4e3337b1847be124709d7c1471c3834d" title="COMMPI_Comm_size" alt="" coords="341,485,496,515"/>
+<area shape="rect" id="node40" href="$roccom__c_09_09_8h.html#af747aaa399bb2b11240e4a5631e1be93" title="COM_set_default_communicator" alt="" coords="312,163,525,192"/>
+</map>

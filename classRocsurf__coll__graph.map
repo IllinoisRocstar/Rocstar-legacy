@@ -1,0 +1,16 @@
+<map id="Rocsurf" name="Rocsurf">
+<area shape="rect" id="node4" href="$classWindow__manifold__2.html" title="This class implements a data structure for 2&#45;manifold over a whole window, which can be composed of m..." alt="" coords="1755,59,1893,88"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="252,61,348,91"/>
+<area shape="rect" id="node22" title="STL class. " alt="" coords="255,297,345,327"/>
+<area shape="rect" id="node16" href="$classPane__manifold__2.html" title="This class implements a data structure for 2&#45;manifold on each pane. " alt="" coords="1216,407,1339,436"/>
+<area shape="rect" id="node49" href="$classNode.html" title="This class encapsulate a node over a window manifold. " alt="" coords="1516,537,1569,567"/>
+<area shape="rect" id="node18" href="$classSimple__manifold__2.html" title="Provides a data structure accessing nodes, elements, and edges in a pane, in a manner similar to the ..." alt="" coords="948,275,1079,304"/>
+<area shape="rect" id="node33" href="$classFacet__ID.html" title="The ID of a facet (edge in 2D and face in 3D) encodes an element ID and the local facet&#39;s ID internal..." alt="" coords="263,515,337,544"/>
+<area shape="rect" id="node38" href="$class__HDS__vector__halfedge.html" title="_HDS_vector_halfedge\l\&lt; V, H, F \&gt;" alt="" coords="221,586,379,633"/>
+<area shape="rect" id="node51" href="$classElement.html" title="Element" alt="" coords="1789,677,1859,707"/>
+<area shape="rect" id="node56" href="$classFace.html" title="The Face class is an abstract base class that supplies implemented general methods, as well as a vew virtual interface methods to child classes. " alt="" coords="2181,677,2232,707"/>
+<area shape="rect" id="node61" href="$classMesh.html" title="Class Mesh is the main class that holds all information to describe the current state of the mesh..." alt="" coords="2021,629,2075,659"/>
+<area shape="rect" id="node80" href="$classVector__3.html" title="Some basic geometric data types. " alt="" coords="237,707,363,736"/>
+<area shape="rect" id="node69" href="$classMVec.html" title="MVec" alt="" coords="1249,537,1305,567"/>
+<area shape="rect" id="node76" href="$classVector__3.html" title="Vector_3\&lt; Real \&gt;" alt="" coords="624,659,749,688"/>
+</map>

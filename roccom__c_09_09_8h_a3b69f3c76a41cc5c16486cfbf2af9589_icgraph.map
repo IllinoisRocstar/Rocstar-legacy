@@ -1,0 +1,5 @@
+<map id="COM_close_module" name="COM_close_module">
+<area shape="rect" id="node3" href="$classBurnAgent.html#af638885571a679c8dc096029de6d0c20" title="BurnAgent::unload_module" alt="" coords="195,5,373,35"/>
+<area shape="rect" id="node5" href="$classFluidAgent.html#af638885571a679c8dc096029de6d0c20" title="FluidAgent::unload\l_module" alt="" coords="219,58,349,105"/>
+<area shape="rect" id="node7" href="$classSolidAgent.html#af638885571a679c8dc096029de6d0c20" title="SolidAgent::unload\l_module" alt="" coords="219,127,349,174"/>
+</map>

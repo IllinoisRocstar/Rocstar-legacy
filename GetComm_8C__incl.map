@@ -1,0 +1,7 @@
+<map id="GetComm.C" name="GetComm.C">
+<area shape="rect" id="node5" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="56,83,131,112"/>
+<area shape="rect" id="node7" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="108,160,199,189"/>
+<area shape="rect" id="node9" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="153,237,268,267"/>
+<area shape="rect" id="node13" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="52,237,129,267"/>
+<area shape="rect" id="node11" href="$FC_8h.html" title="FC.h" alt="" coords="185,315,236,344"/>
+</map>

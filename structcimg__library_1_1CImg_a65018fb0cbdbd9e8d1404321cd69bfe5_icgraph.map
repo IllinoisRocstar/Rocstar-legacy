@@ -1,0 +1,36 @@
+<map id="assign" name="assign">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a2b9673483bc5fe4443cf097333bbb975" title="cimg_library::CImg\l::_cimg_math_parser\l::_cimg_math_parser" alt="" coords="133,5,277,69"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a2f93b9f80b54af61d563843647804b7b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_text" alt="" coords="132,93,279,139"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#ae3332011e1af19ca1c64a12a47ceaa17" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_analyze" alt="" coords="123,162,288,209"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#ad6b7f1f5147061c82cffd66396962abe" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_ascii" alt="" coords="132,231,279,278"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#ae664a2dfc77ba22eda62c0984dda9153" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_bmp" alt="" coords="132,301,279,347"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#a7d2928ef353cf9c90d4ef8b67b56e617" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_dlm" alt="" coords="135,370,276,417"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg.html#af1af3aa331a329541525934b3e2651a7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_inr" alt="" coords="139,439,272,486"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#af0ef73cee458f69f6738c2e50697dcff" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_jpeg" alt="" coords="133,509,277,555"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImg.html#a109ebf2200cf420c95008aab6272c16b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_off" alt="" coords="137,578,273,625"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#ad5eebb63db8c28d3a4f11ef5590ea89b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_pandore" alt="" coords="123,647,288,694"/>
+<area shape="rect" id="node23" href="$structcimg__library_1_1CImg.html#a5449ce8c13f2a71d0897cb483ac97e57" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_png" alt="" coords="135,717,276,763"/>
+<area shape="rect" id="node25" href="$structcimg__library_1_1CImg.html#a89a714d19421509ace0741984d065b47" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_pnm" alt="" coords="132,786,279,833"/>
+<area shape="rect" id="node27" href="$structcimg__library_1_1CImg.html#a88c1723f62a9466565842f646e28b64c" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_raw" alt="" coords="135,855,276,902"/>
+<area shape="rect" id="node29" href="$structcimg__library_1_1CImg.html#a8d09c361da2d3bafb268d0c4194ed578" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_rgb" alt="" coords="136,925,275,971"/>
+<area shape="rect" id="node31" href="$structcimg__library_1_1CImg.html#a6f1b2ecd682e00d592fc48c73a59491a" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_rgba" alt="" coords="132,994,279,1041"/>
+<area shape="rect" id="node33" href="$structcimg__library_1_1CImg.html#ae799fe7534ab89b9ce9d2700179fcd9e" title="Append an image. " alt="" coords="140,1063,271,1110"/>
+<area shape="rect" id="node35" href="$structcimg__library_1_1CImg.html#a3df53caa68d67f7f05251c1bcb02476f" title="Append a 3D object to another one. " alt="" coords="115,1133,296,1179"/>
+<area shape="rect" id="node37" href="$structcimg__library_1_1CImg.html#a55e2f2335ea8060148c59ec4f57846e2" title="In&#45;place version of the previous constructor. " alt="" coords="140,1202,271,1249"/>
+<area shape="rect" id="node39" href="$structcimg__library_1_1CImg.html#a0fb70d9de40880b2f5449a8caa4f4e92" title="Construct an image with given size (dx,dy,dz,dv) and with specified pixel values (int version)..." alt="" coords="140,1271,271,1318"/>
+<area shape="rect" id="node41" href="$structcimg__library_1_1CImg.html#ab5cdf8f13cc7065fef4da8214ff36d5d" title="In&#45;place version of the default constructor (STL&#45;compliant name). " alt="" coords="140,1341,271,1387"/>
+<area shape="rect" id="node43" href="$structcimg__library_1_1CImg.html#a138dcc5db93d511d224d88405a0041ce" title="Load an image from a file. " alt="" coords="140,1410,271,1457"/>
+<area shape="rect" id="node45" href="$structcimg__library_1_1CImg.html#acdae64c0c93793df8b0a0b28a34d9694" title="Load an image (list) from a .cimg file. " alt="" coords="135,1479,276,1526"/>
+<area shape="rect" id="node47" href="$structcimg__library_1_1CImg.html#a1b58020c04f6ddaa44007e9edbcba0a6" title="Load an image from a file, using Magick++ library. " alt="" coords="128,1549,283,1595"/>
+<area shape="rect" id="node49" href="$structcimg__library_1_1CImg.html#a35a909fb3df4bd76be2facc8366861af" title="Load an image using ImageMagick&#39;s or GraphicsMagick&#39;s executables. " alt="" coords="135,1618,276,1665"/>
+<area shape="rect" id="node51" href="$structcimg__library_1_1CImg.html#a9e3446fd647fcb9fc95a462435f42784" title="Load an image from a PAR&#45;REC (Philips) file. " alt="" coords="131,1687,280,1734"/>
+<area shape="rect" id="node53" href="$structcimg__library_1_1CImg.html#ab943c007a92b463ec458b4be80e80460" title="Load an image from a TIFF file. " alt="" coords="140,1757,271,1803"/>
+<area shape="rect" id="node55" href="$structcimg__library_1_1CImg.html#a3f46b6df062666bdc6135e7cbcdba040" title="Operator=(). " alt="" coords="136,1826,275,1873"/>
+<area shape="rect" id="node57" href="$structcimg__library_1_1CImg.html#aa930a4b0563d7d0794661231310b36c4" title="Resize an image. " alt="" coords="140,1895,271,1942"/>
+<area shape="rect" id="node59" href="$structcimg__library_1_1CImgDisplay.html#a771eb60fd9a3ae74b0daf95d3c05cae3" title="Take a snapshot of the display in the specified image. " alt="" coords="117,1965,293,2011"/>
+<area shape="rect" id="node67" href="$structcimg__library_1_1CImg.html#acd193feee786d4f6b49e19fb1096daab" title="Solve a linear system AX=B where B=*this. " alt="" coords="140,2034,271,2081"/>
+<area shape="rect" id="node69" href="$structcimg__library_1_1CImg.html#abcd3f144ae47cc8c971c0c8bf72e416f" title="Transfer the content of the instance image into another one in a way that memory copies are avoided i..." alt="" coords="133,2103,277,2150"/>
+<area shape="rect" id="node61" href="$structcimg__library_1_1CImg.html#aceaeb1e13cdb9e681ddc4341807f6fac" title="Construct an image from the content of a CImgDisplay instance. " alt="" coords="348,1895,479,1942"/>
+<area shape="rect" id="node63" href="$structcimg__library_1_1CImg.html#a48123f96bfb3eff6ba15dc4b40a8f81a" title="In&#45;place version of the previous constructor. " alt="" coords="348,1965,479,2011"/>
+<area shape="rect" id="node65" href="$structcimg__library_1_1CImg.html#a506c81db5628c9e4b941c358945a7e27" title="Operator=(). " alt="" coords="344,2034,483,2081"/>
+</map>

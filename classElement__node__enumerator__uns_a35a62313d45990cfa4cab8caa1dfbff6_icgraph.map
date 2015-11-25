@@ -1,0 +1,5 @@
+<map id="size_of_nodes" name="size_of_nodes">
+<area shape="rect" id="node3" href="$classPane__dual__connectivity.html#acb5cae8252b14330aee6b939794defe9" title="Construct dual connectivity for unstructured meshes. " alt="" coords="160,5,357,51"/>
+<area shape="rect" id="node7" href="$classPane__boundary.html#a3d1a3e973859d1bf5b4d5dd87bc494de" title="Determine the isolated nodes (i.e. not belonging to any element) " alt="" coords="171,74,347,121"/>
+<area shape="rect" id="node5" href="$classPane__dual__connectivity.html#a27ea8e05a12f6e3467094de48c4c5f86" title="Constructs the dual connectivity for a given pane. " alt="" coords="405,5,573,51"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="size_set" name="size_set">
+<area shape="rect" id="node3" href="$classWindow.html#a82ef8f59836c813008fb3b9be70e107b" title="Append the given array to the end of the attribute on a specific pane, and reallocate memory for the ..." alt="" coords="125,5,280,35"/>
+<area shape="rect" id="node5" href="$classPane.html#a2c43e509cf649f6b8a2c9b99686c93a1" title="Pane::reinit_attr" alt="" coords="145,59,260,88"/>
+<area shape="rect" id="node7" href="$classWindow.html#a2b587f782f50513ef3ef2b7f6d7c80f8" title="Implementation for setting (op==OP_SET or OP_SET_CONST), allocating (op==OP_ALLOC), resizing (op==OP_RESIZE) and deallocating (op==OP_DEALLOC) an array for a specific attribute. " alt="" coords="328,59,459,88"/>
+<area shape="rect" id="node9" href="$classWindow.html#a0f538db500b8f4fdc9b59ed48c9be803" title="Window::resize_array" alt="" coords="511,32,657,61"/>
+<area shape="rect" id="node11" href="$classWindow.html#ac99a217d3c3496398a00a4a8ee460ed8" title="Window::dealloc_array" alt="" coords="507,85,661,115"/>
+</map>

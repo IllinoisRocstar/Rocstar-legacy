@@ -1,0 +1,20 @@
+<map id="tecplot_data" name="tecplot_data">
+<area shape="rect" id="node2" href="$classdatafile.html" title="Base class for file parsing. " alt="" coords="1307,361,1371,391"/>
+<area shape="rect" id="node15" href="$structindex__order.html" title="Used to store index order information. " alt="" coords="783,397,871,427"/>
+<area shape="rect" id="node42" href="$classpartition.html" title="partition" alt="" coords="1071,243,1137,272"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="207,336,297,365"/>
+<area shape="rect" id="node19" title="STL class. " alt="" coords="1069,556,1139,585"/>
+<area shape="rect" id="node21" title="STL class. " alt="" coords="749,556,904,585"/>
+<area shape="rect" id="node23" title="STL class. " alt="" coords="445,557,600,587"/>
+<area shape="rect" id="node25" title="STL class. " alt="" coords="188,599,316,628"/>
+<area shape="rect" id="node56" title="STL class. " alt="" coords="444,611,601,640"/>
+<area shape="rect" id="node27" title="STL class. " alt="" coords="5,599,80,628"/>
+<area shape="rect" id="node31" href="$structadj__map.html" title="Used to store adjustment (normalization factor, conversion factor) information. " alt="" coords="217,533,287,563"/>
+<area shape="rect" id="node36" title="STL class. " alt="" coords="800,111,853,140"/>
+<area shape="rect" id="node38" title="STL class. " alt="" coords="452,103,593,132"/>
+<area shape="rect" id="node44" href="$classpoints.html" title="points" alt="" coords="799,209,855,239"/>
+<area shape="rect" id="node46" href="$classbitmap.html" title="bitmap" alt="" coords="492,156,553,185"/>
+<area shape="rect" id="node48" href="$structpnt.html" title="Point object that represents a single point. " alt="" coords="503,209,543,239"/>
+<area shape="rect" id="node52" title="STL class. " alt="" coords="1068,609,1140,639"/>
+<area shape="rect" id="node54" title="STL class. " alt="" coords="747,609,907,639"/>
+</map>

@@ -1,0 +1,25 @@
+<map id="buildFaces" name="buildFaces">
+<area shape="rect" id="node3" href="$buildface_8cpp.html#a9fa3977c23e9857a2e155650c0d916f5" title="buildFaces" alt="" coords="139,467,224,496"/>
+<area shape="rect" id="node6" href="$buildface_8cpp.html#a141d1e9d4c796dbd0228f7481d1fc84d" title="dirToCorner" alt="" coords="305,7,396,36"/>
+<area shape="rect" id="node10" href="$buildface_8cpp.html#adfcf2aba2e187c0424813eb2023a4a03" title="findPartner" alt="" coords="308,161,393,191"/>
+<area shape="rect" id="node14" href="$classblock.html#aad574e9481a04340d5013d0fbdd78e80" title="block::getBlockNumber" alt="" coords="491,272,648,301"/>
+<area shape="rect" id="node16" href="$classblock.html#a6ec0275d18d9313b9471c8a5ad18fc67" title="block::getFace" alt="" coords="516,59,623,88"/>
+<area shape="rect" id="node18" href="$classface.html#aee95dccf9c845c852109a7db005a01f4" title="face::getPatches" alt="" coords="509,325,629,355"/>
+<area shape="rect" id="node27" href="$classpatch.html#a730e8dcab05eb6b74c4aa77b4760ff9b" title="patch::getFace" alt="" coords="296,623,405,652"/>
+<area shape="rect" id="node30" href="$classblock.html#a3fbcc2b1d8a875a409b0af0a4297d484" title="block::getLoc" alt="" coords="301,676,400,705"/>
+<area shape="rect" id="node33" href="$classpatch.html#a7fb01ca82467f27879b78193a174e6e4" title="patch::isExternal" alt="" coords="509,625,629,655"/>
+<area shape="rect" id="node35" href="$classadjList.html#a7fb01ca82467f27879b78193a174e6e4" title="adjList::isExternal" alt="" coords="288,519,413,548"/>
+<area shape="rect" id="node39" href="$classface.html#abf6673d3484175e01e8b6eaea6ecda4f" title="face::patchForCoord" alt="" coords="499,412,640,441"/>
+<area shape="rect" id="node46" href="$buildface_8cpp.html#a0bd5c28ea4c5482b2e09210e58a7ea5c" title="isSmaller" alt="" coords="313,833,388,863"/>
+<area shape="rect" id="node52" href="$classnodeMatcher.html#adc1ac1a20010e7ef61148db728b19ae5" title="nodeMatcher::loc2node" alt="" coords="272,729,429,759"/>
+<area shape="rect" id="node8" href="$classblock.html#ab16ba91c0ac566792b6dd28cc4977a99" title="block::getDim" alt="" coords="519,5,620,35"/>
+<area shape="rect" id="node12" href="$buildface_8cpp.html#ae890a171ab791abe926a97ba5da26cba" title="findPatch" alt="" coords="531,112,608,141"/>
+<area shape="rect" id="node20" href="$classblockSpan.html#a6e679f19174d7a5da9bb82642577f52b" title="blockSpan::orient" alt="" coords="508,165,631,195"/>
+<area shape="rect" id="node24" href="$classinternalBCpatch.html#acd376287ba722fefaf0a471b7a923612" title="internalBCpatch::setPartner" alt="" coords="479,219,660,248"/>
+<area shape="rect" id="node22" href="$classblockSpan.html#ad26020ed801ccaed78853cb593479286" title="blockSpan::swapSpan" alt="" coords="709,165,861,195"/>
+<area shape="rect" id="node37" href="$classadjRec.html#a248c00a10c70dd5e6e69a9680bb16632" title="adjRec::getFace" alt="" coords="511,572,628,601"/>
+<area shape="rect" id="node41" href="$classadjRec.html#acded957a7fb9afa84e5ad3f5b597cc42" title="adjRec::getLoc" alt="" coords="515,465,624,495"/>
+<area shape="rect" id="node44" href="$classadjRec.html#a0aee7ca361720ef07d3fd80854fc35bc" title="adjRec::getNext" alt="" coords="511,519,628,548"/>
+<area shape="rect" id="node48" href="$classface.html#a90c13b21c91497f0de0ec176495eb050" title="face::getDim" alt="" coords="521,807,617,836"/>
+<area shape="rect" id="node50" href="$classblockDim.html#a5efe04c03b0d0e0a33d3d95026cfe2cd" title="blockDim::getSize" alt="" coords="505,860,633,889"/>
+</map>

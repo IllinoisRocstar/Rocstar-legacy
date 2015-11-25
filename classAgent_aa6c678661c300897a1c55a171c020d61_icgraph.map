@@ -1,0 +1,9 @@
+<map id="create_registered_window_attributes" name="create_registered_window_attributes">
+<area shape="rect" id="node3" href="$classBurnAgent.html#ab599f18b970883e5876d00411ccb3c17" title="BurnAgent::create_buffer_all" alt="" coords="395,5,581,35"/>
+<area shape="rect" id="node5" href="$classFluidAgent.html#ab599f18b970883e5876d00411ccb3c17" title="FluidAgent::create\l_buffer_all" alt="" coords="424,58,552,105"/>
+<area shape="rect" id="node7" href="$classSolidAgent.html#ab599f18b970883e5876d00411ccb3c17" title="SolidAgent::create\l_buffer_all" alt="" coords="424,181,552,227"/>
+<area shape="rect" id="node9" href="$classAgent.html#ab599f18b970883e5876d00411ccb3c17" title="create_buffer_all" alt="" coords="228,119,345,148"/>
+<area shape="rect" id="node14" href="$classAgent.html#afc7914dba0afa4bc8246dddf267a56b7" title="init_callback" alt="" coords="441,128,535,157"/>
+<area shape="rect" id="node16" href="$classAgent.html#ad3c8c70a29f18aa8a37ddf31b6cb2bc0" title="create_window" alt="" coords="629,128,739,157"/>
+<area shape="rect" id="node18" href="$classAgent.html#ae8cc2ba44a17a30a34df7e7b1710764a" title="Agent" alt="" coords="787,128,843,157"/>
+</map>

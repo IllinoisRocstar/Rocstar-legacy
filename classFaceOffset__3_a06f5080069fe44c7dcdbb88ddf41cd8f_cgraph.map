@@ -1,0 +1,51 @@
+<map id="time_stepping" name="time_stepping">
+<area shape="rect" id="node3" href="$classRocblas.html#a56af5b37f32aa5646256710db7eb27aa" title="Operation wrapper for addition. " alt="" coords="616,1880,715,1909"/>
+<area shape="rect" id="node15" href="$classPropagation__3.html#a3756316ff41c089412e3d414fbcd4e4b" title="Propagation_3::bound\l_nodal_motion" alt="" coords="161,88,308,135"/>
+<area shape="rect" id="node19" href="$classFaceOffset__3.html#a932f06459b53d1207fdbf1d78a4a09c6" title="compute_anisotropic\l_vertex_centers" alt="" coords="164,376,305,423"/>
+<area shape="rect" id="node21" href="$classRocblas.html#a67987d3b72ffb73c5fa0cc2930822afd" title="Operation wrapper for copy (x is a scalar pointer). " alt="" coords="592,844,739,873"/>
+<area shape="rect" id="node52" href="$classFaceOffset__3.html#a619d9eb028c07f26fd5fc23d2a3bc109" title="Compute mean normals. " alt="" coords="168,1530,301,1560"/>
+<area shape="rect" id="node58" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="171,641,299,670"/>
+<area shape="rect" id="node64" href="$classRocblas.html#a29fe903b10fe8cd0f0bc37c01b63b83f" title="Wrapper for copy. " alt="" coords="612,1982,719,2012"/>
+<area shape="rect" id="node90" href="$classFaceOffset__3.html#a56aca8e1560d76b750545f7f33890551" title="denoise_surface" alt="" coords="385,232,503,261"/>
+<area shape="rect" id="node99" href="$classFaceOffset__3.html#a3fb81b9009e23436007ccd5c6f0931e9" title="Filter out isolated ridge vertices and identify ridge edges. " alt="" coords="173,1200,296,1247"/>
+<area shape="rect" id="node128" href="$classFaceOffset__3.html#a72d3b494f9c00e4e0bb641475858677e" title="Mark vertices that are weak. " alt="" coords="164,942,305,972"/>
+<area shape="rect" id="node131" href="$classRocblas.html#a446e16f562d2bcb780991916721bcba2" title="Operation wrapper for multiplication with y as a scalar pointer. " alt="" coords="595,1826,736,1856"/>
+<area shape="rect" id="node134" href="$classFaceOffset__3.html#a495fc0cb53571fbaed964fe1608dce61" title="Redistribute smooth vertices by NuLaplacian smoothing. " alt="" coords="376,1256,512,1285"/>
+<area shape="rect" id="node142" href="$classFaceOffset__3.html#aeb4f96b70a0dc62dc10e186483d9180f" title="Decompose propagation directions based on constraints. " alt="" coords="169,1776,300,1823"/>
+<area shape="rect" id="node157" href="$classFaceOffset__3.html#a16c27dfdaf18ec8ac3ccd60bdf84e313" title="Reduce time step based on stability limit, and rescale displacements by the reduced time step and dif..." alt="" coords="367,1877,521,1906"/>
+<area shape="rect" id="node165" href="$classFaceOffset__3.html#a7f611c3d9187e09340053a7f063153d9" title="update_vertex_centers" alt="" coords="157,1148,312,1177"/>
+<area shape="rect" id="node5" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="808,1826,944,1856"/>
+<area shape="rect" id="node7" href="$classRocblas.html#a014ebce01bb2ec4eacb969b142b13d97" title="Chooses which calc function to call based on type of y. " alt="" coords="803,1269,949,1298"/>
+<area shape="rect" id="node9" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="812,1880,940,1909"/>
+<area shape="rect" id="node11" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="1004,1893,1113,1922"/>
+<area shape="rect" id="node13" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="997,1970,1120,2000"/>
+<area shape="rect" id="node17" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="644,24,687,53"/>
+<area shape="rect" id="node24" href="$classRocblas.html#a065ad834f700affb4c861da75459325c" title="Operation wrapper for division. " alt="" coords="619,766,712,796"/>
+<area shape="rect" id="node29" href="$classFaceOffset__3.html#ae567b553d4a9a500996a8211c9202a9c" title="eigen_analyze_vertex" alt="" coords="371,437,517,466"/>
+<area shape="rect" id="node35" href="$classFaceOffset__3.html#a57db1d663b1ece755919d222a853f529" title="eval_angle" alt="" coords="624,486,707,516"/>
+<area shape="rect" id="node41" href="$classFaceOffset__3.html#ac9e1c527e399bcf96c28a0cc4875b9e8" title="get_tangents" alt="" coords="396,77,492,106"/>
+<area shape="rect" id="node48" href="$classElement__node__enumerator.html#a041249f802c5bf4c2deae666610e03c4" title="Go to the next element within the connectivity tables of a pane. " alt="" coords="577,1402,753,1448"/>
+<area shape="rect" id="node50" href="$classElement__node__enumerator.html#a3b0965f57d58cd0e85fab4b12a9d6899" title="Number of edges per element. " alt="" coords="577,1195,753,1242"/>
+<area shape="rect" id="node31" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="627,1076,704,1105"/>
+<area shape="rect" id="node33" href="$classFaceOffset__3.html#a7cd0e18f9d180971a5c656207a67a464" title="compute_eigenvectors" alt="" coords="589,386,741,416"/>
+<area shape="rect" id="node37" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="812,540,940,569"/>
+<area shape="rect" id="node39" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="855,333,897,362"/>
+<area shape="rect" id="node43" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="643,128,688,157"/>
+<area shape="rect" id="node54" href="$classFaceOffset__3.html#aa5a01748f14e9b7a3122b11b99b64f61" title="obtain_directions" alt="" coords="384,1722,504,1752"/>
+<area shape="rect" id="node56" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="596,1534,735,1564"/>
+<area shape="rect" id="node60" href="$geometry_8h.html#a2f642138fc2786ca05a687aa45a352f2" title="Compute the angle between two vectors. " alt="" coords="639,540,692,569"/>
+<area shape="rect" id="node79" href="$classFaceOffset__3.html#ac6379f4a2faa5ed80e6acc4d28e9b110" title="obtain_face_offset" alt="" coords="380,1410,508,1440"/>
+<area shape="rect" id="node66" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="832,2034,920,2064"/>
+<area shape="rect" id="node69" href="$classWindow.html#a4d18e272967ed99a266283d1c173a26a" title="Obtain all the attributes of the pane. " alt="" coords="811,2088,941,2117"/>
+<area shape="rect" id="node82" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="584,1597,747,1626"/>
+<area shape="rect" id="node95" href="$classFaceOffset__3.html#aa253be8fd0d4e93df02615eb7e909371" title="get_nonuniform_weight" alt="" coords="588,232,743,261"/>
+<area shape="rect" id="node97" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="639,285,692,314"/>
+<area shape="rect" id="node102" href="$classFaceOffset__3.html#af6ea285d2c94a53c160dfe64ee44282e" title="Build the list of ridge nighbors and obtain a list of weak&#45;ended vertices Return the number of obscen..." alt="" coords="363,896,525,925"/>
+<area shape="rect" id="node108" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="596,1670,735,1700"/>
+<area shape="rect" id="node112" href="$classFaceOffset__3.html#a584b6a34dce4cb0706ca29baa8a3b91c" title="Filter out weak&#45;ended curves. " alt="" coords="368,1568,520,1597"/>
+<area shape="rect" id="node114" href="$classFaceOffset__3.html#a3853efe93066b5be4a4000c76ed03f4b" title="insert_boundary_edges" alt="" coords="367,1514,521,1544"/>
+<area shape="rect" id="node122" href="$classFaceOffset__3.html#aa001a0386a35495dfa3f3b8fcdf6310e" title="reclassify_ridge_vertices" alt="" coords="361,1050,527,1080"/>
+<area shape="rect" id="node145" href="$classFaceOffset__3.html#a255d78d7f60f9385c8941b65d6bd783b" title="balance_mass" alt="" coords="391,1930,497,1960"/>
+<area shape="rect" id="node151" href="$namespaceMesquite.html#a1703b490e5c06b6f3b453b87d4e5afd0" title="Mesquite::det" alt="" coords="393,2154,495,2184"/>
+<area shape="rect" id="node153" href="$classPropagation__3.html#a9d8c825d6670f4c5415a5bd8ca2a73a5" title="Get orthonormals of the constraints. " alt="" coords="369,2084,519,2131"/>
+</map>

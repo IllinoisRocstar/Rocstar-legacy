@@ -1,0 +1,8 @@
+<map id="rflu_genx_registerdatastats" name="rflu_genx_registerdatastats">
+<area shape="rect" id="node3" href="$classrflu__modrocstaradmin.html#a9e58d184ef358be81a9e18aaa7678a39" title="rflu_genx_registerdatawrapper" alt="" coords="233,32,428,61"/>
+<area shape="rect" id="node5" href="$RFLU__InitFlowSolver_8F90.html#af9c0da2d26f7bdb2bdee8507627f636c" title="rflu_initflowsolver" alt="" coords="477,32,600,61"/>
+<area shape="rect" id="node7" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="687,5,745,35"/>
+<area shape="rect" id="node9" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="649,59,783,88"/>
+<area shape="rect" id="node11" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="832,59,997,88"/>
+<area shape="rect" id="node13" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="1045,59,1200,88"/>
+</map>

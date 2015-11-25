@@ -1,0 +1,5 @@
+<map id="in_bounding_box" name="in_bounding_box">
+<area shape="rect" id="node3" href="$classPropagation__3.html#a21366e4654e8768c90e9e228694db8bc" title="bound_nodal_motion" alt="" coords="177,5,319,35"/>
+<area shape="rect" id="node5" href="$classPropagation__3.html#ae97499c2e70e126264a6be277ce98ccf" title="reached_nodal_bound" alt="" coords="175,59,321,88"/>
+<area shape="rect" id="node7" href="$classPropagation__3.html#a96878798f4dd364ff3147f80edf628da" title="bound_facial_speed" alt="" coords="372,59,508,88"/>
+</map>

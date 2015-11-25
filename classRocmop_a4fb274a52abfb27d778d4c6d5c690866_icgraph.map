@@ -1,0 +1,5 @@
+<map id="get_redist_safe_factor" name="get_redist_safe_factor">
+<area shape="rect" id="node3" href="$classRocmop.html#ad736dd98cc6ca328994641cb3939fc7c" title="Redistribute ridge vertices within their tangent spaces. " alt="" coords="205,5,344,51"/>
+<area shape="rect" id="node7" href="$classRocmop.html#aaff38c32926fd43f2c63d0f359a31f77" title="Redistribute smooth vertices within their tangent spaces. " alt="" coords="205,74,344,121"/>
+<area shape="rect" id="node5" href="$classRocmop.html#a679bfb8c7da7e819b00dc132ba57dc8f" title="Smooths a surface using the medial quadric. " alt="" coords="392,48,531,77"/>
+</map>

@@ -1,0 +1,51 @@
+<map id="load" name="load">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="125,139,264,168"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="128,217,261,247"/>
+<area shape="rect" id="node10" href="$roccom__c_8h.html#ab41e262f86b991f367a93a005e0694b8" title="COM_set_member_function" alt="" coords="103,323,287,352"/>
+<area shape="rect" id="node12" href="$roccom__c_09_09_8h.html#a5e5321de4f0f8940ea99b25b0060afe3" title="COM_set_object" alt="" coords="135,12,255,41"/>
+<area shape="rect" id="node15" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="113,72,276,101"/>
+<area shape="rect" id="node18" href="$classRocsurf.html#ae33ff8b1e6981f1e9a7c7e9cca3a51c5" title="Computes edge lengths of a given window. " alt="" coords="115,375,275,422"/>
+<area shape="rect" id="node57" href="$classRocprop.html#a0a4c364151a6f91c699f00b3ce815540" title="Initialize Rocprop with given mesh. " alt="" coords="160,688,229,717"/>
+<area shape="rect" id="node68" href="$classRocprop.html#a96cbab8164bb295aef5c97dbdf05c437" title="Perturb the given mesh by alpha times shortest edge length. " alt="" coords="144,741,245,771"/>
+<area shape="rect" id="node70" href="$classRocprop.html#ad311f026ab07b137092e7b694e6976a2" title="Propagates the interface. " alt="" coords="156,795,233,824"/>
+<area shape="rect" id="node99" href="$classRocprop.html#a329c0b0aef2d04a4e475c90af98739d3" title="Invoke serial remeshing. " alt="" coords="144,635,245,664"/>
+<area shape="rect" id="node103" href="$classRocprop.html#a1c55b96c3e3174b890f91c0ac26edd1c" title="Set the bounds &#160;Propagation_3::set_bounds. " alt="" coords="151,848,239,877"/>
+<area shape="rect" id="node105" href="$classRocprop.html#a5b18ea2b57dc03155d6c6fde2817333c" title="Set the types and directions of constraints &#160;Propagation_3::set_constraints. " alt="" coords="140,901,249,931"/>
+<area shape="rect" id="node107" href="$classRocprop.html#aadd67fc400e515e71a0c5331aea7759e" title="Set options for propagation. " alt="" coords="153,961,236,991"/>
+<area shape="rect" id="node115" href="$classRocprop.html#a7f330742f0182718632c9702b1e9a2c3" title="Register remesher. Rocprop does not own the remesher. " alt="" coords="144,1015,245,1044"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="349,5,477,35"/>
+<area shape="rect" id="node20" href="$classWindow__manifold__2.html#afc72f337226a2bd9c048dab670fb320a" title="Obtain an iterator to the first pane manifold of the window. " alt="" coords="340,445,487,491"/>
+<area shape="rect" id="node22" href="$classWindow__manifold__2.html#a036407c8e0e5dc7109664644e0138d2e" title="Obtain an iterator to the past&#45;the&#45;last pane manifold of the window. " alt="" coords="340,514,487,561"/>
+<area shape="rect" id="node24" href="$classHalfedge.html#ab4def96f7b16673e4f64958282db7522" title="Get the ID of the opposite edge of a given edge. " alt="" coords="752,65,883,95"/>
+<area shape="rect" id="node28" href="$classHalfedge.html#aa126fd94949c810d24869ad04cd97e15" title="Is the edge a border edge? " alt="" coords="751,376,884,405"/>
+<area shape="rect" id="node32" href="$classHalfedge.html#afe868c12813c184a147c1ddd7812fd03" title="Get the tangent of the given halfedge. " alt="" coords="351,163,476,192"/>
+<area shape="rect" id="node40" href="$classVector__3.html#afc75c733aff7cb9c0216f363888b1dff" title="Vector_3::norm" alt="" coords="359,216,468,245"/>
+<area shape="rect" id="node42" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="392,269,435,299"/>
+<area shape="rect" id="node44" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="391,323,436,352"/>
+<area shape="rect" id="node46" href="$classHalfedge.html#a04f82933d382b0e6c89b66c5e0622dd6" title="Get the next halfedge of its owner element. " alt="" coords="360,109,467,139"/>
+<area shape="rect" id="node53" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="344,635,483,664"/>
+<area shape="rect" id="node55" href="$classWindow__manifold__2.html#a488afeb6f144268114ca88de91eaf9ff" title="Obtain the underlying window object. " alt="" coords="340,375,487,422"/>
+<area shape="rect" id="node26" href="$classPane__manifold__2.html#acc9ac2df851c2e7d04073c72d6706dc1" title="Obtain the opposite edge in a given access mode. " alt="" coords="935,83,1081,130"/>
+<area shape="rect" id="node30" href="$classPane__manifold__2.html#ad58eac8ab7a4df54a891be56771473ba" title="Is the edge on the boundary of a given mode? " alt="" coords="939,367,1077,414"/>
+<area shape="rect" id="node34" href="$classHalfedge.html#a3a641bee4ab38c773562303bc32f0988" title="Obtain the (primary copy of the) destination of the edge. " alt="" coords="548,179,692,208"/>
+<area shape="rect" id="node36" href="$classHalfedge.html#af15a42599ef8e122c9b7d94073f2481f" title="Obtain the (primary copy of the) origin of the edge. " alt="" coords="564,232,676,261"/>
+<area shape="rect" id="node38" href="$classNode.html#a33ca30e6b1bc538e87254b5f8fd39352" title="Obtain the coordinates of a node. " alt="" coords="576,285,664,315"/>
+<area shape="rect" id="node48" href="$classPane__manifold__2.html#ace7046cd7e020bb965f62ca3ac757e44" title="Obtain the next edge in a given access mode. " alt="" coords="547,109,693,155"/>
+<area shape="rect" id="node59" href="$commpi_8h.html#a8a8389bc67ae874f8ec20c56f758c8bf" title="COMMPI_Comm_rank" alt="" coords="336,688,491,717"/>
+<area shape="rect" id="node62" href="$classRocsurf.html#a690441882f8d7100b177146402bb63b5" title="Constructs the communication patterns of a distributed mesh. " alt="" coords="352,741,475,771"/>
+<area shape="rect" id="node64" href="$classRocsurf.html#a3767bcdb4b06619283e47da0d17b1378" title="Rocsurf::validate_object" alt="" coords="539,635,701,664"/>
+<area shape="rect" id="node66" href="$classWindow__manifold__2.html#a5f81facb36f7b18c987fd9a735bef1e2" title="Initialize a pane communicator. " alt="" coords="547,687,693,734"/>
+<area shape="rect" id="node72" href="$classRocblas.html#a29fe903b10fe8cd0f0bc37c01b63b83f" title="Wrapper for copy. " alt="" coords="360,911,467,940"/>
+<area shape="rect" id="node88" href="$classRocblas.html#a56af5b37f32aa5646256710db7eb27aa" title="Operation wrapper for addition. " alt="" coords="364,795,463,824"/>
+<area shape="rect" id="node94" href="$classRocblas.html#a7c4e389cce4e1bb681a77878e6105f29" title="Operation wrapper for subtraction. " alt="" coords="364,848,463,877"/>
+<area shape="rect" id="node74" href="$classWindow.html#a4d18e272967ed99a266283d1c173a26a" title="Obtain all the attributes of the pane. " alt="" coords="555,968,685,997"/>
+<area shape="rect" id="node76" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="552,864,688,893"/>
+<area shape="rect" id="node78" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="556,811,684,840"/>
+<area shape="rect" id="node80" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="763,864,872,893"/>
+<area shape="rect" id="node82" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="756,969,879,999"/>
+<area shape="rect" id="node84" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="576,1021,664,1051"/>
+<area shape="rect" id="node90" href="$classRocblas.html#a014ebce01bb2ec4eacb969b142b13d97" title="Chooses which calc function to call based on type of y. " alt="" coords="547,757,693,787"/>
+<area shape="rect" id="node109" href="$namespacecimg__library_1_1cimg.html#ab9308a5128017dd92d3f602a19ca7611" title="cimg_library::cimg\l::option" alt="" coords="349,1075,477,1122"/>
+<area shape="rect" id="node113" href="$namespacecimg__library_1_1cimg.html#a9ab0fcc7ef1bac330897fec51f617ae6" title="Read a float number from a C&#45;string. " alt="" coords="349,963,477,1010"/>
+<area shape="rect" id="node111" href="$namespacecimg__library_1_1cimg.html#abc491a5ed3a8d97e395138a379767a45" title="Compute the basename of a filename. " alt="" coords="556,1125,684,1171"/>
+</map>

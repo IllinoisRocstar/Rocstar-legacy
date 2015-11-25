@@ -1,0 +1,51 @@
+<map id="smooth_surf_medial" name="smooth_surf_medial">
+<area shape="rect" id="node3" href="$classRocmop.html#a4c6e496385e479c044a89f1e545edaa5" title="Compute medial quadric for every vertex. " alt="" coords="193,605,359,635"/>
+<area shape="rect" id="node66" href="$classRocblas.html#a29fe903b10fe8cd0f0bc37c01b63b83f" title="Wrapper for copy. " alt="" coords="223,1075,329,1104"/>
+<area shape="rect" id="node87" href="$classRocmop.html#a800007d963d8c7320124ed29897db40a" title="Evaluate face normals (copied from FaceOffset_3.[hC]. " alt="" coords="199,1743,353,1772"/>
+<area shape="rect" id="node111" href="$classRocmop.html#ad736dd98cc6ca328994641cb3939fc7c" title="Redistribute ridge vertices within their tangent spaces. " alt="" coords="207,1555,345,1602"/>
+<area shape="rect" id="node126" href="$classRocmop.html#aaff38c32926fd43f2c63d0f359a31f77" title="Redistribute smooth vertices within their tangent spaces. " alt="" coords="207,1375,345,1422"/>
+<area shape="rect" id="node5" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="636,285,764,315"/>
+<area shape="rect" id="node9" href="$geometry_8h.html#a2f642138fc2786ca05a687aa45a352f2" title="Compute the angle between two vectors. " alt="" coords="459,181,512,211"/>
+<area shape="rect" id="node18" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="888,468,931,497"/>
+<area shape="rect" id="node20" href="$classRocblas.html#a67987d3b72ffb73c5fa0cc2930822afd" title="Operation wrapper for copy (x is a scalar pointer). " alt="" coords="627,1332,773,1361"/>
+<area shape="rect" id="node24" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="619,1385,781,1415"/>
+<area shape="rect" id="node26" href="$classRocmop.html#a951f6a38a9e200878fabe2fe295d23ed" title="eigen_analyze_vertex" alt="" coords="412,664,559,693"/>
+<area shape="rect" id="node36" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="677,1128,723,1157"/>
+<area shape="rect" id="node38" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="631,1256,769,1285"/>
+<area shape="rect" id="node42" href="$classVector__3.html#afc75c733aff7cb9c0216f363888b1dff" title="Vector_3::norm" alt="" coords="431,285,540,315"/>
+<area shape="rect" id="node45" href="$arruda__boyce_8f90.html#a2f31672ee5874935d96e7aea2c8371fe" title="rs" alt="" coords="467,573,504,603"/>
+<area shape="rect" id="node61" href="$namespacecimg__library.html#a35f28010f1c3f5a5668974c5ea8d6be3" title="cimg_library::sin" alt="" coords="427,71,544,100"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="844,277,975,323"/>
+<area shape="rect" id="node12" href="$utilities_2rc__cmp_2util_8cpp.html#a0d9256a364d8efaad23e52d4042654e0" title="dot_product" alt="" coords="655,181,745,211"/>
+<area shape="rect" id="node14" href="$geometry_8h.html#a3f884839e02fce28dc24f56b4f121900" title="Compute the dot Product of two vectors. " alt="" coords="676,75,724,104"/>
+<area shape="rect" id="node16" href="$namespacenvc.html#a4ea00221667e66f4029614e350ea5745" title="nvc::norm2" alt="" coords="657,128,743,157"/>
+<area shape="rect" id="node22" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="841,1256,977,1285"/>
+<area shape="rect" id="node28" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="661,755,739,784"/>
+<area shape="rect" id="node30" href="$namespacecimg__library.html#a2ff3d5bed4426af215f53f21b5ae68cf" title="cimg_library::atan" alt="" coords="637,808,763,837"/>
+<area shape="rect" id="node32" href="$classRocmop.html#a77616b2e5e1035b58e2e4438abea5cb7" title="compute_eigenvectors" alt="" coords="624,861,776,891"/>
+<area shape="rect" id="node34" href="$buildface_8cpp.html#a34cd8fd4d99fbdd4ef97fcc94070b460" title="swap" alt="" coords="883,915,936,944"/>
+<area shape="rect" id="node47" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="872,600,947,629"/>
+<area shape="rect" id="node49" href="$arruda__boyce_8f90.html#a6fbc6c2163a4ca8b183d367f2bdf65c2" title="tql1" alt="" coords="679,440,721,469"/>
+<area shape="rect" id="node51" href="$arruda__boyce_8f90.html#a11625c0d4087813612fcea51e6bdc170" title="tql2" alt="" coords="679,493,721,523"/>
+<area shape="rect" id="node53" href="$arruda__boyce_8f90.html#af7b3c6cb5bad790aa302b90dfad59af9" title="tred1" alt="" coords="675,547,725,576"/>
+<area shape="rect" id="node57" href="$arruda__boyce_8f90.html#a40a1f383b8cd714b3c0d7dbe946d99eb" title="tred2" alt="" coords="675,600,725,629"/>
+<area shape="rect" id="node63" href="$structcimg__library_1_1CImg.html#a7c5c1b92e02d4286b19fd6ea054ba0e8" title="cimg_library::CImg\l::get_sin" alt="" coords="635,5,765,51"/>
+<area shape="rect" id="node68" href="$classWindow.html#a4d18e272967ed99a266283d1c173a26a" title="Obtain all the attributes of the pane. " alt="" coords="420,1075,551,1104"/>
+<area shape="rect" id="node73" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="421,768,549,797"/>
+<area shape="rect" id="node75" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="645,915,755,944"/>
+<area shape="rect" id="node79" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="639,1021,761,1051"/>
+<area shape="rect" id="node83" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="441,1128,529,1157"/>
+<area shape="rect" id="node70" href="$classPane.html#a4d18e272967ed99a266283d1c173a26a" title="Obtain all the attributes of the pane. " alt="" coords="643,1075,757,1104"/>
+<area shape="rect" id="node77" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="645,968,755,997"/>
+<area shape="rect" id="node81" href="$classPane.html#a05d1abca9cbb0ec7bdc59f58dd81797c" title="Obtain a constant pointer to its owner window object. " alt="" coords="857,1021,961,1051"/>
+<area shape="rect" id="node90" href="$classElement__node__enumerator.html#a041249f802c5bf4c2deae666610e03c4" title="Go to the next element within the connectivity tables of a pane. " alt="" coords="612,1725,788,1771"/>
+<area shape="rect" id="node102" href="$classElement__node__vectors__k__const.html#a012daf687ea85e9da2bc2d064de92aa6" title="initialize the accessor with a pointer and a specific stride. " alt="" coords="408,1845,563,1891"/>
+<area shape="rect" id="node104" href="$classElement__node__enumerator.html#a35a62313d45990cfa4cab8caa1dfbff6" title="Number of nodes per element. " alt="" coords="612,1863,788,1910"/>
+<area shape="rect" id="node107" href="$classElement__node__enumerator.html#a3b0965f57d58cd0e85fab4b12a9d6899" title="Number of edges per element. " alt="" coords="612,1794,788,1841"/>
+<area shape="rect" id="node92" href="$classPane.html#a62d5a7a3e02da8c334472006166d67ea" title="Obtain the connectivity table containing the element with the given ID. " alt="" coords="844,1768,975,1797"/>
+<area shape="rect" id="node94" href="$classConnectivity.html#a69bd059da8cf335fbee896488f5c1e97" title="Get the index of the first element. " alt="" coords="1031,1707,1164,1754"/>
+<area shape="rect" id="node96" href="$classPane.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Dimension of the pane. " alt="" coords="851,1821,968,1851"/>
+<area shape="rect" id="node99" href="$classConnectivity.html#a3ab0f5b4dbc683714ef15ccfb16225ac" title="Get a constant pointer to the connectivity array. " alt="" coords="839,1715,980,1744"/>
+<area shape="rect" id="node114" href="$classRocmop.html#a4fb274a52abfb27d778d4c6d5c690866" title="get_redist_safe_factor" alt="" coords="411,1384,560,1413"/>
+<area shape="rect" id="node122" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="464,1539,507,1568"/>
+</map>

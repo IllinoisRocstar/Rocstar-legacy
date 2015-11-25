@@ -1,0 +1,11 @@
+<map id="is_point" name="is_point">
+<area shape="rect" id="node3" href="$classKdtree__d_1_1Node.html#a45fe92e6de851a077b55e05a9179ae4d" title="copy_subtree_points" alt="" coords="121,29,263,59"/>
+<area shape="rect" id="node8" href="$classKdtree__d_1_1Node.html#ad8383b0de2925ae5888c527be85a98a7" title="search" alt="" coords="516,29,577,59"/>
+<area shape="rect" id="node13" href="$classKdtree__d_1_1Node.html#a80c3363fe7f368d81ebfbfc74ee5d796" title="dump" alt="" coords="165,157,219,187"/>
+<area shape="rect" id="node18" href="$classKdtree__d_1_1Node.html#a31524f7f8ae8f1a0c383991945c8bb02" title="is_points_in_hs" alt="" coords="136,235,248,264"/>
+<area shape="rect" id="node21" href="$classKdtree__d_1_1Node.html#a73e929d29381f1d792af13350b79222c" title="is_valid" alt="" coords="340,260,407,289"/>
+<area shape="rect" id="node6" href="$classKdtree__d_1_1Node.html#a93fa418c712b556a3b535ec97a7e3b1e" title="search_recursive" alt="" coords="313,29,433,59"/>
+<area shape="rect" id="node11" href="$classKdtree__d.html#a8d4c7ac5933d56ca89519fe8712f764d" title="Kdtree_d::search" alt="" coords="660,29,780,59"/>
+<area shape="rect" id="node16" href="$classKdtree__d.html#accd2600060dbaee3a3b41aed4034c63c" title="Kdtree_d::dump" alt="" coords="316,157,431,187"/>
+<area shape="rect" id="node23" href="$classKdtree__d.html#aec625e149fa4978f8e20dace9525659e" title="Kdtree_d::is_valid" alt="" coords="484,260,609,289"/>
+</map>

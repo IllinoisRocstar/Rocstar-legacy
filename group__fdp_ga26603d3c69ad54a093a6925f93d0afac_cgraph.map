@@ -1,0 +1,15 @@
+<map id="cos_face_angle" name="cos_face_angle">
+<area shape="rect" id="node3" href="$classRFC__Pane__overlay.html#a345930a33af5e70a1bbdb38484ddf5f4" title="RFC_Pane_overlay::get\l_cos_face_angle" alt="" coords="173,62,336,109"/>
+<area shape="rect" id="node7" href="$classOverlay__primitives.html#a1c20fa0c901b440606f581e1a031eff5" title="Overlay_primitives\l::get_face_normal" alt="" coords="189,189,320,235"/>
+<area shape="rect" id="node17" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="451,304,493,333"/>
+<area shape="rect" id="node23" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="169,309,340,339"/>
+<area shape="rect" id="node25" href="$classHDS__accessor.html#a42d9f6a4b4d4209023f0db986e7d1cd3" title="HDS_accessor::is_border" alt="" coords="169,363,340,392"/>
+<area shape="rect" id="node27" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="233,416,276,445"/>
+<area shape="rect" id="node5" href="$classRFC__Pane__overlay.html#a8ec09b1da2ce631bfbca1670669cc963" title="RFC_Pane_overlay::get\l_index" alt="" coords="391,5,553,51"/>
+<area shape="rect" id="node9" href="$classPoint__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Point_set::size_of\l_edges" alt="" coords="409,74,535,121"/>
+<area shape="rect" id="node13" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="391,144,553,173"/>
+<area shape="rect" id="node15" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="403,197,541,227"/>
+<area shape="rect" id="node19" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="408,251,536,280"/>
+<area shape="rect" id="node11" href="$classVertex__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Vertex_set::size_of\l_edges" alt="" coords="604,74,737,121"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="605,242,736,289"/>
+</map>

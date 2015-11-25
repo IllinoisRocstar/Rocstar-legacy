@@ -1,0 +1,23 @@
+<map id="get_normal" name="get_normal">
+<area shape="rect" id="node3" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="149,141,312,171"/>
+<area shape="rect" id="node5" href="$classPane__manifold__2.html#af5a7a924427719723f345363fad0f703" title="Obtain normal of incident face of border edge. " alt="" coords="607,299,753,346"/>
+<area shape="rect" id="node13" href="$classHalfedge.html#a87af1695f47f02965e2e65522f776cac" title="Obtain the ID of the edge. " alt="" coords="185,349,276,379"/>
+<area shape="rect" id="node15" href="$classHalfedge.html#aa126fd94949c810d24869ad04cd97e15" title="Is the edge a border edge? " alt="" coords="164,195,297,224"/>
+<area shape="rect" id="node32" href="$classHalfedge.html#ab72ff77eeb5b8645e86a4b4cb57138ce" title="Obtain the pane manifold that owns the edge. " alt="" coords="597,247,763,276"/>
+<area shape="rect" id="node34" href="$classGeneric__element__2.html#ab57f1def40d75fc595395156f3e20237" title="Evaluates the Jacobian at a given point. " alt="" coords="160,402,301,449"/>
+<area shape="rect" id="node36" href="$classHalfedge.html#ab944b155156144ffb9cb73cad9eef7cc" title="Obtain the owner Pane_manifold_2 of the node. " alt="" coords="176,472,285,501"/>
+<area shape="rect" id="node41" href="$classElement__node__vectors__k__const.html#a012daf687ea85e9da2bc2d064de92aa6" title="initialize the accessor with a pointer and a specific stride. " alt="" coords="153,525,308,571"/>
+<area shape="rect" id="node49" href="$classElement__node__enumerator.html#a3b0965f57d58cd0e85fab4b12a9d6899" title="Number of edges per element. " alt="" coords="143,594,319,641"/>
+<area shape="rect" id="node7" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="815,116,951,145"/>
+<area shape="rect" id="node11" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="832,177,933,207"/>
+<area shape="rect" id="node9" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="1001,116,1097,145"/>
+<area shape="rect" id="node17" href="$classPane__manifold__2.html#ad58eac8ab7a4df54a891be56771473ba" title="Is the edge on the boundary of a given mode? " alt="" coords="388,142,527,189"/>
+<area shape="rect" id="node19" href="$classSimple__manifold__2.html#ab6d308f97d5fe32df4e31327bdf5fc3e" title="Determine whether a given edge is a border edge of real part of the pane (either on physical border o..." alt="" coords="611,107,749,154"/>
+<area shape="rect" id="node23" href="$classSimple__manifold__2.html#a7638d97609333036c513638fbba068aa" title="Determine whether a given edge is a border edge of real part of the whole pane (on physical border)..." alt="" coords="595,177,765,223"/>
+<area shape="rect" id="node28" href="$classPane__manifold__2.html#a293c0575cef30e28441550227a851354" title="Get the counterpart of an edge in the ACROSS_PANE mode, i.e. " alt="" coords="607,38,753,85"/>
+<area shape="rect" id="node38" href="$classSimple__manifold__2.html#ab944b155156144ffb9cb73cad9eef7cc" title="Obtain a const pointer to the pane. " alt="" coords="373,472,541,501"/>
+<area shape="rect" id="node43" href="$classElement__node__enumerator.html#a35a62313d45990cfa4cab8caa1dfbff6" title="Number of nodes per element. " alt="" coords="369,525,545,571"/>
+<area shape="rect" id="node45" href="$classConnectivity.html#a6b814939135364a0cd18ee54799897ee" title="Get the number of nodes per element of the current connectivity table. " alt="" coords="617,525,743,571"/>
+<area shape="rect" id="node47" href="$classPane.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Dimension of the pane. " alt="" coords="621,628,739,657"/>
+<area shape="rect" id="node51" href="$classConnectivity.html#a85e2c3a17c45bc48b5613929dedb216a" title="Get the number of edges per element of the current connectivity table. " alt="" coords="395,594,520,641"/>
+</map>

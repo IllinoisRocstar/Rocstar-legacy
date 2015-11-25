@@ -1,0 +1,24 @@
+<map id="propbasic.h" name="propbasic.h">
+<area shape="rect" id="node3" href="$Propagation__3_8h.html" title="Propagation_3.h" alt="" coords="1240,83,1355,112"/>
+<area shape="rect" id="node28" href="$Rocprop_8h.html" title="Rocprop.h" alt="" coords="1380,160,1463,189"/>
+<area shape="rect" id="node42" href="$speeds_8h.html" title="speeds.h" alt="" coords="1499,83,1573,112"/>
+<area shape="rect" id="node5" href="$FaceOffset__3_8h.html" title="FaceOffset_3.h" alt="" coords="660,160,772,189"/>
+<area shape="rect" id="node23" href="$MarkerParticles__3_8h.html" title="MarkerParticles_3.h" alt="" coords="1076,160,1215,189"/>
+<area shape="rect" id="node39" href="$Propagation__3_8C.html" title="Propagation_3.C" alt="" coords="1239,160,1356,189"/>
+<area shape="rect" id="node7" href="$AngleBasedSmoothing_8C.html" title="AngleBasedSmoothing.C" alt="" coords="293,237,461,267"/>
+<area shape="rect" id="node9" href="$AnisotropicSmoothing_8C.html" title="AnisotropicSmoothing.C" alt="" coords="485,237,648,267"/>
+<area shape="rect" id="node11" href="$cons__diff_8C.html" title="cons_diff.C" alt="" coords="672,237,760,267"/>
+<area shape="rect" id="node13" href="$detect__features_8C.html" title="detect_features.C" alt="" coords="784,237,909,267"/>
+<area shape="rect" id="node15" href="$FaceOffset__3_8C.html" title="FaceOffset_3.C" alt="" coords="933,237,1048,267"/>
+<area shape="rect" id="node17" href="$NuLaplacian_8C.html" title="NuLaplacian.C" alt="" coords="5,237,112,267"/>
+<area shape="rect" id="node19" href="$quadric__analysis_8C.html" title="quadric_analysis.C" alt="" coords="136,237,269,267"/>
+<area shape="rect" id="node21" href="$Rocprop_8C.html" title="Rocprop.C" alt="" coords="1237,237,1323,267"/>
+<area shape="rect" id="node25" href="$MarkerParticles__3_8C.html" title="MarkerParticles_3.C" alt="" coords="1072,237,1213,267"/>
+<area shape="rect" id="node30" href="$Remesher__Simmetrix_8h.html" title="Remesher_Simmetrix.h" alt="" coords="1347,237,1504,267"/>
+<area shape="rect" id="node32" href="$Remesher__Simmetrix_8C.html" title="Remesher_Simmetrix.C" alt="" coords="1200,315,1363,344"/>
+<area shape="rect" id="node34" href="$remesh_8C.html" title="remesh.C" alt="" coords="1387,315,1464,344"/>
+<area shape="rect" id="node36" href="$startest_8C.html" title="startest.C" alt="" coords="1488,315,1568,344"/>
+<area shape="rect" id="node44" href="$PointPropagate_8h.html" title="PointPropagate.h" alt="" coords="1513,160,1636,189"/>
+<area shape="rect" id="node46" href="$advectest_8C.html" title="advectest.C" alt="" coords="1528,237,1621,267"/>
+<area shape="rect" id="node48" href="$PointPropagate_8C.html" title="PointPropagate.C" alt="" coords="1645,237,1771,267"/>
+</map>

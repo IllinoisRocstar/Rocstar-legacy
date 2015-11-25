@@ -1,0 +1,30 @@
+<map id="compute_guide_matrices" name="compute_guide_matrices">
+<area shape="rect" id="node3" href="$classMesquite_1_1MsqMeshEntity.html#a17ab9e457ac1e170360fceeb6b25ab2b" title="Compute matrices which column are the vectors issued from a corner. " alt="" coords="223,134,401,181"/>
+<area shape="rect" id="node31" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="900,215,1073,262"/>
+<area shape="rect" id="node39" href="$classMesquite_1_1MsqMeshEntity.html#a06bdcd1ba605937676eadd289f3ecdf1" title="Returns element type. " alt="" coords="676,5,849,51"/>
+<area shape="rect" id="node59" href="$classMesquite_1_1PatchData.html#a3e94692727e2bf9bc09fd1625788e21c" title="Returns a pointer to the start of the element array. " alt="" coords="240,254,384,301"/>
+<area shape="rect" id="node62" href="$classMesquite_1_1TargetCalculator.html#aa1373ea0ead39c5e608f85dd4ab5ad74" title="initialize_default\l_target_matrices" alt="" coords="253,459,371,506"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MsqMeshEntity.html#a630d97bcef1b6af59d33b7a64190e455" title="Uses a MeshDomain call&#45;back function to compute the normal at the corner. " alt="" coords="451,413,627,459"/>
+<area shape="rect" id="node55" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="467,134,611,181"/>
+<area shape="rect" id="node57" href="$classMesquite_1_1Matrix3D.html#aeb5ec88b8e20330276c79eb32439319d" title="Sets column j (0, 1 or 2) to Vector3D c. " alt="" coords="471,65,607,111"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1PatchData.html#a8b377a9b1b8eaafb7bad02e4151666cd" title="Mesquite::PatchData\l::domain_set" alt="" coords="691,374,835,421"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1PatchData.html#ac4f04aa25ce8f550811c073724ea0640" title="Get surface normal at a point where the surface is the domain of an element and the point is the loca..." alt="" coords="688,444,837,508"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1PatchData.html#a4b465b048ea4219134d26ecc1d5981e6" title="Returns the start of the vertex&#45;&gt;element array. " alt="" coords="1139,546,1283,593"/>
+<area shape="rect" id="node37" href="$classMesquite_1_1PatchData.html#affc7f603b3ea994c151916a39130ee0e" title="Mesquite::PatchData\l::get_element_index" alt="" coords="691,254,835,301"/>
+<area shape="rect" id="node41" href="$classMesquite_1_1Vector3D.html#ad207cb443e371f73f07e874c504f60c1" title="Mesquite::Vector3D\l::length" alt="" coords="1141,666,1280,713"/>
+<area shape="rect" id="node44" href="$namespaceMesquite.html#ac7fe4c546e08637612bd9b212daa45e9" title="Mesquite::length" alt="" coords="928,583,1045,612"/>
+<area shape="rect" id="node47" href="$classMesquite_1_1Vector3D.html#acd0de676568888d848beb97dcc53ae47" title="Mesquite::Vector3D\l::normalize" alt="" coords="693,686,832,733"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="1135,477,1287,523"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1MsqMeshEntity.html#ad71b653bcc409c99d990a688e45f25d6" title="Very efficient retrieval of vertices indexes (corresponding to the PatchData vertex array)..." alt="" coords="900,291,1073,338"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1MeshDomain.html#af51d0710f9894de362dd3d9aa1399d5c" title="Returns the normal of the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="1131,285,1291,331"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1PatchData.html#a0ff7253ce513597da2d0189dd7deb3f6" title="Mesquite::PatchData\l::update_cached_normals" alt="" coords="901,411,1072,458"/>
+<area shape="rect" id="node20" href="$namespacenvc.html#a7ef4a2939f7598fd25136135eafb0ce6" title="nvc::norm" alt="" coords="1171,355,1251,384"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="1139,407,1283,454"/>
+<area shape="rect" id="node22" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="1369,615,1412,644"/>
+<area shape="rect" id="node24" href="$namespacenvc.html#a4ea00221667e66f4029614e350ea5745" title="nvc::norm2" alt="" coords="1348,355,1433,384"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="1132,146,1289,193"/>
+<area shape="rect" id="node35" href="$classMesquite_1_1MsqMeshEntity.html#a0b552656e1b264732e90715ccba32b1f" title="Return number of nodes in element (number of corner vertices + number of higher&#45;order nodes)..." alt="" coords="1124,215,1297,262"/>
+<area shape="rect" id="node49" href="$classMesquite_1_1Vector3D.html#a058f132af4f5f050d134c24c6202c20b" title="Mesquite::Vector3D\l::set_length" alt="" coords="917,686,1056,733"/>
+<area shape="rect" id="node64" href="$namespaceMesquite.html#a158e89125c01402924b46cd1cefa5240" title="Mesquite::pow" alt="" coords="485,643,592,672"/>
+<area shape="rect" id="node66" href="$classMesquite_1_1Exponent.html#a665516b85c2af1c1e62945896e9178b2" title="Mesquite::Exponent\l::raise" alt="" coords="693,755,832,802"/>
+</map>

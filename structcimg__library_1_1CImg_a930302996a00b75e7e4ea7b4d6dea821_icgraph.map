@@ -1,0 +1,7 @@
+<map id="invert" name="invert">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a949ac315fc855dd9e5ac3377d19b01b2" title="Compute a 1D Fast Fourier Transform, along a specified axis. " alt="" coords="115,5,245,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#ae9e7074da9c9955e37e9eebbd5bd9c22" title="Compute a 1D Fast Fourier Transform, along a specified axis. " alt="" coords="115,74,245,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#aadcc510c6d5bd17092150e6024d52383" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_haar" alt="" coords="113,143,247,190"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a16fe55a07fa0f2e43ae7377a915b03d3" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_invert" alt="" coords="111,213,249,259"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a09afff280828c5a8d5a7bef22993dacc" title="Compute the Haar multiscale wavelet transform (monodimensional version). " alt="" coords="115,282,245,329"/>
+</map>

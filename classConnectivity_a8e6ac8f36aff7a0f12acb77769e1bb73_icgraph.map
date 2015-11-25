@@ -1,0 +1,6 @@
+<map id="parent" name="parent">
+<area shape="rect" id="node3" href="$classConnectivity.html#a293147cf7a5f80cf24f4355a48b9bd02" title="Inherit a connectivity table. " alt="" coords="155,5,211,35"/>
+<area shape="rect" id="node5" href="$classWindow.html#a75ab2c76d299590bf8e3b23885b6a5bd" title="Template implementation for setting (op==OP_SET or OP_SET_CONST), allocating (op==OP_ALLOC), resizing (op==OP_RESIZE) and deallocating (op==OP_DEALLOC) an array for a specific connectivity table. " alt="" coords="113,59,252,88"/>
+<area shape="rect" id="node7" href="$classWindow.html#a452af820da4e5427a7dec303f746aec0" title="Window::resize_array" alt="" coords="305,32,452,61"/>
+<area shape="rect" id="node9" href="$classWindow.html#af423d54e3578b11ac134aea7e148d551" title="Window::dealloc_array" alt="" coords="301,85,456,115"/>
+</map>

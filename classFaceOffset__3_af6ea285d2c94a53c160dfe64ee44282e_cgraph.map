@@ -1,0 +1,13 @@
+<map id="build_ridge_neighbor_list" name="build_ridge_neighbor_list">
+<area shape="rect" id="node3" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="269,5,347,35"/>
+<area shape="rect" id="node5" href="$classRocblas.html#a67987d3b72ffb73c5fa0cc2930822afd" title="Operation wrapper for copy (x is a scalar pointer). " alt="" coords="235,59,381,88"/>
+<area shape="rect" id="node9" href="$classFaceOffset__3.html#a57db1d663b1ece755919d222a853f529" title="eval_angle" alt="" coords="267,112,349,141"/>
+<area shape="rect" id="node19" href="$classElement__node__enumerator.html#a3b0965f57d58cd0e85fab4b12a9d6899" title="Number of edges per element. " alt="" coords="220,210,396,257"/>
+<area shape="rect" id="node7" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="460,5,596,35"/>
+<area shape="rect" id="node11" href="$classVector__3.html#a7905d5be1116a4920d9e7b85b2ef8834" title="Vector_3::squared_norm" alt="" coords="447,59,609,88"/>
+<area shape="rect" id="node13" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="507,112,549,141"/>
+<area shape="rect" id="node15" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="464,165,592,195"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="660,157,791,203"/>
+<area shape="rect" id="node21" href="$classPane.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Dimension of the pane. " alt="" coords="469,219,587,248"/>
+<area shape="rect" id="node23" href="$classConnectivity.html#a85e2c3a17c45bc48b5613929dedb216a" title="Get the number of edges per element of the current connectivity table. " alt="" coords="465,271,591,318"/>
+</map>

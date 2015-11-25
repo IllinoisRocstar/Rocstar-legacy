@@ -1,0 +1,8 @@
+<map id="get_key" name="get_key">
+<area shape="rect" id="node3" href="$classMesquite_1_1StopWatchCollection.html#ac1351afdf0266bf05dfd3f1bd426d712" title="number_of_starts" alt="" coords="123,5,245,35"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1StopWatchCollection.html#a453824839dba78cc4503f51ef9f65dfd" title="remove" alt="" coords="152,59,216,88"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1StopWatchCollection.html#a0ec099f44be39b172e2779a6b2211d68" title="reset" alt="" coords="159,112,209,141"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1StopWatchCollection.html#a444b49ec8b9eebd8f6cc8ef812f11362" title="start" alt="" coords="160,165,208,195"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1StopWatchCollection.html#aaac22b1fe5a73afac98f6ae4f108d63d" title="stop" alt="" coords="161,219,207,248"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1StopWatchCollection.html#acfa5a466ee2c087f1868d405df85af9a" title="total_time" alt="" coords="145,272,223,301"/>
+</map>

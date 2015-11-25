@@ -1,0 +1,29 @@
+<map id="LaplacianIQ.hpp" name="LaplacianIQ.hpp">
+<area shape="rect" id="node3" href="$includeLinks_2IdealWeightInverseMeanRatio_8hpp.html" title="IdealWeightInverseMeanRatio.hpp" alt="" coords="224,315,445,344"/>
+<area shape="rect" id="node104" href="$includeLinks_2LaplacianSmoother_8hpp.html" title="LaplacianSmoother.hpp" alt="" coords="1732,83,1889,112"/>
+<area shape="rect" id="node115" href="$includeLinks_2TerminationCriterion_8hpp.html" title="TerminationCriterion.hpp" alt="" coords="2060,315,2223,344"/>
+<area shape="rect" id="node159" href="$includeLinks_2QualityAssessor_8hpp.html" title="QualityAssessor.hpp" alt="" coords="3067,315,3208,344"/>
+<area shape="rect" id="node168" href="$includeLinks_2InstructionQueue_8hpp.html" title="InstructionQueue.hpp" alt="" coords="2992,701,3139,731"/>
+<area shape="rect" id="node5" href="$Mesquite_8hpp.html" title="Mesquite.hpp" alt="" coords="992,856,1091,885"/>
+<area shape="rect" id="node15" href="$includeLinks_2ShapeQualityMetric_8hpp.html" title="ShapeQualityMetric.hpp" alt="" coords="1069,392,1229,421"/>
+<area shape="rect" id="node33" href="$includeLinks_2Vector3D_8hpp.html" title="Vector3D.hpp" alt="" coords="411,779,512,808"/>
+<area shape="rect" id="node40" href="$includeLinks_2Matrix3D_8hpp.html" title="Matrix3D.hpp" alt="" coords="733,701,832,731"/>
+<area shape="rect" id="node101" href="$includeLinks_2Exponent_8hpp.html" title="Exponent.hpp" alt="" coords="164,469,265,499"/>
+<area shape="rect" id="node18" href="$includeLinks_2MsqError_8hpp.html" title="MsqError.hpp" alt="" coords="2616,701,2715,731"/>
+<area shape="rect" id="node27" href="$includeLinks_2QualityMetric_8hpp.html" title="QualityMetric.hpp" alt="" coords="485,624,608,653"/>
+<area shape="rect" id="node50" href="$includeLinks_2PatchData_8hpp.html" title="PatchData.hpp" alt="" coords="1193,469,1303,499"/>
+<area shape="rect" id="node53" href="$includeLinks_2MsqVertex_8hpp.html" title="MsqVertex.hpp" alt="" coords="549,701,659,731"/>
+<area shape="rect" id="node57" href="$includeLinks_2MsqMeshEntity_8hpp.html" title="MsqMeshEntity.hpp" alt="" coords="728,547,867,576"/>
+<area shape="rect" id="node68" href="$MeshInterface_8hpp.html" title="This file contains the Mesquite mesh interface. Many users will want to implement a concrete class de..." alt="" coords="1565,624,1696,653"/>
+<area shape="rect" id="node76" href="$includeLinks_2PatchDataMem_8hpp.html" title="PatchDataMem.hpp" alt="" coords="1232,547,1371,576"/>
+<area shape="rect" id="node82" href="$includeLinks_2CornerTag_8hpp.html" title="CornerTag.hpp" alt="" coords="1616,547,1723,576"/>
+<area shape="rect" id="node89" href="$includeLinks_2TargetMatrix_8hpp.html" title="TargetMatrix.hpp" alt="" coords="885,624,1005,653"/>
+<area shape="rect" id="node61" href="$includeLinks_2TopologyInfo_8hpp.html" title="TopologyInfo.hpp" alt="" coords="856,701,979,731"/>
+<area shape="rect" id="node107" href="$includeLinks_2VertexMover_8hpp.html" title="VertexMover.hpp" alt="" coords="1852,160,1972,189"/>
+<area shape="rect" id="node151" href="$includeLinks_2MsqFreeVertexIndexIterator_8hpp.html" title="MsqFreeVertexIndexIterator.hpp" alt="" coords="837,392,1045,421"/>
+<area shape="rect" id="node110" href="$includeLinks_2QualityImprover_8hpp.html" title="QualityImprover.hpp" alt="" coords="1957,237,2096,267"/>
+<area shape="rect" id="node145" href="$includeLinks_2ObjectiveFunction_8hpp.html" title="ObjectiveFunction.hpp" alt="" coords="2819,624,2971,653"/>
+<area shape="rect" id="node118" href="$includeLinks_2PatchDataUser_8hpp.html" title="PatchDataUser.hpp" alt="" coords="2203,392,2339,421"/>
+<area shape="rect" id="node127" href="$includeLinks_2MsqTimer_8hpp.html" title="MsqTimer.hpp" alt="" coords="2297,469,2401,499"/>
+<area shape="rect" id="node130" href="$includeLinks_2MsqDebug_8hpp.html" title="MsqDebug.hpp" alt="" coords="2203,547,2312,576"/>
+</map>

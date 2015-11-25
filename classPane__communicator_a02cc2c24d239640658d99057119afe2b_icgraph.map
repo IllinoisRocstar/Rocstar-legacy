@@ -1,0 +1,5 @@
+<map id="begin_update" name="begin_update">
+<area shape="rect" id="node3" href="$classPane__communicator.html#a21e5d513785ef39aea81604feea7e3a8" title="Initiates updating ghost nodes by calling MPI_Isend and MPI_Irecv. " alt="" coords="156,5,295,51"/>
+<area shape="rect" id="node5" href="$classPane__communicator.html#a8da08a1bb0c92f6b64e2382b858956cf" title="Initiates updating ghost nodes by calling MPI_Isend and MPI_Irecv. " alt="" coords="156,74,295,121"/>
+<area shape="rect" id="node7" href="$classPane__communicator.html#a9cc6199c6a8503b462ca4be75c00524a" title="Initiates updating shared nodes by calling MPI_Isend and MPI_Irecv. " alt="" coords="153,143,297,190"/>
+</map>

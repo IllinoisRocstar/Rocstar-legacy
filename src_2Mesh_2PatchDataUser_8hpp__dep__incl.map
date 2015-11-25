@@ -1,0 +1,51 @@
+<map id="PatchDataUser.hpp" name="PatchDataUser.hpp">
+<area shape="rect" id="node3" href="$Mesquite__all__headers_8hpp.html" title="This file contains include directives for all mesquite headers. Including this header will maximize d..." alt="" coords="661,469,835,499"/>
+<area shape="rect" id="node5" href="$src_2Control_2TerminationCriterion_8hpp.html" title="TerminationCriterion.hpp" alt="" coords="501,83,664,112"/>
+<area shape="rect" id="node20" href="$src_2QualityImprover_2QualityImprover_8hpp.html" title="QualityImprover.hpp" alt="" coords="801,160,940,189"/>
+<area shape="rect" id="node61" href="$src_2Mesh_2MeshSet_8hpp.html" title="MeshSet.hpp" alt="" coords="3695,160,3793,189"/>
+<area shape="rect" id="node80" href="$TargetCalculator_2LVQDTargetCalculator_8cpp.html" title="LVQDTargetCalculator.cpp" alt="" coords="5592,237,5771,267"/>
+<area shape="rect" id="node82" href="$TargetCalculator_2TargetCalculator_8cpp.html" title="TargetCalculator.cpp" alt="" coords="4411,237,4552,267"/>
+<area shape="rect" id="node84" href="$TargetCalculator_2WTargetCalculator_8cpp.html" title="WTargetCalculator.cpp" alt="" coords="4843,237,4997,267"/>
+<area shape="rect" id="node89" href="$inks_2LVQDTargetCalculator_8cpp.html" title="LVQDTargetCalculator.cpp" alt="" coords="5795,237,5973,267"/>
+<area shape="rect" id="node102" href="$inks_2TargetCalculator_8cpp.html" title="TargetCalculator.cpp" alt="" coords="5200,237,5341,267"/>
+<area shape="rect" id="node106" href="$inks_2WTargetCalculator_8cpp.html" title="WTargetCalculator.cpp" alt="" coords="5021,237,5176,267"/>
+<area shape="rect" id="node109" href="$src_2QualityAssessor_2QualityAssessor_8hpp.html" title="QualityAssessor.hpp" alt="" coords="1831,160,1972,189"/>
+<area shape="rect" id="node120" href="$src_2QualityImprover_2VertexMover_2MeanMidNodeMover_8hpp.html" title="MeanMidNodeMover.hpp" alt="" coords="1487,160,1652,189"/>
+<area shape="rect" id="node128" href="$src_2TargetCalculator_2TargetCalculator_8hpp.html" title="TargetCalculator.hpp" alt="" coords="4609,83,4751,112"/>
+<area shape="rect" id="node8" href="$Control_2TerminationCriterion_8cpp.html" title="TerminationCriterion.cpp" alt="" coords="2752,237,2915,267"/>
+<area shape="rect" id="node10" href="$src_2Control_2Wrappers_2LaplacianIQ_8hpp.html" title="LaplacianIQ.hpp" alt="" coords="144,237,259,267"/>
+<area shape="rect" id="node13" href="$src_2Control_2Wrappers_2ShapeImprovementWrapper_8hpp.html" title="ShapeImprovementWrapper.hpp" alt="" coords="1760,392,1968,421"/>
+<area shape="rect" id="node42" href="$MesqPane_8h.html" title="MesqPane.h. " alt="" coords="2011,392,2104,421"/>
+<area shape="rect" id="node58" href="$inks_2TerminationCriterion_8cpp.html" title="TerminationCriterion.cpp" alt="" coords="2565,237,2728,267"/>
+<area shape="rect" id="node16" href="$Control_2Wrappers_2ShapeImprovementWrapper_8cpp.html" title="ShapeImprovementWrapper.cpp" alt="" coords="2329,469,2537,499"/>
+<area shape="rect" id="node18" href="$inks_2ShapeImprovementWrapper_8cpp.html" title="ShapeImprovementWrapper.cpp" alt="" coords="3700,469,3908,499"/>
+<area shape="rect" id="node23" href="$Control_2InstructionQueue_8cpp.html" title="InstructionQueue.cpp" alt="" coords="1496,237,1643,267"/>
+<area shape="rect" id="node25" href="$Mesh_2MeshSet_8cpp.html" title="MeshSet.cpp" alt="" coords="1939,237,2037,267"/>
+<area shape="rect" id="node27" href="$src_2Misc_2MeshTransform_8hpp.html" title="MeshTransform.hpp" alt="" coords="955,237,1093,267"/>
+<area shape="rect" id="node33" href="$QualityImprover_2QualityImprover_8cpp.html" title="QualityImprover.cpp" alt="" coords="384,237,523,267"/>
+<area shape="rect" id="node35" href="$src_2QualityImprover_2TopologyModifier_2TopologyModifier_8hpp.html" title="TopologyModifier.hpp" alt="" coords="303,392,449,421"/>
+<area shape="rect" id="node38" href="$src_2QualityImprover_2VertexMover_2ConjugateGradient_2ConjugateGradient_8hpp.html" title="ConjugateGradient.hpp" alt="" coords="811,315,965,344"/>
+<area shape="rect" id="node44" href="$src_2QualityImprover_2VertexMover_2VertexMover_8hpp.html" title="VertexMover.hpp" alt="" coords="811,237,931,267"/>
+<area shape="rect" id="node52" href="$inks_2InstructionQueue_8cpp.html" title="InstructionQueue.cpp" alt="" coords="1667,237,1813,267"/>
+<area shape="rect" id="node54" href="$inks_2MeshSet_8cpp.html" title="MeshSet.cpp" alt="" coords="2112,237,2211,267"/>
+<area shape="rect" id="node56" href="$inks_2QualityImprover_8cpp.html" title="QualityImprover.cpp" alt="" coords="547,237,685,267"/>
+<area shape="rect" id="node29" href="$Misc_2MeshTransform_8cpp.html" title="MeshTransform.cpp" alt="" coords="1725,315,1864,344"/>
+<area shape="rect" id="node31" href="$inks_2MeshTransform_8cpp.html" title="MeshTransform.cpp" alt="" coords="2495,315,2633,344"/>
+<area shape="rect" id="node48" href="$QualityImprover_2VertexMover_2VertexMover_8cpp.html" title="VertexMover.cpp" alt="" coords="1432,315,1552,344"/>
+<area shape="rect" id="node50" href="$inks_2VertexMover_8cpp.html" title="VertexMover.cpp" alt="" coords="1089,315,1209,344"/>
+<area shape="rect" id="node67" href="$Mesh_2CornerTag_8cpp.html" title="CornerTag.cpp" alt="" coords="4128,237,4235,267"/>
+<area shape="rect" id="node70" href="$Mesh_2MsqMeshEntity_8cpp.html" title="MsqMeshEntity.cpp" alt="" coords="3141,237,3280,267"/>
+<area shape="rect" id="node72" href="$Mesh_2PatchData_8cpp.html" title="PatchData.cpp" alt="" coords="4576,237,4685,267"/>
+<area shape="rect" id="node75" href="$QualityAssessor_2QualityAssessor_8cpp.html" title="QualityAssessor.cpp" alt="" coords="2400,237,2541,267"/>
+<area shape="rect" id="node77" href="$QualityImprover_2VertexMover_2NonSmoothSteepestDescent_2NonSmoothSteepestDescent_8cpp.html" title="NonSmoothSteepestDescent.cpp" alt="" coords="3304,237,3520,267"/>
+<area shape="rect" id="node86" href="$inks_2CornerTag_8cpp.html" title="CornerTag.cpp" alt="" coords="3544,237,3651,267"/>
+<area shape="rect" id="node93" href="$inks_2MsqMeshEntity_8cpp.html" title="MsqMeshEntity.cpp" alt="" coords="3675,237,3813,267"/>
+<area shape="rect" id="node95" href="$inks_2NonSmoothSteepestDescent_8cpp.html" title="NonSmoothSteepestDescent.cpp" alt="" coords="3837,237,4053,267"/>
+<area shape="rect" id="node97" href="$inks_2PatchData_8cpp.html" title="PatchData.cpp" alt="" coords="4709,237,4819,267"/>
+<area shape="rect" id="node99" href="$inks_2QualityAssessor_8cpp.html" title="QualityAssessor.cpp" alt="" coords="2235,237,2376,267"/>
+<area shape="rect" id="node123" href="$QualityImprover_2VertexMover_2MeanMidNodeMover_8cpp.html" title="MeanMidNodeMover.cpp" alt="" coords="1307,237,1472,267"/>
+<area shape="rect" id="node126" href="$inks_2MeanMidNodeMover_8cpp.html" title="MeanMidNodeMover.cpp" alt="" coords="1117,237,1283,267"/>
+<area shape="rect" id="node132" href="$src_2TargetCalculator_2ConcreteTargetCalculators_8hpp.html" title="ConcreteTargetCalculators.hpp" alt="" coords="5365,237,5568,267"/>
+<area shape="rect" id="node134" href="$src_2TargetCalculator_2LVQDTargetCalculator_8hpp.html" title="LVQDTargetCalculator.hpp" alt="" coords="5399,160,5577,189"/>
+<area shape="rect" id="node139" href="$src_2TargetCalculator_2WTargetCalculator_8hpp.html" title="WTargetCalculator.hpp" alt="" coords="4859,160,5013,189"/>
+</map>

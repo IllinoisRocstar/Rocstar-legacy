@@ -1,0 +1,5 @@
+<map id="obtain_directions" name="obtain_directions">
+<area shape="rect" id="node3" href="$classFaceOffset__3.html#a619d9eb028c07f26fd5fc23d2a3bc109" title="Compute mean normals. " alt="" coords="175,5,308,35"/>
+<area shape="rect" id="node7" href="$classFaceOffset__3.html#aeb4f96b70a0dc62dc10e186483d9180f" title="Decompose propagation directions based on constraints. " alt="" coords="176,58,307,105"/>
+<area shape="rect" id="node5" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="359,36,460,65"/>
+</map>

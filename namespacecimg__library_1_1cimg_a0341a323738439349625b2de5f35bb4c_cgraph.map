@@ -1,0 +1,8 @@
+<map id="grand" name="grand">
+<area shape="rect" id="node3" href="$namespacecimg__library.html#aca249598083f7870a45cbfdf055e61f7" title="cimg_library::log" alt="" coords="109,17,227,47"/>
+<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#af31db729637ea4dad61e49e5729839c4" title="Return a random variable between [0,1] with respect to an uniform distribution. " alt="" coords="145,75,191,104"/>
+<area shape="rect" id="node14" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="147,128,189,157"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a3d2943c90d7b5faaa71c758a0d153560" title="cimg_library::CImg\l::get_log" alt="" coords="276,5,407,51"/>
+<area shape="rect" id="node9" href="$namespacecimg__library_1_1cimg.html#a84a2f7a220ba6a54893f695b3bcc36e2" title="srand" alt="" coords="315,75,368,104"/>
+<area shape="rect" id="node11" href="$namespacecimg__library_1_1cimg.html#af883131bbc64e996d212114cc2b2b21a" title="Get the value of a system timer with a millisecond precision. " alt="" coords="457,75,503,104"/>
+</map>

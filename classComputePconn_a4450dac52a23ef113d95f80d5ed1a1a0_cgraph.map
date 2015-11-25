@@ -1,0 +1,14 @@
+<map id="init" name="init">
+<area shape="rect" id="node3" href="$roccom__c_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="332,9,508,39"/>
+<area shape="rect" id="node5" href="$classAction.html#af0750c1b2d7d6be0edf70b32d082ce44" title="Action::get_attribute\l_handle" alt="" coords="119,169,257,215"/>
+<area shape="rect" id="node9" href="$classAgent.html#aa1c4659992db640d62cff1fea2b9c6b8" title="Agent::get_communicator" alt="" coords="103,239,273,268"/>
+<area shape="rect" id="node11" href="$classAgent.html#a5d3576b9180e99959235980d580a4090" title="Agent::get_coupling" alt="" coords="120,292,256,321"/>
+<area shape="rect" id="node13" href="$classCoupling.html#a74d1138ae9a6c79d20343b54e30b051e" title="Coupling::get_rocmancontrol\l_param" alt="" coords="95,345,281,391"/>
+<area shape="rect" id="node15" href="$basic__actions_8C.html#adaaa41969af981669aa30e0484ef5ee1" title="load_rocmap" alt="" coords="140,63,236,92"/>
+<area shape="rect" id="node19" href="$basic__actions_8C.html#a73c88495d462430d2d58f95d3a2a7fec" title="load_rocprop" alt="" coords="140,116,236,145"/>
+<area shape="rect" id="node7" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="332,223,508,252"/>
+<area shape="rect" id="node17" href="$roccom__c_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="333,63,507,92"/>
+<area shape="rect" id="node21" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="353,116,487,145"/>
+<area shape="rect" id="node27" href="$roccom__c_09_09_8h.html#a475ddf97ad5873782ae1481718f2274b" title="COM_set_profiling_barrier" alt="" coords="333,169,507,199"/>
+<area shape="rect" id="node23" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="557,143,685,172"/>
+</map>

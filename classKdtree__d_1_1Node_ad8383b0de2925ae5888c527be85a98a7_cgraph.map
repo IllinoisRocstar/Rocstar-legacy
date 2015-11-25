@@ -1,0 +1,16 @@
+<map id="search" name="search">
+<area shape="rect" id="node3" href="$classKdtree__d_1_1Box.html#a0f0c777b9e64e16795f7c3424a562cb2" title="Kdtree_d::Box::is_in" alt="" coords="524,13,663,43"/>
+<area shape="rect" id="node11" href="$classKdtree__d_1_1Node.html#a6f8158e237172bcd4d1c57f4cca9bc0f" title="is_point" alt="" coords="560,67,627,96"/>
+<area shape="rect" id="node13" href="$classKdtree__d_1_1Node.html#a93fa418c712b556a3b535ec97a7e3b1e" title="search_recursive" alt="" coords="116,148,236,177"/>
+<area shape="rect" id="node5" href="$classKdtree__d_1_1ExtPoint.html#ac480fbcdad732866e301f103e0745c59" title="Kdtree_d::ExtPoint\l::compare" alt="" coords="721,110,852,157"/>
+<area shape="rect" id="node9" href="$classKdtree__d_1_1ExtPoint.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Kdtree_d::ExtPoint\l::dimension" alt="" coords="721,5,852,51"/>
+<area shape="rect" id="node7" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="903,119,1017,148"/>
+<area shape="rect" id="node15" href="$classKdtree__d_1_1Node_1_1Plane.html#af9cd48154225984702e776dd1d3e1feb" title="Kdtree_d::Node::Plane\l::split" alt="" coords="299,201,453,247"/>
+<area shape="rect" id="node23" href="$classKdtree__d_1_1Node.html#a45fe92e6de851a077b55e05a9179ae4d" title="copy_subtree_points" alt="" coords="305,148,447,177"/>
+<area shape="rect" id="node28" href="$classKdtree__d_1_1Box.html#aeb631de13bb2c36b7d6430d8b667d2fc" title="Kdtree_d::Box::is_intersect\l_in_dim_closed" alt="" coords="287,299,465,346"/>
+<area shape="rect" id="node35" href="$classKdtree__d_1_1Node_1_1Plane.html#abf70e064f8bfd8931cec4a53792adbb2" title="Kdtree_d::Node::Plane\l::get_coord" alt="" coords="299,369,453,415"/>
+<area shape="rect" id="node17" href="$classKdtree__d_1_1Box.html#a5026ac0d55dd42a1e71206a5b992a1d1" title="Kdtree_d::Box::get\l_vertex" alt="" coords="528,170,659,217"/>
+<area shape="rect" id="node20" href="$classKdtree__d_1_1ExtPoint.html#a4102a8d539aefdc11699d01b14c2ae37" title="Kdtree_d::ExtPoint\l::set_coord" alt="" coords="528,239,659,286"/>
+<area shape="rect" id="node31" href="$classKdtree__d_1_1Box.html#a799cf81c9f5f0e524f3c94b4f5feb514" title="Kdtree_d::Box::get_left" alt="" coords="516,360,671,389"/>
+<area shape="rect" id="node33" href="$classKdtree__d_1_1Box.html#a2422ad2f7bb00e8138e2335f4cc8e568" title="Kdtree_d::Box::get\l_right" alt="" coords="528,413,659,459"/>
+</map>

@@ -1,0 +1,51 @@
+<map id="index_offset" name="index_offset">
+<area shape="rect" id="node3" href="$classPane.html#a62d5a7a3e02da8c334472006166d67ea" title="Obtain the connectivity table containing the element with the given ID. " alt="" coords="179,1124,309,1153"/>
+<area shape="rect" id="node5" href="$classElement__node__enumerator.html#a041249f802c5bf4c2deae666610e03c4" title="Go to the next element within the connectivity tables of a pane. " alt="" coords="401,895,577,942"/>
+<area shape="rect" id="node62" href="$classElement__node__enumerator__uns.html#a041249f802c5bf4c2deae666610e03c4" title="Element_node_enumerator\l_uns::next" alt="" coords="401,965,577,1011"/>
+<area shape="rect" id="node78" href="$classElement__node__enumerator.html#a8764c4525402e560df63870efc939b06" title="Constructor for an element in a structured or an unstructured mesh. " alt="" coords="152,1177,336,1223"/>
+<area shape="rect" id="node80" href="$classElement__node__enumerator.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Get the local id of the element within the pane. " alt="" coords="147,1744,341,1773"/>
+<area shape="rect" id="node64" href="$classPane.html#afc308814449cf41bd7df806c75437a7c" title="Pane::connectivity" alt="" coords="424,1195,555,1224"/>
+<area shape="rect" id="node66" href="$classWindow.html#aa8f66f7b20390fc97546821a415a566e" title="Set the sizes of an attribute for a specific pane. " alt="" coords="427,1248,552,1277"/>
+<area shape="rect" id="node68" href="$classWindow.html#ab3310ec8cb400c282411ca3e9a07bd1c" title="Get the sizes of an attribute for a specific pane. " alt="" coords="427,1301,552,1331"/>
+<area shape="rect" id="node70" href="$classWindow.html#ae306669676f4695acebc9bc78e8a980b" title="Get the status of an attribute or pane. " alt="" coords="420,1355,559,1384"/>
+<area shape="rect" id="node72" href="$classWindow.html#ac974e82928a16e4626b034ad33f8041c" title="Get the parent name of an attribute and load into name. " alt="" coords="420,1035,559,1064"/>
+<area shape="rect" id="node74" href="$classWindow.html#a2f4a3210f38279b82767ebcd51d1342c" title="Get the address associated with an attribute for a specific pane. " alt="" coords="424,1088,555,1117"/>
+<area shape="rect" id="node76" href="$classWindow.html#a67b93fcb88c4ddd4e86d31b5f4aac503" title="Copy an attribute on a specific pane into a given array. " alt="" coords="419,1141,560,1171"/>
+<area shape="rect" id="node7" href="$classFaceOffset__3.html#a932f06459b53d1207fdbf1d78a4a09c6" title="FaceOffset_3::compute\l_anisotropic_vertex_centers" alt="" coords="656,1413,840,1459"/>
+<area shape="rect" id="node9" href="$classRocsurf.html#a75fbdc31631afdd7fadf0f5a8ae6b963" title="Computes the volume bounded between two different locations of each face of the surface mesh of windo..." alt="" coords="657,5,839,51"/>
+<area shape="rect" id="node11" href="$classRocsurf.html#a9184eb38a332f27f061237455dcdf6bd" title="Computes the swept volume by a given displacement of each face of the surface mesh of window volumes&#45;..." alt="" coords="664,74,832,121"/>
+<area shape="rect" id="node13" href="$classRocsurf.html#a105ada0c2358cfcc9aa226a62ad573c0" title="Computes the signed volume of a body. " alt="" coords="663,143,833,190"/>
+<area shape="rect" id="node15" href="$classWindow__manifold__2.html#a2de69b1dfeafce08ec7b515710fb76c4" title="Window_manifold_2::\lcompute_mcn" alt="" coords="675,213,821,259"/>
+<area shape="rect" id="node17" href="$classRocsurf.html#a05963147113fea919a6ba70630b364a3" title="Computes the area of each face of the surface mesh of window areas&#45;&gt;window and saves the results in a..." alt="" coords="659,282,837,329"/>
+<area shape="rect" id="node19" href="$classRocsurf.html#ad7f516b084625440ce8b38db72c0a1a3" title="Integrate a function given by an elemental attribute over surface z is an array of size equal to numb..." alt="" coords="685,352,811,381"/>
+<area shape="rect" id="node21" href="$classRocsurf.html#acb8b27b7f15d698939c53fc13a1f3389" title="Computes elemental normals of a given window. " alt="" coords="659,405,837,451"/>
+<area shape="rect" id="node23" href="$classFaceOffset__3.html#ad57ad28e5d35ff4b3a026aa4cbd8c946" title="FaceOffset_3::distribute\l_volume_e2n" alt="" coords="667,474,829,521"/>
+<area shape="rect" id="node25" href="$classdata__declarations.html#acf6d0239207f9be2c42c9534d73f3830" title="data_declarations::\llength" alt="" coords="683,543,813,590"/>
+<area shape="rect" id="node27" href="$classFaceOffset__3.html#a3fb81b9009e23436007ccd5c6f0931e9" title="Filter out isolated ridge vertices and identify ridge edges. " alt="" coords="907,643,1083,690"/>
+<area shape="rect" id="node29" href="$classFaceOffset__3.html#a3853efe93066b5be4a4000c76ed03f4b" title="FaceOffset_3::insert\l_boundary_edges" alt="" coords="677,613,819,659"/>
+<area shape="rect" id="node32" href="$classFaceOffset__3.html#a16c27dfdaf18ec8ac3ccd60bdf84e313" title="Reduce time step based on stability limit, and rescale displacements by the reduced time step and dif..." alt="" coords="673,733,823,779"/>
+<area shape="rect" id="node34" href="$classWindow__manifold__2.html#a7d0676e1f597d84fe53a8abf7d3a6da8" title="Obtain shortest edge length of incident edges of each nodes. " alt="" coords="639,802,857,849"/>
+<area shape="rect" id="node36" href="$classWindow__manifold__2.html#aa59e69e5f33561d2364c19e37d6414ab" title="Obtain shortest edge length of incident edges of each element. " alt="" coords="659,872,837,936"/>
+<area shape="rect" id="node38" href="$classWindow__manifold__2.html#a2eebb41f1831723225ffd524188bcb54" title="Convert element values to nodal values using weighted averaging. " alt="" coords="675,1690,821,1737"/>
+<area shape="rect" id="node40" href="$classFaceOffset__3.html#a495fc0cb53571fbaed964fe1608dce61" title="Redistribute smooth vertices by NuLaplacian smoothing. " alt="" coords="661,959,835,1006"/>
+<area shape="rect" id="node42" href="$classPane__boundary.html#a72c5c71114623b7045e74838753e8781" title="Determine the border nodes for a 3&#45;D mesh. " alt="" coords="660,1029,836,1075"/>
+<area shape="rect" id="node44" href="$classPropagation__3.html#a521659f6a2ab3aa7d5b64ea41a1798fa" title="Convert facial constraints to nodal constraints. " alt="" coords="671,1098,825,1145"/>
+<area shape="rect" id="node46" href="$classPropagation__3.html#a15d00c9e496bf270f69300d645c7abfb" title="Convert facial or panel constraints to nodal constraints. " alt="" coords="663,1167,833,1214"/>
+<area shape="rect" id="node48" href="$classPropagation__3.html#a96878798f4dd364ff3147f80edf628da" title="Propagation_3::bound\l_facial_speed" alt="" coords="675,1237,821,1283"/>
+<area shape="rect" id="node50" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="669,1482,827,1529"/>
+<area shape="rect" id="node52" href="$classRFC__Pane__base.html#a2f9e1618fef477f04ffe8d1560d03228" title="Compute the natural coordinates. " alt="" coords="667,1759,829,1806"/>
+<area shape="rect" id="node54" href="$classrflu__modoctree.html#a612dd18696d96db9cb4da22cfe3f88bd" title="rflu_modoctree::octree" alt="" coords="672,1307,824,1336"/>
+<area shape="rect" id="node56" href="$classrflu__modrepair3d.html#ac8ae35693e9f9bed43b246f2bc5a8d34" title="rflu_modrepair3d::octfil" alt="" coords="671,1360,825,1389"/>
+<area shape="rect" id="node58" href="$classSimple__manifold__2.html#ab192883c34a029fc51443dceb6b5a164" title="Determine the opposite halfedges of each halfedge, and identify border halfedge. " alt="" coords="649,1551,847,1598"/>
+<area shape="rect" id="node60" href="$classSimple__manifold__2.html#a2091a9ef9a16dd71316e13e5e52d01be" title="Determine an incident halfedge for each node. " alt="" coords="651,1621,845,1667"/>
+<area shape="rect" id="node82" href="$classElement__vectors__k__const.html#a012daf687ea85e9da2bc2d064de92aa6" title="initialize the accessor with a pointer and a specific stride. " alt="" coords="391,1663,588,1692"/>
+<area shape="rect" id="node85" href="$classFaceOffset__3.html#ac6379f4a2faa5ed80e6acc4d28e9b110" title="FaceOffset_3::obtain\l_face_offset" alt="" coords="417,1491,561,1538"/>
+<area shape="rect" id="node88" href="$classRFC__Pane__base.html#af97a16d7f0c1b7e850f5981830dcd2d1" title="Take a subnode id and an element, return the natrual coordinates within the element. " alt="" coords="415,1766,564,1813"/>
+<area shape="rect" id="node91" href="$classRFC__Pane__base.html#a225bb34cd77c43e8a10e93c2d282b293" title="RFC_Pane_base::get\l_host_element_of_subnode" alt="" coords="399,1835,580,1882"/>
+<area shape="rect" id="node93" href="$classRFC__Pane__base.html#a7e2ad5d047afd4b30737ba86835b9c31" title="RFC_Pane_base::get\l_host_element_of_subface" alt="" coords="400,1905,579,1951"/>
+<area shape="rect" id="node96" href="$classTransfer__base.html#a399e6c7a6d486906ab663174f08241c1" title="template function for transfering from nodes/faces to faces. " alt="" coords="661,1937,835,1967"/>
+<area shape="rect" id="node98" href="$classTransfer__base.html#a288f6bb6f766b4feb8b203aadf522ff2" title="Initialize load vector and the diagonal of the mass matrix. " alt="" coords="683,2015,813,2062"/>
+<area shape="rect" id="node102" href="$classTransfer__base.html#a3bbc901438337242b8b490aead1767cd" title="Transfer_base::integrate\l_subface" alt="" coords="408,2075,571,2122"/>
+<area shape="rect" id="node105" href="$classTransfer__base.html#a0de1d5cce4fd238c7666794b315d436a" title="Computes the element&#45;wise load vector, and also computes mass matrix if diag has a nonnegative ID..." alt="" coords="408,2145,571,2191"/>
+<area shape="rect" id="node109" href="$classTransfer__base.html#a496c8e091fb7f527ac71bbb8d256b021" title="Transfer_base::make\l_field" alt="" coords="417,1422,561,1469"/>
+</map>

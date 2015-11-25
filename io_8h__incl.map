@@ -1,0 +1,10 @@
+<map id="io.h" name="io.h">
+<area shape="rect" id="node5" href="$io__tags_8h.html" title="CGAL/IO/io_tags.h" alt="" coords="101,83,235,112"/>
+<area shape="rect" id="node7" href="$Color_8h.html" title="CGAL/IO/Color.h" alt="" coords="259,83,381,112"/>
+<area shape="rect" id="node15" href="$Object_8h.html" title="CGAL/Object.h" alt="" coords="409,83,519,112"/>
+<area shape="rect" id="node9" href="$config_8h.html" title="CGAL/config.h" alt="" coords="261,160,368,189"/>
+<area shape="rect" id="node11" href="$compiler__config_8h.html" title="CGAL/compiler_config.h" alt="" coords="39,237,201,267"/>
+<area shape="rect" id="node13" href="$workaround__casts_8h.html" title="CGAL/workaround_casts.h" alt="" coords="225,237,404,267"/>
+<area shape="rect" id="node17" href="$Handle__for_8h.html" title="CGAL/Handle_for.h" alt="" coords="405,160,541,189"/>
+<area shape="rect" id="node19" href="$memory_8h.html" title="CGAL/memory.h" alt="" coords="428,237,548,267"/>
+</map>

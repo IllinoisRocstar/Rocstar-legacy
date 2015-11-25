@@ -1,0 +1,5 @@
+<map id="load_analyze" name="load_analyze">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a171911b3cc4caeb64577ba093d8fc14d" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_load\l_analyze" alt="" coords="167,5,297,69"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a138dcc5db93d511d224d88405a0041ce" title="Load an image from a file. " alt="" coords="167,93,297,139"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a38df90ee1c431b684fcb5ed8248464b1" title="Load a DICOM image file, using XMedcon&#39;s external tool &#39;medcon&#39;. " alt="" coords="152,163,312,227"/>
+</map>

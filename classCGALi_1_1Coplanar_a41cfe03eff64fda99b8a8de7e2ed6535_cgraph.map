@@ -1,0 +1,11 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node3" href="$predicates__on__pointsS3_8h.html#ad63cb7acea75f12e7c713f69d48a84ea" title="coplanar" alt="" coords="132,112,201,141"/>
+<area shape="rect" id="node5" href="$predicates__on__pointsS3_8h.html#a87041305cd5b162b6c0a1830bf8f31da" title="orientation" alt="" coords="251,112,333,141"/>
+<area shape="rect" id="node7" href="$predicates_2kernel__ftC3_8h.html#a3617655c82c6e5b4f3a286e3d6c9b3f6" title="orientationC3" alt="" coords="381,32,480,61"/>
+<area shape="rect" id="node15" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="389,85,472,115"/>
+<area shape="rect" id="node17" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="389,139,472,168"/>
+<area shape="rect" id="node19" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="389,192,472,221"/>
+<area shape="rect" id="node9" href="$sign__of__determinant_8h.html#a063681dd64daa131f0fed8267cfbe968" title="sign_of_determinant3x3" alt="" coords="528,32,688,61"/>
+<area shape="rect" id="node11" href="$determinant_8h.html#a32ff8e72a47ae6e0aba9b51b37080bcb" title="det3x3_by_formula" alt="" coords="737,5,868,35"/>
+<area shape="rect" id="node13" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="780,59,825,88"/>
+</map>

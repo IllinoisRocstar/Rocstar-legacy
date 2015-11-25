@@ -1,0 +1,51 @@
+<map id="get_next_real_edge_interior" name="get_next_real_edge_interior">
+<area shape="rect" id="node3" href="$classSimple__manifold__2.html#a5526ffd6e536b2c699cd80d42c05d534" title="Get the ID of an incident real edge within the pane of a given node The incident edge may encode an i..." alt="" coords="191,1604,356,1633"/>
+<area shape="rect" id="node5" href="$classSimple__manifold__2.html#a34afa4fb2467f7b53bfb153b728f08e0" title="Get the ID of the next real edge of the element or along the boundary. " alt="" coords="207,1657,340,1687"/>
+<area shape="rect" id="node109" href="$classSimple__manifold__2.html#ab2686d48e0f5957e3414e5e474803831" title="Get the ID of the previous real edge of the element or along the boundary. " alt="" coords="413,1716,547,1745"/>
+<area shape="rect" id="node7" href="$classPane__manifold__2.html#ace7046cd7e020bb965f62ca3ac757e44" title="Obtain the next edge in a given access mode. " alt="" coords="407,1646,553,1693"/>
+<area shape="rect" id="node9" href="$classHalfedge.html#a04f82933d382b0e6c89b66c5e0622dd6" title="Get the next halfedge of its owner element. " alt="" coords="603,831,709,860"/>
+<area shape="rect" id="node11" href="$classPolyhedron__incremental__builder__3.html#a2c87480f89222776f7cbb1bfeca98e29" title="Polyhedron_incremental\l_builder_3::add_vertex\l_to_facet" alt="" coords="1013,5,1173,69"/>
+<area shape="rect" id="node16" href="$classRocsurf.html#ae33ff8b1e6981f1e9a7c7e9cca3a51c5" title="Computes edge lengths of a given window. " alt="" coords="773,219,933,266"/>
+<area shape="rect" id="node32" href="$classHalfedge__data__structure__decorator.html#a85628cd4f6e02c713a92300bfdc9fbb2" title="Halfedge_data_structure\l_decorator::erase_connected\l_component" alt="" coords="999,309,1188,373"/>
+<area shape="rect" id="node34" href="$classHalfedge__data__structure__decorator.html#a54fb9412224a17a102a93ed275fcecb3" title="Halfedge_data_structure\l_decorator::erase_connected\l_component_face_cycle" alt="" coords="759,289,948,353"/>
+<area shape="rect" id="node37" href="$classHalfedge__data__structure__decorator.html#ac89f65b400729653ed4719b11ad2d278" title="Halfedge_data_structure\l_decorator::erase_facet" alt="" coords="1012,414,1175,461"/>
+<area shape="rect" id="node39" href="$classHalfedge.html#a8163e3cbeb05f5910a83a87dc062c895" title="Get the average value of the nodes of the incident face of a given halfedge. " alt="" coords="773,769,933,799"/>
+<area shape="rect" id="node43" href="$classHalfedge__data__structure__decorator.html#ac736359a7df18c1e33e8a7fda8be9b74" title="Halfedge_data_structure\l_decorator::find_prev" alt="" coords="772,822,935,869"/>
+<area shape="rect" id="node45" href="$classHalfedge__data__structure__decorator.html#af88532d732ff57487f3d404607afd736" title="Halfedge_data_structure\l_decorator::find_prev\l_around_vertex" alt="" coords="772,892,935,956"/>
+<area shape="rect" id="node47" href="$classHalfedge__data__structure__decorator.html#aa4cf771809bb8f620ad9bfb890f1fd13" title="Halfedge_data_structure\l_decorator::flip_edge" alt="" coords="1012,553,1175,599"/>
+<area shape="rect" id="node49" href="$Manifold__2_8C.html#aa67b3b6a5ff8411c6120e4f48161c837" title="Get the normal of the deformed shape (coordinates plus given displacements) of the incident facet of ..." alt="" coords="780,1068,927,1097"/>
+<area shape="rect" id="node53" href="$classPane__manifold__2.html#abb54afcf7f0ee218a75b6bd78f26b163" title="Obtain the previous edge in a given access mode. " alt="" coords="780,1707,927,1754"/>
+<area shape="rect" id="node64" href="$classHalfedge__data__structure__decorator.html#addbc80b1659c1d2d530daded925164ce" title="Halfedge_data_structure\l_decorator::insert_halfedge" alt="" coords="764,1121,943,1167"/>
+<area shape="rect" id="node68" href="$classHalfedge__data__structure__decorator.html#afffe364393a08d90806065605a3631ec" title="Halfedge_data_structure\l_decorator::insert_tip" alt="" coords="772,649,935,695"/>
+<area shape="rect" id="node75" href="$classHalfedge__data__structure__decorator.html#a4acbdd996b87bb4287c5c40a4d89569f" title="Halfedge_data_structure\l_decorator::split_loop" alt="" coords="1012,779,1175,826"/>
+<area shape="rect" id="node77" href="$classHalfedge__data__structure__decorator.html#afc829f37729d999ae53972d9ee02aab8" title="Halfedge_data_structure\l_decorator::inside_out" alt="" coords="772,1329,935,1375"/>
+<area shape="rect" id="node81" href="$classHalfedge__data__structure__decorator.html#a7e526004db7136c40ff6a8708d0558c5" title="Halfedge_data_structure\l_decorator::is_valid" alt="" coords="772,1190,935,1237"/>
+<area shape="rect" id="node83" href="$classHalfedge__data__structure__decorator.html#acea850b1c2193ebbbe8839355d0fbfaf" title="Halfedge_data_structure\l_decorator::join_facet" alt="" coords="1012,483,1175,530"/>
+<area shape="rect" id="node85" href="$classHalfedge__data__structure__decorator.html#abac89554d5a5134b0252d56ef18711a0" title="Halfedge_data_structure\l_decorator::join_loop" alt="" coords="772,1259,935,1306"/>
+<area shape="rect" id="node87" href="$classHalfedge__data__structure__decorator.html#a8ef5c078e56ad37f0aa1423ed511fac0" title="Halfedge_data_structure\l_decorator::join_vertex" alt="" coords="1012,1493,1175,1539"/>
+<area shape="rect" id="node89" href="$classPolyhedron__incremental__builder__3.html#ad3a2652704bafb5cc2a95f08b370ff36" title="Polyhedron_incremental\l_builder_3::lookup_halfedge" alt="" coords="763,11,944,58"/>
+<area shape="rect" id="node92" href="$classPolyhedron__incremental__builder__3.html#ae34196e18098a7d7f2af0c4fd4394239" title="Polyhedron_incremental\l_builder_3::lookup_hole" alt="" coords="773,1449,933,1495"/>
+<area shape="rect" id="node94" href="$classHalfedge__data__structure__decorator.html#a7bf797a981dbdb056b7509421a748bf3" title="Halfedge_data_structure\l_decorator::remove_halfedge" alt="" coords="759,1587,948,1634"/>
+<area shape="rect" id="node97" href="$classHalfedge__data__structure__decorator.html#a772d3e0cf71da5180525e80fb9ff1208" title="Halfedge_data_structure\l_decorator::remove_tip" alt="" coords="772,529,935,575"/>
+<area shape="rect" id="node102" href="$classHalfedge__data__structure__decorator.html#a18e6ad57461defb28eedc1a36042d76d" title="Halfedge_data_structure\l_decorator::reorient_facet" alt="" coords="768,1518,939,1565"/>
+<area shape="rect" id="node104" href="$classHalfedge__data__structure__decorator.html#a135a5a94802f64c2c6fa990552ba872b" title="Halfedge_data_structure\l_decorator::set_facet\l_in_facet_loop" alt="" coords="772,81,935,145"/>
+<area shape="rect" id="node106" href="$classHalfedge__data__structure__decorator.html#a6c8206336442b91f73ea88cdcc013da4" title="Halfedge_data_structure\l_decorator::set_vertex\l_in_vertex_loop" alt="" coords="772,980,935,1044"/>
+<area shape="rect" id="node13" href="$classPolyhedron__incremental__builder__3.html#a74cfc3317835a62d5b15d795a44cc86c" title="Polyhedron_incremental\l_builder_3::end_facet" alt="" coords="1259,14,1419,61"/>
+<area shape="rect" id="node18" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="1044,193,1143,223"/>
+<area shape="rect" id="node30" href="$classRocprop.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Rocprop::load" alt="" coords="1043,247,1144,276"/>
+<area shape="rect" id="node20" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="1265,300,1412,329"/>
+<area shape="rect" id="node22" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="1268,87,1409,116"/>
+<area shape="rect" id="node24" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="1241,140,1436,169"/>
+<area shape="rect" id="node26" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="1264,193,1413,223"/>
+<area shape="rect" id="node28" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="1237,247,1440,276"/>
+<area shape="rect" id="node41" href="$classHalfedge.html#a1f1feb77a1a85baa1114b4b5ab7af874" title="Get the face center of the incident face of a given halfedge. " alt="" coords="1019,849,1168,879"/>
+<area shape="rect" id="node51" href="$classHalfedge.html#a55880ffb32c91532daac993962af44aa" title="Get the normal of the deformed shape (coordinates plus given displacements) of the incident facet of ..." alt="" coords="1025,1055,1161,1102"/>
+<area shape="rect" id="node55" href="$classHalfedge.html#a811d0a145b7a140c42effbd1b0869cd7" title="Get the previous halfedge of its owner element. " alt="" coords="1040,1656,1147,1685"/>
+<area shape="rect" id="node57" href="$classHalfedge__data__structure__decorator.html#ac0f05b3d6ab54cf54d60f6723910f76a" title="Halfedge_data_structure\l_decorator::find_prev" alt="" coords="1257,1569,1420,1615"/>
+<area shape="rect" id="node59" href="$classHalfedge__data__structure__decorator.html#a5ccf8dc11918bcc6def4f2a7f125df3d" title="Halfedge_data_structure\l_decorator::find_prev\l_around_vertex" alt="" coords="1257,1639,1420,1703"/>
+<area shape="rect" id="node62" href="$classHalfedge__data__structure__decorator.html#a61cd0d1c6f8b286ab48d2238dd0f2b2f" title="Halfedge_data_structure\l_decorator::get_prev" alt="" coords="1257,1726,1420,1773"/>
+<area shape="rect" id="node66" href="$classHalfedge__data__structure__decorator.html#adb469ded85f4ba4e9db39db86ecce0b1" title="Halfedge_data_structure\l_decorator::split_vertex" alt="" coords="1012,1125,1175,1171"/>
+<area shape="rect" id="node70" href="$classHalfedge__data__structure__decorator.html#a846e5a77cef139225f7adc9c336b03c3" title="Halfedge_data_structure\l_decorator::add_facet\l_to_border" alt="" coords="1012,623,1175,687"/>
+<area shape="rect" id="node73" href="$classHalfedge__data__structure__decorator.html#aca2d0496443d5a09dd089c054121ea7b" title="Halfedge_data_structure\l_decorator::split_facet" alt="" coords="1012,710,1175,757"/>
+<area shape="rect" id="node79" href="$classHalfedge__data__structure__decorator.html#a2e576018083333eef48e7b6689d121c5" title="Halfedge_data_structure\l_decorator::inside_out" alt="" coords="1012,1329,1175,1375"/>
+</map>

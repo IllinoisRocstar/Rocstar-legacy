@@ -1,0 +1,18 @@
+<map id="MsqTimer.hpp" name="MsqTimer.hpp">
+<area shape="rect" id="node3" href="$includeLinks_2TerminationCriterion_8hpp.html" title="TerminationCriterion.hpp" alt="" coords="932,83,1095,112"/>
+<area shape="rect" id="node37" href="$includeLinks_2MsqHessian_8hpp.html" title="MsqHessian.hpp" alt="" coords="1361,160,1481,189"/>
+<area shape="rect" id="node5" href="$includeLinks_2QualityImprover_8hpp.html" title="QualityImprover.hpp" alt="" coords="848,160,987,189"/>
+<area shape="rect" id="node11" href="$includeLinks_2ShapeImprovementWrapper_8hpp.html" title="ShapeImprovementWrapper.hpp" alt="" coords="1217,392,1425,421"/>
+<area shape="rect" id="node18" href="$includeLinks_2LaplacianIQ_8hpp.html" title="LaplacianIQ.hpp" alt="" coords="5,392,120,421"/>
+<area shape="rect" id="node7" href="$includeLinks_2VertexMover_8hpp.html" title="VertexMover.hpp" alt="" coords="857,237,977,267"/>
+<area shape="rect" id="node9" href="$includeLinks_2ConjugateGradient_8hpp.html" title="ConjugateGradient.hpp" alt="" coords="1129,315,1284,344"/>
+<area shape="rect" id="node31" href="$includeLinks_2MeshTransform_8hpp.html" title="MeshTransform.hpp" alt="" coords="524,237,663,267"/>
+<area shape="rect" id="node33" href="$includeLinks_2TopologyModifier_8hpp.html" title="TopologyModifier.hpp" alt="" coords="687,237,833,267"/>
+<area shape="rect" id="node13" href="$includeLinks_2FeasibleNewton_8hpp.html" title="FeasibleNewton.hpp" alt="" coords="1359,315,1500,344"/>
+<area shape="rect" id="node16" href="$includeLinks_2LaplacianSmoother_8hpp.html" title="LaplacianSmoother.hpp" alt="" coords="41,315,199,344"/>
+<area shape="rect" id="node20" href="$includeLinks_2NonSmoothSteepestDescent_8hpp.html" title="NonSmoothSteepestDescent.hpp" alt="" coords="745,315,961,344"/>
+<area shape="rect" id="node22" href="$includeLinks_2NullImprover_8hpp.html" title="NullImprover.hpp" alt="" coords="985,315,1105,344"/>
+<area shape="rect" id="node24" href="$includeLinks_2Randomize_8hpp.html" title="Randomize.hpp" alt="" coords="223,315,335,344"/>
+<area shape="rect" id="node26" href="$includeLinks_2SmartLaplacianSmoother_8hpp.html" title="SmartLaplacianSmoother.hpp" alt="" coords="359,315,551,344"/>
+<area shape="rect" id="node28" href="$includeLinks_2SteepestDescent_8hpp.html" title="SteepestDescent.hpp" alt="" coords="575,315,721,344"/>
+</map>

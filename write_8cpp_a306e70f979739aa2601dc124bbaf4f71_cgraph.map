@@ -1,0 +1,10 @@
+<map id="write_bounds" name="write_bounds">
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="152,5,280,51"/>
+<area shape="rect" id="node9" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="152,74,280,121"/>
+<area shape="rect" id="node11" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="193,144,239,173"/>
+<area shape="rect" id="node13" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="195,197,237,227"/>
+<area shape="rect" id="node15" href="$write_8cpp.html#a6427639e54bc6be349b137db8593f16f" title="vecMax" alt="" coords="183,251,249,280"/>
+<area shape="rect" id="node17" href="$write_8cpp.html#a8294551390aecce6130c40450e2847e3" title="vecMin" alt="" coords="184,304,248,333"/>
+<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="328,5,456,51"/>
+<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="504,5,632,51"/>
+</map>

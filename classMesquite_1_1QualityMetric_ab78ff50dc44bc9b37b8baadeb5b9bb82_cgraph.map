@@ -1,0 +1,8 @@
+<map id="compute_element_numerical_hessian" name="compute_element_numerical_hessian">
+<area shape="rect" id="node3" href="$vinci_8h.html#ac87401bdc0de341bb0a842d94ef86c69" title="free_vertex" alt="" coords="288,5,373,35"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1PatchData.html#ac7e854784f3106e9421332c48b7d9e94" title="Mesquite::PatchData\l::get_vertex_index" alt="" coords="259,58,403,105"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1MsqMeshEntity.html#a0c714ede2b6a39abea6314bb07d28a81" title="gets the vertices of the mesh entity " alt="" coords="244,127,417,174"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="244,197,417,243"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="476,162,633,209"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1MsqMeshEntity.html#a0b552656e1b264732e90715ccba32b1f" title="Return number of nodes in element (number of corner vertices + number of higher&#45;order nodes)..." alt="" coords="468,231,641,278"/>
+</map>

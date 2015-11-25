@@ -1,0 +1,13 @@
+<map id="closest_point" name="closest_point">
+<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a68de345feb47d7fc0d410d65ff68098e" title="Adjust the position of the specified vertex so that it lies on its constraining domain. " alt="" coords="152,199,320,245"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1ConjugateGradient.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::ConjugateGradient\l::optimize_vertex_positions" alt="" coords="860,135,1049,181"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1LaplacianSmoother.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::LaplacianSmoother\l::optimize_vertex_positions" alt="" coords="372,51,567,97"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1MeanMidNodeMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="This is the &quot;run&quot; function of PatchDataUser. It can do anything really. " alt="" coords="368,120,571,167"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1PatchData.html#a7b4e6937d36698bed3819f6b37570f4c" title="Moves free vertices and then snaps the free vertices to the domain. " alt="" coords="397,190,541,254"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1PatchData.html#a888025f8c7511a160f1d95df3217b1b1" title="Mesquite::PatchData\l::set_free_vertices\l_constrained" alt="" coords="397,278,541,342"/>
+<area shape="rect" id="node22" href="$classMesquite_1_1Randomize.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::Randomize\l::optimize_vertex_positions" alt="" coords="379,365,560,412"/>
+<area shape="rect" id="node24" href="$classMesquite_1_1SmartLaplacianSmoother.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::SmartLaplacian\lSmoother::optimize_vertex\l_positions" alt="" coords="380,435,559,499"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1FeasibleNewton.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::FeasibleNewton\l::optimize_vertex_positions" alt="" coords="624,135,805,181"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1SteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::SteepestDescent\l::optimize_vertex_positions" alt="" coords="623,204,807,251"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1ConjugateGradient.html#a39cf050d6c200ee4c7bb3a5755222dd7" title="Returns the step distance to take in the search direction. " alt="" coords="620,283,809,329"/>
+</map>

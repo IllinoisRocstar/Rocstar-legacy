@@ -1,0 +1,6 @@
+<map id="update_bd_normals" name="update_bd_normals">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a701c22c997913a2773d36a0b47683716" title="COM_compatible_types" alt="" coords="189,5,352,35"/>
+<area shape="rect" id="node5" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="201,59,340,88"/>
+<area shape="rect" id="node7" href="$classWindow__manifold__2.html#afc72f337226a2bd9c048dab670fb320a" title="Obtain an iterator to the first pane manifold of the window. " alt="" coords="232,112,309,141"/>
+<area shape="rect" id="node9" href="$classWindow__manifold__2.html#a036407c8e0e5dc7109664644e0138d2e" title="Obtain an iterator to the past&#45;the&#45;last pane manifold of the window. " alt="" coords="237,165,304,195"/>
+</map>

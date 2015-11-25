@@ -1,0 +1,5 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#af31db729637ea4dad61e49e5729839c4" title="Return a random variable between [0,1] with respect to an uniform distribution. " alt="" coords="131,5,259,51"/>
+<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a84a2f7a220ba6a54893f695b3bcc36e2" title="cimg_library::cimg\l::srand" alt="" coords="307,5,435,51"/>
+<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#af883131bbc64e996d212114cc2b2b21a" title="Get the value of a system timer with a millisecond precision. " alt="" coords="483,5,611,51"/>
+</map>

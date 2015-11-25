@@ -1,0 +1,5 @@
+<map id="get_structure_tensor" name="get_structure_tensor">
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a9211d99716b9ac5c33db2486f27c0bcd" title="Get a diffusion tensor for edge&#45;preserving anisotropic smoothing of an image. " alt="" coords="196,5,356,51"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a4ecd4ea634e87995ef1d309b8ffe91de" title="Sharpen image using anisotropic shock filters or inverse diffusion. " alt="" coords="211,74,341,121"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a8f834947e85b55fb93a788868f2c97f0" title="Compute the structure tensor field of an image. " alt="" coords="209,144,343,208"/>
+</map>

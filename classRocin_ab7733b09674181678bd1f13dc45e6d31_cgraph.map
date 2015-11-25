@@ -1,0 +1,51 @@
+<map id="init" name="init">
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="947,897,1085,927"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="949,1001,1083,1031"/>
+<area shape="rect" id="node10" href="$roccom__c_8h.html#ab41e262f86b991f367a93a005e0694b8" title="COM_set_member_function" alt="" coords="95,535,279,564"/>
+<area shape="rect" id="node12" href="$roccom__c_09_09_8h.html#a5e5321de4f0f8940ea99b25b0060afe3" title="COM_set_object" alt="" coords="499,975,619,1004"/>
+<area shape="rect" id="node15" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="935,1228,1097,1257"/>
+<area shape="rect" id="node18" href="$classHDF4.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="Create and start the I/O thread. " alt="" coords="145,861,228,891"/>
+<area shape="rect" id="node20" href="$classRocin.html#a499d65c820d018e6bf8e92a9872026ed" title="Fill the destination (second) attribute from files using the data corresponding to the source (first)..." alt="" coords="132,915,241,944"/>
+<area shape="rect" id="node22" href="$classRocin.html#a1b089e18b401f74035c6574e3a95f95e" title="Create a single Roccom window by reading in the files specified by the given control file..." alt="" coords="117,768,256,797"/>
+<area shape="rect" id="node42" href="$classRocin.html#a1dd937ec0c005ce85561ccfe548bc6d0" title="Create a single Roccom window by reading in a list of files. " alt="" coords="340,483,439,512"/>
+<area shape="rect" id="node44" href="$classRocin.html#a047b46290d1e21123ec029fb4660de28" title="Create a series of Roccom windows by reading in a list of files. " alt="" coords="507,481,611,511"/>
+<area shape="rect" id="node116" href="$classRocin.html#a30b4d3fe811f97579c9ab38d6ecf3e64" title="Read in parameters from a given file into the given window. " alt="" coords="705,1105,841,1135"/>
+<area shape="rect" id="node136" href="$classRocin.html#a1fb1950bf94483e622c985088961ca5d" title="Default constructor. " alt="" coords="159,1260,215,1289"/>
+<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="1163,975,1291,1004"/>
+<area shape="rect" id="node24" href="$roccom__c_09_09_8h.html#a6ebf7d3be61b364094596342a1d64827" title="COM_get_default_communicator" alt="" coords="667,897,880,927"/>
+<area shape="rect" id="node26" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="947,5,1085,35"/>
+<area shape="rect" id="node28" href="$namespacecimg__library.html#a35f28010f1c3f5a5668974c5ea8d6be3" title="cimg_library::sin" alt="" coords="957,737,1075,767"/>
+<area shape="rect" id="node32" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="368,689,411,719"/>
+<area shape="rect" id="node34" href="$classRocin.html#ac084d787d2e876785d26530c43b9c6e3" title="cyclic_local" alt="" coords="344,743,435,772"/>
+<area shape="rect" id="node36" href="$classRocin.html#a6515875aef3878ecfd6c0d9ae6b93846" title="blockcyclic_local" alt="" coords="329,847,449,876"/>
+<area shape="rect" id="node38" href="$classRocin.html#af089378a801c08c01a6ea82caace7426" title="explicit_local" alt="" coords="341,900,437,929"/>
+<area shape="rect" id="node40" href="$roccomf90_8h.html#ac872f1a4316fc244856e99b23b123ff3" title="files" alt="" coords="367,953,412,983"/>
+<area shape="rect" id="node30" href="$structcimg__library_1_1CImg.html#a7c5c1b92e02d4286b19fd6ea054ba0e8" title="cimg_library::CImg\l::get_sin" alt="" coords="1161,737,1292,783"/>
+<area shape="rect" id="node48" href="$namespacecimg__library_1_1cimg.html#af883131bbc64e996d212114cc2b2b21a" title="Get the value of a system timer with a millisecond precision. " alt="" coords="709,305,837,351"/>
+<area shape="rect" id="node50" href="$Rocin_8C.html#a5a835ba1a84e5f4229a6d3f1141a78e1" title="Cast glob_error for portability (IBMSP has a different prototype) " alt="" coords="723,375,824,404"/>
+<area shape="rect" id="node52" href="$Rocin_8C.html#a53de10c8bd013ab3efff2bb23fb788dc" title="Error callback for glob. " alt="" coords="735,145,812,175"/>
+<area shape="rect" id="node55" href="$Rocin_8C.html#ab7a7fab44f0d3b76372865fb1442f1b7" title="Extract metadata from the list of files. " alt="" coords="712,479,835,508"/>
+<area shape="rect" id="node87" href="$Rocin_8C.html#adcf9504db90c57c3d46217ab38ceb3e1" title="CWD" alt="" coords="747,585,800,615"/>
+<area shape="rect" id="node90" href="$Rocin_8C.html#a36b7bd15403ab8de3715be512908e87e" title="new_attributes" alt="" coords="720,689,827,719"/>
+<area shape="rect" id="node99" href="$classRocin.html#a659d336e9114a812b984f1b326b6be90" title="register_panes" alt="" coords="720,743,827,772"/>
+<area shape="rect" id="node103" href="$Rocin_8C.html#a47c0cc95b287e4a13de0621aba5472e3" title="load_data_HDF4" alt="" coords="713,532,833,561"/>
+<area shape="rect" id="node111" href="$Rocin_8C.html#ad4aa2b88f82fbfeba72baeafec5b52c9" title="broadcast_win_attributes" alt="" coords="691,199,856,228"/>
+<area shape="rect" id="node114" href="$Rocin_8C.html#a64721ab1a1fa246b6d226dcb98fddc28" title="free_blocks" alt="" coords="729,252,817,281"/>
+<area shape="rect" id="node57" href="$Rocin_8C.html#a168ceb3da43ff476c81ba29160c5f26f" title="Find the first geometry dataset for the given block. " alt="" coords="928,223,1104,252"/>
+<area shape="rect" id="node59" href="$classHDF4.html#a1a415b4d82a02e9d1ec09ea92357d892" title="HDF4::SDend" alt="" coords="1175,432,1279,461"/>
+<area shape="rect" id="node61" href="$classHDF4.html#ae12690d2dcacced803400a03d68b3413" title="HDF4::SDendaccess" alt="" coords="1349,405,1496,435"/>
+<area shape="rect" id="node63" href="$classHDF4.html#aa2a560333ba396b84bde6194f11f5b70" title="HDF4::SDfileinfo" alt="" coords="1361,223,1484,252"/>
+<area shape="rect" id="node65" href="$classHDF4.html#a071f52bd4df585ad6ad2441ca4990a7d" title="HDF4::SDgetdatastrs" alt="" coords="1152,171,1301,200"/>
+<area shape="rect" id="node67" href="$classHDF4.html#a1630ace5c27ebbcfdc08ac8db4c8ecd7" title="HDF4::SDstart" alt="" coords="1172,379,1281,408"/>
+<area shape="rect" id="node69" href="$classHDF4.html#a7251388f9a04d111412c2d0c39a88b92" title="&quot;Open&quot; and &quot;close&quot; HDF files efficiently. " alt="" coords="1176,275,1277,304"/>
+<area shape="rect" id="node73" href="$namespacecimg__library_1_1cimg.html#a43334b3df38ff7c4369a503a4fc3a9f9" title="Compare two C&#45;strings, ignoring the case. " alt="" coords="1163,101,1291,147"/>
+<area shape="rect" id="node75" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="989,276,1043,305"/>
+<area shape="rect" id="node81" href="$classHDF4.html#a34c4915e2cacdc86dcecc9ab8e5c5b13" title="HDF4::SDreaddata" alt="" coords="949,532,1083,561"/>
+<area shape="rect" id="node93" href="$roccom__c_8h.html#a34c7c55b98221dbb95aba53c374cf596" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="951,791,1081,820"/>
+<area shape="rect" id="node95" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="961,844,1071,873"/>
+<area shape="rect" id="node118" href="$read__parameter__file_8C.html#ada8bf50cc804cbc69e0b33f498288c76" title="get_parameter_list" alt="" coords="952,1281,1080,1311"/>
+<area shape="rect" id="node125" href="$roccom__c_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="929,1105,1103,1135"/>
+<area shape="rect" id="node127" href="$namespacecimg__library_1_1cimg.html#a9ab0fcc7ef1bac330897fec51f617ae6" title="Read a float number from a C&#45;string. " alt="" coords="952,1158,1080,1205"/>
+<area shape="rect" id="node120" href="$read__parameter__file_8C.html#a13ee49cc42ddb10accfb0ca2a351a73d" title="eat_whitespace_until" alt="" coords="1155,1251,1299,1280"/>
+<area shape="rect" id="node122" href="$namespacecimg__library_1_1cimg.html#ab9308a5128017dd92d3f602a19ca7611" title="cimg_library::cimg\l::option" alt="" coords="1163,1303,1291,1350"/>
+</map>

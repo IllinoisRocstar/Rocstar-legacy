@@ -1,0 +1,15 @@
+<map id="rflu_nullifybf2cstencil" name="rflu_nullifybf2cstencil">
+<area shape="rect" id="node3" href="$classrflu__modstencilsbfaces.html#a6938a64d36ff8a9a4ba277c4047b981d" title="rflu_createbf2cstencil" alt="" coords="201,32,348,61"/>
+<area shape="rect" id="node19" href="$classrflu__modstencilsbfaces.html#ac36de2817a5681f247b59862811e69da" title="rflu_destroybf2cstencil" alt="" coords="199,85,351,115"/>
+<area shape="rect" id="node5" href="$classrflu__modstencilsbfaces.html#aa9f6a326bd3094c167e824e8917ab9d9" title="rflu_createbf2cstencilwrapper" alt="" coords="404,32,596,61"/>
+<area shape="rect" id="node7" href="$RFLU__InitFlowSolver_8F90.html#af9c0da2d26f7bdb2bdee8507627f636c" title="rflu_initflowsolver" alt="" coords="651,5,773,35"/>
+<area shape="rect" id="node17" href="$rflupick_8F90.html#a9ef7365e5f7ba7d2eca028a032b5cade" title="rflupick" alt="" coords="680,59,744,88"/>
+<area shape="rect" id="node9" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="843,59,901,88"/>
+<area shape="rect" id="node11" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="969,59,1103,88"/>
+<area shape="rect" id="node13" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="1152,85,1317,115"/>
+<area shape="rect" id="node15" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="1365,85,1520,115"/>
+<area shape="rect" id="node21" href="$classrflu__modstencilsbfaces.html#ad9fdcf352eec54f1e4358ea7803559f1" title="rflu_destroybf2cstencilwrapper" alt="" coords="401,85,599,115"/>
+<area shape="rect" id="node23" href="$RFLU__EndFlowSolver_8F90.html#a92eaa9bf67d76a6b2f551d3759b625a8" title="rflu_endflowsolver" alt="" coords="649,112,775,141"/>
+<area shape="rect" id="node25" href="$Fluid__finalize_8F90.html#abbeced701ea7c876132f62a4f790b206" title="fluid_finalize" alt="" coords="825,112,919,141"/>
+<area shape="rect" id="node27" href="$Rocflo__load__module_8F90.html#aa074e41fe57cac388dc65b3398f25765" title="rocflo_load_module" alt="" coords="969,112,1103,141"/>
+</map>

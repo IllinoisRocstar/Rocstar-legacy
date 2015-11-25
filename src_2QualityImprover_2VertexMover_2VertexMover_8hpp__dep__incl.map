@@ -1,0 +1,33 @@
+<map id="VertexMover.hpp" name="VertexMover.hpp">
+<area shape="rect" id="node3" href="$Mesquite__all__headers_8hpp.html" title="This file contains include directives for all mesquite headers. Including this header will maximize d..." alt="" coords="1696,237,1869,267"/>
+<area shape="rect" id="node5" href="$src_2QualityImprover_2VertexMover_2ConjugateGradient_2ConjugateGradient_8hpp.html" title="ConjugateGradient.hpp" alt="" coords="460,83,615,112"/>
+<area shape="rect" id="node23" href="$src_2QualityImprover_2VertexMover_2FeasibleNewton_2FeasibleNewton_8hpp.html" title="FeasibleNewton.hpp" alt="" coords="845,83,987,112"/>
+<area shape="rect" id="node32" href="$src_2QualityImprover_2VertexMover_2LaplacianSmoothers_2LaplacianSmoother_8hpp.html" title="LaplacianSmoother.hpp" alt="" coords="2161,83,2319,112"/>
+<area shape="rect" id="node46" href="$src_2QualityImprover_2VertexMover_2LaplacianSmoothers_2SmartLaplacianSmoother_8hpp.html" title="SmartLaplacianSmoother.hpp" alt="" coords="2493,83,2685,112"/>
+<area shape="rect" id="node51" href="$src_2QualityImprover_2VertexMover_2NonSmoothSteepestDescent_2NonSmoothSteepestDescent_8hpp.html" title="NonSmoothSteepestDescent.hpp" alt="" coords="1385,83,1601,112"/>
+<area shape="rect" id="node58" href="$src_2QualityImprover_2VertexMover_2NullImprover_8hpp.html" title="NullImprover.hpp" alt="" coords="1823,83,1943,112"/>
+<area shape="rect" id="node61" href="$src_2QualityImprover_2VertexMover_2Randomize_2Randomize_8hpp.html" title="Randomize.hpp" alt="" coords="2836,83,2948,112"/>
+<area shape="rect" id="node68" href="$src_2QualityImprover_2VertexMover_2SteepestDescent_2SteepestDescent_8hpp.html" title="SteepestDescent.hpp" alt="" coords="3035,83,3181,112"/>
+<area shape="rect" id="node75" href="$QualityImprover_2VertexMover_2VertexMover_8cpp.html" title="VertexMover.cpp" alt="" coords="3205,83,3325,112"/>
+<area shape="rect" id="node77" href="$inks_2VertexMover_8cpp.html" title="VertexMover.cpp" alt="" coords="3349,83,3469,112"/>
+<area shape="rect" id="node8" href="$src_2Control_2Wrappers_2ShapeImprovementWrapper_8hpp.html" title="ShapeImprovementWrapper.hpp" alt="" coords="363,160,571,189"/>
+<area shape="rect" id="node15" href="$QualityImprover_2VertexMover_2ConjugateGradient_2ConjugateGradient_8cpp.html" title="ConjugateGradient.cpp" alt="" coords="184,160,339,189"/>
+<area shape="rect" id="node17" href="$inks_2ConjugateGradient_8cpp.html" title="ConjugateGradient.cpp" alt="" coords="5,160,160,189"/>
+<area shape="rect" id="node19" href="$MesqPane_8h.html" title="MesqPane.h. " alt="" coords="645,160,739,189"/>
+<area shape="rect" id="node11" href="$Control_2Wrappers_2ShapeImprovementWrapper_8cpp.html" title="ShapeImprovementWrapper.cpp" alt="" coords="155,237,363,267"/>
+<area shape="rect" id="node13" href="$inks_2ShapeImprovementWrapper_8cpp.html" title="ShapeImprovementWrapper.cpp" alt="" coords="387,237,595,267"/>
+<area shape="rect" id="node21" href="$MesqPane_8C.html" title="MesqPane.C" alt="" coords="643,237,741,267"/>
+<area shape="rect" id="node27" href="$QualityImprover_2VertexMover_2FeasibleNewton_2FeasibleNewton_8cpp.html" title="FeasibleNewton.cpp" alt="" coords="928,160,1069,189"/>
+<area shape="rect" id="node29" href="$inks_2FeasibleNewton_8cpp.html" title="FeasibleNewton.cpp" alt="" coords="763,160,904,189"/>
+<area shape="rect" id="node35" href="$src_2Control_2Wrappers_2LaplacianIQ_8hpp.html" title="LaplacianIQ.hpp" alt="" coords="1725,160,1840,189"/>
+<area shape="rect" id="node38" href="$QualityImprover_2VertexMover_2LaplacianSmoothers_2LaplacianSmoother_8cpp.html" title="LaplacianSmoother.cpp" alt="" coords="1864,160,2021,189"/>
+<area shape="rect" id="node40" href="$QualityImprover_2VertexMover_2LaplacianSmoothers_2SmartLaplacianSmoother_8cpp.html" title="SmartLaplacianSmoother.cpp" alt="" coords="2277,160,2469,189"/>
+<area shape="rect" id="node42" href="$inks_2LaplacianSmoother_8cpp.html" title="LaplacianSmoother.cpp" alt="" coords="2045,160,2203,189"/>
+<area shape="rect" id="node44" href="$inks_2SmartLaplacianSmoother_8cpp.html" title="SmartLaplacianSmoother.cpp" alt="" coords="2493,160,2685,189"/>
+<area shape="rect" id="node54" href="$QualityImprover_2VertexMover_2NonSmoothSteepestDescent_2NonSmoothSteepestDescent_8cpp.html" title="NonSmoothSteepestDescent.cpp" alt="" coords="1144,160,1360,189"/>
+<area shape="rect" id="node56" href="$inks_2NonSmoothSteepestDescent_8cpp.html" title="NonSmoothSteepestDescent.cpp" alt="" coords="1384,160,1600,189"/>
+<area shape="rect" id="node64" href="$QualityImprover_2VertexMover_2Randomize_2Randomize_8cpp.html" title="Randomize.cpp" alt="" coords="2861,160,2973,189"/>
+<area shape="rect" id="node66" href="$inks_2Randomize_8cpp.html" title="Randomize.cpp" alt="" coords="2997,160,3109,189"/>
+<area shape="rect" id="node71" href="$QualityImprover_2VertexMover_2SteepestDescent_2SteepestDescent_8cpp.html" title="SteepestDescent.cpp" alt="" coords="3184,160,3331,189"/>
+<area shape="rect" id="node73" href="$inks_2SteepestDescent_8cpp.html" title="SteepestDescent.cpp" alt="" coords="3355,160,3501,189"/>
+</map>

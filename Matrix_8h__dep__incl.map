@@ -1,0 +1,22 @@
+<map id="Matrix.h" name="Matrix.h">
+<area shape="rect" id="node3" href="$Metric_8h.html" title="The Metric Base Class, from which algebraic and geometric metric clases are derived. " alt="" coords="452,83,521,112"/>
+<area shape="rect" id="node44" href="$Matrix_8C.html" title="Implementation of a limited matrix class. " alt="" coords="545,83,617,112"/>
+<area shape="rect" id="node5" href="$Algebraic__Metrics__2_8h.html" title="2D algebraic quality Metric declaration.. " alt="" coords="151,160,300,189"/>
+<area shape="rect" id="node11" href="$Algebraic__Metrics__3_8h.html" title="3d algebraic quality Metric declarations. " alt="" coords="324,160,473,189"/>
+<area shape="rect" id="node16" href="$Geometric__Metrics__2_8h.html" title="2D geometric quality Metric declarations. " alt="" coords="497,160,655,189"/>
+<area shape="rect" id="node21" href="$Geometric__Metrics__3_8h.html" title="3D geometric quality Metric declarations. " alt="" coords="1216,160,1373,189"/>
+<area shape="rect" id="node7" href="$Algebraic__Metrics__2_8C.html" title="Implementation of 2D metric quality measures. " alt="" coords="5,237,160,267"/>
+<area shape="rect" id="node9" href="$metric__demo_8C.html" title="metric_demo.C" alt="" coords="363,237,472,267"/>
+<area shape="rect" id="node13" href="$Algebraic__Metrics__3_8C.html" title="Implementation of 3D metric quality measures. " alt="" coords="184,237,339,267"/>
+<area shape="rect" id="node18" href="$Geometric__Metrics__2_8C.html" title="Implementation of 2D geometric metric quality measures. " alt="" coords="496,237,656,267"/>
+<area shape="rect" id="node23" href="$Rocmop_8C.html" title="Rocmop.C" alt="" coords="2040,237,2125,267"/>
+<area shape="rect" id="node25" href="$smooth__mesquite_8C.html" title="smooth_mesquite.C" alt="" coords="2149,237,2288,267"/>
+<area shape="rect" id="node27" href="$smooth__mesquite__ng_8C.html" title="smooth_mesquite_ng.C" alt="" coords="680,237,840,267"/>
+<area shape="rect" id="node29" href="$Geometric__Metrics__3_8C.html" title="Implementation of 3D geometric metric quality measures. " alt="" coords="864,237,1024,267"/>
+<area shape="rect" id="node31" href="$Rocmop__1_8C.html" title="Rocmop_1.C" alt="" coords="1048,237,1147,267"/>
+<area shape="rect" id="node33" href="$Rocmop__2_8C.html" title="Rocmop_2.C" alt="" coords="1171,237,1269,267"/>
+<area shape="rect" id="node35" href="$smooth__mesquite__1_8C.html" title="smooth_mesquite_1.C" alt="" coords="1293,237,1445,267"/>
+<area shape="rect" id="node37" href="$smooth__mesquite__2_8C.html" title="smooth_mesquite_2.C" alt="" coords="1469,237,1621,267"/>
+<area shape="rect" id="node39" href="$smooth__mesquite__ng__1_8C.html" title="smooth_mesquite_ng_1.C" alt="" coords="1645,237,1819,267"/>
+<area shape="rect" id="node41" href="$smooth__mesquite__ng__2_8C.html" title="smooth_mesquite_ng_2.C" alt="" coords="1843,237,2016,267"/>
+</map>

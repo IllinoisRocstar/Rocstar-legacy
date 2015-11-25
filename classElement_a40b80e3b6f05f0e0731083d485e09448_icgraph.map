@@ -1,0 +1,8 @@
+<map id="getFaces" name="getFaces">
+<area shape="rect" id="node3" href="$classTriFace.html#ae6312a524db4fa95b70a0b501eec61ee" title="TriFace::buildCohesive" alt="" coords="140,5,295,35"/>
+<area shape="rect" id="node5" href="$classQuadFace.html#ae6312a524db4fa95b70a0b501eec61ee" title="QuadFace::buildCohesive" alt="" coords="132,59,303,88"/>
+<area shape="rect" id="node7" href="$classMesh.html#a614a4adf598595b7126cdaa822a9bade" title="Mesh::replaceNode" alt="" coords="151,112,284,141"/>
+<area shape="rect" id="node14" href="$classMesh.html#a0c935c0330ad306f6d283f6be39be0a0" title="Mesh::write_boundary" alt="" coords="143,165,292,195"/>
+<area shape="rect" id="node9" href="$classNode.html#aea0042ea84160d091512051ea23d8e41" title="Node::separate" alt="" coords="353,112,463,141"/>
+<area shape="rect" id="node11" href="$classMesh.html#a96f8003c64bff21d807cea52f48db2a7" title="The addCohesive method is the driver for the entire process of adding cohesive elements to the mesh..." alt="" coords="512,112,651,141"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="multiply_nodal_normals" name="multiply_nodal_normals">
+<area shape="rect" id="node3" href="$classAttribute.html#a21e126a1a188012532afb158c6fbd562" title="Inherit from parent. If depth&gt;0, then the procedure is for the subcomponents. " alt="" coords="213,133,328,162"/>
+<area shape="rect" id="node26" href="$classRocblas.html#a7b34280677ab5313abc1e2eae0c251df" title="Operation wrapper for multiplication. " alt="" coords="221,275,320,305"/>
+<area shape="rect" id="node5" href="$classAttribute.html#af69420db7b9e1d806a3d45d5a91b3404" title="Allocate memory for the attribute. " alt="" coords="388,106,511,135"/>
+<area shape="rect" id="node9" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="784,14,867,43"/>
+<area shape="rect" id="node24" href="$classAttribute.html#a77f06f41441a97714ec0acf49c89b568" title="Root of use&#45;inheritance. " alt="" coords="399,159,500,189"/>
+<area shape="rect" id="node7" href="$classAttribute.html#a2bf2f6a525b29b7a8f56005b1e7a5324" title="Attribute::copy_array" alt="" coords="577,106,719,135"/>
+<area shape="rect" id="node11" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="804,179,847,209"/>
+<area shape="rect" id="node16" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="625,159,671,189"/>
+<area shape="rect" id="node19" href="$classAttribute.html#afde4a4293812757caa4ed65cc71eab68" title="Set the physical address of the attribute values. " alt="" coords="577,53,719,82"/>
+<area shape="rect" id="node13" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="799,93,852,122"/>
+<area shape="rect" id="node28" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="381,249,517,278"/>
+<area shape="rect" id="node30" href="$classRocblas.html#a014ebce01bb2ec4eacb969b142b13d97" title="Chooses which calc function to call based on type of y. " alt="" coords="376,302,523,331"/>
+<area shape="rect" id="node36" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="385,413,513,442"/>
+<area shape="rect" id="node32" href="$classAttribute.html#ab642771d1269b6ccb9e6ba87ec15de3b" title="Checks whether the attribute is associated with the window. " alt="" coords="571,333,725,362"/>
+<area shape="rect" id="node34" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="588,263,708,309"/>
+<area shape="rect" id="node38" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="593,386,703,415"/>
+<area shape="rect" id="node40" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="593,439,703,469"/>
+<area shape="rect" id="node42" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="587,493,709,522"/>
+<area shape="rect" id="node44" href="$classPane.html#a05d1abca9cbb0ec7bdc59f58dd81797c" title="Obtain a constant pointer to its owner window object. " alt="" coords="773,493,877,522"/>
+</map>

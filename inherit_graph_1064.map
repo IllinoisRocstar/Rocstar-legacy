@@ -1,0 +1,34 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classMesquite_1_1QualityMetric.html" title="Base class for concrete quality metrics. " alt="" coords="5,421,104,451"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1AddQualityMetric.html" title="Combines two quality metrics (qMetric1 and qMetric2 defined in the parent class CompositeQualityMetri..." alt="" coords="181,173,304,203"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1DistanceFromTarget.html" title="Base class for the computation of the distance from target between the target matrices W and the actu..." alt="" coords="172,227,313,256"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1MultiplyQualityMetric.html" title="Combines two quality metrics (qMetric1 and qMetric2 defined in the parent class CompositeQualityMetri..." alt="" coords="171,288,315,317"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1PowerQualityMetric.html" title="Raises a single quality metrics (qMetric1) to an arbitrary power (a double value, scaleAlpha) for two..." alt="" coords="175,341,311,371"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1ScalarAddQualityMetric.html" title="Adds a number (a double) to the quality metric value. " alt="" coords="164,395,321,424"/>
+<area shape="rect" id="node31" href="$classMesquite_1_1ScalarMultiplyQualityMetric.html" title="Multiplies quality metric value by a number (a double). " alt="" coords="152,448,333,477"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1ShapeQualityMetric.html" title="ShapeQualityMetric" alt="" coords="175,501,311,531"/>
+<area shape="rect" id="node47" href="$classMesquite_1_1SmoothnessQualityMetric.html" title="SmoothnessQualityMetric" alt="" coords="157,704,328,733"/>
+<area shape="rect" id="node55" href="$classMesquite_1_1UntangleQualityMetric.html" title="UntangleQualityMetric" alt="" coords="168,811,317,840"/>
+<area shape="rect" id="node59" href="$classMesquite_1_1VolumeQualityMetric.html" title="VolumeQualityMetric" alt="" coords="172,891,313,920"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1I__DFT.html" title="Class containing the target corner matrices for the context based smoothing. " alt="" coords="461,112,520,141"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1RI__DFT.html" title="Class containing the target corner matrices for the context based smoothing. " alt="" coords="456,165,525,195"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1sI__DFT.html" title="Class containing the target corner matrices for the context based smoothing. " alt="" coords="457,219,524,248"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1sRI__DFT.html" title="Class containing the target corner matrices for the context based smoothing. " alt="" coords="453,272,528,301"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1I__DFT__Generalized.html" title="I_DFT metric where mAlpha, mBeta, mGamma, and UseBarrierDelta can be set be the user. Defaults are mAlpha = .5, mBeta = 1, mGamma = 2/3. " alt="" coords="668,5,801,35"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1I__DFT__InverseMeanRatio.html" title="I_DFT metric with mAlpha = 1/3, mBeta = 0.0, mGamma = 2/3. " alt="" coords="649,59,820,88"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1I__DFT__NoBarrier.html" title="I_DFT metric with mAlpha = .5, mBeta = 1, mGamma = 0. " alt="" coords="675,112,795,141"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1I__DFT__StrongBarrier.html" title="I_DFT metric with mAlpha = .5, mBeta = 1, mGamma = 2/3. " alt="" coords="664,165,805,195"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1I__DFT__WeakBarrier.html" title="I_DFT metric with mAlpha = .5, mBeta = 1, mGamma = 2/3. " alt="" coords="665,219,804,248"/>
+<area shape="rect" id="node35" href="$classMesquite_1_1AspectRatioGammaQualityMetric.html" title="Object for computing the aspect ratio gamma of simplicial elements. " alt="" coords="383,325,599,355"/>
+<area shape="rect" id="node37" href="$classMesquite_1_1ConditionNumberQualityMetric.html" title="Computes the condition number of given element. " alt="" coords="391,379,591,408"/>
+<area shape="rect" id="node39" href="$classMesquite_1_1GeneralizedConditionNumberQualityMetric.html" title="Computes the condition number of given element. The``condition number&quot; is scaled between one and infi..." alt="" coords="395,431,587,478"/>
+<area shape="rect" id="node41" href="$classMesquite_1_1IdealWeightInverseMeanRatio.html" title="Computes the inverse mean ratio of given element. " alt="" coords="392,501,589,531"/>
+<area shape="rect" id="node43" href="$classMesquite_1_1IdealWeightMeanRatio.html" title="Computes the mean ratio quality metric of given element. " alt="" coords="413,555,568,584"/>
+<area shape="rect" id="node45" href="$classMesquite_1_1VertexConditionNumberQualityMetric.html" title="Computes the condition numbers of the corner&#39;s of elements connected to the given vertex and then ave..." alt="" coords="389,607,592,654"/>
+<area shape="rect" id="node49" href="$classMesquite_1_1ASMQualityMetric.html" title="Computes the ASM (Area Smoothness Metric) of the given element. " alt="" coords="427,677,555,707"/>
+<area shape="rect" id="node51" href="$classMesquite_1_1EdgeLengthQualityMetric.html" title="Computes the lengths of the edges connected to given a vertex.. " alt="" coords="407,731,575,760"/>
+<area shape="rect" id="node53" href="$classMesquite_1_1EdgeLengthRangeQualityMetric.html" title="Computes the edge length range metric for a given vertex. " alt="" coords="388,784,593,813"/>
+<area shape="rect" id="node57" href="$classMesquite_1_1UntangleBetaQualityMetric.html" title="The untangle beta quality metric. " alt="" coords="401,837,580,867"/>
+<area shape="rect" id="node61" href="$classMesquite_1_1CornerJacobianQualityMetric.html" title="Computes the volume or area of the element, as appropriate. This metric uses the average of the corne..." alt="" coords="396,891,585,920"/>
+<area shape="rect" id="node63" href="$classMesquite_1_1LocalSizeQualityMetric.html" title="Computes the local size metric for a given vertex. " alt="" coords="413,944,568,973"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="read_frac" name="read_frac">
+<area shape="rect" id="node3" href="$classAff__transformation__2.html#a365f1affce6586f551082723758c0fcc" title="Aff_transformation_2::m" alt="" coords="131,5,293,35"/>
+<area shape="rect" id="node5" href="$classTransfer__base.html#aa4fb201c8061f6f1fd18361e4bd1737a" title="Transfer_base::scale" alt="" coords="140,59,284,88"/>
+<area shape="rect" id="node17" href="$classAttribute.html#a8bcf950a774cbd3106d4c68d3b2f38c9" title="Obtain the status of the attribute. " alt="" coords="155,112,269,141"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="139,165,285,211"/>
+<area shape="rect" id="node21" href="$classAttribute.html#a17407369cfeffaf5df87ff044e43af82" title="Obtain the unit of the attribute. " alt="" coords="163,235,261,264"/>
+<area shape="rect" id="node7" href="$classRFC__Data__const.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Data_const::id" alt="" coords="345,32,487,61"/>
+<area shape="rect" id="node9" href="$classRFC__Data.html#a2e1ff52eab3383077d032b5cfdbce9e3" title="RFC_Data::get_value" alt="" coords="341,85,491,115"/>
+<area shape="rect" id="node11" href="$classRFC__Pane__transfer.html#ac4352cefd69971574fd2edb3ee894899" title="RFC_Pane_transfer::\lpointer" alt="" coords="539,77,685,123"/>
+<area shape="rect" id="node13" href="$classRFC__Pane__transfer.html#a584f868480e84dcf5750fe21c96c4dd8" title="RFC_Pane_transfer::\lis_master" alt="" coords="745,46,892,93"/>
+<area shape="rect" id="node15" href="$classRFC__Pane__base.html#ac4352cefd69971574fd2edb3ee894899" title="Get the address of a given attribute with id i. " alt="" coords="735,116,903,145"/>
+</map>

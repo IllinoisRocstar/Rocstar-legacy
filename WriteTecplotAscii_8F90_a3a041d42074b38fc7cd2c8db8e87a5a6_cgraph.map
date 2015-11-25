@@ -1,0 +1,18 @@
+<map id="writetecplotascii" name="writetecplotascii">
+<area shape="rect" id="node3" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="197,5,272,35"/>
+<area shape="rect" id="node5" href="$POST__Average_8F90.html#a1297aefe32a0f44d513255fe25720421" title="aver" alt="" coords="212,59,257,88"/>
+<area shape="rect" id="node7" href="$POST__Average_8F90.html#ab962347dbac42c59f7d378dcb1ed5c03" title="averdiv" alt="" coords="203,112,267,141"/>
+<area shape="rect" id="node9" href="$classLine__2.html#afe7f37893f080982762fded5aaca681c" title="Line_2::c" alt="" coords="197,165,272,195"/>
+<area shape="rect" id="node11" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="581,395,765,424"/>
+<area shape="rect" id="node13" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="815,472,945,501"/>
+<area shape="rect" id="node19" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="588,524,759,553"/>
+<area shape="rect" id="node22" href="$RFLO__GetDimensions_8F90.html#a05181a2410be15ef34493a9b3a5a0638" title="rflo_getcelloffset" alt="" coords="176,525,293,555"/>
+<area shape="rect" id="node31" href="$RFLO__GetDimensions_8F90.html#ae6f50e294b64363a4d74e0a51d34cbd7" title="rflo_getdimensphysnodes" alt="" coords="355,267,525,296"/>
+<area shape="rect" id="node36" href="$RFLO__GetDimensions_8F90.html#a574ff4a131bdb63eac55b68f6ccb3e85" title="rflo_getnodeoffset" alt="" coords="172,421,297,451"/>
+<area shape="rect" id="node45" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="213,731,256,760"/>
+<area shape="rect" id="node47" href="$classAttribute.html#a8bcf950a774cbd3106d4c68d3b2f38c9" title="Obtain the status of the attribute. " alt="" coords="177,784,292,813"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="1003,429,1149,475"/>
+<area shape="rect" id="node17" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="996,498,1156,545"/>
+<area shape="rect" id="node26" href="$RFLO__GetDimensions_8F90.html#ac02260aae73117efbd721b072247e542" title="rflo_getdimensdummy" alt="" coords="365,627,515,656"/>
+<area shape="rect" id="node40" href="$RFLO__GetDimensions_8F90.html#af3840de18437855e47c7fcc0dd2db9b5" title="rflo_getdimensdummynodes" alt="" coords="348,472,532,501"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="gzip_path" name="gzip_path">
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="165,5,221,35"/>
+<area shape="rect" id="node9" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="167,59,220,88"/>
+<area shape="rect" id="node11" href="$namespacecimg__library_1_1cimg.html#a6a835b5fd5ea1699929cb8a1f91e8729" title="winformat_string" alt="" coords="135,112,252,141"/>
+<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="301,5,352,35"/>
+<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="400,5,517,35"/>
+</map>

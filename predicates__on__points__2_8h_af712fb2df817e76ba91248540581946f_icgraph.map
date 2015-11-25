@@ -1,0 +1,14 @@
+<map id="orientation" name="orientation">
+<area shape="rect" id="node3" href="$classp__Less__rotate__ccw.html#aca3a58c80fca53588151a342f5fafba8" title="p_Less_rotate_ccw::\loperator()" alt="" coords="163,5,304,51"/>
+<area shape="rect" id="node5" href="$classp__Less__rotate__ccw__safer.html#aca3a58c80fca53588151a342f5fafba8" title="p_Less_rotate_ccw_safer\l::operator()" alt="" coords="148,74,319,121"/>
+<area shape="rect" id="node7" href="$classp__Less__rotate__ccw__E.html#aca3a58c80fca53588151a342f5fafba8" title="p_Less_rotate_ccw_E\l::operator()" alt="" coords="159,143,308,190"/>
+<area shape="rect" id="node9" href="$structp__Orientation.html#a71bbe739db16927e26af965edc9634a0" title="p_Orientation::operator()" alt="" coords="152,213,315,243"/>
+<area shape="rect" id="node11" href="$namespaceCGAL.html#ab398a7776f68bca31e6ddf3f5f3b33b4" title="CGAL::seg_seg_do_intersect\l_contained" alt="" coords="137,266,329,313"/>
+<area shape="rect" id="node25" href="$namespaceCGAL.html#a92a7d80be7e802c19133183b6c56d3ce" title="CGAL::seg_seg_do_intersect\l_crossing" alt="" coords="137,335,329,382"/>
+<area shape="rect" id="node13" href="$namespaceCGAL.html#a95fc5b4707754cc44983d73bf683b920" title="CGAL::do_intersect" alt="" coords="380,309,516,339"/>
+<area shape="rect" id="node15" href="$classTriangulation.html#aba3f32dc957f5df74d9d2b4187083bb3" title="Triangulation::is_diagonalie" alt="" coords="565,309,744,339"/>
+<area shape="rect" id="node17" href="$classTriangulation.html#ac3001f56f94ec919c721c8d897931e1d" title="Triangulation::is_diagonal" alt="" coords="793,309,961,339"/>
+<area shape="rect" id="node19" href="$classTriangulation.html#a614267789be8944cd704d0ee66e235c2" title="Main entry for triangulation. " alt="" coords="1012,309,1175,339"/>
+<area shape="rect" id="node21" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="1224,309,1403,339"/>
+<area shape="rect" id="node23" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="1451,309,1568,339"/>
+</map>

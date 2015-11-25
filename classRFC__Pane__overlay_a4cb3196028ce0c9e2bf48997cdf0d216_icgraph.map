@@ -1,0 +1,18 @@
+<map id="get_border_index" name="get_border_index">
+<area shape="rect" id="node3" href="$classRFC__Pane__overlay.html#a4a3818f6d1222238d4f36eb5a23db143" title="determine_counterparts" alt="" coords="177,60,335,89"/>
+<area shape="rect" id="node5" href="$classRFC__Pane__overlay.html#a67c9b26a7b5215b37a7baad31048b923" title="get_counterpart" alt="" coords="200,113,312,143"/>
+<area shape="rect" id="node11" href="$classRFC__Pane__overlay.html#a2c490c8e6a75dbbdbce4b8889b47a980" title="get_primary" alt="" coords="211,205,301,235"/>
+<area shape="rect" id="node19" href="$classRFC__Pane__overlay.html#a6b277348768106f431d0cfd49b870557" title="Determine whether an edge is on the physical boundary of the window. " alt="" coords="191,293,321,323"/>
+<area shape="rect" id="node23" href="$classRFC__Pane__overlay.html#a597ca1863e39c9f53cb506222aff7031" title="is_primary" alt="" coords="215,428,297,457"/>
+<area shape="rect" id="node7" href="$classHDS__accessor.html#a7fa081ee08d62b211aa26700639983c9" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_counterpart" alt="" coords="385,5,559,51"/>
+<area shape="rect" id="node9" href="$classRFC__Pane__overlay.html#aa174fecf660e17ad4203680d9f6278f3" title="get_counterpart" alt="" coords="416,75,528,104"/>
+<area shape="rect" id="node13" href="$classHDS__accessor.html#af58475981fe5c8ebd7dbab77065a45ac" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_primary" alt="" coords="385,127,559,174"/>
+<area shape="rect" id="node15" href="$group__pio.html#gac3a50a4da55168502baa70eb0d9e52a1" title="Check whether given two vertices correspond to the same physical point. " alt="" coords="396,197,548,243"/>
+<area shape="rect" id="node17" href="$classRFC__Pane__overlay.html#aa014ee3e719a48664808b72d17497036" title="get_primary" alt="" coords="427,267,517,296"/>
+<area shape="rect" id="node21" href="$classHDS__accessor.html#a45896ffa9dafc9dbdc4e9ea5177c581e" title="HDS_accessor\&lt; Tag_true\l \&gt;::is_border" alt="" coords="385,319,559,366"/>
+<area shape="rect" id="node25" href="$classHDS__accessor.html#a597ca1863e39c9f53cb506222aff7031" title="HDS_accessor\&lt; Tag_true\l \&gt;::is_primary" alt="" coords="385,389,559,435"/>
+<area shape="rect" id="node27" href="$classRFC__Pane__overlay.html#a41a73a231b94a897d7dd709c90d70c95" title="get_inode" alt="" coords="433,459,511,488"/>
+<area shape="rect" id="node31" href="$classRFC__Pane__overlay.html#addb43c35694cf2e5b68ff37753d7aca0" title="set_inode" alt="" coords="433,516,511,545"/>
+<area shape="rect" id="node29" href="$classHDS__accessor.html#a798b177ceda47c50a64035e61fde579a" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_inode" alt="" coords="609,446,783,493"/>
+<area shape="rect" id="node33" href="$classHDS__accessor.html#ad1c9563180e4931c6f0231751defaa66" title="HDS_accessor\&lt; Tag_true\l \&gt;::set_inode" alt="" coords="609,515,783,562"/>
+</map>
