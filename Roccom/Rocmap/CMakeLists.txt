@@ -15,9 +15,7 @@ IF(NOT ENABLE_MPI)
 ELSE()
   FIND_PACKAGE(MPI REQUIRED)
   add_definitions( -DMPICH_IGNORE_CXX_SEEK )
-#  IF(MPI_CXX_COMPILER)
-#    set (CMAKE_CXX_COMPILER ${MPI_CXX_COMPILER})
-#  ENDIF(MPI_CXX_COMPILER)
+  INCLUDE_DIRECTORIES(${MPI_INCLUDE_PATH})
 ENDIF()
 
 #INCLUDE(CTest)
@@ -32,7 +30,7 @@ set (UTIL_SRCS util/addpconn.C)
 set (ALL_MAP_SRCS "${MAPLIB_SRCS} ${UTIL_SRCS}")
 
 #set (TEST_SRCS test/maptest.C)
-set_source_files_properties(${ALL_MAP_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC" )
+set_source_files_properties(${ALL_MAP_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC ${MPI_CXX_COMPILE_FLAGS}" )
 #set(TEST_SRCS src/COMTest.C)
 
 # rpath settings
@@ -47,7 +45,7 @@ ELSE()
   add_library(Rocmap STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
 ENDIF()
-target_link_libraries(Rocmap Rocin Rocout Roccom)
+target_link_libraries(Rocmap Rocin Rocout Roccom ${MPI_CXX_LIBRARIES})
 
 add_executable(pconntest test/pconntest.C)
 target_link_libraries(pconntest Rocmap)
@@ -63,6 +61,12 @@ add_executable(bordertest_struc test/bordertest_struc.C)
 target_link_libraries(bordertest_struc Rocmap)
 add_executable(addpconn util/addpconn.C)
 target_link_libraries(addpconn Rocmap)
+
+IF(MPI_LINK_FLAGS)
+  SET_TARGET_PROPERTIES(Rocmap pconntest pcommtest pcommpartest bordertest_hex bordertestg_hex
+    bordertest_struc addpconn PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
+ENDIF()
+
 #ADD_TEST(RunAllTests ${EXECUTABLE_OUTPUT_PATH}/testx testresults.txt)
 #ADD_TEST(TestObject:ValidHandle ${TEST_RESULTS} TestObject:ValidHandle testresults.txt)
 #ADD_TEST(TestObject:Exists ${TEST_RESULTS} TestObject:Exists testresults.txt)

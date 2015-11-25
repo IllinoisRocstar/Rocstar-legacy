@@ -7,9 +7,7 @@ IF(NOT ENABLE_MPI)
 ELSE()
   FIND_PACKAGE(MPI REQUIRED)
   add_definitions( -DMPICH_IGNORE_CXX_SEEK )
-#  IF(MPI_CXX_COMPILER)
-#    set (CMAKE_CXX_COMPILER ${MPI_CXX_COMPILER})
-#  ENDIF(MPI_CXX_COMPILER)
+  INCLUDE_DIRECTORIES(${MPI_INCLUDE_PATH})
 ENDIF()
 
 #INCLUDE(CTest)
@@ -32,7 +30,7 @@ set (TEST_SRCS test/add_aspect_ratios.C test/build_meshes.C test/metric_demo.C
                test/smooth_volume.C)
 set (ALL_SRCS ${LIB_SRCS} ${TEST_SRCS} ${UTIL_SRCS})
 
-set_source_files_properties(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC" )
+set_source_files_properties(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC ${MPI_CXX_COMPILE_FLAGS}" )
 #set(TEST_SRCS src/MANTest.C)
 
 # rpath settings
@@ -62,7 +60,7 @@ ELSE()
   add_definitions( -DSTATIC_LINK )
 ENDIF()
 add_dependencies(Rocmop MSQ_MV)
-target_link_libraries(Rocmop Rocsurf Rocmap Rocblas Rocout Rocin Roccom mesquite_95 m)
+target_link_libraries(Rocmop Rocsurf Rocmap Rocblas Rocout Rocin Roccom mesquite_95 m ${MPI_CXX_LIBRARIES})
 
 #set (UTIL_SRCS util/chkPconnGRecv.cc util/RocMeshData.cc)
 #set (TEST_SRCS test/add_aspect_ratios.C test/build_meshes.C test/metric_demo.C 
@@ -78,6 +76,12 @@ target_link_libraries(add_aspect_ratios Rocmop)
 target_link_libraries(build_meshes Rocmop)
 target_link_libraries(metric_demo Rocmop)
 target_link_libraries(smooth_volume Rocmop)
+
+SET_TARGET_PROPERTIES(Rocmop PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
+SET_TARGET_PROPERTIES(add_aspect_ratios PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
+SET_TARGET_PROPERTIES(build_meshes PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
+SET_TARGET_PROPERTIES(metric_demo PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
+SET_TARGET_PROPERTIES(smooth_volume PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
 
 #ADD_TEST(RunAllTests ${EXECUTABLE_OUTPUT_PATH}/testx testresults.txt)
 #ADD_TEST(TestObject:ValidHandle ${TEST_RESULTS} TestObject:ValidHandle testresults.txt)
