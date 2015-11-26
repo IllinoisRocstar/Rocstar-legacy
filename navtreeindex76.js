@@ -1,5 +1,9 @@
 var NAVTREEINDEX76 =
 {
+"classMesquite_1_1StopWatchCollection.html#a983235222003f5692a5ce321e55dac6e":[13,0,7,103,10],
+"classMesquite_1_1StopWatchCollection.html#a983235222003f5692a5ce321e55dac6e":[13,0,7,103,11],
+"classMesquite_1_1StopWatchCollection.html#aaac22b1fe5a73afac98f6ae4f108d63d":[13,0,7,103,34],
+"classMesquite_1_1StopWatchCollection.html#aaac22b1fe5a73afac98f6ae4f108d63d":[13,0,7,103,35],
 "classMesquite_1_1StopWatchCollection.html#abf09f235afee9bc520de6fe4c5364f39":[13,0,7,103,24],
 "classMesquite_1_1StopWatchCollection.html#abf09f235afee9bc520de6fe4c5364f39":[13,0,7,103,25],
 "classMesquite_1_1StopWatchCollection.html#ac1351afdf0266bf05dfd3f1bd426d712":[13,0,7,103,16],
@@ -245,9 +249,5 @@ var NAVTREEINDEX76 =
 "classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37a97fe5ceb733aa3c9e3be2b76c4b638ca":[13,0,7,107,0,14],
 "classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37a97fe5ceb733aa3c9e3be2b76c4b638ca":[13,0,7,107,0,29],
 "classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37a97fe5ceb733aa3c9e3be2b76c4b638ca":[13,0,7,107,1,14],
-"classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37a97fe5ceb733aa3c9e3be2b76c4b638ca":[13,0,7,107,1,29],
-"classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aa870f407e7809a52217b2c72657f0a50":[13,0,7,107,0,10],
-"classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aa870f407e7809a52217b2c72657f0a50":[13,0,7,107,0,25],
-"classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aa870f407e7809a52217b2c72657f0a50":[13,0,7,107,1,10],
-"classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aa870f407e7809a52217b2c72657f0a50":[13,0,7,107,1,25]
+"classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37a97fe5ceb733aa3c9e3be2b76c4b638ca":[13,0,7,107,1,29]
 };

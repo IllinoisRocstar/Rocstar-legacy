@@ -1,5 +1,9 @@
 var NAVTREEINDEX125 =
 {
+"interfacerflu__modinterfaceslibrary_1_1RFLU__ScalarInitRhs.html":[13,0,593,47],
+"interfacerflu__modinterfaceslibrary_1_1RFLU__ScalarInitRhs.html#a82e6a711aeeb55a8f48613dcf0c9cea7":[13,0,593,47,0],
+"interfacerflu__modinterfaceslibrary_1_1RFLU__ScalarSecond.html":[13,0,593,48],
+"interfacerflu__modinterfaceslibrary_1_1RFLU__ScalarSecond.html#a341ba0bb8fc02933846f766dc0112729":[13,0,593,48,0],
 "interfacerflu__modinterfaceslibrary_1_1RFLU__ScalarSecondPatch.html":[13,0,593,49],
 "interfacerflu__modinterfaceslibrary_1_1RFLU__ScalarSecondPatch.html#aef6ccbbabe3db496938f8a519c94ee85":[13,0,593,49,0],
 "interfacerflu__modinterfaceslibrary_1_1RFLU__ScalarViscousFluxes.html":[13,0,593,50],
@@ -245,9 +249,5 @@ var NAVTREEINDEX125 =
 "interfacespec__modinterfaces_1_1SPEC__EqEulCorrPatch.html":[13,0,730,2],
 "interfacespec__modinterfaces_1_1SPEC__EqEulCorrPatch.html#aac01b2458040a1da3b00d1af43268747":[13,0,730,2,0],
 "interfacespec__modinterfaces_1_1SPEC__InitInputValues.html":[13,0,730,3],
-"interfacespec__modinterfaces_1_1SPEC__InitInputValues.html#a0fa3814a543e7bbebb066ddf726a0f8c":[13,0,730,3,0],
-"interfacespec__modinterfaces_1_1SPEC__InitInputValuesSpecType.html":[13,0,730,4],
-"interfacespec__modinterfaces_1_1SPEC__InitInputValuesSpecType.html#adfe503c94ef706f5102b727622562b04":[13,0,730,4,0],
-"interfacespec__modinterfaces_1_1SPEC__ReadInputFile.html":[13,0,730,5],
-"interfacespec__modinterfaces_1_1SPEC__ReadInputFile.html#a476bd631b889ebc8a20636030a5d3965":[13,0,730,5,0]
+"interfacespec__modinterfaces_1_1SPEC__InitInputValues.html#a0fa3814a543e7bbebb066ddf726a0f8c":[13,0,730,3,0]
 };

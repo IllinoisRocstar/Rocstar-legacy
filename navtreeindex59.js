@@ -1,5 +1,9 @@
 var NAVTREEINDEX59 =
 {
+"classHalfedge.html#ab4def96f7b16673e4f64958282db7522":[13,0,214,19],
+"classHalfedge.html#ab72ff77eeb5b8645e86a4b4cb57138ce":[13,0,214,22],
+"classHalfedge.html#ab944b155156144ffb9cb73cad9eef7cc":[13,0,214,21],
+"classHalfedge.html#ac93c1402ea3d1cfb9ec36398fca4e2b0":[13,0,214,0],
 "classHalfedge.html#af15a42599ef8e122c9b7d94073f2481f":[13,0,214,20],
 "classHalfedge.html#afe868c12813c184a147c1ddd7812fd03":[13,0,214,24],
 "classHalfedge__data__structure__decorator.html":[13,0,215],
@@ -245,9 +249,5 @@ var NAVTREEINDEX59 =
 "classHalfedge__data__structure__using__vector.html#a6d3e3a689b27dd74473bde0542e4c040":[13,0,216,17],
 "classHalfedge__data__structure__using__vector.html#a7270d6199f7f4fdd7528f23b5c672490":[13,0,216,5],
 "classHalfedge__data__structure__using__vector.html#a7270d6199f7f4fdd7528f23b5c672490":[13,0,216,4],
-"classHalfedge__data__structure__using__vector.html#a73f60348b325257a84ed31001efe1ea4":[13,0,216,38],
-"classHalfedge__data__structure__using__vector.html#a73f60348b325257a84ed31001efe1ea4":[13,0,216,39],
-"classHalfedge__data__structure__using__vector.html#a852b1617bdafa5ddd77a47c3142d73e5":[13,0,216,144],
-"classHalfedge__data__structure__using__vector.html#a852b1617bdafa5ddd77a47c3142d73e5":[13,0,216,145],
-"classHalfedge__data__structure__using__vector.html#a85d7b03923b515ca7e3851397c5f7c31":[13,0,216,159]
+"classHalfedge__data__structure__using__vector.html#a73f60348b325257a84ed31001efe1ea4":[13,0,216,38]
 };

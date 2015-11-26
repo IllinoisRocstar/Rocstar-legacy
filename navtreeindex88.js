@@ -1,5 +1,9 @@
 var NAVTREEINDEX88 =
 {
+"classSegmentS2.html":[13,0,687],
+"classSegmentS2.html#a113b51cb7007b88b067223d8cd79bb34":[13,0,687,21],
+"classSegmentS2.html#a180a29942259f7a15e5b9f5a4e7117fc":[13,0,687,4],
+"classSegmentS2.html#a1d1e457a0d304a26d6b4a24fd4e3ce0e":[13,0,687,3],
 "classSegmentS2.html#a2775c2fdfce8412fe0341f21d700b2bc":[13,0,687,1],
 "classSegmentS2.html#a4496d5c9e1483e6a96fa12cb6bcb5a09":[13,0,687,23],
 "classSegmentS2.html#a5c50d6fbc59cce3636b8e45554272b63":[13,0,687,13],
@@ -245,9 +249,5 @@ var NAVTREEINDEX88 =
 "classSimple__cartesian.html#a20efda73607aac41d39c37552a31ea81":[13,0,700,378],
 "classSimple__cartesian.html#a20efda73607aac41d39c37552a31ea81":[13,0,700,379],
 "classSimple__cartesian.html#a214e311507f6f29c601c1ad513bf5ce0":[13,0,700,308],
-"classSimple__cartesian.html#a214e311507f6f29c601c1ad513bf5ce0":[13,0,700,309],
-"classSimple__cartesian.html#a21889a500cd66a769f48e4a77e7b3cec":[13,0,700,544],
-"classSimple__cartesian.html#a21889a500cd66a769f48e4a77e7b3cec":[13,0,700,545],
-"classSimple__cartesian.html#a2420908947dd23e9dffa5461d75b647e":[13,0,700,431],
-"classSimple__cartesian.html#a2420908947dd23e9dffa5461d75b647e":[13,0,700,430]
+"classSimple__cartesian.html#a214e311507f6f29c601c1ad513bf5ce0":[13,0,700,309]
 };

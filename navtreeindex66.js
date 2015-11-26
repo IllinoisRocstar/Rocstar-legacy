@@ -1,5 +1,9 @@
 var NAVTREEINDEX66 =
 {
+"classMesquite_1_1FeasibleNewton.html#a4b66d5e31b5dc18b314c8a68163263bd":[13,0,7,22,4],
+"classMesquite_1_1FeasibleNewton.html#a6e276f669020b9613087cd5fbb8da087":[13,0,7,22,6],
+"classMesquite_1_1FeasibleNewton.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd":[13,0,7,22,11],
+"classMesquite_1_1FeasibleNewton.html#a900e1258c441ef81266a5f517ec7fd1a":[13,0,7,22,15],
 "classMesquite_1_1FeasibleNewton.html#a96d378cec956f425c152a261505fa4c0":[13,0,7,22,18],
 "classMesquite_1_1FeasibleNewton.html#ad8b990235872f9352ecfec99159eab26":[13,0,7,22,10],
 "classMesquite_1_1FeasibleNewton.html#ae7460afcf8eeb372dea5ed239640b0e0":[13,0,7,22,14],
@@ -245,9 +249,5 @@ var NAVTREEINDEX66 =
 "classMesquite_1_1InstructionQueue.html#a3c4dbb1068b65a0ecfdc1a9e48628d09":[13,0,7,37,20],
 "classMesquite_1_1InstructionQueue.html#a3c4dbb1068b65a0ecfdc1a9e48628d09":[13,0,7,37,21],
 "classMesquite_1_1InstructionQueue.html#a3fa7ba2f903d1ef54e6d53e6d725f90e":[13,0,7,37,40],
-"classMesquite_1_1InstructionQueue.html#a44c9a4cf931f1b022796726489a2ee56":[13,0,7,37,1],
-"classMesquite_1_1InstructionQueue.html#a44c9a4cf931f1b022796726489a2ee56":[13,0,7,37,3],
-"classMesquite_1_1InstructionQueue.html#a4d86af8b4e26e5abbff6098e97c32a63":[13,0,7,37,29],
-"classMesquite_1_1InstructionQueue.html#a4d86af8b4e26e5abbff6098e97c32a63":[13,0,7,37,28],
-"classMesquite_1_1InstructionQueue.html#a55786a7fe9c1e6b1399cbcf46f1a4ba9":[13,0,7,37,30]
+"classMesquite_1_1InstructionQueue.html#a44c9a4cf931f1b022796726489a2ee56":[13,0,7,37,1]
 };

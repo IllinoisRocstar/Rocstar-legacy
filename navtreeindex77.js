@@ -1,5 +1,9 @@
 var NAVTREEINDEX77 =
 {
+"classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aa870f407e7809a52217b2c72657f0a50":[13,0,7,107,0,10],
+"classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aa870f407e7809a52217b2c72657f0a50":[13,0,7,107,0,25],
+"classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aa870f407e7809a52217b2c72657f0a50":[13,0,7,107,1,10],
+"classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aa870f407e7809a52217b2c72657f0a50":[13,0,7,107,1,25],
 "classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aac3320759b4797fb2dac3419ba4113d7":[13,0,7,107,0,13],
 "classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aac3320759b4797fb2dac3419ba4113d7":[13,0,7,107,0,28],
 "classMesquite_1_1TerminationCriterion.html#af26848b1c47c99c8bbd46fd1976c2f37aac3320759b4797fb2dac3419ba4113d7":[13,0,7,107,1,13],
@@ -144,8 +148,8 @@ var NAVTREEINDEX77 =
 "classMesquite_1_1Vector3D.html#a4938e17c424bcdff26eceee5a10eea54":[13,0,7,115,99],
 "classMesquite_1_1Vector3D.html#a49ab085fac87d1f1a33176e7fbd287ce":[13,0,7,115,10],
 "classMesquite_1_1Vector3D.html#a49ab085fac87d1f1a33176e7fbd287ce":[13,0,7,115,11],
-"classMesquite_1_1Vector3D.html#a49fe740d37400aba7d3cb91531cde7d1":[13,0,7,115,20],
 "classMesquite_1_1Vector3D.html#a49fe740d37400aba7d3cb91531cde7d1":[13,0,7,115,21],
+"classMesquite_1_1Vector3D.html#a49fe740d37400aba7d3cb91531cde7d1":[13,0,7,115,20],
 "classMesquite_1_1Vector3D.html#a4f02903456f0ab063ccbe47b760295c9":[13,0,7,115,15],
 "classMesquite_1_1Vector3D.html#a50811825716060178999782ab30f5735":[13,0,7,115,35],
 "classMesquite_1_1Vector3D.html#a5c737e198c6c4cc99ec627f3a5416114":[13,0,7,115,9],
@@ -245,9 +249,5 @@ var NAVTREEINDEX77 =
 "classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9":[13,0,7,117,13],
 "classMesquite_1_1VertexMover.html#a8ba87b8ba3350165481bb818a445398a":[13,0,7,117,12],
 "classMesquite_1_1VertexMover.html#a8f94dc33a3804ab30f2d2289ccd0494a":[13,0,7,117,6],
-"classMesquite_1_1VertexMover.html#a8f94dc33a3804ab30f2d2289ccd0494a":[13,0,7,117,7],
-"classMesquite_1_1VertexMover.html#ae11f8e065dd31c802ff8c66f0d45c14d":[13,0,7,117,0],
-"classMesquite_1_1VertexMover.html#ae11f8e065dd31c802ff8c66f0d45c14d":[13,0,7,117,2],
-"classMesquite_1_1VolumeQualityMetric.html":[13,0,7,118],
-"classMesquite_1_1VolumeQualityMetric.html#ad38f5bfad9c825c53b00af4419805f5a":[13,0,7,118,0]
+"classMesquite_1_1VertexMover.html#a8f94dc33a3804ab30f2d2289ccd0494a":[13,0,7,117,7]
 };
