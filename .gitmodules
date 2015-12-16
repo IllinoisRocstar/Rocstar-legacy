@@ -1,0 +1,3 @@
+[submodule "IRAD"]
+	path = IRAD
+	url = ../IRAD
