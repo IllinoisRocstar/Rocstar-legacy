@@ -310,6 +310,8 @@ SUBROUTINE RFLU_InitGlobal(casename,verbLevel,communicator,global)
   
   global%moduleType = MODULE_TYPE_NONE 
 
+  global%constrCaseRad = -1.0
+
 ! ==============================================================================
 ! Flow initialization
 ! ==============================================================================
