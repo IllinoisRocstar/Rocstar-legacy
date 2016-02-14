@@ -406,263 +406,265 @@ $(document).ready(function(){initNavTree('RFLU__InitGlobal_8F90_source.html','')
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  </div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  global%moduleType = module_type_none </div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">! ==============================================================================</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">! Flow initialization</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  global%constrCaseRad = -1.0</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">! ==============================================================================</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  global%initFlowFlag = crazy_value_int <span class="comment">! To force setting of value</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor">#ifdef PLAG</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor"></span>  global%initPlagFlag = crazy_value_int <span class="comment">! To force setting of value</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">! ==============================================================================</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">! Preprocessor</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">! Flow initialization</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">! ==============================================================================</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  global%initFlowFlag = crazy_value_int <span class="comment">! To force setting of value</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#ifdef PLAG</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor"></span>  global%initPlagFlag = crazy_value_int <span class="comment">! To force setting of value</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">! ==============================================================================</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  global%prepPartMode    = partition_mode_proper</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  global%syPePatchesFlag = .false.</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment">! ==============================================================================</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">! Postprocessor</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">! Preprocessor</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment">! ==============================================================================</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  global%prepPartMode    = partition_mode_proper</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  global%syPePatchesFlag = .false.</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">! ==============================================================================</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  global%postOutputFormat = post_output_format_tecplot</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">! Postprocessor</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">! ==============================================================================</span></div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  global%postInterpOrder = 1</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  global%postInterpType  = interp_type_proper</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  global%postPlotType    = plot_grid_flow</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  global%postCompErrFlag    = .false.</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  global%postMergeFlag      = .true.</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  global%postPlotPatchFlag  = .true.</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  global%postPlotVolFlag    = .true.</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  global%postWriteMergeFlag = .false.</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  global%postDiscFlag     = .false.</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  global%postExtractFlag  = .false.</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  global%postLag2EulFlag  = .false.</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  global%postSpecFlag     = .false.</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  global%postVortFlag     = .false.</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  global%postVortCoreFlag = .false.</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  global%postSchType  =  0</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  global%postSchExp   = 10.0_rfreal</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  global%postNFringes = 32</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  global%postNServers = 1</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  global%postOutputFormat = post_output_format_tecplot</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;  global%postInterpOrder = 1</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  global%postInterpType  = interp_type_proper</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  global%postPlotType    = plot_grid_flow</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  global%postCompErrFlag    = .false.</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  global%postMergeFlag      = .true.</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  global%postPlotPatchFlag  = .true.</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  global%postPlotVolFlag    = .true.</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  global%postWriteMergeFlag = .false.</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  global%postDiscFlag     = .false.</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  global%postExtractFlag  = .false.</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  global%postLag2EulFlag  = .false.</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  global%postSpecFlag     = .false.</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  global%postVortFlag     = .false.</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  global%postVortCoreFlag = .false.</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  global%postSchType  =  0</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  global%postSchExp   = 10.0_rfreal</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  global%postNFringes = 32</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">! ==============================================================================</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">! Picking</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  global%postNServers = 1</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">! ==============================================================================</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  global%pickCoordFlag = .false.</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">! Picking</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">! ==============================================================================</span></div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  global%pickXCoordLow = -huge(1.0_rfreal)</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  global%pickXCoordUpp =  huge(1.0_rfreal)</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  global%pickYCoordLow = -huge(1.0_rfreal)</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  global%pickYCoordUpp =  huge(1.0_rfreal)</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  global%pickZCoordLow = -huge(1.0_rfreal)</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  global%pickZCoordUpp =  huge(1.0_rfreal)</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">! ==============================================================================</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">! GENX; if GENX is defined, winName is set in rocflu_load_module.F90</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  global%pickCoordFlag = .false.</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  global%pickXCoordLow = -huge(1.0_rfreal)</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  global%pickXCoordUpp =  huge(1.0_rfreal)</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  global%pickYCoordLow = -huge(1.0_rfreal)</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  global%pickYCoordUpp =  huge(1.0_rfreal)</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  global%pickZCoordLow = -huge(1.0_rfreal)</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  global%pickZCoordUpp =  huge(1.0_rfreal)</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment">! ==============================================================================</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#ifndef GENX</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor"></span>  global%surfWinName      = <span class="stringliteral">&#39;&#39;</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  global%surfWinNameInput = <span class="stringliteral">&#39;&#39;</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  global%volWinName       = <span class="stringliteral">&#39;&#39;</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  global%volWinNameInput  = <span class="stringliteral">&#39;&#39;</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment">! The following will be overwritten by RFLU_ReadGENXControlFile</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  global%inDir   = <span class="stringliteral">&#39;./&#39;</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  global%outDir  = <span class="stringliteral">&#39;./&#39;</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">! ******************************************************************************</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="comment">! End</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">! GENX; if GENX is defined, winName is set in rocflu_load_module.F90</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">! ==============================================================================</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="preprocessor">#ifndef GENX</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor"></span>  global%surfWinName      = <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  global%surfWinNameInput = <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  global%volWinName       = <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;  global%volWinNameInput  = <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment">! The following will be overwritten by RFLU_ReadGENXControlFile</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  global%inDir   = <span class="stringliteral">&#39;./&#39;</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  global%outDir  = <span class="stringliteral">&#39;./&#39;</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">! ******************************************************************************</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="keyword">END SUBROUTINE </span><a class="code" href="RFLU__InitGlobal_8F90.html#ab498e5540a6376fa62559f6c8622ed68">rflu_initglobal</a></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">! End</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">! ******************************************************************************</span></div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">! ******************************************************************************</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">! RCS Revision history:</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keyword">END SUBROUTINE </span><a class="code" href="RFLU__InitGlobal_8F90.html#ab498e5540a6376fa62559f6c8622ed68">rflu_initglobal</a></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">! ******************************************************************************</span></div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">! $Log: RFLU_InitGlobal.F90,v $</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">! Revision 1.52  2008/12/06 08:44:12  mtcampbe</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">! Updated license.</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">! Revision 1.51  2008/11/19 22:17:25  mtcampbe</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">! Added Illinois Open Source License/Copyright</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">! Revision 1.50  2006/10/20 21:23:29  mparmar</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">! Added initialization of gravity,thrustWriteCntr</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">! Revision 1.49  2006/08/04 03:03:23  haselbac</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">! Added init of grid distortion parameters, fixed typo</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">! Revision 1.48  2006/05/06 15:20:09  haselbac</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">! Bug fix: Missing ifdef PLAG</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">! Revision 1.47  2006/04/07 15:19:16  haselbac</span></div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">! Removed tabs</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">! Revision 1.46  2006/03/26 20:21:35  haselbac</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">! Added ref values for GL model</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">! Revision 1.45  2006/03/25 21:42:47  haselbac</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment">! Added init of syPePatchesFlag</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">! Revision 1.44  2006/02/06 23:56:37  haselbac</span></div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment">! Added communicator to arg list to fix bug in GENX init with Panda</span></div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment">! Revision 1.43  2005/12/10 23:28:05  haselbac</span></div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment">! Renamed geom post variables to pick variables</span></div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment">! Revision 1.42  2005/12/10 16:54:30  haselbac</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">! Added init for postLag2EulFlag</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">! Revision 1.41  2005/12/01 17:09:53  fnajjar</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="comment">! Added appropriate initialization, checking and printing of random seed type</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment">! Revision 1.40  2005/11/10 02:01:55  haselbac</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment">! Added init of acceleration components</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment">! Revision 1.39  2005/10/28 19:17:07  haselbac</span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment">! Added setting of postPlotPatchFlag</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment">! Revision 1.38  2005/10/05 20:02:28  haselbac</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment">! Added init for post output format and nservers</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">! Revision 1.37  2005/08/10 00:30:55  haselbac</span></div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="comment">! Added init of postVortCoreFlag</span></div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">! Revision 1.36  2005/08/09 00:54:26  haselbac</span></div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment">! Added init of patchCoeffFlag, postCompErrFlag, postWriteMergeFlag</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="comment">! Revision 1.35  2005/07/25 12:20:22  haselbac</span></div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="comment">! Added init of postVortFlag, changed postSchExp to float</span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment">! Revision 1.34  2005/07/05 19:26:38  haselbac</span></div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment">! Added init for postSchType and postSchExp</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment">! Revision 1.33  2005/07/01 15:13:12  haselbac</span></div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">! Added init of verbLevelCOM</span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="comment">! Revision 1.32  2005/05/01 14:18:28  haselbac</span></div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment">! Added init of postDiscFlag and postNFringes</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment">! Revision 1.31  2005/04/15 15:06:17  haselbac</span></div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="comment">! Removed Charm/FEM routines, added init of mpiComm and plagUsedSave</span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="comment">! Revision 1.30  2005/03/31 16:49:55  haselbac</span></div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="comment">! Added initialization of currentTimeRK</span></div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="comment">! Revision 1.29  2004/11/17 16:27:54  haselbac</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="comment">! Added setting of rkScheme</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="comment">! Revision 1.28  2004/10/26 15:16:16  haselbac</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="comment">! Added initialization of postExtractFlag</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="comment">! Revision 1.27  2004/10/19 19:24:22  haselbac</span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="comment">! Added and removed several variables</span></div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="comment">! Revision 1.26  2004/10/09 16:36:15  fnajjar</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="comment">! Initialized initPlagFlag</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="comment">! Revision 1.25  2004/07/21 14:54:31  haselbac</span></div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="comment">! Added initialization of postInterpType</span></div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="comment">! Revision 1.24  2004/06/16 20:00:19  haselbac</span></div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="comment">! Added force variables, clean-up, cosmetics</span></div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="comment">! Revision 1.23  2004/03/15 21:02:57  haselbac</span></div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;<span class="comment">! Changed init value of checkLevel to use parameter</span></div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;<span class="comment">! Revision 1.22  2004/03/05 22:09:01  jferry</span></div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="comment">! created global variables for peul, plag, and inrt use</span></div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;<span class="comment">! Revision 1.21  2004/01/29 22:56:33  haselbac</span></div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="comment">! Added initialization of rad2deg and deg2rad</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="comment">! Revision 1.20  2003/12/04 03:23:54  haselbac</span></div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="comment">! Collect initialization of ALL global variables, clean-up</span></div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;<span class="comment">! Revision 1.19  2003/11/25 21:02:47  haselbac</span></div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;<span class="comment">! Added initialization of initFlowFlag</span></div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="comment">! Revision 1.18  2003/10/29 21:38:14  haselbac</span></div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="comment">! Added init for new global variables</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="comment">! Revision 1.17  2003/10/15 02:40:07  haselbac</span></div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="comment">! Added init for dtMinLimit</span></div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="comment">! Revision 1.16  2003/08/07 15:30:32  haselbac</span></div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="comment">! Added and changed var names</span></div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="comment">! Revision 1.15  2003/07/22 01:55:54  haselbac</span></div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="comment">! Added init of postInterpOrder and warnCounter</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="comment">! Revision 1.14  2003/05/05 18:39:03  haselbac</span></div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="comment">! Added init of plotType</span></div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="comment">! Revision 1.13  2003/04/29 21:48:05  haselbac</span></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="comment">! Added initialization of surfDiverFlag</span></div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="comment">! Revision 1.12  2003/04/28 22:40:01  haselbac</span></div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="comment">! Added init of post and prep vars, cosmetics</span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;<span class="comment">! Revision 1.11  2003/04/12 21:36:22  haselbac</span></div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="comment">! Added init of FEMRocfluGrid</span></div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="comment">! Revision 1.10  2003/04/07 14:21:07  haselbac</span></div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="comment">! Initialize new probe parameters, cosmetic changes</span></div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;<span class="comment">! Revision 1.9  2003/03/15 17:00:03  haselbac</span></div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="comment">! Removed splitFlag</span></div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="comment">! Revision 1.8  2003/02/01 00:27:17  haselbac</span></div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="comment">! Added initialization of transform variables and enforceFlag</span></div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;<span class="comment">! Revision 1.7  2002/10/27 18:52:16  haselbac</span></div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="comment">! Removed tabs</span></div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="comment">! Revision 1.6  2002/10/16 21:11:40  haselbac</span></div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="comment">! Added initialization of resInit</span></div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="comment">! Revision 1.5  2002/10/13 21:41:40  jiao</span></div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="comment">! Compiled Rocflu on IBM SP.</span></div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;<span class="comment">! Revision 1.4  2002/10/05 18:46:28  haselbac</span></div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;<span class="comment">! Integration into GENX, some clean-up</span></div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="comment">! Revision 1.3  2002/09/09 14:15:01  haselbac</span></div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;<span class="comment">! global now under regions</span></div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="comment">! Revision 1.2  2002/07/25 14:42:07  haselbac</span></div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="comment">! Added arguments, status of routine has changed, now called from main</span></div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;<span class="comment">! Revision 1.1  2002/06/14 20:05:48  haselbac</span></div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="comment">! Former RFLU_InitLocalGlobal.F90, renamed as ModLocal.F90 no longer used</span></div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="comment">! Revision 1.3  2002/05/28 13:49:10  haselbac</span></div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="comment">! Changed initial value for currentTime</span></div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="comment">! Revision 1.2  2002/05/07 18:51:01  haselbac</span></div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="comment">! Added initialization of transform flag</span></div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="comment">! Revision 1.1  2002/05/04 16:09:00  haselbac</span></div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="comment">! Initial revision</span></div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="comment">!</span></div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="comment">! ******************************************************************************</span></div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">! RCS Revision history:</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">! $Log: RFLU_InitGlobal.F90,v $</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">! Revision 1.52  2008/12/06 08:44:12  mtcampbe</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment">! Updated license.</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">! Revision 1.51  2008/11/19 22:17:25  mtcampbe</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">! Added Illinois Open Source License/Copyright</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">! Revision 1.50  2006/10/20 21:23:29  mparmar</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">! Added initialization of gravity,thrustWriteCntr</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">! Revision 1.49  2006/08/04 03:03:23  haselbac</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">! Added init of grid distortion parameters, fixed typo</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">! Revision 1.48  2006/05/06 15:20:09  haselbac</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment">! Bug fix: Missing ifdef PLAG</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment">! Revision 1.47  2006/04/07 15:19:16  haselbac</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">! Removed tabs</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">! Revision 1.46  2006/03/26 20:21:35  haselbac</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">! Added ref values for GL model</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment">! Revision 1.45  2006/03/25 21:42:47  haselbac</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment">! Added init of syPePatchesFlag</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment">! Revision 1.44  2006/02/06 23:56:37  haselbac</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment">! Added communicator to arg list to fix bug in GENX init with Panda</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment">! Revision 1.43  2005/12/10 23:28:05  haselbac</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment">! Renamed geom post variables to pick variables</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="comment">! Revision 1.42  2005/12/10 16:54:30  haselbac</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment">! Added init for postLag2EulFlag</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment">! Revision 1.41  2005/12/01 17:09:53  fnajjar</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment">! Added appropriate initialization, checking and printing of random seed type</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment">! Revision 1.40  2005/11/10 02:01:55  haselbac</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment">! Added init of acceleration components</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment">! Revision 1.39  2005/10/28 19:17:07  haselbac</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment">! Added setting of postPlotPatchFlag</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment">! Revision 1.38  2005/10/05 20:02:28  haselbac</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment">! Added init for post output format and nservers</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="comment">! Revision 1.37  2005/08/10 00:30:55  haselbac</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="comment">! Added init of postVortCoreFlag</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="comment">! Revision 1.36  2005/08/09 00:54:26  haselbac</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="comment">! Added init of patchCoeffFlag, postCompErrFlag, postWriteMergeFlag</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="comment">! Revision 1.35  2005/07/25 12:20:22  haselbac</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="comment">! Added init of postVortFlag, changed postSchExp to float</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="comment">! Revision 1.34  2005/07/05 19:26:38  haselbac</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment">! Added init for postSchType and postSchExp</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="comment">! Revision 1.33  2005/07/01 15:13:12  haselbac</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="comment">! Added init of verbLevelCOM</span></div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="comment">! Revision 1.32  2005/05/01 14:18:28  haselbac</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment">! Added init of postDiscFlag and postNFringes</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="comment">! Revision 1.31  2005/04/15 15:06:17  haselbac</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="comment">! Removed Charm/FEM routines, added init of mpiComm and plagUsedSave</span></div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="comment">! Revision 1.30  2005/03/31 16:49:55  haselbac</span></div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="comment">! Added initialization of currentTimeRK</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="comment">! Revision 1.29  2004/11/17 16:27:54  haselbac</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="comment">! Added setting of rkScheme</span></div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="comment">! Revision 1.28  2004/10/26 15:16:16  haselbac</span></div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;<span class="comment">! Added initialization of postExtractFlag</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="comment">! Revision 1.27  2004/10/19 19:24:22  haselbac</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="comment">! Added and removed several variables</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="comment">! Revision 1.26  2004/10/09 16:36:15  fnajjar</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="comment">! Initialized initPlagFlag</span></div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;<span class="comment">! Revision 1.25  2004/07/21 14:54:31  haselbac</span></div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;<span class="comment">! Added initialization of postInterpType</span></div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;<span class="comment">! Revision 1.24  2004/06/16 20:00:19  haselbac</span></div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;<span class="comment">! Added force variables, clean-up, cosmetics</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="comment">! Revision 1.23  2004/03/15 21:02:57  haselbac</span></div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;<span class="comment">! Changed init value of checkLevel to use parameter</span></div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="comment">! Revision 1.22  2004/03/05 22:09:01  jferry</span></div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;<span class="comment">! created global variables for peul, plag, and inrt use</span></div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="comment">! Revision 1.21  2004/01/29 22:56:33  haselbac</span></div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;<span class="comment">! Added initialization of rad2deg and deg2rad</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="comment">! Revision 1.20  2003/12/04 03:23:54  haselbac</span></div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;<span class="comment">! Collect initialization of ALL global variables, clean-up</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;<span class="comment">! Revision 1.19  2003/11/25 21:02:47  haselbac</span></div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;<span class="comment">! Added initialization of initFlowFlag</span></div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="comment">! Revision 1.18  2003/10/29 21:38:14  haselbac</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="comment">! Added init for new global variables</span></div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;<span class="comment">! Revision 1.17  2003/10/15 02:40:07  haselbac</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="comment">! Added init for dtMinLimit</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;<span class="comment">! Revision 1.16  2003/08/07 15:30:32  haselbac</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="comment">! Added and changed var names</span></div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;<span class="comment">! Revision 1.15  2003/07/22 01:55:54  haselbac</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="comment">! Added init of postInterpOrder and warnCounter</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="comment">! Revision 1.14  2003/05/05 18:39:03  haselbac</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="comment">! Added init of plotType</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="comment">! Revision 1.13  2003/04/29 21:48:05  haselbac</span></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="comment">! Added initialization of surfDiverFlag</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="comment">! Revision 1.12  2003/04/28 22:40:01  haselbac</span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;<span class="comment">! Added init of post and prep vars, cosmetics</span></div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="comment">! Revision 1.11  2003/04/12 21:36:22  haselbac</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="comment">! Added init of FEMRocfluGrid</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;<span class="comment">! Revision 1.10  2003/04/07 14:21:07  haselbac</span></div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;<span class="comment">! Initialize new probe parameters, cosmetic changes</span></div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="comment">! Revision 1.9  2003/03/15 17:00:03  haselbac</span></div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="comment">! Removed splitFlag</span></div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<span class="comment">! Revision 1.8  2003/02/01 00:27:17  haselbac</span></div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;<span class="comment">! Added initialization of transform variables and enforceFlag</span></div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="comment">! Revision 1.7  2002/10/27 18:52:16  haselbac</span></div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="comment">! Removed tabs</span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="comment">! Revision 1.6  2002/10/16 21:11:40  haselbac</span></div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="comment">! Added initialization of resInit</span></div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="comment">! Revision 1.5  2002/10/13 21:41:40  jiao</span></div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;<span class="comment">! Compiled Rocflu on IBM SP.</span></div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="comment">! Revision 1.4  2002/10/05 18:46:28  haselbac</span></div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;<span class="comment">! Integration into GENX, some clean-up</span></div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;<span class="comment">! Revision 1.3  2002/09/09 14:15:01  haselbac</span></div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="comment">! global now under regions</span></div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;<span class="comment">! Revision 1.2  2002/07/25 14:42:07  haselbac</span></div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;<span class="comment">! Added arguments, status of routine has changed, now called from main</span></div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="comment">! Revision 1.1  2002/06/14 20:05:48  haselbac</span></div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="comment">! Former RFLU_InitLocalGlobal.F90, renamed as ModLocal.F90 no longer used</span></div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="comment">! Revision 1.3  2002/05/28 13:49:10  haselbac</span></div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="comment">! Changed initial value for currentTime</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="comment">! Revision 1.2  2002/05/07 18:51:01  haselbac</span></div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="comment">! Added initialization of transform flag</span></div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="comment">! Revision 1.1  2002/05/04 16:09:00  haselbac</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="comment">! Initial revision</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="comment">!</span></div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="comment">! ******************************************************************************</span></div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
 <div class="ttc" id="classmodglobal_html"><div class="ttname"><a href="classmodglobal.html">modglobal</a></div><div class="ttdef"><b>Definition:</b> <a href="ModGlobal_8F90_source.html#l00039">ModGlobal.F90:39</a></div></div>
 <div class="ttc" id="classmodparameters_html"><div class="ttname"><a href="classmodparameters.html">modparameters</a></div><div class="ttdef"><b>Definition:</b> <a href="ModParameters_8F90_source.html#l00042">ModParameters.F90:42</a></div></div>
 <div class="ttc" id="classmodmpi_html"><div class="ttname"><a href="classmodmpi.html">modmpi</a></div><div class="ttdef"><b>Definition:</b> <a href="ModMPI_8F90_source.html#l00040">ModMPI.F90:40</a></div></div>
@@ -677,7 +679,7 @@ $(document).ready(function(){initNavTree('RFLU__InitGlobal_8F90_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7a486b17d2021c0193d0e2d8b9cdf369.html">Rocstar-public_master</a></li><li class="navelem"><a class="el" href="dir_d3fdd042181e969c3444091d31b5df5a.html">RocfluidMP</a></li><li class="navelem"><a class="el" href="dir_b886287f0d7202f997c92ebb006c37f7.html">libflu</a></li><li class="navelem"><a class="el" href="RFLU__InitGlobal_8F90.html">RFLU_InitGlobal.F90</a></li>
-    <li class="footer">Generated on Sat Feb 13 2016 02:27:23 for Rocstar by
+    <li class="footer">Generated on Sun Feb 14 2016 02:26:16 for Rocstar by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
