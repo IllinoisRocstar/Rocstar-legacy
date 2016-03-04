@@ -145,9 +145,9 @@
 /// |RocburnAPNControl.txt                  |
 /// |RocburnPYControl.txt                   |
 ///
-/// \b Please \b see \b the <a href="../legacy/Tutorial/Section_07_PhysicsModules.pdf" target="_blank"><b>PhysicsModules</b></a> \b powerpoint \b for
+/// \b Please \b see \b the <a href="Section_07_PhysicsModules.pdf" target="_blank"><b>PhysicsModules</b></a> \b powerpoint \b for
 /// \b the \b RocburnAPNControl.txt \b and \b RocburnPYControl.txt \textfiles.
 ///
 ///
-/// These sections are adapted from the <a href="../legacy/Tutorial/Section_03_Multiphysics.pdf" target="_blank"><b>Multiphysics</b></a> 
-/// and <a href="../legacy/Tutorial/Section_07_PhysicsModules.pdf" target="_blank"><b>PhysicsModules</b></a> powerpoints respectively.
+/// These sections are adapted from the <a href="Section_03_Multiphysics.pdf" target="_blank"><b>Multiphysics</b></a> 
+/// and <a href="Section_06_PhysicsModules.pdf" target="_blank"><b>PhysicsModules</b></a> powerpoints respectively.

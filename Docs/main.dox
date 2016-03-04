@@ -5,9 +5,9 @@
 /// Welcome to the Rocstar multiphysics simulation application! \n
 ///
 /// @subsection building_rocstar Building Rocstar
-/// For information on building and installing Rocstar see the <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>. \n
-/// For further details about the requirements of building Rocstar, click <a href="../legacy/Tutorial/Section_08_BuildingRocstar.pdf" target="_blank"><b>here</b></a>. \n
-/// For more details on how to run Rocstar including information regarding its build structure, click <a href="../legacy/Tutorial/Section_10_RunRocstar.pdf" target="_blank"><b>here</b></a>.
+/// For information on building and installing Rocstar see the <a href="RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>. \n
+/// For further details about the requirements of building Rocstar, click <a href="Section_08_BuildingRocstar.pdf" target="_blank"><b>here</b></a>. \n
+/// For more details on how to run Rocstar including information regarding its build structure, click <a href="Section_10_RunRocstar.pdf" target="_blank"><b>here</b></a>.
 ///
 /// @subsection motivation Motivation of Rocstar
 /// Historically, there have been many challenges involved with rocket simulation. 
@@ -32,22 +32,22 @@
 /// 
 /// |Modules     | \b User \b Guides                                                             |\b Developer \b Guides                                                 |\b Combined Guides                                                   |
 /// |:----------:| :-----------------:                                                           |:---------------------:                                                |:----------:                                                         | 
-/// |Misc.       |<a href="../legacy/UG/Rocstar3_UG.pdf" target="_blank"><b>Rocstar Suite</b></a>|                                                                       |                                                                     |
-/// |Rocblas     |<a href="../legacy/UG/Rocblas_ug.pdf" target="_blank"><b>X</b></a>             |<a href="../legacy/DG/Rocblas_dg.pdf" target="_blank"><b>X</b></a>     |                                                                     |
-/// |Rocburn2D   |                                                                               |                                                                       |<a href="../legacy/UG/Rocburn2D_UG.pdf" target="_blank"><b>X</b></a> |
-/// |Roccom      |<a href="../legacy/UG/Roccom_ug.pdf" target="_blank"><b>X</b></a>              |                                                                       |                                                                     |
-/// |Rocface     |<a href="../legacy/UG/Rocface_ug.pdf" target="_blank"><b>X</b></a>             |                                                                       |                                                                     |
-/// |RocfluMP    |                                                                               |                                                                       |<a href="../legacy/UG/rocflump_book.pdf" target="_blank"><b>X</b></a>|
-/// |Rocfrac     |<a href="../legacy/UG/Rocfrac_ug.pdf" target="_blank"><b>X</b></a>             |<a href="../legacy/DG/Rocfrac_dg.pdf" target="_blank"><b>X</b></a>     |                                                                     |
-/// |Rocin/Rocout|<a href="../legacy/UG/Rocin_ug.pdf" target="_blank"><b>X</b></a>               |                                                                       |                                                                     |
-/// |Rocketeer   |<a href="../legacy/UG/rocketeer.pdf" target="_blank"><b>X</b></a>              |                                                                       |                                                                     |
-/// |Rocman      |                                                                               |<a href="../legacy/UG/Rocman_design.pdf" target="_blank"><b>X</b></a>  |                                                                     |
-/// |Rocmap      |                                                                               |                                                                       |<a href="../legacy/UG/Rocmap_UDG.pdf" target="_blank"><b>X</b></a>   |  
-/// |Rocmop      |<a href="../legacy/UG/Rocmop_UG.pdf" target="_blank"><b>X</b></a>              |<a href="../legacy/DG/Rocmop_DG.pdf" target="_blank"><b>X</b></a>      |                                                                     |
-/// |Rocpart     |<a href="../legacy/UG/rocpart_ug.pdf" target="_blank"><b>X</b></a>             |<a href="../legacy/DG/rocpart_dg.pdf" target="_blank"><b>X</b></a>     |                                                                     |
-/// |Rocrad      |<a href="../legacy/UG/Rocrad_ug.pdf" target="_blank"><b>X</b></a>              |<a href="../legacy/DG/Rocrad_dg.pdf" target="_blank"><b>X</b></a>      |                                                                     |
-/// |Rocsolid    |<a href="../legacy/UG/Rocsolid_3.4_UG.pdf" target="_blank"><b>X</b></a>        |<a href="../legacy/DG/Rocsolid_3.4_DG.pdf" target="_blank"><b>X</b></a>|                                                                     |
-/// |Rocturb     |<a href="../legacy/UG/rocturb_ug.pdf" target="_blank"><b>X</b></a>             |<a href="../legacy/DG/rocturb_dg.pdf" target="_blank"><b>X</b></a>     |                                                                     |
+/// |Misc.       |<a href="Rocstar3_UG.pdf" target="_blank"><b>Rocstar Suite</b></a>|                                                                       |                                                                     |
+/// |Rocblas     |<a href="Rocblas_ug.pdf" target="_blank"><b>X</b></a>             |<a href="Rocblas_dg.pdf" target="_blank"><b>X</b></a>     |                                                                     |
+/// |Rocburn2D   |                                                                               |                                                                       |<a href="Rocburn2D_UG.pdf" target="_blank"><b>X</b></a> |
+/// |Roccom      |<a href="Roccom_ug.pdf" target="_blank"><b>X</b></a>              |                                                                       |                                                                     |
+/// |Rocface     |<a href="Rocface_ug.pdf" target="_blank"><b>X</b></a>             |                                                                       |                                                                     |
+/// |RocfluMP    |                                                                               |                                                                       |<a href="rocflump_book.pdf" target="_blank"><b>X</b></a>|
+/// |Rocfrac     |<a href="Rocfrac_ug.pdf" target="_blank"><b>X</b></a>             |<a href="Rocfrac_dg.pdf" target="_blank"><b>X</b></a>     |                                                                     |
+/// |Rocin/Rocout|<a href="Rocin_ug.pdf" target="_blank"><b>X</b></a>               |                                                                       |                                                                     |
+/// |Rocketeer   |<a href="rocketeer.pdf" target="_blank"><b>X</b></a>              |                                                                       |                                                                     |
+/// |Rocman      |                                                                               |<a href="Rocman_design.pdf" target="_blank"><b>X</b></a>  |                                                                     |
+/// |Rocmap      |                                                                               |                                                                       |<a href="Rocmap_UDG.pdf" target="_blank"><b>X</b></a>   |  
+/// |Rocmop      |<a href="Rocmop_UG.pdf" target="_blank"><b>X</b></a>              |<a href="Rocmop_DG.pdf" target="_blank"><b>X</b></a>      |                                                                     |
+/// |Rocpart     |<a href="rocpart_ug.pdf" target="_blank"><b>X</b></a>             |<a href="rocpart_dg.pdf" target="_blank"><b>X</b></a>     |                                                                     |
+/// |Rocrad      |<a href="Rocrad_ug.pdf" target="_blank"><b>X</b></a>              |<a href="Rocrad_dg.pdf" target="_blank"><b>X</b></a>      |                                                                     |
+/// |Rocsolid    |<a href="Rocsolid_3.4_UG.pdf" target="_blank"><b>X</b></a>        |<a href="Rocsolid_3.4_DG.pdf" target="_blank"><b>X</b></a>|                                                                     |
+/// |Rocturb     |<a href="rocturb_ug.pdf" target="_blank"><b>X</b></a>             |<a href="rocturb_dg.pdf" target="_blank"><b>X</b></a>     |                                                                     |
 ///
 /// @subsection additional Additional Guides
 /// The table show gives additional guides that aren't necesarily user or developer guides. Click <a href="../html/extra_guides.html"><b>Here</b></a> 
@@ -55,10 +55,10 @@
 ///
 /// |Modules |Extra Guides                                                                                                     |                                                                                      |
 /// |:---:   |:---:                                                                                                            |:---:                                                                                 |
-/// |Rocstar |<a href="../legacy/Tutorial/Section_06_ServiceComponents.pdf" target="_blank"><b>Service Components</b></a>      |<a href="../legacy/UG/Rocstar_TimeZooming.pdf" target="_blank"><b>Time Zooming</b></a>| 
-/// |Rocman  |<a href="../legacy/Tutorial/Section_05_RocmanOrchestration.pdf" target="_blank"><b>Rocman Orchestration</b></a>  |<a href="../legacy/UG/rocman3.pdf" target="_blank"><b>Rocman Paper</b></a>            |
-/// |Roccom  |<a href="../legacy/Tutorial/Section_04_IntegrationInterface.pdf" target="_blank"><b>Integration Interface</b></a>|<a href="../legacy/UG/FileFormats.pdf" target="_blank"><b>FileFormats</b></a>         |
-/// |Rocface |<a href="../legacy/UG/surfdiver.pdf" target="_blank"><b>Surfdiver</b></a>                                        |                                                                                      |        
+/// |Rocstar |<a href="Section_06_ServiceComponents.pdf" target="_blank"><b>Service Components</b></a>      |<a href="Rocstar_TimeZooming.pdf" target="_blank"><b>Time Zooming</b></a>| 
+/// |Rocman  |<a href="Section_05_RocmanOrchestration.pdf" target="_blank"><b>Rocman Orchestration</b></a>  |<a href="rocman3.pdf" target="_blank"><b>Rocman Paper</b></a>            |
+/// |Roccom  |<a href="Section_04_IntegrationInterface.pdf" target="_blank"><b>Integration Interface</b></a>|<a href="FileFormats.pdf" target="_blank"><b>FileFormats</b></a>         |
+/// |Rocface |<a href="surfdiver.pdf" target="_blank"><b>Surfdiver</b></a>                                        |                                                                                      |        
 ///
 /// @section guidelines Guidelines
 /// Developers at Illinois Rocstar attempt to adhere to a set of semi-flexible guidelines for 

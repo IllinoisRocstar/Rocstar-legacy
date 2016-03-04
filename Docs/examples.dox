@@ -6,10 +6,10 @@
 ///
 /// @section use_cases Use Cases for Rocstar
 /// @subsection control_rocflu Attitude Control Motor with Rocflu and Rocflo
-/// This section is adapted from the <a href="../legacy/Tutorial/Section_15_UseCase_2_ACMRocflu.pdf" target="_blank"><b>ACM Rocflu</b></a> and <a href="../legacy/Tutorial/Section_13_UseCase_1_ACMRocflo.pdf" target="_blank"><b> ACM Rocflo</b></a>  presentation.
+/// This section is adapted from the <a href="Section_15_UseCase_2_ACMRocflu.pdf" target="_blank"><b>ACM Rocflu</b></a> and <a href="Section_13_UseCase_1_ACMRocflo.pdf" target="_blank"><b> ACM Rocflo</b></a>  presentation.
 ///
 /// For information on setting up and running the Attitude Control Motor example problem 
-/// please see the <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>. 
+/// please see the <a href="RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>. 
 /// Running the problem as described in the Quickstart Guide can take a while to 
 /// complete. To shorten the problem to run in a more timely fashion, make the following
 /// changes after following the directions in the Guide.
@@ -201,7 +201,7 @@
 ///
 /// @par Run Rocprep on NDA
 ///
-/// Running the ACM example problem with Rocflo is almost identical to the method for running with Rocflu. Following the diretions for running the Rocflu problem in the <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>, the only adjustments that need to be made for running with Rocflo are listed below.
+/// Running the ACM example problem with Rocflo is almost identical to the method for running with Rocflu. Following the diretions for running the Rocflu problem in the <a href="RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>, the only adjustments that need to be made for running with Rocflo are listed below.
 ///
 /// - When running rocprep use 34 partitions instead of 4
 /// 	- Use -n 34 flag instead of -n 4
@@ -268,7 +268,7 @@
 /// 
 /// This example can be run in the same manner as the ACM example discussed above. Follow the
 /// procedure from the 
-/// <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>
+/// <a href="RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>
 /// but using the following commands specific to this example.
 ///
 /// - Use the following command for rocprep:
@@ -369,7 +369,7 @@
 /// 
 /// @par Run Rocprep on NDA 
 /// 
-/// This example can be run in the same manner as the ACM example discussed above. Follow the procedure from the  <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a> but using the following commands specific to this example.
+/// This example can be run in the same manner as the ACM example discussed above. Follow the procedure from the  <a href="RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a> but using the following commands specific to this example.
 ///
 /// - Use the following command for rocprep:
 ///	\code{.cpp}rocprep -A -o 1 6 -f 3 9 -d ${ROCSTAR_EXAMPLES}/ElasticPiston -t ./EP_4 -n 4 \endcode
@@ -410,7 +410,7 @@
 ///
 /// @section select_simulations Selected Major Simulations
 ///
-/// This section is adapted from the <a href="../legacy/Tutorial/Section_02_SimulationExamples.pdf" target="_blank"><b>SimulationExamples</b></a> powerpoint.
+/// This section is adapted from the <a href="Section_02_SimulationExamples.pdf" target="_blank"><b>SimulationExamples</b></a> powerpoint.
 ///
 /// @subsection rsrm NASA RSRM
 /// NASA's reusuable solid rocket motor (RSRM) represents the largest solid rocket motor ever flown. Each motor provides

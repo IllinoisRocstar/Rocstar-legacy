@@ -356,7 +356,7 @@ SYMBOL_CACHE_SIZE      = 0
 # formula: 2^(16+LOOKUP_CACHE_SIZE). The valid range is 0..9, the default is 0,
 # corresponding to a cache size of 2^16 = 65536 symbols.
 
-LOOKUP_CACHE_SIZE      = 0
+LOOKUP_CACHE_SIZE      = 1
 
 #---------------------------------------------------------------------------
 # Build related configuration options
@@ -671,7 +671,20 @@ WARN_LOGFILE           = doxywarn.txt
 # directories like "/usr/src/myproject". Separate the files or directories
 # with spaces.
 
-INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@
+INPUT                  = @CMAKE_CURRENT_SOURCE_DIR@/Docs \
+                         @CMAKE_CURRENT_SOURCE_DIR@/Control \
+                         @CMAKE_CURRENT_SOURCE_DIR@/Rocburn \
+                         @CMAKE_CURRENT_SOURCE_DIR@/Roccom \
+                         @CMAKE_CURRENT_SOURCE_DIR@/Rocface \
+                         @CMAKE_CURRENT_SOURCE_DIR@/RocfluidMP \
+                         @CMAKE_CURRENT_SOURCE_DIR@/Rocfrac \
+                         @CMAKE_CURRENT_SOURCE_DIR@/Rocman \
+                         @CMAKE_CURRENT_SOURCE_DIR@/Rocmop \
+                         @CMAKE_CURRENT_SOURCE_DIR@/Rocon \
+                         @CMAKE_CURRENT_SOURCE_DIR@/Rocprep \
+                         @CMAKE_CURRENT_SOURCE_DIR@/Rocprop \
+                         @CMAKE_CURRENT_SOURCE_DIR@/testing \
+                         @CMAKE_CURRENT_SOURCE_DIR@/utilities
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is
@@ -954,9 +967,60 @@ HTML_EXTRA_STYLESHEET  = @CMAKE_CURRENT_SOURCE_DIR@/Docs/doxygen_html_style.css 
 # files. In the HTML_STYLESHEET file, use the file name only. Also note that
 # the files will be copied as-is; there are no commands or markers available.
 
-#HTML_EXTRA_FILES       = RocstarQuickStart.pdf
-HTML_EXTRA_FILES       = @CMAKE_CURRENT_SOURCE_DIR@/Docs/RocstarQuickStart.pdf \ # CHANGED 
-                         @CMAKE_CURRENT_SOURCE_DIR@/Docs/RocstarTutorial.pdf
+HTML_EXTRA_FILES       = @PROJECT_SOURCE_DIR@/Docs/RocstarQuickStart.pdf \ 
+                         @PROJECT_SOURCE_DIR@/Docs/RocstarTutorial.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_01_Background.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_01_Background.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_02_SimulationExamples.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_03_Multiphysics.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_04_IntegrationInterface.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_05_RocmanOrchestration.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_06_ServiceComponents.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_07_PhysicsModules.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_08_BuildingRocstar.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_09_DatasetCreation.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_10_RunRocstar.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_11_RocstarIO.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_12_Visualization.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_13_UseCase_1_ACMRocflo.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_14_Rocketeer.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_15_UseCase_2_ACMRocflu.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_16_UseCase_3_ElasticPiston.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_17_UseCase_4_SuperSeismicShock.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/Tutorial/Section_18_UseCase_5_ShockPanel.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/DG/Rocblas_dg.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/DG/Roccom_dg.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/DG/Rocman_dg.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/DG/Rocfrac_dg.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/DG/Rocmop_DG.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/DG/Rocrad_dg.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/DG/Rocsolid_3.4_DG.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/DG/rocflump_dg.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/DG/rocpart_dg.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/DG/rocturb_dg.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/FileFormats.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocblas_ug.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocburn2D_UG.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Roccom_ug.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocface_ug.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocface_ug_orig.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocfrac_ug.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocin_ug.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocman_design.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocman_ug.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocmap_UDG.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocmop_UG.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocrad_ug.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocsolid_3.4_UG.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocstar3_UG.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/Rocstar_TimeZooming.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/rocflump_book.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/rocflump_ug.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/rocketeer.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/rocman3.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/rocpart_ug.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/rocturb_ug.pdf \
+                         @PROJECT_SOURCE_DIR@/Docs/legacy/UG/surfdiver.pdf
 
 # The HTML_COLORSTYLE_HUE tag controls the color of the HTML output.
 # Doxygen will adjust the colors in the style sheet and background images

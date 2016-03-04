@@ -137,6 +137,6 @@
 /// Allows deriving new variables, etc. that Rocketeer does not do
 /// \image html tecplot.png
 ///
-/// These sections are adapted from the <a href="../legacy/Tutorial/Section_14_Rocketeer.pdf" target="_blank"><b>Rocketeer</b></a> and
-/// <a href="../legacy/Tutorial/Section_12_Visualization.pdf" target="_blank"><b>Visualization</b></a> powerpoints respectively.
+/// These sections are adapted from the <a href="Section_14_Rocketeer.pdf" target="_blank"><b>Rocketeer</b></a> and
+/// <a href="Section_12_Visualization.pdf" target="_blank"><b>Visualization</b></a> powerpoints respectively.
 

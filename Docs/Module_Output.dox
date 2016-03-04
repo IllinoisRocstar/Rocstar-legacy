@@ -29,4 +29,4 @@
 /// \image html gnuplot_output.png    
 /// \n
 /// For more information about creating Gnuplots, check out the gnuplot documentation <a href="http://www.gnuplot.info/docs_4.6/gnuplot.pdf"> HERE </a> \n
-/// This page is adapted from the <a href="../legacy/Tutorial/Section_11_RocstarIO.pdf" target="_blank"><b>Sample I/O</b></a> powerpoint.
+/// This page is adapted from the <a href="Section_10_RocstarIO.pdf" target="_blank"><b>Sample I/O</b></a> powerpoint.
