@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classGEM__Partition.html" title="GEM_Partition" alt="" coords="5,32,112,61"/>
-<area shape="rect" id="node3" href="$classFluRegion.html" title="FluRegion" alt="" coords="161,5,241,35"/>
-<area shape="rect" id="node5" href="$classPartition.html" title="Partition" alt="" coords="167,59,236,88"/>
+<area shape="rect" id="node1" href="$classGEM__PartitionBoundary.html" title="GEM_PartitionBoundary" alt="" coords="5,32,168,61"/>
+<area shape="rect" id="node3" href="$classFluBorder.html" title="FluBorder" alt="" coords="240,5,317,35"/>
+<area shape="rect" id="node5" href="$classPartitionBoundary.html" title="PartitionBoundary" alt="" coords="216,59,341,88"/>
 </map>

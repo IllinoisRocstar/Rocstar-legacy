@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSimple__cartesian__base.html" title="Simple_cartesian_base\l\&lt; R_, FT_ \&gt;" alt="" coords="5,5,163,51"/>
+<area shape="rect" id="node1" href="$classSimple__cartesian__base.html" title="Simple_cartesian_base\l\&lt; FT_ \&gt;" alt="" coords="8,5,165,51"/>
+<area shape="rect" id="node3" href="$classSimple__cartesian.html" title="Simple_cartesian\&lt; FT_ \&gt;" alt="" coords="217,53,385,83"/>
+<area shape="rect" id="node4" href="$classSimple__cartesian__base.html" title="Simple_cartesian_base\l\&lt; Simple_cartesian\&lt; FT\l_ \&gt;, FT_ \&gt;" alt="" coords="5,75,168,139"/>
 </map>

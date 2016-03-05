@@ -1,6 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node3" href="$classPoint__2.html" title="Point_2\&lt; T \&gt;" alt="" coords="340,32,439,61"/>
-<area shape="rect" id="node5" href="$classPoint__2.html" title="Point_2\&lt; R \&gt;" alt="" coords="340,99,439,128"/>
-<area shape="rect" id="node8" href="$classVector__2.html" title="Vector_2\&lt; Type \&gt;" alt="" coords="164,112,289,141"/>
-<area shape="rect" id="node11" href="$classVector__2.html" title="Vector_2\&lt; T \&gt;" alt="" coords="173,5,280,35"/>
+<area shape="rect" id="node3" href="$classPoint__3.html" title="Point_3\&lt; T \&gt;" alt="" coords="356,32,455,61"/>
+<area shape="rect" id="node5" href="$classPoint__3__ref.html" title="Point_3_ref" alt="" coords="512,59,600,88"/>
+<area shape="rect" id="node9" href="$classPoint__3.html" title="Point_3\&lt; Real \&gt;" alt="" coords="347,85,464,115"/>
+<area shape="rect" id="node13" href="$classVector__3.html" title="Some basic geometric data types. " alt="" coords="168,112,293,141"/>
+<area shape="rect" id="node15" href="$classVector__3.html" title="Vector_3\&lt; double \&gt;" alt="" coords="163,165,299,195"/>
+<area shape="rect" id="node17" href="$classVector__3.html" title="Vector_3\&lt; Real \&gt;" alt="" coords="168,219,293,248"/>
 </map>

@@ -1,3 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classPane__communicator.html" title="Encapsulates information about distribution of panes on all processes and handles across pane communi..." alt="" coords="5,5,147,35"/>
+<area shape="rect" id="node1" href="$structPane__communicator_1_1Pane__comm__buffers.html" title="Buffers for outgoing and incoming messages of a specific pane to be communicated with another pane (e..." alt="" coords="5,5,155,51"/>
 </map>

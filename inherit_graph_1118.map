@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structRFC__Pane__base_1_1Edge__ID.html" title="A local ID of an edge. " alt="" coords="5,5,187,35"/>
+<area shape="rect" id="node1" href="$classRFC__Window__base.html" title="A window is a collection of panes. " alt="" coords="5,83,144,112"/>
+<area shape="rect" id="node3" href="$classRFC__Window__derived.html" title="Reusable implementation for derived class of RFC_Window_base. " alt="" coords="197,5,349,51"/>
+<area shape="rect" id="node5" href="$classRFC__Window__derived.html" title="RFC_Window_derived\l\&lt; RFC_Pane_overlay \&gt;" alt="" coords="193,74,353,121"/>
+<area shape="rect" id="node9" href="$classRFC__Window__derived.html" title="RFC_Window_derived\l\&lt; RFC_Pane_transfer \&gt;" alt="" coords="192,143,355,190"/>
+<area shape="rect" id="node7" href="$classRFC__Window__overlay.html" title="A window is a collection of panes. " alt="" coords="404,83,556,112"/>
+<area shape="rect" id="node11" href="$classRFC__Window__transfer.html" title="RFC_Window_transfer" alt="" coords="403,152,557,181"/>
 </map>

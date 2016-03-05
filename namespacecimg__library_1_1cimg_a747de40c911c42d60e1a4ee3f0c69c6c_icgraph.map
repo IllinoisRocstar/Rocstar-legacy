@@ -25,14 +25,14 @@
 <area shape="rect" id="node52" href="$structcimg__library_1_1CImg.html#a96e3e0c617e70a833492043d08a7905a" title="Get components of the Hessian matrix of an image. " alt="" coords="419,1549,571,1595"/>
 <area shape="rect" id="node54" href="$structScheduler_1_1ActionItem.html#ac3f1b6634bc3baabbf8f30f55efec721" title="Scheduler::ActionItem\l::hasInput" alt="" coords="420,1618,569,1665"/>
 <area shape="rect" id="node56" href="$structScheduler_1_1ActionItem.html#a3567942fcfab7230dd3588a417dfa5b7" title="Scheduler::ActionItem\l::hasOutput" alt="" coords="420,1687,569,1734"/>
-<area shape="rect" id="node72" href="$rocstar_8C.html#af2f826eaa12e02793cedd7fb3742ce79" title="rocstar_driver" alt="" coords="1317,1331,1419,1360"/>
-<area shape="rect" id="node80" href="$structcimg__library_1_1CImg.html#a1b8bf7e0b1371dbdc0d845a39f6451a8" title="Load a gzipped image file, using external tool &#39;gunzip&#39;. " alt="" coords="425,800,564,864"/>
-<area shape="rect" id="node82" href="$structcimg__library_1_1CImgList.html#a0ab64a5a6414629623467ad5ee80b6fe" title="Load a gzipped list, using external tool &#39;gunzip&#39;. " alt="" coords="400,887,589,934"/>
-<area shape="rect" id="node84" href="$namespacecimg__library_1_1cimg.html#acfbffa9cc7042c132ba276814af8ca03" title="option" alt="" coords="467,957,523,987"/>
-<area shape="rect" id="node87" href="$structcimg__library_1_1CImg.html#a4fd91f4fb021d20c5b62329c49733bd9" title="Save the image as a file. " alt="" coords="429,1010,560,1057"/>
-<area shape="rect" id="node89" href="$structcimg__library_1_1CImgList.html#a814fe09c21090e7673d96c6145fc64bf" title="Save an image list into a file. " alt="" coords="419,1079,571,1126"/>
-<area shape="rect" id="node92" href="$structcimg__library_1_1CImg.html#a882ef6fb0c2487da8598e36c45b8eeab" title="Save an image as a gzipped file, using external tool &#39;gzip&#39;. " alt="" coords="424,1149,565,1213"/>
-<area shape="rect" id="node94" href="$structcimg__library_1_1CImgList.html#ae9d11f1d698df3ffe1ef4a9ede594e1e" title="Save a file in TIFF format. " alt="" coords="397,1237,592,1283"/>
+<area shape="rect" id="node72" href="$rocstar__driver_8C.html#a9bd600c9ac2dc870a213ab778b70d788" title="rocstar_driver" alt="" coords="1317,1340,1419,1369"/>
+<area shape="rect" id="node78" href="$structcimg__library_1_1CImg.html#a1b8bf7e0b1371dbdc0d845a39f6451a8" title="Load a gzipped image file, using external tool &#39;gunzip&#39;. " alt="" coords="425,800,564,864"/>
+<area shape="rect" id="node80" href="$structcimg__library_1_1CImgList.html#a0ab64a5a6414629623467ad5ee80b6fe" title="Load a gzipped list, using external tool &#39;gunzip&#39;. " alt="" coords="400,887,589,934"/>
+<area shape="rect" id="node82" href="$namespacecimg__library_1_1cimg.html#acfbffa9cc7042c132ba276814af8ca03" title="option" alt="" coords="467,957,523,987"/>
+<area shape="rect" id="node85" href="$structcimg__library_1_1CImg.html#a4fd91f4fb021d20c5b62329c49733bd9" title="Save the image as a file. " alt="" coords="429,1010,560,1057"/>
+<area shape="rect" id="node87" href="$structcimg__library_1_1CImgList.html#a814fe09c21090e7673d96c6145fc64bf" title="Save an image list into a file. " alt="" coords="419,1079,571,1126"/>
+<area shape="rect" id="node90" href="$structcimg__library_1_1CImg.html#a882ef6fb0c2487da8598e36c45b8eeab" title="Save an image as a gzipped file, using external tool &#39;gzip&#39;. " alt="" coords="424,1149,565,1213"/>
+<area shape="rect" id="node92" href="$structcimg__library_1_1CImgList.html#ae9d11f1d698df3ffe1ef4a9ede594e1e" title="Save a file in TIFF format. " alt="" coords="397,1237,592,1283"/>
 <area shape="rect" id="node58" href="$classScheduler.html#ad5b93c42b916fef4dfd9e991c692cb85" title="Scheduler::buildDDG" alt="" coords="641,1679,785,1708"/>
 <area shape="rect" id="node60" href="$classScheduler.html#a7d06701ac073c331c83519e3909b7fce" title="Scheduler::schedule" alt="" coords="849,1679,988,1708"/>
 <area shape="rect" id="node66" href="$classUserScheduler.html#a7d06701ac073c331c83519e3909b7fce" title="UserScheduler::schedule" alt="" coords="835,1500,1003,1529"/>
@@ -40,6 +40,5 @@
 <area shape="rect" id="node64" href="$classSchedulerAction.html#a7d06701ac073c331c83519e3909b7fce" title="SchedulerAction::schedule" alt="" coords="1052,1705,1228,1735"/>
 <area shape="rect" id="node68" href="$classUserSchedulerAction.html#a7d06701ac073c331c83519e3909b7fce" title="UserSchedulerAction\l::schedule" alt="" coords="1068,1461,1212,1507"/>
 <area shape="rect" id="node70" href="$classCoupling.html#a7d06701ac073c331c83519e3909b7fce" title="Schedule the top&#45;level actions of the coupling scheme and the actions of the agents. " alt="" coords="1073,1375,1207,1404"/>
-<area shape="rect" id="node76" href="$classAgent.html#a7d06701ac073c331c83519e3909b7fce" title="Agent::schedule" alt="" coords="1083,1531,1197,1560"/>
-<area shape="rect" id="node74" href="$rocstar_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1523,1331,1573,1360"/>
+<area shape="rect" id="node74" href="$classAgent.html#a7d06701ac073c331c83519e3909b7fce" title="Agent::schedule" alt="" coords="1083,1531,1197,1560"/>
 </map>

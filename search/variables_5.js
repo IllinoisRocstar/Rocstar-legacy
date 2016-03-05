@@ -40,7 +40,7 @@ var searchData=
   ['dcuhre_5floop_5flimit',['dcuhre_loop_limit',['../classrflu__modoles.html#aa8b18a00570a59143fb5147a941fbaed',1,'rflu_modoles']]],
   ['debondpart',['debondpart',['../structrocstar__rocfrac_1_1rocfrac__global.html#a7359dac832c307defaaafd2c21f2bc1a',1,'rocstar_rocfrac::rocfrac_global']]],
   ['debondpart_5fmatous',['debondpart_matous',['../structrocstar__rocfrac_1_1rocfrac__global.html#a817ce704a7b9ce86595affa415d2e3cd',1,'rocstar_rocfrac::rocfrac_global']]],
-  ['debug',['debug',['../classTestProgram.html#a398527b3e9e358c345c5047b16871957',1,'TestProgram::debug()'],['../structCommand__Options.html#a398527b3e9e358c345c5047b16871957',1,'Command_Options::debug()']]],
+  ['debug',['debug',['../classTestProgram.html#a398527b3e9e358c345c5047b16871957',1,'TestProgram']]],
   ['debug_5fstate',['debug_state',['../structrocstar__rocfrac_1_1rocfrac__global.html#af30b9338ea17d0c23629db5802f3faf8',1,'rocstar_rocfrac::rocfrac_global']]],
   ['debugflagtec',['debugflagtec',['../classrflu__modtecplotutils.html#a3dd67f6aa1a32e125c0793004c7d6a22',1,'rflu_modtecplotutils']]],
   ['debuglevel',['debugLevel',['../classMesquite_1_1TerminationCriterion.html#a41ff73c3328a84f17007d4d352490cb5',1,'Mesquite::TerminationCriterion']]],

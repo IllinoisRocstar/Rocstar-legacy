@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classRocMeshData.html" title="RocMeshData" alt="" coords="5,5,112,35"/>
+<area shape="rect" id="node3" href="$classRocmop.html" title="A Roccom mesh optimization module. " alt="" coords="124,5,193,35"/>
+<area shape="rect" id="node5" href="$classRocprop.html" title="Rocprop" alt="" coords="124,59,193,88"/>
 </map>

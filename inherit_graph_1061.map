@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structProgram.html" title="A struct that holds all the global program data. " alt="" coords="7,5,76,35"/>
+<area shape="rect" id="node1" href="$classPropagation__3.html" title="This class provides some common primitives used by various propagation algorithms. " alt="" coords="7,32,111,61"/>
+<area shape="rect" id="node3" href="$classFaceOffset__3.html" title="FaceOffset_3" alt="" coords="173,5,275,35"/>
+<area shape="rect" id="node5" href="$classMarkerParticles__3.html" title="MarkerParticles_3" alt="" coords="161,59,287,88"/>
 </map>

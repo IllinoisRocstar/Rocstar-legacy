@@ -1,3 +1,30 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classMesquite_1_1PatchDataParameters.html" title="PatchDataParameters" alt="" coords="7,5,156,35"/>
+<area shape="rect" id="node1" href="$classMesquite_1_1PatchDataUser.html" title="This should be the parent class of all algorithms retrieving information from a MeshSet object..." alt="" coords="5,165,117,195"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1MeanMidNodeMover.html" title="Class to adjust positions of higher&#45;order nodes. " alt="" coords="167,59,308,88"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MeshTransform.html" title="MeshTransform" alt="" coords="181,112,293,141"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1QualityAssessor.html" title="A QualityAssessor instance can be inserted into an InstructionQueue to calculate and summarize regist..." alt="" coords="179,165,296,195"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1QualityImprover.html" title="Base class for all quality improvers. Mote that the PatchData settings are inherited from the PathDat..." alt="" coords="180,219,295,248"/>
+<area shape="rect" id="node31" href="$classMesquite_1_1TargetCalculator.html" title="Base class that provides the interface for computing the target corner matrices used in the context b..." alt="" coords="179,619,296,648"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1TopologyModifier.html" title="TopologyModifier" alt="" coords="375,165,495,195"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1VertexMover.html" title="VertexMover" alt="" coords="387,219,483,248"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1ConjugateGradient.html" title="Optimizes the objective function using the Polack&#45;Ribiere scheme. " alt="" coords="591,5,721,35"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1FeasibleNewton.html" title="High Performance implementation of the Feasible Newton algorythm. " alt="" coords="599,59,713,88"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1LaplacianSmoother.html" title="LaplacianSmoother" alt="" coords="589,112,723,141"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1NonSmoothSteepestDescent.html" title="NonSmoothSteepestDescent" alt="" coords="560,165,752,195"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1NullImprover.html" title="NullImprover" alt="" coords="608,219,704,248"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1Randomize.html" title="Randomly perftubs the (un&#45;culled) vertices. " alt="" coords="612,272,700,301"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1SmartLaplacianSmoother.html" title="SmartLaplacianSmoother" alt="" coords="572,325,740,355"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1SteepestDescent.html" title="SteepestDescent" alt="" coords="595,379,717,408"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1LVQDTargetCalculator.html" title="This is an intermediary class. Concrete classes will simply instantiate the various guide enums in th..." alt="" coords="357,619,512,648"/>
+<area shape="rect" id="node51" href="$classMesquite_1_1WTargetCalculator.html" title="This is a concrete class. " alt="" coords="369,859,500,888"/>
+<area shape="rect" id="node35" href="$classMesquite_1_1DeformingDomainGuides843.html" title="Deforming Domain with Angle Improvement. Use with I&#45;DFT or R&#45;DFT. " alt="" coords="561,432,751,461"/>
+<area shape="rect" id="node37" href="$classMesquite_1_1DeformingDomainGuides844.html" title="Deforming Domain with Angle Improvement, non&#45;Unit AR. Use with R&#45;DFT. " alt="" coords="561,485,751,515"/>
+<area shape="rect" id="node39" href="$classMesquite_1_1RezoneGuides832.html" title="Rezone with Angle Improvement. Use with I&#45;DFT. " alt="" coords="592,539,720,568"/>
+<area shape="rect" id="node41" href="$classMesquite_1_1ShapeGuides812.html" title="Shape Improvement with non&#45;Unit Aspect Ratio. Use with sR&#45;DFT. " alt="" coords="596,592,716,621"/>
+<area shape="rect" id="node43" href="$classMesquite_1_1ShapeSizeGuides821.html" title="Shape and Size Improvement with Unit Aspect Ratio and Equidistributed Size. Use with R&#45;DFT..." alt="" coords="583,645,729,675"/>
+<area shape="rect" id="node45" href="$classMesquite_1_1ShapeSizeGuides822.html" title="Shape and Size Improvement with Unit Aspect Ratio and Preserved Size. Use with R&#45;DFT. " alt="" coords="583,699,729,728"/>
+<area shape="rect" id="node47" href="$classMesquite_1_1ShapeSizeGuides823.html" title="Shape and Size Improvement with non&#45;Unit Aspect Ratio and Equidistributed Size. Use with R&#45;DFT..." alt="" coords="583,752,729,781"/>
+<area shape="rect" id="node49" href="$classMesquite_1_1ShapeSizeGuides824.html" title="Shape and Size Improvement with non&#45;Unit Aspect Ratio and Preserved Size. Use with R&#45;DFT..." alt="" coords="583,805,729,835"/>
+<area shape="rect" id="node53" href="$classMesquite_1_1DeformingDomainGuides841.html" title="Deforming Domain Mesh Tracking. Use with I&#45;DFT or R&#45;DFT. " alt="" coords="561,859,751,888"/>
+<area shape="rect" id="node55" href="$classMesquite_1_1ShapeGuides811.html" title="Shape Improvement with Unit Aspect Ratio. Use with sR&#45;DFT. " alt="" coords="596,912,716,941"/>
 </map>

@@ -2,7 +2,6 @@
 <area shape="rect" id="node3" href="$classCoupling.html#a26bc665db8e8a51e3aa6541646f165fb" title="Invoke initialization of the actions in the scheduler and the agents. " alt="" coords="131,83,229,112"/>
 <area shape="rect" id="node5" href="$classCoupling.html#a152013c4f4d029f84f09d02f5062298a" title="Coupling::initialize" alt="" coords="277,83,405,112"/>
 <area shape="rect" id="node7" href="$classCoupling.html#a3743217a687c638a600341721e219b55" title="Coupling::restart_at_time" alt="" coords="453,56,621,85"/>
-<area shape="rect" id="node11" href="$rocstar_8C.html#af2f826eaa12e02793cedd7fb3742ce79" title="rocstar_driver" alt="" coords="896,57,997,87"/>
+<area shape="rect" id="node11" href="$rocstar__driver_8C.html#a9bd600c9ac2dc870a213ab778b70d788" title="rocstar_driver" alt="" coords="896,57,997,87"/>
 <area shape="rect" id="node9" href="$classCoupling.html#a952d598b43dfc5742886e9e747aa7ca1" title="Coupling::ProcessInterrupt" alt="" coords="671,5,847,35"/>
-<area shape="rect" id="node13" href="$rocstar_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1045,57,1096,87"/>
 </map>

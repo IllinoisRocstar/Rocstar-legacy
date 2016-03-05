@@ -5134,7 +5134,6 @@ var files =
       [ "Remesher_base", "classRemesher__base.html", "classRemesher__base" ],
       [ "Rocprop", "classRocprop.html", "classRocprop" ]
     ] ],
-    [ "rocstar.C", "rocstar_8C.html", "rocstar_8C" ],
     [ "rocstar_driver.C", "rocstar__driver_8C.html", "rocstar__driver_8C" ],
     [ "ROCSTAR_RocFrac.f90", "ROCSTAR__RocFrac_8f90.html", [
       [ "rocstar_rocfrac", "classrocstar__rocfrac.html", "classrocstar__rocfrac" ],
@@ -5462,7 +5461,6 @@ var files =
     [ "src/Misc/SphericalDomain.hpp", "src_2Misc_2SphericalDomain_8hpp.html", [
       [ "SphericalDomain", "classMesquite_1_1SphericalDomain.html", "classMesquite_1_1SphericalDomain" ]
     ] ],
-    [ "splash.h", "splash_8h.html", "splash_8h" ],
     [ "split.cpp", "split_8cpp.html", "split_8cpp" ],
     [ "SplitQuadFace.F90", "SplitQuadFace_8F90.html", "SplitQuadFace_8F90" ],
     [ "SplitQuadFace.h", "SplitQuadFace_8h.html", "SplitQuadFace_8h" ],

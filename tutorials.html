@@ -101,8 +101,8 @@ Locating Examples</h1>
 Use Cases for Rocstar</h1>
 <h2><a class="anchor" id="control_rocflu"></a>
 Attitude Control Motor with Rocflu and Rocflo</h2>
-<p>This section is adapted from the <a href="../legacy/Tutorial/Section_15_UseCase_2_ACMRocflu.pdf" target="_blank"><b>ACM Rocflu</b></a> and <a href="../legacy/Tutorial/Section_13_UseCase_1_ACMRocflo.pdf" target="_blank"><b> ACM Rocflo</b></a> presentation.</p>
-<p>For information on setting up and running the Attitude Control Motor example problem please see the <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>. Running the problem as described in the Quickstart Guide can take a while to complete. To shorten the problem to run in a more timely fashion, make the following changes after following the directions in the Guide.</p>
+<p>This section is adapted from the <a href="Section_15_UseCase_2_ACMRocflu.pdf" target="_blank"><b>ACM Rocflu</b></a> and <a href="Section_13_UseCase_1_ACMRocflo.pdf" target="_blank"><b> ACM Rocflo</b></a> presentation.</p>
+<p>For information on setting up and running the Attitude Control Motor example problem please see the <a href="RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>. Running the problem as described in the Quickstart Guide can take a while to complete. To shorten the problem to run in a more timely fashion, make the following changes after following the directions in the Guide.</p>
 <dl class="section user"><dt>Problem Description</dt><dd></dd></dl>
 <p>The goal of this example is to assemble and run a moving-boundary, fluid-combustion coupled problem using Rocflo and Rocflu. The problem consists of a small (2 inch) attitude control motor, which is represented using a block-structured hexahedral mesh. A key aspect of this simulation is the regressing buring surface.</p>
 <p>The motor is two inches long and it features fluid-combustion coupling. The fluid model has unstructured tetrahedral grid. The goal of this example is to assemble and run moving-boundary fluid-combustion coupled run with Rocflo.</p>
@@ -297,7 +297,7 @@ Cutaway of Block Model</div></div>
 <li>120 - rotational periodicty</li>
 </ul>
 <dl class="section user"><dt>Run Rocprep on NDA</dt><dd></dd></dl>
-<p>Running the ACM example problem with Rocflo is almost identical to the method for running with Rocflu. Following the diretions for running the Rocflu problem in the <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>, the only adjustments that need to be made for running with Rocflo are listed below.</p>
+<p>Running the ACM example problem with Rocflo is almost identical to the method for running with Rocflu. Following the diretions for running the Rocflu problem in the <a href="RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a>, the only adjustments that need to be made for running with Rocflo are listed below.</p>
 <ul>
 <li>When running rocprep use 34 partitions instead of 4<ul>
 <li>Use -n 34 flag instead of -n 4</li>
@@ -372,7 +372,7 @@ Super Seismic Shock Model Showing Pressure </div></div>
 <div class="caption">
 width=10cm</div></div>
 <dl class="section user"><dt>Run Rocprep on NDA </dt><dd></dd></dl>
-<p>This example can be run in the same manner as the ACM example discussed above. Follow the procedure from the <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a> but using the following commands specific to this example.</p>
+<p>This example can be run in the same manner as the ACM example discussed above. Follow the procedure from the <a href="RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a> but using the following commands specific to this example.</p>
 <ul>
 <li>Use the following command for rocprep: <div class="fragment"><div class="line">rocprep -<a class="code" href="vinci__lass_8c.html#a573a329d328e50550c009804e3633dad">A</a> -o 1 4 -f 4 5 -d ${ROCSTAR_EXAMPLES}/SuperSeismicShock -t ./SSS_4 -n 4 </div>
 </div><!-- fragment --></li>
@@ -477,7 +477,7 @@ Rocfrac Mesh in Patran</div></div>
 <img src="RocfracBoundaryCondPri.png" alt="RocfracBoundaryCondPri.png"/>
 </div>
 <dl class="section user"><dt>Run Rocprep on NDA </dt><dd></dd></dl>
-<p>This example can be run in the same manner as the ACM example discussed above. Follow the procedure from the <a href="../RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a> but using the following commands specific to this example.</p>
+<p>This example can be run in the same manner as the ACM example discussed above. Follow the procedure from the <a href="RocstarQuickStart.pdf" target="_blank"><b>Rocstar Quickstart Guide</b></a> but using the following commands specific to this example.</p>
 <ul>
 <li>Use the following command for rocprep: <div class="fragment"><div class="line">rocprep -<a class="code" href="vinci__lass_8c.html#a573a329d328e50550c009804e3633dad">A</a> -o 1 6 -f 3 9 -d ${ROCSTAR_EXAMPLES}/ElasticPiston -t ./EP_4 -n 4 </div>
 </div><!-- fragment --></li>
@@ -512,7 +512,7 @@ Rocfrac Mesh in Patran</div></div>
 <p>For elastic piston, pre-run visualization files are available for one time dump for both Rocflo and Rocfrac. In order to do that, just load one time dump for both into Rocketeer from the VizData directory.</p>
 <h1><a class="anchor" id="select_simulations"></a>
 Selected Major Simulations</h1>
-<p>This section is adapted from the <a href="../legacy/Tutorial/Section_02_SimulationExamples.pdf" target="_blank"><b>SimulationExamples</b></a> powerpoint.</p>
+<p>This section is adapted from the <a href="Section_02_SimulationExamples.pdf" target="_blank"><b>SimulationExamples</b></a> powerpoint.</p>
 <h2><a class="anchor" id="rsrm"></a>
 NASA RSRM</h2>
 <p>NASA's reusuable solid rocket motor (RSRM) represents the largest solid rocket motor ever flown. Each motor provides approximately 3-million lb of thrust to lift from the launch pad where the motors burn out approximately two minutes later. The <a class="el" href="namespaceRocstar.html">Rocstar</a> suite provides a burnout simulation of this rocket. </p><div class="image">
@@ -527,7 +527,7 @@ The image shows the red as the burning propellant and the blue as the insulated 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 4 2016 02:29:48 for Rocstar by
+    <li class="footer">Generated on Sat Mar 5 2016 02:27:58 for Rocstar by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

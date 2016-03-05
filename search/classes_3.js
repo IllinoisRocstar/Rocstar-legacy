@@ -83,7 +83,6 @@ var searchData=
   ['comm_5finfo_5ftype',['comm_info_type',['../structlinked__list_1_1comm__info__type.html',1,'linked_list']]],
   ['comm_5flist_5ftype',['comm_list_type',['../structlinked__list_1_1comm__list__type.html',1,'linked_list']]],
   ['comm_5fnode_5ftype',['comm_node_type',['../structlinked__list_1_1comm__node__type.html',1,'linked_list']]],
-  ['command_5foptions',['Command_Options',['../structCommand__Options.html',1,'']]],
   ['commglobal',['commglobal',['../classcommglobal.html',1,'']]],
   ['comp_5frow_5fglobal',['comp_row_global',['../classcomp__row__global.html',1,'']]],
   ['compare',['Compare',['../structCompare.html',1,'']]],

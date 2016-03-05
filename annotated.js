@@ -104,7 +104,6 @@ var annotated =
     [ "Color", "classColor.html", "classColor" ],
     [ "COM_exception", "structCOM__exception.html", "structCOM__exception" ],
     [ "COM_Object_derived", "classCOM__Object__derived.html", "classCOM__Object__derived" ],
-    [ "Command_Options", "structCommand__Options.html", "structCommand__Options" ],
     [ "commglobal", "classcommglobal.html", "classcommglobal" ],
     [ "comp_row_global", "classcomp__row__global.html", "classcomp__row__global" ],
     [ "Compare", "structCompare.html", "structCompare" ],

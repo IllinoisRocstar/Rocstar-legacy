@@ -188,7 +188,6 @@ var searchData=
   ['spec_5fuserinput_2ef90',['SPEC_UserInput.F90',['../SPEC__UserInput_8F90.html',1,'']]],
   ['speeds_2eh',['speeds.h',['../speeds_8h.html',1,'']]],
   ['sphericaldomain_2ehpp',['SphericalDomain.hpp',['../src_2Misc_2SphericalDomain_8hpp.html',1,'']]],
-  ['splash_2eh',['splash.h',['../splash_8h.html',1,'']]],
   ['split_2ecpp',['split.cpp',['../split_8cpp.html',1,'']]],
   ['splitquadface_2ef90',['SplitQuadFace.F90',['../SplitQuadFace_8F90.html',1,'']]],
   ['splitquadface_2eh',['SplitQuadFace.h',['../SplitQuadFace_8h.html',1,'']]],

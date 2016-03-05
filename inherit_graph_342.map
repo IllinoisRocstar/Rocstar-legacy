@@ -1,3 +1,14 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classLeda__like__handle.html" title="Leda_like_handle" alt="" coords="5,5,128,35"/>
+<area shape="rect" id="node1" href="$classLeda__like__rep.html" title="Leda_like_rep" alt="" coords="7,97,108,127"/>
+<area shape="rect" id="node3" href="$class__Fourtuple.html" title="_Fourtuple\&lt; T \&gt;" alt="" coords="169,13,284,43"/>
+<area shape="rect" id="node5" href="$class__Sixtuple.html" title="_Sixtuple\&lt; T \&gt;" alt="" coords="173,67,280,96"/>
+<area shape="rect" id="node7" href="$classAff__transformation__rep__baseS2.html" title="Aff_transformation\l_rep_baseS2\&lt; FT \&gt;" alt="" coords="157,119,296,166"/>
+<area shape="rect" id="node17" href="$classAff__transformation__rep__baseS3.html" title="Aff_transformation\l_rep_baseS3\&lt; FT \&gt;" alt="" coords="157,265,296,311"/>
+<area shape="rect" id="node9" href="$classAff__transformation__repS2.html" title="Aff_transformation\l_repS2\&lt; FT \&gt;" alt="" coords="364,5,492,51"/>
+<area shape="rect" id="node11" href="$classRotation__repS2.html" title="Rotation_repS2\&lt; FT \&gt;" alt="" coords="352,75,504,104"/>
+<area shape="rect" id="node13" href="$classScaling__repS2.html" title="Scaling_repS2\&lt; FT \&gt;" alt="" coords="355,128,501,157"/>
+<area shape="rect" id="node15" href="$classTranslation__repS2.html" title="Translation_repS2\&lt; FT \&gt;" alt="" coords="345,181,511,211"/>
+<area shape="rect" id="node19" href="$classAff__transformation__repS3.html" title="Aff_transformation\l_repS3\&lt; FT \&gt;" alt="" coords="364,234,492,281"/>
+<area shape="rect" id="node21" href="$classScaling__repS3.html" title="Scaling_repS3\&lt; FT \&gt;" alt="" coords="355,304,501,333"/>
+<area shape="rect" id="node23" href="$classTranslation__repS3.html" title="Translation_repS3\&lt; FT \&gt;" alt="" coords="345,357,511,387"/>
 </map>
