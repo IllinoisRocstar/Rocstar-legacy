@@ -1,7 +1,0 @@
-<map id="gp_linear_intersection" name="gp_linear_intersection">
-<area shape="rect" id="node3" href="$classPlaneS3.html#af01d769ec65d399198c4eebf7d213ff9" title="PlaneS3::a" alt="" coords="227,5,312,35"/>
-<area shape="rect" id="node5" href="$classPlaneS3.html#afb78d3b27200791df64eb988b06f1ca0" title="PlaneS3::b" alt="" coords="227,59,312,88"/>
-<area shape="rect" id="node7" href="$classPlaneS3.html#ac431a30ef766daac859cfaf79928d98c" title="PlaneS3::c" alt="" coords="227,112,312,141"/>
-<area shape="rect" id="node9" href="$classPlaneS3.html#aaa89b1ab0d7e9266c59806d6e253f997" title="PlaneS3::d" alt="" coords="227,165,312,195"/>
-<area shape="rect" id="node11" href="$determinant_8h.html#a32ff8e72a47ae6e0aba9b51b37080bcb" title="det3x3_by_formula" alt="" coords="204,219,335,248"/>
-</map>

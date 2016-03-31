@@ -1,7 +1,0 @@
-<map id="surfjumper.C" name="surfjumper.C">
-<area shape="rect" id="node15" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="544,92,619,121"/>
-<area shape="rect" id="node17" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="536,179,627,208"/>
-<area shape="rect" id="node19" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="404,256,519,285"/>
-<area shape="rect" id="node23" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="543,256,620,285"/>
-<area shape="rect" id="node21" href="$FC_8h.html" title="FC.h" alt="" coords="436,333,487,363"/>
-</map>

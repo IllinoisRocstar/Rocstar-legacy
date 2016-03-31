@@ -1,6 +1,0 @@
-<map id="calculate_histogram_range" name="calculate_histogram_range">
-<area shape="rect" id="node3" href="$namespacecimg__library.html#a829d43876d7785694cc71a33c25d405a" title="cimg_library::log10" alt="" coords="192,17,323,47"/>
-<area shape="rect" id="node7" href="$namespaceMesquite.html#a158e89125c01402924b46cd1cefa5240" title="Mesquite::pow" alt="" coords="204,75,311,104"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a3ddd3de58ea5fc9185f216e6e8c59010" title="cimg_library::CImg\l::get_log10" alt="" coords="375,5,505,51"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1Exponent.html#a665516b85c2af1c1e62945896e9178b2" title="Mesquite::Exponent\l::raise" alt="" coords="371,74,509,121"/>
-</map>

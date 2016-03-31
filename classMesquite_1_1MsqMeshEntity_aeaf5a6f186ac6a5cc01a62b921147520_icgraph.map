@@ -1,4 +1,0 @@
-<map id="get_connected_vertices" name="get_connected_vertices">
-<area shape="rect" id="node3" href="$classMesquite_1_1VertexConditionNumberQualityMetric.html#a5a90f78516fa587f85daf4011bfb1ba8" title="evaluate using mesquite objects " alt="" coords="213,5,459,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1LocalSizeQualityMetric.html#a5a90f78516fa587f85daf4011bfb1ba8" title="For the given vertex, vert, calculate the local size metric value. " alt="" coords="245,74,427,121"/>
-</map>

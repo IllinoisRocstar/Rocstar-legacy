@@ -1,7 +1,0 @@
-<map id="RocMeshData.h" name="RocMeshData.h">
-<area shape="rect" id="node15" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="536,83,611,112"/>
-<area shape="rect" id="node17" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="528,160,619,189"/>
-<area shape="rect" id="node19" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="396,237,511,267"/>
-<area shape="rect" id="node23" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="535,237,612,267"/>
-<area shape="rect" id="node21" href="$FC_8h.html" title="FC.h" alt="" coords="428,315,479,344"/>
-</map>

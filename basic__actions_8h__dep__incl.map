@@ -1,8 +1,0 @@
-<map id="basic_actions.h" name="basic_actions.h">
-<area shape="rect" id="node3" href="$Agent_8C.html" title="Agent.C" alt="" coords="5,83,75,112"/>
-<area shape="rect" id="node5" href="$basic__actions_8C.html" title="basic_actions.C" alt="" coords="99,83,213,112"/>
-<area shape="rect" id="node7" href="$builtin__couplings_8C.html" title="builtin_couplings.C" alt="" coords="237,83,368,112"/>
-<area shape="rect" id="node9" href="$derived__couplings_8C.html" title="derived_couplings.C" alt="" coords="392,83,531,112"/>
-<area shape="rect" id="node11" href="$Surfdiver_8C.html" title="Surfdiver.C" alt="" coords="555,83,643,112"/>
-<area shape="rect" id="node13" href="$transfer__actions_8C.html" title="transfer_actions.C" alt="" coords="667,83,795,112"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="getMaxZ" name="getMaxZ">
-<area shape="rect" id="node3" href="$classBoundingBox.html#ad93441d21c5b6ed76f34fb53f72abedb" title="Determines if a point is inside the bounding box. " alt="" coords="137,5,209,35"/>
-<area shape="rect" id="node5" href="$classBoundingBox.html#aaab76352eea32a7ce9fd1187d6b548e2" title="Computes the bounding box intersection between bounding box b1,b2. " alt="" coords="129,59,217,88"/>
-</map>

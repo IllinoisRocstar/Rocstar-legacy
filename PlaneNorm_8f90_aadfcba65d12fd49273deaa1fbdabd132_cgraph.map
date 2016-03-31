@@ -1,8 +1,0 @@
-<map id="planenorm" name="planenorm">
-<area shape="rect" id="node3" href="$PlaneNorm_8f90.html#ac059fa705229a42afb469ff2668de2d2" title="cross0_3d" alt="" coords="136,5,219,35"/>
-<area shape="rect" id="node5" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="156,59,199,88"/>
-<area shape="rect" id="node7" href="$ZN__calc__burning__rate_8f90.html#a23858389cf6d0aa8e54ff4a650275a8e" title="zn" alt="" coords="159,112,196,141"/>
-<area shape="rect" id="node9" href="$ZN__calc__burning__rate_8f90.html#a4833b18424234a84a7c4f97bf3e98355" title="newton" alt="" coords="267,112,331,141"/>
-<area shape="rect" id="node11" href="$classAff__transformation__repS2.html#a2758e8c9df83e803e7509d563733f531" title="Aff_transformation\l_repS2::print" alt="" coords="389,61,517,107"/>
-<area shape="rect" id="node13" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="380,138,527,185"/>
-</map>

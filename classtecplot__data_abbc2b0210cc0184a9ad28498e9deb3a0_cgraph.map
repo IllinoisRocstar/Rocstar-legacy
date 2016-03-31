@@ -1,7 +1,0 @@
-<map id="read_header" name="read_header">
-<area shape="rect" id="node3" href="$utilities_2rc__cmp_2util_8cpp.html#afea0e7fa09632fb21d6395741efab8f8" title="Convert an int to a string. " alt="" coords="419,5,461,35"/>
-<area shape="rect" id="node5" href="$classdatafile.html#a9943cd180a37371be08b7a5ba68ba04c" title="Log the field mapping data from the command line and stored in mFieldMappings. " alt="" coords="148,44,324,73"/>
-<area shape="rect" id="node8" href="$classdatafile.html#acd838c2a35fa2a0694058a1be732c8cb" title="Log the string specified as a status event. " alt="" coords="373,71,507,100"/>
-<area shape="rect" id="node10" href="$utilities_2rc__cmp_2util_8cpp.html#af8e35605d945c8ab91ec5b762e7fe2c1" title="Read expressions of the form x = &quot;test&quot; &quot;100&quot; &quot;another test&quot;. " alt="" coords="163,148,309,177"/>
-<area shape="rect" id="node12" href="$utilities_2rc__cmp_2util_8cpp.html#ab76f200f6aea2433bd83edc4a9a4c526" title="check_delimiters" alt="" coords="380,148,500,177"/>
-</map>

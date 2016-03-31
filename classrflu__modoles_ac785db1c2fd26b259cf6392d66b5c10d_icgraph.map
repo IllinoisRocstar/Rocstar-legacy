@@ -1,9 +1,0 @@
-<map id="rflu_definecorrelation32" name="rflu_definecorrelation32">
-<area shape="rect" id="node3" href="$RFLU__ComputeIntegral1OLES_8F90.html#a0b59841c02f78a95bee8700ac75b5b53" title="rflu_computeintegral1oles" alt="" coords="211,32,381,61"/>
-<area shape="rect" id="node5" href="$RFLU__ComputeIntegrals1245OLES_8F90.html#a858f857615fda0d280b24bc71939d700" title="rflu_computeintegrals1245oles" alt="" coords="431,32,628,61"/>
-<area shape="rect" id="node7" href="$RFLU__InitFlowSolver_8F90.html#af9c0da2d26f7bdb2bdee8507627f636c" title="rflu_initflowsolver" alt="" coords="677,32,800,61"/>
-<area shape="rect" id="node9" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="887,5,945,35"/>
-<area shape="rect" id="node11" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="849,59,983,88"/>
-<area shape="rect" id="node13" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="1032,59,1197,88"/>
-<area shape="rect" id="node15" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="1245,59,1400,88"/>
-</map>

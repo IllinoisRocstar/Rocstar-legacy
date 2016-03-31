@@ -1,9 +1,0 @@
-<map id="plag_edgecellsloadsendbuff" name="plag_edgecellsloadsendbuff">
-<area shape="rect" id="node3" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="237,5,421,35"/>
-<area shape="rect" id="node5" href="$classMesh_1_1GenericCell__2.html#a738568f9319ad7dc4f9334f816b5c4ea" title="Mesh::GenericCell_2\l::nedges" alt="" coords="257,58,401,105"/>
-<area shape="rect" id="node7" href="$classAff__transformation__repS2.html#a2758e8c9df83e803e7509d563733f531" title="Aff_transformation\l_repS2::print" alt="" coords="265,127,393,174"/>
-<area shape="rect" id="node9" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="244,197,415,227"/>
-<area shape="rect" id="node11" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="471,197,601,227"/>
-<area shape="rect" id="node13" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="659,154,805,201"/>
-<area shape="rect" id="node15" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="652,223,812,270"/>
-</map>

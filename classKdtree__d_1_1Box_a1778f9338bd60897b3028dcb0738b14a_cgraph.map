@@ -1,9 +1,0 @@
-<map id="intersect" name="intersect">
-<area shape="rect" id="node3" href="$classKdtree__d_1_1ExtPoint.html#ac480fbcdad732866e301f103e0745c59" title="Kdtree_d::ExtPoint\l::compare" alt="" coords="308,5,439,51"/>
-<area shape="rect" id="node7" href="$classKdtree__d_1_1ExtPoint.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Kdtree_d::ExtPoint\l::dimension" alt="" coords="308,118,439,165"/>
-<area shape="rect" id="node9" href="$classKdtree__d_1_1Box.html#a799cf81c9f5f0e524f3c94b4f5feb514" title="get_left" alt="" coords="160,92,224,121"/>
-<area shape="rect" id="node11" href="$classKdtree__d_1_1Box.html#a2422ad2f7bb00e8138e2335f4cc8e568" title="get_right" alt="" coords="156,145,228,175"/>
-<area shape="rect" id="node13" href="$classKdtree__d_1_1Box.html#acef8e33cfd36a5d7d2fad939efcf02e3" title="is_empty" alt="" coords="155,39,229,68"/>
-<area shape="rect" id="node17" href="$classKdtree__d_1_1ExtPoint.html#a4102a8d539aefdc11699d01b14c2ae37" title="Kdtree_d::ExtPoint\l::set_coord" alt="" coords="127,249,257,295"/>
-<area shape="rect" id="node5" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="489,13,604,43"/>
-</map>

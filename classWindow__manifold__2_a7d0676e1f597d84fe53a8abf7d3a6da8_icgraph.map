@@ -1,4 +1,0 @@
-<map id="compute_shortest_edgelen_nodes" name="compute_shortest_edgelen_nodes">
-<area shape="rect" id="node3" href="$classWindow__manifold__2.html#a63077b4a404ef8457c38c64b320323e7" title="Perturb the given mesh along its normal direction by length equal to a random number between &#45;range a..." alt="" coords="255,5,356,35"/>
-<area shape="rect" id="node5" href="$classWindow__manifold__2.html#aefcb2d77906956b440e079a5a2b77c3c" title="Obtain shortest edge length of incident edges of each node or element. " alt="" coords="232,59,379,88"/>
-</map>

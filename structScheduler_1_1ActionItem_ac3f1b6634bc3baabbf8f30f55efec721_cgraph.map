@@ -1,5 +1,0 @@
-<map id="hasInput" name="hasInput">
-<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#a43334b3df38ff7c4369a503a4fc3a9f9" title="Compare two C&#45;strings, ignoring the case. " alt="" coords="125,5,253,51"/>
-<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a747de40c911c42d60e1a4ee3f0c69c6c" title="Compare the first n characters of two C&#45;strings, ignoring the case. " alt="" coords="301,5,429,51"/>
-<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#a5a028d4d4de4e1894263a29a6de8e2ee" title="Remove the &#39;case&#39; of an ASCII character. " alt="" coords="477,5,605,51"/>
-</map>

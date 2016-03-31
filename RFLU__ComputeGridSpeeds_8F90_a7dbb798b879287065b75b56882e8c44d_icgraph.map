@@ -1,9 +1,0 @@
-<map id="rflu_computegridspeeds" name="rflu_computegridspeeds">
-<area shape="rect" id="node3" href="$classrflu__modnewtonkrylov.html#adbaf8c46263db1aa756e23d77faefc43" title="rflu_modnewtonkrylov\l::rflu_nk_timestepping" alt="" coords="215,5,364,51"/>
-<area shape="rect" id="node15" href="$RFLU__TimeStepping_8F90.html#aecdbd052b646bc67613a3df3aa797697" title="rflu_timestepping" alt="" coords="229,75,349,104"/>
-<area shape="rect" id="node5" href="$RFLU__FlowSolver_8F90.html#a5fe6972c37889c9bedd7763013340055" title="rflu_flowsolver" alt="" coords="413,44,520,73"/>
-<area shape="rect" id="node7" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="607,17,665,47"/>
-<area shape="rect" id="node9" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="569,71,703,100"/>
-<area shape="rect" id="node11" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="752,71,917,100"/>
-<area shape="rect" id="node13" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="965,71,1120,100"/>
-</map>

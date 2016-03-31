@@ -1,5 +1,0 @@
-<map id="obtain_bc" name="obtain_bc">
-<area shape="rect" id="node3" href="$classAgent.html#ad3c8c70a29f18aa8a37ddf31b6cb2bc0" title="create_window" alt="" coords="135,5,244,35"/>
-<area shape="rect" id="node7" href="$classBCInvoker.html#aa4065b3192a0d6c14e6456c70376f90a" title="BCInvoker::run" alt="" coords="135,59,244,88"/>
-<area shape="rect" id="node5" href="$classAgent.html#ae8cc2ba44a17a30a34df7e7b1710764a" title="Agent" alt="" coords="293,5,349,35"/>
-</map>

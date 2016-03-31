@@ -1,6 +1,0 @@
-<map id="pnt_in_tri" name="pnt_in_tri">
-<area shape="rect" id="node3" href="$utilities_2rc__cmp_2util_8cpp.html#a59241d9374fff26f1e0c502fbf383b10" title="side_check" alt="" coords="128,32,216,61"/>
-<area shape="rect" id="node5" href="$utilities_2rc__cmp_2util_8cpp.html#ac090936d33adbdc572f0a4b389470405" title="cross_product" alt="" coords="264,5,368,35"/>
-<area shape="rect" id="node7" href="$utilities_2rc__cmp_2util_8cpp.html#a0d9256a364d8efaad23e52d4042654e0" title="dot_product" alt="" coords="271,59,361,88"/>
-<area shape="rect" id="node9" href="$utilities_2rc__cmp_2util_8cpp.html#a7198ddaeac1d22c06c4daf75de4ceaef" title="nan" alt="" coords="416,59,459,88"/>
-</map>

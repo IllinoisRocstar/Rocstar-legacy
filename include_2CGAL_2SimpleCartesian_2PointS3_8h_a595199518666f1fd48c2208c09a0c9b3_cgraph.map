@@ -1,8 +1,0 @@
-<map id="operator+" name="operator+">
-<area shape="rect" id="node3" href="$classVectorS3.html#a242e8b7096a678fdbb08e337420acb84" title="VectorS3::x" alt="" coords="131,5,221,35"/>
-<area shape="rect" id="node5" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="135,59,217,88"/>
-<area shape="rect" id="node7" href="$classVectorS3.html#ae367a52fcb29c7638852621653fdb407" title="VectorS3::y" alt="" coords="131,112,221,141"/>
-<area shape="rect" id="node9" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="135,165,217,195"/>
-<area shape="rect" id="node11" href="$classVectorS3.html#a585581369640d7edc6c5a40277fba5d7" title="VectorS3::z" alt="" coords="131,219,221,248"/>
-<area shape="rect" id="node13" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="135,272,217,301"/>
-</map>

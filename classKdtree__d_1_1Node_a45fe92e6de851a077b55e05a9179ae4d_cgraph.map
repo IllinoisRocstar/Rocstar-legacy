@@ -1,7 +1,0 @@
-<map id="copy_subtree_points" name="copy_subtree_points">
-<area shape="rect" id="node4" href="$classKdtree__d_1_1Box.html#a0f0c777b9e64e16795f7c3424a562cb2" title="Kdtree_d::Box::is_in" alt="" coords="199,48,337,77"/>
-<area shape="rect" id="node12" href="$classKdtree__d_1_1Node.html#a6f8158e237172bcd4d1c57f4cca9bc0f" title="is_point" alt="" coords="235,101,301,131"/>
-<area shape="rect" id="node6" href="$classKdtree__d_1_1ExtPoint.html#ac480fbcdad732866e301f103e0745c59" title="Kdtree_d::ExtPoint\l::compare" alt="" coords="388,5,519,51"/>
-<area shape="rect" id="node10" href="$classKdtree__d_1_1ExtPoint.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Kdtree_d::ExtPoint\l::dimension" alt="" coords="388,74,519,121"/>
-<area shape="rect" id="node8" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="569,13,684,43"/>
-</map>

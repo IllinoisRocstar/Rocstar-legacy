@@ -1,8 +1,0 @@
-<map id="is_feature_1" name="is_feature_1">
-<area shape="rect" id="node3" href="$classOverlay.html#a01236ef2eb3bdd02b9cb73755f4cb622" title="Overlay::insert_edge\l_into_queue" alt="" coords="327,5,468,51"/>
-<area shape="rect" id="node5" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="717,65,843,111"/>
-<area shape="rect" id="node10" href="$classOverlay.html#a41c1d5ad91477125ab8d20fdf2653724" title="Overlay::intersect_link" alt="" coords="517,125,669,155"/>
-<area shape="rect" id="node13" href="$classOverlay__primitives.html#a0ceae7b4352e093fd9aa77f854655083" title="Overlay_primitives\l::normalmatch" alt="" coords="147,175,277,222"/>
-<area shape="rect" id="node7" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="891,73,1008,103"/>
-<area shape="rect" id="node15" href="$classOverlay.html#a4e8602930d85d562fab07af05eddb855" title="Overlay::intersect\l_link_helper" alt="" coords="335,175,460,222"/>
-</map>

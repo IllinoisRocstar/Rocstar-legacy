@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classFace.html" title="The Face class is an abstract base class that supplies implemented general methods, as well as a vew virtual interface methods to child classes. " alt="" coords="5,32,56,61"/>
-<area shape="rect" id="node3" href="$classQuadFace.html" title="QuadFace" alt="" coords="104,5,187,35"/>
-<area shape="rect" id="node5" href="$classTriFace.html" title="TriFace" alt="" coords="112,59,179,88"/>
-</map>

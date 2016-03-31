@@ -1,8 +1,0 @@
-<map id="operator()" name="operator()">
-<area shape="rect" id="node3" href="$basic__constructionsS3_8h.html#a24fcf610cb3ed9208506edf6f93f26b8" title="bisector" alt="" coords="132,85,199,115"/>
-<area shape="rect" id="node5" href="$basic__constructionsS3_8h.html#a0110caa8e07751edc2f0aaf1abb8187a" title="midpoint" alt="" coords="249,85,319,115"/>
-<area shape="rect" id="node7" href="$constructions_2kernel__ftC3_8h.html#aac8603b5e1740634f68c9dda107ef823" title="midpointC3" alt="" coords="368,5,456,35"/>
-<area shape="rect" id="node9" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="371,59,453,88"/>
-<area shape="rect" id="node11" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="371,112,453,141"/>
-<area shape="rect" id="node13" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="371,165,453,195"/>
-</map>

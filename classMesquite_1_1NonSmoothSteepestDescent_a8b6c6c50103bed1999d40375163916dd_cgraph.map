@@ -1,6 +1,0 @@
-<map id="compute_function" name="compute_function">
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a1b72722c733b2017737741384f8d4546" title="Mesquite::PatchData\l::element_by_index" alt="" coords="201,5,345,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1QualityMetric.html#aa107d74c3c8fd542bc19e5a4a0ecc65e" title="Evaluate the metric for an element. " alt="" coords="193,74,353,121"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1ObjectiveFunction.html#a836e8d40b1fab46ac9a8658667d582a6" title="Mesquite::ObjectiveFunction\l::get_quality_metric" alt="" coords="180,143,367,190"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1ObjectiveFunction.html#aa1c2b955804364e4d65b2e31998b8acf" title="Mesquite::ObjectiveFunction\l::get_quality_metric_list" alt="" coords="180,213,367,259"/>
-</map>

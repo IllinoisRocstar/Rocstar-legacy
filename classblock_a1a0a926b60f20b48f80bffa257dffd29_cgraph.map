@@ -1,7 +1,0 @@
-<map id="block" name="block">
-<area shape="rect" id="node3" href="$classhashableVector3d.html#a43a66860a3a804137e6f435afa54bbf0" title="hashableVector3d::checkVector" alt="" coords="108,32,313,61"/>
-<area shape="rect" id="node11" href="$classblockDim.html#a5efe04c03b0d0e0a33d3d95026cfe2cd" title="blockDim::getSize" alt="" coords="147,85,275,115"/>
-<area shape="rect" id="node5" href="$classvector3d.html#acd0002100974a4648cdac68b2d732659" title="vector3d::mag" alt="" coords="364,32,468,61"/>
-<area shape="rect" id="node7" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="559,5,601,35"/>
-<area shape="rect" id="node9" href="$classvector3d.html#aebe30774d4f1735c7e492e8e49a916b5" title="vector3d::magSqr" alt="" coords="517,59,643,88"/>
-</map>

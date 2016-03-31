@@ -1,4 +1,0 @@
-<map id="get_zone_header" name="get_zone_header">
-<area shape="rect" id="node3" href="$classtecplot__data.html#a3e7be56194aaa3b89550d9586975ff21" title="Read the header information for the specified zone, then create a new zone object based on the type o..." alt="" coords="176,5,269,35"/>
-<area shape="rect" id="node5" href="$classtecplot__data.html#ad7c704b34912678d95c13243cacf9d7f" title="Parse the tecplot file. " alt="" coords="319,5,372,35"/>
-</map>

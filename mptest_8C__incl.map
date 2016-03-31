@@ -1,7 +1,0 @@
-<map id="mptest.C" name="mptest.C">
-<area shape="rect" id="node3" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="145,92,220,121"/>
-<area shape="rect" id="node5" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="137,179,228,208"/>
-<area shape="rect" id="node7" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="5,256,120,285"/>
-<area shape="rect" id="node11" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="144,256,221,285"/>
-<area shape="rect" id="node9" href="$FC_8h.html" title="FC.h" alt="" coords="37,333,88,363"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="RocstarShutdown" name="RocstarShutdown">
-<area shape="rect" id="node3" href="$classCoupling.html#a00ac77cfb49cefa5eef995801743257a" title="Coupling::Interrupt" alt="" coords="207,57,335,87"/>
-<area shape="rect" id="node13" href="$classCoupling.html#a952d598b43dfc5742886e9e747aa7ca1" title="Coupling::ProcessInterrupt" alt="" coords="183,111,359,140"/>
-<area shape="rect" id="node5" href="$classCoupling.html#a8caa2607aa668edf0edb8a5e4535f80a" title="Coupling::baseInit" alt="" coords="412,5,537,35"/>
-<area shape="rect" id="node9" href="$rocstar__driver_8C.html#a05bfdef40d695af301e8ebe637e24e5c" title="check_for_interrupt" alt="" coords="408,59,541,88"/>
-<area shape="rect" id="node7" href="$classCoupling.html#a22e859d76ef20e728e4dfd51940e55ca" title="Constructor. Derived class will add actions for the coupling scheme. " alt="" coords="591,5,721,35"/>
-<area shape="rect" id="node11" href="$rocstar__driver_8C.html#a9bd600c9ac2dc870a213ab778b70d788" title="rocstar_driver" alt="" coords="605,84,707,113"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="option" name="option">
-<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#ab9308a5128017dd92d3f602a19ca7611" title="option" alt="" coords="129,5,185,35"/>
-<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#a43334b3df38ff7c4369a503a4fc3a9f9" title="Compare two C&#45;strings, ignoring the case. " alt="" coords="112,59,203,88"/>
-<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#abc491a5ed3a8d97e395138a379767a45" title="Compute the basename of a filename. " alt="" coords="259,5,341,35"/>
-<area shape="rect" id="node9" href="$namespacecimg__library_1_1cimg.html#a747de40c911c42d60e1a4ee3f0c69c6c" title="Compare the first n characters of two C&#45;strings, ignoring the case. " alt="" coords="252,59,348,88"/>
-<area shape="rect" id="node11" href="$namespacecimg__library_1_1cimg.html#a5a028d4d4de4e1894263a29a6de8e2ee" title="Remove the &#39;case&#39; of an ASCII character. " alt="" coords="397,59,461,88"/>
-</map>

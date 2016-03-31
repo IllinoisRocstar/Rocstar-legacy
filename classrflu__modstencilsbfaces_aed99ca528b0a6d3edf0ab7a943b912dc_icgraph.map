@@ -1,8 +1,0 @@
-<map id="rflu_buildbf2cstencilwrapper" name="rflu_buildbf2cstencilwrapper">
-<area shape="rect" id="node3" href="$RFLU__InitFlowSolver_8F90.html#af9c0da2d26f7bdb2bdee8507627f636c" title="rflu_initflowsolver" alt="" coords="237,32,360,61"/>
-<area shape="rect" id="node13" href="$rflupick_8F90.html#a9ef7365e5f7ba7d2eca028a032b5cade" title="rflupick" alt="" coords="267,85,331,115"/>
-<area shape="rect" id="node5" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="447,5,505,35"/>
-<area shape="rect" id="node7" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="409,59,543,88"/>
-<area shape="rect" id="node9" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="592,59,757,88"/>
-<area shape="rect" id="node11" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="805,59,960,88"/>
-</map>

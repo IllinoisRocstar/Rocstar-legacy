@@ -1,9 +1,0 @@
-<map id="Attribute" name="Attribute">
-<area shape="rect" id="node3" href="$classAttribute.html#a56444519edfeb3fa09e10eadc109cfec" title="Default constructor. " alt="" coords="127,5,196,35"/>
-<area shape="rect" id="node5" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="127,59,196,88"/>
-<area shape="rect" id="node13" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="273,112,327,141"/>
-<area shape="rect" id="node16" href="$classAttribute.html#a77f06f41441a97714ec0acf49c89b568" title="Root of use&#45;inheritance. " alt="" coords="140,163,183,192"/>
-<area shape="rect" id="node7" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="267,5,333,35"/>
-<area shape="rect" id="node11" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="245,59,355,88"/>
-<area shape="rect" id="node9" href="$classPane.html#a05d1abca9cbb0ec7bdc59f58dd81797c" title="Obtain a constant pointer to its owner window object. " alt="" coords="403,5,507,35"/>
-</map>

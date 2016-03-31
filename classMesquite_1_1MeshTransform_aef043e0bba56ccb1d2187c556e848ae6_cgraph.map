@@ -1,7 +1,0 @@
-<map id="MeshTransform" name="MeshTransform">
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchDataUser.html#abaafbf744f984944def3b35206817ac2" title="Sets off all culling methods. " alt="" coords="168,7,341,54"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1MeshTransform.html#aeaf6e8479b3ba52618346392dc2b4ce1" title="MeshTransform is built to use ELEMETNS_ON_VERTEX_PATCH with a depth one. " alt="" coords="200,79,309,108"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1PatchDataParameters.html#abaafbf744f984944def3b35206817ac2" title="No culling performed (sets off all culling criteria). " alt="" coords="391,5,601,51"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1PatchDataUser.html#a7870d253a83673c6ad2794c41cc1e821" title="Sets the Patch Type. " alt="" coords="409,74,583,121"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1PatchDataParameters.html#a247c2678640754cdb0bd45ab6f777cd9" title="Tells the MeshSet what kind of data the patches should include. " alt="" coords="652,74,863,121"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="PatchDataMem&lt; X &gt;" name="PatchDataMem&lt; X &gt;">
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; Mesquite\l::Mesh::ElementHandle \&gt;" alt="" coords="381,9,560,55"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; Mesquite\l::Vector3D \&gt;" alt="" coords="381,78,560,125"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; size_t \&gt;" alt="" coords="385,148,556,177"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; Mesquite\l::MsqVertex \&gt;" alt="" coords="381,201,560,247"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; Mesquite\l::MsqMeshEntity \&gt;" alt="" coords="381,270,560,317"/>
-<area shape="rect" id="node13" href="$classMesquite_1_1PatchDataMem.html" title="PatchDataMem\&lt; Mesquite\l::Mesh::VertexHandle \&gt;" alt="" coords="381,339,560,386"/>
-</map>

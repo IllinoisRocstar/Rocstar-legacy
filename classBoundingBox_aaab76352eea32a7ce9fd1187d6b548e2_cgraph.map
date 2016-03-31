@@ -1,9 +1,0 @@
-<map id="intersection" name="intersection">
-<area shape="rect" id="node3" href="$classBoundingBox.html#a1dea7b72431cc6891cefdb6020af2bd6" title="Default Constructor. " alt="" coords="144,5,243,35"/>
-<area shape="rect" id="node5" href="$classBoundingBox.html#a707af7147ae7d2e6d2c23b1575ce99ea" title="getMaxX" alt="" coords="156,59,231,88"/>
-<area shape="rect" id="node7" href="$classBoundingBox.html#ac0d99a1cf27fbf4400be3f1c25d0a64a" title="getMaxY" alt="" coords="156,112,231,141"/>
-<area shape="rect" id="node9" href="$classBoundingBox.html#a79336d0d71aea0f33f84141735fef19c" title="getMaxZ" alt="" coords="157,165,229,195"/>
-<area shape="rect" id="node11" href="$classBoundingBox.html#a345090e30c8eec4fcc20ba0b32367d75" title="getMinX" alt="" coords="159,219,228,248"/>
-<area shape="rect" id="node13" href="$classBoundingBox.html#a0844b9cf1d523e459e2a4bfff070b1a1" title="getMinY" alt="" coords="159,272,228,301"/>
-<area shape="rect" id="node15" href="$classBoundingBox.html#ac529879f2c2d8e7900a47c9ccfe390a7" title="getMinZ" alt="" coords="159,325,228,355"/>
-</map>

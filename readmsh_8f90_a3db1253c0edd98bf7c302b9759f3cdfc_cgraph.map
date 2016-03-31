@@ -1,6 +1,0 @@
-<map id="read_msh" name="read_msh">
-<area shape="rect" id="node3" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="171,5,245,35"/>
-<area shape="rect" id="node5" href="$classElementList.html#ad9c88ed5e8125d66291acd55da72d73e" title="ElementList::index" alt="" coords="143,59,273,88"/>
-<area shape="rect" id="node7" href="$classAttribute.html#a8bcf950a774cbd3106d4c68d3b2f38c9" title="Obtain the status of the attribute. " alt="" coords="151,112,265,141"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1StopWatch.html#a4c862940207c4d896b1e81d644e52681" title="Mesquite::StopWatch\l::total_time" alt="" coords="135,165,281,211"/>
-</map>

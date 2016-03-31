@@ -1,9 +1,0 @@
-<map id="Element_accessors.C" name="Element_accessors.C">
-<area shape="rect" id="node3" href="$Element__accessors_8h.html" title="Element_accessors.h" alt="" coords="97,83,244,112"/>
-<area shape="rect" id="node23" href="$roccom__assertion_8h.html" title="This file contains a set of routines for error assertion. " alt="" coords="283,237,419,267"/>
-<area shape="rect" id="node5" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="192,160,267,189"/>
-<area shape="rect" id="node7" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="168,237,259,267"/>
-<area shape="rect" id="node9" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="288,315,403,344"/>
-<area shape="rect" id="node13" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="87,315,164,344"/>
-<area shape="rect" id="node11" href="$FC_8h.html" title="FC.h" alt="" coords="320,392,371,421"/>
-</map>

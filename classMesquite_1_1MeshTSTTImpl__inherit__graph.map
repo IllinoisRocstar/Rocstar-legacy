@@ -1,4 +1,0 @@
-<map id="MeshTSTTImpl" name="MeshTSTTImpl">
-<area shape="rect" id="node2" href="$classMesquite_1_1MeshTSTT.html" title="The name of the tag (integer) used internally by MeshTSTT to eliminate duplicate vertices. " alt="" coords="19,83,104,112"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1Mesh.html" title="A Mesquite::Mesh is a collection of mesh elements which are composed of mesh vertices. Intermediate objects are not accessible through this interface (where intermediate objects include things like the faces of a hex, or an element&#39;s edges). " alt="" coords="35,5,88,35"/>
-</map>

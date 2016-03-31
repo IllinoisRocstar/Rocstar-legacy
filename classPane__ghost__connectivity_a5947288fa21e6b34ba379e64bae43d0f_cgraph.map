@@ -1,9 +1,0 @@
-<map id="get_ents_to_send" name="get_ents_to_send">
-<area shape="rect" id="node3" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="695,39,783,69"/>
-<area shape="rect" id="node5" href="$classAttribute.html#a2e7d4fe5a490266aed5667444935490f" title="Obtain a constant pointer to the physical address. " alt="" coords="181,25,299,54"/>
-<area shape="rect" id="node7" href="$classAttribute.html#a376398cab240594dd4ec0d158b658172" title="Obtain the number of real items in the attribute. " alt="" coords="180,101,300,148"/>
-<area shape="rect" id="node9" href="$classPane.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain the attribute from given name. " alt="" coords="349,93,456,122"/>
-<area shape="rect" id="node11" href="$classWindow.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain a pointer to the attribute metadata from its name. " alt="" coords="505,93,628,122"/>
-<area shape="rect" id="node13" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="Attribute::is_digit" alt="" coords="679,93,799,122"/>
-<area shape="rect" id="node15" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="679,145,799,192"/>
-</map>

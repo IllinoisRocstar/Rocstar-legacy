@@ -1,6 +1,0 @@
-<map id="NC" name="NC">
-<area shape="rect" id="node3" href="$classMesh_1_1MeshUtilityObject.html#a690d9694fadce78f040760ee34d5a0fa" title="FormConnectivity" alt="" coords="108,13,233,43"/>
-<area shape="rect" id="node9" href="$classMesh_1_1Partition.html#a7aeb573c82e5513b64e4da3fee9083bd" title="Mesh::Partition::Read" alt="" coords="96,67,245,96"/>
-<area shape="rect" id="node5" href="$classMesh_1_1MeshUtilityObject.html#a7da73d5c19d1f188ce5f3badea22175d" title="GetCon" alt="" coords="293,13,360,43"/>
-<area shape="rect" id="node7" href="$classMesh_1_1Partition.html#a5ca3937857156bda510899f9b3a011ec" title="Mesh::Partition::GetBorder\lElements" alt="" coords="409,5,585,51"/>
-</map>

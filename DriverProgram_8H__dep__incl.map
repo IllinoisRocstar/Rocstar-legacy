@@ -1,8 +1,0 @@
-<map id="DriverProgram.H" name="DriverProgram.H">
-<area shape="rect" id="node3" href="$DriverProgram_8C.html" title="Driver program for Grid Conversion. " alt="" coords="5,83,125,112"/>
-<area shape="rect" id="node5" href="$GridConversion_8C.html" title="Main for example driver program. " alt="" coords="149,83,275,112"/>
-<area shape="rect" id="node7" href="$ReadInput_8C.html" title="ReadInput.C" alt="" coords="299,83,395,112"/>
-<area shape="rect" id="node9" href="$ReadPatranInput_8C.html" title="ReadPatranInput.C" alt="" coords="419,83,552,112"/>
-<area shape="rect" id="node11" href="$ReadStanfordInput_8C.html" title="ReadStanfordInput.C" alt="" coords="576,83,720,112"/>
-<area shape="rect" id="node13" href="$WriteOutput_8C.html" title="WriteOutput.C" alt="" coords="744,83,851,112"/>
-</map>

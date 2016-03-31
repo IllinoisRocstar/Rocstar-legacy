@@ -1,6 +1,0 @@
-<map id="set_handler" name="set_handler">
-<area shape="rect" id="node3" href="$classMesquite_1_1MsqInterrupt.html#aeaa5e99b1c30e94a5fcae748c089b810" title="Allow Mesquite to register a SIGINT handler. " alt="" coords="192,5,243,35"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MsqInterrupt.html#a445858564789b86da1a37f7ad361acee" title="Force Mesquite to register SIGINT handler. " alt="" coords="188,59,247,88"/>
-<area shape="rect" id="node7" href="$namespaceMesquite.html#a4587ca03b0a9d12e8f9d518e361aeeb8" title="Mesquite::msq_sigint\l_handler" alt="" coords="144,111,291,158"/>
-<area shape="rect" id="node10" href="$classMesquite_1_1MsqInterrupt.html#a258d6856110433f044df4ef5076c491c" title="Constructor, increment instance count. " alt="" coords="171,181,264,211"/>
-</map>

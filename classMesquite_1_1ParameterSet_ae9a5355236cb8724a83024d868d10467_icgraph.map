@@ -1,7 +1,0 @@
-<map id="get_parameter_index" name="get_parameter_index">
-<area shape="rect" id="node3" href="$classMesquite_1_1ParameterSet.html#a0701a61a2522ed7af8819e8282566285" title="generic_add_parameter" alt="" coords="197,5,355,35"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1ParameterSet.html#a11aa0c41f115894c337be39e4e564c2a" title="get_int_parameter" alt="" coords="213,59,339,88"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1ParameterSet.html#ab62b231dbd742943d998211e791b3a80" title="remove_parameter" alt="" coords="211,112,341,141"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1ParameterSet.html#a26b663aa1e202505304447145725576d" title="set_int_parameter" alt="" coords="213,165,339,195"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1ParameterSet.html#ae27d11da41d08c0f289a8d4134337371" title="add_int_parameter" alt="" coords="404,5,532,35"/>
-</map>

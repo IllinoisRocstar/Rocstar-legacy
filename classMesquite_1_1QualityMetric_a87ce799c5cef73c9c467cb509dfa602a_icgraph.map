@@ -1,8 +1,0 @@
-<map id="set_averaging_method" name="set_averaging_method">
-<area shape="rect" id="node3" href="$classMesquite_1_1I__DFT.html#a44189d7e8279c4da2ee3670d52ccb2eb" title="Mesquite::I_DFT::I_DFT" alt="" coords="247,5,412,35"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1LaplacianSmoother.html#abac96533aa3ec59b1e5f75f91a64e413" title="Mesquite::LaplacianSmoother\l::LaplacianSmoother" alt="" coords="232,58,427,105"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1RI__DFT.html#acf37fe33c14c3dbc98ce9b2bdb17a0cd" title="Mesquite::RI_DFT::RI_DFT" alt="" coords="237,128,421,157"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1ShapeImprovementWrapper.html#aa7ce1cbaeadd6a731684a28b816982ca" title="Mesquite::ShapeImprovement\lWrapper::ShapeImprovementWrapper" alt="" coords="209,181,449,227"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1sI__DFT.html#aac197266913c27ad682c0d6502868e32" title="Mesquite::sI_DFT::sI_DFT" alt="" coords="240,251,419,280"/>
-<area shape="rect" id="node13" href="$classMesquite_1_1sRI__DFT.html#aa64ab5bce8df47e3e311c5a4f4e0cc73" title="Mesquite::sRI_DFT::\lsRI_DFT" alt="" coords="257,303,401,350"/>
-</map>

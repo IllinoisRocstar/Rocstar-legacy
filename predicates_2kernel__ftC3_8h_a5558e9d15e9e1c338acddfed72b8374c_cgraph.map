@@ -1,6 +1,0 @@
-<map id="has_smaller_signed_dist_to_planeC3" name="has_smaller_signed_dist_to_planeC3">
-<area shape="rect" id="node3" href="$predicates_2kernel__ftC3_8h.html#a3fcf460e8e04dba808ad74f9764ee82c" title="cmp_signed_dist_to\l_planeC3" alt="" coords="192,23,331,70"/>
-<area shape="rect" id="node5" href="$sign__of__determinant_8h.html#a063681dd64daa131f0fed8267cfbe968" title="sign_of_determinant3x3" alt="" coords="379,32,539,61"/>
-<area shape="rect" id="node7" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="631,5,676,35"/>
-<area shape="rect" id="node9" href="$determinant_8h.html#a32ff8e72a47ae6e0aba9b51b37080bcb" title="det3x3_by_formula" alt="" coords="588,59,719,88"/>
-</map>

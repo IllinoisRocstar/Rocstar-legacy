@@ -1,6 +1,0 @@
-<map id="has_point" name="has_point">
-<area shape="rect" id="node3" href="$classGeoPrim_1_1CVector.html#a0126d0fe9bd09bf10febcb659a2bf1a6" title="GeoPrim::CVector::normalize" alt="" coords="135,5,327,35"/>
-<area shape="rect" id="node9" href="$classGeoPrim_1_1CVector.html#a2c751c0ebacf0090e671ebd938c879bf" title="GeoPrim::CVector::unit" alt="" coords="152,59,309,88"/>
-<area shape="rect" id="node5" href="$classGeoPrim_1_1CVector.html#a0c08e460a130fd3b8eff7eb7484e878a" title="GeoPrim::CVector::norm" alt="" coords="377,32,543,61"/>
-<area shape="rect" id="node7" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="593,32,636,61"/>
-</map>

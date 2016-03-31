@@ -1,7 +1,0 @@
-<map id="get_velocity" name="get_velocity">
-<area shape="rect" id="node3" href="$namespacecimg__library.html#afdae8d98c82d052cc3aedd3a9e0304a8" title="cimg_library::cos" alt="" coords="148,21,268,51"/>
-<area shape="rect" id="node7" href="$namespacecimg__library.html#a35f28010f1c3f5a5668974c5ea8d6be3" title="cimg_library::sin" alt="" coords="149,79,267,108"/>
-<area shape="rect" id="node11" href="$classLeVeque__flow.html#abd5635dd5c4334ffc483be91c05d9ad7" title="square" alt="" coords="177,132,239,161"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#ab42d865499ba41609ea43d53a062cd2f" title="cimg_library::CImg\l::get_cos" alt="" coords="319,5,449,51"/>
-<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a7c5c1b92e02d4286b19fd6ea054ba0e8" title="cimg_library::CImg\l::get_sin" alt="" coords="319,74,449,121"/>
-</map>

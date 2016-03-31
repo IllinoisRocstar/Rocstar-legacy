@@ -1,8 +1,0 @@
-<map id="msh2hdf.C" name="msh2hdf.C">
-<area shape="rect" id="node3" href="$MSH__Reader_8h.html" title="MSH_Reader.h" alt="" coords="335,83,447,112"/>
-<area shape="rect" id="node19" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="640,83,715,112"/>
-<area shape="rect" id="node21" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="661,169,752,199"/>
-<area shape="rect" id="node23" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="529,256,644,285"/>
-<area shape="rect" id="node27" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="668,256,745,285"/>
-<area shape="rect" id="node25" href="$FC_8h.html" title="FC.h" alt="" coords="561,333,612,363"/>
-</map>

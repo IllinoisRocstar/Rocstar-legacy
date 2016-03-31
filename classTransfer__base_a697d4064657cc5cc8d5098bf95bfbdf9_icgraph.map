@@ -1,8 +1,0 @@
-<map id="multiply_mass_mat_and_x" name="multiply_mass_mat_and_x">
-<area shape="rect" id="node3" href="$classTransfer__base.html#a81e1ea7d2eb057ba19539948d292cac7" title="pcg" alt="" coords="232,63,275,92"/>
-<area shape="rect" id="node5" href="$classTransfer__base.html#aeb0363c53161d0c31ecfd44b72322904" title="template function for transfering from nodes/faces to nodes. " alt="" coords="324,63,409,92"/>
-<area shape="rect" id="node7" href="$classTransfer__n2n.html#ae872470b8a41e7de7970f31970e0655b" title="The main entry to the data transfer algorithm. " alt="" coords="460,32,609,61"/>
-<area shape="rect" id="node11" href="$classTransfer__f2n.html#a93599352510c7625825e13d46e30422b" title="The main entry to the data transfer algorithm. " alt="" coords="461,93,608,123"/>
-<area shape="rect" id="node9" href="$classTransfer__traits_3_01Nodal__data__const_00_01Nodal__data_00_01true_01_4.html#a6238db9e154d60a2d90bb62c7d2e739e" title="Transfer_traits\&lt; Nodal\l_data_const, Nodal_data,\l true \&gt;::transfer" alt="" coords="659,5,829,69"/>
-<area shape="rect" id="node13" href="$classTransfer__traits_3_01Facial__data__const_00_01Nodal__data_00_01true_01_4.html#abe1de0860ed72c56b633c2073fc42d35" title="See above. " alt="" coords="659,93,829,157"/>
-</map>

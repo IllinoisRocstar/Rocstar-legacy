@@ -1,4 +1,0 @@
-<map id="LInfTemplate" name="LInfTemplate">
-<area shape="rect" id="node2" href="$classMesquite_1_1ObjectiveFunction.html" title="Base class for concrete Objective Functions ObjectiveFunction contains a pointer to a QualityMetric..." alt="" coords="5,101,131,131"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1QualityMetric.html" title="Base class for concrete quality metrics. " alt="" coords="19,5,117,35"/>
-</map>

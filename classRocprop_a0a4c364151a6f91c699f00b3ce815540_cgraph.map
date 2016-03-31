@@ -1,7 +1,0 @@
-<map id="initialize" name="initialize">
-<area shape="rect" id="node3" href="$commpi_8h.html#a8a8389bc67ae874f8ec20c56f758c8bf" title="COMMPI_Comm_rank" alt="" coords="123,5,277,35"/>
-<area shape="rect" id="node5" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="131,59,269,88"/>
-<area shape="rect" id="node7" href="$classRocsurf.html#a690441882f8d7100b177146402bb63b5" title="Constructs the communication patterns of a distributed mesh. " alt="" coords="139,112,261,141"/>
-<area shape="rect" id="node9" href="$classRocsurf.html#a3767bcdb4b06619283e47da0d17b1378" title="Rocsurf::validate_object" alt="" coords="325,81,488,111"/>
-<area shape="rect" id="node11" href="$classWindow__manifold__2.html#a5f81facb36f7b18c987fd9a735bef1e2" title="Initialize a pane communicator. " alt="" coords="333,134,480,181"/>
-</map>

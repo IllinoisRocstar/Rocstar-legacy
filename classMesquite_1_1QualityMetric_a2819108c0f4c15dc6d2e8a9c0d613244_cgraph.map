@@ -1,7 +1,0 @@
-<map id="average_metric_and_weights" name="average_metric_and_weights">
-<area shape="rect" id="node3" href="$namespacecimg__library.html#aef2cba8d354b44debb42e1b7c30b8808" title="cimg_library::exp" alt="" coords="193,21,313,51"/>
-<area shape="rect" id="node7" href="$namespacecimg__library.html#aca249598083f7870a45cbfdf055e61f7" title="cimg_library::log" alt="" coords="195,79,312,108"/>
-<area shape="rect" id="node11" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="232,132,275,161"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#ae129c419df5ecb2d37803c41e87b8b27" title="cimg_library::CImg\l::get_exp" alt="" coords="364,5,495,51"/>
-<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a3d2943c90d7b5faaa71c758a0d153560" title="cimg_library::CImg\l::get_log" alt="" coords="364,74,495,121"/>
-</map>

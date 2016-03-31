@@ -1,9 +1,0 @@
-<map id="rflu_petsc_formresidual" name="rflu_petsc_formresidual">
-<area shape="rect" id="node3" href="$classrflu__modnewtonkrylov.html#adbaf8c46263db1aa756e23d77faefc43" title="rflu_modnewtonkrylov\l::rflu_nk_timestepping" alt="" coords="468,23,617,70"/>
-<area shape="rect" id="node15" href="$classrflu__modpetscnewtonkrylov.html#ae197801be0ae0bf8b167686643eec225" title="rflu_petsc_formresidualfirstorder" alt="" coords="211,57,419,87"/>
-<area shape="rect" id="node5" href="$RFLU__FlowSolver_8F90.html#a5fe6972c37889c9bedd7763013340055" title="rflu_flowsolver" alt="" coords="667,32,773,61"/>
-<area shape="rect" id="node7" href="$rflump_8F90.html#a33bef34d3b5acb75996a1f56cb19599a" title="rflump" alt="" coords="860,5,919,35"/>
-<area shape="rect" id="node9" href="$Rocflu__load__module_8F90.html#a10ab5d0b187b5532f513fdc2490bb37c" title="rocflu_load_module" alt="" coords="823,59,956,88"/>
-<area shape="rect" id="node11" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="1005,59,1171,88"/>
-<area shape="rect" id="node13" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="1219,59,1373,88"/>
-</map>

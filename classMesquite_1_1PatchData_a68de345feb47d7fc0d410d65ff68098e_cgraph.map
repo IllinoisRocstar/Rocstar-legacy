@@ -1,5 +1,0 @@
-<map id="snap_vertex_to_domain" name="snap_vertex_to_domain">
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshDomain.html#a80270d76f2b78f92d7a2086bfe493d53" title="evaluate closest point and normal " alt="" coords="213,5,373,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="217,74,369,121"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1MeshDomain.html#afe4742b0194c0a8b7fcff80860cdbc0b" title="Modifies &quot;coordinate&quot; so that it lies on the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="213,143,373,190"/>
-</map>

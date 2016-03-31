@@ -1,7 +1,0 @@
-<map id="orientation" name="orientation">
-<area shape="rect" id="node3" href="$predicates__on__pointsS3_8h.html#a7e84993db184b1927d166392ec7dd5b9" title="are_negative_oriented" alt="" coords="136,5,285,35"/>
-<area shape="rect" id="node5" href="$predicates__on__pointsS3_8h.html#a94d1f2927f4918b08dbce16b308d872f" title="are_positive_oriented" alt="" coords="139,59,283,88"/>
-<area shape="rect" id="node7" href="$predicates__on__pointsS3_8h.html#ad63cb7acea75f12e7c713f69d48a84ea" title="coplanar" alt="" coords="176,112,245,141"/>
-<area shape="rect" id="node9" href="$predicates__on__pointsS3_8h.html#a9127ce3bd78a8d437b456e6988778656" title="coplanar_orientation" alt="" coords="356,85,495,115"/>
-<area shape="rect" id="node11" href="$classCGALi_1_1Coplanar.html#a41cfe03eff64fda99b8a8de7e2ed6535" title="CGALi::Coplanar::operator()" alt="" coords="333,139,517,168"/>
-</map>

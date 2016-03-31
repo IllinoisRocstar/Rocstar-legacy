@@ -1,6 +1,0 @@
-<map id="printStackBacktrace" name="printStackBacktrace">
-<area shape="rect" id="node3" href="$assertions_8C.html#a929ea78cc64828ef4f00b7fd67a34d64" title="Default error handler. " alt="" coords="207,5,305,35"/>
-<area shape="rect" id="node5" href="$assertions_8C.html#a8c08197a52425284627a75aee939b076" title="postcondition_fail" alt="" coords="195,59,317,88"/>
-<area shape="rect" id="node7" href="$assertions_8C.html#a248d8eaff88156921fac63bd9082cbea" title="precondition_fail" alt="" coords="199,112,313,141"/>
-<area shape="rect" id="node9" href="$assertions_8C.html#ad6a9c9f253fc62c5dc305959d627bcf5" title="warning_fail" alt="" coords="211,165,301,195"/>
-</map>

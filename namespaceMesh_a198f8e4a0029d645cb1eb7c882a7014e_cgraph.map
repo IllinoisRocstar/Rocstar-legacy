@@ -1,6 +1,0 @@
-<map id="FindPointInCells" name="FindPointInCells">
-<area shape="rect" id="node3" href="$classGeoPrim_1_1CVector.html#a99b7a99808acd9b9e2c638ee5f1fe67a" title="GeoPrim::CVector::init" alt="" coords="173,5,328,35"/>
-<area shape="rect" id="node5" href="$namespaceMesh.html#aec8eb47532e207c2bf6a2613deff1b9c" title="Newton&#45;Raphson method, customized for using the GeoPrimitives and computational mesh constructs..." alt="" coords="192,59,309,88"/>
-<area shape="rect" id="node7" href="$namespaceMesh.html#ab1c76afee7b278af2b2bbbb16070a5c6" title="LUDcmp" alt="" coords="376,32,451,61"/>
-<area shape="rect" id="node9" href="$namespaceMesh.html#ac2e2098efeae0d8f7f77d02b6bf6a7cb" title="LUBksb" alt="" coords="379,85,448,115"/>
-</map>

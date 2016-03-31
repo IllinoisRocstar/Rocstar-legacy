@@ -1,6 +1,0 @@
-<map id="rescale_object" name="rescale_object">
-<area shape="rect" id="node3" href="$classRocblas.html#a3b80bb09c6e8803e400f77c0e6845171" title="Operation wrapper for addition with y as a scalar pointer. " alt="" coords="160,5,301,35"/>
-<area shape="rect" id="node7" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="167,59,295,88"/>
-<area shape="rect" id="node9" href="$classRocblas.html#a446e16f562d2bcb780991916721bcba2" title="Operation wrapper for multiplication with y as a scalar pointer. " alt="" coords="160,112,301,141"/>
-<area shape="rect" id="node5" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="349,59,485,88"/>
-</map>

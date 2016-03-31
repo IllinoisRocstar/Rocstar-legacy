@@ -1,7 +1,0 @@
-<map id="getElement1" name="getElement1">
-<area shape="rect" id="node3" href="$classMesh.html#a96f8003c64bff21d807cea52f48db2a7" title="The addCohesive method is the driver for the entire process of adding cohesive elements to the mesh..." alt="" coords="544,25,683,54"/>
-<area shape="rect" id="node5" href="$classNode.html#aeb84ea6c6335f93cba82a5828debfadc" title="Node::getSeparateElements" alt="" coords="149,38,336,67"/>
-<area shape="rect" id="node11" href="$classMesh.html#a614a4adf598595b7126cdaa822a9bade" title="Mesh::replaceNode" alt="" coords="176,91,309,121"/>
-<area shape="rect" id="node14" href="$classMesh.html#a0c935c0330ad306f6d283f6be39be0a0" title="Mesh::write_boundary" alt="" coords="168,145,317,174"/>
-<area shape="rect" id="node7" href="$classNode.html#aea0042ea84160d091512051ea23d8e41" title="Node::separate" alt="" coords="385,62,495,91"/>
-</map>

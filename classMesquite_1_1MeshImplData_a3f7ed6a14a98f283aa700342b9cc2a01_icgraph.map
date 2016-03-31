@@ -1,6 +1,0 @@
-<map id="num_elements" name="num_elements">
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshImpl.html#a2f404e696910c57434e6e367c3be7a5c" title="get sizes for calling get_all_mesh " alt="" coords="161,5,300,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshImpl.html#a51c855a0e0885d47351793338f3074ba" title="Mesquite::MeshImpl\l::read_vtk" alt="" coords="351,95,489,142"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1MeshImpl.html#a9e900b891d5a060e227e576743db3493" title="Read attribute data for elements. " alt="" coords="161,125,300,171"/>
-<area shape="rect" id="node10" href="$classMesquite_1_1MeshImpl.html#a8e99e3eafb55cbc23747378308e63057" title="Mesquite::MeshImpl\l::write_vtk" alt="" coords="161,194,300,241"/>
-</map>

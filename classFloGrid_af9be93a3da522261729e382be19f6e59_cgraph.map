@@ -1,9 +1,0 @@
-<map id="ReadNBlocks" name="ReadNBlocks">
-<area shape="rect" id="node3" href="$classFloGridBlock.html#a775ef39b35bdf38e2d532206bd61c928" title="FloGridBlock::ReadBlock" alt="" coords="159,139,327,168"/>
-<area shape="rect" id="node5" href="$classFloGridBlock.html#a337782e5f260983b96b40109dc74fcac" title="FloGridBlock::Resize" alt="" coords="376,5,523,35"/>
-<area shape="rect" id="node7" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="428,59,471,88"/>
-<area shape="rect" id="node9" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="427,112,472,141"/>
-<area shape="rect" id="node11" href="$classGeoPrim_1_1CPoint.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CPoint::x" alt="" coords="381,165,517,195"/>
-<area shape="rect" id="node13" href="$classGeoPrim_1_1CPoint.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CPoint::y" alt="" coords="381,219,517,248"/>
-<area shape="rect" id="node15" href="$classGeoPrim_1_1CPoint.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CPoint::z" alt="" coords="381,272,517,301"/>
-</map>

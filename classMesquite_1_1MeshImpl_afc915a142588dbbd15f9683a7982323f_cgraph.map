@@ -1,7 +1,0 @@
-<map id="vtk_read_tensor_attrib" name="vtk_read_tensor_attrib">
-<area shape="rect" id="node3" href="$classMesquite_1_1FileTokenizer.html#adeb6ea915b301dd0c047d4f675148a1f" title="Match current token to passed string. " alt="" coords="207,13,367,59"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshImpl.html#a2f5593b1042c644d8656b18e0538bebf" title="Read a 2&#45;D array of data of the specified type from the file Initializes size and type fields of pass..." alt="" coords="216,83,357,112"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1FileTokenizer.html#a6f9d4a145a247200a8d6232dcfe946b8" title="Parse a sequence of bit or boolean values. " alt="" coords="417,5,577,51"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1FileTokenizer.html#a309149a262632ddb47dca4b2d8fdf9ff" title="Parse a sequence of integer values. " alt="" coords="417,74,577,121"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1FileTokenizer.html#ab87ed2a0f2e3541adcf767d67b55c484" title="Parse a sequence of double values. " alt="" coords="417,143,577,190"/>
-</map>

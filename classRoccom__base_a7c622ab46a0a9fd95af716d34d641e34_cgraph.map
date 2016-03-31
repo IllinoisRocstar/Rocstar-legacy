@@ -1,7 +1,0 @@
-<map id="print_profile" name="print_profile">
-<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="152,5,280,51"/>
-<area shape="rect" id="node9" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="152,74,280,121"/>
-<area shape="rect" id="node11" href="$classRoccom__map.html#ad02b8fa3edfdfac0bb6bf2f25cb3b9bf" title="Name of the object. " alt="" coords="145,144,287,173"/>
-<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="336,5,464,51"/>
-<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="512,5,640,51"/>
-</map>

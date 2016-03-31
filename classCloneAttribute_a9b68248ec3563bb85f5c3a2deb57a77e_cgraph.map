@@ -1,9 +1,0 @@
-<map id="create" name="create">
-<area shape="rect" id="node3" href="$roccom__c_8h.html#a31a1cc99534b53b7d14992718739ff74" title="Clone the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="129,5,273,35"/>
-<area shape="rect" id="node5" href="$roccom__c_8h.html#a0e53e9d4c7d8101b3aae8f2cbee190e0" title="Get the sizes of an attribute. " alt="" coords="136,59,267,88"/>
-<area shape="rect" id="node13" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="113,112,289,141"/>
-<area shape="rect" id="node15" href="$classAgent.html#a53931f667c53c71d0618eab67f6f9897" title="Agent::get_surface\l_window" alt="" coords="136,165,267,211"/>
-<area shape="rect" id="node7" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="339,5,467,35"/>
-<area shape="rect" id="node9" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="380,59,425,88"/>
-<area shape="rect" id="node11" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="381,112,424,141"/>
-</map>

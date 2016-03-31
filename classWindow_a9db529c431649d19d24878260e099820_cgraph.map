@@ -1,8 +1,0 @@
-<map id="get_attribute" name="get_attribute">
-<area shape="rect" id="node3" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="184,5,320,35"/>
-<area shape="rect" id="node5" href="$classConnectivity.html#a22bb3eeaea085d303bf20b9bd2113c19" title="Obtain the size info of pre&#45;defined connectivity. " alt="" coords="163,59,341,88"/>
-<area shape="rect" id="node7" href="$classConnectivity.html#ade666cebe147628563d7c3255ebe1d67" title="Connectivity::is_element_name" alt="" coords="149,112,355,141"/>
-<area shape="rect" id="node9" href="$classAttribute.html#af855cd7842b895de519db24e29663baa" title="Obtain the location of the attribute. " alt="" coords="191,165,313,195"/>
-<area shape="rect" id="node11" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="192,218,312,265"/>
-<area shape="rect" id="node13" href="$classAttribute.html#a17407369cfeffaf5df87ff044e43af82" title="Obtain the unit of the attribute. " alt="" coords="203,288,301,317"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="get_next_edge_interior" name="get_next_edge_interior">
-<area shape="rect" id="node3" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="381,5,483,35"/>
-<area shape="rect" id="node5" href="$classSimple__manifold__2.html#a678219ca5d2b29febb0820f195f668ba" title="Get an index for internal edges. " alt="" coords="215,59,327,88"/>
-<area shape="rect" id="node8" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="384,112,480,141"/>
-<area shape="rect" id="node12" href="$classSimple__manifold__2.html#ab06c9b0093094a1e15b3c1d91b6d7012" title="Is the element incident on the give edge a ghost element? " alt="" coords="209,163,332,192"/>
-<area shape="rect" id="node10" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="405,59,459,88"/>
-</map>

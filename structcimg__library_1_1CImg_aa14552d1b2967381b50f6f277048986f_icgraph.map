@@ -1,6 +1,0 @@
-<map id="minmax" name="minmax">
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a62191853dd65b6f5cbc43e7a63a74832" title="Compute the histogram&#45;equalized version of the instance image. " alt="" coords="149,5,280,51"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#acb15b90fc67ccfe89c4c5d4b09aba609" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_histogram" alt="" coords="132,74,297,121"/>
-<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a2b77e436a48fd24c423e924c2dae4072" title="Select sub&#45;graph in a graph. " alt="" coords="124,143,305,190"/>
-<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#acaf16c667ccfe861ba7c565537f67a1a" title="Add random noise to the values of the instance image. " alt="" coords="149,213,280,259"/>
-</map>

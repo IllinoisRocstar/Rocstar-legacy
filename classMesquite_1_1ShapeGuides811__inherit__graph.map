@@ -1,5 +1,0 @@
-<map id="ShapeGuides811" name="ShapeGuides811">
-<area shape="rect" id="node2" href="$classMesquite_1_1WTargetCalculator.html" title="This is a concrete class. " alt="" coords="5,160,136,189"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1TargetCalculator.html" title="Base class that provides the interface for computing the target corner matrices used in the context b..." alt="" coords="12,83,129,112"/>
-<area shape="rect" id="node6" href="$classMesquite_1_1PatchDataUser.html" title="This should be the parent class of all algorithms retrieving information from a MeshSet object..." alt="" coords="15,5,127,35"/>
-</map>

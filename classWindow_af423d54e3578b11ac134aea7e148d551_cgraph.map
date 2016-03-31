@@ -1,5 +1,0 @@
-<map id="dealloc_array" name="dealloc_array">
-<area shape="rect" id="node3" href="$classWindow.html#a75ab2c76d299590bf8e3b23885b6a5bd" title="Template implementation for setting (op==OP_SET or OP_SET_CONST), allocating (op==OP_ALLOC), resizing (op==OP_RESIZE) and deallocating (op==OP_DEALLOC) an array for a specific connectivity table. " alt="" coords="152,32,237,61"/>
-<area shape="rect" id="node5" href="$classPane.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Get the ID of the pane. " alt="" coords="320,5,389,35"/>
-<area shape="rect" id="node7" href="$classConnectivity.html#a8e6ac8f36aff7a0f12acb77769e1bb73" title="Parent attribute being used. " alt="" coords="285,59,424,88"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="set_profiling_barrier" name="set_profiling_barrier">
-<area shape="rect" id="node3" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="213,5,352,35"/>
-<area shape="rect" id="node5" href="$classRoccom__base.html#aece46d31e9dd340b3ea7074a224812a3" title="Obtains a reference to an attribute from its handle. " alt="" coords="236,59,329,88"/>
-<area shape="rect" id="node7" href="$classRoccom__map.html#ad02b8fa3edfdfac0bb6bf2f25cb3b9bf" title="Name of the object. " alt="" coords="212,112,353,141"/>
-<area shape="rect" id="node9" href="$classRoccom__base.html#af43ff593a2c66d8a054e3a8b5d36f3c4" title="proc_exception" alt="" coords="228,165,337,195"/>
-<area shape="rect" id="node13" href="$classFunction.html#ae7d89e34b339924122245f86a7bd8eef" title="Function::set_communicator" alt="" coords="189,219,376,248"/>
-<area shape="rect" id="node15" href="$classRoccom__map.html#ab8e4e3e2a7bf18888b71bdf9dda0770b" title="Roccom_map::size" alt="" coords="216,272,349,301"/>
-<area shape="rect" id="node11" href="$roccom__exception_8C.html#a968f8230d3a737acba9bc9b878b0f57d" title="Print the stack backtrace. " alt="" coords="425,165,564,195"/>
-</map>

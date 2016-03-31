@@ -1,6 +1,0 @@
-<map id="CompositeOFScalarAdd" name="CompositeOFScalarAdd">
-<area shape="rect" id="node3" href="$classMesquite_1_1ObjectiveFunction.html#a836e8d40b1fab46ac9a8658667d582a6" title="Mesquite::ObjectiveFunction\l::get_quality_metric" alt="" coords="217,5,404,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1ObjectiveFunction.html#aade5b9a631e31103631f47d265fbb399" title="Set gradType to either NUMERICAL_GRADIENT or ANALYTICAL_GRADIENT. " alt="" coords="217,74,404,121"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1ObjectiveFunction.html#a3a6d316bcee1e7712001aa9f7e2b92aa" title="Set the value of ObjectiveFunction&#39;s negateFlag. Unless composite, concrete ObjectiveFunctions should..." alt="" coords="217,143,404,190"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1ObjectiveFunction.html#aa006f0dc94937f23b836bcf9f454386f" title="Set the value of qMetric. " alt="" coords="217,213,404,259"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="BuildFaceConnectivity" name="BuildFaceConnectivity">
-<area shape="rect" id="node3" href="$classMesh_1_1Connectivity.html#a4d957e11716fadea6c9a1f25c6e96301" title="Esize" alt="" coords="265,5,319,35"/>
-<area shape="rect" id="node5" href="$classMesh_1_1GenericElement.html#a520deba9ac7b864cf8713f518e52113c" title="Face conn for given element. " alt="" coords="209,58,375,105"/>
-<area shape="rect" id="node7" href="$classMesh_1_1Connectivity.html#a07c8a0d2aa0388b9eff23a632c27c68d" title="Resize" alt="" coords="425,97,487,127"/>
-<area shape="rect" id="node9" href="$classMesh_1_1Connectivity.html#a3da71a0df236dddaeeabc0815b176ef5" title="Nelem" alt="" coords="263,179,321,208"/>
-<area shape="rect" id="node11" href="$classMesh_1_1GenericElement.html#ae110e46b50937fe194f7891382c32b37" title="Mesh::GenericElement\l::nfaces" alt="" coords="215,231,369,278"/>
-<area shape="rect" id="node14" href="$classMesh_1_1Connectivity.html#a93098eecf20d66124bd7bc8370ebe52e" title="Sync" alt="" coords="267,301,317,331"/>
-<area shape="rect" id="node16" href="$classMesh_1_1Connectivity.html#a0c6fe8d4907ebe6db5e0d715605d9b23" title="SyncSizes" alt="" coords="249,355,335,384"/>
-</map>

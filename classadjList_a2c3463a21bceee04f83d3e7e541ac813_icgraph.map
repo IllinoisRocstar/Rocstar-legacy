@@ -1,6 +1,0 @@
-<map id="hasLoc" name="hasLoc">
-<area shape="rect" id="node3" href="$classadjList.html#ab59a384ca5674d2775b25830a757d99c" title="addFace" alt="" coords="145,5,217,35"/>
-<area shape="rect" id="node7" href="$classface.html#ae50ecb1cdb94ef172277ddc911c6b18b" title="face::nodesMatch" alt="" coords="119,59,244,88"/>
-<area shape="rect" id="node5" href="$classface.html#abcbff586b528b3ac40128b236ac88b80" title="face::face" alt="" coords="319,5,399,35"/>
-<area shape="rect" id="node9" href="$classface.html#a3ae3e427e0e26eb33a26a5be54933feb" title="face::buildPatches" alt="" coords="293,59,424,88"/>
-</map>

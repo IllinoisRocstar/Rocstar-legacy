@@ -1,9 +1,0 @@
-<map id="compute_signed_area" name="compute_signed_area">
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a80ace172b3bfe563e3dd0afd8adb3f57" title="Mesquite::PatchData\l::get_domain_normal\l_at_element" alt="" coords="204,31,348,95"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1PatchData.html#affc7f603b3ea994c151916a39130ee0e" title="Mesquite::PatchData\l::get_element_index" alt="" coords="204,118,348,165"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="204,187,348,234"/>
-<area shape="rect" id="node13" href="$classMesquite_1_1Vector3D.html#ad207cb443e371f73f07e874c504f60c1" title="Mesquite::Vector3D\l::length" alt="" coords="207,257,345,303"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="401,5,553,51"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1MeshDomain.html#af51d0710f9894de362dd3d9aa1399d5c" title="Returns the normal of the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="397,74,557,121"/>
-<area shape="rect" id="node15" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="456,265,499,295"/>
-</map>

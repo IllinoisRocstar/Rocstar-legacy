@@ -1,9 +1,0 @@
-<map id="update_cached_normals" name="update_cached_normals">
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="220,5,372,51"/>
-<area shape="rect" id="node5" href="$namespacenvc.html#a7ef4a2939f7598fd25136135eafb0ce6" title="nvc::norm" alt="" coords="256,75,336,104"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1MeshDomain.html#af51d0710f9894de362dd3d9aa1399d5c" title="Returns the normal of the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="216,127,376,174"/>
-<area shape="rect" id="node13" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="247,197,345,227"/>
-<area shape="rect" id="node15" href="$classMesquite_1_1PatchData.html#a4b465b048ea4219134d26ecc1d5981e6" title="Returns the start of the vertex&#45;&gt;element array. " alt="" coords="237,251,355,280"/>
-<area shape="rect" id="node7" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="447,48,489,77"/>
-<area shape="rect" id="node9" href="$namespacenvc.html#a4ea00221667e66f4029614e350ea5745" title="nvc::norm2" alt="" coords="425,101,511,131"/>
-</map>

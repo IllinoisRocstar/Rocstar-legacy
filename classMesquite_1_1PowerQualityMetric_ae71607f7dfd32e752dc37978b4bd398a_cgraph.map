@@ -1,8 +1,0 @@
-<map id="PowerQualityMetric" name="PowerQualityMetric">
-<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#a2977684b00072adccf1125313b3190e7" title="Returns the feasible flag for this metric. " alt="" coords="191,5,353,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1QualityMetric.html#a87b355d10f074780e849fb4204838897" title="Mesquite::QualityMetric\l::get_metric_type" alt="" coords="192,74,352,121"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1QualityMetric.html#aa530b53b6a4f1bc675af6017b5f35ed1" title="Returns negateFlag. " alt="" coords="192,143,352,190"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1QualityMetric.html#a892f2de77eacaf9d1e51cf2b29ee2d57" title="This function should be used in the constructor of every concrete quality metric. ..." alt="" coords="192,213,352,259"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1QualityMetric.html#ab6c509dee736029280d9360d19a7919d" title="Sets the name of this metric. " alt="" coords="192,282,352,329"/>
-<area shape="rect" id="node13" href="$classMesquite_1_1QualityMetric.html#a3a6d316bcee1e7712001aa9f7e2b92aa" title="Mesquite::QualityMetric\l::set_negate_flag" alt="" coords="192,351,352,398"/>
-</map>

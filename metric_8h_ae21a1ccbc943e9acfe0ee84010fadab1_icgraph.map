@@ -1,6 +1,0 @@
-<map id="print_metrics" name="print_metrics">
-<area shape="rect" id="node3" href="$main_8h.html#a9c060806d82dd0ca64b7c3627e846762" title="Print the rc_cmp usage message. " alt="" coords="152,44,237,73"/>
-<area shape="rect" id="node5" href="$classComSwitch.html#ace05d2f5f43d59f10199db53956d0ae6" title="Initialize file streams. " alt="" coords="287,5,452,51"/>
-<area shape="rect" id="node7" href="$classComSwitch.html#aecfaecb5617461bf011eeb11e36a11e9" title="Parse command options, begin logging. " alt="" coords="503,44,676,73"/>
-<area shape="rect" id="node9" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="725,44,776,73"/>
-</map>

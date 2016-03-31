@@ -1,7 +1,0 @@
-<map id="indexed_points" name="indexed_points">
-<area shape="rect" id="node2" href="$classpoints.html" title="points" alt="" coords="73,293,129,323"/>
-<area shape="rect" id="node4" href="$classbitmap.html" title="bitmap" alt="" coords="5,197,67,227"/>
-<area shape="rect" id="node6" href="$structpnt.html" title="Point object that represents a single point. " alt="" coords="91,197,131,227"/>
-<area shape="rect" id="node14" href="$structVariableDimensionArray.html" title="Variable dimension array, an array whose dimensions can be specified at runtime. " alt="" coords="279,293,441,323"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="161,101,252,131"/>
-</map>

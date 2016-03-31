@@ -1,6 +1,0 @@
-<map id="normalize" name="normalize">
-<area shape="rect" id="node3" href="$classGeoPrim_1_1CPlane.html#a9b3d8cc7c7e241fc5a9226408ed19c59" title="GeoPrim::CPlane::CPlane" alt="" coords="135,5,308,35"/>
-<area shape="rect" id="node5" href="$classGeoPrim_1_1CLine.html#a5a825f157fd23c389876bd1c54d57757" title="GeoPrim::CLine::has\l_point" alt="" coords="149,58,293,105"/>
-<area shape="rect" id="node9" href="$classMesh_1_1GenericCell__2.html#a0fc9894f542923fe4bb0afb77879c801" title="Mesh::GenericCell_2\l::shapef_jacobian_at" alt="" coords="149,127,293,174"/>
-<area shape="rect" id="node7" href="$classGeoPrim_1_1CLineSegment.html#aee8741ea7673428339de3f4d65d2d43a" title="GeoPrim::CLineSegment\l::has_point" alt="" coords="359,58,524,105"/>
-</map>

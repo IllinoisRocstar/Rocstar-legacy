@@ -1,8 +1,0 @@
-<map id="TetElement" name="TetElement">
-<area shape="rect" id="node3" href="$classTetElement.html#a567af186bbd6a17dd1210550f4361693" title="getNumFaces" alt="" coords="175,5,279,35"/>
-<area shape="rect" id="node5" href="$classTetElement.html#adf3e8caeddab52e8308ecef36b4f6212" title="getNumNodes" alt="" coords="173,59,280,88"/>
-<area shape="rect" id="node7" href="$classElement.html#a91ec17eaa02284e670cf9849e53d6706" title="Element::setFromNodes" alt="" coords="145,112,308,141"/>
-<area shape="rect" id="node9" href="$classNode.html#aae187d4fa6d52e572c0a39520558b856" title="Node::addElement" alt="" coords="384,59,515,88"/>
-<area shape="rect" id="node11" href="$classElement.html#a6c707b13ee25c7a3c73965cb4bdeee75" title="Element::getNumNodes" alt="" coords="368,112,531,141"/>
-<area shape="rect" id="node13" href="$classElement.html#aee2664462d5735c6d2b51917f4a5b88c" title="Element::setFromMyNodes" alt="" coords="359,165,540,195"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="SVD" name="SVD">
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#aeab392972e99fa46fb49c09c5d35dbcf" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_pseudoinvert" alt="" coords="105,5,287,51"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#aaada3e2623a2204605ecd2876973d78b" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_SVD" alt="" coords="128,74,264,121"/>
-<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a930302996a00b75e7e4ea7b4d6dea821" title="Invert the current matrix. " alt="" coords="131,143,261,190"/>
-<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a105a278049e2a6b08d42052b4519262d" title="Compute the eigenvalues and eigenvectors of a symmetric matrix. " alt="" coords="105,213,287,259"/>
-</map>

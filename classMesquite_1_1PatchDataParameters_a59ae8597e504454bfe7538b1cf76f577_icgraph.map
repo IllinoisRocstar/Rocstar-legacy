@@ -1,5 +1,0 @@
-<map id="get_culling_method_bits" name="get_culling_method_bits">
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchDataUser.html#a59ae8597e504454bfe7538b1cf76f577" title="Returns the bitset containing culling methods flags. " alt="" coords="228,5,401,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshSet.html#a7bfa519a2805ef4b0910f95d18c95b9d" title="Mesquite::MeshSet::\lget_next_elem_on_vert_patch" alt="" coords="217,74,412,121"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1MeshSet.html#a06226a9836be0e1cc76252e9100b16e6" title="Mesquite::MeshSet::\lget_next_patch" alt="" coords="463,74,604,121"/>
-</map>

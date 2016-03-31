@@ -1,4 +1,0 @@
-<map id="make_kd_tree" name="make_kd_tree">
-<area shape="rect" id="node3" href="$classPane__connectivity.html#a77a70f323f098007f3ce0dbdae07fdce" title="Collect the boundary nodes of all panes that are coincident with the boundary nodes of local panes..." alt="" coords="157,5,320,51"/>
-<area shape="rect" id="node5" href="$classPane__connectivity.html#a260d6d24c2db924f9048ea4267c55b56" title="Create b2v mapping (pane connectivity) for nodes or edges and store the results into a vector of vect..." alt="" coords="171,74,307,121"/>
-</map>

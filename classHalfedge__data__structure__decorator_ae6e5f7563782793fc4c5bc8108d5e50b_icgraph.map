@@ -1,8 +1,0 @@
-<map id="new_vertex" name="new_vertex">
-<area shape="rect" id="node3" href="$classPolyhedron__incremental__builder__3.html#a08d4333ed2dc491a9696b040b7bc37c4" title="Polyhedron_incremental\l_builder_3::add_vertex" alt="" coords="145,5,305,51"/>
-<area shape="rect" id="node5" href="$classHalfedge__data__structure__decorator.html#a0e1b81fe3e981790e43f669628bf76c5" title="create_loop" alt="" coords="181,75,269,104"/>
-<area shape="rect" id="node7" href="$classHalfedge__data__structure__decorator.html#ae1fcad81753bb4a391980b6b52eab474" title="create_segment" alt="" coords="168,128,283,157"/>
-<area shape="rect" id="node9" href="$classHalfedge__data__structure__decorator.html#a8c16a21dffd030da54914f7a213a1dba" title="new_vertex" alt="" coords="181,181,269,211"/>
-<area shape="rect" id="node11" href="$classHalfedge__data__structure__decorator.html#a4acbdd996b87bb4287c5c40a4d89569f" title="split_loop" alt="" coords="187,235,264,264"/>
-<area shape="rect" id="node13" href="$classHalfedge__data__structure__decorator.html#adb469ded85f4ba4e9db39db86ecce0b1" title="split_vertex" alt="" coords="181,288,269,317"/>
-</map>

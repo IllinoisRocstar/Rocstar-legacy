@@ -1,6 +1,0 @@
-<map id="insert_tip" name="insert_tip">
-<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#a846e5a77cef139225f7adc9c336b03c3" title="add_facet_to_border" alt="" coords="129,5,268,35"/>
-<area shape="rect" id="node5" href="$classHalfedge__data__structure__decorator.html#aa4cf771809bb8f620ad9bfb890f1fd13" title="flip_edge" alt="" coords="161,59,236,88"/>
-<area shape="rect" id="node7" href="$classHalfedge__data__structure__decorator.html#aca2d0496443d5a09dd089c054121ea7b" title="split_facet" alt="" coords="157,112,240,141"/>
-<area shape="rect" id="node9" href="$classHalfedge__data__structure__decorator.html#a4acbdd996b87bb4287c5c40a4d89569f" title="split_loop" alt="" coords="160,165,237,195"/>
-</map>

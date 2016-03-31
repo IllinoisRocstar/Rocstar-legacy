@@ -1,6 +1,0 @@
-<map id="compute_function" name="compute_function">
-<area shape="rect" id="node3" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a45b2d26a1bd0b3fa88f870d351e81fda" title="compute_gradient" alt="" coords="179,5,304,35"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="optimize_vertex_positions" alt="" coords="493,85,667,115"/>
-<area shape="rect" id="node10" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a85bc001b3ca33d3e06b5bc852beaa624" title="step_acceptance" alt="" coords="181,59,301,88"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1NonSmoothSteepestDescent.html#aea5da29ae2e90ad56c2a56d62b63ab93" title="minmax_opt" alt="" coords="352,59,445,88"/>
-</map>

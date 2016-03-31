@@ -1,6 +1,0 @@
-<map id="run" name="run">
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="105,5,239,35"/>
-<area shape="rect" id="node7" href="$roccom__c_8h.html#a0530b7f33e404a422d603d162b6630f9" title="Copy an attribute onto another. " alt="" coords="101,59,243,88"/>
-<area shape="rect" id="node9" href="$classAgent.html#a6d8a2835b8f31b25e870180e4a97980e" title="Agent::get_comm_rank" alt="" coords="93,112,251,141"/>
-<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="299,5,427,35"/>
-</map>

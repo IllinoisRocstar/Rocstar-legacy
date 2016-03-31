@@ -1,4 +1,0 @@
-<map id="get_connected_points" name="get_connected_points">
-<area shape="rect" id="node3" href="$structVariableDimensionArray.html#aba63dd88aca3abdf24b5e73af3f85f07" title="Translate coordinates to the flat index actually used for storage. " alt="" coords="208,5,381,51"/>
-<area shape="rect" id="node5" href="$structVariableDimensionArray.html#aa3c4fd2066fbba50d4ea41ac9289def5" title="Translate index to coordinates. " alt="" coords="204,74,385,121"/>
-</map>

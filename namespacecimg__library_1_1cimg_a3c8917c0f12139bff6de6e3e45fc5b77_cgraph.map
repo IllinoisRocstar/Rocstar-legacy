@@ -1,5 +1,0 @@
-<map id="wait" name="wait">
-<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#aa2bee10628b1c7b505e1163ee7198a6e" title="_sleep" alt="" coords="103,7,161,36"/>
-<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#af883131bbc64e996d212114cc2b2b21a" title="Get the value of a system timer with a millisecond precision. " alt="" coords="215,59,260,88"/>
-<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a3ac7655e49556a90715f3532af221334" title="Sleep for a certain numbers of milliseconds. " alt="" coords="211,5,264,35"/>
-</map>

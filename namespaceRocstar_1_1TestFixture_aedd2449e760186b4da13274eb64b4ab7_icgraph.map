@@ -1,9 +1,0 @@
-<map id="F1" name="F1">
-<area shape="rect" id="node3" href="$classRocstar_1_1TestingObject.html#a7de28a366b07117111ce7c1e9515a434" title="Test for Rocstar::MidPointQuadrature. " alt="" coords="97,5,281,51"/>
-<area shape="rect" id="node16" href="$classRocstar_1_1TestingObject.html#a7928083cb5586c2b361e1d29a8dc2b54" title="Test for Rocstar::TrapezoidQuadrature. " alt="" coords="95,74,284,121"/>
-<area shape="rect" id="node5" href="$classRocstar_1_1TestingObject.html#a046f7ab06db0acf616b0d2bf3d3146aa" title="Runs all tests implemented by the Rocstar::TestingObject. " alt="" coords="333,5,491,51"/>
-<area shape="rect" id="node11" href="$classRocstar_1_1TestingObject.html#af1f07f14b9af7708e4264bb38937eed2" title="Runs a test specified by name. " alt="" coords="333,74,491,121"/>
-<area shape="rect" id="node7" href="$namespaceRocstar.html#ac58c7e5e7cd5720ad50c1f715b3e4315" title="Drives the Rocstar::TestObject. " alt="" coords="567,17,668,47"/>
-<area shape="rect" id="node9" href="$TestRocstar_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="744,17,795,47"/>
-<area shape="rect" id="node13" href="$classRocstar_1_1TestingObject.html#a21159bd2efac623e5a5079f6a20f3444" title="Runs a list of tests specified by name. " alt="" coords="539,74,696,121"/>
-</map>

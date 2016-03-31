@@ -1,5 +1,0 @@
-<map id="readDouble" name="readDouble">
-<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#a4429d578e86edc9147af5a8f307c5f30" title="Read file data, and check for possible errors. " alt="" coords="141,5,269,51"/>
-<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="317,5,445,51"/>
-<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="493,5,621,51"/>
-</map>

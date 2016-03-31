@@ -1,5 +1,0 @@
-<map id="compute_corner_area" name="compute_corner_area">
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="201,5,345,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1Vector3D.html#ad207cb443e371f73f07e874c504f60c1" title="Mesquite::Vector3D\l::length" alt="" coords="204,74,343,121"/>
-<area shape="rect" id="node7" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="396,83,439,112"/>
-</map>

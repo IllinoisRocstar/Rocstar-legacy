@@ -1,6 +1,0 @@
-<map id="is_sameY" name="is_sameY">
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#af202a5fce446abc81966aa0df075075c" title="Return true if image (*this) has the specified width and height. " alt="" coords="135,5,284,51"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#aa889e9d1cd6bd2a47713486b7ea9ced2" title="Return true if images (*this) and img have same height. " alt="" coords="139,74,280,121"/>
-<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a64684b41dcd2a660962be8df5d30d2cf" title="Return true if image (*this) has the specified height and number of channels. " alt="" coords="135,143,284,190"/>
-<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a229ee758d966e13dc65cc853b5bc2566" title="Return true if image (*this) has the specified height and depth. " alt="" coords="135,213,284,259"/>
-</map>

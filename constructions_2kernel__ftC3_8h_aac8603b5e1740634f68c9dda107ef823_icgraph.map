@@ -1,6 +1,0 @@
-<map id="midpointC3" name="midpointC3">
-<area shape="rect" id="node3" href="$basic__constructionsS3_8h.html#a0110caa8e07751edc2f0aaf1abb8187a" title="midpoint" alt="" coords="143,44,212,73"/>
-<area shape="rect" id="node5" href="$basic__constructionsS3_8h.html#a24fcf610cb3ed9208506edf6f93f26b8" title="bisector" alt="" coords="299,13,365,43"/>
-<area shape="rect" id="node9" href="$classCGALi_1_1p__Midpoint.html#a69769fa9a5b0512123ac2f00f77f21fa" title="CGALi::p_Midpoint::\loperator()" alt="" coords="263,66,401,113"/>
-<area shape="rect" id="node7" href="$classCGALi_1_1pl__Bisector.html#a6946a79c6401c1a5ed60a50bcc8b4c23" title="CGALi::pl_Bisector\l::operator()" alt="" coords="452,5,585,51"/>
-</map>

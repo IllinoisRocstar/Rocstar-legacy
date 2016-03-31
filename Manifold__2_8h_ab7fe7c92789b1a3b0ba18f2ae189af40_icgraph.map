@@ -1,5 +1,0 @@
-<map id="get_tangent" name="get_tangent">
-<area shape="rect" id="node3" href="$group__fdp.html#ga467038cc0c762d1b0c66f82fee014302" title="Compute the cosine of the edge angle at a vertex between two incident feature edges. " alt="" coords="145,5,297,51"/>
-<area shape="rect" id="node5" href="$group__pifd.html#ga62b78979d2f09f83c3015f2e8dc232d5" title="The main entry of feature detection. " alt="" coords="145,74,297,121"/>
-<area shape="rect" id="node7" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="347,83,464,112"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="write_data" name="write_data">
-<area shape="rect" id="node3" href="$Rocout__hdf4_8C.html#afd7f177d1c51ab54ac97e391edac5cd7" title="comtype2hdftype" alt="" coords="136,5,259,35"/>
-<area shape="rect" id="node5" href="$Rocout__hdf4_8C.html#a9713dbc5530df0639654ebc362314449" title="max_element" alt="" coords="148,59,247,88"/>
-<area shape="rect" id="node14" href="$Rocout__hdf4_8C.html#aea6da2c883082aa85bdaa8411630f416" title="min_element" alt="" coords="149,112,245,141"/>
-<area shape="rect" id="node7" href="$Rocout__hdf4_8C.html#a1449304ce4b6b899f4782fc0ff4e43a3" title="Template implementation for determining the maximum entry in an array. " alt="" coords="307,59,421,88"/>
-<area shape="rect" id="node9" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="471,59,516,88"/>
-<area shape="rect" id="node12" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="472,112,515,141"/>
-<area shape="rect" id="node16" href="$Rocout__hdf4_8C.html#ac8229bb03932fc8622ad0b87c1dbf66c" title="Template implementation for determining the minimum entry in an array. " alt="" coords="309,112,419,141"/>
-</map>

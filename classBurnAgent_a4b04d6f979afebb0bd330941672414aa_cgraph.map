@@ -1,6 +1,0 @@
-<map id="read_restart_data" name="read_restart_data">
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#acea2331d2de82625c440f35ff027ed05" title="COM_call_function" alt="" coords="199,5,332,35"/>
-<area shape="rect" id="node7" href="$roccom__c_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="177,59,353,88"/>
-<area shape="rect" id="node9" href="$roccom__c_8h.html#a299161a8c4977e89b90876b670289762" title="COM_get_attribute_handle\l_const" alt="" coords="177,111,353,158"/>
-<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="403,5,531,35"/>
-</map>

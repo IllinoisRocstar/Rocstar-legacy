@@ -1,6 +1,0 @@
-<map id="init" name="init">
-<area shape="rect" id="node3" href="$classAgent.html#a0a01b54b0eac8be17c27d29b54a147ba" title="Agent::init_gmactions" alt="" coords="95,44,241,73"/>
-<area shape="rect" id="node5" href="$classScheduler.html#aa1afa161a5ce3091cb8c3a3c7a2c498e" title="Scheduler::init_actions" alt="" coords="291,44,445,73"/>
-<area shape="rect" id="node7" href="$structScheduler_1_1ActionItem.html#a4d53ef72c920649a6dcaf1ccb1392b5d" title="Scheduler::ActionItem\l::action" alt="" coords="495,5,644,51"/>
-<area shape="rect" id="node9" href="$classAction.html#aca8217b09074703304bc004e3b158e55" title="Action::init" alt="" coords="528,75,611,104"/>
-</map>

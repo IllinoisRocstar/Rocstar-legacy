@@ -1,9 +1,0 @@
-<map id="translate_coord_to_index" name="translate_coord_to_index">
-<area shape="rect" id="node3" href="$classindexed__points.html#a547869cf04daac2a6373dc4c30368c36" title="indexed_points::get\l_connected_points" alt="" coords="185,5,319,51"/>
-<area shape="rect" id="node5" href="$structVariableDimensionArray.html#a564def818636608f4f5c9508293051ab" title="Get the value specified by the loc coordinates. " alt="" coords="216,75,288,104"/>
-<area shape="rect" id="node9" href="$structVariableDimensionArray.html#a964f6d7bfad78fa420e2ebd13c6ff739" title="Set the value at the given coordinates. " alt="" coords="216,132,288,161"/>
-<area shape="rect" id="node7" href="$classindexed__points.html#ad818f90e07ade8a4ea728a57c8286f09" title="indexed_points::get\l_indexed_point" alt="" coords="379,62,512,109"/>
-<area shape="rect" id="node11" href="$classmanual__index__pts.html#a0e87e584d2e366b4abff98a2e699c92b" title="manual_index_pts::set\l_index" alt="" coords="369,131,521,178"/>
-<area shape="rect" id="node13" href="$classtpz__ordered.html#a42542264ab57a77da932b1327f24b9ad" title="tpz_ordered::build\l_point_index" alt="" coords="571,131,696,178"/>
-<area shape="rect" id="node15" href="$classtpz__ordered.html#a07bfdacccc59f48b174d534523f9f531" title="tpz_ordered::parse_data" alt="" coords="744,140,907,169"/>
-</map>

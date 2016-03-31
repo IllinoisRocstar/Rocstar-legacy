@@ -1,6 +1,0 @@
-<map id="Inverted" name="Inverted">
-<area shape="rect" id="node3" href="$classMesh_1_1GenericElement.html#a5e4e332f7e516dd7c6dab1faf04faca7" title="Centroid" alt="" coords="183,5,252,35"/>
-<area shape="rect" id="node5" href="$classGeoPrim_1_1C3Facet.html#a74b82bb18d01428d95e3f14cbbc5e842" title="GeoPrim::C3Facet::Centroid" alt="" coords="124,59,311,88"/>
-<area shape="rect" id="node9" href="$classGeoPrim_1_1C3Facet.html#a5ff0ca794e6ee7511813390e1405ef9d" title="GeoPrim::C3Facet::Normal" alt="" coords="127,112,308,141"/>
-<area shape="rect" id="node7" href="$namespaceGeoPrim.html#aec884534f2d1bce1b2efca50575a8b70" title="GeoPrim::C3Centroid" alt="" coords="360,59,507,88"/>
-</map>

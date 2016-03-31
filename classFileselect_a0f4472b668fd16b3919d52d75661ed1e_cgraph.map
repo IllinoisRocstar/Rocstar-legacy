@@ -1,8 +1,0 @@
-<map id="testTecplot" name="testTecplot">
-<area shape="rect" id="node3" href="$utilities_2rc__cmp_2util_8cpp.html#a7620fc26d83841446752a6c1fca3f9ca" title="check_bool_arr" alt="" coords="167,5,276,35"/>
-<area shape="rect" id="node5" href="$utilities_2rc__cmp_2util_8cpp.html#a634a77a74f8a4b2c3145e3009158450d" title="check_non_numeric_str" alt="" coords="141,59,301,88"/>
-<area shape="rect" id="node9" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="195,112,248,141"/>
-<area shape="rect" id="node11" href="$utilities_2rc__cmp_2util_8cpp.html#adc222b89cd7c9db4e95c44ceea085ff1" title="readCommaExpression" alt="" coords="143,165,300,195"/>
-<area shape="rect" id="node7" href="$utilities_2rc__cmp_2util_8cpp.html#a0cdc4cc0b04893269ede578556381789" title="check_non_numeric_char" alt="" coords="349,59,520,88"/>
-<area shape="rect" id="node13" href="$utilities_2rc__cmp_2util_8cpp.html#ab76f200f6aea2433bd83edc4a9a4c526" title="check_delimiters" alt="" coords="375,165,495,195"/>
-</map>

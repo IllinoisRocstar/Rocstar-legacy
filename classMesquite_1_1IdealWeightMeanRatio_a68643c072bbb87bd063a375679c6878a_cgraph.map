@@ -1,8 +1,0 @@
-<map id="IdealWeightMeanRatio" name="IdealWeightMeanRatio">
-<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#a3dd851786f1d533b752643c3193b2bba" title="Sets the evaluation mode for the ELEMENT_BASED metrics. " alt="" coords="209,5,415,51"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1QualityMetric.html#aade5b9a631e31103631f47d265fbb399" title="Sets gradType for this metric. " alt="" coords="232,74,392,121"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1QualityMetric.html#a4e962aa4592a88a626316efb2d4d1d65" title="Sets hessianType for this metric. " alt="" coords="232,143,392,190"/>
-<area shape="rect" id="node9" href="$classMesquite_1_1QualityMetric.html#a892f2de77eacaf9d1e51cf2b29ee2d57" title="This function should be used in the constructor of every concrete quality metric. ..." alt="" coords="232,213,392,259"/>
-<area shape="rect" id="node11" href="$classMesquite_1_1QualityMetric.html#ab6c509dee736029280d9360d19a7919d" title="Sets the name of this metric. " alt="" coords="232,282,392,329"/>
-<area shape="rect" id="node13" href="$classMesquite_1_1QualityMetric.html#a3a6d316bcee1e7712001aa9f7e2b92aa" title="Mesquite::QualityMetric\l::set_negate_flag" alt="" coords="232,351,392,398"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="get_cos_edge_angle" name="get_cos_edge_angle">
-<area shape="rect" id="node3" href="$group__fdp.html#ga78fff1d3f28c6607c0ba8fe175d95e5d" title="Compute the cosine of the edge angle at a vertex in a given feature curve. " alt="" coords="196,5,348,51"/>
-<area shape="rect" id="node5" href="$group__ntc.html#gaa2576922e2451c82be9775526d133835" title="Dump out the 0&#45; and 1&#45;features in Tecplot format into files &lt;name&gt;f0.plt, &lt;name&gt;f1.plt, respectively. " alt="" coords="196,74,348,121"/>
-</map>

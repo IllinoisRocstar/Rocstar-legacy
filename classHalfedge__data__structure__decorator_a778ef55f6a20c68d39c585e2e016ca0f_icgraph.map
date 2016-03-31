@@ -1,6 +1,0 @@
-<map id="delete_facet" name="delete_facet">
-<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#a54fb9412224a17a102a93ed275fcecb3" title="erase_connected_component\l_face_cycle" alt="" coords="147,5,339,51"/>
-<area shape="rect" id="node7" href="$classHalfedge__data__structure__decorator.html#acea850b1c2193ebbbe8839355d0fbfaf" title="join_facet" alt="" coords="204,75,281,104"/>
-<area shape="rect" id="node9" href="$classHalfedge__data__structure__decorator.html#abac89554d5a5134b0252d56ef18711a0" title="join_loop" alt="" coords="207,128,279,157"/>
-<area shape="rect" id="node5" href="$classHalfedge__data__structure__decorator.html#a85628cd4f6e02c713a92300bfdc9fbb2" title="erase_connected_component" alt="" coords="387,13,579,43"/>
-</map>

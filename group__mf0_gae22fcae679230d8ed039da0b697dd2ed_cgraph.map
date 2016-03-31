@@ -1,9 +1,0 @@
-<map id="identify_features_0" name="identify_features_0">
-<area shape="rect" id="node3" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="252,5,329,35"/>
-<area shape="rect" id="node5" href="$classHDS__accessor.html#a7454a9634b77e8853af6aac3167dea77" title="HDS_accessor::get_destination" alt="" coords="188,59,393,88"/>
-<area shape="rect" id="node7" href="$classHDS__accessor.html#a591425c5ea18f4820a812d753f3d6006" title="HDS_accessor::get_origin" alt="" coords="204,112,377,141"/>
-<area shape="rect" id="node9" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="205,165,376,195"/>
-<area shape="rect" id="node11" href="$classRFC__Pane__overlay.html#a50509d61eeace9fb11ba21830b2fc5db" title="RFC_Pane_overlay::set\l_feature_0" alt="" coords="209,218,372,265"/>
-<area shape="rect" id="node15" href="$classRFC__Pane__overlay.html#ab1664c42e80ec2a43d7615cf828c44f0" title="RFC_Pane_overlay::unset\l_feature_0" alt="" coords="203,287,379,334"/>
-<area shape="rect" id="node13" href="$classRFC__Pane__overlay.html#a8ec09b1da2ce631bfbca1670669cc963" title="RFC_Pane_overlay::get\l_index" alt="" coords="443,253,605,299"/>
-</map>

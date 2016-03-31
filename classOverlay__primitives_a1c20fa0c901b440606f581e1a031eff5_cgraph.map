@@ -1,9 +1,0 @@
-<map id="get_face_normal" name="get_face_normal">
-<area shape="rect" id="node3" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="192,13,320,43"/>
-<area shape="rect" id="node7" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="175,67,337,96"/>
-<area shape="rect" id="node9" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="187,120,325,149"/>
-<area shape="rect" id="node11" href="$classPoint__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Point_set::size_of\l_edges" alt="" coords="193,173,319,219"/>
-<area shape="rect" id="node15" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="235,243,277,272"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="389,5,520,51"/>
-<area shape="rect" id="node13" href="$classVertex__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Vertex_set::size_of\l_edges" alt="" coords="388,173,521,219"/>
-</map>

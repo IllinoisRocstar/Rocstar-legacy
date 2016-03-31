@@ -1,8 +1,0 @@
-<map id="get_cosh" name="get_cosh">
-<area shape="rect" id="node3" href="$namespacecimg__library.html#ac969dd6f4aaa5cdf32e54ddbd3eef17c" title="cimg_library::cosh" alt="" coords="128,57,256,87"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#af546cfb537ac9d6251542e225f351b8e" title="Compute the hyperbolic cosine of each pixel value. " alt="" coords="327,14,457,61"/>
-<area shape="rect" id="node7" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a0d684ffed0cafbfb2ac08af28a718c34" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="304,83,480,130"/>
-<area shape="rect" id="node9" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a95045af3dbd37ce54b03914a367d9a55" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="528,5,704,51"/>
-<area shape="rect" id="node11" href="$structcimg__library_1_1CImg_1_1__marching2d__func__expr.html#a63538257e8d4ca79962c14f1bddbd418" title="cimg_library::CImg\l::_marching2d_func_expr\l::operator()" alt="" coords="532,75,700,139"/>
-<area shape="rect" id="node13" href="$structcimg__library_1_1CImg_1_1__marching3d__func__expr.html#a4839e5b7a8568395b7c8e6fb4d4cf957" title="cimg_library::CImg\l::_marching3d_func_expr\l::operator()" alt="" coords="532,163,700,227"/>
-</map>

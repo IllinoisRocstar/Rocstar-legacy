@@ -1,4 +1,0 @@
-<map id="delete_element" name="delete_element">
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshImplData.html#a48c5dd96a87d3260d0c8d01c36283b60" title="Clear existing element data. " alt="" coords="167,13,268,43"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="319,5,476,51"/>
-</map>

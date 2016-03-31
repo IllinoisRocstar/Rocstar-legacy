@@ -1,8 +1,0 @@
-<map id="collinearC3" name="collinearC3">
-<area shape="rect" id="node3" href="$predicates__on__pointsS3_8h.html#adba1cd4f7eeba9020bc482542745ffdf" title="collinear" alt="" coords="143,104,212,133"/>
-<area shape="rect" id="node5" href="$predicates__on__pointsS3_8h.html#a24b28c50765ad0001a34cf10b027ae63" title="are_ordered_along_line" alt="" coords="456,29,611,59"/>
-<area shape="rect" id="node7" href="$predicates__on__pointsS3_8h.html#a897ca8e77add2950561cd72ce13fbbec" title="collinear_are_ordered\l_along_line" alt="" coords="263,35,407,82"/>
-<area shape="rect" id="node10" href="$predicates__on__pointsS3_8h.html#a7b57c5ec574eed5e8ffcf45ad0da4f9b" title="are_strictly_ordered\l_along_line" alt="" coords="465,111,601,158"/>
-<area shape="rect" id="node12" href="$predicates__on__pointsS3_8h.html#a7cca0e66620ddc64f489e64ad16eabfd" title="collinear_are_strictly\l_ordered_along_line" alt="" coords="264,155,405,202"/>
-<area shape="rect" id="node15" href="$predicates__on__pointsS3_8h.html#a9127ce3bd78a8d437b456e6988778656" title="coplanar_orientation" alt="" coords="265,225,404,255"/>
-</map>

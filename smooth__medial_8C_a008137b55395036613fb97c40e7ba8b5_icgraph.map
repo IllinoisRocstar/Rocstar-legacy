@@ -1,8 +1,0 @@
-<map id="SQR" name="SQR">
-<area shape="rect" id="node3" href="$smooth__medial_8C.html#ac59a848fa2ab164102030221f21de474" title="dsyevq3" alt="" coords="220,13,289,43"/>
-<area shape="rect" id="node13" href="$smooth__medial_8C.html#a064649646f4641b48463cf641b032e32" title="dsytrd3" alt="" coords="105,39,169,68"/>
-<area shape="rect" id="node5" href="$classRocmop.html#a77616b2e5e1035b58e2e4438abea5cb7" title="Rocmop::compute_eigenvectors" alt="" coords="339,13,549,43"/>
-<area shape="rect" id="node7" href="$classRocmop.html#a951f6a38a9e200878fabe2fe295d23ed" title="Rocmop::eigen_analyze\l_vertex" alt="" coords="597,5,760,51"/>
-<area shape="rect" id="node9" href="$classRocmop.html#a4c6e496385e479c044a89f1e545edaa5" title="Compute medial quadric for every vertex. " alt="" coords="809,5,983,51"/>
-<area shape="rect" id="node11" href="$classRocmop.html#a679bfb8c7da7e819b00dc132ba57dc8f" title="Smooths a surface using the medial quadric. " alt="" coords="1033,5,1183,51"/>
-</map>

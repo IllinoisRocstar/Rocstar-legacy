@@ -1,8 +1,0 @@
-<map id="get_tangents" name="get_tangents">
-<area shape="rect" id="node3" href="$classFaceOffset__3.html#a990f5b50335c13fc3890d5e23cfb2b6b" title="is_acute_corner" alt="" coords="152,5,267,35"/>
-<area shape="rect" id="node7" href="$classFaceOffset__3.html#ae480653bf10ba8d57e357c289646d660" title="is_acute_ridge" alt="" coords="156,59,263,88"/>
-<area shape="rect" id="node10" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="187,112,232,141"/>
-<area shape="rect" id="node12" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="188,165,231,195"/>
-<area shape="rect" id="node14" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="188,219,231,248"/>
-<area shape="rect" id="node5" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="316,32,393,61"/>
-</map>

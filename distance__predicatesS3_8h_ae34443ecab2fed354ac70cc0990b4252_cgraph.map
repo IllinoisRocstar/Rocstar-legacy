@@ -1,9 +1,0 @@
-<map id="cmp_dist_to_point" name="cmp_dist_to_point">
-<area shape="rect" id="node3" href="$predicates_2kernel__ftC3_8h.html#a6ce1de863edbbd2883b69b4c447c069d" title="cmp_dist_to_pointC3" alt="" coords="183,32,327,61"/>
-<area shape="rect" id="node11" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="213,85,296,115"/>
-<area shape="rect" id="node13" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="213,139,296,168"/>
-<area shape="rect" id="node15" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="213,192,296,221"/>
-<area shape="rect" id="node5" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="389,5,504,35"/>
-<area shape="rect" id="node7" href="$constructions_2kernel__ftC3_8h.html#ac3bf4555560ae04cd01f79f5f40bd8da" title="squared_distanceC3" alt="" coords="376,59,517,88"/>
-<area shape="rect" id="node9" href="$Pane__boundary_8C.html#a435ef393d7d5394df67d5da81c108c7d" title="square" alt="" coords="565,59,627,88"/>
-</map>

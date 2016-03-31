@@ -1,6 +1,0 @@
-<map id="halfedge" name="halfedge">
-<area shape="rect" id="node3" href="$classWindow__manifold__2.html#aad647356fbd9bd7b27031859731bfaff" title="Determine the primary nodes for across&#45;pane access. " alt="" coords="125,5,272,51"/>
-<area shape="rect" id="node9" href="$classNode.html#aa126fd94949c810d24869ad04cd97e15" title="Is the node on the physical boundary? " alt="" coords="161,75,236,104"/>
-<area shape="rect" id="node5" href="$classWindow__manifold__2.html#a90788e8f1ad84518370283bfdf635e7c" title="Initialize the manifold by inheriting the given mesh. " alt="" coords="321,13,484,43"/>
-<area shape="rect" id="node7" href="$classWindow__manifold__2.html#ad53f16aa8ca835f7435d37af4732bdbd" title="Construct a Window_manifold_2 from a given window. " alt="" coords="533,5,680,51"/>
-</map>

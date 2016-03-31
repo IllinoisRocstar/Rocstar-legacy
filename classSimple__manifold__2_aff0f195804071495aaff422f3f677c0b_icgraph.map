@@ -1,8 +1,0 @@
-<map id="get_border_edgeID" name="get_border_edgeID">
-<area shape="rect" id="node3" href="$classWindow__manifold__2.html#a05e04cee18ee028814a1dc5609f40d6a" title="Determine the counterparts of pane&#45;border edges for across&#45;pane access. " alt="" coords="188,5,345,51"/>
-<area shape="rect" id="node9" href="$classPane__manifold__2.html#ad3c981b996246eafb647bb6f2be7b551" title="Is the given edge a physical border edge? " alt="" coords="189,74,344,121"/>
-<area shape="rect" id="node5" href="$classWindow__manifold__2.html#a90788e8f1ad84518370283bfdf635e7c" title="Initialize the manifold by inheriting the given mesh. " alt="" coords="396,13,559,43"/>
-<area shape="rect" id="node7" href="$classWindow__manifold__2.html#ad53f16aa8ca835f7435d37af4732bdbd" title="Construct a Window_manifold_2 from a given window. " alt="" coords="608,5,755,51"/>
-<area shape="rect" id="node11" href="$classHalfedge.html#a8feafd3e8951881053f48c3c6b2deb06" title="Is the edge on the physical boundary? " alt="" coords="404,74,551,121"/>
-<area shape="rect" id="node13" href="$classHalfedge.html#a65b3779cc62f4ddefa17ae4a7b27c35c" title="Return the dihedral angle at the edge. " alt="" coords="619,74,744,121"/>
-</map>
