@@ -2249,7 +2249,7 @@ void TRAIL_HDF2Window( const std::string &fname, const std::string &wname,int ve
   // Change the memory layout to contiguous
   COM_clone_dataitem( (wname+".all").c_str(), (bufwin+".all").c_str(), 1);
   COM_window_init_done(wname.c_str());
-  COM_delete_dataitem((bufwin+".atts").c_str());
+  COM_delete_dataitem((bufwin+".data").c_str());
   COM_delete_window( bufwin.c_str());
   if(verb)
     std::cout << "Window " << wname << " created." << std::endl;
@@ -2456,7 +2456,7 @@ TRAIL_File2Window( const std::string &fname,
 
   if(!all)
     // Remove all attributes except for the mesh
-    COM_delete_dataitem(  (bufwin+".atts").c_str());
+    COM_delete_dataitem(  (bufwin+".data").c_str());
 
   // Change the memory layout to contiguous.
   if(all)

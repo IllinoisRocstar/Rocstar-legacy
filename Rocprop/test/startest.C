@@ -215,7 +215,7 @@ void init_attributes( const string &wname,
   // Attribute for storing the number of eigenvalues for each node.
   COM_new_attribute((wname+".tangranks").c_str(), 'n', COM_CHAR, 1, "");
 
-  COM_resize_array( (wname+".atts").c_str());
+  COM_resize_array( (wname+".data").c_str());
   COM_window_init_done( wname.c_str());
 
   int spds = COM_get_attribute_handle( (wname+".spds").c_str());

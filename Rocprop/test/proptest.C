@@ -754,7 +754,7 @@ void init_attributes( const string &wname,
   COM_new_dataitem((wname+".ridges").c_str(), 'p', COM_INT, 2, "");
   COM_set_size((wname+".ridges").c_str(), 0, 0);
 
-  COM_resize_array( (wname+".atts").c_str());
+  COM_resize_array( (wname+".data").c_str());
   COM_window_init_done( wname.c_str());
 
   // Set speed for different panes.

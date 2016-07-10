@@ -235,7 +235,7 @@ void init_attributes( const string &wname) {
   COM_new_dataitem((wname+".spds").c_str(), 'e', COM_DOUBLE, 1, "m/s");
   COM_new_dataitem((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
 
-  COM_resize_array( (wname+".atts").c_str());
+  COM_resize_array( (wname+".data").c_str());
   COM_window_init_done( wname.c_str());
 }
 
