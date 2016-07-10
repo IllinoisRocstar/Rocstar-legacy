@@ -66,8 +66,8 @@ void _load_rocface(FluidAgent *fagent, SolidAgent *sagent, const RocmanControl_p
     MPI_Comm comm = fagent->get_communicator();
 
     int RFC_read = COM_get_function_handle( "RFC.read_overlay");
-    int fluid_mesh = COM_get_attribute_handle_const( fagent->fluidBufNG+".mesh");
-    int solid_mesh = COM_get_attribute_handle_const( sagent->solidBuf+".mesh");
+    int fluid_mesh = COM_get_dataitem_handle_const( fagent->fluidBufNG+".mesh");
+    int solid_mesh = COM_get_dataitem_handle_const( sagent->solidBuf+".mesh");
     std::string rfc_dir = "Rocman/"+fagent->get_modinstance_name()+sagent->get_modinstance_name()+"/";
     //std::string rfc_dir = "Rocman/RocfloRocsolid/";
     std::string fluid_dir = rfc_dir+"ifluid";
@@ -119,10 +119,10 @@ LoadTransfer_FS::LoadTransfer_FS( FluidAgent *fag, SolidAgent *sag,
 
   traction_mode = fagent->get_coupling()->get_rocmancontrol_param()->traction_mode;
 
-  // create_attribute
+  // create_dataitem
   // for SolidAgent ??????????????????
 //  if (traction_mode == NO_SHEER && size_ts == 3) {
-    sagent->register_new_attribute( sagent->solidBufBase, ".pf", 'e', COM_DOUBLE, 1, "Pa");
+    sagent->register_new_dataitem( sagent->solidBufBase, ".pf", 'e', COM_DOUBLE, 1, "Pa");
 //  }
 
   // for FluidAgent
@@ -131,10 +131,10 @@ LoadTransfer_FS::LoadTransfer_FS( FluidAgent *fag, SolidAgent *sag,
   std::string f = f_ts_str.substr( 0, pos);
   std::string ts = f_ts_str.substr( pos, f_ts_str.size());
   if (traction_mode == NO_SHEER)  {
-    fagent->register_clone_attribute( 0, f, ts, fagent->get_surface_window(), ".pf");
+    fagent->register_clone_dataitem( 0, f, ts, fagent->get_surface_window(), ".pf");
   }
   else
-    fagent->register_clone_attribute( 0, f, ts, fagent->get_surface_window(), ".tf");
+    fagent->register_clone_dataitem( 0, f, ts, fagent->get_surface_window(), ".tf");
 }
 
 // Create buffer data
@@ -143,7 +143,7 @@ void LoadTransfer_FS::init( double t) {
   int dummy;
   std::string unit;
   char loc;
-  COM_get_attribute( sagent->solidBufBase+".ts", &loc, &dummy, &size_ts, &unit);
+  COM_get_dataitem( sagent->solidBufBase+".ts", &loc, &dummy, &size_ts, &unit);
   if (size_ts == 1 && traction_mode != NO_SHEER) {
     COM_assertion_msg(0, "If traction mode is with sheer, then solid tractions must be vectors!");
     MPI_Abort(MPI_COMM_WORLD, -1);
@@ -152,15 +152,15 @@ void LoadTransfer_FS::init( double t) {
   load_rocface(fagent->get_coupling()->get_rocmancontrol_param());
 
   // for SolidAgent
-  f_ts_hdl = get_attribute_handle(0);
-  s_ts_hdl = get_attribute_handle(1);
+  f_ts_hdl = get_dataitem_handle(0);
+  s_ts_hdl = get_dataitem_handle(1);
   if (traction_mode == NO_SHEER && size_ts == 3)
-    s_pf_hdl = get_attribute_handle(2);
+    s_pf_hdl = get_dataitem_handle(2);
   else 
     s_pf_hdl = -1;
 
-  f_tf_hdl = COM_get_attribute_handle_const( fagent->fluidBufNG+".tf");
-  f_pf_hdl = COM_get_attribute_handle_const( fagent->fluidBufNG+".pf");
+  f_tf_hdl = COM_get_dataitem_handle_const( fagent->fluidBufNG+".tf");
+  f_pf_hdl = COM_get_dataitem_handle_const( fagent->fluidBufNG+".pf");
 
   RFC_transfer = COM_get_function_handle("RFC.least_squares_transfer");
 
@@ -226,20 +226,20 @@ LoadTransfer_FSc_ALE::LoadTransfer_FSc_ALE( FluidAgent *fag, SolidAgent *sag,
 
   traction_mode = fagent->get_coupling()->get_rocmancontrol_param()->traction_mode;
 
-  // create_attribute
+  // create_dataitem
   // for SolidAgent ??????????????????
 //  if (traction_mode == NO_SHEER && size_ts == 3) {
-    sagent->register_new_attribute( sagent->solidBufBase, ".pf", 'e', COM_DOUBLE, 1, "Pa");
+    sagent->register_new_dataitem( sagent->solidBufBase, ".pf", 'e', COM_DOUBLE, 1, "Pa");
 //  }
 
   // for FluidAgent
   if (traction_mode == NO_SHEER)  {
-    fagent->register_clone_attribute( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".pf");
+    fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".pf");
   }
   else
-    fagent->register_clone_attribute( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".tf");
+    fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".tf");
 
-//  fagent->register_new_attribute( fagent->fluidBufB, ".mdot_tmp", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
+//  fagent->register_new_dataitem( fagent->fluidBufB, ".mdot_tmp", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
 }
 
 // Create buffer data
@@ -248,32 +248,32 @@ void LoadTransfer_FSc_ALE::init( double t) {
   int dummy;
   std::string unit;
   char loc;
-  COM_get_attribute( sagent->solidBufBase+".ts", &loc, &dummy, &size_ts, &unit);
+  COM_get_dataitem( sagent->solidBufBase+".ts", &loc, &dummy, &size_ts, &unit);
   if (size_ts == 1 && traction_mode != NO_SHEER) {
     COM_assertion_msg(0, "If traction mode is with sheer, then solid tractions must be vectors!");
     MPI_Abort(MPI_COMM_WORLD, -1);
   }
 
-  //f_pf_hdl = COM_get_attribute_handle_const( fagent->fluidBufNG+".pf");
-  f_pf_hdl = get_attribute_handle_const( 0);
-  fb_mdot_hdl = get_attribute_handle( 1);
-  b_rb_hdl = get_attribute_handle( 2);
-  s_ts_hdl = get_attribute_handle( 3);
+  //f_pf_hdl = COM_get_dataitem_handle_const( fagent->fluidBufNG+".pf");
+  f_pf_hdl = get_dataitem_handle_const( 0);
+  fb_mdot_hdl = get_dataitem_handle( 1);
+  b_rb_hdl = get_dataitem_handle( 2);
+  s_ts_hdl = get_dataitem_handle( 3);
   if (traction_mode == NO_SHEER && size_ts == 3)
-    s_pf_hdl = get_attribute_handle( 4);
+    s_pf_hdl = get_dataitem_handle( 4);
   else 
     s_pf_hdl = -1;
 
-  f_ts_hdl = COM_get_attribute_handle( fagent->fluidBufNG+".ts");
-  f_tf_hdl = COM_get_attribute_handle_const( fagent->fluidBufNG+".tf");
-  fb_ts_hdl = COM_get_attribute_handle( fagent->fluidBufB+".ts");
-  fb_pf_hdl = COM_get_attribute_handle( fagent->fluidBufB+".pf");
+  f_ts_hdl = COM_get_dataitem_handle( fagent->fluidBufNG+".ts");
+  f_tf_hdl = COM_get_dataitem_handle_const( fagent->fluidBufNG+".tf");
+  fb_ts_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".ts");
+  fb_pf_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".pf");
 
-  fb_rhof_alp_hdl = COM_get_attribute_handle ( fagent->fluidBufB+".rhof_alp");
-  fb_mdot_tmp_hdl = COM_get_attribute_handle ( fagent->fluidBufB+".mdot_tmp");
+  fb_rhof_alp_hdl = COM_get_dataitem_handle ( fagent->fluidBufB+".rhof_alp");
+  fb_mdot_tmp_hdl = COM_get_dataitem_handle ( fagent->fluidBufB+".mdot_tmp");
 
-  fb_nf_alp_hdl = COM_get_attribute_handle( fagent->fluidBufB+".nf_alp");
-  fb_tf_hdl = COM_get_attribute_handle_const( fagent->fluidBufB+".tf");
+  fb_nf_alp_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".nf_alp");
+  fb_tf_hdl = COM_get_dataitem_handle_const( fagent->fluidBufB+".tf");
 
   load_rocface(fagent->get_coupling()->get_rocmancontrol_param());
   RFC_transfer = COM_get_function_handle("RFC.least_squares_transfer");
@@ -378,20 +378,20 @@ LoadTransferOnly_FSc_ALE::LoadTransferOnly_FSc_ALE(
 
   traction_mode = fagent->get_coupling()->get_rocmancontrol_param()->traction_mode;
 
-  // create_attribute
+  // create_dataitem
   // for SolidAgent ??????????????????
 //  if (traction_mode == NO_SHEER && size_ts == 3) {
-    sagent->register_new_attribute( sagent->solidBufBase, ".pf", 'e', COM_DOUBLE, 1, "Pa");
+    sagent->register_new_dataitem( sagent->solidBufBase, ".pf", 'e', COM_DOUBLE, 1, "Pa");
 //  }
 
   // for FluidAgent
   if (traction_mode == NO_SHEER)  {
-    fagent->register_clone_attribute( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".pf");
+    fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".pf");
   }
   else
-    fagent->register_clone_attribute( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".tf");
+    fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".tf");
 
-//  fagent->register_new_attribute( fagent->fluidBufB, ".mdot_tmp", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
+//  fagent->register_new_dataitem( fagent->fluidBufB, ".mdot_tmp", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
 }
 
 // Create buffer data
@@ -400,17 +400,17 @@ void LoadTransferOnly_FSc_ALE::init( double t) {
   int dummy;
   std::string unit;
   char loc;
-  COM_get_attribute( sagent->solidBufBase+".ts", &loc, &dummy, &size_ts, &unit);
+  COM_get_dataitem( sagent->solidBufBase+".ts", &loc, &dummy, &size_ts, &unit);
   if (size_ts == 1 && traction_mode != NO_SHEER) {
     COM_assertion_msg(0, "If traction mode is with sheer, then solid tractions must be vectors!");
     MPI_Abort(MPI_COMM_WORLD, -1);
   }
 
-  //f_pf_hdl = COM_get_attribute_handle_const( fagent->fluidBufNG+".pf");
-  f_ts_hdl = get_attribute_handle_const( 0);
-  s_ts_hdl = get_attribute_handle( 1);
+  //f_pf_hdl = COM_get_dataitem_handle_const( fagent->fluidBufNG+".pf");
+  f_ts_hdl = get_dataitem_handle_const( 0);
+  s_ts_hdl = get_dataitem_handle( 1);
   if (traction_mode == NO_SHEER && size_ts == 3)
-    s_pf_hdl = get_attribute_handle( 2);
+    s_pf_hdl = get_dataitem_handle( 2);
   else 
     s_pf_hdl = -1;
 
@@ -477,26 +477,26 @@ GetDeformedMesh::GetDeformedMesh(FluidAgent *fag, SolidAgent *sag, const std::st
   atts[2] = s_y;
   set_attr(3, atts);
 
-    // register attributes
+    // register dataitems
 /*
   std::string::size_type pos = s_x_str.find( ".");
-  COM_assertion_msg(pos!=std::string::npos, "GetDeformedMesh::create_attribute failed!");
+  COM_assertion_msg(pos!=std::string::npos, "GetDeformedMesh::create_dataitem failed!");
   std::string s = s_x_str.substr( 0, pos);
   std::string x = s_x_str.substr( pos, s_x_str.size());
-  sagent->register_use_attribute( s, x, sagent->solidBufBase, ".nc");
+  sagent->register_use_dataitem( s, x, sagent->solidBufBase, ".nc");
 
   pos = s_y_str.find( ".");
-  COM_assertion_msg(pos!=std::string::npos, "GetDeformedMesh::create_attribute failed!");
+  COM_assertion_msg(pos!=std::string::npos, "GetDeformedMesh::create_dataitem failed!");
   s = s_y_str.substr( 0, pos);
   std::string y = s_y_str.substr( pos, s_y_str.size());
-  sagent->register_clone_attribute( 0, s, y, sagent->get_surface_window(), ".nc");
+  sagent->register_clone_dataitem( 0, s, y, sagent->get_surface_window(), ".nc");
 */
 }
 
 void GetDeformedMesh::init( double t) {
-  s_x_hdl = get_attribute_handle(0);
-  s_uhat_hdl = get_attribute_handle(1);
-  s_y_hdl = get_attribute_handle(2);
+  s_x_hdl = get_dataitem_handle(0);
+  s_uhat_hdl = get_dataitem_handle(1);
+  s_y_hdl = get_dataitem_handle(2);
 
 #if 0
   // POST_INIT_SOLID
@@ -531,33 +531,33 @@ GetDeformedMesh_ALE::GetDeformedMesh_ALE(FluidAgent *fag, SolidAgent *sag, const
   set_attr(3, atts);
 
 /*
-    // register attributes
+    // register dataitems
   std::string::size_type pos = s_x_str.find( ".");
-  COM_assertion_msg(pos!=std::string::npos, "GetDeformedMesh_ALE::create_attribute failed!");
+  COM_assertion_msg(pos!=std::string::npos, "GetDeformedMesh_ALE::create_dataitem failed!");
   std::string s = s_x_str.substr( 0, pos);
   std::string x = s_x_str.substr( pos, s_x_str.size());
-  sagent->register_use_attribute( s, x, sagent->solidBufBase, ".nc");
+  sagent->register_use_dataitem( s, x, sagent->solidBufBase, ".nc");
 
     // s_y = solidBuf+".nc"
   pos = s_y_str.find( ".");
-  COM_assertion_msg(pos!=std::string::npos, "GetDeformedMesh_ALE::create_attribute failed!");
+  COM_assertion_msg(pos!=std::string::npos, "GetDeformedMesh_ALE::create_dataitem failed!");
   s = s_y_str.substr( 0, pos);
   std::string y = s_y_str.substr( pos, s_y_str.size());
-  sagent->register_clone_attribute( 0, s, y, sagent->get_surface_window(), y);
+  sagent->register_clone_dataitem( 0, s, y, sagent->get_surface_window(), y);
 */
 }
 
 void GetDeformedMesh_ALE::init( double t) {
-  s_x_hdl = get_attribute_handle(0);
-  s_uhat_hdl = get_attribute_handle(1);
-  s_y_hdl = get_attribute_handle(2);
+  s_x_hdl = get_dataitem_handle(0);
+  s_uhat_hdl = get_dataitem_handle(1);
+  s_y_hdl = get_dataitem_handle(2);
 
   withALE = sagent->withALE;
 
-  s_rb_hdl = COM_get_attribute_handle( sagent->solidBuf+".rb");
-  s_mdot_hdl = COM_get_attribute_handle( sagent->solidBuf+".mdot");
-  s_areas_hdl = COM_get_attribute_handle( sagent->solidBuf+".areas");
-  s_rhos_hdl = COM_get_attribute_handle( sagent->solidBuf+".rhos");
+  s_rb_hdl = COM_get_dataitem_handle( sagent->solidBuf+".rb");
+  s_mdot_hdl = COM_get_dataitem_handle( sagent->solidBuf+".mdot");
+  s_areas_hdl = COM_get_dataitem_handle( sagent->solidBuf+".areas");
+  s_rhos_hdl = COM_get_dataitem_handle( sagent->solidBuf+".rhos");
 
   load_rocsurf();
   SURF_compute_bounded_volumes = COM_get_function_handle( "SURF.compute_bounded_volumes");
@@ -649,21 +649,21 @@ MeshMotionTransfer_SF::MeshMotionTransfer_SF(FluidAgent *fag, SolidAgent *sag,
     // Change to transfer total_displacement from solid to fluids, and obtain
     // incremental displacement as (nc_t0+total_disp)-nc_tn. This is prone
     // to cancellation errors but avoids accumulation of any errors.
-  fagent->register_clone_attribute( 0, fagent->ifluid_i, ".total_disp", fagent->get_surface_window(), ".du_alp");
-  fagent->register_clone_attribute( 0, fagent->ifluid_i, ".nc_t0", fagent->get_surface_window(), ".nc");
+  fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".total_disp", fagent->get_surface_window(), ".du_alp");
+  fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".nc_t0", fagent->get_surface_window(), ".nc");
     // nc_tmp is used to compare against solid nodal coordinates.
-  //fagent->register_clone_attribute( 0, fagent->ifluid_i, ".nc_tmp", fagent->get_surface_window(), ".nc");
-  //fagent->register_new_attribute( fagent->ifluid_i, ".sq_dist", 'n', COM_DOUBLE, 1, "m");
+  //fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".nc_tmp", fagent->get_surface_window(), ".nc");
+  //fagent->register_new_dataitem( fagent->ifluid_i, ".sq_dist", 'n', COM_DOUBLE, 1, "m");
 }
 
 void MeshMotionTransfer_SF::init( double t) {
   // skip 0
-  s_u_hdl = get_attribute_handle(1);
-  f_total_disp_hdl = get_attribute_handle(2);
-  f_vm_hdl = get_attribute_handle(3);
+  s_u_hdl = get_dataitem_handle(1);
+  f_total_disp_hdl = get_dataitem_handle(2);
+  f_vm_hdl = get_dataitem_handle(3);
 
-  f_nc_hdl = COM_get_attribute_handle( fagent->fluidBufNG+".nc");
-  f_nc_t0_hdl = COM_get_attribute_handle( fagent->fluidBufNG+".nc_t0");
+  f_nc_hdl = COM_get_dataitem_handle( fagent->fluidBufNG+".nc");
+  f_nc_t0_hdl = COM_get_dataitem_handle( fagent->fluidBufNG+".nc_t0");
 
   // POST_INIT_FLUID in fluid_agent.f90
     // initial_start  ?????
@@ -716,8 +716,8 @@ DeformationVelTransfer_SF::DeformationVelTransfer_SF(FluidAgent *fag,
 }
 
 void DeformationVelTransfer_SF::init( double t) {
-  s_vs_hdl = get_attribute_handle(1);
-  f_vs_hdl = get_attribute_handle(2);
+  s_vs_hdl = get_dataitem_handle(1);
+  f_vs_hdl = get_dataitem_handle(2);
 
   load_rocface(fagent->get_coupling()->get_rocmancontrol_param());
 
@@ -750,28 +750,28 @@ MeshMotionTransferISS::MeshMotionTransferISS(FluidAgent *fag, SolidAgent *sag, c
   COM_assertion_msg(pos!=std::string::npos, "MeshMotionTransferISS failed!");
   std::string f = f_vm_str.substr( 0, pos);
   std::string vm = f_vm_str.substr( pos, f_vm_str.size());
-  fagent->register_new_attribute( f, vm, 'n', COM_DOUBLE, 3, "m/s");
+  fagent->register_new_dataitem( f, vm, 'n', COM_DOUBLE, 3, "m/s");
     // used internally
-  fagent->register_clone_attribute( 0, fagent->fluidBufNG, ".u", fagent->fluidBufNG, ".vm");
-  fagent->register_clone_attribute( 0, fagent->fluidBufNG, ".uold", fagent->fluidBufNG, ".vm");
+  fagent->register_clone_dataitem( 0, fagent->fluidBufNG, ".u", fagent->fluidBufNG, ".vm");
+  fagent->register_clone_dataitem( 0, fagent->fluidBufNG, ".uold", fagent->fluidBufNG, ".vm");
    // avoid vs because vs is 'e'
-  fagent->register_clone_attribute( 0, fagent->fluidBufNG, ".fvs", fagent->fluidBufNG, ".vm");
-  fagent->register_clone_attribute( 0, fagent->fluidBufNG, ".vsold", fagent->fluidBufNG, ".vm");
-  fagent->register_clone_attribute( 0, fagent->fluidBufNG, ".utmp", fagent->fluidBufNG, ".vm");
-  fagent->register_clone_attribute( 0, fagent->fluidBufNG, ".vtmp", fagent->fluidBufNG, ".vm");
+  fagent->register_clone_dataitem( 0, fagent->fluidBufNG, ".fvs", fagent->fluidBufNG, ".vm");
+  fagent->register_clone_dataitem( 0, fagent->fluidBufNG, ".vsold", fagent->fluidBufNG, ".vm");
+  fagent->register_clone_dataitem( 0, fagent->fluidBufNG, ".utmp", fagent->fluidBufNG, ".vm");
+  fagent->register_clone_dataitem( 0, fagent->fluidBufNG, ".vtmp", fagent->fluidBufNG, ".vm");
 }
 
 void MeshMotionTransferISS::init( double t) {
-  s_u_hdl = get_attribute_handle(0);
-  s_vs_hdl = get_attribute_handle(1);
-  f_vm_hdl = get_attribute_handle(2);
+  s_u_hdl = get_dataitem_handle(0);
+  s_vs_hdl = get_dataitem_handle(1);
+  f_vm_hdl = get_dataitem_handle(2);
 
-  f_u_hdl = COM_get_attribute_handle(fagent->fluidBufNG+".u");
-  f_vs_hdl = COM_get_attribute_handle(fagent->fluidBufNG+".fvs");
-  f_uold_hdl = COM_get_attribute_handle(fagent->fluidBufNG+".uold");
-  f_vsold_hdl = COM_get_attribute_handle( fagent->fluidBufNG+".vsold");
-  f_utmp_hdl = COM_get_attribute_handle( fagent->fluidBufNG+".utmp");
-  f_vtmp_hdl = COM_get_attribute_handle( fagent->fluidBufNG+".vtmp");
+  f_u_hdl = COM_get_dataitem_handle(fagent->fluidBufNG+".u");
+  f_vs_hdl = COM_get_dataitem_handle(fagent->fluidBufNG+".fvs");
+  f_uold_hdl = COM_get_dataitem_handle(fagent->fluidBufNG+".uold");
+  f_vsold_hdl = COM_get_dataitem_handle( fagent->fluidBufNG+".vsold");
+  f_utmp_hdl = COM_get_dataitem_handle( fagent->fluidBufNG+".utmp");
+  f_vtmp_hdl = COM_get_dataitem_handle( fagent->fluidBufNG+".vtmp");
 
     // set zero
   double zero = 0.0;
@@ -821,18 +821,18 @@ TransferSolidDensity::TransferSolidDensity(FluidAgent *fag, SolidAgent *sag,
   atts[1] = f_rhos;
   set_attr(2, atts);
 
-  fagent->register_new_attribute(fagent->fluidBufNG, ".rhos", 'e', COM_DOUBLE, 1, "kg/(m^3)");
+  fagent->register_new_dataitem(fagent->fluidBufNG, ".rhos", 'e', COM_DOUBLE, 1, "kg/(m^3)");
 
 /*
-  sagent->register_use_attribute( sagent->solidBuf, ".x", sagent->solidBufBase, ".nc");
-  sagent->register_clone_attribute( 0, sagent->solidBuf, ".nc", sagent->get_surface_window(), ".nc");
+  sagent->register_use_dataitem( sagent->solidBuf, ".x", sagent->solidBufBase, ".nc");
+  sagent->register_clone_dataitem( 0, sagent->solidBuf, ".nc", sagent->get_surface_window(), ".nc");
 */
 }
 
 void TransferSolidDensity::init( double t) {
   MAN_DEBUG(3, ("Rocstar: TransferSolidDensity::init() with t:%e.\n", t));
-  s_rhos_hdl = get_attribute_handle(0);
-  f_rhos_hdl = get_attribute_handle(1);
+  s_rhos_hdl = get_dataitem_handle(0);
+  f_rhos_hdl = get_dataitem_handle(1);
 
   load_rocface(fagent->get_coupling()->get_rocmancontrol_param());
 
@@ -873,17 +873,17 @@ TransferBurnRate_FS_ALE::TransferBurnRate_FS_ALE(FluidAgent *fag,
 void TransferBurnRate_FS_ALE::init( double t) {
   if (sagent->withALE == 0) return;
 
-  b_rb_hdl = get_attribute_handle(0);
-  s_rb_hdl = get_attribute_handle(1);
+  b_rb_hdl = get_dataitem_handle(0);
+  s_rb_hdl = get_dataitem_handle(1);
   int PROP_fom = fagent->get_coupling()->get_rocmancontrol_param()->PROP_fom;
   if ( PROP_fom) {
-     p_rb_hdl = COM_get_attribute_handle( sagent->propBufAll+".rb");
+     p_rb_hdl = COM_get_dataitem_handle( sagent->propBufAll+".rb");
   }
   else {
-     p_rb_hdl = COM_get_attribute_handle( sagent->propBuf+".rb");
+     p_rb_hdl = COM_get_dataitem_handle( sagent->propBuf+".rb");
   }
-  f_mdot_tmp_hdl = COM_get_attribute_handle( fagent->fluidBufNG+".mdot_tmp");
-  fb_mdot_tmp_hdl = COM_get_attribute_handle( fagent->fluidBufB+".mdot_tmp");
+  f_mdot_tmp_hdl = COM_get_dataitem_handle( fagent->fluidBufNG+".mdot_tmp");
+  fb_mdot_tmp_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".mdot_tmp");
 
   load_rocface(fagent->get_coupling()->get_rocmancontrol_param());
   RFC_transfer = COM_get_function_handle("RFC.least_squares_transfer");
@@ -925,24 +925,24 @@ MassTransfer_SF_ALE::MassTransfer_SF_ALE(FluidAgent *fag, SolidAgent *sag,
   atts[0] = f_mdot;
   set_attr(1, atts);
 
-  fagent->register_new_attribute(fagent->ifluid_i, ".rhos", 'e', COM_DOUBLE, 1, "kg/(m^3)");
-  fagent->register_new_attribute(fagent->ifluid_i, ".mdot", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
-  bagent->register_use_attribute( bagent->iburn_all, ".rhos", bagent->parentWin, ".rhos");
+  fagent->register_new_dataitem(fagent->ifluid_i, ".rhos", 'e', COM_DOUBLE, 1, "kg/(m^3)");
+  fagent->register_new_dataitem(fagent->ifluid_i, ".mdot", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
+  bagent->register_use_dataitem( bagent->iburn_all, ".rhos", bagent->parentWin, ".rhos");
 }
 
 void MassTransfer_SF_ALE::init( double t) {
-  //f_mdot_hdl = COM_get_attribute_handle( fagent->fluidBufNG+".mdot");
-  f_mdot_hdl = get_attribute_handle( 0);
+  //f_mdot_hdl = COM_get_dataitem_handle( fagent->fluidBufNG+".mdot");
+  f_mdot_hdl = get_dataitem_handle( 0);
 
-  b_rhos_hdl = COM_get_attribute_handle( bagent->iburn_ng+".rhos");
-  b_rb_hdl = COM_get_attribute_handle( bagent->iburn_ng+".rb");
-  fb_mdot_hdl = COM_get_attribute_handle( fagent->fluidBufB+".mdot");
+  b_rhos_hdl = COM_get_dataitem_handle( bagent->iburn_ng+".rhos");
+  b_rb_hdl = COM_get_dataitem_handle( bagent->iburn_ng+".rb");
+  fb_mdot_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".mdot");
 
     // ALE
-  f_total_disp_hdl = COM_get_attribute_handle(fagent->fluidBufNG+".total_disp");
-  f_nc_hdl = COM_get_attribute_handle( fagent->fluidBufNG+".nc");
-  f_nc_t0_hdl = COM_get_attribute_handle( fagent->fluidBufNG+".nc_t0");
-  s_mdot_hdl = COM_get_attribute_handle( sagent->solidBuf+".mdot");
+  f_total_disp_hdl = COM_get_dataitem_handle(fagent->fluidBufNG+".total_disp");
+  f_nc_hdl = COM_get_dataitem_handle( fagent->fluidBufNG+".nc");
+  f_nc_t0_hdl = COM_get_dataitem_handle( fagent->fluidBufNG+".nc_t0");
+  s_mdot_hdl = COM_get_dataitem_handle( sagent->solidBuf+".mdot");
 
   load_rocface(fagent->get_coupling()->get_rocmancontrol_param());
   RFC_transfer = COM_get_function_handle("RFC.least_squares_transfer");
@@ -979,25 +979,25 @@ TemperatureTransfer_SF::TemperatureTransfer_SF(SolidAgent *sag, FluidAgent *fag,
   atts[2] = fn_Tb;
   set_attr(3, atts);
 
-  fagent->register_clone_attribute( 0, fagent->fluidBufNG, ".ts", fagent->get_surface_window(), ".pf", 0);
+  fagent->register_clone_dataitem( 0, fagent->fluidBufNG, ".ts", fagent->get_surface_window(), ".pf", 0);
 
     // Tb is rocman internal buffer
   std::string::size_type pos = fn_Tb.find( ".");
   COM_assertion_msg(pos!=std::string::npos, "LoadTransfer_FS failed!");
   std::string fn = fn_Tb.substr( 0, pos);
   std::string Tb = fn_Tb.substr( pos, fn_Tb.size());
-  fagent->register_clone_attribute( 0, fn, Tb, fagent->get_surface_window(), ".Tb_alp", 0);
-  fagent->register_clone_attribute( 0, fn, Tb+"_old", fagent->get_surface_window(), ".Tb_alp", 0);
+  fagent->register_clone_dataitem( 0, fn, Tb, fagent->get_surface_window(), ".Tb_alp", 0);
+  fagent->register_clone_dataitem( 0, fn, Tb+"_old", fagent->get_surface_window(), ".Tb_alp", 0);
 }
 
 void TemperatureTransfer_SF::init( double t) {
-  s_Ts_hdl = get_attribute_handle( 0);
-  fb_Tflm_hdl = get_attribute_handle( 1);
-  fn_Tb_hdl = get_attribute_handle( 2);
+  s_Ts_hdl = get_dataitem_handle( 0);
+  fb_Tflm_hdl = get_dataitem_handle( 1);
+  fn_Tb_hdl = get_dataitem_handle( 2);
 
-  f_Ts_hdl = get_attribute_handle( fagent->fluidBufNG+".ts");
+  f_Ts_hdl = get_dataitem_handle( fagent->fluidBufNG+".ts");
 
-  bcflag_hdl = get_attribute_handle( fagent->fluidBufNG+".bcflag");
+  bcflag_hdl = get_dataitem_handle( fagent->fluidBufNG+".bcflag");
 
   load_rocface( fagent->get_coupling()->get_rocmancontrol_param());
   RFC_transfer = COM_get_function_handle("RFC.least_squares_transfer");
@@ -1011,8 +1011,8 @@ void TemperatureTransfer_SF::run( double t, double dt, double alpha_dummy) {
   COM_call_function( RFC_transfer, &s_Ts_hdl, &f_Ts_hdl);
 
     // extract burn and non-burn values
-  COM_copy_attribute( fb_Tflm_hdl, f_Ts_hdl, 1, bcflag_hdl, 1);
-  COM_copy_attribute( fn_Tb_hdl, f_Ts_hdl, 1, bcflag_hdl, 0);
+  COM_copy_dataitem( fb_Tflm_hdl, f_Ts_hdl, 1, bcflag_hdl, 1);
+  COM_copy_dataitem( fn_Tb_hdl, f_Ts_hdl, 1, bcflag_hdl, 0);
   //debug_print(fagent->fluidBufNG+".Tf", 2, 0);
 }
 
@@ -1037,33 +1037,33 @@ HeatTransfer_FS::HeatTransfer_FS(FluidAgent *fag, SolidAgent *sag,
   set_attr(4, atts);
 
     // temporary buffer for solid
-  sagent->register_clone_attribute( 0, sagent->solidBuf, ".qc_tmp", sagent->get_surface_window(), ".qs");
-  sagent->register_clone_attribute( 0, sagent->solidBuf, ".qr_tmp", sagent->get_surface_window(), ".qs");
-  sagent->register_clone_attribute( 0, sagent->solidBuf, ".qev", sagent->get_surface_window(), ".qs", 0);
-  fagent->register_clone_attribute( 0, fagent->fluidBufNG, ".qev", fagent->get_surface_window(), ".qc", 0);
+  sagent->register_clone_dataitem( 0, sagent->solidBuf, ".qc_tmp", sagent->get_surface_window(), ".qs");
+  sagent->register_clone_dataitem( 0, sagent->solidBuf, ".qr_tmp", sagent->get_surface_window(), ".qs");
+  sagent->register_clone_dataitem( 0, sagent->solidBuf, ".qev", sagent->get_surface_window(), ".qs", 0);
+  fagent->register_clone_dataitem( 0, fagent->fluidBufNG, ".qev", fagent->get_surface_window(), ".qc", 0);
 }
 
 void HeatTransfer_FS::init( double t) {
-  f_qc_hdl = get_attribute_handle( 0);
-  int with_qr = COM_get_attribute_handle( attr[1]) > 0;
+  f_qc_hdl = get_dataitem_handle( 0);
+  int with_qr = COM_get_dataitem_handle( attr[1]) > 0;
   if (with_qr)
-    f_qr_hdl = get_attribute_handle( 1);
+    f_qr_hdl = get_dataitem_handle( 1);
   else 
     f_qr_hdl = -1;
-  b_qev_hdl = get_attribute_handle( attr[2]);
-  s_qs_hdl = get_attribute_handle( 3);
+  b_qev_hdl = get_dataitem_handle( attr[2]);
+  s_qs_hdl = get_dataitem_handle( 3);
 
-  s_qc_hdl = get_attribute_handle( sagent->solidBuf+".qc_tmp");
-  s_qr_hdl = get_attribute_handle( sagent->solidBuf+".qr_tmp");
-  f_qev_hdl = get_attribute_handle( fagent->fluidBufNG+".qev");   // burn
-  s_qev_hdl = get_attribute_handle( sagent->solidBuf+".qev");   // burn
+  s_qc_hdl = get_dataitem_handle( sagent->solidBuf+".qc_tmp");
+  s_qr_hdl = get_dataitem_handle( sagent->solidBuf+".qr_tmp");
+  f_qev_hdl = get_dataitem_handle( fagent->fluidBufNG+".qev");   // burn
+  s_qev_hdl = get_dataitem_handle( sagent->solidBuf+".qev");   // burn
 
      // TODO:  set qev_flag to signal rocburn
   /*
-   COM_new_attribute( attr.c_str(),'w',COM_INT,1,"");
+   COM_new_dataitem( attr.c_str(),'w',COM_INT,1,"");
   */
   int one = 1;
-  int qev_flag_hdl = get_attribute_handle( bagent->get_surface_window()+".qev_flag");   // burn
+  int qev_flag_hdl = get_dataitem_handle( bagent->get_surface_window()+".qev_flag");   // burn
   //COM_call_function( RocBlas::copy_scalar, &one, &qev_flag_hdl);
   int *vm =NULL;
   int strid, cap;
@@ -1108,7 +1108,7 @@ void HeatTransfer_FS::run( double t, double dt, double alpha_dummy) {
     else {
       //debug_print(bagent->iburn_ng+".qev", 102, 0, bagent->get_communicator(), "b_qev");
         // copy qev from burn to fluid, transfer to solid
-      COM_copy_attribute( f_qev_hdl, b_qev_hdl, 0);
+      COM_copy_dataitem( f_qev_hdl, b_qev_hdl, 0);
       COM_call_function( RFC_transfer, &f_qev_hdl, &s_qev_hdl);
         // only on burn surface
       COM_call_function( RocBlas::sub, &s_qev_hdl, &s_qs_hdl, &s_qs_hdl);
@@ -1141,15 +1141,15 @@ RemeshInit::RemeshInit(FluidAgent *fag, SolidAgent *sag,
   atts[3] = f_nc_t0;
   set_attr(4, atts);
 
-  fagent->register_clone_attribute( 0, fagent->ifluid_i, ".total_disp", fagent->get_surface_window(), ".du_alp");
-  fagent->register_clone_attribute( 0, fagent->ifluid_i, ".nc_t0", fagent->get_surface_window(), ".nc");
+  fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".total_disp", fagent->get_surface_window(), ".du_alp");
+  fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".nc_t0", fagent->get_surface_window(), ".nc");
 }
 
 void RemeshInit::init( double t) {
-  s_u_hdl = get_attribute_handle(0);
-  f_total_disp_hdl = get_attribute_handle(1);
-  f_nc_hdl = get_attribute_handle(2);
-  f_nc_t0_hdl = get_attribute_handle(3);
+  s_u_hdl = get_dataitem_handle(0);
+  f_total_disp_hdl = get_dataitem_handle(1);
+  f_nc_hdl = get_dataitem_handle(2);
+  f_nc_t0_hdl = get_dataitem_handle(3);
 
   load_rocface(fagent->get_coupling()->get_rocmancontrol_param());
   RFC_interpolate = COM_get_function_handle("RFC.interpolate");

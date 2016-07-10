@@ -58,7 +58,7 @@ SUBROUTINE RFLO_InitGenxInterfacePrep( iReg,region,wins,winv )
   USE ModError
   USE ModParameters
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 ! ... parameters
   INTEGER :: iReg
@@ -86,16 +86,16 @@ SUBROUTINE RFLO_InitGenxInterfacePrep( iReg,region,wins,winv )
 
 ! input surface data
 
-  CALL COM_new_attribute( TRIM(wins)//'.bcflag'  ,'p',COM_INTEGER,1,'' )
-  CALL COM_new_attribute( TRIM(wins)//'.cnstr_type','p',COM_INTEGER,1,'' )
+  CALL COM_new_dataitem( TRIM(wins)//'.bcflag'  ,'p',COM_INTEGER,1,'' )
+  CALL COM_new_dataitem( TRIM(wins)//'.cnstr_type','p',COM_INTEGER,1,'' )
 
 ! input volume data
 
-  CALL COM_new_attribute( TRIM(winv)//'.rhof' ,'e',COM_DOUBLE,1,&
+  CALL COM_new_dataitem( TRIM(winv)//'.rhof' ,'e',COM_DOUBLE,1,&
                           'kg/(m^3)')
-  CALL COM_new_attribute( TRIM(winv)//'.rhovf','e',COM_DOUBLE,3,&
+  CALL COM_new_dataitem( TRIM(winv)//'.rhovf','e',COM_DOUBLE,3,&
                           'kg/(m^2 s)')
-  CALL COM_new_attribute( TRIM(winv)//'.rhoEf','e',COM_DOUBLE,1,&
+  CALL COM_new_dataitem( TRIM(winv)//'.rhoEf','e',COM_DOUBLE,1,&
                           '(J/kg)')
 
 ! store pointers to variables -------------------------------------------------

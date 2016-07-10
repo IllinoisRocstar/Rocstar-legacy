@@ -103,7 +103,7 @@ SUBROUTINE rflupart(caseString,verbLevel)
   IMPLICIT NONE
 
 #ifdef GENX
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 #endif
 
 ! ******************************************************************************
@@ -206,16 +206,16 @@ SUBROUTINE rflupart(caseString,verbLevel)
   global%winNameIn  = TRIM(global%winName)//'-IN'
   global%winNameOut = TRIM(global%winName)//'-OUT'
 
-  CALL Rocin_load_module(TRIM(global%winNameIn))
-  CALL Rocout_load_module(TRIM(global%winNameOut))
+  CALL SimIN_load_module(TRIM(global%winNameIn))
+  CALL SimOUT_load_module(TRIM(global%winNameOut))
   
   handleObtain = COM_get_function_handle(TRIM(global%winNameIn)// &
-                                         '.obtain_attribute')
+                                         '.obtain_dataitem')
   CALL RFLU_GENX_StoreNamesHandles(global,surfWinNameInput,volWinNameInput, & 
                                    handleObtain)
 
 ! ******************************************************************************
-! Create windows and attributes 
+! Create windows and dataitems 
 ! ******************************************************************************
   
   pRegionSerial => levels(1)%regions(0)

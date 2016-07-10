@@ -29,7 +29,7 @@
 #define __ROCMOP_H_
 
 #include "mopbasic.h"
-#include "roccom_devel.h"
+#include "com_devel.hpp"
 #include "Pane_communicator.h"
 #include "commpi.h"
 #include "Manifold_2.h"
@@ -96,8 +96,8 @@ public:
    * \param disp The attribute where displacements to new positions
    *  should be stored.
    */
-  void smooth(const COM::Attribute *pmesh,
-	      COM::Attribute *disp);
+  void smooth(const COM::DataItem *pmesh,
+	      COM::DataItem *disp);
 
   //! Smooth a mesh in place..
   /** 
@@ -105,14 +105,14 @@ public:
    *
    * \param pmesh The pmesh to be smoothed.
    */
-  void smooth_in_place(COM::Attribute *pmesh);
+  void smooth_in_place(COM::DataItem *pmesh);
 
 protected:
 
   //! Perform smoother specific initialization.
   /** 
    *  Perform smoother specific initializing, for example initializing the
-   *  Window_manifold_2 for a surface mesh, adding smoother specific attributes
+   *  Window_manifold_2 for a surface mesh, adding smoother specific dataitems
    *  to the buffer window, etc.
    */
   void smoother_specific_init();
@@ -184,7 +184,7 @@ public:
   void determine_pane_border();
 
   //! Determine which nodes are on the physical border.
-  void determine_physical_border(COM::Attribute* w_is_surface);
+  void determine_physical_border(COM::DataItem* w_is_surface);
 
   //! Determine which nodes and elements are on the physical border.
   void determine_physical_border();
@@ -215,7 +215,7 @@ protected:
    */
 protected:
   //! Perform a sum-reduction on the shared nodes for the given attribute.
-  static void reduce_sum_on_shared_nodes(COM::Attribute *att);
+  static void reduce_sum_on_shared_nodes(COM::DataItem *att);
 
   //! Agree on an integer value across all panes
   /**
@@ -323,7 +323,7 @@ protected:
   void print_legible(int verb, const char* msg);
 
   //! Contrain displacements to _maxdisp
-  void constrain_displacements(COM::Attribute * w_disp);
+  void constrain_displacements(COM::DataItem * w_disp);
   
   //! Print the min and max dihedral angles along with their locations
   void print_extremal_dihedrals(COM::Window * window);
@@ -339,16 +339,16 @@ protected:
   void perturb_stationary();
 
   // Check and tally displacements for triggering smoothing
-  bool check_displacements(COM::Attribute *disp);
+  bool check_displacements(COM::DataItem *disp);
 
   // Zero displacement array
-  void zero_displacements(COM::Attribute *disp);
+  void zero_displacements(COM::DataItem *disp);
 
 public:
 
   // Add aspect ratio measures to the users mesh.
-  void add_aspect_ratios(COM::Attribute *usr_att, 
-			 COM::Attribute *buf_att =NULL);
+  void add_aspect_ratios(COM::DataItem *usr_att, 
+			 COM::DataItem *buf_att =NULL);
 
   /** \name Functions exclusive to medial quadric smoothing.
    * \{
@@ -383,7 +383,7 @@ public:
   int eigen_analyze_vertex( Vector_3<double> A_io[3], Vector_3<double> &b_io, 
 			    Vector_3<double> *nrm_nz, double angle_defect);
   
-  void get_redist_safe_factor( COM::Attribute *c_attr, COM::Attribute *w_attr, 
+  void get_redist_safe_factor( COM::DataItem *c_attr, COM::DataItem *w_attr, 
 			       int rank);
 
   // Compute eigenvalues and eigenvectors of a squared matrix A of order 3. 
@@ -446,8 +446,8 @@ public:
   double _dir_thres;                        ///< Another threshold
   double _saliency_crn;
   int _rediter;                             ///< No.iterations for vertex redistribution
-   const COM::Attribute *_cnstr_types;      ///< Stores types of nodal constraints
-   COM::Attribute *_cnstr_dirs;             ///< Stores directions of nodal contraints
+   const COM::DataItem *_cnstr_types;      ///< Stores types of nodal constraints
+   COM::DataItem *_cnstr_dirs;             ///< Stores directions of nodal contraints
    std::vector<std::set< Edge_ID> > _edges; ///< ridge edges
 
 protected: // Variables not currently modifiable via set_option

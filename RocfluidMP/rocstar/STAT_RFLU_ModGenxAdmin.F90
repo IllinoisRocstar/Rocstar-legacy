@@ -51,7 +51,7 @@ MODULE STAT_RFLU_ModRocstarAdmin
 
   IMPLICIT NONE
 
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
   PRIVATE
 
@@ -85,7 +85,7 @@ MODULE STAT_RFLU_ModRocstarAdmin
   
 ! ******************************************************************************
 !
-! Purpose: Create new attributes for time-averaged statistics.
+! Purpose: Create new dataitems for time-averaged statistics.
 !
 ! Description: None.
 !
@@ -198,7 +198,7 @@ MODULE STAT_RFLU_ModRocstarAdmin
     END IF ! global%verbLevel
     
 ! ******************************************************************************
-!   Create new attributes
+!   Create new dataitems
 ! ******************************************************************************
 
 ! ==============================================================================  
@@ -211,7 +211,7 @@ MODULE STAT_RFLU_ModRocstarAdmin
 ! ------------------------------------------------------------------------------
 !     Global
 ! ------------------------------------------------------------------------------
-      CALL COM_new_attribute( TRIM(winv)//'.tStat','w',COM_DOUBLE,1,'s' )
+      CALL COM_new_dataitem( TRIM(winv)//'.tStat','w',COM_DOUBLE,1,'s' )
       CALL COM_set_array( TRIM(winv)//'.tStat',0, global%integrTime )
 
 ! ------------------------------------------------------------------------------
@@ -220,7 +220,7 @@ MODULE STAT_RFLU_ModRocstarAdmin
       IF (global%mixtNStat > 0) THEN
         statNm => global%mixtStatNm
         DO iStat=1,global%mixtNStat
-          CALL COM_new_attribute( TRIM(winv)//'.'//TRIM(statNm(1,1,iStat)),'e',&
+          CALL COM_new_dataitem( TRIM(winv)//'.'//TRIM(statNm(1,1,iStat)),'e',&
                                   COM_DOUBLE,1,TRIM(statNm(1,2,iStat)) )
         ENDDO
       ENDIF
@@ -229,7 +229,7 @@ MODULE STAT_RFLU_ModRocstarAdmin
       IF ((global%turbActive .EQV. .true.) .AND. (global%turbNStat > 0)) THEN
         statNm => global%turbStatNm
         DO iStat=1,global%turbNStat
-          CALL COM_new_attribute( TRIM(winv)//'.'//TRIM(statNm(1,1,iStat)),'e',&
+          CALL COM_new_dataitem( TRIM(winv)//'.'//TRIM(statNm(1,1,iStat)),'e',&
                                   COM_DOUBLE,1,TRIM(statNm(1,2,iStat)) )
         ENDDO
       ENDIF  ! turbNStat
@@ -374,8 +374,8 @@ MODULE STAT_RFLU_ModRocstarAdmin
 !   Global
 ! ==============================================================================   
 
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.tStat')
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.tStat')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.tStat')
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.tStat')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     
 ! ==============================================================================
@@ -390,9 +390,9 @@ MODULE STAT_RFLU_ModRocstarAdmin
       statNm => global%mixtStatNm
       DO iStat=1,global%mixtNStat
 
-        handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.'// &
+        handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.'// &
                                                   TRIM(statNm(1,1,iStat)))
-        handleOut = COM_get_attribute_handle(TRIM(winName)//'.'// &
+        handleOut = COM_get_dataitem_handle(TRIM(winName)//'.'// &
                                              TRIM(statNm(1,1,iStat)))
         CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 
@@ -409,9 +409,9 @@ MODULE STAT_RFLU_ModRocstarAdmin
       statNm => global%turbStatNm
       DO iStat=1,global%turbNStat
 
-        handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.'// &
+        handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.'// &
                                                   TRIM(statNm(1,1,iStat)))
-        handleOut = COM_get_attribute_handle(TRIM(winName)//'.'// &
+        handleOut = COM_get_dataitem_handle(TRIM(winName)//'.'// &
                                              TRIM(statNm(1,1,iStat)))
         CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 

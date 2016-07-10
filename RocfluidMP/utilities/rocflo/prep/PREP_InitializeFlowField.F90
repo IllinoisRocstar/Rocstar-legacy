@@ -250,7 +250,7 @@ END SUBROUTINE InitializeFlowField
 ! Inlined index function.
 !
 ! Revision 1.8  2003/04/23 22:51:43  olawlor
-! Added TARGET attribute to region variable, since
+! Added TARGET dataitem to region variable, since
 ! pointers are cached into it.
 !
 ! Revision 1.7  2003/03/20 22:27:56  haselbac

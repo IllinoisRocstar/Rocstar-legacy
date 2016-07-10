@@ -23,13 +23,13 @@
 // $Id: MarkerParticles_3.C,v 1.8 2008/12/06 08:45:27 mtcampbe Exp $
 
 #include "MarkerParticles_3.h"
-#include "../Rocblas/include/Rocblas.h"
+#include "Rocblas.h"
 
 PROP_BEGIN_NAMESPACE
 
 double
-MarkerParticles_3::time_stepping( const COM::Attribute *spd, double dt,
-				  COM::Attribute *disp, int *smoothed) {
+MarkerParticles_3::time_stepping( const COM::DataItem *spd, double dt,
+				  COM::DataItem *disp, int *smoothed) {
   COM_assertion( spd->size_of_components()==1);
   COM_assertion( disp->size_of_components()==3 && disp->is_nodal());
 
@@ -40,10 +40,10 @@ MarkerParticles_3::time_stepping( const COM::Attribute *spd, double dt,
   return dt;
 }
 
-// Multiply attribute speed by nodal normals and save into attribute disp
+// Multiply dataitem speed by nodal normals and save into attribute disp
 void 
-MarkerParticles_3::multiply_nodal_normals( const COM::Attribute *spd,
-					   COM::Attribute *disp) {
+MarkerParticles_3::multiply_nodal_normals( const COM::DataItem *spd,
+					   COM::DataItem *disp) {
   assert( spd->size_of_components()==1);
 
   if ( spd->is_nodal()) { 
@@ -57,11 +57,11 @@ MarkerParticles_3::multiply_nodal_normals( const COM::Attribute *spd,
     // Create a buffer window to store the element normals
     COM::Window *win = disp->window();
     COM::Window buf( win->name()+"-marker", win->get_communicator());
-    buf.inherit( win->attribute( COM::COM_MESH), "", false, true, NULL, 0);
-    Attribute *node_disps = buf.inherit( disp, "disps", false, true, NULL, 0);
-    buf.inherit(const_cast<COM::Attribute*>(spd), "spd", false, true, NULL, 0);
-    Attribute *elem_normals = 
-      buf.new_attribute( "elem_normals", 'e', COM_DOUBLE, 3, "");
+    buf.inherit( win->dataitem( COM::COM_MESH), "", false, true, NULL, 0);
+    DataItem *node_disps = buf.inherit( disp, "disps", false, true, NULL, 0);
+    buf.inherit(const_cast<COM::DataItem*>(spd), "spd", false, true, NULL, 0);
+    DataItem *elem_normals = 
+      buf.new_dataitem( "elem_normals", 'e', COM_DOUBLE, 3, "");
     buf.resize_array( "elem_normals", 0, NULL);
     buf.init_done();
 

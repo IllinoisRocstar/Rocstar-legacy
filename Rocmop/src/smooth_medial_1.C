@@ -21,8 +21,8 @@
  * USE OR OTHER DEALINGS WITH THE SOFTWARE.                          *
  *********************************************************************/
 #include "Rocmop_1.h"
-#include "roccom.h"
-#include "Pane.h"
+#include "com.h"
+#include "Pane.hpp"
 #include "Rocblas.h"
 #include "Rocmap.h"
 #include "geometry.h"
@@ -240,18 +240,18 @@ void Rocmop::smooth_surf_medial(){
   Rocmop::compute_medial_quadric();
 
 #if EXPORT_DEBUG_INFO
- COM::Attribute *vnormals = const_cast<COM::Attribute*>(_usr_window->attribute("vnormals"));
- COM::Attribute *vnrms = _buf_window->attribute("vnormals");
- COM::Attribute *awnormals = const_cast<COM::Attribute*>(_usr_window->attribute("angleweighted"));
- COM::Attribute *awnrms = _buf_window->attribute("awnormals");
- COM::Attribute *uwnormals = const_cast<COM::Attribute*>(_usr_window->attribute("unitweighted"));
- COM::Attribute *uwnrms = _buf_window->attribute("uwnormals");
- COM::Attribute *tangranks = const_cast<COM::Attribute*>(_usr_window->attribute("tangranks"));
- COM::Attribute *tranks = _buf_window->attribute("tangranks");
- COM::Attribute *evals = _buf_window->attribute("lambda");
- COM::Attribute *eigenvalues = const_cast<COM::Attribute*>(_usr_window->attribute("eigenvalues"));
- COM::Attribute *ws = _buf_window->attribute("weights");
- COM::Attribute *weights = const_cast<COM::Attribute*>(_usr_window->attribute("adefects"));
+ COM::DataItem *vnormals = const_cast<COM::DataItem*>(_usr_window->dataitem("vnormals"));
+ COM::DataItem *vnrms = _buf_window->dataitem("vnormals");
+ COM::DataItem *awnormals = const_cast<COM::DataItem*>(_usr_window->dataitem("angleweighted"));
+ COM::DataItem *awnrms = _buf_window->dataitem("awnormals");
+ COM::DataItem *uwnormals = const_cast<COM::DataItem*>(_usr_window->dataitem("unitweighted"));
+ COM::DataItem *uwnrms = _buf_window->dataitem("uwnormals");
+ COM::DataItem *tangranks = const_cast<COM::DataItem*>(_usr_window->dataitem("tangranks"));
+ COM::DataItem *tranks = _buf_window->dataitem("tangranks");
+ COM::DataItem *evals = _buf_window->dataitem("lambda");
+ COM::DataItem *eigenvalues = const_cast<COM::DataItem*>(_usr_window->dataitem("eigenvalues"));
+ COM::DataItem *ws = _buf_window->dataitem("weights");
+ COM::DataItem *weights = const_cast<COM::DataItem*>(_usr_window->dataitem("adefects"));
 
  if ( vnormals)  Rocblas::copy( vnrms, vnormals);
  if ( awnormals)  Rocblas::copy( awnrms, awnormals);
@@ -274,8 +274,8 @@ void Rocmop::smooth_surf_medial(){
  // Add the displacements onto the nodal coords
  // FIXME
  const std::string att1("disps");
- COM::Attribute *disps = _buf_window->attribute(att1);
- COM::Attribute *nc = _buf_window->attribute( COM::COM_NC);
+ COM::DataItem *disps = _buf_window->dataitem(att1);
+ COM::DataItem *nc = _buf_window->dataitem( COM::COM_NC);
  // Rocblas::add(disps,nc,nc);
  
  if(_verb > 2) 
@@ -292,21 +292,21 @@ compute_medial_quadric() {
     att4("facenormals"), att5("facecenters"), att6("tangranks"),
    att7("cntnranks"), att8("cntnvecs"), att9("vnormals"), att10("disps"),
    att11("awnormals"), att12("uwnormals");
-  COM::Attribute *A_attr =  _buf_window->attribute(att1);
-  COM::Attribute *bm_attr = _buf_window->attribute(att2);
-  COM::Attribute *aw_attr = _buf_window->attribute(att11);
-  COM::Attribute *uw_attr = _buf_window->attribute(att12);
-  COM::Attribute *r_attr = _buf_window->attribute(att3);
+  COM::DataItem *A_attr =  _buf_window->dataitem(att1);
+  COM::DataItem *bm_attr = _buf_window->dataitem(att2);
+  COM::DataItem *aw_attr = _buf_window->dataitem(att11);
+  COM::DataItem *uw_attr = _buf_window->dataitem(att12);
+  COM::DataItem *r_attr = _buf_window->dataitem(att3);
 
-  int facenormals_id = _buf_window->attribute(att4)->id();
-  int facecenters_id = _buf_window->attribute(att5)->id();
-  int tangranks_id = _buf_window->attribute(att6)->id();
-  int cntnranks_id = _buf_window->attribute(att7)->id();
-  int cntnvecs_id = _buf_window->attribute(att8)->id();
-  int vnormals_id = _buf_window->attribute(att9)->id();
-  int awnormals_id = _buf_window->attribute(att11)->id();
-  int uwnormals_id = _buf_window->attribute(att12)->id();
-  int disps_id = _buf_window->attribute(att10)->id();
+  int facenormals_id = _buf_window->dataitem(att4)->id();
+  int facecenters_id = _buf_window->dataitem(att5)->id();
+  int tangranks_id = _buf_window->dataitem(att6)->id();
+  int cntnranks_id = _buf_window->dataitem(att7)->id();
+  int cntnvecs_id = _buf_window->dataitem(att8)->id();
+  int vnormals_id = _buf_window->dataitem(att9)->id();
+  int awnormals_id = _buf_window->dataitem(att11)->id();
+  int uwnormals_id = _buf_window->dataitem(att12)->id();
+  int disps_id = _buf_window->dataitem(att10)->id();
 
   double zero = 0.;
   Rocblas::copy_scalar( &zero, A_attr);
@@ -319,7 +319,7 @@ compute_medial_quadric() {
   for(int i =0, local_npanes = allpanes.size();
       i<local_npanes; ++i){
     Vector_3<double> *ds = reinterpret_cast<Vector_3<double>*>
-      ( allpanes[i]->attribute(disps_id)->pointer());
+      ( allpanes[i]->dataitem(disps_id)->pointer());
     for(int i =0, ni = allpanes[i]->size_of_real_nodes(); i<ni; ++i){
       ds[i] = Vector_3<double>(0.0,0.0,0.0);
     }
@@ -334,23 +334,23 @@ compute_medial_quadric() {
 
     // Obtain nodal coordinates of current pane, assuming contiguous layout
     const Vector_3<double> *pnts = reinterpret_cast<Vector_3<double>*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     Vector_3<double> *nrms = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(facenormals_id)->pointer());
+      ( pane->dataitem(facenormals_id)->pointer());
 
     // Obtain pointers to A_attr, bm_attr, and r_attr 
     Vector_3<double> *As = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(A_attr->id())->pointer());
+      ( pane->dataitem(A_attr->id())->pointer());
     Vector_3<double> *bs_m = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(bm_attr->id())->pointer());
+      ( pane->dataitem(bm_attr->id())->pointer());
     Vector_3<double> *aws = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(aw_attr->id())->pointer());
+      ( pane->dataitem(aw_attr->id())->pointer());
     Vector_3<double> *uws = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(uw_attr->id())->pointer());
+      ( pane->dataitem(uw_attr->id())->pointer());
     double   *rs = reinterpret_cast<double*>
-      ( pane->attribute(r_attr->id())->pointer());
+      ( pane->dataitem(r_attr->id())->pointer());
     Vector_3<double> *cnts = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(facecenters_id)->pointer());
+      ( pane->dataitem(facecenters_id)->pointer());
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1); 
@@ -427,7 +427,7 @@ compute_medial_quadric() {
 
 #if defined(BOUNDARY_TREATMENT) && BOUNDARY_TREATMENT
       // Loop through the halfedges of the face to handle border edges
-      Halfedge h( &*pm_it, Edge_ID(j+1,0), SURF::REAL_PANE), h0=h;
+      Halfedge h( *pm_it, Edge_ID(j+1,0), SURF::REAL_PANE), h0=h;
       do {
 	if ( h.is_border()) {
 	  // Incorporate normal plane passing through the border edge into 
@@ -472,27 +472,27 @@ compute_medial_quadric() {
 
     // Obtain pointers to A_attr, bo_attr, bm_attr, and r_attr 
     Vector_3<double> *As = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(A_attr->id())->pointer());
+      ( pane->dataitem(A_attr->id())->pointer());
     Vector_3<double> *bs_m = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(bm_attr->id())->pointer());
+      ( pane->dataitem(bm_attr->id())->pointer());
     double   *rs = reinterpret_cast<double*>
-      ( pane->attribute(r_attr->id())->pointer());
+      ( pane->dataitem(r_attr->id())->pointer());
     int      *tranks = reinterpret_cast<int*>
-      ( pane->attribute(tangranks_id)->pointer());
+      ( pane->dataitem(tangranks_id)->pointer());
     int      *cranks = reinterpret_cast<int*>
-      ( pane->attribute(cntnranks_id)->pointer());
+      ( pane->dataitem(cntnranks_id)->pointer());
     Vector_3<double> *cvecs = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(cntnvecs_id)->pointer());
+      ( pane->dataitem(cntnvecs_id)->pointer());
     int      *cnstrs = _cnstr_types?reinterpret_cast<int*>
-      ( pane->attribute(_cnstr_types->id())->pointer()):NULL;
+      ( pane->dataitem(_cnstr_types->id())->pointer()):NULL;
     Vector_3<double> *cnstr_dirs = _cnstr_dirs?reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(_cnstr_dirs->id())->pointer()):NULL;
+      ( pane->dataitem(_cnstr_dirs->id())->pointer()):NULL;
     Vector_3<double>  *vnrms = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(vnormals_id)->pointer());
+      ( pane->dataitem(vnormals_id)->pointer());
     Vector_3<double>  *awnrms = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(awnormals_id)->pointer());
+      ( pane->dataitem(awnormals_id)->pointer());
     Vector_3<double>  *uwnrms = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(uwnormals_id)->pointer());
+      ( pane->dataitem(uwnormals_id)->pointer());
 
 
     // Loop through all real nodes of the pane
@@ -549,13 +549,13 @@ redistribute_vertices_ridge() {
 
   const std::string att1("disps"), att2("lambda"), att3("weights"),
     att4("cntnvecs"), att5("cntnranks");
-  int disps_id = _buf_window->attribute(att1)->id();
+  int disps_id = _buf_window->dataitem(att1)->id();
   // c_attr are the edge centers
   // w_attr is the nodal safe factor 
-  COM::Attribute *c_attr = _buf_window->attribute(att2);
-  COM::Attribute *w_attr = _buf_window->attribute(att3);
-  int cntnvecs_id = _buf_window->attribute(att4)->id();
-  int cntnranks_id = _buf_window->attribute(att5)->id();
+  COM::DataItem *c_attr = _buf_window->dataitem(att2);
+  COM::DataItem *w_attr = _buf_window->dataitem(att3);
+  int cntnvecs_id = _buf_window->dataitem(att4)->id();
+  int cntnranks_id = _buf_window->dataitem(att5)->id();
 
   double zero = 0.;
   Rocblas::copy_scalar( &zero, c_attr);
@@ -570,20 +570,20 @@ redistribute_vertices_ridge() {
     COM::Pane *pane = *it;
     
     Vector_3<double> *es = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(cntnvecs_id)->pointer());
+      ( pane->dataitem(cntnvecs_id)->pointer());
     const Point_3<double> *pnts = reinterpret_cast<Point_3<double>*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     Vector_3<double> *cs = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(c_attr->id())->pointer());
+      ( pane->dataitem(c_attr->id())->pointer());
     int *cranks = reinterpret_cast<int*>
-      ( pane->attribute(cntnranks_id)->pointer());
+      ( pane->dataitem(cntnranks_id)->pointer());
 
     std::set< Edge_ID> &eset_pn = _edges[i];
     for ( std::set< Edge_ID>::const_iterator eit=eset_pn.begin(),
 	    eend=eset_pn.end(); eit!=eend; ++eit) {
       Edge_ID eid = *eit;
       bool    is_border = eid.is_border();
-      if ( is_border) eid = pm_it->get_opposite_real_edge( eid);
+      if ( is_border) eid = (*pm_it)->get_opposite_real_edge( eid);
 
       // Loop through real elements of the current pane
       Element_node_enumerator ene( pane, eid.eid()); 
@@ -611,11 +611,11 @@ redistribute_vertices_ridge() {
     COM::Pane *pane = *it;
 
     Vector_3<double> *es = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(cntnvecs_id)->pointer());
+      ( pane->dataitem(cntnvecs_id)->pointer());
     Vector_3<double> *cs = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute( c_attr->id())->pointer());
+      ( pane->dataitem( c_attr->id())->pointer());
     int *cranks = reinterpret_cast<int*>
-      ( pane->attribute(cntnranks_id)->pointer());
+      ( pane->dataitem(cntnranks_id)->pointer());
 
     // Loop through all real nodes of the pane
     std::set< Edge_ID> &eset_pn = _edges[i];
@@ -623,7 +623,7 @@ redistribute_vertices_ridge() {
 	    eend=eset_pn.end(); eit!=eend; ++eit) {
       Edge_ID eid = *eit;
       bool    is_border = eid.is_border();
-      if ( is_border) eid = pm_it->get_opposite_real_edge( eid);
+      if ( is_border) eid = (*pm_it)->get_opposite_real_edge( eid);
 
       // Loop through real elements of the current pane
       Element_node_enumerator ene( pane, eid.eid()); 
@@ -647,11 +647,11 @@ redistribute_vertices_ridge() {
     COM::Pane *pane = *it;
 
     Vector_3<double> *cs = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute( c_attr->id())->pointer());
+      ( pane->dataitem( c_attr->id())->pointer());
     Vector_3<double> *ds = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute( disps_id)->pointer());
+      ( pane->dataitem( disps_id)->pointer());
     double   *ws = reinterpret_cast<double*>
-      ( pane->attribute(w_attr->id())->pointer());
+      ( pane->dataitem(w_attr->id())->pointer());
 
     // Loop through all real nodes of the pane
     std::set< Edge_ID> &eset_pn = _edges[i];
@@ -659,7 +659,7 @@ redistribute_vertices_ridge() {
 	    eend=eset_pn.end(); eit!=eend; ++eit) {
       Edge_ID eid = *eit;
       bool    is_border = eid.is_border();
-      if ( is_border) eid = pm_it->get_opposite_real_edge( eid);
+      if ( is_border) eid = (*pm_it)->get_opposite_real_edge( eid);
 
       // Loop through real elements of the current pane
       Element_node_enumerator ene( pane, eid.eid()); 
@@ -685,12 +685,12 @@ redistribute_vertices_smooth() {
   // (only lsast two components); _weights to store weight
   const std::string att1("disps"), att2("lambda"), att3("weights"),
     att4("cntnvecs"), att5("cntnranks"), att6("tangranks");
-  int disps_id = _buf_window->attribute(att1)->id();
-  COM::Attribute *c_attr = _buf_window->attribute(att2);
-  COM::Attribute *w_attr = _buf_window->attribute(att3);
-  int cntnvecs_id = _buf_window->attribute(att4)->id();
-  int cntnranks_id = _buf_window->attribute(att5)->id();
-  int tangranks_id = _buf_window->attribute("tangranks")->id();
+  int disps_id = _buf_window->dataitem(att1)->id();
+  COM::DataItem *c_attr = _buf_window->dataitem(att2);
+  COM::DataItem *w_attr = _buf_window->dataitem(att3);
+  int cntnvecs_id = _buf_window->dataitem(att4)->id();
+  int cntnranks_id = _buf_window->dataitem(att5)->id();
+  int tangranks_id = _buf_window->dataitem("tangranks")->id();
 
   double zero = 0.;
   Rocblas::copy_scalar( &zero, c_attr);
@@ -704,19 +704,19 @@ redistribute_vertices_smooth() {
     COM::Pane *pane = *it;
     
     Vector_3<double> *es = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(cntnvecs_id)->pointer());
+      ( pane->dataitem(cntnvecs_id)->pointer());
     const Point_3<double> *pnts = reinterpret_cast<Point_3<double>*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     Vector_3<double> *cs = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(c_attr->id())->pointer());
+      ( pane->dataitem(c_attr->id())->pointer());
     double   *ws = reinterpret_cast<double*>
-      ( pane->attribute(w_attr->id())->pointer());
+      ( pane->dataitem(w_attr->id())->pointer());
     Vector_3<double> *ds = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(disps_id)->pointer());
+      ( pane->dataitem(disps_id)->pointer());
     int *tranks = reinterpret_cast<int*>
-      ( pane->attribute(tangranks_id)->pointer());
+      ( pane->dataitem(tangranks_id)->pointer());
     int *cranks = reinterpret_cast<int*>
-      ( pane->attribute(cntnranks_id)->pointer());
+      ( pane->dataitem(cntnranks_id)->pointer());
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1); 
@@ -770,15 +770,15 @@ redistribute_vertices_smooth() {
     COM::Pane *pane = *it;
 
     Vector_3<double> *cs = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute( c_attr->id())->pointer());
+      ( pane->dataitem( c_attr->id())->pointer());
     double   *ws = reinterpret_cast<double*>
-      ( pane->attribute( w_attr->id())->pointer());
+      ( pane->dataitem( w_attr->id())->pointer());
     int *tranks = reinterpret_cast<int*>
-      ( pane->attribute(tangranks_id)->pointer());
+      ( pane->dataitem(tangranks_id)->pointer());
     Vector_3<double> *es = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(cntnvecs_id)->pointer());
+      ( pane->dataitem(cntnvecs_id)->pointer());
     int *cranks = reinterpret_cast<int*>
-      ( pane->attribute(cntnranks_id)->pointer());
+      ( pane->dataitem(cntnranks_id)->pointer());
 
     // Loop through all real nodes of the pane
     for ( int j=0, nj=pane->size_of_real_nodes(); j<nj; ++j) {
@@ -801,13 +801,13 @@ redistribute_vertices_smooth() {
     COM::Pane *pane = *it;
 
     Vector_3<double> *cs = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute( c_attr->id())->pointer());
+      ( pane->dataitem( c_attr->id())->pointer());
     double   *ws = reinterpret_cast<double*>
-      ( pane->attribute( w_attr->id())->pointer());
+      ( pane->dataitem( w_attr->id())->pointer());
     Vector_3<double> *ds = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute( disps_id)->pointer());
+      ( pane->dataitem( disps_id)->pointer());
     int *tranks = reinterpret_cast<int*>
-      ( pane->attribute( tangranks_id)->pointer());
+      ( pane->dataitem( tangranks_id)->pointer());
 
     // Loop through all real nodes of the pane
     for ( int j=0, nj=pane->size_of_real_nodes(); j<nj; ++j) {
@@ -822,17 +822,17 @@ redistribute_vertices_smooth() {
 }
 
 void Rocmop::
-get_redist_safe_factor( COM::Attribute *c_attr, COM::Attribute *w_attr, 
+get_redist_safe_factor( COM::DataItem *c_attr, COM::DataItem *w_attr, 
 			int rank) {
   double zero=0;
   Rocblas::copy_scalar( &zero, w_attr);
 
   const std::string att1("tangranks"), att2("weights2"),
     att3("barycrds"), att4("PNelemids");
-  int tangranks_id = _buf_window->attribute(att1)->id(),
-    weights2_id = _buf_window->attribute(att2)->id(),
-    barycrds_id = _buf_window->attribute(att3)->id(),
-    PNelemid_id = _buf_window->attribute(att4)->id();
+  int tangranks_id = _buf_window->dataitem(att1)->id(),
+    weights2_id = _buf_window->dataitem(att2)->id(),
+    barycrds_id = _buf_window->dataitem(att3)->id(),
+    PNelemid_id = _buf_window->dataitem(att4)->id();
 
   std::vector< COM::Pane*> allpanes;
   _buf_window->panes(allpanes);
@@ -841,19 +841,19 @@ get_redist_safe_factor( COM::Attribute *c_attr, COM::Attribute *w_attr,
     COM::Pane *pane = *it;
     
     const Point_3<double> *pnts = reinterpret_cast<Point_3<double>*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     Vector_3<double> *cs = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(c_attr->id())->pointer());
+      ( pane->dataitem(c_attr->id())->pointer());
     double   *ws = reinterpret_cast<double*>
-      ( pane->attribute(w_attr->id())->pointer());
+      ( pane->dataitem(w_attr->id())->pointer());
     int *tranks = reinterpret_cast<int*>
-      ( pane->attribute(tangranks_id)->pointer());
+      ( pane->dataitem(tangranks_id)->pointer());
     double *ws2 = reinterpret_cast<double*>
-      ( pane->attribute(weights2_id)->pointer());
+      ( pane->dataitem(weights2_id)->pointer());
     double *bcs = reinterpret_cast<double*>
-      ( pane->attribute(barycrds_id)->pointer());
+      ( pane->dataitem(barycrds_id)->pointer());
     int *PNids = reinterpret_cast<int*>
-      ( pane->attribute(PNelemid_id)->pointer());
+      ( pane->dataitem(PNelemid_id)->pointer());
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1); 
@@ -908,12 +908,12 @@ void Rocmop::evaluate_face_normals() {
   COM_assertion_msg(_buf_window, "Unexpected NULL pointer encountered.");
 
   if(_verb > 3) 
-    std::cout << "Getting attribute ids" << std::endl;
+    std::cout << "Getting dataitem ids" << std::endl;
 
   const std::string att1("facenormals");
   const std::string att2("facecenters");
-  int facenormals_id = _buf_window->attribute(att1)->id();
-  int facecenters_id = _buf_window->attribute(att2)->id();
+  int facenormals_id = _buf_window->dataitem(att1)->id();
+  int facecenters_id = _buf_window->dataitem(att2)->id();
 
   // Loop through the panes and its real faces
   std::vector< COM::Pane*> allpanes;
@@ -924,16 +924,16 @@ void Rocmop::evaluate_face_normals() {
     COM::Pane *pane = *it;
 
     // Obtain nodal coordinates of current pane, assuming contiguous layout
-    COM_assertion_msg( pane->attribute( COM_NC)->stride()==3 ||
+    COM_assertion_msg( pane->dataitem( COM_NC)->stride()==3 ||
 		       pane->size_of_real_nodes()==0, 
 		       "Coordinates must be stored in contiguous layout.");
 
     const Vector_3<double> *pnts = reinterpret_cast< Vector_3<double>* >
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     Vector_3<double> *nrms = reinterpret_cast< Vector_3<double>* >
-      ( pane->attribute(facenormals_id)->pointer());
+      ( pane->dataitem(facenormals_id)->pointer());
     Vector_3<double> *cnts = reinterpret_cast< Vector_3<double>* >
-      ( pane->attribute(facecenters_id)->pointer());
+      ( pane->dataitem(facecenters_id)->pointer());
 
     COM_assertion_msg(pnts, "NULL pointer to nodal coords.");
     COM_assertion_msg(nrms, "NULL pointer to face normals.");
@@ -969,12 +969,12 @@ void Rocmop::
 identify_ridge_edges() 
 {
   // Allocate buffer space for maximum and minedgev
-  COM::Attribute *maxedgev = 
-    _buf_window->new_attribute( "maxedgev", 'n', COM_DOUBLE, 1, "");
+  COM::DataItem *maxedgev = 
+    _buf_window->new_dataitem( "maxedgev", 'n', COM_DOUBLE, 1, "");
   _buf_window->resize_array( maxedgev, 0);
 
-  COM::Attribute *minedgev = 
-    _buf_window->new_attribute( "minedgev", 'n', COM_DOUBLE, 1, "");
+  COM::DataItem *minedgev = 
+    _buf_window->new_dataitem( "minedgev", 'n', COM_DOUBLE, 1, "");
   _buf_window->resize_array( minedgev, 0);
   _buf_window->init_done();
 
@@ -986,8 +986,8 @@ identify_ridge_edges()
 
   const std::string att1("eigvecs"), att2("tangranks");
 
-  int eigvecs_id = _buf_window->attribute(att1)->id();
-  int tangranks_id = _buf_window->attribute(att2)->id();
+  int eigvecs_id = _buf_window->dataitem(att1)->id();
+  int tangranks_id = _buf_window->dataitem(att2)->id();
 
   std::vector<std::map<Edge_ID, double> > edge_maps( allpanes.size());
   for ( int i=0, local_npanes = allpanes.size(); 
@@ -997,18 +997,18 @@ identify_ridge_edges()
 
     // Obtain pointers to A_attr, bm_attr, and r_attr 
     Vector_3<double> *es = reinterpret_cast<Vector_3<double>*>
-      ( pane->attribute(eigvecs_id)->pointer());
+      ( pane->dataitem(eigvecs_id)->pointer());
     int *tranks = reinterpret_cast<int*>
-      ( pane->attribute(tangranks_id)->pointer());
+      ( pane->dataitem(tangranks_id)->pointer());
     double *minvs = reinterpret_cast<double*>
-      ( pane->attribute(minedgev->id())->pointer());
+      ( pane->dataitem(minedgev->id())->pointer());
     double *maxvs = reinterpret_cast<double*>
-      ( pane->attribute(maxedgev->id())->pointer());
+      ( pane->dataitem(maxedgev->id())->pointer());
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1); 
     for ( int j=0, nj=pane->size_of_real_elements(); j<nj; ++j, ene.next()) {
-      Halfedge h( &*pm_it, Edge_ID(j+1,0), SURF::REAL_PANE), h0=h;
+      Halfedge h( *pm_it, Edge_ID(j+1,0), SURF::REAL_PANE), h0=h;
       
       int vindex = ene[ h.id().lid()]-1;
       do {
@@ -1055,9 +1055,9 @@ identify_ridge_edges()
     std::set< Edge_ID> &eset_pn = _edges[i];
 
     const double *minvs = reinterpret_cast<double*>
-      ( pane->attribute(minedgev->id())->pointer());
+      ( pane->dataitem(minedgev->id())->pointer());
     const double *maxvs = reinterpret_cast<double*>
-      ( pane->attribute(maxedgev->id())->pointer());
+      ( pane->dataitem(maxedgev->id())->pointer());
 
     // Loop throug ebuf and put ridges edges onto edges_pn
     for ( std::map< Edge_ID, double>::const_iterator eit=emap_pn.begin(), 
@@ -1072,8 +1072,8 @@ identify_ridge_edges()
   }
 
   // Deallocate minedgev and maxedgev
-  _buf_window->delete_attribute( minedgev->name());
-  _buf_window->delete_attribute( maxedgev->name());
+  _buf_window->delete_dataitem( minedgev->name());
+  _buf_window->delete_dataitem( maxedgev->name());
   _buf_window->init_done();
 }
 

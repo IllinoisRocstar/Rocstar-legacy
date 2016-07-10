@@ -45,8 +45,8 @@ using namespace Mesquite;
 #endif
 
 #include "Rocmop_1.h"
-#include "roccom.h"
-#include "Pane.h"
+#include "com.h"
+#include "Pane.hpp"
 #include "Rocblas.h"
 #include "Rocmap.h"
 #include "Geometric_Metrics_3.h"
@@ -60,8 +60,8 @@ void Rocmop::smooth_vol_mesq_wg(){
   print_legible(1,"      Entering Rocmop::smooth_vol_mesq_wg");
 
   print_legible(2,"        Updating ghost node positions.");
-  Rocmap::update_ghosts(_buf_window->attribute(COM::COM_NC),
-			_buf_window->attribute(COM::COM_PCONN));
+  Rocmap::update_ghosts(_buf_window->dataitem(COM::COM_NC),
+			_buf_window->dataitem(COM::COM_PCONN));
 
   std::vector<COM::Pane*> allpanes;
   _buf_window->panes(allpanes);
@@ -70,9 +70,9 @@ void Rocmop::smooth_vol_mesq_wg(){
   smooth_mesquite(allpanes,1);
   
   print_legible(2,"        Updating shared and ghost node positions.");
-  Rocmap::reduce_average_on_shared_nodes(_buf_window->attribute(COM::COM_NC));
-  Rocmap::update_ghosts(_buf_window->attribute(COM::COM_NC),
-			_buf_window->attribute(COM::COM_PCONN));
+  Rocmap::reduce_average_on_shared_nodes(_buf_window->dataitem(COM::COM_NC));
+  Rocmap::update_ghosts(_buf_window->dataitem(COM::COM_NC),
+			_buf_window->dataitem(COM::COM_PCONN));
   
   print_legible(1,"      Exiting Rocmop::smooth_vol_mesq_wg");
 }

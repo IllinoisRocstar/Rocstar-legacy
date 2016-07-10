@@ -60,8 +60,9 @@ using std::vector;
 using std::ofstream;
 using std::ios;
 
-#include "roccom.h"
-COM_EXTERN_MODULE(Rocin);
+#include "com.h"
+
+COM_EXTERN_MODULE(SimIN);
 
 
 class RocMeshData

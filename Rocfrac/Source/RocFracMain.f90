@@ -112,7 +112,7 @@ CONTAINS
 
     IMPLICIT NONE
     INCLUDE 'mpif.h'
-    INCLUDE 'roccomf90.h'
+    INCLUDE 'comf90.h'
     
     TYPE(ROCFRAC_GLOBAL),POINTER  :: glb
     REAL*8, INTENT(IN)            :: InitialTime
@@ -310,7 +310,7 @@ CONTAINS
 
     startPt = 1
     DO i = 1, NumElTypes2D
-      ! Search for the next attribute name
+      ! Search for the next dataitem name
       endPt = startPt
       chrlngth = 0
       DO WHILE (endPt .LE. UBOUND(names,1))
@@ -357,8 +357,8 @@ CONTAINS
    CALL COM_free_buffer(names)
 
 !!$   CALL COM_call_function( obtain_attr, 2, &
-!!$        COM_get_attribute_handle_const( VolIn//".NumElPartBndry"), &
-!!$        COM_get_attribute_handle( VolIn//".NumElPartBndry"))
+!!$        COM_get_dataitem_handle_const( VolIn//".NumElPartBndry"), &
+!!$        COM_get_dataitem_handle( VolIn//".NumElPartBndry"))
 !   stop
    CALL COM_get_array_const(VolIn//".NumElPartBndry",MyId+1,ArrayTmp)
 
@@ -366,8 +366,8 @@ CONTAINS
 
 
 !!$   CALL COM_call_function( obtain_attr, 2, &
-!!$        COM_get_attribute_handle_const( VolIn//".NumElVolMat"), &
-!!$        COM_get_attribute_handle( VolIn//".NumElVolMat"))
+!!$        COM_get_dataitem_handle_const( VolIn//".NumElVolMat"), &
+!!$        COM_get_dataitem_handle( VolIn//".NumElVolMat"))
    CALL COM_get_array_const(VolIn//".NumElVolMat",MyId+1,ArrayTmp1)
 
    ALLOCATE(glb%NumElVolMat(1:glb%NumMatVol))
@@ -455,16 +455,16 @@ CONTAINS
 !        CALL COM_set_array(volWin//'.pconn', ip, Pconn_Comm, 1)
 
 
-!!$        CALL COM_new_attribute( volWin//'.NodesToCommunicate', 'p', COM_INTEGER, 1, '')
+!!$        CALL COM_new_dataitem( volWin//'.NodesToCommunicate', 'p', COM_INTEGER, 1, '')
 !!$        CALL COM_set_size( volWin//'.NodesToCommunicate', ip, MaxNumNodesComm)    
 !!$        CALL COM_set_array(volWin//'.NodesToCommunicate', ip, NodesToCommunicate, 1)
 !!$        
 !!$
-!!$        CALL COM_new_attribute( volWin//'.ID_sendto_List', 'p', COM_INTEGER, 1, '')
+!!$        CALL COM_new_dataitem( volWin//'.ID_sendto_List', 'p', COM_INTEGER, 1, '')
 !!$        CALL COM_set_size( volWin//'.ID_sendto_List', ip, NumNeighProcs)    
 !!$        CALL COM_set_array(volWin//'.ID_sendto_List', ip, ID_sendto_List, 1)
 !!$        
-!!$        CALL COM_new_attribute( volWin//'.NumNeighProcs_List', 'p', COM_INTEGER, 1, '')
+!!$        CALL COM_new_dataitem( volWin//'.NumNeighProcs_List', 'p', COM_INTEGER, 1, '')
 !!$        CALL COM_set_size( volWin//'.NumNeighProcs_List', ip, NumNeighProcs)    
 !!$        CALL COM_set_array(volWin//'.NumNeighProcs_List', ip, NumNeighProcs_List, 1)
 
@@ -662,35 +662,35 @@ CONTAINS
 
 ! Create window for HDF output
 
-    CALL COM_new_attribute( volWin//'.disp', 'n', COM_DOUBLE, 3, 'm')
-    CALL COM_new_attribute( volWin//'.disp_burn', 'n',COM_DOUBLE, 3, 'm')
-    CALL COM_new_attribute( volWin//'.velo', 'n', COM_DOUBLE, 3, 'm/s')
-    CALL COM_new_attribute( volWin//'.stress', 'e', COM_DOUBLE, 1, 'Pa')
-    CALL COM_new_attribute( volWin//'.accel', 'n', COM_DOUBLE, 3, 'm/s^2')
-    CALL COM_new_attribute( volWin//'.vbar', 'n', COM_DOUBLE, 3, 'm/s')
-    CALL COM_new_attribute( volWin//'.S11', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
-    CALL COM_new_attribute( volWin//'.S22', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
-    CALL COM_new_attribute( volWin//'.S33', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
-    CALL COM_new_attribute( volWin//'.S12', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
-    CALL COM_new_attribute( volWin//'.S23', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
-    CALL COM_new_attribute( volWin//'.S13', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
+    CALL COM_new_dataitem( volWin//'.disp', 'n', COM_DOUBLE, 3, 'm')
+    CALL COM_new_dataitem( volWin//'.disp_burn', 'n',COM_DOUBLE, 3, 'm')
+    CALL COM_new_dataitem( volWin//'.velo', 'n', COM_DOUBLE, 3, 'm/s')
+    CALL COM_new_dataitem( volWin//'.stress', 'e', COM_DOUBLE, 1, 'Pa')
+    CALL COM_new_dataitem( volWin//'.accel', 'n', COM_DOUBLE, 3, 'm/s^2')
+    CALL COM_new_dataitem( volWin//'.vbar', 'n', COM_DOUBLE, 3, 'm/s')
+    CALL COM_new_dataitem( volWin//'.S11', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
+    CALL COM_new_dataitem( volWin//'.S22', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
+    CALL COM_new_dataitem( volWin//'.S33', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
+    CALL COM_new_dataitem( volWin//'.S12', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
+    CALL COM_new_dataitem( volWin//'.S23', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
+    CALL COM_new_dataitem( volWin//'.S13', 'e', COM_DOUBLE, glb%iStrGss, 'Pa')
     
-    CALL COM_new_attribute( volWin//'.NumElPartBndry', 'p', COM_INTEGER, 1, '')
-    CALL COM_new_attribute( volWin//'.NumElVolMat', 'p', COM_INTEGER, 1, '')
-    CALL COM_new_attribute( volWin//'.NumElPartBndryMat', 'p', COM_INTEGER, 1, '')
+    CALL COM_new_dataitem( volWin//'.NumElPartBndry', 'p', COM_INTEGER, 1, '')
+    CALL COM_new_dataitem( volWin//'.NumElVolMat', 'p', COM_INTEGER, 1, '')
+    CALL COM_new_dataitem( volWin//'.NumElPartBndryMat', 'p', COM_INTEGER, 1, '')
 
     IF(glb%DebondPart .eqv. .true.)THEN
-       CALL COM_new_attribute( volWin//'.StrainTrace', 'e', COM_DOUBLE, 1, ' ')
-       CALL COM_new_attribute( volWin//'.DebondLg', 'e', COM_DOUBLE, 1, ' ')
-       CALL COM_new_attribute( volWin//'.DebondSm', 'e', COM_DOUBLE, 1, ' ')
+       CALL COM_new_dataitem( volWin//'.StrainTrace', 'e', COM_DOUBLE, 1, ' ')
+       CALL COM_new_dataitem( volWin//'.DebondLg', 'e', COM_DOUBLE, 1, ' ')
+       CALL COM_new_dataitem( volWin//'.DebondSm', 'e', COM_DOUBLE, 1, ' ')
     ENDIF
 
     IF(glb%DebondPart_Matous .eqv. .true.)THEN
-       CALL COM_new_attribute( volWin//'.StrainOld', 'e', COM_DOUBLE, 4, ' ')
-       CALL COM_new_attribute( volWin//'.SoftParam', 'e', COM_DOUBLE, 4, ' ')
+       CALL COM_new_dataitem( volWin//'.StrainOld', 'e', COM_DOUBLE, 4, ' ')
+       CALL COM_new_dataitem( volWin//'.SoftParam', 'e', COM_DOUBLE, 4, ' ')
     ENDIF
 
-    IF(glb%HeatTransSoln .eqv. .true.) CALL COM_new_attribute( volWin//'.Temp', 'n', COM_DOUBLE, 1, 'K')
+    IF(glb%HeatTransSoln .eqv. .true.) CALL COM_new_dataitem( volWin//'.Temp', 'n', COM_DOUBLE, 1, 'K')
 
     IF ( glb%NumNP > 0) THEN
 !
@@ -770,17 +770,17 @@ CONTAINS
       WRITE(6,'(A)') 'Rocfrac: Restarting, Solids'
     END IF
 
-   CALL COM_new_attribute(volwin//'.BCValue','p',COM_DOUBLE, 1, '')
+   CALL COM_new_dataitem(volwin//'.BCValue','p',COM_DOUBLE, 1, '')
    CALL COM_set_size( volwin//'.BCValue', MyId+1, glb%NumNdsBCcrypt*6)
    CALL COM_set_array( volwin//'.BCValue', MyId+1, glb%BCValueGlb, 1)
 
    
 
-   CALL COM_new_attribute(volwin//'.bcnode','p',COM_INTEGER, 2, '')
+   CALL COM_new_dataitem(volwin//'.bcnode','p',COM_INTEGER, 2, '')
    CALL COM_set_size( volwin//'.bcnode', MyId+1, glb%NumNdsBCcrypt)
    CALL COM_set_array( volwin//'.bcnode', MyId+1, glb%BCFlagCrypt, 2)
    
-   CALL COM_new_attribute(volwin//'.MatType','e',COM_INTEGER, 1, '')
+   CALL COM_new_dataitem(volwin//'.MatType','e',COM_INTEGER, 1, '')
    CALL COM_set_array( volwin//'.MatType', MyId+1, glb%MatIdVol, 1)
    
    glb%NumNdsBC   = 0
@@ -790,8 +790,8 @@ CONTAINS
    CALL COM_window_init_done( volWin)
 
    CALL COM_call_function( obtain_attr, 2, &
-        COM_get_attribute_handle_const( VolIn//".all"), &
-        COM_get_attribute_handle( VolWin//".all"))
+        COM_get_dataitem_handle_const( VolIn//".all"), &
+        COM_get_dataitem_handle( VolWin//".all"))
 
 
 
@@ -895,8 +895,8 @@ CONTAINS
    
 !!$   IF ( glb%NumNdsBC > 0) THEN ! boundary conditions
 !!$
-!!$      CALL COM_new_attribute( volWin//'.velobndry', 'p', COM_DOUBLE, 3, 'm/s')
-!!$      CALL COM_new_attribute( volWin//'.accbndry', 'p', COM_DOUBLE, 3, 'm/s^2')
+!!$      CALL COM_new_dataitem( volWin//'.velobndry', 'p', COM_DOUBLE, 3, 'm/s')
+!!$      CALL COM_new_dataitem( volWin//'.accbndry', 'p', COM_DOUBLE, 3, 'm/s^2')
 !!$      
 !!$      CALL COM_set_size( volWin//'.velobndry', MyId+1, glb%NumNdsBC  )
 !!$      CALL COM_set_array( volWin//'.velobndry', MyId+1, glb%VeloBndry, 3)
@@ -1124,7 +1124,7 @@ endif
   SUBROUTINE RocFracFinalize( glb)
 
     IMPLICIT NONE
-    INCLUDE 'roccomf90.h'
+    INCLUDE 'comf90.h'
      
     TYPE(ROCFRAC_GLOBAL), POINTER :: glb
    

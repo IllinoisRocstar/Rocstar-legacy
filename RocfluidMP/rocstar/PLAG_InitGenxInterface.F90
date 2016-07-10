@@ -42,7 +42,7 @@
 !
 !******************************************************************************
 
-SUBROUTINE PLAG_InitGenxInterface( regions, wins, inPlag, obtain_attribute )
+SUBROUTINE PLAG_InitGenxInterface( regions, wins, inPlag, obtain_dataitem )
 
   USE ModDataTypes
   USE ModGlobal, ONLY     : t_global
@@ -54,7 +54,7 @@ SUBROUTINE PLAG_InitGenxInterface( regions, wins, inPlag, obtain_attribute )
   USE PLAG_ModParameters
   USE ModPartLag, ONLY    : t_plag, t_tile_plag
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 ! ... parameters
 
@@ -62,7 +62,7 @@ SUBROUTINE PLAG_InitGenxInterface( regions, wins, inPlag, obtain_attribute )
 
   CHARACTER(CHRLEN) :: wins, inPlag
 
-  INTEGER :: obtain_attribute
+  INTEGER :: obtain_dataitem
 
 ! ... loop variables
 
@@ -102,9 +102,9 @@ SUBROUTINE PLAG_InitGenxInterface( regions, wins, inPlag, obtain_attribute )
 
 ! output surface data ---------------------------------------------------------
 
-  CALL COM_new_attribute( TRIM(wins)//'.plag_momnrm', 'e',  &
+  CALL COM_new_dataitem( TRIM(wins)//'.plag_momnrm', 'e',  &
                           COM_DOUBLE, 1, 'kg/(m^2 s)' )
-  CALL COM_new_attribute( TRIM(wins)//'.plag_ener',   'e',  &
+  CALL COM_new_dataitem( TRIM(wins)//'.plag_ener',   'e',  &
                           COM_DOUBLE, 1, 'J/kg'       )
 
   nContMax = 0
@@ -115,60 +115,60 @@ SUBROUTINE PLAG_InitGenxInterface( regions, wins, inPlag, obtain_attribute )
   ENDIF ! plagUsed
 
   DO iCont=1,nContMax
-    CALL COM_new_attribute( TRIM(wins)//'.plag_mass'//CHAR(iCont+ASCII_ZERO), 'e', &
+    CALL COM_new_dataitem( TRIM(wins)//'.plag_mass'//CHAR(iCont+ASCII_ZERO), 'e', &
                             COM_DOUBLE, 1, 'kg/m^3' )
   ENDDO ! iCont
 
-  CALL COM_new_attribute( TRIM(wins)//'.plag_dv_timefctr', 'e',   &
+  CALL COM_new_dataitem( TRIM(wins)//'.plag_dv_timefctr', 'e',   &
                           COM_DOUBLE, 1, ''  )
 
-  CALL COM_new_attribute( TRIM(wins)//'.plag_dv_diam'    , 'e',   &
+  CALL COM_new_dataitem( TRIM(wins)//'.plag_dv_diam'    , 'e',   &
                           COM_DOUBLE, 1, 'm' )
 
-  CALL COM_new_attribute( TRIM(wins)//'.plag_dv_spload'  , 'e',   &
+  CALL COM_new_dataitem( TRIM(wins)//'.plag_dv_spload'  , 'e',   &
                           COM_DOUBLE, 1, ''  )
 
 ! restart data (av, cv ) and additional plot data (dv= diam) ------------------
   CALL COM_new_window( TRIM(winp))
 
-  CALL COM_new_attribute( TRIM(winp)//'.plag_aiv_pidini', 'n' ,  &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_aiv_pidini', 'n' ,  &
                           COM_INTEGER, 1, '' )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_aiv_regini', 'n' ,  &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_aiv_regini', 'n' ,  &
                           COM_INTEGER, 1, '' )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_aiv_regcrt', 'n' ,  &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_aiv_regcrt', 'n' ,  &
                           COM_INTEGER, 1, '' )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_aiv_icells', 'n' ,  &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_aiv_icells', 'n' ,  &
                           COM_INTEGER, 1, '' )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_aiv_indexi', 'n' ,  &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_aiv_indexi', 'n' ,  &
                           COM_INTEGER, 1, '' )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_aiv_indexj', 'n' ,  &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_aiv_indexj', 'n' ,  &
                           COM_INTEGER, 1, '' )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_aiv_indexk', 'n' ,  &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_aiv_indexk', 'n' ,  &
                           COM_INTEGER, 1, '' )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_aiv_burnstat', 'n' ,&
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_aiv_burnstat', 'n' ,&
                           COM_INTEGER, 1, '' )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_arv_spload', 'n' ,  &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_arv_spload', 'n' ,  &
                           COM_DOUBLE, 1, '' )
 
-  CALL COM_new_attribute( TRIM(winp)//'.plag_xmom', 'n',         &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_xmom', 'n',         &
                           COM_DOUBLE, 1, 'kg/(m^2 s)'  )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_ymom', 'n',         &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_ymom', 'n',         &
                           COM_DOUBLE, 1, 'kg/(m^2 s)'  )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_zmom', 'n',         &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_zmom', 'n',         &
                           COM_DOUBLE, 1, 'kg/(m^2 s)'  )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_ener', 'n',         &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_ener', 'n',         &
                           COM_DOUBLE, 1, 'J/kg'        )
-  CALL COM_new_attribute( TRIM(winp)//'.plag_enervapor', 'n',    &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_enervapor', 'n',    &
                           COM_DOUBLE, 1, 'J/kg'        )
   DO iCont = 1, nContMax
-    CALL COM_new_attribute( TRIM(winp)//'.plag_mass'//CHAR(iCont+ASCII_ZERO), 'n', &
+    CALL COM_new_dataitem( TRIM(winp)//'.plag_mass'//CHAR(iCont+ASCII_ZERO), 'n', &
                             COM_DOUBLE,1, 'kg/m^3'     )
   ENDDO ! iCont
 
-  CALL COM_new_attribute( TRIM(winp)//'.plag_diam', 'n',         &
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_diam', 'n',         &
                           COM_DOUBLE, 1,'m'            )
 
-  CALL COM_new_attribute( TRIM(winp)//'.plag_nextid', 'p',COM_INTEGER, 1,'')
+  CALL COM_new_dataitem( TRIM(winp)//'.plag_nextid', 'p',COM_INTEGER, 1,'')
 
 ! loop over all regions -------------------------------------------------------
 
@@ -326,9 +326,9 @@ SUBROUTINE PLAG_InitGenxInterface( regions, wins, inPlag, obtain_attribute )
   CALL COM_window_init_done( TRIM(winp))
 
 #ifndef NATIVE_MP_IO
-  CALL COM_call_function( obtain_attribute,2, &
-                          COM_get_attribute_handle_const(TRIM(inPlag)//".all"), &
-                          COM_get_attribute_handle(TRIM(winp)//".all") )
+  CALL COM_call_function( obtain_dataitem,2, &
+                          COM_get_dataitem_handle_const(TRIM(inPlag)//".all"), &
+                          COM_get_dataitem_handle(TRIM(winp)//".all") )
 #endif
 
 ! finalize --------------------------------------------------------------------
@@ -364,7 +364,7 @@ END SUBROUTINE PLAG_InitGenxInterface
 ! Deleted REGOFF definition since it now resides in ModParameters
 !
 ! Revision 1.12  2004/10/03 03:04:46  fnajjar
-! Bug fix for attribute surface variable changed to plag_dv_diam
+! Bug fix for dataitem surface variable changed to plag_dv_diam
 !
 ! Revision 1.11  2004/07/02 22:05:56  fnajjar
 ! Modified routine for Roccom3 import

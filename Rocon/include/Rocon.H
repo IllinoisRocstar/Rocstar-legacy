@@ -54,8 +54,8 @@
 #ifndef _ROCON_H_
 #define _ROCON_H_
 
-#include "roccom.h"
-#include "roccom_devel.h"
+#include "com.h"
+#include "com_devel.hpp"
 #include "BndSurface.h"
 
 class Rocon : public COM_Object {
@@ -67,27 +67,27 @@ public:
   void init_from_file( const char *inp,const int *ndiv);
 
   /// Initialize Rocon with given mesh.
-  void initialize( const COM::Attribute *pmesh,const int *ndiv);
+  void initialize( const COM::DataItem *pmesh,const int *ndiv);
 
   /// Displace the points in pmesh by disp and calcuate the intersections
   /// (if any) with the constraint mesh set in "initialize".  The int IO 
   /// attribute "constr" indicates (by a 1 or 0) which nodes are already 
   /// on the constraint surface on input.  On output, "constr" will be
   /// updated to include the newly constrained nodes as well. 
-  void find_intersections( const COM::Attribute *pmesh, const COM::Attribute *disp,
-			   COM::Attribute *pos,COM::Attribute *constr);
+  void find_intersections( const COM::DataItem *pmesh, const COM::DataItem *disp,
+			   COM::DataItem *pos,COM::DataItem *constr);
 
   /// Constrain the displacements, disp, to the appropriate positions, pos.
-  void constrain_displacements( const COM::Attribute *pmesh, COM::Attribute *disp,
-				const COM::Attribute *pos, const COM::Attribute *constr);
+  void constrain_displacements( const COM::DataItem *pmesh, COM::DataItem *disp,
+				const COM::DataItem *pos, const COM::DataItem *constr);
 
   /// Sets bflag = 0 for every element for which every node's cflag = 1
-  void burnout( const COM::Attribute *pmesh, const COM::Attribute *cflag,
-		COM::Attribute *bflag);
+  void burnout( const COM::DataItem *pmesh, const COM::DataItem *cflag,
+		COM::DataItem *bflag);
   
   /// Sets target = 0 for every burning pane element on which bflag = 0
-  void burnout_filter( const COM::Attribute *bflag,
-		       COM::Attribute *target);
+  void burnout_filter( const COM::DataItem *bflag,
+		       COM::DataItem *target);
   
   std::string &WindowName() { return (_wname); };
 

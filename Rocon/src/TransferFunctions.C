@@ -43,14 +43,14 @@
 #include "TRAIL_Remesh.H"
 
 //#ifdef _ROCSTAR_X_
-#include "roccom.h"
+#include "com.h"
 //#endif
 
-COM_EXTERN_MODULE( Rocface);
-COM_EXTERN_MODULE( Rocout);
-COM_EXTERN_MODULE( Rocin);
-COM_EXTERN_MODULE( Rocblas);
-COM_EXTERN_MODULE( Rocsurf);
+COM_EXTERN_MODULE( SurfX);
+COM_EXTERN_MODULE( SimOUT);
+COM_EXTERN_MODULE( SimIN);
+COM_EXTERN_MODULE( Simpal);
+COM_EXTERN_MODULE( SurfUtil);
 
 using namespace std;
 
@@ -72,21 +72,21 @@ read_file( const string &fname,
   std::cout << "Reading file " << fname << "..." << std::endl;
 
   // Read in HDF format
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocin, "TRAILIN");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SimIN, "TRAILIN");
     
   int IN_read;
-  // Read in HDF format using Rocin::read_window or ::read_by_control_file 
+  // Read in HDF format using SimIN::read_window or ::read_by_control_file 
   IN_read = COM_get_function_handle( "TRAILIN.read_by_control_file");
 
-  // Pass MPI_COMM_NULL to Rocin so that the rank becomes a wildcard.
+  // Pass MPI_COMM_NULL to SimIN so that the rank becomes a wildcard.
   //  MPI_Comm comm_null = MPI_COMM_NULL;
   std::string bufwin("bufwin");
   COM_call_function( IN_read, fname.c_str(), bufwin.c_str(), &comm);
-  int IN_obtain = COM_get_function_handle( "TRAILIN.obtain_attribute");
+  int IN_obtain = COM_get_function_handle( "TRAILIN.obtain_dataitem");
 
   if(!bcflags.empty()){
     // Check whether bcflag exists. If so, retain only the panes with flag<=1.
-    int bcflag = COM_get_attribute_handle((bufwin+".bcflag").c_str());
+    int bcflag = COM_get_dataitem_handle((bufwin+".bcflag").c_str());
     if (bcflag > 0) {
       // Read in bcflags.
       COM_call_function( IN_obtain, &bcflag, &bcflag);
@@ -115,29 +115,29 @@ read_file( const string &fname,
   }
   if(apply_disp){
     // This is NOT correct for problems with regression.
-    int disp_hndl = COM_get_attribute_handle((bufwin+".uhat").c_str());
+    int disp_hndl = COM_get_dataitem_handle((bufwin+".uhat").c_str());
     if(disp_hndl > 0){
       std::cout << "Applying total displacements..." << std::endl;
-      COM_LOAD_MODULE_STATIC_DYNAMIC( Rocblas, "BLAS");
+      COM_LOAD_MODULE_STATIC_DYNAMIC( Simpal, "BLAS");
       int add = COM_get_function_handle( "BLAS.add");
       COM_call_function(IN_obtain,&disp_hndl,&disp_hndl);
-      int nc_hndl = COM_get_attribute_handle( bufwin + ".nc");
+      int nc_hndl = COM_get_dataitem_handle( bufwin + ".nc");
       COM_call_function( add, &disp_hndl, &nc_hndl, &nc_hndl);
-      COM_UNLOAD_MODULE_STATIC_DYNAMIC(Rocblas,"BLAS");
+      COM_UNLOAD_MODULE_STATIC_DYNAMIC(Simpal,"BLAS");
     }
   }
   // Read in the mesh.
   int buf_atts;
   if(all)
-    buf_atts = COM_get_attribute_handle((bufwin+".all").c_str());
+    buf_atts = COM_get_dataitem_handle((bufwin+".all").c_str());
   else
-    buf_atts = COM_get_attribute_handle((bufwin+".mesh").c_str());
+    buf_atts = COM_get_dataitem_handle((bufwin+".mesh").c_str());
   COM_call_function( IN_obtain, &buf_atts, &buf_atts);
-  COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocin, "TRAILIN");
+  COM_UNLOAD_MODULE_STATIC_DYNAMIC( SimIN, "TRAILIN");
 
   if(!all)
-    // Remove all attributes except for the mesh
-    COM_delete_attribute(  (bufwin+".atts").c_str());
+    // Remove all dataitems except for the mesh
+    COM_delete_dataitem(  (bufwin+".atts").c_str());
 
   
   std::cout << "Obtained window " << wname
@@ -145,10 +145,10 @@ read_file( const string &fname,
 
   // Change the memory layout to contiguous.
   if(all)
-    COM_clone_attribute( (wname+".all").c_str(), 
+    COM_clone_dataitem( (wname+".all").c_str(), 
 			 (bufwin+".all").c_str(), (with_ghost ? 1 : 0));
   else
-    COM_clone_attribute( (wname+".mesh").c_str(), 
+    COM_clone_dataitem( (wname+".mesh").c_str(), 
 			 (bufwin+".mesh").c_str(), (with_ghost ? 1 : 0));
   
   COM_delete_window( bufwin.c_str());
@@ -185,12 +185,12 @@ TRAIL_AutoSurfer(GEM_Partition &gp,
     read_file(trgfile,trgwin,bcflags,MPI_COMM_NULL,false,false,false);
     read_file(srcfile,srcwin,bcflags,MPI_COMM_NULL,false,false,false);
 
-    COM_LOAD_MODULE_STATIC_DYNAMIC( Rocface, "RFC");
+    COM_LOAD_MODULE_STATIC_DYNAMIC( SurfX, "RFC");
     
     int RFC_overlay = COM_get_function_handle( "RFC.overlay");
     int RFC_write = COM_get_function_handle( "RFC.write_overlay");
-    int src_mesh = COM_get_attribute_handle( (srcwin+".mesh").c_str());
-    int trg_mesh = COM_get_attribute_handle( (trgwin+".mesh").c_str());
+    int src_mesh = COM_get_dataitem_handle( (srcwin+".mesh").c_str());
+    int trg_mesh = COM_get_dataitem_handle( (trgwin+".mesh").c_str());
   
     if(gp._debug && gp._out)
       *gp._out << "TRAIL_AutoSurfer: Creating overlay for coupled surfaces."
@@ -202,13 +202,13 @@ TRAIL_AutoSurfer(GEM_Partition &gp,
     COM_call_function( RFC_write, &src_mesh, &trg_mesh, 
 		       srcwin.c_str(), trgwin.c_str(), format);
 
-    COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocface, "RFC");
+    COM_UNLOAD_MODULE_STATIC_DYNAMIC( SurfX, "RFC");
   }
   
 
   // Now we have a common refinement, use it to transfer data from the old
   // surface to the new surface
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocface, "RFC");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SurfX, "RFC");
   int RFC_transfer = COM_get_function_handle("RFC.least_squares_transfer");
   int RFC_read = COM_get_function_handle( "RFC.read_overlay");
   
@@ -217,8 +217,8 @@ TRAIL_AutoSurfer(GEM_Partition &gp,
   read_file(srcfile,srcwin,bcflags,comm,false,true,false);
   read_file(trgfile,r_trgwin,bcflags,comm,false,true,true);
 
-  int srcmesh = COM_get_attribute_handle( (srcwin+".mesh").c_str());
-  int trgmesh = COM_get_attribute_handle( (trgwin+".mesh").c_str());
+  int srcmesh = COM_get_dataitem_handle( (srcwin+".mesh").c_str());
+  int trgmesh = COM_get_dataitem_handle( (trgwin+".mesh").c_str());
   std::vector<int> pane_id;
     
   if(gp._debug && gp._out)
@@ -227,31 +227,31 @@ TRAIL_AutoSurfer(GEM_Partition &gp,
   COM_call_function( RFC_read, &srcmesh, &trgmesh, &comm,
 		     srcwin.c_str(),trgwin.c_str(),format);
   
-  int num_attributes;
+  int num_dataitems;
   string names;
-  COM_get_attributes( srcwin.c_str(),&num_attributes,names);
+  COM_get_dataitems( srcwin.c_str(),&num_dataitems,names);
   char loc;
   COM_Type comtype;
   int ncomp;
   std::string unit;
   istringstream Istr(names);
-  for(int i = 0;i < num_attributes;i++){
+  for(int i = 0;i < num_dataitems;i++){
     string aname;
     Istr >> aname;
-    COM_get_attribute(srcwin+"."+aname,&loc,&comtype,&ncomp,&unit);
+    COM_get_dataitem(srcwin+"."+aname,&loc,&comtype,&ncomp,&unit);
     if((loc == 'e' || loc == 'n') && comtype == COM_DOUBLE){
       if(!rank)
-	cout << "Transferring attribute: " << aname << " on " 
+	cout << "Transferring dataitem: " << aname << " on " 
 	     << (loc == 'e' ? "elements" : "nodes") << "." << endl; 
       COM_resize_array((srcwin+"."+aname).c_str());
-      COM_new_attribute((trgwin+"."+aname).c_str(),(char)loc,
+      COM_new_dataitem((trgwin+"."+aname).c_str(),(char)loc,
 			COM_DOUBLE,(int)ncomp,unit.c_str());
-      COM_new_attribute((r_trgwin+"."+aname).c_str(),(char)loc,
+      COM_new_dataitem((r_trgwin+"."+aname).c_str(),(char)loc,
 			COM_DOUBLE,(int)ncomp,unit.c_str());
       COM_resize_array((r_trgwin+"."+aname).c_str());
       COM_resize_array((trgwin+"."+aname).c_str());
-      int src_ahdl  = COM_get_attribute_handle((srcwin+"."+aname).c_str());
-      int trg_ahdl  = COM_get_attribute_handle((trgwin+"."+aname).c_str());
+      int src_ahdl  = COM_get_dataitem_handle((srcwin+"."+aname).c_str());
+      int trg_ahdl  = COM_get_dataitem_handle((trgwin+"."+aname).c_str());
       COM_call_function( RFC_transfer, &src_ahdl, &trg_ahdl);
       int *srcpane_ids;
       int npanes;
@@ -284,16 +284,16 @@ TRAIL_AutoSurfer(GEM_Partition &gp,
     }
   } 
   
-  // Write new surface and Rocin control files for it
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocout,"Rocout");
+  // Write new surface and SimIN control files for it
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SimOUT,"Rocout");
   int OUT_set_option = COM_get_function_handle( "Rocout.set_option");
   std::string rankstr("0");
   COM_call_function( OUT_set_option, "rankwidth", rankstr.c_str());
   std::ostringstream Ostr;
   Ostr << r_trgwin << "_" << timestring << "_" << setw(5) 
        << setfill('0') << rank+1;
-  int whand = COM_get_function_handle("Rocout.write_attribute");
-  int all = COM_get_attribute_handle((r_trgwin+".all"));
+  int whand = COM_get_function_handle("Rocout.write_dataitem");
+  int all = COM_get_dataitem_handle((r_trgwin+".all"));
   COM_call_function(whand,Ostr.str().c_str(),&all,
 		    r_trgwin.c_str(),timestring.c_str());
   std::ofstream Ouf;
@@ -310,7 +310,7 @@ TRAIL_AutoSurfer(GEM_Partition &gp,
   Ouf.close();
   Ouf.clear();
 
-  // Merge Rocin control files
+  // Merge SimIN control files
   if(!rank){
     Ostr.clear();
     Ostr.str("");
@@ -338,8 +338,8 @@ TRAIL_AutoSurfer(GEM_Partition &gp,
     Ostr.str("");
   }
   
-  COM_UNLOAD_MODULE_STATIC_DYNAMIC(Rocout,"Rocout");
-  COM_UNLOAD_MODULE_STATIC_DYNAMIC(Rocface,"RFC");
+  COM_UNLOAD_MODULE_STATIC_DYNAMIC(SimOUT,"Rocout");
+  COM_UNLOAD_MODULE_STATIC_DYNAMIC(SurfX,"RFC");
   return(true);
 }
 

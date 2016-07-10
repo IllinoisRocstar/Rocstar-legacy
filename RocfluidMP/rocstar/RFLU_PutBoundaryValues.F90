@@ -33,7 +33,7 @@
 !
 ! Notes: 
 !   1. bcFlag is initialized in RFLU_InitGENXInterface, because Jim needs that
-!      value when COM_init_attribute is called.
+!      value when COM_init_dataitem is called.
 !
 ! ******************************************************************************
 !

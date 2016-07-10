@@ -65,7 +65,7 @@ void Geo_Metric_Base_3::initialize(Element_node_enumerator &ene){
     v.resize(7);
     const std::string nc("nc");
     Element_node_vectors_k_const<double> n;
-    n.set(ene.pane()->attribute(nc),ene);
+    n.set(ene.pane()->dataitem(nc),ene);
     v[0][0]=n(2,0)-n(1,0); v[0][1]=n(2,1)-n(1,1); v[0][2]=n(2,2)-n(1,2);
     v[1][0]=n(1,0)-n(2,0); v[1][1]=n(1,1)-n(2,1); v[1][2]=n(1,2)-n(2,2);    
     v[2][0]=n(2,0)-n(0,0); v[2][1]=n(2,1)-n(0,1); v[2][2]=n(2,2)-n(0,2);
@@ -78,7 +78,7 @@ void Geo_Metric_Base_3::initialize(Element_node_enumerator &ene){
     v.resize(8);
     const std::string nc("nc");
     Element_node_vectors_k_const<double> n;
-    n.set(ene.pane()->attribute(nc),ene);
+    n.set(ene.pane()->dataitem(nc),ene);
     v[0][0]=n(1,0)-n(0,0); v[0][1]=n(1,1)-n(0,1); v[0][2]=n(1,2)-n(0,2);
     v[1][0]=n(3,0)-n(0,0); v[1][1]=n(3,1)-n(0,1); v[1][2]=n(3,2)-n(0,2);    
     v[2][0]=n(1,0)-n(2,0); v[2][1]=n(1,1)-n(2,1); v[2][2]=n(1,2)-n(2,2);
@@ -141,7 +141,7 @@ void Geo_Metric_Base_3::compute_angles(double& min, double& max) const{
 
     std::vector<Vector_3<double> > fnormals(ene.size_of_faces());
     Element_node_vectors_k_const<double> n;
-    n.set(ene.pane()->attribute("nc"),ene);
+    n.set(ene.pane()->dataitem("nc"),ene);
     // map from edges to faces
     std::map<std::pair<int,int>,int> e2f;
     std::map<std::pair<int,int>,int>::iterator e2f_it;

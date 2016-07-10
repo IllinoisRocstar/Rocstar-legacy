@@ -36,7 +36,7 @@ using namespace std;
 //#ifdef _TRAIL_MPI_
 #include "mpi.h"
 //#ifdef _ROCSTAR_X_
-#include "roccom.h"
+#include "com.h"
 // COM_EXTERN_MODULE(Rocout);
 //#endif
 //#endif

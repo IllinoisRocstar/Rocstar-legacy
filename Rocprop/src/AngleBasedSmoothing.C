@@ -46,18 +46,18 @@ compute_angle_based_vertex_centers() {
     COM::Pane *pane = *it;
     
     const Point_3 *pnts = reinterpret_cast<Point_3*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     const char *tranks = reinterpret_cast<const char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
     const Vector_3 *es = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_eigvecs->id())->pointer());
+      ( pane->dataitem(_eigvecs->id())->pointer());
     const Vector_3 *vnrm = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_vnormals->id())->pointer());
+      ( pane->dataitem(_vnormals->id())->pointer());
 
     Vector_3 *vcnts = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_vcenters->id())->pointer());
+      ( pane->dataitem(_vcenters->id())->pointer());
     double   *ws = reinterpret_cast<double*>
-      ( pane->attribute(_weights->id())->pointer());
+      ( pane->dataitem(_weights->id())->pointer());
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1);

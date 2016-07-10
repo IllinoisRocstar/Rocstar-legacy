@@ -1056,7 +1056,7 @@ END MODULE RFLU_ModInterpolation
 ! Prefixed SOLVER_NAME to all screen output                                              
 !
 ! Revision 1.2  2002/05/04 16:39:51  haselbac                                            
-! Added PRIVATE attribute to RCSIdentString                                              
+! Added PRIVATE dataitem to RCSIdentString                                              
 !
 ! Revision 1.1  2002/04/11 18:48:48  haselbac                                            
 ! Initial revision                                                                       

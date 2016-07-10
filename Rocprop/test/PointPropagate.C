@@ -23,7 +23,7 @@
 // $Id: PointPropagate.C,v 1.4 2008/12/06 08:45:28 mtcampbe Exp $
 
 #include "PointPropagate.h"
-#include "../Rocsurf/include/Generic_element_2.h"
+#include "Generic_element_2.h"
 
 PROP_BEGIN_NAMESPACE
 
@@ -71,8 +71,8 @@ propagate_gp_of_element(const Point_3 *pnts, COM::Element_node_enumerator &ene,
 void PointPropagate::
 propagate_faces( const std::string &wname, const Speed &s, 
 		 double t, double dt, const std::string &vname) {
-  COM::Window *win = COM_get_roccom()->get_window_object(wname);
-  COM::Attribute *velos = win->attribute( vname);
+  COM::Window *win = COM_get_com()->get_window_object(wname);
+  COM::DataItem *velos = win->dataitem( vname);
 
   COM_assertion_msg( velos->is_elemental() && velos->size_of_components()==9,
 		     "Velos must be elemental data associated with quadrature points");
@@ -86,7 +86,7 @@ propagate_faces( const std::string &wname, const Speed &s,
     COM::Pane *pane = *it;
     const Point_3 *pnts = reinterpret_cast<Point_3*>(pane->coordinates());
     Vector_3 *velos_ptr = reinterpret_cast<Vector_3*>
-      (pane->attribute( velos->id())->pointer());
+      (pane->dataitem( velos->id())->pointer());
     
     // Loop through real elements of the current pane
     COM::Element_node_enumerator ene( pane, 1); 
@@ -105,8 +105,8 @@ propagate_faces( const std::string &wname, const Speed &s,
 void PointPropagate::
 propagate_nodes( const std::string &wname, const Speed &s, 
 		 double t, double dt, const std::string &vname) {
-  COM::Window *win = COM_get_roccom()->get_window_object(wname);
-  COM::Attribute *velos = win->attribute( vname);
+  COM::Window *win = COM_get_com()->get_window_object(wname);
+  COM::DataItem *velos = win->dataitem( vname);
 
   COM_assertion_msg( velos->is_nodal() && velos->size_of_components()==3,
 		     "Velos must be nodal data associated");
@@ -121,7 +121,7 @@ propagate_nodes( const std::string &wname, const Speed &s,
     COM::Pane *pane = *it;
     const Point_3 *pnts = reinterpret_cast<Point_3*>(pane->coordinates());
     Vector_3 *velos_ptr = reinterpret_cast<Vector_3*>
-      (pane->attribute( velos->id())->pointer());
+      (pane->dataitem( velos->id())->pointer());
     
     // Loop through real vertices of the current pane
     for ( int j=0, nj=pane->size_of_real_nodes(); j<nj; ++j) {

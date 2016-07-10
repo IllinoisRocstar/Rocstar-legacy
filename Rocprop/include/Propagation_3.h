@@ -60,8 +60,8 @@ public:
    *  \param dt  time step
    *  \param disps nodal constraints at input and nodal displacements at output
    */
-  virtual double time_stepping( const COM::Attribute *spd, double dt,
-				COM::Attribute *disps, int *smoothed=NULL)=0;
+  virtual double time_stepping( const COM::DataItem *spd, double dt,
+				COM::DataItem *disps, int *smoothed=NULL)=0;
 
   /** Set the types and directions of nodal constraints. 
    *  \param cnstr_types is an integer-type attribute. If it is a nodal
@@ -84,31 +84,31 @@ public:
    *  cannot be 1 or -1 but can be any other value as above. These constraints
    *  will be converted into nodal constraints by \sa convert_constraints().
    */
-  virtual void set_constraints( const COM::Attribute *cnstr_types);
+  virtual void set_constraints( const COM::DataItem *cnstr_types);
 
   /// Set the bounds
-  void set_bounds( const COM::Attribute *bnd);
+  void set_bounds( const COM::DataItem *bnd);
 
   // Bound a face based on nodal constraints. If all the nodes are beyond 
   // the bounded, then set the value to zero.
-  void bound_facial_speed( COM::Attribute *fa);
+  void bound_facial_speed( COM::DataItem *fa);
 
   /// Enforces the nodal constraints by projecting motion onto given direction.
-  virtual void enforce_nodal_constraints( COM::Attribute *du);
+  virtual void enforce_nodal_constraints( COM::DataItem *du);
 
-  virtual void bound_nodal_motion( COM::Attribute *disps);
+  virtual void bound_nodal_motion( COM::DataItem *disps);
 
   /// Set the verbose level. 
   void set_verbose( bool b) { _verb = b; }
 
 protected:
   /// Convert facial constraints to nodal constraints
-  void convert_constraints( const COM::Attribute *ctypes_faces,
-			    COM::Attribute *ctypes_nodes);
+  void convert_constraints( const COM::DataItem *ctypes_faces,
+			    COM::DataItem *ctypes_nodes);
   /// Convert facial or panel constraints to nodal constraints
-  void determine_constraint_boundary( const COM::Attribute *ctypes_faces,
-				      COM::Attribute *ctypes_bndry_edges,
-				      COM::Attribute *ctypes_bndry_nodes);
+  void determine_constraint_boundary( const COM::DataItem *ctypes_faces,
+				      COM::DataItem *ctypes_bndry_edges,
+				      COM::DataItem *ctypes_bndry_nodes);
 
   /// Get orthonormals of the constraints. If nnrms is 0, then not constrained.
   /// If nnrms is 3, then the point is fixed. Otherwise, the point is 
@@ -162,11 +162,11 @@ protected:
   bool            _verb;        // Whether to constraints were set
   bool            _cnstr_set;   // Whether to constraints were set
   bool            _bnd_set;     // Whether to bound was set
-  COM::Attribute *_cnstr_nodes; // Stores types of nodal constaints.
-  COM::Attribute *_cnstr_faces;	// Stores facial constaints
-  COM::Attribute *_cnstr_bndry_edges;	// Stores edges along constraint boundaries
-  COM::Attribute *_cnstr_bndry_nodes;	// Stores nodes along constraint boundaries
-  COM::Attribute *_cnstr_bound;	// Stores cylindrical constraint
+  COM::DataItem *_cnstr_nodes; // Stores types of nodal constaints.
+  COM::DataItem *_cnstr_faces;	// Stores facial constaints
+  COM::DataItem *_cnstr_bndry_edges;	// Stores edges along constraint boundaries
+  COM::DataItem *_cnstr_bndry_nodes;	// Stores nodes along constraint boundaries
+  COM::DataItem *_cnstr_bound;	// Stores cylindrical constraint
 
   std::vector< COM::Pane*>      _panes; // panes of buffer window
 };

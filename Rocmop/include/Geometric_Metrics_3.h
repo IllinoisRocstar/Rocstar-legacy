@@ -31,7 +31,7 @@
 
 #include "Metric.h"
 
-#include "Pane.h"
+#include "Pane.hpp"
 
 MOP_BEGIN_NAMESPACE
 

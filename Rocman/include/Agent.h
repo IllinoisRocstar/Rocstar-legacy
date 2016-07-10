@@ -33,7 +33,7 @@ using namespace std;
 #include <vector>
 #include <cstring>
 
-#include "roccom.h"
+#include "com.h"
 #include "commpi.h"
 
 class Scheduler;
@@ -57,7 +57,7 @@ public:
 
 class NewAttribute : public AttributeBase {
 protected:
-  // new_attribute
+  // new_dataitem
   char loc;
   int type;
   int ncomp;
@@ -67,7 +67,7 @@ public:
   void create(std::string bufname);
 };
 
-// clone_attribute
+// clone_dataitem
 class CloneAttribute : public AttributeBase {
 protected:
   std::string  parent_window;
@@ -81,7 +81,7 @@ public:
   void create(std::string bufname);
 };
 
-// use_attribute
+// use_dataitem
 class UseAttribute : public AttributeBase {
 protected:
   std::string  parent_window;
@@ -153,9 +153,9 @@ protected:
   InterpolateList interpolateList;
 
   typedef vector< AttributeBase* > AttributeList;
-  AttributeList attributeList;
+  AttributeList dataitemList;
   
-  int pc_hdls[2][3];   // Handles for attributes to be 
+  int pc_hdls[2][3];   // Handles for dataitems to be 
                        // stored/restored for PC-iterations
   int pc_count;	       // burn only has one pc_hdls
 
@@ -182,14 +182,14 @@ public:
 
   Action *get_main_action() { return &action; }
 
-  // for creating attributes by Actions
-  void register_new_attribute(std::string target_window_, std::string attr_, char loc_, int type_, int ncomp_, const char* unit_);
-  void register_clone_attribute(int cond, std::string target_window_, std::string attr_, std::string parent_window_, std::string parent_attr_, int wg_=1, const char *ptnname_=0, int val_=0);
-  void register_use_attribute(std::string target_window_, std::string attr_, std::string parent_window_, std::string parent_attr_, int wg_=1, const char *ptnname_=0, int val_=0);
-  void create_registered_attributes(std::string tmpBuf);
-  void create_registered_window_attributes(std::string target_window);
+  // for creating dataitems by Actions
+  void register_new_dataitem(std::string target_window_, std::string attr_, char loc_, int type_, int ncomp_, const char* unit_);
+  void register_clone_dataitem(int cond, std::string target_window_, std::string attr_, std::string parent_window_, std::string parent_attr_, int wg_=1, const char *ptnname_=0, int val_=0);
+  void register_use_dataitem(std::string target_window_, std::string attr_, std::string parent_window_, std::string parent_attr_, int wg_=1, const char *ptnname_=0, int val_=0);
+  void create_registered_dataitems(std::string tmpBuf);
+  void create_registered_window_dataitems(std::string target_window);
   virtual void create_buffer_all();
-  void assign_attributes();
+  void assign_dataitems();
   virtual void read_restart_data()  {}
 
   void add_data() { /* TODO */ }
@@ -252,7 +252,7 @@ protected:
   // Return -1 if control file was not found.
   int  read_by_control_file( double t, const std::string base, const std::string window);
 
-  // Write out the given attribute into HDF/CGNS files with the given base
+  // Write out the given dataitem into HDF/CGNS files with the given base
   // file name. If ref exist, then refer to it for mesh data.
   void write_data_files( double t, const std::string base, 
 			 const std::string attr, const char *ref=NULL);

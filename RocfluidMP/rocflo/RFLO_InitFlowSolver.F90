@@ -101,7 +101,7 @@ SUBROUTINE RFLO_InitFlowSolver( casename,verbLevel,global,regions )
   USE ModParameters
   IMPLICIT NONE
 #ifdef GENX
-  INCLUDE "roccomf90.h"
+  INCLUDE "comf90.h"
 #endif
 
 ! ... parameters

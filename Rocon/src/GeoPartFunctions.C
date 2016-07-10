@@ -42,7 +42,7 @@
 #include "TRAIL_Flu.H"
 
 //#ifdef _ROCSTAR_X_
-#include "roccom.h"
+#include "com.h"
 //#endif
 
 bool

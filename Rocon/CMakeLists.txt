@@ -11,7 +11,7 @@ ELSE()
 ENDIF()
 
 #INCLUDE(CTest)
-find_path(ROCCOM_INC roccom.h HINTS ../Roccom/include)
+find_path(ROCCOM_INC com.h HINTS ../IMPACT/COM/include)
 
 set (LIB_SRCS src/Rocon.C src/ray-triangle.C src/GEM.C
               src/GeoPartFunctions.C src/Partition.C
@@ -37,7 +37,7 @@ ELSE()
   add_library(Rocon STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
 ENDIF()
-target_link_libraries(Rocon Roccom ${IRAD_LIB} ${MPI_CXX_LIBRARIES})
+target_link_libraries(Rocon SITCOM ${IRAD_LIB} ${MPI_CXX_LIBRARIES})
 
 add_executable(flotsam src/flotsam.C)
 add_executable(genflu  src/genflu.C )

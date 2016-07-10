@@ -56,7 +56,7 @@ SUBROUTINE Rocflu_load_module(winName)
                             Fluid_postHdfOutput
   IMPLICIT NONE
 
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
   INCLUDE 'rocmanf90.h'
 
 ! ******************************************************************************
@@ -108,10 +108,10 @@ SUBROUTINE Rocflu_load_module(winName)
   CALL COM_new_window(winName)
 
 ! ******************************************************************************
-! Create an attribute for global data
+! Create an dataitem for global data
 ! ******************************************************************************
 
-  CALL COM_new_attribute(winName//'.global','w',COM_F90POINTER,1,'')
+  CALL COM_new_dataitem(winName//'.global','w',COM_F90POINTER,1,'')
   CALL COM_allocate_array(winName//'.global')
 
 ! ******************************************************************************

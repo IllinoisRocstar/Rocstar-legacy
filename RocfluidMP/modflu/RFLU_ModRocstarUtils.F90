@@ -44,7 +44,7 @@ MODULE RFLU_ModRocstarUtils
 
   IMPLICIT NONE
 
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
   PRIVATE
   PUBLIC :: RFLU_GENX_BuildPaneId, &  

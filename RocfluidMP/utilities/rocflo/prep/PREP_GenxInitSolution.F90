@@ -57,7 +57,7 @@ SUBROUTINE GenxInitSolution( gridLevel,iReg,regions,wins,winv )
   USE ModParameters
   IMPLICIT NONE
 
-  INCLUDE "roccomf90.h"
+  INCLUDE "comf90.h"
 #include "Indexing.h"
 
 ! ... parameters

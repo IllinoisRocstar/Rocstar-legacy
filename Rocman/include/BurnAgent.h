@@ -51,7 +51,7 @@ public:
   std::string parentWin;  
 //  std::string iburn_i;
 
-  std::string iburn_all;		// for registering attributes
+  std::string iburn_all;		// for registering dataitems
   std::string iburn_ng;		
 
     // for input

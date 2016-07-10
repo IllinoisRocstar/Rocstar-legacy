@@ -40,7 +40,7 @@ using namespace std;
 void Alg_Metric_Base_3::initialize(Element_node_enumerator &ene){
   type_ = ene.type();
   Element_node_vectors_k_const<double> n;
-  n.set(ene.pane()->attribute("nc"),ene);
+  n.set(ene.pane()->dataitem("nc"),ene);
   vector<Vector_3<double> > v(2);
   if (type_ == COM::Connectivity::TET4){
     double premult = 1.0;

@@ -25,7 +25,7 @@
 #include <assert.h>
 
 #include "rocman.h"
-#include "roccom.h"
+#include "com.h"
 #include "Action.h"
 #include "Scheduler.h"
 

@@ -32,7 +32,7 @@
 #define _FACE_OFFSET_3_H_
 
 #include "Propagation_3.h"
-#include "Element_accessors.h"
+#include "Element_accessors.hpp"
 
 PROP_BEGIN_NAMESPACE
 
@@ -54,8 +54,8 @@ public:
 
   /// Main entry of the algorithm. At input, the value of smoothed specifies 
   /// whether smoothing is desired.
-  virtual double time_stepping( const COM::Attribute *spds, double dt,
-				COM::Attribute *disps, int *smoothed=NULL);
+  virtual double time_stepping( const COM::DataItem *spds, double dt,
+				COM::DataItem *disps, int *smoothed=NULL);
 
   /// Set the wavefrontal switch
   void set_wavefrontal_expansion( bool b) { _wf_expn = b; }
@@ -129,26 +129,26 @@ public:
 
 protected:
   /// Introduce numerical dissipation into equation.
-  void numerical_dissipation( COM::Attribute *nodal_buffer);
+  void numerical_dissipation( COM::DataItem *nodal_buffer);
 
   /// Compute quadrics for every vertex.
-  void compute_quadrics( double dt, const COM::Attribute *spds, 
-			 COM::Attribute *rhs, COM::Attribute *predicted);
+  void compute_quadrics( double dt, const COM::DataItem *spds, 
+			 COM::DataItem *rhs, COM::DataItem *predicted);
 
   /// Compute mean normals.
-  void compute_directions( COM::Attribute *b_offset, bool in_principle);
+  void compute_directions( COM::DataItem *b_offset, bool in_principle);
   
   /// Compute volumn-vector
-  void compute_volume_vector( const COM::Attribute *disps, COM::Attribute *bs);
+  void compute_volume_vector( const COM::DataItem *disps, COM::DataItem *bs);
   
   /// Decompose propagation directions based on constraints
-  bool obtain_constrained_directions( COM::Attribute *disps, 
-				      COM::Attribute *vcenters);
+  bool obtain_constrained_directions( COM::DataItem *disps, 
+				      COM::DataItem *vcenters);
   
   /// Reduce time step based on stability limit, and rescale displacements 
   /// by the reduced time step and diffusing expansion.
   /// Returns the relative time step.
-  double rescale_displacements( COM::Attribute *disps, COM::Attribute *vcenters,
+  double rescale_displacements( COM::DataItem *disps, COM::DataItem *vcenters,
 				int depth=0);
 
   /// Filter out isolated ridge vertices and identify ridge edges
@@ -157,25 +157,25 @@ protected:
   // Upgrade/downgrade vertices between ridge and smooth vertices
   void reclassify_ridge_vertices( const bool upgrade_corners, 
 				  const bool upgrade_ridge,
-				  COM::Attribute *neighbor_feas,
-				  COM::Attribute *tr_attr, 
+				  COM::DataItem *neighbor_feas,
+				  COM::DataItem *tr_attr, 
 				  bool to_filter);
 
   /// Build the list of ridge nighbors and obtain a list of weak-ended vertices
   /// Return the number of obscended vertices.
-  int build_ridge_neighbor_list( const COM::Attribute *maxtrnangv, 
-				 const COM::Attribute *mintrnangv,
+  int build_ridge_neighbor_list( const COM::DataItem *maxtrnangv, 
+				 const COM::DataItem *mintrnangv,
 				 const std::vector<std::map<Edge_ID, double> > &edge_maps,
-				 const COM::Attribute *maxranglev, 
-				 const COM::Attribute *minranglev,
+				 const COM::DataItem *maxranglev, 
+				 const COM::DataItem *minranglev,
 				 const std::vector<std::map<Edge_ID, double> > &rangle_maps,
 				 std::vector< ObscendSet > &obscends);
 
-  int append_obscure_ends( const COM::Attribute *maxtrnangv, 
-			   const COM::Attribute *mintrnangv,
+  int append_obscure_ends( const COM::DataItem *maxtrnangv, 
+			   const COM::DataItem *mintrnangv,
 			   const std::vector<std::map<Edge_ID, double> > &edge_maps,
-			   const COM::Attribute *maxranglev, 
-			   const COM::Attribute *minranglev,
+			   const COM::DataItem *maxranglev, 
+			   const COM::DataItem *minranglev,
 			   const std::vector<std::map<Edge_ID, double> > &rangle_maps);
 
   /// Filter out weak-ended curves
@@ -189,28 +189,28 @@ protected:
   void mark_weak_vertices();
 
   /// Redistribute smooth vertices by NuLaplacian smoothing
-  void nulaplacian_smooth( const COM::Attribute *vert_normals,
-			   const COM::Attribute *tangranks,
-			   const COM::Attribute *disps,
-			   COM::Attribute *vcenters,
-			   COM::Attribute *buf,
-			   COM::Attribute *vert_weights_buf,
-			   const COM::Attribute *edge_weights=NULL);
+  void nulaplacian_smooth( const COM::DataItem *vert_normals,
+			   const COM::DataItem *tangranks,
+			   const COM::DataItem *disps,
+			   COM::DataItem *vcenters,
+			   COM::DataItem *buf,
+			   COM::DataItem *vert_weights_buf,
+			   const COM::DataItem *edge_weights=NULL);
 
   // Balance mass.
   void balance_mass();
 
   // Distribute volume from smooth nodes to elements
-  void distribute_volume_e2n( const COM::Attribute *fvol,
-			      const COM::Attribute *tranks,
-			      COM::Attribute *vvol);
+  void distribute_volume_e2n( const COM::DataItem *fvol,
+			      const COM::DataItem *tranks,
+			      COM::DataItem *vvol);
 
-  void update_face_volumes( const COM::Attribute *fnormal,
-			    const COM::Attribute *vdsps,
-			    COM::Attribute *fvol);
+  void update_face_volumes( const COM::DataItem *fnormal,
+			    const COM::DataItem *vdsps,
+			    COM::DataItem *fvol);
 
   // Adjust the normal displacements for wavefrontal motion.
-  void adjust_wavefrontal_motion( COM::Attribute *disps);
+  void adjust_wavefrontal_motion( COM::DataItem *disps);
 
   // \param det: <0 indicates expansion and >0 indicates contraction
   // \param delta: "exact" motion along the normal direction
@@ -233,7 +233,7 @@ protected:
   // Obtain the normal and center of the face offset.
   // Return the displacement of the face center along normal direction.
   void obtain_face_offset( const Point_3 *pnts, const double *spd_ptr,
-			   const COM::Attribute *spd, double dt, 
+			   const COM::DataItem *spd, double dt, 
 			   const Vector_3 *dirs, 
 			   COM::Element_node_enumerator &ene,
 			   Vector_3 &ns_nz, Point_3 &cnt, 
@@ -245,11 +245,11 @@ protected:
 		     int *is_strong=NULL) const;
 
   // Compute anisotropic vertex center.
-  void compute_anisotropic_vertex_centers( const COM::Attribute *disps_buf);
+  void compute_anisotropic_vertex_centers( const COM::DataItem *disps_buf);
 
   // Compute a normal motino to denoise surface.
-  void denoise_surface( const COM::Attribute *disps_buf,
-			COM::Attribute *normal_motion);
+  void denoise_surface( const COM::DataItem *disps_buf,
+			COM::DataItem *normal_motion);
 
   void get_primary_component( const Vector_3 &nrm, const Vector_3 es[],
 			      int trank, Vector_3 &prim) const {
@@ -260,7 +260,7 @@ protected:
 
   // Append boundary edges separating different constraints into ridge edges.
   // Return the total number of inserted edges.
-  int insert_boundary_edges( COM::Attribute *tr_attr);
+  int insert_boundary_edges( COM::DataItem *tr_attr);
 
   // Update tangential motion of ridge vertices 
   void update_vertex_centers();
@@ -400,29 +400,29 @@ protected:
   bool           _is_strtd;         //< Whether it is for structured mesh
   bool           _feature_layer;    //< Whether to create a feature layer
 
-  COM::Attribute *_As;         //< Stores the covariant matrix for each vertex
-  COM::Attribute *_boffset;    //< Store the right-hande side of offset quadric
-  COM::Attribute *_bmedial;    //< Store the right-hande side of medial quadric
-  COM::Attribute *_eigvalues;  //< Stores eigenvalues
-  COM::Attribute *_eigvecs;    //< Stores orthonormal eigenvectors for each
+  COM::DataItem *_As;         //< Stores the covariant matrix for each vertex
+  COM::DataItem *_boffset;    //< Store the right-hande side of offset quadric
+  COM::DataItem *_bmedial;    //< Store the right-hande side of medial quadric
+  COM::DataItem *_eigvalues;  //< Stores eigenvalues
+  COM::DataItem *_eigvecs;    //< Stores orthonormal eigenvectors for each
                                //< vertex in increasing order of eigenvalues
 
-  COM::Attribute *_vnormals;      //< Stores vertex normals from eigen-decompo
+  COM::DataItem *_vnormals;      //< Stores vertex normals from eigen-decompo
                                   //< used for projection
-  COM::Attribute *_facenormals;   //< Stores the normals of each offset face.
-  COM::Attribute *_facecenters;   //< Stores the centers of each offset face.
-  COM::Attribute *_faceareas;     //< Areas of each face
-  COM::Attribute *_vcenters;      //< Vector between center of mass and vertex
+  COM::DataItem *_facenormals;   //< Stores the normals of each offset face.
+  COM::DataItem *_facecenters;   //< Stores the centers of each offset face.
+  COM::DataItem *_faceareas;     //< Areas of each face
+  COM::DataItem *_vcenters;      //< Vector between center of mass and vertex
 
-  COM::Attribute *_tangranks;     //< Stores the ranks of tangent spaces
-  COM::Attribute *_ctangranks;    //< Stores the ranks of tangent spaces with constraints
-  COM::Attribute *_weak;          //< Marks whether a vertex is weak feature.
-  COM::Attribute *_strong;        //< Marks whether a vertex is strong feature.
-  COM::Attribute *_ridges;        //< List ridge edges.
-  COM::Attribute *_ridgeneighbors;//< List neighbor vertices.
+  COM::DataItem *_tangranks;     //< Stores the ranks of tangent spaces
+  COM::DataItem *_ctangranks;    //< Stores the ranks of tangent spaces with constraints
+  COM::DataItem *_weak;          //< Marks whether a vertex is weak feature.
+  COM::DataItem *_strong;        //< Marks whether a vertex is strong feature.
+  COM::DataItem *_ridges;        //< List ridge edges.
+  COM::DataItem *_ridgeneighbors;//< List neighbor vertices.
 
-  COM::Attribute *_scales;    //< Stores rescaling factors
-  COM::Attribute *_weights;   //< Buffer for storing weights
+  COM::DataItem *_scales;    //< Stores rescaling factors
+  COM::DataItem *_weights;   //< Buffer for storing weights
 
   std::vector<std::set< Edge_ID> > _edges; // ridge edges
 

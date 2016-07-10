@@ -59,7 +59,7 @@ protected:
 public:
   std::string isolid_i;
 
-  std::string isolid_all;		// for registering attributes
+  std::string isolid_all;		// for registering dataitems
   std::string isolid_b;			// buring
   std::string isolid_nb;		// non-buring
   std::string isolid_ni;		// noninteracting

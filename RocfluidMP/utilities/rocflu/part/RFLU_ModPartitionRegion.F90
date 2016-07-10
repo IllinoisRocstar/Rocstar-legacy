@@ -3561,7 +3561,7 @@ END MODULE RFLU_ModPartitionRegion
 ! Added imposed partitioning mode
 !
 ! Revision 1.8  2005/07/03 02:42:51  haselbac
-! Bug fix: Removed INTENT attribute from pointer declarations
+! Bug fix: Removed INTENT dataitem from pointer declarations
 !
 ! Revision 1.7  2005/07/01 16:17:59  haselbac
 ! Changed adding of virtual cells so will not exceed max dims anymore

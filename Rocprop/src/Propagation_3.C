@@ -23,8 +23,8 @@
 // $Id: Propagation_3.C,v 1.17 2008/12/06 08:45:27 mtcampbe Exp $
 
 #include "Propagation_3.h"
-#include "../Rocblas/include/Rocblas.h"
-#include "../Rocsurf/include/Generic_element_2.h"
+#include "Rocblas.h"
+#include "Generic_element_2.h"
 
 PROP_BEGIN_NAMESPACE
 
@@ -40,11 +40,11 @@ Propagation_3::Propagation_3( Manifold *wm, COM::Window *buf)
     _mode = SURF::ACROSS_PANE;
 
   if ( _buf) {
-    _cnstr_nodes = _buf->new_attribute( "PROP_cnstr_nodes", 'n', COM_INT, 1, "");
-    _cnstr_faces = _buf->new_attribute( "PROP_cnstr_faces", 'e', COM_INT, 1, "");
-    _cnstr_bndry_edges = _buf->new_attribute( "PROP_cnstr_bndry_edges", 'e', COM_CHAR, 1, "");
-    _cnstr_bndry_nodes = _buf->new_attribute( "PROP_cnstr_bndry_nodes", 'n', COM_CHAR, 1, "");
-    _cnstr_bound = _buf->new_attribute( "PROP_cnstr_bound", 'p', COM_DOUBLE, BOUND_LEN, "");
+    _cnstr_nodes = _buf->new_dataitem( "PROP_cnstr_nodes", 'n', COM_INT, 1, "");
+    _cnstr_faces = _buf->new_dataitem( "PROP_cnstr_faces", 'e', COM_INT, 1, "");
+    _cnstr_bndry_edges = _buf->new_dataitem( "PROP_cnstr_bndry_edges", 'e', COM_CHAR, 1, "");
+    _cnstr_bndry_nodes = _buf->new_dataitem( "PROP_cnstr_bndry_nodes", 'n', COM_CHAR, 1, "");
+    _cnstr_bound = _buf->new_dataitem( "PROP_cnstr_bound", 'p', COM_DOUBLE, BOUND_LEN, "");
 
     _buf->panes( _panes); 
   }
@@ -55,7 +55,7 @@ Propagation_3::Propagation_3( Manifold *wm, COM::Window *buf)
 }
 
 void Propagation_3::
-set_bounds( const COM::Attribute *bnd) {
+set_bounds( const COM::DataItem *bnd) {
   if ( _buf == NULL) return;
 
   if ( bnd == NULL) {
@@ -69,7 +69,7 @@ set_bounds( const COM::Attribute *bnd) {
 		       bnd->is_panel() || bnd->is_windowed(),
 		       "Propagation_3::set_bounds expects double-precision 3-vector");
 
-    _buf->inherit( const_cast<COM::Attribute*>(bnd), "PROP_cnstr_bound",
+    _buf->inherit( const_cast<COM::DataItem*>(bnd), "PROP_cnstr_bound",
 		   COM::Pane::INHERIT_CLONE, true, NULL, 0);
     _bnd_set = true;
   }
@@ -78,7 +78,7 @@ set_bounds( const COM::Attribute *bnd) {
 }
 
 void Propagation_3::
-set_constraints( const COM::Attribute *ct_in) {
+set_constraints( const COM::DataItem *ct_in) {
   if ( _buf == NULL) return;
 
   if ( ct_in == NULL) {
@@ -115,8 +115,8 @@ inline bool matchall( int a, int b) { return (a & b) == b; }
 inline bool matchany( int a, int b) { return (a & b); }
 
 void Propagation_3::
-convert_constraints( const COM::Attribute *ctypes_faces,
-		     COM::Attribute *ctypes_nodes) {
+convert_constraints( const COM::DataItem *ctypes_faces,
+		     COM::DataItem *ctypes_nodes) {
   int zero = 0;
   Rocblas::copy_scalar( &zero, ctypes_nodes);
 
@@ -129,12 +129,12 @@ convert_constraints( const COM::Attribute *ctypes_faces,
   for ( it=_panes.begin(); it!=iend; ++it) {
     COM::Pane *pane = *it;
 
-    COM_assertion( pane->attribute(COM_NC)->stride()==3);
+    COM_assertion( pane->dataitem(COM_NC)->stride()==3);
     const Point_3 *pnts = 
       reinterpret_cast<const Point_3*>(pane->coordinates()); 
     
-    const int *val_faces=(const int*)pane->attribute(ctypes_faces->id())->pointer();
-    int *val_nodes=(int*)pane->attribute(ctypes_nodes->id())->pointer();
+    const int *val_faces=(const int*)pane->dataitem(ctypes_faces->id())->pointer();
+    int *val_nodes=(int*)pane->dataitem(ctypes_nodes->id())->pointer();
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1); 
@@ -195,7 +195,7 @@ convert_constraints( const COM::Attribute *ctypes_faces,
   // Loop through the panes and its real nodes
   for ( it=_panes.begin(); it!=iend; ++it) {
     COM::Pane *pane = *it;
-    int *val_nodes = (int*)pane->attribute( ctypes_nodes->id())->pointer();
+    int *val_nodes = (int*)pane->dataitem( ctypes_nodes->id())->pointer();
 
     for ( int j=0, nj=pane->size_of_real_nodes(); j<nj; ++j) {
       int &type = val_nodes[j];
@@ -250,9 +250,9 @@ convert_constraints( const COM::Attribute *ctypes_faces,
 
 /// Convert facial or panel constraints to nodal constraints
 void Propagation_3::
-determine_constraint_boundary( const COM::Attribute *ctypes_faces,
-			       COM::Attribute *ctypes_bndry_edges,
-			       COM::Attribute *ctypes_bndry_nodes) {
+determine_constraint_boundary( const COM::DataItem *ctypes_faces,
+			       COM::DataItem *ctypes_bndry_edges,
+			       COM::DataItem *ctypes_bndry_nodes) {
   _surf->update_bd_flags( ctypes_faces); // Update facal flags along boundaries
 
   char zero = 0;
@@ -266,19 +266,19 @@ determine_constraint_boundary( const COM::Attribute *ctypes_faces,
   for ( it=_panes.begin(); it!=iend; ++it, ++pm_it) {
     COM::Pane *pane = *it;
 
-    const int *val_faces=(const int*)pane->attribute(ctypes_faces->id())->pointer();
-    char *val_bndry_edges=(char*)pane->attribute(ctypes_bndry_edges->id())->pointer();
-    char *val_bndry_nodes=(char*)pane->attribute(ctypes_bndry_nodes->id())->pointer();
+    const int *val_faces=(const int*)pane->dataitem(ctypes_faces->id())->pointer();
+    char *val_bndry_edges=(char*)pane->dataitem(ctypes_bndry_edges->id())->pointer();
+    char *val_bndry_nodes=(char*)pane->dataitem(ctypes_bndry_nodes->id())->pointer();
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1);
     for ( int j=0, nj=pane->size_of_real_elements(); j<nj; ++j, ene.next()) {
       for ( int k=0, ne=ene.size_of_edges(); k<ne; ++k) {
-	Edge_ID eid(j+1,k), eid_opp = pm_it->get_opposite_real_edge( eid);
+	Edge_ID eid(j+1,k), eid_opp = (*pm_it)->get_opposite_real_edge( eid);
 	
-	if (!pm_it->is_physical_border_edge( eid_opp)) {
+	if (!(*pm_it)->is_physical_border_edge( eid_opp)) {
 	  int flag_opp = (eid_opp.is_border() ? 
-			  pm_it->get_bd_flag( eid_opp) : val_faces[eid_opp.eid()-1]);
+			  (*pm_it)->get_bd_flag( eid_opp) : val_faces[eid_opp.eid()-1]);
 	  if ( val_faces[j] != flag_opp) {
 	    val_bndry_edges[j] |= (1<<k);
 	    val_bndry_nodes[ene[k]-1] = 1;
@@ -494,7 +494,7 @@ get_constraint_directions( int type, int &ndirs, Vector_3 dirs[2]) {
 
 // Enforce nodal constraints.
 void Propagation_3::
-enforce_nodal_constraints( COM::Attribute *du) {
+enforce_nodal_constraints( COM::DataItem *du) {
   if ( !_cnstr_set) return;
 
   std::vector< COM::Pane*>::iterator it = _panes.begin(), iend=_panes.end();
@@ -503,9 +503,9 @@ enforce_nodal_constraints( COM::Attribute *du) {
     COM::Pane *pane = *it;
     
     const int *types = reinterpret_cast<const int*>
-      (pane->attribute(_cnstr_nodes->id())->pointer());
+      (pane->dataitem(_cnstr_nodes->id())->pointer());
     Vector_3 *ds = reinterpret_cast<Vector_3*>
-      (pane->attribute( du->id())->pointer());
+      (pane->dataitem( du->id())->pointer());
 
     for (int i=0, n=pane->size_of_real_nodes(); i<n; ++i) {
       enforce_nodal_constraint( types[i], ds[i]);
@@ -515,7 +515,7 @@ enforce_nodal_constraints( COM::Attribute *du) {
 
 // Enforce nodal constraints.
 void Propagation_3::
-bound_nodal_motion( COM::Attribute *du) {
+bound_nodal_motion( COM::DataItem *du) {
   if ( !_bnd_set) return;
 
   std::vector< COM::Pane*>::iterator it = _panes.begin(), iend=_panes.end();
@@ -524,13 +524,13 @@ bound_nodal_motion( COM::Attribute *du) {
     COM::Pane *pane = *it;
     
     Vector_3 *ds = reinterpret_cast<Vector_3*>
-      (pane->attribute( du->id())->pointer());
+      (pane->dataitem( du->id())->pointer());
 
     const Point_3 *pnts = reinterpret_cast<const Point_3*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     const double *bnd = _bnd_set ? reinterpret_cast<const double*>
-      ( pane->attribute( _cnstr_bound->id())->pointer()) : NULL;
-    int nbnd = _bnd_set ? pane->attribute( _cnstr_bound->id())->size_of_items() : 0;
+      ( pane->dataitem( _cnstr_bound->id())->pointer()) : NULL;
+    int nbnd = _bnd_set ? pane->dataitem( _cnstr_bound->id())->size_of_items() : 0;
 
     // Bound all nodes
     for ( int i=0; i<nbnd; ++i, bnd+=BOUND_LEN) {
@@ -547,27 +547,27 @@ bound_nodal_motion( COM::Attribute *du) {
 // Bound a face based on nodal constraints. If all the nodes are beyond 
 // the bounded, then set the value to zero.
 void Propagation_3::
-bound_facial_speed( COM::Attribute *fa) {
+bound_facial_speed( COM::DataItem *fa) {
   COM_assertion( fa->window() == _buf); 
 
   COM_assertion_msg( _bnd_set, "Bound must be set first before calling bound_facial_speed");
 
   COM_assertion_msg( fa->is_elemental() && fa->size_of_components()==1 &&
 		     COM_compatible_types( fa->data_type(), COM_DOUBLE),
-		     "Propagation_3::bound_facial_speed expects a scalar double-precision elemental attribute.");
+		     "Propagation_3::bound_facial_speed expects a scalar double-precision elemental dataitem.");
 
   std::vector< COM::Pane*>::iterator it = _panes.begin(), iend=_panes.end();
   // Loop through the panes and its real nodes
   for ( it=_panes.begin(); it!=iend; ++it) {
     COM::Pane *pane = *it;
     
-    double *val_dbl = (double*)pane->attribute(fa->id())->pointer();
-    // Skip the panes without the attribute.
+    double *val_dbl = (double*)pane->dataitem(fa->id())->pointer();
+    // Skip the panes without the dataitem.
     if ( val_dbl==NULL) continue;
 
-    COM_assertion( pane->attribute(COM_NC)->stride()==3);
+    COM_assertion( pane->dataitem(COM_NC)->stride()==3);
     const Point_3 *pnts = reinterpret_cast<const Point_3*>(pane->coordinates()); 
-    int nbnd = _bnd_set ? pane->attribute( _cnstr_bound->id())->size_of_items() : 0;
+    int nbnd = _bnd_set ? pane->dataitem( _cnstr_bound->id())->size_of_items() : 0;
     if ( nbnd==0) continue;
 
     // Loop through real elements of the current pane
@@ -578,7 +578,7 @@ bound_facial_speed( COM::Attribute *fa) {
       int ne = ene.size_of_edges();
 
       const double *bnd = reinterpret_cast<const double*>
-	( pane->attribute( _cnstr_bound->id())->pointer());
+	( pane->dataitem( _cnstr_bound->id())->pointer());
       bool out[] = {false, false, false, false};
       // Bound all nodes
       for ( int i=0; i<nbnd; ++i, bnd+=BOUND_LEN) {

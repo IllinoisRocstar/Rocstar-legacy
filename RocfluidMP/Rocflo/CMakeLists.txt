@@ -27,7 +27,7 @@ find_library(JPEG_LIB jpeg)
 find_path(HDF4_INC hdf.h HINTS /usr/include/hdf)
 
 #INCLUDE(CTest)
-find_path(ROCCOM_INC roccom.h HINTS ../../Roccom/include) 
+find_path(ROCCOM_INC com.h HINTS ../../IMPACT/COM/include) 
 find_path(ROCMAN_INC rocman.h HINTS ../../Rocman/include)
 
 FILE (GLOB CORE_SRCS ../rocflo/*.F90)
@@ -644,7 +644,7 @@ ELSE()
   add_library(Rocflo STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
 ENDIF()
-target_link_libraries(Rocflo Roccomf Roccom ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
+target_link_libraries(Rocflo SITCOMF SITCOM ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
 
 #add_library(makeflofio ${MAKEFLO_DIR}/readmsh.f90 ${MAKEFLO_DIR}/writemsh.f90 ${MAKEFLO_DIR}/writegrda.f90 ${MAKEFLO_DIR}/writegrdb.f90)
 #add_library(read ${MAKEFLO_DIR}/read.cpp ${MAKEFLO_DIR}/readgrd.cpp ${MAKEFLO_DIR}/readreg.cpp ${MAKEFLO_DIR}/readhdf.cpp)
@@ -659,7 +659,7 @@ add_executable(simpleblock ${MAKEFLO_DIR}/simpleblock.cpp ${MAKEFLO_CORE_SRCS} $
 target_link_libraries(simpleblock ${MFHDF_LIB} ${HDF4_LIB} ${JPEG_LIB} ${ZLIB} ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
 add_executable(rfloprep ${FLOPREP_SRCS})
 set_property(TARGET rfloprep PROPERTY LINKER_LANGUAGE Fortran)
-target_link_libraries(rfloprep Rocflo Rocout Rocin Roccomf Roccom ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
+target_link_libraries(rfloprep Rocflo SimOUT SimIN SITCOM ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
 
 set_target_properties(Rocflo PROPERTIES LINK_FLAGS "${MPI_Fortran_LINK_FLAGS}")
 set_target_properties(makemblock PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS} ${MPI_Fortran_LINK_FLAGS}")

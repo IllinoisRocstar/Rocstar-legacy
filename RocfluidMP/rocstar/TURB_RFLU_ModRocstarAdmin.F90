@@ -51,7 +51,7 @@ MODULE TURB_RFLU_ModRocstarAdmin
 
   IMPLICIT NONE
 
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
   PRIVATE
 
@@ -85,7 +85,7 @@ MODULE TURB_RFLU_ModRocstarAdmin
   
 ! ******************************************************************************
 !
-! Purpose: Create new attributes for turbulence solution.
+! Purpose: Create new dataitems for turbulence solution.
 !
 ! Description: None.
 !
@@ -192,7 +192,7 @@ MODULE TURB_RFLU_ModRocstarAdmin
     END IF ! global%verbLevel
     
 ! ******************************************************************************
-!   Create new attributes
+!   Create new dataitems
 ! ******************************************************************************
 
 ! ==============================================================================  
@@ -204,8 +204,8 @@ MODULE TURB_RFLU_ModRocstarAdmin
 ! ------------------------------------------------------------------------------
 !   Global
 ! ------------------------------------------------------------------------------
-    CALL COM_new_attribute(TRIM(winv)//'.esg1Sum','w',COM_DOUBLE,1,'J/(m^3s)')
-    CALL COM_new_attribute(TRIM(winv)//'.esg4Sum','w',COM_DOUBLE,1,'J/(m^3s)')
+    CALL COM_new_dataitem(TRIM(winv)//'.esg1Sum','w',COM_DOUBLE,1,'J/(m^3s)')
+    CALL COM_new_dataitem(TRIM(winv)//'.esg4Sum','w',COM_DOUBLE,1,'J/(m^3s)')
     CALL COM_set_array( TRIM(winv)//'.esg1Sum' ,0, global%esg1Sum )
     CALL COM_set_array( TRIM(winv)//'.esg4Sum' ,0, global%esg4Sum )
 
@@ -213,9 +213,9 @@ MODULE TURB_RFLU_ModRocstarAdmin
 !   Model and instantaneous variables
 ! ------------------------------------------------------------------------------
 
-    CALL COM_new_attribute( TRIM(winv)//'.lens','e',COM_DOUBLE,1,'m' )
-    CALL COM_new_attribute( TRIM(winv)//'.mut' ,'e',COM_DOUBLE,1,'kg/(ms)' )
-    CALL COM_new_attribute( TRIM(winv)//'.vort','e',COM_DOUBLE,3,'1/s' )
+    CALL COM_new_dataitem( TRIM(winv)//'.lens','e',COM_DOUBLE,1,'m' )
+    CALL COM_new_dataitem( TRIM(winv)//'.mut' ,'e',COM_DOUBLE,1,'kg/(ms)' )
+    CALL COM_new_dataitem( TRIM(winv)//'.vort','e',COM_DOUBLE,3,'1/s' )
 
     
 ! ******************************************************************************
@@ -345,7 +345,7 @@ MODULE TURB_RFLU_ModRocstarAdmin
 !   First check if it is new or restart turbulence. If new, skip this routine.
 ! ******************************************************************************
 
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.mut')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.mut')
     IF (handleIn <= 0) THEN
       IF ( global%myProcid == MASTERPROC .AND. &
            global%verbLevel >= VERBOSE_HIGH ) THEN 
@@ -375,28 +375,28 @@ MODULE TURB_RFLU_ModRocstarAdmin
 !   Global
 ! ==============================================================================   
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.esg1Sum')
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.esg1Sum')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.esg1Sum')
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.esg1Sum')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.esg4Sum')
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.esg4Sum')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.esg4Sum')
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.esg4Sum')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     
 ! ==============================================================================
 !   Turbulence variables
 ! ==============================================================================   
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.lens')
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.lens')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.lens')
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.lens')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.mut')
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.mut')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.mut')
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.mut')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 
-    handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.vort')    
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.vort')
+    handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.vort')    
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.vort')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 
 

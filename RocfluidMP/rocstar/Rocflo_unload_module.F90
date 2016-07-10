@@ -44,7 +44,7 @@ SUBROUTINE Rocflo_unload_module( winName )
 
   USE ModRocstar, ONLY : t_globalGenx, associate_pointer
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
   INTERFACE 
     SUBROUTINE COM_get_pointer( attr,ptr,asso )

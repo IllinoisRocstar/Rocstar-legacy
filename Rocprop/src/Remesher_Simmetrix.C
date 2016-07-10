@@ -109,7 +109,7 @@ simmesh_to_window( void *m, COM::Window *outwin) {
   int pid = panes[0]->id();
 
   // Obtain coordinates
-  COM::Attribute *coor = panes[0]->attribute( COM::COM_NC);
+  COM::DataItem *coor = panes[0]->dataitem( COM::COM_NC);
   outwin->set_size( coor->name(), pid, M_numVertices(mesh));
 
   double *coors;
@@ -147,7 +147,7 @@ simmesh_to_window( void *m, COM::Window *outwin) {
 }
 
 void Remesher_Simmetrix::
-remesh_serial( Manifold *wm, COM::Attribute *mesh_out,
+remesh_serial( Manifold *wm, COM::DataItem *mesh_out,
 	       double lave, double fangle) {
 
   std::cout << "Setting average edge length to " << lave << std::endl;

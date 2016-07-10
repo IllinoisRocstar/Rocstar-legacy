@@ -105,7 +105,7 @@ SUBROUTINE RFLO_MoveGridElliptGlo( regions )
   IMPLICIT NONE
 
 #ifdef GENX
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 #endif
 
 ! ... parameters

@@ -49,7 +49,7 @@ MODULE RFLU_ModRocstarTools
 
   IMPLICIT NONE
 
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
   PRIVATE
   PUBLIC :: RFLU_GENX_ConstrainDisp, &
@@ -869,14 +869,14 @@ SUBROUTINE RFLU_GENX_MoveGrid(regions)
   END IF ! global%myProcid
    
 ! *****************************************************************************
-! Get function and attribute handles
+! Get function and dataitem handles
 ! *****************************************************************************
    
   winName = TRIM(global%volWinName)   
        
   handleSmooth = COM_get_function_handle('Rocflu-MOP.smooth')    
-  handlePMesh  = COM_get_attribute_handle(TRIM(winName)//'.pmesh')
-  handleDisp   = COM_get_attribute_handle(TRIM(winName)//'.disp')  
+  handlePMesh  = COM_get_dataitem_handle(TRIM(winName)//'.pmesh')
+  handleDisp   = COM_get_dataitem_handle(TRIM(winName)//'.disp')  
     
   handleOption = COM_get_function_handle('Rocflu-MOP.set_value')
   CALL COM_call_function(handleOption,2,'inverted',1) 

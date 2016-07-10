@@ -160,7 +160,7 @@ SUBROUTINE RFLU_InitFlowSolver(casename,verbLevel,global,levels)
   IMPLICIT NONE
 
 #ifdef GENX
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 #endif
 
 ! ******************************************************************************

@@ -140,25 +140,25 @@ Coupling *create_coupling( Control_parameters &param, const RocmanControl_parame
 
 #define COM_DOUBLE_ATTRIBUTE(attrname, varname)  \
   attr = winname+"."+attrname; 		\
-  COM_new_attribute( attr.c_str(),'w',COM_DOUBLE,1,"");		\
+  COM_new_dataitem( attr.c_str(),'w',COM_DOUBLE,1,"");		\
   COM_set_size( attr.c_str(),0,1);				\
   COM_set_array( attr.c_str(),0, &varname);
 
 #define COM_INT_ATTRIBUTE(attrname, varname)  \
   attr = winname+"."+attrname; 		\
-  COM_new_attribute( attr.c_str(),'w',COM_INT,1,"");	\
+  COM_new_dataitem( attr.c_str(),'w',COM_INT,1,"");	\
   COM_set_size( attr.c_str(),0,1);	\
   COM_set_array( attr.c_str(),0, &varname);
 
 #define COM_STRING_ATTRIBUTE(attrname, varname)  \
   attr = winname+"."+attrname; 			\
-  COM_new_attribute( attr.c_str(),'w',COM_CHAR,1,"");	\
+  COM_new_dataitem( attr.c_str(),'w',COM_CHAR,1,"");	\
   COM_set_size( attr.c_str(),0,MAXLEN);			\
   COM_set_array( attr.c_str(),0,varname,MAXLEN);
 
 #define COM_BOOL_ATTRIBUTE(attrname, varname)  \
   attr = winname+"."+attrname; 			\
-  COM_new_attribute( attr.c_str(),'w',COM_BOOL,1,"");	\
+  COM_new_dataitem( attr.c_str(),'w',COM_BOOL,1,"");	\
   COM_set_size( attr.c_str(),0,1);			\
   COM_set_array( attr.c_str(),0,&varname);
 
@@ -583,7 +583,7 @@ void rocstar_driver( int verb, int remeshed, bool debug) {
      rocman_param.print();
     }
     COM_set_verbose( verb);  // shift by 2 to depress first level printing
-    COM_set_debug( debug);
+    //    COM_set_debug( debug);
   }
 
   MPI_Barrier(MPI_COMM_WORLD);
@@ -898,7 +898,7 @@ void init_profiling(Control_parameters &param, int comm_rank)
   fclose(fd);
 }
 
-// print double data of an attribute on a pane
+// print double data of an dataitem on a pane
 void debug_print(const std::string str, int pane, int pe, MPI_Comm comm, const char *memo)
 {
   int comm_rank = COMMPI_Comm_rank(comm);

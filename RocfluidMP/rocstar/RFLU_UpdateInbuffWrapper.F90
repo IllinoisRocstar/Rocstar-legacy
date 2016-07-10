@@ -59,7 +59,7 @@ SUBROUTINE RFLU_UpdateInbuffWrapper(region,istage)
   IMPLICIT NONE
 
 #ifdef GENX
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 #endif
 
 ! ******************************************************************************

@@ -40,7 +40,7 @@ public:
   virtual ~Remesher_Simmetrix();
 
   // Main entry for remeshing. 
-  virtual void remesh_serial( Manifold *wm, COM::Attribute *mesh_out,
+  virtual void remesh_serial( Manifold *wm, COM::DataItem *mesh_out,
 			      double lave, double fangle);
 
   // Set global mesh size. See MS_setGlobalMeshSize() of MeshSim for 

@@ -29,7 +29,7 @@
 #define PROP_END_NAMESPACE    }
 #define USE_PROP_NAMESPACE    using namespace PROP;
 
-#include "../Rocsurf/include/Manifold_2.h"
+#include "Manifold_2.h"
 
 PROP_BEGIN_NAMESPACE
 

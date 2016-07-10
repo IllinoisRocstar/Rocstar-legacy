@@ -46,7 +46,7 @@ using namespace std;
 void Geo_Metric_Base_2::initialize(Element_node_enumerator &ene){
   type_ = ene.type();
   Element_node_vectors_k_const<double> n;
-  n.set(ene.pane()->attribute("nc"),ene);
+  n.set(ene.pane()->dataitem("nc"),ene);
   if(type_ == COM::Connectivity::TRI3){
     v[0][0]=n(2,0)-n(1,0); v[0][1]=n(2,1)-n(1,1); v[0][2]=n(2,2)-n(1,2);
     v[1][0]=n(1,0)-n(2,0); v[1][1]=n(1,1)-n(2,1); v[1][2]=n(1,2)-n(2,2);    

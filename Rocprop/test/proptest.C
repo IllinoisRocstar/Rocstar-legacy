@@ -22,7 +22,7 @@
  *********************************************************************/
 // $Id: proptest.C,v 1.33 2008/12/06 08:45:28 mtcampbe Exp $
 
-#include "roccom.h"
+#include "com.h"
 
 #include <cstdio>
 #include <iostream>
@@ -34,11 +34,11 @@
 #include <cmath>
 #include <cassert>
 #include <sstream>
-#include "roccom_assertion.h"
-#include "../Rocblas/include/Rocblas.h"
-#include "../Rocsurf/include/Rocsurf.h"
+#include "com_assertion.h"
+#include "Rocblas.h"
+#include "Rocsurf.h"
 
-#include "../Rocsurf/test/IM_Reader.h"
+#include "IM_Reader.h"
 
 #ifdef MESH_ADAPT
 #include "AdaptCOMWindow.h"
@@ -314,16 +314,16 @@ std::string read_in_mesh ( const char *fname) {
 void rescale_object( std::string &wname, double alpha, 
 		     const SURF::Vector_3<double> &origin) {
   // Rescale and translate the object.
-  COM::Window *win=COM_get_roccom()->get_window_object(wname);
-  COM::Attribute *nc=win->attribute("nc");
+  COM::Window *win=COM_get_com()->get_window_object(wname);
+  COM::DataItem *nc=win->dataitem("nc");
 
   // Rescale the radius to 0.15
   Rocblas::mul_scalar( nc, &alpha, nc);
 
   // Translate the origin to (0.5,0.75, 0.5);
-  COM::Attribute *x=win->attribute("1-nc");
-  COM::Attribute *y=win->attribute("2-nc");
-  COM::Attribute *z=win->attribute("3-nc");
+  COM::DataItem *x=win->dataitem("1-nc");
+  COM::DataItem *y=win->dataitem("2-nc");
+  COM::DataItem *z=win->dataitem("3-nc");
 
   Rocblas::add_scalar( x, &origin[0], x);
   Rocblas::add_scalar( y, &origin[1], y);
@@ -334,8 +334,8 @@ void rescale_object( std::string &wname, double alpha,
 void init_constraints_acmflu( const string &wname) {
 
   int SURF_centers = COM_get_function_handle( "SURF.interpolate_to_centers");
-  int nc_handle = COM_get_attribute_handle( (wname+".nc").c_str());
-  int centers_handle = COM_get_attribute_handle( (wname+".facecenters").c_str());
+  int nc_handle = COM_get_dataitem_handle( (wname+".nc").c_str());
+  int centers_handle = COM_get_dataitem_handle( (wname+".facecenters").c_str());
   COM_call_function( SURF_centers, &nc_handle, &centers_handle);
 
   // Set speed for different panes.
@@ -344,7 +344,7 @@ void init_constraints_acmflu( const string &wname) {
   
   for ( int i=0; i<npanes; ++i) {
     bool not_interacting;
-    if ( COM_get_attribute_handle((wname+".bcflag").c_str())>0) {
+    if ( COM_get_dataitem_handle((wname+".bcflag").c_str())>0) {
       int *bcflag;
       COM_get_array( (wname+".bcflag").c_str(), pane_ids[i], &bcflag);
       
@@ -378,7 +378,7 @@ void init_constraints_acmflu( const string &wname) {
   
   COM_free_buffer( &pane_ids);
   
-  int cnstr_handle = COM_get_attribute_handle((wname+".cnstr_types_facial").c_str());
+  int cnstr_handle = COM_get_dataitem_handle((wname+".cnstr_types_facial").c_str());
   int PROP_set_cnstr = COM_get_function_handle( "PROP.set_constraints");
   COM_call_function( PROP_set_cnstr, &cnstr_handle);
 }
@@ -392,7 +392,7 @@ void init_constraints_acmfrac( const string &wname) {
   *cnstr_types = 'x';
 
   int PROP_set_cnstr = COM_get_function_handle( "PROP.set_constraints");
-  int cnstr_handle = COM_get_attribute_handle( (wname+".cnstr_types_panel").c_str());
+  int cnstr_handle = COM_get_dataitem_handle( (wname+".cnstr_types_panel").c_str());
 
   COM_call_function( PROP_set_cnstr, &cnstr_handle);
 }
@@ -404,17 +404,17 @@ T square(T t) { return t*t; }
 void init_constraints_starslice( const string &wname, 
 				 const Control_parameter &cntr_param) {
   int BLAS_copy_scalar = COM_get_function_handle( "BLAS.copy_scalar");
-  int cnstr_handle = COM_get_attribute_handle( (wname+".cnstr_types_facial").c_str());
+  int cnstr_handle = COM_get_dataitem_handle( (wname+".cnstr_types_facial").c_str());
   int zero = 0;
   COM_call_function( BLAS_copy_scalar, &zero, &cnstr_handle);
 
   int SURF_normals = COM_get_function_handle( "SURF.compute_element_normals");
-  int nrms_handle = COM_get_attribute_handle( (wname+".facenormals").c_str());
+  int nrms_handle = COM_get_dataitem_handle( (wname+".facenormals").c_str());
   COM_call_function( SURF_normals, &nrms_handle);
 
   int SURF_centers = COM_get_function_handle( "SURF.interpolate_to_centers");
-  int nc_handle = COM_get_attribute_handle( (wname+".nc").c_str());
-  int centers_handle = COM_get_attribute_handle( (wname+".facecenters").c_str());
+  int nc_handle = COM_get_dataitem_handle( (wname+".nc").c_str());
+  int centers_handle = COM_get_dataitem_handle( (wname+".facecenters").c_str());
   COM_call_function( SURF_centers, &nc_handle, &centers_handle);
 
   // Set speed for different panes.
@@ -464,11 +464,11 @@ void init_constraints_staraft( const string &wname,
 
   int *pane_ids, npanes;
   COM_get_panes( wname.c_str(), &npanes, &pane_ids);
-  int cnstr_handle = COM_get_attribute_handle( (wname+".cnstr_types_facial").c_str());
+  int cnstr_handle = COM_get_dataitem_handle( (wname+".cnstr_types_facial").c_str());
 
   // Set constraints and speeds
   if ( cntr_param.start == 0) {
-    int cnstr_handle_pn = COM_get_attribute_handle((wname+".cnstr_type").c_str());
+    int cnstr_handle_pn = COM_get_dataitem_handle((wname+".cnstr_type").c_str());
     if ( cnstr_handle_pn>0) {
       std::cout << "Obtaining constraints from input file" << std::endl;
       int BLAS_copy = COM_get_function_handle( "BLAS.copy");
@@ -477,7 +477,7 @@ void init_constraints_staraft( const string &wname,
 
       int BLAS_copy_scalar = COM_get_function_handle( "BLAS.copy_scalar");
       double zero = 0;
-      int spd_elms = COM_get_attribute_handle( (wname+".flag_spd").c_str());
+      int spd_elms = COM_get_dataitem_handle( (wname+".flag_spd").c_str());
       COM_call_function( BLAS_copy_scalar, &zero, &spd_elms);
     }
     else { 
@@ -490,12 +490,12 @@ void init_constraints_staraft( const string &wname,
       COM_call_function( BLAS_copy_scalar, &zero, &cnstr_handle); 
 
       int SURF_normals = COM_get_function_handle( "SURF.compute_element_normals");
-      int nrms_handle = COM_get_attribute_handle( (wname+".facenormals").c_str());
+      int nrms_handle = COM_get_dataitem_handle( (wname+".facenormals").c_str());
       COM_call_function( SURF_normals, &nrms_handle);
 
       int SURF_centers = COM_get_function_handle( "SURF.interpolate_to_centers");
-      int nc_handle = COM_get_attribute_handle( (wname+".nc").c_str());
-      int centers_handle = COM_get_attribute_handle( (wname+".facecenters").c_str());
+      int nc_handle = COM_get_dataitem_handle( (wname+".nc").c_str());
+      int centers_handle = COM_get_dataitem_handle( (wname+".facecenters").c_str());
       COM_call_function( SURF_centers, &nc_handle, &centers_handle);
 
       for ( int i=0; i<npanes; ++i) {
@@ -568,7 +568,7 @@ void init_constraints_staraft( const string &wname,
 
 #if 1
   int PROP_set_bounds = COM_get_function_handle( "PROP.set_bounds");
-  int bnd_handle = COM_get_attribute_handle( (wname+".cnstr_bound").c_str());
+  int bnd_handle = COM_get_dataitem_handle( (wname+".cnstr_bound").c_str());
   COM_call_function( PROP_set_bounds, &bnd_handle);
 #endif
 
@@ -578,15 +578,15 @@ void init_constraints_staraft( const string &wname,
 // Initialize the constraints for Star slice.
 void init_constraints_myacm( const string &wname, 
 			     const Control_parameter &cntr_param) {
-  int cnstr_handle = COM_get_attribute_handle( (wname+".cnstr_types_facial").c_str());
+  int cnstr_handle = COM_get_dataitem_handle( (wname+".cnstr_types_facial").c_str());
 
   int SURF_normals = COM_get_function_handle( "SURF.compute_element_normals");
-  int nrms_handle = COM_get_attribute_handle( (wname+".facenormals").c_str());
+  int nrms_handle = COM_get_dataitem_handle( (wname+".facenormals").c_str());
   COM_call_function( SURF_normals, &nrms_handle);
 
   int SURF_centers = COM_get_function_handle( "SURF.interpolate_to_centers");
-  int nc_handle = COM_get_attribute_handle( (wname+".nc").c_str());
-  int centers_handle = COM_get_attribute_handle( (wname+".facecenters").c_str());
+  int nc_handle = COM_get_dataitem_handle( (wname+".nc").c_str());
+  int centers_handle = COM_get_dataitem_handle( (wname+".facecenters").c_str());
   COM_call_function( SURF_centers, &nc_handle, &centers_handle);
 
   // Set speed for different panes.
@@ -594,7 +594,7 @@ void init_constraints_myacm( const string &wname,
   COM_get_panes( wname.c_str(), &npanes, &pane_ids);
 
   double zero = 0;
-  int spd_elms = COM_get_attribute_handle( (wname+".flag_spd").c_str());
+  int spd_elms = COM_get_dataitem_handle( (wname+".flag_spd").c_str());
   int BLAS_copy_scalar = COM_get_function_handle( "BLAS.copy_scalar");
   COM_call_function( BLAS_copy_scalar, &zero, &spd_elms);
       
@@ -652,17 +652,17 @@ void init_constraints_myacm( const string &wname,
 void init_constraints_labscale( const string &wname, 
 				const Control_parameter &cntr_param) {
   int BLAS_copy_scalar = COM_get_function_handle( "BLAS.copy_scalar");
-  int cnstr_handle = COM_get_attribute_handle( (wname+".cnstr_types_facial").c_str());
+  int cnstr_handle = COM_get_dataitem_handle( (wname+".cnstr_types_facial").c_str());
   int zero = 0;
   COM_call_function( BLAS_copy_scalar, &zero, &cnstr_handle);
 
   int SURF_normals = COM_get_function_handle( "SURF.compute_element_normals");
-  int nrms_handle = COM_get_attribute_handle( (wname+".facenormals").c_str());
+  int nrms_handle = COM_get_dataitem_handle( (wname+".facenormals").c_str());
   COM_call_function( SURF_normals, &nrms_handle);
 
   int SURF_centers = COM_get_function_handle( "SURF.interpolate_to_centers");
-  int nc_handle = COM_get_attribute_handle( (wname+".nc").c_str());
-  int centers_handle = COM_get_attribute_handle( (wname+".facecenters").c_str());
+  int nc_handle = COM_get_dataitem_handle( (wname+".nc").c_str());
+  int centers_handle = COM_get_dataitem_handle( (wname+".facecenters").c_str());
   COM_call_function( SURF_centers, &nc_handle, &centers_handle);
 
   // Set speed for different panes.
@@ -711,7 +711,7 @@ void init_constraints( const string &wname,
   else if ( wname.substr(0,3) == "acm") 
     init_constraints_myacm( wname, cntr_param);
   else {
-    int cnstr_handle = COM_get_attribute_handle((wname+".cnstr_type").c_str());
+    int cnstr_handle = COM_get_dataitem_handle((wname+".cnstr_type").c_str());
     if ( cnstr_handle>=0) {
       int PROP_set_cnstr = COM_get_function_handle( "PROP.set_constraints");
       COM_call_function( PROP_set_cnstr, &cnstr_handle);
@@ -721,37 +721,37 @@ void init_constraints( const string &wname,
 
 void init_attributes( const string &wname, 
 		      const Control_parameter &cntr_param) {
-  COM_new_attribute((wname+".flag").c_str(), 'p', COM_DOUBLE, 1, "");
+  COM_new_dataitem((wname+".flag").c_str(), 'p', COM_DOUBLE, 1, "");
   COM_set_size( (wname+".flag").c_str(), 0, 1);
 
-  COM_new_attribute((wname+".flag_spd").c_str(), 'e', COM_DOUBLE, 1, "");
+  COM_new_dataitem((wname+".flag_spd").c_str(), 'e', COM_DOUBLE, 1, "");
   
-  COM_new_attribute((wname+".disps_total").c_str(), 'n', COM_DOUBLE, 3, "");
-  // COM_new_attribute((wname+".lambdas").c_str(), 'n', COM_DOUBLE, 3, "");
-  // COM_new_attribute((wname+".eigvecs").c_str(), 'n', COM_DOUBLE, 9, "");
-  COM_new_attribute((wname+".cnstr_types_nodal").c_str(), 'n', COM_INT, 1, "");
-  COM_new_attribute((wname+".cnstr_types_facial").c_str(), 'e', COM_INT, 1, "");
-  COM_new_attribute((wname+".cnstr_types_panel").c_str(), 'p', COM_INT, 1, "");
+  COM_new_dataitem((wname+".disps_total").c_str(), 'n', COM_DOUBLE, 3, "");
+  // COM_new_dataitem((wname+".lambdas").c_str(), 'n', COM_DOUBLE, 3, "");
+  // COM_new_dataitem((wname+".eigvecs").c_str(), 'n', COM_DOUBLE, 9, "");
+  COM_new_dataitem((wname+".cnstr_types_nodal").c_str(), 'n', COM_INT, 1, "");
+  COM_new_dataitem((wname+".cnstr_types_facial").c_str(), 'e', COM_INT, 1, "");
+  COM_new_dataitem((wname+".cnstr_types_panel").c_str(), 'p', COM_INT, 1, "");
   COM_set_size((wname+".cnstr_types_panel").c_str(), 0, 1);
 
 #if 1
-  COM_new_attribute((wname+".cnstr_bound").c_str(), 'p', COM_DOUBLE, 15, ""); 
+  COM_new_dataitem((wname+".cnstr_bound").c_str(), 'p', COM_DOUBLE, 15, ""); 
   COM_set_size( (wname+".cnstr_bound").c_str(), 0, 1);
 #endif
 
-  COM_new_attribute((wname+".spds").c_str(), cntr_param.sploc, 
+  COM_new_dataitem((wname+".spds").c_str(), cntr_param.sploc, 
 		    COM_DOUBLE, 1, "m/s");
-  COM_new_attribute((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
+  COM_new_dataitem((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
 
-  COM_new_attribute((wname+".faceareas").c_str(), 'e', COM_DOUBLE, 1, ""); 
-  COM_new_attribute((wname+".facenormals").c_str(), 'e', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".facecenters").c_str(), 'e', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".faceareas").c_str(), 'e', COM_DOUBLE, 1, ""); 
+  COM_new_dataitem((wname+".facenormals").c_str(), 'e', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".facecenters").c_str(), 'e', COM_DOUBLE, 3, "");
 
-  // Attribute for storing the number of eigenvalues for each node.
-  COM_new_attribute((wname+".tangranks").c_str(), 'n', COM_INT, 1, "");
+  // DataItem for storing the number of eigenvalues for each node.
+  COM_new_dataitem((wname+".tangranks").c_str(), 'n', COM_INT, 1, "");
 
   // Ridges of each pane.
-  COM_new_attribute((wname+".ridges").c_str(), 'p', COM_INT, 2, "");
+  COM_new_dataitem((wname+".ridges").c_str(), 'p', COM_INT, 2, "");
   COM_set_size((wname+".ridges").c_str(), 0, 0);
 
   COM_resize_array( (wname+".atts").c_str());
@@ -766,7 +766,7 @@ void init_attributes( const string &wname,
     COM_get_array( (wname+".flag").c_str(), pane_ids[i], &flag);
     // Set constraints for nonburning panes and speeds for burning panes.
     if ( wname.substr(0,5) == "acmfl" ) {
-      if ( COM_get_attribute_handle((wname+".bcflag").c_str())>0) {
+      if ( COM_get_dataitem_handle((wname+".bcflag").c_str())>0) {
 	int *bcflag;
 	COM_get_array( (wname+".bcflag").c_str(), pane_ids[i], &bcflag);
 	
@@ -777,7 +777,7 @@ void init_attributes( const string &wname,
     }
     else if ( wname.substr(0,4) == "star") 
       *flag = (i%2)?0.:cntr_param.speed; 
-    else if ( COM_get_attribute_handle((wname+".bcflag").c_str())>0) {
+    else if ( COM_get_dataitem_handle((wname+".bcflag").c_str())>0) {
       int *bcflag;
       COM_get_array( (wname+".bcflag").c_str(), pane_ids[i], &bcflag);
 	
@@ -792,8 +792,8 @@ void init_attributes( const string &wname,
 
   COM_free_buffer( &pane_ids);
 
-  int spds = COM_get_attribute_handle( (wname+".spds").c_str());
-  int spd_pane = COM_get_attribute_handle( (wname+".flag").c_str());
+  int spds = COM_get_dataitem_handle( (wname+".spds").c_str());
+  int spd_pane = COM_get_dataitem_handle( (wname+".flag").c_str());
 
   int BLAS_copy = COM_get_function_handle( "BLAS.copy");
   COM_call_function( BLAS_copy, &spd_pane, &spds);
@@ -801,7 +801,7 @@ void init_attributes( const string &wname,
   int BLAS_div_scalar = COM_get_function_handle( "BLAS.div_scalar");
   COM_call_function( BLAS_div_scalar, &spd_pane, &cntr_param.speed, &spd_pane);
 
-  int spd_elms = COM_get_attribute_handle( (wname+".flag_spd").c_str());
+  int spd_elms = COM_get_dataitem_handle( (wname+".flag_spd").c_str());
   COM_call_function( BLAS_copy, &spd_pane, &spd_elms);
 }
 
@@ -810,8 +810,8 @@ void output_solution( const string &wname, const char *timelevel,
   static int OUT_write = 0, hdl;
 
   if ( OUT_write==0) {
-    OUT_write = COM_get_function_handle( "OUT.write_attribute");
-    hdl = COM_get_attribute_handle( (wname+".all").c_str());
+    OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+    hdl = COM_get_dataitem_handle( (wname+".all").c_str());
 
     int OUT_set = COM_get_function_handle( "OUT.set_option");
 #if USE_CGNS
@@ -846,8 +846,8 @@ double compute_area( const string &wname) {
     BLAS_mul = COM_get_function_handle( "BLAS.mul");
     BLAS_sum_scalar = COM_get_function_handle( "BLAS.sum_scalar_MPI");
 
-    area_hdl = COM_get_attribute_handle( (wname+".faceareas").c_str());
-    flag_hdl = COM_get_attribute_handle( (wname+".flag_spd").c_str());
+    area_hdl = COM_get_dataitem_handle( (wname+".faceareas").c_str());
+    flag_hdl = COM_get_dataitem_handle( (wname+".flag_spd").c_str());
   }
 
   COM_call_function( SURF_area, &area_hdl);
@@ -865,7 +865,7 @@ double compute_volume( const string &wname) {
   if ( SURF_vol==0) {
     SURF_vol = COM_get_function_handle( "SURF.compute_signed_volumes");
 
-    mesh_hdl = COM_get_attribute_handle( (wname+".mesh").c_str());
+    mesh_hdl = COM_get_dataitem_handle( (wname+".mesh").c_str());
   }
 
   double vol;
@@ -889,15 +889,15 @@ int main(int argc, char *argv[]) {
   Control_parameter cntr_param;
   read_control_file( argc>2?argv[2]:"control.txt", cntr_param);
   
-  // Initialize the attributes and output the initial solution.
+  // Initialize the dataitems and output the initial solution.
   init_attributes( wname, cntr_param);
 
-  // Attributes
-  int pmesh = COM_get_attribute_handle( (wname+".pmesh").c_str());
-  int nc = COM_get_attribute_handle( (wname+".nc").c_str());
-  int spds = COM_get_attribute_handle( (wname+".spds").c_str());
-  int disps = COM_get_attribute_handle( (wname+".disps").c_str());
-  int disps_total = COM_get_attribute_handle( (wname+".disps_total").c_str());
+  // DataItems
+  int pmesh = COM_get_dataitem_handle( (wname+".pmesh").c_str());
+  int nc = COM_get_dataitem_handle( (wname+".nc").c_str());
+  int spds = COM_get_dataitem_handle( (wname+".spds").c_str());
+  int disps = COM_get_dataitem_handle( (wname+".disps").c_str());
+  int disps_total = COM_get_dataitem_handle( (wname+".disps_total").c_str());
 
   // Funcitions
   int PROP_init = COM_get_function_handle( "PROP.initialize");

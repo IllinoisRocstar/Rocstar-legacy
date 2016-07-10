@@ -40,7 +40,7 @@
 #include "TRAIL_Flu.H"
 
 //#ifdef _ROCSTAR_X_
-#include "roccom.h"
+#include "com.h"
 //#endif
 
 using namespace std;
@@ -1168,7 +1168,7 @@ TRAIL_FluRegisterVolSoln(GEM_Partition &gp,bool all)
   gp.Create_com_volsoln("rhof",gp._data._field_data[2],1,"kg/m^3");
   gp.Create_com_volsoln("rhovf",gp._data._field_data[3],3,"kg/(m^2s)");
   gp.Create_com_volsoln("rhoEf",gp._data._field_data[4],1,"J/m^3");
-  COM_new_attribute((gp.volume_window+".gs"),'p',COM_DOUBLE,1,"m/s");
+  COM_new_dataitem((gp.volume_window+".gs"),'p',COM_DOUBLE,1,"m/s");
   COM_set_size((gp.volume_window+".gs"),gp.pane_id,gp._nvface);
   if(gp._data._field_data[9].size() != 0)
     COM_set_array((gp.volume_window+".gs"),gp.pane_id,
@@ -1240,37 +1240,37 @@ TRAIL_FluRegisterSurfSoln(GEM_Partition &gp,bool all)
   if(gp._debug && gp._out)
     *gp._out << "TRAIL_FluRegisterSurfSoln Enter" 
 	     << endl;
-  COM_new_attribute((gp.surface_window+".gs"),'e',COM_DOUBLE,1,"m/s");
-  COM_new_attribute((gp.surface_window+".bcflag"),'p',COM_INT,1,"");
-  COM_new_attribute((gp.surface_window+".cnstr_type"),'p',COM_INT,1,"");
-  COM_new_attribute((gp.surface_window+".patchNo"),'p',COM_INT,1,"");
-  COM_new_attribute((gp.surface_window+".bflag"),'e',COM_INT,1,"");
+  COM_new_dataitem((gp.surface_window+".gs"),'e',COM_DOUBLE,1,"m/s");
+  COM_new_dataitem((gp.surface_window+".bcflag"),'p',COM_INT,1,"");
+  COM_new_dataitem((gp.surface_window+".cnstr_type"),'p',COM_INT,1,"");
+  COM_new_dataitem((gp.surface_window+".patchNo"),'p',COM_INT,1,"");
+  COM_new_dataitem((gp.surface_window+".bflag"),'e',COM_INT,1,"");
   if(all){
-    COM_new_attribute(gp.surface_window+".rhofvf_alp",'e',
+    COM_new_dataitem(gp.surface_window+".rhofvf_alp",'e',
 		      COM_DOUBLE,3,"kg/(m^2s)");
-    COM_new_attribute(gp.surface_window+".nf_alp",'e',COM_DOUBLE,3,"");
-    COM_new_attribute(gp.surface_window+".rhof_alp",'e',COM_DOUBLE,1,"kg/m^3");
-    COM_new_attribute(gp.surface_window+".pf",'e',COM_DOUBLE,1,"Pa");
-    COM_new_attribute(gp.surface_window+".qc",'e',COM_DOUBLE,1,"W/m^2");
-    COM_new_attribute(gp.surface_window+".qr",'e',COM_DOUBLE,1,"W/m^2");
-    COM_new_attribute(gp.surface_window+".tf",'e',COM_DOUBLE,3,"Pa");
-    COM_new_attribute(gp.surface_window+".Tb_alp",'e',COM_DOUBLE,1,"K");
-    COM_new_attribute(gp.surface_window+".mdot_alp",'e',COM_DOUBLE,1,
+    COM_new_dataitem(gp.surface_window+".nf_alp",'e',COM_DOUBLE,3,"");
+    COM_new_dataitem(gp.surface_window+".rhof_alp",'e',COM_DOUBLE,1,"kg/m^3");
+    COM_new_dataitem(gp.surface_window+".pf",'e',COM_DOUBLE,1,"Pa");
+    COM_new_dataitem(gp.surface_window+".qc",'e',COM_DOUBLE,1,"W/m^2");
+    COM_new_dataitem(gp.surface_window+".qr",'e',COM_DOUBLE,1,"W/m^2");
+    COM_new_dataitem(gp.surface_window+".tf",'e',COM_DOUBLE,3,"Pa");
+    COM_new_dataitem(gp.surface_window+".Tb_alp",'e',COM_DOUBLE,1,"K");
+    COM_new_dataitem(gp.surface_window+".mdot_alp",'e',COM_DOUBLE,1,
 		      "kg/(m^2s)");
-    COM_new_attribute(gp.surface_window+".Tflm_alp",'e',COM_DOUBLE,1,"K");
-    COM_new_attribute(gp.surface_window+".Tf",'e',COM_DOUBLE,1,"K");
-    COM_new_attribute(gp.surface_window+".ts",'e',COM_DOUBLE,1,"Pa");
-    COM_new_attribute(gp.surface_window+".mdot",'e',COM_DOUBLE,1,"kg/(m^2s)");
-    COM_new_attribute(gp.surface_window+".mdot_old",'e',COM_DOUBLE,1,
+    COM_new_dataitem(gp.surface_window+".Tflm_alp",'e',COM_DOUBLE,1,"K");
+    COM_new_dataitem(gp.surface_window+".Tf",'e',COM_DOUBLE,1,"K");
+    COM_new_dataitem(gp.surface_window+".ts",'e',COM_DOUBLE,1,"Pa");
+    COM_new_dataitem(gp.surface_window+".mdot",'e',COM_DOUBLE,1,"kg/(m^2s)");
+    COM_new_dataitem(gp.surface_window+".mdot_old",'e',COM_DOUBLE,1,
 		      "kg/(m^2s)");
-    COM_new_attribute(gp.surface_window+".vs",'e',COM_DOUBLE,3,"m/s");
-    COM_new_attribute(gp.surface_window+".vs_old",'e',COM_DOUBLE,3,"m/s");
+    COM_new_dataitem(gp.surface_window+".vs",'e',COM_DOUBLE,3,"m/s");
+    COM_new_dataitem(gp.surface_window+".vs_old",'e',COM_DOUBLE,3,"m/s");
     
     // Nodal data
-    COM_new_attribute((gp.surface_window+".nc_t0"),'n',COM_DOUBLE,3,"m");
-    COM_new_attribute((gp.surface_window+".vm"),'n',COM_DOUBLE,3,"m/s");
-    COM_new_attribute((gp.surface_window+".sq_dist"),'n',COM_DOUBLE,1,"m");
-    COM_new_attribute((gp.surface_window+".du_alp"),'n',COM_DOUBLE,3,"m");
+    COM_new_dataitem((gp.surface_window+".nc_t0"),'n',COM_DOUBLE,3,"m");
+    COM_new_dataitem((gp.surface_window+".vm"),'n',COM_DOUBLE,3,"m/s");
+    COM_new_dataitem((gp.surface_window+".sq_dist"),'n',COM_DOUBLE,1,"m");
+    COM_new_dataitem((gp.surface_window+".du_alp"),'n',COM_DOUBLE,3,"m");
   }
   vector<GEM_DomainBoundary>::iterator fpi = gp._db.begin();
   if(gp._debug && gp._out)
@@ -1289,10 +1289,10 @@ TRAIL_FluRegisterSurfSoln(GEM_Partition &gp,bool all)
 bool
 TRAIL_FluRegisterSurfMesh(GEM_Partition &gp)
 {
-  COM_new_attribute((gp.surface_window+".t3g:real"),'p',COM_INT,3,"");
-  COM_new_attribute((gp.surface_window+".t3g:virtual"),'p',COM_INT,3,"");      
-  COM_new_attribute((gp.surface_window+".q4g:real"),'p',COM_INT,4,"");
-  COM_new_attribute((gp.surface_window+".q4g:virtual"),'p',COM_INT,4,"");      
+  COM_new_dataitem((gp.surface_window+".t3g:real"),'p',COM_INT,3,"");
+  COM_new_dataitem((gp.surface_window+".t3g:virtual"),'p',COM_INT,3,"");      
+  COM_new_dataitem((gp.surface_window+".q4g:real"),'p',COM_INT,4,"");
+  COM_new_dataitem((gp.surface_window+".q4g:virtual"),'p',COM_INT,4,"");      
 
   vector<GEM_DomainBoundary>::iterator fpi = gp._db.begin();
   while(fpi != gp._db.end()){

@@ -23,9 +23,9 @@
 // $Id: AnisotropicSmoothing.C,v 1.6 2008/12/06 08:45:27 mtcampbe Exp $
 
 #include "FaceOffset_3.h"
-#include "../Rocblas/include/Rocblas.h"
-#include "../Rocsurf/include/Generic_element_2.h"
-#include "../Rocsurf/include/Rocsurf.h"
+#include "Rocblas.h"
+#include "Generic_element_2.h"
+#include "Rocsurf.h"
 
 PROP_BEGIN_NAMESPACE
 
@@ -82,7 +82,7 @@ get_tangents( const Vector_3 *es, const Vector_3 &lambdas,
 }
 
 void FaceOffset_3::
-compute_anisotropic_vertex_centers( const COM::Attribute *nodal_disps) {
+compute_anisotropic_vertex_centers( const COM::DataItem *nodal_disps) {
 
   const double zero = 0., eps = 1.e-100;
 
@@ -97,27 +97,27 @@ compute_anisotropic_vertex_centers( const COM::Attribute *nodal_disps) {
     COM::Pane *pane = *it;
 
     const Point_3 *pnts = reinterpret_cast<const Point_3*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     const Vector_3 *disps = nodal_disps?reinterpret_cast<const Vector_3*>
-      (pane->attribute(nodal_disps->id())->pointer()):NULL;
+      (pane->dataitem(nodal_disps->id())->pointer()):NULL;
     const Point_3 *fcnts = reinterpret_cast<const Point_3*>
-      ( pane->attribute(_facecenters->id())->pointer());
+      ( pane->dataitem(_facecenters->id())->pointer());
     Vector_3 *vcnts = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_vcenters->id())->pointer());
+      ( pane->dataitem(_vcenters->id())->pointer());
     double   *ws = reinterpret_cast<double*>
-      ( pane->attribute(_weights->id())->pointer());
+      ( pane->dataitem(_weights->id())->pointer());
 
 #if ANISOTROPIC    
     const Vector_3 *As = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_As->id())->pointer());
+      ( pane->dataitem(_As->id())->pointer());
     const Vector_3 *bs = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_bmedial->id())->pointer());
+      ( pane->dataitem(_bmedial->id())->pointer());
 
     const char *tranks = reinterpret_cast<const char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
 
     const char *strong = reinterpret_cast<char*>
-      ( pane->attribute(_strong->id())->pointer());
+      ( pane->dataitem(_strong->id())->pointer());
 #endif
 
     // Loop through real elements of the current pane
@@ -257,8 +257,8 @@ compute_anisotropic_vertex_centers( const COM::Attribute *nodal_disps) {
 }
 
 void FaceOffset_3::
-denoise_surface( const COM::Attribute *nodal_disps, 
-		 COM::Attribute *normal_motion) {
+denoise_surface( const COM::DataItem *nodal_disps, 
+		 COM::DataItem *normal_motion) {
   
   const double zero = 0., eps = 1.e-100;
 
@@ -273,31 +273,31 @@ denoise_surface( const COM::Attribute *nodal_disps,
     COM::Pane *pane = *it;
     
     const Vector_3 *As = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_As->id())->pointer());
+      ( pane->dataitem(_As->id())->pointer());
     const Vector_3 *vnrms = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_vnormals->id())->pointer());
+      ( pane->dataitem(_vnormals->id())->pointer());
 
     const Point_3 *pnts = reinterpret_cast<const Point_3*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     const Vector_3 *disps = nodal_disps ? reinterpret_cast<const Vector_3*>
-      (pane->attribute(nodal_disps->id())->pointer()) : NULL;
+      (pane->dataitem(nodal_disps->id())->pointer()) : NULL;
     const Point_3 *fcnts = reinterpret_cast<const Point_3*>
-      ( pane->attribute(_facecenters->id())->pointer());
+      ( pane->dataitem(_facecenters->id())->pointer());
     const char *tranks = reinterpret_cast<const char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
     const Vector_3 *lambdas = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_eigvalues->id())->pointer());
+      ( pane->dataitem(_eigvalues->id())->pointer());
 
     Vector_3 *nmotion = normal_motion ? reinterpret_cast<Vector_3*>
-      ( pane->attribute(normal_motion->id())->pointer()) : NULL;
+      ( pane->dataitem(normal_motion->id())->pointer()) : NULL;
     double *ws = normal_motion ? reinterpret_cast<double*>
-      ( pane->attribute(_weights->id())->pointer()) : NULL;
+      ( pane->dataitem(_weights->id())->pointer()) : NULL;
     const double *farea = normal_motion ? reinterpret_cast<double*>
-      ( pane->attribute(_faceareas->id())->pointer()) : NULL;
+      ( pane->dataitem(_faceareas->id())->pointer()) : NULL;
     const char *weak = reinterpret_cast<const char*>
-      ( pane->attribute(_weak->id())->pointer());
+      ( pane->dataitem(_weak->id())->pointer());
     const int *cnstrs = _cnstr_nodes ? reinterpret_cast<const int*>
-      ( pane->attribute(_cnstr_nodes->id())->pointer()) : NULL;
+      ( pane->dataitem(_cnstr_nodes->id())->pointer()) : NULL;
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1);

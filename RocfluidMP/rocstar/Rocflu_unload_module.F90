@@ -47,7 +47,7 @@ SUBROUTINE Rocflu_unload_module(winName)
 
   IMPLICIT NONE
   
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
   INTERFACE 
     SUBROUTINE COM_get_pointer(attr,ptr,asso)

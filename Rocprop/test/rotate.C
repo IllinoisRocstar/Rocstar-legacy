@@ -22,7 +22,7 @@
  *********************************************************************/
 // $Id: rotate.C,v 1.8 2008/12/06 08:45:28 mtcampbe Exp $
 
-#include "roccom.h"
+#include "com.h"
 
 #include <cstdio>
 #include <iostream>
@@ -34,24 +34,24 @@
 #include <cmath>
 #include <cassert>
 #include <sstream>
-#include "roccom_assertion.h"
+#include "com_assertion.h"
 
-#include "../Rocsurf/test/IM_Reader.h"
+#include "IM_Reader.h"
 
 using namespace std;
 
-COM_EXTERN_MODULE( Rocblas);
-COM_EXTERN_MODULE( Rocmap);
+COM_EXTERN_MODULE( Simpal);
+COM_EXTERN_MODULE( SurfMap);
 COM_EXTERN_MODULE( Rocprop);
-COM_EXTERN_MODULE( Rocsurf);
-COM_EXTERN_MODULE( Rocout);
+COM_EXTERN_MODULE( SurfUtil);
+COM_EXTERN_MODULE( SimOut);
 
 void load_modules() {
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocblas, "BLAS");
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocmap, "MAP");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(Simpal, "BLAS");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SurfMap, "MAP");
   COM_LOAD_MODULE_STATIC_DYNAMIC(Rocprop, "PROP");
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocsurf, "SURF");
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocout, "OUT");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SurfUtil, "SURF");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SimOut, "OUT");
 }
 
 static int rank = 0;
@@ -228,7 +228,7 @@ void init_constraints_acmfrac( const string &wname) {
   
   if ( BLAS_copy_scalar==0) {
     COM_get_function_handle( "BLAS.copy_scalar");
-    cnstr_handle = COM_get_attribute_handle( (wname+".cnstr_types").c_str());
+    cnstr_handle = COM_get_dataitem_handle( (wname+".cnstr_types").c_str());
     MAP_maxabs = COM_get_function_handle( "MAP.reduce_maxabs_on_shared_nodes");
   }
 
@@ -262,7 +262,7 @@ void init_constraints_acmflu( const string &wname) {
   
   if ( BLAS_copy_scalar==0) {
     COM_get_function_handle( "BLAS.copy_scalar");
-    cnstr_handle = COM_get_attribute_handle( (wname+".cnstr_types").c_str());
+    cnstr_handle = COM_get_dataitem_handle( (wname+".cnstr_types").c_str());
     MAP_maxabs = COM_get_function_handle( "MAP.reduce_maxabs_on_shared_nodes");
   }
 
@@ -299,7 +299,7 @@ void init_constraints_starslice( const string &wname) {
   
   if ( BLAS_copy_scalar==0) {
     COM_get_function_handle( "BLAS.copy_scalar");
-    cnstr_handle = COM_get_attribute_handle( (wname+".cnstr_types").c_str());
+    cnstr_handle = COM_get_dataitem_handle( (wname+".cnstr_types").c_str());
     MAP_maxabs = COM_get_function_handle( "MAP.reduce_maxabs_on_shared_nodes");
   }
   int zero = 0;
@@ -331,24 +331,24 @@ void init_constraints_starslice( const string &wname) {
 
 void init_attributes( const string &wname, 
 		      const Control_parameter &cntr_param) {
-  COM_new_attribute((wname+".flag").c_str(), 'p', COM_DOUBLE, 1, "");
+  COM_new_dataitem((wname+".flag").c_str(), 'p', COM_DOUBLE, 1, "");
   COM_set_size( (wname+".flag").c_str(), 0, 1);
 
-  COM_new_attribute((wname+".disps_total").c_str(), 'n', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".cnstr_types").c_str(), 'n', COM_INT, 1, "");
+  COM_new_dataitem((wname+".disps_total").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".cnstr_types").c_str(), 'n', COM_INT, 1, "");
   
-  COM_new_attribute((wname+".spds").c_str(), 'n', COM_DOUBLE, 3, "m/s");
-  COM_new_attribute((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
+  COM_new_dataitem((wname+".spds").c_str(), 'n', COM_DOUBLE, 3, "m/s");
+  COM_new_dataitem((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
 
-  COM_new_attribute((wname+".disps_novis").c_str(), 'n', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".facenormals").c_str(), 'e', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".faceheights").c_str(), 'e', COM_DOUBLE, 1, "");
+  COM_new_dataitem((wname+".disps_novis").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".facenormals").c_str(), 'e', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".faceheights").c_str(), 'e', COM_DOUBLE, 1, "");
 
-  // Attribute for storing the number of eigenvalues for each node.
-  COM_new_attribute((wname+".lambdas").c_str(), 'n', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".eigvecs").c_str(), 'n', COM_DOUBLE, 9, "");
-  COM_new_attribute((wname+".tangranks").c_str(), 'n', COM_CHAR, 1, "");
-  COM_new_attribute((wname+".scales").c_str(), 'n', COM_DOUBLE, 1, "");
+  // Dataitem for storing the number of eigenvalues for each node.
+  COM_new_dataitem((wname+".lambdas").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".eigvecs").c_str(), 'n', COM_DOUBLE, 9, "");
+  COM_new_dataitem((wname+".tangranks").c_str(), 'n', COM_CHAR, 1, "");
+  COM_new_dataitem((wname+".scales").c_str(), 'n', COM_DOUBLE, 1, "");
 
   COM_resize_array( (wname+".atts").c_str());
   COM_window_init_done( wname.c_str());
@@ -397,8 +397,8 @@ void output_solution( const string &wname, const char *timelevel) {
   static int OUT_write = 0, hdl;
 
   if ( OUT_write==0) {
-    OUT_write = COM_get_function_handle( "OUT.write_attribute");
-    hdl = COM_get_attribute_handle( (wname+".all").c_str());
+    OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+    hdl = COM_get_dataitem_handle( (wname+".all").c_str());
 
     int OUT_set = COM_get_function_handle( "OUT.set_option");
     COM_call_function( OUT_set, "format", "HDF");
@@ -431,11 +431,11 @@ int main(int argc, char *argv[]) {
   init_attributes( wname, cntr_param);
 
   // Attributes
-  int pmesh = COM_get_attribute_handle( (wname+".pmesh").c_str());
-  int nc = COM_get_attribute_handle( (wname+".nc").c_str());
-  int spds = COM_get_attribute_handle( (wname+".spds").c_str());
-  int disps = COM_get_attribute_handle( (wname+".disps").c_str());
-  int disps_total = COM_get_attribute_handle( (wname+".disps_total").c_str());
+  int pmesh = COM_get_dataitem_handle( (wname+".pmesh").c_str());
+  int nc = COM_get_dataitem_handle( (wname+".nc").c_str());
+  int spds = COM_get_dataitem_handle( (wname+".spds").c_str());
+  int disps = COM_get_dataitem_handle( (wname+".disps").c_str());
+  int disps_total = COM_get_dataitem_handle( (wname+".disps_total").c_str());
 
   // Funcitions
   int PROP_init = COM_get_function_handle( "PROP.initialize");

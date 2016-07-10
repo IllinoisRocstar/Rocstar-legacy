@@ -28,7 +28,7 @@
 #define MESQPANE_C
 
 #include "MesqPane_95.h"
-#include "Element_accessors.h"
+#include "Element_accessors.hpp"
 #include "MsqVertex.hpp"
 
 using namespace MOP;
@@ -239,12 +239,12 @@ namespace Mesquite{
     if(_verb)
       cout << "MOP> MesqPane::vertices_get_coordinates" << endl;
     const double *xptr = _pane->coordinates(), *yptr=NULL, *zptr=NULL;
-    const COM::Attribute *nc = _pane->attribute(COM::COM_NC);
+    const COM::DataItem *nc = _pane->dataitem(COM::COM_NC);
     int stride = nc->stride();
     if(!stride){
-      const COM::Attribute *xc = _pane->attribute(COM::COM_NC1);
-      const COM::Attribute *yc = _pane->attribute(COM::COM_NC2);
-      const COM::Attribute *zc = _pane->attribute(COM::COM_NC3);
+      const COM::DataItem *xc = _pane->dataitem(COM::COM_NC1);
+      const COM::DataItem *yc = _pane->dataitem(COM::COM_NC2);
+      const COM::DataItem *zc = _pane->dataitem(COM::COM_NC3);
       int stride1 = xc->stride();
       int stride2 = yc->stride(); 
       int stride3 = zc->stride();

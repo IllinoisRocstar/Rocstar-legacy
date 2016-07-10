@@ -53,7 +53,7 @@ MODULE RFLU_ModRocstarAdmin
 
   IMPLICIT NONE
 
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
   PRIVATE
   PUBLIC :: RFLU_GENX_BuildGridSurf, &
@@ -209,7 +209,7 @@ MODULE RFLU_ModRocstarAdmin
 
 ! ******************************************************************************
 !
-! Purpose: Build pconn attribute. 
+! Purpose: Build pconn dataitem. 
 !
 ! Description: None.
 !
@@ -565,7 +565,7 @@ MODULE RFLU_ModRocstarAdmin
 
 ! ******************************************************************************
 !
-! Purpose: Create new attributes for displacements.
+! Purpose: Create new dataitems for displacements.
 !
 ! Description: None.
 !
@@ -606,12 +606,12 @@ MODULE RFLU_ModRocstarAdmin
     global => pRegion%global
     
 ! ******************************************************************************
-!   Create new attributes
+!   Create new dataitems
 ! ******************************************************************************
     
     winName = global%volWinName
     
-    CALL COM_new_attribute(TRIM(winName)//'.disp','n',COM_DOUBLE_PRECISION,3,'')
+    CALL COM_new_dataitem(TRIM(winName)//'.disp','n',COM_DOUBLE_PRECISION,3,'')
 
 ! ******************************************************************************
 !   End
@@ -626,7 +626,7 @@ MODULE RFLU_ModRocstarAdmin
   
 ! ******************************************************************************
 !
-! Purpose: Create new attributes for mixture solution.
+! Purpose: Create new dataitems for mixture solution.
 !
 ! Description: None.
 !
@@ -667,7 +667,7 @@ MODULE RFLU_ModRocstarAdmin
     global => pRegion%global
     
 ! ******************************************************************************
-!   Create new attributes
+!   Create new dataitems
 ! ******************************************************************************
 
 ! ==============================================================================  
@@ -676,17 +676,17 @@ MODULE RFLU_ModRocstarAdmin
 
     winName = global%volWinName
     
-    CALL COM_new_attribute(TRIM(winName)//'.rhof' ,'e',COM_DOUBLE_PRECISION, &
+    CALL COM_new_dataitem(TRIM(winName)//'.rhof' ,'e',COM_DOUBLE_PRECISION, &
                            1,'kg/(m^3)')
-    CALL COM_new_attribute(TRIM(winName)//'.rhovf','e',COM_DOUBLE_PRECISION, &
+    CALL COM_new_dataitem(TRIM(winName)//'.rhovf','e',COM_DOUBLE_PRECISION, &
                            3,'kg/(m^2 s)')
-    CALL COM_new_attribute(TRIM(winName)//'.rhoEf','e',COM_DOUBLE_PRECISION, &
+    CALL COM_new_dataitem(TRIM(winName)//'.rhoEf','e',COM_DOUBLE_PRECISION, &
                            1,'(J/(m^3))')  
-    CALL COM_new_attribute(TRIM(winName)//'.pf','e',COM_DOUBLE_PRECISION,1, & 
+    CALL COM_new_dataitem(TRIM(winName)//'.pf','e',COM_DOUBLE_PRECISION,1, & 
                            'N/(m^2)')  
-    CALL COM_new_attribute(TRIM(winName)//'.Tf','e',COM_DOUBLE_PRECISION,1, &
+    CALL COM_new_dataitem(TRIM(winName)//'.Tf','e',COM_DOUBLE_PRECISION,1, &
                            'K')
-    CALL COM_new_attribute(TRIM(winName)//'.af','e',COM_DOUBLE_PRECISION,1, &
+    CALL COM_new_dataitem(TRIM(winName)//'.af','e',COM_DOUBLE_PRECISION,1, &
                            'm/s')
   
 ! ******************************************************************************
@@ -703,7 +703,7 @@ MODULE RFLU_ModRocstarAdmin
 
 ! ******************************************************************************
 !
-! Purpose: Create new attributes for surface grid.
+! Purpose: Create new dataitems for surface grid.
 !
 ! Description: None.
 !
@@ -745,20 +745,20 @@ MODULE RFLU_ModRocstarAdmin
     global => pRegion%global
     
 ! ******************************************************************************
-!   Create new attributes
+!   Create new dataitems
 ! ******************************************************************************
 
     winName = global%surfWinName
 
-    CALL COM_new_attribute(TRIM(winName)//'.bcflag'     ,'p',COM_INTEGER,1,'')
-    CALL COM_new_attribute(TRIM(winName)//'.patchNo'    ,'p',COM_INTEGER,1,'')    
-    CALL COM_new_attribute(TRIM(winName)//'.cnstr_type' ,'p',COM_INTEGER,1,'')
+    CALL COM_new_dataitem(TRIM(winName)//'.bcflag'     ,'p',COM_INTEGER,1,'')
+    CALL COM_new_dataitem(TRIM(winName)//'.patchNo'    ,'p',COM_INTEGER,1,'')    
+    CALL COM_new_dataitem(TRIM(winName)//'.cnstr_type' ,'p',COM_INTEGER,1,'')
   
-    CALL COM_new_attribute(TRIM(winName)//'.t3g:real'   ,'p',COM_INTEGER,3,'')
-    CALL COM_new_attribute(TRIM(winName)//'.t3g:virtual','p',COM_INTEGER,3,'')    
+    CALL COM_new_dataitem(TRIM(winName)//'.t3g:real'   ,'p',COM_INTEGER,3,'')
+    CALL COM_new_dataitem(TRIM(winName)//'.t3g:virtual','p',COM_INTEGER,3,'')    
 
-    CALL COM_new_attribute(TRIM(winName)//'.q4g:real'   ,'p',COM_INTEGER,4,'')
-    CALL COM_new_attribute(TRIM(winName)//'.q4g:virtual','p',COM_INTEGER,4,'')    
+    CALL COM_new_dataitem(TRIM(winName)//'.q4g:real'   ,'p',COM_INTEGER,4,'')
+    CALL COM_new_dataitem(TRIM(winName)//'.q4g:virtual','p',COM_INTEGER,4,'')    
 
 ! ******************************************************************************
 !   End
@@ -775,7 +775,7 @@ MODULE RFLU_ModRocstarAdmin
 
 ! ******************************************************************************
 !
-! Purpose: Create new attributes for grid speeds.
+! Purpose: Create new dataitems for grid speeds.
 !
 ! Description: None.
 !
@@ -816,7 +816,7 @@ MODULE RFLU_ModRocstarAdmin
     global => pRegion%global
     
 ! ******************************************************************************
-!   Create new attributes
+!   Create new dataitems
 ! ******************************************************************************
 
 ! ==============================================================================  
@@ -825,7 +825,7 @@ MODULE RFLU_ModRocstarAdmin
 
     winName = global%volWinName
     
-    CALL COM_new_attribute(TRIM(winName)//'.gs','p',COM_DOUBLE_PRECISION, & 
+    CALL COM_new_dataitem(TRIM(winName)//'.gs','p',COM_DOUBLE_PRECISION, & 
                            1,'m/s') 
 
 ! ==============================================================================  
@@ -834,7 +834,7 @@ MODULE RFLU_ModRocstarAdmin
 
     winName = global%surfWinName
   
-    CALL COM_new_attribute(TRIM(winName)//'.gs','e',COM_DOUBLE_PRECISION, & 
+    CALL COM_new_dataitem(TRIM(winName)//'.gs','e',COM_DOUBLE_PRECISION, & 
                            1,'m/s')
   
 ! ******************************************************************************
@@ -851,7 +851,7 @@ MODULE RFLU_ModRocstarAdmin
 
 ! ******************************************************************************
 !
-! Purpose: Create new attributes for interface data.
+! Purpose: Create new dataitems for interface data.
 !
 ! Description: None.
 !
@@ -898,39 +898,39 @@ MODULE RFLU_ModRocstarAdmin
     comi = COM_INTEGER 
     
 ! ******************************************************************************
-!   Create new attributes
+!   Create new dataitems
 ! ******************************************************************************
 
 ! ==============================================================================  
 !   Incoming data
 ! ==============================================================================  
     
-    CALL COM_new_attribute(TRIM(winName)//'.du_alp'    ,'n',comd,3,'m'        )
-    CALL COM_new_attribute(TRIM(winName)//'.mdot_alp'  ,'e',comd,1,'kg/(m^2s)')
-    CALL COM_new_attribute(TRIM(winName)//'.rhofvf_alp','e',comd,3,'kg/(m^2s)')
-    CALL COM_new_attribute(TRIM(winName)//'.Tflm_alp'  ,'e',comd,1,'K'        )
-    CALL COM_new_attribute( TRIM(winName)//'.zoomFact' ,'w',comd,1,'none' )
-    CALL COM_new_attribute(TRIM(winName)//'.Tb_alp'    ,'e',comd,1,'K'        )
+    CALL COM_new_dataitem(TRIM(winName)//'.du_alp'    ,'n',comd,3,'m'        )
+    CALL COM_new_dataitem(TRIM(winName)//'.mdot_alp'  ,'e',comd,1,'kg/(m^2s)')
+    CALL COM_new_dataitem(TRIM(winName)//'.rhofvf_alp','e',comd,3,'kg/(m^2s)')
+    CALL COM_new_dataitem(TRIM(winName)//'.Tflm_alp'  ,'e',comd,1,'K'        )
+    CALL COM_new_dataitem( TRIM(winName)//'.zoomFact' ,'w',comd,1,'none' )
+    CALL COM_new_dataitem(TRIM(winName)//'.Tb_alp'    ,'e',comd,1,'K'        )
 
 ! ==============================================================================  
 !   Outgoing data
 ! ==============================================================================  
 
-    CALL COM_new_attribute(TRIM(winName)//'.nf_alp'  ,'e',comd,3,''          )
-    CALL COM_new_attribute(TRIM(winName)//'.pf'      ,'e',comd,1,'Pa'        )
-    CALL COM_new_attribute(TRIM(winName)//'.tf'      ,'e',comd,3,'Pa'        )  
-    CALL COM_new_attribute(TRIM(winName)//'.qc'      ,'e',comd,1,'kgK/(m^2s)')
-    CALL COM_new_attribute(TRIM(winName)//'.qr'      ,'e',comd,1,'kgK/(m^2s)')
-    CALL COM_new_attribute(TRIM(winName)//'.rhof_alp','e',comd,1,'kg/m^3'    )
-    CALL COM_new_attribute(TRIM(winName)//'.Tf'      ,'e',comd,1,'K'         )
-!    CALL COM_new_attribute(TRIM(winName)//'.Tv'      ,'e',comd,1,'K'         )
-!    CALL COM_new_attribute(TRIM(winName)//'.dn'      ,'e',comd,1,'m'         )
+    CALL COM_new_dataitem(TRIM(winName)//'.nf_alp'  ,'e',comd,3,''          )
+    CALL COM_new_dataitem(TRIM(winName)//'.pf'      ,'e',comd,1,'Pa'        )
+    CALL COM_new_dataitem(TRIM(winName)//'.tf'      ,'e',comd,3,'Pa'        )  
+    CALL COM_new_dataitem(TRIM(winName)//'.qc'      ,'e',comd,1,'kgK/(m^2s)')
+    CALL COM_new_dataitem(TRIM(winName)//'.qr'      ,'e',comd,1,'kgK/(m^2s)')
+    CALL COM_new_dataitem(TRIM(winName)//'.rhof_alp','e',comd,1,'kg/m^3'    )
+    CALL COM_new_dataitem(TRIM(winName)//'.Tf'      ,'e',comd,1,'K'         )
+!    CALL COM_new_dataitem(TRIM(winName)//'.Tv'      ,'e',comd,1,'K'         )
+!    CALL COM_new_dataitem(TRIM(winName)//'.dn'      ,'e',comd,1,'m'         )
 
 ! ==============================================================================  
 !   Interface data (utility data used in the interface)
 ! ==============================================================================  
 
-    CALL COM_new_attribute(TRIM(winName)//'.bflag'   ,'e',comi,1,''          )
+    CALL COM_new_dataitem(TRIM(winName)//'.bflag'   ,'e',comi,1,''          )
       
 ! ******************************************************************************
 !   End
@@ -946,7 +946,7 @@ MODULE RFLU_ModRocstarAdmin
   
 ! ******************************************************************************
 !
-! Purpose: Create new attributes for statistics data.
+! Purpose: Create new dataitems for statistics data.
 !
 ! Description: None.
 !
@@ -976,7 +976,7 @@ MODULE RFLU_ModRocstarAdmin
     TYPE(t_region), POINTER :: pRegion
     
 ! ******************************************************************************
-!   Create new attributes
+!   Create new dataitems
 ! ******************************************************************************
 #ifdef STATS
     CALL STAT_RFLU_GenxCreateAttr(pRegion)
@@ -995,7 +995,7 @@ MODULE RFLU_ModRocstarAdmin
   
 ! ******************************************************************************
 !
-! Purpose: Create new attributes for turbulence.
+! Purpose: Create new dataitems for turbulence.
 !
 ! Description: None.
 !
@@ -1025,7 +1025,7 @@ MODULE RFLU_ModRocstarAdmin
     TYPE(t_region), POINTER :: pRegion
     
 ! ******************************************************************************
-!   Create new attributes
+!   Create new dataitems
 ! ******************************************************************************
 #ifdef TURB
     CALL TURB_RFLU_GenxCreateAttr(pRegion)
@@ -1044,7 +1044,7 @@ MODULE RFLU_ModRocstarAdmin
   
 ! ******************************************************************************
 !
-! Purpose: Wrapper for new attributes routines.
+! Purpose: Wrapper for new dataitems routines.
 !
 ! Description: None.
 !
@@ -1072,7 +1072,7 @@ MODULE RFLU_ModRocstarAdmin
     TYPE(t_region), POINTER :: pRegion
     
 ! ******************************************************************************
-!   Create new attributes
+!   Create new dataitems
 ! ******************************************************************************
 
 ! ==============================================================================  
@@ -1498,7 +1498,7 @@ MODULE RFLU_ModRocstarAdmin
 
 ! ******************************************************************************
 !
-! Purpose: Create pconn attribute.
+! Purpose: Create pconn dataitem.
 !
 ! Description: None.
 !
@@ -1551,7 +1551,7 @@ MODULE RFLU_ModRocstarAdmin
     END IF ! global%verbLevel
 
 ! ******************************************************************************
-!   Determine size of pconn attribute
+!   Determine size of pconn dataitem
 ! ******************************************************************************  
 
     pGrid%pconnSizeTot   = 0
@@ -2113,7 +2113,7 @@ MODULE RFLU_ModRocstarAdmin
 
 ! ******************************************************************************
 !
-! Purpose: Destroy pconn attribute.
+! Purpose: Destroy pconn dataitem.
 !
 ! Description: None.
 !
@@ -3064,7 +3064,7 @@ MODULE RFLU_ModRocstarAdmin
 ! Output: None.
 !
 ! Notes: 
-!    1. Must be called after new attributes were created.
+!    1. Must be called after new dataitems were created.
 !
 ! ******************************************************************************
 
@@ -3150,7 +3150,7 @@ MODULE RFLU_ModRocstarAdmin
 ! Output: None.
 !
 ! Notes: 
-!    1. Must be called after new attributes were created.
+!    1. Must be called after new dataitems were created.
 !
 ! ******************************************************************************
 
@@ -3236,7 +3236,7 @@ MODULE RFLU_ModRocstarAdmin
 ! Output: None.
 !
 ! Notes: 
-!    1. Must be called after new attributes were created.
+!    1. Must be called after new dataitems were created.
 !
 ! ******************************************************************************
 
@@ -3428,7 +3428,7 @@ MODULE RFLU_ModRocstarAdmin
 ! Output: None.
 !
 ! Notes: 
-!    1. Must be called after new attributes were created.
+!    1. Must be called after new dataitems were created.
 !
 ! ******************************************************************************
 
@@ -3496,7 +3496,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ==============================================================================  
 
 ! ------------------------------------------------------------------------------
-!   pconn attribute
+!   pconn dataitem
 ! ------------------------------------------------------------------------------
 
     CALL COM_set_size(TRIM(winName)//'.pconn',paneId,pGrid%pconnSizeTot, &
@@ -3903,7 +3903,7 @@ END MODULE RFLU_ModRocstarAdmin
 ! Added writing of more info when registering surface grid
 !
 ! Revision 1.11  2005/04/15 15:06:55  haselbac
-! Added routines to create, build, and destroy pconn attribute
+! Added routines to create, build, and destroy pconn dataitem
 !
 ! Revision 1.10  2005/03/09 15:07:41  haselbac
 ! Erroneous check-in, removed debug code

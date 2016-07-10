@@ -43,9 +43,9 @@ SetValueDouble::SetValueDouble( const std::string at, const double val) :
   set_io( 1, io);
 }
 
-// Obtain the attribute handles
+// Obtain the dataitem handles
 void SetValueDouble::init( double t) {
-  attr_hdl = get_attribute_handle( 0);
+  attr_hdl = get_dataitem_handle( 0);
 }
 
 void SetValueDouble::run( double t, double dt, double alpha) {
@@ -69,10 +69,10 @@ CopyValue::CopyValue( const std::string from, const std::string to, int *cond) :
   set_attr(2, atts);
 }
 
-// Obtain the attribute handles
+// Obtain the dataitem handles
 void CopyValue::init( double t) {
-  from_hdl = get_attribute_handle( 0);
-  to_hdl = get_attribute_handle( 1);
+  from_hdl = get_dataitem_handle( 0);
+  to_hdl = get_dataitem_handle( 1);
 }
 
 void CopyValue::run( double t, double dt, double alpha) {
@@ -90,7 +90,7 @@ DummyPrint::DummyPrint( BurnAgent *bag, SolidAgent *sag, FluidAgent *fag, const 
   set_attr(0, (const char**)NULL);
 }
 
-// Obtain the attribute handles
+// Obtain the dataitem handles
 void DummyPrint::init( double t) {
   MAN_DEBUG(3, ("Rocstar: DummyPrint::init() with %s.\n", label.c_str()));
 }
@@ -197,48 +197,48 @@ ComputeFluidLoad_ALE::ComputeFluidLoad_ALE( FluidAgent *fag, SolidAgent *sag,
 
   traction_mode = fagent->get_coupling()->get_rocmancontrol_param()->traction_mode;
 
-  // create_attribute
+  // create_dataitem
   // for SolidAgent ??????????????????
 //  if (traction_mode == NO_SHEER && size_ts == 3) {
-    sagent->register_new_attribute( sagent->solidBufBase, ".pf", 'e', COM_DOUBLE, 1, "Pa");
+    sagent->register_new_dataitem( sagent->solidBufBase, ".pf", 'e', COM_DOUBLE, 1, "Pa");
 //  }
 
   // for FluidAgent
   if (traction_mode == NO_SHEER)  {
-    fagent->register_clone_attribute( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".pf");
+    fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".pf");
   }
   else
-    fagent->register_clone_attribute( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".tf");
+    fagent->register_clone_dataitem( 0, fagent->ifluid_i, ".ts", fagent->get_surface_window(), ".tf");
 }
 
 // Create buffer data
 void ComputeFluidLoad_ALE::init( double t) 
 {
   if (traction_mode == NO_SHEER) {
-    f_pf_hdl = get_attribute_handle_const( 0);
-    fb_pf_hdl = COM_get_attribute_handle( fagent->fluidBufB+".pf");
+    f_pf_hdl = get_dataitem_handle_const( 0);
+    fb_pf_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".pf");
   }
   else {
     f_pf_hdl = -1;
     fb_pf_hdl = -1;
   }
-  fb_mdot_hdl = get_attribute_handle( 1);
-  b_rb_hdl = get_attribute_handle( 2);
-  f_ts_hdl = get_attribute_handle( 3);
+  fb_mdot_hdl = get_dataitem_handle( 1);
+  b_rb_hdl = get_dataitem_handle( 2);
+  f_ts_hdl = get_dataitem_handle( 3);
 
   if (traction_mode != NO_SHEER) {
-    f_tf_hdl = COM_get_attribute_handle_const( fagent->fluidBufNG+".tf");
-    fb_tf_hdl = COM_get_attribute_handle_const( fagent->fluidBufB+".tf");
-    fb_nf_alp_hdl = COM_get_attribute_handle( fagent->fluidBufB+".nf_alp");
+    f_tf_hdl = COM_get_dataitem_handle_const( fagent->fluidBufNG+".tf");
+    fb_tf_hdl = COM_get_dataitem_handle_const( fagent->fluidBufB+".tf");
+    fb_nf_alp_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".nf_alp");
   }
   else {
     f_tf_hdl = -1;
     fb_tf_hdl = -1;
     fb_nf_alp_hdl = -1;
   }
-  fb_ts_hdl = COM_get_attribute_handle( fagent->fluidBufB+".ts");
-  fb_rhof_alp_hdl = COM_get_attribute_handle ( fagent->fluidBufB+".rhof_alp");
-  fb_mdot_tmp_hdl = COM_get_attribute_handle ( fagent->fluidBufB+".mdot_tmp");
+  fb_ts_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".ts");
+  fb_rhof_alp_hdl = COM_get_dataitem_handle ( fagent->fluidBufB+".rhof_alp");
+  fb_mdot_tmp_hdl = COM_get_dataitem_handle ( fagent->fluidBufB+".mdot_tmp");
 
   MAN_DEBUG(3, ("ComputeFluidLoad_ALE::init() called - traction_mode: %d .\n", traction_mode));
 }
@@ -306,16 +306,16 @@ ComputeMeshMotion::ComputeMeshMotion(FluidAgent *ag,
   atts[1] = f_du_alp;
   set_attr(2, atts);
 
-  fagent->register_new_attribute( fagent->propBufAll, ".vm", 'n', COM_DOUBLE, 3, "m/s");
+  fagent->register_new_dataitem( fagent->propBufAll, ".vm", 'n', COM_DOUBLE, 3, "m/s");
 }
 
 void ComputeMeshMotion::init( double t) {
-  a_vm_hdl = get_attribute_handle(0);
-  f_du_alp_hdl = get_attribute_handle(fagent->get_surface_window()+attr[1]);
+  a_vm_hdl = get_dataitem_handle(0);
+  f_du_alp_hdl = get_dataitem_handle(fagent->get_surface_window()+attr[1]);
 
     // can not be set earlier because surface window was unkown
-  //f_du_alp_hdl = COM_get_attribute_handle(fagent->get_surface_window()+".du_alp");
-  f_zoom_hdl = COM_get_attribute_handle(fagent->fluidBufNG+".zoomFact");  // used internally
+  //f_du_alp_hdl = COM_get_dataitem_handle(fagent->get_surface_window()+".du_alp");
+  f_zoom_hdl = COM_get_dataitem_handle(fagent->fluidBufNG+".zoomFact");  // used internally
 }
 
 // gm callback
@@ -404,9 +404,9 @@ ComputeFaceCenters::ComputeFaceCenters(BurnAgent *ag, const std::string b_nc, co
 
 void ComputeFaceCenters::init( double t) {
 /*
-  b_nc_hdl = get_attribute_handle(0);
-  if (COM_get_attribute_handle(agent->get_surface_window()+".centers") > 0)
-    b_cnts_hdl = get_attribute_handle(1);
+  b_nc_hdl = get_dataitem_handle(0);
+  if (COM_get_dataitem_handle(agent->get_surface_window()+".centers") > 0)
+    b_cnts_hdl = get_dataitem_handle(1);
   else
     b_cnts_hdl = -1;
 
@@ -424,14 +424,14 @@ void ComputeFaceCenters::run( double t, double dt, double alpha_dummy) {
   agent->obtain_bc(&a, &level);
 */
 
-  b_nc_hdl = get_attribute_handle(attr[0]);
+  b_nc_hdl = get_dataitem_handle(attr[0]);
   b_cnts_hdl = -1;
-  if (COM_get_attribute_handle(agent->get_surface_window()+".centers") > 0){
-    b_cnts_hdl = get_attribute_handle(1);
+  if (COM_get_dataitem_handle(agent->get_surface_window()+".centers") > 0){
+    b_cnts_hdl = get_dataitem_handle(1);
   }
   b_nrml_hdl = -1;
-  if(COM_get_attribute_handle(agent->get_surface_window()+".normals") > 0){
-    b_nrml_hdl = get_attribute_handle(2);
+  if(COM_get_dataitem_handle(agent->get_surface_window()+".normals") > 0){
+    b_nrml_hdl = get_dataitem_handle(2);
   }
   
   // ?????????????
@@ -467,24 +467,24 @@ FluidPropagateSurface::FluidPropagateSurface(FluidAgent *fag, BurnAgent *bag,
   atts[1] = a_vm;
   set_attr(2, atts);
 
-  fagent->register_new_attribute( fagent->propBufAll, ".vm", 'n', COM_DOUBLE, 3, "m/s");
+  fagent->register_new_dataitem( fagent->propBufAll, ".vm", 'n', COM_DOUBLE, 3, "m/s");
 }
 
 void FluidPropagateSurface::init( double t) {
-  b_rb_hdl = get_attribute_handle( 0);
-  a_vm_hdl = get_attribute_handle( 1);
+  b_rb_hdl = get_dataitem_handle( 0);
+  a_vm_hdl = get_dataitem_handle( 1);
 
   std::string propBuf = fagent->propBufAll;
   int PROP_fom = fagent->get_coupling()->get_rocmancontrol_param()->PROP_fom;
   if (!PROP_fom) propBuf = fagent->propBuf;
-  p_rb_hdl     = COM_get_attribute_handle( propBuf+".rb");
-  p_pmesh_hdl  = COM_get_attribute_handle( propBuf+".pmesh");
-  p_vm_hdl     = COM_get_attribute_handle( propBuf+".vm");
-  p_bflag_hdl  = COM_get_attribute_handle( propBuf+".bflag");
-  p_cnstr_type = COM_get_attribute_handle( propBuf+".cnstr_type");
-  p_cflag_hdl  = COM_get_attribute_handle( propBuf+".cflag");
-  p_pos_hdl    = COM_get_attribute_handle( propBuf+".positions");
-  fb_rb_hdl    = COM_get_attribute_handle( fagent->fluidBufB+".rb");
+  p_rb_hdl     = COM_get_dataitem_handle( propBuf+".rb");
+  p_pmesh_hdl  = COM_get_dataitem_handle( propBuf+".pmesh");
+  p_vm_hdl     = COM_get_dataitem_handle( propBuf+".vm");
+  p_bflag_hdl  = COM_get_dataitem_handle( propBuf+".bflag");
+  p_cnstr_type = COM_get_dataitem_handle( propBuf+".cnstr_type");
+  p_cflag_hdl  = COM_get_dataitem_handle( propBuf+".cflag");
+  p_pos_hdl    = COM_get_dataitem_handle( propBuf+".positions");
+  fb_rb_hdl    = COM_get_dataitem_handle( fagent->fluidBufB+".rb");
 
   load_rocprop(fagent->get_coupling()->get_rocmancontrol_param(), fagent->get_communicator());
   load_rocon(fagent->get_coupling()->get_rocmancontrol_param(),fagent->get_communicator());
@@ -667,15 +667,15 @@ MassTransfer::MassTransfer(FluidAgent *fag, BurnAgent *bag,
   atts[2] = f_mdot;
   set_attr(3, atts);
 
-  bagent->register_use_attribute( bagent->iburn_all, ".rhos", bagent->parentWin, ".rhos");
+  bagent->register_use_dataitem( bagent->iburn_all, ".rhos", bagent->parentWin, ".rhos");
 }
 
 void MassTransfer::init( double t) {
-  b_rhos_hdl = get_attribute_handle( 0);
-  b_rb_hdl = get_attribute_handle( 1);
-  f_mdot_hdl = get_attribute_handle( 2);
+  b_rhos_hdl = get_dataitem_handle( 0);
+  b_rb_hdl = get_dataitem_handle( 1);
+  f_mdot_hdl = get_dataitem_handle( 2);
 
-  fb_mdot_hdl = COM_get_attribute_handle( fagent->fluidBufB+".mdot");
+  fb_mdot_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".mdot");
 }
 
 void MassTransfer::run( double t, double dt, double alpha_dummy) {
@@ -709,11 +709,11 @@ ZoomInterface::ZoomInterface(FluidAgent *fag, BurnAgent *bag,
 }
 
 void ZoomInterface::init( double t) {
-  fb_mdot_alp_hdl = get_attribute_handle( 0);
-  rhos_hdl        = COM_get_attribute_handle(bagent->iburn_ng+".rhos");
-  //  b_rb_alp_hdl = COM_get_attribute_handle( bagent->iburn_ng+".rb_alp");
-  b_rb_alp_hdl = COM_get_attribute_handle( bagent->iburn_ng+".rb");
-  fb_rhof_alp_hdl = COM_get_attribute_handle( fagent->fluidBufB+".rhof_alp");
+  fb_mdot_alp_hdl = get_dataitem_handle( 0);
+  rhos_hdl        = COM_get_dataitem_handle(bagent->iburn_ng+".rhos");
+  //  b_rb_alp_hdl = COM_get_dataitem_handle( bagent->iburn_ng+".rb_alp");
+  b_rb_alp_hdl = COM_get_dataitem_handle( bagent->iburn_ng+".rb");
+  fb_rhof_alp_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".rhof_alp");
 }
 
 void ZoomInterface::run( double t, double dt, double alpha_dummy) {
@@ -755,9 +755,9 @@ ComputeRhofvf::ComputeRhofvf(FluidAgent *fag, std::string f_vs_alp, std::string 
 }
 
 void ComputeRhofvf::init( double t) {
-  f_vs_alp_hdl = COM_get_attribute_handle(attr[0]);
-  f_rhof_alp_hdl = COM_get_attribute_handle(attr[1]);
-  f_rhofvf_alp_hdl = COM_get_attribute_handle(attr[2]);
+  f_vs_alp_hdl = COM_get_dataitem_handle(attr[0]);
+  f_rhof_alp_hdl = COM_get_dataitem_handle(attr[1]);
+  f_rhofvf_alp_hdl = COM_get_dataitem_handle(attr[2]);
 }
 
 void ComputeRhofvf::run( double t, double dt, double alpha_dummy) {
@@ -786,13 +786,13 @@ ComputeBurnPane::ComputeBurnPane(FluidAgent *fag, BurnAgent *bag,
 }
 
 void ComputeBurnPane::init( double t) {
-  fb_mdot_alp_hdl = get_attribute_handle( 0);
-  fb_rhofvf_alp_hdl = get_attribute_handle( 1);
+  fb_mdot_alp_hdl = get_dataitem_handle( 0);
+  fb_rhofvf_alp_hdl = get_dataitem_handle( 1);
 
-  b_rb_alp_hdl = COM_get_attribute_handle( bagent->iburn_ng+".rb_alp");
-  fb_rhof_alp_hdl = COM_get_attribute_handle( fagent->fluidBufB+".rhof_alp");
-  fb_nf_alp_hdl = COM_get_attribute_handle( fagent->fluidBufB+".nf_alp");
-  fb_rhofvf_alp_hdl = COM_get_attribute_handle( fagent->fluidBufB+".rhofvf_alp");
+  b_rb_alp_hdl = COM_get_dataitem_handle( bagent->iburn_ng+".rb_alp");
+  fb_rhof_alp_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".rhof_alp");
+  fb_nf_alp_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".nf_alp");
+  fb_rhofvf_alp_hdl = COM_get_dataitem_handle( fagent->fluidBufB+".rhofvf_alp");
 }
 
 void ComputeBurnPane::run( double t, double dt, double alpha_dummy) {
@@ -841,12 +841,12 @@ void CopyBurnFromParentMesh::init( double t) {
 
 void CopyBurnFromParentMesh::run( double t, double dt, double alpha_dummy) {
   MAN_DEBUG(3, ("Rocstar: CopyBurnFromParentMesh::run() with t:%e dt:%e %s %s.\n", t, dt, burn_mesh.c_str(), parent_mesh.c_str()));
-  COM_copy_attribute( burn_mesh.c_str(), parent_mesh.c_str());
+  COM_copy_dataitem( burn_mesh.c_str(), parent_mesh.c_str());
 
 /*
     // ????????
   double v = 0.0;
-  int f_du_alp_hdl = COM_get_attribute_handle(fagent->get_surface_window()+".du_alp");
+  int f_du_alp_hdl = COM_get_dataitem_handle(fagent->get_surface_window()+".du_alp");
   COM_call_function( RocBlas::copy_scalar, &v, &f_du_alp_hdl);
 */
 }
@@ -871,7 +871,7 @@ void CopyBflagFromBurn::run( double t, double dt, double alpha_dummy) {
   
   if (!bagent->get_coupling()->initial_start() && 
       (bagent->ignmodel || t == bagent->get_coupling()->get_control_param()->init_time)) {
-    COM_copy_attribute( parent_bflag.c_str(), burn_bflag.c_str());
+    COM_copy_dataitem( parent_bflag.c_str(), burn_bflag.c_str());
   }
   
 }
@@ -895,9 +895,9 @@ void ComputePconn::init(double t)
 {
   if (cond_addr && *cond_addr == 0) return;
 
-  a_mesh_hdl = get_attribute_handle( 0);
-  a_pconn_hdl = get_attribute_handle( 1);
-  p_pmesh_hdl = get_attribute_handle( 2);
+  a_mesh_hdl = get_dataitem_handle( 0);
+  a_pconn_hdl = get_dataitem_handle( 1);
+  p_pmesh_hdl = get_dataitem_handle( 2);
 
   load_rocmap();
   MAP_compute_pconn = COM_get_function_handle("MAP.compute_pconn");
@@ -921,7 +921,7 @@ void ComputePconn::run( double t, double dt, double alpha_dummy) {
   // ??????????
 /*
   double v = 0.0;
-  int f_du_alp_hdl = COM_get_attribute_handle(fagent->get_surface_window()+".du_alp");
+  int f_du_alp_hdl = COM_get_dataitem_handle(fagent->get_surface_window()+".du_alp");
   COM_call_function( RocBlas::copy_scalar, &v, &f_du_alp_hdl);
 
   double a = 0.0;
@@ -948,8 +948,8 @@ SolidPropagateSurface_ALE::SolidPropagateSurface_ALE(SolidAgent *fag,
   set_attr(2, atts);
 
 /*
-  fagent->register_new_attribute( fagent->propBufAll, ".vm", 'n', COM_DOUBLE, 3, "m/s");
-  fagent->register_new_attribute( fagent->propBufAll, ".rb", 'e', COM_DOUBLE, 1, "m/s");
+  fagent->register_new_dataitem( fagent->propBufAll, ".vm", 'n', COM_DOUBLE, 3, "m/s");
+  fagent->register_new_dataitem( fagent->propBufAll, ".rb", 'e', COM_DOUBLE, 1, "m/s");
 */
 }
 
@@ -957,18 +957,18 @@ void SolidPropagateSurface_ALE::init( double t) {
 
   if (sagent->withALE == 0) return;
 
-  p_rb_hdl = get_attribute_handle( 0);
-  a_vbar_hdl = get_attribute_handle( 1);
+  p_rb_hdl = get_dataitem_handle( 0);
+  a_vbar_hdl = get_dataitem_handle( 1);
 
   std::string propBuf = sagent->propBufAll;
   int PROP_fom = sagent->get_coupling()->get_rocmancontrol_param()->PROP_fom;
   if (!PROP_fom) propBuf = sagent->propBuf;
-  p_vbar_hdl = COM_get_attribute_handle( propBuf+".vbar");
-  p_pmesh_hdl = COM_get_attribute_handle( propBuf+".pmesh");
-  p_vm_hdl = COM_get_attribute_handle( propBuf+".vm");
-  p_cnstr_hdl  = COM_get_attribute_handle( propBuf+".cflag");
-  p_pos_hdl    = COM_get_attribute_handle( propBuf+".positions");
-  //p_cnstr_type = COM_get_attribute_handle( propBuf+".cnstr_type");
+  p_vbar_hdl = COM_get_dataitem_handle( propBuf+".vbar");
+  p_pmesh_hdl = COM_get_dataitem_handle( propBuf+".pmesh");
+  p_vm_hdl = COM_get_dataitem_handle( propBuf+".vm");
+  p_cnstr_hdl  = COM_get_dataitem_handle( propBuf+".cflag");
+  p_pos_hdl    = COM_get_dataitem_handle( propBuf+".positions");
+  //p_cnstr_type = COM_get_dataitem_handle( propBuf+".cnstr_type");
 
   load_rocprop(sagent->get_coupling()->get_rocmancontrol_param(), sagent->get_communicator());
   load_rocon(sagent->get_coupling()->get_rocmancontrol_param(), sagent->get_communicator());
@@ -1025,9 +1025,9 @@ Reset_du_alp::Reset_du_alp( FluidAgent *fag) :
   set_attr(0, (const char**)NULL);
 }
 
-// Obtain the attribute handles
+// Obtain the dataitem handles
 void Reset_du_alp::init( double t) {
-  du_alp_hdl = COM_get_attribute_handle( fagent->get_surface_window()+".du_alp");
+  du_alp_hdl = COM_get_dataitem_handle( fagent->get_surface_window()+".du_alp");
 }
 
 void Reset_du_alp::run( double t, double dt, double alpha) {

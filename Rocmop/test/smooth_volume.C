@@ -22,7 +22,7 @@
  *********************************************************************/
 // $Id: smooth_volume.C,v 1.8 2008/12/06 08:45:25 mtcampbe Exp $
 
-#include "roccom.h"
+#include "com.h"
 #include "mapbasic.h"
 #include "Rocblas.h"
 #include <iostream>
@@ -33,11 +33,11 @@
 using namespace std;
 
 // Necessary for handling modules in static or dynamic fashion
-COM_EXTERN_MODULE( Rocin);
-COM_EXTERN_MODULE( Rocout);
+COM_EXTERN_MODULE( SimIN);
+COM_EXTERN_MODULE( SimOUT);
 COM_EXTERN_MODULE( Rocmop);
-COM_EXTERN_MODULE( Rocmap);
-COM_EXTERN_MODULE( Roblas);
+COM_EXTERN_MODULE( SurfMap);
+COM_EXTERN_MODULE( Simpal);
 
 // Get the MPI rank of the process
 int get_comm_rank( MPI_Comm comm) {
@@ -76,15 +76,15 @@ int main(int argc, char *argv[]) {
   COM_init( &argc, &argv);
 
   // LOAD MODULES
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocout, "OUT");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SimIN, "IN");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SimOUT, "OUT");
   COM_LOAD_MODULE_STATIC_DYNAMIC( Rocmop, "MOP");
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocmap, "MAP");
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocblas, "BLAS");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SurfMap, "MAP");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( Simpal, "BLAS");
 
   // GET FUNCTION HANDLES
-  int OUT_write = COM_get_function_handle( "OUT.write_attribute");
-  int OUT_add = COM_get_function_handle( "OUT.add_attribute");
+  int OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+  int OUT_add = COM_get_function_handle( "OUT.add_dataitem");
   int IN_read = COM_get_function_handle( "IN.read_by_control_file");
   int MOP_init = COM_get_function_handle( "MOP.initialize");
   int MOP_det = COM_get_function_handle( "MOP.determine_physical_border");
@@ -109,7 +109,7 @@ int main(int argc, char *argv[]) {
 		     wname.c_str(),
 		     &comm);
 
-  COM_new_attribute((wname+".disp").c_str(),'n',COM_DOUBLE,3,"m");
+  COM_new_dataitem((wname+".disp").c_str(),'n',COM_DOUBLE,3,"m");
   COM_resize_array((wname+".disp").c_str(),0,NULL,3);
   COM_window_init_done(wname.c_str());
 
@@ -122,10 +122,10 @@ int main(int argc, char *argv[]) {
   COM_call_function(MOP_set, "verbose", &verb);
   COM_call_function(MOP_set, "inverted", &invert_tets);
 
-  int VOL_pmesh = COM_get_attribute_handle((wname+".pmesh").c_str());
-  int VOL_disp = COM_get_attribute_handle((wname+".disp").c_str());
-  int VOL_nc = COM_get_attribute_handle((wname+".nc").c_str());
-  int VOL_all = COM_get_attribute_handle((wname+".all").c_str());
+  int VOL_pmesh = COM_get_dataitem_handle((wname+".pmesh").c_str());
+  int VOL_disp = COM_get_dataitem_handle((wname+".disp").c_str());
+  int VOL_nc = COM_get_dataitem_handle((wname+".nc").c_str());
+  int VOL_all = COM_get_dataitem_handle((wname+".all").c_str());
   string MyString = "00";
 
   niter++;

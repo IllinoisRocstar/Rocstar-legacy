@@ -64,7 +64,7 @@ CONTAINS
 
     IMPLICIT NONE
     INCLUDE 'mpif.h'
-    INCLUDE 'roccomf90.h'
+    INCLUDE 'comf90.h'
     TYPE(ROCFRAC_GLOBAL) :: glb
     INTEGER :: MyId, NumProcs, Ierror
     CHARACTER(*), INTENT(IN)      :: surfIn
@@ -100,28 +100,28 @@ CONTAINS
     CALL COM_new_window(surWin)
 
 ! fix, should not this be allocated NumMaterials instead of 1 for more then one material
-    CALL COM_new_attribute(surWin//'.rhos', 'w', COM_DOUBLE, 1, 'kg/m^3')
+    CALL COM_new_dataitem(surWin//'.rhos', 'w', COM_DOUBLE, 1, 'kg/m^3')
     CALL COM_set_array( surWin//'.rhos', 0, glb%rho,1 )
 
-    CALL COM_new_attribute(surWin//'.u', 'n', COM_DOUBLE, 3, 'm')
-    CALL COM_new_attribute(surWin//'.vs', 'n', COM_DOUBLE, 3, 'm/s')
-    CALL COM_new_attribute(surWin//'.uhat', 'n', COM_DOUBLE, 3, 'm')
+    CALL COM_new_dataitem(surWin//'.u', 'n', COM_DOUBLE, 3, 'm')
+    CALL COM_new_dataitem(surWin//'.vs', 'n', COM_DOUBLE, 3, 'm/s')
+    CALL COM_new_dataitem(surWin//'.uhat', 'n', COM_DOUBLE, 3, 'm')
 
 
-    CALL COM_new_attribute(surWin//'.ts_alp', 'e', COM_DOUBLE, 1, 'Pa')
-    CALL COM_new_attribute(surWin//'.bv','n',COM_INTEGER, 1, '')
-    CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
-    CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+    CALL COM_new_dataitem(surWin//'.ts_alp', 'e', COM_DOUBLE, 1, 'Pa')
+    CALL COM_new_dataitem(surWin//'.bv','n',COM_INTEGER, 1, '')
+    CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+    CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
 
     IF (glb%HeatTransSoln.eqv..true.) THEN
-       CALL COM_new_attribute(surWin//'.qs', 'e', COM_DOUBLE, 1, 'W/m^2')
-       CALL COM_new_attribute(surWin//'.Ts', 'n', COM_DOUBLE, 1, 'K')
+       CALL COM_new_dataitem(surWin//'.qs', 'e', COM_DOUBLE, 1, 'W/m^2')
+       CALL COM_new_dataitem(surWin//'.Ts', 'n', COM_DOUBLE, 1, 'K')
     ENDIF
        
-!!$ #OLD   CALL COM_new_attribute(surWin//'.ts_alp', 'e', & 
+!!$ #OLD   CALL COM_new_dataitem(surWin//'.ts_alp', 'e', & 
 !!$ #OLD        COM_DOUBLE_PRECISION, 3, 'Pa')
 
-    IF ( glb%ALEenabled .eqv. .true.) CALL COM_new_attribute( surWin//'.vbar_alp', 'n', COM_DOUBLE, 3, 'm/s')
+    IF ( glb%ALEenabled .eqv. .true.) CALL COM_new_dataitem( surWin//'.vbar_alp', 'n', COM_DOUBLE, 3, 'm/s')
 
     CALL COM_get_panes( surfIn, npanes, paneIDs)
 
@@ -145,7 +145,7 @@ CONTAINS
           
           startPt = 1
           DO i = 1, NumElTypes2D
-             ! Search for the next attribute name
+             ! Search for the next dataitem name
              endPt = startPt
              chrlngth = 0
              DO WHILE (endPt .LE. UBOUND(names,1))
@@ -283,7 +283,7 @@ CONTAINS
           CALL COM_get_connectivities(surfIn,pane,NumElTypes2D,names)
           startPt = 1
           DO i = 1, NumElTypes2D
-      ! Search for the next attribute name
+      ! Search for the next dataitem name
              endPt = startPt
              chrlngth = 0
              DO WHILE (endPt .LE. UBOUND(names,1))
@@ -385,7 +385,7 @@ CONTAINS
           
           startPt = 1
           DO i = 1, NumElTypes2D
-             ! Search for the next attribute name
+             ! Search for the next dataitem name
              endPt = startPt
              chrlngth = 0
              DO WHILE (endPt .LE. UBOUND(names,1))
@@ -519,7 +519,7 @@ CONTAINS
 !!$    ENDIF
 
 ! No longer needed
-!!$    CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+!!$    CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
 !!$    CALL COM_allocate_array( surWin//'.bcflag', MyId+1)
 !!$
 !!$    stop
@@ -548,8 +548,8 @@ CONTAINS
     CALL COM_free_buffer(paneIDs)  
 
     CALL COM_call_function( obtain_attr, 2, &
-         COM_get_attribute_handle_const( surfIn//".all"), &
-         COM_get_attribute_handle( surWin//".all"))
+         COM_get_dataitem_handle_const( surfIn//".all"), &
+         COM_get_dataitem_handle( surWin//".all"))
 
     CALL MPI_BARRIER(glb%MPI_COMM_ROCFRAC,i)
     IF(myid.eq.0 .AND. glb%debug_state) THEN
@@ -625,7 +625,7 @@ CONTAINS
 
     IMPLICIT NONE
 
-    INCLUDE 'roccomf90.h'
+    INCLUDE 'comf90.h'
     INCLUDE 'mpif.h'
 
     INTEGER :: myid
@@ -669,10 +669,10 @@ CONTAINS
     fname2 = 'Rocfrac/Rocin/B_'//ichr3//'_sdv.hdf'
 
 
-    CALL Rocin_load_module( "SDV_IN")
+    CALL SimIN_load_module( "SDV_IN")
 
     hdl_read   = COM_get_function_handle( 'SDV_IN.read_windows')
-    hdl_obtain = COM_get_function_handle( 'SDV_IN.obtain_attribute')
+    hdl_obtain = COM_get_function_handle( 'SDV_IN.obtain_dataitem')
 
 
 
@@ -688,7 +688,7 @@ CONTAINS
     comm_self = MPI_COMM_SELF
     CALL COM_call_function( hdl_read, 4, fname1, OverlayWin, &
          sdv_material, comm_self)
-    hdl_all = COM_get_attribute_handle( sdv_wname//".all")
+    hdl_all = COM_get_dataitem_handle( sdv_wname//".all")
     CALL COM_call_function( hdl_obtain, 3, hdl_all, hdl_all, pid)
 !  // Obtain number of sub-nodes, sub-faces, nodes, and faces
   
@@ -789,7 +789,7 @@ CONTAINS
     comm_self = MPI_COMM_SELF
     CALL COM_call_function( hdl_read, 4, fname2, OverlayWin, &
          sdv_material, comm_self)
-    hdl_all = COM_get_attribute_handle( sdv_wname//".all")
+    hdl_all = COM_get_dataitem_handle( sdv_wname//".all")
     CALL COM_call_function( hdl_obtain, 3, hdl_all, hdl_all, pid)
     CALL COM_get_size( sdv_wname//'.sn_parent_fcID', pid, glb%nsubn2)
     
@@ -871,13 +871,13 @@ CONTAINS
 
 ! // Unload Rocin from Roccom.
 
-  CALL Rocin_unload_module( "SDV_IN")
+  CALL SimIN_unload_module( "SDV_IN")
 
 
 
-!  CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+!  CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
 !  CALL COM_allocate_array(surWin//'.bf2c', iNI, ElFlag_List, 1)
-!  CALL COM_new_attribute( surWin//'.faceOnCell', 'e', COM_INTEGER, 1, '')
+!  CALL COM_new_dataitem( surWin//'.faceOnCell', 'e', COM_INTEGER, 1, '')
 !  CALL COM_allocate_array(surWin//'.faceOnCell', iNI, FaceOnCell, 1)
   
 

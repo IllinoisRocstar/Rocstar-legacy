@@ -23,7 +23,7 @@ find_library(METIS_LIB metis)
 find_path(METIS_INC metis.h)
 
 #INCLUDE(CTest)
-find_path(ROCCOM_INC roccom.h HINTS ../../Roccom/include) 
+find_path(ROCCOM_INC com.h HINTS ../../IMPACT/COM/include) 
 find_path(ROCMAN_INC rocman.h HINTS ../../Rocman/include)
 
 FILE (GLOB LIBFRAC_SRCS Source/*.f90)
@@ -49,10 +49,10 @@ ELSE()
   add_library(Rocfrac STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
 ENDIF()
-target_link_libraries(Rocfrac Rocout Rocin Roccomf Roccom)
+target_link_libraries(Rocfrac SimOUT SimIN SITCOMF SITCOM)
 
 ADD_EXECUTABLE(rfracprep ${PREP_SRCS})
 set_property(TARGET rfracprep PROPERTY LINKER_LANGUAGE Fortran)
-TARGET_LINK_LIBRARIES(rfracprep Rocout Rocin Roccomf Roccom ${METIS_LIB})
+TARGET_LINK_LIBRARIES(rfracprep SimOUT SimIN SITCOMF SITCOM ${METIS_LIB})
 
 INSTALL(TARGETS Rocfrac rfracprep RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)

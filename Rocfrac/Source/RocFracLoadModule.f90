@@ -55,7 +55,7 @@ SUBROUTINE Rocfrac_load_module( module_name)
   USE RocFracSubInterface
   USE IntegralCheck
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
   INCLUDE 'rocmanf90.h'
     
   CHARACTER(*), INTENT(IN) :: module_name
@@ -81,7 +81,7 @@ SUBROUTINE Rocfrac_load_module( module_name)
     
   CALL COM_new_window( module_name)
   
-  CALL COM_new_attribute( module_name//".global", 'w', COM_F90POINTER, 1, '')
+  CALL COM_new_dataitem( module_name//".global", 'w', COM_F90POINTER, 1, '')
   CALL COM_resize_array( module_name//".global")
   
   types(1) = COM_F90POINTER
@@ -126,7 +126,7 @@ END SUBROUTINE Rocfrac_load_module
 SUBROUTINE Rocfrac_unload_module( module_name) 
   USE ROCSTAR_RocFrac
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
   CHARACTER(*), INTENT(IN) :: module_name
 

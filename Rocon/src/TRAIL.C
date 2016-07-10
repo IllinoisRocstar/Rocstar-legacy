@@ -45,14 +45,14 @@
 #include "TRAIL.H"
 
 //#ifdef _ROCSTAR_X_
-#include "roccom.h"
+#include "com.h"
 //#endif
 
-COM_EXTERN_MODULE( Rocface);
-COM_EXTERN_MODULE( Rocout);
-COM_EXTERN_MODULE( Rocin);
-COM_EXTERN_MODULE( Rocblas);
-COM_EXTERN_MODULE( Rocsurf);
+COM_EXTERN_MODULE( SurfX);
+COM_EXTERN_MODULE( SimOUT);
+COM_EXTERN_MODULE( SimIN);
+COM_EXTERN_MODULE( Simpal);
+COM_EXTERN_MODULE( SurfUtil);
 COM_EXTERN_MODULE( Rocmop);
 COM_EXTERN_MODULE( Rocprop);
 
@@ -598,21 +598,21 @@ TRAIL_FD2FE_WinCreate(const std::string &wname,const std::string &outwname,std::
   bool window_created = false;
   if(!window_created){
     COM_new_window(wname2.c_str());
-    COM_new_attribute((wname2+".local_extent").c_str(), 'p',COM_INTEGER,6,"");
-    COM_new_attribute((wname2+".global_extent").c_str(),'p',COM_INTEGER,6,"");
-    COM_new_attribute((wname2+".send_extent").c_str(),  'p',COM_INTEGER,6,"");
-    COM_new_attribute((wname2+".send_panes").c_str(),   'p',COM_INTEGER,1,"");
-    COM_new_attribute((wname2+".recv_panes").c_str(),   'p',COM_INTEGER,1,"");
-    COM_new_attribute((wname2+".recv_extent").c_str(),  'p',COM_INTEGER,6,"");
-    //    COM_new_attribute((wname2+".sister_pane").c_str(),  'p',COM_INTEGER,1,"");
-    COM_new_attribute((wname2+".block_id").c_str(),     'p',COM_INTEGER,1,"");
-    COM_new_attribute((wname2+".patch_id").c_str(),     'p',COM_INTEGER,1,"");
+    COM_new_dataitem((wname2+".local_extent").c_str(), 'p',COM_INTEGER,6,"");
+    COM_new_dataitem((wname2+".global_extent").c_str(),'p',COM_INTEGER,6,"");
+    COM_new_dataitem((wname2+".send_extent").c_str(),  'p',COM_INTEGER,6,"");
+    COM_new_dataitem((wname2+".send_panes").c_str(),   'p',COM_INTEGER,1,"");
+    COM_new_dataitem((wname2+".recv_panes").c_str(),   'p',COM_INTEGER,1,"");
+    COM_new_dataitem((wname2+".recv_extent").c_str(),  'p',COM_INTEGER,6,"");
+    //    COM_new_dataitem((wname2+".sister_pane").c_str(),  'p',COM_INTEGER,1,"");
+    COM_new_dataitem((wname2+".block_id").c_str(),     'p',COM_INTEGER,1,"");
+    COM_new_dataitem((wname2+".patch_id").c_str(),     'p',COM_INTEGER,1,"");
     window_created = true;
-    COM_new_attribute((wname+".send_extent").c_str(),   'p',COM_INTEGER,6,"");
-    COM_new_attribute((wname+".send_panes").c_str(),    'p',COM_INTEGER,1,"");
-    COM_new_attribute((wname+".recv_extent").c_str(),   'p',COM_INTEGER,6,"");
-    COM_new_attribute((wname+".recv_panes").c_str(),    'p',COM_INTEGER,1,"");
-    //   COM_new_attribute((wname+".sister_pane").c_str(),   'p',COM_INTEGER,1,"");
+    COM_new_dataitem((wname+".send_extent").c_str(),   'p',COM_INTEGER,6,"");
+    COM_new_dataitem((wname+".send_panes").c_str(),    'p',COM_INTEGER,1,"");
+    COM_new_dataitem((wname+".recv_extent").c_str(),   'p',COM_INTEGER,6,"");
+    COM_new_dataitem((wname+".recv_panes").c_str(),    'p',COM_INTEGER,1,"");
+    //   COM_new_dataitem((wname+".sister_pane").c_str(),   'p',COM_INTEGER,1,"");
   }
   while(bii != global_blocks.end()){
     int block_id = *bii++;
@@ -958,7 +958,7 @@ int TRAIL_Att2Vec(const std::string &att,int pane_id,std::vector<T> &dest)
   int insize = 0;
   COM_Type type;
   char loc;
-  COM_get_attribute(att.c_str(),&loc,&type,&ncomp,&unit);
+  COM_get_dataitem(att.c_str(),&loc,&type,&ncomp,&unit);
   COM_get_size(att.c_str(),pane_id,&insize);
   COM_get_array(att.c_str(),pane_id,&ptr);
   if(!ptr)
@@ -996,7 +996,7 @@ TRAIL_FE2FD_Transfer(const std::string &fewin,const std::string &fdwin,
     std::string attstr = fewin+"."+*atti++;
     if(ouf)
       *ouf << "FE2FD: Reducing " << attstr << std::endl;
-    int att_hndl = COM_get_attribute_handle(attstr);
+    int att_hndl = COM_get_dataitem_handle(attstr);
     int att_color = 0;
     if(att_hndl >= 0)
       att_color = 1;
@@ -1005,10 +1005,10 @@ TRAIL_FE2FD_Transfer(const std::string &fewin,const std::string &fdwin,
     if(att_color == 1){
       MPI_Comm ocomm = COM_get_default_communicator();
       COM_set_default_communicator(AttComm.GetCommunicator());
-      COM_LOAD_MODULE_STATIC_DYNAMIC(Rocmap,"MAP");
+      COM_LOAD_MODULE_STATIC_DYNAMIC(SurfMap,"MAP");
       int mean_over_shared_nodes = COM_get_function_handle("MAP.reduce_average_on_shared_nodes");
       COM_call_function(mean_over_shared_nodes,&att_hndl);
-      COM_UNLOAD_MODULE_STATIC_DYNAMIC(Rocmap,"MAP");
+      COM_UNLOAD_MODULE_STATIC_DYNAMIC(SurfMap,"MAP");
       COM_set_default_communicator(ocomm);
       if(ouf)
 	*ouf << "FE2FD: Reduced " << attstr << std::endl;
@@ -1114,7 +1114,7 @@ TRAIL_FE2FD_Transfer(const std::string &fewin,const std::string &fdwin,
 	    char loc;
 	    COM_Type type;
 	    std::string unit;
-	    COM_get_attribute((fewin+"."+att).c_str(),&loc,&type,&ncomp,&unit);
+	    COM_get_dataitem((fewin+"."+att).c_str(),&loc,&type,&ncomp,&unit);
 	    asizes[attindex++] = COM_get_sizeof(type,ncomp);
 	  }
 	  if(ouf)
@@ -1164,13 +1164,13 @@ TRAIL_Add_Attributes(const std::string &srcwin,
     std::string satt = srcwin+"."+att;
     // First, make sure the destination attribute exists, if not then create and size it
     {
-      if(COM_get_attribute_handle(tatt) <= 0){
+      if(COM_get_dataitem_handle(tatt) <= 0){
 	int ncomp = 0;
 	char loc;
 	COM_Type type;
 	std::string unit;
-	COM_get_attribute(satt,&loc,&type,&ncomp,&unit);
-	COM_new_attribute(tatt,loc,type,ncomp,unit.c_str());
+	COM_get_dataitem(satt,&loc,&type,&ncomp,&unit);
+	COM_new_dataitem(tatt,loc,type,ncomp,unit.c_str());
 	//	COM_window_init_done(destwin,0);
       }
     }
@@ -1358,7 +1358,7 @@ TRAIL_FD2FE_Transfer(const std::string &srcwin,const std::string &destwin,
 		  std::string unit;
 		  if(ouf && !rank)
 		    *ouf << "TRAIL: Processing attribute " << att << std::endl;
-		  COM_get_attribute((srcwin+"."+att).c_str(),&loc,&type,&ncomp,&unit);
+		  COM_get_dataitem((srcwin+"."+att).c_str(),&loc,&type,&ncomp,&unit);
 		  asizes[attindex] = COM_get_sizeof(type,ncomp);
 		  bsize += asizes[attindex++];
 		}
@@ -1514,15 +1514,15 @@ TRAIL_FD2FE_Transfer(const std::string &srcwin,const std::string &destwin,
 		    std::string satt = srcwin+"."+att;
 		    // First, make sure the destination attribute exists, if not then create and size it
 		    //		    {
-		    if(COM_get_attribute_handle(tatt) <= 0){
+		    if(COM_get_dataitem_handle(tatt) <= 0){
 		      if(ouf && !rank)
 			*ouf << "TRAIL: " << tatt << " did not exist." << std::endl;
 		      int ncomp = 0;
 		      char loc;
 		      COM_Type type;
 		      std::string unit;
-		      COM_get_attribute(satt,&loc,&type,&ncomp,&unit);
-		      COM_new_attribute(tatt,loc,type,ncomp,unit.c_str());
+		      COM_get_dataitem(satt,&loc,&type,&ncomp,&unit);
+		      COM_new_dataitem(tatt,loc,type,ncomp,unit.c_str());
 		      //		  COM_set_size(tatt,pane_id,UnsExtent.NNodes());
 		      COM_resize_array(tatt,pane_id);
 		      if(ouf && !rank)
@@ -1683,23 +1683,23 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
   //  std::vector<int>::iterator bii = global_blocks.begin();
   std::string wname2 = outwname; // wname+"_uns";
   COM_new_window(wname2.c_str());
-  COM_new_attribute((wname2+".local_extent").c_str(),  'p',COM_INTEGER,6,"");
-  COM_new_attribute((wname2+".global_extent").c_str(), 'p',COM_INTEGER,6,"");
-  COM_new_attribute((wname2+".shared_extents").c_str(),'p',COM_INTEGER,6,"");
-  COM_new_attribute((wname2+".shared_panes").c_str(),  'p',COM_INTEGER,1,"");
-  COM_new_attribute((wname2+".bcflag").c_str(),        'p',COM_INTEGER,1,"");
-  //  COM_new_attribute((wname2+".send_extent").c_str(),  'p',COM_INTEGER,6,"");
-  //  COM_new_attribute((wname2+".send_panes").c_str(),   'p',COM_INTEGER,1,"");
-  //  COM_new_attribute((wname2+".recv_panes").c_str(),   'p',COM_INTEGER,1,"");
-  //  COM_new_attribute((wname2+".recv_extent").c_str(),  'p',COM_INTEGER,6,"");
-  COM_new_attribute((wname2+".block_id").c_str(),     'p',COM_INTEGER,1,"");
-  COM_new_attribute((wname2+".patch_id").c_str(),     'p',COM_INTEGER,1,"");
+  COM_new_dataitem((wname2+".local_extent").c_str(),  'p',COM_INTEGER,6,"");
+  COM_new_dataitem((wname2+".global_extent").c_str(), 'p',COM_INTEGER,6,"");
+  COM_new_dataitem((wname2+".shared_extents").c_str(),'p',COM_INTEGER,6,"");
+  COM_new_dataitem((wname2+".shared_panes").c_str(),  'p',COM_INTEGER,1,"");
+  COM_new_dataitem((wname2+".bcflag").c_str(),        'p',COM_INTEGER,1,"");
+  //  COM_new_dataitem((wname2+".send_extent").c_str(),  'p',COM_INTEGER,6,"");
+  //  COM_new_dataitem((wname2+".send_panes").c_str(),   'p',COM_INTEGER,1,"");
+  //  COM_new_dataitem((wname2+".recv_panes").c_str(),   'p',COM_INTEGER,1,"");
+  //  COM_new_dataitem((wname2+".recv_extent").c_str(),  'p',COM_INTEGER,6,"");
+  COM_new_dataitem((wname2+".block_id").c_str(),     'p',COM_INTEGER,1,"");
+  COM_new_dataitem((wname2+".patch_id").c_str(),     'p',COM_INTEGER,1,"");
   //  int bcflag = 1;
   //  COM_set_array((wname2+".bcflag").c_str()),
-  //  COM_new_attribute((wname+".send_extent").c_str(),   'p',COM_INTEGER,6,"");
-  //  COM_new_attribute((wname+".send_panes").c_str(),    'p',COM_INTEGER,1,"");
-  //  COM_new_attribute((wname+".recv_extent").c_str(),   'p',COM_INTEGER,6,"");
-  //  COM_new_attribute((wname+".recv_panes").c_str(),    'p',COM_INTEGER,1,"");
+  //  COM_new_dataitem((wname+".send_extent").c_str(),   'p',COM_INTEGER,6,"");
+  //  COM_new_dataitem((wname+".send_panes").c_str(),    'p',COM_INTEGER,1,"");
+  //  COM_new_dataitem((wname+".recv_extent").c_str(),   'p',COM_INTEGER,6,"");
+  //  COM_new_dataitem((wname+".recv_panes").c_str(),    'p',COM_INTEGER,1,"");
 
   // Loop through the global block ids on all processors
   std::vector<int>::iterator bii = global_blocks.begin();
@@ -1911,7 +1911,7 @@ TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std:
 	  conn.Sync();
 	  conn.SyncSizes();
 	  bool flip = false;
-	  int flip_hndl = COM_get_attribute_handle((wname+".flip").c_str());
+	  int flip_hndl = COM_get_dataitem_handle((wname+".flip").c_str());
 	  if(flip_hndl > 0){
 	    int *flip_ptr = NULL;
 	    COM_get_array((wname+".flip").c_str(),patch_pane[0],&flip_ptr);
@@ -2228,7 +2228,7 @@ void TRAIL_Window2UnstructuredMesh(const std::string &wname,std::vector<Mesh::Un
 // Read the HDF file fname into the window wname
 void TRAIL_HDF2Window( const std::string &fname, const std::string &wname,int verb) {
   COM_new_window( wname.c_str());
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SimIN, "IN");
   int IN_read;
   IN_read = COM_get_function_handle( "IN.read_window");
   MPI_Comm comm_null = MPI_COMM_NULL;
@@ -2239,17 +2239,17 @@ void TRAIL_HDF2Window( const std::string &fname, const std::string &wname,int ve
   if(verb)
     std::cout << "Done reading file " << fname << "." << std::endl;
   int IN_obtain = COM_get_function_handle( "IN.obtain_attribute");
-  int buf_all = COM_get_attribute_handle((bufwin+".all").c_str());
+  int buf_all = COM_get_dataitem_handle((bufwin+".all").c_str());
   COM_call_function( IN_obtain, &buf_all, &buf_all);
-  COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
+  COM_UNLOAD_MODULE_STATIC_DYNAMIC( SimIN, "IN");
   if(verb)
     std::cout << "Obtained temp window from file " << fname
 	      << ", cloning.." << std::endl;
   COM_window_init_done(bufwin.c_str());
   // Change the memory layout to contiguous
-  COM_clone_attribute( (wname+".all").c_str(), (bufwin+".all").c_str(), 1);
+  COM_clone_dataitem( (wname+".all").c_str(), (bufwin+".all").c_str(), 1);
   COM_window_init_done(wname.c_str());
-  COM_delete_attribute((bufwin+".atts").c_str());
+  COM_delete_dataitem((bufwin+".atts").c_str());
   COM_delete_window( bufwin.c_str());
   if(verb)
     std::cout << "Window " << wname << " created." << std::endl;
@@ -2261,7 +2261,7 @@ TRAIL_GetWindowSolnMetaData(const std::string &wname,std::vector<SolnMetaData> &
 {
   int na = 0;
   std::string atts;
-  COM_get_attributes(wname.c_str(),&na,atts);
+  COM_get_dataitems(wname.c_str(),&na,atts);
   int count = 0;
   if(na > 0){
     std::istringstream Istr(atts);
@@ -2272,7 +2272,7 @@ TRAIL_GetWindowSolnMetaData(const std::string &wname,std::vector<SolnMetaData> &
       int ncomp;
       COM_Type ta;
       std::string unit;
-      COM_get_attribute(rstring.c_str(),&loc,&ta,&ncomp,&unit);
+      COM_get_dataitem(rstring.c_str(),&loc,&ta,&ncomp,&unit);
       if( (loc == 'E' || loc == 'e' || loc == 'n' || loc == 'N') && ta == COM_DOUBLE)
       	count++;
     }
@@ -2288,7 +2288,7 @@ TRAIL_GetWindowSolnMetaData(const std::string &wname,std::vector<SolnMetaData> &
       int ncomp;
       COM_Type ta;
       std::string unit;
-      COM_get_attribute(rstring.c_str(),&loc,&ta,&ncomp,&unit);
+      COM_get_dataitem(rstring.c_str(),&loc,&ta,&ncomp,&unit);
       if( (loc == 'E' || loc == 'e' || loc == 'n' || loc == 'N') && ta == COM_DOUBLE) {
 					//	SolnMetaData smd;
 					smdv[count].loc   = loc;
@@ -2310,7 +2310,7 @@ void TRAIL_GetWindowSolnData(const std::string &wname,
 
 	int nAttrs;
 	char *attrStr;
-	COM_get_attributes(wname.c_str(), &nAttrs, &attrStr);
+	COM_get_dataitems(wname.c_str(), &nAttrs, &attrStr);
 	std::cout << "Number of attributes: " << nAttrs  << std::endl;
 	std::cout << "Attribute string: " 		<< attrStr << std::endl;
 
@@ -2398,18 +2398,18 @@ TRAIL_File2Window( const std::string &fname,
 {
 
   COM_new_window( wname.c_str());
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocin, "TRAILIN");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SimIN, "TRAILIN");
   int IN_read;
   IN_read = COM_get_function_handle( "TRAILIN.read_by_control_file");
 
 
   std::string bufwin("bufwin");
   COM_call_function( IN_read, fname.c_str(), bufwin.c_str(), &comm);
-  int IN_obtain = COM_get_function_handle( "TRAILIN.obtain_attribute");
+  int IN_obtain = COM_get_function_handle( "TRAILIN.obtain_dataitem");
 
   // If bcflags specified, keep only panes with matching bcflags
   if(!bcflags.empty()){
-    int bcflag = COM_get_attribute_handle((bufwin+".bcflag").c_str());
+    int bcflag = COM_get_dataitem_handle((bufwin+".bcflag").c_str());
     if (bcflag > 0) {
       COM_call_function( IN_obtain, &bcflag, &bcflag);
       int npanes, *pane_ids;
@@ -2434,36 +2434,36 @@ TRAIL_File2Window( const std::string &fname,
   }
   if(apply_disp){
     // This is NOT correct for problems with regression.
-    int disp_hndl = COM_get_attribute_handle((bufwin+".uhat").c_str());
+    int disp_hndl = COM_get_dataitem_handle((bufwin+".uhat").c_str());
     if(disp_hndl > 0){
       COM_call_function( IN_obtain, &disp_hndl, &disp_hndl);
-      COM_LOAD_MODULE_STATIC_DYNAMIC( Rocblas, "BLAS");
+      COM_LOAD_MODULE_STATIC_DYNAMIC( Simpal, "BLAS");
       int add = COM_get_function_handle( "BLAS.add");
       COM_call_function(IN_obtain,&disp_hndl,&disp_hndl);
-      int nc_hndl = COM_get_attribute_handle( bufwin + ".nc");
+      int nc_hndl = COM_get_dataitem_handle( bufwin + ".nc");
       COM_call_function( add, &disp_hndl, &nc_hndl, &nc_hndl);
-      COM_UNLOAD_MODULE_STATIC_DYNAMIC(Rocblas,"BLAS");
+      COM_UNLOAD_MODULE_STATIC_DYNAMIC(Simpal,"BLAS");
     }
   }
   // Read in the mesh.
   int buf_atts;
   if(all)
-    buf_atts = COM_get_attribute_handle((bufwin+".all").c_str());
+    buf_atts = COM_get_dataitem_handle((bufwin+".all").c_str());
   else
-    buf_atts = COM_get_attribute_handle((bufwin+".mesh").c_str());
+    buf_atts = COM_get_dataitem_handle((bufwin+".mesh").c_str());
   COM_call_function( IN_obtain, &buf_atts, &buf_atts);
-  COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocin, "TRAILIN");
+  COM_UNLOAD_MODULE_STATIC_DYNAMIC( SimIN, "TRAILIN");
 
   if(!all)
     // Remove all attributes except for the mesh
-    COM_delete_attribute(  (bufwin+".atts").c_str());
+    COM_delete_dataitem(  (bufwin+".atts").c_str());
 
   // Change the memory layout to contiguous.
   if(all)
-    COM_clone_attribute( (wname+".all").c_str(),
+    COM_clone_dataitem( (wname+".all").c_str(),
 			 (bufwin+".all").c_str(), (with_ghost ? 1 : 0));
   else
-    COM_clone_attribute( (wname+".mesh").c_str(),
+    COM_clone_dataitem( (wname+".mesh").c_str(),
 			 (bufwin+".mesh").c_str(), (with_ghost ? 1 : 0));
 
   COM_delete_window( bufwin.c_str());
@@ -2553,7 +2553,7 @@ TRAIL_AutoSurfer(const std::string &src, const std::string &trg,
   std::string homedir(TRAIL_CWD());
   std::string format("HDF");
   std::string newpath;
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocface, "RFC");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SurfX, "RFC");
   int RFC_overlay = COM_get_function_handle( "RFC.overlay");
   int RFC_write   = COM_get_function_handle( "RFC.write_overlay");
   TRAIL_CreateRobustFC(trg,destpath);
@@ -2585,8 +2585,8 @@ TRAIL_AutoSurfer(const std::string &src, const std::string &trg,
   TRAIL_File2Window(srcfile,trg,bcflags,MPI_COMM_NULL,false,false,false);
   newpath.assign(homedir+"/"+destpath);
   TRAIL_CD(newpath,ouf);
-  int src_mesh    = COM_get_attribute_handle( (trailwin+".mesh").c_str());
-  int trg_mesh    = COM_get_attribute_handle( (trg+".mesh").c_str());
+  int src_mesh    = COM_get_dataitem_handle( (trailwin+".mesh").c_str());
+  int trg_mesh    = COM_get_dataitem_handle( (trg+".mesh").c_str());
   if(ouf){
     *ouf << "TRAIL_AutoSurfer: Calling Rocface Overlay...."
 	 << std::endl;
@@ -2607,7 +2607,7 @@ TRAIL_AutoSurfer(const std::string &src, const std::string &trg,
   COM_delete_window(trg);
   COM_delete_window(trailwin);
   COM_set_default_communicator(comm);
-  COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocface, "RFC");
+  COM_UNLOAD_MODULE_STATIC_DYNAMIC( SurfX, "RFC");
 }
 
 void TRAIL_FixRocstarData(const std::string &wname,std::ostream *ouf = NULL);
@@ -2644,7 +2644,7 @@ TRAIL_TransferSurfDataFILE
   bcflags[0] = 0;
   bcflags[1] = 1;
   bcflags[2] = 2;
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocface, "RFC");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SurfX, "RFC");
   int RFC_transfer = COM_get_function_handle("RFC.least_squares_transfer");
   int RFC_read = COM_get_function_handle( "RFC.read_overlay");
   if(ouf)
@@ -2673,8 +2673,8 @@ TRAIL_TransferSurfDataFILE
 	 << "Reading mesh overlay from  " << newpath << "..." << std::endl;
   TRAIL_CD(newpath,ouf);
   MPI_Barrier(comm);
-  int srcmesh = COM_get_attribute_handle( (trailwin+".mesh").c_str());
-  int trgmesh = COM_get_attribute_handle( (trg+".mesh").c_str());
+  int srcmesh = COM_get_dataitem_handle( (trailwin+".mesh").c_str());
+  int trgmesh = COM_get_dataitem_handle( (trg+".mesh").c_str());
   std::vector<int> pane_id;
   if(ouf)
     *ouf << "TRAIL_AutoSurfer: Reading mesh overlay for all surfaces."
@@ -2690,7 +2690,7 @@ TRAIL_TransferSurfDataFILE
 	 << "Transferring data ..." << std::endl;
   int num_attributes;
   std::string names;
-  COM_get_attributes( trailwin.c_str(),&num_attributes,names);
+  COM_get_dataitems( trailwin.c_str(),&num_attributes,names);
   char loc;
   COM_Type comtype;
   int ncomp;
@@ -2699,7 +2699,7 @@ TRAIL_TransferSurfDataFILE
   for(int i = 0;i < num_attributes;i++){
     std::string aname;
     Istr >> aname;
-    COM_get_attribute(trailwin+"."+aname,&loc,&comtype,&ncomp,&unit);
+    COM_get_dataitem(trailwin+"."+aname,&loc,&comtype,&ncomp,&unit);
     if((loc == 'e' || loc == 'n') && comtype == COM_DOUBLE){
       if(!rank)
 	if(ouf)
@@ -2707,14 +2707,14 @@ TRAIL_TransferSurfDataFILE
 		    << (loc == 'e' ? "elements" : "nodes") << "."
 		    << std::endl;
       COM_resize_array((trailwin+"."+aname).c_str());
-      COM_new_attribute((trg+"."+aname).c_str(),(char)loc,
+      COM_new_dataitem((trg+"."+aname).c_str(),(char)loc,
 			COM_DOUBLE,(int)ncomp,unit.c_str());
-      COM_new_attribute((r_trg+"."+aname).c_str(),(char)loc,
+      COM_new_dataitem((r_trg+"."+aname).c_str(),(char)loc,
 			COM_DOUBLE,(int)ncomp,unit.c_str());
       COM_resize_array((r_trg+"."+aname).c_str());
       COM_resize_array((trg+"."+aname).c_str());
-      int src_ahdl  = COM_get_attribute_handle((trailwin+"."+aname).c_str());
-      int trg_ahdl  = COM_get_attribute_handle((trg+"."+aname).c_str());
+      int src_ahdl  = COM_get_dataitem_handle((trailwin+"."+aname).c_str());
+      int trg_ahdl  = COM_get_dataitem_handle((trg+"."+aname).c_str());
       COM_call_function( RFC_transfer, &src_ahdl, &trg_ahdl);
       int *srcpane_ids;
       int npanes;
@@ -2755,7 +2755,7 @@ TRAIL_TransferSurfDataFILE
     }
   }
   MPI_Barrier(comm);
-  COM_UNLOAD_MODULE_STATIC_DYNAMIC(Rocface,"RFC");
+  COM_UNLOAD_MODULE_STATIC_DYNAMIC(SurfX,"RFC");
   newpath.assign(homedir+"/"+destpath);
   TRAIL_CD(newpath,ouf);
   MPI_Barrier(comm);
@@ -2833,21 +2833,21 @@ TRAIL_WriteWindow(const std::string &wname,const std::string &winpath,
   COM_free_buffer( &srcpane_ids);
 
 
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocout,"Rocout");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SimOUT,"Rocout");
   int OUT_set_option = COM_get_function_handle( "Rocout.set_option");
   std::string rankstr("0");
   COM_call_function( OUT_set_option, "rankwidth", rankstr.c_str());
-  int whand = COM_get_function_handle("Rocout.write_attribute");
+  int whand = COM_get_function_handle("Rocout.write_dataitem");
 
 
-  int all = COM_get_attribute_handle((wname+".all"));
+  int all = COM_get_dataitem_handle((wname+".all"));
   std::ostringstream Ostr;
   Ostr << wname << "_" << timestring << "_" << std::setw(5)
        << std::setfill('0') << id;
   TRAIL_CD(winpath,ouf);
   COM_call_function(whand,Ostr.str().c_str(),&all,
 		    wname.c_str(),timestring.c_str());
-  COM_UNLOAD_MODULE_STATIC_DYNAMIC(Rocout,"Rocout");
+  COM_UNLOAD_MODULE_STATIC_DYNAMIC(SimOUT,"Rocout");
 
   TRAIL_WriteRocinControl(pane_id,Ostr.str(),rank);
   if(ouf)
@@ -2959,9 +2959,9 @@ TRAIL_ExtractSurf0(const std::string &srcwin,
 		  std::ostream *ouf)
 {
   COM_new_window(trgwin);
-  COM_clone_attribute( (trgwin+".mesh").c_str(),
+  COM_clone_dataitem( (trgwin+".mesh").c_str(),
 		       (srcwin+".mesh").c_str(),1);
-  COM_clone_attribute( (trgwin+".bcflag").c_str(),
+  COM_clone_dataitem( (trgwin+".bcflag").c_str(),
 		       (srcwin+".bcflag").c_str(),1);
   int *srcpane_ids;
   int npanes;
@@ -3003,11 +3003,11 @@ TRAIL_RocmopSmooth(GEM_Partition &gp, unsigned int niter)
   MPI_Barrier(gp._comm);
   COM_new_window(wname);
   gp.PopulateVolumeWindow(wname);
-  COM_new_attribute((wname+".disp"),'n',COM_DOUBLE,3,"m");
+  COM_new_dataitem((wname+".disp"),'n',COM_DOUBLE,3,"m");
   COM_set_array((wname+".disp"),gp.pane_id,&disp[0]);
   COM_window_init_done(wname);
-  int meshhandle = COM_get_attribute_handle((wname+".pmesh"));
-  int disphandle = COM_get_attribute_handle((wname+".disp"));
+  int meshhandle = COM_get_dataitem_handle((wname+".pmesh"));
+  int disphandle = COM_get_dataitem_handle((wname+".disp"));
   MPI_Barrier(gp._comm);
   if(gp._debug && gp._out)
     *gp._out << "TRAIL_RocmopSmooth: Loading Rocmop." << std::endl;
@@ -3061,9 +3061,9 @@ TRAIL_RocpropSmoothSurf(double *nc,unsigned int nnodes,
 {
   std::string wname("smooth_win");
   COM_new_window(wname,MPI_COMM_SELF);
-  COM_new_attribute((wname+".speed"),'e',COM_DOUBLE,1,"m/s");
-  COM_new_attribute((wname+".offsets"),'n',COM_DOUBLE,3,"m");
-  COM_new_attribute((wname+".cnstr_type"),'e',COM_INT,1,"");
+  COM_new_dataitem((wname+".speed"),'e',COM_DOUBLE,1,"m/s");
+  COM_new_dataitem((wname+".offsets"),'n',COM_DOUBLE,3,"m");
+  COM_new_dataitem((wname+".cnstr_type"),'e',COM_INT,1,"");
 
 
   for(unsigned int i = 0; i < nel*3;i++) ec[i]++;
@@ -3083,9 +3083,9 @@ TRAIL_RocpropSmoothSurf(double *nc,unsigned int nnodes,
   //  COM_set_size((wname+".cnstr_type"),102,nel);
   COM_set_array((wname+".cnstr_type"),102,&cnstr_type[0],1);
 
-  int cnstrtype  = COM_get_attribute_handle((wname+".cnstr_type"));
-  int offset_hdl = COM_get_attribute_handle((wname+".offsets"));
-  int speed_hdl  = COM_get_attribute_handle((wname+".speed"));
+  int cnstrtype  = COM_get_dataitem_handle((wname+".cnstr_type"));
+  int offset_hdl = COM_get_dataitem_handle((wname+".offsets"));
+  int speed_hdl  = COM_get_dataitem_handle((wname+".speed"));
 
   COM_LOAD_MODULE_STATIC_DYNAMIC( Rocprop, "PROP");
   int setopt = COM_get_function_handle( "PROP.set_option");
@@ -3098,7 +3098,7 @@ TRAIL_RocpropSmoothSurf(double *nc,unsigned int nnodes,
   int prop = COM_get_function_handle("PROP.propagate");
   int setcnstr = COM_get_function_handle("PROP.set_constraints");
 
-  int pmesh_hdl = COM_get_attribute_handle((wname+".mesh"));
+  int pmesh_hdl = COM_get_dataitem_handle((wname+".mesh"));
   COM_call_function(init, &pmesh_hdl);
 
   COM_call_function(setcnstr,&cnstrtype);

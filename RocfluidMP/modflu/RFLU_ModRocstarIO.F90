@@ -55,7 +55,7 @@ MODULE RFLU_ModRocstarIO
 
   IMPLICIT NONE
 
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
   PRIVATE
   PUBLIC :: RFLU_GENX_BuildRocinPaneStrings, & 
@@ -507,16 +507,16 @@ MODULE RFLU_ModRocstarIO
 !   Conserved variables
 ! ==============================================================================    
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.rhof')
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.rhof')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.rhof')
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.rhof')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.rhovf')
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.rhovf')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.rhovf')
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.rhovf')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 
-    handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.rhoEf')    
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.rhoEf')
+    handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.rhoEf')    
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.rhoEf')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     
 ! ==============================================================================
@@ -605,9 +605,9 @@ MODULE RFLU_ModRocstarIO
     winNameIn = global%surfWinNameInput
     winName   = global%surfWinName  
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.gs')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.gs')
     IF ( handleIn > 0 ) THEN    
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.gs')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.gs')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
 
@@ -693,9 +693,9 @@ MODULE RFLU_ModRocstarIO
     winNameIn = global%volWinNameInput
     winName   = global%volWinName  
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.gs')    
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.gs')    
     IF ( handleIn > 0 ) THEN
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.gs')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.gs')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
     
@@ -782,33 +782,33 @@ MODULE RFLU_ModRocstarIO
 !   Input data
 ! ==============================================================================    
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.du_alp')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.du_alp')
     IF ( handleIn > 0 ) THEN 
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.du_alp')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.du_alp')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
 
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.rhofvf_alp')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.rhofvf_alp')
     IF ( handleIn > 0 ) THEN 
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.rhofvf_alp')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.rhofvf_alp')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
 
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.mdot_alp')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.mdot_alp')
     IF ( handleIn > 0 ) THEN 
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.mdot_alp')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.mdot_alp')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
 
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.Tflm_alp')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.Tflm_alp')
     IF ( handleIn > 0 ) THEN 
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.Tflm_alp')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.Tflm_alp')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.Tb_alp')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.Tb_alp')
     IF ( handleIn > 0 ) THEN 
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.Tb_alp')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.Tb_alp')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
     
@@ -816,51 +816,51 @@ MODULE RFLU_ModRocstarIO
 !   Output data
 ! ==============================================================================    
         
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.nfAlp')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.nfAlp')
     IF ( handleIn > 0 ) THEN 
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.nfAlp')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.nfAlp')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.rhofAlp')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.rhofAlp')
     IF ( handleIn > 0 ) THEN 
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.rhofAlp')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.rhofAlp')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.pf')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.pf')
     IF ( handleIn > 0 ) THEN
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.pf')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.pf')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.tf')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.tf')
     IF ( handleIn > 0 ) THEN
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.tf')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.tf')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.qc')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.qc')
     IF ( handleIn > 0 ) THEN
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.qc')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.qc')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
 
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.qr')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.qr')
     IF ( handleIn > 0 ) THEN
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.qr')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.qr')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
 
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.tempf')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.tempf')
     IF ( handleIn > 0 ) THEN
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.tempf')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.tempf')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn
     
-    handleIn = COM_get_attribute_handle_const(TRIM(winNameIn)//'.bFlag')
+    handleIn = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.bFlag')
     IF ( handleIn > 0 ) THEN
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.bFlag')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.bFlag')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! handleIn    
     
@@ -1333,8 +1333,8 @@ MODULE RFLU_ModRocstarIO
 !   Coordinates and connectivity
 ! ==============================================================================
 
-    handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.pmesh')
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.pmesh')
+    handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.pmesh')
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.pmesh')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
   
 ! ******************************************************************************
@@ -1348,8 +1348,8 @@ MODULE RFLU_ModRocstarIO
 !   Coordinates and predefined connectivity
 ! ==============================================================================
 
-    handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.pmesh')
-    handleOut = COM_get_attribute_handle(TRIM(winName)//'.pmesh')
+    handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.pmesh')
+    handleOut = COM_get_dataitem_handle(TRIM(winName)//'.pmesh')
     CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     
 ! ==============================================================================
@@ -1358,36 +1358,36 @@ MODULE RFLU_ModRocstarIO
 ! ==============================================================================
 
     IF ( pGrid%nPatches > 0 ) THEN 
-      handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.bcflag')
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.bcflag')
+      handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.bcflag')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.bcflag')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 
-      handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.patchNo')
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.patchNo')
+      handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.patchNo')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.patchNo')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     
 ! Use MOVEDIR from the *.bc file to get cnstr_type; don't use HDF the values
 !
-!      handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.cnstr_type')
+!      handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.cnstr_type')
 !      IF ( handleIn > 0 ) THEN 
-!        handleOut = COM_get_attribute_handle(TRIM(winName)//'.cnstr_type')
+!        handleOut = COM_get_dataitem_handle(TRIM(winName)//'.cnstr_type')
 !        CALL COM_call_function(handleObtain,2,handleIn,handleOut)    
 !      END IF ! handleIn
 
-      handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.t3g:real')
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.t3g:real')
+      handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.t3g:real')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.t3g:real')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 
-      handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.t3g:virtual')
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.t3g:virtual')
+      handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.t3g:virtual')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.t3g:virtual')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 
-      handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.q4g:real')
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.q4g:real')
+      handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.q4g:real')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.q4g:real')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
 
-      handleIn  = COM_get_attribute_handle_const(TRIM(winNameIn)//'.q4g:virtual')
-      handleOut = COM_get_attribute_handle(TRIM(winName)//'.q4g:virtual')
+      handleIn  = COM_get_dataitem_handle_const(TRIM(winNameIn)//'.q4g:virtual')
+      handleOut = COM_get_dataitem_handle(TRIM(winName)//'.q4g:virtual')
       CALL COM_call_function(handleObtain,2,handleIn,handleOut)
     END IF ! pGrid%nPatches
 
@@ -1586,9 +1586,9 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     handlePutAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.put_attribute')
+                                              '.put_dataitem')
     handleAddAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.add_attribute')    
+                                              '.add_dataitem')    
     handleSetOption = COM_get_function_handle(TRIM(global%winNameOut)// & 
                                               '.set_option')
 
@@ -1602,17 +1602,17 @@ MODULE RFLU_ModRocstarIO
 !   Conserved variables
 ! ==============================================================================  
 
-    handleAttr = COM_get_attribute_handle(TRIM(winName)//'.rhof')
+    handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.rhof')
     CALL COM_call_function(handlePutAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
                            TRIM(fileNameGrid),communicator,paneId)
 
-    handleAttr = COM_get_attribute_handle(TRIM(winName)//'.rhovf')
+    handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.rhovf')
     CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
                            TRIM(fileNameMixt),communicator,paneId)
 
-    handleAttr = COM_get_attribute_handle(TRIM(winName)//'.rhoEf')
+    handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.rhoEf')
     CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
                            TRIM(fileNameMixt),communicator,paneId)
@@ -1621,17 +1621,17 @@ MODULE RFLU_ModRocstarIO
 !   Dependent variables
 ! ==============================================================================  
 
-    handleAttr = COM_get_attribute_handle(TRIM(winName)//'.pf')
+    handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.pf')
     CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
                            TRIM(fileNameMixt),communicator,paneId)
 
-    handleAttr = COM_get_attribute_handle(TRIM(winName)//'.Tf')
+    handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.Tf')
     CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
                            TRIM(fileNameMixt),communicator,paneId)
 
-    handleAttr = COM_get_attribute_handle(TRIM(winName)//'.af')
+    handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.af')
     CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
                            TRIM(fileNameMixt),communicator,paneId)
@@ -1746,9 +1746,9 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     handlePutAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.put_attribute')
+                                              '.put_dataitem')
     handleAddAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.add_attribute')    
+                                              '.add_dataitem')    
     handleSetOption = COM_get_function_handle(TRIM(global%winNameOut)// & 
                                               '.set_option')
 
@@ -1773,7 +1773,7 @@ MODULE RFLU_ModRocstarIO
         handleWriteAttr = handleAddAttr
       END IF ! iPatch
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.gs')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.gs')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameGSp), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)
@@ -1894,7 +1894,7 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     handlePutAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.put_attribute')
+                                              '.put_dataitem')
     handleSetOption = COM_get_function_handle(TRIM(global%winNameOut)// & 
                                               '.set_option')
 
@@ -1904,7 +1904,7 @@ MODULE RFLU_ModRocstarIO
 !   Write data through Rocout commands 
 ! ******************************************************************************
     
-    handleAttr = COM_get_attribute_handle(TRIM(winName)//'.gs')
+    handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.gs')
     CALL COM_call_function(handlePutAttr,nArgs,TRIM(fileNameGsp), & 
                            handleAttr,TRIM(matName),timeString, & 
                            TRIM(fileNameGrid),communicator,paneId)
@@ -2021,9 +2021,9 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     handlePutAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.put_attribute')
+                                              '.put_dataitem')
     handleAddAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.add_attribute')    
+                                              '.add_dataitem')    
     handleSetOption = COM_get_function_handle(TRIM(global%winNameOut)// & 
                                               '.set_option')
 
@@ -2052,22 +2052,22 @@ MODULE RFLU_ModRocstarIO
 !     Input data
 ! ------------------------------------------------------------------------------
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.du_alp')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.du_alp')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)
                              
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.rhofvf_alp')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.rhofvf_alp')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)
                              
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.mdot_alp')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.mdot_alp')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)
                              
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.Tflm_alp')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.Tflm_alp')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)
@@ -2076,42 +2076,42 @@ MODULE RFLU_ModRocstarIO
 !     Output data
 ! ------------------------------------------------------------------------------
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.nfAlp')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.nfAlp')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)
                              
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.rhofAlp')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.rhofAlp')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)
                              
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.pf')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.pf')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)                             
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.tf')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.tf')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)                                                                                       
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.qc')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.qc')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)
                              
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.qr')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.qr')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)
                              
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.tempf')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.tempf')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)
                              
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.bFlag')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.bFlag')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileNameMixt), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileNameGrid),communicator,paneId)                             
@@ -2292,9 +2292,9 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     handlePutAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.put_attribute')
+                                              '.put_dataitem')
     handleAddAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.add_attribute')    
+                                              '.add_dataitem')    
     handleSetOption = COM_get_function_handle(TRIM(global%winNameOut)// & 
                                               '.set_option')
 
@@ -2323,7 +2323,7 @@ MODULE RFLU_ModRocstarIO
         handleWriteAttr = handleAddAttr
       END IF ! iPatch
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.pmesh')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.pmesh')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileName),communicator,paneId) 
@@ -2333,22 +2333,22 @@ MODULE RFLU_ModRocstarIO
 !     do not actually exist.
 ! ------------------------------------------------------------------------------
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.t3g:real')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.t3g:real')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileName),communicator,paneId)
         
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.t3g:virtual')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.t3g:virtual')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileName),communicator,paneId)
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.q4g:real')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.q4g:real')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileName),communicator,paneId)
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.q4g:virtual')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.q4g:virtual')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileName),communicator,paneId)
@@ -2357,17 +2357,17 @@ MODULE RFLU_ModRocstarIO
 !     Patch quantities
 ! ------------------------------------------------------------------------------
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.bcflag')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.bcflag')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileName),communicator,paneId)
 
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.patchNo')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.patchNo')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileName),communicator,paneId)
                              
-      handleAttr = COM_get_attribute_handle(TRIM(winName)//'.cnstr_type')
+      handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.cnstr_type')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
                              TRIM(fileName),communicator,paneId)                             
@@ -2486,9 +2486,9 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 
     handlePutAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.put_attribute')
+                                              '.put_dataitem')
     handleAddAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
-                                              '.add_attribute')    
+                                              '.add_dataitem')    
     handleSetOption = COM_get_function_handle(TRIM(global%winNameOut)// & 
                                               '.set_option')
 
@@ -2502,7 +2502,7 @@ MODULE RFLU_ModRocstarIO
 !   Coordinates and connectivity
 ! ==============================================================================  
 
-    handleAttr = COM_get_attribute_handle(TRIM(winName)//'.pmesh')
+    handleAttr = COM_get_dataitem_handle(TRIM(winName)//'.pmesh')
     CALL COM_call_function(handlePutAttr,nArgs,TRIM(fileName),handleAttr, & 
                            TRIM(matName),timeString,TRIM(fileName), &
                            communicator,paneId)
@@ -2889,7 +2889,7 @@ END MODULE RFLU_ModRocstarIO
 ! Added routine to read window, cosmetics
 !
 ! Revision 1.4  2004/12/10 15:33:46  haselbac
-! Added reading/writing of patchNo attribute
+! Added reading/writing of patchNo dataitem
 !
 ! Revision 1.3  2004/11/03 17:02:48  haselbac
 ! Removal of vertex and cell flag IO

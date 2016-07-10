@@ -51,7 +51,7 @@ using namespace Mesquite;
 #include "Rocblas.h"
 #include "Rocmop_1.h"
 #include "Rocmap.h"
-#include "roccom.h"
+#include "com.h"
 #include "Pane_communicator.h"
 #include "Pane_connectivity.h"
 #include "Geometric_Metrics_3.h"
@@ -307,7 +307,7 @@ void Rocmop::load( const std::string &mname) {
 
   std::string glb=mname+".global";
 
-  COM_new_attribute( glb.c_str(), 'w', COM_VOID, 1, "");
+  COM_new_dataitem( glb.c_str(), 'w', COM_VOID, 1, "");
   COM_set_object( glb.c_str(), 0, mop);
 
   COM_Type types[3];
@@ -354,7 +354,7 @@ void Rocmop::unload( const std::string &mname) {
 
 // Finds the maximum displacement over all processors
 bool
-Rocmop::check_displacements(COM::Attribute *w_disp)
+Rocmop::check_displacements(COM::DataItem *w_disp)
 {
 #ifdef ROCPROF
   Profile_begin("Rocmop::check_disp");
@@ -374,7 +374,7 @@ Rocmop::check_displacements(COM::Attribute *w_disp)
   for(int i=0,ni = allpanes.size(); i<ni; ++i){
     
     Vector_3<double> *ptr = NULL;
-    COM::Attribute* ptr_att = allpanes[i]->attribute(disp_id);
+    COM::DataItem* ptr_att = allpanes[i]->dataitem(disp_id);
     void* void_ptr = ptr_att->pointer();
     ptr = reinterpret_cast<Vector_3<double>*>(void_ptr);
 
@@ -423,7 +423,7 @@ Rocmop::check_displacements(COM::Attribute *w_disp)
 
 // Zero displacements array
 void
-Rocmop::zero_displacements(COM::Attribute *w_disp)
+Rocmop::zero_displacements(COM::DataItem *w_disp)
 {
 #ifdef ROCPROF
   Profile_begin("Rocmop::zero_disp");
@@ -435,7 +435,7 @@ Rocmop::zero_displacements(COM::Attribute *w_disp)
     
   for(int i=0,ni = allpanes.size(); i<ni; ++i){
     Vector_3<double> *ptr = NULL;
-    COM::Attribute* ptr_att = allpanes[i]->attribute(disp_id);
+    COM::DataItem* ptr_att = allpanes[i]->dataitem(disp_id);
     void* void_ptr = ptr_att->pointer();
     ptr = reinterpret_cast<Vector_3<double>*>(void_ptr);
     for(int j=0,nj = allpanes[i]->size_of_real_nodes(); j<nj; ++j){	
@@ -451,8 +451,8 @@ Rocmop::zero_displacements(COM::Attribute *w_disp)
 }
 
 // Add aspect ratio measures to the user's mesh
-void Rocmop::add_aspect_ratios(COM::Attribute *usr_att,
-			       COM::Attribute *buf_att){
+void Rocmop::add_aspect_ratios(COM::DataItem *usr_att,
+			       COM::DataItem *buf_att){
   
   COM::Window* usr_window = usr_att->window();
   COM::Window* buf_window = NULL;
@@ -476,23 +476,23 @@ void Rocmop::add_aspect_ratios(COM::Attribute *usr_att,
 
   buf_window->panes(allpanes);
 
-  // Create and resize window level buffer attributes
-  COM::Attribute * w_buff_R =
-    buf_window->new_attribute("Aspect Ratio:  R (circumradius)",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_buff_r =
-    buf_window->new_attribute("Aspect Ratio:  r (inradius)",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_buff_l =
-    buf_window->new_attribute("Aspect Ratio:  l (shortest edge)",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_buff_rR =
-    buf_window->new_attribute("Aspect Ratio:  3r/R",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_buff_Rr =
-    buf_window->new_attribute("Aspect Ratio:  R/r",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_buff_Rl =
-    buf_window->new_attribute("Aspect Ratio:  R/l",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_buff_min =
-    buf_window->new_attribute("Aspect Ratio:  min dih",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_buff_max =
-    buf_window->new_attribute("Aspect Ratio:  max dih",'e',COM_DOUBLE,1,"");
+  // Create and resize window level buffer dataitems
+  COM::DataItem * w_buff_R =
+    buf_window->new_dataitem("Aspect Ratio:  R (circumradius)",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_buff_r =
+    buf_window->new_dataitem("Aspect Ratio:  r (inradius)",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_buff_l =
+    buf_window->new_dataitem("Aspect Ratio:  l (shortest edge)",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_buff_rR =
+    buf_window->new_dataitem("Aspect Ratio:  3r/R",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_buff_Rr =
+    buf_window->new_dataitem("Aspect Ratio:  R/r",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_buff_Rl =
+    buf_window->new_dataitem("Aspect Ratio:  R/l",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_buff_min =
+    buf_window->new_dataitem("Aspect Ratio:  min dih",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_buff_max =
+    buf_window->new_dataitem("Aspect Ratio:  max dih",'e',COM_DOUBLE,1,"");
   
   buf_window->resize_array(w_buff_R,0);
   buf_window->resize_array(w_buff_r,0);
@@ -504,7 +504,7 @@ void Rocmop::add_aspect_ratios(COM::Attribute *usr_att,
   buf_window->resize_array(w_buff_max,0);
   buf_window->init_done();
 
-  // Obtain buffer attribute ids
+  // Obtain buffer dataitem ids
   int R_id   = w_buff_R->id();
   int r_id   = w_buff_r->id();
   int l_id   = w_buff_l->id();
@@ -514,23 +514,23 @@ void Rocmop::add_aspect_ratios(COM::Attribute *usr_att,
   int min_id = w_buff_min->id();
   int max_id = w_buff_max->id();
 
-   // Create and resize window level user attributes
-  COM::Attribute * w_usr_R =
-    usr_window->new_attribute("Aspect Ratio:  R",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_usr_r =
-    usr_window->new_attribute("Aspect Ratio:  r",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_usr_l =
-    usr_window->new_attribute("Aspect Ratio:  l",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_usr_rR =
-    usr_window->new_attribute("Aspect Ratio:  3r/R",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_usr_Rr =
-    usr_window->new_attribute("Aspect Ratio:  R/r",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_usr_Rl =
-    usr_window->new_attribute("Aspect Ratio:  R/l",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_usr_min =
-    usr_window->new_attribute("Aspect Ratio:  min dih",'e',COM_DOUBLE,1,"");
-  COM::Attribute * w_usr_max =
-    usr_window->new_attribute("Aspect Ratio:  max dih",'e',COM_DOUBLE,1,"");
+   // Create and resize window level user dataitems
+  COM::DataItem * w_usr_R =
+    usr_window->new_dataitem("Aspect Ratio:  R",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_usr_r =
+    usr_window->new_dataitem("Aspect Ratio:  r",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_usr_l =
+    usr_window->new_dataitem("Aspect Ratio:  l",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_usr_rR =
+    usr_window->new_dataitem("Aspect Ratio:  3r/R",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_usr_Rr =
+    usr_window->new_dataitem("Aspect Ratio:  R/r",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_usr_Rl =
+    usr_window->new_dataitem("Aspect Ratio:  R/l",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_usr_min =
+    usr_window->new_dataitem("Aspect Ratio:  min dih",'e',COM_DOUBLE,1,"");
+  COM::DataItem * w_usr_max =
+    usr_window->new_dataitem("Aspect Ratio:  max dih",'e',COM_DOUBLE,1,"");
   
   usr_window->resize_array(w_usr_R,0);
   usr_window->resize_array(w_usr_r,0);
@@ -547,23 +547,23 @@ void Rocmop::add_aspect_ratios(COM::Attribute *usr_att,
 
   for(int i=0,ni=(int)allpanes.size();i<ni;++i){
 
-    // get Pane level buffer attributes
+    // get Pane level buffer dataitems
     double *R_ptr = reinterpret_cast<double *>
-      (allpanes[i]->attribute(R_id)->pointer());    
+      (allpanes[i]->dataitem(R_id)->pointer());    
     double *r_ptr = reinterpret_cast<double *>
-      (allpanes[i]->attribute(r_id)->pointer());    
+      (allpanes[i]->dataitem(r_id)->pointer());    
     double *l_ptr = reinterpret_cast<double *>
-      (allpanes[i]->attribute(l_id)->pointer());    
+      (allpanes[i]->dataitem(l_id)->pointer());    
     double *rR_ptr = reinterpret_cast<double *>
-      (allpanes[i]->attribute(rR_id)->pointer());    
+      (allpanes[i]->dataitem(rR_id)->pointer());    
     double *Rr_ptr = reinterpret_cast<double *>
-      (allpanes[i]->attribute(Rr_id)->pointer());    
+      (allpanes[i]->dataitem(Rr_id)->pointer());    
     double *Rl_ptr = reinterpret_cast<double *>
-      (allpanes[i]->attribute(Rl_id)->pointer());    
+      (allpanes[i]->dataitem(Rl_id)->pointer());    
     double *min_ptr = reinterpret_cast<double *>
-      (allpanes[i]->attribute(min_id)->pointer());    
+      (allpanes[i]->dataitem(min_id)->pointer());    
     double *max_ptr = reinterpret_cast<double *>
-      (allpanes[i]->attribute(max_id)->pointer());    
+      (allpanes[i]->dataitem(max_id)->pointer());    
     
     for(int j=0,nj=allpanes[i]->size_of_elements();j<nj;++j){
       
@@ -617,8 +617,8 @@ void Rocmop::add_aspect_ratios(COM::Attribute *usr_att,
     delete buf_window;
 }
 
-void Rocmop::smooth(const COM::Attribute *pmesh,
-		    COM::Attribute *disp){
+void Rocmop::smooth(const COM::DataItem *pmesh,
+		    COM::DataItem *disp){
 
   // The static var N will statically store the current value of 
   // N.  When N == 0, we will smooth and set N back to (_smoothfreq - 1).
@@ -649,8 +649,8 @@ void Rocmop::smooth(const COM::Attribute *pmesh,
     // window, then just update the coordinates.
     
     if(_buf_window && (_usr_window == pmesh->window()))
-      Rocblas::copy(_usr_window->attribute(COM::COM_NC),
-		    _buf_window->attribute(COM::COM_NC));
+      Rocblas::copy(_usr_window->dataitem(COM::COM_NC),
+		    _buf_window->dataitem(COM::COM_NC));
     
     // Else, inherit(clone) a buffer window from the user's mesh.
     else{
@@ -667,7 +667,7 @@ void Rocmop::smooth(const COM::Attribute *pmesh,
       std::string buf_name(_usr_window->name()+"-Rocmopbuf");
       _buf_window = new COM::Window(buf_name, 
 				    _usr_window->get_communicator());
-      _buf_window->inherit( const_cast<COM::Attribute*>(pmesh), "", 
+      _buf_window->inherit( const_cast<COM::DataItem*>(pmesh), "", 
 			    COM::Pane::INHERIT_CLONE, true, NULL, 0);
       _buf_window->init_done();
       
@@ -699,8 +699,8 @@ void Rocmop::smooth(const COM::Attribute *pmesh,
       perform_smoothing();    
       print_legible(0,"Smoothing complete.");
       // Obtain the displacements 
-      const COM::Attribute *old_nc = pmesh->window()->attribute( COM::COM_NC);
-      const COM::Attribute *new_nc =_buf_window->attribute( COM::COM_NC);
+      const COM::DataItem *old_nc = pmesh->window()->dataitem( COM::COM_NC);
+      const COM::DataItem *new_nc =_buf_window->dataitem( COM::COM_NC);
       Rocblas::sub (new_nc, old_nc, disp);
       constrain_displacements(disp);
     }
@@ -722,7 +722,7 @@ void Rocmop::smooth(const COM::Attribute *pmesh,
   }
 }
 
-void Rocmop::smooth_in_place(COM::Attribute *pmesh){
+void Rocmop::smooth_in_place(COM::DataItem *pmesh){
 #ifdef ROCPROF
   Profile_begin("Rocmop::smooth_in_place");
 #endif
@@ -746,7 +746,7 @@ void Rocmop::smooth_in_place(COM::Attribute *pmesh){
   // Element_node_enumerator
   _buf_window = new COM::Window(_usr_window->name()+"-Rocmopbuf", 
 				_usr_window->get_communicator());
-  _buf_window->inherit( const_cast<COM::Attribute*>(pmesh), "", 
+  _buf_window->inherit( const_cast<COM::DataItem*>(pmesh), "", 
 			false, true, NULL, 0);
   _buf_window->init_done();
 
@@ -873,7 +873,7 @@ void Rocmop::smoother_specific_init(){
   if(_method==SMOOTH_SURF_MEDIAL){
     // Initialize the Window_manifold
     if(_wm == NULL)
-      Rocsurf::initialize(_buf_window->attribute(_is_pmesh ? COM_PMESH : COM_MESH));    
+      Rocsurf::initialize(_buf_window->dataitem(_is_pmesh ? COM_PMESH : COM_MESH));    
   }
   
   // perform smoother specific initialization 
@@ -891,7 +891,7 @@ void Rocmop::smoother_specific_init(){
 
     // Check to see if the physical surface boundary exists
     const std::string surf_attr("is_surface");
-    const COM::Attribute *w_is_surface = _usr_window->attribute(surf_attr);
+    const COM::DataItem *w_is_surface = _usr_window->dataitem(surf_attr);
     if(w_is_surface){
       
       COM_assertion_msg( COM_compatible_types( w_is_surface->data_type(), COM_INT),
@@ -904,15 +904,15 @@ void Rocmop::smoother_specific_init(){
 			 "Surface-list must be initialized");      
 
       // Clone the attribute
-      COM::Attribute * new_attr = 
-	_buf_window->inherit( const_cast<COM::Attribute *>(w_is_surface), 
+      COM::DataItem * new_attr = 
+	_buf_window->inherit( const_cast<COM::DataItem *>(w_is_surface), 
 			      surf_attr, COM::Pane::INHERIT_CLONE, true, NULL, 0);
-      COM_assertion_msg(new_attr, "Attribute could not be allocated.");
+      COM_assertion_msg(new_attr, "DataItem could not be allocated.");
     }
     // else, detect the physical boundary ourselves
     else{
-      COM::Attribute* w_surf_attr =
-	_buf_window->new_attribute( "is_surface", 'n', COM_INT, 1, "");
+      COM::DataItem* w_surf_attr =
+	_buf_window->new_dataitem( "is_surface", 'n', COM_INT, 1, "");
       _buf_window->resize_array( w_surf_attr, 0);
       
       determine_physical_border(w_surf_attr);
@@ -933,78 +933,78 @@ void Rocmop::smoother_specific_init(){
   case SMOOTH_SURF_MEDIAL: {
 
     // Extend buffer window
-    COM::Attribute* w_disps =
-      _buf_window->new_attribute( "disps", 'n', COM_DOUBLE, 3, "");
+    COM::DataItem* w_disps =
+      _buf_window->new_dataitem( "disps", 'n', COM_DOUBLE, 3, "");
     _buf_window->resize_array( w_disps, 0);
 
-    COM::Attribute* w_facenormals = 
-      _buf_window->new_attribute( "facenormals", 'e', COM_DOUBLE, 3, "");
+    COM::DataItem* w_facenormals = 
+      _buf_window->new_dataitem( "facenormals", 'e', COM_DOUBLE, 3, "");
     _buf_window->resize_array( w_facenormals, 0);
     
-    COM::Attribute* w_facecenters = 
-      _buf_window->new_attribute( "facecenters", 'e', COM_DOUBLE, 3, "");
+    COM::DataItem* w_facecenters = 
+      _buf_window->new_dataitem( "facecenters", 'e', COM_DOUBLE, 3, "");
     _buf_window->resize_array( w_facecenters, 0);
 
-    COM::Attribute* w_eigvalues = 
-    _buf_window->new_attribute( "lambda", 'n', COM_DOUBLE, 3, "");
+    COM::DataItem* w_eigvalues = 
+    _buf_window->new_dataitem( "lambda", 'n', COM_DOUBLE, 3, "");
     _buf_window->resize_array( w_eigvalues, 0);
 
-    COM::Attribute* w_vnormals = 
-    _buf_window->new_attribute( "vnormals", 'n', COM_DOUBLE, 3, "");
+    COM::DataItem* w_vnormals = 
+    _buf_window->new_dataitem( "vnormals", 'n', COM_DOUBLE, 3, "");
     _buf_window->resize_array( w_vnormals, 0);
 
-    COM::Attribute* w_awnormals = 
-    _buf_window->new_attribute( "awnormals", 'n', COM_DOUBLE, 3, "");
+    COM::DataItem* w_awnormals = 
+    _buf_window->new_dataitem( "awnormals", 'n', COM_DOUBLE, 3, "");
     _buf_window->resize_array( w_awnormals, 0);
 
-    COM::Attribute* w_uwnormals = 
-    _buf_window->new_attribute( "uwnormals", 'n', COM_DOUBLE, 3, "");
+    COM::DataItem* w_uwnormals = 
+    _buf_window->new_dataitem( "uwnormals", 'n', COM_DOUBLE, 3, "");
     _buf_window->resize_array( w_uwnormals, 0);
 
-    COM::Attribute* w_eigvecs = 
-    _buf_window->new_attribute( "eigvecs", 'n', COM_DOUBLE, 9, "");
+    COM::DataItem* w_eigvecs = 
+    _buf_window->new_dataitem( "eigvecs", 'n', COM_DOUBLE, 9, "");
     _buf_window->resize_array( w_eigvecs, 0);
 
-    COM::Attribute* w_tangranks = 
-    _buf_window->new_attribute( "tangranks", 'n', COM_INT, 1, "");
+    COM::DataItem* w_tangranks = 
+    _buf_window->new_dataitem( "tangranks", 'n', COM_INT, 1, "");
     _buf_window->resize_array( w_tangranks, 0);
 
-    COM::Attribute* w_cntnranks = 
-    _buf_window->new_attribute( "cntnranks", 'n', COM_INT, 1, "");
+    COM::DataItem* w_cntnranks = 
+    _buf_window->new_dataitem( "cntnranks", 'n', COM_INT, 1, "");
     _buf_window->resize_array( w_cntnranks, 0);
     
-    COM::Attribute* w_cntnvecs =
-    _buf_window->new_attribute( "cntnvecs", 'n', COM_DOUBLE, 6, "");
+    COM::DataItem* w_cntnvecs =
+    _buf_window->new_dataitem( "cntnvecs", 'n', COM_DOUBLE, 6, "");
     _buf_window->resize_array( w_cntnvecs, 0);
 
-    COM::Attribute* w_scales = 
-    _buf_window->new_attribute( "scales", 'n', COM_DOUBLE, 1, "");
+    COM::DataItem* w_scales = 
+    _buf_window->new_dataitem( "scales", 'n', COM_DOUBLE, 1, "");
     _buf_window->resize_array( w_scales, 0);
     
-    COM::Attribute* w_weights = 
-    _buf_window->new_attribute( "weights", 'n', COM_DOUBLE, 1, "");
+    COM::DataItem* w_weights = 
+    _buf_window->new_dataitem( "weights", 'n', COM_DOUBLE, 1, "");
     _buf_window->resize_array( w_weights, 0);
 
-    COM::Attribute* w_weights2 = 
-    _buf_window->new_attribute( "weights2", 'n', COM_DOUBLE, 1, "");
+    COM::DataItem* w_weights2 = 
+    _buf_window->new_dataitem( "weights2", 'n', COM_DOUBLE, 1, "");
     _buf_window->resize_array( w_weights2, 0);
 
-    COM::Attribute* w_barycrds = 
-    _buf_window->new_attribute( "barycrds", 'n', COM_DOUBLE, 2, "");
+    COM::DataItem* w_barycrds = 
+    _buf_window->new_dataitem( "barycrds", 'n', COM_DOUBLE, 2, "");
     _buf_window->resize_array( w_barycrds, 0);
 
-    COM::Attribute* w_PNelemids = 
-    _buf_window->new_attribute( "PNelemids", 'n', COM_INT, 1, "");
+    COM::DataItem* w_PNelemids = 
+    _buf_window->new_dataitem( "PNelemids", 'n', COM_INT, 1, "");
     _buf_window->resize_array( w_PNelemids, 0);
 
     // Extend the buffer window to hold local contributions to new placement
     // and the number of contributing faces for Laplacian smoothing.
-    COM::Attribute * w_pnt_contrib = 
-      _buf_window->new_attribute("pnt_contrib", 'n', COM_DOUBLE, 3, "");
+    COM::DataItem * w_pnt_contrib = 
+      _buf_window->new_dataitem("pnt_contrib", 'n', COM_DOUBLE, 3, "");
     _buf_window->resize_array(w_pnt_contrib, 0);
 
-    COM::Attribute * w_disp_count =
-      _buf_window->new_attribute("disp_count", 'n', COM_DOUBLE, 1, "");
+    COM::DataItem * w_disp_count =
+      _buf_window->new_dataitem("disp_count", 'n', COM_DOUBLE, 1, "");
     _buf_window->resize_array(w_disp_count, 0);
 
     _buf_window->init_done();
@@ -1104,7 +1104,7 @@ void Rocmop::smooth_mesquite(std::vector<COM::Pane*> &allpanes,
 #endif
 }
 
-void Rocmop::reduce_sum_on_shared_nodes(COM::Attribute *att){
+void Rocmop::reduce_sum_on_shared_nodes(COM::DataItem *att){
   Pane_communicator pc(att->window(), att->window()->get_communicator());
   pc.init(att);
   pc.begin_update_shared_nodes();
@@ -1162,7 +1162,7 @@ void Rocmop::determine_shared_border(){
   //First, get the list of shared nodes.
   for(int i=0; i < (int)(local_npanes); ++i){
     // Obtain the pane connectivity of the local pane.
-    const COM::Attribute *pconn = allpanes[i]->attribute(COM::COM_PCONN);
+    const COM::DataItem *pconn = allpanes[i]->dataitem(COM::COM_PCONN);
     // Use the pconn offset
     const int *vs = (const int*)pconn->pointer()+Pane_connectivity::pconn_offset();
     int vs_size=pconn->size_of_real_items()-Pane_connectivity::pconn_offset();    
@@ -1204,7 +1204,7 @@ void Rocmop::determine_physical_border(){
   print_legible(1,"Entering Rocmop::determine_physical_border()");
 
   const std::string surf_attr("is_surface");
-  COM::Attribute* w_is_surface = _buf_window->attribute(surf_attr);
+  COM::DataItem* w_is_surface = _buf_window->dataitem(surf_attr);
   COM_assertion_msg( w_is_surface, "Unexpected NULL pointer");
   int is_surface_id = w_is_surface->id();
 
@@ -1218,7 +1218,7 @@ void Rocmop::determine_physical_border(){
     _is_phys_bnd_node[i].resize(allpanes[i]->size_of_real_nodes());
 
     // get pane level pointer to physical border property.
-    const COM::Attribute *p_is_surface = allpanes[i]->attribute(is_surface_id);
+    const COM::DataItem *p_is_surface = allpanes[i]->dataitem(is_surface_id);
     int *is_surface_ptr = (int*)p_is_surface->pointer();
     
     // loop through real nodes
@@ -1421,7 +1421,7 @@ void Rocmop::print_legible(int verb, const char *msg){
   }
 }
 
-void Rocmop::constrain_displacements(COM::Attribute * w_disp){
+void Rocmop::constrain_displacements(COM::DataItem * w_disp){
 #ifdef ROCPROF
   Profile_begin("Rocmop::const_disp");
 #endif
@@ -1437,7 +1437,7 @@ void Rocmop::constrain_displacements(COM::Attribute * w_disp){
     for(int i=0,ni = allpanes.size(); i<ni; ++i){
       
       Vector_3<double> *ptr = NULL;
-      COM::Attribute* ptr_att = allpanes[i]->attribute(disp_id);
+      COM::DataItem* ptr_att = allpanes[i]->dataitem(disp_id);
       void* void_ptr = ptr_att->pointer();
       ptr = reinterpret_cast<Vector_3<double>*>(void_ptr);
 
@@ -1452,7 +1452,7 @@ void Rocmop::constrain_displacements(COM::Attribute * w_disp){
     
     if(max_norm > _maxdisp){
       double div = max_norm/_maxdisp;
-      Rocblas::div_scalar(const_cast<const COM::Attribute*>(w_disp),&div,w_disp);
+      Rocblas::div_scalar(const_cast<const COM::DataItem*>(w_disp),&div,w_disp);
     }
   }
 #ifdef ROCPROF
@@ -1696,22 +1696,22 @@ void Rocmop::perturb_stationary(){
   _buf_window->panes(allpanes);
   _usr_window->panes(allpanes_usr);
 
-  COM::Attribute *w_fgpn_bnd = 
-    _buf_window->attribute("is_fgpn_bnd");
-  COM::Attribute *w_qual_b_perturb =
-    _buf_window->attribute("qual_b_perturb");
-  COM::Attribute *w_qual_a_perturb =
-    _buf_window->attribute("qual_a_perturb");
+  COM::DataItem *w_fgpn_bnd = 
+    _buf_window->dataitem("is_fgpn_bnd");
+  COM::DataItem *w_qual_b_perturb =
+    _buf_window->dataitem("qual_b_perturb");
+  COM::DataItem *w_qual_a_perturb =
+    _buf_window->dataitem("qual_a_perturb");
 
   double angles[] = {0.0, 0.0};
   
   // Get worst quality on local panes
   for(int i=0,ni=allpanes.size(); i<ni; ++i){
   
-    COM::Attribute *p_fgpn_bnd = 
-      const_cast<COM::Attribute*>(allpanes[i]->attribute(w_fgpn_bnd->id()));
-    COM::Attribute *p_qual_b_perturb = 
-      const_cast<COM::Attribute*>(allpanes[i]->attribute(w_qual_b_perturb->id()));
+    COM::DataItem *p_fgpn_bnd = 
+      const_cast<COM::DataItem*>(allpanes[i]->dataitem(w_fgpn_bnd->id()));
+    COM::DataItem *p_qual_b_perturb = 
+      const_cast<COM::DataItem*>(allpanes[i]->dataitem(w_qual_b_perturb->id()));
  
     int* fgpn_bnd_ptr = reinterpret_cast<int*>(p_fgpn_bnd->pointer());
     double* qual_b_perturb_ptr = 
@@ -1747,10 +1747,10 @@ void Rocmop::perturb_stationary(){
   // Now generate random perturbations
   for(int i=0,ni=allpanes.size(); i<ni; ++i){
   
-    COM::Attribute *p_fgpn_bnd = 
-      const_cast<COM::Attribute*>(allpanes[i]->attribute(w_fgpn_bnd->id()));
-    COM::Attribute *p_nc = 
-      const_cast<COM::Attribute*>(allpanes[i]->attribute(COM::COM_NC));
+    COM::DataItem *p_fgpn_bnd = 
+      const_cast<COM::DataItem*>(allpanes[i]->dataitem(w_fgpn_bnd->id()));
+    COM::DataItem *p_nc = 
+      const_cast<COM::DataItem*>(allpanes[i]->dataitem(COM::COM_NC));
  
     int* fgpn_bnd_ptr = 
       reinterpret_cast<int*>(p_fgpn_bnd->pointer());
@@ -1799,10 +1799,10 @@ void Rocmop::perturb_stationary(){
     // Get perturbed worst quality on local panes
   for(int i=0,ni=(int)allpanes.size(); i<ni; ++i){
   
-    COM::Attribute *p_fgpn_bnd = 
-      const_cast<COM::Attribute*>(allpanes[i]->attribute(w_fgpn_bnd->id()));
-    COM::Attribute *p_qual_a_perturb = 
-      const_cast<COM::Attribute*>(allpanes[i]->attribute(w_qual_a_perturb->id()));
+    COM::DataItem *p_fgpn_bnd = 
+      const_cast<COM::DataItem*>(allpanes[i]->dataitem(w_fgpn_bnd->id()));
+    COM::DataItem *p_qual_a_perturb = 
+      const_cast<COM::DataItem*>(allpanes[i]->dataitem(w_qual_a_perturb->id()));
  
     int* fgpn_bnd_ptr = 
       reinterpret_cast<int*>(p_fgpn_bnd->pointer());
@@ -1840,17 +1840,17 @@ void Rocmop::perturb_stationary(){
   // has gotten worse.
   for(int i=0,ni=allpanes.size(); i<ni; ++i){
     
-    COM::Attribute *p_fgpn_bnd = 
-      const_cast<COM::Attribute*>(allpanes[i]->attribute(w_fgpn_bnd->id()));
-    COM::Attribute *p_nc = 
-      const_cast<COM::Attribute*>(allpanes[i]->attribute(COM::COM_NC));
-    COM::Attribute *p_nc_usr = 
-      const_cast<COM::Attribute*>(allpanes_usr[i]->attribute(COM::COM_NC));
+    COM::DataItem *p_fgpn_bnd = 
+      const_cast<COM::DataItem*>(allpanes[i]->dataitem(w_fgpn_bnd->id()));
+    COM::DataItem *p_nc = 
+      const_cast<COM::DataItem*>(allpanes[i]->dataitem(COM::COM_NC));
+    COM::DataItem *p_nc_usr = 
+      const_cast<COM::DataItem*>(allpanes_usr[i]->dataitem(COM::COM_NC));
       
-    COM::Attribute *p_qual_b_perturb = 
-      const_cast<COM::Attribute*>(allpanes[i]->attribute(w_qual_b_perturb->id()));
-    COM::Attribute *p_qual_a_perturb = 
-      const_cast<COM::Attribute*>(allpanes[i]->attribute(w_qual_a_perturb->id()));
+    COM::DataItem *p_qual_b_perturb = 
+      const_cast<COM::DataItem*>(allpanes[i]->dataitem(w_qual_b_perturb->id()));
+    COM::DataItem *p_qual_a_perturb = 
+      const_cast<COM::DataItem*>(allpanes[i]->dataitem(w_qual_a_perturb->id()));
  
     int* fgpn_bnd_ptr = 
       reinterpret_cast<int*>(p_fgpn_bnd->pointer());

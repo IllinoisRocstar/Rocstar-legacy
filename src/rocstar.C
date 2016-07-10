@@ -25,7 +25,7 @@
 #include <cstring>
 #include <cstdlib>
 //#include <mpi.h>
-#include "roccom.h"
+#include "com.h"
 #include "splash.h"
 
 //##include "makeopts.h"

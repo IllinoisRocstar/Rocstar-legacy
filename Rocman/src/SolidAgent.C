@@ -55,10 +55,10 @@ SolidAgent::SolidAgent(Coupling *coup, std::string mod, std::string obj, MPI_Com
     // TODO: need to personalize these variables
   if (agentCount.length()==1) agentCount[0] ++;
   isolid_i = "isolid";  isolid_i += agentCount;    // "SolidBuf"
-  isolid_all = "isolid_all"; isolid_all += agentCount; //for registering attributes
+  isolid_all = "isolid_all"; isolid_all += agentCount; //for registering dataitems
 
   solidBufBase = "SolidBufBase"; solidBufBase += agentCount;  
-  solidBuf = "SolidBuf"; solidBuf += agentCount; //  for registering attributes
+  solidBuf = "SolidBuf"; solidBuf += agentCount; //  for registering dataitems
   propBufAll = "SolidPropAll"; // for surface propagation (containing all panes)
   propBufAll += agentCount;
   propBuf = "SolidProp"; propBuf += agentCount;
@@ -162,7 +162,7 @@ void SolidAgent::init_module( double t, double dt) {
 void SolidAgent::create_buffer_all()
 {
 
-  int dummy = COM_get_attribute_handle_const( surf_window+".vbar_alp");
+  int dummy = COM_get_dataitem_handle_const( surf_window+".vbar_alp");
   withALE = (dummy > 0);
 
   if (comm_rank == 0)
@@ -173,62 +173,62 @@ void SolidAgent::create_buffer_all()
 
   if (withALE) {
     COM_new_window( propBufAll);
-    COM_use_attribute( propBufAll+".mesh", surf_window+".mesh");
-    COM_use_attribute( propBufAll+".vbar_alp", surf_window+".vbar_alp");
-    COM_clone_attribute( propBufAll+".vbar", surf_window+".vbar_alp");
-    COM_clone_attribute( propBufAll+".vbar_old", surf_window+".vbar_alp");
-    COM_clone_attribute( propBufAll+".vbar_grad", surf_window+".vbar_alp");
-    COM_new_attribute( propBufAll+".rb", 'e', COM_DOUBLE, 1, "m/s");
-    COM_new_attribute( propBufAll+".positions",'n',COM_DOUBLE,3,"m");
-    COM_new_attribute( propBufAll+".constrained",'n',COM_INTEGER,1,"");
+    COM_use_dataitem( propBufAll+".mesh", surf_window+".mesh");
+    COM_use_dataitem( propBufAll+".vbar_alp", surf_window+".vbar_alp");
+    COM_clone_dataitem( propBufAll+".vbar", surf_window+".vbar_alp");
+    COM_clone_dataitem( propBufAll+".vbar_old", surf_window+".vbar_alp");
+    COM_clone_dataitem( propBufAll+".vbar_grad", surf_window+".vbar_alp");
+    COM_new_dataitem( propBufAll+".rb", 'e', COM_DOUBLE, 1, "m/s");
+    COM_new_dataitem( propBufAll+".positions",'n',COM_DOUBLE,3,"m");
+    COM_new_dataitem( propBufAll+".constrained",'n',COM_INTEGER,1,"");
     COM_resize_array( propBufAll+".positions" );
     COM_resize_array( propBufAll+".constrained");
     COM_resize_array( propBufAll+".rb" );
-    create_registered_window_attributes( propBufAll);
+    create_registered_window_dataitems( propBufAll);
     COM_window_init_done( propBufAll);
 
     COM_new_window( propBuf);
     std::string bc_str = surf_window+".bcflag";
-    COM_use_attribute( propBuf+".mesh", surf_window+".mesh", 1, bc_str.c_str(), 1);
-    COM_use_attribute( propBuf+".pconn", propBufAll+".pconn");
-    if ( COM_get_attribute_handle( surf_window+".cnstr_type") >0) {
-       COM_use_attribute( propBuf, surf_window+".cnstr_type");
+    COM_use_dataitem( propBuf+".mesh", surf_window+".mesh", 1, bc_str.c_str(), 1);
+    COM_use_dataitem( propBuf+".pconn", propBufAll+".pconn");
+    if ( COM_get_dataitem_handle( surf_window+".cnstr_type") >0) {
+       COM_use_dataitem( propBuf, surf_window+".cnstr_type");
     }
-    COM_use_attribute( propBuf+".vbar_alp", propBufAll+".vbar_alp");
-    COM_use_attribute( propBuf+".vbar", propBufAll+".vbar");
-    COM_use_attribute( propBuf+".vbar_old", propBufAll+".vbar_old");
-    COM_use_attribute( propBuf+".vbar_grad", propBufAll+".vbar_grad");
-    COM_use_attribute( propBuf+".rb", propBufAll+".rb");
-    create_registered_window_attributes( propBuf);
+    COM_use_dataitem( propBuf+".vbar_alp", propBufAll+".vbar_alp");
+    COM_use_dataitem( propBuf+".vbar", propBufAll+".vbar");
+    COM_use_dataitem( propBuf+".vbar_old", propBufAll+".vbar_old");
+    COM_use_dataitem( propBuf+".vbar_grad", propBufAll+".vbar_grad");
+    COM_use_dataitem( propBuf+".rb", propBufAll+".rb");
+    create_registered_window_dataitems( propBuf);
     COM_window_init_done( propBuf);
   }
 
   COM_new_window( solidBufBase);
   std::string bcflag = surf_window+".bcflag";
-  COM_use_attribute( solidBufBase+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 0);
-  COM_use_attribute( solidBufBase+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 1);
+  COM_use_dataitem( solidBufBase+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 0);
+  COM_use_dataitem( solidBufBase+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 1);
   if (withALE) {
-    COM_new_attribute(solidBufBase+".areas", 'e', COM_DOUBLE, 1, "m^2");
+    COM_new_dataitem(solidBufBase+".areas", 'e', COM_DOUBLE, 1, "m^2");
     COM_resize_array(solidBufBase+".areas");
-    COM_new_attribute(solidBufBase+".mdot", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
+    COM_new_dataitem(solidBufBase+".mdot", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
     COM_resize_array(solidBufBase+".mdot");
   }
-  COM_clone_attribute( solidBufBase+".ts", surf_window+".ts_alp");
-  COM_clone_attribute( solidBufBase+".ts_old", surf_window+".ts_alp");
-  COM_clone_attribute( solidBufBase+".ts_grad", surf_window+".ts_alp");
-  create_registered_window_attributes( solidBufBase);
+  COM_clone_dataitem( solidBufBase+".ts", surf_window+".ts_alp");
+  COM_clone_dataitem( solidBufBase+".ts_old", surf_window+".ts_alp");
+  COM_clone_dataitem( solidBufBase+".ts_grad", surf_window+".ts_alp");
+  create_registered_window_dataitems( solidBufBase);
   COM_window_init_done( solidBufBase);
 
   COM_new_window( solidBuf);
-  COM_use_attribute( solidBuf, solidBufBase+".all");
-  COM_use_attribute( solidBuf, surf_window+".atts");
+  COM_use_dataitem( solidBuf, solidBufBase+".all");
+  COM_use_dataitem( solidBuf, surf_window+".atts");
   if (withALE) 
-    COM_use_attribute( solidBuf, propBufAll+".atts");
+    COM_use_dataitem( solidBuf, propBufAll+".atts");
   if (with_fluid == 1) {    // coupled
-    COM_use_attribute( solidBuf+".x", solidBufBase+".nc");
-    COM_clone_attribute( solidBuf+".nc", surf_window+".nc");
+    COM_use_dataitem( solidBuf+".x", solidBufBase+".nc");
+    COM_clone_dataitem( solidBuf+".nc", surf_window+".nc");
   }
-  create_registered_window_attributes( solidBuf);
+  create_registered_window_dataitems( solidBuf);
   COM_window_init_done( solidBuf);
 
   split_surface_window( isolid_all, isolid_i, isolid_nb, isolid_b, isolid_ni);
@@ -239,45 +239,45 @@ void SolidAgent::create_buffer_all()
 
   // Create a window for output solid non-burning patch data
   COM_new_window( isolid_nb);
-  COM_use_attribute( isolid_nb+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 0);
-  COM_use_attribute( isolid_nb, surf_window+".atts");
+  COM_use_dataitem( isolid_nb+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 0);
+  COM_use_dataitem( isolid_nb, surf_window+".atts");
 
   if ( withALE) {
-    COM_use_attribute( isolid_nb+".pconn", propBufAll+".pconn");
-    COM_use_attribute( isolid_nb, propBufAll+".vbar");
-    COM_use_attribute( isolid_nb, propBufAll+".vbar_old");
-    COM_use_attribute( isolid_nb, propBufAll+".rb");
+    COM_use_dataitem( isolid_nb+".pconn", propBufAll+".pconn");
+    COM_use_dataitem( isolid_nb, propBufAll+".vbar");
+    COM_use_dataitem( isolid_nb, propBufAll+".vbar_old");
+    COM_use_dataitem( isolid_nb, propBufAll+".rb");
   }
 
-  COM_use_attribute( isolid_nb, solidBufBase+".ts");
-  COM_use_attribute( isolid_nb, solidBufBase+".ts_old");
+  COM_use_dataitem( isolid_nb, solidBufBase+".ts");
+  COM_use_dataitem( isolid_nb, solidBufBase+".ts_old");
   COM_window_init_done( isolid_nb);
 
   // Create a window for output solid interface data
   COM_new_window( isolid_b);
-  COM_use_attribute( isolid_b+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 1);
-  COM_use_attribute( isolid_b, surf_window+".atts");
+  COM_use_dataitem( isolid_b+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 1);
+  COM_use_dataitem( isolid_b, surf_window+".atts");
 
   if ( withALE) {
-       COM_use_attribute( isolid_b+".pconn", propBufAll+".pconn");
-       COM_use_attribute( isolid_b, propBufAll+".vbar");
-       COM_use_attribute( isolid_b, propBufAll+".vbar_old");
-       COM_use_attribute( isolid_b, propBufAll+".rb");
+       COM_use_dataitem( isolid_b+".pconn", propBufAll+".pconn");
+       COM_use_dataitem( isolid_b, propBufAll+".vbar");
+       COM_use_dataitem( isolid_b, propBufAll+".vbar_old");
+       COM_use_dataitem( isolid_b, propBufAll+".rb");
   }
 
-  COM_use_attribute( isolid_b, solidBufBase+".ts");
-  COM_use_attribute( isolid_b, solidBufBase+".ts_old");
+  COM_use_dataitem( isolid_b, solidBufBase+".ts");
+  COM_use_dataitem( isolid_b, solidBufBase+".ts_old");
   COM_window_init_done( isolid_b);
 
   //   Create a window for non-solid/fluid interface
   COM_new_window( isolid_ni);
-  COM_use_attribute( isolid_ni+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 2);
-  COM_use_attribute( isolid_ni, surf_window+".atts");
+  COM_use_dataitem( isolid_ni+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 2);
+  COM_use_dataitem( isolid_ni, surf_window+".atts");
   if ( withALE) {
-       COM_use_attribute( isolid_ni+".pconn", propBufAll+".pconn");
-       COM_use_attribute( isolid_ni, propBufAll+".vbar");
-       COM_use_attribute( isolid_ni, propBufAll+".vbar_old");
-       COM_use_attribute( isolid_ni, propBufAll+".rb");
+       COM_use_dataitem( isolid_ni+".pconn", propBufAll+".pconn");
+       COM_use_dataitem( isolid_ni, propBufAll+".vbar");
+       COM_use_dataitem( isolid_ni, propBufAll+".vbar_old");
+       COM_use_dataitem( isolid_ni, propBufAll+".rb");
   }
   COM_window_init_done( isolid_ni);
 
@@ -286,26 +286,26 @@ void SolidAgent::create_buffer_all()
   if ( maxPredCorr>1) {
        // Create window for backing surface data
        COM_new_window( solidBufBak);
-       COM_use_attribute( solidBufBak+".mesh", solidBuf+".mesh");
-       COM_clone_attribute( solidBufBak+".x", solidBuf+".x");
-       COM_clone_attribute( solidBufBak+".y", solidBuf+".nc");
+       COM_use_dataitem( solidBufBak+".mesh", solidBuf+".mesh");
+       COM_clone_dataitem( solidBufBak+".x", solidBuf+".x");
+       COM_clone_dataitem( solidBufBak+".y", solidBuf+".nc");
        COM_window_init_done( solidBufBak);
 
        // Create window for backing up volume data
        COM_new_window( solidVolBak);
-       COM_use_attribute( solidVolBak+".mesh", vol_window+".mesh");
-       COM_clone_attribute( solidVolBak, vol_window+".nc");
-       COM_clone_attribute( solidVolBak, vol_window+".atts");
+       COM_use_dataitem( solidVolBak+".mesh", vol_window+".mesh");
+       COM_clone_dataitem( solidVolBak, vol_window+".nc");
+       COM_clone_dataitem( solidVolBak, vol_window+".atts");
        COM_window_init_done( solidVolBak);
 
-       // Initlaize the attribute handles to be stored/restored
-       pc_hdls[0][0] = COM_get_attribute_handle( vol_window+".all");
-       pc_hdls[1][0] = COM_get_attribute_handle( solidVolBak+".all");
+       // Initlaize the dataitem handles to be stored/restored
+       pc_hdls[0][0] = COM_get_dataitem_handle( vol_window+".all");
+       pc_hdls[1][0] = COM_get_dataitem_handle( solidVolBak+".all");
 
-       pc_hdls[0][1] = COM_get_attribute_handle( solidBuf+".x");
-       pc_hdls[1][1] = COM_get_attribute_handle( solidBufBak+".x");
-       pc_hdls[0][2] = COM_get_attribute_handle( solidBuf+".nc");
-       pc_hdls[1][2] = COM_get_attribute_handle( solidBufBak+".y");
+       pc_hdls[0][1] = COM_get_dataitem_handle( solidBuf+".x");
+       pc_hdls[1][1] = COM_get_dataitem_handle( solidBufBak+".x");
+       pc_hdls[0][2] = COM_get_dataitem_handle( solidBuf+".nc");
+       pc_hdls[1][2] = COM_get_dataitem_handle( solidBufBak+".y");
        pc_count = 3;
   }
 
@@ -317,7 +317,7 @@ void SolidAgent::create_buffer_all()
 
   std::string unit;
   char loc;
-  COM_get_attribute( isolid_all+".rhos", &loc, &dummy, &dummy, &unit);
+  COM_get_dataitem( isolid_all+".rhos", &loc, &dummy, &dummy, &unit);
   if (loc=='w' || loc=='p')
     rhos_mode = 1;
   else {
@@ -328,34 +328,34 @@ void SolidAgent::create_buffer_all()
     rhos_mode = 2;
   }
 
-  COM_get_attribute( solidBufBase+".ts", &loc, &dummy, &size_ts, &unit);
+  COM_get_dataitem( solidBufBase+".ts", &loc, &dummy, &size_ts, &unit);
   if (size_ts == 1 && traction_mode != NO_SHEER) {
     COM_assertion_msg(0, "If traction mode is with sheer, then solid tractions must be vectors!");
     MPI_Abort(MPI_COMM_WORLD, -1);
   }
 
   // for compute_distances
-  y_hdl = COM_get_attribute_handle( solidBuf+".nc");
+  y_hdl = COM_get_dataitem_handle( solidBuf+".nc");
 
   if (!get_coupling()->initial_start()) read_restart_data();
 }
 
 void SolidAgent::read_restart_data()
 {
-  int atts_hdl = COM_get_attribute_handle_const( solidSurfIN+".atts");
-  int buf_hdl = COM_get_attribute_handle( solidBufBase+".atts");
+  int atts_hdl = COM_get_dataitem_handle_const( solidSurfIN+".atts");
+  int buf_hdl = COM_get_dataitem_handle( solidBufBase+".atts");
   COM_call_function( obtain_attr_handle, &atts_hdl, &buf_hdl);
 
   if ( withALE) {
           // Obtain data for surface propagation if ALE is enabled
-        int propBufAll_hdl = COM_get_attribute_handle( propBufAll+".atts");
+        int propBufAll_hdl = COM_get_dataitem_handle( propBufAll+".atts");
         COM_call_function( obtain_attr_handle, &atts_hdl, &propBufAll_hdl);
 
           // Obtain pconn for surface propagation
-        int pconn_hdl_const = COM_get_attribute_handle_const( solidSurfIN+".pconn");
-        int pconn_hdl = COM_get_attribute_handle( solidSurfIN+".pconn");
+        int pconn_hdl_const = COM_get_dataitem_handle_const( solidSurfIN+".pconn");
+        int pconn_hdl = COM_get_dataitem_handle( solidSurfIN+".pconn");
         COM_call_function( obtain_attr_handle, &pconn_hdl_const, &pconn_hdl);
-        COM_clone_attribute( propBufAll+".pconn", solidSurfIN+".pconn");
+        COM_clone_dataitem( propBufAll+".pconn", solidSurfIN+".pconn");
   }
 }
 

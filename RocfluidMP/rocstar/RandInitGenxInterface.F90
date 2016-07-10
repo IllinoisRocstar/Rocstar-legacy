@@ -51,7 +51,7 @@ SUBROUTINE randInitGenxInterface( regions, wins, winv )
   USE ModParameters
   USE ModRandom
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 ! ... parameters
   CHARACTER(CHRLEN) :: wins, winv
@@ -77,7 +77,7 @@ SUBROUTINE randInitGenxInterface( regions, wins, winv )
  
 ! output restart data ---------------------------------------------------------
 
-  CALL COM_new_attribute( TRIM(winv)//'.rand', 'p',         &
+  CALL COM_new_dataitem( TRIM(winv)//'.rand', 'p',         &
                           COM_INTEGER,1, '')
   CALL COM_set_size( TRIM(winv)//'.rand', 0, RAND_TOTAL_SIZE)
 
@@ -122,7 +122,7 @@ END SUBROUTINE randInitGenxInterface
 ! migrated to Roccom-3
 !
 ! Revision 1.3  2004/03/01 23:47:35  jiao
-! Changed the F90 implementation for COM_init_attribute and COM_init_mesh
+! Changed the F90 implementation for COM_init_dataitem and COM_init_mesh
 ! not to require registered scalars to be F90 pointers.
 !
 ! Revision 1.2  2004/02/20 00:49:04  jiao

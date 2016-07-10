@@ -57,12 +57,12 @@ public:
   virtual void schedule()  {}			// do nothing
 
 protected:
-  // Obtain attribute handle of ith attribute
-  int get_attribute_handle( int i);
-  int get_attribute_handle_const( int i);
-  int get_attribute_handle( const std::string str);
+  // Obtain dataitem handle of ith attribute
+  int get_dataitem_handle( int i);
+  int get_dataitem_handle_const( int i);
+  int get_dataitem_handle( const std::string str);
 
-  // set attributes
+  // set dataitems
   void set_attr(int n, const std::string at[], int *id=NULL);
   void set_attr(int n, const char * at[], int *id=NULL);
 

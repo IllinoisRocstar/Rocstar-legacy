@@ -91,11 +91,11 @@ void AttributeBase::assign(std::string bufname)
   // check if target_window is created
 //  if (COM_get_window_handle( target_window) <= 0) {
 //    COM_new_window( target_window);
-//    COM_use_attribute( target_window, bufname+".all");
+//    COM_use_dataitem( target_window, bufname+".all");
 //  }
   COM_assertion_msg(COM_get_window_handle( target_window)>0, "ERROR: assign error.\n");
   
-  COM_use_attribute( target_window, bufname+attr);
+  COM_use_dataitem( target_window, bufname+attr);
   // when to call init_done ??????????????
 }
 
@@ -108,12 +108,12 @@ NewAttribute::NewAttribute(Agent *ag, std::string target_window_, std::string at
 void NewAttribute::create(std::string bufname)
 {
   // test if already created
-  if (COM_get_attribute_handle( bufname+attr) > 0) {
+  if (COM_get_dataitem_handle( bufname+attr) > 0) {
     char loc_;
     int type_;
     int ncomp_;
     std::string unit_;
-    COM_get_attribute( bufname+attr, &loc_, &type_, &ncomp_, &unit_);
+    COM_get_dataitem( bufname+attr, &loc_, &type_, &ncomp_, &unit_);
     if (loc_ != loc || type_ != type || ncomp_ != ncomp || unit_ != unit) {
       std::cerr << "Rocstar Error: NewAttribute::create(): Could not create " << bufname+attr << " in two different ways " << std::endl;
       MPI_Abort(MPI_COMM_WORLD, -1);
@@ -122,7 +122,7 @@ void NewAttribute::create(std::string bufname)
       return;
   }
   MAN_DEBUG(3, ("NewAttribute::create: %s%s.\n", bufname.c_str(), attr.c_str()));
-  COM_new_attribute( bufname+attr, loc, type, ncomp, unit);
+  COM_new_dataitem( bufname+attr, loc, type, ncomp, unit);
   COM_resize_array( bufname+attr);
 }
 
@@ -142,30 +142,30 @@ void CloneAttribute::create(std::string bufname)
   if (parent_window=="") {   // filling
     parent_window = agent->get_surface_window();
   }
-  if (COM_get_attribute_handle( bufname+attr) > 0) {
+  if (COM_get_dataitem_handle( bufname+attr) > 0) {
     char loc1, loc2;
     int type1, type2;
     int ncomp1, ncomp2;
     std::string unit1, unit2;
-    COM_get_attribute( bufname+attr, &loc1, &type1, &ncomp1, &unit1);
-    COM_get_attribute( parent_window+parent_attr, &loc2, &type2, &ncomp2, &unit2);
+    COM_get_dataitem( bufname+attr, &loc1, &type1, &ncomp1, &unit1);
+    COM_get_dataitem( parent_window+parent_attr, &loc2, &type2, &ncomp2, &unit2);
     if (loc1 != loc2 || type1 != type2 || ncomp1 != ncomp2 || unit1 != unit2) {
       std::cerr << "Rocstar Error: CloneAttribute::create(): Could not create " << target_window+attr << " in two different ways " << std::endl;
       MPI_Abort(MPI_COMM_WORLD, -1);
     }
     else {
-      MAN_DEBUG(3, ("CloneAttribute::create: %s%s %s%s condition:%d handle:%d SKIPPED.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str(), condition, COM_get_attribute_handle( parent_window+parent_attr)));
+      MAN_DEBUG(3, ("CloneAttribute::create: %s%s %s%s condition:%d handle:%d SKIPPED.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str(), condition, COM_get_dataitem_handle( parent_window+parent_attr)));
       return;
     }
   }
-  MAN_DEBUG(3, ("CloneAttribute::create: %s%s %s%s condition:%d handle:%d.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str(), condition, COM_get_attribute_handle( parent_window+parent_attr)));
+  MAN_DEBUG(3, ("CloneAttribute::create: %s%s %s%s condition:%d handle:%d.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str(), condition, COM_get_dataitem_handle( parent_window+parent_attr)));
   if (condition) 
-    if (COM_get_attribute_handle( parent_window+parent_attr) <= 0)  return;
+    if (COM_get_dataitem_handle( parent_window+parent_attr) <= 0)  return;
   if (ptnname) {
     if (ptnname[0] == '.')
       ptnname = strdup((agent->get_surface_window() + ptnname).c_str());
   }
-  COM_clone_attribute( bufname+attr, parent_window+parent_attr, wg, ptnname, val);
+  COM_clone_dataitem( bufname+attr, parent_window+parent_attr, wg, ptnname, val);
 }
 
 UseAttribute::UseAttribute(Agent *ag, std::string target_window_, std::string attr_, std::string parent_window_, std::string parent_attr_, int wg_, const char *ptnname_, int val_):  
@@ -180,13 +180,13 @@ void UseAttribute::create(std::string bufname)
   if (parent_window=="") {
     parent_window = agent->get_surface_window();
   }
-  if (COM_get_attribute_handle( bufname+attr) > 0) {
+  if (COM_get_dataitem_handle( bufname+attr) > 0) {
     char loc1, loc2;
     int type1, type2;
     int ncomp1, ncomp2;
     std::string unit1, unit2;
-    COM_get_attribute( bufname+attr, &loc1, &type1, &ncomp1, &unit1);
-    COM_get_attribute( parent_window+parent_attr, &loc2, &type2, &ncomp2, &unit2);
+    COM_get_dataitem( bufname+attr, &loc1, &type1, &ncomp1, &unit1);
+    COM_get_dataitem( parent_window+parent_attr, &loc2, &type2, &ncomp2, &unit2);
     if (loc1 != loc2 || type1 != type2 || ncomp1 != ncomp2 || unit1 != unit2) {
       std::cerr << "Rocstar Error: NewAttribute::create(): Could not create " << target_window+attr << " in two different ways " << std::endl;
       MPI_Abort(MPI_COMM_WORLD, -1);
@@ -195,7 +195,7 @@ void UseAttribute::create(std::string bufname)
       return;
   }
   MAN_DEBUG(3, ("UseAttribute::create: %s%s %s%s.\n", bufname.c_str(), attr.c_str(), parent_window.c_str(), parent_attr.c_str()));
-  COM_use_attribute( bufname+attr, parent_window+parent_attr, wg, ptnname, val);
+  COM_use_dataitem( bufname+attr, parent_window+parent_attr, wg, ptnname, val);
 }
 
 Agent::Agent(Coupling *cp, std::string mod, std::string obj, 
@@ -268,8 +268,8 @@ void Agent::init_function_handles()
 
   read_files_handle = COM_get_function_handle( "IN.read_window");
   read_by_control_handle = COM_get_function_handle( "IN.read_by_control_file");
-  obtain_attr_handle = COM_get_function_handle( "IN.obtain_attribute");
-  write_attr_handle = COM_get_function_handle( "OUT.write_attribute");
+  obtain_attr_handle = COM_get_function_handle( "IN.obtain_dataitem");
+  write_attr_handle = COM_get_function_handle( "OUT.write_dataitem");
   write_ctrl_handle = COM_get_function_handle( "OUT.write_rocin_control_file");
 
   COM_set_profiling_barrier( read_files_handle, communicator);
@@ -284,7 +284,7 @@ void Agent::create_window(const char *window_name)
   char global[128];
   COM_new_window(window_name);
   sprintf(global, "%s%s", window_name, ".global");
-  COM_new_attribute(global, 'w', COM_VOID, 1, "");
+  COM_new_dataitem(global, 'w', COM_VOID, 1, "");
   COM_set_object(global, 0, this);
 
   // 
@@ -319,41 +319,41 @@ double Agent::max_timestep(double t, double dt)
   return dt;
 }
 
-void Agent::register_new_attribute(std::string target_window_, std::string attr_, char loc_, int type_, int ncomp_, const char * unit_)
+void Agent::register_new_dataitem(std::string target_window_, std::string attr_, char loc_, int type_, int ncomp_, const char * unit_)
 {
   NewAttribute *newAttr = new NewAttribute(this, target_window_, attr_, loc_, type_, ncomp_, unit_);
-  attributeList.push_back(newAttr);
+  dataitemList.push_back(newAttr);
 }
 
-void Agent::register_clone_attribute(int cond, std::string target_window_, std::string attr_, std::string parent_window_, std::string parent_attr_, int wg_, const char *ptnname_, int val_)
+void Agent::register_clone_dataitem(int cond, std::string target_window_, std::string attr_, std::string parent_window_, std::string parent_attr_, int wg_, const char *ptnname_, int val_)
 {
   CloneAttribute *newAttr = new CloneAttribute(this, cond, target_window_, attr_, parent_window_, parent_attr_, wg_, ptnname_, val_);
-  attributeList.push_back(newAttr);
+  dataitemList.push_back(newAttr);
 }
 
-void Agent::register_use_attribute(std::string target_window_, std::string attr_, std::string parent_window_, std::string parent_attr_, int wg_, const char *ptnname_, int val_)
+void Agent::register_use_dataitem(std::string target_window_, std::string attr_, std::string parent_window_, std::string parent_attr_, int wg_, const char *ptnname_, int val_)
 {
   UseAttribute *newAttr = new UseAttribute(this, target_window_, attr_, parent_window_, parent_attr_, wg_, ptnname_, val_);
-  attributeList.push_back(newAttr);
+  dataitemList.push_back(newAttr);
 }
 
-void Agent::create_registered_attributes(std::string tmpBuf)
+void Agent::create_registered_dataitems(std::string tmpBuf)
 {
-  unsigned int n = attributeList.size();
+  unsigned int n = dataitemList.size();
   for (unsigned int i=0; i<n; i++) {
-    MAN_DEBUG(3, ("[%d] creating %s %s\n", comm_rank, attributeList[i]->target_window.c_str(), attributeList[i]->attr.c_str()));
-    attributeList[i]->create(attributeList[i]->target_window);
+    MAN_DEBUG(3, ("[%d] creating %s %s\n", comm_rank, dataitemList[i]->target_window.c_str(), dataitemList[i]->attr.c_str()));
+    dataitemList[i]->create(dataitemList[i]->target_window);
   }
   COM_window_init_done( tmpBuf);
 }
 
-void Agent::create_registered_window_attributes(std::string target_window)
+void Agent::create_registered_window_dataitems(std::string target_window)
 {
-  unsigned int n = attributeList.size();
+  unsigned int n = dataitemList.size();
   for (unsigned int i=0; i<n; i++) {
-    if (attributeList[i]->target_window == target_window) {
-      MAN_DEBUG(3, ("[%d] creating %s %s\n", comm_rank, attributeList[i]->target_window.c_str(), attributeList[i]->attr.c_str()));
-      attributeList[i]->create(attributeList[i]->target_window);
+    if (dataitemList[i]->target_window == target_window) {
+      MAN_DEBUG(3, ("[%d] creating %s %s\n", comm_rank, dataitemList[i]->target_window.c_str(), dataitemList[i]->attr.c_str()));
+      dataitemList[i]->create(dataitemList[i]->target_window);
     }
   }
 }
@@ -362,19 +362,19 @@ void Agent::create_buffer_all()
 {
   MAN_DEBUG(3, ("Rocstar: Agent %s::create_buffer_all called %s.\n", get_agent_name().c_str(), tmp_window.c_str()));
   COM_new_window( tmp_window);
-//  COM_use_attribute( tmp_window, surf_window+".all", 1);
-  COM_use_attribute( tmp_window, surf_window+".mesh", 1);
-  COM_use_attribute( tmp_window, surf_window+".atts", 1);
-  //create_registered_attributes(tmp_window);
-  create_registered_window_attributes( tmp_window);
+//  COM_use_dataitem( tmp_window, surf_window+".all", 1);
+  COM_use_dataitem( tmp_window, surf_window+".mesh", 1);
+  COM_use_dataitem( tmp_window, surf_window+".atts", 1);
+  //create_registered_dataitems(tmp_window);
+  create_registered_window_dataitems( tmp_window);
   COM_window_init_done( tmp_window);
 }
 
-void Agent::assign_attributes()
+void Agent::assign_dataitems()
 {
-  unsigned int n = attributeList.size();
+  unsigned int n = dataitemList.size();
   for (unsigned int i=0; i<n; i++) {
-    attributeList[i]->assign(tmp_window);
+    dataitemList[i]->assign(tmp_window);
   }
 }
 
@@ -648,7 +648,7 @@ write_data_files( double t, const std::string base, const std::string attr,
 
   MAN_DEBUG(3, ("[%d] Rocstar: Agent %s::write_data_file with file prefix %s at t:%e.\n", comm_rank, get_agent_name().c_str(), fname.c_str(), t));
 
-  int attr_hdl = COM_get_attribute_handle( attr);
+  int attr_hdl = COM_get_dataitem_handle( attr);
   COM_call_function( write_attr_handle, fname.c_str(), &attr_hdl, 
 		     base.c_str(), timeLevel.c_str(), ref, &communicator);
 }
@@ -697,23 +697,23 @@ split_surface_window( const std::string surfAll,
   
   if (COM_get_window_handle(surf_i) <= 0)
   COM_new_window( surf_i);
-  COM_use_attribute( surf_i, atts, 0, bcflag.c_str(), 0);
-  COM_use_attribute( surf_i, atts, 0, bcflag.c_str(), 1);
+  COM_use_dataitem( surf_i, atts, 0, bcflag.c_str(), 0);
+  COM_use_dataitem( surf_i, atts, 0, bcflag.c_str(), 1);
   COM_window_init_done( surf_i);
 
   if (COM_get_window_handle(surf_nb) <= 0)
   COM_new_window( surf_nb); // bcflag ==0
-  COM_use_attribute( surf_nb, atts, 1, bcflag.c_str(), 0);
+  COM_use_dataitem( surf_nb, atts, 1, bcflag.c_str(), 0);
   COM_window_init_done( surf_nb);
   
   if (COM_get_window_handle(surf_b) <= 0)
   COM_new_window( surf_b); // bcflag ==1
-  COM_use_attribute( surf_b, atts, 1, bcflag.c_str(), 1);
+  COM_use_dataitem( surf_b, atts, 1, bcflag.c_str(), 1);
   COM_window_init_done( surf_b);
   
   if (COM_get_window_handle(surf_ni) <= 0)
   COM_new_window( surf_ni); // bcflag ==2
-  COM_use_attribute( surf_ni, atts, 1,  bcflag.c_str(), 2);
+  COM_use_dataitem( surf_ni, atts, 1,  bcflag.c_str(), 2);
   COM_window_init_done( surf_ni);
 }
 
@@ -731,12 +731,12 @@ void Agent::store_solutions( int converged)
   if ( converged) {   //  Store internal data
      for (i=0; i<pc_count; i++)
        if ( pc_hdls[0][i]>0) 
-               COM_copy_attribute( pc_hdls[1][i], pc_hdls[0][i]);
+               COM_copy_dataitem( pc_hdls[1][i], pc_hdls[0][i]);
   }
   else {
      for (i=0; i<pc_count; i++)
        if ( pc_hdls[0][i]>0)
-               COM_copy_attribute( pc_hdls[0][i], pc_hdls[1][i]);
+               COM_copy_dataitem( pc_hdls[0][i], pc_hdls[1][i]);
   }
 }
 

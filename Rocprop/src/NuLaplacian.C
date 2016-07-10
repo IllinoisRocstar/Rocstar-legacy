@@ -23,9 +23,9 @@
 // $Id: NuLaplacian.C,v 1.8 2008/12/06 08:45:27 mtcampbe Exp $
 
 #include "FaceOffset_3.h"
-#include "../Rocblas/include/Rocblas.h"
-#include "../Rocsurf/include/Generic_element_2.h"
-#include "../Rocsurf/include/Rocsurf.h"
+#include "Rocblas.h"
+#include "Generic_element_2.h"
+#include "Rocsurf.h"
 
 PROP_BEGIN_NAMESPACE
 
@@ -33,13 +33,13 @@ PROP_BEGIN_NAMESPACE
 // disps is used as buffer space during smoothing.
 // At output, vcenters contains the tangential motion.
 void FaceOffset_3::
-nulaplacian_smooth( const COM::Attribute *vert_normals,
-		    const COM::Attribute *tangranks,
-		    const COM::Attribute *disps,
-		    COM::Attribute *vcenters,
-		    COM::Attribute *buf,
-		    COM::Attribute *vert_weights_buf,
-		    const COM::Attribute *edge_weights) {
+nulaplacian_smooth( const COM::DataItem *vert_normals,
+		    const COM::DataItem *tangranks,
+		    const COM::DataItem *disps,
+		    COM::DataItem *vcenters,
+		    COM::DataItem *buf,
+		    COM::DataItem *vert_weights_buf,
+		    const COM::DataItem *edge_weights) {
   const double alpha = 0.03;
 
   // First, sum up weights for each vertex.
@@ -53,10 +53,10 @@ nulaplacian_smooth( const COM::Attribute *vert_normals,
     
     // Obtain address for buffer space for vertex weights
     double *vws = reinterpret_cast<double*>
-      (pane->attribute(vert_weights_buf->id())->pointer());
+      (pane->dataitem(vert_weights_buf->id())->pointer());
     // Obtain address for edge weights
     const double *ews = edge_weights ? reinterpret_cast<const double*>
-      (pane->attribute(edge_weights->id())->pointer()) : NULL;
+      (pane->dataitem(edge_weights->id())->pointer()) : NULL;
 
     Element_node_enumerator ene( pane, 1); 
     // Loop through the real elements of the pane
@@ -84,23 +84,23 @@ nulaplacian_smooth( const COM::Attribute *vert_normals,
     
     // Obtain nodal coordinates of current pane, assuming contiguous layout
     const Vector_3 *pnts = reinterpret_cast<Vector_3*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     const Vector_3 *ds = reinterpret_cast<Vector_3*>
-      (pane->attribute(disps->id())->pointer());
+      (pane->dataitem(disps->id())->pointer());
     const Vector_3 *nrms = reinterpret_cast<Vector_3*>
-      (pane->attribute(vert_normals->id())->pointer());
+      (pane->dataitem(vert_normals->id())->pointer());
     const Vector_3 *vcnt = reinterpret_cast<Vector_3*>
-      (pane->attribute(vcenters->id())->pointer());
+      (pane->dataitem(vcenters->id())->pointer());
     
     // Obtain address for output displacements
     Vector_3 *dbuf = reinterpret_cast<Vector_3*>
-      (pane->attribute(buf->id())->pointer());
+      (pane->dataitem(buf->id())->pointer());
     // Obtain address for buffer space for vertex weights
     const double *vws = reinterpret_cast<const double*>
-      (pane->attribute(vert_weights_buf->id())->pointer());
+      (pane->dataitem(vert_weights_buf->id())->pointer());
     // Obtain address for edge weights
     const double *ews = edge_weights ? reinterpret_cast<const double*>
-      (pane->attribute(edge_weights->id())->pointer()) : NULL;
+      (pane->dataitem(edge_weights->id())->pointer()) : NULL;
 
     // pnts_buf stores difference between center and perturbed position.
     Vector_3 pnts_buf[4];
@@ -166,17 +166,17 @@ nulaplacian_smooth( const COM::Attribute *vert_normals,
     COM::Pane *pane = *it;
 
     const char *tranks = reinterpret_cast<const char*>
-      ( pane->attribute( tangranks->id())->pointer());
+      ( pane->dataitem( tangranks->id())->pointer());
     const double *vws = reinterpret_cast<const double*>
-      ( pane->attribute( vert_weights_buf->id())->pointer());
+      ( pane->dataitem( vert_weights_buf->id())->pointer());
 
     Vector_3 *vcnt = reinterpret_cast<Vector_3*>
-      ( pane->attribute( vcenters->id())->pointer());
+      ( pane->dataitem( vcenters->id())->pointer());
     Vector_3 *dbuf = reinterpret_cast<Vector_3*>
-      ( pane->attribute( buf->id())->pointer());
+      ( pane->dataitem( buf->id())->pointer());
 
     const Vector_3 *es = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_eigvecs->id())->pointer());
+      ( pane->dataitem(_eigvecs->id())->pointer());
 
     // Loop through all real nodes of the pane
     for ( int j=0, nj=pane->size_of_real_nodes(); j<nj; ++j) {

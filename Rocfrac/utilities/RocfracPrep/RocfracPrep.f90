@@ -59,7 +59,7 @@ PROGRAM RocfracPrep
   
   IMPLICIT NONE
 
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 !     Type definition 
 
@@ -367,7 +367,7 @@ PROGRAM RocfracPrep
 
 ! - load Rocout module
   CALL COM_set_verbose( 10)
-  CALL Rocout_load_module( 'OUT')
+  CALL SimOUT_load_module( 'OUT')
 
 ! Surface boundary meshes
 
@@ -483,7 +483,7 @@ PROGRAM RocfracPrep
         IF(NodeFlag(i).NE.0) MeshCoor(1:3,NodeFlag(i)) = coor(1:3,i)
      END DO
 
-     CALL COM_new_attribute( volWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+     CALL COM_new_dataitem( volWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
      CALL COM_set_size( volWin//'.nc', ip, NumNdPerProc(ip) )
      CALL COM_set_array(volWin//'.nc', ip, MeshCoor, 3)
 
@@ -533,27 +533,27 @@ PROGRAM RocfracPrep
            stop
         ENDIF
 
-        CALL COM_new_attribute( volWin//'.bcnode', 'p', COM_INTEGER, 2, '')
+        CALL COM_new_dataitem( volWin//'.bcnode', 'p', COM_INTEGER, 2, '')
         CALL COM_set_size( volWin//'.bcnode', ip, NumBC_Flag(ip) )    
         CALL COM_set_array(volWin//'.bcnode', ip, NodeFlag_str, 2)
 
         
         allocate(BCValue(1:NumBC_Flag(ip)*6))
         BCValue(:) = 0.d0
-        CALL COM_new_attribute( volWin//'.BCValue', 'p', COM_DOUBLE, 1, '')
+        CALL COM_new_dataitem( volWin//'.BCValue', 'p', COM_DOUBLE, 1, '')
         CALL COM_set_size( volWin//'.BCValue', ip,NumBC_Flag(ip)*6 )
         CALL COM_set_array(volWin//'.BCValue', ip, BCValue, 1)
      ENDIF
 
-!!$     CALL COM_new_attribute( volWin//'.NumBC_str', 'p', COM_INTEGER, 1, '')
+!!$     CALL COM_new_dataitem( volWin//'.NumBC_str', 'p', COM_INTEGER, 1, '')
 !!$     CALL COM_set_size( volWin//'.NumBC_str', ip, 1 )    
 !!$     CALL COM_set_array(volWin//'.NumBC_str', ip, NumBC_structural(ip), 1)
 !!$
-!!$     CALL COM_new_attribute( volWin//'.NumBC_mm', 'p', COM_INTEGER, 1, '')
+!!$     CALL COM_new_dataitem( volWin//'.NumBC_mm', 'p', COM_INTEGER, 1, '')
 !!$     CALL COM_set_size( volWin//'.NumBC_mm', ip, 1 )    
 !!$     CALL COM_set_array(volWin//'.NumBC_mm', ip, NumBC_meshmotion(ip), 1)
 !!$
-!!$     CALL COM_new_attribute( volWin//'.NumBC_th', 'p', COM_INTEGER, 1, '')
+!!$     CALL COM_new_dataitem( volWin//'.NumBC_th', 'p', COM_INTEGER, 1, '')
 !!$     CALL COM_set_size( volWin//'.NumBC_th', ip, 1 )    
 !!$     CALL COM_set_array(volWin//'.NumBC_th', ip, NumBC_thermal(ip), 1)
 
@@ -590,7 +590,7 @@ PROGRAM RocfracPrep
 !!$           PRINT*, 'stopping'
 !!$        ENDIF
 !!$
-!!$        CALL COM_new_attribute( volWin//'.NodeFlag_str', 'p', COM_INTEGER, 2, '')
+!!$        CALL COM_new_dataitem( volWin//'.NodeFlag_str', 'p', COM_INTEGER, 2, '')
 !!$        CALL COM_set_size( volWin//'.NodeFlag_str', ip, NumBC_structural(ip) )    
 !!$        CALL COM_set_array(volWin//'.NodeFlag_str', ip, NodeFlag_str, 2)
 !!$     ENDIF
@@ -629,7 +629,7 @@ PROGRAM RocfracPrep
 !!$           PRINT*, 'stopping'
 !!$        ENDIF
 !!$        
-!!$        CALL COM_new_attribute( volWin//'.NodeFlag_mm', 'p', COM_INTEGER, 2, '')
+!!$        CALL COM_new_dataitem( volWin//'.NodeFlag_mm', 'p', COM_INTEGER, 2, '')
 !!$        CALL COM_set_size( volWin//'.NodeFlag_mm', ip, NumBC_meshmotion(ip) )    
 !!$        CALL COM_set_array(volWin//'.NodeFlag_mm', ip, NodeFlag_mm, 2)
 !!$
@@ -667,7 +667,7 @@ PROGRAM RocfracPrep
 !!$           PRINT*, 'stopping'
 !!$        ENDIF
 !!$        
-!!$        CALL COM_new_attribute( volWin//'.NodeFlag_th', 'p', COM_INTEGER, 2, '')
+!!$        CALL COM_new_dataitem( volWin//'.NodeFlag_th', 'p', COM_INTEGER, 2, '')
 !!$        CALL COM_set_size( volWin//'.NodeFlag_th', ip, NumBC_thermal(ip) )    
 !!$        CALL COM_set_array(volWin//'.NodeFlag_th', ip, NodeFlag_th, 2)
 !!$
@@ -707,16 +707,16 @@ PROGRAM RocfracPrep
         ElemCount = ElemCount + numel(ii,ip)
      ENDDO
 
-     CALL COM_new_attribute( volWin//'.NumElPartBndry', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( volWin//'.NumElPartBndry', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( volWin//'.NumElPartBndry', ip, 1)
      CALL COM_resize_array(volWin//'.NumElPartBndry', ip, tmpptr)
      tmpptr = itmp2
 
-     CALL COM_new_attribute( volWin//'.NumElVolMat', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( volWin//'.NumElVolMat', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( volWin//'.NumElVolMat', ip, NumMat)    
      CALL COM_set_array(volWin//'.NumElVolMat', ip, NumElVolMat, 1)
 
-     CALL COM_new_attribute( volWin//'.NumElPartBndryMat', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( volWin//'.NumElPartBndryMat', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( volWin//'.NumElPartBndryMat', ip, NumMat)    
      CALL COM_set_array(volWin//'.NumElPartBndryMat', ip, NumElPartBndryMat, 1)
 !
@@ -746,7 +746,7 @@ PROGRAM RocfracPrep
        ENDIF
 
 ! Element Material Type Flag
-       CALL COM_new_attribute( volWin//'.MatType', 'e', COM_INTEGER, 1, '')
+       CALL COM_new_dataitem( volWin//'.MatType', 'e', COM_INTEGER, 1, '')
        CALL COM_set_array(volWin//'.MatType', ip, matType, 1)
 
        
@@ -824,15 +824,15 @@ PROGRAM RocfracPrep
        ENDIF
 
 
-       CALL COM_new_attribute( volWin//'.pconn', 'p', COM_INTEGER, 1, '')
+       CALL COM_new_dataitem( volWin//'.pconn', 'p', COM_INTEGER, 1, '')
        CALL COM_set_size( volWin//'.pconn', ip, NumNeighProcs*2+MaxNumNodesComm+1)    
        CALL COM_set_array(volWin//'.pconn', ip, Pconn_Comm, 1)
         
-!!$        CALL COM_new_attribute( volWin//'.ID_sendto_List', 'p', COM_INTEGER, 1, '')
+!!$        CALL COM_new_dataitem( volWin//'.ID_sendto_List', 'p', COM_INTEGER, 1, '')
 !!$        CALL COM_set_size( volWin//'.ID_sendto_List', ip, NumNeighProcs)    
 !!$        CALL COM_set_array(volWin//'.ID_sendto_List', ip, ID_sendto_List, 1)
 !!$        
-!!$        CALL COM_new_attribute( volWin//'.NumNeighProcs_List', 'p', COM_INTEGER, 1, '')
+!!$        CALL COM_new_dataitem( volWin//'.NumNeighProcs_List', 'p', COM_INTEGER, 1, '')
 !!$        CALL COM_set_size( volWin//'.NumNeighProcs_List', ip, NumNeighProcs)    
 !!$        CALL COM_set_array(volWin//'.NumNeighProcs_List', ip, NumNeighProcs_List, 1)
    
@@ -845,15 +845,15 @@ PROGRAM RocfracPrep
 !!$     ! Call compute_pconn
 !!$     comp_pconn = COM_get_function_handle( "MyPrivateMAP.compute_pconn")
 !!$     CALL COM_call_function( comp_pconn, 2, &
-!!$          COM_get_attribute_handle_const( volWin//'.mesh'), &
-!!$          COM_get_attribute_handle(volWin//'.pconn'))
+!!$          COM_get_dataitem_handle_const( volWin//'.mesh'), &
+!!$          COM_get_dataitem_handle(volWin//'.pconn'))
 !!$
 !!$! Unload Rocmap.
 !!$     CALL COM_unload_module( "Rocmap", "MyPrivateMAP") 
 
 ! obtain function handle ------------------------------------------------------
 
-     write_attr = COM_get_function_handle( 'OUT.write_attribute')
+     write_attr = COM_get_function_handle( 'OUT.write_dataitem')
      set_option = COM_get_function_handle( 'OUT.set_option')
 
      CALL COM_call_function( set_option, 2, 'mode', 'w')
@@ -862,7 +862,7 @@ PROGRAM RocfracPrep
 
      CALL COM_call_function( set_option, 2, 'rankwidth', '0')
 ! write volume window ------------------------
-     vol_all = Com_get_attribute_handle( volWin//'.all')
+     vol_all = Com_get_dataitem_handle( volWin//'.all')
 
      CALL COM_call_function( write_attr, 4, 'Rocin/'//prefx(1:prefx_lngth)//'.'//ichr4, vol_all,&
           "solid","00.000000")

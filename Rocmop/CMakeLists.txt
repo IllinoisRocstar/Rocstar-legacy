@@ -11,7 +11,10 @@ ELSE()
 ENDIF()
 
 #INCLUDE(CTest)
-find_path(ROCCOM_INC roccom.h HINTS ../Roccom/include)
+find_path(ROCCOM_INC com.h     HINTS ../IMPACT/COM/include)
+find_path(MAP_INC Rocmap.h     HINTS ../IMPACT/SurfMap/include)
+find_path(SURF_INC Rocsurf.h   HINTS ../IMPACT/SurfUtil/include)
+find_path(SIMPAL_INC Rocblas.h HINTS ../IMPACT/Simpal/include)
 set (ROCCOM_DIR "${ROCCOM_INC}/..") 
 set(MESQUITE_DIR ${PROJECT_SOURCE_DIR}/External/mesquite_0_9_5)
 set(ROCMOP2_SRCS src/Rocmop_2.C src/smooth_mesquite_2.C src/smooth_mesquite_ng_2.C
@@ -47,8 +50,7 @@ SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 #      when generating Rocmop.d and Mesquite.d.
 #CXXFLAGS        += -I$(MESQHOME)/include -I$(BUILD_MESQHOME)/includeLinks \
 #		   -DMESQUITE
-include_directories(include ${ROCCOM_INC} ${ROCCOM_DIR}/Rocmap/include ${ROCCOM_DIR}/Rocsurf/include ${ROCCOM_DIR}/Rocmap/test 
-                            ${MESQUITE_DIR}/include ${MESQUITE_DIR}/includeLinks ${ROCCOM_DIR}/Rocsurf/test ${ROCCOM_DIR}/Rocblas/include)
+include_directories(include ${ROCCOM_INC} ${MAP_INC} ${SURF_INC} ${SURF_INC}/test ${MAP_INC}/test ${MESQUITE_DIR}/include ${MESQUITE_DIR}/includeLinks ${ROCCOM_DIR}/Rocsurf/test ${SIMPAL_INC})
 add_definitions(-DMESQUITE)
 
 add_subdirectory(External/mesquite_0_9_5)
@@ -60,7 +62,7 @@ ELSE()
   add_definitions( -DSTATIC_LINK )
 ENDIF()
 add_dependencies(Rocmop MSQ_MV)
-target_link_libraries(Rocmop Rocsurf Rocmap Rocblas Rocout Rocin Roccom mesquite_95 m ${MPI_CXX_LIBRARIES})
+target_link_libraries(Rocmop  SurfUtil SurfMap Simpal SimOUT SITCOM mesquite_95 m ${MPI_CXX_LIBRARIES})
 
 #set (UTIL_SRCS util/chkPconnGRecv.cc util/RocMeshData.cc)
 #set (TEST_SRCS test/add_aspect_ratios.C test/build_meshes.C test/metric_demo.C 

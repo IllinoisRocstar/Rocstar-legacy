@@ -52,7 +52,7 @@ SUBROUTINE PLAG_SetSizeGenx( region )
   USE PLAG_ModParameters
   USE ModPartLag, ONLY    : t_plag
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 ! ... parameters
 

@@ -35,8 +35,8 @@
 
 #include "mopbasic.h"
 #include "Matrix.h"
-#include "Connectivity.h"
-#include "Element_accessors.h"
+#include "Connectivity.hpp"
+#include "Element_accessors.hpp"
 
 MOP_BEGIN_NAMESPACE
 using COM::Element_node_enumerator;

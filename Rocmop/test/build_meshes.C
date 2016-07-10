@@ -22,7 +22,7 @@
  *********************************************************************/
 // $Id: build_meshes.C,v 1.4 2008/12/06 08:45:25 mtcampbe Exp $
 
-#include "roccom.h"
+#include "com.h"
 #include "mapbasic.h"
 #include "Rocblas.h"
 #include <iostream>
@@ -30,11 +30,10 @@
 
 using namespace std;
 
-COM_EXTERN_MODULE( Rocmap);
-COM_EXTERN_MODULE( Rocout);
+COM_EXTERN_MODULE( SurfMap);
+COM_EXTERN_MODULE( SimOUT);
 COM_EXTERN_MODULE( Rocmop);
-COM_EXTERN_MODULE( Rocmap);
-
+COM_EXTERN_MODULE( Simpal);
 
 // build an unstructured tet mesh with 2 partitions
 void build_unstr_tet_2();
@@ -71,9 +70,9 @@ int main(int argc, char *argv[]) {
   COM_set_profiling(1);
 
   // Load the required Roccom modules.
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocout, "OUT");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SimOUT, "OUT");
   COM_LOAD_MODULE_STATIC_DYNAMIC( Rocmop, "MOP");
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocblas, "BLAS");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( Simpal, "BLAS");
 
   build_unstr_tet_2();
   build_unstr_hex();
@@ -132,7 +131,7 @@ void build_unstr_tet_2(){
   COM_set_size( "unstr_tet_2.pconn", 2, 12);
   COM_set_array( "unstr_tet_2.pconn", 2, &unstr_tet_2_pconn2[0]);
 
-  // Let Roccom know we have finished adding attributes
+  // Let Roccom know we have finished adding dataitems
   // to the window "unstr_tet_2"
   COM_window_init_done("unstr_tet_2");
 
@@ -143,8 +142,8 @@ void build_unstr_tet_2(){
   init_tet_unstr_2_elmts(unstr_tet_2_elmts2);
 
   // Write the mesh to file.
-  int OUT_write = COM_get_function_handle( "OUT.write_attribute");
-  int HDL_all = COM_get_attribute_handle("unstr_tet_2.all");
+  int OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+  int HDL_all = COM_get_dataitem_handle("unstr_tet_2.all");
   COM_call_function( OUT_write, "unstr_tet_2", &HDL_all, 
 		     "unstr_tet_2", "001");
 
@@ -233,8 +232,8 @@ void build_unstr_hex(){
   init_unstr_hex_coords(&crds[0]);
   
   // Write the mesh to file.
-  int OUT_write = COM_get_function_handle( "OUT.write_attribute");
-  int HDL_all = COM_get_attribute_handle("unstr_hex.all");
+  int OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+  int HDL_all = COM_get_dataitem_handle("unstr_hex.all");
   COM_call_function( OUT_write, "unstr_hex", &HDL_all, 
 		     "unstr_hex", "001");
 
@@ -298,8 +297,8 @@ void build_unstr_pyr(){
   init_unstr_pyr_coords(&crds[0]);
   
   // Write the mesh to file.
-  int OUT_write = COM_get_function_handle( "OUT.write_attribute");
-  int HDL_all = COM_get_attribute_handle("unstr_pyr.all");
+  int OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+  int HDL_all = COM_get_dataitem_handle("unstr_pyr.all");
   COM_call_function( OUT_write, "unstr_pyr", &HDL_all, 
 		     "unstr_pyr", "001");
 }
@@ -356,8 +355,8 @@ void build_unstr_prism(){
   init_unstr_prism_coords(&crds[0]);
   
   // Write the mesh to file.
-  int OUT_write = COM_get_function_handle( "OUT.write_attribute");
-  int HDL_all = COM_get_attribute_handle("unstr_prism.all");
+  int OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+  int HDL_all = COM_get_dataitem_handle("unstr_prism.all");
   COM_call_function( OUT_write, "unstr_prism", &HDL_all, 
 		     "unstr_prism", "001");
 }
@@ -431,8 +430,8 @@ void build_unstr_prism_tet(){
   init_unstr_prism_tet_coords(&crds[0]);
   
   // Write the mesh to file.
-  int OUT_write = COM_get_function_handle( "OUT.write_attribute");
-  int HDL_all = COM_get_attribute_handle("unstr_prism_tet.all");
+  int OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+  int HDL_all = COM_get_dataitem_handle("unstr_prism_tet.all");
   COM_call_function( OUT_write, "unstr_prism_tet", &HDL_all, 
 		     "unstr_prism_tet", "001");
 }
@@ -644,8 +643,8 @@ void build_unstr_prism_tet_2(){
   init_tet(tets2+104,46,25,42,22);
 
   // Write the mesh to file.
-  int OUT_write = COM_get_function_handle( "OUT.write_attribute");
-  int HDL_all = COM_get_attribute_handle("unstr_prism_tet_2.all");
+  int OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+  int HDL_all = COM_get_dataitem_handle("unstr_prism_tet_2.all");
   COM_call_function( OUT_write, "unstr_prism_tet_2", &HDL_all, 
 		     "unstr_prism_tet_2", "001");
 }

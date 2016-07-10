@@ -21,7 +21,7 @@ find_library(METIS_LIB metis)
 find_path(METIS_INC metis.h)
 
 #INCLUDE(CTest)
-find_path(ROCCOM_INC roccom.h HINTS ../../Roccom/include) 
+find_path(ROCCOM_INC com.h HINTS ../../IMPACT/COM/include) 
 find_path(ROCMAN_INC rocman.h HINTS ../../Rocman/include)
 
 FILE (GLOB CORE_SRCS ./*.f90)
@@ -47,7 +47,7 @@ ELSE()
   add_library(Rocburn STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
 ENDIF()
-target_link_libraries(Rocburn Rocout Rocin Roccomf Roccom ${MPI_Fortran_LIBRARIES})
+target_link_libraries(Rocburn SimOUT SimIN SITCOMF SITCOM ${MPI_Fortran_LIBRARIES})
 SET_TARGET_PROPERTIES(Rocburn PROPERTIES LINK_FLAGS "${MPI_Fortran_LINK_FLAGS}")
 
 INSTALL(TARGETS Rocburn RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)

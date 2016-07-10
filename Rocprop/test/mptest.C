@@ -24,14 +24,14 @@
 
 /** \file mptest.C Testing marker-particle method in parallel */
 
-#include "roccom.h"
-#include "../Rocsurf/test/IM_Reader.h"
+#include "com.h"
+#include "IM_Reader.h"
 #include <iostream>
 
 using namespace std;
 
-COM_EXTERN_MODULE( Rocout);
-COM_EXTERN_MODULE( Rocblas);
+COM_EXTERN_MODULE( SimOut);
+COM_EXTERN_MODULE( Simpal);
 COM_EXTERN_MODULE( Rocprop);
 
 int main(int argc, char *argv[]) {
@@ -73,12 +73,12 @@ int main(int argc, char *argv[]) {
 
   // Allocate memory for normals
   const string rb = wname+".rb";
-  COM_new_attribute(rb.c_str(), 'e', COM_DOUBLE, 1, "");
+  COM_new_dataitem(rb.c_str(), 'e', COM_DOUBLE, 1, "");
   COM_resize_array( rb.c_str());
 
-  // Allocate an element and a nodal attribute for testing elements_to_nodes
+  // Allocate an element and a nodal dataitem for testing elements_to_nodes
   const string disps = wname+".disps";
-  COM_new_attribute(disps.c_str(), 'e', COM_DOUBLE, 3, "m");
+  COM_new_dataitem(disps.c_str(), 'e', COM_DOUBLE, 3, "m");
   COM_resize_array( disps.c_str());
   
   COM_window_init_done( wname.c_str());
@@ -88,14 +88,14 @@ int main(int argc, char *argv[]) {
   COM_LOAD_MODULE_STATIC_DYNAMIC(Rocblas, "BLAS");
 
   int PROP_init = COM_get_function_handle( "PROP.initialize");
-  int mesh_hdl = COM_get_attribute_handle( (wname+".mesh").c_str());
+  int mesh_hdl = COM_get_dataitem_handle( (wname+".mesh").c_str());
 
   COM_call_function( PROP_init, &mesh_hdl);
 
   int PROP_prop = COM_get_function_handle( "PROP.propagate");
 
-  int rb_hdl = COM_get_attribute_handle( rb.c_str());
-  int disps_hdl = COM_get_attribute_handle( disps.c_str());
+  int rb_hdl = COM_get_dataitem_handle( rb.c_str());
+  int disps_hdl = COM_get_dataitem_handle( disps.c_str());
 
   double spd = 1.e-1;
   int BLAS_copy_scalar = COM_get_function_handle( "BLAS.copy_scalar");
@@ -108,10 +108,10 @@ int main(int argc, char *argv[]) {
 
   // Output normals
   int OUT_set = COM_get_function_handle( "OUT.set_option");
-  int OUT_write = COM_get_function_handle( "OUT.write_attribute");
+  int OUT_write = COM_get_function_handle( "OUT.write_dataitem");
 
   COM_call_function( OUT_set, "mode", "w");
-  int all_hdl = COM_get_attribute_handle( (wname+".all").c_str());
+  int all_hdl = COM_get_dataitem_handle( (wname+".all").c_str());
   COM_call_function( OUT_write, argv[2], &all_hdl, 
 		     (char*)wname.c_str(), "000");
   

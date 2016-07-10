@@ -23,30 +23,30 @@
 // $Id: cons_diff.C,v 1.4 2008/12/06 08:45:28 mtcampbe Exp $
 
 #include "FaceOffset_3.h"
-#include "../Rocblas/include/Rocblas.h"
-#include "../Rocsurf/include/Generic_element_2.h"
-#include "../Rocsurf/include/Rocsurf.h"
+#include "Rocblas.h"
+#include "Generic_element_2.h"
+#include "Rocsurf.h"
 
 PROP_BEGIN_NAMESPACE
 
 void FaceOffset_3::
 balance_mass() {
-  COM::Attribute *disps = 
-    _buf->new_attribute( "disps_buf_bm", 'n', COM_DOUBLE, 3, "");
+  COM::DataItem *disps = 
+    _buf->new_dataitem( "disps_buf_bm", 'n', COM_DOUBLE, 3, "");
   _buf->resize_array( disps, 0);
-  COM::Attribute *pos = 
-    _buf->new_attribute( "pos_buf_bm", 'n', COM_DOUBLE, 3, "");
+  COM::DataItem *pos = 
+    _buf->new_dataitem( "pos_buf_bm", 'n', COM_DOUBLE, 3, "");
   _buf->resize_array( pos, 0);
-  COM::Attribute *fvol_buf = 
-    _buf->new_attribute( "vfol_buf_bm", 'e', COM_DOUBLE, 1, "");
+  COM::DataItem *fvol_buf = 
+    _buf->new_dataitem( "vfol_buf_bm", 'e', COM_DOUBLE, 1, "");
   _buf->resize_array( fvol_buf, 0);
   _buf->init_done( false);
 
   // Use face-area as buffer for facial-volume
-  COM::Attribute *fvol = _faceareas;
+  COM::DataItem *fvol = _faceareas;
 
   // Compute volume change at each vertex.
-  const COM::Attribute *coors = _buf->attribute( COM::COM_NC);
+  const COM::DataItem *coors = _buf->dataitem( COM::COM_NC);
   Rocblas::add( coors, _vcenters, pos);
 
   // Obtain density-vector for vertices.
@@ -78,13 +78,13 @@ balance_mass() {
       COM::Pane *pane = *it;
       
       const double *vs = reinterpret_cast<const double*>
-	( pane->attribute(_weights->id())->pointer());
+	( pane->dataitem(_weights->id())->pointer());
       const double *as = reinterpret_cast<const double*>
-	( pane->attribute(_scales->id())->pointer());
+	( pane->dataitem(_scales->id())->pointer());
       const Vector_3 *ds_m = reinterpret_cast<const Vector_3*>
-	( pane->attribute(_vnormals->id())->pointer());
+	( pane->dataitem(_vnormals->id())->pointer());
       Vector_3 *ds = reinterpret_cast<Vector_3*>
-	( pane->attribute(disps->id())->pointer());
+	( pane->dataitem(disps->id())->pointer());
 
       // Loop through all real nodes of the pane
       for ( int j=0, jn=pane->size_of_real_nodes(); j<jn; ++j) {
@@ -95,16 +95,16 @@ balance_mass() {
 
   Rocblas::add( _vcenters, disps, _vcenters);
   
-  _buf->delete_attribute( fvol_buf->name());
-  _buf->delete_attribute( pos->name());
-  _buf->delete_attribute( disps->name());
+  _buf->delete_dataitem( fvol_buf->name());
+  _buf->delete_dataitem( pos->name());
+  _buf->delete_dataitem( disps->name());
   _buf->init_done( false);
 }
 
 void FaceOffset_3::
-distribute_volume_e2n( const COM::Attribute *fvol,
-		       const COM::Attribute *tranks,
-		       COM::Attribute *vvol) {
+distribute_volume_e2n( const COM::DataItem *fvol,
+		       const COM::DataItem *tranks,
+		       COM::DataItem *vvol) {
 
   double zero=0;
   Rocblas::copy_scalar( &zero, vvol);
@@ -117,9 +117,9 @@ distribute_volume_e2n( const COM::Attribute *fvol,
     COM::Pane *pane = *it;
 
     const double *fv = reinterpret_cast<const double*>
-      ( pane->attribute(fvol->id())->pointer());
+      ( pane->dataitem(fvol->id())->pointer());
     double   *vv = reinterpret_cast<double*>
-      ( pane->attribute(vvol->id())->pointer());
+      ( pane->dataitem(vvol->id())->pointer());
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1); 

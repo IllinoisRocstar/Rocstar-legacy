@@ -26,7 +26,7 @@
 #define _POINT_PROPAGATE_H_
 
 #include "speeds.h"
-#include "Element_accessors.h"
+#include "Element_accessors.hpp"
 
 PROP_BEGIN_NAMESPACE
 

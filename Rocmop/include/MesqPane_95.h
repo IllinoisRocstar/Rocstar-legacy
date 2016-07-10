@@ -54,11 +54,11 @@
 #include "mopbasic.h"
 
 // ROCCOM INCLUDES
-#include "roccom_devel.h"
-#include "Pane.h"
+#include "com_devel.hpp"
+#include "Pane.hpp"
 #include "Pane_boundary.h"
 #include "Dual_connectivity.h"
-#include "roccom_devel.h"
+#include "com_devel.hpp"
 
 
 #ifdef MSQ_USE_OLD_C_HEADERS

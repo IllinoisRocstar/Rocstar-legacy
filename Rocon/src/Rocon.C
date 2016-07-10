@@ -7,7 +7,7 @@
 #include "TRAIL.H"
 #include "Parameters.H"
 
-COM_EXTERN_MODULE(Rocin);
+COM_EXTERN_MODULE(SimIN);
 
 /// Init Rocon from a given input mesh
 void Rocon::init_from_file( const char *inp, const int *ndiv )
@@ -60,13 +60,13 @@ void Rocon::init_from_file( const char *inp, const int *ndiv )
   MPI_Comm comm_null = MPI_COMM_NULL;  
   std::string bufwin("bufwin");
   COM_call_function( IN_read, inpath.c_str(), bufwin.c_str(), &comm_null);
-  int IN_obtain   = COM_get_function_handle( "PROPCONIN.obtain_attribute");
-  int mesh_handle = COM_get_attribute_handle((bufwin+".mesh").c_str());
+  int IN_obtain   = COM_get_function_handle( "PROPCONIN.obtain_dataitem");
+  int mesh_handle = COM_get_dataitem_handle((bufwin+".mesh").c_str());
   COM_call_function( IN_obtain, &mesh_handle, &mesh_handle);
   COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocin, "PROPCONIN");
   COM_window_init_done(bufwin.c_str());
   int init_handle = COM_get_function_handle((_wname+".initialize").c_str());
-  COM_get_attribute_handle((bufwin+".mesh").c_str());
+  COM_get_dataitem_handle((bufwin+".mesh").c_str());
   COM_call_function(init_handle,&mesh_handle,&numdiv);
   COM_delete_window(bufwin.c_str());
 }
@@ -95,7 +95,7 @@ void TransformCoordinates(double *coords,int number_of_points,double xfac,double
 }
 
 /// Initialize Rocon with given mesh.
-void Rocon::initialize( const COM::Attribute *pmesh,const int *ndiv)
+void Rocon::initialize( const COM::DataItem *pmesh,const int *ndiv)
 {
   COM_assertion_msg( validate_object()==0, "Invalid object");
   COM_assertion_msg( pmesh, "Mesh must be present");
@@ -152,7 +152,7 @@ void Rocon::initialize( const COM::Attribute *pmesh,const int *ndiv)
 
   COM_new_window("tempwin");
   // ensures contiguous layout
-  COM_clone_attribute("tempwin.mesh", (win->name()+".mesh").c_str(), 0);
+  COM_clone_dataitem("tempwin.mesh", (win->name()+".mesh").c_str(), 0);
   COM_window_init_done("tempwin");
   
   int    *connectivity      = NULL;
@@ -224,9 +224,9 @@ void Rocon::initialize( const COM::Attribute *pmesh,const int *ndiv)
 
 /// set bflag to 0 for every element whos nodes all
 /// have cflag = 1.
-void Rocon::burnout( const COM::Attribute *pmesh, 
-		     const COM::Attribute *cflag,
-		     COM::Attribute *bflag)
+void Rocon::burnout( const COM::DataItem *pmesh, 
+		     const COM::DataItem *cflag,
+		     COM::DataItem *bflag)
 {
   COM_assertion_msg( validate_object()==0, "Invalid object");
   COM_assertion_msg( pmesh, "Mesh must be present");
@@ -488,8 +488,8 @@ void Rocon::burnout( const COM::Attribute *pmesh,
 
 /// set bflag to 0 for every element whos nodes all
 /// have cflag = 1.
-void Rocon::burnout_filter( const COM::Attribute *bflag,
-			    COM::Attribute *target)
+void Rocon::burnout_filter( const COM::DataItem *bflag,
+			    COM::DataItem *target)
 {
   COM_assertion_msg( validate_object()==0, "Invalid object");
   COM_assertion_msg( bflag,   "Bflag must be present");
@@ -554,10 +554,10 @@ void Rocon::burnout_filter( const COM::Attribute *bflag,
 /// updated to include the newly constrained nodes as well. On output,
 /// pos contains the intersection position of any nodes which collide
 /// with the constraint surface.
-void Rocon::find_intersections( const COM::Attribute *pmesh, 
-				const COM::Attribute *disp,
-				COM::Attribute *pos,
-				COM::Attribute *constr)
+void Rocon::find_intersections( const COM::DataItem *pmesh, 
+				const COM::DataItem *disp,
+				COM::DataItem *pos,
+				COM::DataItem *constr)
 {
   COM_assertion_msg( validate_object()==0, "Invalid object");
   COM_assertion_msg( pmesh, "Mesh must be present");
@@ -703,10 +703,10 @@ void Rocon::find_intersections( const COM::Attribute *pmesh,
 }
 
 /// Constrain the displacements, disp, to the appropriate positions, pos.
-void Rocon::constrain_displacements( const COM::Attribute *pmesh, 
-				     COM::Attribute *disp,
-				     const COM::Attribute *pos, 
-				     const COM::Attribute *constr)
+void Rocon::constrain_displacements( const COM::DataItem *pmesh, 
+				     COM::DataItem *disp,
+				     const COM::DataItem *pos, 
+				     const COM::DataItem *constr)
 {
   COM_assertion_msg( validate_object()==0, "Invalid object");
   COM_assertion_msg( pmesh, "Mesh must be present");
@@ -816,7 +816,7 @@ void Rocon::load( const std::string &mname) {
   rp->WindowName() = mname;
   rp->SetVerbosity(1);
   std::string glb=mname+".global";
-  COM_new_attribute( glb.c_str(), 'w', COM_VOID, 1, "");
+  COM_new_dataitem( glb.c_str(), 'w', COM_VOID, 1, "");
   COM_set_object( glb.c_str(), 0, rp);
   
   COM_Type types[5];

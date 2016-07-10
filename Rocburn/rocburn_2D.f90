@@ -37,7 +37,7 @@ MODULE M_ROCBURN_2D
   USE M_CALCDIST
 
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
   INCLUDE 'mpif.h'
 
   INTEGER, PARAMETER :: MODEL_APN = 1, MODEL_PY = 2, MODEL_ZN = 3
@@ -156,23 +156,23 @@ CONTAINS
     CALL COM_new_window( ioWin)
 !   Use the subset of fluid or solid mesh.
 !   It must use ghost nodes/cells as well in order to visualize.
-    CALL COM_clone_attribute( ioWin//".mesh", inSurf//".mesh")
-    CALL COM_clone_attribute( ioWin//'.bflag', inSurf//'.bflag')
+    CALL COM_clone_dataitem( ioWin//".mesh", inSurf//".mesh")
+    CALL COM_clone_dataitem( ioWin//'.bflag', inSurf//'.bflag')
 
 !  
 !   Incoming data
 !
 
-    CALL COM_new_attribute( ioWin//".pf_alp", 'e', COM_DOUBLE, 1, "Pa")
+    CALL COM_new_dataitem( ioWin//".pf_alp", 'e', COM_DOUBLE, 1, "Pa")
     CALL COM_resize_array( ioWin//".pf_alp")
 
     IF ( .NOT. is_APN) THEN
-!RAF       CALL COM_new_attribute( ioWin//".centers", 'e', COM_DOUBLE, 3, "m")
-       CALL COM_new_attribute( ioWin//".qr_alp", 'e', COM_DOUBLE, 1, "W/m^2")
-       CALL COM_new_attribute( ioWin//".qc_alp", 'e', COM_DOUBLE, 1, "W/m^2")
-       CALL COM_new_attribute( ioWin//".rhos_alp", 'e', COM_DOUBLE, 1, "kg/m^3")
-       CALL COM_new_attribute( ioWin//".Tf_alp", 'e', COM_DOUBLE, 1, "K")
-!!!    CALL COM_new_attribute( ioWin//".To_alp",  'e', COM_DOUBLE, 1, "K")
+!RAF       CALL COM_new_dataitem( ioWin//".centers", 'e', COM_DOUBLE, 3, "m")
+       CALL COM_new_dataitem( ioWin//".qr_alp", 'e', COM_DOUBLE, 1, "W/m^2")
+       CALL COM_new_dataitem( ioWin//".qc_alp", 'e', COM_DOUBLE, 1, "W/m^2")
+       CALL COM_new_dataitem( ioWin//".rhos_alp", 'e', COM_DOUBLE, 1, "kg/m^3")
+       CALL COM_new_dataitem( ioWin//".Tf_alp", 'e', COM_DOUBLE, 1, "K")
+!!!    CALL COM_new_dataitem( ioWin//".To_alp",  'e', COM_DOUBLE, 1, "K")
 
 !RAF       CALL COM_resize_array(ioWin//".centers")
        CALL COM_resize_array(ioWin//".qr_alp")
@@ -180,13 +180,13 @@ CONTAINS
        CALL COM_resize_array(ioWin//".rhos_alp")
        CALL COM_resize_array(ioWin//".Tf_alp")
     END IF
-    CALL COM_new_attribute( ioWin//".centers", 'e', COM_DOUBLE, 3, "m")
+    CALL COM_new_dataitem( ioWin//".centers", 'e', COM_DOUBLE, 3, "m")
     CALL COM_resize_array(ioWin//".centers")
 !
 !   Outgoing data
 !
-    CALL COM_new_attribute( ioWin//".rb", 'e', COM_DOUBLE, 1, "m/s")
-    CALL COM_new_attribute( ioWin//".Tflm", 'e', COM_DOUBLE, 1, "K")
+    CALL COM_new_dataitem( ioWin//".rb", 'e', COM_DOUBLE, 1, "m/s")
+    CALL COM_new_dataitem( ioWin//".Tflm", 'e', COM_DOUBLE, 1, "K")
     CALL COM_resize_array(ioWin//".rb")
     CALL COM_resize_array(ioWin//".Tflm")
 
@@ -197,31 +197,31 @@ CONTAINS
 !   iterations or restart in Roccom and allocate memory for them.
 !
     CALL COM_new_window( intWin)
-    CALL COM_use_attribute( intWin//".mesh", ioWin//".mesh")  ! Same mesh
+    CALL COM_use_dataitem( intWin//".mesh", ioWin//".mesh")  ! Same mesh
 
 !
 !   Data for interpolation if subcycling for individual cells are needed
 !
     IF ( .NOT. is_APN) THEN
-       CALL COM_clone_attribute( intWin//".pf_old", ioWin//".pf_alp")
-       CALL COM_clone_attribute( intWin//".qc_old", ioWin//".qc_alp")
-       CALL COM_clone_attribute( intWin//".qr_old", ioWin//".qr_alp")
-       CALL COM_clone_attribute( intWin//".rhos_old", ioWin//".rhos_alp")
-       CALL COM_clone_attribute( intWin//".Tf_old", ioWin//".Tf_alp")
-!!!    CALL COM_clone_attribute( intWin//".To_old",  ioWin//".To_alp")
+       CALL COM_clone_dataitem( intWin//".pf_old", ioWin//".pf_alp")
+       CALL COM_clone_dataitem( intWin//".qc_old", ioWin//".qc_alp")
+       CALL COM_clone_dataitem( intWin//".qr_old", ioWin//".qr_alp")
+       CALL COM_clone_dataitem( intWin//".rhos_old", ioWin//".rhos_alp")
+       CALL COM_clone_dataitem( intWin//".Tf_old", ioWin//".Tf_alp")
+!!!    CALL COM_clone_dataitem( intWin//".To_old",  ioWin//".To_alp")
     END IF
 
 !
 !   Profile history
 !
     IF ( .NOT. is_APN) THEN
-       CALL COM_clone_attribute( intWin//".Toa", ioWin//".Tflm")
+       CALL COM_clone_dataitem( intWin//".Toa", ioWin//".Tflm")
        IF ( comp_filmcoeff) THEN
-          CALL COM_new_attribute( intWin//".dist", 'e', COM_DOUBLE, 1, "m")
+          CALL COM_new_dataitem( intWin//".dist", 'e', COM_DOUBLE, 1, "m")
           CALL COM_resize_array(intWin//".dist")
        ENDIF
-       CALL COM_new_attribute( intWin//".temp", 'e', COM_DOUBLE, nxmax, "K")
-       CALL COM_new_attribute( intWin//".fr", 'e', COM_DOUBLE, 1, "")
+       CALL COM_new_dataitem( intWin//".temp", 'e', COM_DOUBLE, nxmax, "K")
+       CALL COM_new_dataitem( intWin//".fr", 'e', COM_DOUBLE, 1, "")
        CALL COM_resize_array(intWin//".temp")
        CALL COM_resize_array(intWin//".fr")
     END IF
@@ -266,7 +266,7 @@ CONTAINS
 
        CALL COM_get_array( ioWin//".rb", bid, blk%rb)
        CALL COM_get_array( ioWin//".Tflm", bid, blk%Tf)
-       ! The above attributes need be initialized by INIT_1D
+       ! The above dataitems need be initialized by INIT_1D
        
 !
 !      Stored internal data
@@ -290,7 +290,7 @@ CONTAINS
           CALL COM_get_array( intWin//".temp", bid, blk%temp)
           CALL COM_get_array( intWin//".Toa",  bid, blk%Toa)
           CALL COM_get_array( intWin//".fr",   bid, blk%fr)
-          ! The above attributes need be initialized by INIT_1D
+          ! The above dataitems need be initialized by INIT_1D
 
           IF ( comp_filmcoeff) THEN
              CALL COM_get_array( intWin//".dist", bid, blk%dist)
@@ -299,13 +299,13 @@ CONTAINS
        END IF
     END DO  ! ib
 
-!   Call Rocin to copy attributes (without the mesh) into the new windows.
+!   Call Rocin to copy dataitems (without the mesh) into the new windows.
     CALL COM_call_function( IN_obt_attr,2, &
-         COM_get_attribute_handle_const(TRIM(inSurf)//".all"), &
-         COM_get_attribute_handle(TRIM(ioWin)//".all" ))
+         COM_get_dataitem_handle_const(TRIM(inSurf)//".all"), &
+         COM_get_dataitem_handle(TRIM(ioWin)//".all" ))
     CALL COM_call_function( IN_obt_attr,2, &
-         COM_get_attribute_handle_const(TRIM(inInt)//".atts"), &
-         COM_get_attribute_handle(TRIM(intWin)//".atts" ))
+         COM_get_dataitem_handle_const(TRIM(inInt)//".atts"), &
+         COM_get_dataitem_handle(TRIM(intWin)//".atts" ))
 
 !   Call Rocman to prepare for data transfer, predictor-corrector iterations,
 !   and restart. If initial_time is nonzero, Rocman will load data buffers

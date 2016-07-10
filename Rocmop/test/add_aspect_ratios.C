@@ -22,7 +22,7 @@
  *********************************************************************/
 // $Id: add_aspect_ratios.C,v 1.3 2008/12/06 08:45:25 mtcampbe Exp $
 
-#include "roccom.h"
+#include "com.h"
 #include "mapbasic.h"
 #include "Rocblas.h"
 #include <iostream>
@@ -32,11 +32,11 @@
 using namespace std;
 
 // Necessary for handling modules in static or dynamic fashion
-COM_EXTERN_MODULE( Rocin);
-COM_EXTERN_MODULE( Rocout);
+COM_EXTERN_MODULE( SimIN);
+COM_EXTERN_MODULE( SimOUT);
 COM_EXTERN_MODULE( Rocmop);
-COM_EXTERN_MODULE( Rocmap);
-COM_EXTERN_MODULE( Roblas);
+COM_EXTERN_MODULE( SurfMap);
+COM_EXTERN_MODULE( Simpal);
 
 // Get the MPI rank of the process
 int get_comm_rank( MPI_Comm comm) {
@@ -69,12 +69,12 @@ int main(int argc, char *argv[]) {
   COM_init( &argc, &argv);
 
   // LOAD MODULES
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocout, "OUT");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SimIN, "IN");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SimOUT, "OUT");
   COM_LOAD_MODULE_STATIC_DYNAMIC( Rocmop, "MOP");
 
   // GET FUNCTION HANDLES
-  int OUT_write = COM_get_function_handle( "OUT.write_attribute");
+  int OUT_write = COM_get_function_handle( "OUT.write_dataitem");
   int IN_read   = COM_get_function_handle( "IN.read_by_control_file");
   int MOP_asp   = COM_get_function_handle( "MOP.add_aspect_ratios");
 
@@ -90,7 +90,7 @@ int main(int argc, char *argv[]) {
 		     matname.c_str(),
 		     &comm);
 
-  int MAT_all = COM_get_attribute_handle((matname+".all").c_str());
+  int MAT_all = COM_get_dataitem_handle((matname+".all").c_str());
   string MyString = "001";
 
   // CALCULATE ASPECT RATIOS

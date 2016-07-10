@@ -23,8 +23,8 @@
 // $Id: detect_features.C,v 1.7 2008/12/06 08:45:28 mtcampbe Exp $
 
 #include "FaceOffset_3.h"
-#include "../Rocblas/include/Rocblas.h"
-#include "../Rocsurf/include/Rocsurf.h"
+#include "Rocblas.h"
+#include "Rocsurf.h"
 #include <algorithm>
 
 PROP_BEGIN_NAMESPACE
@@ -35,38 +35,38 @@ filter_and_identify_ridge_edges( bool filter_curves)
   // Calculate boundary normals
   _surf->update_bd_normals( _facenormals, false);
 
-  COM::Attribute *maxdianglev = 
-    _buf->new_attribute( "FO_maxdianglev", 'n', COM_DOUBLE, 1, "");
+  COM::DataItem *maxdianglev = 
+    _buf->new_dataitem( "FO_maxdianglev", 'n', COM_DOUBLE, 1, "");
   _buf->resize_array( maxdianglev, 0);
 
   double t=-pi;
   Rocblas::copy_scalar( &t, maxdianglev);
 
-  COM::Attribute *mindianglev = 
-    _buf->new_attribute( "FO_mindianglev", 'n', COM_DOUBLE, 1, "");
+  COM::DataItem *mindianglev = 
+    _buf->new_dataitem( "FO_mindianglev", 'n', COM_DOUBLE, 1, "");
   _buf->resize_array( mindianglev, 0);
   t=pi;
   Rocblas::copy_scalar( &t, mindianglev);
 
-  COM::Attribute *maxtrnangv = 
-    _buf->new_attribute( "FO_maxtrnangv", 'n', COM_DOUBLE, 1, "");
+  COM::DataItem *maxtrnangv = 
+    _buf->new_dataitem( "FO_maxtrnangv", 'n', COM_DOUBLE, 1, "");
   _buf->resize_array( maxtrnangv, 0);
 
   t=-2;
   Rocblas::copy_scalar( &t, maxtrnangv);
 
-  COM::Attribute *mintrnangv = 
-    _buf->new_attribute( "FO_mintrnangv", 'n', COM_DOUBLE, 1, "");
+  COM::DataItem *mintrnangv = 
+    _buf->new_dataitem( "FO_mintrnangv", 'n', COM_DOUBLE, 1, "");
   _buf->resize_array( mintrnangv, 0);
   t=2;
   Rocblas::copy_scalar( &t, mintrnangv);
 
-  COM::Attribute *neighbor_features = 
-    _buf->new_attribute( "FO_neighbor_features", 'n', COM_CHAR, 1, "");
+  COM::DataItem *neighbor_features = 
+    _buf->new_dataitem( "FO_neighbor_features", 'n', COM_CHAR, 1, "");
   _buf->resize_array( neighbor_features, 0);
 
-  COM::Attribute *qsedges = 
-    _buf->new_attribute( "FO_qsedges", 'e', COM_CHAR, 1, "");
+  COM::DataItem *qsedges = 
+    _buf->new_dataitem( "FO_qsedges", 'e', COM_CHAR, 1, "");
   _buf->resize_array( qsedges, 0);
   _buf->init_done( false);
 
@@ -96,24 +96,24 @@ filter_and_identify_ridge_edges( bool filter_curves)
 
     // Obtain nodal coordinates of current pane, assuming contiguous layout
     const Point_3 *pnts = reinterpret_cast<Point_3*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
 
     const Vector_3 *es = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_eigvecs->id())->pointer());
+      ( pane->dataitem(_eigvecs->id())->pointer());
     char *tranks = reinterpret_cast<char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
     char *strong = reinterpret_cast<char*>
-      ( pane->attribute(_strong->id())->pointer());
+      ( pane->dataitem(_strong->id())->pointer());
     double *minvs = reinterpret_cast<double*>
-      ( pane->attribute(mindianglev->id())->pointer());
+      ( pane->dataitem(mindianglev->id())->pointer());
     double *maxvs = reinterpret_cast<double*>
-      ( pane->attribute(maxdianglev->id())->pointer());
+      ( pane->dataitem(maxdianglev->id())->pointer());
     double *minta = reinterpret_cast<double*>
-      ( pane->attribute(mintrnangv->id())->pointer());
+      ( pane->dataitem(mintrnangv->id())->pointer());
     double *maxta = reinterpret_cast<double*>
-      ( pane->attribute(maxtrnangv->id())->pointer());
+      ( pane->dataitem(maxtrnangv->id())->pointer());
     Vector_3 *fnrms = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_facenormals->id())->pointer());
+      ( pane->dataitem(_facenormals->id())->pointer());
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1);
@@ -124,10 +124,10 @@ filter_and_identify_ridge_edges( bool filter_curves)
       for ( int k=0; k<ne; ++k, uindex=vindex, vindex=windex) {
 	windex = ene[ (k+1)%ne]-1;
 
-	Edge_ID eid(j+1,k), eid_opp = pm_it->get_opposite_real_edge( eid);
+	Edge_ID eid(j+1,k), eid_opp = (*pm_it)->get_opposite_real_edge( eid);
 
 	// Consider border edges as flat and skip them when identifying ridges
-	if ( pm_it->is_physical_border_edge( eid_opp)) 
+	if ( (*pm_it)->is_physical_border_edge( eid_opp)) 
 	{ ++nedges; continue; }
 
 	Vector_3 tng = pnts[ windex] - pnts[vindex];
@@ -139,7 +139,7 @@ filter_and_identify_ridge_edges( bool filter_curves)
 	// for eid and eid_opp near the thresholds.
 	const Vector_3 &n1 = fnrms[j];
 	const Vector_3 &n2 = eid_opp.is_border() ? 
-	  pm_it->get_bd_normal( eid_opp) : fnrms[eid_opp.eid()-1];
+	  (*pm_it)->get_bd_normal( eid_opp) : fnrms[eid_opp.eid()-1];
 	double costheta = n1*n2;
 	if ( costheta>1) costheta = 1;
 	else if (costheta<-1) costheta = -1;
@@ -213,18 +213,18 @@ filter_and_identify_ridge_edges( bool filter_curves)
     std::map< Edge_ID, double> &diangle_pn = diangle_maps[i];
 
     const double *minvs = reinterpret_cast<double*>
-      ( pane->attribute(mindianglev->id())->pointer());
+      ( pane->dataitem(mindianglev->id())->pointer());
     const double *maxvs = reinterpret_cast<double*>
-      ( pane->attribute(maxdianglev->id())->pointer());
+      ( pane->dataitem(maxdianglev->id())->pointer());
     const double *minta = reinterpret_cast<double*>
-      ( pane->attribute(mintrnangv->id())->pointer());
+      ( pane->dataitem(mintrnangv->id())->pointer());
     double *maxta = reinterpret_cast<double*>
-      ( pane->attribute(maxtrnangv->id())->pointer());
+      ( pane->dataitem(maxtrnangv->id())->pointer());
 
     char *tranks = reinterpret_cast<char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
     char *nnf = reinterpret_cast<char*>
-      ( pane->attribute(neighbor_features->id())->pointer());
+      ( pane->dataitem(neighbor_features->id())->pointer());
 
     COM_assertion( emap_pn.size() == diangle_pn.size());
     // Loop through ebuf and put ridges edges onto emap_pn
@@ -261,28 +261,28 @@ filter_and_identify_ridge_edges( bool filter_curves)
     std::set< Edge_ID> &eset_pn = _edges[i];
 
     const double *minvs = reinterpret_cast<double*>
-      ( pane->attribute(mindianglev->id())->pointer());
+      ( pane->dataitem(mindianglev->id())->pointer());
     const double *maxvs = reinterpret_cast<double*>
-      ( pane->attribute(maxdianglev->id())->pointer());
+      ( pane->dataitem(maxdianglev->id())->pointer());
     const double *minta = reinterpret_cast<double*>
-      ( pane->attribute(mintrnangv->id())->pointer());
+      ( pane->dataitem(mintrnangv->id())->pointer());
     double *maxta = reinterpret_cast<double*>
-      ( pane->attribute(maxtrnangv->id())->pointer());
+      ( pane->dataitem(maxtrnangv->id())->pointer());
     
     char *strong = reinterpret_cast<char*>
-      ( pane->attribute(_strong->id())->pointer());
+      ( pane->dataitem(_strong->id())->pointer());
     char *tranks = reinterpret_cast<char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
     char *qses = reinterpret_cast<char*>
-      ( pane->attribute(qsedges->id())->pointer());
+      ( pane->dataitem(qsedges->id())->pointer());
     char *nnf = reinterpret_cast<char*>
-      ( pane->attribute(neighbor_features->id())->pointer());
+      ( pane->dataitem(neighbor_features->id())->pointer());
  
     COM_assertion( emap_pn.size() == diangle_pn.size());
     // Loop through ebuf and put ridges edges onto emap_pn
     for ( std::map< Edge_ID, double>::const_iterator eit=emap_pn.begin(), 
 	    rit=diangle_pn.begin(), eend=emap_pn.end(); eit!=eend; ++eit, ++rit) {
-      Edge_ID eid = eit->first, eid_opp = pm_it->get_opposite_real_edge( eid);
+      Edge_ID eid = eit->first, eid_opp = (*pm_it)->get_opposite_real_edge( eid);
       COM_assertion( !eid.is_border());
       double feg = eit->second, fangle = rit->second, feg_opp;
 
@@ -322,10 +322,10 @@ filter_and_identify_ridge_edges( bool filter_curves)
     // Select quasi-strong edges
     for ( std::set< Edge_ID>::iterator eit=eset_pn.begin(); 
 	  eit!=eset_pn.end();) {
-      Edge_ID eid = *eit, eid_opp = pm_it->get_opposite_real_edge( eid);
+      Edge_ID eid = *eit, eid_opp = (*pm_it)->get_opposite_real_edge( eid);
 
       if ( !eid_opp.is_border() && eset_pn.find(eid_opp)==eset_pn.end() ||
-	   eid_opp.is_border() && !pm_it->get_bdedge_flag( eid_opp)) {
+	   eid_opp.is_border() && !(*pm_it)->get_bdedge_flag( eid_opp)) {
 	std::set< Edge_ID>::iterator to_delete = eit;
 	++eit;
 	eset_pn.erase( to_delete);
@@ -373,17 +373,17 @@ filter_and_identify_ridge_edges( bool filter_curves)
     std::set< Edge_ID> &eset_pn = _edges[i];
 
     // Allocate memory for _ridges and save them. 
-    COM::Attribute *att_rdg = pane->attribute(_ridges->id());
+    COM::DataItem *att_rdg = pane->dataitem(_ridges->id());
 
     int n=eset_pn.size();
     att_rdg->allocate( 2, std::max(n,att_rdg->size_of_items()), 0);
     int *rdgs = reinterpret_cast<int*>
-      ( pane->attribute(_ridges->id())->pointer()), ii=0;
+      ( pane->dataitem(_ridges->id())->pointer()), ii=0;
 
     for ( std::set< Edge_ID>::const_iterator eit=eset_pn.begin();
 	  eit!=eset_pn.end(); ++eit) {
       // Make sure that eid_opp is not border
-      Edge_ID eid = *eit, eid_opp = pm_it->get_opposite_real_edge( eid);
+      Edge_ID eid = *eit, eid_opp = (*pm_it)->get_opposite_real_edge( eid);
 
       // Obtain vertex indices.
       Element_node_enumerator ene( pane, eid.eid()); 
@@ -402,17 +402,17 @@ filter_and_identify_ridge_edges( bool filter_curves)
     std::cout << "Found " << nredges << " ridge edges " << std::endl;
 
   // Deallocate mindianglev and maxdianglev
-  _buf->delete_attribute( qsedges->name());
-  _buf->delete_attribute( neighbor_features->name());
-  _buf->delete_attribute( mintrnangv->name());
-  _buf->delete_attribute( maxtrnangv->name());
-  _buf->delete_attribute( mindianglev->name());
-  _buf->delete_attribute( maxdianglev->name());
+  _buf->delete_dataitem( qsedges->name());
+  _buf->delete_dataitem( neighbor_features->name());
+  _buf->delete_dataitem( mintrnangv->name());
+  _buf->delete_dataitem( maxtrnangv->name());
+  _buf->delete_dataitem( mindianglev->name());
+  _buf->delete_dataitem( maxdianglev->name());
   _buf->init_done( false);
 }
 
 int FaceOffset_3::
-insert_boundary_edges( COM::Attribute *tr_attr) {
+insert_boundary_edges( COM::DataItem *tr_attr) {
   std::vector< COM::Pane*>::iterator it = _panes.begin(), iend=_panes.end();
   Manifold::PM_iterator pm_it=_surf->pm_begin();
 
@@ -423,19 +423,19 @@ insert_boundary_edges( COM::Attribute *tr_attr) {
     std::set< Edge_ID> &eset_pn = _edges[i];
 
     char *tranks = reinterpret_cast<char*>
-      ( pane->attribute(tr_attr->id())->pointer());
-    const char *val_bndry=(const char*)pane->attribute
+      ( pane->dataitem(tr_attr->id())->pointer());
+    const char *val_bndry=(const char*)pane->dataitem
       (_cnstr_bndry_edges->id())->pointer();
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1);
     for ( int j=0, nj=pane->size_of_real_elements(); j<nj; ++j, ene.next()) {
       for ( int k=0, ne=ene.size_of_edges(); k<ne; ++k) {
-	Edge_ID eid(j+1,k), eid_opp = pm_it->get_opposite_real_edge( eid);
+	Edge_ID eid(j+1,k), eid_opp = (*pm_it)->get_opposite_real_edge( eid);
 	
 	// If a vertex has mixed geometric and topological edges, 
 	// set it to be a corner
-	if ( pm_it->is_physical_border_edge( eid_opp) || 
+	if ( (*pm_it)->is_physical_border_edge( eid_opp) || 
 	     (val_bndry && (val_bndry[j] & (1<<k)))) {
 	  int vindex = ene[k]-1;
 
@@ -460,13 +460,13 @@ insert_boundary_edges( COM::Attribute *tr_attr) {
 void FaceOffset_3::
 reclassify_ridge_vertices( const bool upgrade_corners, 
 			   const bool upgrade_ridge,
-			   COM::Attribute *neighbor_feas, 
-			   COM::Attribute *tr_attr, 
+			   COM::DataItem *neighbor_feas, 
+			   COM::DataItem *tr_attr, 
 			   bool to_filter) {
 
-  COM::Attribute *vecsums_buf = NULL;
+  COM::DataItem *vecsums_buf = NULL;
   if ( upgrade_corners) {
-    vecsums_buf = _buf->new_attribute( "FO_vecsums_buf", 'n', COM_DOUBLE, 3, "");
+    vecsums_buf = _buf->new_dataitem( "FO_vecsums_buf", 'n', COM_DOUBLE, 3, "");
     _buf->resize_array( vecsums_buf, 0);
   }
 
@@ -481,12 +481,12 @@ reclassify_ridge_vertices( const bool upgrade_corners,
 	ii<local_npanes; ++ii, ++it, ++pm_it) { 
     COM::Pane *pane = *it;
     char *nnf = reinterpret_cast<char*>
-      ( pane->attribute(neighbor_feas->id())->pointer());
+      ( pane->dataitem(neighbor_feas->id())->pointer());
     if ( upgrade_corners) {
       pnts = reinterpret_cast<Vector_3*>
-	(pane->attribute(COM_NC)->pointer());
+	(pane->dataitem(COM_NC)->pointer());
       vss = reinterpret_cast<Vector_3*>
-	(pane->attribute(vecsums_buf->id())->pointer());
+	(pane->dataitem(vecsums_buf->id())->pointer());
     }
  
     std::set< Edge_ID> &eset_pn = _edges[ii];
@@ -497,8 +497,8 @@ reclassify_ridge_vertices( const bool upgrade_corners,
       int lid = eid.lid(), vindex = ene[lid]-1;
       ++nnf[vindex];
 
-      Edge_ID eid_opp = pm_it->get_opposite_real_edge( eid);
-      bool is_border_edge = pm_it->is_physical_border_edge( eid_opp);
+      Edge_ID eid_opp = (*pm_it)->get_opposite_real_edge( eid);
+      bool is_border_edge = (*pm_it)->is_physical_border_edge( eid_opp);
       if ( is_border_edge)
 	++nnf[ ene[(lid+1)%ene.size_of_edges()]-1];
 
@@ -524,12 +524,12 @@ reclassify_ridge_vertices( const bool upgrade_corners,
   for ( int ii=0, local_npanes = _panes.size(); ii<local_npanes; ++ii, ++it) {
     COM::Pane *pane = *it;
     char *nnf = reinterpret_cast<char*>
-      ( pane->attribute(neighbor_feas->id())->pointer());
+      ( pane->dataitem(neighbor_feas->id())->pointer());
     char *tranks = reinterpret_cast<char*>
-      ( pane->attribute(tr_attr->id())->pointer());
+      ( pane->dataitem(tr_attr->id())->pointer());
     if ( upgrade_corners)
       vss = reinterpret_cast<Vector_3*>
-	(pane->attribute(vecsums_buf->id())->pointer());
+	(pane->dataitem(vecsums_buf->id())->pointer());
 
     for ( int j=0, nj=pane->size_of_real_nodes(); j<nj; ++j) {
       if ( upgrade_corners && ( nnf[j]>=3 || nnf[j] == 2 &&
@@ -549,7 +549,7 @@ reclassify_ridge_vertices( const bool upgrade_corners,
   _surf->reduce_on_shared_nodes( tr_attr, Manifold::OP_MIN);
   
   if ( upgrade_corners) {
-    _buf->delete_attribute( vecsums_buf->name());
+    _buf->delete_dataitem( vecsums_buf->name());
     _buf->init_done( false);
 
     if ( to_filter)
@@ -567,11 +567,11 @@ struct RidgeNeighbor {
 // Construct the neighbor vertices of ridges.
 // This routine only supports single-pane meshes.
 int FaceOffset_3::
-build_ridge_neighbor_list( const COM::Attribute *maxtrnangv,
-			   const COM::Attribute *mintrnangv,
+build_ridge_neighbor_list( const COM::DataItem *maxtrnangv,
+			   const COM::DataItem *mintrnangv,
 			   const std::vector<std::map<Edge_ID, double> > &edge_maps,
-			   const COM::Attribute *maxdianglev, 
-			   const COM::Attribute *mindianglev,
+			   const COM::DataItem *maxdianglev, 
+			   const COM::DataItem *mindianglev,
 			   const std::vector<std::map<Edge_ID, double> > &diangle_maps,
 			   std::vector< ObscendSet > &obscends) {
 
@@ -589,7 +589,7 @@ build_ridge_neighbor_list( const COM::Attribute *maxtrnangv,
   for ( std::set< Edge_ID>::const_iterator eit=eset_pn.begin(),
 	  eend=eset_pn.end(); eit!=eend; ++eit) {
     // Make sure that eid_opp is not border
-    Edge_ID eid = *eit, eid_opp = pm_it->get_opposite_real_edge( eid);
+    Edge_ID eid = *eit, eid_opp = (*pm_it)->get_opposite_real_edge( eid);
     COM_assertion( eset_pn.find(eid_opp)!=eset_pn.end() &&
 		   !eid.is_border());
     Element_node_enumerator ene( pane, eid.eid()); 
@@ -607,21 +607,21 @@ build_ridge_neighbor_list( const COM::Attribute *maxtrnangv,
 
   // Check ACH list and build rdgngbs
   RidgeNeighbor *rdgngbs = reinterpret_cast<RidgeNeighbor*>
-    ( pane->attribute(_ridgeneighbors->id())->pointer());
+    ( pane->dataitem(_ridgeneighbors->id())->pointer());
   const Point_3 *pnts = reinterpret_cast<Point_3*>
-    (pane->attribute(COM_NC)->pointer());
+    (pane->dataitem(COM_NC)->pointer());
   const char *tranks = reinterpret_cast<char*>
-    ( pane->attribute(_tangranks->id())->pointer());
+    ( pane->dataitem(_tangranks->id())->pointer());
   const double *minvs = reinterpret_cast<double*>
-    ( pane->attribute(mindianglev->id())->pointer());
+    ( pane->dataitem(mindianglev->id())->pointer());
   const double *maxvs = reinterpret_cast<double*>
-    ( pane->attribute(maxdianglev->id())->pointer());
+    ( pane->dataitem(maxdianglev->id())->pointer());
   const double *minta = reinterpret_cast<double*>
-    (pane->attribute(mintrnangv->id())->pointer());
+    (pane->dataitem(mintrnangv->id())->pointer());
   const double *maxta = reinterpret_cast<double*>
-    ( pane->attribute(maxtrnangv->id())->pointer());
+    ( pane->dataitem(maxtrnangv->id())->pointer());
   char *strong = reinterpret_cast<char*>
-    ( pane->attribute(_strong->id())->pointer());
+    ( pane->dataitem(_strong->id())->pointer());
   const std::map< Edge_ID, double> &diangle_pn = diangle_maps[0];
   const std::map< Edge_ID, double> &emap_pn = edge_maps[0];
   ObscendSet &obscend_pn = obscends[0];
@@ -715,11 +715,11 @@ filter_obscended_ridge( const std::vector<std::map<Edge_ID, double> > &edge_maps
 
     COM::Pane *pane = *it;
     const char *tranks = reinterpret_cast<char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
     char *strong = reinterpret_cast<char*>
-      ( pane->attribute(_strong->id())->pointer());
+      ( pane->dataitem(_strong->id())->pointer());
     const RidgeNeighbor *rdgngbs = reinterpret_cast<RidgeNeighbor*>
-      ( pane->attribute(_ridgeneighbors->id())->pointer());
+      ( pane->dataitem(_ridgeneighbors->id())->pointer());
     const std::map< Edge_ID, double> &diangle_pn = diangle_maps[i];
 
     for ( ObscendSet::const_iterator rit=obscend_pn.begin(),
@@ -750,7 +750,7 @@ filter_obscended_ridge( const std::vector<std::map<Edge_ID, double> > &edge_maps
 	  is_not_joint2 = false; 
 	}
 	else {
-	  Edge_ID eid_opp = pm_it->get_opposite_real_edge( eid);
+	  Edge_ID eid_opp = (*pm_it)->get_opposite_real_edge( eid);
 
 	  is_not_joint2 = (rdgngbs[ index+1].vid!=cur) && 
 	    (obscend_pn.find(eid_opp) != obscend_pn.end());
@@ -790,9 +790,9 @@ remove_obscure_curves( const std::vector< ObscendSet > &obscends) {
     COM::Pane *pane = _panes[i];
 
     char *tranks = reinterpret_cast<char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
     const RidgeNeighbor *rdgngbs = reinterpret_cast<RidgeNeighbor*>
-      ( pane->attribute(_ridgeneighbors->id())->pointer());
+      ( pane->dataitem(_ridgeneighbors->id())->pointer());
 
     std::cout << "There are " << obscend_pn.size() 
 	      << " obscure curves. " << std::endl;
@@ -800,7 +800,7 @@ remove_obscure_curves( const std::vector< ObscendSet > &obscends) {
     for ( ObscendSet::const_iterator rit=obscend_pn.begin(),
 	    rend=obscend_pn.end(); rit!=rend; ++rit) {
       dropped += eset_pn.erase( rit->first);
-      eset_pn.erase( pm_it->get_opposite_real_edge( rit->first));
+      eset_pn.erase( (*pm_it)->get_opposite_real_edge( rit->first));
 
       int cur = rit->second.first, next = rit->second.second, start=cur;
       for ( ; tranks[next-1]; ) {
@@ -816,7 +816,7 @@ remove_obscure_curves( const std::vector< ObscendSet > &obscends) {
 	if ( next==0 || next==start) break;
 
 	dropped += eset_pn.erase( eid);
-	eset_pn.erase( pm_it->get_opposite_real_edge( eid));
+	eset_pn.erase( (*pm_it)->get_opposite_real_edge( eid));
       }
     }
   }

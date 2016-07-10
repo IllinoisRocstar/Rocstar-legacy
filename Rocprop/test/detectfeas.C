@@ -22,7 +22,7 @@
  *********************************************************************/
 // $Id: detectfeas.C,v 1.4 2008/12/06 08:45:28 mtcampbe Exp $
 
-#include "roccom.h"
+#include "com.h"
 
 #include <cstdio>
 #include <iostream>
@@ -34,8 +34,8 @@
 #include <cmath>
 #include <cassert>
 #include <sstream>
-#include "roccom_assertion.h"
-#include "../Rocsurf/test/IM_Reader.h"
+#include "com_assertion.h"
+#include "IM_Reader.h"
 
 
 using namespace std;
@@ -136,14 +136,14 @@ std::string read_in_mesh ( const char *fname) {
 
 void init_attributes( const string &wname, 
 		      const Control_parameter &cntr_param) {
-  COM_new_attribute((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
+  COM_new_dataitem((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
 
   // Ridges of each pane.
-  COM_new_attribute((wname+".ridges").c_str(), 'p', COM_INT, 2, "");
+  COM_new_dataitem((wname+".ridges").c_str(), 'p', COM_INT, 2, "");
   COM_set_size((wname+".ridges").c_str(), 0, 0);
 
-  COM_new_attribute((wname+".tangranks").c_str(), 'n', COM_INT, 1, "");
-  // COM_new_attribute((wname+".weaks").c_str(), 'n', COM_INT, 1, "");
+  COM_new_dataitem((wname+".tangranks").c_str(), 'n', COM_INT, 1, "");
+  // COM_new_dataitem((wname+".weaks").c_str(), 'n', COM_INT, 1, "");
 
   COM_resize_array( (wname+".atts").c_str());
   COM_window_init_done( wname.c_str());
@@ -154,8 +154,8 @@ void output_solution( const string &wname, const char *timelevel,
   static int OUT_write = 0, hdl;
 
   if ( OUT_write==0) {
-    OUT_write = COM_get_function_handle( "OUT.write_attribute");
-    hdl = COM_get_attribute_handle( (wname+".all").c_str());
+    OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+    hdl = COM_get_dataitem_handle( (wname+".all").c_str());
 
     int OUT_set = COM_get_function_handle( "OUT.set_option");
 #if USE_CGNS
@@ -200,8 +200,8 @@ int main(int argc, char *argv[]) {
   init_attributes( wname, cntr_param);
   
   // Attributes
-  int pmesh = COM_get_attribute_handle( (wname+".pmesh").c_str());
-  int disps = COM_get_attribute_handle( (wname+".disps").c_str());
+  int pmesh = COM_get_dataitem_handle( (wname+".pmesh").c_str());
+  int disps = COM_get_dataitem_handle( (wname+".disps").c_str());
 
   // Funcitions
   int PROP_init = COM_get_function_handle( "PROP.initialize");

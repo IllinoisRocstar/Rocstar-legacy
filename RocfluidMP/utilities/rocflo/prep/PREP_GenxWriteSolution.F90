@@ -56,7 +56,7 @@ SUBROUTINE GenxWriteSolution( gridLevel,iReg,region,wins,winv )
 #endif
   USE ModParameters
   IMPLICIT NONE
-  INCLUDE "roccomf90.h"
+  INCLUDE "comf90.h"
 
 ! ... parameters
   INTEGER :: gridLevel, iReg
@@ -80,7 +80,7 @@ SUBROUTINE GenxWriteSolution( gridLevel,iReg,region,wins,winv )
 
 ! obtain function handle ------------------------------------------------------
 
-  write_attr = COM_get_function_handle( 'OUT.write_attribute')
+  write_attr = COM_get_function_handle( 'OUT.write_dataitem')
   set_option = COM_get_function_handle( 'OUT.set_option')
 
   IF ( iReg==1) THEN
@@ -94,7 +94,7 @@ SUBROUTINE GenxWriteSolution( gridLevel,iReg,region,wins,winv )
 
 ! write volume window ---------------------------------------------------------
 
-  vol_all = Com_get_attribute_handle( TRIM(winv)//'.all')
+  vol_all = Com_get_dataitem_handle( TRIM(winv)//'.all')
 
   WRITE(fname,'(A,I5.5)') '../Rocin/fluid_',iReg 
   CALL COM_call_function( write_attr, 4, TRIM(fname), vol_all, &
@@ -102,7 +102,7 @@ SUBROUTINE GenxWriteSolution( gridLevel,iReg,region,wins,winv )
 
 ! write surface window --------------------------------------------------------
 
-  surf_all = Com_get_attribute_handle( TRIM(wins)//'.all')
+  surf_all = Com_get_dataitem_handle( TRIM(wins)//'.all')
 
   WRITE(fname,'(A,I5.5)') '../Rocin/ifluid_',iReg
   CALL COM_call_function( write_attr, 4, TRIM(fname), surf_all, &

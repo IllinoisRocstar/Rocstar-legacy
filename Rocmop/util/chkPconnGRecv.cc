@@ -67,6 +67,9 @@
 #include "RocMeshData.h"
 #include <sstream>
 #include <vector>
+#include <unistd.h>
+#include <cstdlib>
+
 using std::cout;
 using std::endl;
 using std::ostringstream;

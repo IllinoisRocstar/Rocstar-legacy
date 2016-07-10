@@ -22,7 +22,7 @@
  *********************************************************************/
 // $Id: compare_normals.C,v 1.8 2008/12/06 08:45:28 mtcampbe Exp $
 
-#include "roccom.h"
+#include "com.h"
 
 #include <cstdio>
 #include <iostream>
@@ -34,26 +34,26 @@
 #include <cmath>
 #include <cassert>
 #include <sstream>
-#include "roccom_assertion.h"
+#include "com_assertion.h"
 
-#include "../Rocsurf/test/IM_Reader.h"
+#include "IM_Reader.h"
 
 using namespace std;
 
 typedef MAP::Vector_3<double> Vector_3;
 
-COM_EXTERN_MODULE( Rocblas);
-COM_EXTERN_MODULE( Rocmap);
-COM_EXTERN_MODULE( Rocsurf);
+COM_EXTERN_MODULE( Simpal);
+COM_EXTERN_MODULE( SurfMap);
+COM_EXTERN_MODULE( SurfUtil);
 COM_EXTERN_MODULE( Rocprop);
-COM_EXTERN_MODULE( Rocout);
+COM_EXTERN_MODULE( SimOut);
 
 void load_modules() {
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocblas, "BLAS");
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocmap, "MAP");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(Simpal, "BLAS");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SurfMap, "MAP");
   COM_LOAD_MODULE_STATIC_DYNAMIC(Rocprop, "PROP");
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocsurf, "SURF");
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocout, "OUT");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SurfUtil, "SURF");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SimOut, "OUT");
 }
 
 static int rank = 0;
@@ -210,30 +210,30 @@ std::string read_in_mesh ( const char *fname) {
 }
 
 void init_attributes( const string &wname) {
-  COM_new_attribute((wname+".facenormals").c_str(), 'e', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".facecenters").c_str(), 'e', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".fnormals_ana").c_str(), 'e', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".fnormals_cr").c_str(), 'e', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".ferrs").c_str(), 'e', COM_DOUBLE, 1, "");
-  COM_new_attribute((wname+".verrs").c_str(), 'n', COM_DOUBLE, 1, "");
+  COM_new_dataitem((wname+".facenormals").c_str(), 'e', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".facecenters").c_str(), 'e', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".fnormals_ana").c_str(), 'e', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".fnormals_cr").c_str(), 'e', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".ferrs").c_str(), 'e', COM_DOUBLE, 1, "");
+  COM_new_dataitem((wname+".verrs").c_str(), 'n', COM_DOUBLE, 1, "");
 
-  COM_new_attribute((wname+".vnormals_ana").c_str(), 'n', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".vnormals_nw").c_str(), 'n', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".vnormals_area").c_str(), 'n', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".vnormals_angle").c_str(), 'n', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".vnormals_sphere").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".vnormals_ana").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".vnormals_nw").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".vnormals_area").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".vnormals_angle").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".vnormals_sphere").c_str(), 'n', COM_DOUBLE, 3, "");
 
-  COM_new_attribute((wname+".vnormals_eig").c_str(), 'n', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".vnormals_mq").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".vnormals_eig").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".vnormals_mq").c_str(), 'n', COM_DOUBLE, 3, "");
 
-  // Attribute for storing the number of eigenvalues for each node.
-  COM_new_attribute((wname+".lambdas").c_str(), 'n', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".eigvecs").c_str(), 'n', COM_DOUBLE, 9, "");
-  COM_new_attribute((wname+".tangranks").c_str(), 'n', COM_CHAR, 1, "");
-  COM_new_attribute((wname+".scales").c_str(), 'n', COM_DOUBLE, 1, "");
+  // Dataitem for storing the number of eigenvalues for each node.
+  COM_new_dataitem((wname+".lambdas").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".eigvecs").c_str(), 'n', COM_DOUBLE, 9, "");
+  COM_new_dataitem((wname+".tangranks").c_str(), 'n', COM_CHAR, 1, "");
+  COM_new_dataitem((wname+".scales").c_str(), 'n', COM_DOUBLE, 1, "");
 
-  COM_new_attribute((wname+".spds").c_str(), 'e', COM_DOUBLE, 1, "m/s");
-  COM_new_attribute((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
+  COM_new_dataitem((wname+".spds").c_str(), 'e', COM_DOUBLE, 1, "m/s");
+  COM_new_dataitem((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
 
   COM_resize_array( (wname+".atts").c_str());
   COM_window_init_done( wname.c_str());
@@ -291,8 +291,8 @@ void init_normals( const string &wname, int func) {
 
   // Interpolate coordinates to face centers
   int SURF_n2f = COM_get_function_handle( "SURF.interpolate_to_centers");
-  int nc = COM_get_attribute_handle( (wname+".nc").c_str());
-  int cnts = COM_get_attribute_handle( (wname+".facecenters").c_str());
+  int nc = COM_get_dataitem_handle( (wname+".nc").c_str());
+  int cnts = COM_get_dataitem_handle( (wname+".facecenters").c_str());
   COM_call_function( SURF_n2f, &nc, &cnts);
 
   // Compute face normals
@@ -428,30 +428,30 @@ compute_vnormal_error( const int ref_nrms_hdl,
 // Compute weighted schemes
 void compute_weighted_normals( const string &wname) {
   int SURF_compnrm = COM_get_function_handle( "SURF.compute_normals");
-  int mesh_handle = COM_get_attribute_handle( (wname+".mesh").c_str());
+  int mesh_handle = COM_get_dataitem_handle( (wname+".mesh").c_str());
 
-  int nrm_ana = COM_get_attribute_handle( (wname+".vnormals_ana").c_str());
-  int vbuf_hdl = COM_get_attribute_handle( (wname+".verrs").c_str());
-  int fbuf_hdl = COM_get_attribute_handle( (wname+".ferrs").c_str());
+  int nrm_ana = COM_get_dataitem_handle( (wname+".vnormals_ana").c_str());
+  int vbuf_hdl = COM_get_dataitem_handle( (wname+".verrs").c_str());
+  int fbuf_hdl = COM_get_dataitem_handle( (wname+".ferrs").c_str());
 
   int scheme = SURF::E2N_ONE;
-  int nrm_nw = COM_get_attribute_handle( (wname+".vnormals_nw").c_str());
+  int nrm_nw = COM_get_dataitem_handle( (wname+".vnormals_nw").c_str());
   COM_call_function( SURF_compnrm, &mesh_handle, &nrm_nw, &scheme);
 
   compute_vnormal_error( nrm_ana, nrm_nw, vbuf_hdl, fbuf_hdl, "no-weight");
 
   scheme = SURF::E2N_AREA;
-  int nrm_area = COM_get_attribute_handle( (wname+".vnormals_area").c_str());
+  int nrm_area = COM_get_dataitem_handle( (wname+".vnormals_area").c_str());
   COM_call_function( SURF_compnrm, &mesh_handle, &nrm_area, &scheme);
   compute_vnormal_error( nrm_ana, nrm_area, vbuf_hdl, fbuf_hdl, "area-weighted");
 
   scheme = SURF::E2N_ANGLE;
-  int nrm_angle = COM_get_attribute_handle( (wname+".vnormals_angle").c_str());
+  int nrm_angle = COM_get_dataitem_handle( (wname+".vnormals_angle").c_str());
   COM_call_function( SURF_compnrm, &mesh_handle, &nrm_angle, &scheme);
   compute_vnormal_error( nrm_ana, nrm_angle, vbuf_hdl, fbuf_hdl, "angle-weighted");
 
   scheme = SURF::E2N_SPHERE;
-  int nrm_sphere = COM_get_attribute_handle( (wname+".vnormals_sphere").c_str());
+  int nrm_sphere = COM_get_dataitem_handle( (wname+".vnormals_sphere").c_str());
   COM_call_function( SURF_compnrm, &mesh_handle, &nrm_sphere, &scheme);
   compute_vnormal_error( nrm_ana, nrm_sphere, vbuf_hdl, fbuf_hdl, "sphere-weighted");
 }
@@ -461,17 +461,17 @@ void compute_quadric_normals( const string &wname) {
   int PROP_set  = COM_get_function_handle( "PROP.set_option");
   int PROP_propagate = COM_get_function_handle( "PROP.propagate");
   int BLAS_add = COM_get_function_handle( "BLAS.add");
-  int nc = COM_get_attribute_handle( (wname+".nc").c_str());
-  int pmesh = COM_get_attribute_handle( (wname+".pmesh").c_str());
-  int spds = COM_get_attribute_handle( (wname+".spds").c_str());
-  int disps = COM_get_attribute_handle( (wname+".disps").c_str());
+  int nc = COM_get_dataitem_handle( (wname+".nc").c_str());
+  int pmesh = COM_get_dataitem_handle( (wname+".pmesh").c_str());
+  int spds = COM_get_dataitem_handle( (wname+".spds").c_str());
+  int disps = COM_get_dataitem_handle( (wname+".disps").c_str());
 
   double timestep = 1.e-4;
 
-  int nrm_ana = COM_get_attribute_handle( (wname+".vnormals_ana").c_str());
-  int vbuf_hdl = COM_get_attribute_handle( (wname+".verrs").c_str());
-  int fbuf_hdl = COM_get_attribute_handle( (wname+".ferrs").c_str());
-  int nrm_eig = COM_get_attribute_handle( (wname+".vnormals_eig").c_str());
+  int nrm_ana = COM_get_dataitem_handle( (wname+".vnormals_ana").c_str());
+  int vbuf_hdl = COM_get_dataitem_handle( (wname+".verrs").c_str());
+  int fbuf_hdl = COM_get_dataitem_handle( (wname+".ferrs").c_str());
+  int nrm_eig = COM_get_dataitem_handle( (wname+".vnormals_eig").c_str());
 
   COM_call_function( PROP_set, "rediter", "0");
 
@@ -502,7 +502,7 @@ void compute_quadric_normals( const string &wname) {
   COM_call_function( BLAS_add, &nc, &disps, &nc);
 
   compute_vnormal_error( nrm_ana, nrm_eig, vbuf_hdl, fbuf_hdl, "mq-angle");
-  int nrm_mq = COM_get_attribute_handle( (wname+".vnormals_mq").c_str());
+  int nrm_mq = COM_get_dataitem_handle( (wname+".vnormals_mq").c_str());
   int BLAS_copy = COM_get_function_handle( "BLAS.copy");
   COM_call_function( BLAS_copy, &nrm_eig, &nrm_mq);
 #endif
@@ -517,8 +517,8 @@ void output_solution( const string &wname, const char *timelevel) {
   static int OUT_write = 0, hdl;
 
   if ( OUT_write==0) {
-    OUT_write = COM_get_function_handle( "OUT.write_attribute");
-    hdl = COM_get_attribute_handle( (wname+".all").c_str());
+    OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+    hdl = COM_get_dataitem_handle( (wname+".all").c_str());
   }
 
   std::string fname = wname+"_"+timelevel;
@@ -550,7 +550,7 @@ int main(int argc, char *argv[]) {
 
   if ( cntr_param.perturb > 0) {
     int PROP_perturb = COM_get_function_handle( "PROP.perturb_mesh");
-    int pmesh = COM_get_attribute_handle( (wname+".pmesh").c_str());
+    int pmesh = COM_get_dataitem_handle( (wname+".pmesh").c_str());
     COM_call_function( PROP_perturb, &pmesh, &cntr_param.perturb);
   }
   output_solution( wname, "00000");

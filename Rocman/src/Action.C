@@ -27,7 +27,7 @@
 #include "rocman.h"
 #include "Action.h"
 #include "Scheduler.h"
-#include "roccom.h"
+#include "com.h"
 
 Action::Action(void *p, char *name): action_name(name), attr(NULL),
 				     idx(NULL), count(0), usr_ptr(p) 
@@ -89,26 +89,26 @@ void Action::print(FILE *f)
   fprintf(f, "node: { title:\"%s\" label:\"%s\"}\n", name(), name());
 }
 
-// Obtain attribute handle of ith attribute
-int Action::get_attribute_handle( int i) {
+// Obtain dataitem handle of ith attribute
+int Action::get_dataitem_handle( int i) {
   COM_assertion_msg ( attr[i]!=NULL, (std::string("Attribute \"")
 			      +"\" does not exist").c_str());
-  int hdl = COM_get_attribute_handle( attr[i]);
+  int hdl = COM_get_dataitem_handle( attr[i]);
   COM_assertion_msg ( hdl>0, (std::string("Attribute \"")+attr[i]
 			      +"\" does not exist").c_str());
   return hdl;
 }
 
-int Action::get_attribute_handle( const std::string str) {
-  int hdl = COM_get_attribute_handle( str);
+int Action::get_dataitem_handle( const std::string str) {
+  int hdl = COM_get_dataitem_handle( str);
   COM_assertion_msg ( hdl>0, (std::string("Attribute \"")+str
 			      +"\" does not exist").c_str());
   return hdl;
 }
 
-// Obtain attribute handle of ith attribute
-int Action::get_attribute_handle_const( int i) {
-  int hdl = COM_get_attribute_handle_const( attr[i]);
+// Obtain dataitem handle of ith attribute
+int Action::get_dataitem_handle_const( int i) {
+  int hdl = COM_get_dataitem_handle_const( attr[i]);
   COM_assertion_msg ( hdl>0, (std::string("Attribute \"")+attr[i]
 			      +"\" does not exist").c_str());
   return hdl;

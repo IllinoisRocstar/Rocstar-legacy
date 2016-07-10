@@ -26,7 +26,7 @@
 #include "BSMesh.H"
 #include "GEM.H"
 #include <algorithm>
-#include "roccom.h"
+#include "com.h"
 
 int TRAIL_FD2FE_WinCreate(const std::string &wname,const std::string &outwname,std::ostream *ouf=NULL);
 int TRAIL_FD2FE_WinCreate2(const std::string &wname,const std::string &outwname,std::ostream *ouf=NULL);

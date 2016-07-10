@@ -11,8 +11,8 @@ ELSE()
 ENDIF()
 
 #INCLUDE(CTest)
-find_path(ROCCOM_INC roccom.h HINTS ../Roccom/include) 
-find_path(ROCIN_INC HDF4.h HINTS ../Roccom/Rocin/include) 
+find_path(ROCCOM_INC com.h HINTS ../IMPACT/COM/include) 
+find_path(ROCIN_INC HDF4.h HINTS ../IMPACT/SimIO/In/include) 
 set (LIB_SRCS src/rocstar_driver.C src/Action.C src/Scheduler.C src/Coupling.C src/Agent.C src/SolidAgent.C 
               src/BurnAgent.C src/basic_actions.C src/transfer_actions.C src/Interpolate.C src/builtin_couplings.C
               src/derived_couplings.C src/Surfdiver.C src/FluidAgent.C)
@@ -25,7 +25,7 @@ set_source_files_properties(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC ${MPI_CX
 SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
-include_directories(include ${ROCCOM_INC} ${ROCIN_INC})
+include_directories(${CMAKE_BINARY_DIRECTORY}/include include ${ROCCOM_INC} ${ROCIN_INC})
 
 
 IF(NOT BUILD_STATIC)
@@ -34,7 +34,7 @@ ELSE()
   add_library(Rocman STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
 ENDIF()
-target_link_libraries(Rocman Roccom ${MPI_CXX_LIBRARIES})
+target_link_libraries(Rocman SITCOM ${MPI_CXX_LIBRARIES})
 set_target_properties(Rocman PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
 
 #add_executable(testx ${TEST_SRCS})

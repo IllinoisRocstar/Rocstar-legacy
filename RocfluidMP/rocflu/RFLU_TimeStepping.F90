@@ -112,7 +112,7 @@ SUBROUTINE RFLU_TimeStepping(dTimeSystem,dIterSystem,regions)
   IMPLICIT NONE
 
 #ifdef GENX
-#include "roccomf90.h"
+#include "comf90.h"
 #endif
 
 ! ******************************************************************************

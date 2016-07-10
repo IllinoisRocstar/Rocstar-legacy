@@ -58,7 +58,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
   IMPLICIT NONE
 
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
   CHARACTER*4 :: ichr4
   INTEGER :: NEW
@@ -114,7 +114,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! obtain function handle ------------------------------------------------------
 
-  write_attr = COM_get_function_handle( 'OUT.write_attribute')
+  write_attr = COM_get_function_handle( 'OUT.write_dataitem')
   set_option = COM_get_function_handle( 'OUT.set_option')
 
 ! do not append process rank -----------------
@@ -229,7 +229,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrtri6 => ptrtri6%next
      ENDDO
      
-     CALL COM_new_attribute( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
      CALL COM_set_size( surWin//'.nc', iBU, NumNpNew )
      CALL COM_resize_array(surWin//'.nc', iBU, MeshCoor, 3)
 
@@ -239,7 +239,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! nodeflag  to VolumeNode
 
-     CALL COM_new_attribute( surWin//'.bv', 'n', COM_INTEGER, 1, 'm')
+     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, 'm')
      CALL COM_set_array( surWin//'.bv', iBU, NodeFlag2D(2,1), 2)
 
 
@@ -252,10 +252,10 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! elemflag to VolumeElem
 
-     CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
      CALL COM_resize_array(surWin//'.bf2c', iBU, ElFlag_List, 1)
 
-     CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( surWin//'.bcflag', iBU,  1)
      CALL COM_resize_array(surWin//'.bcflag', iBU, BCSurfFlagOne, 1)
      
@@ -301,7 +301,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
      ! obtain function handle ------------------------------------------------------
 
-!     write_attr = COM_get_function_handle( 'OUT.write_attribute')
+!     write_attr = COM_get_function_handle( 'OUT.write_dataitem')
 !     set_option = COM_get_function_handle( 'OUT.set_option')
 
 !     IF(iProcs.EQ.1)THEN
@@ -320,7 +320,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! write surface window ------------------------
 
-!     sur_all = Com_get_attribute_handle( surWin//'.all')
+!     sur_all = Com_get_dataitem_handle( surWin//'.all')
 !     CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh_FS_Ignt.hdf', sur_all,&
 !          "solid_surf","00.000000")
 
@@ -416,7 +416,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrtri3 => ptrtri3%next
      ENDDO
 
-     CALL COM_new_attribute( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
      CALL COM_set_size( surWin//'.nc', iBU, NumNpNew )
      CALL COM_resize_array(surWin//'.nc', iBU, MeshCoor, 3)
 
@@ -426,7 +426,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! nodeflag  to VolumeNode
 
-     CALL COM_new_attribute( surWin//'.bv', 'n', COM_INTEGER, 1, 'm')
+     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, 'm')
      CALL COM_set_array( surWin//'.bv', iBU, NodeFlag2D(2,1), 2)
 
 
@@ -439,10 +439,10 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! elemflag to VolumeElem
 
-     CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
      CALL COM_resize_array(surWin//'.bf2c', iBU, ElFlag_List, 1)
 
-     CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( surWin//'.bcflag', iBU,  1)
      CALL COM_resize_array(surWin//'.bcflag', iBU, BCSurfFlagOne, 1)
      
@@ -484,7 +484,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      NULLIFY(ptrtri3)
      ! obtain function handle ------------------------------------------------------
 
-!     write_attr = COM_get_function_handle( 'OUT.write_attribute')
+!     write_attr = COM_get_function_handle( 'OUT.write_dataitem')
 !     set_option = COM_get_function_handle( 'OUT.set_option')
 
 !     IF(iProcs.EQ.1)THEN
@@ -503,7 +503,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! write surface window ------------------------
 
-!     sur_all = Com_get_attribute_handle( surWin//'.all')
+!     sur_all = Com_get_dataitem_handle( surWin//'.all')
 !     CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh_FS_Ignt.hdf', sur_all,&
 !          "solid_surf","00.000000")
 
@@ -577,7 +577,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrhex8 => ptrhex8%next
      ENDDO
 
-     CALL COM_new_attribute( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
      CALL COM_set_size( surWin//'.nc', iBU, NumNpNew )
      CALL COM_resize_array(surWin//'.nc', iBU, MeshCoor, 3)
 
@@ -587,7 +587,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! nodeflag  to VolumeNode
 
-     CALL COM_new_attribute( surWin//'.bv', 'n', COM_INTEGER, 1, 'm')
+     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, 'm')
      CALL COM_set_array( surWin//'.bv', iBU, NodeFlag2D(2,1), 2)
 
 ! connectiveity
@@ -600,10 +600,10 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! elemflag to VolumeElem
 
-     CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
      CALL COM_resize_array(surWin//'.bf2c', iBU, ElFlag_List, 1)
 
-     CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( surWin//'.bcflag', iBU,  1)
      CALL COM_resize_array(surWin//'.bcflag', iBU, BCSurfFlagOne, 1)
      
@@ -647,7 +647,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
   ENDIF
   CALL COM_call_function( set_option, 2, 'mode', 'w') ! why would this be called twice ? fix
 
-  sur_all = Com_get_attribute_handle( SurWin//'.all')
+  sur_all = Com_get_dataitem_handle( SurWin//'.all')
 
   CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh.'//ichr4, sur_all,&
        "isolid","00.000000")
@@ -772,7 +772,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrtri6 => ptrtri6%next
      ENDDO
      
-     CALL COM_new_attribute( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
      CALL COM_set_size( surWin//'.nc', iNB, NumNpNew )
      CALL COM_resize_array(surWin//'.nc', iNB, MeshCoor, 3)
 
@@ -781,7 +781,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      END DO
 
 
-     CALL COM_new_attribute( surWin//'.bv', 'n', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, '')
 !     CALL COM_set_size( surWin//'.bv', iNB, NumNpNew )
      CALL COM_set_array(surWin//'.bv', iNB, NodeFlag2D(2,1), 2)
 
@@ -794,10 +794,10 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      CALL COM_resize_array( surWin//'.:t6', iNB, ElConnTable, 6)
 
 
-     CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
      CALL COM_resize_array(surWin//'.bf2c', iNB, ElFlag_List, 1)
 
-     CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( surWin//'.bcflag', iNB, 1)
      CALL COM_resize_array(surWin//'.bcflag', iNB, BCSurfFlagZero, 1)
      
@@ -838,7 +838,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
      ! obtain function handle ------------------------------------------------------
 
-!     write_attr = COM_get_function_handle( 'OUT.write_attribute')
+!     write_attr = COM_get_function_handle( 'OUT.write_dataitem')
 !     set_option = COM_get_function_handle( 'OUT.set_option')
 
 !     IF(iProcs.EQ.1)THEN
@@ -857,7 +857,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! write surface window ------------------------
 
-!     sur_all = Com_get_attribute_handle( surWin//'.all')
+!     sur_all = Com_get_dataitem_handle( surWin//'.all')
 
 !     CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh_FS_NonIgnt.hdf', sur_all,&
 !          "solid_surf","00.000000")
@@ -961,7 +961,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrtri3 => ptrtri3%next
      ENDDO
 
-     CALL COM_new_attribute( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
      CALL COM_set_size( surWin//'.nc', iNB, NumNpNew )
      CALL COM_resize_array(surWin//'.nc', iNB, MeshCoor, 3)
 
@@ -970,7 +970,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      END DO
 
 
-     CALL COM_new_attribute( surWin//'.bv', 'n', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, '')
 !     CALL COM_set_size( surWin//'.bv', iNB, NumNpNew )
      CALL COM_set_array(surWin//'.bv', iNB, NodeFlag2D(2,1), 2)
 ! connectiveity
@@ -981,10 +981,10 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      CALL COM_resize_array( surWin//'.:t3', iNB, ElConnTable, 3)
 
 
-     CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
      CALL COM_resize_array(surWin//'.bf2c', iNB, ElFlag_List, 1)
 
-     CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( surWin//'.bcflag', iNB, 1)
      CALL COM_resize_array(surWin//'.bcflag', iNB, BCSurfFlagZero, 1)
      
@@ -1024,7 +1024,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
      ! obtain function handle ------------------------------------------------------
 
-!     write_attr = COM_get_function_handle( 'OUT.write_attribute')
+!     write_attr = COM_get_function_handle( 'OUT.write_dataitem')
 !     set_option = COM_get_function_handle( 'OUT.set_option')
 
 !     IF(iProcs.EQ.1)THEN
@@ -1043,7 +1043,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! write surface window ------------------------
 
-!     sur_all = Com_get_attribute_handle( surWin//'.all')
+!     sur_all = Com_get_dataitem_handle( surWin//'.all')
 
 !     CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh_FS_NonIgnt.hdf', sur_all,&
 !          "solid_surf","00.000000")
@@ -1110,7 +1110,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrhex8 => ptrhex8%next
      ENDDO
 
-     CALL COM_new_attribute( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
      CALL COM_set_size( surWin//'.nc', iNB, NumNpNew )
      CALL COM_resize_array(surWin//'.nc', iNB, MeshCoor, 3)
 
@@ -1118,7 +1118,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         MeshCoor(1:3,i) = coor(1:3,NodeFlag2D(1,i))
      END DO
 
-     CALL COM_new_attribute( surWin//'.bv', 'n', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, '')
 !     CALL COM_set_size( surWin//'.bv', iNB, NumNpNew )
      CALL COM_set_array(surWin//'.bv', iNB, NodeFlag2D(2,1), 2)
 
@@ -1131,10 +1131,10 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      CALL COM_resize_array( surWin//'.:q4', iNB, ElConnTable, 4)
 
 
-     CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
      CALL COM_resize_array(surWin//'.bf2c', iNB, ElFlag_List, 1)
 
-     CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( surWin//'.bcflag', iNB, 1)
      CALL COM_resize_array(surWin//'.bcflag', iNB, BCSurfFlagZero, 1)
      
@@ -1184,7 +1184,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
   CALL COM_call_function( set_option, 2, 'mode', 'a')
 
-  sur_all = Com_get_attribute_handle( SurWin//'.all')
+  sur_all = Com_get_dataitem_handle( SurWin//'.all')
 
   CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh.'//ichr4, sur_all,&
        "isolid","00.000000")
@@ -1287,7 +1287,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      ENDDO
 
      
-     CALL COM_new_attribute( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
      CALL COM_set_size( surWin//'.nc', iNI, NumNpNew )
      CALL COM_resize_array(surWin//'.nc', iNI, MeshCoor, 3)
 
@@ -1296,7 +1296,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      END DO
 
 
-     CALL COM_new_attribute( surWin//'.bv', 'n', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, '')
 !     CALL COM_set_size( surWin//'.bv', iNI, NumNpNew )
      CALL COM_set_array( surWin//'.bv', iNI, NodeFlag2D(2,1), 2)
 
@@ -1309,10 +1309,10 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      CALL COM_resize_array( surWin//'.:t6', iNI, ElConnTable, 6)
 
 
-     CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
      CALL COM_resize_array(surWin//'.bf2c', iNI, ElFlag_List, 1)
 
-     CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( surWin//'.bcflag', iNI,  1)
      CALL COM_resize_array(surWin//'.bcflag', iNI, BCSurfFlagTwo, 1)
      
@@ -1350,7 +1350,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
      NULLIFY(ptrtri6)     ! obtain function handle ------------------------------------------------------
 
-!     write_attr = COM_get_function_handle( 'OUT.write_attribute')
+!     write_attr = COM_get_function_handle( 'OUT.write_dataitem')
 !     set_option = COM_get_function_handle( 'OUT.set_option')
 
 !     IF(iProcs.EQ.1)THEN
@@ -1369,7 +1369,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! write surface window ------------------------
 
-!     sur_all = Com_get_attribute_handle( surWin//'.all')
+!     sur_all = Com_get_dataitem_handle( surWin//'.all')
 !     CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh_S.hdf', sur_all,&
 !          "solid_surf","00.000000")
 
@@ -1458,7 +1458,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      ENDDO
 
      
-     CALL COM_new_attribute( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
      CALL COM_set_size( surWin//'.nc', iNI, NumNpNew )
      CALL COM_resize_array(surWin//'.nc', iNI, MeshCoor, 3)
 
@@ -1466,7 +1466,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         MeshCoor(1:3,i) = coor(1:3,NodeFlag2D(1,i))
      END DO
 
-     CALL COM_new_attribute( surWin//'.bv', 'n', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, '')
 !     CALL COM_set_size( surWin//'.bv', iNI, NumNpNew )
      CALL COM_set_array( surWin//'.bv', iNI, NodeFlag2D(2,1), 2)
 
@@ -1478,11 +1478,11 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      CALL COM_resize_array( surWin//'.:t3', iNI, ElConnTable, 3)
 
 
-     CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
      CALL COM_resize_array(surWin//'.bf2c', iNI, ElFlag_List, 1)
 
 
-     CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( surWin//'.bcflag', iNI,1)
      CALL COM_resize_array(surWin//'.bcflag', iNI, BCSurfFlagTwo, 1)
      
@@ -1519,7 +1519,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         STOP
      ENDIF
 
-!     write_attr = COM_get_function_handle( 'OUT.write_attribute')
+!     write_attr = COM_get_function_handle( 'OUT.write_dataitem')
 !     set_option = COM_get_function_handle( 'OUT.set_option')
 
 !     IF(iProcs.EQ.1)THEN
@@ -1538,7 +1538,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
 ! write surface window ------------------------
 
-!     sur_all = Com_get_attribute_handle( surWin//'.all')
+!     sur_all = Com_get_dataitem_handle( surWin//'.all')
 !     CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh_S.hdf', sur_all,&
 !          "solid_surf","00.000000")
 
@@ -1604,7 +1604,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrhex8 => ptrhex8%next
      ENDDO
 
-     CALL COM_new_attribute( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
      CALL COM_set_size( surWin//'.nc', iNI, NumNpNew )
      CALL COM_resize_array(surWin//'.nc', iNI, MeshCoor, 3)
 
@@ -1613,7 +1613,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      END DO
 
 
-     CALL COM_new_attribute( surWin//'.bv', 'n', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, '')
 !     CALL COM_set_size( surWin//'.bv', iNI, NumNpNew )
      CALL COM_set_array( surWin//'.bv', iNI, NodeFlag2D(2,1), 2)
 
@@ -1626,10 +1626,10 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
      CALL COM_resize_array( surWin//'.:q4', iNI, ElConnTable, 4)
 
 
-     CALL COM_new_attribute( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
      CALL COM_resize_array(surWin//'.bf2c', iNI, ElFlag_List, 1)
 
-     CALL COM_new_attribute( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
      CALL COM_set_size( surWin//'.bcflag', iNI,  1)
      CALL COM_resize_array(surWin//'.bcflag', iNI, BCSurfFlagTwo, 1)
      
@@ -1670,7 +1670,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
   ! write surface window ------------------------
   CALL COM_call_function( set_option, 2, 'mode', 'a')
 
-  sur_all = Com_get_attribute_handle( SurWin//'.all')
+  sur_all = Com_get_dataitem_handle( SurWin//'.all')
 
   CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh.'//ichr4, sur_all,&
        "isolid","00.000000")

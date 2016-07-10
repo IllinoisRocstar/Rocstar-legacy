@@ -50,7 +50,7 @@ SUBROUTINE PEUL_InitGenxInterface( regions,wins,winv )
   USE ModError
   USE ModParameters
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 ! ... parameters
   CHARACTER(CHRLEN) :: wins, winv
@@ -86,7 +86,7 @@ SUBROUTINE PEUL_InitGenxInterface( regions,wins,winv )
   ENDIF ! peulUsed
 
   DO ipt=1,nPtypesMax
-    CALL COM_new_attribute( TRIM(winv)//'.peul'//CHAR(ipt+ASCII_ZERO),'e', &
+    CALL COM_new_dataitem( TRIM(winv)//'.peul'//CHAR(ipt+ASCII_ZERO),'e', &
       COM_DOUBLE,1,'kg/(m^3)' )
   ENDDO ! ipt
 

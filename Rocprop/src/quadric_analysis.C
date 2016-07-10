@@ -23,16 +23,16 @@
 // $Id: quadric_analysis.C,v 1.15 2008/12/06 08:45:28 mtcampbe Exp $
 
 #include "FaceOffset_3.h"
-#include "../Rocblas/include/Rocblas.h"
-#include "../Rocsurf/include/Rocsurf.h"
+#include "Rocblas.h"
+#include "Rocsurf.h"
 #include <algorithm>
 
 PROP_BEGIN_NAMESPACE
 
 // If predicted is present, then the motion is wavefrontal.
 void FaceOffset_3::
-compute_quadrics( double dt, const COM::Attribute *spds, 
-		  COM::Attribute *bo_attr, COM::Attribute *predicted) {
+compute_quadrics( double dt, const COM::DataItem *spds, 
+		  COM::DataItem *bo_attr, COM::DataItem *predicted) {
 
   COM_assertion_msg( spds || dt==0, 
 		     "If no speed function, then time step must be zero.");
@@ -43,17 +43,17 @@ compute_quadrics( double dt, const COM::Attribute *spds,
 
   // Use the following buffer spaces: _As for matrix A; _eigvalues to 
   // store bm; _sumangles to store sum of angles
-  COM::Attribute *A_attr = _As;
-  COM::Attribute *bm_attr = _eigvalues;
-  COM::Attribute *w_attr = _weights;
+  COM::DataItem *A_attr = _As;
+  COM::DataItem *bm_attr = _eigvalues;
+  COM::DataItem *w_attr = _weights;
 
   Rocblas::copy_scalar( &zero, A_attr);
   Rocblas::copy_scalar( &zero, bm_attr);
   Rocblas::copy_scalar( &eps, w_attr);
   Rocblas::copy_scalar( &zero, _vcenters);
 
-  COM::Attribute *sa_attr = 
-    _buf->new_attribute( "sumangles", 'n', COM_DOUBLE, 1, "");
+  COM::DataItem *sa_attr = 
+    _buf->new_dataitem( "sumangles", 'n', COM_DOUBLE, 1, "");
   _buf->resize_array( sa_attr, 0);
   
   bool shear= _smoother==SMOOTHER_LAPLACIAN || _is_strtd ||
@@ -68,34 +68,34 @@ compute_quadrics( double dt, const COM::Attribute *spds,
 
     // Obtain nodal coordinates of current pane, assuming contiguous layout
     const Point_3 *pnts = reinterpret_cast<Point_3*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     Vector_3 *fnrms = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_facenormals->id())->pointer());
+      ( pane->dataitem(_facenormals->id())->pointer());
     Point_3 *fcnts = reinterpret_cast<Point_3*>
-      ( pane->attribute(_facecenters->id())->pointer());
+      ( pane->dataitem(_facecenters->id())->pointer());
 
     double   *ws = reinterpret_cast<double*>
-      ( pane->attribute(w_attr->id())->pointer());
+      ( pane->dataitem(w_attr->id())->pointer());
     Vector_3 *vcnts = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_vcenters->id())->pointer());
+      ( pane->dataitem(_vcenters->id())->pointer());
 
     // Obtain the pointer to speed function
     const double *spds_ptr = spds?reinterpret_cast<const double*>
-      (pane->attribute( spds->id())->pointer()):NULL;
+      (pane->dataitem( spds->id())->pointer()):NULL;
 
     // Obtain pointers
     Vector_3 *As = reinterpret_cast<Vector_3*>
-      ( pane->attribute(A_attr->id())->pointer());
+      ( pane->dataitem(A_attr->id())->pointer());
     Vector_3 *bs_m = reinterpret_cast<Vector_3*>
-      ( pane->attribute(bm_attr->id())->pointer());
+      ( pane->dataitem(bm_attr->id())->pointer());
     Vector_3 *bs_o = bo_attr ? reinterpret_cast<Vector_3*>
-      ( pane->attribute(bo_attr->id())->pointer()) : NULL;
+      ( pane->dataitem(bo_attr->id())->pointer()) : NULL;
     Vector_3 *pred_dirs = predicted ? reinterpret_cast<Vector_3*>
-      ( pane->attribute(predicted->id())->pointer()) : NULL;
+      ( pane->dataitem(predicted->id())->pointer()) : NULL;
     double   *sa = reinterpret_cast<double*>
-      ( pane->attribute(sa_attr->id())->pointer());
+      ( pane->dataitem(sa_attr->id())->pointer());
     double   *areas = reinterpret_cast<double*>
-      ( pane->attribute(_faceareas->id())->pointer());
+      ( pane->dataitem(_faceareas->id())->pointer());
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1); 
@@ -196,17 +196,17 @@ compute_quadrics( double dt, const COM::Attribute *spds,
 
     // Obtain pointers
     Vector_3 *As = reinterpret_cast<Vector_3*>
-      ( pane->attribute(A_attr->id())->pointer());
+      ( pane->dataitem(A_attr->id())->pointer());
     Vector_3 *evs = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_eigvecs->id())->pointer());
+      ( pane->dataitem(_eigvecs->id())->pointer());
     Vector_3 *bs_m = reinterpret_cast<Vector_3*>
-      ( pane->attribute(bm_attr->id())->pointer());
+      ( pane->dataitem(bm_attr->id())->pointer());
     double   *sa = reinterpret_cast<double*>
-      ( pane->attribute(sa_attr->id())->pointer());
+      ( pane->dataitem(sa_attr->id())->pointer());
 
     // Feature information
     char      *tranks = reinterpret_cast<char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
 
     // Loop through all real nodes of the pane
     for ( int j=0, jn=pane->size_of_real_nodes(); j<jn; ++j) {
@@ -228,7 +228,7 @@ compute_quadrics( double dt, const COM::Attribute *spds,
     }
   }
 
-  _buf->delete_attribute( sa_attr->name());
+  _buf->delete_dataitem( sa_attr->name());
   _buf->init_done( false);
 
   // Reduce tangranks to ensure shared nodes have the same value across panes
@@ -265,10 +265,10 @@ eigen_analyze_vertex( Vector_3 A_io[3], Vector_3 &b_io,
 // Update tangential motion of ridge vertices
 void FaceOffset_3::
 update_vertex_centers() {
-  COM::Attribute *vcenters_buf =
-    _buf->new_attribute( "FO_vcenters_buf", 'n', COM_DOUBLE, 3, "");
-  COM::Attribute *vecdiff_buf =
-    _buf->new_attribute( "FO_vecdiff_buf", 'n', COM_DOUBLE, 3, "");
+  COM::DataItem *vcenters_buf =
+    _buf->new_dataitem( "FO_vcenters_buf", 'n', COM_DOUBLE, 3, "");
+  COM::DataItem *vecdiff_buf =
+    _buf->new_dataitem( "FO_vecdiff_buf", 'n', COM_DOUBLE, 3, "");
   _buf->resize_array( vcenters_buf, 0);
   _buf->resize_array( vecdiff_buf, 0);
 
@@ -282,17 +282,17 @@ update_vertex_centers() {
     const std::set< Edge_ID> &eset_pn = _edges[i];  // List of ridge edges
 
     const Point_3 *pnts = reinterpret_cast<Point_3*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     Vector_3 *vcs = reinterpret_cast<Vector_3*>
-      (pane->attribute(vcenters_buf->id())->pointer());
+      (pane->dataitem(vcenters_buf->id())->pointer());
     Vector_3 *vdiff = reinterpret_cast<Vector_3*>
-      (pane->attribute(vecdiff_buf->id())->pointer());
+      (pane->dataitem(vecdiff_buf->id())->pointer());
 
     for ( std::set< Edge_ID>::const_iterator eit=eset_pn.begin(),
 	    eend=eset_pn.end(); eit!=eend; ++eit) {
       // Make sure that eid_opp is not border
-      Edge_ID eid = *eit, eid_opp = pm_it->get_opposite_real_edge( eid);
-      bool is_border_edge = pm_it->is_physical_border_edge( eid_opp);
+      Edge_ID eid = *eit, eid_opp = (*pm_it)->get_opposite_real_edge( eid);
+      bool is_border_edge = (*pm_it)->is_physical_border_edge( eid_opp);
 
       Element_node_enumerator ene( pane, eid.eid());
       int lid = eid.lid(), neighbor = (lid+1)%ene.size_of_edges();
@@ -323,17 +323,17 @@ update_vertex_centers() {
     COM::Pane *pane = *it;
 
     Vector_3 *vcs_buf = reinterpret_cast<Vector_3*>
-      (pane->attribute(vcenters_buf->id())->pointer());
+      (pane->dataitem(vcenters_buf->id())->pointer());
     Vector_3 *vcs = reinterpret_cast<Vector_3*>
-      (pane->attribute(_vcenters->id())->pointer());
+      (pane->dataitem(_vcenters->id())->pointer());
     Vector_3 *vdiff = reinterpret_cast<Vector_3*>
-      (pane->attribute(vecdiff_buf->id())->pointer());
+      (pane->dataitem(vecdiff_buf->id())->pointer());
     const char *tranks = reinterpret_cast<const char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
     const char *cranks = reinterpret_cast<const char*>
-      ( pane->attribute(_ctangranks->id())->pointer());
+      ( pane->dataitem(_ctangranks->id())->pointer());
     const char *val_bndry_nodes = reinterpret_cast<const char*>
-      ( pane->attribute(_cnstr_bndry_nodes->id())->pointer());
+      ( pane->dataitem(_cnstr_bndry_nodes->id())->pointer());
     
     for (int j=0, jn=pane->size_of_real_nodes(); j<jn; ++j) if (cranks[j]!=2) {
       if ( cranks[j]==0)
@@ -346,8 +346,8 @@ update_vertex_centers() {
     }
   }
 
-  _buf->delete_attribute( vecdiff_buf->name());
-  _buf->delete_attribute( vcenters_buf->name());
+  _buf->delete_dataitem( vecdiff_buf->name());
+  _buf->delete_dataitem( vcenters_buf->name());
   _buf->init_done( false);
 }
 
@@ -363,11 +363,11 @@ void FaceOffset_3::mark_weak_vertices() {
 	i<local_npanes; ++i, ++it, ++pm_it) { 
     COM::Pane *pane = *it;
     char *tranks = reinterpret_cast<char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
     char *weak = reinterpret_cast<char*>
-      ( pane->attribute(_weak->id())->pointer());
+      ( pane->dataitem(_weak->id())->pointer());
     const Vector_3 *lambdas = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_eigvalues->id())->pointer());
+      ( pane->dataitem(_eigvalues->id())->pointer());
 
     for ( int j=0, nj=pane->size_of_real_nodes(); j<nj; ++j) {
       weak[j] = tranks[j]==2 && 

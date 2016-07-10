@@ -60,7 +60,7 @@ PROGRAM ROCFLO_Init
   IMPLICIT NONE
 
 #ifdef GENX
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 #endif
 
 ! ... loop variables
@@ -170,7 +170,7 @@ PROGRAM ROCFLO_Init
 
 ! load Rocout module
   CALL COM_set_verbose( 1 )
-  CALL Rocout_load_module( 'OUT')
+  CALL SimOUT_load_module( 'OUT')
 #endif
 
 ! read, check and print user input --------------------------------------------

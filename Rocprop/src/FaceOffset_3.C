@@ -23,16 +23,16 @@
 // $Id: FaceOffset_3.C,v 1.34 2008/12/06 08:45:27 mtcampbe Exp $
 
 #include "FaceOffset_3.h"
-#include "../Rocblas/include/Rocblas.h"
-#include "../Rocsurf/include/Generic_element_2.h"
-#include "../Rocsurf/include/Rocsurf.h"
+#include "Rocblas.h"
+#include "Generic_element_2.h"
+#include "Rocsurf.h"
 #include <algorithm>
 
 PROP_BEGIN_NAMESPACE
 
 //============== Debug features =======
 // Export debugging information to the user window, if user has
-// the registered "back-door" attributes to get debug info such 
+// the registered "back-door" dataitems to get debug info such 
 // as normals. It should be set to true for development purpose.
 #define EXPORT_DEBUG_INFO     1
 
@@ -98,58 +98,58 @@ FaceOffset_3::FaceOffset_3( Manifold *wm, COM::Window *buf)
   reset_default_parameters( _is_strtd);
 
   // Extend buffer window
-  _facenormals = _buf->new_attribute( "facenormals", 'e', COM_DOUBLE, 3, "");
+  _facenormals = _buf->new_dataitem( "facenormals", 'e', COM_DOUBLE, 3, "");
   _buf->resize_array( _facenormals, 0);
 
-  _facecenters = _buf->new_attribute( "facecenters", 'e', COM_DOUBLE, 3, "");
+  _facecenters = _buf->new_dataitem( "facecenters", 'e', COM_DOUBLE, 3, "");
   _buf->resize_array( _facecenters, 0);
 
-  _faceareas = _buf->new_attribute( "faceareas", 'e', COM_DOUBLE, 1, "");
+  _faceareas = _buf->new_dataitem( "faceareas", 'e', COM_DOUBLE, 1, "");
   _buf->resize_array( _faceareas, 0);
 
   // This is used to store v-center for smoothing offset.
-  _vcenters = _buf->new_attribute( "vcenters", 'n', COM_DOUBLE, 3, "");
+  _vcenters = _buf->new_dataitem( "vcenters", 'n', COM_DOUBLE, 3, "");
   _buf->resize_array( _vcenters, 0);
 
-  _eigvalues = _buf->new_attribute( "lambda", 'n', COM_DOUBLE, 3, "");
+  _eigvalues = _buf->new_dataitem( "lambda", 'n', COM_DOUBLE, 3, "");
   _buf->resize_array( _eigvalues, 0);
 
-  _vnormals = _buf->new_attribute( "vnormals", 'n', COM_DOUBLE, 3, "");
+  _vnormals = _buf->new_dataitem( "vnormals", 'n', COM_DOUBLE, 3, "");
   _buf->resize_array( _vnormals, 0);
 
-  _ridges = _buf->new_attribute( "ridges", 'p', COM_INT, 2, "");
+  _ridges = _buf->new_dataitem( "ridges", 'p', COM_INT, 2, "");
   
-  _ridgeneighbors = _buf->new_attribute( "ridgeneighbors", 'n', COM_INT, 4, "");
+  _ridgeneighbors = _buf->new_dataitem( "ridgeneighbors", 'n', COM_INT, 4, "");
   _buf->resize_array( _ridgeneighbors, 0);
 
-  _weak = _buf->new_attribute( "weakfeature", 'n', COM_CHAR, 1, "");
+  _weak = _buf->new_dataitem( "weakfeature", 'n', COM_CHAR, 1, "");
   _buf->resize_array( _weak, 0);
 
-  _strong = _buf->new_attribute( "strongfeature", 'n', COM_CHAR, 1, "");
+  _strong = _buf->new_dataitem( "strongfeature", 'n', COM_CHAR, 1, "");
   _buf->resize_array( _strong, 0);
 
-  _As = _buf->new_attribute( "As", 'n', COM_DOUBLE, 9, "");
+  _As = _buf->new_dataitem( "As", 'n', COM_DOUBLE, 9, "");
   _buf->resize_array( _As, 0);
 
-  _boffset = _buf->new_attribute( "boffset", 'n', COM_DOUBLE, 3, "");
+  _boffset = _buf->new_dataitem( "boffset", 'n', COM_DOUBLE, 3, "");
   _buf->resize_array( _boffset, 0);
 
-  _bmedial = _buf->new_attribute( "bmedial", 'n', COM_DOUBLE, 3, "");
+  _bmedial = _buf->new_dataitem( "bmedial", 'n', COM_DOUBLE, 3, "");
   _buf->resize_array( _bmedial, 0);
 
-  _eigvecs = _buf->new_attribute( "eigvecs", 'n', COM_DOUBLE, 9, "");
+  _eigvecs = _buf->new_dataitem( "eigvecs", 'n', COM_DOUBLE, 9, "");
   _buf->resize_array( _eigvecs, 0);
 
-  _tangranks = _buf->new_attribute( "tangranks", 'n', COM_CHAR, 1, "");
+  _tangranks = _buf->new_dataitem( "tangranks", 'n', COM_CHAR, 1, "");
   _buf->resize_array( _tangranks, 0);
 
-  _ctangranks = _buf->new_attribute( "ctangranks", 'n', COM_CHAR, 1, "");
+  _ctangranks = _buf->new_dataitem( "ctangranks", 'n', COM_CHAR, 1, "");
   _buf->resize_array( _ctangranks, 0);
 
-  _scales = _buf->new_attribute( "scales", 'n', COM_DOUBLE, 1, "");
+  _scales = _buf->new_dataitem( "scales", 'n', COM_DOUBLE, 1, "");
   _buf->resize_array( _scales, 0);
 
-  _weights = _buf->new_attribute( "weights", 'n', COM_DOUBLE, 1, "");
+  _weights = _buf->new_dataitem( "weights", 'n', COM_DOUBLE, 1, "");
   _buf->resize_array( _weights, 0);
 
   _buf->init_done(false);
@@ -157,21 +157,21 @@ FaceOffset_3::FaceOffset_3( Manifold *wm, COM::Window *buf)
 
 // Main entry of the algorithm
 double FaceOffset_3::
-time_stepping( const COM::Attribute *spds, double dt,
-	       COM::Attribute *disps, int *smoothed) {
+time_stepping( const COM::DataItem *spds, double dt,
+	       COM::DataItem *disps, int *smoothed) {
 
   COM_assertion_msg( spds || dt==0, 
 		     "If no speed function, then time step must be zero.");
 
   // Inherit speeds and displacement onto the buffer window
-  const COM::Attribute *spds_buf = spds ?
+  const COM::DataItem *spds_buf = spds ?
     ( (spds->window() == _buf) ? spds : 
-      _buf->inherit( const_cast<COM::Attribute*>(spds), "speeds_inherited", 
+      _buf->inherit( const_cast<COM::DataItem*>(spds), "speeds_inherited", 
 		     COM::Pane::INHERIT_USE, true, NULL, 0)) : NULL;
-  COM::Attribute *disps_buf = 
+  COM::DataItem *disps_buf = 
     _buf->inherit( disps, "disps_inherited", COM::Pane::INHERIT_USE, 
 		   true, NULL, 0);
-  COM::Attribute *disps_tmp =
+  COM::DataItem *disps_tmp =
     _buf->inherit( disps, "disps_inherited2", COM::Pane::INHERIT_CLONE, 
 		   true, NULL, 0);
   _buf->init_done( false);
@@ -249,31 +249,31 @@ time_stepping( const COM::Attribute *spds, double dt,
   }
 
 #if EXPORT_DEBUG_INFO
-  COM::Attribute *ctypes = disps->window()->attribute( "cnstr_types_nodal");
+  COM::DataItem *ctypes = disps->window()->dataitem( "cnstr_types_nodal");
   if ( _cnstr_set && ctypes) Rocblas::copy( _cnstr_nodes, ctypes);
 
-  COM::Attribute *tranks = disps->window()->attribute( "tangranks");
+  COM::DataItem *tranks = disps->window()->dataitem( "tangranks");
   if ( tranks) Rocblas::copy( _tangranks, tranks);
 
-  COM::Attribute *facenormals = disps->window()->attribute( "facenormals");
+  COM::DataItem *facenormals = disps->window()->dataitem( "facenormals");
   if ( facenormals) Rocblas::copy( _facenormals, facenormals);
   
-  COM::Attribute *facecenters = disps->window()->attribute( "facecenters");
+  COM::DataItem *facecenters = disps->window()->dataitem( "facecenters");
   if ( facecenters) Rocblas::copy( _facecenters, facecenters);
     
-  COM::Attribute *eigvecs = disps->window()->attribute( "eigvecs");
+  COM::DataItem *eigvecs = disps->window()->dataitem( "eigvecs");
   if ( eigvecs) Rocblas::copy( _eigvecs, eigvecs);
   
-  COM::Attribute *lambdas = disps->window()->attribute( "lambdas");
+  COM::DataItem *lambdas = disps->window()->dataitem( "lambdas");
   if ( lambdas) Rocblas::copy( _eigvalues, lambdas);
 
-  COM::Attribute *ridges = disps->window()->attribute( "ridges");
+  COM::DataItem *ridges = disps->window()->dataitem( "ridges");
   if ( ridges) 
     disps->window()->inherit( _ridges, "ridges", COM::Pane::INHERIT_CLONE, 
 			      true, NULL, 0);
  
   if ( dt>0) {
-    COM::Attribute *disps_novis = disps->window()->attribute( "disps_novis");
+    COM::DataItem *disps_novis = disps->window()->dataitem( "disps_novis");
     if ( disps_novis) Rocblas::copy( disps, disps_novis);
   }
 #endif
@@ -296,7 +296,7 @@ time_stepping( const COM::Attribute *spds, double dt,
       if ( !with_nodal_velo || _smoother == SMOOTHER_LAPLACIAN) break;
       // If nodal velocity
       Rocblas::mul_scalar( spds, &dt_sub, disps_buf);
-      if ( smoothed) smoothed=false;
+      if (smoothed) *smoothed=false;
     }
   }
   else if ( dt==0) {
@@ -305,7 +305,7 @@ time_stepping( const COM::Attribute *spds, double dt,
 
 #if EXPORT_DEBUG_INFO
   if ( dt>0) {
-    COM::Attribute *scales = disps->window()->attribute( "scales");
+    COM::DataItem *scales = disps->window()->dataitem( "scales");
     if ( scales) Rocblas::copy( _scales, scales);
   }
 #endif
@@ -313,10 +313,10 @@ time_stepping( const COM::Attribute *spds, double dt,
   _surf->reduce_on_shared_nodes( disps_buf, Manifold::OP_MAXABS);
 
   // Deallocate spds_buf and disps_buf
-  _buf->delete_attribute( disps_tmp->name());
-  _buf->delete_attribute( disps_buf->name());
+  _buf->delete_dataitem( disps_tmp->name());
+  _buf->delete_dataitem( disps_buf->name());
   if ( spds_buf && spds_buf!=spds)
-    _buf->delete_attribute( spds_buf->name());
+    _buf->delete_dataitem( spds_buf->name());
   _buf->init_done( false);
 
   // Finally, return the current time step.
@@ -324,13 +324,13 @@ time_stepping( const COM::Attribute *spds, double dt,
 }
 
 // This function computes the normal and center of the offset face. The 
-// speed can be a nodal attribute (scalar or 3-vector), or be an elemental
-// attribute. (scalar associated with face center, 3-vector associated
+// speed can be a nodal dataitem (scalar or 3-vector), or be an elemental
+// dataitem. (scalar associated with face center, 3-vector associated
 // with face center, or 3-vectors associated with three quadrature points.
 // Only triangular meshes supported for latter two cases.)
 void FaceOffset_3::
 obtain_face_offset( const Point_3 *pnts, const double *spd_ptr,
-		    const Attribute *spd, double dt, const Vector_3 *dirs, 
+		    const DataItem *spd, double dt, const Vector_3 *dirs, 
 		    Element_node_enumerator &ene, 
 		    Vector_3 &ns_nz, Point_3 &cnt, 
 		    Vector_3 *disps, Vector_3 *ns) {
@@ -444,7 +444,7 @@ obtain_face_offset( const Point_3 *pnts, const double *spd_ptr,
   }
 }
 
-void FaceOffset_3::compute_directions( COM::Attribute *bo_attr, bool princ) {
+void FaceOffset_3::compute_directions( COM::DataItem *bo_attr, bool princ) {
   // Loop through the panes and its real vertices
   std::vector< COM::Pane*>::iterator it = _panes.begin();
   for (int i=0, local_npanes = _panes.size(); i<local_npanes; ++i, ++it) { 
@@ -452,15 +452,15 @@ void FaceOffset_3::compute_directions( COM::Attribute *bo_attr, bool princ) {
 
     // Obtain pointers
     Vector_3 *evs = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_eigvecs->id())->pointer());
+      ( pane->dataitem(_eigvecs->id())->pointer());
     const Vector_3 *lambdas = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(_eigvalues->id())->pointer());
+      ( pane->dataitem(_eigvalues->id())->pointer());
     Vector_3 *vnrms = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_vnormals->id())->pointer());
+      ( pane->dataitem(_vnormals->id())->pointer());
     Vector_3 *voffset = bo_attr ? reinterpret_cast<Vector_3*>
-      ( pane->attribute(bo_attr->id())->pointer()) : NULL;
+      ( pane->dataitem(bo_attr->id())->pointer()) : NULL;
     const char *trank = princ ? reinterpret_cast<char*>
-      ( pane->attribute(_tangranks->id())->pointer()) : NULL;
+      ( pane->dataitem(_tangranks->id())->pointer()) : NULL;
 
     // Loop through all real nodes of the pane
     for ( int j=0, jn=pane->size_of_real_nodes(); j<jn; ++j) {
@@ -503,8 +503,8 @@ obtain_directions( Vector_3 es[3], const Vector_3 &lambdas, int nrank,
 
 // Decompose propagation directions based on constraints
 bool FaceOffset_3::
-obtain_constrained_directions( COM::Attribute *disps_buf,
-			       COM::Attribute *vcenters) {
+obtain_constrained_directions( COM::DataItem *disps_buf,
+			       COM::DataItem *vcenters) {
 
   // Loop through the panes and its real faces
   std::vector< COM::Pane*>::iterator it = _panes.begin();
@@ -518,28 +518,28 @@ obtain_constrained_directions( COM::Attribute *disps_buf,
 
     // Obtain pointers 
     Vector_3 *evs = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_eigvecs->id())->pointer());
+      ( pane->dataitem(_eigvecs->id())->pointer());
     Vector_3 *lambdas = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_eigvalues->id())->pointer());
+      ( pane->dataitem(_eigvalues->id())->pointer());
     Vector_3 *ds = disps_buf ? reinterpret_cast<Vector_3*>
-      ( pane->attribute(disps_buf->id())->pointer()) : NULL;
+      ( pane->dataitem(disps_buf->id())->pointer()) : NULL;
     const Vector_3 *bs = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_boffset->id())->pointer());
+      ( pane->dataitem(_boffset->id())->pointer());
     const Vector_3 *bms = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_bmedial->id())->pointer());
+      ( pane->dataitem(_bmedial->id())->pointer());
 
     // Feature information
     const char *tranks = reinterpret_cast<char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
     Vector_3 *vcnts = vcenters ? reinterpret_cast<Vector_3*>
-      ( pane->attribute(vcenters->id())->pointer()) : NULL;
+      ( pane->dataitem(vcenters->id())->pointer()) : NULL;
     const char *val_bndry_nodes = reinterpret_cast<const char*>
-      ( pane->attribute(_cnstr_bndry_nodes->id())->pointer());
+      ( pane->dataitem(_cnstr_bndry_nodes->id())->pointer());
 
     Vector_3 *As = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_As->id())->pointer());
+      ( pane->dataitem(_As->id())->pointer());
     const int *cnstrs = _cnstr_nodes ? reinterpret_cast<int*>
-      ( pane->attribute(_cnstr_nodes->id())->pointer()) : NULL;
+      ( pane->dataitem(_cnstr_nodes->id())->pointer()) : NULL;
 
     // Loop through all real nodes of the pane
     for ( int j=0, jn=pane->size_of_real_nodes(); j<jn; ++j) {
@@ -651,8 +651,8 @@ obtain_constrained_directions( COM::Attribute *disps_buf,
 // by the reduced time step. Introduce dissipation.
 // This function returns the reduced time step.
 double FaceOffset_3::
-rescale_displacements( COM::Attribute *disps, 
-		       COM::Attribute *vcenters, int depth) {
+rescale_displacements( COM::DataItem *disps, 
+		       COM::DataItem *vcenters, int depth) {
   
   double alpha = HUGE_VAL;
 
@@ -664,15 +664,15 @@ rescale_displacements( COM::Attribute *disps,
     COM::Pane *pane = *it;
     
     const Point_3 *pnts = reinterpret_cast<Point_3*>
-      (pane->attribute(COM_NC)->pointer());
+      (pane->dataitem(COM_NC)->pointer());
     const Vector_3 *ds = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(disps->id())->pointer());    
+      ( pane->dataitem(disps->id())->pointer());    
     const Vector_3 *vcnts = reinterpret_cast<const Vector_3*>
-      ( pane->attribute(vcenters->id())->pointer());
+      ( pane->dataitem(vcenters->id())->pointer());
     const Vector_3 *fnrms = reinterpret_cast<Vector_3*>
-      ( pane->attribute(_facenormals->id())->pointer());
+      ( pane->dataitem(_facenormals->id())->pointer());
     const char      *tranks = reinterpret_cast<char*>
-      ( pane->attribute(_tangranks->id())->pointer());
+      ( pane->dataitem(_tangranks->id())->pointer());
 
     // Loop through real elements of the current pane
     Element_node_enumerator ene( pane, 1); 
@@ -709,13 +709,13 @@ rescale_displacements( COM::Attribute *disps,
 	if ( roots.second<alpha && roots.second>0) alpha = roots.second;
 
 	// Solve for time-step constraints at edges.
-	Edge_ID eid(j+1,k), eid_opp = pm_it->get_opposite_real_edge( eid);
-	bool is_border_edge = pm_it->is_physical_border_edge( eid_opp);
+	Edge_ID eid(j+1,k), eid_opp = (*pm_it)->get_opposite_real_edge( eid);
+	bool is_border_edge = (*pm_it)->is_physical_border_edge( eid_opp);
 
 	if ( tranks[uindex] != 2 && tranks[vindex] != 2 && !is_border_edge) {
 	  const Vector_3 &n1 = fnrms[j];
 	  const Vector_3 &n2 = eid_opp.is_border() ? 
-	    pm_it->get_bd_normal( eid_opp) : fnrms[eid_opp.eid()-1];
+	    (*pm_it)->get_bd_normal( eid_opp) : fnrms[eid_opp.eid()-1];
 
 	  nrm = n1+n2;
 	  double a = dd*nrm;

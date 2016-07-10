@@ -23,7 +23,7 @@
 // $Id: Rocprop.C,v 1.27 2008/12/06 08:45:28 mtcampbe Exp $
 
 #include "Rocprop.h"
-#include "../Rocblas/include/Rocblas.h"
+#include "Rocblas.h"
 
 #include "MarkerParticles_3.h"
 #include "FaceOffset_3.h"
@@ -41,7 +41,7 @@ Rocprop::~Rocprop() {
   if ( _rem && _rem_owner) { delete _rem; _rem = NULL; }
 }
 
-void Rocprop::initialize( const COM::Attribute *pmesh, Rocsurf *rsurf)
+void Rocprop::initialize( const COM::DataItem *pmesh, Rocsurf *rsurf)
 {
   COM_assertion_msg( validate_object()==0, "Invalid object");
   COM_assertion_msg( pmesh, "Mesh must be present");
@@ -70,19 +70,19 @@ void Rocprop::initialize( const COM::Attribute *pmesh, Rocsurf *rsurf)
   // Create a buffer window to clone the coordinates but use nc and pconn.
   if ( _buf) delete _buf;
   _buf = new COM::Window( _win->name()+"-propbuffer", comm);
-  _buf->inherit( _win->attribute( COM::COM_CONN), "", 
+  _buf->inherit( _win->dataitem( COM::COM_CONN), "", 
 		 COM::Pane::INHERIT_USE, true, NULL, 0);
-  _buf->inherit( _win->attribute( COM::COM_NC), "", 
+  _buf->inherit( _win->dataitem( COM::COM_NC), "", 
 		 COM::Pane::INHERIT_USE, true, NULL, 0);
-  _buf->inherit( _win->attribute( COM::COM_NC), "oldnc", 
+  _buf->inherit( _win->dataitem( COM::COM_NC), "oldnc", 
 		 COM::Pane::INHERIT_CLONE, true, NULL, 0);
-  _buf->inherit( _win->attribute( COM::COM_PCONN), "", 
+  _buf->inherit( _win->dataitem( COM::COM_PCONN), "", 
 		 COM::Pane::INHERIT_USE, true, NULL, 0);
 
   _buf->init_done();
 }
 
-void Rocprop::perturb_mesh( COM::Attribute *pmesh, const double &alpha) {
+void Rocprop::perturb_mesh( COM::DataItem *pmesh, const double &alpha) {
   COM_assertion_msg( validate_object()==0, "Invalid object");
 
   // If Rocprop is not yet initialized, call the initialization routine.
@@ -93,20 +93,20 @@ void Rocprop::perturb_mesh( COM::Attribute *pmesh, const double &alpha) {
   wm->perturb_mesh( alpha);
 }
 
-void Rocprop::set_constraints( const COM::Attribute *cnstr_types) { 
+void Rocprop::set_constraints( const COM::DataItem *cnstr_types) { 
   COM_assertion_msg( validate_object()==0, "Invalid object");
   _cnstr_types = cnstr_types; 
 }
 
-void Rocprop::set_bounds( const COM::Attribute *bnd) {
+void Rocprop::set_bounds( const COM::DataItem *bnd) {
   COM_assertion_msg( validate_object()==0, "Invalid object");
   _cnstr_bound = bnd; 
 }
 
-void Rocprop::propagate( const COM::Attribute *pmesh,
-			 COM::Attribute *spds_io,
+void Rocprop::propagate( const COM::DataItem *pmesh,
+			 COM::DataItem *spds_io,
 			 const double *dt, 
-			 COM::Attribute *du,
+			 COM::DataItem *du,
 			 double *dt_elapsed,
 			 int *code)
 {
@@ -129,8 +129,8 @@ void Rocprop::propagate( const COM::Attribute *pmesh,
   }
 
   // Save the coordinates into buffers
-  COM::Attribute *nc = _buf->attribute( COM::COM_NC);
-  COM::Attribute *oldnc = _buf->attribute( "oldnc");
+  COM::DataItem *nc = _buf->dataitem( COM::COM_NC);
+  COM::DataItem *oldnc = _buf->dataitem( "oldnc");
   Rocblas::copy( nc, oldnc);
 
   // Initialize constraints
@@ -164,7 +164,7 @@ void Rocprop::propagate( const COM::Attribute *pmesh,
       ((FaceOffset_3*)_prop)->set_conserve( _conserv);
   }
 
-  COM::Attribute *spd = spds_io ? 
+  COM::DataItem *spd = spds_io ? 
     _buf->inherit( spds_io, "rpr_spd_buf", 
 		   COM::Pane::INHERIT_USE, true, NULL, 0) : NULL;
   _buf->init_done( false);
@@ -227,7 +227,7 @@ void Rocprop::propagate( const COM::Attribute *pmesh,
   Rocblas::copy( oldnc, nc);
 
   // Deallocate spds_buf
-  if ( spd) _buf->delete_attribute( spd->name());
+  if ( spd) _buf->delete_dataitem( spd->name());
   _buf->init_done( false);
 }
 
@@ -304,7 +304,7 @@ void Rocprop::set_option( const char *opt, const char *val)
 }
 
 void Rocprop::
-remesh_serial( COM::Attribute *mesh_out, double *lave, double *fangle) {
+remesh_serial( COM::DataItem *mesh_out, double *lave, double *fangle) {
   COM_assertion( !COMMPI_Initialized() || COMMPI_Comm_rank(MPI_COMM_WORLD)==0);
   
   if ( _rem) {
@@ -326,7 +326,7 @@ void Rocprop::load( const std::string &mname) {
 
   std::string glb=mname+".global";
 
-  COM_new_attribute( glb.c_str(), 'w', COM_VOID, 1, "");
+  COM_new_dataitem( glb.c_str(), 'w', COM_VOID, 1, "");
   COM_set_object( glb.c_str(), 0, rp);
 
   COM_Type types[7];
@@ -372,7 +372,7 @@ void Rocprop::load( const std::string &mname) {
   // Register inherited member functions from Rocsurf.
   std::string glb_surf=mname+".global_surf";
   Rocsurf *surf = rp;
-  COM_new_attribute( glb_surf.c_str(), 'w', COM_VOID, 1, "");
+  COM_new_dataitem( glb_surf.c_str(), 'w', COM_VOID, 1, "");
   COM_set_object( glb_surf.c_str(), 0, surf);
   
   types[1] = types[2] = types[3] = COM_DOUBLE;

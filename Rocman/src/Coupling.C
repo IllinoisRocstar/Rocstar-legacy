@@ -120,7 +120,7 @@ void Coupling::baseInit()
   types[1] = COM_INT;
   types[2] = COM_STRING;
   COM_new_window(manwinname);
-  COM_new_attribute(coupobjname, 'w',COM_VOID, 1, "");
+  COM_new_dataitem(coupobjname, 'w',COM_VOID, 1, "");
   COM_set_object(coupobjname.c_str(),0,this);
   COM_set_member_function(manfuncname.c_str(),
 			  (Member_func_ptr)&Coupling::Interrupt,

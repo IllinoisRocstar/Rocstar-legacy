@@ -240,7 +240,7 @@ private:
     void run(double t, double dt, double alpha);			\
   };
 
-// This action set the attribute to 0s.
+// This action set the dataitem to 0s.
 DECLARE_NEW_ACTION( LoadTransfer_SF);
 
 #endif

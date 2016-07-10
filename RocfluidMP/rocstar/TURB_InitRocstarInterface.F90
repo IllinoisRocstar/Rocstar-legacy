@@ -53,7 +53,7 @@ SUBROUTINE TURB_InitGenxInterface( regions,wins,winv )
   USE ModParameters
   USE TURB_ModParameters
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 ! ... parameters
   CHARACTER(CHRLEN) :: wins, winv
@@ -83,16 +83,16 @@ SUBROUTINE TURB_InitGenxInterface( regions,wins,winv )
 
 ! output global data
 
-  CALL COM_new_attribute( TRIM(winv)//'.esg1Sum' ,'w',COM_DOUBLE,1,'J/(m^3s)' )
-  CALL COM_new_attribute( TRIM(winv)//'.esg4Sum' ,'w',COM_DOUBLE,1,'J/(m^3s)' )
+  CALL COM_new_dataitem( TRIM(winv)//'.esg1Sum' ,'w',COM_DOUBLE,1,'J/(m^3s)' )
+  CALL COM_new_dataitem( TRIM(winv)//'.esg4Sum' ,'w',COM_DOUBLE,1,'J/(m^3s)' )
 
 ! output surface data (currently none)
  
 ! output volume (for visualization) and restart data 
 
-  CALL COM_new_attribute( TRIM(winv)//'.mut' ,'e',COM_DOUBLE,1,'kg/(ms)' )
-  CALL COM_new_attribute( TRIM(winv)//'.lens','e',COM_DOUBLE,1,'m' )
-  CALL COM_new_attribute( TRIM(winv)//'.vort','e',COM_DOUBLE,3,'1/s' )
+  CALL COM_new_dataitem( TRIM(winv)//'.mut' ,'e',COM_DOUBLE,1,'kg/(ms)' )
+  CALL COM_new_dataitem( TRIM(winv)//'.lens','e',COM_DOUBLE,1,'m' )
+  CALL COM_new_dataitem( TRIM(winv)//'.vort','e',COM_DOUBLE,3,'1/s' )
 
 ! statistics
 
@@ -102,7 +102,7 @@ SUBROUTINE TURB_InitGenxInterface( regions,wins,winv )
       statNm => global%turbStatNm
       DO iStat=1,global%turbNStat
 
-        CALL COM_new_attribute( TRIM(winv)//'.'//TRIM(statNm(1,1,iStat)),'e', &
+        CALL COM_new_dataitem( TRIM(winv)//'.'//TRIM(statNm(1,1,iStat)),'e', &
                                 COM_DOUBLE,1,TRIM(statNm(1,2,iStat)) )
       ENDDO
     ENDIF

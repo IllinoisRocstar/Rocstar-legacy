@@ -130,16 +130,16 @@ SUBROUTINE ROCBURN_LOAD_MODULE( module_name)
   END IF
 
   CALL COM_new_window( module_name)
-!!! Create an attribute for global data
-  CALL COM_new_attribute( module_name//".global", 'w', COM_F90POINTER, 1, '')
+!!! Create an dataitem for global data
+  CALL COM_new_dataitem( module_name//".global", 'w', COM_F90POINTER, 1, '')
   CALL COM_resize_array( module_name//".global")
 
-  CALL COM_new_attribute( module_name//".init_0d", 'w', COM_VOID, 1, '')
-  CALL COM_new_attribute( module_name//".init_1d", 'w', COM_VOID, 1, '')
-  CALL COM_new_attribute( module_name//".finalize_0d", 'w', COM_VOID, 1, '')
-  CALL COM_new_attribute( module_name//".get_film_coeff", 'w', COM_VOID, 1, '')
-  CALL COM_new_attribute( module_name//".get_time_step", 'w', COM_VOID, 1, '')
-  CALL COM_new_attribute( module_name//".get_burn_rate", 'w', COM_VOID, 1, '')
+  CALL COM_new_dataitem( module_name//".init_0d", 'w', COM_VOID, 1, '')
+  CALL COM_new_dataitem( module_name//".init_1d", 'w', COM_VOID, 1, '')
+  CALL COM_new_dataitem( module_name//".finalize_0d", 'w', COM_VOID, 1, '')
+  CALL COM_new_dataitem( module_name//".get_film_coeff", 'w', COM_VOID, 1, '')
+  CALL COM_new_dataitem( module_name//".get_time_step", 'w', COM_VOID, 1, '')
+  CALL COM_new_dataitem( module_name//".get_burn_rate", 'w', COM_VOID, 1, '')
 
   CALL COM_resize_array( module_name//".init_0d")
   CALL COM_resize_array( module_name//".init_1d")
@@ -209,11 +209,11 @@ SUBROUTINE ROCBURN_LOAD_MODULE( module_name)
 
   G_b%INIT = COM_get_function_handle(module_name//".init_internal")
   G_b%UPDATE = COM_get_function_handle(module_name//".update_internal")
-  G_b%INIT_1D = COM_get_attribute_handle(module_name//".init_1d")
-  G_b%INIT_0D = COM_get_attribute_handle(module_name//".init_0d")
-  G_b%GET_FILM_COEFF = COM_get_attribute_handle(module_name//".get_film_coeff")
-  G_b%GET_BURN_RATE  = COM_get_attribute_handle(module_name//".get_burn_rate")
-  G_b%GET_TIME_STEP = COM_get_attribute_handle(module_name//".get_time_step")
+  G_b%INIT_1D = COM_get_dataitem_handle(module_name//".init_1d")
+  G_b%INIT_0D = COM_get_dataitem_handle(module_name//".init_0d")
+  G_b%GET_FILM_COEFF = COM_get_dataitem_handle(module_name//".get_film_coeff")
+  G_b%GET_BURN_RATE  = COM_get_dataitem_handle(module_name//".get_burn_rate")
+  G_b%GET_TIME_STEP = COM_get_dataitem_handle(module_name//".get_time_step")
 
   CALL COM_set_pointer( module_name//".global", G_b, associate_pointer)
 END SUBROUTINE ROCBURN_LOAD_MODULE

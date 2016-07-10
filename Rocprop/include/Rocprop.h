@@ -26,16 +26,16 @@
 #define _ROCPROP_H_
 
 #include "propbasic.h"
-#include "roccom.h"
-#include "roccom_devel.h"
+#include "com.h"
+#include "com_devel.hpp"
 #include "Propagation_3.h"
-#include "../Rocsurf/include/Rocsurf.h"
+#include "Rocsurf.h"
 
 PROP_BEGIN_NAMESPACE
 
 class Remesher_base {
 public:
-  virtual void remesh_serial( Manifold *wm, COM::Attribute *mesh_out,
+  virtual void remesh_serial( Manifold *wm, COM::DataItem *mesh_out,
 			      double lave, double fangle)=0;
 
   virtual ~Remesher_base() {}
@@ -57,31 +57,31 @@ public:
   virtual ~Rocprop();
 
   /// Initialize Rocprop with given mesh.
-  void initialize( const COM::Attribute *pmesh,
+  void initialize( const COM::DataItem *pmesh,
 		   SURF::Rocsurf *rsurf=NULL);
 
   /// Perturb the given mesh by alpha times shortest edge length.
-  void perturb_mesh( COM::Attribute *pmesh, const double &alpha);
+  void perturb_mesh( COM::DataItem *pmesh, const double &alpha);
 
   /** Set the types and directions of constraints
    *  \seelaso Propagation_3::set_constraints
    */
-  void set_constraints( const COM::Attribute *cnstr_types);
+  void set_constraints( const COM::DataItem *cnstr_types);
 
   /** Set the bounds
    *  \seelaso Propagation_3::set_bounds
    */
-  void set_bounds( const COM::Attribute *bnd);
+  void set_bounds( const COM::DataItem *bnd);
 
   /**  Propagates the interface. This function subcycles until it reachs
    *   given time step or sub-time-step becomes too small. If the time
    *   step became too small, then abort if code is NULL, or return
    *   -1 if code is not NULL.
    */
-  void propagate( const COM::Attribute *pmesh,
-		  COM::Attribute *vel,
+  void propagate( const COM::DataItem *pmesh,
+		  COM::DataItem *vel,
 		  const double *dt, 
-		  COM::Attribute *du,
+		  COM::DataItem *du,
 		  double *dt_elapsed=NULL,
 		  int *code=NULL);
 
@@ -93,7 +93,7 @@ public:
   }
 
   /// Invoke serial remeshing
-  void remesh_serial( COM::Attribute *mesh_out, 
+  void remesh_serial( COM::DataItem *mesh_out, 
 		      double *lave=NULL, double *fangle=NULL);
 
   /** Set options for propagation. The options supported are:
@@ -149,8 +149,8 @@ protected:
   double                  _fangle_turn;    //< Feature turning angle.
 
   int                     _verb;       // Verbose level
-  const COM::Attribute   *_cnstr_types;// Types of nodal constraints
-  const COM::Attribute   *_cnstr_bound;// cylindrical bound
+  const COM::DataItem   *_cnstr_types;// Types of nodal constraints
+  const COM::DataItem   *_cnstr_bound;// cylindrical bound
 
   double                  _time_lb;    // Lowerbound of relative time step
   int                     _smoother;   // Choice of smoother

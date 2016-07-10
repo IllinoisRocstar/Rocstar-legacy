@@ -11,8 +11,10 @@ ELSE()
 ENDIF()
 
 #INCLUDE(CTest)
-find_path(ROCCOM_INC roccom.h HINTS ../Roccom/include)
-
+find_path(IMPACT_INC com.h HINTS ../IMPACT/COM/include)
+find_path(SURF_INC Manifold_2.h HINTS ../IMPACT/SufUtil/include)
+find_path(MAP_INC mapbasic.h HINTS ../IMPACT/SurfMap/include)
+find_path(SIMPAL_INC Rocblas.h HINTS ../IMPACT/Simpal/include)
 set (LIB_SRCS src/Propagation_3.C src/MarkerParticles_3.C src/FaceOffset_3.C src/Rocprop.C
               src/NuLaplacian.C src/cons_diff.C src/AnisotropicSmoothing.C src/quadric_analysis.C
               src/detect_features.C)
@@ -27,7 +29,7 @@ set_source_files_properties(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC ${MPI_CX
 SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
-include_directories(include ${ROCCOM_INC})
+include_directories(include ${SIMPAL_INC} ${MAP_INC} ${SURF_INC} ${SURF_INC}/../test ${ROCCOM_INC})
 
 
 IF(NOT BUILD_STATIC)
@@ -36,7 +38,7 @@ ELSE()
   add_library(Rocprop STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
 ENDIF()
-target_link_libraries(Rocprop Rocsurf Rocmap Rocblas Roccom ${MPI_CXX_LIBRARIES})
+target_link_libraries(Rocprop Simpal SurfUtil ${IMPACT_LIB} ${MPI_CXX_LIBRARIES})
 
 add_executable(proptest test/proptest.C)
 add_executable(mptest test/mptest.C)

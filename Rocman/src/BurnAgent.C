@@ -46,7 +46,7 @@ BurnAgent::BurnAgent(Coupling *coup, std::string mod, std::string obj, MPI_Comm 
   if(ModName == "RocburnPY")
     ignmodel = true;
 
-  iburn_all = "iburn_all";   //  for registering attributes
+  iburn_all = "iburn_all";   //  for registering dataitems
 
   iburn_ng = "iburn_ng";    //    burnBuf
 
@@ -115,10 +115,10 @@ void BurnAgent::init_module( double t, double dt) {
   int initial_start = get_coupling()->initial_start();
 
   if (initial_start || 
-           COM_get_attribute_handle_const( burnSurfIN+".bflag") <= 0) 
+           COM_get_dataitem_handle_const( burnSurfIN+".bflag") <= 0) 
   {
-    COM_use_attribute( burnSurfIN+".mesh", parentWin+".mesh", 0);
-    COM_use_attribute( burnSurfIN+".bflag", parentWin+".bflag", 0);
+    COM_use_dataitem( burnSurfIN+".mesh", parentWin+".mesh", 0);
+    COM_use_dataitem( burnSurfIN+".bflag", parentWin+".bflag", 0);
 //    COM_window_init_done( burnSurfIN);
   }
 
@@ -127,7 +127,7 @@ void BurnAgent::init_module( double t, double dt) {
   if (initial_start)
   {
     // Change burnVolIN to use parent windows' mesh without ghost
-    COM_use_attribute( burnVolIN+".mesh", parentWin+".mesh", 0);
+    COM_use_dataitem( burnVolIN+".mesh", parentWin+".mesh", 0);
     COM_window_init_done( burnVolIN);
   }
 
@@ -152,80 +152,80 @@ void BurnAgent::create_buffer_all()
 
   // Precondition: The window burnWin should have been defined and contain
   // the following variables: pf_alp, qc_alp, qr_alp, rhos_alp, Tf_alp,
-  // rb, and Tflm. It should have uses the attributes rb,
+  // rb, and Tflm. It should have uses the dataitems rb,
   // pf, qc, qr, rhos_alp, Tf, and Tflm_alp from parent window.
 
-  int with_qc = COM_get_attribute_handle_const( surf_window+".qc_alp") > 0;
-  int with_qr = COM_get_attribute_handle_const( surf_window+".qr_alp") > 0;
-  int with_Tf = COM_get_attribute_handle_const( surf_window+".Tf_alp") > 0;
-  int with_Tv = COM_get_attribute_handle_const( surf_window+".Tv_alp") > 0;
-  int with_dn = COM_get_attribute_handle_const( surf_window+".dn_alp") > 0;
-  int with_rhos = COM_get_attribute_handle_const( surf_window+".rhos_alp") > 0;
+  int with_qc = COM_get_dataitem_handle_const( surf_window+".qc_alp") > 0;
+  int with_qr = COM_get_dataitem_handle_const( surf_window+".qr_alp") > 0;
+  int with_Tf = COM_get_dataitem_handle_const( surf_window+".Tf_alp") > 0;
+  int with_Tv = COM_get_dataitem_handle_const( surf_window+".Tv_alp") > 0;
+  int with_dn = COM_get_dataitem_handle_const( surf_window+".dn_alp") > 0;
+  int with_rhos = COM_get_dataitem_handle_const( surf_window+".rhos_alp") > 0;
 
   MAN_DEBUG(3, ("with_qc=%d with_qr=%d with_Tf=%d with_rhos=%d\n with_Tv=%d\n with_dn=%d\n", 
 		with_qc, with_qr, with_Tf,with_rhos,with_Tv,with_dn));
 
-  COM_use_attribute( iburn_all, parentWin+".Tflm_alp");
-  COM_clone_attribute( iburn_all+".Tflm_old", surf_window+".Tflm");
+  COM_use_dataitem( iburn_all, parentWin+".Tflm_alp");
+  COM_clone_dataitem( iburn_all+".Tflm_old", surf_window+".Tflm");
 
-  COM_use_attribute( iburn_all, parentWin+".pf");
-  COM_use_attribute( iburn_all, parentWin+".rhos");
-  if (with_qc) COM_use_attribute( iburn_all, parentWin+".qc");
-  if (with_qr) COM_use_attribute( iburn_all, parentWin+".qr");
-  if (with_Tf) COM_use_attribute( iburn_all, parentWin+".Tf");
-  if (with_Tv) COM_use_attribute( iburn_all, parentWin+".Tv");
-  if (with_dn) COM_use_attribute( iburn_all, parentWin+".dn");
+  COM_use_dataitem( iburn_all, parentWin+".pf");
+  COM_use_dataitem( iburn_all, parentWin+".rhos");
+  if (with_qc) COM_use_dataitem( iburn_all, parentWin+".qc");
+  if (with_qr) COM_use_dataitem( iburn_all, parentWin+".qr");
+  if (with_Tf) COM_use_dataitem( iburn_all, parentWin+".Tf");
+  if (with_Tv) COM_use_dataitem( iburn_all, parentWin+".Tv");
+  if (with_dn) COM_use_dataitem( iburn_all, parentWin+".dn");
 
-  COM_clone_attribute( iburn_all+".rb_alp", surf_window+".rb");
-  COM_clone_attribute( iburn_all+".rb_old", surf_window+".rb");
-  COM_clone_attribute( iburn_all+".rb_grad", surf_window+".rb");
+  COM_clone_dataitem( iburn_all+".rb_alp", surf_window+".rb");
+  COM_clone_dataitem( iburn_all+".rb_old", surf_window+".rb");
+  COM_clone_dataitem( iburn_all+".rb_grad", surf_window+".rb");
 
     // Create back-up data fields if predictor-corrector iteration is on
-  COM_clone_attribute( iburn_all+".pf_old", surf_window+".pf_alp");
+  COM_clone_dataitem( iburn_all+".pf_old", surf_window+".pf_alp");
   if ( with_qc ) {
-       COM_clone_attribute( iburn_all+".qc_old", surf_window+".qc_alp");
-       COM_clone_attribute( iburn_all+".qc_grad", surf_window+".qc_alp");
+       COM_clone_dataitem( iburn_all+".qc_old", surf_window+".qc_alp");
+       COM_clone_dataitem( iburn_all+".qc_grad", surf_window+".qc_alp");
   }
   if ( with_qr) {
-       COM_clone_attribute( iburn_all+".qr_old", surf_window+".qr_alp");
-       COM_clone_attribute( iburn_all+".qr_grad", surf_window+".qr_alp");
+       COM_clone_dataitem( iburn_all+".qr_old", surf_window+".qr_alp");
+       COM_clone_dataitem( iburn_all+".qr_grad", surf_window+".qr_alp");
   }
   if ( with_rhos) 
-       COM_clone_attribute( iburn_all+".rhos_old", surf_window+".rhos_alp");
+       COM_clone_dataitem( iburn_all+".rhos_old", surf_window+".rhos_alp");
   if (with_Tf) 
-       COM_clone_attribute( iburn_all+".Tf_old", surf_window+".Tf_alp");
+       COM_clone_dataitem( iburn_all+".Tf_old", surf_window+".Tf_alp");
   if (with_Tv) 
-       COM_clone_attribute( iburn_all+".Tv_old", surf_window+".Tv_alp");
+       COM_clone_dataitem( iburn_all+".Tv_old", surf_window+".Tv_alp");
   if (with_dn) 
-       COM_clone_attribute( iburn_all+".dn_old", surf_window+".dn_alp");
+       COM_clone_dataitem( iburn_all+".dn_old", surf_window+".dn_alp");
 
-  create_registered_window_attributes( iburn_all);
+  create_registered_window_dataitems( iburn_all);
   COM_window_init_done( iburn_all);
 
    // no ghost
   COM_new_window( iburn_ng);
-  COM_use_attribute( iburn_ng+".all", surf_window+".all", 0);
-  COM_use_attribute( iburn_ng, iburn_all+".atts");
-  create_registered_window_attributes( iburn_ng);
+  COM_use_dataitem( iburn_ng+".all", surf_window+".all", 0);
+  COM_use_dataitem( iburn_ng, iburn_all+".atts");
+  create_registered_window_dataitems( iburn_ng);
   COM_window_init_done( iburn_ng);
 
   // Create windows for writing interface data
   COM_new_window( burnBufOUT);
-  COM_use_attribute( burnBufOUT, surf_window+".all");
+  COM_use_dataitem( burnBufOUT, surf_window+".all");
 
-  COM_use_attribute( burnBufOUT, iburn_all+".rb_old");
-  COM_use_attribute( burnBufOUT, iburn_all+".pf_old");
-  COM_use_attribute( burnBufOUT, iburn_all+".Tflm_old");
+  COM_use_dataitem( burnBufOUT, iburn_all+".rb_old");
+  COM_use_dataitem( burnBufOUT, iburn_all+".pf_old");
+  COM_use_dataitem( burnBufOUT, iburn_all+".Tflm_old");
   if ( with_qc)
-         COM_use_attribute( burnBufOUT, iburn_all+".qc_old");
+         COM_use_dataitem( burnBufOUT, iburn_all+".qc_old");
   if ( with_qr) 
-         COM_use_attribute( burnBufOUT, iburn_all+".qr_old");
+         COM_use_dataitem( burnBufOUT, iburn_all+".qr_old");
   if (with_Tf) 
-         COM_use_attribute( burnBufOUT, iburn_all+".Tf_old");
+         COM_use_dataitem( burnBufOUT, iburn_all+".Tf_old");
   if (with_Tv) 
-         COM_use_attribute( burnBufOUT, iburn_all+".Tv_old");
+         COM_use_dataitem( burnBufOUT, iburn_all+".Tv_old");
   if (with_dn) 
-         COM_use_attribute( burnBufOUT, iburn_all+".dn_old");
+         COM_use_dataitem( burnBufOUT, iburn_all+".dn_old");
   COM_window_init_done( burnBufOUT);
 
     // Create a window for backing up the internal data of Rocburn
@@ -234,13 +234,13 @@ void BurnAgent::create_buffer_all()
   if ( maxPredCorr>1) {
        // Create window for backing up Rocburn's internal data
      COM_new_window( burnIntBak);
-     COM_use_attribute( burnIntBak+".mesh", vol_window+".mesh");
-     COM_clone_attribute( burnIntBak, vol_window+".atts");
+     COM_use_dataitem( burnIntBak+".mesh", vol_window+".mesh");
+     COM_clone_dataitem( burnIntBak, vol_window+".atts");
 
      COM_window_init_done( burnIntBak);
 
-     pc_hdls[0][0] = COM_get_attribute_handle( vol_window+".atts");
-     pc_hdls[1][0] = COM_get_attribute_handle( burnIntBak+".atts");
+     pc_hdls[0][0] = COM_get_dataitem_handle( vol_window+".atts");
+     pc_hdls[1][0] = COM_get_dataitem_handle( burnIntBak+".atts");
      pc_count = 1;
   }
 
@@ -249,8 +249,8 @@ void BurnAgent::create_buffer_all()
 
 void BurnAgent::read_restart_data()
 {
-  int atts_hdl = COM_get_attribute_handle_const(burnSurfIN+".atts");
-  int buf_hdl = COM_get_attribute_handle( iburn_all+".atts");
+  int atts_hdl = COM_get_dataitem_handle_const(burnSurfIN+".atts");
+  int buf_hdl = COM_get_dataitem_handle( iburn_all+".atts");
   COM_call_function( obtain_attr_handle, &atts_hdl, &buf_hdl);
 }
 

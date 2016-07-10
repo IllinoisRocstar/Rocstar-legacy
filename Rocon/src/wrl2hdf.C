@@ -4,7 +4,7 @@
 #include <sstream>
 
 #include "TRAIL.H"
-#include "roccom.h"
+#include "com.h"
 
 void CheckCoordinates(double *coords,int number_of_points,double tol)
 {

@@ -53,7 +53,7 @@ SUBROUTINE RFLO_FlowSolverDummy( globalGenx,timeSystem,dTimeSystem, &
   USE ModError
   USE ModParameters
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 ! ... parameters
   INTEGER, INTENT(in) :: genxHandleBc, genxHandleGm

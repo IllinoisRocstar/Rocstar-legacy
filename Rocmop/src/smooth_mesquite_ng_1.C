@@ -45,8 +45,8 @@ using namespace Mesquite;
 #endif
 
 #include "Rocmop_1.h"
-#include "roccom.h"
-#include "Pane.h"
+#include "com.h"
+#include "Pane.hpp"
 #include "Rocblas.h"
 #include "Rocmap.h"
 #include "Geometric_Metrics_3.h"
@@ -66,7 +66,7 @@ void Rocmop::smooth_vol_mesq_ng(double initial_quality){
     std::cout << "      Entering Rocmop::smooth_mesquite_ng" << std::endl;
 
   const std::string surf_attr("is_surface");
-  COM::Attribute* w_is_surface = _buf_window->attribute(surf_attr);
+  COM::DataItem* w_is_surface = _buf_window->attribute(surf_attr);
   COM_assertion_msg( w_is_surface, "Unexpected NULL pointer");
 
   // First Perform Element-based Laplacian smoothing on pane boundary volume nodes
@@ -90,30 +90,30 @@ void Rocmop::smooth_vol_mesq_ng(double initial_quality){
   if(_verb > 2) std::cout << "  Declaring Variables\n";
 
   // Allocate buffer space for new nodal positions
-  COM::Attribute *w_new_coords = 
+  COM::DataItem *w_new_coords = 
     _buf_window->new_attribute("new_coords", 'n', COM_DOUBLE, 3, "");
   _buf_window->resize_array(w_new_coords, 0);
 
   // Allocate buffer space for adjacent element counts
-  COM::Attribute *w_adj_elem_cnts =
+  COM::DataItem *w_adj_elem_cnts =
     _buf_window->new_attribute("adj_elem_cnts", 'n', COM_DOUBLE, 1, "");
   _buf_window->resize_array(w_adj_elem_cnts, 0);
   _buf_window->init_done();
 
   // Allocate buffer space for safe distance
-  COM::Attribute *w_safe_dist =
+  COM::DataItem *w_safe_dist =
     _buf_window->new_attribute("safe_dist", 'n', COM_DOUBLE, 1, "");
   _buf_window->resize_array(w_safe_dist, 0);
   _buf_window->init_done();
 
   // Allocate buffer space for backup coords
-  COM::Attribute *w_backup =
+  COM::DataItem *w_backup =
     _buf_window->new_attribute("backup", 'n', COM_DOUBLE, 3, "");
   _buf_window->resize_array(w_backup, 0);
   _buf_window->init_done();
 
   // Allocate buffer space for reset flags
-  COM::Attribute *w_reset =
+  COM::DataItem *w_reset =
     _buf_window->new_attribute("reset", 'n', COM_INT, 1, "");
   _buf_window->resize_array(w_reset, 0);
   _buf_window->init_done();
@@ -170,7 +170,7 @@ void Rocmop::smooth_vol_mesq_ng(double initial_quality){
     //   a. Find the set of shared nodes.
 
     // get pane level pointers
-    COM::Attribute *p_is_surface = allpanes[i]->attribute(is_surface_id);
+    COM::DataItem *p_is_surface = allpanes[i]->attribute(is_surface_id);
     int *is_surface_ptr = (int*)p_is_surface->pointer();
 
     double * adj_elem_cnts_ptr = reinterpret_cast<double*>
@@ -186,7 +186,7 @@ void Rocmop::smooth_vol_mesq_ng(double initial_quality){
       (allpanes[i]->attribute(new_coords_id)->pointer());
     
     // Obtain the pane connectivity of the local pane
-    const COM::Attribute *pconn = allpanes[i]->attribute(COM::COM_PCONN);
+    const COM::DataItem *pconn = allpanes[i]->attribute(COM::COM_PCONN);
     const int *vs = (const int*)pconn->pointer() + pconn_offset;
     int vs_size = pconn->size_of_real_items() - pconn_offset;
 
@@ -471,7 +471,7 @@ private:
 typedef std::map< Four_tuple, MAP::Facet_ID>  Corners2Face_Map;
 typedef std::map< int, int> Id_Map;
 
-void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
+void Rocmop::determine_physical_border(COM::DataItem* w_is_surface){
   COM_assertion_msg( w_is_surface, "Unexpected NULL pointer");
   COM_assertion_msg( COM_compatible_types( w_is_surface->data_type(), COM_INT),
 		     "Surface-list must have integer type");
@@ -549,11 +549,11 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
   send_sizes.resize(total_npanes);
 
   // Register an attribute for our fake pconn.
-  COM::Attribute * false_pconn = wrk_window->new_attribute("false_pconn", 'p', COM_INT, 1, "");
+  COM::DataItem * false_pconn = wrk_window->new_dataitem("false_pconn", 'p', COM_INT, 1, "");
 
   // Register an attribute for sending and receiving sizes
   // also used for sending buffer
-  COM::Attribute *com_buff = wrk_window->new_attribute("com_buff", 'p', COM_INT, 1,"");
+  COM::DataItem *com_buff = wrk_window->new_dataitem("com_buff", 'p', COM_INT, 1,"");
   int w_com_buff_id = com_buff->id();
 
   // Loop through panes
@@ -580,7 +580,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
     //     from a node's id to its index in the shared node array and vice versa.
 
     // Obtain the pane connectivity of the local pane
-    const COM::Attribute *pconn = allpanes[i]->attribute(COM::COM_PCONN);
+    const COM::DataItem *pconn = allpanes[i]->dataitem(COM::COM_PCONN);
     const int *vs = (const int*)pconn->pointer() + pconn_offset;
     int vs_size = pconn->size_of_real_items() - pconn_offset;
 
@@ -774,7 +774,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
   //print out pconn, for debugging.
   for(int i=0; i<total_npanes; ++i){
     std::cout << "FALSE pconn for pane " << allpanes[i]->id() << std::endl;
-    COM::Attribute *my_pconn = allpanes[i]->attribute(w_false_pconn_id);
+    COM::DataItem *my_pconn = allpanes[i]->dataitem(w_false_pconn_id);
     int* ptr = (int*)my_pconn->pointer();
     for(int k=0,nk=my_pconn->size_of_items();k<nk;++k){
       std::cout << ptr[k] << " ";
@@ -783,7 +783,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
 
     // print out size of buffer being sent across
     std::cout << "size of face list\n";
-    COM::Attribute *my_bsize = allpanes[i]->attribute(w_com_buff_id);
+    COM::DataItem *my_bsize = allpanes[i]->dataitem(w_com_buff_id);
     ptr = (int*)my_bsize->pointer();
     for(int j =0; j<my_bsize->size_of_items(); ++j)
       std::cout << ptr[j] << " ";
@@ -799,7 +799,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
   //print out pconn, for debugging.
 #if 0
   for(int i=0; i<total_npanes; ++i){
-    COM::Attribute *my_pconn = allpanes[i]->attribute(w_false_pconn_id);
+    COM::DataItem *my_pconn = allpanes[i]->dataitem(w_false_pconn_id);
     int* ptr = (int*)my_pconn->pointer();
     for(int k=0,nk=my_pconn->size_of_items();k<nk;++k){
       std::cout << ptr[k] << " ";
@@ -818,7 +818,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
     std::cout << "\n\n";
     // print out size of buffer being sent across
     std::cout << "size of communicated face list\n";
-    COM::Attribute *my_bsize = allpanes[i]->attribute(w_com_buff_id);
+    COM::DataItem *my_bsize = allpanes[i]->dataitem(w_com_buff_id);
     ptr = (int*)my_bsize->pointer();
     for(int j =0; j <adj_pane_id[i].size(); ++j)
       std::cout << ptr[j] << " ";
@@ -831,7 +831,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
   for(int i=0; i<total_npanes; ++i){
 
     // get pane level attributes and pointers
-    COM::Attribute *p_com_buff = allpanes[i]->attribute(w_com_buff_id);
+    COM::DataItem *p_com_buff = allpanes[i]->dataitem(w_com_buff_id);
     int *com_buff_ptr = (int*)p_com_buff->pointer();
 
     // find the number of adjacent panes
@@ -925,7 +925,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
   //print out pconn, for debugging.
   for(int i=0; i<total_npanes; ++i){
     std::cout << "Facet list FALSE pconn for pane " << allpanes[i]->id() << std::endl;
-    COM::Attribute *my_pconn = allpanes[i]->attribute(w_false_pconn_id);
+    COM::DataItem *my_pconn = allpanes[i]->dataitem(w_false_pconn_id);
     int* ptr = (int*)my_pconn->pointer();
     for(int k=0,nk=my_pconn->size_of_items();k<nk;++k){
       std::cout << ptr[k] << " ";
@@ -933,7 +933,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
     std::cout << "\n\n";
 
     std::cout << "Facet list buffer for pane " << allpanes[i]->id() << std::endl;
-    COM::Attribute *my_buff = allpanes[i]->attribute(w_com_buff_id);
+    COM::DataItem *my_buff = allpanes[i]->dataitem(w_com_buff_id);
     ptr = (int*)my_buff->pointer();
     for(int k=0,nk=my_buff->size_of_items();k<nk;++k){
       std::cout << ptr[k] << " ";
@@ -950,7 +950,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
   //print out pconn, for debugging.
   for(int i=0; i<total_npanes; ++i){
     std::cout << "Updated Facet list buffer for pane " << allpanes[i]->id() << std::endl;
-    COM::Attribute *my_buff = allpanes[i]->attribute(w_com_buff_id);
+    COM::DataItem *my_buff = allpanes[i]->dataitem(w_com_buff_id);
     int* ptr = (int*)my_buff->pointer();
     for(int k=0,nk=my_buff->size_of_items();k<nk;++k){
       std::cout << ptr[k] << " ";
@@ -962,7 +962,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
   //   boundary faces.
   // loop through all panes
   for(int i =0; i<total_npanes; ++i){
-    COM::Attribute *my_buff = allpanes[i]->attribute(w_com_buff_id);
+    COM::DataItem *my_buff = allpanes[i]->dataitem(w_com_buff_id);
     int* buff_ptr = (int*)my_buff->pointer();
 
     int count = adj_pane_recv[i].size();
@@ -1029,7 +1029,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
   }
 
   for(int i = 0; i < total_npanes; ++i){
-    COM::Attribute *p_is_surface = allpanes[i]->attribute(w_is_surface_id);
+    COM::DataItem *p_is_surface = allpanes[i]->dataitem(w_is_surface_id);
     int* surf_ptr = (int*)p_is_surface->pointer();
     // initialize surface to 0s
     for(int j=0, nj= p_is_surface->size_of_items();j<nj; ++j){
@@ -1052,7 +1052,7 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
 
 #if 0
   for(int i = 0; i < total_npanes; ++i){
-    COM::Attribute *p_pconn = allpanes[i]->attribute(COM::COM_PCONN);
+    COM::DataItem *p_pconn = allpanes[i]->dataitem(COM::COM_PCONN);
     //    std::cout << "PANE " << allpanes[i]->id() << "'s real pconn size = "
     //	      << p_pconn->size_of_real_items() << " and ghost size = "
     //	      << p_pconn->size_of_items()-p_pconn->size_of_real_items() << "\n\n";
@@ -1070,8 +1070,8 @@ void Rocmop::determine_physical_border(COM::Attribute* w_is_surface){
   Rocmap::update_ghosts(w_is_surface);
 
   // delete buffer and false pconn attributes
-  wrk_window->delete_attribute(com_buff->name());
-  wrk_window->delete_attribute(false_pconn->name());  
+  wrk_window->delete_dataitem(com_buff->name());
+  wrk_window->delete_dataitem(false_pconn->name());  
 
 }
 

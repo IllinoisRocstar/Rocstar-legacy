@@ -30,7 +30,7 @@
 #define USE_MOP_NAMESPACE    using namespace MOP;
 
 #include "Manifold_2.h"
-#include "Element_accessors.h"
+#include "Element_accessors.hpp"
 
 #include <cstdlib>
 

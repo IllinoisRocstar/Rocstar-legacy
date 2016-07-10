@@ -50,7 +50,7 @@ SUBROUTINE Fluid_preHdfOutput( globalGenx )
   USE ModParameters
 
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 ! ... parameters
   TYPE(t_globalGenx), POINTER  :: globalGenx

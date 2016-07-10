@@ -26,7 +26,7 @@
 #include <cstring>
 #include <cstdlib>
 
-#include "roccom.h"
+#include "com.h"
 #include "basic_actions.h"
 #include "FluidAgent.h"
 #include "SolidAgent.h"
@@ -61,10 +61,10 @@ void read_file( const char *fname, const string &wname, double alpha)
   std::string bufwin("bufwin");
   COM_call_function( IN_read, fname, bufwin.c_str(), &comm_null);
 
-  int IN_obtain = COM_get_function_handle( "IN.obtain_attribute");
+  int IN_obtain = COM_get_function_handle( "IN.obtain_dataitem");
 
   // Check whether bcflag exists. If so, retain only the panes with flag<=1.
-  int bcflag = COM_get_attribute_handle((bufwin+".bcflag").c_str());
+  int bcflag = COM_get_dataitem_handle((bufwin+".bcflag").c_str());
   if (bcflag > 0) {
     // Read in bcflags.
     COM_call_function( IN_obtain, &bcflag, &bcflag);
@@ -85,11 +85,11 @@ void read_file( const char *fname, const string &wname, double alpha)
     COM_free_buffer( &pane_ids);
   }
 
-  // Remove all attributes except for the mesh
-  COM_delete_attribute(  (bufwin+".atts").c_str());
+  // Remove all dataitems except for the mesh
+  COM_delete_dataitem(  (bufwin+".atts").c_str());
 
   // Read in the mesh.
-  int buf_mesh = COM_get_attribute_handle((bufwin+".mesh").c_str());
+  int buf_mesh = COM_get_dataitem_handle((bufwin+".mesh").c_str());
   COM_call_function( IN_obtain, &buf_mesh, &buf_mesh);
   //COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
  
@@ -97,7 +97,7 @@ void read_file( const char *fname, const string &wname, double alpha)
     std::cout << "Obtained window " << wname << " from file " << fname << std::endl;
 
   // Change the memory layout to contiguous.
-  COM_clone_attribute( (wname+".mesh").c_str(), (bufwin+".mesh").c_str(), 0);
+  COM_clone_dataitem( (wname+".mesh").c_str(), (bufwin+".mesh").c_str(), 0);
   COM_delete_window( bufwin.c_str());
 }
 
@@ -110,8 +110,8 @@ SurfDiver::SurfDiver(FluidAgent *fag, SolidAgent *sag):
 
 void SurfDiver::init(double t) 
 {
-  fluid_mesh = COM_get_attribute_handle_const( fagent->fluidBufNG+".mesh");
-  solid_mesh = COM_get_attribute_handle_const( sagent->solidBuf+".mesh");
+  fluid_mesh = COM_get_dataitem_handle_const( fagent->fluidBufNG+".mesh");
+  solid_mesh = COM_get_dataitem_handle_const( sagent->solidBuf+".mesh");
 
   fluid_mesh_str = fagent->get_rocmod_name()+".mesh";
   solid_mesh_str = sagent->get_rocmod_name()+".mesh";
@@ -161,8 +161,8 @@ void SurfDiver::run( double t, double dt, double alpha) {
     read_file( solid_file.c_str(), solid_wname.c_str(), 1.);
     COM_window_init_done( solid_wname);
 
-    int fluid_mesh1 = COM_get_attribute_handle( (fluid_wname+".mesh").c_str());
-    int solid_mesh1 = COM_get_attribute_handle( (solid_wname+".mesh").c_str());
+    int fluid_mesh1 = COM_get_dataitem_handle( (fluid_wname+".mesh").c_str());
+    int solid_mesh1 = COM_get_dataitem_handle( (solid_wname+".mesh").c_str());
 
     const char *format = "HDF";
   
@@ -222,15 +222,15 @@ void compute_overlay( FluidAgent *fagent, SolidAgent *sagent, double t) {
     read_file( solid_file.c_str(), solid_wname.c_str(), 1.);
     COM_window_init_done( solid_wname);
 
-    int fluid_mesh1 = COM_get_attribute_handle( (fluid_wname+".mesh").c_str());
-    int solid_mesh1 = COM_get_attribute_handle( (solid_wname+".mesh").c_str());
+    int fluid_mesh1 = COM_get_dataitem_handle( (fluid_wname+".mesh").c_str());
+    int solid_mesh1 = COM_get_dataitem_handle( (solid_wname+".mesh").c_str());
 
     const char *format = "HDF";
   
     // call Rocblas to get deformed data HERE
-    int s_x_hdl = COM_get_attribute_handle( sagent->solidBuf + ".x");
-    int s_uhat_hdl = COM_get_attribute_handle( sagent->solidBuf + ".uhat");
-    int s_y_hdl = COM_get_attribute_handle( sagent->solidBuf + ".nc");
+    int s_x_hdl = COM_get_dataitem_handle( sagent->solidBuf + ".x");
+    int s_uhat_hdl = COM_get_dataitem_handle( sagent->solidBuf + ".uhat");
+    int s_y_hdl = COM_get_dataitem_handle( sagent->solidBuf + ".nc");
 
       // get deformed
     COM_call_function( RocBlas::add, &s_x_hdl, &s_uhat_hdl, &s_y_hdl);

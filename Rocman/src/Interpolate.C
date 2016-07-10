@@ -31,7 +31,7 @@ InterpolateBase::InterpolateBase(Agent *ag, Agent *bkag, int cond):
   Action(0, (const char**)NULL, NULL, NULL, (char *)"InterpolateBase"), 
              agent(ag), bkagent(bkag), conditional(cond)
 {
-  // register to Agent for create_attribute() and backup() callback
+  // register to Agent for create_dataitem() and backup() callback
   if (bkagent) bkagent->register_interpolate(this);
 
   int i;
@@ -44,10 +44,10 @@ void InterpolateBase::init(double t)
 {
   MAN_DEBUG(3, ("%s::init called.\n", name()));
   // INIT_INTERP_HANDLES() in "man_basic.f90"
-  attr_hdls[0] = get_attribute_handle(0);
-  attr_hdls[1] = COM_get_attribute_handle_const(attr[1]);    // old
-  attr_hdls[2] = COM_get_attribute_handle(attr[2]);          // alp
-  attr_hdls[3] = COM_get_attribute_handle(attr[3]);          // grad
+  attr_hdls[0] = get_dataitem_handle(0);
+  attr_hdls[1] = COM_get_dataitem_handle_const(attr[1]);    // old
+  attr_hdls[2] = COM_get_dataitem_handle(attr[2]);          // alp
+  attr_hdls[3] = COM_get_dataitem_handle(attr[3]);          // grad
   for (int i=0; i<4; i++) {
       // init to 0
     if (get_io(i) == OUT) {
@@ -56,16 +56,16 @@ void InterpolateBase::init(double t)
     }
   }
   if ( attr_hdls[1] <= 0 && attr_hdls[2] <= 0) 
-       std::cout << "Rocstar Warning: Could not find attribute " << attr[2] << std::endl;
+       std::cout << "Rocstar Warning: Could not find dataitem " << attr[2] << std::endl;
   else if (attr_hdls[2] <= 0) { 
-       std::cout << "Rocstar Error: Could not find attribute " << attr[2] << std::endl;
+       std::cout << "Rocstar Error: Could not find dataitem " << attr[2] << std::endl;
        COM_assertion_msg(0, "ERROR: Abort!");
   }
 
   // backup handles
-  bkup_hdls[0] = get_attribute_handle_const(0);
-  bkup_hdls[1] = get_attribute_handle(1);   // old
-  bkup_hdls[2] = COM_get_attribute_handle(attr[3]);   // grad
+  bkup_hdls[0] = get_dataitem_handle_const(0);
+  bkup_hdls[1] = get_dataitem_handle(1);   // old
+  bkup_hdls[2] = COM_get_dataitem_handle(attr[3]);   // grad
 }
 
 void InterpolateBase::backup()
@@ -100,7 +100,7 @@ void InterpolateBase::extrapolate_Linear(double dt, double dt_old, double time_o
     COM_call_function( RocBlas::copy, &a_new, &a_out);
   }
   else if (a_old <= 0) {
-    printf("Rocstar Error: Could not find the old attribute correspond to the attribute with handle %d\n", a_out);
+    printf("Rocstar Error: Could not find the old dataitem correspond to the attribute with handle %d\n", a_out);
     COM_assertion_msg(0, "ERROR: Abort!");
   }
   else if (time_out == time_old) {
@@ -154,7 +154,7 @@ Extrapolate_Linear::Extrapolate_Linear(Agent *ag, Agent *bkag, const std::string
 void Extrapolate_Linear::init(double t)
 {
   // check condition
-  attr_hdls[2] = COM_get_attribute_handle(attr[2]);          // alp
+  attr_hdls[2] = COM_get_dataitem_handle(attr[2]);          // alp
   if (conditional) {
     if (attr_hdls[2] <= 0) return;
   }
@@ -202,7 +202,7 @@ Extrapolate_Central::Extrapolate_Central(Agent *ag, Agent *bkag, const std::stri
   set_io( 4, io);
 
 /*
-    // register attributes
+    // register dataitems
   std::string surf_win = agent->get_surface_window();
   std::string::size_type pos = attr.find(".");
   std::string wname, aname;
@@ -214,9 +214,9 @@ Extrapolate_Central::Extrapolate_Central(Agent *ag, Agent *bkag, const std::stri
     aname = attr.substr( pos, attr.size()-pos);
   }
 
-  agent->register_use_attribute( wname, aname, ((BurnAgent*)agent)->parentWin, aname);   // attr
-  agent->register_clone_attribute( conditional, wname, aname+"_old", surf_win, aname+"_alp");   // attr_old
-  agent->register_clone_attribute( conditional, wname, aname+"_grad", surf_win, aname+"_alp");  // attr_grad
+  agent->register_use_dataitem( wname, aname, ((BurnAgent*)agent)->parentWin, aname);   // attr
+  agent->register_clone_dataitem( conditional, wname, aname+"_old", surf_win, aname+"_alp");   // attr_old
+  agent->register_clone_dataitem( conditional, wname, aname+"_grad", surf_win, aname+"_alp");  // attr_grad
 */
 }
 
@@ -224,14 +224,14 @@ void Extrapolate_Central::init(double t)
 {
   // check condition
   // first check if window exists
-  std::string attribute = attr[0];
-  std::string::size_type pos = attribute.find(".");
+  std::string dataitem = attr[0];
+  std::string::size_type pos = dataitem.find(".");
   COM_assertion_msg(pos != std::string::npos, "ERROR: Here!");
-  std::string wname = attribute.substr( 0, pos);
+  std::string wname = dataitem.substr( 0, pos);
   if (COM_get_window_handle(wname) <= 0) return;
 
-    // check if attribute exists
-  attr_hdls[2] = COM_get_attribute_handle(attr[2]);          // alp
+    // check if dataitem exists
+  attr_hdls[2] = COM_get_dataitem_handle(attr[2]);          // alp
   if (conditional) {
     if (attr_hdls[2] <= 0) return;
   }
@@ -319,7 +319,7 @@ Interpolate_Constant::Interpolate_Constant(Agent *ag, Agent *bkag, const std::st
   int io[] = {IN, IN, OUT, IN};
   set_io( 4, io);
 
-    // register attributes
+    // register dataitems
   std::string::size_type pos = attr.find(".");
   std::string wname, aname;
   if ( pos == std::string::npos) {
@@ -359,7 +359,7 @@ Interpolate_Central::Interpolate_Central(Agent *ag, Agent *bkag, const std::stri
   set_io( 4, io);
 
 /*
-    // register attributes
+    // register dataitems
   std::string surf_win = agent->get_surface_window();
   std::string::size_type pos = attr.find(".");
   std::string wname, aname;
@@ -372,20 +372,20 @@ Interpolate_Central::Interpolate_Central(Agent *ag, Agent *bkag, const std::stri
   }
 
   if (attr_action[0] == 'n')
-    agent->register_new_attribute( wname, aname, 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
+    agent->register_new_dataitem( wname, aname, 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
 
   if (attr_action[1] == 'n')
-    agent->register_new_attribute( wname, aname+"_old", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
+    agent->register_new_dataitem( wname, aname+"_old", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
   else if (attr_action[1] == 'c')
-    agent->register_clone_attribute( 0, wname, aname+"_old", surf_win, aname);   // attr_old
+    agent->register_clone_dataitem( 0, wname, aname+"_old", surf_win, aname);   // attr_old
 
   if (attr_action[2] == 'c')
-    agent->register_clone_attribute( 0, wname, aname+alpsuf, surf_win, aname);  // attr_grad
+    agent->register_clone_dataitem( 0, wname, aname+alpsuf, surf_win, aname);  // attr_grad
 
   if (attr_action[3] == 'n')
-    agent->register_new_attribute( wname, aname+"_grad", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
+    agent->register_new_dataitem( wname, aname+"_grad", 'e', COM_DOUBLE, 1, "kg/(m^2 s)");
   else if (attr_action[3] == 'c')
-    agent->register_clone_attribute( 0, wname, aname+"_grad", surf_win, aname);  // attr_grad
+    agent->register_clone_dataitem( 0, wname, aname+"_grad", surf_win, aname);  // attr_grad
 */
 }
 

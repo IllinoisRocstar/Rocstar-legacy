@@ -22,7 +22,7 @@
  *********************************************************************/
 // $Id: advectest.C,v 1.6 2008/12/06 08:45:28 mtcampbe Exp $
 
-#include "roccom.h"
+#include "com.h"
 
 #include <cstdio>
 #include <iostream>
@@ -34,11 +34,11 @@
 #include <cmath>
 #include <cassert>
 #include <sstream>
-#include "roccom_assertion.h"
-#include "../Rocblas/include/Rocblas.h"
-#include "../Rocsurf/include/Rocsurf.h"
+#include "com_assertion.h"
+#include "Rocblas.h"
+#include "Rocsurf.h"
 
-#include "../Rocsurf/test/IM_Reader.h"
+#include "IM_Reader.h"
 #include "PointPropagate.h"
 
 #ifdef MESH_ADAPT
@@ -49,18 +49,18 @@
 using namespace std;
 using namespace PROP;
 
-COM_EXTERN_MODULE( Rocblas);
-COM_EXTERN_MODULE( Rocmap);
+COM_EXTERN_MODULE( Simpal);
+COM_EXTERN_MODULE( SurfMap);
 COM_EXTERN_MODULE( Rocprop);
-COM_EXTERN_MODULE( Rocsurf);
-COM_EXTERN_MODULE( Rocout);
+COM_EXTERN_MODULE( SurfUtil);
+COM_EXTERN_MODULE( SimOut);
 
 void load_modules() {
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocblas, "BLAS");
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocmap, "MAP");
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocprop, "PROP");
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocsurf, "SURF");
-  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocout, "OUT");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(Simpal,   "BLAS");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SurfMap,  "MAP");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(Rocprop,  "PROP");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SurfUtil, "SURF");
+  COM_LOAD_MODULE_STATIC_DYNAMIC(SimOut,   "OUT");
 }
 
 static int rank = 0;
@@ -300,16 +300,16 @@ std::string read_in_mesh ( const char *fname) {
 void rescale_object( std::string &wname, double alpha, 
 		     const SURF::Vector_3<double> &origin) {
   // Rescale and translate the object.
-  COM::Window *win=COM_get_roccom()->get_window_object(wname);
-  COM::Attribute *nc=win->attribute("nc");
+  COM::Window *win=COM_get_com()->get_window_object(wname);
+  COM::DataItem *nc=win->dataitem("nc");
 
   // Rescale the radius to 0.15
   Rocblas::mul_scalar( nc, &alpha, nc);
 
   // Translate the origin to (0.5,0.75, 0.5);
-  COM::Attribute *x=win->attribute("1-nc");
-  COM::Attribute *y=win->attribute("2-nc");
-  COM::Attribute *z=win->attribute("3-nc");
+  COM::DataItem *x=win->dataitem("1-nc");
+  COM::DataItem *y=win->dataitem("2-nc");
+  COM::DataItem *z=win->dataitem("3-nc");
 
   Rocblas::add_scalar( x, &origin[0], x);
   Rocblas::add_scalar( y, &origin[1], y);
@@ -323,31 +323,31 @@ T square(T t) { return t*t; }
 void init_attributes( const string &wname, 
 		      const Control_parameter &cntr_param) {
 
-  COM_new_attribute((wname+".disps_total").c_str(), 'n', COM_DOUBLE, 3, "");
-  COM_new_attribute((wname+".cnstr_types_nodal").c_str(), 'n', COM_INT, 1, "");
-  COM_new_attribute((wname+".cnstr_types_facial").c_str(), 'e', COM_INT, 1, "");
-  COM_new_attribute((wname+".cnstr_types_panel").c_str(), 'p', COM_INT, 1, "");
+  COM_new_dataitem((wname+".disps_total").c_str(), 'n', COM_DOUBLE, 3, "");
+  COM_new_dataitem((wname+".cnstr_types_nodal").c_str(), 'n', COM_INT, 1, "");
+  COM_new_dataitem((wname+".cnstr_types_facial").c_str(), 'e', COM_INT, 1, "");
+  COM_new_dataitem((wname+".cnstr_types_panel").c_str(), 'p', COM_INT, 1, "");
   COM_set_size((wname+".cnstr_types_panel").c_str(), 0, 1);
   
-  COM_new_attribute((wname+".qvels").c_str(), 'e', COM_DOUBLE, 9, "m/s");
-  COM_new_attribute((wname+".vvels").c_str(), 'n', COM_DOUBLE, 3, "m/s");
-  COM_new_attribute((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
-  COM_new_attribute((wname+".faceareas").c_str(), 'e', COM_DOUBLE, 1, ""); 
+  COM_new_dataitem((wname+".qvels").c_str(), 'e', COM_DOUBLE, 9, "m/s");
+  COM_new_dataitem((wname+".vvels").c_str(), 'n', COM_DOUBLE, 3, "m/s");
+  COM_new_dataitem((wname+".disps").c_str(), 'n', COM_DOUBLE, 3, "m");
+  COM_new_dataitem((wname+".faceareas").c_str(), 'e', COM_DOUBLE, 1, ""); 
 
   // Ridges of each pane.
-  COM_new_attribute((wname+".ridges").c_str(), 'p', COM_INT, 2, "");
+  COM_new_dataitem((wname+".ridges").c_str(), 'p', COM_INT, 2, "");
   COM_set_size((wname+".ridges").c_str(), 0, 0);
 
-  // COM_new_attribute((wname+".disps_novis").c_str(), 'n', COM_DOUBLE, 3, "");
-  // COM_new_attribute((wname+".facenormals").c_str(), 'e', COM_DOUBLE, 3, "");
-  // COM_new_attribute((wname+".facecenters").c_str(), 'e', COM_DOUBLE, 3, "");
-  // COM_new_attribute((wname+".faceheights").c_str(), 'e', COM_DOUBLE, 1, "");
+  // COM_new_dataitem((wname+".disps_novis").c_str(), 'n', COM_DOUBLE, 3, "");
+  // COM_new_dataitem((wname+".facenormals").c_str(), 'e', COM_DOUBLE, 3, "");
+  // COM_new_dataitem((wname+".facecenters").c_str(), 'e', COM_DOUBLE, 3, "");
+  // COM_new_dataitem((wname+".faceheights").c_str(), 'e', COM_DOUBLE, 1, "");
 
-  // Attribute for storing the number of eigenvalues for each node.
-  // COM_new_attribute((wname+".lambdas").c_str(), 'n', COM_DOUBLE, 3, "");
-  // COM_new_attribute((wname+".eigvecs").c_str(), 'n', COM_DOUBLE, 9, "");
-  COM_new_attribute((wname+".tangranks").c_str(), 'n', COM_CHAR, 1, "");
-  COM_new_attribute((wname+".scales").c_str(), 'n', COM_DOUBLE, 1, "");
+  // Dataitem for storing the number of eigenvalues for each node.
+  // COM_new_dataitem((wname+".lambdas").c_str(), 'n', COM_DOUBLE, 3, "");
+  // COM_new_dataitem((wname+".eigvecs").c_str(), 'n', COM_DOUBLE, 9, "");
+  COM_new_dataitem((wname+".tangranks").c_str(), 'n', COM_CHAR, 1, "");
+  COM_new_dataitem((wname+".scales").c_str(), 'n', COM_DOUBLE, 1, "");
 
   COM_resize_array( (wname+".atts").c_str());
   COM_window_init_done( wname.c_str());
@@ -359,8 +359,8 @@ double output_solution( const string &wname, const char *timelevel,
   static int OUT_write = 0, hdl;
 
   if ( OUT_write==0) {
-    OUT_write = COM_get_function_handle( "OUT.write_attribute");
-    hdl = COM_get_attribute_handle( (wname+".all").c_str());
+    OUT_write = COM_get_function_handle( "OUT.write_dataitem");
+    hdl = COM_get_dataitem_handle( (wname+".all").c_str());
 
     int OUT_set = COM_get_function_handle( "OUT.set_option");
     COM_call_function( OUT_set, "format", "HDF");
@@ -376,9 +376,9 @@ double output_solution( const string &wname, const char *timelevel,
 		       &hdl, (char*)wname.c_str(), timelevel);
   }
 
-  static COM::Attribute *mesh=NULL;
+  static COM::DataItem *mesh=NULL;
   if ( mesh==NULL) 
-    mesh = COM_get_roccom()->get_window_object( wname)->attribute( "mesh");
+    mesh = COM_get_com()->get_window_object( wname)->dataitem( "mesh");
 
   double vol;
   SURF::Rocsurf::compute_signed_volumes( mesh, &vol);
@@ -400,7 +400,7 @@ double compute_area( const string &wname) {
     BLAS_mul = COM_get_function_handle( "BLAS.mul");
     BLAS_sum_scalar = COM_get_function_handle( "BLAS.sum_scalar_MPI");
 
-    area_hdl = COM_get_attribute_handle( (wname+".faceareas").c_str());
+    area_hdl = COM_get_dataitem_handle( (wname+".faceareas").c_str());
   }
 
   COM_call_function( SURF_area, &area_hdl);
@@ -417,7 +417,7 @@ double compute_volume( const string &wname) {
   if ( SURF_vol==0) {
     SURF_vol = COM_get_function_handle( "SURF.compute_signed_volumes");
 
-    mesh_hdl = COM_get_attribute_handle( (wname+".mesh").c_str());
+    mesh_hdl = COM_get_dataitem_handle( (wname+".mesh").c_str());
   }
 
   double vol;
@@ -444,12 +444,12 @@ int main(int argc, char *argv[]) {
   init_attributes( wname, cntr_param);
 
   // Attributes
-  int pmesh = COM_get_attribute_handle( (wname+".pmesh").c_str());
-  int nc = COM_get_attribute_handle( (wname+".nc").c_str());
-  int vvels = COM_get_attribute_handle( (wname+".vvels").c_str());
-  int qvels = COM_get_attribute_handle( (wname+".qvels").c_str());
-  int disps = COM_get_attribute_handle( (wname+".disps").c_str());
-  int disps_total = COM_get_attribute_handle( (wname+".disps_total").c_str());
+  int pmesh = COM_get_dataitem_handle( (wname+".pmesh").c_str());
+  int nc = COM_get_dataitem_handle( (wname+".nc").c_str());
+  int vvels = COM_get_dataitem_handle( (wname+".vvels").c_str());
+  int qvels = COM_get_dataitem_handle( (wname+".qvels").c_str());
+  int disps = COM_get_dataitem_handle( (wname+".disps").c_str());
+  int disps_total = COM_get_dataitem_handle( (wname+".disps_total").c_str());
 
   // Funcitions
   int PROP_init = COM_get_function_handle( "PROP.initialize");

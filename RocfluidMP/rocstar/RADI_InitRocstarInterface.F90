@@ -52,7 +52,7 @@ SUBROUTINE RADI_InitGenxInterface( regions,wins,winv )
   USE ModError
   USE ModParameters
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 ! ... parameters
   CHARACTER(CHRLEN) :: wins, winv
@@ -78,7 +78,7 @@ SUBROUTINE RADI_InitGenxInterface( regions,wins,winv )
 
 ! output volume (for visualization) and/or restart data (currently none) ------
 
-  CALL COM_new_attribute( TRIM(winv)//'.xcof','e',COM_DOUBLE,1,'1/m')
+  CALL COM_new_dataitem( TRIM(winv)//'.xcof','e',COM_DOUBLE,1,'1/m')
 
 ! store pointers to variables, loop over all regions --------------------------
 

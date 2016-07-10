@@ -42,7 +42,7 @@
 !******************************************************************************
 
 SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
-                                   obtain_attribute )
+                                   obtain_dataitem )
 
   USE ModDataTypes
   USE ModGlobal, ONLY     : t_global
@@ -67,11 +67,11 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
   USE ModMPI
 
   IMPLICIT NONE
-  INCLUDE 'roccomf90.h'
+  INCLUDE 'comf90.h'
 
 ! ... parameters
   CHARACTER(*) :: inSurf, inVolPlag
-  INTEGER, INTENT(IN) :: handle, solver, obtain_attribute
+  INTEGER, INTENT(IN) :: handle, solver, obtain_dataitem
 
   TYPE(t_region), POINTER :: regions(:)
 
@@ -125,49 +125,49 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
        regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
-    WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating Rocstar surface input attributes'
+    WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating Rocstar surface input dataitems'
  ENDIF
 ! input data
 
-  CALL COM_new_attribute( TRIM(wins)//'.du_alp'    ,'n',COM_DOUBLE,3, &
+  CALL COM_new_dataitem( TRIM(wins)//'.du_alp'    ,'n',COM_DOUBLE,3, &
                           'm' )
-  CALL COM_new_attribute( TRIM(wins)//'.mdot_alp'  ,'e',COM_DOUBLE,1, &
+  CALL COM_new_dataitem( TRIM(wins)//'.mdot_alp'  ,'e',COM_DOUBLE,1, &
                           'kg/(m^2s)' )
-  CALL COM_new_attribute( TRIM(wins)//'.rhofvf_alp','e',COM_DOUBLE,3, &
+  CALL COM_new_dataitem( TRIM(wins)//'.rhofvf_alp','e',COM_DOUBLE,3, &
                           'kg/(m^2s)' )
-  CALL COM_new_attribute( TRIM(wins)//'.Tflm_alp'  ,'e',COM_DOUBLE,1, &
+  CALL COM_new_dataitem( TRIM(wins)//'.Tflm_alp'  ,'e',COM_DOUBLE,1, &
                           'K' )
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
        regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
-    WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating Rocstar surface output attributes'
+    WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Creating Rocstar surface output dataitems'
  ENDIF
 ! output data
 
-  CALL COM_new_attribute( TRIM(wins)//'.pf'      ,'e',COM_DOUBLE,1, &
+  CALL COM_new_dataitem( TRIM(wins)//'.pf'      ,'e',COM_DOUBLE,1, &
                           'Pa' )
-  CALL COM_new_attribute( TRIM(wins)//'.qc'      ,'e',COM_DOUBLE,1, &
+  CALL COM_new_dataitem( TRIM(wins)//'.qc'      ,'e',COM_DOUBLE,1, &
                           'kgK/(m^2s)' )
-  CALL COM_new_attribute( TRIM(wins)//'.qr'      ,'e',COM_DOUBLE,1, &
+  CALL COM_new_dataitem( TRIM(wins)//'.qr'      ,'e',COM_DOUBLE,1, &
                           'kgK/(m^2s)' )
-  CALL COM_new_attribute( TRIM(wins)//'.rhof_alp','e',COM_DOUBLE,1, &
+  CALL COM_new_dataitem( TRIM(wins)//'.rhof_alp','e',COM_DOUBLE,1, &
                           'kg/m^3' )
-  CALL COM_new_attribute( TRIM(wins)//'.nf_alp'  ,'e',COM_DOUBLE,3, &
+  CALL COM_new_dataitem( TRIM(wins)//'.nf_alp'  ,'e',COM_DOUBLE,3, &
                           '' )
-  CALL COM_new_attribute( TRIM(wins)//'.tf'      ,'e',COM_DOUBLE,3, &
+  CALL COM_new_dataitem( TRIM(wins)//'.tf'      ,'e',COM_DOUBLE,3, &
                           'Pa' )
-  CALL COM_new_attribute( TRIM(wins)//'.Tf'      ,'e',COM_DOUBLE,1, &
+  CALL COM_new_dataitem( TRIM(wins)//'.Tf'      ,'e',COM_DOUBLE,1, &
                           'K' )
-  CALL COM_new_attribute( TRIM(wins)//'.Tv'      ,'e',COM_DOUBLE,1, &
+  CALL COM_new_dataitem( TRIM(wins)//'.Tv'      ,'e',COM_DOUBLE,1, &
                           'K' )
-  CALL COM_new_attribute( TRIM(wins)//'.dn'      ,'e',COM_DOUBLE,1, &
+  CALL COM_new_dataitem( TRIM(wins)//'.dn'      ,'e',COM_DOUBLE,1, &
                           'm' )
-  CALL COM_new_attribute( TRIM(wins)//'.bflag'   ,'e',COM_INTEGER,1,'' )
+  CALL COM_new_dataitem( TRIM(wins)//'.bflag'   ,'e',COM_INTEGER,1,'' )
 
-  CALL COM_new_attribute( TRIM(wins)//'.bcflag'  ,'p',COM_INTEGER,1,'' )
+  CALL COM_new_dataitem( TRIM(wins)//'.bcflag'  ,'p',COM_INTEGER,1,'' )
 
-  CALL COM_new_attribute( TRIM(wins)//'.cnstr_type','p',COM_INTEGER,1,'' )
+  CALL COM_new_dataitem( TRIM(wins)//'.cnstr_type','p',COM_INTEGER,1,'' )
 
 ! restart data (si/j/kvel, cv) and additional plot data (dv=p, T, c)
 
@@ -179,25 +179,25 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL COM_new_window( TRIM(winv) )
 
-  CALL COM_new_attribute( TRIM(winv)//'.siVel','n' ,COM_DOUBLE,1,'m/s' )
-  CALL COM_new_attribute( TRIM(winv)//'.sjVel','n' ,COM_DOUBLE,1,'m/s' )
-  CALL COM_new_attribute( TRIM(winv)//'.skVel','n' ,COM_DOUBLE,1,'m/s' )
+  CALL COM_new_dataitem( TRIM(winv)//'.siVel','n' ,COM_DOUBLE,1,'m/s' )
+  CALL COM_new_dataitem( TRIM(winv)//'.sjVel','n' ,COM_DOUBLE,1,'m/s' )
+  CALL COM_new_dataitem( TRIM(winv)//'.skVel','n' ,COM_DOUBLE,1,'m/s' )
 
-  CALL COM_new_attribute( TRIM(winv)//'.dtf','e',COM_DOUBLE,1,'s' )
+  CALL COM_new_dataitem( TRIM(winv)//'.dtf','e',COM_DOUBLE,1,'s' )
 
-  CALL COM_new_attribute( TRIM(winv)//'.rhof' ,'e',COM_DOUBLE,1,&
+  CALL COM_new_dataitem( TRIM(winv)//'.rhof' ,'e',COM_DOUBLE,1,&
                           'kg/(m^3)')
-  CALL COM_new_attribute( TRIM(winv)//'.rhovf','e',COM_DOUBLE,3,&
+  CALL COM_new_dataitem( TRIM(winv)//'.rhovf','e',COM_DOUBLE,3,&
                           'kg/(m^2 s)')
-  CALL COM_new_attribute( TRIM(winv)//'.rhoEf','e',COM_DOUBLE,1,&
+  CALL COM_new_dataitem( TRIM(winv)//'.rhoEf','e',COM_DOUBLE,1,&
                           '(J/kg)')
 
-  CALL COM_new_attribute( TRIM(winv)//'.vf','e',COM_DOUBLE,3,'m/s' )
-  CALL COM_new_attribute( TRIM(winv)//'.Tf','e',COM_DOUBLE,1,'K' )
-  CALL COM_new_attribute( TRIM(winv)//'.pf','e',COM_DOUBLE,1,'Pa' )
-  CALL COM_new_attribute( TRIM(winv)//'.Tv','e',COM_DOUBLE,1,'K' )
-  CALL COM_new_attribute( TRIM(winv)//'.dn','e',COM_DOUBLE,1,'m' )
-  CALL COM_new_attribute( TRIM(winv)//'.af','e',COM_DOUBLE,1,'m/s' )
+  CALL COM_new_dataitem( TRIM(winv)//'.vf','e',COM_DOUBLE,3,'m/s' )
+  CALL COM_new_dataitem( TRIM(winv)//'.Tf','e',COM_DOUBLE,1,'K' )
+  CALL COM_new_dataitem( TRIM(winv)//'.pf','e',COM_DOUBLE,1,'Pa' )
+  CALL COM_new_dataitem( TRIM(winv)//'.Tv','e',COM_DOUBLE,1,'K' )
+  CALL COM_new_dataitem( TRIM(winv)//'.dn','e',COM_DOUBLE,1,'m' )
+  CALL COM_new_dataitem( TRIM(winv)//'.af','e',COM_DOUBLE,1,'m/s' )
 
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
@@ -211,18 +211,18 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( regions(1)%global%myProcid == MASTERPROC .AND. &
        regions(1)%global%verbLevel>= VERBOSE_HIGH ) THEN
-    WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Adding statistics attributes'
+    WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Adding statistics dataitems'
  ENDIF
 
   IF ((global%flowType == FLOW_UNSTEADY) .AND. (global%doStat == ACTIVE)) THEN
 
 ! - stats global data
-    CALL COM_new_attribute( TRIM(winv)//'.tStat','w',COM_DOUBLE,1,'s' )
+    CALL COM_new_dataitem( TRIM(winv)//'.tStat','w',COM_DOUBLE,1,'s' )
 
     IF (global%mixtNStat > 0) THEN
       statNm => global%mixtStatNm
       DO iStat=1,global%mixtNStat
-        CALL COM_new_attribute( TRIM(winv)//'.'//TRIM(statNm(1,1,iStat)),'e', &
+        CALL COM_new_dataitem( TRIM(winv)//'.'//TRIM(statNm(1,1,iStat)),'e', &
                                 COM_DOUBLE,1,TRIM(statNm(1,2,iStat)) )
       ENDDO
     ENDIF
@@ -640,7 +640,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 #ifdef PLAG
 !#ifndef NATIVE_MP_IO
   IF (global%plagUsed)   CALL PLAG_initGenxInterface( regions,wins, &
-                                                      inPlag,obtain_attribute )
+                                                      inPlag,obtain_dataitem )
 !#endif
 #endif
 #ifdef TURB
@@ -660,7 +660,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 
   CALL COM_window_init_done( TRIM(wins) )
   CALL COM_window_init_done( TRIM(winv) )
-!  WRITE(*,*) 'getting to attribute grabbing'
+!  WRITE(*,*) 'getting to dataitem grabbing'
   
   CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
   IF ( global%myProcid == MASTERPROC .AND. &
@@ -673,9 +673,9 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 !       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting volume data.',iProc
 !    ENDIF
     IF(global%myProcid == iProc) THEN
-  CALL COM_call_function( obtain_attribute,2, &
-                          COM_get_attribute_handle_const(TRIM(inVol)//".all"), &
-                          COM_get_attribute_handle(TRIM(winv)//".all") )
+  CALL COM_call_function( obtain_dataitem,2, &
+                          COM_get_dataitem_handle_const(TRIM(inVol)//".all"), &
+                          COM_get_dataitem_handle(TRIM(winv)//".all") )
 
 
     ENDIF
@@ -694,9 +694,9 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
 !       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Getting surface data.',iProc
 !    ENDIF
     IF(global%myProcid == iProc) THEN
-       CALL COM_call_function( obtain_attribute,2, &
-            COM_get_attribute_handle_const(TRIM(inSurf)//".all"), &
-            COM_get_attribute_handle(TRIM(wins)//".all") )
+       CALL COM_call_function( obtain_dataitem,2, &
+            COM_get_dataitem_handle_const(TRIM(inSurf)//".all"), &
+            COM_get_dataitem_handle(TRIM(wins)//".all") )
        
     ENDIF
     CALL MPI_BARRIER(MPI_COMM_WORLD,mpierr)
@@ -707,7 +707,7 @@ SUBROUTINE RFLO_InitGenxInterface( regions,handle,solver,inSurf,inVolPlag, &
        global%verbLevel>= VERBOSE_HIGH ) THEN
     WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Done Populating all windows.'
  ENDIF
-!  WRITE(*,*) 'past attribute grabbing'
+!  WRITE(*,*) 'past dataitem grabbing'
 #ifdef PLAG
   CALL COM_call_function( handle,3,TRIM(wins),&
                           TRIM(winv)//' '//TRIM(global%winp),solver )
@@ -892,7 +892,7 @@ END SUBROUTINE RFLO_InitGenxInterface
 ! Jiao: Added support for ghost cells/nodes in unstructured meshes.
 !
 ! Revision 1.12  2002/10/30 22:10:20  jiao
-! Split volume data into more descriptive attributes.
+! Split volume data into more descriptive dataitems.
 !
 ! Revision 1.11  2002/10/19 00:40:30  jblazek
 ! Added utility (rflosurf) to write out surface grids for GenX.

@@ -42,13 +42,13 @@ public:
     : Propagation_3( wm, buf) {}
 
   /// Main entry of the algorithm
-  virtual double time_stepping( const COM::Attribute *spd, double dt,
-				COM::Attribute *disp, int *smoothed=NULL);
+  virtual double time_stepping( const COM::DataItem *spd, double dt,
+				COM::DataItem *disp, int *smoothed=NULL);
 
 protected:
   // Multiply attribute a by nodal normals and save into attribute b
-  void multiply_nodal_normals( const COM::Attribute *a,
-			       COM::Attribute *b);
+  void multiply_nodal_normals( const COM::DataItem *a,
+			       COM::DataItem *b);
 };
 
 PROP_END_NAMESPACE

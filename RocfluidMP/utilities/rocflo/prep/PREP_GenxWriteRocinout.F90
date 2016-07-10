@@ -48,7 +48,7 @@ SUBROUTINE GenxWriteRocinout( global )
   USE ModError
   USE ModParameters
   IMPLICIT NONE
-  INCLUDE "roccomf90.h"
+  INCLUDE "comf90.h"
 
 ! ... parameters
   TYPE(t_global), POINTER :: global

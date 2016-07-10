@@ -26,7 +26,7 @@
 #include "Algebraic_Metrics_3.h"
 #include "Geometric_Metrics_2.h"
 #include "Geometric_Metrics_3.h"
-#include "Connectivity.h"
+#include "Connectivity.hpp"
 #include <iostream>
 
 using namespace std;

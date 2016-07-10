@@ -72,6 +72,8 @@
  *******************************************************************/
 
 #include "RocMeshData.h"
+#include <cstring>
+#include <cstdlib>
 
 
 /*******************************************************************
@@ -1087,7 +1089,7 @@ void RocMeshData::getFieldAttributes(const char * winName)
   // get raw field info
   int numAllFields;
   string allFieldNames;
-  COM_get_attributes(winName, &numAllFields, allFieldNames); 
+  COM_get_dataitems(winName, &numAllFields, allFieldNames); 
 
   // populate field info
   std::istringstream fieldStream(allFieldNames);
@@ -1106,7 +1108,7 @@ void RocMeshData::getFieldAttributes(const char * winName)
     COM_Type comType;
     int ncomp;
     string unit;
-    COM_get_attribute((w + fieldName).c_str(), &loc, 
+    COM_get_dataitem((w + fieldName).c_str(), &loc, 
 		      &comType, &ncomp, &unit);
 
     _fieldNames.push_back(fieldName);        

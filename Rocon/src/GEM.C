@@ -38,8 +38,8 @@
 #include "GEM.H"
 #include "TRAIL.H"
 //#ifdef _ROCSTAR_X_
-#include "roccom.h"
-COM_EXTERN_MODULE(Rocout);
+#include "com.h"
+COM_EXTERN_MODULE(SimOUT);
 //#endif
 
 using namespace std;
@@ -415,9 +415,9 @@ GEM_Partition::Create_com_volsoln(const string &fname,
 				  unsigned int ncomp,const string &unit)
 {
   string aname(volume_window+"."+fname);
-  int ahndl = COM_get_attribute_handle(aname);
+  int ahndl = COM_get_dataitem_handle(aname);
   if(ahndl<=0)
-    COM_new_attribute(aname,'e',COM_DOUBLE,ncomp,unit.c_str());
+    COM_new_dataitem(aname,'e',COM_DOUBLE,ncomp,unit.c_str());
   if(fvec.size() > 0)
     COM_set_array(aname,pane_id,&fvec[0],ncomp);
 }
@@ -429,9 +429,9 @@ GEM_DomainBoundary::Create_com_surfsoln(const string &wname,
 					unsigned int ncomp,const string &unit)
 {
   string aname(wname+"."+fname);
-  int ahndl = COM_get_attribute_handle(aname);
+  int ahndl = COM_get_dataitem_handle(aname);
   if(!ahndl)
-    COM_new_attribute(aname,'e',COM_DOUBLE,ncomp,unit.c_str());
+    COM_new_dataitem(aname,'e',COM_DOUBLE,ncomp,unit.c_str());
   if(fvec.size() > 0)
     COM_set_array(aname,pane_id,&fvec[0],ncomp);
 }
@@ -621,8 +621,8 @@ GEM_Partition::WriteRocstar(const std::string &prefix,double t)
 //   Ostr << pre << "/" << volume_window << "_"
 //        << timestring << "_" << setw(5) << setfill('0')
 //        << _id;
-//   int whand = COM_get_function_handle("Rocout.write_attribute");
-//   int all = COM_get_attribute_handle((volume_window+".all"));
+//   int whand = COM_get_function_handle("Rocout.write_dataitem");
+//   int all = COM_get_dataitem_handle((volume_window+".all"));
 //   if(_debug && _out)
 //     *_out << "GEM_Partition(" << _id 
 // 	  << ")::WriteRocstar: Writing volume window\n";
@@ -653,7 +653,7 @@ GEM_Partition::WriteRocstar(const std::string &prefix,double t)
 	  << ")::WriteRocstar: Writing surface window\n";
   if(!TRAIL_WriteWindow(surface_window,pre,surface_window,pre,t,_id,_comm))
     return false;
-//   all = COM_get_attribute_handle((surface_window+".all"));
+//   all = COM_get_dataitem_handle((surface_window+".all"));
 //   COM_call_function(whand,Ostr.str().c_str(),&all,surface_window.c_str(),
 // 		    timestring.c_str());
 //   // Write Rocin control file
