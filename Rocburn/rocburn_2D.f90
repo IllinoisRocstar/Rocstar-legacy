@@ -304,8 +304,8 @@ CONTAINS
          COM_get_dataitem_handle_const(TRIM(inSurf)//".all"), &
          COM_get_dataitem_handle(TRIM(ioWin)//".all" ))
     CALL COM_call_function( IN_obt_attr,2, &
-         COM_get_dataitem_handle_const(TRIM(inInt)//".atts"), &
-         COM_get_dataitem_handle(TRIM(intWin)//".atts" ))
+         COM_get_dataitem_handle_const(TRIM(inInt)//".data"), &
+         COM_get_dataitem_handle(TRIM(intWin)//".data" ))
 
 !   Call Rocman to prepare for data transfer, predictor-corrector iterations,
 !   and restart. If initial_time is nonzero, Rocman will load data buffers

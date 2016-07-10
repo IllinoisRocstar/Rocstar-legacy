@@ -45,8 +45,8 @@
 #include "Rocprof.H"
 #endif
 
-COM_EXTERN_MODULE(Rocin);
-COM_EXTERN_MODULE(Rocout);
+COM_EXTERN_MODULE(SimIN);
+COM_EXTERN_MODULE(SimOUT);
 #ifdef WITH_PANDA
 COM_EXTERN_MODULE(Rocpanda);
 #endif
@@ -112,9 +112,9 @@ Coupling *create_coupling( Control_parameters &param, const RocmanControl_parame
   else if ( name == "SolidFluidBurnEnergySPC") 
     return new SolidFluidBurnEnergySPC( param.fluid_module, param.solid_module, param.burn_module, param.communicator, &param, &rocman_param);
   else if ( name == "Test" || name.empty()){
-    COM_LOAD_MODULE_STATIC_DYNAMIC(Rocout,"OUTTEST");
-    COM_LOAD_MODULE_STATIC_DYNAMIC(Rocin,"INTEST");
-    COM_LOAD_MODULE_STATIC_DYNAMIC(Rocface,"FACETEST");
+    COM_LOAD_MODULE_STATIC_DYNAMIC(SimOUT,"OUTTEST");
+    COM_LOAD_MODULE_STATIC_DYNAMIC(SimIN,"INTEST");
+    COM_LOAD_MODULE_STATIC_DYNAMIC(SurfX,"FACETEST");
     COM_LOAD_MODULE_STATIC_DYNAMIC(Rocon,"PROPCONTEST");
     COM_LOAD_MODULE_STATIC_DYNAMIC(Rocmop,"MOPTEST");
     COM_LOAD_MODULE_STATIC_DYNAMIC(Rocflu,"FLUTEST");
@@ -187,7 +187,7 @@ Control_parameters::Control_parameters()
 void Control_parameters::read()
 {
   // Load I/O modules
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( SimIN, "IN");
 
   string winname = "RocmanParam"; 
   COM_new_window(winname.c_str());
@@ -235,7 +235,7 @@ void Control_parameters::read()
   // 
   COM_window_init_done(winname.c_str());
 
-  //===== Read in parameter file using Rocin
+  //===== Read in parameter file using SimIN
   int IN_param = COM_get_function_handle( "IN.read_parameter_file");
 
   COM_call_function(IN_param, "RocstarControl.txt", (winname).c_str());
@@ -254,8 +254,8 @@ void Control_parameters::read()
     // load output module
   const std::string &outputModule = output_module;
   if (outputModule == "Rocout") {
-    MAN_DEBUG(3, ("[%d] Rocstar: load_module Rocout.\n", COMMPI_Comm_rank(communicator)));
-    COM_LOAD_MODULE_STATIC_DYNAMIC( Rocout, "OUT");
+    MAN_DEBUG(3, ("[%d] Rocstar: load_module SimOUT.\n", COMMPI_Comm_rank(communicator)));
+    COM_LOAD_MODULE_STATIC_DYNAMIC( SimOUT, "OUT");
   }
 #ifdef WITH_PANDA
   else if (outputModule == "Rocpanda") {
@@ -397,7 +397,7 @@ void RocmanControl_parameters::read( MPI_Comm comm, int comm_rank)
   if (stat(filename.c_str(), &statBuf) == 0) 
   {
     if ( comm_rank == 0) {			// only rank 0 reads
-      //===== Read in parameter file using Rocin
+      //===== Read in parameter file using SimIN
       int IN_param = COM_get_function_handle( "IN.read_parameter_file");
 
       COM_call_function(IN_param, filename.c_str(), (winname).c_str());

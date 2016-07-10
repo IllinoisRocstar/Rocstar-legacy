@@ -24,9 +24,9 @@
 
 #include "rocman.h"
 
-COM_EXTERN_MODULE(Rocblas);
-COM_EXTERN_MODULE(Rocface);
-COM_EXTERN_MODULE(Rocsurf);
+COM_EXTERN_MODULE(Simpal);
+COM_EXTERN_MODULE(SurfX);
+COM_EXTERN_MODULE(SurfUtil);
 COM_EXTERN_MODULE(Rocprop);
 
 class SolidAgent;
@@ -86,7 +86,7 @@ void RocBlas::initHandles()
 
 void RocBlas::init()
 {
-  COM_LOAD_MODULE_STATIC_DYNAMIC( Rocblas, "BLAS");
+  COM_LOAD_MODULE_STATIC_DYNAMIC( Simpal, "BLAS");
   initHandles();
 }
 
@@ -395,10 +395,10 @@ void Coupling::restart_at_time(double t, int step)
   }
 
   if (COM_get_window_handle("RFC") > 0) {
-    COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocface, "RFC");
+    COM_UNLOAD_MODULE_STATIC_DYNAMIC( SurfX, "RFC");
   }
   if (COM_get_window_handle("SURF") > 0) {
-    COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocsurf, "SURF");
+    COM_UNLOAD_MODULE_STATIC_DYNAMIC( SurfUtil, "SURF");
   }
   if (COM_get_window_handle("PROP") > 0) {
     COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocprop, "PROP");
@@ -407,10 +407,10 @@ void Coupling::restart_at_time(double t, int step)
     COM_UNLOAD_MODULE_STATIC_DYNAMIC(Rocon,"PROPCON");
   }
   if (COM_get_window_handle("BLAS") > 0) {
-    COM_UNLOAD_MODULE_STATIC_DYNAMIC(Rocblas,"BLAS");
+    COM_UNLOAD_MODULE_STATIC_DYNAMIC(Simpal,"BLAS");
   }
   if (COM_get_window_handle("MAP") > 0) {
-    COM_UNLOAD_MODULE_STATIC_DYNAMIC(Rocmap,"MAP");
+    COM_UNLOAD_MODULE_STATIC_DYNAMIC(SurfMap,"MAP");
   }
     // update to given time
   param->update_start_time( step, t);

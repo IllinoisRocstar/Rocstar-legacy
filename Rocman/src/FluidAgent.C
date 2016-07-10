@@ -48,7 +48,7 @@ FluidAgent::FluidAgent(Coupling *cp, std::string mod, std::string obj, MPI_Comm 
   fluid = "fluid";	    
   fluid_plag = "fluid_plag";
 
-  // Rocin windows, Input buffer windows
+  // SimIN windows, Input buffer windows
   fluidSurfIn = "fluidSurfIn";
   fluidVolIn = "fluidVolIn";
   fluidPlagIn = "fluidPlagIn";
@@ -211,7 +211,7 @@ void FluidAgent::create_buffer_all()
   COM_new_dataitem( propBufAll+".rb", 'e', COM_DOUBLE, 1, "m/s");
   COM_new_dataitem( propBufAll+".positions",'n',COM_DOUBLE,3,"m");
   COM_new_dataitem( propBufAll+".cflag",'n',COM_INTEGER,1,"");
-  COM_resize_array(propBufAll+".atts");
+  COM_resize_array(propBufAll+".data");
   if ( COM_get_dataitem_handle( surf_window+".cnstr_type") >0) {
     COM_use_dataitem( propBufAll, surf_window+".bflag", 1);
     COM_use_dataitem( propBufAll, surf_window+".cnstr_type");
@@ -228,7 +228,7 @@ void FluidAgent::create_buffer_all()
     COM_new_window( propBuf);
     COM_use_dataitem( propBuf, surf_window+".mesh", 0, bcflag.c_str(), 1);
     COM_use_dataitem( propBuf, propBufAll+".pconn");
-    COM_use_dataitem( propBuf, propBufAll+".atts");
+    COM_use_dataitem( propBuf, propBufAll+".data");
     create_registered_window_dataitems(propBuf);
     COM_window_init_done( propBuf);
   }
@@ -271,30 +271,30 @@ void FluidAgent::create_buffer_all()
   }
 
   create_registered_window_dataitems(ifluid_i);
-//  COM_resize_array( ifluid_i+".atts");
+//  COM_resize_array( ifluid_i+".data");
   COM_window_init_done( ifluid_i);
 
   COM_new_window( fluidBufNG);
   COM_use_dataitem( fluidBufNG, ifluid_i+".mesh", 0, "", 0);
-  COM_use_dataitem( fluidBufNG, surf_window+".atts");
-  COM_use_dataitem( fluidBufNG, ifluid_i+".atts");
-  COM_use_dataitem( fluidBufNG, propBufAll+".atts");
+  COM_use_dataitem( fluidBufNG, surf_window+".data");
+  COM_use_dataitem( fluidBufNG, ifluid_i+".data");
+  COM_use_dataitem( fluidBufNG, propBufAll+".data");
   create_registered_window_dataitems(fluidBufNG);
   COM_window_init_done( fluidBufNG);
 
   COM_new_window( fluidBufB);
   COM_use_dataitem( fluidBufB, surf_window+".mesh", 0, bcflag.c_str(), 1);
-  COM_use_dataitem( fluidBufB, surf_window+".atts");
-  COM_use_dataitem( fluidBufB, ifluid_i+".atts");
-  COM_use_dataitem( fluidBufB, propBufAll+".atts");
+  COM_use_dataitem( fluidBufB, surf_window+".data");
+  COM_use_dataitem( fluidBufB, ifluid_i+".data");
+  COM_use_dataitem( fluidBufB, propBufAll+".data");
   create_registered_window_dataitems(fluidBufB);
   COM_window_init_done( fluidBufB);
 
   COM_new_window( fluidBufNB);
   COM_use_dataitem( fluidBufNB, surf_window+".mesh", 0, bcflag.c_str(), 0);
-  COM_use_dataitem( fluidBufNB, surf_window+".atts");
-  COM_use_dataitem( fluidBufNB, ifluid_i+".atts");
-  COM_use_dataitem( fluidBufNB, propBufAll+".atts");
+  COM_use_dataitem( fluidBufNB, surf_window+".data");
+  COM_use_dataitem( fluidBufNB, ifluid_i+".data");
+  COM_use_dataitem( fluidBufNB, propBufAll+".data");
   create_registered_window_dataitems(fluidBufNB);
   COM_window_init_done( fluidBufNB);
 
@@ -307,7 +307,7 @@ void FluidAgent::create_buffer_all()
   //    vs, vs_old, ts, nc_t0, sq_dist)
   COM_new_window( ifluid_b);
   COM_use_dataitem( ifluid_b, surf_window+".mesh", 1, bcflag.c_str(), 1);
-  COM_use_dataitem( ifluid_b, surf_window+".atts");
+  COM_use_dataitem( ifluid_b, surf_window+".data");
 
   COM_use_dataitem( ifluid_b, propBufAll+".pconn");
   COM_use_dataitem( ifluid_b, propBufAll+".vm");
@@ -332,7 +332,7 @@ void FluidAgent::create_buffer_all()
     //  ts, nc_t0, sq_dist)
   COM_new_window( ifluid_nb);
   COM_use_dataitem( ifluid_nb, surf_window+".mesh", 1, bcflag.c_str(),0);
-  COM_use_dataitem( ifluid_nb, surf_window+".atts");
+  COM_use_dataitem( ifluid_nb, surf_window+".data");
 
   COM_use_dataitem( ifluid_nb, propBufAll+".pconn");
   COM_use_dataitem( ifluid_nb, propBufAll+".vm");
@@ -352,7 +352,7 @@ void FluidAgent::create_buffer_all()
   //   (variables include all of fluidSurf)
   COM_new_window( ifluid_ni);
   COM_use_dataitem( ifluid_ni, surf_window+".mesh", 1, bcflag.c_str(),2);
-  COM_use_dataitem( ifluid_ni, surf_window+".atts");
+  COM_use_dataitem( ifluid_ni, surf_window+".data");
 
   COM_use_dataitem( ifluid_ni, propBufAll+".pconn");
   COM_use_dataitem( ifluid_ni, propBufAll+".vm");
@@ -378,7 +378,7 @@ void FluidAgent::create_buffer_all()
        COM_new_window( fluidVolBak);
        COM_use_dataitem( fluidVolBak, vol_window+".mesh");
        COM_clone_dataitem( fluidVolBak, vol_window+".nc");
-       COM_clone_dataitem( fluidVolBak, vol_window+".atts");
+       COM_clone_dataitem( fluidVolBak, vol_window+".data");
        COM_window_init_done( fluidVolBak);
   
          // Create window for backing up Plag data
@@ -386,7 +386,7 @@ void FluidAgent::create_buffer_all()
           COM_new_window( fluidPlagBak);
           COM_use_dataitem( fluidPlagBak, plag_window+".mesh");
           COM_clone_dataitem( fluidPlagBak, plag_window+".nc");
-          COM_clone_dataitem( fluidPlagBak, plag_window+".atts");
+          COM_clone_dataitem( fluidPlagBak, plag_window+".data");
           COM_window_init_done( fluidPlagBak);
        }
 
@@ -448,12 +448,12 @@ void FluidAgent::create_buffer_all()
 void FluidAgent::read_restart_data()
 {
     // Obtain data for fluidBuf
-  int atts_hdl = COM_get_dataitem_handle_const(fluidSurfIn+".atts");
-  int buf_hdl = COM_get_dataitem_handle( ifluid_i+".atts");
+  int atts_hdl = COM_get_dataitem_handle_const(fluidSurfIn+".data");
+  int buf_hdl = COM_get_dataitem_handle( ifluid_i+".data");
   COM_call_function( obtain_attr_handle, &atts_hdl, &buf_hdl);
 
     // Obtain data for propBufAll
-  int propBufAll_hdl = COM_get_dataitem_handle( propBufAll+".atts");
+  int propBufAll_hdl = COM_get_dataitem_handle( propBufAll+".data");
   COM_call_function( obtain_attr_handle, &atts_hdl, &propBufAll_hdl);
 
     // Obtain pconn for surface propagation

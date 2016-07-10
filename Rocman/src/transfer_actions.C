@@ -28,13 +28,13 @@
 #include "SolidAgent.h"
 #include "BurnAgent.h"
 
-COM_EXTERN_MODULE(Rocsurf);
-COM_EXTERN_MODULE(Rocface);
+COM_EXTERN_MODULE(SurfUtil);
+COM_EXTERN_MODULE(SurfX);
 
 static inline void load_rocsurf()
 {
   if (COM_get_window_handle("SURF") <= 0) {
-    COM_LOAD_MODULE_STATIC_DYNAMIC( Rocsurf, "SURF");
+    COM_LOAD_MODULE_STATIC_DYNAMIC( SurfUtil, "SURF");
   }
 }
 
@@ -48,7 +48,7 @@ void _load_rocface(FluidAgent *fagent, SolidAgent *sagent, const RocmanControl_p
   if (COM_get_window_handle( "RFC") <=0 ) {
     if(rank == 0)
       MAN_DEBUG(3, ("Rocstar: load module RocFace.\n"));
-    COM_LOAD_MODULE_STATIC_DYNAMIC( Rocface, "RFC");
+    COM_LOAD_MODULE_STATIC_DYNAMIC( SurfX, "RFC");
 
     int RFC_setv = COM_get_function_handle( "RFC.set_verbose");
     COM_call_function( RFC_setv, &param->rfc_verb);
