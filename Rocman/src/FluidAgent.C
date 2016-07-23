@@ -48,7 +48,7 @@ FluidAgent::FluidAgent(Coupling *cp, std::string mod, std::string obj, MPI_Comm 
   fluid = "fluid";	    
   fluid_plag = "fluid_plag";
 
-  // Rocin windows, Input buffer windows
+  // SimIN windows, Input buffer windows
   fluidSurfIn = "fluidSurfIn";
   fluidVolIn = "fluidVolIn";
   fluidPlagIn = "fluidPlagIn";

@@ -54,7 +54,7 @@ BurnAgent::BurnAgent(Coupling *coup, std::string mod, std::string obj, MPI_Comm 
   iburn = "iburn";		//  for input
   burn = "burn";
 
-  // Rocin windows
+  // SimIN windows
   burnSurfIN = "BurnSurfIN";
   burnVolIN  = "BurnVolIN";
 

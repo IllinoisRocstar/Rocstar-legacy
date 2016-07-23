@@ -41,22 +41,22 @@ void read_file( const char *fname, const string &wname, double alpha)
 
   COM_new_window( wname.c_str(), MPI_COMM_SELF);
 
-  // Read in HDF files or a Rocin control file
+  // Read in HDF files or a SimIN control file
   if(man_verbose > 2)
     std::cout << "Reading file " << fname << " " << wname << std::endl;
 
   // Read in HDF format
-  //COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
-  //COM_LOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
+  //COM_UNLOAD_MODULE_STATIC_DYNAMIC( SimIN, "IN");
+  //COM_LOAD_MODULE_STATIC_DYNAMIC( SimIN, "IN");
     
   int IN_read;
-  // Read in HDF format using Rocin::read_window or ::read_by_control_file 
+  // Read in HDF format using SimIN::read_window or ::read_by_control_file 
   if ( strcmp( lastdot, ".hdf")==0)
     IN_read = COM_get_function_handle( "IN.read_window");
   else
     IN_read = COM_get_function_handle( "IN.read_by_control_file");
 
-  // Pass MPI_COMM_NULL to Rocin so that the rank becomes a wildcard.
+  // Pass MPI_COMM_NULL to SimIN so that the rank becomes a wildcard.
   MPI_Comm comm_null = MPI_COMM_NULL;
   std::string bufwin("bufwin");
   COM_call_function( IN_read, fname, bufwin.c_str(), &comm_null);
@@ -91,7 +91,7 @@ void read_file( const char *fname, const string &wname, double alpha)
   // Read in the mesh.
   int buf_mesh = COM_get_dataitem_handle((bufwin+".mesh").c_str());
   COM_call_function( IN_obtain, &buf_mesh, &buf_mesh);
-  //COM_UNLOAD_MODULE_STATIC_DYNAMIC( Rocin, "IN");
+  //COM_UNLOAD_MODULE_STATIC_DYNAMIC( SimIN, "IN");
  
   if(man_verbose > 2) 
     std::cout << "Obtained window " << wname << " from file " << fname << std::endl;

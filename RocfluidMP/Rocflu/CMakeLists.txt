@@ -194,7 +194,8 @@ SET (LIBFLU_SRCS
   ../libflu/RFLU_TestIsFirstRegion.F90
   ../libflu/RFLU_UserInput.F90
   ../libflu/RFLU_WriteRestartInfo.F90
-  ../libflu/RFLU_ZeroVirtualCellVars.F90)
+  ../libflu/RFLU_ZeroVirtualCellVars.F90
+  ../libflu/dcuhre.f)
 
 IF (STATS)
   SET (LIBFLU_SRCS ${LIBFLU_SRCS} ../libflu/RFLU_ReadStat.F90

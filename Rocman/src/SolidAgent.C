@@ -75,7 +75,7 @@ SolidAgent::SolidAgent(Coupling *coup, std::string mod, std::string obj, MPI_Com
   isolid = "isolid";		//  for input
   solid = "solid";
 
-  // Rocin windows
+  // SimIN windows
   solidSurfIN = "SolidSurfIN"; solidSurfIN += agentCount;
   solidVolIN = "SolidVolIN";   solidVolIN += agentCount;
 

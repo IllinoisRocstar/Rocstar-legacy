@@ -137,7 +137,7 @@ read_file( const string &fname,
 
   if(!all)
     // Remove all dataitems except for the mesh
-    COM_delete_dataitem(  (bufwin+".atts").c_str());
+    COM_delete_dataitem(  (bufwin+".data").c_str());
 
   
   std::cout << "Obtained window " << wname

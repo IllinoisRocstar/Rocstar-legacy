@@ -30,9 +30,9 @@
 #include "SolidAgent.h"
 #include "BurnAgent.h"
 
-COM_EXTERN_MODULE(Rocsurf);
+COM_EXTERN_MODULE(SurfUtil);
 COM_EXTERN_MODULE(Rocprop);
-COM_EXTERN_MODULE(Rocmap);
+COM_EXTERN_MODULE(SurfMap);
 COM_EXTERN_MODULE(Rocon);
 
 SetValueDouble::SetValueDouble( const std::string at, const double val) :
@@ -340,7 +340,7 @@ void ComputeMeshMotion::run( double t_dummy, double dt, double alpha) {
 static inline void load_rocsurf()
 {
   if (COM_get_window_handle("SURF") <= 0)
-    COM_LOAD_MODULE_STATIC_DYNAMIC( Rocsurf, "SURF");
+    COM_LOAD_MODULE_STATIC_DYNAMIC( SurfUtil, "SURF");
 }
 
 static inline void load_rocon(const RocmanControl_parameters *param, MPI_Comm comm)
@@ -384,7 +384,7 @@ static inline void load_rocmap()
 {
   if (COM_get_window_handle("MAP") <= 0) {
     MAN_DEBUG(3, ("Rocstar: Loading module RocMap...\n"));
-    COM_LOAD_MODULE_STATIC_DYNAMIC( Rocmap, "MAP");
+    COM_LOAD_MODULE_STATIC_DYNAMIC( SurfMap, "MAP");
   }
 }
 

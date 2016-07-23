@@ -349,7 +349,7 @@ void init_attributes( const string &wname,
   COM_new_dataitem((wname+".tangranks").c_str(), 'n', COM_CHAR, 1, "");
   COM_new_dataitem((wname+".scales").c_str(), 'n', COM_DOUBLE, 1, "");
 
-  COM_resize_array( (wname+".atts").c_str());
+  COM_resize_array( (wname+".data").c_str());
   COM_window_init_done( wname.c_str());
 }
 
