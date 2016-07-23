@@ -221,9 +221,9 @@ void SolidAgent::create_buffer_all()
 
   COM_new_window( solidBuf);
   COM_use_dataitem( solidBuf, solidBufBase+".all");
-  COM_use_dataitem( solidBuf, surf_window+".atts");
+  COM_use_dataitem( solidBuf, surf_window+".data");
   if (withALE) 
-    COM_use_dataitem( solidBuf, propBufAll+".atts");
+    COM_use_dataitem( solidBuf, propBufAll+".data");
   if (with_fluid == 1) {    // coupled
     COM_use_dataitem( solidBuf+".x", solidBufBase+".nc");
     COM_clone_dataitem( solidBuf+".nc", surf_window+".nc");
@@ -240,7 +240,7 @@ void SolidAgent::create_buffer_all()
   // Create a window for output solid non-burning patch data
   COM_new_window( isolid_nb);
   COM_use_dataitem( isolid_nb+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 0);
-  COM_use_dataitem( isolid_nb, surf_window+".atts");
+  COM_use_dataitem( isolid_nb, surf_window+".data");
 
   if ( withALE) {
     COM_use_dataitem( isolid_nb+".pconn", propBufAll+".pconn");
@@ -256,7 +256,7 @@ void SolidAgent::create_buffer_all()
   // Create a window for output solid interface data
   COM_new_window( isolid_b);
   COM_use_dataitem( isolid_b+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 1);
-  COM_use_dataitem( isolid_b, surf_window+".atts");
+  COM_use_dataitem( isolid_b, surf_window+".data");
 
   if ( withALE) {
        COM_use_dataitem( isolid_b+".pconn", propBufAll+".pconn");
@@ -272,7 +272,7 @@ void SolidAgent::create_buffer_all()
   //   Create a window for non-solid/fluid interface
   COM_new_window( isolid_ni);
   COM_use_dataitem( isolid_ni+".mesh", surf_window+".mesh", 1, bcflag.c_str(), 2);
-  COM_use_dataitem( isolid_ni, surf_window+".atts");
+  COM_use_dataitem( isolid_ni, surf_window+".data");
   if ( withALE) {
        COM_use_dataitem( isolid_ni+".pconn", propBufAll+".pconn");
        COM_use_dataitem( isolid_ni, propBufAll+".vbar");
@@ -295,7 +295,7 @@ void SolidAgent::create_buffer_all()
        COM_new_window( solidVolBak);
        COM_use_dataitem( solidVolBak+".mesh", vol_window+".mesh");
        COM_clone_dataitem( solidVolBak, vol_window+".nc");
-       COM_clone_dataitem( solidVolBak, vol_window+".atts");
+       COM_clone_dataitem( solidVolBak, vol_window+".data");
        COM_window_init_done( solidVolBak);
 
        // Initlaize the dataitem handles to be stored/restored
@@ -342,13 +342,13 @@ void SolidAgent::create_buffer_all()
 
 void SolidAgent::read_restart_data()
 {
-  int atts_hdl = COM_get_dataitem_handle_const( solidSurfIN+".atts");
-  int buf_hdl = COM_get_dataitem_handle( solidBufBase+".atts");
+  int atts_hdl = COM_get_dataitem_handle_const( solidSurfIN+".data");
+  int buf_hdl = COM_get_dataitem_handle( solidBufBase+".data");
   COM_call_function( obtain_attr_handle, &atts_hdl, &buf_hdl);
 
   if ( withALE) {
           // Obtain data for surface propagation if ALE is enabled
-        int propBufAll_hdl = COM_get_dataitem_handle( propBufAll+".atts");
+        int propBufAll_hdl = COM_get_dataitem_handle( propBufAll+".data");
         COM_call_function( obtain_attr_handle, &atts_hdl, &propBufAll_hdl);
 
           // Obtain pconn for surface propagation

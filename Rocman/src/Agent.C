@@ -364,7 +364,7 @@ void Agent::create_buffer_all()
   COM_new_window( tmp_window);
 //  COM_use_dataitem( tmp_window, surf_window+".all", 1);
   COM_use_dataitem( tmp_window, surf_window+".mesh", 1);
-  COM_use_dataitem( tmp_window, surf_window+".atts", 1);
+  COM_use_dataitem( tmp_window, surf_window+".data", 1);
   //create_registered_dataitems(tmp_window);
   create_registered_window_dataitems( tmp_window);
   COM_window_init_done( tmp_window);

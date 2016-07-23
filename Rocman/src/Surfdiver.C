@@ -86,7 +86,7 @@ void read_file( const char *fname, const string &wname, double alpha)
   }
 
   // Remove all dataitems except for the mesh
-  COM_delete_dataitem(  (bufwin+".atts").c_str());
+  COM_delete_dataitem(  (bufwin+".data").c_str());
 
   // Read in the mesh.
   int buf_mesh = COM_get_dataitem_handle((bufwin+".mesh").c_str());

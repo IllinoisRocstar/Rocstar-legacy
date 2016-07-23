@@ -205,7 +205,7 @@ void BurnAgent::create_buffer_all()
    // no ghost
   COM_new_window( iburn_ng);
   COM_use_dataitem( iburn_ng+".all", surf_window+".all", 0);
-  COM_use_dataitem( iburn_ng, iburn_all+".atts");
+  COM_use_dataitem( iburn_ng, iburn_all+".data");
   create_registered_window_dataitems( iburn_ng);
   COM_window_init_done( iburn_ng);
 
@@ -235,12 +235,12 @@ void BurnAgent::create_buffer_all()
        // Create window for backing up Rocburn's internal data
      COM_new_window( burnIntBak);
      COM_use_dataitem( burnIntBak+".mesh", vol_window+".mesh");
-     COM_clone_dataitem( burnIntBak, vol_window+".atts");
+     COM_clone_dataitem( burnIntBak, vol_window+".data");
 
      COM_window_init_done( burnIntBak);
 
-     pc_hdls[0][0] = COM_get_dataitem_handle( vol_window+".atts");
-     pc_hdls[1][0] = COM_get_dataitem_handle( burnIntBak+".atts");
+     pc_hdls[0][0] = COM_get_dataitem_handle( vol_window+".data");
+     pc_hdls[1][0] = COM_get_dataitem_handle( burnIntBak+".data");
      pc_count = 1;
   }
 
@@ -249,8 +249,8 @@ void BurnAgent::create_buffer_all()
 
 void BurnAgent::read_restart_data()
 {
-  int atts_hdl = COM_get_dataitem_handle_const(burnSurfIN+".atts");
-  int buf_hdl = COM_get_dataitem_handle( iburn_all+".atts");
+  int atts_hdl = COM_get_dataitem_handle_const(burnSurfIN+".data");
+  int buf_hdl = COM_get_dataitem_handle( iburn_all+".data");
   COM_call_function( obtain_attr_handle, &atts_hdl, &buf_hdl);
 }
 
