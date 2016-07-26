@@ -183,6 +183,10 @@ sub processARGs {
 	      h_command(\@cline);
 	      last SWITCH;
           }
+	  if ($arg eq "-m") { 
+	      m_command(\@cline);
+	      last SWITCH;
+          }
 	  if ($arg eq "-n") { 
 	      n_command(\@cline);
 	      last SWITCH;

@@ -110,6 +110,7 @@ void Rocprop::propagate( const COM::DataItem *pmesh,
 			 double *dt_elapsed,
 			 int *code)
 {
+  COM_assertion_msg(false,"Made it here.");
   COM_assertion_msg( validate_object()==0, "Invalid object");
 
   // If Rocprop is not yet initialized, call the initialization routine.
@@ -133,11 +134,32 @@ void Rocprop::propagate( const COM::DataItem *pmesh,
   COM::DataItem *oldnc = _buf->dataitem( "oldnc");
   Rocblas::copy( nc, oldnc);
 
-  // Initialize constraints
   _prop->set_constraints( _cnstr_types);
+
+  // std::cout << "made it HERE" << std::endl;
+  // MPI_Barrier(MPI_COMM_WORLD);
+  // std::cout << "made it HERE" << std::endl;
+  // MPI_Barrier(MPI_COMM_WORLD);
+  // std::cout << "made it HERE" << std::endl;
+  // MPI_Barrier(MPI_COMM_WORLD);
+  // std::cout << "made it HERE" << std::endl;
+  // MPI_Barrier(MPI_COMM_WORLD);
+  // std::cout << "made it HERE" << std::endl;
+  // MPI_Barrier(MPI_COMM_WORLD);
+  // std::cout << "made it HERE" << std::endl;
+  // MPI_Barrier(MPI_COMM_WORLD);
+  // exit(1);
+
+  // Initialize constraints
   _prop->set_bounds( _cnstr_bound);
   _prop->set_verbose(_verb);
   
+  // std::cout << "made it HERE" << std::endl;
+  // MPI_Barrier(MPI_COMM_WORLD);
+  // exit(1);
+
+
+
   // Set tolerance for eigenvalues.
   if ( _prop_method == PROP_FO) {
     if ( _eig_thres>=0)
