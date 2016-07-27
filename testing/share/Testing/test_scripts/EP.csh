@@ -56,8 +56,7 @@ foreach file (${Outputs})
 end
 
 #print test results to OutFile
-printf "${TestName}=" >> ${TmpOut}
-printf "$result\n" >> ${TmpOut}
+printf "${TestName}=${result}\n" >> ${TmpOut}
 cat ${TmpOut} >> ../${OutFile}
 cd ..
 #rm -r ${InputDir}
