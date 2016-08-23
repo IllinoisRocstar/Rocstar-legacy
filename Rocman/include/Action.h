@@ -47,7 +47,7 @@ public:
 
   virtual ~Action();
   virtual void declare(Scheduler &);
-  virtual void init(double t) { /* printf("Rocstar: Action %s init. \n", name());*/ }
+  virtual void init(double t) { /*printf("Rocstar: Action %s init. \n", name());*/ }
   virtual void run(double t, double dt, double alpha) {/* printf("Action %s runs. \n", name()); */}
   virtual void finalize() { /* printf("Rocstar: Action %s finalized. \n", name()); */ }
   virtual inline char *name() { return action_name; }

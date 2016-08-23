@@ -1,0 +1,7 @@
+# geometry setup
+numNodes=5
+xMin=0.
+xMax=1.
+temperature=300.
+transferenceCoefficients=1.0 2.0 3.4
+ionMigration=1

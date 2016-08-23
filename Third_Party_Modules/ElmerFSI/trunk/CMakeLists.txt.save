@@ -1,0 +1,55 @@
+cmake_minimum_required(VERSION 2.8)
+project(ElmerSolverModule)
+ENABLE_LANGUAGE( CXX Fortran )
+
+set (BUILD_STATIC FALSE CACHE BOOL "Build static COM library")
+## Compiled objects output paths
+set (EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin CACHE PATH "Single directory for all executables.")
+set (LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib CACHE PATH "Single directory for all libraries and archives.")
+mark_as_advanced (LIBRARY_OUTPUT_PATH EXECUTABLE_OUTPUT_PATH)
+# Set up RPATH
+SET(CMAKE_SKIP_BUILD_RPATH FALSE)
+SET(CMAKE_BUILD_WITH_INSTALL_RPATH FALSE)
+SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+
+# 
+# ========= USE IN EXISTING PROJECT ============
+#
+# In order to use this IllinoisRocstar Project Template
+# in an existing project COPY this file from this point
+# on and paste it into your project's CMakeLists.txt 
+# file *before* your existing INSTALL directives.
+#
+
+FIND_LIBRARY(IMPACT_LIBF SITCOMF)
+FIND_LIBRARY(IMPACT_LIB SITCOM)
+FIND_FILE(IMPACT_HDR comf90.h)
+GET_FILENAME_COMPONENT(IMPACT_LIBPATH ${IMPACT_LIB} PATH)
+GET_FILENAME_COMPONENT(IMPACT_INCPATH ${IMPACT_HDR} PATH)
+include_directories(${IMPACT_INCPATH})
+
+FIND_LIBRARY(IRAD_LIB IRAD)
+FIND_FILE(IRAD_HDR COMM.H)
+FIND_PROGRAM(RUNTEST runtest)
+FIND_PROGRAM(TESTRESULT testresults)
+GET_FILENAME_COMPONENT(IRAD_LIBPATH ${IRAD_LIB} PATH)
+GET_FILENAME_COMPONENT(IRAD_INCPATH ${IRAD_HDR} PATH)
+GET_FILENAME_COMPONENT(IRAD_EXEPATH ${RUNTEST} PATH)
+include_directories(${IRAD_INCPATH})
+
+FIND_LIBRARY(MATC_LIB matc)
+FIND_LIBRARY(HUTI_LIB huti)
+FIND_LIBRARY(ARPACK_LIB arpack)
+FIND_LIBRARY(PARPACK_LIB parpack)
+FIND_LIBRARY(BINIO_LIB binio)
+FIND_LIBRARY(ELMER_LIB elmersolver)
+
+FIND_LIBRARY(SOLVER_LIB SolverModule)
+message("SOLVER_LIB = ${SOLVER_LIB}")
+message("IMPACT_LIB = ${IMPACT_LIB}")
+
+add_executable(SolverModuleDriver src/SolverModuleDriver.C)
+target_link_libraries(SolverModuleDriver ${SOLVER_LIB} ${IRAD_LIB}
+${IMPACT_LIBF} ${IMPACT_LIB} ${ELMER_LIB} ${MATC_LIB} ${HUTI_LIB}
+${ARPACK_LIB} ${PARPACK_LIB} ${BINIO_LIB})

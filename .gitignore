@@ -1,3 +1,6 @@
 *.swp
 build/*
 build/
+build*/*
+build*/
+install/*

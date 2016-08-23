@@ -1,0 +1,11 @@
+#!/bin/tcsh
+echo "In patch script for elmerfem"
+# setting operational variables
+setenv runDir $1
+setenv srcDir $2
+setenv buildDir $3
+# patching elmerfem
+cd $srcDir/elmerfem/fem/src/
+ln -s $srcDir/Third_Party_Modules/ElmerFSI/trunk/native/ ./ElmerModule
+patch < ElmerModule/ElmerPatch
+cd $buildDir

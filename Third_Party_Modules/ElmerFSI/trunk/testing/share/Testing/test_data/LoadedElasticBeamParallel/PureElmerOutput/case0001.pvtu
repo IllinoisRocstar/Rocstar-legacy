@@ -1,0 +1,23 @@
+<VTKFile type="PUnstructuredGrid" version="0.1" byte_order="LittleEndian">
+  <PUnstructuredGrid>
+    <PPointData Scalars="stress_xx" Vectors="displacement">
+      <PDataArray type="Float64" Name="stress_xx" NumberOfComponents="1" format="ascii"/>
+      <PDataArray type="Float64" Name="stress_yy" NumberOfComponents="1" format="ascii"/>
+      <PDataArray type="Float64" Name="stress_zz" NumberOfComponents="1" format="ascii"/>
+      <PDataArray type="Float64" Name="stress_xy" NumberOfComponents="1" format="ascii"/>
+      <PDataArray type="Float64" Name="stress_yz" NumberOfComponents="1" format="ascii"/>
+      <PDataArray type="Float64" Name="stress_xz" NumberOfComponents="1" format="ascii"/>
+      <PDataArray type="Float64" Name="vonmises" NumberOfComponents="1" format="ascii"/>
+      <PDataArray type="Float64" Name="displacement" NumberOfComponents="3" format="ascii"/>
+    </PPointData>
+    <PCellData>
+    </PCellData>
+    <PPoints>
+      <DataArray type="Float64" NumberOfComponents="3" format="ascii"/>
+    </PPoints>
+    <Piece Source="case0001par0001.vtu"/>
+    <Piece Source="case0002par0001.vtu"/>
+    <Piece Source="case0003par0001.vtu"/>
+    <Piece Source="case0004par0001.vtu"/>
+  </PUnstructuredGrid>
+</VTKFile>

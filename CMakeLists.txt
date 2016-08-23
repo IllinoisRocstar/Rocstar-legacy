@@ -35,6 +35,7 @@ IF(EXISTS ${CMAKE_SOURCE_DIR}/IMPACT)
   SET(TESTRESULT ${EXECUTABLE_OUTPUT_PATH}/testresults)
   SET(IRAD_LIB IRAD)
   SET(IMPACT_LIB SITCOM)
+  SET(IMPACT_FLIB SITCOMF)
 ELSE()
   FIND_LIBRARY(IMPACT_LIB SITCOM)
   FIND_LIBRARY(IRAD_LIB IRAD)
@@ -85,6 +86,34 @@ add_subdirectory(Rocfrac)
 add_subdirectory(Rocburn)
 add_subdirectory(Rocprep)
 add_subdirectory(testing)
+
+#Patching ElmerFEM if needed and building
+IF (EXISTS "${CMAKE_SOURCE_DIR}/elmerfem")
+  MESSAGE("** Found Elmerfem module.")
+  IF (IS_SYMLINK "${CMAKE_SOURCE_DIR}/elmerfem/fem/src/ElmerModule")
+    MESSAGE("*** Elmerfem is already patched")
+  ELSE()
+    MESSAGE("*** Patching Elmerfem")
+    EXECUTE_PROCESS(COMMAND ${CMAKE_SOURCE_DIR}/Third_Party_Modules/ElmerFSI/trunk/elmerFemPatchScript 
+                            ${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} 
+                            WORKING_DIRECTORY ${CMAKE_SOURCE_DIR} 
+                            OUTPUT_VARIABLE ElmerFemPatchResult 
+                            ERROR_VARIABLE ElmerFemPatchResult)
+    MESSAGE("*** Patch Result = ${ElmerFemPatchResult}")
+  ENDIF()
+  ADD_SUBDIRECTORY(elmerfem)
+ELSE()
+  MESSAGE("** Did not found elmerfem module.")
+ENDIF()
+
+# Building elmerprep if exists
+IF (EXISTS "${CMAKE_SOURCE_DIR}/Third_Party_Modules/ElmerFSI/trunk")
+  MESSAGE("** Found elmerprep")
+  ADD_SUBDIRECTORY(Third_Party_Modules/ElmerFSI/trunk)
+ELSE()
+  MESSAGE("** Did not found elmerprep.")
+ENDIF()
+
 
 include_directories(./Roccom/include ./Rocman/include)
 add_executable(rocstar src/rocstar.C)

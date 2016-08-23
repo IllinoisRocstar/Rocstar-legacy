@@ -123,6 +123,7 @@ LoadTransfer_FS::LoadTransfer_FS( FluidAgent *fag, SolidAgent *sag,
   // for SolidAgent ??????????????????
 //  if (traction_mode == NO_SHEER && size_ts == 3) {
     sagent->register_new_dataitem( sagent->solidBufBase, ".pf", 'e', COM_DOUBLE, 1, "Pa");
+    //sagent->register_new_dataitem( sagent->solidBufBase, ".pf", 'n', COM_DOUBLE, 1, "Pa");
 //  }
 
   // for FluidAgent
@@ -166,6 +167,13 @@ void LoadTransfer_FS::init( double t) {
 
   load_rocsurf();
   SURF_compute_face_normals = COM_get_function_handle( "SURF.compute_element_normals");
+  //SURF_compute_face_normals = COM_get_function_handle( "SURF.compute_normals");
+
+  // Compute normals at nodes on the parent window
+  //int hdl = COM_get_dataitem_handle( "SolidBufBase1.ts");
+  //int scheme = 4;
+  //COM_call_function( SURF_compute_face_normals, &hdl, &hdl, &scheme);
+
 
   MAN_DEBUG(3, ("LoadTransfer_FS::init() called - traction_mode: %d size_ts: %d.\n", traction_mode, size_ts));
 }
@@ -186,6 +194,7 @@ void LoadTransfer_FS::run( double t, double dt, double alpha) {
   if (traction_mode == NO_SHEER && size_ts == 3) {
     COM_call_function( RFC_transfer, &f_ts_hdl, &s_pf_hdl);
     COM_call_function( SURF_compute_face_normals, &s_ts_hdl);
+    //COM_call_function( SURF_compute_face_normals, &s_ts_hdl, &s_ts_hdl, &scheme);
     COM_call_function( RocBlas::mul, &s_ts_hdl, &s_pf_hdl, &s_ts_hdl);
     COM_call_function( RocBlas::neg, &s_ts_hdl, &s_ts_hdl);
   }

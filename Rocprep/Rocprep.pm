@@ -24,6 +24,7 @@ use RocfracProcessor;
 use RocsolidProcessor;
 use RocstarProcessor;
 use RunLogControl;
+use ElmerProcessor;
 
 
 #************************************************************************************
@@ -59,7 +60,7 @@ sub main {
 	   exit;
 	}
 
-	my ($rflo, $rflu, $rfrac, $rsolid, $rstar);
+	my ($rflo, $rflu, $rfrac, $rsolid, $rstar, $elmer);
 	my (@processorObjs);
 	
 	#Read RocprepControl.txt, and process any command line arguments
@@ -75,8 +76,9 @@ sub main {
 	$rflu = RocfluProcessor->new($RocProps, $PrepLog);
 	$rfrac = RocfracProcessor->new($RocProps, $PrepLog);
 	$rsolid = RocsolidProcessor->new($RocProps, $PrepLog);
+	$elmer = ElmerProcessor->new($RocProps, $PrepLog);
 
-	@processorObjs = ($rflo, $rflu, $rfrac, $rsolid);
+	@processorObjs = ($rflo, $rflu, $rfrac, $rsolid, $elmer);
 
 	if (($RocProps->runExtractOnly())||($RocProps->runAll())) {
 
@@ -215,6 +217,10 @@ sub processARGs {
 	      x_command(\@cline);
 	      last SWITCH;
 	  }
+	  if ($arg eq "-elmer") { 
+	      elmer_command(\@cline);
+	      last SWITCH;
+          } 
     if (($arg eq "-plag")||($arg eq "--particles")) {
       plag_command(\@cline);
       last SWITCH;
@@ -249,7 +255,7 @@ sub setDefaultProps {
    $RocProps->setKeyValuePair("ROCSTARVERS", "3.0");
 
    # physics modules
-   foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ROCBURNAPN ROCBURNPY ROCBURNZN ROCMOP)) {
+   foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ELMER ROCBURNAPN ROCBURNPY ROCBURNZN ROCMOP)) {
       unless ($RocProps->propExists($keyword)) {
          $RocProps->setKeyValuePair($keyword, $FALSE);
       }
@@ -266,7 +272,7 @@ sub setDefaultProps {
    }
 
    # surfdiver combinations
-   foreach $keyword (qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID)) {
+   foreach $keyword (qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID ROCFLOELMER)) {
       unless ($RocProps->propExists($keyword)) {
          $RocProps->setKeyValuePair($keyword, $FALSE);
       }
@@ -308,13 +314,13 @@ sub checkInputConsistency {
 #   which we check for any surfdiver flags.
     my($keyword);
     my($doPrep)=0;
-    foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID)) {
+    foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ELMER)) {
 	if ($RocProps->processModule($keyword)){
 	    $doPrep++;
 	    last;
 	}
     }
-    foreach $keyword (qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID)) {
+    foreach $keyword (qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID ROCFLOELMER)) {
 	if ($RocProps->propExists($keyword)) {
 	    $doPrep++;
 	    last;
@@ -369,7 +375,7 @@ sub checkInputConsistency {
     if (!$surfdone) {
         foreach $fluidsmodule ("Rocflo", "Rocflu") {
 	    if ($RocProps->processModule(uc($fluidsmodule))){
-		foreach $solidsmodule("Rocfrac", "Rocsolid") {
+		foreach $solidsmodule("Rocfrac", "Rocsolid", "Elmer") {
 		    if ($RocProps->processModule(uc($solidsmodule))){
 			$RocProps->setKeyValuePair(uc($fluidsmodule).uc($solidsmodule), $TRUE);
 		    }
@@ -439,6 +445,26 @@ sub f_command {
     }
     elsif  (($RocProps->runPreprocessOnly())||($RocProps->runCheckOnly())) {
        $RocProps->setKeyValuePair("ROCFRAC", $TRUE);
+    }
+}
+
+sub elmer_command {
+    my ($cline) = @_;
+ 
+    # if nothing is passed in, print the usage message for this option
+    unless (defined($cline)) {
+      print "  -elmer [m] [n] Elmer preprocessing, optional NDA Data<m> & Grid<n> dirs\n";
+      return;
+    }
+
+    if ($RocProps->runExtractOnly() || $RocProps->runAll()) {
+       #Elmer: format -elmer
+       $RocProps->setKeyValuePair("ELMER", $TRUE);
+       $RocProps->setKeyValuePair("ELMERDATA", "Data".shift(@$cline)); #integer input
+       $RocProps->setKeyValuePair("ELMERGRID", "Grid".shift(@$cline)); #integer input
+    }
+    elsif  (($RocProps->runPreprocessOnly())||($RocProps->runCheckOnly())) {
+       $RocProps->setKeyValuePair("ELMER", $TRUE);
     }
 }
 
@@ -785,6 +811,7 @@ sub printUsage {
     o_command();
     u_command();
     f_command();
+    elmer_command();
     s_command();
     b_command();
     m_command();

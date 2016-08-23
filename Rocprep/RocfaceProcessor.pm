@@ -33,7 +33,7 @@ sub preProcess {
 
     #Process all the necessary code combinations with Surfdiver (e.g., RocfloRocfrac). 
     foreach $fluidsmodule ("Rocflo", "Rocflu") {
-       foreach $solidsmodule("Rocfrac", "Rocsolid") {
+       foreach $solidsmodule("Rocfrac", "Rocsolid", "Elmer") {
 	   my ($combo) = $fluidsmodule.$solidsmodule;
 	   my ($logfile) = 'surf_'.lc($combo).'.log';
 	   $logfile =~ s/roc//g;

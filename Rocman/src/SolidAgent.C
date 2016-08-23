@@ -106,7 +106,11 @@ void SolidAgent::load_module()
   COM_assertion_msg(rocmod_name == "Rocsolid" || rocmod_name == "Rocfrac" 
                     || rocmod_name == "Rocfrac3", 
                (std::string("Unknown SolidAgent module:")+rocmod_name).c_str());
-  COM_load_module(rocmod_name.c_str(), mod_instance.c_str());
+  if (rocmod_name == "Elmer")
+     COM_load_module("ElmerCSCParallel", mod_instance.c_str());
+  else
+     COM_load_module(rocmod_name.c_str(), mod_instance.c_str());
+  
 #endif
 
   init_function_handles();      // defined in Agent
@@ -161,7 +165,6 @@ void SolidAgent::init_module( double t, double dt) {
 // called from callback
 void SolidAgent::create_buffer_all()
 {
-
   int dummy = COM_get_dataitem_handle_const( surf_window+".vbar_alp");
   withALE = (dummy > 0);
 
@@ -170,7 +173,6 @@ void SolidAgent::create_buffer_all()
 
   Agent::create_buffer_all();
   split_surface_window( isolid_all, isolid_i, isolid_nb, isolid_b, isolid_ni);
-
   if (withALE) {
     COM_new_window( propBufAll);
     COM_use_dataitem( propBufAll+".mesh", surf_window+".mesh");

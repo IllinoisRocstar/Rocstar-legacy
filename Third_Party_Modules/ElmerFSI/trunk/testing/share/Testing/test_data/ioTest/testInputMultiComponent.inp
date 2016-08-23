@@ -1,0 +1,7 @@
+# solver setup
+iterationLimit=5
+tmax=1.5
+temperature=500.
+#load components
+ecdc1=firstComponent IO_Unit_Test/component1.inp
+ecdc2=secondComponent IO_Unit_Test/component2.inp

@@ -565,15 +565,22 @@ void rocstar_driver( int verb, int remeshed, bool debug) {
   param.read();
 
   int comm_rank = param.myRank;
-
   param.controlVerb = verb;
   param.controlDebug = debug;
+
+  // information block 
+  MPI_Barrier(MPI_COMM_WORLD);
+  if (!comm_rank)
+     std::cout << "ROCSTAR_DRIVER: Starting."
+               << std::endl;
+  // end of information block
 
   // Read in rocman config files to initialize param
   RocmanControl_parameters  *rocman_param_ptr = new RocmanControl_parameters;
   RocmanControl_parameters  &rocman_param = *rocman_param_ptr;
   rocman_param.read( param.communicator, comm_rank);
   rocman_param.remeshed = remeshed;
+
 
   if ( comm_rank == 0 ) {
     if(debug)
@@ -586,6 +593,14 @@ void rocstar_driver( int verb, int remeshed, bool debug) {
     //    COM_set_debug( debug);
   }
 
+  // information block 
+  MPI_Barrier(MPI_COMM_WORLD);
+  if (!comm_rank)
+     std::cout << "ROCSTAR_DRIVER: Read rocman parameters successfully."
+               << std::endl;
+  // end of information block
+
+
   MPI_Barrier(MPI_COMM_WORLD);
   //  if(!comm_rank)
   //    std::cout << "Rocstar: creating coupling." << std::endl;
@@ -597,7 +612,22 @@ void rocstar_driver( int verb, int remeshed, bool debug) {
       std::cerr << "Rocstar: Error: No coupling created. Exiting." << std::endl;
     return;
   }
+
+  // information block 
+  MPI_Barrier(MPI_COMM_WORLD);
+  if (!comm_rank)
+     std::cout << "ROCSTAR_DRIVER: Coupling was created successfully."
+               << std::endl;
+  // end of information block
+
   coup->schedule();
+
+  // information block 
+  MPI_Barrier(MPI_COMM_WORLD);
+  if (!comm_rank)
+     std::cout << "ROCSTAR_DRIVER: Coupling action was scheduled successfully."
+               << std::endl;
+  // end of information block
 
   //  std::cout << "Rocstar(" << comm_rank << "): coupling created." << std::endl;
   MPI_Barrier(MPI_COMM_WORLD);
@@ -624,6 +654,13 @@ void rocstar_driver( int verb, int remeshed, bool debug) {
     std::cout << "Rocstar: The maximum number of PC-iterations is " << param.maxNumPredCorrCycles << std::endl;
   }
   
+  // information block 
+  MPI_Barrier(MPI_COMM_WORLD);
+  if (!comm_rank)
+     std::cout << "ROCSTAR_DRIVER: All service modules were loaded successfully."
+               << std::endl;
+  // end of information block
+
   // in case of restarting, reset cur_step and current_time from Restart.txt
   coup->read_restart_info();
   
@@ -631,10 +668,24 @@ void rocstar_driver( int verb, int remeshed, bool debug) {
   if(!comm_rank && debug)
     std::cout << "Rocstar: Read restart information, initializing" << std::endl;
 
+  // information block 
+  MPI_Barrier(MPI_COMM_WORLD);
+  if (!comm_rank)
+     std::cout << "ROCSTAR_DRIVER: Restart check performed successfully."
+               << std::endl;
+  // end of information block
+
   // call input, init and run_initactions
   coup->initialize();
-  
+ 
+  // information block 
+  MPI_Barrier(MPI_COMM_WORLD);
+  if (!comm_rank)
+     std::cout << "ROCSTAR_DRIVER: Coupling action was initialized successfully."
+               << std::endl;
+  // end of information block
   //  std::cout << "Rocstar(" << comm_rank << "): Coupling initialized." << std::endl;
+
   MPI_Barrier(MPI_COMM_WORLD);
   //  if(!comm_rank)
   //    std::cout << "Rocstar: All couplings initd" << std::endl;
@@ -654,6 +705,13 @@ void rocstar_driver( int verb, int remeshed, bool debug) {
   MPI_Barrier(param.communicator);
   param.LastOutputTime = param.current_time;
   param.LastOutputStep = param.cur_step;
+
+  // information block 
+  MPI_Barrier(MPI_COMM_WORLD);
+  if (!comm_rank)
+     std::cout << "ROCSTAR_DRIVER: Integral, distances and restart files updated successfully."
+               << std::endl;
+  // end of information block
   
   if (comm_rank == 0 && verb > 0) {
     std::cout << "Rocstar: Starting with step " << param.cur_step+1 << ", at time " << param.current_time << std::endl;

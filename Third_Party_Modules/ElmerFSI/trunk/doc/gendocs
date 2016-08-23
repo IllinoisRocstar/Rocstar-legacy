@@ -1,0 +1,3 @@
+./cleandocs
+doxygen ElmerModuleDriver.cfg
+tar zcvf elmermoduledriver_html_docs.tgz html

@@ -436,6 +436,7 @@ void Agent::callMethod(Scheduler_voidfn1_t fn, double t)
   unsigned int i;
 
   (bcInitScheduler.*fn)( t);
+
   for (i=0; i<bcScheduler.size(); i++)  {
 	(bcScheduler[i]->*fn)( t);
   }

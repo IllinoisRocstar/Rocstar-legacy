@@ -209,15 +209,15 @@ void Coupling::init( double t, double dt, int reinit) {
     // in warm restart, reset scheduler so that it can be re-inited
   if (reinit)
     callMethod(&Scheduler::restarting, t);
-
+  
   callMethod(&Scheduler::init_actions, t);
+
 }
 
 // invoke method fn to all schedulers, and all schedulers of agents
 void Coupling::callMethod(Scheduler_voidfn1_t fn, double t)
 {
   int i, n;
-
   (init_scheduler.*fn)( t);
 
   for ( i=0, n=agents.size(); i<n; ++i) 
@@ -363,7 +363,6 @@ void Coupling::initialize(int reinit)
   // reset rocface if restart
   if (reinit)
      reload_rocface(rocmanparam);   
-
   // initialize each modules by executing init schedulers
   run_initactions( param->current_time, param->time_step);
 }

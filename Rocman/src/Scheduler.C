@@ -323,7 +323,7 @@ void Scheduler::sanityCheck()
 
 void Scheduler::init_actions(double t)
 {
-  COM_assertion_msg(scheduled, "RROR: Scheduler has not been scheduled.\n");
+  COM_assertion_msg(scheduled, "ERROR: Scheduler has not been scheduled.\n");
   if (inited) return;
   inited = 1;
 
@@ -332,18 +332,20 @@ void Scheduler::init_actions(double t)
   for (aitem = sort.begin(); aitem!=sort.end(); aitem++) 
   {
     ActionItem *item = *aitem;
+    
     item->action()->init(t);
   }
 }
 
 void Scheduler::run_actions(double t, double dt)
 {
-  COM_assertion_msg(scheduled, "RROR: Scheduler has not been scheduled when calling run_actions.\n");
+  COM_assertion_msg(scheduled, "ERROR: Scheduler has not been scheduled when calling run_actions.\n");
   // do at sorted order
   ActionList::iterator aitem;
   for (aitem = sort.begin(); aitem!=sort.end(); aitem++) 
   {
     ActionItem *item = *aitem;
+    //std::cout << "Name of action : " << item->name() << std::endl;
     item->action()->run(t, dt, alphaT);
   }
 }
