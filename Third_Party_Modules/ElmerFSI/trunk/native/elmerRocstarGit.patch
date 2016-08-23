@@ -1,0 +1,277 @@
+From 8d28aaf16a9524cd3b1609744f9e31aeee1e378f Mon Sep 17 00:00:00 2001
+From: Masoud Safdari <msafdari@illinoisrocstar.com>
+Date: Tue, 23 Aug 2016 10:58:40 -0500
+Subject: [PATCH] Changes to Elmer to make it Rocstar-enabled
+
+---
+ CMakeLists.txt                     |  2 +-
+ elmergrid/src/CMakeLists.txt       |  4 ++--
+ elmergrid/src/metis/CMakeLists.txt |  4 ++--
+ fem/CMakeLists.txt                 |  1 +
+ fem/src/CMakeLists.txt             | 16 +++++++++-------
+ fem/src/SParIterComm.F90           | 10 +++++-----
+ fem/src/Types.F90                  | 11 +++++++++++
+ fem/src/modules/CMakeLists.txt     |  4 ++--
+ fem/src/view3d/CMakeLists.txt      |  2 +-
+ fem/tests/test_macros.cmake        | 36 +++++++++++++++++++-----------------
+ 10 files changed, 53 insertions(+), 37 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0469c7d..9708c85 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -45,7 +45,7 @@ ENDIF()
+ 
+ MARK_AS_ADVANCED(ELMER_INSTALL_LIB_DIR)
+ 
+-ENABLE_TESTING()
++#ENABLE_TESTING()
+ 
+ SET(ELMER_FEM_MAJOR_VERSION 8)
+ SET(ELMER_FEM_MINOR_VERSION 0)
+diff --git a/elmergrid/src/CMakeLists.txt b/elmergrid/src/CMakeLists.txt
+index b5e8888..eecb25e 100755
+--- a/elmergrid/src/CMakeLists.txt
++++ b/elmergrid/src/CMakeLists.txt
+@@ -20,8 +20,8 @@ SET(elmergrid_SRCS common.h femdef.h femelmer.h femfilein.h
+   feminfo.c femknot.c femmesh.c fempre.c femsolve.c femtools.c
+   nrutil.c)
+ 
+-INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/elmergrid/src/metis)
+-INCLUDE_DIRECTORIES(${CMAKE_BINARY_DIR}/elmergrid/src)
++INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/elmerfem/elmergrid/src/metis)
++INCLUDE_DIRECTORIES(${CMAKE_BINARY_DIR}/elmerfem/elmergrid/src)
+ 
+ ADD_DEFINITIONS(-DDISABLE_MATC)
+ 
+diff --git a/elmergrid/src/metis/CMakeLists.txt b/elmergrid/src/metis/CMakeLists.txt
+index 753ab04..9fce584 100755
+--- a/elmergrid/src/metis/CMakeLists.txt
++++ b/elmergrid/src/metis/CMakeLists.txt
+@@ -9,8 +9,8 @@ SET(metis_SRCS balance.c bucketsort.c ccgraph.c coarsen.c compress.c
+   pqueue.c proto.h refine.c rename.h separator.c sfm.c srefine.c
+   stat.c struct.h subdomains.c timing.c util.c)
+ 
+-INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/elmergrid/src/metis)
+-INCLUDE_DIRECTORIES(${CMAKE_BINARY_DIR}/elmergrid/src/metis)
++INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/elmerfem/elmergrid/src/metis)
++INCLUDE_DIRECTORIES(${CMAKE_BINARY_DIR}/elmerfem/elmergrid/src/metis)
+ 
+ ADD_LIBRARY(metis ${metis_SRCS})
+ 
+diff --git a/fem/CMakeLists.txt b/fem/CMakeLists.txt
+index 4c92f74..6c25575 100644
+--- a/fem/CMakeLists.txt
++++ b/fem/CMakeLists.txt
+@@ -51,6 +51,7 @@ ENDIF()
+ 
+ CONFIGURE_FILE(config.h.cmake config.h)
+ 
++INCLUDE_DIRECTORIES("${CMAKE_CURRENT_BINARY_DIR}")
+ INCLUDE_DIRECTORIES("${PROJECT_BINARY_DIR}")
+ ADD_SUBDIRECTORY(src)
+ ADD_SUBDIRECTORY(tests)
+diff --git a/fem/src/CMakeLists.txt b/fem/src/CMakeLists.txt
+index f99fc92..3c55153 100644
+--- a/fem/src/CMakeLists.txt
++++ b/fem/src/CMakeLists.txt
+@@ -55,8 +55,8 @@ SET_PROPERTY(SOURCE MaxwellAxiS.F90 PROPERTY
+   #)
+ #ENDFOREACH()
+ 
+-INCLUDE_DIRECTORIES("${CMAKE_BINARY_DIR}/fem/src")
+-INCLUDE_DIRECTORIES("${CMAKE_SOURCE_DIR}/fhutiter/src")
++INCLUDE_DIRECTORIES("${CMAKE_BINARY_DIR}/elmerfem/fem/src")
++INCLUDE_DIRECTORIES("${CMAKE_SOURCE_DIR}/elmerfem/fhutiter/src")
+ INCLUDE_DIRECTORIES("${CMAKE_CURRENT_BINARY_DIR}/binio")
+ IF(HAVE_EIO)
+   INCLUDE_DIRECTORIES("${PROJECT_BINARY_DIR}/eio/src")
+@@ -100,15 +100,15 @@ CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/elmerld.in.cmake
+ 
+ # Copy elements.def and SOLVER.KEYWORDS (to enable testing)
+ CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/elements.def 
+-  ${CMAKE_CURRENT_BINARY_DIR}/elements.def COPYONLY)
++  ${CMAKE_BINARY_DIR}/lib/elements.def COPYONLY)
+ CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/SOLVER.KEYWORDS
+-  ${CMAKE_CURRENT_BINARY_DIR}/SOLVER.KEYWORDS COPYONLY)
++  ${CMAKE_BINARY_DIR}/lib/SOLVER.KEYWORDS COPYONLY)
+ 
+ IF (NOT MPI_FOUND)
+   FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/mpif_stub.h 
+-            DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+-  FILE(RENAME ${CMAKE_CURRENT_BINARY_DIR}/mpif_stub.h
+-              ${CMAKE_CURRENT_BINARY_DIR}/mpif.h)
++            DESTINATION ${CMAKE_BINARY_DIR})
++  FILE(RENAME ${CMAKE_BINARY_DIR}/mpif_stub.h
++              ${CMAKE_BINARY_DIR}/mpif.h)
+ ENDIF()
+ 
+ ADD_LIBRARY(mpi_stubs SHARED mpif_stubs.F90)
+@@ -290,3 +290,5 @@ IF(WITH_MPI)
+     \${CMAKE_INSTALL_PREFIX}/bin/ElmerSolver.exe)")
+   ENDIF()
+ ENDIF()
++
++ADD_SUBDIRECTORY(ElmerModule)
+diff --git a/fem/src/SParIterComm.F90 b/fem/src/SParIterComm.F90
+index 9d4b960..84799da 100644
+--- a/fem/src/SParIterComm.F90
++++ b/fem/src/SParIterComm.F90
+@@ -132,12 +132,12 @@ CONTAINS
+     ParEnv % ActiveComm = MPI_COMM_WORLD
+ 
+     ierr = 0
+-    CALL MPI_INIT( ierr )
++!    CALL MPI_INIT( ierr )
+     IF ( ierr /= 0 ) RETURN
+ 
+     CALL MPI_COMM_SIZE( MPI_COMM_WORLD, ParEnv % PEs, ierr )
+     IF ( ierr /= 0 ) THEN
+-       CALL MPI_Finalize( ierr )
++!       CALL MPI_Finalize( ierr )
+     ELSE
+        CALL MPI_COMM_RANK( MPI_COMM_WORLD, ParEnv % MyPE, ierr )
+        OutputPE = ParEnv % MyPe
+@@ -1998,7 +1998,7 @@ tstart = realtime()
+            !---------------------------------------------------
+            WRITE(*,'(A,I4,A,I6)') 'SParIterGlobalNumbering: PE:', ParEnv % MyPE+1, &
+                 ' Could not determine owner for node(loc)=', i
+-           CALL MPI_FINALIZE( ierr )
++!           CALL MPI_FINALIZE( ierr )
+         END IF
+         !
+         ! Finalize by sorting the parent table:
+@@ -2377,7 +2377,7 @@ tstart = realtime()
+      Iterate = Iterate+1
+      IF(Iterate > MaxIterates ) THEN
+         WRITE(*,'(A,I6,A)') 'SParIterGlobalNumbering: PE: ', ParEnv % MyPE+1,'Max iterations exceeded'
+-        CALL MPI_FINALIZE( MPI_COMM_WORLD, ierr )
++!        CALL MPI_FINALIZE( MPI_COMM_WORLD, ierr )
+      END IF
+      DO i = n, Mesh % NumberOfNodes
+         Mesh % ParallelInfo % GlobalDOFs(i) = 0
+@@ -4679,7 +4679,7 @@ SUBROUTINE ParEnvFinalize()
+ 
+   !*********************************************************************
+   CALL MPI_BARRIER( MPI_COMM_WORLD, ierr )
+-  CALL MPI_FINALIZE( ierr )
++!  CALL MPI_FINALIZE( ierr )
+ 
+   IF ( ierr /= 0 ) THEN
+      WRITE( Message, * ) 'MPI Finalization failed ! (ierr=', ierr, ')'
+diff --git a/fem/src/Types.F90 b/fem/src/Types.F90
+index c112aee..bcea511 100644
+--- a/fem/src/Types.F90
++++ b/fem/src/Types.F90
+@@ -699,6 +699,13 @@ END INTERFACE
+     TYPE Model_t
+ !------------------------------------------------------------------------------
+ !
++!    Map from elmer's nodes to my nodes for UDF
++     INTEGER, POINTER :: ElmerToMyNodes(:)
++!    Loads at the nodes to pass to UDF
++     DOUBLE PRECISION, POINTER :: NodeLoadsPass(:,:)
++!    Two values used for testing in the UDF
++     LOGICAL :: GetTestLoads = .TRUE., UDFUsed = .FALSE.
++!
+ !     Coodrinate system dimension + type
+ !
+       INTEGER :: DIMENSION, CoordinateSystem
+@@ -809,6 +816,10 @@ END INTERFACE
+     TYPE(Model_t),  POINTER :: CurrentModel
+     TYPE(Matrix_t), POINTER :: GlobalMatrix
+ 
++    !Communicator passed in by IMPACT
++    INTEGER :: ElmerModuleComm = 0 
++    !File id for writing parallel output
++    INTEGER :: writeID = 6 
+ 
+ !------------------------------------------------------------------------------
+ END MODULE Types
+diff --git a/fem/src/modules/CMakeLists.txt b/fem/src/modules/CMakeLists.txt
+index 34fb66e..2104b02 100644
+--- a/fem/src/modules/CMakeLists.txt
++++ b/fem/src/modules/CMakeLists.txt
+@@ -1,6 +1,6 @@
+ 
+-INCLUDE_DIRECTORIES("${CMAKE_BINARY_DIR}/fem/src")
+-INCLUDE_DIRECTORIES("${CMAKE_SOURCE_DIR}/hutiter/include")
++INCLUDE_DIRECTORIES("${CMAKE_BINARY_DIR}/elmerfem/fem/src")
++INCLUDE_DIRECTORIES("${CMAKE_SOURCE_DIR}/elmerfem/hutiter/include")
+ 
+ FILE(GLOB SRC_FILES *.F90)
+ 
+diff --git a/fem/src/view3d/CMakeLists.txt b/fem/src/view3d/CMakeLists.txt
+index 52299b5..d649a37 100644
+--- a/fem/src/view3d/CMakeLists.txt
++++ b/fem/src/view3d/CMakeLists.txt
+@@ -3,6 +3,6 @@ SET(view3d_SOURCES ViewFactors.c TestModel.c
+     BiQuadraticUtil.c BiCubicUtil.c RayTrace.c 
+     VectorUtil.c LUDecomp.c 2d_4node.c 16node_quad.c second.c)
+ 
+-INCLUDE_DIRECTORIES("${CMAKE_SOURCE_DIR}/fem/src/view3d")
++INCLUDE_DIRECTORIES("${CMAKE_SOURCE_DIR}/elmerfem/fem/src/view3d")
+ INCLUDE_DIRECTORIES("${CMAKE_CURRENT_BINARY_DIR}")
+ ADD_LIBRARY(view3d STATIC ${view3d_SOURCES})
+diff --git a/fem/tests/test_macros.cmake b/fem/tests/test_macros.cmake
+index 124b896..98c666c 100644
+--- a/fem/tests/test_macros.cmake
++++ b/fem/tests/test_macros.cmake
+@@ -1,23 +1,23 @@
+ 
+ 
+ MACRO(ADD_ELMER_TEST test_name)
+-  ADD_TEST(NAME ${test_name}
+-    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+-    COMMAND ${CMAKE_COMMAND}
+-      -DELMERGRID_BIN=${ELMERGRID_BIN}
+-      -DELMERSOLVER_BIN=${ELMERSOLVER_BIN}
+-      -DFINDNORM_BIN=${FINDNORM_BIN}
+-      -DMESH2D_BIN=${MESH2D_BIN}
+-      -DTEST_SOURCE=${CMAKE_CURRENT_SOURCE_DIR}
+-      -DPROJECT_SOURCE_DIR=${PROJECT_SOURCE_DIR}
+-      -DBINARY_DIR=${CMAKE_BINARY_DIR}
+-      -DCMAKE_Fortran_COMPILER=${CMAKE_Fortran_COMPILER}
+-      -DMPIEXEC=${MPIEXEC}
+-      -DMPIEXEC_NUMPROC_FLAG=${MPIEXEC_NUMPROC_FLAG}
+-      -DMPIEXEC_PREFLAGS=${MPIEXEC_PREFLAGS}
+-      -DMPIEXEC_POSTFLAGS=${MPIEXEC_POSTFLAGS}
+-      -DWITH_MPI=${WITH_MPI}
+-      -P ${CMAKE_CURRENT_SOURCE_DIR}/runtest.cmake)
++#  ADD_TEST(NAME ${test_name}
++#    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
++#    COMMAND ${CMAKE_COMMAND}
++#      -DELMERGRID_BIN=${ELMERGRID_BIN}
++#      -DELMERSOLVER_BIN=${ELMERSOLVER_BIN}
++#      -DFINDNORM_BIN=${FINDNORM_BIN}
++#      -DMESH2D_BIN=${MESH2D_BIN}
++#      -DTEST_SOURCE=${CMAKE_CURRENT_SOURCE_DIR}
++#      -DPROJECT_SOURCE_DIR=${PROJECT_SOURCE_DIR}
++#      -DBINARY_DIR=${CMAKE_BINARY_DIR}/elmerfem/
++#      -DCMAKE_Fortran_COMPILER=${CMAKE_Fortran_COMPILER}
++#      -DMPIEXEC=${MPIEXEC}
++#      -DMPIEXEC_NUMPROC_FLAG=${MPIEXEC_NUMPROC_FLAG}
++#      -DMPIEXEC_PREFLAGS=${MPIEXEC_PREFLAGS}
++#      -DMPIEXEC_POSTFLAGS=${MPIEXEC_POSTFLAGS}
++#      -DWITH_MPI=${WITH_MPI}
++#      -P ${CMAKE_CURRENT_SOURCE_DIR}/runtest.cmake)
+ ENDMACRO()
+ 
+ 
+@@ -63,11 +63,13 @@ MACRO(RUN_ELMER_TEST)
+   ENDIF(WIN32)
+ 
+   IF(WITH_MPI)
++    MESSAGE(" ${MPIEXEC} ${MPIEXEC_NUMPROC_FLAG} 1 ${MPIEXEC_PREFLAGS} ${ELMERSOLVER_BIN} ${MPIEXEC_POSTFLAGS}")
+     EXECUTE_PROCESS(COMMAND ${MPIEXEC} ${MPIEXEC_NUMPROC_FLAG} 1 ${MPIEXEC_PREFLAGS} ${ELMERSOLVER_BIN} ${MPIEXEC_POSTFLAGS}
+       OUTPUT_FILE "test-stdout.log"
+       ERROR_FILE "test-stderr.log"
+       OUTPUT_VARIABLE TESTOUTPUT)
+   ELSE()      
++    MESSAGE("${ELMERSOLVER_BIN}")
+     EXECUTE_PROCESS(COMMAND ${ELMERSOLVER_BIN}
+       OUTPUT_FILE "test-stdout.log"
+       ERROR_FILE "test-stderr.log"
+-- 
+1.8.3.1
+

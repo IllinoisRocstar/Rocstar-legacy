@@ -4,8 +4,17 @@ echo "In patch script for elmerfem"
 setenv runDir $1
 setenv srcDir $2
 setenv buildDir $3
-# patching elmerfem
+# patching elmerfem (NEW) : START
+cd $srcDir/elmerfem/
+git apply $srcDir/Third_Party_Modules/ElmerFSI/trunk/native/elmerRocstarGit.patch
 cd $srcDir/elmerfem/fem/src/
 ln -s $srcDir/Third_Party_Modules/ElmerFSI/trunk/native/ ./ElmerModule
-patch < ElmerModule/ElmerPatch
+# patching elmerfem (NEW) : END
+
+# patching elmerfem (OLD) : START
+#cd $srcDir/elmerfem/fem/src/
+#ln -s $srcDir/Third_Party_Modules/ElmerFSI/trunk/native/ ./ElmerModule
+#patch < ElmerModule/ElmerPatch
+# patching elmerfem (OLD) : END
+
 cd $buildDir
