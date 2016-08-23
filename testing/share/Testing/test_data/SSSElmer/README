@@ -1,0 +1,5 @@
+To pass this test
+-----------------
+Before running 'make test', Make sure to set ELMER_HOME and ELMER_LIB enviroment variables to
+{CMAKE_BINARY_DIR}/lib
+folder, where CMAKE_BINARY_DIR is the full address to the build folder you have selected.
