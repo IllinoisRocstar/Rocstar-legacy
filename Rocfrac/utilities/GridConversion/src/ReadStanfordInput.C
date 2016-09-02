@@ -4,6 +4,7 @@ namespace GridConversion{ namespace DriverProgram{
 
   int SerialProgram::ReadStanfordInput(){
 
+      FunctionEntry("ReadStanfordInput");
       std::ostringstream Ostr;
 
       // Open the specified input file for reading
@@ -20,7 +21,7 @@ namespace GridConversion{ namespace DriverProgram{
         ErrOstr.str("");
         // don't forget to tell the profiler/stacker the
         // function is exiting.
-        FunctionExit("Run");
+        FunctionExit("ReadStanfordInput");
         return(1);
       }
 
@@ -209,7 +210,7 @@ namespace GridConversion{ namespace DriverProgram{
         ErrOstr.str("");
         // don't forget to tell the profiler/stacker the
         // function is exiting.
-        FunctionExit("Run");
+        FunctionExit("ReadStanfordInput");
         return(1);
       }
 
@@ -255,7 +256,7 @@ namespace GridConversion{ namespace DriverProgram{
           ErrOstr.str("");
           // don't forget to tell the profiler/stacker the
           // function is exiting.
-          FunctionExit("Run");
+          FunctionExit("ReadStanfordInput");
           return(1);
         }
       
@@ -304,7 +305,7 @@ namespace GridConversion{ namespace DriverProgram{
             ErrOstr.str("");
             // don't forget to tell the profiler/stacker the
             // function is exiting.
-            FunctionExit("Run");
+            FunctionExit("ReadStanfordInput");
             return(1);
           }
           //std::cout << std::endl;
@@ -317,6 +318,7 @@ namespace GridConversion{ namespace DriverProgram{
       StdOut(Ostr.str());
       Ostr.str("");
 
+      FunctionExit("ReadStanfordInput");
     return 0;
  
   } //ReadInput function

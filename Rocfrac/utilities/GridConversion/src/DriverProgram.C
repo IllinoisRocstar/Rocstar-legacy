@@ -28,7 +28,7 @@ namespace GridConversion {
       int error=0;        
 
       // Parse the input file
-      error = ReadInput();
+      error = ReadStanfordInput();
       if(error == 1){
         std::ostringstream ErrOstr;
         ErrOstr << "Error reading input file." << std::endl;
@@ -39,27 +39,88 @@ namespace GridConversion {
         exit(1);
       }
   
- 
-      // Populate nodal coordinates object with nodes vector
-      SolverUtils::Mesh::NodalCoordinates utilsNodes(numNodes,&nodes[0]);
+      //Print to check nodes
+      if(verblevel > 3){
+        Ostr << "nodes: " << std::endl;
+        for(int i=0; i < numNodes; i++){
+          Ostr << i+1 << ":" << std::endl;
+          for(int j=0; j < 3; j++){
+            Ostr << nodes[i*3 + j] << " ";
+          }
+          Ostr << std::endl;
+        }
+      }
+      StdOut(Ostr.str());
+      Ostr.str("");
+
+      //Print to check elems
+      if(verblevel > 3){
+        Ostr << "elements: " << std::endl;
+        for(int i=0; i < numElems; i++){
+          Ostr << i+1 << ":" << std::endl;
+          for(int j=0; j < numNodesPerElem; j++){
+            Ostr << elems[i*numNodesPerElem + j] << " ";
+          }
+          Ostr << std::endl;
+        }
+      }
+      StdOut(Ostr.str());
+      Ostr.str("");
+
+      //Print to check domains
+      if(verblevel > 3){
+        Ostr << "domains: " << std::endl;
+        for(int i=0; i < domains.size(); i++){
+          Ostr << i+1 << ":" << std::endl;
+          for(int j=0; j < domains[i].size(); j++){
+            Ostr << domains[i][j] << " ";
+          }
+          Ostr << std::endl;
+        }
+      }
+
+     StdOut(Ostr.str());
+     Ostr.str("");
+     std::cout << "line " << __LINE__ << std::endl;
 
       // Populate element connectivty with elems vector
       SolverUtils::Mesh::Connectivity utilsElems;
       utilsElems.AddElements(numElems, numNodesPerElem, elems);
+     std::cout << "line " << __LINE__ << std::endl;
 
       // Get a map of nodes to elements
       SolverUtils::Mesh::Connectivity nodesToElems;
       utilsElems.Sync();
       utilsElems.Inverse(nodesToElems,numNodes);
+     std::cout << "line " << __LINE__ << std::endl;
 
       // Populate domain connectivity with domain vectors
       SolverUtils::Mesh::Connectivity utilsDomains;
       for(int i=0; i < domains.size(); i++){
         utilsDomains.AddElement(domains[i]);
       }
+     std::cout << "line " << __LINE__ << std::endl;
+
+
+     StdOut(Ostr.str());
+     Ostr.str("");
+     std::cout << "line " << __LINE__ << std::endl;
+
+      //Print to check domain connectivity
+      if(verblevel > 3){
+        Ostr << "Domain connectivity: " << std::endl;
+        for(int i=0; i < utilsDomains.size(); i++){
+          Ostr << i << ":" << std::endl;
+          for(int j=0; j < utilsDomains[i].size(); j++){
+            Ostr << utilsDomains[i][j] << " ";
+          }
+          Ostr << std::endl;
+        }
+      }
+      StdOut(Ostr.str());
+      Ostr.str("");
 
       // Get a map of nodes to domains
-      SolverUtils::Mesh::Connectivity nodesToDomains;
       utilsDomains.Sync();
       utilsDomains.Inverse(nodesToDomains,numNodes);
 
@@ -82,6 +143,193 @@ namespace GridConversion {
           Ostr << i+1 << ": ";
           for(int j=0; j < nodesToDomains[i].size(); j++){
             Ostr << nodesToDomains[i][j] << " ";
+          }
+          Ostr << std::endl;
+        }
+      }
+      StdOut(Ostr.str());
+      Ostr.str("");
+
+      //If we have tet elements and the user specifies higher
+      //order then we need to make the tets quadratic      
+      if(quadratic){
+        if(numNodesPerElem != 4){
+          std::ostringstream ErrOstr;
+          ErrOstr << "Only 4 node tetrahedra can be made into" << std::endl
+                  << "quadratic elements!" << std::endl;
+          StdOut(Ostr.str());
+          Ostr.str("");
+          ErrOut(ErrOstr.str());
+          ErrOstr.str("");
+          exit(1);
+        }
+
+        //Create node to node map
+        ConnectivityMaps(nodesToElems);
+  
+        // Populate element to element edge for Solver Utils
+        SolverUtils::Mesh::Connectivity utilsElemToElemEdges;
+        utilsElemToElemEdges.AddElements(numElems, numEdgesPerElem, elemToElemEdges);
+        std::cout << "line " << __LINE__ << std::endl;
+
+        // Get a map of nodes to elements
+        SolverUtils::Mesh::Connectivity elemEdgeToElems;
+        utilsElemToElemEdges.Sync();
+        utilsElemToElemEdges.Inverse(elemEdgeToElems,numElemEdges);
+
+        //Print to check elemEdgesToElems
+        if(verblevel > 3){
+          Ostr << "Element edges to elements: " << std::endl;
+          for(int i=0; i < elemEdgeToElems.size(); i++){
+            Ostr << i+1 << ":" << std::endl;
+            for(int j=0; j < elemEdgeToElems[i].size(); j++){
+              Ostr << elemEdgeToElems[i][j] << " ";
+            }
+            Ostr << std::endl;
+          }
+          std::cout << "line " << __LINE__ << std::endl;
+        }
+ 
+        //Create higher order tets
+        HigherOrderTets(elemEdgeToElems,nodesToDomains);
+
+        //Print to check nodes
+        if(verblevel > 3){
+          Ostr << "(after higher order) nodes: " << std::endl;
+          for(int i=0; i < numNodes; i++){
+            Ostr << i+1 << ":" << std::endl;
+            for(int j=0; j < 3; j++){
+              Ostr << nodes[i*3 + j] << " ";
+            }
+            Ostr << std::endl;
+          }
+        }
+        StdOut(Ostr.str());
+        Ostr.str("");
+
+        //Print to check elems
+        if(verblevel > 3){
+          Ostr << "(after higher order) elements: " << std::endl;
+          for(int i=0; i < numElems; i++){
+            Ostr << i+1 << ":" << std::endl;
+            for(int j=0; j < numNodesPerElem; j++){
+              Ostr << elems[i*numNodesPerElem + j] << " ";
+            }
+            Ostr << std::endl;
+          }
+          std::cout << "line " << __LINE__ << std::endl;
+        }
+        StdOut(Ostr.str());
+        Ostr.str("");
+        std::cout << "line " << __LINE__ << std::endl;
+       
+        //Print to check domains
+        if(verblevel > 3){
+          Ostr << "(after higher order) domains: " << std::endl;
+          for(int i=0; i < domains.size(); i++){
+            Ostr << i+1 << ":" << std::endl;
+            for(int j=0; j < domains[i].size(); j++){
+              Ostr << domains[i][j] << " ";
+            }
+            Ostr << std::endl;
+          }
+        }
+
+      // Populate element connectivty with elems vector
+      SolverUtils::Mesh::Connectivity newUtilsElems;
+      newUtilsElems.AddElements(numElems, numNodesPerElem, elems);
+     std::cout << "line " << __LINE__ << std::endl;
+
+      // Get a map of nodes to elements
+      nodesToElems.clear();
+      newUtilsElems.Sync();
+      newUtilsElems.Inverse(nodesToElems,numNodes);
+     std::cout << "line " << __LINE__ << std::endl;
+
+      // Populate domain connectivity with domain vectors
+      SolverUtils::Mesh::Connectivity newUtilsDomains;
+      for(int i=0; i < domains.size(); i++){
+        newUtilsDomains.AddElement(domains[i]);
+      }
+     std::cout << "line " << __LINE__ << std::endl;
+
+
+     StdOut(Ostr.str());
+     Ostr.str("");
+     std::cout << "line " << __LINE__ << std::endl;
+
+      // Get a map of nodes to domains
+      nodesToDomains.clear();
+      newUtilsDomains.Sync();
+      newUtilsDomains.Inverse(nodesToDomains,numNodes);
+
+      // Print to check the nodes to elements
+      if(verblevel > 3){
+        Ostr << "Nodes to elements: " << std::endl;
+        for(int i=0; i < nodesToElems.size(); i++){
+          Ostr << i+1 << ": ";
+          for(int j=0; j < nodesToElems[i].size(); j++){
+            Ostr << nodesToElems[i][j] << " ";
+          }
+          Ostr << std::endl;
+        }
+      }
+
+      // Print to check the nodes to domains
+      if(verblevel > 3){
+        Ostr << "Nodes to domains: " << std::endl;
+        for(int i=0; i < nodesToDomains.size(); i++){
+          Ostr << i+1 << ": ";
+          for(int j=0; j < nodesToDomains[i].size(); j++){
+            Ostr << nodesToDomains[i][j] << " ";
+          }
+          Ostr << std::endl;
+        }
+      }
+      StdOut(Ostr.str());
+      Ostr.str("");
+
+
+      }//creating higher order tets 
+
+      //Populate elems to domains vector using nodes to domains
+      //loop over all the elements
+      elemsToDomains.resize(numElems);
+      for(int i=0; i < numElems; i++){
+        //std::cout << "elem " << i+1 << std::endl;
+        //loop over the nodes for the element
+        for(int j=0; j < numNodesPerElem; j++){
+          int node = elems[numNodesPerElem*i + j];
+          //std::cout << "node " << j+1 << " (" << node << ")" << std::endl;
+          node--;
+          //loop over the domains for that node
+          for(int k=0; k < nodesToDomains[node].size(); k++){
+            //std::cout << "domain " << k+1 << " (" 
+            //          << nodesToDomains[node][k] << ")" << std::endl;
+            bool newValue=true;
+            //See if the domain has been added yet
+            for(int l=0; l < elemsToDomains[i].size(); l++){
+              if(elemsToDomains[i][l] == nodesToDomains[node][k]){
+                newValue=false;
+                break;
+              }
+            }//loop over domains for elem
+            //add the domain to the elem
+            if(newValue){
+              //std::cout << "Adding domain" << std::endl;
+              elemsToDomains[i].push_back(nodesToDomains[node][k]);
+            }
+          }//loop over domains for node
+        }// loop over nodes for elem
+      }//loop over elements
+
+     // Print to check elems to domains
+      if(verblevel > 3){
+        Ostr << "Elems to domains: " << std::endl;
+        for(int i=0; i < elemsToDomains.size(); i++){
+          Ostr << i+1 << ": ";
+          for(int j=0; j < elemsToDomains[i].size(); j++){
+            Ostr << elemsToDomains[i][j] << " ";
           }
           Ostr << std::endl;
         }
@@ -151,7 +399,10 @@ namespace GridConversion {
           }
         }
       }
- 
+      StdOut(Ostr.str());
+      Ostr.str("");
+
+      std::cout << "line " << __LINE__ << std::endl; 
       // Populate the nodal bc vectors from the domain bc vectors
       nodeBCs.resize(numNodes);
       nodeBCValues.resize(numNodes);
@@ -161,15 +412,16 @@ namespace GridConversion {
         for(int j=0; j < domains[i].size(); j++){
           int node;
           node = domains[i][j]-1;
-          // nodes will get all bc flags for all the domains
           // they are on
           // loop over all the bc flags for this domain
           for(int k=0; k < domainBCs[i].size(); k++){
             bool newValue = true;
+            int type8BC=-1;
             // loop over all the bc flags for this node
             for(int l=0; l < nodeBCs[node].size(); l++){
               // if the node already has this bc & value skip it
               if(nodeBCs[node][l] == domainBCs[i][k]){
+                type8BC=l;
                 for(int m=0; m < domainBCValues[i][k].size(); m++){
                   if(domainBCValues[i][k][m] != nodeBCValues[node][l][m])
                     break;
@@ -181,13 +433,34 @@ namespace GridConversion {
             // if it is a new flag add it and its values to 
             // the node's vectors
             if(newValue){
-              nodeBCs[node].push_back(domainBCs[i][k]);
-              nodeBCValues[node].push_back(domainBCValues[i][k]); 
+              //nodes can have as many type 6 bcs as needed
+              if(domainBCs[i][k] == 6){
+                nodeBCs[node].push_back(domainBCs[i][k]);
+                nodeBCValues[node].push_back(domainBCValues[i][k]); 
+              }
+              //nodes can only have one type 8 bc which is determined
+              //by a "priority" number that is the last bc value number
+              if(domainBCs[i][k] == 8){
+                //the node doesn't have any type 8 bcs yet
+                int last = domainBCValues[i][k].size()-1;
+                if(type8BC == -1){
+                  nodeBCs[node].push_back(domainBCs[i][k]);
+                  nodeBCValues[node].push_back(domainBCValues[i][k]); 
+                }
+                //it does have a type 8 bc already & we should keep the one
+                //with the highest priority (here a higher priority means a
+                //lower number in the last value position)
+                else if(nodeBCValues[node][type8BC][last] > domainBCValues[i][k][last]){
+                  for(int l=0; l < nodeBCValues[node][type8BC].size(); l++)
+                    nodeBCValues[node][type8BC][l] = domainBCValues[i][k][l];
+                }
+              }//new type 8 bc
             }//it was a new bc flag for the node
           }//domain bc flag loop
         }// loop over nodes in domain
       } //loop over all domains
 
+      std::cout << "line " << __LINE__ << std::endl; 
       // Populate the nodal bc vectors from the edge bc vectors
       //loop over all edges
       for(int i=0; i < edges.size(); i++){
@@ -208,10 +481,12 @@ namespace GridConversion {
             bool newValue = true;
             //loop over all the bc flags for this edge
             for(int k=0; k < edgeBCs[i].size(); k++){
+              int type8BC=-1;
               // loop over all the bc flags for this node
               for(int l=0; l < nodeBCs[node].size(); l++){
                 // if the node already has this bc & value skip it
                 if(nodeBCs[node][l] == edgeBCs[i][k]){
+                  type8BC=l;
                   for(int m=0; m < edgeBCValues[i][k].size(); m++){
                     if(edgeBCValues[i][k][m] != nodeBCValues[node][l][m])
                       break;
@@ -223,14 +498,35 @@ namespace GridConversion {
               // if it is a new flag add it and its values to 
               // the node's vectors
               if(newValue){
-                nodeBCs[node].push_back(edgeBCs[i][k]);
-                nodeBCValues[node].push_back(edgeBCValues[i][k]); 
+                //nodes can have as many type 6 bcs as needed
+                if(edgeBCs[i][k] == 6){
+                  nodeBCs[node].push_back(edgeBCs[i][k]);
+                  nodeBCValues[node].push_back(edgeBCValues[i][k]); 
+                }
+                //nodes can only have one type 8 bc which is determined
+                //by a "priority" number that is the last bc value number
+                if(edgeBCs[i][k] == 8){
+                  int last = edgeBCValues[i][k].size()-1;
+                  //the node doesn't have any type 8 bcs yet
+                  if(type8BC == -1){
+                    nodeBCs[node].push_back(edgeBCs[i][k]);
+                    nodeBCValues[node].push_back(edgeBCValues[i][k]); 
+                  }
+                  //it does have a type 8 bc already & we should keep the one
+                  //with the highest priority (here a higher priority means a
+                  //lower number in the last value position)
+                  else if(nodeBCValues[node][type8BC][last] > edgeBCValues[i][k][last]){
+                    for(int l=0; l < nodeBCValues[node][type8BC].size(); l++)
+                      nodeBCValues[node][type8BC][l] = edgeBCValues[i][k][l];
+                  }
+                }//new type 8 bc
               }//it was a new bc flag for the node
             }//loop over the bcs for the edge 
           } //if the node is on the edge
         } //loop over all the nodes
       } //loop over all edges
 
+      std::cout << "line " << __LINE__ << std::endl; 
       // Print the nodal bcs to check
       if(verblevel > 3){
         Ostr << "nodal bcs: " << std::endl;
@@ -243,6 +539,7 @@ namespace GridConversion {
         }
       }
 
+      std::cout << "line " << __LINE__ << std::endl; 
       // Print the nodal bc values to check
       if(verblevel > 3){
         Ostr << "nodal bc values: " << std::endl;
@@ -256,24 +553,32 @@ namespace GridConversion {
           }
         }
       }
+      StdOut(Ostr.str());
+      Ostr.str("");
 
 
+      std::cout << "line " << __LINE__ << std::endl; 
       // Populate the element bc vectors from the nodal bc vectors
-      elemBCs.resize(numNodes);
-      elemBCValues.resize(numNodes);
+      elemBCs.resize(numElems);
+      elemBCValues.resize(numElems);
       //loop over all nodes
       for(int i=0; i < numNodes; i++){
+        std::cout << "node " << i+1 << std::endl;
         // loop over all elements for the node
         for(int j=0; j < nodesToElems[i].size(); j++){
           int elem;
           elem = nodesToElems[i][j]-1;
+          std::cout << "elem " << elem+1 << std::endl;
           // elems will get all bc flags for all the nodes
           // they contain
           // loop over all the bc flags for this node
+          std::cout << "line " << __LINE__ << std::endl; 
           for(int k=0; k < nodeBCs[i].size(); k++){
             bool newValue = true;
+            std::cout << "nodeBC " << nodeBCs[i][k] << std::endl;
             // loop over all the bc flags for this elem
             for(int l=0; l < elemBCs[elem].size(); l++){
+              std::cout << "elemBC " << elemBCs[elem][l] << std::endl;
               // if the elem already has this bc & value skip it
               if(elemBCs[elem][l] == nodeBCs[i][k]){
                 for(int m=0; m < nodeBCValues[i][k].size(); m++){
@@ -287,14 +592,17 @@ namespace GridConversion {
             // if it is a new flag add it and its values to 
             // the elem's vectors
             if(newValue){
+              std::cout << "newValue" << std::endl;
               elemBCs[elem].push_back(nodeBCs[i][k]);
               elemBCValues[elem].push_back(nodeBCValues[i][k]); 
             }//it was a new bc flag for the elem
           }//node bc flag loop
+          std::cout << "line " << __LINE__ << std::endl; 
         }// loop over elements for the node
       } //loop over all nodes
 
 
+      std::cout << "line " << __LINE__ << std::endl; 
       // Print the element bcs for a check
       if(verblevel > 3){
         Ostr << "elemBCs:" << std::endl;
@@ -306,6 +614,9 @@ namespace GridConversion {
           Ostr << std::endl;
         }
       }
+      StdOut(Ostr.str());
+      Ostr.str("");
+      std::cout << "line " << __LINE__ << std::endl; 
 
       // Print the element bc values for a check
       if(verblevel > 3){
@@ -320,8 +631,13 @@ namespace GridConversion {
           }
         }
       }
+      StdOut(Ostr.str());
+      Ostr.str("");
+
+      std::cout << "line " << __LINE__ << std::endl; 
       //Write the output file
       error = WriteOutput();
+      std::cout << "line " << __LINE__ << std::endl; 
       if(error == 1){
         std::ostringstream ErrOstr;
         ErrOstr << "Error writing output file." << std::endl;
@@ -331,8 +647,8 @@ namespace GridConversion {
         ErrOstr.str("");
         exit(1);
       }
-      
       StdOut(Ostr.str());
+      Ostr.str("");
       //
       // ---------- Program End -----------------
       
@@ -340,6 +656,7 @@ namespace GridConversion {
       // Update the stacker/profiler that we are exiting 
       // this function.
       FunctionExit("Run");
+      std::cout << "line " << __LINE__ << std::endl; 
       // return 0 for success
       return(0);
     };
