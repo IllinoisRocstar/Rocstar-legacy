@@ -51,7 +51,7 @@ namespace GridConversion{ namespace DriverProgram{
         numSS << std::setprecision(9) <<  std::scientific << nodes[3*i + 0]; 
         ePos = numSS.str().find("e");
         expPos = numSS.str().find_last_of("0");
-        if(expPos == numSS.str().size())
+        if(expPos == numSS.str().size()-1)
           exponent = "0";
         else
           exponent = numSS.str().substr(expPos+1,numSS.str().size());       
@@ -63,7 +63,7 @@ namespace GridConversion{ namespace DriverProgram{
         numSS << std::setprecision(9) <<  std::scientific << nodes[3*i + 1]; 
         ePos = numSS.str().find("e");
         expPos = numSS.str().find_last_of("0");
-        if(expPos == numSS.str().size())
+        if(expPos == numSS.str().size()-1)
           exponent = "0";
         else
           exponent = numSS.str().substr(expPos+1,numSS.str().size());       
@@ -75,7 +75,7 @@ namespace GridConversion{ namespace DriverProgram{
         numSS << std::setprecision(9) <<  std::scientific << nodes[3*i + 2]; 
         ePos = numSS.str().find("e");
         expPos = numSS.str().find_last_of("0");
-        if(expPos == numSS.str().size())
+        if(expPos == numSS.str().size()-1)
           exponent = "0";
         else
           exponent = numSS.str().substr(expPos+1,numSS.str().size());       
