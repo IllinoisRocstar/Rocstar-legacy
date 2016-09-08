@@ -53,6 +53,6 @@ target_link_libraries(Rocfrac Rocout Rocin Roccomf Roccom)
 
 ADD_EXECUTABLE(rfracprep ${PREP_SRCS})
 set_property(TARGET rfracprep PROPERTY LINKER_LANGUAGE Fortran)
-TARGET_LINK_LIBRARIES(rfracprep Rocout Rocin Roccomf Roccom ${METIS_LIB})
+TARGET_LINK_LIBRARIES(rfracprep Rocout Rocin Roccomf Roccom ${METIS_LIB} ${HDF5_LIB})
 
 INSTALL(TARGETS Rocfrac rfracprep RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)

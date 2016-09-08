@@ -42,6 +42,7 @@
 #include "Rocout.h"
 #include "Element_accessors.h"
 #include "Rocout_cgns.h"
+#include <unistd.h>
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 USE_COM_NAME_SPACE
