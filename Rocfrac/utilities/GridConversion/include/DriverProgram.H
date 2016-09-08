@@ -89,15 +89,31 @@ namespace GridConversion {
       ///
       void Initialize(){
         AddOption('h',"help");
+        //AddOption('q',"quadratic");
         AddOption('v',"verbosity",1);
         AddOption('o',"output",2,"filename");
-        AddArgument("input",1);
+        AddArgument("grid input> <bc input",1);
         AddHelp("help","Prints this long version of help.");
         AddHelp("output","Specifies the name of the output file.");
         std::ostringstream Ostr;
-        Ostr << "Mode-dependent input: Input <filename> for serial example"
-             << "\n\t\tprogram, or <number of divisions> for parallel example.";
-        AddArgHelp("input",Ostr.str());
+        //Ostr << "If using a mesh with tetrahedral elements, specifying" << std::endl
+        //     << "this flag will cause the application to change the 4 node" << std::endl
+        //     << " tetrahedra from input to 10 node quadratic tetrahedra";
+        //AddHelp("quadratic",Ostr.str());
+        Ostr.str("");
+        Ostr << "GridConversion requires two arguments in order:" << std::endl
+             << "                "
+             << "su2 grid file> <bc file> where the su2 is a grid" << std::endl
+             << "                 "
+             << "analysis file output from Pointwise in Stanford format." << std::endl
+             << "                "
+             << "The bc file indicates a Rocfrac boundary condition for "
+             << "each" << std::endl
+             << "                domain." << std::endl
+             << "                See the Grid Conversion User Manual for more "
+             << "information on" << std::endl
+             << "                the formats of these two files" << std::endl;
+        AddArgHelp("grid input> <bc input",Ostr.str());
         // The following commented string formation is kept around to 
         // illustrate the required tabs and newlines to make the output 
         // look proper:
@@ -174,6 +190,8 @@ namespace GridConversion {
       std::ofstream Ouf;
       /// Infile stream for input.
       std::ifstream Inf;
+      /// boolean for changing the elements to higher order
+      bool quadratic;
       /// number of nodes in mesh
       int numNodes;
       /// vector for holding nodal coordinates read from input
@@ -183,8 +201,22 @@ namespace GridConversion {
       /// vector to hold list of node bc values (these are different for
       /// each bc type - see the Rocfrac documentation for more clarification)
       std::vector< std::vector< std::vector<double> > > nodeBCValues;
+      // vector to hold the list of nodes to domains
+      SolverUtils::Mesh::Connectivity nodesToDomains;
+      /// number of element edges in mesh
+      int numElemEdges;
+      /// vector for holding element edges
+      std::vector<unsigned int> elemEdges;
+      /// number of nodes per element edge
+      int numNodesPerElemEdge;
+      /// map of elements to element edges
+      std::vector<unsigned int> elemToElemEdges;
+      //number of edges per element
+      int numEdgesPerElem;
       /// number of elements in mesh
       int numElems;
+      /// vector for holding node to node map
+      std::vector< std::vector<unsigned int> > nodeToNode;
       /// vector for holding element connectivies read from input
       std::vector<unsigned int> elems;
       /// vector to hold list of element bc values 
@@ -194,10 +226,14 @@ namespace GridConversion {
       std::vector< std::vector< std::vector<double> > > elemBCValues;
       /// number of nodes per element
       int numNodesPerElem;
+      /// vector to hold the domains for each element
+      std::vector< std::vector<int> >elemsToDomains;
       /// integer to denote the shape of elements used in the mesh
       int elemShape;
-      /// vector to hold the element shapes
+      /// vector to hold the element shapes (only used for Patran input format)
       std::vector<std::string> shapes;
+      /// number of domains in mesh
+      int numDomains;
       /// vector of vectors to hold the domains
       std::vector< std::vector<unsigned int> > domains;
       /// vector to hold list of domain bc flags
@@ -248,6 +284,7 @@ namespace GridConversion {
         //Initialize mesh values to 0
         numNodes = 0;
         numElems = 0;
+        numDomains = 0;
         numNodesPerElem = 0;
         elemShape = 0;
 
@@ -261,6 +298,11 @@ namespace GridConversion {
         shapes[7] = "triangular prism";
         shapes[8] = "hexahedron";
         shapes[9] = "pyramid";
+
+        // Check if we should create higher order elements
+        quadratic = false;
+        if(!_command_line.GetOption("quadratic").empty())
+          quadratic = true;        
 
         // Check if output file is specified
         output_name = _command_line.GetOption("output");
@@ -314,9 +356,24 @@ namespace GridConversion {
       /// 
       virtual int Run();
       ///
-      /// This function parses the input file.
+      /// This function parses a Patran format input file.
       /// 
-      virtual int ReadInput();
+      virtual int ReadPatranInput();
+      ///
+      /// This function parses a Stanford format input file.
+      /// 
+      virtual int ReadStanfordInput();
+      ///
+      /// This function creates higher order tets from linear tets.
+      /// (For now it only takes 4 node tets and creates only 10 node tets.
+      /// 
+      virtual int HigherOrderTets(SolverUtils::Mesh::Connectivity elemEdgeToElems,
+                                  SolverUtils::Mesh::Connectivity nodesToDomains);
+      ///
+      /// This function creates a few different connectivity maps
+      /// that are needed.
+      /// 
+      virtual int ConnectivityMaps(SolverUtils::Mesh::Connectivity nodesToElems);
       ///
       /// This function writes the output grid file
       /// 
