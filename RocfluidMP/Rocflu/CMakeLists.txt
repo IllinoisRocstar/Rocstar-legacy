@@ -704,13 +704,13 @@ SET( CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${BLAS_LINKER_FLAGS} ${L
 target_link_libraries(Rocflu Rocmop Roccomf Roccom ${LAPACK_LIBRARIES} ${BLAS_LIBRARIES} ${MPI_Fortran_LIBRARIES})
 
 add_executable(rfluinit ${INIT_SRCS})
-target_link_libraries(rfluinit Rocflu Rocmop Rocout Rocin Roccomf Roccom ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
+target_link_libraries(rfluinit Rocflu Rocmop Rocout Rocin Roccomf Roccom ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES} ${HDF5_LIB})
 
 add_executable(rflupart ${PART_SRCS})
-target_link_libraries(rflupart Rocflu Rocmop Rocout Rocin Roccomf Roccom ${METIS_LIB} ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
+target_link_libraries(rflupart Rocflu Rocmop Rocout Rocin Roccomf Roccom ${METIS_LIB} ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES} ${HDF5_LIB})
 
 add_executable(rflumap ${MAP_SRCS})
-target_link_libraries(rflumap Rocflu Rocmop Rocout Rocin Roccomf Roccom ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
+target_link_libraries(rflumap Rocflu Rocmop Rocout Rocin Roccomf Roccom ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES} ${HDF5_LIB} ${HDF5_LIB})
 
 SET_TARGET_PROPERTIES(Rocflu rfluinit rflupart rflumap PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS} ${MPI_Fortran_LINK_FLAGS}")
 #target_link_libraries(makeflo read write ${MFHDF_LIB} ${HDF4_LIB} ${JPEG_LIB} ${ZLIB})

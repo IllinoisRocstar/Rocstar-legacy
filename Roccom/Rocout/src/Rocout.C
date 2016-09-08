@@ -39,7 +39,7 @@
 #include "Rocout.h"
 #include "Rocout_hdf4.h"
 #ifdef USE_CGNS
-# include "Rocout_cgns.h"
+#include "Rocout_cgns.h"
 #endif // USE_CGNS
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS

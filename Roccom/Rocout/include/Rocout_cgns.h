@@ -26,7 +26,8 @@
 /*  Author John Norris
  *  Initial date:   Oct. 19, 2004
  */
-#if !defined(_ROCOUT_CGNS_H)
+#ifndef _ROCOUT_CGNS_H
+#define _ROCOUT_CGNS_H
 
 #include "roccom.h"
 #include <string>
