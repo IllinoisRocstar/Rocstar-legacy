@@ -40,11 +40,8 @@ find_library(ZLIB z)
 find_path(HDF4_INC hdf.h HINTS /usr/include/hdf)
 find_library(JPEG_LIB jpeg)
 find_library(PTHREAD_LIB pthread)
-
-IF(USE_CGNS)
-  find_path(HDF5_INC hdf5.h HINTS /usr/include)
-  find_library(HDF5_LIB hdf5 HINTS /usr/lib/ /usr/lib64/)
-ENDIF()
+find_path(HDF5_INC hdf5.h HINTS /usr/include)
+find_library(HDF5_LIB hdf5 HINTS /usr/lib/ /usr/lib64/)
 
 set (ROCIN_SRCS src/Rocin.C src/read_parameter_file.C)
 IF(NOGLOB)
