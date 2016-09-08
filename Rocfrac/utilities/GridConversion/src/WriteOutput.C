@@ -48,6 +48,7 @@ namespace GridConversion{ namespace DriverProgram{
       for(int i=0; i < numNodes; i++){
         ss << "1 " << i+1 << std::endl;
 
+        if(fabs(nodes[3*i+0]) > 1.0e-10){
         numSS << std::setprecision(9) <<  std::scientific << nodes[3*i + 0]; 
         ePos = numSS.str().find("e");
         expPos = numSS.str().find_last_of("0");
@@ -56,10 +57,22 @@ namespace GridConversion{ namespace DriverProgram{
         else
           exponent = numSS.str().substr(expPos+1,numSS.str().size());       
         output = numSS.str().substr(0,ePos+2) + exponent;
+        }
+        else{//we have to be careful with numbers that have two digit exponents
+        //in scientific notation because Rocfrac expects all numbers to take a  
+        //specific number of columns.
+          if(nodes[3*i+0] < 0.0)
+            numSS << std::setprecision(8) << std::scientific << nodes[3*i + 0];
+          else
+            numSS << std::setprecision(9) << std::scientific << nodes[3*i + 0];
+         
+          output = numSS.str();
+        }
         ss << std::setw(16) << output;
         numSS.str("");
         numSS.clear();
 
+        if(fabs(nodes[3*i+1]) > 1.0e-10){
         numSS << std::setprecision(9) <<  std::scientific << nodes[3*i + 1]; 
         ePos = numSS.str().find("e");
         expPos = numSS.str().find_last_of("0");
@@ -67,11 +80,23 @@ namespace GridConversion{ namespace DriverProgram{
           exponent = "0";
         else
           exponent = numSS.str().substr(expPos+1,numSS.str().size());       
-        output = numSS.str().substr(0,ePos+2) + exponent; 
+        output = numSS.str().substr(0,ePos+2) + exponent;
+        }
+        else{//we have to be careful with numbers that have two digit exponents
+        //in scientific notation because Rocfrac expects all numbers to take a  
+        //specific number of columns.
+          if(nodes[3*i+1] < 0.0)
+            numSS << std::setprecision(8) << std::scientific << nodes[3*i + 1];
+          else
+            numSS << std::setprecision(9) << std::scientific << nodes[3*i + 1];
+         
+          output = numSS.str();
+        }
         ss << std::setw(16) << output;
         numSS.str("");
         numSS.clear();
 
+        if(fabs(nodes[3*i+2]) > 1.0e-10){
         numSS << std::setprecision(9) <<  std::scientific << nodes[3*i + 2]; 
         ePos = numSS.str().find("e");
         expPos = numSS.str().find_last_of("0");
@@ -79,12 +104,23 @@ namespace GridConversion{ namespace DriverProgram{
           exponent = "0";
         else
           exponent = numSS.str().substr(expPos+1,numSS.str().size());       
-        output = numSS.str().substr(0,ePos+2) + exponent; 
+        output = numSS.str().substr(0,ePos+2) + exponent;
+        }
+        else{//we have to be careful with numbers that have two digit exponents
+        //in scientific notation because Rocfrac expects all numbers to take a  
+        //specific number of columns.
+          if(nodes[3*i+2] < 0.0)
+            numSS << std::setprecision(8) << std::scientific << nodes[3*i + 2];
+          else
+            numSS << std::setprecision(9) << std::scientific << nodes[3*i + 2];
+         
+          output = numSS.str();
+        }
         ss << std::setw(16) << output << std::endl;
         numSS.str("");
         numSS.clear();
-       
-         ss << "unused line" << std::endl;
+
+        ss << "unused line" << std::endl;
       }
     
       //Write Patran packet 2 element connectivities 
