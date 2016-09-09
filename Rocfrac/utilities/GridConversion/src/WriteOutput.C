@@ -206,6 +206,9 @@ namespace GridConversion{ namespace DriverProgram{
                 else
                   ss << "0";
               }//loop over nodes for the element
+              //Fill in with 0's at the end if we are using tet elements
+              if(numNodesPerElem == 4)
+                ss << "0000";
               ss << std::endl;
               for(int m=0; m < domainBCValues[domain][j].size(); m++)
                 ss << domainBCValues[domain][j][m] << " ";

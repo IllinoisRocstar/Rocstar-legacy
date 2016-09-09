@@ -151,7 +151,8 @@ namespace GridConversion {
       Ostr.str("");
 
       //If we have tet elements and the user specifies higher
-      //order then we need to make the tets quadratic      
+      //order then we need to make the tets quadratic     
+      //NOTE: This functionality is not complete!!!!!!!!!!! 
       if(quadratic){
         if(numNodesPerElem != 4){
           std::ostringstream ErrOstr;
@@ -295,17 +296,30 @@ namespace GridConversion {
       //Populate elems to domains vector using nodes to domains
       //loop over all the elements
       elemsToDomains.resize(numElems);
+      
+
       for(int i=0; i < numElems; i++){
-        //std::cout << "elem " << i+1 << std::endl;
+        std::map<int, int>domCount;
+        std::cout << "elem " << i+1 << std::endl;
         //loop over the nodes for the element
         for(int j=0; j < numNodesPerElem; j++){
           int node = elems[numNodesPerElem*i + j];
-          //std::cout << "node " << j+1 << " (" << node << ")" << std::endl;
+          std::cout << "node " << j+1 << " (" << node << ")" << std::endl;
           node--;
           //loop over the domains for that node
           for(int k=0; k < nodesToDomains[node].size(); k++){
-            //std::cout << "domain " << k+1 << " (" 
-            //          << nodesToDomains[node][k] << ")" << std::endl;
+            std::cout << "domain " << k+1 << " (" 
+                      << nodesToDomains[node][k] << ")" << std::endl;
+            int domain = nodesToDomains[node][k];
+            //We only want to add the domain if 3 or more of the element's
+            //nodes reside on it (i.e., an entire face of the element)
+            if( domCount.find(domain) == domCount.end() )
+              domCount[domain] = 1;
+            else
+              domCount[domain]++;
+
+            std::cout << "domCount = " << domCount[domain] << std::endl;
+ 
             bool newValue=true;
             //See if the domain has been added yet
             for(int l=0; l < elemsToDomains[i].size(); l++){
@@ -315,8 +329,8 @@ namespace GridConversion {
               }
             }//loop over domains for elem
             //add the domain to the elem
-            if(newValue){
-              //std::cout << "Adding domain" << std::endl;
+            if(newValue && domCount[domain] > 2){
+              std::cout << "Adding domain" << std::endl;
               elemsToDomains[i].push_back(nodesToDomains[node][k]);
             }
           }//loop over domains for node
