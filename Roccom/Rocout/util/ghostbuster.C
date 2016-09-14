@@ -37,6 +37,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <cgnslib.h>
+#include "Rocout.h"
 
 using namespace std;
 

@@ -94,7 +94,7 @@ ENDIF()
 # Utilities
 IF(ENABLE_CGNS)
   add_executable(ghostbuster util/ghostbuster.C)
-  target_link_libraries(ghostbuster Rocout ${MPI_CXX_LIBRARIES})
+  target_link_libraries(ghostbuster Rocout ${MPI_CXX_LIBRARIES} ${HDF5_LIB})
   IF(MPI_LINK_FLAGS)
     SET_TARGET_PROPERTIES(ghostbuster PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
   ENDIF()
