@@ -108,7 +108,7 @@ CONTAINS
     CALL COM_new_dataitem(surWin//'.uhat', 'n', COM_DOUBLE, 3, 'm')
 
 
-    CALL COM_new_dataitem(surWin//'.ts_alp', 'e', COM_DOUBLE, 1, 'Pa')
+    CALL COM_new_dataitem(surWin//'.ts_alp', 'e', COM_DOUBLE, 3, 'Pa')
     CALL COM_new_dataitem(surWin//'.bv','n',COM_INTEGER, 1, '')
     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
@@ -198,7 +198,7 @@ CONTAINS
           ALLOCATE(glb%InterfaceSFTotalNodalDisps(1:3,1:glb%InterfaceSFNumNodes))         
           ALLOCATE(glb%InterfaceSFNodalVels(1:3,1:glb%InterfaceSFNumNodes))
 !#OLD    ALLOCATE(glb%InterfaceSFElemTract(1:3,1:glb%InterfaceSFNumElems))
-          ALLOCATE(glb%InterfaceSFElemTract(1:glb%InterfaceSFNumElems))
+          ALLOCATE(glb%InterfaceSFElemTract(1:3*glb%InterfaceSFNumElems))
 !    IF(glb%ALEenabled)THEN
           ALLOCATE(glb%InterfaceSFVbar(1:3,1:glb%InterfaceSFNumNodes))
 
@@ -259,7 +259,7 @@ CONTAINS
              CALL COM_set_array( surWin//'.vs', pane, glb%InterfaceSFNodalVels,3)
              CALL COM_set_array( surWin//'.uhat', pane, glb%InterfaceSFTotalNodalDisps,3)
              
-             CALL COM_set_array( surWin//'.ts_alp', pane, glb%InterfaceSFElemTract, 1)
+             CALL COM_set_array( surWin//'.ts_alp', pane, glb%InterfaceSFElemTract, 3)
 
              IF (glb%ALEenabled) CALL COM_set_array( surWin//'.vbar_alp', pane, glb%InterfaceSFVbar,3)
 
@@ -438,7 +438,7 @@ CONTAINS
           ALLOCATE(glb%InterfaceSFnbTotalNodalDisps(1:3,1:glb%InterfaceSFnbNumNodes))         
           ALLOCATE(glb%InterfaceSFnbNodalVels(1:3,1:glb%InterfaceSFnbNumNodes))
 !#OLD    ALLOCATE(glb%InterfaceSFElemTract(1:3,1:glb%InterfaceSFNumElems))
-          ALLOCATE(glb%InterfaceSFnbElemTract(1:glb%InterfaceSFnbNumElems))
+          ALLOCATE(glb%InterfaceSFnbElemTract(1:3*glb%InterfaceSFnbNumElems))
 !    IF(glb%ALEenabled)THEN
           ALLOCATE(glb%InterfaceSFnbVbar(1:3,1:glb%InterfaceSFnbNumNodes))
 !   ALLOCATE(glb%InterfaceSVbar(1:3,1:glb%InterfaceSNumNodes)) ! needed?
@@ -494,7 +494,7 @@ CONTAINS
              CALL COM_set_array( surWin//'.vs', pane, glb%InterfaceSFnbNodalVels,3)
              CALL COM_set_array( surWin//'.uhat', pane, glb%InterfaceSFnbTotalNodalDisps,3)
              
-             CALL COM_set_array( surWin//'.ts_alp', pane, glb%InterfaceSFnbElemTract, 1)
+             CALL COM_set_array( surWin//'.ts_alp', pane, glb%InterfaceSFnbElemTract, 3)
 
              IF ( glb%ALEenabled) CALL COM_set_array( surWin//'.vbar_alp', pane, glb%InterfaceSFnbVbar,3)
 

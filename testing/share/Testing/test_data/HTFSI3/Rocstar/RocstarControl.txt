@@ -1,0 +1,8 @@
+CouplingScheme = SolidFluidSPC
+FluidModule = OpenFoam
+SolidModule = Rocfrac
+AutoRestart = False
+CurrentTimeStep = 5.0e-6
+MaximumTime = 5.0e-3
+ZoomFactor = 0.0
+OutputIntervalTime = 5.0e-05

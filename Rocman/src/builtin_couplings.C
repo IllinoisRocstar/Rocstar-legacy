@@ -165,10 +165,17 @@ SolidFluidSPC::SolidFluidSPC(
                                      solidBuf+".nc"));
 
     // INIT_INBUFF_FLUID 
-  fluid_agent->add_bcinitaction(new MeshMotionTransfer_SF(fluid_agent, 
+  if (fluidmodule == "OpenFoam") {
+     fluid_agent->add_bcinitaction(new MeshMotionTransfer_SF(fluid_agent, 
+                                    solid_agent,
+                                    solidBuf+".uhat", fluidBufNG+".total_disp",
+                                    fluidBufNG+".vm"));
+  } else {
+     fluid_agent->add_bcinitaction(new MeshMotionTransfer_SF(fluid_agent, 
                                     solid_agent,
                                     solidBuf+".u", fluidBufNG+".total_disp",
                                     fluidBufNG+".vm"));
+  }
 
   fluid_agent->add_bcinitaction( new DeformationVelTransfer_SF(
                                      fluid_agent, solid_agent, 

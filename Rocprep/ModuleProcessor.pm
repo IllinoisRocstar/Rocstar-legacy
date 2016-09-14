@@ -252,7 +252,7 @@ sub performExtract {
 
     foreach $fileName (keys(%$fileHash)) { #fileArray has the paths on the files already
 	$copyTo = $$fileHash{$fileName};
-        $error = system("cp $fileName $copyTo");
+        $error = system("cp -r $fileName $copyTo");
         if ($error) {
 	    $log->processErrorCode(26, $fileName);
 	    $result = $error;

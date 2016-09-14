@@ -1,0 +1,77 @@
+#!/bin/bash
+# This scripts patches and builds OpenFoam
+# Last Modified: Aug/23/1981
+
+# preliminary settings
+echo " "
+echo "> Welcome to builOF script v.1"
+echo "> This scripts patches OpenFoam for Rocstar compatability"
+echo "> and builds is accordingly."
+echo "> "
+echo "> " 
+
+# setting variables and updating log
+topSourceDir=`pwd`
+outLog=buildOF.log
+dateStamp="$(date)"
+echo "> ***************************************** <" 2>&1 | tee -a $outLog
+echo "> called at $dateStamp" 2>&1 | tee -a $outLog
+echo "> " 2>&1 | tee -a $outLog
+
+# checking OpenFoam patch status
+isPatched=true
+if [ ! -e ./foam/foam-extend-3.2/openFoamGitPatch ]; then 
+  echo "> OpenFoam source code is not patched yet." 2>&1 | tee -a $outLog
+  isPatched=false
+else
+  echo "> OpenFoam source is already patched." 2>&1 | tee -a $outLog
+fi
+
+# patching OpenFoam source code if needed
+if [ ! $isPatched ]; then
+  echo "> Patching OpenFoam source code..." 2>&1 | tee -a $outLog
+  echo "isPatched = $isPatched"
+  ./BuildTools/patchOF $topSourceDir 2>&1 | tee -a $outLog
+  if [ ${PIPESTATUS[0]} -ne 0 ]; then
+    echo "> Error in executing ./BuildTools/patchOF" 2>&1 | tee -a $outLog
+    exit 1
+  else 
+    echo "> OpenFoam patched successfully." 2>&1 | tee -a $outLog
+  fi 
+fi
+
+# checking openFoam build state
+isFirst=false
+if [ ! -e ./foam/foam-extend-3.2/isFirst ]; then
+  isFirst=true
+fi
+
+# building openFoam if needed
+ofWmakeLog=wmakeOF.log
+if $isFirst 
+then
+  echo "> Building OpenFoam for first time ..." 2>&1 | tee -a $outLog
+  echo "> check output at : $topSourceDir/$ofWmakeLog" 2>&1 | tee -a $outLog
+  ./BuildTools/buildOpenFoam $topSourceDir first 2>&1 | tee $ofWmakeLog
+else
+  echo "> Rebuilding OpenFoam ..." 2>&1 | tee -a $outLog
+  echo "> check output at : $topSourceDir/$ofWmakeLog" 2>&1 | tee -a $outLog
+  ./BuildTools/buildOpenFoam $topSourceDir 2>&1 | tee $ofWmakeLog
+fi
+
+# building OpenFoamModule
+ofModuleLog=ofModule.log
+if [ -d ./Third_Party_Modules/OpenFoamFSI/trunk/native ]; then
+  echo "> Building OpenFoam Module ..." 2>&1 | tee -a $outLog
+  cd ./Third_Party_Modules/OpenFoamFSI/trunk/native
+  wmake libso . 2>&1 | tee -a $topSourceDir/$ofModuleLog
+  if [ ${PIPESTATUS[0]} -ne 0 ]; then
+    echo "> Error in building OpenFoam Module" 2>&1 | tee -a $ofModuleLog
+    exit 1
+  else
+    echo "> OpenFoam Module is built successfully." 2>&1 | tee -a $ofModuleLog
+  fi
+  cd $topSourceDir
+fi
+
+exit 0

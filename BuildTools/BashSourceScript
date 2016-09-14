@@ -1,0 +1,17 @@
+# source the openfoam source file
+export RocstarTop=$1
+# setting the env variables for openFoam installation
+export FOAM_INST_DIR=$1/foam
+source $RocstarTop/foam/foam-extend-3.2/etc/bashrc
+if [ $? -ne 0 ]
+then
+  echo "Error: Unable to source $RocstarTop/foam/foam-extend-3.2/etc/bashrc"
+  exit 1
+fi
+# make set the mpi environment variables
+export CC=mpicc
+export CXX=mpicxx
+export FC=mpif90
+# set IRMULTIPHYSICS for compiling and running openfoam module & driver
+OFSupport="$RocstarTop/install"
+export IRMULTIPHYSICS=$OFSupport

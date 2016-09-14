@@ -1,0 +1,1029 @@
+From 0f5ddf5acf9caf534fcf00b8cbb4e7caf5d5c2a2 Mon Sep 17 00:00:00 2001
+From: Masoud Safdari <msafdari@ilrocstar26.illinois.rocstar>
+Date: Tue, 24 May 2016 11:40:00 -0500
+Subject: [PATCH] Patching openFoam to work with IMPACT in parallel mode
+
+---
+ Allwmake                                           |   9 +
+ ThirdParty/rpmBuild/SPECS/openmpi-1.4.1.spec       |   9 +-
+ ThirdParty/rpmBuild/SPECS/openmpi-1.4.3.spec       |   9 +-
+ ThirdParty/rpmBuild/SPECS/openmpi-1.5.spec         |   9 +-
+ ThirdParty/rpmBuild/SPECS/openmpi-1.6.3.spec       |   9 +-
+ ThirdParty/rpmBuild/SPECS/openmpi-1.6.5.spec       |   9 +-
+ ThirdParty/rpmBuild/SPECS/openmpi-1.8.4.spec       |   8 +-
+ ThirdParty/rpmBuild/SPECS/openmpi-1.8.8.spec       |   9 +-
+ .../icoFsiElasticNonLinULSolidFoam/Make/options    |   6 +-
+ etc/bashrc                                         |   5 +-
+ etc/cshrc                                          |   3 +-
+ src/foam/db/IOstreams/Pstreams/Pstream.C           |  67 +++
+ src/foam/db/IOstreams/Pstreams/Pstream.H           |   8 +
+ src/foam/global/argList/argList.C                  | 471 +++++++++++++++++++++
+ src/foam/global/argList/argList.H                  |  15 +
+ src/foam/global/argList/parRun.H                   |  13 +
+ wmake/Makefile                                     |   9 +-
+ wmake/rules/linux64Gcc/c++                         |   2 +-
+ 18 files changed, 627 insertions(+), 43 deletions(-)
+
+diff --git a/Allwmake b/Allwmake
+index 7447be4..b30ddc8 100755
+--- a/Allwmake
++++ b/Allwmake
+@@ -19,6 +19,15 @@ fi
+ # before compiling the rest of OpenFOAM
+ . $WM_PROJECT_DIR/etc/settings.sh
+ 
++# ElmerFoamFSI
++export ElmerFoamFSI_INC=$PINC
++echo "ElmerFoamFSI_INC=$ElmerFoamFSI_INC"
++echo "Current compilers :"
++echo "WM_CC=$WM_CC"
++echo "WM_CXX=$WM_CXX"
++# ElmerFoamFSI
++
++
+ # build OpenFOAM libraries and applications
+ src/Allwmake
+ applications/Allwmake
+diff --git a/ThirdParty/rpmBuild/SPECS/openmpi-1.4.1.spec b/ThirdParty/rpmBuild/SPECS/openmpi-1.4.1.spec
+index 163b76d..bd0dff9 100644
+--- a/ThirdParty/rpmBuild/SPECS/openmpi-1.4.1.spec
++++ b/ThirdParty/rpmBuild/SPECS/openmpi-1.4.1.spec
+@@ -88,12 +88,14 @@ Group: 			Development/Tools
+ 
+ %build
+     # export WM settings in a form that GNU configure recognizes
+-    [ -n "$WM_CC" ]         &&  export CC="$WM_CC"
+-    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX"
++    [ -n "$WM_CC" ]         &&  export CC="$WM_CC -fPIC"
++    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX -fPIC"
+     [ -n "$WM_CFLAGS" ]     &&  export CFLAGS="$WM_CFLAGS"
+     [ -n "$WM_CXXFLAGS" ]   &&  export CXXFLAGS="$WM_CXXFLAGS"
+     [ -n "$WM_LDFLAGS" ]    &&  export LDFLAGS="$WM_LDFLAGS"
+ 
++    export FC="gfortran -fPIC" 
++    export F90="gfortran -fPIC" 
+     unset mpiWith
+         # enable GridEngine if it appears to be in use
+     if [ -n "$SGE_ROOT" ]
+@@ -117,9 +119,6 @@ Group: 			Development/Tools
+         --disable-mpirun-prefix-by-default \
+         --disable-orterun-prefix-by-default \
+         --enable-shared --disable-static \
+-        --disable-mpi-f77 \
+-        --disable-mpi-f90 \
+-        --disable-mpi-cxx \
+         --disable-mpi-profile \
+         --without-slurm \
+         $mpiWith \
+diff --git a/ThirdParty/rpmBuild/SPECS/openmpi-1.4.3.spec b/ThirdParty/rpmBuild/SPECS/openmpi-1.4.3.spec
+index 7afc244..048d696 100644
+--- a/ThirdParty/rpmBuild/SPECS/openmpi-1.4.3.spec
++++ b/ThirdParty/rpmBuild/SPECS/openmpi-1.4.3.spec
+@@ -89,12 +89,14 @@ Group: 			Development/Tools
+ 
+ %build
+     # export WM settings in a form that GNU configure recognizes
+-    [ -n "$WM_CC" ]         &&  export CC="$WM_CC"
+-    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX"
++    [ -n "$WM_CC" ]         &&  export CC="$WM_CC -fPIC"
++    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX -fPIC"
+     [ -n "$WM_CFLAGS" ]     &&  export CFLAGS="$WM_CFLAGS"
+     [ -n "$WM_CXXFLAGS" ]   &&  export CXXFLAGS="$WM_CXXFLAGS"
+     [ -n "$WM_LDFLAGS" ]    &&  export LDFLAGS="$WM_LDFLAGS"
+ 
++    export FC="gfortran -fPIC" 
++    export F90="gfortran -fPIC" 
+     unset mpiWith
+     # Enable GridEngine if it appears to be in use
+     # If you don't want any integration with SGE, simply unset the SGE
+@@ -121,9 +123,6 @@ Group: 			Development/Tools
+         --disable-mpirun-prefix-by-default \
+         --disable-orterun-prefix-by-default \
+         --enable-shared --disable-static \
+-        --disable-mpi-f77 \
+-        --disable-mpi-f90 \
+-        --disable-mpi-cxx \
+         --without-slurm \
+         --disable-mpi-profile $mpiWith
+ 
+diff --git a/ThirdParty/rpmBuild/SPECS/openmpi-1.5.spec b/ThirdParty/rpmBuild/SPECS/openmpi-1.5.spec
+index 5452dba..1d3143b 100644
+--- a/ThirdParty/rpmBuild/SPECS/openmpi-1.5.spec
++++ b/ThirdParty/rpmBuild/SPECS/openmpi-1.5.spec
+@@ -88,12 +88,14 @@ Group: 			Development/Tools
+ 
+ %build
+     # export WM settings in a form that GNU configure recognizes
+-    [ -n "$WM_CC" ]         &&  export CC="$WM_CC"
+-    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX"
++    [ -n "$WM_CC" ]         &&  export CC="$WM_CC -fPIC"
++    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX -fPIC"
+     [ -n "$WM_CFLAGS" ]     &&  export CFLAGS="$WM_CFLAGS"
+     [ -n "$WM_CXXFLAGS" ]   &&  export CXXFLAGS="$WM_CXXFLAGS"
+     [ -n "$WM_LDFLAGS" ]    &&  export LDFLAGS="$WM_LDFLAGS"
+ 
++    export FC="gfortran -fPIC" 
++    export F90="gfortran -fPIC" 
+     unset mpiWith
+         # enable GridEngine if it appears to be in use
+     if [ -n "$SGE_ROOT" ]
+@@ -117,9 +119,6 @@ Group: 			Development/Tools
+         --disable-mpirun-prefix-by-default \
+         --disable-orterun-prefix-by-default \
+         --enable-shared --disable-static \
+-        --disable-mpi-f77 \
+-        --disable-mpi-f90 \
+-        --disable-mpi-cxx \
+         --without-slurm \
+         --disable-mpi-profile \
+         $mpiWith \
+diff --git a/ThirdParty/rpmBuild/SPECS/openmpi-1.6.3.spec b/ThirdParty/rpmBuild/SPECS/openmpi-1.6.3.spec
+index de39d61..0600897 100644
+--- a/ThirdParty/rpmBuild/SPECS/openmpi-1.6.3.spec
++++ b/ThirdParty/rpmBuild/SPECS/openmpi-1.6.3.spec
+@@ -89,12 +89,14 @@ Group: 			Development/Tools
+ 
+ %build
+     # export WM settings in a form that GNU configure recognizes
+-    [ -n "$WM_CC" ]         &&  export CC="$WM_CC"
+-    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX"
++    [ -n "$WM_CC" ]         &&  export CC="$WM_CC -fPIC"
++    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX -fPIC"
+     [ -n "$WM_CFLAGS" ]     &&  export CFLAGS="$WM_CFLAGS"
+     [ -n "$WM_CXXFLAGS" ]   &&  export CXXFLAGS="$WM_CXXFLAGS"
+     [ -n "$WM_LDFLAGS" ]    &&  export LDFLAGS="$WM_LDFLAGS"
+ 
++    export FC="gfortran -fPIC" 
++    export F90="gfortran -fPIC" 
+     unset mpiWith
+     # Enable GridEngine if it appears to be in use
+     # If you don't want any integration with SGE, simply unset the SGE
+@@ -122,9 +124,6 @@ Group: 			Development/Tools
+         --enable-orterun-prefix-by-default \
+         --enable-shared \
+ 	--disable-static \
+-        --disable-mpi-f77 \
+-        --disable-mpi-f90 \
+-        --disable-mpi-cxx \
+         --without-slurm \
+         --enable-mpi-profile $mpiWith \
+         --disable-vt
+diff --git a/ThirdParty/rpmBuild/SPECS/openmpi-1.6.5.spec b/ThirdParty/rpmBuild/SPECS/openmpi-1.6.5.spec
+index 0a3e289..b78f7ab 100644
+--- a/ThirdParty/rpmBuild/SPECS/openmpi-1.6.5.spec
++++ b/ThirdParty/rpmBuild/SPECS/openmpi-1.6.5.spec
+@@ -98,8 +98,8 @@ Group: 			Development/Tools
+ 
+ %build
+     # export WM settings in a form that GNU configure recognizes
+-    [ -n "$WM_CC" ]         &&  export CC="$WM_CC"
+-    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX"
++    [ -n "$WM_CC" ]         &&  export CC="$WM_CC -fPIC"
++    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX -fPIC"
+     [ -n "$WM_CFLAGS" ]     &&  export CFLAGS="$WM_CFLAGS"
+     [ -n "$WM_CXXFLAGS" ]   &&  export CXXFLAGS="$WM_CXXFLAGS"
+     [ -n "$WM_LDFLAGS" ]    &&  export LDFLAGS="$WM_LDFLAGS"
+@@ -111,6 +111,8 @@ Group: 			Development/Tools
+     echo ""
+     set -x
+ 
++    export FC="gfortran -fPIC"
++    export F90="gfortran -fPIC"
+     unset mpiWith
+     # Enable GridEngine if it appears to be in use
+     # If you don't want any integration with SGE, simply unset the SGE
+@@ -138,9 +140,6 @@ Group: 			Development/Tools
+         --enable-orterun-prefix-by-default \
+         --enable-shared \
+ 	    --disable-static \
+-        --disable-mpi-f77 \
+-        --disable-mpi-f90 \
+-        --disable-mpi-cxx \
+         --without-slurm \
+         --enable-mpi-profile $mpiWith \
+         --disable-vt \
+diff --git a/ThirdParty/rpmBuild/SPECS/openmpi-1.8.4.spec b/ThirdParty/rpmBuild/SPECS/openmpi-1.8.4.spec
+index 39f0ae8..6c695b5 100644
+--- a/ThirdParty/rpmBuild/SPECS/openmpi-1.8.4.spec
++++ b/ThirdParty/rpmBuild/SPECS/openmpi-1.8.4.spec
+@@ -98,8 +98,8 @@ Group: 			Development/Tools
+ 
+ %build
+     # export WM settings in a form that GNU configure recognizes
+-    [ -n "$WM_CC" ]         &&  export CC="$WM_CC"
+-    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX"
++    [ -n "$WM_CC" ]         &&  export CC="$WM_CC -fPIC"
++    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX -fPIC"
+     [ -n "$WM_CFLAGS" ]     &&  export CFLAGS="$WM_CFLAGS"
+     [ -n "$WM_CXXFLAGS" ]   &&  export CXXFLAGS="$WM_CXXFLAGS"
+     [ -n "$WM_LDFLAGS" ]    &&  export LDFLAGS="$WM_LDFLAGS"
+@@ -111,6 +111,8 @@ Group: 			Development/Tools
+     echo ""
+     set -x
+ 
++    export FC="gfortran -fPIC" 
++    export F90="gfortran -fPIC" 
+     unset mpiWith
+     # Enable GridEngine if it appears to be in use
+     # If you don't want any integration with SGE, simply unset the SGE
+@@ -139,8 +141,6 @@ Group: 			Development/Tools
+         --enable-shared \
+         --enable-mpi-cxx \
+ 	--disable-static \
+-        --disable-mpi-f77 \
+-        --disable-mpi-f90 \
+         --without-slurm \
+         --enable-mpi-profile $mpiWith \
+         --disable-vt \
+diff --git a/ThirdParty/rpmBuild/SPECS/openmpi-1.8.8.spec b/ThirdParty/rpmBuild/SPECS/openmpi-1.8.8.spec
+index 78530a6..2c83213 100644
+--- a/ThirdParty/rpmBuild/SPECS/openmpi-1.8.8.spec
++++ b/ThirdParty/rpmBuild/SPECS/openmpi-1.8.8.spec
+@@ -98,8 +98,8 @@ Group: 			Development/Tools
+ 
+ %build
+     # export WM settings in a form that GNU configure recognizes
+-    [ -n "$WM_CC" ]         &&  export CC="$WM_CC"
+-    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX"
++    [ -n "$WM_CC" ]         &&  export CC="$WM_CC -fPIC"
++    [ -n "$WM_CXX" ]        &&  export CXX="$WM_CXX -fPIC"
+     [ -n "$WM_CFLAGS" ]     &&  export CFLAGS="$WM_CFLAGS"
+     [ -n "$WM_CXXFLAGS" ]   &&  export CXXFLAGS="$WM_CXXFLAGS"
+     [ -n "$WM_LDFLAGS" ]    &&  export LDFLAGS="$WM_LDFLAGS"
+@@ -111,6 +111,9 @@ Group: 			Development/Tools
+     echo ""
+     set -x
+ 
++    export FC="gfortran -fPIC"
++    export F90="gfortran -fPIC"
++
+     unset mpiWith
+     # Enable GridEngine if it appears to be in use
+     # If you don't want any integration with SGE, simply unset the SGE
+@@ -139,8 +142,6 @@ Group: 			Development/Tools
+         --enable-shared \
+         --enable-mpi-cxx \
+ 	--disable-static \
+-        --disable-mpi-f77 \
+-        --disable-mpi-f90 \
+         --without-slurm \
+         --enable-mpi-profile $mpiWith \
+         --disable-vt \
+diff --git a/applications/solvers/solidMechanics/icoFsiElasticNonLinULSolidFoam/Make/options b/applications/solvers/solidMechanics/icoFsiElasticNonLinULSolidFoam/Make/options
+index 9007e13..901395f 100644
+--- a/applications/solvers/solidMechanics/icoFsiElasticNonLinULSolidFoam/Make/options
++++ b/applications/solvers/solidMechanics/icoFsiElasticNonLinULSolidFoam/Make/options
+@@ -9,7 +9,8 @@ EXE_INC = \
+     -I$(LIB_SRC)/LESmodels \
+     -I$(LIB_SRC)/LESmodels/LESdeltas/lnInclude \
+     -I$(LIB_SRC)/tetFiniteElement/lnInclude \
+-    -I$(LIB_SRC)/solidModels/lnInclude
++    -I$(LIB_SRC)/solidModels/lnInclude \ 
++    $(PINC)
+ 
+ EXE_LIBS = \
+     -lmeshTools \
+@@ -19,4 +20,5 @@ EXE_LIBS = \
+     -ltopoChangerFvMesh \
+     -llduSolvers \
+     -ltetFiniteElement \
+-    -lsolidModels
++    -lsolidModels \
++    $(PLIBS)
+diff --git a/etc/bashrc b/etc/bashrc
+index f597336..76931ab 100755
+--- a/etc/bashrc
++++ b/etc/bashrc
+@@ -47,7 +47,8 @@ export FOAM_DEV=1
+ #
+ # Location of FOAM installation
+ # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-foamInstall=$HOME/$WM_PROJECT
++foamInstall=$FOAM_INST_DIR
++#foamInstall=$HOME/$WM_PROJECT
+ # foamInstall=~$WM_PROJECT
+ # foamInstall=/usr/local/$WM_PROJECT
+ # foamInstall=/opt/$WM_PROJECT
+@@ -63,7 +64,7 @@ then
+ fi
+ 
+ # note the location for later use (eg, in job scripts)
+-: ${FOAM_INST_DIR:=$foamInstall}; export FOAM_INST_DIR
++#: ${FOAM_INST_DIR:=$foamInstall}; export FOAM_INST_DIR
+ 
+ # The old dirs to be cleaned from the various environment variables
+ # - remove anything under top-level directory.
+diff --git a/etc/cshrc b/etc/cshrc
+index 0821f18..4bdb7b1 100644
+--- a/etc/cshrc
++++ b/etc/cshrc
+@@ -45,7 +45,8 @@ setenv FOAM_DEV 1
+ #
+ # Location of FOAM installation
+ # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-set foamInstall = $HOME/$WM_PROJECT
++set foamInstall = $FOAM_INST_DIR
++#set foamInstall = $HOME/$WM_PROJECT
+ # set foamInstall = ~$WM_PROJECT
+ # set foamInstall = /usr/local/$WM_PROJECT
+ # set foamInstall = /opt/$WM_PROJECT
+diff --git a/src/foam/db/IOstreams/Pstreams/Pstream.C b/src/foam/db/IOstreams/Pstreams/Pstream.C
+index 09e7fb5..f7ecd53 100644
+--- a/src/foam/db/IOstreams/Pstreams/Pstream.C
++++ b/src/foam/db/IOstreams/Pstreams/Pstream.C
+@@ -297,6 +297,73 @@ bool Foam::Pstream::init(int& argc, char**& argv)
+     return true;
+ }
+ 
++// ElmerFoamFSI
++bool Foam::Pstream::init(int& argc, char**& argv, MPI_Comm* inComm)
++{   
++    /*
++    MPI_Init(&argc, &argv);
++
++    int numprocs;
++    MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
++    MPI_Comm_rank(MPI_COMM_WORLD, &myProcNo_);
++    */
++
++    // using IMPACT communicator instead
++    int numprocs;
++    MPI_Comm_size(*inComm, &numprocs);
++    MPI_Comm_rank(*inComm, &myProcNo_);
++
++    if (numprocs <= 1)
++    {
++        FatalErrorIn("Pstream::init(int& argc, char**& argv)")
++            << "bool Pstream::init(int& argc, char**& argv) : "
++               "attempt to run parallel on 1 processor"
++            << Foam::abort(FatalError);
++    }
++
++    procIDs_.setSize(numprocs);
++
++    forAll(procIDs_, procNo)
++    {
++        procIDs_[procNo] = procNo;
++    }
++
++    setParRun();
++
++#   ifndef SGIMPI
++    string bufferSizeName = getEnv("MPI_BUFFER_SIZE");
++
++    if (bufferSizeName.size())
++    {
++        int bufferSize = atoi(bufferSizeName.c_str());
++
++        if (bufferSize)
++        {
++            MPI_Buffer_attach(new char[bufferSize], bufferSize);
++        }
++    }
++    else
++    {
++        FatalErrorIn("Pstream::init(int& argc, char**& argv)")
++            << "Pstream::init(int& argc, char**& argv) : "
++            << "environment variable MPI_BUFFER_SIZE not defined"
++            << Foam::abort(FatalError);
++    }
++#   endif
++
++    int processorNameLen;
++    char processorName[MPI_MAX_PROCESSOR_NAME];
++
++    MPI_Get_processor_name(processorName, &processorNameLen);
++
++    //signal(SIGABRT, stop);
++
++    // Now that nprocs is known construct communication tables.
++    initCommunicationSchedule();
++
++    return true;
++}
++// ElmerFoamFSI
+ 
+ void Foam::Pstream::exit(int errnum)
+ {
+diff --git a/src/foam/db/IOstreams/Pstreams/Pstream.H b/src/foam/db/IOstreams/Pstreams/Pstream.H
+index 41275df..545eda5 100644
+--- a/src/foam/db/IOstreams/Pstreams/Pstream.H
++++ b/src/foam/db/IOstreams/Pstreams/Pstream.H
+@@ -48,6 +48,10 @@ SourceFiles
+ #include "dynamicLabelList.H"
+ #include "optimisationSwitch.H"
+ 
++//ElmerFoamFSI
++#include "mpi.h"
++//ElmerFoamFSI
++
+ // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
+ namespace Foam
+@@ -268,6 +272,10 @@ public:
+         //- Initialisation function called from main
+         //  Spawns slave processes and initialises inter-communication
+         static bool init(int& argc, char**& argv);
++        
++        // ElmerFoamFSI
++        static bool init(int& argc, char**& argv, MPI_Comm* inComm);
++        // ElmerFoamFSI
+ 
+         //- Is this a parallel run?
+         static bool parRun()
+diff --git a/src/foam/global/argList/argList.C b/src/foam/global/argList/argList.C
+index 4247648..1d648e7 100644
+--- a/src/foam/global/argList/argList.C
++++ b/src/foam/global/argList/argList.C
+@@ -672,6 +672,477 @@ Foam::argList::argList
+     }
+ }
+ 
++// ElmerFoamFSI
++Foam::argList::argList
++(
++    int& argc,
++    char**& argv,
++    bool checkArgs,
++    bool checkOpts,
++    MPI_Comm inComm
++)
++:
++    args_(argc),
++    options_(argc)
++{
++    // Check if this run is a parallel run by searching for any parallel option
++    // If found call runPar (might filter argv)
++    for (int argI = 0; argI < argc; argI++)
++    {
++        if (argv[argI][0] == '-')
++        {
++            const char *optionName = &argv[argI][1];
++
++            if (validParOptions.found(optionName))
++            {
++                parRunControl_.runPar(argc, argv, &inComm);
++                break;
++            }
++        }
++    }
++
++    // convert argv -> args_ and capture ( ... ) lists
++    // for normal arguments and for options
++    regroupArgv(argc, argv);
++
++    // Get executable name
++    args_[0] = fileName(argv[0]);
++    executable_ = fileName(argv[0]).name();
++
++    // Check arguments and options, we already have argv[0]
++    int nArgs = 1;
++    string argListString = args_[0];
++
++    for (int argI = 1; argI < args_.size(); argI++)
++    {
++        argListString += ' ';
++        argListString += args_[argI];
++
++        if (args_[argI][0] == '-')
++        {
++            const char *optionName = &args_[argI][1];
++
++            if
++            (
++                (
++                    validOptions.found(optionName)
++                 && validOptions[optionName] != ""
++                )
++             || (
++                    validParOptions.found(optionName)
++                 && validParOptions[optionName] != ""
++                )
++            )
++            {
++                argI++;
++                if (argI >= args_.size())
++                {
++                    FatalError
++                        << "option " << "'-" << optionName << '\''
++                        << " requires an argument"
++                        << exit(FatalError);
++                }
++
++                argListString += ' ';
++                argListString += args_[argI];
++                options_.insert(optionName, args_[argI]);
++            }
++            else
++            {
++                options_.insert(optionName, "");
++            }
++        }
++        else
++        {
++            if (nArgs != argI)
++            {
++                args_[nArgs] = args_[argI];
++            }
++            nArgs++;
++        }
++    }
++
++    args_.setSize(nArgs);
++
++    // Help/documentation options:
++    //   -help    print the usage
++    //   -doc     display application documentation in browser
++    //   -srcDoc  display source code in browser
++    if
++    (
++        options_.found("help")
++     || options_.found("doc")
++     || options_.found("srcDoc")
++    )
++    {
++        if (options_.found("help"))
++        {
++            printUsage();
++        }
++
++        // only display one or the other
++        if (options_.found("srcDoc"))
++        {
++            displayDoc(true);
++        }
++        else if (options_.found("doc"))
++        {
++            displayDoc(false);
++        }
++
++        ::exit(0);
++    }
++
++    // Print the usage message and exit if the number of arguments is incorrect
++    if (!check(checkArgs, checkOpts))
++    {
++        FatalError.exit();
++    }
++
++    // From here, we consider the command-line arguments to be valid
++
++    string dateString = clock::date();
++    string timeString = clock::clockTime();
++    fileName ctrlDict = debug::controlDict().name();
++    string ctrlDictString = ctrlDict.path()/ctrlDict.name();
++
++    // Print the banner once only for parallel runs
++    if (Pstream::master() && bannerEnabled)
++    {
++        IOobject::writeBanner(Info, true)
++            << "Build    : " << Foam::FOAMbuild << nl
++            << "Exec     : " << argListString.c_str() << nl
++            << "Date     : " << dateString.c_str() << nl
++            << "Time     : " << timeString.c_str() << nl
++            << "Host     : " << hostName() << nl
++            << "PID      : " << pid()
++            << endl;
++    }
++
++    jobInfo.add("startDate", dateString);
++    jobInfo.add("startTime", timeString);
++    jobInfo.add("userName", userName());
++    jobInfo.add("foamVersion", word(FOAMversion));
++    jobInfo.add("foamBuild", Foam::FOAMbuild);
++    jobInfo.add("code", executable_);
++    jobInfo.add("argList", argListString);
++    jobInfo.add("currentDir", cwd());
++    jobInfo.add("PPID", ppid());
++    jobInfo.add("PGID", pgid());
++
++
++    // Case is a single processor run unless it is running parallel
++    int nProcs = 1;
++
++    // If this actually is a parallel run
++    if (parRunControl_.parRun())
++    {
++        // For the master
++        if (Pstream::master())
++        {
++            // establish rootPath_/globalCase_/case_ for master
++            getRootCase();
++
++            IFstream decompDictStream
++            (
++                rootPath_/globalCase_/"system/decomposeParDict"
++            );
++
++            if (!decompDictStream.good())
++            {
++                FatalError
++                    << "Cannot read "
++                    << decompDictStream.name()
++                    << exit(FatalError);
++            }
++
++            dictionary decompDict(decompDictStream);
++
++            label dictNProcs
++            (
++                readLabel
++                (
++                    decompDict.lookup("numberOfSubdomains")
++                )
++            );
++
++            // Check number of processors.
++            // nProcs     => number of actual procs
++            // dictNProcs => number of procs specified in decompositionDict
++            // nProcDirs  => number of processor directories
++            //               (n/a when running distributed)
++            //
++            // - normal running : nProcs = dictNProcs = nProcDirs
++            // - decomposition to more  processors : nProcs = dictNProcs
++            // - decomposition to fewer processors : nProcs = nProcDirs
++            if (dictNProcs > Pstream::nProcs())
++            {
++                FatalError
++                    << decompDictStream.name()
++                    << " specifies " << dictNProcs
++                    << " processors but job was started with "
++                    << Pstream::nProcs() << " processors."
++                    << exit(FatalError);
++            }
++
++            // distributed data
++            if (decompDict.lookupOrDefault<Switch>("distributed", false))
++            {
++                fileNameList roots;
++                decompDict.lookup("roots") >> roots;
++
++                if (roots.size() != Pstream::nProcs() - 1)
++                {
++                    FatalError
++                        << "number of entries in decompositionDict::roots"
++                        << " is not equal to the number of slaves "
++                        << Pstream::nProcs() - 1
++                        << exit(FatalError);
++                }
++
++                // Distribute the master's argument list (with new root)
++                bool hadCaseOpt = options_.found("case");
++                for
++                (
++                    int slave = Pstream::firstSlave();
++                    slave <= Pstream::lastSlave();
++                    slave++
++                )
++                {
++                    options_.set
++                    (
++                        "case",
++                        fileName(roots[slave-1])/globalCase_
++                    );
++
++                    OPstream toSlave(Pstream::scheduled, slave);
++                    toSlave << args_ << options_;
++                }
++                options_.erase("case");
++
++                // restore [-case dir]
++                if (hadCaseOpt)
++                {
++                    options_.set("case", rootPath_/globalCase_);
++                }
++            }
++            else
++            {
++                // Possibly going to fewer processors.
++                // Check if all procDirs are there.
++                if (dictNProcs < Pstream::nProcs())
++                {
++                    label nProcDirs = 0;
++                    while
++                    (
++                        isDir
++                        (
++                            rootPath_/globalCase_/"processor"
++                          + name(++nProcDirs)
++                        )
++                    )
++                    {}
++
++                    if (nProcDirs != Pstream::nProcs())
++                    {
++                        FatalError
++                            << "number of processor directories = "
++                            << nProcDirs
++                            << " is not equal to the number of processors = "
++                            << Pstream::nProcs()
++                            << exit(FatalError);
++                    }
++                }
++
++                // Distribute the master's argument list (unaltered)
++                for
++                (
++                    int slave = Pstream::firstSlave();
++                    slave <= Pstream::lastSlave();
++                    slave++
++                )
++                {
++                    OPstream toSlave(Pstream::scheduled, slave);
++                    toSlave << args_ << options_;
++                }
++            }
++        }
++        else
++        {
++            // Collect the master's argument list
++            IPstream fromMaster(Pstream::scheduled, Pstream::masterNo());
++            fromMaster >> args_ >> options_;
++
++            // establish rootPath_/globalCase_/case_ for slave
++            getRootCase();
++        }
++
++        nProcs = Pstream::nProcs();
++        case_ = globalCase_/(word("processor") + name(Pstream::myProcNo()));
++    }
++    else
++    {
++        // establish rootPath_/globalCase_/case_
++        getRootCase();
++        case_ = globalCase_;
++    }
++
++    // Managing the overrides for the global control switches:
++    //
++    // Here is the order of precedence for the definition/overriding of the
++    // control switches, from lowest to highest:
++    //  - source code definitions from the various libraries/solvers
++    //  - file specified by the env. variable FOAM_GLOBAL_CONTROLDICT
++    //  - case's system/controlDict file
++    //  - command-line parameters
++    //
++    // First, we allow the users to specify the location of a centralized
++    // global controlDict dictionary using the environment variable
++    // FOAM_GLOBAL_CONTROLDICT.
++    fileName optionalGlobControlDictFileName =
++    getEnv("FOAM_GLOBAL_CONTROLDICT");
++
++    if (optionalGlobControlDictFileName.size() )
++    {
++        debug::updateCentralDictVars
++        (
++            optionalGlobControlDictFileName,
++            Pstream::master() && bannerEnabled
++        );
++    }
++
++    // Now that the rootPath_/globalCase_ directory is known (following the
++    // call to getRootCase()), we grab any global control switches overrides
++    // from the current case's controlDict.
++
++    debug::updateCentralDictVars
++    (
++        rootPath_/globalCase_/"system/controlDict",
++        Pstream::master() && bannerEnabled
++    );
++
++    // Finally, a command-line override for central controlDict's variables.
++    // This is the ultimate override for the global control switches.
++
++    // Instantiate a NamedEnum for the controlDict switches names
++    const NamedEnum
++    <
++        debug::globalControlDictSwitchSet,
++        debug::DIM_GLOBAL_CONTROL_DICT_SWITCH_SET
++    >
++    globalControlDictSwitchSetNames;
++
++    forAll (globalControlDictSwitchSetNames, gI)
++    {
++        word switchSetName = globalControlDictSwitchSetNames.names[gI];
++
++        if (optionFound(switchSetName))
++        {
++            debug::updateCentralDictVars
++            (
++                globalControlDictSwitchSetNames[switchSetName],
++                option(switchSetName)
++            );
++        }
++    }
++
++    if ( optionFound("dumpControlSwitches") )
++    {
++        if (Pstream::master())
++        {
++            // Dumping the application's control switches.
++            // We dump the full information to the console using a standard
++            // dictionary format, so one can copy/paste this information
++            //  directly into a case's system/controlDict file to
++            //  override some switches values without having to always
++            // use the command-line options.
++            debug::dumpControlSwitchesToConsole();
++        }
++
++        ::exit(0);
++    }
++
++    wordList slaveProcs;
++
++    // collect slave machine/pid
++    if (parRunControl_.parRun())
++    {
++        if (Pstream::master())
++        {
++            slaveProcs.setSize(Pstream::nProcs() - 1);
++            word slaveMachine;
++            label slavePid;
++
++            label procI = 0;
++            for
++            (
++                int slave = Pstream::firstSlave();
++                slave <= Pstream::lastSlave();
++                slave++
++            )
++            {
++                IPstream fromSlave(Pstream::scheduled, slave);
++                fromSlave >> slaveMachine >> slavePid;
++
++                slaveProcs[procI++] = slaveMachine + "." + name(slavePid);
++            }
++        }
++        else
++        {
++            OPstream toMaster(Pstream::scheduled, Pstream::masterNo());
++            toMaster << hostName() << pid();
++        }
++    }
++
++
++    if (Pstream::master() && bannerEnabled)
++    {
++        Info<< "Case     : " << (rootPath_/globalCase_).c_str() << nl
++            << "nProcs   : " << nProcs << endl;
++
++        if (parRunControl_.parRun())
++        {
++            Info<< "Slaves : " << slaveProcs << nl
++                << "Pstream initialized with:" << nl
++                << "    nProcsSimpleSum   : "
++                << Pstream::nProcsSimpleSum() << nl
++                << "    commsType         : "
++                << Pstream::commsTypeNames[Pstream::defaultCommsType()]
++                << endl;
++        }
++    }
++
++    jobInfo.add("root", rootPath_);
++    jobInfo.add("case", globalCase_);
++    jobInfo.add("nProcs", nProcs);
++    if (slaveProcs.size())
++    {
++        jobInfo.add("slaves", slaveProcs);
++    }
++    jobInfo.write();
++
++    // Switch on signal trapping. We have to wait until after Pstream::init
++    // since this sets up its own ones.
++    sigFpe_.set(bannerEnabled);
++    sigInt_.set(bannerEnabled);
++    sigQuit_.set(bannerEnabled);
++    sigSegv_.set(bannerEnabled);
++
++    if (Pstream::master() && bannerEnabled)
++    {
++        Info<< endl;
++        IOobject::writeDivider(Info);
++    }
++
++    // If the macro AppSpecificDictionary is used, one can
++    // modify the application-specific dictionnary using the
++    // command-line parameter -appDict
++    if (appDictName_ != "")
++    {
++        optionReadIfPresent("appDict", appDictName_);
++    }
++}
++
+ 
+ // * * * * * * * * * * * * * * * * Destructors * * * * * * * * * * * * * * * //
+ 
+diff --git a/src/foam/global/argList/argList.H b/src/foam/global/argList/argList.H
+index 77f9d07..d9643c1 100644
+--- a/src/foam/global/argList/argList.H
++++ b/src/foam/global/argList/argList.H
+@@ -84,6 +84,10 @@ SourceFiles
+ #include "sigQuit.H"
+ #include "sigSegv.H"
+ 
++//ElmerFoamFSI
++#include "mpi.h"
++//ElmerFoamFSI
++
+ // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
+ namespace Foam
+@@ -160,6 +164,17 @@ public:
+             bool checkOpts=true
+         );
+ 
++        // ElmerFoamFSI 
++        argList
++        (
++            int& argc,
++            char**& argv,
++            bool checkArgs,
++            bool checkOpts,
++            MPI_Comm inComm
++        );
++        // ElmerFoamFSI
++
+ 
+     // Destructor
+ 
+diff --git a/src/foam/global/argList/parRun.H b/src/foam/global/argList/parRun.H
+index bc04cdf..6bf14ec 100644
+--- a/src/foam/global/argList/parRun.H
++++ b/src/foam/global/argList/parRun.H
+@@ -76,6 +76,19 @@ public:
+         }
+     }
+ 
++    // ElmerFoamFSI
++    void runPar(int& argc, char**& argv, MPI_Comm* inComm)
++    {
++        RunPar = true;
++
++        if (!Pstream::init(argc, argv, inComm))
++        {
++            Info<< "Failed to start parallel run" << endl;
++            Pstream::exit(1);
++        }
++    }
++    // ElmerFoamFSI
++
+     bool parRun() const
+     {
+         return RunPar;
+diff --git a/wmake/Makefile b/wmake/Makefile
+index fda6f0d..d53f3cb 100644
+--- a/wmake/Makefile
++++ b/wmake/Makefile
+@@ -144,7 +144,8 @@ LIB_HEADER_DIRS = \
+         -I. \
+         $(PROJECT_INC) \
+         $(GINC) \
+-        $(SYS_INC)
++        $(SYS_INC) \
++        $(ElmerFoamFSI_INC)
+ 
+ 
+ #------------------------------------------------------------------------------
+@@ -154,7 +155,7 @@ LIB_HEADER_DIRS = \
+ $(EXE):  $(OBJECTS)
+ 	     @$(WM_SCRIPTS)/mkObjectDir $(EXE)
+ 	     $(LINKEXE) $(OBJECTS) -L$(LIB_WM_OPTIONS_DIR) \
+-	     $(EXE_LIBS) $(PROJECT_LIBS) $(SYS_LIBS) $(LINK_LIBS) $(GLIBS) -o $(EXE)
++	     $(EXE_LIBS) $(PROJECT_LIBS) $(SYS_LIBS) $(LINK_LIBS) $(GLIBS) $(PLIBS) -o $(EXE)
+ 
+ exe:     $(SEXE)
+ 	     @echo \'$(SEXE)\' is up to date.
+@@ -162,7 +163,7 @@ exe:     $(SEXE)
+ $(SEXE): $(OBJECTS)
+ 	     @$(WM_SCRIPTS)/mkObjectDir $(SEXE)
+ 	     $(LINKEXE) $(OBJECTS) $(EXE_LIBS) \
+-         $(SYS_LIBS) $(LINK_LIBS) $(GLIBS) -o $(SEXE)
++         $(SYS_LIBS) $(LINK_LIBS) $(GLIBS) $(PLIBS) -o $(SEXE)
+ 
+ 
+ #------------------------------------------------------------------------------
+@@ -189,7 +190,7 @@ else ifeq ($(WM_ARCH_BASE),mingw)
+ 	     $(LINKLIBSO) $(LOCAL_OBJECTS) -L$(LIB_WM_OPTIONS_DIR) $(LIB_LIBS) $(GLIB_LIBS) $(EXTRA_LIBS) -o $(LIB).$(SO) -Wl,--out-implib,$(LIB).a
+ else
+ 	     @cd $(OBJECTS_DIR) ; \
+-	     $(LINKLIBSO) $(LOCAL_OBJECTS) -L$(LIB_WM_OPTIONS_DIR) $(LIB_LIBS) $(GLIB_LIBS) -o $(LIB).$(SO)
++	     $(LINKLIBSO) $(LOCAL_OBJECTS) -L$(LIB_WM_OPTIONS_DIR) $(LIB_LIBS) $(GLIB_LIBS) $(PLIBS) -o $(LIB).$(SO)
+ endif
+ 
+ lib:     $(LIB).a
+diff --git a/wmake/rules/linux64Gcc/c++ b/wmake/rules/linux64Gcc/c++
+index 767c016..123ef58 100644
+--- a/wmake/rules/linux64Gcc/c++
++++ b/wmake/rules/linux64Gcc/c++
+@@ -2,7 +2,7 @@
+ 
+ c++WARN     = -Wall -Wextra -Wno-unused-parameter -Wold-style-cast -Wnon-virtual-dtor
+ 
+-CC          = g++ -m64
++CC          = mpicxx -m64
+ 
+ include $(RULES)/c++$(WM_COMPILE_OPTION)
+ 
+-- 
+1.8.3.1
+

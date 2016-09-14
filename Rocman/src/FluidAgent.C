@@ -97,7 +97,10 @@ void FluidAgent::load_module()
 #else     // dynamic loading
   COM_assertion_msg(rocmod_name == "Rocflo" || rocmod_name == "Rocflu", 
                (std::string("Unknown FluidAgent module:")+rocmod_name).c_str());
-  COM_load_module(rocmod_name.c_str(), mod_instance.c_str());
+  if (rocmod_name == "OpenFoam")
+     COM_load_module("OpenFoamFSIPar", mod_instance.c_str());
+  else
+     COM_load_module(rocmod_name.c_str(), mod_instance.c_str());
 #endif
 
   init_function_handles();	// defined in Agent

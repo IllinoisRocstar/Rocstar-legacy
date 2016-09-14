@@ -1,0 +1,12 @@
+# source the openfoam source file
+setenv RocstarTop $1
+setenv FOAM_INST_DIR "$1foam"
+#echo $FOAM_INST_DIR
+source $RocstarTop/foam/foam-extend-3.2/etc/cshrc
+# make set the mpi environment variables
+setenv CC mpicc
+setenv CXX mpicxx
+setenv FC mpif90
+# set IRMULTIPHYSICS for compiling and running openfoam module & driver
+set OFSupport = "${RocstarTop}install"
+setenv IRMULTIPHYSICS $OFSupport

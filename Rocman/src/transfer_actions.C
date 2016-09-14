@@ -204,6 +204,10 @@ void LoadTransfer_FS::run( double t, double dt, double alpha) {
   else if (size_ts == 1) {
     COM_assertion_msg(0, "ERROR: NOT IMPLEMENTED!");
   }
+  // MS
+  else if (size_ts == 3 && traction_mode != NO_SHEER) {
+    COM_call_function( RFC_transfer, &f_ts_hdl, &s_ts_hdl);
+  } // MS
   else {
     COM_assertion_msg(0, "ERROR: NOT IMPLEMENTED!");
   }

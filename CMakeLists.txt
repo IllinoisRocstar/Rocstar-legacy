@@ -114,6 +114,13 @@ ELSE()
   MESSAGE("** Did not found elmerprep.")
 ENDIF()
 
+# Building ofprep if exists
+IF (EXISTS "${CMAKE_SOURCE_DIR}/Third_Party_Modules/OpenFoamFSI/trunk")
+  MESSAGE("** Found ofprep")
+  ADD_SUBDIRECTORY(Third_Party_Modules/OpenFoamFSI/trunk)
+ELSE()
+  MESSAGE("** Did not found ofprep.")
+ENDIF()
 
 include_directories(./Roccom/include ./Rocman/include)
 add_executable(rocstar src/rocstar.C)

@@ -25,6 +25,7 @@ use RocsolidProcessor;
 use RocstarProcessor;
 use RunLogControl;
 use ElmerProcessor;
+use OpenFoamProcessor;
 
 
 #************************************************************************************
@@ -60,7 +61,7 @@ sub main {
 	   exit;
 	}
 
-	my ($rflo, $rflu, $rfrac, $rsolid, $rstar, $elmer);
+	my ($rflo, $rflu, $rfrac, $rsolid, $rstar, $elmer, $openfoam);
 	my (@processorObjs);
 	
 	#Read RocprepControl.txt, and process any command line arguments
@@ -77,8 +78,9 @@ sub main {
 	$rfrac = RocfracProcessor->new($RocProps, $PrepLog);
 	$rsolid = RocsolidProcessor->new($RocProps, $PrepLog);
 	$elmer = ElmerProcessor->new($RocProps, $PrepLog);
+	$openfoam = OpenFoamProcessor->new($RocProps, $PrepLog);
 
-	@processorObjs = ($rflo, $rflu, $rfrac, $rsolid, $elmer);
+	@processorObjs = ($rflo, $rflu, $rfrac, $rsolid, $elmer, $openfoam);
 
 	if (($RocProps->runExtractOnly())||($RocProps->runAll())) {
 
@@ -221,6 +223,10 @@ sub processARGs {
 	      elmer_command(\@cline);
 	      last SWITCH;
           } 
+	  if ($arg eq "-foam") { 
+	      openfoam_command(\@cline);
+	      last SWITCH;
+          } 
     if (($arg eq "-plag")||($arg eq "--particles")) {
       plag_command(\@cline);
       last SWITCH;
@@ -255,7 +261,7 @@ sub setDefaultProps {
    $RocProps->setKeyValuePair("ROCSTARVERS", "3.0");
 
    # physics modules
-   foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ELMER ROCBURNAPN ROCBURNPY ROCBURNZN ROCMOP)) {
+   foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ELMER OPENFOAM ROCBURNAPN ROCBURNPY ROCBURNZN ROCMOP)) {
       unless ($RocProps->propExists($keyword)) {
          $RocProps->setKeyValuePair($keyword, $FALSE);
       }
@@ -272,7 +278,7 @@ sub setDefaultProps {
    }
 
    # surfdiver combinations
-   foreach $keyword (qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID ROCFLOELMER)) {
+   foreach $keyword (qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID ROCFLOELMER OPENFOAMROCFRAC)) {
       unless ($RocProps->propExists($keyword)) {
          $RocProps->setKeyValuePair($keyword, $FALSE);
       }
@@ -314,13 +320,13 @@ sub checkInputConsistency {
 #   which we check for any surfdiver flags.
     my($keyword);
     my($doPrep)=0;
-    foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ELMER)) {
+    foreach $keyword (qw(ROCFLO ROCFLU ROCFRAC ROCSOLID ELMER OPENFOAM)) {
 	if ($RocProps->processModule($keyword)){
 	    $doPrep++;
 	    last;
 	}
     }
-    foreach $keyword (qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID ROCFLOELMER)) {
+    foreach $keyword (qw(ROCFLOROCFRAC ROCFLOROCSOLID ROCFLUROCFRAC ROCFLUROCSOLID ROCFLOELMER OPENFOAMROCFRAC)) {
 	if ($RocProps->propExists($keyword)) {
 	    $doPrep++;
 	    last;
@@ -373,7 +379,7 @@ sub checkInputConsistency {
     #build the combinations required given the physics codes specified. 
     my ($fluidsmodule, $solidsmodule);
     if (!$surfdone) {
-        foreach $fluidsmodule ("Rocflo", "Rocflu") {
+        foreach $fluidsmodule ("Rocflo", "Rocflu", "Openfoam") {
 	    if ($RocProps->processModule(uc($fluidsmodule))){
 		foreach $solidsmodule("Rocfrac", "Rocsolid", "Elmer") {
 		    if ($RocProps->processModule(uc($solidsmodule))){
@@ -465,6 +471,26 @@ sub elmer_command {
     }
     elsif  (($RocProps->runPreprocessOnly())||($RocProps->runCheckOnly())) {
        $RocProps->setKeyValuePair("ELMER", $TRUE);
+    }
+}
+
+sub openfoam_command {
+    my ($cline) = @_;
+ 
+    # if nothing is passed in, print the usage message for this option
+    unless (defined($cline)) {
+      print "  -openfoam [m] [n] OpenFoam preprocessing, optional NDA Data<m> & Grid<n> dirs\n";
+      return;
+    }
+
+    if ($RocProps->runExtractOnly() || $RocProps->runAll()) {
+       #OpenFoam: format -openfoam
+       $RocProps->setKeyValuePair("OPENFOAM", $TRUE);
+       $RocProps->setKeyValuePair("OPENFOAMDATA", "Data".shift(@$cline)); #integer input
+       $RocProps->setKeyValuePair("OPENFOAMGRID", "Grid".shift(@$cline)); #integer input
+    }
+    elsif  (($RocProps->runPreprocessOnly())||($RocProps->runCheckOnly())) {
+       $RocProps->setKeyValuePair("OPENFOAM", $TRUE);
     }
 }
 

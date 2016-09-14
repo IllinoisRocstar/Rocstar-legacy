@@ -1,0 +1,39 @@
+#!/bin/bash
+
+export ElmerFoamTop=$1
+
+# fixing "/" issue
+i=$((${#ElmerFoamTop}-1))
+char="${ElmerFoamTop:$i:1}"
+if [ "$char" = "/" ]
+then
+  ElmerFoamTop="${ElmerFoamTop:0:$i}"
+fi
+
+# preparing enviornment for building openFoam
+source $ElmerFoamTop/BuildTools/BashSourceScript $ElmerFoamTop
+if [ $? -ne 0 ]; then exit 1; fi
+
+# checking passed parameters
+isFirst=false
+if [ "$2" = "First" ] || [ "$2" = "FIRST" ] || [ "$2" = "first" ]
+then
+  isFirst=true
+fi
+
+# invoking openFoam build scripts
+cd $ElmerFoamTop/foam/foam-extend-3.2
+if $isFirst
+then
+  echo ">> running Allwmake.firstInstall..."
+  ./Allwmake.firstInstall
+  if [ $? -ne 0 ]; then exit 1; fi
+  echo "FALSE" > $ElmerFoamTop/foam/foam-extend-3.2/isFirst
+else
+  echo ">> running Allwmake..."
+  ./Allwmake
+  if [ $? -ne 0 ]; then exit 1; fi
+fi
+
+cd $ElmerFoamTop
+exit 0

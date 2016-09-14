@@ -167,6 +167,8 @@ CONTAINS
     glb%MPI_COMM_ROCFRAC = MPI_COMM_ROCSTAR
     rocstar_communicator = MPI_COMM_ROCSTAR
 
+    WRITE(*,*) "In the RocFracInitialize"
+
     CALL MPI_COMM_RANK(glb%MPI_COMM_ROCFRAC,MyId,ierr)
     CALL MPI_COMM_SIZE(glb%MPI_COMM_ROCFRAC,NumProcs,ierr)
     WRITE(glb%MyIdChr,'(i4.4)') MyId
@@ -1188,6 +1190,11 @@ endif
     logical :: debug
     CHARACTER*4 :: ichr1, ichr2
 
+    INTEGER :: elemNdeConn(4)
+    REAL*8 :: elemNdeCoords(3,4), elemCenCoords(3)
+
+    WRITE (*,*) 'In RocfracSoln'
+
 ! _____________________________
 ! _____ SOLUTION LOOP
 ! _____________________________
@@ -1243,6 +1250,7 @@ endif
        alpha = 1.d0 - CurrentTimestepSolid / CurrentTimeStep
        CALL COM_call_function( MAN_update_inbuff, 1, alpha)
 
+         
        glb%CurrTime = CurrentTime + (CurrentTimestep-CurrentTimestepSolid)
 
        IF(MyId.EQ.0 .AND. glb%Verb.gt.0) WRITE(6,'(a,i6,4e15.4)')'Rocfrac:',&
@@ -1273,6 +1281,9 @@ endif
 
        IF(glb%ALEenabled)THEN  
 
+          IF(MyId.Eq.0 .AND. DEBUG) THEN
+            WRITE(6,'(A)') 'Rocfrac: performing ALE update'
+          ENDIF
 ! -- Enforce Mesh Velocity BC's of Mesh Motion Given by the fluids.
 
           DO j = 1, glb%InterfaceSFNumNodes
@@ -1460,7 +1471,23 @@ endif
          WRITE(6,'(A)') 'Rocfrac: Applying Pressure Loading'
        ENDIF
 
+         
        IF(glb%iElType.EQ.8)THEN
+
+          ! look at tractions as received
+          !WRITE (*,*) 'glb%InterfaceSFnbNumElems = ', glb%InterfaceSFnbNumElems
+          !IF (MyId.EQ.0) THEN
+          !   DO jj= 0, glb%InterfaceSFnbNumElems-1
+          !      elemNdeConn(:) = glb%InterfaceSFnbElemConn(:,jj+1)
+          !      elemNdeCoords(:,1) = glb%InterfaceSFnbNodalCoors(:,elemNdeConn(1));
+          !      elemNdeCoords(:,2) = glb%InterfaceSFnbNodalCoors(:,elemNdeConn(2));
+          !      elemNdeCoords(:,3) = glb%InterfaceSFnbNodalCoors(:,elemNdeConn(3));
+          !      elemNdeCoords(:,4) = glb%InterfaceSFnbNodalCoors(:,elemNdeConn(4));
+          !      elemCenCoords(:) = SUM(elemNdeCoords,2)/4;
+          !      WRITE (*,'(a,i1,a,i4,a,3e11.4e2,a,3f15.4)') 'Rank ',MyId,' Element = ',jj,' Coordinate =  ',&
+          !               elemCenCoords(:),' Traction  = ', glb%InterfaceSFnbElemTract(3*jj+1:3*jj+3)
+          !   ENDDO
+          !ENDIF
 
 ! Burning, Interacting Surfaces Traction
 
@@ -1480,15 +1507,26 @@ endif
 
 
        ELSE
+          ! update user with received tractions
+          !WRITE (*,*) 'glb%InterfaceSFnbNumElems = ', glb%InterfaceSFnbNumElems
+          !   DO jj= 0, glb%InterfaceSFnbNumElems-1
+          !      elemNdeConn(:) = glb%InterfaceSFnbElemConn(:,jj+1)
+          !      elemNdeCoords(:,1) = glb%InterfaceSFnbNodalCoors(:,elemNdeConn(1));
+          !      elemNdeCoords(:,2) = glb%InterfaceSFnbNodalCoors(:,elemNdeConn(2));
+          !      elemNdeCoords(:,3) = glb%InterfaceSFnbNodalCoors(:,elemNdeConn(3));
+          !      elemCenCoords(:) = SUM(elemNdeCoords,2)/3;
+          !      WRITE (*,'(a,i1,a,i4,a,3e11.4e2,a,3f15.4)') 'Rank ',MyId,' Element = ',jj,' Coordinate =  ',&
+          !               elemCenCoords(:),' Traction  = ', glb%InterfaceSFnbElemTract(3*jj+1:3*jj+3)
+          !   ENDDO
 
-          CALL FluidPressLoad(glb%NumNP,Rnet, &
+          CALL FluidPressLoad_corrected(glb%NumNP,Rnet, &
                glb%InterfaceSFNumElems, glb%InterfaceSFNumNodes, &
                glb%InterfaceSFElemConn, &
                glb%MapNodeSF,glb%LwrBnd,glb%UppBnd,glb%Meshcoor,glb%Disp,glb%MapSFElVolEl,&
                glb%ElConnVol,glb%iElType,glb%NumElVol,glb%InterfaceSFElemTract)
 
 
-          CALL FluidPressLoad(glb%NumNP,Rnet, &
+          CALL FluidPressLoad_corrected(glb%NumNP,Rnet, &
                glb%InterfaceSFnbNumElems, glb%InterfaceSFnbNumNodes, &
                glb%InterfaceSFnbElemConn, &
                glb%MapNodeSFnb,glb%LwrBnd,glb%UppBnd,glb%Meshcoor,glb%Disp,glb%MapSFnbElVolEl,&
@@ -1749,7 +1787,8 @@ endif
        ENDIF
 
        IF(myid.EQ.0 .AND. glb%Verb.gt.1) THEN 
-         WRITE(6,'(A,F12.4)') 'Rocfrac: MAX DISPLACEMENT =', MAXVAL(glb%Disp(:))
+         WRITE(6,'(A,E12.4)') 'Rocfrac: MAX DISPLACEMENT =', MAXVAL(glb%Disp(:))
+         WRITE(6,'(A,E12.4)') 'Rocfrac: MIN DISPLACEMENT =', MINVAL(glb%Disp(:))
        ENDIF
 !!$       DO i = 1, 3*glb%numnp
 !!$          IF(glb%Disp(i).NE.0.d0) PRINT*,i,glb%Disp(i)

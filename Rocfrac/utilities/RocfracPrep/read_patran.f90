@@ -311,6 +311,10 @@ SUBROUTINE read_patran(numvertx2d,dhmin,nprocs)
      ENDDO
      AccumNd_old = AccumNd
      AccumNd =  AccumNd + NumNP_glb(ibody)
+     PRINT*, 'Read All node coordinates...'
+     PRINT*, 'Boudning box for the mesh: '
+     PRINT*, 'MIN (x,y,z) :', MINVAL(coor(1,:)), MINVAL(coor(2,:)), MINVAL(coor(3,:)) 
+     PRINT*, 'MAX (x,y,z) :', MAXVAL(coor(1,:)), MAXVAL(coor(2,:)), MAXVAL(coor(3,:)) 
 !
 ! --  Read element connectivity array
      IF(ibody.EQ.1)THEN
@@ -332,6 +336,7 @@ SUBROUTINE read_patran(numvertx2d,dhmin,nprocs)
      MaxEL = 0
 
      Element: DO i = 1, NumEL_glb(ibody)
+
 
 ! - Type 02: Element Data, format(i2,8i8)
 !        2 ID IV KC N1
@@ -739,11 +744,16 @@ SUBROUTINE read_patran(numvertx2d,dhmin,nprocs)
               READ(IUNIT,'()')
            ENDDO
         ELSE IF(itype .EQ. 6)THEN      ! pressure loading
+           WRITE (*,'(AI7)') 'Processing pressure for Elemet #',id
+
            id = id + AccumEl
            ip = epart(id)
            READ(IUNIT,'(i1,i1,i1,i6,8i1)')i,i,i,i,n1,n2,n3,n4,n5,n6,n7,n8
            READ(IUNIT,*) press
            IntFaceFlag = ABS(INT(press))
+           !WRITE (*,'(Ai1Ai1Ai1Ai1Ai1Ai1Ai1Ai1)') &
+           !          'n1 = ', n1, ' n2 = ', n2, ' n3 = ', n3, ' n4 = ', n4, &
+           !          'n5 = ', n5, 'n6 = ', n6, ' n7 = ', n7, ' n8 = ', n8
 
            IF(.NOT.(InteractMesh))THEN
               IF(IntFaceFlag.GE.0.AND.IntFaceFlag.LE.2)  InteractMesh = .TRUE.

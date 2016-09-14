@@ -1,0 +1,21 @@
+#!/bin/bash
+
+status=0
+
+# Set our current directory, which should be the top
+# level source for ElmerFoamFSI
+topSourceDir=$1
+#installDir="$topSourceDir/support_install"
+
+cd ./foam/foam-extend-3.2/
+cp $topSourceDir/Third_Party_Modules/OpenFoamFSI/trunk/openFoamGitPatch .
+if [ $? -ne 0 ]; then 
+   exit 1
+fi
+git apply openFoamGitPatch
+if [ $? -ne 0 ]; then 
+   exit 1
+fi
+
+cd $topSourceDir
+exit 0

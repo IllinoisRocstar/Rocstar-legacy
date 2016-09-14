@@ -1,0 +1,134 @@
+Header
+  CHECK KEYWORDS Warn
+  Mesh DB "." "beam3d"
+  Include Path ""
+  Results Directory ""
+End
+
+Simulation
+  Max Output Level = 5
+  Coordinate System = Cartesian
+  Coordinate Mapping(3) = 1 2 3
+  Simulation Type = Transient
+#  Steady State Max Iterations = 50
+  Output Intervals = 1
+  Timestepping Method = BDF
+  BDF Order = 2
+  Timestep Intervals = 100 ! check what Jesica means
+  Timestep Size =  5.0e-4
+  Solver Input File = case.sif
+  Post File = case.vtu
+End
+
+Constants
+  Gravity(4) = 0 -1 0 9.82
+  Stefan Boltzmann = 5.67e-08
+  Permittivity of Vacuum = 8.8542e-12
+  Boltzmann Constant = 1.3807e-23
+  Unit Charge = 1.602e-19
+End
+
+Body 1
+  Target Bodies(1) = 1
+  Name = "Body 1"
+  Equation = 1
+  Material = 1
+#  Body Force = 1
+End
+
+Solver 1
+  Exec Solver = Always
+  Equation = Nonlinear elasticity
+  Variable = Displacement
+  Variable Dofs = 3
+  Procedure = "ElasticSolve" "ElasticSolver"
+  Nonlinear System Convergence Tolerance = 1.0e-4
+  Nonlinear System Max Iterations = 1
+  Nonlinear System Newton After Iterations = 3 
+  Nonlinear System Newton After Tolerance = 1.0e-2
+  Nonlinear System Relaxation Factor = 1.0
+  Linear System Solver = Iterative
+  Linear System Iterative Method = BiCGStab
+  Linear System Max Iterations = 1000
+  Linear System Convergence Tolerance = 1.0e-6
+  Linear System Abort Not Converged = True
+  Linear System Residual Output = 1
+  Steady State Convergence Tolerance = 1.0e-5
+  Linear System Preconditioning = Diagonal
+  Time Derivative Order = 2
+End
+
+
+Equation 1
+  Name = "Elasticity"
+  Calculate Stresses = True
+  Active Solvers(1) = 1
+End
+
+Material 1
+  Name = "HronTurekPaper"
+  Youngs modulus = 5.6e6
+  Density = 1000
+  Poisson ratio = 0.4
+End
+
+#Body Force 1
+#  Name = "Gravity"
+#  Stress Bodyforce 2 = $ -9.81 * 100
+#End
+
+Boundary Condition 1
+  Target Boundaries(1) = 4
+  Name = "Wall"
+  Displacement 3 = 0.0
+  Displacement 2 = 0.0
+  Displacement 1 = 0.0
+End
+
+Boundary Condition 2
+  Target Boundaries(1) = 6
+  Name = "Front"
+  Displacement 3 = 0.0
+End
+
+Boundary Condition 3
+  Target Boundaries(1) = 5
+  Name = "Back"
+  Displacement 3 = 0.0
+End
+
+
+
+# FSI BCs From this point
+# Check to make sure Load#Direction can access/modify
+# shear/noram tractions together
+
+Boundary Condition 4
+  Fsi BC = True
+  Target Boundaries(3) = 1 2 3
+  Name = "FSI"
+  Force 1 = Variable Time
+    Real Procedure "LoadFunctionLibrary" "LoadXDirection"
+  Force 2 = Variable Time
+    Real Procedure "LoadFunctionLibrary" "LoadYDirection"
+End
+
+#Boundary Condition 5
+#  Fsi BC = True
+#  Target Boundaries(1) = 2
+#  Name = "Front"
+#  Force 1 = Variable Time
+#    Real Procedure "LoadFunctionLibrary" "LoadXDirection"
+#  Force 2 = Variable Time
+#    Real Procedure "LoadFunctionLibrary" "LoadYDirection"
+#End
+#
+#Boundary Condition 6
+#  Fsi BC = True
+#  Target Boundaries(1) = 1
+#  Name = "Bottom"
+#  Force 1 = Variable Time
+#    Real Procedure "LoadFunctionLibrary" "LoadXDirection"
+#  Force 2 = Variable Time
+#    Real Procedure "LoadFunctionLibrary" "LoadYDirection"
+#End

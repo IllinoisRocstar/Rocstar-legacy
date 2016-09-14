@@ -214,7 +214,7 @@ sub extract {
 
     if (ModuleProcessor::makeDirIfNeeded($target)) {return(1);}  #if failed to make it
 
-    foreach $module ("Rocflo", "Rocflu", "Rocfrac", "Rocsolid", "RocburnAPN", "RocburnPY", "RocburnZN", "Elmer") {
+    foreach $module ("Rocflo", "Rocflu", "Rocfrac", "Rocsolid", "RocburnAPN", "RocburnPY", "RocburnZN", "Elmer", "OpenFoam") {
 	if ($props->processModule(uc($module))){
 	    if (ModuleProcessor::makeDirIfNeeded($target.$module)) {
 		return(1);  #if failed to make it
@@ -240,7 +240,7 @@ sub extract {
     }
 
     #Make all the necessary module-combination directories under Rocman (e.g., RocfloRocfrac). 
-    foreach $fluidsmodule ("Rocflo", "Rocflu") {
+    foreach $fluidsmodule ("Rocflo", "Rocflu", "OpenFoam") {
 	if ($props->processModule(uc($fluidsmodule))){
 	    foreach $solidsmodule("Rocfrac", "Rocsolid", "Elmer") {
 		if ($props->processModule(uc($solidsmodule))){

@@ -1,0 +1,44 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | foam-extend: Open Source CFD                    |
+|  \\    /   O peration     | Version:     3.0                                |
+|   \\  /    A nd           | Web:         http://www.extend-project.de       |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      couplingProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solidPatch plate;
+solidZone plateZone;
+
+fluidPatch plate;
+fluidZone plateZone;
+
+//movingRegion region0;
+
+// Original: not used in Masoud's foam stepper
+//fsiRelaxationFactor 0.01;
+//couplingScheme Aitken;
+//couplingScheme FixedRelaxation;
+// Original End
+
+// Masoud
+fsiRelaxationFactor 1.0;
+couplingScheme NonIterative;
+// Masoud End
+
+interfaceDeformationLimit 0.001;
+
+outerCorrTolerance 1e-4;
+
+
+fsi yes;
+
+// ************************************************************************* //
