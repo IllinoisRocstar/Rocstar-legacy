@@ -47,11 +47,14 @@ namespace GridConversion{ namespace DriverProgram{
       //Write Patran packet 1 node coordinates
       for(int i=0; i < numNodes; i++){
         ss << "1 " << i+1 << std::endl;
-
-        if(fabs(nodes[3*i+0]) > 1.0e-10){
+      
+        if(fabs(nodes[3*i+0]) > 1.0e-10 || nodes[3*i+0] == 0.0){
         numSS << std::setprecision(9) <<  std::scientific << nodes[3*i + 0]; 
         ePos = numSS.str().find("e");
         expPos = numSS.str().find_last_of("0");
+        //std::cout << "numSS.str() = " << numSS.str() << std::endl;
+        //std::cout << "expPos = " << expPos << std::endl;
+        //std::cout << "numSS.str().size() = " << numSS.str().size() << std::endl;
         if(expPos == numSS.str().size()-1)
           exponent = "0";
         else
@@ -72,10 +75,13 @@ namespace GridConversion{ namespace DriverProgram{
         numSS.str("");
         numSS.clear();
 
-        if(fabs(nodes[3*i+1]) > 1.0e-10){
+        if(fabs(nodes[3*i+1]) > 1.0e-10 || nodes[3*i+1] == 0.0){
         numSS << std::setprecision(9) <<  std::scientific << nodes[3*i + 1]; 
         ePos = numSS.str().find("e");
         expPos = numSS.str().find_last_of("0");
+        //std::cout << "numSS.str() = " << numSS.str() << std::endl;
+        //std::cout << "expPos = " << expPos << std::endl;
+        //std::cout << "numSS.str().size() = " << numSS.str().size() << std::endl;
         if(expPos == numSS.str().size()-1)
           exponent = "0";
         else
@@ -96,10 +102,13 @@ namespace GridConversion{ namespace DriverProgram{
         numSS.str("");
         numSS.clear();
 
-        if(fabs(nodes[3*i+2]) > 1.0e-10){
+        if(fabs(nodes[3*i+2]) > 1.0e-10 || nodes[3*i+2] == 0.0){
         numSS << std::setprecision(9) <<  std::scientific << nodes[3*i + 2]; 
         ePos = numSS.str().find("e");
         expPos = numSS.str().find_last_of("0");
+        //std::cout << "numSS.str() = " << numSS.str() << std::endl;
+        //std::cout << "expPos = " << expPos << std::endl;
+        //std::cout << "numSS.str().size() = " << numSS.str().size() << std::endl;
         if(expPos == numSS.str().size()-1)
           exponent = "0";
         else
