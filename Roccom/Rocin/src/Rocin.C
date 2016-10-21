@@ -2723,6 +2723,7 @@ void Rocin::read_by_control_file( const char* control_file_name,
     files = files+" "+(*p).c_str();
 
   // Invoke read_window
+  //std::cout << __FILE__ << __LINE__ << " files = " << files << std::endl;
   read_window(files.c_str(), window_name, myComm, NULL, time_level, str_len);
 
   m_pane_ids.clear();
@@ -2790,6 +2791,9 @@ void Rocin::read_windows(const char* filename_patterns,
                          char* time_level,
                          const int* str_len)
 {
+  //std::cout << __FILE__ << __LINE__ 
+  //          << " filename_patterns = " << filename_patterns
+  //          << std::endl;
   const MPI_Comm default_comm=COM_get_default_communicator();
   const MPI_Comm comm_null=MPI_COMM_NULL;
   const MPI_Comm* myComm = 
@@ -2852,13 +2856,40 @@ void Rocin::read_windows(const char* filename_patterns,
     // Extracts metadata from a list of files.
     // Opens each file, scans dataset, identifies windows, panes, and attribute
     // Puts this information into blocks.
-#ifndef USE_CGNS
-    scan_files_HDF4(globbuf.gl_pathc, globbuf.gl_pathv, blocks_HDF4, time,
-                    m_HDF2COM);
-#else 
+    // MS
+    //std::cout << __FILE__ << __LINE__ 
+    //          << "gl_pathv = " << globbuf.gl_pathv[0]
+    //          << std::endl;  
+    // search for hdf or cgns
+    bool isHDF = false; 
+    bool isCGNS = false;
+    if ((std::string(globbuf.gl_pathv[0])).find(".hdf") != std::string::npos){
+       isHDF = true;
+       std::cout << "npos = " << (std::string(globbuf.gl_pathv[0])).find(".hdf") <<std::endl; 
+    }
+    isCGNS = isHDF ? false:true;
+    //std::cout << "isHdf = " << isHDF << " isCGNS = " << isCGNS << std::endl;
+    // MS End
+    if (isHDF){
+       scan_files_HDF4(globbuf.gl_pathc, globbuf.gl_pathv, blocks_HDF4, time,
+                       m_HDF2COM);
+       //std::cout << "Read HDF!" << std::endl;
+    } else {
+#ifdef USE_CGNS 
     scan_files_CGNS(globbuf.gl_pathc, globbuf.gl_pathv, blocks_CGNS, time,
                     m_CGNS2COM);
+    //std::cout << "Read CGNS!" << std::endl;
 #endif
+    }
+// Original
+//#ifndef USE_CGNS
+//    scan_files_HDF4(globbuf.gl_pathc, globbuf.gl_pathv, blocks_HDF4, time,
+//                    m_HDF2COM);
+//#else 
+//    scan_files_CGNS(globbuf.gl_pathc, globbuf.gl_pathv, blocks_CGNS, time,
+//                    m_CGNS2COM);
+//#endif
+// Original End
     globfree(&globbuf);
 #else // No glob function on this system
     // Create a char** of n filenames matching patterns stored in buffer

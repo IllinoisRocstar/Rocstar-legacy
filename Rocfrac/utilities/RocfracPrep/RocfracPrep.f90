@@ -380,13 +380,15 @@ PROGRAM RocfracPrep
 
   OPEN(4005,FILE='Rocin/isolid_in_00.000000.txt',STATUS='replace',FORM='formatted')
   WRITE(4005,*) '@Proc: *'
-  WRITE(4005,*) '@Files: Rocfrac/Rocin/SurfMesh.%4p.hdf'
+  !WRITE(4005,*) '@Files: Rocfrac/Rocin/SurfMesh.%4p.hdf'
+  WRITE(4005,*) '@Files: Rocfrac/Rocin/SurfMesh.%4p.cgns'
   WRITE(4005,*) '@Panes: @BlockCyclic 100 100'
   close(4005)
   
   OPEN(4005,FILE='Rocin/solid_in_00.000000.txt',STATUS='replace',FORM='formatted')
   WRITE(4005,*) '@Proc: *'
-  WRITE(4005,*) '@Files: Rocfrac/Rocin/'//prefx(1:prefx_lngth)//'.%4p.hdf'
+  !WRITE(4005,*) '@Files: Rocfrac/Rocin/'//prefx(1:prefx_lngth)//'.%4p.hdf'
+  WRITE(4005,*) '@Files: Rocfrac/Rocin/'//prefx(1:prefx_lngth)//'.%4p.cgns'
   WRITE(4005,*) '@Panes: @Cyclic 1'
   close(4005)
 
@@ -857,6 +859,9 @@ PROGRAM RocfracPrep
      set_option = COM_get_function_handle( 'OUT.set_option')
 
      CALL COM_call_function( set_option, 2, 'mode', 'w')
+     ! Masoud: switching to HDF4 for this module
+     !CALL COM_call_function( set_option, 2, 'format', 'HDF4')
+     ! End
 
 ! do not append process rank -----------------
 
@@ -885,7 +890,6 @@ PROGRAM RocfracPrep
      !deallocate(NumNeighProcs_List,ID_sendto_List)
 
      IF(ASSOCIATED(Pconn_Comm)) deallocate(Pconn_Comm)
-
 
      IF(InteractMesh) CALL mesh2d(nprocs,ip,ichr4)
 

@@ -1448,7 +1448,6 @@ MODULE RFLU_ModRocstarIO
 ! ******************************************************************************
 !   Start
 ! ******************************************************************************
-
     CALL RegisterFunction(global,'RFLU_GENX_OpenRocinCtrlFiles', & 
                           'RFLU_ModRocstarIO.F90')
 
@@ -1545,7 +1544,7 @@ MODULE RFLU_ModRocstarIO
                          matName,regIdString,winName
     CHARACTER(GENX_TIME_STRING_LEN) :: timeString
     INTEGER :: communicator,handleAttr,handleSetOption,handleAddAttr, & 
-               handlePutAttr,nArgs,paneId
+               handlePutAttr,nArgs,paneId,sz,ng
     TYPE(t_global), POINTER :: global
     
 ! ******************************************************************************
@@ -1562,7 +1561,7 @@ MODULE RFLU_ModRocstarIO
 
     winName = TRIM(global%volWinName)
     matName = 'fluid_vol'
-
+    
     nArgs = 7
 
 ! ******************************************************************************
@@ -1593,6 +1592,9 @@ MODULE RFLU_ModRocstarIO
                                               '.set_option')
 
     CALL COM_call_function(handleSetOption,2,'rankwidth','0')
+    ! MS
+    !CALL COM_call_function(handleSetOption,2,'format','HDF')
+    ! MS End
 
 ! ******************************************************************************
 !   Write data through Rocout commands 
@@ -1603,19 +1605,20 @@ MODULE RFLU_ModRocstarIO
 ! ==============================================================================  
 
     handleAttr = COM_get_attribute_handle(TRIM(winName)//'.rhof')
+    CALL COM_get_size(TRIM(winName)//'.rhof', paneId, sz, ng)
     CALL COM_call_function(handlePutAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
                            TRIM(fileNameGrid),communicator,paneId)
-
+    
     handleAttr = COM_get_attribute_handle(TRIM(winName)//'.rhovf')
     CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
-                           TRIM(fileNameMixt),communicator,paneId)
+                           TRIM(fileNameGrid),communicator,paneId)
 
     handleAttr = COM_get_attribute_handle(TRIM(winName)//'.rhoEf')
     CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
-                           TRIM(fileNameMixt),communicator,paneId)
+                           TRIM(fileNameGrid),communicator,paneId)
 
 ! ==============================================================================  
 !   Dependent variables
@@ -1624,22 +1627,22 @@ MODULE RFLU_ModRocstarIO
     handleAttr = COM_get_attribute_handle(TRIM(winName)//'.pf')
     CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
-                           TRIM(fileNameMixt),communicator,paneId)
+                           TRIM(fileNameGrid),communicator,paneId)
 
     handleAttr = COM_get_attribute_handle(TRIM(winName)//'.Tf')
     CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
-                           TRIM(fileNameMixt),communicator,paneId)
+                           TRIM(fileNameGrid),communicator,paneId)
 
     handleAttr = COM_get_attribute_handle(TRIM(winName)//'.af')
     CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileNameMixt), & 
                            handleAttr,TRIM(matName),timeString, & 
-                           TRIM(fileNameMixt),communicator,paneId)
+                           TRIM(fileNameGrid),communicator,paneId)
 
 ! ******************************************************************************
 !   End
 ! ******************************************************************************
-  
+
   END SUBROUTINE RFLU_GENX_PutDataFlow
 
 
@@ -1753,6 +1756,9 @@ MODULE RFLU_ModRocstarIO
                                               '.set_option')
 
     CALL COM_call_function(handleSetOption,2,'rankwidth','0')
+    ! MS
+    !CALL COM_call_function(handleSetOption,2,'format','HDF')
+    ! MS End
 
 ! ******************************************************************************
 !   Write grid file through Rocout commands
@@ -1764,7 +1770,6 @@ MODULE RFLU_ModRocstarIO
 
     DO iPatch = 1,pGrid%nPatches
       pPatch => pRegion%patches(iPatch)
-
       CALL RFLU_GENX_BuildPaneId(pRegion%iRegionGlobal,iPatch,paneId)
 
       IF ( iPatch == 1 ) THEN 
@@ -1899,6 +1904,9 @@ MODULE RFLU_ModRocstarIO
                                               '.set_option')
 
     CALL COM_call_function(handleSetOption,2,'rankwidth','0')
+    ! MS
+    !CALL COM_call_function(handleSetOption,2,'format','HDF')
+    ! MS End
 
 ! ******************************************************************************
 !   Write data through Rocout commands 
@@ -2028,6 +2036,9 @@ MODULE RFLU_ModRocstarIO
                                               '.set_option')
 
     CALL COM_call_function(handleSetOption,2,'rankwidth','0')
+    ! MS
+    !CALL COM_call_function(handleSetOption,2,'format','HDF')
+    ! MS End
 
 ! ******************************************************************************
 !   Write data through Rocout commands
@@ -2237,7 +2248,7 @@ MODULE RFLU_ModRocstarIO
     CHARACTER(CHRLEN) :: fileName,fileStem,matName,regIdString,winName
     CHARACTER(GENX_TIME_STRING_LEN) :: timeString
     INTEGER :: communicator,handleAttr,handleSetOption,handleAddAttr, & 
-               handlePutAttr,handleWriteAttr,iPatch,nArgs,paneId
+               handlePutAttr,handleWriteAttr,iPatch,nArgs,paneId, handleWrtAttr
     TYPE(t_global), POINTER :: global
     TYPE(t_grid), POINTER :: pGrid
     TYPE(t_patch), POINTER :: pPatch
@@ -2295,10 +2306,15 @@ MODULE RFLU_ModRocstarIO
                                               '.put_attribute')
     handleAddAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
                                               '.add_attribute')    
+    handleWrtAttr   = COM_get_function_handle(TRIM(global%winNameOut)// & 
+                                              '.write_attribute')    
     handleSetOption = COM_get_function_handle(TRIM(global%winNameOut)// & 
                                               '.set_option')
 
     CALL COM_call_function(handleSetOption,2,'rankwidth','0')
+    ! MS
+    !CALL COM_call_function(handleSetOption,2,'format','HDF')
+    ! MS End
 
 ! ******************************************************************************
 !   Write grid file through Rocout commands
@@ -2322,11 +2338,12 @@ MODULE RFLU_ModRocstarIO
       ELSE 
         handleWriteAttr = handleAddAttr
       END IF ! iPatch
+      !handleWriteAttr = handleWrtAttr
 
       handleAttr = COM_get_attribute_handle(TRIM(winName)//'.pmesh')
       CALL COM_call_function(handleWriteAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
-                             TRIM(fileName),communicator,paneId) 
+                             '',communicator,paneId) 
 
 ! ------------------------------------------------------------------------------
 !     Non-predefined connectivity lists. NOTE always need to be called, even if 
@@ -2336,22 +2353,22 @@ MODULE RFLU_ModRocstarIO
       handleAttr = COM_get_attribute_handle(TRIM(winName)//'.t3g:real')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
-                             TRIM(fileName),communicator,paneId)
+                             '',communicator,paneId)
         
       handleAttr = COM_get_attribute_handle(TRIM(winName)//'.t3g:virtual')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
-                             TRIM(fileName),communicator,paneId)
+                             '',communicator,paneId)
 
       handleAttr = COM_get_attribute_handle(TRIM(winName)//'.q4g:real')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
-                             TRIM(fileName),communicator,paneId)
+                             '',communicator,paneId)
 
       handleAttr = COM_get_attribute_handle(TRIM(winName)//'.q4g:virtual')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
-                             TRIM(fileName),communicator,paneId)
+                             '',communicator,paneId)
 
 ! ------------------------------------------------------------------------------
 !     Patch quantities
@@ -2360,17 +2377,17 @@ MODULE RFLU_ModRocstarIO
       handleAttr = COM_get_attribute_handle(TRIM(winName)//'.bcflag')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
-                             TRIM(fileName),communicator,paneId)
+                             '',communicator,paneId)
 
       handleAttr = COM_get_attribute_handle(TRIM(winName)//'.patchNo')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
-                             TRIM(fileName),communicator,paneId)
+                             '',communicator,paneId)
                              
       handleAttr = COM_get_attribute_handle(TRIM(winName)//'.cnstr_type')
       CALL COM_call_function(handleAddAttr,nArgs,TRIM(fileName), &
                              handleAttr,TRIM(matName),timeString, &
-                             TRIM(fileName),communicator,paneId)                             
+                             '',communicator,paneId)                             
     END DO ! iPatch
  
 ! ******************************************************************************
@@ -2493,6 +2510,9 @@ MODULE RFLU_ModRocstarIO
                                               '.set_option')
 
     CALL COM_call_function(handleSetOption,2,'rankwidth','0')
+    ! MS
+    !CALL COM_call_function(handleSetOption,2,'format','HDF')
+    ! MS End
 
 ! ******************************************************************************
 !   Write grid file through Rocout commands
@@ -2501,11 +2521,17 @@ MODULE RFLU_ModRocstarIO
 ! ==============================================================================  
 !   Coordinates and connectivity
 ! ==============================================================================  
-
     handleAttr = COM_get_attribute_handle(TRIM(winName)//'.pmesh')
+    ! MS
     CALL COM_call_function(handlePutAttr,nArgs,TRIM(fileName),handleAttr, & 
-                           TRIM(matName),timeString,TRIM(fileName), &
+                           TRIM(matName),timeString,'', &
                            communicator,paneId)
+    ! MS End
+    ! Original
+    !CALL COM_call_function(handlePutAttr,nArgs,TRIM(fileName),handleAttr, & 
+    !                       TRIM(matName),timeString,TRIM(fileName), &
+    !                       communicator,paneId)
+    ! Original End
                            
 ! ******************************************************************************
 !   End

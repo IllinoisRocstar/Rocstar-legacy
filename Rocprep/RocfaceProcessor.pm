@@ -72,11 +72,11 @@ sub checkResults {
        foreach $solidsmodule("Rocfrac", "Rocsolid") {
 	   my ($combo) = $fluidsmodule.$solidsmodule;
 	   if ($props->processRocfaceCombo(uc($combo))){
-	      unless (glob($targetDir.$combo."/ifluid*.hdf")) {
+	      unless (glob($targetDir.$combo."/ifluid*.hdf") or glob($targetDir.$combo."/ifluid*.cgns")) {
 		 $log->processErrorCode(27, "$combo fluid interface missing?");
 		 return(1);
 	      }
-	      unless (glob($targetDir.$combo."/isolid*.hdf")) {
+	      unless (glob($targetDir.$combo."/isolid*.hdf") or glob($targetDir.$combo."/isolid*.cgns")) {
 		 $log->processErrorCode(27, "$combo solid interface missing?");
 		 return(1);
 	      }

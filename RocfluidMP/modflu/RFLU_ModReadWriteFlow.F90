@@ -53,6 +53,7 @@ MODULE RFLU_ModReadWriteFlow
   USE ModInterfaces, ONLY: RFLU_GetCvLoc
 
   IMPLICIT NONE
+  INCLUDE 'roccomf90.h'
 
   PRIVATE
   PUBLIC :: RFLU_ReadFlowWrapper, &
@@ -1880,6 +1881,7 @@ MODULE RFLU_ModReadWriteFlow
 ! ==============================================================================
 
     TYPE(t_global), POINTER :: global
+    INTEGER :: sz, ng 
 
 ! ******************************************************************************
 !   Start
@@ -1906,6 +1908,7 @@ MODULE RFLU_ModReadWriteFlow
       END IF ! global%solutFormat
 #ifdef GENX
     ELSE 
+      CALL COM_get_size(TRIM(global%volWinName)//'.rhof', 101, sz, ng)
       CALL RFLU_GENX_PutDataFlow(pRegion) 
     END IF ! RFLU_GENX_DecideReadFile         
 #endif

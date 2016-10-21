@@ -164,7 +164,6 @@ SUBROUTINE rfluinit(caseString,verbLevel)
 ! ******************************************************************************
 ! Initialize global data
 ! ******************************************************************************  
-  
   ALLOCATE(global,STAT=errorFlag)
   IF ( errorFlag /= ERR_NONE ) THEN 
     WRITE(STDERR,'(A,1X,A)') SOLVER_NAME,'ERROR - Pointer allocation failed.'
@@ -923,6 +922,7 @@ SUBROUTINE rfluinit(caseString,verbLevel)
 ! ******************************************************************************
 
   CALL DeregisterFunction(global)
+  WRITE (*,*) "rfluinit finished sucessfully"
 
 END SUBROUTINE rfluinit
 

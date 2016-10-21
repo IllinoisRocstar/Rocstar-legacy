@@ -142,7 +142,10 @@ void Rocout::init(const std::string &mname) {
 
   Rocout *rout = new Rocout();
 
-  rout->_options["format"] = "HDF4";
+  // Masoud, changing default to CGNS
+  //rout->_options["format"] = "HDF4";
+  rout->_options["format"] = "CGNS";
+  //
   rout->_options["async"] = "off";
   rout->_options["mode"] = "w";
   rout->_options["localdir"] = "";
@@ -285,6 +288,9 @@ void Rocout::put_attribute( const char* filename_pre,
                             const char* timelevel, const char* mfile_pre,
                             const MPI_Comm* pComm, const int* pane_id)
 {
+  //std::cout << __FILE__ << __LINE__ << std::endl;
+  //std::cout << "Attribute = " << (attr)->fullname() << std::endl;
+  //std::cout << "Size = " << (attr)->size_of_items() << std::endl;
   WriteAttrInfo* pWAI;
 
 #ifdef USE_PTHREADS
@@ -325,6 +331,9 @@ void Rocout::add_attribute( const char* filename_pre,
                             const char* timelevel, const char* mfile_pre,
                             const MPI_Comm* pComm, const int* pane_id)
 {
+  //std::cout << __FILE__ << __LINE__ << std::endl;
+  //std::cout << "Attribute = " << (attr)->fullname() << std::endl;
+  //std::cout << "Size = " << (attr)->size_of_items() << std::endl;
   WriteAttrInfo* pWAI;
 
 #ifdef USE_PTHREADS
@@ -698,6 +707,9 @@ void* Rocout::write_attr_internal(void* attrInfo)
     rank = 0;
 
   int append = ai->m_append;
+  //std::cout << " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ " << std::endl;
+  //std::cout << __FILE__ << __LINE__
+  //          << " append = " << append << std::endl;
   if (append < 0) {
     if (ai->m_rout->_options["mode"] == "w")
       append = 0;
@@ -715,10 +727,59 @@ void* Rocout::write_attr_internal(void* attrInfo)
       end = begin + 1;
   }
 
+  // MS
+  /*
+  std::cout << __FILE__ << __LINE__ << std::endl;
+  std::cout << "Attribute requested = " << attr->fullname() << std::endl;
+  std::cout << "Location = " << attr->location() << std::endl;
+  std::cout << "Size of items = " << attr->size_of_items() << std::endl;
+  std::cout << "Size of components = " << attr->size_of_components() << std::endl;
+  std::cout << "Window information :" << std::endl;
+  std::string wname = attr->window()->name();
+  int nNde; 
+  for (p=begin; p!=end; ++p) {
+    std::cout << " pane = " << *p << std::endl;
+    COM_get_size((wname+".nc").c_str(), *p, &nNde);
+    std::cout << " number of nodes = " << nNde << std::endl;
+    std::string stringNames;
+    int numConn;
+    COM_get_connectivities(wname.c_str(), *p, &numConn, stringNames);
+    std::istringstream ConnISS(stringNames);
+    std::vector<std::string> connNames;
+    std::cout << "\t # \t Type \t #Elm \t #ElmNde \t Loc \n";
+    std::cout << "\t---\t------\t------\t---------\t-----\n";
+    for (int i=0; i<numConn; ++i) {
+       std::string name;
+       ConnISS >> name;
+       connNames.push_back(name);
+       std::string fullConnName(wname+"."+name);
+       int nElm;
+       COM_get_size(fullConnName, *p, &nElm);
+       int nElmNde;
+       std::string dataItemUnits;
+       char dataItemLoc;
+       COM_Type dataItemType;
+       COM_get_attribute(fullConnName, &dataItemLoc, &dataItemType,
+		      &nElmNde, &dataItemUnits);
+       std::cout << "\t " << i+1
+  		 << "\t " << name
+		 << "\t  " << nElm
+		 << "\t    " << nElmNde
+		 << "\t          " << dataItemLoc
+		 << std::endl;
+    }
+  }
+  std::cout << " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ " << std::endl;
+  */
+  // MS End
+
   std::set<std::string> written;
   for (p=begin; p!=end; ++p) {
+    //std::cout << __FILE__ << __LINE__
+    //          << " pane = " << *p << std::endl;
     std::string fname, mfile;
     fname = ai->m_rout->get_fname(ai->m_prefix, rank, *p, true);
+    //std::cout << " fname = " << fname << std::endl;
     if (!ai->m_meshPrefix.empty())
       mfile = ai->m_rout->get_fname(ai->m_meshPrefix, rank, *p);
 

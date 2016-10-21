@@ -93,7 +93,8 @@ sub preProcess {
     #			  $numRegions
     #			  $numProcs
     #			ENDINPUT";
-
+    
+    #print "rflumap -m 1 -v 1 -c $caseName -r $numRegions -p $numProcs > rflumap1.log 2>&1";
     $rflumap = $binDir."rflumap -m 1 -v 1 -c $caseName -r $numRegions -p $numProcs > rflumap1.log 2>&1";	
 
     $errorCode = system($rflumap);
@@ -113,9 +114,10 @@ sub preProcess {
     if ($errorCode) {
 	$log->processErrorCode(11, $rflupart);
 	return(1);
-    }
+    } 
 
     $rfluinit = $binDir."rfluinit -c $caseName -v 1 > rfluinit.log 2>&1";
+    #print "$rfluinit";
     $errorCode = system($rfluinit);
 
     if ($errorCode) {

@@ -76,7 +76,8 @@ void _load_rocface(FluidAgent *fagent, SolidAgent *sagent, const RocmanControl_p
     if(rank == 0)
       MAN_DEBUG(2, ("Rocstar: read RocFace overlay mesh from %s.\n", rfc_dir.c_str()));
 
-    COM_call_function( RFC_read, &fluid_mesh, &solid_mesh, &comm, fluid_dir.c_str(), solid_dir.c_str(), "HDF");
+    //COM_call_function( RFC_read, &fluid_mesh, &solid_mesh, &comm, fluid_dir.c_str(), solid_dir.c_str(), "HDF");
+    COM_call_function( RFC_read, &fluid_mesh, &solid_mesh, &comm, fluid_dir.c_str(), solid_dir.c_str(), "CGNS");
 
     int RFC_transfer = COM_get_function_handle("RFC.least_squares_transfer");
     int RFC_interpolate = COM_get_function_handle("RFC.interpolate");

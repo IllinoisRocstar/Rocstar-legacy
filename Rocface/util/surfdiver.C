@@ -65,6 +65,18 @@ void read_file( const char *fname, const string &wname, double alpha) {
 
   int IN_obtain = COM_get_function_handle( "IN.obtain_attribute");
 
+  // MS
+  /*
+  int npn, *pnids;
+  COM_get_panes( bufwin.c_str(), &npn, &pnids);
+  std::cout << "There exisits "<< npn 
+            << " panes in this window." << std::endl;
+  for ( int i=0; i<npn; ++i) {
+     std::cout << "Pane ID = " << pnids[i] << std::endl; 
+  }
+  */
+  // MS End
+
   // Check whether bcflag exists. If so, retain only the panes with flag<=1.
   int bcflag = COM_get_attribute_handle((bufwin+".bcflag").c_str());
   if (bcflag > 0) {
@@ -79,8 +91,11 @@ void read_file( const char *fname, const string &wname, double alpha) {
     for ( int i=0; i<npanes; ++i) {
       int *flag;
       COM_get_array( (bufwin+".bcflag").c_str(), pane_ids[i], &flag);
-      if ( flag==NULL || *flag>1)
+      //std::cout << "Existing pane ID = " << pane_ids[i] << std::endl;
+      if ( flag==NULL || *flag>1) {
 	COM_delete_pane( bufwin.c_str(), pane_ids[i]);
+        //std::cout << "Removing..." << std::endl;
+      }
     }
 
     // remove buffers.
@@ -185,7 +200,8 @@ int main(int argc, char *argv[]) {
   int tri1_mesh = COM_get_attribute_handle( (wnames[0]+".mesh").c_str());
   int tri2_mesh = COM_get_attribute_handle( (wnames[1]+".mesh").c_str());
 
-  const char *format = "HDF";
+  //const char *format = "HDF";
+  const char *format = "CGNS";
   
   std::cout << "Starting mesh overlay..." << std::endl;
   COM_call_function( RFC_overlay, &tri1_mesh, &tri2_mesh);
