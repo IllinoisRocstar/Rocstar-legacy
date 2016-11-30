@@ -1,5 +1,0 @@
-
-OUTFLOW:
-INITIAL FLOW VELOCITIES ZERO:
-NOTES: This dataset is for Mach2.5. 
-

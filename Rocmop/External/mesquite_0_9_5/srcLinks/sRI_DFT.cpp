@@ -1,1 +1,0 @@
-../src/QualityMetric/DFT/sRI_DFT.cpp

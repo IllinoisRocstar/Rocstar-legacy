@@ -1,8 +1,0 @@
-  This directory contains the utilities to extract the CGAL files that are
-used by RocFace. To extract the CGAL files, simply invoke
-
-	make
-
-  The files in ../CGAL/include and ../CGAL/src will be updated. 
-The names of the header files will be logged in "hdr_files", and the names 
-of the C++ files will be logged in "src_files".

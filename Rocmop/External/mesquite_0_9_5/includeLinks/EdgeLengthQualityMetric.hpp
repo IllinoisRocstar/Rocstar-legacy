@@ -1,1 +1,0 @@
-../src/QualityMetric/Smoothness/EdgeLengthQualityMetric.hpp

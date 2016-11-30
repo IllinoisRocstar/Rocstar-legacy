@@ -1,5 +1,0 @@
-Verbose = 0
-InterpolationOrder = 2
-TractionMode = 1
-Rhoc = 8970.0
-

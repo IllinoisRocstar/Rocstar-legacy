@@ -1,1 +1,0 @@
-../src/QualityMetric/ScalarAddQualityMetric.cpp

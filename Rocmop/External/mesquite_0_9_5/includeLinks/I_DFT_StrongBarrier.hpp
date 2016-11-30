@@ -1,1 +1,0 @@
-../src/QualityMetric/DFT/I_DFT_StrongBarrier.hpp

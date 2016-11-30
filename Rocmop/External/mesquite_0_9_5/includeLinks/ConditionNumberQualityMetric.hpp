@@ -1,1 +1,0 @@
-../src/QualityMetric/Shape/ConditionNumberQualityMetric.hpp

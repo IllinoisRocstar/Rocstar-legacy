@@ -1,1 +1,0 @@
-../src/ObjectiveFunction/CompositeOFMultiply.cpp

@@ -1,1 +1,0 @@
-../src/QualityAssessor/QualityAssessor.cpp

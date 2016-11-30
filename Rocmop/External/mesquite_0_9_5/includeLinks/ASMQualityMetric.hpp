@@ -1,1 +1,0 @@
-../src/QualityMetric/Smoothness/ASMQualityMetric.hpp

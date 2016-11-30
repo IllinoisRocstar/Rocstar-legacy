@@ -1,1 +1,0 @@
-../src/QualityImprover/VertexMover/MeanMidNodeMover.cpp
