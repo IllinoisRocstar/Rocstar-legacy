@@ -1,0 +1,13 @@
+<map id="y" name="y">
+<area shape="rect" id="node2" href="$Pane__connectivity_8C.html#a66971bb35acc2d41596346f6278833a8" title="collect_coincident\l_nodes" alt="" coords="355,50,482,92"/>
+<area shape="rect" id="node4" href="$classPane__connectivity.html#a260d6d24c2db924f9048ea4267c55b56" title="Create b2v mapping (pane connectivity) for nodes or edges and store the results into a vector of vect..." alt="" coords="119,46,257,88"/>
+<area shape="rect" id="node5" href="$classPane__connectivity.html#a5051f8f3f33631ad5d99cec89ed72c62" title="Pane_connectivity::\ldetermine_coisolated_nodes" alt="" coords="95,112,281,153"/>
+<area shape="rect" id="node6" href="$Pane__connectivity_8C.html#a6775cd6991b395d8b55b2ab0b8566e2e" title="intersect_bbox" alt="" coords="135,178,241,204"/>
+<area shape="rect" id="node8" href="$classPoint__3.html#ab237a0dc635f994ccba6091be251a619" title="Point_3\&lt; Real \&gt;::operator!=" alt="" coords="96,228,280,255"/>
+<area shape="rect" id="node9" href="$classPoint__3.html#a895d1b8a6c3b8316038172138d53da94" title="Point_3\&lt; Real \&gt;::operator&#45;" alt="" coords="100,279,276,306"/>
+<area shape="rect" id="node10" href="$classPoint__3.html#a5a7cc6d0bfabc172411d29662c181421" title="Point_3\&lt; Real \&gt;::operator==" alt="" coords="94,330,282,356"/>
+<area shape="rect" id="node11" href="$classRFC__Pane__base.html#a5f4663e4e56ce65a3f3ee219f128c459" title="RFC_Pane_base::write\l_tec_sub" alt="" coords="109,381,267,422"/>
+<area shape="rect" id="node3" href="$classPane__connectivity.html#a77a70f323f098007f3ce0dbdae07fdce" title="Collect the boundary nodes of all panes that are coincident with the boundary nodes of local panes..." alt="" coords="555,50,717,92"/>
+<area shape="rect" id="node7" href="$Pane__connectivity_8C.html#a0572823fb23770cc2f5201df67879114" title="intersect_bbox" alt="" coords="365,178,472,204"/>
+<area shape="rect" id="node12" href="$classRFC__Window__base.html#ac6be14eeee384132e58d441866221851" title="Ouptut a subdivision of a mesh in Tecplot format. " alt="" coords="331,381,506,422"/>
+</map>

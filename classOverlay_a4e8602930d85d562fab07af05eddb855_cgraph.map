@@ -1,0 +1,33 @@
+<map id="intersect_link_helper" name="intersect_link_helper">
+<area shape="rect" id="node2" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="253,5,331,32"/>
+<area shape="rect" id="node3" href="$classOverlay.html#ad2947f4b049eabf5707786ef238720ff" title="contains" alt="" coords="257,157,327,184"/>
+<area shape="rect" id="node9" href="$classHalfedge__overlay.html#a49a0ced46edaa808d9951d79b7e43d31" title="Halfedge_overlay::destination" alt="" coords="195,485,389,512"/>
+<area shape="rect" id="node11" href="$Line__2__Line__2__intersection_8h.html#adffd0a209b1e502aabc1264bc0deb0c3" title="do_intersect" alt="" coords="245,637,339,664"/>
+<area shape="rect" id="node12" href="$classHalfedge__overlay.html#a19b8ed647dec27c8a751cc52eaa6b5e1" title="Halfedge_overlay::facet" alt="" coords="212,688,372,715"/>
+<area shape="rect" id="node4" href="$classHDS__accessor.html#a7454a9634b77e8853af6aac3167dea77" title="HDS_accessor::get_destination" alt="" coords="438,5,645,32"/>
+<area shape="rect" id="node6" href="$classHDS__accessor.html#a0191908e68eeb08627b0887b5b24f42c" title="HDS_accessor::get_next" alt="" coords="457,56,626,83"/>
+<area shape="rect" id="node8" href="$classHDS__accessor.html#a591425c5ea18f4820a812d753f3d6006" title="HDS_accessor::get_origin" alt="" coords="454,157,629,184"/>
+<area shape="rect" id="node13" href="$classOverlay__primitives.html#ada5e302cd6a3e775eae57519f932783b" title="Overlay_primitives\l::intersect" alt="" coords="227,419,357,461"/>
+<area shape="rect" id="node14" href="$classHalfedge__overlay.html#aa126fd94949c810d24869ad04cd97e15" title="Halfedge_overlay::is\l_border" alt="" coords="471,361,612,402"/>
+<area shape="rect" id="node25" href="$classHalfedge__overlay.html#ac47203886af9a8299b6a42da527e0e49" title="Halfedge_overlay::next" alt="" coords="214,739,370,765"/>
+<area shape="rect" id="node26" href="$classOverlay__primitives.html#a0ceae7b4352e093fd9aa77f854655083" title="Overlay_primitives\l::normalmatch" alt="" coords="227,291,357,333"/>
+<area shape="rect" id="node28" href="$classHalfedge__overlay.html#afe0045d3267c0730bd9ad1b640718f54" title="Halfedge_overlay::origin" alt="" coords="211,536,373,563"/>
+<area shape="rect" id="node31" href="$classVertex__overlay.html#a75cdd043830d07c6068d1f272f62287b" title="Vertex_overlay::point" alt="" coords="219,789,365,816"/>
+<area shape="rect" id="node32" href="$classHalfedge__overlay.html#aa274ac14f207d82094a34345820a3058" title="Halfedge_overlay::prev" alt="" coords="214,587,370,613"/>
+<area shape="rect" id="node5" href="$classHDS__accessor.html#a18eab6ffa92233a5ced127b70413239b" title="HDS_accessor::get_facet" alt="" coords="455,107,628,133"/>
+<area shape="rect" id="node7" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="445,208,638,235"/>
+<area shape="rect" id="node10" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="458,761,625,788"/>
+<area shape="rect" id="node15" href="$classHDS__accessor.html#a42d9f6a4b4d4209023f0db986e7d1cd3" title="HDS_accessor::is_border" alt="" coords="455,528,627,555"/>
+<area shape="rect" id="node16" href="$classHDS__accessor.html#a84cd461fe6f7fe18d959a79b8240a0c2" title="HDS_accessor::get_normal" alt="" coords="450,309,633,336"/>
+<area shape="rect" id="node17" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="518,579,565,605"/>
+<area shape="rect" id="node18" href="$classOverlay__primitives.html#a54e0d464165e5e3e46115682d6f4d283" title="Overlay_primitives\l::get_tangent" alt="" coords="476,695,607,737"/>
+<area shape="rect" id="node21" href="$classOverlay__primitives.html#a4862d19ca04c417a79b2267bb07ac8f2" title="Overlay_primitives\l::get_projdir" alt="" coords="476,630,607,671"/>
+<area shape="rect" id="node23" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="459,427,623,453"/>
+<area shape="rect" id="node24" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="519,477,563,504"/>
+<area shape="rect" id="node19" href="$classPoint__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Point_set::size_of\l_edges" alt="" coords="701,695,827,737"/>
+<area shape="rect" id="node20" href="$classVertex__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Vertex_set::size_of\l_edges" alt="" coords="883,663,1018,705"/>
+<area shape="rect" id="node22" href="$classNormal__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Normal_set::size_of\l_edges" alt="" coords="695,630,833,671"/>
+<area shape="rect" id="node27" href="$classHDS__accessor.html#afb9dc54668d25e24492e3c0cab222096" title="HDS_accessor::is_feature_1" alt="" coords="446,259,637,285"/>
+<area shape="rect" id="node29" href="$classHalfedge__overlay.html#a1011f61879a1842b01d506a17e1c7914" title="Halfedge_overlay::opposite" alt="" coords="451,812,631,839"/>
+<area shape="rect" id="node30" href="$classHalfedge__overlay.html#acba595f65090d9721649cdf1f0999894" title="Halfedge_overlay::is\l_primary" alt="" coords="693,830,835,871"/>
+</map>

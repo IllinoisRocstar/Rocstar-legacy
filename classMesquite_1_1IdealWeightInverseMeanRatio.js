@@ -1,0 +1,28 @@
+var classMesquite_1_1IdealWeightInverseMeanRatio =
+[
+    [ "IdealWeightInverseMeanRatio", "classMesquite_1_1IdealWeightInverseMeanRatio.html#aa7a708907723d22f17a93378ad297dc5", null ],
+    [ "~IdealWeightInverseMeanRatio", "classMesquite_1_1IdealWeightInverseMeanRatio.html#ae65f69bbc0fdcff00592985373fb8544", null ],
+    [ "IdealWeightInverseMeanRatio", "classMesquite_1_1IdealWeightInverseMeanRatio.html#aa7a708907723d22f17a93378ad297dc5", null ],
+    [ "~IdealWeightInverseMeanRatio", "classMesquite_1_1IdealWeightInverseMeanRatio.html#ae65f69bbc0fdcff00592985373fb8544", null ],
+    [ "compute_element_analytical_gradient", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a863e7798594aa345b6b94d2d209d450f", null ],
+    [ "compute_element_analytical_gradient", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a863e7798594aa345b6b94d2d209d450f", null ],
+    [ "compute_element_analytical_hessian", "classMesquite_1_1IdealWeightInverseMeanRatio.html#abf32bb8c226a49db5aee4184d181f9fa", null ],
+    [ "compute_element_analytical_hessian", "classMesquite_1_1IdealWeightInverseMeanRatio.html#abf32bb8c226a49db5aee4184d181f9fa", null ],
+    [ "evaluate_element", "classMesquite_1_1IdealWeightInverseMeanRatio.html#afc1a16a1793ba9459a9b930b5292ffc5", null ],
+    [ "evaluate_element", "classMesquite_1_1IdealWeightInverseMeanRatio.html#afc1a16a1793ba9459a9b930b5292ffc5", null ],
+    [ "set_metric_power", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a79bf99facc09bf4b62e2304b20475388", null ],
+    [ "set_metric_power", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a79bf99facc09bf4b62e2304b20475388", null ],
+    [ "a2Con", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a9555a19f4c770f75fad2f34182f9d137", null ],
+    [ "a3Con", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a905d572eb4f39d1b3fae61db83f7e600", null ],
+    [ "b2Con", "classMesquite_1_1IdealWeightInverseMeanRatio.html#aa9106b9a3c5360a311b83a2dab017136", null ],
+    [ "b3Con", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a8f569d5ee30827c2250b3f570f4f0a67", null ],
+    [ "c2Con", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a6b116b2b0e11e907ac3ee299cd619044", null ],
+    [ "c3Con", "classMesquite_1_1IdealWeightInverseMeanRatio.html#afcd422fe4f41b2b098519c3665d1840a", null ],
+    [ "g_factor", "classMesquite_1_1IdealWeightInverseMeanRatio.html#ab068f563f1ff8a46dc74cb8b5b1b58c0", null ],
+    [ "h_factor", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a78ffc65d2f299720731467aaed224158", null ],
+    [ "mAccumGrad", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a2b3ad3d81492fd353d993738afa77941", null ],
+    [ "mCoords", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a23e0c4ebe5356217b98547c940978bf5", null ],
+    [ "mGradients", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a2de7de4ff2809c128bb14bc21b588355", null ],
+    [ "mHessians", "classMesquite_1_1IdealWeightInverseMeanRatio.html#ad4fbf5e41de0b60efa36b85bf829df70", null ],
+    [ "mMetrics", "classMesquite_1_1IdealWeightInverseMeanRatio.html#a451a5a2e2617d6c0ec5f0a95b122b3f0", null ]
+];

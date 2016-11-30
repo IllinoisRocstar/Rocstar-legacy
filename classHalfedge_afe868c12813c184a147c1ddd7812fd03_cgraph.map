@@ -1,0 +1,24 @@
+<map id="tangent" name="tangent">
+<area shape="rect" id="node2" href="$classHalfedge.html#a3a641bee4ab38c773562303bc32f0988" title="Obtain the (primary copy of the) destination of the edge. " alt="" coords="123,534,208,561"/>
+<area shape="rect" id="node21" href="$classHalfedge.html#af15a42599ef8e122c9b7d94073f2481f" title="Obtain the (primary copy of the) origin of the edge. " alt="" coords="139,586,192,613"/>
+<area shape="rect" id="node22" href="$classNode.html#a33ca30e6b1bc538e87254b5f8fd39352" title="Obtain the coordinates of a node. " alt="" coords="121,641,210,667"/>
+<area shape="rect" id="node3" href="$classSimple__manifold__2.html#af44ed2c338be4e7d6ba15c813ac6ac42" title="Get the ID of the destination of a given edge. " alt="" coords="679,253,819,295"/>
+<area shape="rect" id="node13" href="$classPane__manifold__2.html#a9e4f032cd87aefe723260942a9510b0c" title="Obtains a Node object corresponding to the primary copy of the given node. " alt="" coords="269,527,417,568"/>
+<area shape="rect" id="node4" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="1095,403,1233,430"/>
+<area shape="rect" id="node6" href="$classSimple__manifold__2.html#ab6d308f97d5fe32df4e31327bdf5fc3e" title="Determine whether a given edge is a border edge of real part of the pane (either on physical border o..." alt="" coords="890,253,1030,295"/>
+<area shape="rect" id="node8" href="$classSimple__manifold__2.html#aaadb5ad421b2b96276a92c40c3331517" title="Get the opposite edge of a border edge for the real pane. " alt="" coords="881,173,1039,229"/>
+<area shape="rect" id="node10" href="$classSimple__manifold__2.html#a5dfd55a426d43af633d6f1d8788cb322" title="Get the opposite edge of a border edge for the ghost pane. " alt="" coords="875,319,1045,375"/>
+<area shape="rect" id="node7" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="1283,235,1384,262"/>
+<area shape="rect" id="node5" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="1285,433,1382,459"/>
+<area shape="rect" id="node9" href="$classSimple__manifold__2.html#ae1611b1b5b6feb95d11d299ef4150866" title="Is the element incident on the give edge a real element? " alt="" coords="1094,287,1234,328"/>
+<area shape="rect" id="node11" href="$classSimple__manifold__2.html#a678219ca5d2b29febb0820f195f668ba" title="Get an index for internal edges. " alt="" coords="1094,505,1234,547"/>
+<area shape="rect" id="node12" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="1306,513,1361,539"/>
+<area shape="rect" id="node14" href="$classPane__manifold__2.html#a47b2d003e1ea97488de3d260080f1fe3" title="Obtain the border node index (equal to ID of incident border edge). " alt="" coords="475,515,623,556"/>
+<area shape="rect" id="node15" href="$classSimple__manifold__2.html#afaabce069f16be292e5dd4d8064bcd99" title="Get the ID of an incident real edge within the pane of a given node. " alt="" coords="672,501,827,543"/>
+<area shape="rect" id="node16" href="$classSimple__manifold__2.html#ada174cc24bb104689a8ded70a6674ebb" title="Is the given node a real node? " alt="" coords="890,501,1030,543"/>
+<area shape="rect" id="node17" href="$classSimple__manifold__2.html#aa81d979ace76b3412a00645efe09cfff" title="Get the opposite edge of an interior edge of the ghost part. " alt="" coords="875,618,1045,674"/>
+<area shape="rect" id="node19" href="$classSimple__manifold__2.html#a3fff497bdfcdda219b941fffcedf3d41" title="Simple_manifold_2::\lget_next_ghost_edge\l_interior" alt="" coords="887,698,1033,754"/>
+<area shape="rect" id="node20" href="$classSimple__manifold__2.html#a96857d0e0525ef06c2590d22d2acf0c1" title="Get the ID of the origin of a given edge. " alt="" coords="890,779,1030,820"/>
+<area shape="rect" id="node18" href="$classSimple__manifold__2.html#ab06c9b0093094a1e15b3c1d91b6d7012" title="Is the element incident on the give edge a ghost element? " alt="" coords="1094,611,1234,652"/>
+<area shape="rect" id="node23" href="$classSimple__manifold__2.html#ab944b155156144ffb9cb73cad9eef7cc" title="Obtain a const pointer to the pane. " alt="" coords="259,669,427,695"/>
+</map>

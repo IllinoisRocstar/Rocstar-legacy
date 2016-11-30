@@ -1,0 +1,4 @@
+<map id="reset_reference_meshset" name="reset_reference_meshset">
+<area shape="rect" id="node2" href="$classMesquite_1_1MeshSet.html#ae7f6e22ad7a7ae1216ff849eb1f0e6f5" title="Resets the MeshSet object so that get_next_patch() will restart its iterations at the first vertex..." alt="" coords="225,5,367,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1EntityIterator.html#aa8850ed68fa313e7a4f87647f106b754" title="Moves the iterator back to the first entity in the list. " alt="" coords="417,5,575,46"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="operator()" name="operator()">
+<area shape="rect" id="node2" href="$predicates__on__pointsS3_8h.html#ac51b211da7cf16d0b4e5debcc45fb533" title="side_of_oriented_sphere" alt="" coords="131,132,293,159"/>
+<area shape="rect" id="node3" href="$predicates_2kernel__ftC3_8h.html#a25c3dcfbdec7db650f97d7ff312b7b5b" title="side_of_oriented_sphereC3" alt="" coords="342,56,522,83"/>
+<area shape="rect" id="node8" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="391,107,473,133"/>
+<area shape="rect" id="node9" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="391,157,473,184"/>
+<area shape="rect" id="node10" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="391,208,473,235"/>
+<area shape="rect" id="node4" href="$sign__of__determinant_8h.html#aed0d661d9f10bdf73ec1c945fdfa577d" title="sign_of_determinant4x4" alt="" coords="571,31,731,57"/>
+<area shape="rect" id="node7" href="$Pane__boundary_8C.html#a435ef393d7d5394df67d5da81c108c7d" title="square" alt="" coords="620,81,681,108"/>
+<area shape="rect" id="node5" href="$determinant_8h.html#a2e1c486021f605230dab16b98a7ad605" title="det4x4_by_formula" alt="" coords="779,5,911,32"/>
+<area shape="rect" id="node6" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="822,56,869,83"/>
+</map>

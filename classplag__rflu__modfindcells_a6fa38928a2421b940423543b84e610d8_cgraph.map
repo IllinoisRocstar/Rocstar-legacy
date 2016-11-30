@@ -1,0 +1,38 @@
+<map id="plag_rflu_findcellstrajsafe" name="plag_rflu_findcellstrajsafe">
+<area shape="rect" id="node2" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="931,560,1115,587"/>
+<area shape="rect" id="node3" href="$utilities_2rc__cmp_2util_8cpp.html#a20cb1d3b02ba93e67230bef14e0824b0" title="dist" alt="" coords="304,1759,347,1785"/>
+<area shape="rect" id="node7" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="1163,725,1295,752"/>
+<area shape="rect" id="node10" href="$classplag__modsurfstats.html#a58d278f5872e8cd4e008477a947dd9fa" title="plag_modsurfstats::\lplag_gathersurfstats" alt="" coords="497,583,637,625"/>
+<area shape="rect" id="node15" href="$PLAG__ReflectParticleData_8F90.html#ad64493db1fffea4e1258e95266369255" title="plag_reflectparticledata" alt="" coords="247,2035,403,2061"/>
+<area shape="rect" id="node13" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="937,835,1108,861"/>
+<area shape="rect" id="node19" href="$classrflu__modgeometrytools.html#a606aa429bd49c4b4c72e6494f58dfeda" title="rflu_modgeometrytools\l::rflu_computelinecellxsectsafe" alt="" coords="224,1127,427,1169"/>
+<area shape="rect" id="node30" href="$classrflu__modcellfaceedgeinfo.html#ab708020b2132bab3cf2ad4678ef3cb5d" title="rflu_modcellfaceedgeinfo\l::rflu_getfacekind" alt="" coords="711,718,878,759"/>
+<area shape="rect" id="node31" href="$classrflu__modcellfaceedgeinfo.html#ab2ca6be7aee1f9af4f266069b60c7b31" title="rflu_modcellfaceedgeinfo\l::rflu_getglobalcellkind" alt="" coords="711,886,878,927"/>
+<area shape="rect" id="node32" href="$classrflu__modincelltest.html#a5779762fa1b253a06da77467766f63bb" title="rflu_modincelltest\l::rflu_ict_testincellfancy" alt="" coords="487,981,647,1022"/>
+<area shape="rect" id="node34" href="$classrflu__modmpi.html#ab50bb0aa733e30048fc92eb95508d372" title="rflu_modmpi::rflu_mpi\l_recreatebufferipclsend" alt="" coords="488,250,645,291"/>
+<area shape="rect" id="node37" href="$classrflu__modrelatedpatches.html#a839956e4bb344cd588af8d4951e192af" title="rflu_modrelatedpatches\l::rflu_relp_transformvector" alt="" coords="707,347,882,389"/>
+<area shape="rect" id="node6" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="1001,1607,1045,1633"/>
+<area shape="rect" id="node4" href="$namespaceMesquite.html#a158e89125c01402924b46cd1cefa5240" title="Mesquite::pow" alt="" coords="513,1896,620,1923"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1Exponent.html#a665516b85c2af1c1e62945896e9178b2" title="Mesquite::Exponent\l::raise" alt="" coords="725,2013,864,2054"/>
+<area shape="rect" id="node8" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="1345,685,1506,726"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="1351,750,1499,791"/>
+<area shape="rect" id="node11" href="$classplag__modsurfstats.html#aae485b4617019deea8029d748431cd1a" title="plag_modsurfstats::\lplag_setbinindex" alt="" coords="726,151,863,193"/>
+<area shape="rect" id="node14" href="$structcimg__library_1_1CImg.html#a77d222b4837c78aad604f3f0b5f1409c" title="Return the sum of all the pixel values in an image. " alt="" coords="712,464,877,491"/>
+<area shape="rect" id="node12" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="1001,159,1044,185"/>
+<area shape="rect" id="node16" href="$ReflectPosition_8F90.html#a16365bc3d58751ad357c174b82de1770" title="reflectposition" alt="" coords="515,2035,618,2061"/>
+<area shape="rect" id="node18" href="$ReflectVector_8F90.html#aff8a129d970b2d3d10ec09a3133a719d" title="reflectvector" alt="" coords="519,2085,614,2112"/>
+<area shape="rect" id="node17" href="$classKdtree__d_1_1ExtPoint.html#a6d3ff0af9dd1932c1c031b2c51d88ee0" title="Kdtree_d::ExtPoint\l::term" alt="" coords="729,2078,861,2119"/>
+<area shape="rect" id="node20" href="$classrflu__modbilinearpatch.html#a59131c67edd9f0b5950ca0578f6097a3" title="rflu_modbilinearpatch\l::rflu_blin_computexsectline" alt="" coords="475,1574,659,1615"/>
+<area shape="rect" id="node28" href="$classMesh_1_1GenericElement.html#ae110e46b50937fe194f7891382c32b37" title="Mesh::GenericElement\l::nfaces" alt="" coords="717,1119,872,1161"/>
+<area shape="rect" id="node29" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="543,1185,590,1212"/>
+<area shape="rect" id="node21" href="$classmodtools.html#a092a68c4d69eeaa94418e4a1a2bdc629" title="modtools::swaprfreals" alt="" coords="719,1860,870,1887"/>
+<area shape="rect" id="node25" href="$classDirection__3.html#a5716e83eda039305c9948e0b6f4ed029" title="Direction_3::dz" alt="" coords="739,1657,850,1684"/>
+<area shape="rect" id="node22" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="985,1899,1060,1925"/>
+<area shape="rect" id="node23" href="$classColor.html#a6b4c47aed15e7f7a2f1e38311b98737e" title="Color::b" alt="" coords="989,1961,1057,1988"/>
+<area shape="rect" id="node24" href="$classLine__2.html#afe7f37893f080982762fded5aaca681c" title="Line_2::c" alt="" coords="985,1823,1060,1849"/>
+<area shape="rect" id="node26" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="771,1505,818,1532"/>
+<area shape="rect" id="node27" href="$classrflu__modbilinearpatch.html#adacf8ed2ab7680a8551bc343f5f4da26" title="rflu_modbilinearpatch\l::rflu_blin_computenormal" alt="" coords="709,1338,880,1379"/>
+<area shape="rect" id="node33" href="$classrflu__modincelltest.html#a00a75a728fe42a7d46c1c8378a45f577" title="rflu_modincelltest\l::rflu_ict_testfaceplanar" alt="" coords="715,951,874,993"/>
+<area shape="rect" id="node35" href="$classrflu__modmpi.html#a259d751e165701eacba7e03085378bb5" title="rflu_modmpi::rflu_mpi\l_destroybufferipclsend" alt="" coords="718,282,871,323"/>
+<area shape="rect" id="node36" href="$classrflu__modmpi.html#a0ba140d1b6c50219f2bf4cb9facc04bf" title="rflu_modmpi::rflu_mpi\l_createbufferipclsend" alt="" coords="721,217,868,258"/>
+</map>

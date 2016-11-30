@@ -1,0 +1,10 @@
+<map id="readCommaExpression" name="readCommaExpression">
+<area shape="rect" id="node2" href="$classtpz__ordered.html#a119e54ee64002a1826cc81d1e743b87f" title="tpz_ordered::parse\l_layout" alt="" coords="232,5,363,46"/>
+<area shape="rect" id="node3" href="$classtpz__fequad.html#a119e54ee64002a1826cc81d1e743b87f" title="tpz_fequad::parse_layout" alt="" coords="213,71,381,97"/>
+<area shape="rect" id="node4" href="$classFileselect.html#a0f4472b668fd16b3919d52d75661ed1e" title="Test if a file is a tecplot file. " alt="" coords="222,121,373,148"/>
+<area shape="rect" id="node8" href="$classtecplot__data.html#a3e7be56194aaa3b89550d9586975ff21" title="Read the header information for the specified zone, then create a new zone object based on the type o..." alt="" coords="233,173,362,214"/>
+<area shape="rect" id="node5" href="$classFileselect.html#ae6e4ad773228ae950b15ab723a65eef7" title="Use test functions to determine the filetype and to create a new file object for the input file..." alt="" coords="429,121,597,148"/>
+<area shape="rect" id="node6" href="$main_8h.html#a62dff95144917baa434c80e55df89ea4" title="Open the files specified at the command line and parse them. " alt="" coords="646,121,781,148"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="829,121,880,148"/>
+<area shape="rect" id="node9" href="$classtecplot__data.html#ad7c704b34912678d95c13243cacf9d7f" title="Parse the tecplot file. " alt="" coords="447,180,580,207"/>
+</map>

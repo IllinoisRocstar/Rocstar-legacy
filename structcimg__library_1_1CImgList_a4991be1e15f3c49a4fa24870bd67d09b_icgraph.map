@@ -1,0 +1,5 @@
+<map id="load_parrec" name="load_parrec">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImgList.html#aca5a8ad3bb0c44264af7c25cf82536b0" title="cimg_library::CImgList\l\&lt; uintT \&gt;::get_load_parrec" alt="" coords="145,5,319,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgList.html#a8ee71f92f35cc9e24d9d3a09456be2ae" title="Load an image list from a file. " alt="" coords="155,70,309,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a9e3446fd647fcb9fc95a462435f42784" title="Load an image from a PAR&#45;REC (Philips) file. " alt="" coords="157,135,307,177"/>
+</map>

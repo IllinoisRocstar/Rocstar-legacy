@@ -1,0 +1,5 @@
+<map id="get_string" name="get_string">
+<area shape="rect" id="node2" href="$namespacecimg__library_1_1cimg.html#a4429d578e86edc9147af5a8f307c5f30" title="Read file data, and check for possible errors. " alt="" coords="133,5,261,46"/>
+<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="309,5,437,46"/>
+<area shape="rect" id="node4" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="485,5,613,46"/>
+</map>

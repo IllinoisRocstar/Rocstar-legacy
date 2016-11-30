@@ -1,0 +1,6 @@
+<map id="run" name="run">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="121,5,255,32"/>
+<area shape="rect" id="node3" href="$classAgent.html#aa1c4659992db640d62cff1fea2b9c6b8" title="Agent::get_communicator" alt="" coords="103,56,273,83"/>
+<area shape="rect" id="node4" href="$classAgent.html#a5d3576b9180e99959235980d580a4090" title="Agent::get_coupling" alt="" coords="119,107,257,133"/>
+<area shape="rect" id="node5" href="$classCoupling.html#a74d1138ae9a6c79d20343b54e30b051e" title="Coupling::get_rocmancontrol\l_param" alt="" coords="94,158,282,199"/>
+</map>

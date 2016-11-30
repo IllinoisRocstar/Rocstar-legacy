@@ -1,0 +1,8 @@
+<map id="project_onto_element" name="project_onto_element">
+<area shape="rect" id="node2" href="$classOverlay.html#a6054035d0679586f98c8667b9951ae60" title="Overlay::get_green\l_parent" alt="" coords="201,5,333,46"/>
+<area shape="rect" id="node4" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="603,57,728,98"/>
+<area shape="rect" id="node6" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="381,122,552,163"/>
+<area shape="rect" id="node3" href="$classOverlay.html#a7a0198e2249c3c9b0a02ecb297251546" title="Overlay::overlay_init" alt="" coords="396,16,537,43"/>
+<area shape="rect" id="node5" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="779,97,896,124"/>
+<area shape="rect" id="node7" href="$classOverlay.html#af13f003d409781875438877fd15f4d81" title="Overlay::associate\l_green_vertices" alt="" coords="600,122,731,163"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="display" name="display">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImgDisplay.html#afde33f75da6e714eb378407da029f11d" title="Display an image in a window. " alt="" coords="163,5,226,32"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgList.html#a563eced0a41cdb792b2b151b682f7ae5" title="Return a single image which is the concatenation of all images of the current CImgList instance..." alt="" coords="118,57,271,98"/>
+</map>

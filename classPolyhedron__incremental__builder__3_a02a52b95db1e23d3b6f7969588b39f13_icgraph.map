@@ -1,0 +1,9 @@
+<map id="CGAL_assertion_code" name="CGAL_assertion_code">
+<area shape="rect" id="node2" href="$classPolyhedron__incremental__builder__3.html#a2c87480f89222776f7cbb1bfeca98e29" title="add_vertex_to_facet" alt="" coords="209,5,349,32"/>
+<area shape="rect" id="node4" href="$classPolyhedron__incremental__builder__3.html#a808c28f702c9e4cb9b597e5aff849197" title="begin_facet" alt="" coords="234,107,323,133"/>
+<area shape="rect" id="node5" href="$classPolyhedron__incremental__builder__3.html#aa5f298d51bf850ea76d5a535d49dfc0e" title="begin_surface" alt="" coords="398,132,501,159"/>
+<area shape="rect" id="node3" href="$classPolyhedron__incremental__builder__3.html#a74cfc3317835a62d5b15d795a44cc86c" title="end_facet" alt="" coords="410,5,489,32"/>
+<area shape="rect" id="node6" href="$classPolyhedron__incremental__builder__3.html#a5486c4800f140b871ed234e343f3f8c3" title="end_surface" alt="" coords="232,208,325,235"/>
+<area shape="rect" id="node7" href="$classPolyhedron__incremental__builder__3.html#a9ad9de4b70462b59b707edb8912c1da3" title="hds" alt="" coords="257,259,300,285"/>
+<area shape="rect" id="node8" href="$classPolyhedron__incremental__builder__3.html#a071de472f6ac976c658e4643f3fb3d0c" title="rollback" alt="" coords="245,309,312,336"/>
+</map>

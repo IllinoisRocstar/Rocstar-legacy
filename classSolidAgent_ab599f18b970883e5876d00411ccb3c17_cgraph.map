@@ -1,0 +1,23 @@
+<map id="create_buffer_all" name="create_buffer_all">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a2101b9a49179ad3af43eaefd6ff8ab0f" title="Clone the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="427,106,573,133"/>
+<area shape="rect" id="node4" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="195,8,341,34"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a2646772260b31e1397ee79453c67c939" title="COM_get_attribute" alt="" coords="202,60,334,86"/>
+<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="411,208,589,234"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#a299161a8c4977e89b90876b670289762" title="COM_get_attribute_handle\l_const" alt="" coords="411,259,589,300"/>
+<area shape="rect" id="node8" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="199,325,337,352"/>
+<area shape="rect" id="node9" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="433,594,567,621"/>
+<area shape="rect" id="node10" href="$roccom__c_09_09_8h.html#ab6a6d18043bc76f9a381084af49c6a9f" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="203,376,333,402"/>
+<area shape="rect" id="node11" href="$roccom__c_09_09_8h.html#ac624fa4f91f2a6a33efd1d6a09ec3432" title="Use the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="433,544,567,570"/>
+<area shape="rect" id="node12" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="419,696,581,722"/>
+<area shape="rect" id="node13" href="$classAgent.html#ab599f18b970883e5876d00411ccb3c17" title="Agent::create_buffer_all" alt="" coords="188,477,348,504"/>
+<area shape="rect" id="node14" href="$classAgent.html#aa6c678661c300897a1c55a171c020d61" title="Agent::create_registered\l_window_attributes" alt="" coords="418,427,582,468"/>
+<area shape="rect" id="node16" href="$classAgent.html#a5d3576b9180e99959235980d580a4090" title="Agent::get_coupling" alt="" coords="199,746,337,773"/>
+<area shape="rect" id="node17" href="$classCoupling.html#a0ae34e30b1c6104e091ec287feb150db" title="Coupling::get_max_ipc" alt="" coords="191,797,345,824"/>
+<area shape="rect" id="node18" href="$classCoupling.html#a74d1138ae9a6c79d20343b54e30b051e" title="Coupling::get_rocmancontrol\l_param" alt="" coords="174,848,362,890"/>
+<area shape="rect" id="node19" href="$classSolidAgent.html#a4b04d6f979afebb0bd330941672414aa" title="read_restart_data" alt="" coords="207,173,329,200"/>
+<area shape="rect" id="node21" href="$classAgent.html#aee60802e6ccfe3397cf602fd1aa11dd4" title="Agent::split_surface\l_window" alt="" coords="199,630,337,671"/>
+<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="637,325,765,352"/>
+<area shape="rect" id="node15" href="$classAgent.html#a7166b9d0c3321d1abf347377b32bf154" title="Agent::get_agent_name" alt="" coords="420,493,580,520"/>
+<area shape="rect" id="node20" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="433,157,567,184"/>
+<area shape="rect" id="node22" href="$roccom__c_09_09_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="413,645,587,672"/>
+</map>

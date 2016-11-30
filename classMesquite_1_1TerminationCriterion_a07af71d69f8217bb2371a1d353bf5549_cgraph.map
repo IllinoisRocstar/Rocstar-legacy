@@ -1,0 +1,6 @@
+<map id="reset_patch" name="reset_patch">
+<area shape="rect" id="node2" href="$classMesquite_1_1PatchData.html#a0bb57753499f14af261c370163a16a49" title="Creates a memento that holds the current state of the PatchData coordinates. " alt="" coords="145,5,325,46"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1PatchData.html#a4fa6913f1644e2aed4f96ff4dba66619" title="reinstantiates a memento to holds the current state of the PatchData coordinates. ..." alt="" coords="162,71,307,127"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a7619ea708c552f119c4c1b9f35af8522" title="Get number of nodes (vertex + higher&#45;order nodes) " alt="" coords="374,7,519,49"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="374,74,519,115"/>
+</map>

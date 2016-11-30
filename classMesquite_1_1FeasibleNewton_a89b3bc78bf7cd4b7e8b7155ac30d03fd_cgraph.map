@@ -1,0 +1,51 @@
+<map id="optimize_vertex_positions" name="optimize_vertex_positions">
+<area shape="rect" id="node2" href="$classMesquite_1_1TerminationCriterion.html#afd2c12358711995a576f8c8a9200c94a" title="Accumulate data during inner iteration. " alt="" coords="227,210,427,251"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1TerminationCriterion.html#a52e1a2e10a747dcb4c1343700df6bfb4" title="Common code for both inner and outer termination criteria during inner iteration. ..." alt="" coords="227,1083,427,1125"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1MsqHessian.html#a67a4ef4f036cb94195b41984ca10d0bb" title="Mesquite::MsqHessian\l::cg_solver" alt="" coords="249,517,405,558"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1ObjectiveFunction.html#a91076d1dd1a59a6f3c00c46d9c16ad45" title="Calls either compute_numerical_gradient or compute_analytical_gradient depending on the value of grad..." alt="" coords="478,155,666,197"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1ObjectiveFunction.html#a60fd681a69d03dd7e44e4e40338aab61" title="Calls compute_analytical_hessian. Function returns &#39;false&#39; if the patch is not within a required feas..." alt="" coords="233,390,421,431"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1ObjectiveFunction.html#aa4022056de427aeed2972f46957a8cb9" title="Mesquite::ObjectiveFunction\l::evaluate" alt="" coords="1454,61,1642,102"/>
+<area shape="rect" id="node31" href="$classMesquite_1_1QualityImprover.html#a4573f7d8766d7d7bbd13ed9ff2684659" title="return the inner termination criterion pointer " alt="" coords="239,720,414,776"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="1238,429,1383,470"/>
+<area shape="rect" id="node32" href="$classMesquite_1_1MsqHessian.html#a497a4645ccf251f6993261c5ecf88712" title="creates a sparse structure for a Hessian, based on the connectivity information contained in the Patc..." alt="" coords="249,902,405,943"/>
+<area shape="rect" id="node28" href="$namespaceMesquite.html#a075d7789d19c4ccdead79f23395314df" title="Mesquite::inner" alt="" coords="517,524,627,551"/>
+<area shape="rect" id="node24" href="$namespaceMesquite.html#ac7fe4c546e08637612bd9b212daa45e9" title="Mesquite::length" alt="" coords="513,575,631,601"/>
+<area shape="rect" id="node44" href="$classMesquite_1_1PatchData.html#a7b4e6937d36698bed3819f6b37570f4c" title="Moves free vertices and then snaps the free vertices to the domain. " alt="" coords="499,1476,645,1532"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#a80870c233d0237e3588a2d6f8d176916" title="Increments the iterator. returns false if there is no more free vertex. " alt="" coords="718,1441,922,1482"/>
+<area shape="rect" id="node46" href="$classMesquite_1_1PatchData.html#ae1e5f16431edfc2266d739fc080e9bea" title="Returns the number of elements in the current patch who are free to move. " alt="" coords="1238,1689,1383,1730"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="1475,1134,1621,1175"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1PatchData.html#a4fa6913f1644e2aed4f96ff4dba66619" title="reinstantiates a memento to holds the current state of the PatchData coordinates. ..." alt="" coords="499,1141,645,1197"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ad20897c5c8bd47f5d4005989bead0e55" title="Resets the iterator. " alt="" coords="718,1506,922,1547"/>
+<area shape="rect" id="node47" href="$classMesquite_1_1PatchData.html#ad75d2c7c4067d4140663325c68fde738" title="Restore the PatchData coordinates to the state contained in the memento. " alt="" coords="482,1222,662,1263"/>
+<area shape="rect" id="node48" href="$classMesquite_1_1TerminationCriterion.html#ab78db397b67d1ccfc887c0e11218f94d" title="Check if termination criterion has been met. " alt="" coords="227,1658,427,1699"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ae3a963bdd66247d38ad22d17fa121632" title="Returns an index corresponding to a free vertex. " alt="" coords="718,1375,922,1417"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1ObjectiveFunction.html#a4a7414cc796e109918b7d9ee31d27e0d" title="Non&#45;virtual function which numerically computes the gradient of the Objective Function. Function returns &#39;false&#39; if the patch is not within a required feasible regeion. Otherwise, it returns &#39;true&#39;. " alt="" coords="971,171,1167,213"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1ObjectiveFunction.html#a96fd4fab3da95f31341ab275bbed6c25" title="Mesquite::ObjectiveFunction\l::compute_analytical_gradient" alt="" coords="723,109,917,150"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1PatchData.html#aeaf52b1d7f533102a7f43a6860fbf072" title="Fills a PatchData with the elements attached to a center vertex. " alt="" coords="1238,210,1383,251"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1ObjectiveFunction.html#ad3eeed0b0c55973430c6ca89387692c2" title="Returns eps used in the numerical gradient calculation. " alt="" coords="1217,145,1405,186"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1MsqMeshEntity.html#a0b552656e1b264732e90715ccba32b1f" title="Return number of nodes in element (number of corner vertices + number of higher&#45;order nodes)..." alt="" coords="1461,265,1635,306"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1ObjectiveFunction.html#a0f076c7d1b01e9357370c3c7116eaeb2" title="Mesquite::ObjectiveFunction\l::concrete_evaluate" alt="" coords="1691,61,1879,102"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1ObjectiveFunction.html#aade5b9a631e31103631f47d265fbb399" title="Set gradType to either NUMERICAL_GRADIENT or ANALYTICAL_GRADIENT. " alt="" coords="975,106,1163,147"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1PatchData.html#a0c304342ea32a23debc99bf8ad579a88" title="Calculates the distance each vertex has moved from its original position as defined by the PatchDataV..." alt="" coords="477,1295,667,1351"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1Vector3D.html#a49fe740d37400aba7d3cb91531cde7d1" title="Mesquite::Vector3D\l::length_squared" alt="" coords="751,1310,889,1351"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1MsqVertex.html#a181f1717ea1cab3613ff39c6969600dc" title="Mesquite::MsqVertex\l::is_flag_set" alt="" coords="996,1441,1143,1482"/>
+<area shape="rect" id="node22" href="$classMesquite_1_1PatchData.html#a7619ea708c552f119c4c1b9f35af8522" title="Get number of nodes (vertex + higher&#45;order nodes) " alt="" coords="747,1193,893,1234"/>
+<area shape="rect" id="node26" href="$classMesquite_1_1MsqHessian.html#aff09dc7ab80b03c0ea003fd77ed0bfb2" title="Mesquite::MsqHessian\l::compute_preconditioner" alt="" coords="488,393,656,434"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1MsqHessian.html#af520cb0f493cd2fc3cbcd33294e8a5c2" title="Mesquite::MsqHessian\l::apply_preconditioner" alt="" coords="494,458,650,499"/>
+<area shape="rect" id="node25" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="1047,787,1091,813"/>
+<area shape="rect" id="node30" href="$classMesquite_1_1ObjectiveFunction.html#af5c250861a2c37faf271803903977a3a" title="Mesquite::ObjectiveFunction\l::compute_analytical_hessian" alt="" coords="475,327,669,369"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1PatchData.html#a3f7ed6a14a98f283aa700342b9cc2a01" title="number of elements in the Patch. " alt="" coords="499,691,645,733"/>
+<area shape="rect" id="node34" href="$arruda__boyce_8f90.html#a2f31672ee5874935d96e7aea2c8371fe" title="rs" alt="" coords="553,989,591,1016"/>
+<area shape="rect" id="node40" href="$classMesquite_1_1PatchData.html#a3e94692727e2bf9bc09fd1625788e21c" title="Returns a pointer to the start of the element array. " alt="" coords="499,757,645,798"/>
+<area shape="rect" id="node41" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="485,626,659,667"/>
+<area shape="rect" id="node43" href="$classMesquite_1_1MsqMeshEntity.html#ad71b653bcc409c99d990a688e45f25d6" title="Very efficient retrieval of vertices indexes (corresponding to the PatchData vertex array)..." alt="" coords="485,822,659,863"/>
+<area shape="rect" id="node35" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="1032,939,1107,965"/>
+<area shape="rect" id="node36" href="$arruda__boyce_8f90.html#a6fbc6c2163a4ca8b183d367f2bdf65c2" title="tql1" alt="" coords="799,888,841,915"/>
+<area shape="rect" id="node37" href="$arruda__boyce_8f90.html#a11625c0d4087813612fcea51e6bdc170" title="tql2" alt="" coords="799,787,841,813"/>
+<area shape="rect" id="node38" href="$arruda__boyce_8f90.html#af7b3c6cb5bad790aa302b90dfad59af9" title="tred1" alt="" coords="795,939,845,965"/>
+<area shape="rect" id="node39" href="$arruda__boyce_8f90.html#a40a1f383b8cd714b3c0d7dbe946d99eb" title="tred2" alt="" coords="795,837,845,864"/>
+<area shape="rect" id="node42" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="741,619,899,661"/>
+<area shape="rect" id="node45" href="$classMesquite_1_1PatchData.html#a68de345feb47d7fc0d410d65ff68098e" title="Adjust the position of the specified vertex so that it lies on its constraining domain. " alt="" coords="736,1571,904,1613"/>
+<area shape="rect" id="node49" href="$classMesquite_1_1MsqInterrupt.html#adb55649f56913bbbf3aeef547a90db46" title="Check if an interrupt was seen. " alt="" coords="494,1658,650,1699"/>
+<area shape="rect" id="node50" href="$classMesquite_1_1Timer.html#ac3f6cf620241299874ad6ba0de5fc5f7" title="Mesquite::Timer::since\l_birth" alt="" coords="495,1723,649,1765"/>
+</map>

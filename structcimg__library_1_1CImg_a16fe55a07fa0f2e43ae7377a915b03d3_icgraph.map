@@ -1,0 +1,6 @@
+<map id="get_invert" name="get_invert">
+<area shape="rect" id="node2" href="$namespacecimg__library.html#af3b040268ea179f1e7d46f683b27b533" title="cimg_library::invert" alt="" coords="143,44,275,71"/>
+<area shape="rect" id="node5" href="$namespacecimg__library.html#a0b912f56a0b0a4604406faff7bc8d5f5" title="cimg_library::operator/" alt="" coords="134,95,285,121"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgList.html#a231161b57fc1e5d813f254f65afefd8b" title="Compute a 1&#45;D Fast Fourier Transform, along specified axis. " alt="" coords="334,5,487,46"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImgList.html#ae9e7074da9c9955e37e9eebbd5bd9c22" title="cimg_library::CImgList\l\&lt; uintT \&gt;::get_FFT" alt="" coords="334,70,487,111"/>
+</map>

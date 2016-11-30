@@ -1,0 +1,5 @@
+<map id="convert_pconn_edge2ghost" name="convert_pconn_edge2ghost">
+<area shape="rect" id="node2" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="273,5,375,32"/>
+<area shape="rect" id="node3" href="$classSimple__manifold__2.html#a388807b9a6d8f961084b971ad0967d6e" title="Get the ID of the opposite real edge of a given real or border edge. " alt="" coords="245,57,403,98"/>
+<area shape="rect" id="node4" href="$classSimple__manifold__2.html#accf9c0564d7b0c8d625ca65487664437" title="Number of border edges of the real part of the pane. " alt="" coords="235,122,413,163"/>
+</map>

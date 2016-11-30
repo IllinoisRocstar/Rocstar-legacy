@@ -1,0 +1,6 @@
+<map id="size_of_nodes" name="size_of_nodes">
+<area shape="rect" id="node2" href="$classPane.html#a20818cc1edd59ab35c1eded37741f6ee" title="Pane::ignore_ghost" alt="" coords="165,5,299,32"/>
+<area shape="rect" id="node3" href="$classConnectivity.html#afc3d6a08a6436efe1af8e83699d4ca53" title="Determine whether the mesh is quadratic. " alt="" coords="183,56,281,83"/>
+<area shape="rect" id="node4" href="$classConnectivity.html#a3ab0f5b4dbc683714ef15ccfb16225ac" title="Get a constant pointer to the connectivity array. " alt="" coords="201,107,263,133"/>
+<area shape="rect" id="node5" href="$classPane.html#a90701a7c4656a0296943ce2c7521ffe2" title="Get the total number of nodes in the pane (including ghost nodes). " alt="" coords="160,157,304,184"/>
+</map>

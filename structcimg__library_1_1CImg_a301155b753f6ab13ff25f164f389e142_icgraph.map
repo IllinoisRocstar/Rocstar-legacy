@@ -1,0 +1,6 @@
+<map id="max" name="max">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a8178955893867147b35b226e3f75077c" title="cimg_library::CImg\l\&lt; uintT \&gt;::_quicksort" alt="" coords="102,5,245,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a563bbcba12f98e887de94f3b3aecf2e7" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_max" alt="" coords="107,70,240,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a48d98c3fd83de8d1f6b03b675d71229f" title="Pointwise max operator between two images. " alt="" coords="107,135,239,177"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#acaf16c667ccfe861ba7c565537f67a1a" title="Add random noise to the values of the instance image. " alt="" coords="107,201,239,242"/>
+</map>

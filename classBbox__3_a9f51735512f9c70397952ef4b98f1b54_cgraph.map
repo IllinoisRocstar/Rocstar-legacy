@@ -1,0 +1,11 @@
+<map id="operator+" name="operator+">
+<area shape="rect" id="node2" href="$classBbox__3.html#aea83573afadba15e4169ff1d07701917" title="Bbox_3" alt="" coords="131,5,197,32"/>
+<area shape="rect" id="node3" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="141,56,187,83"/>
+<area shape="rect" id="node4" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="143,107,185,133"/>
+<area shape="rect" id="node5" href="$classBbox__3.html#a9fc84e6da4a37412b5d7af2ce8b22588" title="xmax" alt="" coords="137,157,191,184"/>
+<area shape="rect" id="node6" href="$classBbox__3.html#a2afe2f5c6ed73686631520ab5304503e" title="xmin" alt="" coords="139,208,189,235"/>
+<area shape="rect" id="node7" href="$classBbox__3.html#a47fe6cd25d5ca9d1f11ee5059d825201" title="ymax" alt="" coords="137,259,191,285"/>
+<area shape="rect" id="node8" href="$classBbox__3.html#ae0cae337f47f3e2a5187d3a4594fcd53" title="ymin" alt="" coords="139,309,189,336"/>
+<area shape="rect" id="node9" href="$classBbox__3.html#ab4b1ffe24e0aa15ac62cf745d99919bd" title="zmax" alt="" coords="137,360,191,387"/>
+<area shape="rect" id="node10" href="$classBbox__3.html#ae2a83c8b65e0d8f652ffd6c1c3e0bcd0" title="zmin" alt="" coords="139,411,189,437"/>
+</map>

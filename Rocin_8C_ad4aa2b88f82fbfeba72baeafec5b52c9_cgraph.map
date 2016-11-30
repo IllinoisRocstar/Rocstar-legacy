@@ -1,0 +1,10 @@
+<map id="broadcast_win_attributes" name="broadcast_win_attributes">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#ab5a8ac8121d23b45ad8c8354970a2130" title="COM_free_buffer" alt="" coords="229,5,352,32"/>
+<area shape="rect" id="node4" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="233,56,348,83"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a2646772260b31e1397ee79453c67c939" title="COM_get_attribute" alt="" coords="225,107,357,133"/>
+<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#a6108d8658c3facfb8789d44fa3240933" title="COM_get_attributes" alt="" coords="221,157,360,184"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#ad0963775a018dcb83d982e5cfeeb3a22" title="COM_get_sizeof" alt="" coords="231,208,351,235"/>
+<area shape="rect" id="node9" href="$vinci_8h.html#a9d685369a20ad2d6f5c2256b857614f6" title="empty" alt="" coords="261,259,320,285"/>
+<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="408,107,536,133"/>
+<area shape="rect" id="node8" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="431,208,513,235"/>
+</map>

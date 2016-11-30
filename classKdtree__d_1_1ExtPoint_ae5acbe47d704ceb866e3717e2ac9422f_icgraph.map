@@ -1,0 +1,11 @@
+<map id="dimension" name="dimension">
+<area shape="rect" id="node2" href="$classKdtree__d_1_1Box.html#a1778f9338bd60897b3028dcb0738b14a" title="Kdtree_d::Box::intersect" alt="" coords="387,5,549,32"/>
+<area shape="rect" id="node3" href="$classKdtree__d_1_1Box.html#acef8e33cfd36a5d7d2fad939efcf02e3" title="Kdtree_d::Box::is_empty" alt="" coords="154,51,321,77"/>
+<area shape="rect" id="node4" href="$classKdtree__d_1_1Box.html#a3748dcd49ff1df595c576e2e2ccef7b3" title="Kdtree_d::Box::is_empty_open" alt="" coords="137,101,338,128"/>
+<area shape="rect" id="node5" href="$classKdtree__d_1_1Box.html#a0f0c777b9e64e16795f7c3424a562cb2" title="Kdtree_d::Box::is_in" alt="" coords="167,152,307,179"/>
+<area shape="rect" id="node10" href="$classKdtree__d_1_1Box.html#a9570ebc26b22213840341cc65f56e3c5" title="Kdtree_d::Box::is_intersect" alt="" coords="147,203,327,229"/>
+<area shape="rect" id="node6" href="$classKdtree__d_1_1Node.html#a45fe92e6de851a077b55e05a9179ae4d" title="Kdtree_d::Node::copy\l_subtree_points" alt="" coords="393,86,543,127"/>
+<area shape="rect" id="node8" href="$classKdtree__d_1_1Node.html#ad8383b0de2925ae5888c527be85a98a7" title="Kdtree_d::Node::search" alt="" coords="805,144,965,171"/>
+<area shape="rect" id="node7" href="$classKdtree__d_1_1Node.html#a93fa418c712b556a3b535ec97a7e3b1e" title="Kdtree_d::Node::search\l_recursive" alt="" coords="597,137,757,178"/>
+<area shape="rect" id="node9" href="$classKdtree__d.html#a8d4c7ac5933d56ca89519fe8712f764d" title="Kdtree_d::search" alt="" coords="1014,144,1135,171"/>
+</map>

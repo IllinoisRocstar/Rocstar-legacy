@@ -1,0 +1,9 @@
+<map id="get_domain_normal_at_vertex" name="get_domain_normal_at_vertex">
+<area shape="rect" id="node2" href="$classMesquite_1_1GeneralizedConditionNumberQualityMetric.html#a0259c6341f47e0d2dbd2494f5723c42f" title="Mesquite::GeneralizedCondition\lNumberQualityMetric::compute\l_condition_number" alt="" coords="209,5,415,61"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1RI__DFT.html#aa71c0d57cadd2f8eeb540ab194c145b3" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="217,86,407,127"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1RI__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::RI_DFT::compute\l_element_analytical_hessian" alt="" coords="217,151,407,193"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1ShapeQualityMetric.html#a049c8172101b823d31ecf9a6f1a19244" title="Given the 2&#45;d jacobian matrix, compute the condition number, fval. " alt="" coords="213,217,411,258"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1RI__DFT.html#abc691c49e36734bba1ea2ecd14fe9a5b" title="Evaluate the metric for an element. " alt="" coords="219,282,405,323"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1ConditionNumberQualityMetric.html#afc1a16a1793ba9459a9b930b5292ffc5" title="evaluate using mesquite objects " alt="" coords="495,172,679,228"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1VertexConditionNumberQualityMetric.html#a5a90f78516fa587f85daf4011bfb1ba8" title="evaluate using mesquite objects " alt="" coords="464,253,709,294"/>
+</map>

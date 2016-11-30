@@ -1,0 +1,10 @@
+<map id="Coupling.h" name="Coupling.h">
+<area shape="rect" id="node4" href="$FluidAgent_8h.html" title="FluidAgent.h" alt="" coords="151,80,245,107"/>
+<area shape="rect" id="node14" href="$SolidAgent_8h.html" title="SolidAgent.h" alt="" coords="271,80,367,107"/>
+<area shape="rect" id="node5" href="$Agent_8h.html" title="Agent.h" alt="" coords="172,155,239,181"/>
+<area shape="rect" id="node7" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="174,229,249,256"/>
+<area shape="rect" id="node11" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="255,379,333,405"/>
+<area shape="rect" id="node8" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="156,304,247,331"/>
+<area shape="rect" id="node9" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="27,379,141,405"/>
+<area shape="rect" id="node10" href="$FC_8h.html" title="FC.h" alt="" coords="59,453,109,480"/>
+</map>

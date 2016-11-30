@@ -1,0 +1,8 @@
+<map id="Rocin_unload_module" name="Rocin_unload_module">
+<area shape="rect" id="node2" href="$classRocin.html#a5584fd8a3eb5c21ad725f4516fed8b7b" title="Finalize the module by deregistering it from Roccom. " alt="" coords="206,56,311,83"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a51cd80e32371211a6a01185579eff4ee" title="COM_get_object" alt="" coords="373,5,493,32"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="360,56,507,83"/>
+<area shape="rect" id="node6" href="$classHDF4.html#a32d626626eee0bc4ade146973f6abb1c" title="Destroy the I/O thread. " alt="" coords="380,107,487,133"/>
+<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="555,31,683,57"/>
+<area shape="rect" id="node7" href="$classHDF4.html#a9b848654502024dde7e46ab002f2c9dd" title="Terminate the I/O thread. " alt="" coords="557,107,680,133"/>
+</map>

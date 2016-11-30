@@ -1,0 +1,11 @@
+<map id="Window::Pane_friend" name="Window::Pane_friend">
+<area shape="rect" id="node2" href="$classPane.html" title="A Pane object contains a mesh, pane attribute, and field variables. " alt="" coords="273,172,325,199"/>
+<area shape="rect" id="node5" href="$classAttribute.html" title="An Attribute object is a data member of a window. " alt="" coords="527,499,598,525"/>
+<area shape="rect" id="node11" href="$classWindow.html" title="A Window object contains multiple panes and multiple data attributes. " alt="" coords="1493,679,1563,705"/>
+<area shape="rect" id="node4" href="$classConnectivity.html" title="Encapsulates an element&#45;connectivity of a mesh. " alt="" coords="890,420,985,447"/>
+<area shape="rect" id="node13" href="$classFunction.html" title="A Function object corresponds to a function member of a window. " alt="" coords="901,597,973,624"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="271,832,326,859"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="5,832,147,859"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="253,444,344,471"/>
+<area shape="rect" id="node15" title="STL class. " alt="" coords="515,723,611,749"/>
+</map>

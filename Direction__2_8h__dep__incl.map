@@ -1,0 +1,24 @@
+<map id="Direction_2.h" name="Direction_2.h">
+<area shape="rect" id="node2" href="$Vector__2_8h.html" title="Vector_2.h" alt="" coords="571,80,656,107"/>
+<area shape="rect" id="node3" href="$Line__2_8h.html" title="Line_2.h" alt="" coords="249,304,319,331"/>
+<area shape="rect" id="node5" href="$Point__2_8h.html" title="Point_2.h" alt="" coords="575,155,652,181"/>
+<area shape="rect" id="node4" href="$Aff__transformation__2_8h.html" title="Aff_transformation_2.h" alt="" coords="447,379,602,405"/>
+<area shape="rect" id="node6" href="$Line__2__Line__2__intersection_8h.html" title="Line_2_Line_2_intersection.h" alt="" coords="181,379,371,405"/>
+<area shape="rect" id="node22" href="$Segment__2_8h.html" title="Segment_2.h" alt="" coords="58,379,156,405"/>
+<area shape="rect" id="node7" href="$Segment__2__Segment__2__intersection_8h.html" title="Segment_2_Segment_2\l_intersection.h" alt="" coords="329,454,490,495"/>
+<area shape="rect" id="node12" href="$Plane__3_8h.html" title="Plane_3.h" alt="" coords="827,229,907,256"/>
+<area shape="rect" id="node21" href="$predicates__on__points__2_8h.html" title="predicates_on_points_2.h" alt="" coords="364,229,535,256"/>
+<area shape="rect" id="node9" href="$Triangulation_8h.html" title="Triangulation.h" alt="" coords="223,544,330,571"/>
+<area shape="rect" id="node8" href="$dep__helper_8C.html" title="dep_helper.C" alt="" coords="491,544,590,571"/>
+<area shape="rect" id="node10" href="$Overlay__IO_8C.html" title="Overlay_IO.C" alt="" coords="146,619,248,645"/>
+<area shape="rect" id="node11" href="$RFC__Window__overlay_8C.html" title="RFC_Window_overlay.C" alt="" coords="273,619,439,645"/>
+<area shape="rect" id="node13" href="$Aff__transformation__3_8h.html" title="Aff_transformation_3.h" alt="" coords="790,304,944,331"/>
+<area shape="rect" id="node15" href="$distance__predicates__3_8h.html" title="distance_predicates_3.h" alt="" coords="591,461,754,488"/>
+<area shape="rect" id="node16" href="$Line__3_8h.html" title="Line_3.h" alt="" coords="970,461,1040,488"/>
+<area shape="rect" id="node14" href="$Point__3_8h.html" title="Point_3.h" alt="" coords="879,379,956,405"/>
+<area shape="rect" id="node19" href="$Vector__3_8h.html" title="Vector_3.h" alt="" coords="840,461,926,488"/>
+<area shape="rect" id="node17" href="$Ray__3_8h.html" title="Ray_3.h" alt="" coords="964,544,1034,571"/>
+<area shape="rect" id="node18" href="$Segment__3_8h.html" title="Segment_3.h" alt="" coords="1059,544,1158,571"/>
+<area shape="rect" id="node20" href="$Direction__3_8h.html" title="Direction_3.h" alt="" coords="834,544,932,571"/>
+<area shape="rect" id="node23" href="$Ray__2_8h.html" title="Ray_2.h" alt="" coords="40,461,110,488"/>
+</map>

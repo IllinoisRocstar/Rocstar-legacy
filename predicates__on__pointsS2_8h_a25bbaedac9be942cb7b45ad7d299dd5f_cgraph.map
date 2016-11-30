@@ -1,0 +1,7 @@
+<map id="rightturn" name="rightturn">
+<area shape="rect" id="node2" href="$predicates_2kernel__ftC2_8h.html#ad8180ddeada6f820f8d216486de6ff02" title="orientationC2" alt="" coords="123,5,221,32"/>
+<area shape="rect" id="node5" href="$classPointS2.html#a242e8b7096a678fdbb08e337420acb84" title="PointS2::x" alt="" coords="131,56,213,83"/>
+<area shape="rect" id="node6" href="$classPointS2.html#ae367a52fcb29c7638852621653fdb407" title="PointS2::y" alt="" coords="131,107,213,133"/>
+<area shape="rect" id="node3" href="$sign__of__determinant_8h.html#a178327b0b7b852c3ecf850dde3f93bc6" title="sign_of_determinant2x2" alt="" coords="269,5,429,32"/>
+<area shape="rect" id="node4" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="478,5,594,32"/>
+</map>

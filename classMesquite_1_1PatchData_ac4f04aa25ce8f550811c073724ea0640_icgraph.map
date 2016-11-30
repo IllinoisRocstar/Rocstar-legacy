@@ -1,0 +1,14 @@
+<map id="get_domain_normals_at_corners" name="get_domain_normals_at_corners">
+<area shape="rect" id="node2" href="$classMesquite_1_1MsqMeshEntity.html#a630d97bcef1b6af59d33b7a64190e455" title="Uses a MeshDomain call&#45;back function to compute the normal at the corner. " alt="" coords="197,222,373,263"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1MsqMeshEntity.html#a17ab9e457ac1e170360fceeb6b25ab2b" title="Compute matrices which column are the vectors issued from a corner. " alt="" coords="427,123,607,165"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1I__DFT.html#aa71c0d57cadd2f8eeb540ab194c145b3" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="422,189,613,230"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1I__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::I_DFT::compute\l_element_analytical_hessian" alt="" coords="423,254,612,295"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1I__DFT.html#abc691c49e36734bba1ea2ecd14fe9a5b" title="Evaluate the metric for an element. " alt="" coords="429,319,606,361"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1TargetCalculator.html#ab066dc9db4106bf2adbafc8f7986aabc" title="Computes the guide corner matrices A for a given element index in the reference patch. " alt="" coords="673,50,852,91"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1TargetCalculator.html#a14179ad197e9a02f52380f1b0e6d0ec3" title="Compute the corner matrices for the reference mesh refMesh. " alt="" coords="671,116,855,172"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1DistanceFromTarget.html#a7189c3b4f0d361c88adf6e84b790053e" title="For a given element, compute each corner matrix A, and given a target corner matrix W..." alt="" coords="661,197,864,238"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1LVQDTargetCalculator.html#a7bebe2f2afb7cd9b6552569edd96e9a1" title="Function called by compute_target_matrices(PatchData&amp; pd, MsqError&amp; err) to compute the matrices afte..." alt="" coords="913,5,1127,46"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1WTargetCalculator.html#af386ad951ad29a68944557ccfc6f18ec" title="Mesquite::WTargetCalculator\l::compute_target_matrices" alt="" coords="924,70,1116,111"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1sI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="928,155,1112,197"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1sRI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="947,221,1093,262"/>
+</map>

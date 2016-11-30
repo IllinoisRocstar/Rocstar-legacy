@@ -1,0 +1,34 @@
+<map id="pane" name="pane">
+<area shape="rect" id="node2" href="$classRFC__Window__transfer.html#a0522a4e5dcf2bf4f956ffc12107e1326" title="delete_facial_buffers" alt="" coords="109,100,251,127"/>
+<area shape="rect" id="node8" href="$classRFC__Window__transfer.html#afc6fd1641ef3a208201865dc67e72d30" title="delete_nodal_buffers" alt="" coords="546,384,689,411"/>
+<area shape="rect" id="node14" href="$classTransfer__base.html#accb54b27582929d67a9a15a4f90f266d" title="Transfer_base::get\l_src_pane" alt="" coords="115,202,245,243"/>
+<area shape="rect" id="node20" href="$classTransfer__base.html#ab085031b76cbc2aa4a034b1e38140681" title="Transfer_base::get\l_trg_pane" alt="" coords="115,486,245,527"/>
+<area shape="rect" id="node21" href="$classRFC__Window__transfer.html#a614253ebc5132152327d006a0edee212" title="Obtain the list of incident faces in each pane of the opposite mesh. " alt="" coords="347,603,453,629"/>
+<area shape="rect" id="node23" href="$classRFC__Window__transfer.html#a6c53caf2126860dfe01654df315e1649" title="Determine the remote panes that are incident with local panes. " alt="" coords="125,755,235,781"/>
+<area shape="rect" id="node24" href="$classRFC__Window__transfer.html#a371777ab9716792c200d59c9539193bc" title="init_facial_buffers" alt="" coords="118,151,242,177"/>
+<area shape="rect" id="node25" href="$classRFC__Window__transfer.html#a839297a92c9004f6bf30fc825eb4e890" title="init_nodal_buffers" alt="" coords="338,435,462,461"/>
+<area shape="rect" id="node26" href="$classRFC__Window__transfer.html#a05e169ae7b2dd51b533d87ce429d604f" title="init_recv_buffer" alt="" coords="125,653,235,680"/>
+<area shape="rect" id="node28" href="$classRFC__Window__transfer.html#ad2d5f0a20078abca810c26f29d491872" title="init_send_buffer" alt="" coords="123,704,237,731"/>
+<area shape="rect" id="node29" href="$classRFC__Window__transfer.html#a5f3d19cf78a3d68121bc711b9670bf51" title="reduce_maxabs_to_all" alt="" coords="104,333,256,360"/>
+<area shape="rect" id="node30" href="$classRFC__Window__transfer.html#afe935e9a4c3d5500fe3489878461ebde" title="reduce_to_all" alt="" coords="131,268,229,295"/>
+<area shape="rect" id="node22" href="$classRFC__Window__transfer.html#a1e774716e97169d887a20f47339edfbb" title="Replicate the remote panes that are in contact with the local panes in opp_win. " alt="" coords="551,603,683,629"/>
+<area shape="rect" id="node33" href="$classRFC__Window__transfer.html#a743a1144a7617db05a93f388b306d611" title="set_tags" alt="" coords="144,805,216,832"/>
+<area shape="rect" id="node3" href="$classTransfer__base.html#a399e6c7a6d486906ab663174f08241c1" title="template function for transfering from nodes/faces to faces. " alt="" coords="313,100,487,127"/>
+<area shape="rect" id="node4" href="$classTransfer__n2f.html#af28f961dfd0af8a4a8415e490c3dabd4" title="The main entry to the data transfer algorithm. " alt="" coords="544,35,691,61"/>
+<area shape="rect" id="node6" href="$classTransfer__f2f.html#ab179827bbccbc173bfe6b9a6ce87e880" title="The main entry to the data transfer algorithm. " alt="" coords="545,100,689,127"/>
+<area shape="rect" id="node5" href="$classTransfer__traits_3_01Nodal__data__const_00_01Facial__data_00_01true_01_4.html#af6f4a1679016e42a61a309074e59375c" title="Transfer_traits\&lt; Nodal\l_data_const, Facial_data,\l true \&gt;::transfer" alt="" coords="743,5,915,61"/>
+<area shape="rect" id="node7" href="$classTransfer__traits_3_01Facial__data__const_00_01Facial__data_00_01true_01_4.html#a791a778ef78955907c5cf602168a0e26" title="Transfer_traits\&lt; Facial\l_data_const, Facial_data,\l true \&gt;::transfer" alt="" coords="743,85,915,141"/>
+<area shape="rect" id="node9" href="$classTransfer__base.html#aeb0363c53161d0c31ecfd44b72322904" title="template function for transfering from nodes/faces to nodes. " alt="" coords="740,333,919,360"/>
+<area shape="rect" id="node10" href="$classTransfer__n2n.html#ae872470b8a41e7de7970f31970e0655b" title="The main entry to the data transfer algorithm. " alt="" coords="969,285,1119,312"/>
+<area shape="rect" id="node12" href="$classTransfer__f2n.html#a93599352510c7625825e13d46e30422b" title="The main entry to the data transfer algorithm. " alt="" coords="971,336,1117,363"/>
+<area shape="rect" id="node11" href="$classTransfer__traits_3_01Nodal__data__const_00_01Nodal__data_00_01true_01_4.html#a6238db9e154d60a2d90bb62c7d2e739e" title="Transfer_traits\&lt; Nodal\l_data_const, Nodal_data,\l true \&gt;::transfer" alt="" coords="1168,171,1339,227"/>
+<area shape="rect" id="node13" href="$classTransfer__traits_3_01Facial__data__const_00_01Nodal__data_00_01true_01_4.html#abe1de0860ed72c56b633c2073fc42d35" title="See above. " alt="" coords="1168,275,1339,331"/>
+<area shape="rect" id="node15" href="$classTransfer__base.html#a846d95c70e24eebc98c6b395fc497f7d" title="Transfer_base::interpolate_fe" alt="" coords="305,283,495,309"/>
+<area shape="rect" id="node16" href="$classTransfer__base.html#a288f6bb6f766b4feb8b203aadf522ff2" title="Initialize load vector and the diagonal of the mass matrix. " alt="" coords="335,151,465,193"/>
+<area shape="rect" id="node17" href="$classTransfer__base.html#a49c00219499e0b4d510f90b86b27bc60" title="Computes the load vector. " alt="" coords="739,165,920,192"/>
+<area shape="rect" id="node18" href="$classTransfer__n2n.html#ac57f7543a5670783226af12aff7937a9" title="Compute the nodal load vector. " alt="" coords="975,154,1113,195"/>
+<area shape="rect" id="node19" href="$classTransfer__f2n.html#a4d149ed7903d756f95208e316d827329" title="Compute the nodal load vector. " alt="" coords="977,219,1111,261"/>
+<area shape="rect" id="node27" href="$classRFC__Window__transfer.html#a15aff7a74853c597fcbc121d53d29e0c" title="Replicate the metadata of a remote pane only the local process. " alt="" coords="334,653,466,680"/>
+<area shape="rect" id="node31" href="$classTransfer__base.html#a697d4064657cc5cc8d5098bf95bfbdf9" title="Transfer_base::multiply\l_mass_mat_and_x" alt="" coords="321,217,479,258"/>
+<area shape="rect" id="node32" href="$classTransfer__base.html#a81e1ea7d2eb057ba19539948d292cac7" title="Transfer_base::pcg" alt="" coords="550,279,685,305"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="set_alpha" name="set_alpha">
+<area shape="rect" id="node2" href="$classAgent.html#afc7914dba0afa4bc8246dddf267a56b7" title="Agent::init_callback" alt="" coords="151,56,287,83"/>
+<area shape="rect" id="node5" href="$classAgent.html#adb726f4c39e2e864882230494886f620" title="Agent::obtain_bc" alt="" coords="159,5,279,32"/>
+<area shape="rect" id="node7" href="$classAgent.html#ae7ee412a6c8c5d1b8af23e94dcc25271" title="Agent::obtain_gm" alt="" coords="157,107,281,133"/>
+<area shape="rect" id="node9" href="$classUserSchedulerAction.html#aa4065b3192a0d6c14e6456c70376f90a" title="UserSchedulerAction::run" alt="" coords="133,157,304,184"/>
+<area shape="rect" id="node10" href="$classCoupling.html#af2a0914ea228ea5ac8e97ae91cf64fbf" title="Coupling::run_initactions" alt="" coords="136,208,301,235"/>
+<area shape="rect" id="node3" href="$classAgent.html#ad3c8c70a29f18aa8a37ddf31b6cb2bc0" title="Agent::create_window" alt="" coords="353,56,503,83"/>
+<area shape="rect" id="node4" href="$classAgent.html#ae8cc2ba44a17a30a34df7e7b1710764a" title="Agent::Agent" alt="" coords="587,56,685,83"/>
+<area shape="rect" id="node6" href="$classBCInvoker.html#aa4065b3192a0d6c14e6456c70376f90a" title="BCInvoker::run" alt="" coords="373,5,483,32"/>
+<area shape="rect" id="node8" href="$classGMInvoker.html#aa4065b3192a0d6c14e6456c70376f90a" title="GMInvoker::run" alt="" coords="372,107,484,133"/>
+<area shape="rect" id="node11" href="$classCoupling.html#a152013c4f4d029f84f09d02f5062298a" title="Coupling::initialize" alt="" coords="364,208,492,235"/>
+<area shape="rect" id="node12" href="$classCoupling.html#a3743217a687c638a600341721e219b55" title="Coupling::restart_at_time" alt="" coords="552,233,720,260"/>
+<area shape="rect" id="node14" href="$rocstar__driver_8C.html#a9bd600c9ac2dc870a213ab778b70d788" title="rocstar_driver" alt="" coords="995,233,1096,260"/>
+<area shape="rect" id="node13" href="$classCoupling.html#a952d598b43dfc5742886e9e747aa7ca1" title="Coupling::ProcessInterrupt" alt="" coords="769,233,946,260"/>
+</map>

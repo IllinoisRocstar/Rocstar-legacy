@@ -1,0 +1,5 @@
+<map id="size_of_real_nodes" name="size_of_real_nodes">
+<area shape="rect" id="node2" href="$classConnectivity.html#afc3d6a08a6436efe1af8e83699d4ca53" title="Determine whether the mesh is quadratic. " alt="" coords="206,5,303,32"/>
+<area shape="rect" id="node3" href="$classConnectivity.html#a3ab0f5b4dbc683714ef15ccfb16225ac" title="Get a constant pointer to the connectivity array. " alt="" coords="224,56,285,83"/>
+<area shape="rect" id="node4" href="$classPane.html#a24a603422c59449a4424cacda716d7ed" title="Get the number of real nodes in the pane (excluding ghost nodes). " alt="" coords="189,107,320,149"/>
+</map>

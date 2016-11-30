@@ -1,0 +1,14 @@
+<map id="init_normals" name="init_normals">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="169,5,303,32"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#ab5a8ac8121d23b45ad8c8354970a2130" title="COM_free_buffer" alt="" coords="175,56,297,83"/>
+<area shape="rect" id="node5" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="179,107,293,133"/>
+<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="147,157,325,184"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="148,208,324,235"/>
+<area shape="rect" id="node8" href="$roccom__c_09_09_8h.html#a6e38c0b1f83c30b166b7500902e13be1" title="COM_get_panes" alt="" coords="176,259,296,285"/>
+<area shape="rect" id="node9" href="$compare__normals_8C.html#a2735c50ad58d081ce17303c38e5c2684" title="func1" alt="" coords="209,411,263,437"/>
+<area shape="rect" id="node12" href="$compare__normals_8C.html#ab02d521dfa0be9ea1bf41cf52dd2b8d8" title="func2" alt="" coords="209,309,263,336"/>
+<area shape="rect" id="node13" href="$compare__normals_8C.html#a84051587b6103d3fac3bdbede2d199d4" title="func3" alt="" coords="209,360,263,387"/>
+<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="392,183,520,209"/>
+<area shape="rect" id="node10" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="374,360,538,387"/>
+<area shape="rect" id="node11" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="434,411,478,437"/>
+</map>

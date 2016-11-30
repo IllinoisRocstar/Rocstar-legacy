@@ -1,0 +1,10 @@
+<map id="has_larger_signed_dist_to_plane" name="has_larger_signed_dist_to_plane">
+<area shape="rect" id="node2" href="$predicates_2kernel__ftC3_8h.html#acd2c267c66b54d62d082ac30c2ed18d6" title="has_larger_signed_dist\l_to_planeC3" alt="" coords="208,23,363,65"/>
+<area shape="rect" id="node7" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="244,89,327,116"/>
+<area shape="rect" id="node8" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="244,140,327,167"/>
+<area shape="rect" id="node9" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="244,191,327,217"/>
+<area shape="rect" id="node3" href="$predicates_2kernel__ftC3_8h.html#a3fcf460e8e04dba808ad74f9764ee82c" title="cmp_signed_dist_to\l_planeC3" alt="" coords="411,23,549,65"/>
+<area shape="rect" id="node4" href="$sign__of__determinant_8h.html#a063681dd64daa131f0fed8267cfbe968" title="sign_of_determinant3x3" alt="" coords="597,31,757,57"/>
+<area shape="rect" id="node5" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="849,5,895,32"/>
+<area shape="rect" id="node6" href="$determinant_8h.html#a32ff8e72a47ae6e0aba9b51b37080bcb" title="det3x3_by_formula" alt="" coords="806,56,938,83"/>
+</map>

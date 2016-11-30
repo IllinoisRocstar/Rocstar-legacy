@@ -1,0 +1,32 @@
+<map id="rflo_c2favgcoeffs" name="rflo_c2favgcoeffs">
+<area shape="rect" id="node2" href="$RFLO__C2eAvgCoeffs_8F90.html#a63a5bd0cb4667a18ee491651a28bebb0" title="computeavgco" alt="" coords="205,5,312,32"/>
+<area shape="rect" id="node3" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="1085,613,1269,640"/>
+<area shape="rect" id="node4" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="1092,1120,1263,1147"/>
+<area shape="rect" id="node8" href="$RFLO__C2fAvgCoeffsDegec_8F90.html#a336c3241c65be231f1a56ef10761cc46" title="rflo_c2favgcoeffsdegec" alt="" coords="408,1373,565,1400"/>
+<area shape="rect" id="node17" href="$RFLO__C2fAvgCoeffsDummy_8F90.html#ae1493074bbc68dded98ecdadf90b2cb3" title="rflo_c2favgcoeffsdummy" alt="" coords="176,931,341,957"/>
+<area shape="rect" id="node23" href="$RFLO__C2fAvgCoeffsPatch_8F90.html#acb9ae460ca70573595354329fd3a1506" title="rflo_c2favgcoeffspatch" alt="" coords="409,1120,564,1147"/>
+<area shape="rect" id="node26" href="$RFLO__CopyEdgeFaceNorm_8F90.html#a950482f6b3dd9942a21a12031f78ec84" title="rflo_copyedgefacenorm" alt="" coords="408,385,565,412"/>
+<area shape="rect" id="node30" href="$RFLO__CopyEdgeFaceParal_8F90.html#ad4289966b10ebb0c13ccace30f52e72a" title="rflo_copyedgefaceparal" alt="" coords="409,689,565,716"/>
+<area shape="rect" id="node31" href="$RFLO__GetDimensions_8F90.html#a05181a2410be15ef34493a9b3a5a0638" title="rflo_getcelloffset" alt="" coords="658,1576,777,1603"/>
+<area shape="rect" id="node13" href="$RFLO__GetDimensions_8F90.html#ac02260aae73117efbd721b072247e542" title="rflo_getdimensdummy" alt="" coords="869,1424,1019,1451"/>
+<area shape="rect" id="node9" href="$RFLO__GetDimensions_8F90.html#a574ff4a131bdb63eac55b68f6ccb3e85" title="rflo_getnodeoffset" alt="" coords="654,765,781,792"/>
+<area shape="rect" id="node5" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="1318,1221,1450,1248"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="1506,1181,1654,1222"/>
+<area shape="rect" id="node7" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="1499,1246,1661,1287"/>
+<area shape="rect" id="node12" href="$RFLO__GetDimensions_8F90.html#a1a7741ad2f078de62dfdc6885068f06d" title="rflo_getedgecellsindices" alt="" coords="637,1424,798,1451"/>
+<area shape="rect" id="node15" href="$RFLO__GetDimensions_8F90.html#aba8622bd7cdc7b62513d45d499004729" title="rflo_getcornercellsindices" alt="" coords="633,1475,802,1501"/>
+<area shape="rect" id="node16" href="$RFLO__C2eAvgCoeffsDegec_8F90.html#ac075eca2f0657b951efc2c8a81969aa6" title="calcavgco" alt="" coords="677,1323,758,1349"/>
+<area shape="rect" id="node10" href="$RFLO__GetDimensions_8F90.html#af3840de18437855e47c7fcc0dd2db9b5" title="rflo_getdimensdummynodes" alt="" coords="851,461,1037,488"/>
+<area shape="rect" id="node11" href="$structCOM__exception.html#a7fc97963662ee96e7c885e9213fec030" title="COM_exception::msg" alt="" coords="1103,892,1252,919"/>
+<area shape="rect" id="node14" href="$RFLO__GetDimensions_8F90.html#aba5d7dd0b2f2e1086a6fc3293a20c8f1" title="rflo_getdimensphys" alt="" coords="877,1221,1011,1248"/>
+<area shape="rect" id="node18" href="$RFLO__GetPatchDimens_8F90.html#a0ec3e4e7927962711817fb87f1f8db27" title="rflo_getpatchindices" alt="" coords="648,1120,787,1147"/>
+<area shape="rect" id="node19" href="$RFLO__GetPatchDimens_8F90.html#a318ab6a72ca2e23e9d7500d785c0b95e" title="rflo_getpatchdirection" alt="" coords="644,1019,791,1045"/>
+<area shape="rect" id="node20" href="$RFLO__C2fAvgCoeffsDummyPhys_8F90.html#a911f6d083ed2dff4a8dd7002757fd6ef" title="rflo_c2favgcoeffsdummyphys" alt="" coords="390,892,583,919"/>
+<area shape="rect" id="node21" href="$RFLO__C2fAvgCoeffsDummyConn_8F90.html#ad7edc31a3d8ee7597b27928beec44996" title="rflo_c2favgcoeffsdummyconn" alt="" coords="390,613,583,640"/>
+<area shape="rect" id="node22" href="$RFLO__C2fAvgCoeffsDummyConn_8F90.html#a8282b8c34840c5592e09205d56e2839c" title="avgcopatchedge" alt="" coords="659,512,776,539"/>
+<area shape="rect" id="node24" href="$RFLO__C2fAvgCoeffsPatch_8F90.html#aae79a8fde2af2a62fe218dde0d573a2d" title="avgcopatchlinear" alt="" coords="657,1221,777,1248"/>
+<area shape="rect" id="node25" href="$RFLO__C2fAvgCoeffsPatch_8F90.html#a1ae284d687783b73a19cd130f1fca645" title="avgcopatchconstant" alt="" coords="648,1171,787,1197"/>
+<area shape="rect" id="node27" href="$AverageVecVar_8F90.html#ac9c0db50e851843258633117fc3cc3f3" title="averagevecvar" alt="" coords="664,411,771,437"/>
+<area shape="rect" id="node28" href="$RFLO__GetDimensions_8F90.html#ae6f50e294b64363a4d74e0a51d34cbd7" title="rflo_getdimensphysnodes" alt="" coords="859,360,1029,387"/>
+<area shape="rect" id="node29" href="$RFLO__CopyEdgeFaceNorm_8h.html#af7c685713c33db5d1c66e35c302ad8f0" title="fvarj" alt="" coords="694,461,741,488"/>
+</map>

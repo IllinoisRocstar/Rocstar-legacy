@@ -1,0 +1,13 @@
+<map id="invert_endianness" name="invert_endianness">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#ae3332011e1af19ca1c64a12a47ceaa17" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_analyze" alt="" coords="193,5,359,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#ad5eebb63db8c28d3a4f11ef5590ea89b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_pandore" alt="" coords="193,70,359,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a5449ce8c13f2a71d0897cb483ac97e57" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_png" alt="" coords="205,135,347,177"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a89a714d19421509ace0741984d065b47" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_pnm" alt="" coords="203,201,349,242"/>
+<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a88c1723f62a9466565842f646e28b64c" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_raw" alt="" coords="205,266,347,307"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImgList.html#a6ecd490e3fa388ad3ab4386205d6fac6" title="Save an image list into a .cimg file. " alt="" coords="199,331,353,373"/>
+<area shape="rect" id="node8" href="$structcimg__library_1_1CImg.html#ab37ce77846d08edbac60502f3a286175" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_png" alt="" coords="203,397,349,438"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a30b53145248d40e0e374d248e4f1ca14" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_pnm" alt="" coords="201,462,351,503"/>
+<area shape="rect" id="node10" href="$namespacecimg__library_1_1cimg.html#ae450f8024668ff9f7959ed63b6ed3545" title="Invert endianness of a single variable. " alt="" coords="213,528,339,555"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#ad1bdd0c686ccaa6a12ff4b69efa5a567" title="Invert endianness of the image buffer. " alt="" coords="182,579,370,621"/>
+<area shape="rect" id="node12" href="$structcimg__library_1_1CImgList.html#a4991be1e15f3c49a4fa24870bd67d09b" title="Load an image list from a PAR/REC (Philips) file. " alt="" coords="199,645,353,686"/>
+</map>

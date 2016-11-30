@@ -1,0 +1,19 @@
+<map id="tangent" name="tangent">
+<area shape="rect" id="node2" href="$classRocsurf.html#ae33ff8b1e6981f1e9a7c7e9cca3a51c5" title="Computes edge lengths of a given window. " alt="" coords="121,353,282,394"/>
+<area shape="rect" id="node15" href="$Manifold__2_8h.html#ab7fe7c92789b1a3b0ba18f2ae189af40" title="Get the tangent of the given halfedge. " alt="" coords="156,425,247,452"/>
+<area shape="rect" id="node3" href="$classRocprop.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Rocprop::load" alt="" coords="357,132,459,159"/>
+<area shape="rect" id="node9" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="358,360,458,387"/>
+<area shape="rect" id="node4" href="$Rocprop_8C.html#ad9df38ab9916691f6c68fc70672d32ff" title="Rocprop_load_module" alt="" coords="561,5,711,32"/>
+<area shape="rect" id="node5" href="$Rocprop_8C.html#ad683118ebfe7e5bc0da6c649f9a91afb" title="rocprop_load_module" alt="" coords="563,56,709,83"/>
+<area shape="rect" id="node6" href="$Rocprop_8C.html#a1293b092211f43285a36171e71078dd6" title="ROCPROP_LOAD_MODULE" alt="" coords="537,107,735,133"/>
+<area shape="rect" id="node7" href="$Rocprop_8C.html#af271f1683a72f6d590aedc3bdb9f0630" title="rocprop_load_module_" alt="" coords="560,157,712,184"/>
+<area shape="rect" id="node8" href="$Rocprop_8C.html#a18742d0fd81e89caac223ad4e7127420" title="ROCPROP_LOAD_MODULE_" alt="" coords="534,208,738,235"/>
+<area shape="rect" id="node10" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="562,259,710,285"/>
+<area shape="rect" id="node11" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="565,309,707,336"/>
+<area shape="rect" id="node12" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="538,360,734,387"/>
+<area shape="rect" id="node13" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="561,411,711,437"/>
+<area shape="rect" id="node14" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="535,461,737,488"/>
+<area shape="rect" id="node16" href="$group__fdp.html#ga467038cc0c762d1b0c66f82fee014302" title="Compute the cosine of the edge angle at a vertex between two incident feature edges. " alt="" coords="331,418,485,459"/>
+<area shape="rect" id="node17" href="$group__pifd.html#ga62b78979d2f09f83c3015f2e8dc232d5" title="The main entry of feature detection. " alt="" coords="331,497,485,538"/>
+<area shape="rect" id="node18" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="577,512,695,539"/>
+</map>

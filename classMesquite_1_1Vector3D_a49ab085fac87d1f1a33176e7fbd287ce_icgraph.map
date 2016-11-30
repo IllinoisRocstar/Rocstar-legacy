@@ -1,0 +1,7 @@
+<map id="get_coordinates" name="get_coordinates">
+<area shape="rect" id="node2" href="$classMesquite_1_1NonSmoothSteepestDescent.html#ac628e842487f75a4a1ca70171f1c0704" title="Mesquite::NonSmoothSteepest\lDescent::validity_check" alt="" coords="169,24,373,65"/>
+<area shape="rect" id="node6" href="$classMesqPane.html#ae174dc4145e65e73e42ae04e3a54a829" title="Set the Location of a vertex. " alt="" coords="194,89,347,131"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1NonSmoothSteepestDescent.html#aea5da29ae2e90ad56c2a56d62b63ab93" title="Mesquite::NonSmoothSteepest\lDescent::minmax_opt" alt="" coords="675,24,879,65"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::NonSmoothSteepest\lDescent::optimize_vertex\l_positions" alt="" coords="929,46,1133,102"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a85bc001b3ca33d3e06b5bc852beaa624" title="Mesquite::NonSmoothSteepest\lDescent::step_acceptance" alt="" coords="422,24,626,65"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="FeasibleNewton" name="FeasibleNewton">
+<area shape="rect" id="node2" href="$classMesquite_1_1TerminationCriterion.html#ab7bcc61a847c34e8e49d16b12e4789d9" title="Sets the criterion by specifing the TCType and the eps value. " alt="" coords="171,5,383,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityImprover.html#a4573f7d8766d7d7bbd13ed9ff2684659" title="return the inner termination criterion pointer " alt="" coords="190,71,365,127"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1QualityImprover.html#a23b93d0c05b5ccd5162eaafbd9e612ac" title="provides a name to the QualityImprover (use it in constructor). " alt="" coords="190,151,365,193"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1PatchDataUser.html#a7870d253a83673c6ad2794c41cc1e821" title="Sets the Patch Type. " alt="" coords="191,217,364,258"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1PatchDataParameters.html#a247c2678640754cdb0bd45ab6f777cd9" title="Tells the MeshSet what kind of data the patches should include. " alt="" coords="433,217,645,258"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="initstatistics" name="initstatistics">
+<area shape="rect" id="node2" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="747,330,931,356"/>
+<area shape="rect" id="node3" href="$classplag__rflo__modstats.html#a5ffa60740717b95a770b536cad7e6a19" title="plag_rflo_modstats\l::plag_rflo_readstat" alt="" coords="168,449,301,490"/>
+<area shape="rect" id="node4" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="753,228,924,255"/>
+<area shape="rect" id="node15" href="$RFLO__ReadStat_8F90.html#adf0a6fd676804b3d6108c1531b082248" title="rflo_readstat" alt="" coords="187,228,282,255"/>
+<area shape="rect" id="node17" href="$RFLU__ReadStat_8F90.html#a960c9a8b269174c1e5f186ccea04971c" title="rflu_readstat" alt="" coords="567,532,662,559"/>
+<area shape="rect" id="node18" href="$classstat__rflu__modrocstaradmin.html#a0237e52c265b279112634d80ffe74276" title="stat_rflu_modrocstaradmin\l::stat_rflu_genxgetdata" alt="" coords="147,685,323,726"/>
+<area shape="rect" id="node5" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="987,380,1119,407"/>
+<area shape="rect" id="node8" href="$classAttribute.html#a8bcf950a774cbd3106d4c68d3b2f38c9" title="Obtain the status of the attribute. " alt="" coords="781,684,896,711"/>
+<area shape="rect" id="node9" href="$RFLO__ReadDataFile_8F90.html#a9f4fe0ee9e7d7e7328f6a5e1d03d71ec" title="rflo_readdatafilereal" alt="" coords="547,482,682,508"/>
+<area shape="rect" id="node11" href="$structCOM__exception.html#a7fc97963662ee96e7c885e9213fec030" title="COM_exception::msg" alt="" coords="764,583,913,610"/>
+<area shape="rect" id="node12" href="$RFLO__ReadDataFile_8F90.html#abaa5693eaed70bea7452a65cec8d4a22" title="rflo_readdatafileint" alt="" coords="551,228,679,255"/>
+<area shape="rect" id="node13" href="$RFLO__GetDimensions_8F90.html#ac02260aae73117efbd721b072247e542" title="rflo_getdimensdummy" alt="" coords="539,380,690,407"/>
+<area shape="rect" id="node14" href="$RFLO__GetDimensions_8F90.html#a05181a2410be15ef34493a9b3a5a0638" title="rflo_getcelloffset" alt="" coords="371,228,490,255"/>
+<area shape="rect" id="node6" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="1169,340,1330,381"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="1175,405,1323,446"/>
+<area shape="rect" id="node10" href="$classContainer__from__circulator.html#acad38d52497a975bfb6f2f6acd76631f" title="Container_from_circulator::end" alt="" coords="739,431,939,458"/>
+<area shape="rect" id="node16" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="407,127,454,154"/>
+</map>

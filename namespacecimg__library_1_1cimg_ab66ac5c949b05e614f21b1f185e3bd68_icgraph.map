@@ -1,0 +1,42 @@
+<map id="min" name="min">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a5c6b079ef78bd63a892316187f38aa02" title="cimg_library::CImg\l\&lt; uintT \&gt;::_cubic_atX" alt="" coords="117,5,265,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a244ac624497cc8050986562d66c0d2d1" title="cimg_library::CImg\l\&lt; uintT \&gt;::_cubic_atXY" alt="" coords="112,70,269,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a68ac25d3fda66263ff7b2d4a481b99d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display\l_object3d" alt="" coords="125,136,257,192"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#acbfab2bdc28e9a3e445bec479f47322b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_object3d" alt="" coords="103,217,278,258"/>
+<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a1a88d32d9537df9d104bfc51e801eeec" title="cimg_library::CImg\l\&lt; uintT \&gt;::_draw_scanline" alt="" coords="104,282,277,323"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#ab470ff84bcac27328430e271067570bd" title="cimg_library::CImg\l\&lt; uintT \&gt;::_get_select" alt="" coords="115,347,266,389"/>
+<area shape="rect" id="node8" href="$structcimg__library_1_1CImg.html#ae664a2dfc77ba22eda62c0984dda9153" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_bmp" alt="" coords="117,413,264,454"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a89a714d19421509ace0741984d065b47" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_pnm" alt="" coords="117,478,264,519"/>
+<area shape="rect" id="node10" href="$structcimg__library_1_1CImg.html#a8d09c361da2d3bafb268d0c4194ed578" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_rgb" alt="" coords="121,543,260,585"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a6f1b2ecd682e00d592fc48c73a59491a" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_rgba" alt="" coords="117,609,264,650"/>
+<area shape="rect" id="node12" href="$structcimg__library_1_1CImgList.html#a773de09d350f531ae3e002cefd006bde" title="cimg_library::CImgList\l\&lt; uintT \&gt;::_save_cimg" alt="" coords="114,674,267,715"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#afb8190c87c178fde2e78c54a490aed33" title="Compute the arc&#45;tangent of each pixel. " alt="" coords="125,739,257,781"/>
+<area shape="rect" id="node14" href="$structcimg__library_1_1CImg.html#af8acc159cf6c641dc8568d7f4ec6b670" title="Autocrop an image, regarding of the specified backround color. " alt="" coords="124,805,257,846"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg.html#a7a303858f458aad58535cbf2f5ca2326" title="Read a pixel value using cubic interpolation and Dirichlet boundary conditions (first coordinates)..." alt="" coords="120,870,261,911"/>
+<area shape="rect" id="node16" href="$structcimg__library_1_1CImg.html#a9178dbccd4a22a5e2a3b41c243244eb8" title="Read a pixel value using cubic interpolation and Dirichlet boundary conditions. " alt="" coords="115,935,266,977"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#a56ce2ae24c900cd3c9124130a98a57d0" title="Return the dot product of the current vector/matrix with the vector/matrix img. " alt="" coords="125,1001,257,1042"/>
+<area shape="rect" id="node18" href="$structcimg__library_1_1CImg.html#a2caaa75a02f3d76f193b857702e4d40d" title="Draw a set of consecutive colored lines in the instance image. " alt="" coords="121,1066,260,1107"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImg.html#a9500e1cf117b1aecce1f0f43478abc28" title="Draw a cloud of colored points. " alt="" coords="117,1131,264,1173"/>
+<area shape="rect" id="node20" href="$structcimg__library_1_1CImg.html#adceb8ab998aeb68dfc928be1b90f3f7d" title="Draw a polygon outline. " alt="" coords="109,1197,272,1238"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#a37d7c50c0049f6d81cceb65ff86ae842" title="Draw a set of consecutive colored splines in the instance image. " alt="" coords="115,1262,267,1303"/>
+<area shape="rect" id="node22" href="$structcimg__library_1_1CImg.html#a9717338fbc492b3baa9563147eaad7a3" title="Draw a 2D filled colored triangle, with z&#45;buffering. " alt="" coords="111,1327,271,1369"/>
+<area shape="rect" id="node23" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a0d684ffed0cafbfb2ac08af28a718c34" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="103,1393,279,1434"/>
+<area shape="rect" id="node27" href="$structcimg__library_1_1CImg.html#a7ef875be068aedc9d1486959caf1155c" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_BayertoRGB" alt="" coords="99,1458,282,1499"/>
+<area shape="rect" id="node28" href="$structcimg__library_1_1CImg.html#a4862f178948c0e5315d40ecbe2347f59" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_CMYtoCMYK" alt="" coords="97,1523,285,1565"/>
+<area shape="rect" id="node29" href="$structcimg__library_1_1CImg.html#a51767ae18962a8fcce1486b99c6300a4" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_resize" alt="" coords="119,1589,262,1630"/>
+<area shape="rect" id="node30" href="$structcimg__library_1_1CImg.html#ae8522bad57316bb719ef93774fcd77ea" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_rotate" alt="" coords="120,1654,261,1695"/>
+<area shape="rect" id="node31" href="$structcimg__library_1_1CImg.html#adc2e5a953d030fca9af7af17119262a9" title="Split image into a list. " alt="" coords="125,1719,257,1761"/>
+<area shape="rect" id="node32" href="$structcimg__library_1_1CImg.html#a48d98c3fd83de8d1f6b03b675d71229f" title="Pointwise max operator between two images. " alt="" coords="125,1785,257,1826"/>
+<area shape="rect" id="node33" href="$namespacecimg__library_1_1cimg.html#a9cc0a1aa3a5e3670faba78945c3bbaa9" title="Return the minimum value between three numbers. " alt="" coords="169,1851,212,1877"/>
+<area shape="rect" id="node34" href="$structcimg__library_1_1CImg.html#a24f04a40c39adc99e49ca7c5d3f3d322" title="Pointwise min operator between an image and a value. " alt="" coords="125,1902,257,1943"/>
+<area shape="rect" id="node35" href="$structcimg__library_1_1CImg.html#a0df55aae450794370fd9f2d4555458b9" title="Compute the power of each pixel value. " alt="" coords="125,1967,257,2009"/>
+<area shape="rect" id="node36" href="$structcimg__library_1_1CImg.html#a1116d54202176967de05d00169f2363e" title="Uniformly quantize values of the instance image into nb_levels levels. " alt="" coords="125,2033,257,2074"/>
+<area shape="rect" id="node37" href="$structcimg__library_1_1CImg.html#ae5820d33b36cc0266b98c0d9c9f0c3a6" title="Convert color pixels from (R,G,B) to (H,S,I). " alt="" coords="117,2098,264,2139"/>
+<area shape="rect" id="node38" href="$structcimg__library_1_1CImg.html#a3b76b35625d85926b4e88227f89f734e" title="Convert color pixels from (R,G,B) to (H,S,L). " alt="" coords="116,2163,265,2205"/>
+<area shape="rect" id="node39" href="$structcimg__library_1_1CImg.html#a6c0ab36ca2418c9b62590cdfdcbdc793" title="Convert color pixels from (R,G,B) to (H,S,V). " alt="" coords="115,2229,266,2270"/>
+<area shape="rect" id="node40" href="$structcimg__library_1_1CImg.html#a456e655933e8a1dc2164165b53f7923e" title="Set the image vec as the vector valued pixel located at (x,y,z) of the current vector&#45;valued image..." alt="" coords="109,2294,272,2335"/>
+<area shape="rect" id="node41" href="$structcimg__library_1_1CImg.html#a63464350c0645889ff30736b2e95a034" title="Compute the SVD of a general matrix. " alt="" coords="125,2359,257,2401"/>
+<area shape="rect" id="node24" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a95045af3dbd37ce54b03914a367d9a55" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="333,1319,509,1361"/>
+<area shape="rect" id="node25" href="$structcimg__library_1_1CImg_1_1__marching2d__func__expr.html#a63538257e8d4ca79962c14f1bddbd418" title="cimg_library::CImg\l::_marching2d_func_expr\l::operator()" alt="" coords="337,1385,505,1441"/>
+<area shape="rect" id="node26" href="$structcimg__library_1_1CImg_1_1__marching3d__func__expr.html#a4839e5b7a8568395b7c8e6fb4d4cf957" title="cimg_library::CImg\l::_marching3d_func_expr\l::operator()" alt="" coords="337,1465,505,1521"/>
+</map>

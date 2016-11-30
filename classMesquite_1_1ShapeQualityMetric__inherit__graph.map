@@ -1,0 +1,9 @@
+<map id="ShapeQualityMetric" name="ShapeQualityMetric">
+<area shape="rect" id="node3" href="$classMesquite_1_1AspectRatioGammaQualityMetric.html" title="Object for computing the aspect ratio gamma of simplicial elements. " alt="" coords="337,5,554,32"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1ConditionNumberQualityMetric.html" title="Computes the condition number of given element. " alt="" coords="345,56,545,83"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1GeneralizedConditionNumberQualityMetric.html" title="Computes the condition number of given element. The``condition number&quot; is scaled between one and infi..." alt="" coords="349,107,541,149"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1IdealWeightInverseMeanRatio.html" title="Computes the inverse mean ratio of given element. " alt="" coords="347,173,544,200"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1IdealWeightMeanRatio.html" title="Computes the mean ratio quality metric of given element. " alt="" coords="368,224,523,251"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1VertexConditionNumberQualityMetric.html" title="Computes the condition numbers of the corner&#39;s of elements connected to the given vertex and then ave..." alt="" coords="344,275,547,317"/>
+<area shape="rect" id="node2" href="$classMesquite_1_1QualityMetric.html" title="Base class for concrete quality metrics. " alt="" coords="5,144,104,171"/>
+</map>

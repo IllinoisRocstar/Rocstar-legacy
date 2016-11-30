@@ -1,0 +1,5 @@
+<map id="vtk_read_typed_data" name="vtk_read_typed_data">
+<area shape="rect" id="node2" href="$classMesquite_1_1FileTokenizer.html#a6f9d4a145a247200a8d6232dcfe946b8" title="Parse a sequence of bit or boolean values. " alt="" coords="198,5,359,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1FileTokenizer.html#ab87ed2a0f2e3541adcf767d67b55c484" title="Parse a sequence of double values. " alt="" coords="198,70,359,111"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1FileTokenizer.html#a309149a262632ddb47dca4b2d8fdf9ff" title="Parse a sequence of integer values. " alt="" coords="198,135,359,177"/>
+</map>

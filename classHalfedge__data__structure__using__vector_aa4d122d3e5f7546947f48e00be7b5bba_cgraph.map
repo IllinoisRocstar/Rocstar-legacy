@@ -1,0 +1,10 @@
+<map id="pointer_update" name="pointer_update">
+<area shape="rect" id="node2" href="$classHalfedge__data__structure__decorator.html#a18eab6ffa92233a5ced127b70413239b" title="Halfedge_data_structure\l_decorator::get_facet" alt="" coords="161,5,325,46"/>
+<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#a1634820d4da5242e51ef3b0495b711aa" title="Halfedge_data_structure\l_decorator::get_prev" alt="" coords="161,70,325,111"/>
+<area shape="rect" id="node4" href="$classHalfedge__data__structure__decorator.html#ae49e3000eb72d0e5313cb4f0b70c4059" title="Halfedge_data_structure\l_decorator::get_vertex" alt="" coords="161,135,325,177"/>
+<area shape="rect" id="node5" href="$classHalfedge__data__structure__decorator.html#a25262e291b543249ff07aaf26c0e0682" title="Halfedge_data_structure\l_decorator::set_facet" alt="" coords="161,201,325,242"/>
+<area shape="rect" id="node6" href="$classHalfedge__data__structure__decorator.html#aa64facdc6ab6224220f2fd4562c8e971" title="Halfedge_data_structure\l_decorator::set_facet\l_halfedge" alt="" coords="161,267,325,323"/>
+<area shape="rect" id="node7" href="$classHalfedge__data__structure__decorator.html#a92be4eb032a27bd7913c110c83b69b19" title="Halfedge_data_structure\l_decorator::set_prev" alt="" coords="161,347,325,389"/>
+<area shape="rect" id="node8" href="$classHalfedge__data__structure__decorator.html#a60256e1bd382a30958cc523b831b8874" title="Halfedge_data_structure\l_decorator::set_vertex" alt="" coords="161,413,325,454"/>
+<area shape="rect" id="node9" href="$classHalfedge__data__structure__decorator.html#a3cfa2d359aa61dc7e8ab9e4429e2d2e1" title="Halfedge_data_structure\l_decorator::set_vertex\l_halfedge" alt="" coords="161,479,325,535"/>
+</map>

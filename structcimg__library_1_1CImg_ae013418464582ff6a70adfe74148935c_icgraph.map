@@ -1,0 +1,4 @@
+<map id="get_stats" name="get_stats">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a6996328dda8169890a02942e19b6d445" title="Display informations about the image on the standard error output. " alt="" coords="131,5,263,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#aaf59bb4a64bfcba6082253a48a88c9d6" title="Compute a statistics vector (min,max,mean,variance,xmin,ymin,zmin,vmin,xmax,ymax,zmax,vmax). " alt="" coords="131,70,263,111"/>
+</map>

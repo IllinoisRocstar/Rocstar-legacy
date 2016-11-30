@@ -1,0 +1,32 @@
+<map id="assign" name="assign">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a68ac25d3fda66263ff7b2d4a481b99d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display\l_object3d" alt="" coords="141,5,273,61"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgList.html#ad2a62637967b943da88017d1b9a167f4" title="cimg_library::CImgList\l\&lt; uintT \&gt;::_load_cimg" alt="" coords="130,86,283,127"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a109ebf2200cf420c95008aab6272c16b" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_off" alt="" coords="139,151,275,193"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a3df53caa68d67f7f05251c1bcb02476f" title="Append a 3D object to another one. " alt="" coords="116,217,297,258"/>
+<area shape="rect" id="node6" href="$structcimg__library_1_1CImgList.html#a6157637aebbb3b6680ae06ca7d2a2281" title="In&#45;place version of the corresponding constructor. " alt="" coords="130,282,283,323"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a5796d94bd48d3f3b5fde6b3955ec68e1" title="Create and return a 3D box object. " alt="" coords="141,347,273,389"/>
+<area shape="rect" id="node8" href="$structcimg__library_1_1CImgList.html#a9a7581b4301d0ca9e10e849456e0e137" title="Construct an image list containing n images with specified size. " alt="" coords="130,413,283,454"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImgList.html#ab7aec05f7791abe11f1d0f0cdc8bd24e" title="In&#45;place version of the default constructor. " alt="" coords="130,478,283,519"/>
+<area shape="rect" id="node10" href="$structcimg__library_1_1CImg.html#a744a584d87f069fb5b2511a4b6449425" title="Create and return a 3D cone. " alt="" coords="141,543,273,585"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#ab924fbf66b85c9ff9bfbb1e31f0640c7" title="Create and return a 3D cylinder. " alt="" coords="135,609,278,650"/>
+<area shape="rect" id="node12" href="$structcimg__library_1_1CImg.html#afbd9374e6faaf111adb24b5b72a8a6ca" title="Get elevation3d of a function. " alt="" coords="132,674,281,715"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#a79e70bda268fd54cb31e9e9e2347afb8" title="Create and return a 3D ellipsoid. " alt="" coords="135,739,279,781"/>
+<area shape="rect" id="node14" href="$structcimg__library_1_1CImg.html#a26d868df92542026e0ab60df4c7f286a" title="Create and return a 3D elevation of the instance image. " alt="" coords="119,805,294,846"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg.html#a3e5b54c0b862cbf6e9f14e832984c4d7" title="Compute the list of images, corresponding to the XY&#45;gradients of an image. " alt="" coords="129,870,284,911"/>
+<area shape="rect" id="node16" href="$structcimg__library_1_1CImg.html#a96e3e0c617e70a833492043d08a7905a" title="Get components of the Hessian matrix of an image. " alt="" coords="130,935,283,977"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#a0d07f9edf7c3b6a68312c8f9ef213700" title="Create and return a isocurve of the instance image as a 3D object. " alt="" coords="121,1001,292,1042"/>
+<area shape="rect" id="node18" href="$structcimg__library_1_1CImg.html#a898b5f9a3612526e76a2f009c246a73e" title="Create and return a isosurface of the instance image as a 3D object. " alt="" coords="115,1066,298,1107"/>
+<area shape="rect" id="node19" href="$structcimg__library_1_1CImg.html#adc2e5a953d030fca9af7af17119262a9" title="Split image into a list. " alt="" coords="141,1131,273,1173"/>
+<area shape="rect" id="node20" href="$structcimg__library_1_1CImg.html#a85445ebaf3b13b3fe902f341733a4d48" title="Get isocurve as a 3D object. " alt="" coords="133,1197,280,1238"/>
+<area shape="rect" id="node21" href="$structcimg__library_1_1CImg.html#a081626b917e5c105a49f4c4eb183c6a9" title="Get isosurface as a 3D object. " alt="" coords="128,1262,285,1303"/>
+<area shape="rect" id="node22" href="$structcimg__library_1_1CImgList.html#a8ee71f92f35cc9e24d9d3a09456be2ae" title="Load an image list from a file. " alt="" coords="130,1327,283,1369"/>
+<area shape="rect" id="node23" href="$structcimg__library_1_1CImgList.html#ac90b30e0027691debb81df26216b81c0" title="Load an image from a video file, using ffmpeg libraries. " alt="" coords="129,1393,284,1434"/>
+<area shape="rect" id="node24" href="$structcimg__library_1_1CImgList.html#aa3885ef29cd5036361c12d407019de6c" title="Load an image from a video file (MPEG,AVI) using the external tool &#39;ffmpeg&#39;. " alt="" coords="129,1459,284,1515"/>
+<area shape="rect" id="node25" href="$structcimg__library_1_1CImgList.html#a9195765cb9bde15990a29ccd9306532c" title="Load a TIFF file. " alt="" coords="130,1539,283,1581"/>
+<area shape="rect" id="node26" href="$structcimg__library_1_1CImgList.html#a3f3a5d698a4a937a71be3db1d2424ab1" title="Operator=(). " alt="" coords="130,1605,283,1646"/>
+<area shape="rect" id="node27" href="$structcimg__library_1_1CImg.html#a4648a735dc27803f22dc3e17e0f3cad3" title="Create and return a 3D XY&#45;plane. " alt="" coords="141,1670,273,1711"/>
+<area shape="rect" id="node28" href="$structcimg__library_1_1CImgList.html#a2116e4ad3f06244c088451bfc7069474" title="Remove the images from positions pos1 to pos2. " alt="" coords="130,1735,283,1777"/>
+<area shape="rect" id="node29" href="$structcimg__library_1_1CImg.html#ae0b5b46dede282a2a817519ed24fb601" title="Create and return a 3D sphere. " alt="" coords="139,1801,275,1842"/>
+<area shape="rect" id="node30" href="$structcimg__library_1_1CImg.html#aa7da4d9793caecfa69abdfc7700866ae" title="Create and return a 3D torus. " alt="" coords="141,1866,273,1907"/>
+<area shape="rect" id="node31" href="$structcimg__library_1_1CImgList.html#a705f1ec1d62b035193f831cc7ac14ac8" title="Transfer the content of the instance image list into another one. " alt="" coords="130,1931,283,1973"/>
+</map>

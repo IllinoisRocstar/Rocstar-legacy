@@ -1,0 +1,46 @@
+var classFace =
+[
+    [ "eType", "classFace.html#a12f8ec8f0e7a4584b9fe481bb53fa60e", [
+      [ "e_tet", "classFace.html#a12f8ec8f0e7a4584b9fe481bb53fa60eab0964978ee14774bc72506fe67827fb9", null ],
+      [ "e_hex", "classFace.html#a12f8ec8f0e7a4584b9fe481bb53fa60ead4e3a732eb0fa270b71d8b82276c5a1c", null ],
+      [ "e_tri_cohesive", "classFace.html#a12f8ec8f0e7a4584b9fe481bb53fa60eaa6408409cc767b09602abc78f6c16400", null ],
+      [ "e_quad_cohesive", "classFace.html#a12f8ec8f0e7a4584b9fe481bb53fa60ea637b602df6500a409aeda45ac0bc6824", null ],
+      [ "e_MAX_ELEMENT_TYPE", "classFace.html#a12f8ec8f0e7a4584b9fe481bb53fa60eaa99a622da8cc7f253607bf8c79250794", null ]
+    ] ],
+    [ "Type", "classFace.html#a1d1cfd8ffb84e947f82999c682b666a7", [
+      [ "e_tri", "classFace.html#a1d1cfd8ffb84e947f82999c682b666a7a9e28618cac79f4664479e176f165193c", null ],
+      [ "e_quad", "classFace.html#a1d1cfd8ffb84e947f82999c682b666a7a92ab75dbd24f01a49448254e9649f107", null ],
+      [ "e_MAX_TYPE", "classFace.html#a1d1cfd8ffb84e947f82999c682b666a7ae78470bdf7f8c04bb15c47f30886aa74", null ]
+    ] ],
+    [ "Face", "classFace.html#a64e6d9d059c5f846fd251a86bd309496", null ],
+    [ "Face", "classFace.html#a54faf8f0db9f6027cf884102ff4252d1", null ],
+    [ "~Face", "classFace.html#a52fa8fb897f05ff035fde525c9f09d71", null ],
+    [ "addElement", "classFace.html#ad368cbfd7be4e4a14255190776a48830", null ],
+    [ "buildCohesive", "classFace.html#a8767c131d44f1e2cb9caff4de542fe41", null ],
+    [ "containsNode", "classFace.html#a2ede954d1acb1aa02064f4f74dac4118", null ],
+    [ "create", "classFace.html#ad19811ee8ac9101eae9535f9b88e3a7e", null ],
+    [ "getElement1", "classFace.html#ada622dbdc3455c54b4d36df9d14f3685", null ],
+    [ "getElement2", "classFace.html#ac9d1007b1e4daba1e99f44b42aff1744", null ],
+    [ "getFaceType", "classFace.html#a12c34a71baa567b7171429cc93aaf2ba", null ],
+    [ "getFlag", "classFace.html#a2a22975799b5d14560890b11a4734a8a", null ],
+    [ "getID", "classFace.html#af947cd10ac1bf98deb3ccce888ddd573", null ],
+    [ "getNodes", "classFace.html#a73e2d76cf2bdc682eb8a8220261576ae", null ],
+    [ "getNumNodes", "classFace.html#a6c707b13ee25c7a3c73965cb4bdeee75", null ],
+    [ "isExterior", "classFace.html#a947707c3b142eb438dfac7270be61209", null ],
+    [ "removeElement", "classFace.html#a934c684a37c06d484d3530db5211df91", null ],
+    [ "replaceNode", "classFace.html#a2f274474f46c3b963a33d16617ce1826", null ],
+    [ "setElement1", "classFace.html#ac3c73d1b0083f5439a0e8330591dbb88", null ],
+    [ "setElement2", "classFace.html#aeaed5f89d63955540c37660aeed70ecd", null ],
+    [ "setFlag", "classFace.html#a0b4e22b6d6d980a1cb2a3e7bdd698489", null ],
+    [ "setID", "classFace.html#a1d4659e5c5caba7e864b6f1a57c92471", null ],
+    [ "setMesh", "classFace.html#a0560a941d262611e38e68bb30fc728b3", null ],
+    [ "operator<<", "classFace.html#ad0f9fab84ff04ee6864d6234f98b726a", null ],
+    [ "operator>>", "classFace.html#a36b4d186e73035e9f932a29ac4596ddf", null ],
+    [ "d_E1", "classFace.html#a62aaf5db0baee397ab97d6049775fb78", null ],
+    [ "d_E2", "classFace.html#a4664e4d32c14c168287d632ec8e3eaa7", null ],
+    [ "d_eType", "classFace.html#a197c0621cd081ad4aeeab3fae1e65155", null ],
+    [ "d_flag", "classFace.html#ae2cd36aaded8c6ed4579816fc1e6cd1b", null ],
+    [ "d_ID", "classFace.html#afcc56cd643b7f0e294330ce29b1dec37", null ],
+    [ "d_nodes", "classFace.html#afb95d0974a9b902b90cbcaca90e70369", null ],
+    [ "s_mesh", "classFace.html#ab67a1557bf55aadd82b51ac1edc0928b", null ]
+];

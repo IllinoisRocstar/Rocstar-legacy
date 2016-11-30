@@ -1,0 +1,4 @@
+<map id="compute_Lambda" name="compute_Lambda">
+<area shape="rect" id="node2" href="$classMesquite_1_1LVQDTargetCalculator.html#a7bebe2f2afb7cd9b6552569edd96e9a1" title="Function called by compute_target_matrices(PatchData&amp; pd, MsqError&amp; err) to compute the matrices afte..." alt="" coords="403,5,618,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a73c2dc4cba0a22073185a097000d315c" title="Returns average corner determinant over all corners in the patch This information is stored in the pa..." alt="" coords="179,34,354,75"/>
+</map>

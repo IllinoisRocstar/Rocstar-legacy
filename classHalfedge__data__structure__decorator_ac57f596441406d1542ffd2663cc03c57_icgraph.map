@@ -1,0 +1,5 @@
+<map id="set_vertex_in_vertex_loop" name="set_vertex_in_vertex_loop">
+<area shape="rect" id="node2" href="$classHalfedge__data__structure__decorator.html#ac04cc30dcfd4dc4f4aa71b050302f5a9" title="erase_connected_component\l_vertex" alt="" coords="229,5,421,46"/>
+<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#a7e6af6a7e796fbe09b53fc5751c85638" title="set_vertex_in_vertex_loop" alt="" coords="238,71,413,97"/>
+<area shape="rect" id="node4" href="$classHalfedge__data__structure__decorator.html#adb469ded85f4ba4e9db39db86ecce0b1" title="split_vertex" alt="" coords="281,121,370,148"/>
+</map>

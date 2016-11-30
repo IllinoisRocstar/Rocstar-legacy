@@ -1,0 +1,8 @@
+<map id="load_other" name="load_other">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#ae664a2dfc77ba22eda62c0984dda9153" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_bmp" alt="" coords="147,5,293,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#af0ef73cee458f69f6738c2e50697dcff" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_jpeg" alt="" coords="147,70,293,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a5449ce8c13f2a71d0897cb483ac97e57" title="cimg_library::CImg\l\&lt; uintT \&gt;::_load_png" alt="" coords="149,135,291,177"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#aa4fba9dc33b1edf2eacb59acebba962d" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_load_other" alt="" coords="136,201,304,242"/>
+<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a138dcc5db93d511d224d88405a0041ce" title="Load an image from a file. " alt="" coords="154,266,286,307"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#ab943c007a92b463ec458b4be80e80460" title="Load an image from a TIFF file. " alt="" coords="154,331,286,373"/>
+</map>

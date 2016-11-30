@@ -1,0 +1,8 @@
+<map id="in_cone" name="in_cone">
+<area shape="rect" id="node2" href="$classTriangulation.html#a71a45664175172f9f69976fd0a633fa3" title="get_next" alt="" coords="121,5,193,32"/>
+<area shape="rect" id="node3" href="$classTriangulation.html#ac632912d8b116d5018ccf2c42142b39a" title="get_point" alt="" coords="120,56,195,83"/>
+<area shape="rect" id="node5" href="$classTriangulation.html#ab7fa9221202d03b733a1d5be63ee1bb9" title="get_prev" alt="" coords="121,107,193,133"/>
+<area shape="rect" id="node6" href="$predicates__on__points__2_8h.html#a16334c49148a60050463e5f516ee3304" title="leftturn" alt="" coords="126,157,189,184"/>
+<area shape="rect" id="node7" href="$predicates__on__points__2_8h.html#aed83adc4ca19091d54c40aebca43dacc" title="rightturn" alt="" coords="123,208,192,235"/>
+<area shape="rect" id="node4" href="$classTriangulation_1_1Node.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Triangulation::Node::id" alt="" coords="243,56,397,83"/>
+</map>

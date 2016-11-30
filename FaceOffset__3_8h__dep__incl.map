@@ -1,0 +1,10 @@
+<map id="FaceOffset_3.h" name="FaceOffset_3.h">
+<area shape="rect" id="node2" href="$AngleBasedSmoothing_8C.html" title="AngleBasedSmoothing.C" alt="" coords="5,80,173,107"/>
+<area shape="rect" id="node3" href="$AnisotropicSmoothing_8C.html" title="AnisotropicSmoothing.C" alt="" coords="197,80,360,107"/>
+<area shape="rect" id="node4" href="$cons__diff_8C.html" title="cons_diff.C" alt="" coords="385,80,473,107"/>
+<area shape="rect" id="node5" href="$detect__features_8C.html" title="detect_features.C" alt="" coords="498,80,624,107"/>
+<area shape="rect" id="node6" href="$FaceOffset__3_8C.html" title="FaceOffset_3.C" alt="" coords="649,80,764,107"/>
+<area shape="rect" id="node7" href="$NuLaplacian_8C.html" title="NuLaplacian.C" alt="" coords="789,80,896,107"/>
+<area shape="rect" id="node8" href="$quadric__analysis_8C.html" title="quadric_analysis.C" alt="" coords="921,80,1055,107"/>
+<area shape="rect" id="node9" href="$Rocprop_8C.html" title="Rocprop.C" alt="" coords="1079,80,1164,107"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="write_tec_ascii" name="write_tec_ascii">
+<area shape="rect" id="node2" href="$io_8h.html#a322fbf11f7fd7af08851b8b390d0167f" title="set_ascii_mode" alt="" coords="165,5,278,32"/>
+<area shape="rect" id="node4" href="$classRFC__Pane__base.html#ad825fb3e4f80cb305e54aa8e6e1526d8" title="write_tec_ij" alt="" coords="177,56,265,83"/>
+<area shape="rect" id="node6" href="$classRFC__Pane__base.html#a22cf453594a218fb055a202df019b1cb" title="write_tec_mixed" alt="" coords="163,107,280,133"/>
+<area shape="rect" id="node7" href="$classRFC__Pane__base.html#a3a1ad67809ff59581b89165ccdc069ed" title="write_tec_tri" alt="" coords="175,157,268,184"/>
+<area shape="rect" id="node3" href="$io_8h.html#ad70e72a0428a76731bc9ebce34f32f13" title="get_mode" alt="" coords="329,5,407,32"/>
+<area shape="rect" id="node5" href="$RFC__Window__base__IO__tecplot_8C.html#ada528aa3cb2d04381ab4fdb249aba3a8" title="write_attr" alt="" coords="330,107,406,133"/>
+</map>

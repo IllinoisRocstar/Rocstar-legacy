@@ -1,0 +1,6 @@
+<map id="get_opposite_real_edge_border" name="get_opposite_real_edge_border">
+<area shape="rect" id="node2" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="232,5,333,32"/>
+<area shape="rect" id="node3" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="214,56,351,83"/>
+<area shape="rect" id="node5" href="$classSimple__manifold__2.html#ae1611b1b5b6feb95d11d299ef4150866" title="Is the element incident on the give edge a real element? " alt="" coords="226,107,339,133"/>
+<area shape="rect" id="node4" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="401,56,498,83"/>
+</map>

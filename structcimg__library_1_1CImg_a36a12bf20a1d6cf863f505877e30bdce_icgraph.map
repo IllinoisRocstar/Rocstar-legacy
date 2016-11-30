@@ -1,0 +1,5 @@
+<map id="is_sameXYZ" name="is_sameXYZ">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#af525ec71f12648d5b2fda67988342c64" title="Blur the image anisotropically following a field of diffusion tensors. " alt="" coords="153,5,327,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a71f50d4be8cd4b71adb2ef611c8139b7" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_warp" alt="" coords="172,70,308,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a5ae8cb401527d16ee8d3b42deb6950f4" title="Return true if image (*this) has the specified width, height, depth and number of channels..." alt="" coords="157,135,323,177"/>
+</map>

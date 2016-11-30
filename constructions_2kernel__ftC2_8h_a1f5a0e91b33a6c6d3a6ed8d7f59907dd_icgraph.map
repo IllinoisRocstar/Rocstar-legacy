@@ -1,0 +1,5 @@
+<map id="squared_distanceC2" name="squared_distanceC2">
+<area shape="rect" id="node2" href="$predicates_2kernel__ftC2_8h.html#ad14e13be6f0487a178cd82519bf789d8" title="cmp_dist_to_pointC2" alt="" coords="195,45,341,72"/>
+<area shape="rect" id="node3" href="$predicates_2kernel__ftC2_8h.html#a81c38c51091b7ab0dadfb730195eaa3d" title="has_larger_dist_to\l_pointC2" alt="" coords="395,5,523,46"/>
+<area shape="rect" id="node4" href="$predicates_2kernel__ftC2_8h.html#a5193d4537b768ea42de4b5314ee5ee70" title="has_smaller_dist_to\l_pointC2" alt="" coords="389,70,528,111"/>
+</map>

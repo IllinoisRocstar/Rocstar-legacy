@@ -1,0 +1,51 @@
+<map id="id" name="id">
+<area shape="rect" id="node2" href="$classRFC__Pane__base.html#a2f9e1618fef477f04ffe8d1560d03228" title="Compute the natural coordinates. " alt="" coords="356,135,519,177"/>
+<area shape="rect" id="node11" href="$classTransfer__base.html#a0de1d5cce4fd238c7666794b315d436a" title="Computes the element&#45;wise load vector, and also computes mass matrix if diag has a nonnegative ID..." alt="" coords="112,311,275,353"/>
+<area shape="rect" id="node21" href="$classSimple__manifold__2.html#a2091a9ef9a16dd71316e13e5e52d01be" title="Determine an incident halfedge for each node. " alt="" coords="96,494,291,535"/>
+<area shape="rect" id="node24" href="$classSimple__manifold__2.html#ab192883c34a029fc51443dceb6b5a164" title="Determine the opposite halfedges of each halfedge, and identify border halfedge. " alt="" coords="94,429,293,470"/>
+<area shape="rect" id="node25" href="$classRFC__Pane__base.html#a7e2ad5d047afd4b30737ba86835b9c31" title="RFC_Pane_base::get\l_host_element_of_subface" alt="" coords="104,246,283,287"/>
+<area shape="rect" id="node31" href="$classRFC__Pane__base.html#a225bb34cd77c43e8a10e93c2d282b293" title="RFC_Pane_base::get\l_host_element_of_subnode" alt="" coords="103,559,284,601"/>
+<area shape="rect" id="node33" href="$classRFC__Pane__base.html#af97a16d7f0c1b7e850f5981830dcd2d1" title="Take a subnode id and an element, return the natrual coordinates within the element. " alt="" coords="119,625,268,666"/>
+<area shape="rect" id="node12" href="$classTransfer__base.html#a288f6bb6f766b4feb8b203aadf522ff2" title="Initialize load vector and the diagonal of the mass matrix. " alt="" coords="372,351,503,393"/>
+<area shape="rect" id="node34" href="$classTransfer__base.html#a3bbc901438337242b8b490aead1767cd" title="Transfer_base::integrate\l_subface" alt="" coords="112,690,275,731"/>
+<area shape="rect" id="node35" href="$classTransfer__base.html#a496c8e091fb7f527ac71bbb8d256b021" title="Transfer_base::make\l_field" alt="" coords="121,755,266,797"/>
+<area shape="rect" id="node36" href="$classFaceOffset__3.html#ac6379f4a2faa5ed80e6acc4d28e9b110" title="FaceOffset_3::obtain\l_face_offset" alt="" coords="121,821,265,862"/>
+<area shape="rect" id="node39" href="$classElement__vectors__k__const.html#a012daf687ea85e9da2bc2d064de92aa6" title="initialize the accessor with a pointer and a specific stride. " alt="" coords="94,887,293,913"/>
+<area shape="rect" id="node26" href="$classTransfer__base.html#a399e6c7a6d486906ab663174f08241c1" title="template function for transfering from nodes/faces to faces. " alt="" coords="350,207,525,233"/>
+<area shape="rect" id="node3" href="$classRFC__Window__base.html#a27d4a98475f93dc8dce73ae58a30c05a" title="RFC_Window_base::export\l_window" alt="" coords="582,135,765,177"/>
+<area shape="rect" id="node5" href="$classRFC__Pane__base.html#a8d07df12aec78d43eacbb5bf5ee2f11a" title="Read in using Rocin. " alt="" coords="596,70,751,111"/>
+<area shape="rect" id="node9" href="$classRFC__Pane__base.html#a91ce7d425b661073a4d6bd49dea92a10" title="RFC_Pane_base::read\l_binary" alt="" coords="596,5,751,46"/>
+<area shape="rect" id="node4" href="$classOverlay.html#a131f86a014305a38dabfb6308ed68c9e" title="Export the subdivisions to the two given windows. " alt="" coords="829,128,998,155"/>
+<area shape="rect" id="node6" href="$classRFC__Window__transfer.html#a05e169ae7b2dd51b533d87ce429d604f" title="RFC_Window_transfer\l::init_recv_buffer" alt="" coords="836,62,991,103"/>
+<area shape="rect" id="node7" href="$classRFC__Window__transfer.html#a15aff7a74853c597fcbc121d53d29e0c" title="Replicate the metadata of a remote pane only the local process. " alt="" coords="1073,62,1228,103"/>
+<area shape="rect" id="node8" href="$classRFC__Window__transfer.html#a1e774716e97169d887a20f47339edfbb" title="Replicate the remote panes that are in contact with the local panes in opp_win. " alt="" coords="1288,62,1443,103"/>
+<area shape="rect" id="node10" href="$classRFC__Window__base.html#a662a8e4f59317df7938eabb2f41850b0" title="Read in local panes in native binary format or using Rocin. " alt="" coords="813,11,1013,37"/>
+<area shape="rect" id="node13" href="$classTransfer__base.html#aeb0363c53161d0c31ecfd44b72322904" title="template function for transfering from nodes/faces to nodes. " alt="" coords="584,359,763,385"/>
+<area shape="rect" id="node18" href="$classTransfer__base.html#a49c00219499e0b4d510f90b86b27bc60" title="Computes the load vector. " alt="" coords="583,444,764,471"/>
+<area shape="rect" id="node14" href="$classTransfer__n2n.html#ae872470b8a41e7de7970f31970e0655b" title="The main entry to the data transfer algorithm. " alt="" coords="838,339,989,365"/>
+<area shape="rect" id="node16" href="$classTransfer__f2n.html#a93599352510c7625825e13d46e30422b" title="The main entry to the data transfer algorithm. " alt="" coords="840,389,987,416"/>
+<area shape="rect" id="node15" href="$classTransfer__traits_3_01Nodal__data__const_00_01Nodal__data_00_01true_01_4.html#a6238db9e154d60a2d90bb62c7d2e739e" title="Transfer_traits\&lt; Nodal\l_data_const, Nodal_data,\l true \&gt;::transfer" alt="" coords="1065,371,1236,427"/>
+<area shape="rect" id="node17" href="$classTransfer__traits_3_01Facial__data__const_00_01Nodal__data_00_01true_01_4.html#abe1de0860ed72c56b633c2073fc42d35" title="See above. " alt="" coords="1065,475,1236,531"/>
+<area shape="rect" id="node19" href="$classTransfer__n2n.html#ac57f7543a5670783226af12aff7937a9" title="Compute the nodal load vector. " alt="" coords="844,441,983,482"/>
+<area shape="rect" id="node20" href="$classTransfer__f2n.html#a4d149ed7903d756f95208e316d827329" title="Compute the nodal load vector. " alt="" coords="846,506,981,547"/>
+<area shape="rect" id="node22" href="$classSimple__manifold__2.html#ad02b3f49c3fc55ea61095afaea1eefe1" title="Initialize the database for the pane, including ghost information, opposite halfedges, incident halfedges, and border halfedges. " alt="" coords="359,501,516,528"/>
+<area shape="rect" id="node23" href="$classSimple__manifold__2.html#a40c7966094160ec0043056b5b1b37ec8" title="Constructors. " alt="" coords="603,495,743,537"/>
+<area shape="rect" id="node27" href="$classTransfer__n2f.html#af28f961dfd0af8a4a8415e490c3dabd4" title="The main entry to the data transfer algorithm. " alt="" coords="600,263,747,289"/>
+<area shape="rect" id="node29" href="$classTransfer__f2f.html#ab179827bbccbc173bfe6b9a6ce87e880" title="The main entry to the data transfer algorithm. " alt="" coords="601,204,745,231"/>
+<area shape="rect" id="node28" href="$classTransfer__traits_3_01Nodal__data__const_00_01Facial__data_00_01true_01_4.html#af6f4a1679016e42a61a309074e59375c" title="Transfer_traits\&lt; Nodal\l_data_const, Facial_data,\l true \&gt;::transfer" alt="" coords="827,259,999,315"/>
+<area shape="rect" id="node30" href="$classTransfer__traits_3_01Facial__data__const_00_01Facial__data_00_01true_01_4.html#a791a778ef78955907c5cf602168a0e26" title="Transfer_traits\&lt; Facial\l_data_const, Facial_data,\l true \&gt;::transfer" alt="" coords="827,179,999,235"/>
+<area shape="rect" id="node32" href="$classTransfer__base.html#a846d95c70e24eebc98c6b395fc497f7d" title="Transfer_base::interpolate_fe" alt="" coords="342,567,533,593"/>
+<area shape="rect" id="node37" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="358,821,517,862"/>
+<area shape="rect" id="node38" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="606,821,741,862"/>
+<area shape="rect" id="node40" href="$classElement__vectors__k.html#abff5b8faeb81685278bb62a627e784b0" title="Element_vectors_k::set" alt="" coords="357,887,517,913"/>
+<area shape="rect" id="node41" href="$classWindow__manifold__2.html#a2eebb41f1831723225ffd524188bcb54" title="Convert element values to nodal values using weighted averaging. " alt="" coords="364,938,511,979"/>
+<area shape="rect" id="node42" href="$classWindow__manifold__2.html#ab5ca31d43bed67e02e89be167de9da7f" title="Compute nodal normals using one of the following weighting schemes: E2N_ONE, E2N_AREA, and E2N_ANGLE, and E2N_USER. " alt="" coords="592,911,755,953"/>
+<area shape="rect" id="node50" href="$classRocsurf.html#a4f24fa35a8c266187a6c07110f263313" title="Computes nodal or elemental normals of a given window. " alt="" coords="1077,953,1224,994"/>
+<area shape="rect" id="node43" href="$classWindow__manifold__2.html#a870e40efa9ab58452a354eaca2b75d30" title="Compute the normals at nodes or faces, depending on the type of the attribute normals. " alt="" coords="840,846,987,887"/>
+<area shape="rect" id="node49" href="$classWindow__manifold__2.html#a63077b4a404ef8457c38c64b320323e7" title="Perturb the given mesh along its normal direction by length equal to a random number between &#45;range a..." alt="" coords="840,911,987,953"/>
+<area shape="rect" id="node44" href="$classRocsurf.html#ad345c59eea168babcd0976c9a7810b50" title="Computes nodal or elemental normals of a given window. " alt="" coords="1061,885,1240,912"/>
+<area shape="rect" id="node45" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="1315,923,1415,949"/>
+<area shape="rect" id="node46" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="1515,872,1663,899"/>
+<area shape="rect" id="node47" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="1518,923,1661,949"/>
+<area shape="rect" id="node48" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="1491,973,1687,1000"/>
+</map>

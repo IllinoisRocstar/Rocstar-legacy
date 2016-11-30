@@ -1,0 +1,51 @@
+<map id="optimize_vertex_positions" name="optimize_vertex_positions">
+<area shape="rect" id="node2" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a8b6c6c50103bed1999d40375163916dd" title="compute_function" alt="" coords="701,208,827,235"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1NonSmoothSteepestDescent.html#afa2f7dab2d1d725bf215e7eed38a8321" title="find_active_set" alt="" coords="709,5,819,32"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1PatchData.html#a3e94692727e2bf9bc09fd1625788e21c" title="Returns a pointer to the start of the element array. " alt="" coords="257,867,402,909"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1QualityImprover.html#a0c155568021b2297015afef4038794b4" title="Mesquite::QualityImprover\l::get_mesh_set" alt="" coords="242,933,417,974"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="257,998,402,1039"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1MsqMeshEntity.html#a0c714ede2b6a39abea6314bb07d28a81" title="gets the vertices of the mesh entity " alt="" coords="242,1063,417,1105"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a71b44feba770eb5973c7e670f059694f" title="init_max_step_length" alt="" coords="489,867,634,893"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1NonSmoothSteepestDescent.html#aa56ebdba47008ef065e4e895c6900b01" title="init_opt" alt="" coords="297,1129,361,1156"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1NonSmoothSteepestDescent.html#aea5da29ae2e90ad56c2a56d62b63ab93" title="minmax_opt" alt="" coords="283,512,376,539"/>
+<area shape="rect" id="node43" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#a80870c233d0237e3588a2d6f8d176916" title="Increments the iterator. returns false if there is no more free vertex. " alt="" coords="227,1181,431,1222"/>
+<area shape="rect" id="node46" href="$classMesquite_1_1PatchData.html#a3f7ed6a14a98f283aa700342b9cc2a01" title="number of elements in the Patch. " alt="" coords="257,1363,402,1405"/>
+<area shape="rect" id="node47" href="$classMesquite_1_1PatchData.html#ae1e5f16431edfc2266d739fc080e9bea" title="Returns the number of elements in the current patch who are free to move. " alt="" coords="257,1298,402,1339"/>
+<area shape="rect" id="node45" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="489,1242,634,1283"/>
+<area shape="rect" id="node48" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ad20897c5c8bd47f5d4005989bead0e55" title="Resets the iterator. " alt="" coords="227,1429,431,1470"/>
+<area shape="rect" id="node49" href="$classMesquite_1_1MeshSet.html#af8c95d9f6bf88e669c7e73640de455e6" title="Returns the number of coordinates in the Mesh&#39;s geometric coordinate system. " alt="" coords="258,1494,401,1535"/>
+<area shape="rect" id="node37" href="$classMesquite_1_1NonSmoothSteepestDescent.html#ac628e842487f75a4a1ca70171f1c0704" title="validity_check" alt="" coords="711,867,817,893"/>
+<area shape="rect" id="node50" href="$classMesquite_1_1MsqFreeVertexIndexIterator.html#ae3a963bdd66247d38ad22d17fa121632" title="Returns an index corresponding to a free vertex. " alt="" coords="227,1559,431,1601"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a1b72722c733b2017737741384f8d4546" title="Mesquite::PatchData\l::element_by_index" alt="" coords="907,98,1053,139"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1QualityMetric.html#aa107d74c3c8fd542bc19e5a4a0ecc65e" title="Evaluate the metric for an element. " alt="" coords="900,163,1060,205"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1ObjectiveFunction.html#a836e8d40b1fab46ac9a8658667d582a6" title="Mesquite::ObjectiveFunction\l::get_quality_metric" alt="" coords="886,229,1074,270"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1ObjectiveFunction.html#aa1c2b955804364e4d65b2e31998b8acf" title="Mesquite::ObjectiveFunction\l::get_quality_metric_list" alt="" coords="886,294,1074,335"/>
+<area shape="rect" id="node8" href="$rational__rotation_8h.html#a8b9eb702eb3f9bcba3923532d1e801db" title="for" alt="" coords="961,5,999,32"/>
+<area shape="rect" id="node14" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="958,923,1002,949"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a3aa1796f8f5b7ca60892b6f98f632ed5" title="check_equilibrium" alt="" coords="498,461,625,488"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a19fdb541878e538d60ee45952ba65ba9" title="compute_alpha" alt="" coords="506,664,617,691"/>
+<area shape="rect" id="node26" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a45b2d26a1bd0b3fa88f870d351e81fda" title="compute_gradient" alt="" coords="499,309,624,336"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1NonSmoothSteepestDescent.html#afdc71e49bdf3b5328b0d4e03a257f087" title="get_gradient_projections" alt="" coords="480,259,643,285"/>
+<area shape="rect" id="node28" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a870d1628ed5b7b6fb68f10e703d8b7b0" title="print_active_set" alt="" coords="707,816,821,843"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1NonSmoothSteepestDescent.html#afc229e33dbf2794855a1bea19e45ede1" title="search_direction" alt="" coords="503,563,620,589"/>
+<area shape="rect" id="node35" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a85bc001b3ca33d3e06b5bc852beaa624" title="step_acceptance" alt="" coords="501,157,622,184"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1NonSmoothSteepestDescent.html#afbb1763bb4e34a5966e12faf9744cbdd" title="convex_hull_test" alt="" coords="704,411,824,437"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a1f90abc5c6cfdefc58c7fe3973ccc0ca" title="form_grammian" alt="" coords="708,512,820,539"/>
+<area shape="rect" id="node24" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a2572d0598499a4fe7d41b7a0f70b779b" title="get_active_directions" alt="" coords="691,461,837,488"/>
+<area shape="rect" id="node22" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="1189,436,1232,463"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a66f7298864e5bdd79eb762e7c47214e8" title="check_vector_dots" alt="" coords="914,461,1046,488"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a709af9df1f5433641c9cfbba70bc7488" title="find_plane_normal" alt="" coords="917,411,1043,437"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1NonSmoothSteepestDescent.html#acd8a0786503cc4900f3b29bba8a9a63e" title="find_plane_points" alt="" coords="919,512,1041,539"/>
+<area shape="rect" id="node30" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a0ab1c27ad6e9bc7640446d3f18bc6074" title="form_PD_grammian" alt="" coords="695,715,833,741"/>
+<area shape="rect" id="node32" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a5d842d37f2ddc8779aba8565144b9d18" title="search_edges_faces" alt="" coords="693,765,835,792"/>
+<area shape="rect" id="node31" href="$classMesquite_1_1NonSmoothSteepestDescent.html#abb9e0144d2d3e92e16290a7331cf89a1" title="singular_test" alt="" coords="932,689,1028,716"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1NonSmoothSteepestDescent.html#aeeffdb246b5281ae0d840678440fec4f" title="form_reduced_matrix" alt="" coords="692,563,836,589"/>
+<area shape="rect" id="node34" href="$classMesquite_1_1NonSmoothSteepestDescent.html#aef256c1064a8c0a4bbf8ae30a89c8008" title="solve2x2" alt="" coords="727,613,801,640"/>
+<area shape="rect" id="node36" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a8d91599c911fe89bcc2e6e5a08e39f92" title="copy_active" alt="" coords="718,157,810,184"/>
+<area shape="rect" id="node41" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a52fd2f07052094fc485fab94e1e93d74" title="improvement_check" alt="" coords="695,56,833,83"/>
+<area shape="rect" id="node42" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a0f96be9e2325bafc77e079b05c9e78b3" title="get_min_estimate" alt="" coords="701,107,827,133"/>
+<area shape="rect" id="node38" href="$classMesquite_1_1MsqMeshEntity.html#a95f3007f7221bdc89536dd3a7127084b" title="Mesquite::MsqMeshEntity\l::get_vertex_index" alt="" coords="893,791,1067,833"/>
+<area shape="rect" id="node40" href="$classMesquite_1_1Vector3D.html#a49ab085fac87d1f1a33176e7fbd287ce" title="Mesquite::Vector3D\l::get_coordinates" alt="" coords="911,857,1049,898"/>
+<area shape="rect" id="node39" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="1123,791,1298,833"/>
+<area shape="rect" id="node44" href="$classMesquite_1_1MsqVertex.html#a181f1717ea1cab3613ff39c6969600dc" title="Mesquite::MsqVertex\l::is_flag_set" alt="" coords="488,1177,635,1218"/>
+</map>

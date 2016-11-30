@@ -1,0 +1,19 @@
+<map id="vtk_read_structured_points" name="vtk_read_structured_points">
+<area shape="rect" id="node2" href="$classMesquite_1_1MeshImplData.html#a92eb570a98fe0250996837aefe1d7e18" title="Allocate space for specified number of vertices. " alt="" coords="192,5,360,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1FileTokenizer.html#ab87ed2a0f2e3541adcf767d67b55c484" title="Parse a sequence of double values. " alt="" coords="195,70,357,111"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1FileTokenizer.html#afbf4b94513d64ab72fb7d036010ce0b4" title="Parse a sequence of integer values. " alt="" coords="195,135,357,177"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1FileTokenizer.html#ab4cab5229cb9d6e0c803df7f2b1fcef2" title="check for newline " alt="" coords="195,201,357,242"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1FileTokenizer.html#aecdfe2926dd4e76f4e583b2c2ec67808" title="Get the line number the last token was read from. " alt="" coords="195,266,357,307"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1FileTokenizer.html#adeb6ea915b301dd0c047d4f675148a1f" title="Match current token to passed string. " alt="" coords="195,331,357,373"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1MeshImplData.html#a1cf73923ceca156f67a7b6c00f9aae3a" title="Set allocated but unset veretx to specified values. " alt="" coords="192,397,360,438"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1MeshImpl.html#ad98a3a0a7926272492b4c4f3d46be798" title="Helper function for readers of structured mesh &#45; create elements. " alt="" coords="202,462,350,503"/>
+<area shape="rect" id="node6" href="$namespacecimg__library_1_1cimg.html#a4429d578e86edc9147af5a8f307c5f30" title="Read file data, and check for possible errors. " alt="" coords="428,201,556,242"/>
+<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="644,201,772,242"/>
+<area shape="rect" id="node8" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="860,201,988,242"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1MeshImplData.html#a7ea350ff8de5c5bca49e019b5305a01a" title="Allocate space for specified number of elements. " alt="" coords="408,429,576,470"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1MeshImplData.html#a647bfa00d6e564a0955dd7c7e052922b" title="Clear element at specified index (if any) including connectivity and adjacency data, and re&#45;initialize with passed data. " alt="" coords="408,494,576,535"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1MeshImplData.html#a48c5dd96a87d3260d0c8d01c36283b60" title="Clear existing element data. " alt="" coords="624,461,792,502"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1MeshImplData.html#a006397f4d39d35cfda314202427dff37" title="Set cleared element. " alt="" coords="624,526,792,567"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="845,461,1003,502"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1MeshImplData.html#a104a1c4bbfb05d4cada7edbaff6f8f2b" title="Check if passed vertex index is valid. " alt="" coords="840,526,1008,567"/>
+</map>

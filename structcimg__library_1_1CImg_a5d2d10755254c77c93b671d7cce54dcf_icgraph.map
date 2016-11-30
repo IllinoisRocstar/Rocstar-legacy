@@ -1,0 +1,4 @@
+<map id="tensor" name="tensor">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a24f2eb0ccd7264c10acdfb9b4180ca33" title="Draw an anisotropic 2D gaussian function. " alt="" coords="112,5,283,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a82cfb268b952aeeb1b55e6072a83d093" title="Return a new image corresponding to the diffusion tensor located at (x,y,z) of the current vector&#45;val..." alt="" coords="116,70,279,111"/>
+</map>

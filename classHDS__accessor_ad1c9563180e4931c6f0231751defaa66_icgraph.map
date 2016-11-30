@@ -1,0 +1,9 @@
+<map id="set_inode" name="set_inode">
+<area shape="rect" id="node2" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="Overlay::insert_node\l_in_blue_edge" alt="" coords="147,78,290,119"/>
+<area shape="rect" id="node7" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="133,158,304,199"/>
+<area shape="rect" id="node3" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="379,5,504,46"/>
+<area shape="rect" id="node5" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="352,71,531,97"/>
+<area shape="rect" id="node6" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="368,122,515,163"/>
+<area shape="rect" id="node4" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="579,71,696,97"/>
+<area shape="rect" id="node8" href="$classOverlay.html#af13f003d409781875438877fd15f4d81" title="Overlay::associate\l_green_vertices" alt="" coords="376,187,507,229"/>
+</map>

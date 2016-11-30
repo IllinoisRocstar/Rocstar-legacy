@@ -1,0 +1,12 @@
+<map id="read_pane_sp" name="read_pane_sp">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="180,5,313,32"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a92237a2ea1b3833484b9fd0c01cc1f0a" title="Copy an array from an attribute on a specific pane into a given buffer. " alt="" coords="185,56,309,83"/>
+<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="173,107,320,133"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="158,157,335,184"/>
+<area shape="rect" id="node8" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="159,208,335,235"/>
+<area shape="rect" id="node9" href="$roccom__c_09_09_8h.html#a74e2d52abbc3b6532fc19b38deabba26" title="Get the sizes of an attribute. " alt="" coords="192,259,301,285"/>
+<area shape="rect" id="node10" href="$Rocin_8h.html#aeac5da5d65e3402c9adad740b4f89a77" title="Load the module Rocin into Roccom using the given module name. " alt="" coords="179,309,315,336"/>
+<area shape="rect" id="node11" href="$Rocin_8h.html#adb12bb28b566a4f03295fa54881f525a" title="Unload the module Rocin from Roccom. " alt="" coords="171,360,322,387"/>
+<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="384,157,512,184"/>
+<area shape="rect" id="node5" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="421,56,475,83"/>
+</map>

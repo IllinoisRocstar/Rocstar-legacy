@@ -1,0 +1,12 @@
+<map id="reset_element" name="reset_element">
+<area shape="rect" id="node2" href="$classMesquite_1_1MeshImpl.html#aa7e8f50cd834001604ef8ed13ebe2de1" title="Mesquite::MeshImpl\l::read_exodus" alt="" coords="187,78,327,119"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1MeshImpl.html#ad98a3a0a7926272492b4c4f3d46be798" title="Helper function for readers of structured mesh &#45; create elements. " alt="" coords="158,143,357,185"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1MeshImpl.html#a45a272f43f3a9e5683de327ecb41bdf2" title="Helper function for vtk_read_polydata &#45; reads polygon subsection. " alt="" coords="187,209,327,250"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1MeshImpl.html#abf3d61c4087729a4ed6863c364ecb4ef" title="Read unstructured mesh. " alt="" coords="164,274,351,315"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1MeshImpl.html#a9e788ff95e7bee64cd93d8489c96e373" title="Read rectilinear grid structured mesh. " alt="" coords="407,5,577,46"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1MeshImpl.html#a526aede3d0f19b06a9b5ce6bffaccdfb" title="Read structured grid mesh. " alt="" coords="405,70,579,111"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1MeshImpl.html#aa3e37616a8c2fab2842ed80f87b561c7" title="Read structured point mesh. " alt="" coords="419,136,565,192"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MeshImpl.html#ae7fe2105ae8c789562fd3bf9c4dbf339" title="Read a data block from the file. " alt="" coords="627,143,767,185"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1MeshImpl.html#a51c855a0e0885d47351793338f3074ba" title="Mesquite::MeshImpl\l::read_vtk" alt="" coords="817,143,957,185"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1MeshImpl.html#a415e9c8fdc76a3114f24231e01b35761" title="Read polydata mesh. " alt="" coords="422,217,562,258"/>
+</map>

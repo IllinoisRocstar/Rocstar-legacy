@@ -1,0 +1,8 @@
+<map id="ScalarMultiplyQualityMetric" name="ScalarMultiplyQualityMetric">
+<area shape="rect" id="node2" href="$classMesquite_1_1QualityMetric.html#a2977684b00072adccf1125313b3190e7" title="Returns the feasible flag for this metric. " alt="" coords="235,5,399,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#a87b355d10f074780e849fb4204838897" title="Mesquite::QualityMetric\l::get_metric_type" alt="" coords="237,70,397,111"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1QualityMetric.html#aa530b53b6a4f1bc675af6017b5f35ed1" title="Returns negateFlag. " alt="" coords="237,135,397,177"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1QualityMetric.html#a892f2de77eacaf9d1e51cf2b29ee2d57" title="This function should be used in the constructor of every concrete quality metric. ..." alt="" coords="237,201,397,242"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1QualityMetric.html#ab6c509dee736029280d9360d19a7919d" title="Sets the name of this metric. " alt="" coords="237,266,397,307"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1QualityMetric.html#a3a6d316bcee1e7712001aa9f7e2b92aa" title="Mesquite::QualityMetric\l::set_negate_flag" alt="" coords="237,331,397,373"/>
+</map>

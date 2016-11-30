@@ -1,0 +1,7 @@
+<map id="writeBlock" name="writeBlock">
+<area shape="rect" id="node2" href="$classblock.html#aad574e9481a04340d5013d0fbdd78e80" title="block::getBlockNumber" alt="" coords="142,5,301,32"/>
+<area shape="rect" id="node3" href="$classblock.html#ab16ba91c0ac566792b6dd28cc4977a99" title="block::getDim" alt="" coords="170,56,273,83"/>
+<area shape="rect" id="node4" href="$classblock.html#a6ec0275d18d9313b9471c8a5ad18fc67" title="block::getFace" alt="" coords="167,107,275,133"/>
+<area shape="rect" id="node5" href="$classblock.html#a320776ca76b17ca11512e8d58deda57c" title="block::getOriginalNumber" alt="" coords="137,157,306,184"/>
+<area shape="rect" id="node6" href="$classface.html#aee95dccf9c845c852109a7db005a01f4" title="face::getPatches" alt="" coords="161,208,282,235"/>
+</map>

@@ -1,0 +1,51 @@
+<map id="compute_medial_quadric" name="compute_medial_quadric">
+<area shape="rect" id="node2" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="448,202,576,229"/>
+<area shape="rect" id="node4" href="$geometry_8h.html#a2f642138fc2786ca05a687aa45a352f2" title="Compute the angle between two vectors. " alt="" coords="277,380,331,406"/>
+<area shape="rect" id="node10" href="$classRocblas.html#a67987d3b72ffb73c5fa0cc2930822afd" title="Operation wrapper for copy (x is a scalar pointer). " alt="" coords="230,810,378,837"/>
+<area shape="rect" id="node12" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="222,861,386,888"/>
+<area shape="rect" id="node13" href="$classRocmop.html#a951f6a38a9e200878fabe2fe295d23ed" title="eigen_analyze_vertex" alt="" coords="230,658,378,685"/>
+<area shape="rect" id="node29" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="489,760,535,786"/>
+<area shape="rect" id="node34" href="$classVector__3.html#afc75c733aff7cb9c0216f363888b1dff" title="Vector_3::norm" alt="" coords="249,912,359,938"/>
+<area shape="rect" id="node33" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="443,810,581,837"/>
+<area shape="rect" id="node35" href="$arruda__boyce_8f90.html#a2f31672ee5874935d96e7aea2c8371fe" title="rs" alt="" coords="685,282,723,309"/>
+<area shape="rect" id="node9" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="1081,546,1125,573"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="638,195,770,236"/>
+<area shape="rect" id="node5" href="$utilities_2rc__cmp_2util_8cpp.html#a0d9256a364d8efaad23e52d4042654e0" title="dot_product" alt="" coords="467,354,557,381"/>
+<area shape="rect" id="node7" href="$geometry_8h.html#a3f884839e02fce28dc24f56b4f121900" title="Compute the dot Product of two vectors. " alt="" coords="487,405,537,432"/>
+<area shape="rect" id="node8" href="$namespacenvc.html#a4ea00221667e66f4029614e350ea5745" title="nvc::norm2" alt="" coords="469,304,555,330"/>
+<area shape="rect" id="node6" href="$utilities_2rc__cmp_2util_8cpp.html#a7198ddaeac1d22c06c4daf75de4ceaef" title="nan" alt="" coords="683,354,725,381"/>
+<area shape="rect" id="node11" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="444,861,580,888"/>
+<area shape="rect" id="node14" href="$classRocmop.html#a77616b2e5e1035b58e2e4438abea5cb7" title="compute_eigenvectors" alt="" coords="435,709,589,736"/>
+<area shape="rect" id="node30" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="473,608,551,634"/>
+<area shape="rect" id="node31" href="$namespacecimg__library.html#a2ff3d5bed4426af215f53f21b5ae68cf" title="cimg_library::atan" alt="" coords="449,658,575,685"/>
+<area shape="rect" id="node15" href="$smooth__medial_8C.html#ac59a848fa2ab164102030221f21de474" title="dsyevq3" alt="" coords="669,692,739,718"/>
+<area shape="rect" id="node18" href="$namespacecimg__library_1_1cimg.html#ac1b66fe77173de9e5e8542b2823d6071" title="Print informations about CImg environement variables. " alt="" coords="640,858,768,899"/>
+<area shape="rect" id="node28" href="$buildface_8cpp.html#a34cd8fd4d99fbdd4ef97fcc94070b460" title="swap" alt="" coords="677,742,731,769"/>
+<area shape="rect" id="node16" href="$smooth__medial_8C.html#a064649646f4641b48463cf641b032e32" title="dsytrd3" alt="" coords="863,658,929,685"/>
+<area shape="rect" id="node17" href="$smooth__medial_8C.html#a008137b55395036613fb97c40e7ba8b5" title="SQR" alt="" coords="1077,684,1128,710"/>
+<area shape="rect" id="node19" href="$namespacecimg__library_1_1cimg.html#a0d2a283a3aa2572e9d343f040c8c4c6b" title="Return the current endianness of the CPU. " alt="" coords="832,760,960,802"/>
+<area shape="rect" id="node20" href="$namespacecimg__library_1_1cimg.html#ad0db1003e37cc111d9eddd282c1ab27b" title="Return or set path to the ImageMagick&#39;s convert tool. " alt="" coords="827,891,965,932"/>
+<area shape="rect" id="node24" href="$namespacecimg__library_1_1cimg.html#aa9f7e166f51b43facc8ecc9f05e4ceba" title="Return path of the GraphicsMagick&#39;s gm tool. " alt="" coords="819,956,973,998"/>
+<area shape="rect" id="node25" href="$namespacecimg__library_1_1cimg.html#aaedba1291890f50edb5be58ef662e516" title="Return or set path of the XMedcon tool. " alt="" coords="832,1022,960,1063"/>
+<area shape="rect" id="node26" href="$namespacecimg__library_1_1cimg.html#a797797a309ca40aa28cdfbb92f4d1621" title="Return or set path to store temporary files. " alt="" coords="832,826,960,867"/>
+<area shape="rect" id="node21" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="1039,1022,1167,1063"/>
+<area shape="rect" id="node22" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="1039,891,1167,932"/>
+<area shape="rect" id="node23" href="$namespacecimg__library_1_1cimg.html#a6a835b5fd5ea1699929cb8a1f91e8729" title="cimg_library::cimg\l::winformat_string" alt="" coords="1039,956,1167,998"/>
+<area shape="rect" id="node27" href="$namespacecimg__library_1_1cimg.html#a7748b6c9db13b5262f059994f0b8c117" title="cimg_library::cimg\l::filenamerand" alt="" coords="1039,826,1167,867"/>
+<area shape="rect" id="node32" href="$structcimg__library_1_1CImg.html#ae34fafc7bd6868ac7dcfbe2d8e9bf3b4" title="cimg_library::CImg\l::get_atan" alt="" coords="638,626,770,667"/>
+<area shape="rect" id="node36" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="1269,344,1344,370"/>
+<area shape="rect" id="node37" href="$arruda__boyce_8f90.html#a6fbc6c2163a4ca8b183d367f2bdf65c2" title="tql1" alt="" coords="875,217,917,244"/>
+<area shape="rect" id="node45" href="$arruda__boyce_8f90.html#a11625c0d4087813612fcea51e6bdc170" title="tql2" alt="" coords="875,166,917,193"/>
+<area shape="rect" id="node46" href="$arruda__boyce_8f90.html#af7b3c6cb5bad790aa302b90dfad59af9" title="tred1" alt="" coords="871,346,921,373"/>
+<area shape="rect" id="node50" href="$arruda__boyce_8f90.html#a40a1f383b8cd714b3c0d7dbe946d99eb" title="tred2" alt="" coords="871,400,921,426"/>
+<area shape="rect" id="node38" href="$classLine__2.html#afe7f37893f080982762fded5aaca681c" title="Line_2::c" alt="" coords="1065,90,1140,117"/>
+<area shape="rect" id="node39" href="$classColor.html#a136e5e559949921576ae566cfea2e855" title="Color::g" alt="" coords="1069,242,1137,269"/>
+<area shape="rect" id="node40" href="$classAff__transformation__2.html#a365f1affce6586f551082723758c0fcc" title="Aff_transformation_2::m" alt="" coords="1021,40,1184,66"/>
+<area shape="rect" id="node41" href="$arruda__boyce_8f90.html#aa5199d89841fc17a3bc6ee4e6721db7b" title="pythag" alt="" coords="1072,192,1133,218"/>
+<area shape="rect" id="node43" href="$classColor.html#a2cd31514360f55547e6cb3e94dfe6ad5" title="Color::r" alt="" coords="1274,141,1339,168"/>
+<area shape="rect" id="node44" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="1079,344,1126,370"/>
+<area shape="rect" id="node42" href="$classColor.html#a6b4c47aed15e7f7a2f1e38311b98737e" title="Color::b" alt="" coords="1273,192,1341,218"/>
+<area shape="rect" id="node47" href="$classTransfer__base.html#aa4fb201c8061f6f1fd18361e4bd1737a" title="Transfer_base::scale" alt="" coords="1031,496,1175,522"/>
+<area shape="rect" id="node48" href="$classRFC__Data__const.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Data_const::id" alt="" coords="1235,496,1378,522"/>
+<area shape="rect" id="node49" href="$classRFC__Data.html#a2e1ff52eab3383077d032b5cfdbce9e3" title="RFC_Data::get_value" alt="" coords="1232,445,1381,472"/>
+</map>
