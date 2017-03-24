@@ -1,9 +1,0 @@
-<map id="build" name="build">
-<area shape="rect" id="node2" href="$classKdtree__d.html#ab9929ee321ab5ece6486dee16877c1fd" title="build_r" alt="" coords="105,56,165,83"/>
-<area shape="rect" id="node3" href="$classKdtree__d.html#abdb31d751028af584b062c635773556c" title="malloc_node" alt="" coords="214,5,309,32"/>
-<area shape="rect" id="node4" href="$classKdtree__d.html#a83a7d1346cc46bc0e08b96dd688876c3" title="split_arr" alt="" coords="227,56,295,83"/>
-<area shape="rect" id="node8" href="$classKdtree__d.html#ad63b6074440900d2b7d4bb5435e07f09" title="get_max_element" alt="" coords="357,107,483,133"/>
-<area shape="rect" id="node5" href="$classKdtree__d.html#a09a8b6f22fe363b1b12954390236f575" title="partition" alt="" coords="386,56,454,83"/>
-<area shape="rect" id="node6" href="$classKdtree__d.html#abfd71ee09c373d2b96fd4db9a4e654e8" title="comp" alt="" coords="531,81,586,108"/>
-<area shape="rect" id="node7" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="635,81,751,108"/>
-</map>

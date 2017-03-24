@@ -1,7 +1,0 @@
-<map id="normal_at" name="normal_at">
-<area shape="rect" id="node2" href="$classMesquite_1_1DomainTSTT.html#ac91cb11eee1047c012541a8ffe2ce898" title="Get geometric entity owning a mesh entity. " alt="" coords="173,5,299,32"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1GeomTSTTCommon.html#a82bdb55f6650c1df629cc95c97469d0d" title="Given a geometric entity and a position, evaluate the normal on the geometric entity at the closest p..." alt="" coords="134,57,338,98"/>
-<area shape="rect" id="node6" href="$namespaceMesquite.html#ae7ef86a5edb5fe3e014097d7de54ef75" title="Mesquite::process_tstt\l_error" alt="" coords="159,122,313,163"/>
-<area shape="rect" id="node4" href="$namespaceMesquite.html#afe40d6f45beeeaf8137069f275560b59" title="Mesquite::convert_from\l_sidl_vector" alt="" coords="387,23,546,65"/>
-<area shape="rect" id="node5" href="$namespaceMesquite.html#a99797e9c01665ed468aae78612346f18" title="Mesquite::convert_to\l_sidl_vector" alt="" coords="395,89,539,130"/>
-</map>

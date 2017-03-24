@@ -1,5 +1,0 @@
-<map id="is_isolated" name="is_isolated">
-<area shape="rect" id="node2" href="$classWindow__manifold__2.html#aad647356fbd9bd7b27031859731bfaff" title="Determine the primary nodes for across&#45;pane access. " alt="" coords="139,5,285,46"/>
-<area shape="rect" id="node3" href="$classWindow__manifold__2.html#a90788e8f1ad84518370283bfdf635e7c" title="Initialize the manifold by inheriting the given mesh. " alt="" coords="334,12,498,39"/>
-<area shape="rect" id="node4" href="$classWindow__manifold__2.html#ad53f16aa8ca835f7435d37af4732bdbd" title="Construct a Window_manifold_2 from a given window. " alt="" coords="547,5,693,46"/>
-</map>

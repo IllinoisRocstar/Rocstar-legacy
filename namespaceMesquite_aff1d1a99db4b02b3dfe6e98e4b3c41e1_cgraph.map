@@ -1,6 +1,0 @@
-<map id="operator&lt;&lt;" name="operator&lt;&lt;">
-<area shape="rect" id="node2" href="$classMesquite_1_1StopWatchCollection.html#a646c07d1f357ba75177e97ec3d99a925" title="Mesquite::StopWatchCollection\l::get_keys_sorted_by_time" alt="" coords="139,5,346,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1StopWatchCollection.html#a983235222003f5692a5ce321e55dac6e" title="Gets the string associated with a key. " alt="" coords="139,70,346,111"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1StopWatchCollection.html#affb5fd0d8464b786bebe3a0aa882b350" title="Mesquite::StopWatchCollection\l::number_of_starts" alt="" coords="139,135,346,177"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1StopWatchCollection.html#a8a0c1f987261c5bf5e77156bfcaaebd2" title="Mesquite::StopWatchCollection\l::total_time" alt="" coords="139,201,346,242"/>
-</map>

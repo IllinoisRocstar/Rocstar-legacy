@@ -1,9 +1,0 @@
-<map id="GetCon" name="GetCon">
-<area shape="rect" id="node2" href="$vinci_8h.html#a9d685369a20ad2d6f5c2256b857614f6" title="empty" alt="" coords="153,13,212,40"/>
-<area shape="rect" id="node3" href="$classMesh_1_1MeshUtilityObject.html#a690d9694fadce78f040760ee34d5a0fa" title="FormConnectivity" alt="" coords="120,64,245,91"/>
-<area shape="rect" id="node4" href="$classMesh_1_1MeshUtilityObject.html#aaaa6c4a41ae628a7697343a69b2229a0" title="ECon" alt="" coords="334,5,389,32"/>
-<area shape="rect" id="node5" href="$classMesh_1_1Connectivity.html#a41299e7e87f3fea27cc28c5ea973c879" title="Mesh::Connectivity\l::Inverse" alt="" coords="294,57,429,98"/>
-<area shape="rect" id="node8" href="$classMesh_1_1MeshUtilityObject.html#a4ee6fd10b4878cb005f9eb3e11508cdc" title="NC" alt="" coords="340,123,383,149"/>
-<area shape="rect" id="node6" href="$classMesh_1_1Connectivity.html#a07c8a0d2aa0388b9eff23a632c27c68d" title="Mesh::Connectivity\l::Resize" alt="" coords="478,23,613,65"/>
-<area shape="rect" id="node7" href="$classMesh_1_1Connectivity.html#a93098eecf20d66124bd7bc8370ebe52e" title="Mesh::Connectivity\l::Sync" alt="" coords="478,89,613,130"/>
-</map>

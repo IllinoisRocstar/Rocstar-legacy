@@ -1,9 +1,0 @@
-<map id="det4x4_by_formula" name="det4x4_by_formula">
-<area shape="rect" id="node2" href="$sign__of__determinant_8h.html#aed0d661d9f10bdf73ec1c945fdfa577d" title="sign_of_determinant4x4" alt="" coords="187,41,347,68"/>
-<area shape="rect" id="node3" href="$predicates_2kernel__ftC3_8h.html#a25c3dcfbdec7db650f97d7ff312b7b5b" title="side_of_oriented_sphereC3" alt="" coords="395,41,575,68"/>
-<area shape="rect" id="node4" href="$predicates_2kernel__ftC3_8h.html#a4fa0959bd3681a74c4b1a00f7e93c466" title="side_of_bounded_sphereC3" alt="" coords="625,15,807,41"/>
-<area shape="rect" id="node7" href="$predicates__on__pointsS3_8h.html#ac51b211da7cf16d0b4e5debcc45fb533" title="side_of_oriented_sphere" alt="" coords="635,67,797,93"/>
-<area shape="rect" id="node5" href="$predicates__on__pointsS3_8h.html#a186f4668be3a27c76c0cd92a12e648cb" title="side_of_bounded_sphere" alt="" coords="857,12,1023,39"/>
-<area shape="rect" id="node6" href="$classCGALi_1_1Side__of__bounded__sphere.html#ac628e42116de57529c3d54355bdb5716" title="CGALi::Side_of_bounded\l_sphere::operator()" alt="" coords="1073,5,1242,46"/>
-<area shape="rect" id="node8" href="$classCGALi_1_1Side__of__oriented__sphere.html#a4301b07ca565e3660aa43604f7d602ad" title="CGALi::Side_of_oriented\l_sphere::operator()" alt="" coords="857,63,1023,105"/>
-</map>

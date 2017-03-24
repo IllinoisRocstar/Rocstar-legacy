@@ -1,6 +1,0 @@
-<map id="find_facet" name="find_facet">
-<area shape="rect" id="node2" href="$classPolyhedron__incremental__builder__3.html#a2c87480f89222776f7cbb1bfeca98e29" title="add_vertex_to_facet" alt="" coords="299,5,439,32"/>
-<area shape="rect" id="node4" href="$classPolyhedron__incremental__builder__3.html#ad3a2652704bafb5cc2a95f08b370ff36" title="lookup_halfedge" alt="" coords="134,31,250,57"/>
-<area shape="rect" id="node5" href="$classPolyhedron__incremental__builder__3.html#ae34196e18098a7d7f2af0c4fd4394239" title="lookup_hole" alt="" coords="147,81,237,108"/>
-<area shape="rect" id="node3" href="$classPolyhedron__incremental__builder__3.html#a74cfc3317835a62d5b15d795a44cc86c" title="end_facet" alt="" coords="489,5,567,32"/>
-</map>

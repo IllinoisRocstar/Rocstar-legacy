@@ -1,9 +1,0 @@
-<map id="KNN_Grid&lt; T &gt;" name="KNN_Grid&lt; T &gt;">
-<area shape="rect" id="node2" href="$classSparseGrid.html" title="SparseGrid\&lt; SpaceCell \&gt;" alt="" coords="175,608,345,635"/>
-<area shape="rect" id="node3" href="$classUniformGrid.html" title="UniformGrid" alt="" coords="239,413,331,440"/>
-<area shape="rect" id="node10" href="$classSparseGrid.html" title="SparseGrid\&lt; CellData \&gt;" alt="" coords="245,517,408,544"/>
-<area shape="rect" id="node4" href="$classnvc_1_1NVec.html" title="NVec\&lt; 3, index_t \&gt;" alt="" coords="152,313,288,340"/>
-<area shape="rect" id="node7" href="$classnvc_1_1NVec.html" title="NVec\&lt; DIM, T \&gt;" alt="" coords="301,187,421,213"/>
-<area shape="rect" id="node8" title="STL class. " alt="" coords="316,96,407,123"/>
-<area shape="rect" id="node12" title="STL class. " alt="" coords="484,96,580,123"/>
-</map>

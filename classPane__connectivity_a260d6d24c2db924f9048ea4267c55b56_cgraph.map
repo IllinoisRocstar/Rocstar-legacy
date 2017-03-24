@@ -1,8 +1,0 @@
-<map id="create_b2map" name="create_b2map">
-<area shape="rect" id="node2" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="170,5,249,32"/>
-<area shape="rect" id="node3" href="$Pane__connectivity_8C.html#a2f91c8aaf095a5aa24998ba4aae3e262" title="make_kd_tree" alt="" coords="157,56,261,83"/>
-<area shape="rect" id="node4" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="182,107,237,133"/>
-<area shape="rect" id="node5" href="$classPoint__3.html#a3bdf357b9d5503b2de25431eff70aa52" title="Point_3::x" alt="" coords="169,157,250,184"/>
-<area shape="rect" id="node6" href="$classPoint__3.html#a9d1baab38d1d918b84896b1dbefb83d5" title="Point_3::y" alt="" coords="169,208,250,235"/>
-<area shape="rect" id="node7" href="$classPoint__3.html#ac8aaef9a7e2811484a4000df39425d34" title="Point_3::z" alt="" coords="169,259,250,285"/>
-</map>

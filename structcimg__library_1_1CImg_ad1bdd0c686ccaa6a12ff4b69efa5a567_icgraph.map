@@ -1,5 +1,0 @@
-<map id="invert_endianness" name="invert_endianness">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#af19eb9300a3c12c36c80da939062162b" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_invert\l_endianness" alt="" coords="191,5,331,61"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a16ba67618d068b7e334d9899dbbe178b" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_load_raw" alt="" coords="181,86,341,127"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#aff2e5fd6242828f8c83e652daea0861e" title="Load an image from a .RAW file. " alt="" coords="194,151,329,193"/>
-</map>

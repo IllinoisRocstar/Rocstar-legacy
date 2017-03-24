@@ -1,8 +1,0 @@
-<map id="capacity" name="capacity">
-<area shape="rect" id="node2" href="$classPane.html#a5edab2a250321a1426438782d96287b1" title="Finalize the initialization of a pane. " alt="" coords="133,5,245,32"/>
-<area shape="rect" id="node3" href="$classAttribute.html#a5139e953b6ab158ae856b6a93746a787" title="Obtain the maximum allowed number of items in the attribute. " alt="" coords="125,80,253,107"/>
-<area shape="rect" id="node4" href="$classPane.html#a2c43e509cf649f6b8a2c9b99686c93a1" title="Pane::reinit_attr" alt="" coords="132,131,247,157"/>
-<area shape="rect" id="node5" href="$classWindow.html#a2b587f782f50513ef3ef2b7f6d7c80f8" title="Implementation for setting (op==OP_SET or OP_SET_CONST), allocating (op==OP_ALLOC), resizing (op==OP_RESIZE) and deallocating (op==OP_DEALLOC) an array for a specific attribute. " alt="" coords="301,131,432,157"/>
-<area shape="rect" id="node6" href="$classWindow.html#a0f538db500b8f4fdc9b59ed48c9be803" title="Window::resize_array" alt="" coords="483,105,631,132"/>
-<area shape="rect" id="node7" href="$classWindow.html#ac99a217d3c3496398a00a4a8ee460ed8" title="Window::dealloc_array" alt="" coords="480,156,635,183"/>
-</map>

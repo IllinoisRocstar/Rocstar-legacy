@@ -1,9 +1,0 @@
-<map id="delete_attribute" name="delete_attribute">
-<area shape="rect" id="node2" href="$classPane.html#a8fef44d948b81e7106bda21136f33c68" title="Delete an existing attribute with given id. " alt="" coords="165,56,315,83"/>
-<area shape="rect" id="node3" href="$Handle_8h.html#a459850cd445841d238d0af12068f45a3" title="id" alt="" coords="405,5,443,32"/>
-<area shape="rect" id="node6" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="195,107,285,133"/>
-<area shape="rect" id="node7" href="$classAttribute.html#a75d5ab968c772d5ad3d4269a514b9d80" title="Attribute::is_digit" alt="" coords="180,157,300,184"/>
-<area shape="rect" id="node8" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="185,208,295,235"/>
-<area shape="rect" id="node5" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="363,179,485,221"/>
-<area shape="rect" id="node4" href="$classAttribute.html#afaa016f7aa87969def6903a4a7e8490f" title="Obtain a constant pointer to the owner pane of the attribute. " alt="" coords="371,56,477,83"/>
-</map>

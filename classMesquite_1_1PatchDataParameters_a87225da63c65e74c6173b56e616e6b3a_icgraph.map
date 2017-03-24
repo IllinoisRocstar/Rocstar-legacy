@@ -1,5 +1,0 @@
-<map id="get_nb_layers" name="get_nb_layers">
-<area shape="rect" id="node2" href="$classMesquite_1_1PatchDataUser.html#a87225da63c65e74c6173b56e616e6b3a" title="Returns number of layers (if relevant for partition algorythm). " alt="" coords="169,5,343,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshSet.html#a7bfa519a2805ef4b0910f95d18c95b9d" title="Mesquite::MeshSet::\lget_next_elem_on_vert_patch" alt="" coords="158,70,354,111"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1MeshSet.html#a06226a9836be0e1cc76252e9100b16e6" title="Mesquite::MeshSet::\lget_next_patch" alt="" coords="403,70,546,111"/>
-</map>

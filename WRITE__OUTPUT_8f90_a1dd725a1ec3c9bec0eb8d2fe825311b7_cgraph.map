@@ -1,9 +1,0 @@
-<map id="write_output" name="write_output">
-<area shape="rect" id="node2" href="$classTransfer__base.html#aa4fb201c8061f6f1fd18361e4bd1737a" title="Transfer_base::scale" alt="" coords="147,31,291,57"/>
-<area shape="rect" id="node8" href="$classAttribute.html#a8bcf950a774cbd3106d4c68d3b2f38c9" title="Obtain the status of the attribute. " alt="" coords="161,81,276,108"/>
-<area shape="rect" id="node3" href="$classRFC__Data__const.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Data_const::id" alt="" coords="342,5,485,32"/>
-<area shape="rect" id="node4" href="$classRFC__Data.html#a2e1ff52eab3383077d032b5cfdbce9e3" title="RFC_Data::get_value" alt="" coords="339,56,488,83"/>
-<area shape="rect" id="node5" href="$classRFC__Pane__transfer.html#ac4352cefd69971574fd2edb3ee894899" title="RFC_Pane_transfer::\lpointer" alt="" coords="536,49,683,90"/>
-<area shape="rect" id="node6" href="$classRFC__Pane__transfer.html#a584f868480e84dcf5750fe21c96c4dd8" title="RFC_Pane_transfer::\lis_master" alt="" coords="743,19,889,61"/>
-<area shape="rect" id="node7" href="$classRFC__Pane__base.html#ac4352cefd69971574fd2edb3ee894899" title="Get the address of a given attribute with id i. " alt="" coords="731,85,901,112"/>
-</map>

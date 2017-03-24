@@ -1,4 +1,0 @@
-<map id="msq_sigint_handler" name="msq_sigint_handler">
-<area shape="rect" id="node2" href="$classMesquite_1_1MsqInterrupt.html#a2fa85a11653f70bed7ed7b8d278255d9" title="Mesquite::MsqInterrupt\l::set_handler" alt="" coords="190,5,346,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1MsqInterrupt.html#a632d7f5c6b6483b7529ba3cd8f357f26" title="Set the interrupt flag. " alt="" coords="190,70,346,111"/>
-</map>

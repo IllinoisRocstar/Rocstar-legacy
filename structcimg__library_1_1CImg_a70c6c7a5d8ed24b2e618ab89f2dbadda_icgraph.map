@@ -1,5 +1,0 @@
-<map id="RGBtoXYZ" name="RGBtoXYZ">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#ad2c17aaaeae97c1ef498f3668ce5d177" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_RGBtoXYZ" alt="" coords="142,5,317,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#aeb2b9b79af81584352a2e5f056b1a6df" title="Convert a (R,G,B) image to a (L,a,b) one. " alt="" coords="157,70,301,111"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a27cd306be7eb34f49f9e880a9dd740ba" title="Convert a (R,G,B) image to a (x,y,Y) one. " alt="" coords="156,135,303,177"/>
-</map>

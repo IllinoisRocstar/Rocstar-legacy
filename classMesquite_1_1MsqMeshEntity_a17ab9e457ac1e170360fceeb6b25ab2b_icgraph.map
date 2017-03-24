@@ -1,9 +1,0 @@
-<map id="compute_corner_matrices" name="compute_corner_matrices">
-<area shape="rect" id="node2" href="$classMesquite_1_1TargetCalculator.html#ab066dc9db4106bf2adbafc8f7986aabc" title="Computes the guide corner matrices A for a given element index in the reference patch. " alt="" coords="239,50,417,91"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1TargetCalculator.html#a14179ad197e9a02f52380f1b0e6d0ec3" title="Compute the corner matrices for the reference mesh refMesh. " alt="" coords="236,116,420,172"/>
-<area shape="rect" id="node6" href="$classMesquite_1_1DistanceFromTarget.html#a7189c3b4f0d361c88adf6e84b790053e" title="For a given element, compute each corner matrix A, and given a target corner matrix W..." alt="" coords="227,197,429,238"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1LVQDTargetCalculator.html#a7bebe2f2afb7cd9b6552569edd96e9a1" title="Function called by compute_target_matrices(PatchData&amp; pd, MsqError&amp; err) to compute the matrices afte..." alt="" coords="478,5,693,46"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1WTargetCalculator.html#af386ad951ad29a68944557ccfc6f18ec" title="Mesquite::WTargetCalculator\l::compute_target_matrices" alt="" coords="489,70,681,111"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1sI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="493,155,677,197"/>
-<area shape="rect" id="node8" href="$classMesquite_1_1sRI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="513,221,658,262"/>
-</map>

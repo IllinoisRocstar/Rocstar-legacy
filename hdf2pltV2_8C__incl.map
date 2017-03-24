@@ -1,9 +1,0 @@
-<map id="hdf2pltV2.C" name="hdf2pltV2.C">
-<area shape="rect" id="node16" href="$roccom_8h.html" title="This file contains the prototypes for Roccom API. " alt="" coords="1522,80,1597,107"/>
-<area shape="rect" id="node23" href="$PaneConnectivity_8hpp.html" title="The PaneConnectivity object holds the inter&#45;zone connectivity of each grid. " alt="" coords="727,80,877,107"/>
-<area shape="rect" id="node24" href="$MeshPointIdToGlobalIdMap_8hpp.html" title="The MeshPointIdToGlobalIdMap provides the functionality for mapping a pair consisting of (mesh_pane_i..." alt="" coords="1239,80,1447,107"/>
-<area shape="rect" id="node17" href="$roccom__c_8h.html" title="This file contains the C wrapper for Roccom_base. " alt="" coords="1515,155,1605,181"/>
-<area shape="rect" id="node18" href="$roccom__basic_8h.html" title="This file contains some definitions of macros and constants for Roccoms. " alt="" coords="1381,229,1496,256"/>
-<area shape="rect" id="node20" href="$commpi_8h.html" title="Contains declarations of MPI subroutines used in Roccom. " alt="" coords="1521,229,1599,256"/>
-<area shape="rect" id="node19" href="$FC_8h.html" title="FC.h" alt="" coords="1413,304,1464,331"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="finalize" name="finalize">
-<area shape="rect" id="node2" href="$Rocblas_8C.html#aa9dff68c579e113d0a2392b2b52d36f3" title="Rocblas_unload_module" alt="" coords="146,5,310,32"/>
-<area shape="rect" id="node4" href="$Rocblas_8C.html#aef44e4bb9cfb06cd9091acf60aa20754" title="rocblas_unload_module" alt="" coords="149,56,307,83"/>
-<area shape="rect" id="node5" href="$Rocblas_8C.html#a304e886c08acbc67f8080b18fcbae3a0" title="ROCBLAS_UNLOAD_MODULE" alt="" coords="121,107,335,133"/>
-<area shape="rect" id="node6" href="$Rocblas_8C.html#acdb74634185a9cf5009bd17c9f14364e" title="rocblas_unload_module_" alt="" coords="145,157,311,184"/>
-<area shape="rect" id="node7" href="$Rocblas_8C.html#ab9a2d12fb8a0201e53011978fe01606a" title="ROCBLAS_UNLOAD_MODULE_" alt="" coords="118,208,338,235"/>
-<area shape="rect" id="node3" href="$blastest_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="387,5,437,32"/>
-</map>

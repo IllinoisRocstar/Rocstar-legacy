@@ -1,9 +1,0 @@
-<map id="init_speed" name="init_speed">
-<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#ab5a8ac8121d23b45ad8c8354970a2130" title="COM_free_buffer" alt="" coords="137,5,260,32"/>
-<area shape="rect" id="node4" href="$roccom__c_8h.html#a6dd240c15a2b3e85d2d91cbe9eec6611" title="Get the address for an attribute on a specific pane. " alt="" coords="141,56,256,83"/>
-<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a6e38c0b1f83c30b166b7500902e13be1" title="COM_get_panes" alt="" coords="139,107,259,133"/>
-<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#a74e2d52abbc3b6532fc19b38deabba26" title="Get the sizes of an attribute. " alt="" coords="144,157,253,184"/>
-<area shape="rect" id="node7" href="$rotate_8C.html#a5e8f08618fa6ce3fbb3df1aa5aec04a9" title="init_speed_arrays" alt="" coords="137,208,261,235"/>
-<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="309,107,437,133"/>
-<area shape="rect" id="node8" href="$Pane__boundary_8C.html#a435ef393d7d5394df67d5da81c108c7d" title="square" alt="" coords="343,208,404,235"/>
-</map>

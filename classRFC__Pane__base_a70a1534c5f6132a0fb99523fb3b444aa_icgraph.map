@@ -1,6 +1,0 @@
-<map id="normalize_nat_coor" name="normalize_nat_coor">
-<area shape="rect" id="node2" href="$classOverlay.html#a9da7a2ebf65083d900d07ae5f6b46d8f" title="Overlay::convert_nat\l_coordinates" alt="" coords="202,5,345,46"/>
-<area shape="rect" id="node5" href="$classRFC__Pane__base.html#af97a16d7f0c1b7e850f5981830dcd2d1" title="Take a subnode id and an element, return the natrual coordinates within the element. " alt="" coords="190,71,357,97"/>
-<area shape="rect" id="node3" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="405,12,584,39"/>
-<area shape="rect" id="node4" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="632,12,749,39"/>
-</map>

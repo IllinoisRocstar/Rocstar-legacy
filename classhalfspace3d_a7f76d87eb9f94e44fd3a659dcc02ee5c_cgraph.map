@@ -1,6 +1,0 @@
-<map id="halfspace3d" name="halfspace3d">
-<area shape="rect" id="node2" href="$classvector3d.html#a47828ecf0103e5e1f7b3bc4a8a1930a8" title="vector3d::dot" alt="" coords="147,5,245,32"/>
-<area shape="rect" id="node3" href="$namespacenvc.html#a7ef4a2939f7598fd25136135eafb0ce6" title="nvc::norm" alt="" coords="156,56,236,83"/>
-<area shape="rect" id="node4" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="315,31,359,57"/>
-<area shape="rect" id="node5" href="$namespacenvc.html#a4ea00221667e66f4029614e350ea5745" title="nvc::norm2" alt="" coords="294,81,381,108"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="write_rocin_control_file" name="write_rocin_control_file">
-<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6ebf7d3be61b364094596342a1d64827" title="COM_get_default_communicator" alt="" coords="208,5,421,32"/>
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a6e38c0b1f83c30b166b7500902e13be1" title="COM_get_panes" alt="" coords="255,56,375,83"/>
-<area shape="rect" id="node5" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="245,107,384,133"/>
-<area shape="rect" id="node6" href="$vinci_8h.html#a9d685369a20ad2d6f5c2256b857614f6" title="empty" alt="" coords="285,157,344,184"/>
-<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="469,56,597,83"/>
-</map>

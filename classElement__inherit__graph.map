@@ -1,6 +1,0 @@
-<map id="Element" name="Element">
-<area shape="rect" id="node2" href="$classHexElement.html" title="HexElement" alt="" coords="5,80,99,107"/>
-<area shape="rect" id="node3" href="$classQCoElement.html" title="QCoElement" alt="" coords="123,80,220,107"/>
-<area shape="rect" id="node4" href="$classTCoElement.html" title="TCoElement" alt="" coords="245,80,339,107"/>
-<area shape="rect" id="node5" href="$classTetElement.html" title="TetElement" alt="" coords="363,80,452,107"/>
-</map>

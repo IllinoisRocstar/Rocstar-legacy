@@ -1,9 +1,0 @@
-<map id="getNumFaces" name="getNumFaces">
-<area shape="rect" id="node2" href="$classElement.html#a06838521829c2ba9b7fa97c35f1b9a9b" title="replaceFace" alt="" coords="187,5,280,32"/>
-<area shape="rect" id="node4" href="$classElement.html#a2f274474f46c3b963a33d16617ce1826" title="replaceNode" alt="" coords="186,56,281,83"/>
-<area shape="rect" id="node5" href="$classMesh.html#a614a4adf598595b7126cdaa822a9bade" title="Mesh::replaceNode" alt="" coords="369,81,503,108"/>
-<area shape="rect" id="node8" href="$classMesh.html#a0c935c0330ad306f6d283f6be39be0a0" title="Mesh::write_boundary" alt="" coords="158,157,309,184"/>
-<area shape="rect" id="node3" href="$classTriFace.html#ae6312a524db4fa95b70a0b501eec61ee" title="TriFace::buildCohesive" alt="" coords="358,5,514,32"/>
-<area shape="rect" id="node6" href="$classNode.html#aea0042ea84160d091512051ea23d8e41" title="Node::separate" alt="" coords="563,81,674,108"/>
-<area shape="rect" id="node7" href="$classMesh.html#a96f8003c64bff21d807cea52f48db2a7" title="The addCohesive method is the driver for the entire process of adding cohesive elements to the mesh..." alt="" coords="723,81,861,108"/>
-</map>

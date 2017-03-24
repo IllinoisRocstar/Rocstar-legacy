@@ -1,8 +1,0 @@
-<map id="screen_dimy" name="screen_dimy">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#ac1b0fa3e83defeb353d65e7094b3caa8" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display" alt="" coords="351,5,483,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a68ac25d3fda66263ff7b2d4a481b99d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display\l_object3d" alt="" coords="351,71,483,127"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImgDisplay.html#aa2ca51ac3f392202f10d922a396d5ad1" title="_fitscreen" alt="" coords="174,119,253,145"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#ab470ff84bcac27328430e271067570bd" title="cimg_library::CImg\l\&lt; uintT \&gt;::_get_select" alt="" coords="342,151,493,193"/>
-<area shape="rect" id="node7" href="$namespacecimg__library_1_1cimg.html#a62805bf0845c650a457cd78b3cd6488a" title="Display a dialog box, where a user can click standard buttons. " alt="" coords="149,271,277,313"/>
-<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a2b77e436a48fd24c423e924c2dae4072" title="Select sub&#45;graph in a graph. " alt="" coords="326,217,509,258"/>
-</map>

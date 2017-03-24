@@ -1,5 +1,0 @@
-<map id="FFT" name="FFT">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#aab0887ae7c3bd1571ea7ccc4a8cac3f6" title="Compute a N&#45;D Fast Fourier Transform. " alt="" coords="113,5,245,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImgList.html#a231161b57fc1e5d813f254f65afefd8b" title="Compute a 1&#45;D Fast Fourier Transform, along specified axis. " alt="" coords="102,70,255,111"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#ae9e7074da9c9955e37e9eebbd5bd9c22" title="Compute a 1D Fast Fourier Transform, along a specified axis. " alt="" coords="113,135,245,177"/>
-</map>

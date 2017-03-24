@@ -1,5 +1,0 @@
-<map id="distribute_volume_e2n" name="distribute_volume_e2n">
-<area shape="rect" id="node2" href="$classFaceOffset__3.html#a255d78d7f60f9385c8941b65d6bd783b" title="balance_mass" alt="" coords="205,12,312,39"/>
-<area shape="rect" id="node3" href="$classFaceOffset__3.html#aeb4f96b70a0dc62dc10e186483d9180f" title="Decompose propagation directions based on constraints. " alt="" coords="360,5,491,46"/>
-<area shape="rect" id="node4" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="539,12,642,39"/>
-</map>

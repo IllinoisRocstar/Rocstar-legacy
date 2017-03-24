@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classgridgenGrdFormatter.html" title="Abstracts the file format of a gridgen .grd file. " alt="" coords="5,97,147,124"/>
-<area shape="rect" id="node2" href="$classgridgenAsciiFormatter.html" title="ASCII format input file: " alt="" coords="199,5,348,32"/>
-<area shape="rect" id="node3" href="$classgridgenBinaryFormatter.html" title="Machine binary input file: " alt="" coords="195,57,352,98"/>
-<area shape="rect" id="node4" href="$classgridgenBinaryFormatter.html" title="gridgenBinaryFormatter\l\&lt; double \&gt;" alt="" coords="195,122,352,163"/>
-<area shape="rect" id="node6" href="$classgridgenBinaryFormatter.html" title="gridgenBinaryFormatter\l\&lt; float \&gt;" alt="" coords="195,187,352,229"/>
-<area shape="rect" id="node5" href="$classgridgenBinaryDoubleFormatter.html" title="gridgenBinaryDoubleFormatter" alt="" coords="401,129,599,156"/>
-<area shape="rect" id="node7" href="$classgridgenBinaryFloatFormatter.html" title="gridgenBinaryFloatFormatter" alt="" coords="407,195,593,221"/>
-</map>

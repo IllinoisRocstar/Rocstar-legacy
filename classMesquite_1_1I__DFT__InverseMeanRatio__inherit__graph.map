@@ -1,5 +1,0 @@
-<map id="I_DFT_InverseMeanRatio" name="I_DFT_InverseMeanRatio">
-<area shape="rect" id="node2" href="$classMesquite_1_1I__DFT.html" title="Class containing the target corner matrices for the context based smoothing. " alt="" coords="61,155,120,181"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1DistanceFromTarget.html" title="Base class for the computation of the distance from target between the target matrices W and the actu..." alt="" coords="20,80,161,107"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1QualityMetric.html" title="Base class for concrete quality metrics. " alt="" coords="41,5,140,32"/>
-</map>

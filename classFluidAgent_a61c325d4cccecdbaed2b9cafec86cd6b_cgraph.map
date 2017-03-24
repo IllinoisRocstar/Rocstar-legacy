@@ -1,7 +1,0 @@
-<map id="init_module" name="init_module">
-<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="148,5,281,32"/>
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="141,56,288,83"/>
-<area shape="rect" id="node5" href="$classAgent.html#a61c325d4cccecdbaed2b9cafec86cd6b" title="Agent::init_module" alt="" coords="149,107,280,133"/>
-<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="352,56,480,83"/>
-<area shape="rect" id="node6" href="$classAgent.html#a7166b9d0c3321d1abf347377b32bf154" title="Agent::get_agent_name" alt="" coords="336,107,496,133"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="name" name="name">
-<area shape="rect" id="node2" href="$classRFC__Pane__overlay.html#a4a3818f6d1222238d4f36eb5a23db143" title="RFC_Pane_overlay::determine\l_counterparts" alt="" coords="110,5,311,46"/>
-<area shape="rect" id="node3" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="121,71,300,97"/>
-<area shape="rect" id="node5" href="$classTransfer__base.html#ac9856cebd85a7680ece64a440645e0ae" title="Transfer_base::minmax" alt="" coords="131,121,290,148"/>
-<area shape="rect" id="node4" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="360,121,477,148"/>
-<area shape="rect" id="node6" href="$classRFC__Window__base.html#ada7ac76a1aaceb37b222f9f4e70fb6e1" title="Write out panes in native binary format or using Rocout. " alt="" coords="171,223,250,249"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="TRAIL_FluResizeSurfSoln" name="TRAIL_FluResizeSurfSoln">
-<area shape="rect" id="node2" href="$RocfluFunctions_8C.html#a679222c4c510bc4b23aed71915d0562c" title="TRAIL_FluInitSurfSoln" alt="" coords="230,56,383,83"/>
-<area shape="rect" id="node3" href="$genflu_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="509,5,560,32"/>
-<area shape="rect" id="node4" href="$RocfluFunctions_8C.html#ac2b818a12c1b614ee6a3c62115847c18" title="TRAIL_FluInitSurfSoln" alt="" coords="458,56,611,83"/>
-<area shape="rect" id="node5" href="$RemeshFunctions_8C.html#a30c13146a6c9084a4e5b6b6da2871340" title="TRAIL_RemeshInitFluSurfData" alt="" coords="433,131,637,157"/>
-<area shape="rect" id="node6" href="$RemeshFunctions_8C.html#ae9febf522548933be7a2ae75c5dc1a62" title="TRAIL_RemeshWrite" alt="" coords="685,131,832,157"/>
-</map>

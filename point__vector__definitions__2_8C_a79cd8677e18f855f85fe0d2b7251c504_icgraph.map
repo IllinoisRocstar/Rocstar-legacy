@@ -1,8 +1,0 @@
-<map id="vector_to_point_conversion" name="vector_to_point_conversion">
-<area shape="rect" id="node2" href="$point__vector__definitions__2_8C.html#a6d236bf8817eacef7d78d0476fa3841c" title="operator+" alt="" coords="235,31,312,57"/>
-<area shape="rect" id="node3" href="$point__vector__definitions__2_8C.html#ab2b4e233d3646dc79368e3cf9aeb7776" title="operator&#45;" alt="" coords="237,81,310,108"/>
-<area shape="rect" id="node4" href="$classDirection__3.html#a106dda9f09d44ebe1e12a801c8cbf079" title="Direction_3::operator&#45;" alt="" coords="379,5,525,32"/>
-<area shape="rect" id="node5" href="$classVector__3.html#a98dc2bdf883fc823d2eb16b79dffe58f" title="Vector_3\&lt; Real \&gt;::operator&#45;" alt="" coords="360,56,544,83"/>
-<area shape="rect" id="node6" href="$classDirection__2.html#a26083dae0e586edd26f65441179f2280" title="Direction_2::operator&#45;" alt="" coords="379,107,525,133"/>
-<area shape="rect" id="node7" href="$classVector__2.html#ae84bc9ab2b37903fdb55d910da396b6b" title="Vector_2\&lt; T \&gt;::operator&#45;" alt="" coords="369,157,535,184"/>
-</map>

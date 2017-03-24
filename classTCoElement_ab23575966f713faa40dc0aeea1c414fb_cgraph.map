@@ -1,8 +1,0 @@
-<map id="replaceFaceNode" name="replaceFaceNode">
-<area shape="rect" id="node2" href="$classNode.html#aae187d4fa6d52e572c0a39520558b856" title="Node::addElement" alt="" coords="189,5,320,32"/>
-<area shape="rect" id="node3" href="$classNode.html#a4042fc8c8174fe5b9bfbb95e212f07a7" title="Node::removeElement" alt="" coords="179,56,331,83"/>
-<area shape="rect" id="node4" href="$classFace.html#a2f274474f46c3b963a33d16617ce1826" title="Face::replaceNode" alt="" coords="189,107,321,133"/>
-<area shape="rect" id="node5" href="$classNode.html#afb83351c01256fbcf0750a996adcff5a" title="Node::addFace" alt="" coords="395,56,506,83"/>
-<area shape="rect" id="node6" href="$classFace.html#a6c707b13ee25c7a3c73965cb4bdeee75" title="Retrieves the number of nodes that make up the face. " alt="" coords="379,107,522,133"/>
-<area shape="rect" id="node7" href="$classNode.html#a007e8d11856fd20d277521bb40f80f10" title="Node::removeFace" alt="" coords="384,157,517,184"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="updateHash" name="updateHash">
-<area shape="rect" id="node2" href="$classRocstar_1_1Rocin_1_1Utilities_1_1MeshPointIdToGlobalIdMap.html#a8b0d9e68c74062497df3cd426f44ad84" title="This method constructs a new key&#45;pair for the meshPaneId and meshPointId which maps into globalId and..." alt="" coords="147,5,338,61"/>
-<area shape="rect" id="node3" href="$classRocstar_1_1Rocin_1_1Utilities_1_1MeshPointIdToGlobalIdMap.html#a60f74e30d81d02e373d4bdaf4fa2802b" title="Checks if the point meshPointId of the mesh associated with the provided meshPaneId exists in this Me..." alt="" coords="387,5,578,61"/>
-</map>

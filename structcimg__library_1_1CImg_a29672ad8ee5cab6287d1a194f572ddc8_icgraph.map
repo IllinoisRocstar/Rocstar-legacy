@@ -1,5 +1,0 @@
-<map id="get_channels" name="get_channels">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#ab470ff84bcac27328430e271067570bd" title="cimg_library::CImg\l\&lt; uintT \&gt;::_get_select" alt="" coords="154,5,305,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a8ca7d14971bd5e6f1ff40801e0c520dc" title="Get a set of channels. " alt="" coords="162,70,297,111"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a8a71f9f9cd7e42942400271cc492be48" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_channel" alt="" coords="153,135,306,177"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="set_free_vertices_soft_fixed" name="set_free_vertices_soft_fixed">
-<area shape="rect" id="node2" href="$classMesquite_1_1TerminationCriterion.html#a1759530e0df8fad8aa8cbbde98ec4eed" title="Function which determines whether this patch should be &#39;culled&#39;. " alt="" coords="205,5,405,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Improves the quality of the MeshSet, calling some methods specified in a class derived from VertexMov..." alt="" coords="453,5,611,46"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1ShapeImprovementWrapper.html#a52b954daacf72db4a8b0b8811e81bbb0" title="run_instructions runs the wrapper on the given MeshSet. " alt="" coords="659,5,855,46"/>
-<area shape="rect" id="node5" href="$classRocmop.html#a2dbb41ea0da20e141ec61d8d4a726ddf" title="Smooth the panes of the working window using MESQUITE. " alt="" coords="905,12,1087,39"/>
-</map>

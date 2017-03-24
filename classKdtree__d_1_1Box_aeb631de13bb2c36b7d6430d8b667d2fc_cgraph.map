@@ -1,6 +1,0 @@
-<map id="is_intersect_in_dim_closed" name="is_intersect_in_dim_closed">
-<area shape="rect" id="node2" href="$classKdtree__d_1_1ExtPoint.html#ac480fbcdad732866e301f103e0745c59" title="Kdtree_d::ExtPoint\l::compare" alt="" coords="190,5,322,46"/>
-<area shape="rect" id="node4" href="$classKdtree__d_1_1Box.html#a799cf81c9f5f0e524f3c94b4f5feb514" title="get_left" alt="" coords="223,71,289,97"/>
-<area shape="rect" id="node5" href="$classKdtree__d_1_1Box.html#a2422ad2f7bb00e8138e2335f4cc8e568" title="get_right" alt="" coords="220,121,292,148"/>
-<area shape="rect" id="node3" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="371,12,487,39"/>
-</map>

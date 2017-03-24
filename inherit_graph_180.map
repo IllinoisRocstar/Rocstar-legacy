@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classElement.html" title="Element" alt="" coords="6,81,77,108"/>
-<area shape="rect" id="node2" href="$classHexElement.html" title="HexElement" alt="" coords="127,5,222,32"/>
-<area shape="rect" id="node3" href="$classQCoElement.html" title="QCoElement" alt="" coords="126,56,223,83"/>
-<area shape="rect" id="node4" href="$classTCoElement.html" title="TCoElement" alt="" coords="127,107,222,133"/>
-<area shape="rect" id="node5" href="$classTetElement.html" title="TetElement" alt="" coords="130,157,219,184"/>
-</map>

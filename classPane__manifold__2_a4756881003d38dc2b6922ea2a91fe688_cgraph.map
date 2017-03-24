@@ -1,5 +1,0 @@
-<map id="get_bd_flag" name="get_bd_flag">
-<area shape="rect" id="node2" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="163,5,264,32"/>
-<area shape="rect" id="node3" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="145,56,282,83"/>
-<area shape="rect" id="node4" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="331,56,429,83"/>
-</map>

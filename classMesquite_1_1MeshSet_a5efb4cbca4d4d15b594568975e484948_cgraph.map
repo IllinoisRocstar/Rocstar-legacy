@@ -1,5 +1,0 @@
-<map id="clear_all_soft_fixed_flags" name="clear_all_soft_fixed_flags">
-<area shape="rect" id="node2" href="$classMesquite_1_1EntityIterator.html#a456deebf707976f468785e7b02fdd059" title="Returns false until the iterator has been advanced PAST the last entity. " alt="" coords="190,5,349,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshSet.html#ae7f6e22ad7a7ae1216ff849eb1f0e6f5" title="Resets the MeshSet object so that get_next_patch() will restart its iterations at the first vertex..." alt="" coords="244,71,295,97"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1EntityIterator.html#aa8850ed68fa313e7a4f87647f106b754" title="Moves the iterator back to the first entity in the list. " alt="" coords="398,63,557,105"/>
-</map>

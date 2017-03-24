@@ -1,9 +1,0 @@
-<map id="add_bcaction" name="add_bcaction">
-<area shape="rect" id="node2" href="$classUserScheduler.html#ab45f61051944a767a4870ef6d33a6b66" title="UserScheduler::add\l_action" alt="" coords="153,41,290,82"/>
-<area shape="rect" id="node8" href="$classScheduler.html#a67937abfc45a19cc385d5a92785f5629" title="Scheduler::set_name" alt="" coords="342,107,487,133"/>
-<area shape="rect" id="node3" href="$classScheduler.html#ab45f61051944a767a4870ef6d33a6b66" title="Scheduler::add_action" alt="" coords="339,48,490,75"/>
-<area shape="rect" id="node4" href="$classAction.html#a0d266ca3c89fae98335f440d3bf579e0" title="Action::declare" alt="" coords="539,48,648,75"/>
-<area shape="rect" id="node5" href="$classScheduler.html#aace076722f7a2c6975fcfc660070ac6a" title="Scheduler::reads" alt="" coords="697,5,817,32"/>
-<area shape="rect" id="node7" href="$classScheduler.html#a071ba1e78fdf36ccff32c4688b05641b" title="Scheduler::writes" alt="" coords="696,56,819,83"/>
-<area shape="rect" id="node6" href="$classAction.html#ad116f378d988ba583f13bfa8519f05f0" title="Action::name" alt="" coords="867,56,965,83"/>
-</map>

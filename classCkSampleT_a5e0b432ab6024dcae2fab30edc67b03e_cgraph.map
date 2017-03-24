@@ -1,5 +1,0 @@
-<map id="printMinAveMax" name="printMinAveMax">
-<area shape="rect" id="node2" href="$classCkSampleT.html#a39de69562334ebcb6443a820defb1a5d" title="Return the largest value encountered. " alt="" coords="174,5,239,32"/>
-<area shape="rect" id="node3" href="$classCkSampleT.html#a15121533e35f10fdcc9bdac4ccaf1076" title="Return the mean value of this sample–the &quot;average&quot; value, in (value) units. " alt="" coords="171,56,243,83"/>
-<area shape="rect" id="node4" href="$classCkSampleT.html#aa77f67c9a9060d90326a95018df345f9" title="Return the smallest value encountered. " alt="" coords="176,107,237,133"/>
-</map>

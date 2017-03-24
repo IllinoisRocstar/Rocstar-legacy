@@ -1,8 +1,0 @@
-<map id="EntityIterator" name="EntityIterator">
-<area shape="rect" id="node2" href="$classMesquite_1_1MeshImplElemIter.html" title="ElementIterator for MeshImpl. " alt="" coords="152,5,280,32"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshImplVertIter.html" title="VertexIterator for MeshImpl. " alt="" coords="155,56,277,83"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1SIDLIterator.html" title="Iterate over a sidl array of TSTT entity handles. " alt="" coords="169,107,263,133"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1TSTTArrIter.html" title="TSTT iterator using array&#45;iterator interface and buffer of handles. " alt="" coords="171,157,261,184"/>
-<area shape="rect" id="node6" href="$classMesquite_1_1TSTTIterator.html" title="Wrapper around single&#45;entity TSTT interator. " alt="" coords="168,208,264,235"/>
-<area shape="rect" id="node7" href="$classMyEntityIterator.html" title="A class for iterating through a Panes vertices or elements. " alt="" coords="159,259,273,285"/>
-</map>

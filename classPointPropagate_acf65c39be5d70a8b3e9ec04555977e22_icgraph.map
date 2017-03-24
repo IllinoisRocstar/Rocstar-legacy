@@ -1,6 +1,0 @@
-<map id="time_integrate" name="time_integrate">
-<area shape="rect" id="node2" href="$classPointPropagate.html#a8c20c5de9d4573144e9f0226cb596158" title="propagate_gp_of_element" alt="" coords="157,5,328,32"/>
-<area shape="rect" id="node5" href="$classPointPropagate.html#ae024e3cb360138b409948e1d6f496286" title="propagate_nodes" alt="" coords="377,56,498,83"/>
-<area shape="rect" id="node3" href="$classPointPropagate.html#a9f5c9add77ccbbb829ca55099f076647" title="propagate_faces" alt="" coords="378,5,497,32"/>
-<area shape="rect" id="node4" href="$advectest_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="547,31,597,57"/>
-</map>

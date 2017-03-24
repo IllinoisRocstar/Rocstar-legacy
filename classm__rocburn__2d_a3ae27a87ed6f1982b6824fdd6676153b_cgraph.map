@@ -1,9 +1,0 @@
-<map id="update" name="update">
-<area shape="rect" id="node2" href="$classColor.html#af94d15b3f5e32b9137fc219dcb16bd53" title="Color::alpha" alt="" coords="149,5,241,32"/>
-<area shape="rect" id="node3" href="$classm__calcdist.html#a70a90bef3b4806385f7a2316366f583c" title="m_calcdist::calcdist_2d" alt="" coords="115,56,274,83"/>
-<area shape="rect" id="node4" href="$classm__rocburn__1d__apn.html#a3c4f77ba7d7d8b3bbdfa60d68730a3a5" title="m_rocburn_1d_apn::get\l_burning_rate_1d" alt="" coords="115,107,274,149"/>
-<area shape="rect" id="node6" href="$classm__rocburn__1d__zn.html#a1674cd51babda80ef5fc1e0dc66f917c" title="m_rocburn_1d_zn::get\l_film_coeff_1d" alt="" coords="119,173,270,214"/>
-<area shape="rect" id="node7" href="$classsetup__py.html#ac35868e30eb337ef8e407999b64818ed" title="setup_py::get_time\l_step_1d" alt="" coords="128,238,261,279"/>
-<area shape="rect" id="node8" href="$classMesquite_1_1Matrix3D.html#a0c4493a5d4723940d60164428f11adc3" title="Sets all entries to zero (more efficient than assignement). " alt="" coords="127,303,263,345"/>
-<area shape="rect" id="node5" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="323,115,365,141"/>
-</map>

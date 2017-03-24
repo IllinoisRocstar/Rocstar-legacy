@@ -1,5 +1,0 @@
-<map id="COM_F_FUNC2" name="COM_F_FUNC2">
-<area shape="rect" id="node2" href="$classRoccom__base.html#a32d626626eee0bc4ade146973f6abb1c" title="Roccom_base::finalize" alt="" coords="173,31,328,57"/>
-<area shape="rect" id="node3" href="$classRoccom__base.html#ad97f955b245093dd88a7f626212afbbd" title="Get a pointer to the Roccom object. " alt="" coords="377,5,559,32"/>
-<area shape="rect" id="node4" href="$classRoccom__base.html#afbf86b885e7c7682d6216ad30cfc1400" title="Set the Roccom pointer to the given object. " alt="" coords="377,56,559,83"/>
-</map>

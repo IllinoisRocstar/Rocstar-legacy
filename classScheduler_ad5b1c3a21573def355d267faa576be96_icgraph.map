@@ -1,7 +1,0 @@
-<map id="restarting" name="restarting">
-<area shape="rect" id="node2" href="$classCoupling.html#a26bc665db8e8a51e3aa6541646f165fb" title="Invoke initialization of the actions in the scheduler and the agents. " alt="" coords="131,81,229,108"/>
-<area shape="rect" id="node3" href="$classCoupling.html#a152013c4f4d029f84f09d02f5062298a" title="Coupling::initialize" alt="" coords="277,81,405,108"/>
-<area shape="rect" id="node4" href="$classCoupling.html#a3743217a687c638a600341721e219b55" title="Coupling::restart_at_time" alt="" coords="453,56,621,83"/>
-<area shape="rect" id="node6" href="$rocstar__driver_8C.html#a9bd600c9ac2dc870a213ab778b70d788" title="rocstar_driver" alt="" coords="896,56,997,83"/>
-<area shape="rect" id="node5" href="$classCoupling.html#a952d598b43dfc5742886e9e747aa7ca1" title="Coupling::ProcessInterrupt" alt="" coords="670,5,847,32"/>
-</map>

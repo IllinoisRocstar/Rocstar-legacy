@@ -1,4 +1,0 @@
-<map id="getMinX" name="getMinX">
-<area shape="rect" id="node2" href="$classBoundingBox.html#ad93441d21c5b6ed76f34fb53f72abedb" title="Determines if a point is inside the bounding box. " alt="" coords="134,5,207,32"/>
-<area shape="rect" id="node3" href="$classBoundingBox.html#aaab76352eea32a7ce9fd1187d6b548e2" title="Computes the bounding box intersection between bounding box b1,b2. " alt="" coords="126,56,215,83"/>
-</map>

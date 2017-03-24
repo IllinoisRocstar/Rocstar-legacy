@@ -1,7 +1,0 @@
-<map id="split_surface_window" name="split_surface_window">
-<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="201,5,375,32"/>
-<area shape="rect" id="node4" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="221,56,355,83"/>
-<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#ac624fa4f91f2a6a33efd1d6a09ec3432" title="Use the subset of panes of another window of which the given pane attribute has value val..." alt="" coords="221,107,355,133"/>
-<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="207,157,369,184"/>
-<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="424,81,552,108"/>
-</map>

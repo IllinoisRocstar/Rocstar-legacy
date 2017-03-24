@@ -1,7 +1,0 @@
-<map id="size" name="size">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a68ac25d3fda66263ff7b2d4a481b99d7" title="cimg_library::CImg\l\&lt; uintT \&gt;::_display\l_object3d" alt="" coords="115,5,247,61"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#aeb6d1bc68dfcca7722538cc53d25bcf9" title="cimg_library::CImg\l\&lt; uintT \&gt;::_save_off" alt="" coords="111,86,251,127"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a31c31e5c12dc146e1eee79d90262e386" title="Draw a set of consecutive colored splines in the instance image. " alt="" coords="105,151,257,193"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImgList.html#a08addbada69513e00079ff437b669138" title="Save an image sequence, using FFMPEG library. " alt="" coords="102,217,261,258"/>
-<area shape="rect" id="node6" href="$structcimg__library_1_1CImgList.html#a705f1ec1d62b035193f831cc7ac14ac8" title="Transfer the content of the instance image list into another one. " alt="" coords="105,282,258,323"/>
-</map>

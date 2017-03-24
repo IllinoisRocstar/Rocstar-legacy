@@ -1,5 +1,0 @@
-<map id="m_gdft_3" name="m_gdft_3">
-<area shape="rect" id="node2" href="$classMesquite_1_1I__DFT.html#aa71c0d57cadd2f8eeb540ab194c145b3" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="131,5,322,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1I__DFT.html#a2cbff6cd2cec5edf8ede50a8ad3c9de5" title="Mesquite::I_DFT::compute\l_element_analytical_hessian" alt="" coords="132,70,321,111"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1I__DFT.html#abc691c49e36734bba1ea2ecd14fe9a5b" title="Evaluate the metric for an element. " alt="" coords="138,135,315,177"/>
-</map>

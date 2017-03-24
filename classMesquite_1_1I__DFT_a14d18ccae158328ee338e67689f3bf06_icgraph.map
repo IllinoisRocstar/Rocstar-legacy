@@ -1,8 +1,0 @@
-<map id="p_set_use_barrier_delta" name="p_set_use_barrier_delta">
-<area shape="rect" id="node2" href="$classMesquite_1_1I__DFT__Generalized.html#a9316cf2660bfdf02a693667ba1495be2" title="Mesquite::I_DFT_Generalized\l::I_DFT_Generalized" alt="" coords="221,5,417,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1I__DFT__InverseMeanRatio.html#a4f22ee27202a943fe80337fc17ffec44" title="Mesquite::I_DFT_InverseMean\lRatio::I_DFT_InverseMeanRatio" alt="" coords="213,70,424,111"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1I__DFT__NoBarrier.html#ad0db77fcb18d3b87f715a0a148a7a5e2" title="Mesquite::I_DFT_NoBarrier\l::I_DFT_NoBarrier" alt="" coords="227,135,410,177"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1I__DFT__StrongBarrier.html#a3d0c98bb2cea20675ff5612dfc4900c5" title="Mesquite::I_DFT_StrongBarrier\l::I_DFT_StrongBarrier" alt="" coords="217,201,420,242"/>
-<area shape="rect" id="node6" href="$classMesquite_1_1I__DFT__WeakBarrier.html#a0584917d6cf363328953101304d95bc3" title="Mesquite::I_DFT_WeakBarrier\l::I_DFT_WeakBarrier" alt="" coords="219,266,418,307"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1I__DFT__Generalized.html#aedc6a8c7a3b4dfdf19d1d87c12fc8a6e" title="set useBarrierDelta " alt="" coords="221,331,417,373"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="writeVtkData" name="writeVtkData">
-<area shape="rect" id="node2" href="$classMesh_1_1Connectivity.html#a4d957e11716fadea6c9a1f25c6e96301" title="Mesh::Connectivity\l::Esize" alt="" coords="169,5,303,46"/>
-<area shape="rect" id="node3" href="$classMesh_1_1NodalCoordinates.html#a6c40ee25a17756bd699b25f38bbf3001" title="Mesh::NodalCoordinates\l::NNodes" alt="" coords="153,70,319,111"/>
-<area shape="rect" id="node4" href="$classMesh_1_1Connectivity.html#a0c6fe8d4907ebe6db5e0d715605d9b23" title="Mesh::Connectivity\l::SyncSizes" alt="" coords="169,135,303,177"/>
-</map>

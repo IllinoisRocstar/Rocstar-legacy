@@ -1,7 +1,0 @@
-<map id="RegisterSurfaceSoln" name="RegisterSurfaceSoln">
-<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="207,5,345,32"/>
-<area shape="rect" id="node4" href="$classFluPatch.html#a5da867fe1b36d90907ca00ec9705c697" title="FluPatch::RegisterSoln" alt="" coords="197,56,355,83"/>
-<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="565,56,693,83"/>
-<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#adca6827f3c065859156fa3562c2cd9a8" title="Associates an array with an attribute for a specific pane. " alt="" coords="403,56,517,83"/>
-<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="405,107,515,133"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="get_tangent" name="get_tangent">
-<area shape="rect" id="node2" href="$classHalfedge__overlay.html#a49a0ced46edaa808d9951d79b7e43d31" title="Halfedge_overlay::destination" alt="" coords="144,5,339,32"/>
-<area shape="rect" id="node4" href="$classHalfedge__overlay.html#afe0045d3267c0730bd9ad1b640718f54" title="Halfedge_overlay::origin" alt="" coords="160,56,323,83"/>
-<area shape="rect" id="node7" href="$classVertex__overlay.html#a75cdd043830d07c6068d1f272f62287b" title="Vertex_overlay::point" alt="" coords="169,107,314,133"/>
-<area shape="rect" id="node3" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="394,5,561,32"/>
-<area shape="rect" id="node5" href="$classHalfedge__overlay.html#a1011f61879a1842b01d506a17e1c7914" title="Halfedge_overlay::opposite" alt="" coords="387,56,567,83"/>
-<area shape="rect" id="node6" href="$classHalfedge__overlay.html#acba595f65090d9721649cdf1f0999894" title="Halfedge_overlay::is\l_primary" alt="" coords="616,49,757,90"/>
-</map>

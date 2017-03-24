@@ -1,9 +1,0 @@
-<map id="TRAIL_WriteRocinControl" name="TRAIL_WriteRocinControl">
-<area shape="rect" id="node2" href="$TRAIL_8C.html#aa582e389742650d1ab351be8f2ca596a" title="TRAIL_WriteWindow" alt="" coords="230,56,375,83"/>
-<area shape="rect" id="node3" href="$wrl2hdf_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="496,5,547,32"/>
-<area shape="rect" id="node4" href="$TRAIL_8C.html#ae47528d0a66d44e7697c23c8f2c84038" title="TRAIL_TransferSurfDataFILE" alt="" coords="424,56,619,83"/>
-<area shape="rect" id="node7" href="$classGEM__Partition.html#a600c2079e46c9f6697cf26955055e34b" title="GEM_Partition::WriteRocstar" alt="" coords="425,107,617,133"/>
-<area shape="rect" id="node5" href="$RemeshFunctions_8C.html#a50b033348949d4726aa221a856563257" title="TRAIL_RemeshAutoSurfer" alt="" coords="667,56,845,83"/>
-<area shape="rect" id="node6" href="$RemeshFunctions_8C.html#ae9febf522548933be7a2ae75c5dc1a62" title="TRAIL_RemeshWrite" alt="" coords="893,107,1040,133"/>
-<area shape="rect" id="node8" href="$genflu_8C.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="731,107,781,133"/>
-</map>

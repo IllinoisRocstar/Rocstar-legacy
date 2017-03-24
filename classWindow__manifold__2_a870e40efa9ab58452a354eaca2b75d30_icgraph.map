@@ -1,9 +1,0 @@
-<map id="compute_normals" name="compute_normals">
-<area shape="rect" id="node2" href="$classRocsurf.html#ad345c59eea168babcd0976c9a7810b50" title="Computes nodal or elemental normals of a given window. " alt="" coords="179,107,357,133"/>
-<area shape="rect" id="node3" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="406,107,506,133"/>
-<area shape="rect" id="node4" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="582,5,730,32"/>
-<area shape="rect" id="node5" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="585,56,727,83"/>
-<area shape="rect" id="node6" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="558,107,754,133"/>
-<area shape="rect" id="node7" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="581,157,731,184"/>
-<area shape="rect" id="node8" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="555,208,757,235"/>
-</map>

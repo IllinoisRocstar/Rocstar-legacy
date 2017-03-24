@@ -1,7 +1,0 @@
-<map id="load_pnm" name="load_pnm">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a0bbe1d291276726fd9aada63d2455e06" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_load_pnm" alt="" coords="154,5,318,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a138dcc5db93d511d224d88405a0041ce" title="Load an image from a file. " alt="" coords="170,70,302,111"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a67cf88da9c1122b55ebcef3d223bccbe" title="Load a RAW Color Camera image file, using external tool &#39;dcraw&#39;. " alt="" coords="161,136,311,192"/>
-<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#aad5a1ff332f904a39b3ea2035d3a94dc" title="Load an image using GraphicsMagick&#39;s external tool &#39;gm&#39;. " alt="" coords="133,216,339,272"/>
-<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a841db22435a4f77bf3e4c9fc65ecbb6e" title="Load an image using ImageMagick&#39;s external tool &#39;convert&#39;. " alt="" coords="141,296,331,352"/>
-</map>

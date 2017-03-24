@@ -1,4 +1,0 @@
-<map id="set_global_patch" name="set_global_patch">
-<area shape="rect" id="node2" href="$classMesquite_1_1PatchDataParameters.html#a194e80592c66327fa55931ec9cef120a" title="Sets the Global Patch, so that it can be use by contiguoug PatchDataUser. " alt="" coords="174,5,386,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchDataParameters.html#a40660f57ae3b8ae0df25b03778c6a172" title="Returns Patch Type (local around vertices, local around elements, global) " alt="" coords="435,5,647,46"/>
-</map>

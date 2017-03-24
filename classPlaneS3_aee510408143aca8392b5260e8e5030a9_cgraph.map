@@ -1,6 +1,0 @@
-<map id="oriented_side" name="oriented_side">
-<area shape="rect" id="node2" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="170,5,217,32"/>
-<area shape="rect" id="node3" href="$classPointS3.html#a242e8b7096a678fdbb08e337420acb84" title="PointS3::x" alt="" coords="152,56,235,83"/>
-<area shape="rect" id="node4" href="$classPointS3.html#ae367a52fcb29c7638852621653fdb407" title="PointS3::y" alt="" coords="152,107,235,133"/>
-<area shape="rect" id="node5" href="$classPointS3.html#a585581369640d7edc6c5a40277fba5d7" title="PointS3::z" alt="" coords="152,157,235,184"/>
-</map>

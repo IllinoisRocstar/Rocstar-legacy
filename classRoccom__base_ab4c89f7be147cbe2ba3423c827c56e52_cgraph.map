@@ -1,7 +1,0 @@
-<map id="set_f90pointer" name="set_f90pointer">
-<area shape="rect" id="node2" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="157,5,293,32"/>
-<area shape="rect" id="node3" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="184,56,267,83"/>
-<area shape="rect" id="node4" href="$classAttribute.html#af855cd7842b895de519db24e29663baa" title="Obtain the location of the attribute. " alt="" coords="163,107,287,133"/>
-<area shape="rect" id="node5" href="$classAttribute.html#a2e7d4fe5a490266aed5667444935490f" title="Obtain a constant pointer to the physical address. " alt="" coords="166,157,285,184"/>
-<area shape="rect" id="node6" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="165,209,286,250"/>
-</map>

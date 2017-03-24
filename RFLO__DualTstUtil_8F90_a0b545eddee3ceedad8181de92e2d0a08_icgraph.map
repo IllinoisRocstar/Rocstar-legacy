@@ -1,8 +1,0 @@
-<map id="rflo_dualtststerm" name="rflo_dualtststerm">
-<area shape="rect" id="node2" href="$RFLO__DualTimeStepping_8F90.html#a73f007a0e4aeb09fa84cc4a4379a8426" title="rflo_dualtimestepping" alt="" coords="174,31,319,57"/>
-<area shape="rect" id="node3" href="$RFLO__FlowSolver_8F90.html#ad883067488e8a9f7901a241687d37e5a" title="rflo_flowsolver" alt="" coords="368,31,475,57"/>
-<area shape="rect" id="node4" href="$standalone_2Main_8F90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="565,5,616,32"/>
-<area shape="rect" id="node5" href="$Rocflo__load__module_8F90.html#aa074e41fe57cac388dc65b3398f25765" title="rocflo_load_module" alt="" coords="523,56,658,83"/>
-<area shape="rect" id="node6" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="707,56,872,83"/>
-<area shape="rect" id="node7" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="920,56,1075,83"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="compute_lbop_weights" name="compute_lbop_weights">
-<area shape="rect" id="node2" href="$classVector__3.html#aa8b58e0e93d63afb1387a36b49d7d16f" title="Vector_3::cross_product" alt="" coords="209,5,373,32"/>
-<area shape="rect" id="node3" href="$classGeneric__element__2.html#aeafe1012814b2171c57c1a79581b7c5c" title="Get the natrual coordinate associated with a Gauss point. " alt="" coords="219,57,362,98"/>
-<area shape="rect" id="node5" href="$classGeneric__element__2.html#aba2e5e1253eee1bcdc1402a8d0778735" title="Get the weight associated with a Gauss point. " alt="" coords="219,122,362,163"/>
-<area shape="rect" id="node6" href="$classGeneric__element__2.html#ac0b07bd3d8ec16f6cb047cafc5904153" title="Get the number of Gauss points. " alt="" coords="219,187,362,229"/>
-<area shape="rect" id="node7" href="$classVector__3.html#afc75c733aff7cb9c0216f363888b1dff" title="Vector_3::norm" alt="" coords="235,253,346,280"/>
-<area shape="rect" id="node4" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="422,129,469,156"/>
-</map>

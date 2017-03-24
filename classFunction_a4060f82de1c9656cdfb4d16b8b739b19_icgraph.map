@@ -1,5 +1,0 @@
-<map id="num_of_args" name="num_of_args">
-<area shape="rect" id="node2" href="$classRoccom__base.html#aa5691bb8a33c7fddd9e2708b36d6012b" title="Invoke a function with given arguments. " alt="" coords="152,12,339,39"/>
-<area shape="rect" id="node4" href="$classRoccom__base.html#ab4006fa567e945ae1e324e746c5eb07f" title="Get the number of arguments of a given function &quot;window.function&quot;. " alt="" coords="163,63,327,105"/>
-<area shape="rect" id="node3" href="$classRoccom__base.html#a6f1e9cf115ad501e54c6d56b895c3502" title="Nonblockingly invoke a function with given arguments. " alt="" coords="387,5,525,46"/>
-</map>

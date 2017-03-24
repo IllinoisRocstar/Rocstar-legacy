@@ -1,7 +1,0 @@
-<map id="get_next_inode" name="get_next_inode">
-<area shape="rect" id="node2" href="$classOverlay.html#a05e11ef1baa5319a53ae52088bcec955" title="subdivide" alt="" coords="165,56,243,83"/>
-<area shape="rect" id="node3" href="$classOverlay.html#a0bd2163789be46cbefc1aa867d9ac420" title="write_overlay_tec" alt="" coords="291,5,415,32"/>
-<area shape="rect" id="node4" href="$classOverlay.html#a356923154df51107408f9b11d92c21e5" title="write_overlay_off" alt="" coords="293,56,414,83"/>
-<area shape="rect" id="node5" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="number_subfaces" alt="" coords="291,107,416,133"/>
-<area shape="rect" id="node6" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="overlay" alt="" coords="464,107,528,133"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="ROCMAP_UNLOAD_MODULE" name="ROCMAP_UNLOAD_MODULE">
-<area shape="rect" id="node2" href="$classRocmap.html#ab6e6c6506a9299b4bcb446a399ebf06d" title="Unloads Rocmap from Roccom. " alt="" coords="261,5,379,32"/>
-<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="427,5,573,32"/>
-<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="621,5,749,32"/>
-</map>

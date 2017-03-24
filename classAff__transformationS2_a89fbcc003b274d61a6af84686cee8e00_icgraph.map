@@ -1,8 +1,0 @@
-<map id="transform" name="transform">
-<area shape="rect" id="node2" href="$classDirectionS2.html#a9b7d5dcb30ac0f28809df91d726cf708" title="DirectionS2::transform" alt="" coords="131,5,285,32"/>
-<area shape="rect" id="node3" href="$classPointS2.html#a628908f4004a066ad71f7b3149c352cb" title="PointS2::transform" alt="" coords="143,56,273,83"/>
-<area shape="rect" id="node4" href="$classRayS2.html#aa6c0725fc7bbf0112d8bdbc599c62140" title="RayS2::transform" alt="" coords="145,107,271,133"/>
-<area shape="rect" id="node5" href="$classSegmentS2.html#a4496d5c9e1483e6a96fa12cb6bcb5a09" title="SegmentS2::transform" alt="" coords="131,157,285,184"/>
-<area shape="rect" id="node6" href="$classVectorS2.html#a449a726603cb4569c70f4d6214e2e6b7" title="VectorS2::transform" alt="" coords="139,208,277,235"/>
-<area shape="rect" id="node7" href="$classLineS2.html#add1b330bd03bdef2ed6ca6eac04cd5d2" title="LineS2::transform" alt="" coords="145,259,271,285"/>
-</map>

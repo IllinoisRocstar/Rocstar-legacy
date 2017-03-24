@@ -1,7 +1,0 @@
-<map id="init_attributes" name="init_attributes">
-<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="167,5,305,32"/>
-<area shape="rect" id="node4" href="$roccom__c_09_09_8h.html#ab6a6d18043bc76f9a381084af49c6a9f" title="Resize an attribute on a specific pane and return the address by setting addr. " alt="" coords="171,56,301,83"/>
-<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="181,107,291,133"/>
-<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="155,157,317,184"/>
-<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="365,81,493,108"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="load" name="load">
-<area shape="rect" id="node2" href="$structcimg__library_1_1CImgList.html#a15514475aae54fae9ea5cbd516579095" title="In&#45;place version of the corresponding constructor. " alt="" coords="121,5,274,46"/>
-<area shape="rect" id="node3" href="$structcimg__library_1_1CImgList.html#abf9c8328ad47ecb7e15e716cecc3fd3b" title="cimg_library::CImgList\l\&lt; uintT \&gt;::get_load" alt="" coords="121,70,274,111"/>
-<area shape="rect" id="node4" href="$structcimg__library_1_1CImgList.html#a0ab64a5a6414629623467ad5ee80b6fe" title="Load a gzipped list, using external tool &#39;gunzip&#39;. " alt="" coords="102,135,293,177"/>
-</map>

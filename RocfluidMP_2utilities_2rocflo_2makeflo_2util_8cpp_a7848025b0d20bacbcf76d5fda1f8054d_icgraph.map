@@ -1,6 +1,0 @@
-<map id="fortranifyString" name="fortranifyString">
-<area shape="rect" id="node2" href="$read_8cpp.html#a418ae3d7d77b8f4c89d0ba4db77d1bad" title="read_file" alt="" coords="173,5,243,32"/>
-<area shape="rect" id="node3" href="$write_8cpp.html#a797c9969cefa82a22ea7da85585305a0" title="write_fortran" alt="" coords="161,56,255,83"/>
-<area shape="rect" id="node4" href="$write_8cpp.html#aee0e89095fe606b555c758fb7be877dc" title="writeBlocks" alt="" coords="304,56,395,83"/>
-<area shape="rect" id="node5" href="$makeflo_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="443,56,493,83"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="project_onto_element" name="project_onto_element">
-<area shape="rect" id="node2" href="$classHalfedge__overlay.html#ac47203886af9a8299b6a42da527e0e49" title="Halfedge_overlay::next" alt="" coords="201,5,357,32"/>
-<area shape="rect" id="node3" href="$classHalfedge__overlay.html#aa274ac14f207d82094a34345820a3058" title="Halfedge_overlay::prev" alt="" coords="201,56,357,83"/>
-<area shape="rect" id="node5" href="$classPoint__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Point_set::size_of\l_edges" alt="" coords="215,107,342,149"/>
-<area shape="rect" id="node7" href="$solve_8h.html#a86f74676b18746c6fae05aa74033854c" title="solve" alt="" coords="252,173,305,200"/>
-<area shape="rect" id="node4" href="$classHalfedge__overlay.html#acba595f65090d9721649cdf1f0999894" title="Halfedge_overlay::is\l_primary" alt="" coords="405,45,547,86"/>
-<area shape="rect" id="node6" href="$classVertex__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Vertex_set::size_of\l_edges" alt="" coords="409,110,543,151"/>
-</map>

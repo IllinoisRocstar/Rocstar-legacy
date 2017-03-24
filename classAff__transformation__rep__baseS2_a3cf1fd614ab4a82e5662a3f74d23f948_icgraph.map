@@ -1,6 +1,0 @@
-<map id="compose" name="compose">
-<area shape="rect" id="node2" href="$classAff__transformation__repS2.html#ac9664bada222c81d65e5f73db7e513e0" title="Aff_transformation\l_repS2::operator*" alt="" coords="150,5,279,46"/>
-<area shape="rect" id="node3" href="$classTranslation__repS2.html#ac9664bada222c81d65e5f73db7e513e0" title="Translation_repS2::\loperator*" alt="" coords="147,70,282,111"/>
-<area shape="rect" id="node4" href="$classRotation__repS2.html#ac9664bada222c81d65e5f73db7e513e0" title="Rotation_repS2::operator*" alt="" coords="129,136,301,163"/>
-<area shape="rect" id="node5" href="$classScaling__repS2.html#ac9664bada222c81d65e5f73db7e513e0" title="Scaling_repS2::operator*" alt="" coords="131,187,298,213"/>
-</map>

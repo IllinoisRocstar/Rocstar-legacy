@@ -1,7 +1,0 @@
-<map id="run_initactions" name="run_initactions">
-<area shape="rect" id="node2" href="$classCoupling.html#a16e46e7c65078b1877d239968152a04e" title="name" alt="" coords="210,5,265,32"/>
-<area shape="rect" id="node3" href="$classScheduler.html#ad2f7d0180654fc893a9dd4112cec8f3b" title="Scheduler::run_actions" alt="" coords="160,56,315,83"/>
-<area shape="rect" id="node6" href="$classScheduler.html#a1ddbe92dd7f68ea5db8d9957e6da0c0a" title="Scheduler::set_alpha" alt="" coords="165,107,309,133"/>
-<area shape="rect" id="node4" href="$structScheduler_1_1ActionItem.html#a4d53ef72c920649a6dcaf1ccb1392b5d" title="Scheduler::ActionItem\l::action" alt="" coords="363,19,514,61"/>
-<area shape="rect" id="node5" href="$classAction.html#a32338f30828c8564d854ae856028b26a" title="Action::run" alt="" coords="396,85,481,112"/>
-</map>

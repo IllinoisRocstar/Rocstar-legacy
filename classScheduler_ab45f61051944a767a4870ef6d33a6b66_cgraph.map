@@ -1,6 +1,0 @@
-<map id="add_action" name="add_action">
-<area shape="rect" id="node2" href="$classAction.html#a0d266ca3c89fae98335f440d3bf579e0" title="Action::declare" alt="" coords="139,31,248,57"/>
-<area shape="rect" id="node3" href="$classScheduler.html#aace076722f7a2c6975fcfc660070ac6a" title="reads" alt="" coords="298,5,353,32"/>
-<area shape="rect" id="node5" href="$classScheduler.html#a071ba1e78fdf36ccff32c4688b05641b" title="writes" alt="" coords="297,56,354,83"/>
-<area shape="rect" id="node4" href="$classAction.html#ad116f378d988ba583f13bfa8519f05f0" title="Action::name" alt="" coords="403,31,501,57"/>
-</map>

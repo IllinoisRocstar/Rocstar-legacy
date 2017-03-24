@@ -1,9 +1,0 @@
-<map id="LaplacianIQ" name="LaplacianIQ">
-<area shape="rect" id="node2" href="$classMesquite_1_1TerminationCriterion.html#ac7d1f649bf0b634a6c2774ce3ac3c62b" title="Sets the criterion by specifing the TCType and the integer value. " alt="" coords="144,5,344,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1PatchDataUser.html#ad47f14dd077bbae4bc12f39365331169" title="Sets on the culling method passed as argument. " alt="" coords="157,70,331,111"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1InstructionQueue.html#a29c5224e5c8ad8b408ccd5ed78882a15" title="adds a QualityAssessor to the instruction queue. " alt="" coords="153,135,335,177"/>
-<area shape="rect" id="node6" href="$classMesquite_1_1InstructionQueue.html#a5b53336b0c61a4da44fd96ce6751315a" title="Mesquite::InstructionQueue\l::set_master_quality_improver" alt="" coords="145,201,343,242"/>
-<area shape="rect" id="node8" href="$classMesquite_1_1QualityImprover.html#a8052a29de270f7e386af2d8daf8b51f7" title="Sets in the termination criterion for the outer loop over patches. " alt="" coords="157,267,331,323"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1PatchDataParameters.html#ad47f14dd077bbae4bc12f39365331169" title="Sets on a culling criterion. " alt="" coords="393,70,605,111"/>
-<area shape="rect" id="node7" href="$classMesquite_1_1InstructionQueue.html#ae0f54d66b9251befba6a9ede6b545a72" title="Mesquite::InstructionQueue\l::clear_master" alt="" coords="407,201,590,242"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="FindFirstGeometryDataset" name="FindFirstGeometryDataset">
-<area shape="rect" id="node2" href="$Rocin_8C.html#ab7a7fab44f0d3b76372865fb1442f1b7" title="Extract metadata from the list of files. " alt="" coords="229,5,352,32"/>
-<area shape="rect" id="node3" href="$classRocin.html#a047b46290d1e21123ec029fb4660de28" title="Create a series of Roccom windows by reading in a list of files. " alt="" coords="400,5,547,32"/>
-<area shape="rect" id="node4" href="$classRocin.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="1014,31,1095,57"/>
-<area shape="rect" id="node6" href="$classRocin.html#a1dd937ec0c005ce85561ccfe548bc6d0" title="Create a single Roccom window by reading in a list of files. " alt="" coords="595,31,735,57"/>
-<area shape="rect" id="node5" href="$readsdv_8C.html#a1e1668934356b578ddd0a0cdaae423f1" title="Load the module Rocin into Roccom using the given module name. " alt="" coords="1144,31,1280,57"/>
-<area shape="rect" id="node7" href="$classRocin.html#a1b089e18b401f74035c6574e3a95f95e" title="Create a single Roccom window by reading in the files specified by the given control file..." alt="" coords="785,81,965,108"/>
-</map>

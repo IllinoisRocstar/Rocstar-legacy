@@ -1,8 +1,0 @@
-<map id="rflo_readrandomstate" name="rflo_readrandomstate">
-<area shape="rect" id="node2" href="$RFLO__GetFlowSolution_8F90.html#a4f27bdc49479d2a91299fb92d2ba84f6" title="rflo_getflowsolution" alt="" coords="198,31,333,57"/>
-<area shape="rect" id="node3" href="$RFLO__InitFlowSolver_8F90.html#a8df8edf9779f18ecb2a16e732849794b" title="rflo_initflowsolver" alt="" coords="381,31,504,57"/>
-<area shape="rect" id="node4" href="$standalone_2Main_8F90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="595,5,645,32"/>
-<area shape="rect" id="node5" href="$Rocflo__load__module_8F90.html#aa074e41fe57cac388dc65b3398f25765" title="rocflo_load_module" alt="" coords="553,56,687,83"/>
-<area shape="rect" id="node6" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="736,56,901,83"/>
-<area shape="rect" id="node7" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="949,56,1104,83"/>
-</map>

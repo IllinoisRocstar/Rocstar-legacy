@@ -1,5 +1,0 @@
-<map id="filenamerand" name="filenamerand">
-<area shape="rect" id="node2" href="$namespacecimg__library_1_1cimg.html#af31db729637ea4dad61e49e5729839c4" title="Return a random variable between [0,1] with respect to an uniform distribution. " alt="" coords="150,5,197,32"/>
-<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#a84a2f7a220ba6a54893f695b3bcc36e2" title="srand" alt="" coords="246,5,301,32"/>
-<area shape="rect" id="node4" href="$namespacecimg__library_1_1cimg.html#af883131bbc64e996d212114cc2b2b21a" title="Get the value of a system timer with a millisecond precision. " alt="" coords="350,5,397,32"/>
-</map>

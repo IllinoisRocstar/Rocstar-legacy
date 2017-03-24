@@ -1,4 +1,0 @@
-<map id="get_vertex_byte" name="get_vertex_byte">
-<area shape="rect" id="node2" href="$classMesquite_1_1MeshImpl.html#aec8d0b19ff23a87d5062824f4fb72a21" title="Mesquite::MeshImpl\l::vertices_get_byte" alt="" coords="169,5,309,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshImpl.html#a95b660fd443b556f8196f314b911189e" title="Retrieve the byte value for the specified vertex or vertices. " alt="" coords="358,5,498,46"/>
-</map>

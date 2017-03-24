@@ -1,8 +1,0 @@
-<map id="setFromMyNodes" name="setFromMyNodes">
-<area shape="rect" id="node2" href="$Element_8cpp.html#a71a38cd229949cbdf345f7c9de05a7c0" title="operator\&gt;\&gt;" alt="" coords="193,31,279,57"/>
-<area shape="rect" id="node3" href="$classElement.html#a91ec17eaa02284e670cf9849e53d6706" title="setFromNodes" alt="" coords="182,81,290,108"/>
-<area shape="rect" id="node4" href="$classHexElement.html#a3cdec147c7dbc69a0517832db3f99c60" title="HexElement::HexElement" alt="" coords="342,5,517,32"/>
-<area shape="rect" id="node5" href="$classQCoElement.html#a29a164ef5e3b84ce089dd082ce13adfd" title="QCoElement::QCoElement" alt="" coords="339,56,519,83"/>
-<area shape="rect" id="node6" href="$classTCoElement.html#a58339b2a9a449631c115256db921b427" title="TCoElement::TCoElement" alt="" coords="341,107,517,133"/>
-<area shape="rect" id="node7" href="$classTetElement.html#a8ec3e7fa8712356253c8f8d381d4d9c5" title="TetElement::TetElement" alt="" coords="347,157,511,184"/>
-</map>

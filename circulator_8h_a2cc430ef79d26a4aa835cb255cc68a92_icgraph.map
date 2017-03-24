@@ -1,7 +1,0 @@
-<map id="I_Has_to_be_at_least" name="I_Has_to_be_at_least">
-<area shape="rect" id="node2" href="$circulator_8h.html#a37d934b71387166bb1408bf5281a7f9c" title="Assert_is_at_least\l_bidirectional_category" alt="" coords="215,5,369,46"/>
-<area shape="rect" id="node3" href="$circulator_8h.html#a882aecb4c7ae9067b03d318c2c58b1b1" title="Assert_is_at_least\l_forward_category" alt="" coords="227,70,357,111"/>
-<area shape="rect" id="node4" href="$circulator_8h.html#a045774ce45bf3f8bd0bafecc580c12d0" title="Assert_is_at_least\l_input_category" alt="" coords="227,135,357,177"/>
-<area shape="rect" id="node5" href="$circulator_8h.html#ae70de4abb626f19482b391424e81b971" title="Assert_is_at_least\l_output_category" alt="" coords="227,201,357,242"/>
-<area shape="rect" id="node6" href="$circulator_8h.html#a9ff7737f3b1adb28e4fcf2df1d21d4f8" title="Assert_is_at_least\l_random_access_category" alt="" coords="203,266,381,307"/>
-</map>

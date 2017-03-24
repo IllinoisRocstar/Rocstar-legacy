@@ -1,6 +1,0 @@
-<map id="vtk_read_vector_attrib" name="vtk_read_vector_attrib">
-<area shape="rect" id="node2" href="$classMesquite_1_1MeshImpl.html#a1e719c748082690d5d062df05c503daf" title="Read actual data for both vtk_read_point_data and vtk_read_cell_data Initializes all fields of passed..." alt="" coords="206,31,346,57"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshImpl.html#a9e900b891d5a060e227e576743db3493" title="Read attribute data for elements. " alt="" coords="399,5,529,32"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1MeshImpl.html#a6438e58f0f7a06552623d6935f1616db" title="Read attribute data for vertices. " alt="" coords="395,56,533,83"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1MeshImpl.html#a51c855a0e0885d47351793338f3074ba" title="read_vtk" alt="" coords="581,31,653,57"/>
-</map>

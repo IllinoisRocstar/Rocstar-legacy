@@ -1,6 +1,0 @@
-<map id="reclassify_ridge_vertices" name="reclassify_ridge_vertices">
-<area shape="rect" id="node2" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="257,5,335,32"/>
-<area shape="rect" id="node3" href="$classRocblas.html#a67987d3b72ffb73c5fa0cc2930822afd" title="Operation wrapper for copy (x is a scalar pointer). " alt="" coords="222,56,370,83"/>
-<area shape="rect" id="node5" href="$classVector__3.html#a378898ca48cb8e4a1cf466e85d33f429" title="Vector_3::normalize" alt="" coords="227,107,365,133"/>
-<area shape="rect" id="node4" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="419,56,555,83"/>
-</map>

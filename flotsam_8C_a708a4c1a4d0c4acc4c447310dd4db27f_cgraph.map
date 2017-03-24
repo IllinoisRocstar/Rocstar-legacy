@@ -1,9 +1,0 @@
-<map id="test" name="test">
-<area shape="rect" id="node2" href="$namespaceMesh.html#a198f8e4a0029d645cb1eb7c882a7014e" title="Locate element containing given physical point. " alt="" coords="103,5,262,32"/>
-<area shape="rect" id="node3" href="$classGeoPrim_1_1CPoint.html#ad68ea487c7307bf0cba1c3610c483824" title="GeoPrim::CPoint::init" alt="" coords="109,56,256,83"/>
-<area shape="rect" id="node4" href="$classMesh_1_1NodalCoordinates.html#af3b8485b6ef06f210e09ceb490406f44" title="Mesh::NodalCoordinates\l::init_node" alt="" coords="99,107,266,149"/>
-<area shape="rect" id="node8" href="$classMesh_1_1Connectivity.html#a93098eecf20d66124bd7bc8370ebe52e" title="Mesh::Connectivity\l::Sync" alt="" coords="115,173,250,214"/>
-<area shape="rect" id="node5" href="$classGeoPrim_1_1CPoint.html#a3b195b867437acf8de45f48c83e81932" title="GeoPrim::CPoint::x" alt="" coords="315,64,451,91"/>
-<area shape="rect" id="node6" href="$classGeoPrim_1_1CPoint.html#ad927d9808ded1fc49c05ae9e1a3ed2a6" title="GeoPrim::CPoint::y" alt="" coords="315,115,451,141"/>
-<area shape="rect" id="node7" href="$classGeoPrim_1_1CPoint.html#a2134ad02d68f29e9c7cd87e4cd4c75b8" title="GeoPrim::CPoint::z" alt="" coords="315,165,451,192"/>
-</map>

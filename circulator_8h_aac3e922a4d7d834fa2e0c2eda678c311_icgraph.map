@@ -1,8 +1,0 @@
-<map id="non_negative_mod" name="non_negative_mod">
-<area shape="rect" id="node2" href="$classCirculator__from__container.html#abd4b6ffeefd1bcf5bac97f20202d7e22" title="Circulator_from_container\l::operator+=" alt="" coords="184,5,355,46"/>
-<area shape="rect" id="node4" href="$classConst__circulator__from__container.html#a6f9653357e6b278b97021367de322394" title="Const_circulator_from\l_container::operator+=" alt="" coords="193,70,346,111"/>
-<area shape="rect" id="node6" href="$classCirculator__from__iterator.html#a9e2e76d8f71e4ee227a70dac14398787" title="Circulator_from_iterator\l::operator+=" alt="" coords="190,135,349,177"/>
-<area shape="rect" id="node3" href="$classCirculator__from__container.html#a7bedf5dd73342d433543c97677b38b74" title="Circulator_from_container\l::operator&#45;=" alt="" coords="403,5,573,46"/>
-<area shape="rect" id="node5" href="$classConst__circulator__from__container.html#a7bedf5dd73342d433543c97677b38b74" title="Const_circulator_from\l_container::operator&#45;=" alt="" coords="413,70,563,111"/>
-<area shape="rect" id="node7" href="$classCirculator__from__iterator.html#a7bedf5dd73342d433543c97677b38b74" title="Circulator_from_iterator\l::operator&#45;=" alt="" coords="409,135,567,177"/>
-</map>

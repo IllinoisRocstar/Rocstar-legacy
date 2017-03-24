@@ -1,6 +1,0 @@
-<map id="transform" name="transform">
-<area shape="rect" id="node2" href="$classPlaneS3.html#a589ec2f021ebe7d4b9a6e7279e223115" title="PlaneS3::transform" alt="" coords="131,56,266,83"/>
-<area shape="rect" id="node3" href="$classAff__transformationS3.html#a2d416427e2a71c8e77bf12a4bd96e41c" title="transpose" alt="" coords="315,5,394,32"/>
-<area shape="rect" id="node4" href="$classAff__transformationS3.html#aace62ae147222bcead78d9de5cd45c2c" title="is_even" alt="" coords="321,56,388,83"/>
-<area shape="rect" id="node5" href="$classAff__transformationS3.html#a101a7c5de8543d7e586a67af482834b0" title="transform" alt="" coords="316,107,393,133"/>
-</map>

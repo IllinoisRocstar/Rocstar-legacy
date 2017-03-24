@@ -1,6 +1,0 @@
-<map id="get_restart_time" name="get_restart_time">
-<area shape="rect" id="node2" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="171,5,299,46"/>
-<area shape="rect" id="node5" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="171,70,299,111"/>
-<area shape="rect" id="node3" href="$namespacecimg__library_1_1cimg.html#a93ec28267b101050d949d1ebff1b88cf" title="Display a warning message. " alt="" coords="347,5,475,46"/>
-<area shape="rect" id="node4" href="$namespacecimg__library_1_1cimg.html#aacf66918a1173b3f72fe6f088d94f26b" title="Get/set the current CImg exception mode. " alt="" coords="523,5,651,46"/>
-</map>

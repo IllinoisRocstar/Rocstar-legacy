@@ -1,8 +1,0 @@
-<map id="radi_initsolution" name="radi_initsolution">
-<area shape="rect" id="node2" href="$RFLO__GetFlowSolution_8F90.html#a4f27bdc49479d2a91299fb92d2ba84f6" title="rflo_getflowsolution" alt="" coords="166,31,301,57"/>
-<area shape="rect" id="node3" href="$RFLO__InitFlowSolver_8F90.html#a8df8edf9779f18ecb2a16e732849794b" title="rflo_initflowsolver" alt="" coords="349,31,472,57"/>
-<area shape="rect" id="node4" href="$standalone_2Main_8F90.html#a8ec2266d83cd6c0b762cbcbc92c0af3d" title="main" alt="" coords="563,5,613,32"/>
-<area shape="rect" id="node5" href="$Rocflo__load__module_8F90.html#aa074e41fe57cac388dc65b3398f25765" title="rocflo_load_module" alt="" coords="521,56,655,83"/>
-<area shape="rect" id="node6" href="$classFluidAgent.html#a9497d3068e48dadd5f9423273833b167" title="FluidAgent::load_module" alt="" coords="704,56,869,83"/>
-<area shape="rect" id="node7" href="$classFluidAgent.html#a19ceac59638116b69f6ee668942c55dc" title="FluidAgent::FluidAgent" alt="" coords="917,56,1072,83"/>
-</map>

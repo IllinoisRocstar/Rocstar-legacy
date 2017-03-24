@@ -1,7 +1,0 @@
-<map id="run" name="run">
-<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a2069e897bf91452a91e2e3516647cffc" title="Copy an attribute onto another. " alt="" coords="95,5,238,32"/>
-<area shape="rect" id="node4" href="$classCoupling.html#acca8f4e7c8b4e2d2c0d3f0693dffae7f" title="Coupling::get_control\l_param" alt="" coords="94,57,239,98"/>
-<area shape="rect" id="node5" href="$classAgent.html#a5d3576b9180e99959235980d580a4090" title="Agent::get_coupling" alt="" coords="98,123,235,149"/>
-<area shape="rect" id="node6" href="$classCoupling.html#adf2a86ae65b1dbea64df5dadeb0f4035" title="Coupling::initial_start" alt="" coords="95,173,239,200"/>
-<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="288,5,416,32"/>
-</map>

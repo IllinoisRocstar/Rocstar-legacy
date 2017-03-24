@@ -1,5 +1,0 @@
-<map id="Agent" name="Agent">
-<area shape="rect" id="node3" href="$classBurnAgent.html" title="BurnAgent" alt="" coords="5,155,88,181"/>
-<area shape="rect" id="node4" href="$classFluidAgent.html" title="FluidAgent" alt="" coords="113,155,196,181"/>
-<area shape="rect" id="node5" href="$classSolidAgent.html" title="SolidAgent" alt="" coords="221,155,307,181"/>
-</map>

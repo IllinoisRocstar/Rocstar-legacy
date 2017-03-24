@@ -1,4 +1,0 @@
-<map id="LogFieldMappings" name="LogFieldMappings">
-<area shape="rect" id="node2" href="$classtecplot__data.html#abbc2b0210cc0184a9ad28498e9deb3a0" title="Read the tecplot header from the file and retrieve the title, variable names, and number of variables..." alt="" coords="182,5,309,46"/>
-<area shape="rect" id="node3" href="$classtecplot__data.html#ad7c704b34912678d95c13243cacf9d7f" title="Parse the tecplot file. " alt="" coords="357,12,491,39"/>
-</map>

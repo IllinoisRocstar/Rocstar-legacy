@@ -1,6 +1,0 @@
-<map id="num_free_vertices" name="num_free_vertices">
-<area shape="rect" id="node2" href="$classMesquite_1_1ConjugateGradient.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::ConjugateGradient\l::optimize_vertex_positions" alt="" coords="191,5,382,46"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1SteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::SteepestDescent\l::optimize_vertex_positions" alt="" coords="195,70,379,111"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1FeasibleNewton.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::FeasibleNewton\l::optimize_vertex_positions" alt="" coords="196,135,377,177"/>
-<area shape="rect" id="node5" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::NonSmoothSteepest\lDescent::optimize_vertex\l_positions" alt="" coords="185,201,389,257"/>
-</map>

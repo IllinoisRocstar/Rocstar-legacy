@@ -1,7 +1,0 @@
-<map id="vertex" name="vertex">
-<area shape="rect" id="node2" href="$classRFC__Pane__base.html#a1ff8388b47d2adebed1ee5ebcc2cbeae" title="RFC_Pane_base::get_lvid" alt="" coords="113,45,287,72"/>
-<area shape="rect" id="node3" href="$classOverlay.html#a9da7a2ebf65083d900d07ae5f6b46d8f" title="Overlay::convert_nat\l_coordinates" alt="" coords="339,5,482,46"/>
-<area shape="rect" id="node6" href="$classRFC__Pane__base.html#af97a16d7f0c1b7e850f5981830dcd2d1" title="Take a subnode id and an element, return the natrual coordinates within the element. " alt="" coords="336,70,485,111"/>
-<area shape="rect" id="node4" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="533,12,712,39"/>
-<area shape="rect" id="node5" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="760,12,877,39"/>
-</map>

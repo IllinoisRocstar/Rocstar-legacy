@@ -1,7 +1,0 @@
-<map id="compute_eigenvectors" name="compute_eigenvectors">
-<area shape="rect" id="node2" href="$classFaceOffset__3.html#a56aca8e1560d76b750545f7f33890551" title="denoise_surface" alt="" coords="224,5,341,32"/>
-<area shape="rect" id="node4" href="$classFaceOffset__3.html#ae567b553d4a9a500996a8211c9202a9c" title="eigen_analyze_vertex" alt="" coords="209,60,357,87"/>
-<area shape="rect" id="node3" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="598,60,701,87"/>
-<area shape="rect" id="node5" href="$classFaceOffset__3.html#a932f06459b53d1207fdbf1d78a4a09c6" title="compute_anisotropic\l_vertex_centers" alt="" coords="406,53,549,94"/>
-<area shape="rect" id="node6" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="413,119,541,145"/>
-</map>

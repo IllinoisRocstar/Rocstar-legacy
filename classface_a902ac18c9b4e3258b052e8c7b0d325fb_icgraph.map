@@ -1,6 +1,0 @@
-<map id="getBlock" name="getBlock">
-<area shape="rect" id="node2" href="$classface.html#a3ae3e427e0e26eb33a26a5be54933feb" title="buildPatches" alt="" coords="129,5,226,32"/>
-<area shape="rect" id="node3" href="$classadjRec.html#a7e8442e7139d840c15bdee83789f7ae8" title="adjRec::print" alt="" coords="129,80,225,107"/>
-<area shape="rect" id="node4" href="$classadjList.html#af17e305864faf75163e7b2e80f597f0f" title="adjList::print" alt="" coords="275,80,368,107"/>
-<area shape="rect" id="node5" href="$classface.html#abcbff586b528b3ac40128b236ac88b80" title="face" alt="" coords="417,80,463,107"/>
-</map>

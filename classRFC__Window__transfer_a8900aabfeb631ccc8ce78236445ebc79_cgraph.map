@@ -1,6 +1,0 @@
-<map id="RFC_Window_transfer" name="RFC_Window_transfer">
-<area shape="rect" id="node2" href="$classRFC__Window__transfer.html#a758825e116b59e8176cf3a2ef562e017" title="comm_size" alt="" coords="241,31,330,57"/>
-<area shape="rect" id="node5" href="$classRFC__Window__derived.html#ac93d54480f8b9621387f2edd745257ee" title="Get a vector of local panes contained in the window. " alt="" coords="209,81,362,137"/>
-<area shape="rect" id="node3" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="419,5,557,32"/>
-<area shape="rect" id="node4" href="$commpi_8h.html#a4e3337b1847be124709d7c1471c3834d" title="COMMPI_Comm_size" alt="" coords="411,56,565,83"/>
-</map>

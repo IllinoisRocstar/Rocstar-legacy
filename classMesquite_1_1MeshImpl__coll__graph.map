@@ -1,5 +1,0 @@
-<map id="MeshImpl" name="MeshImpl">
-<area shape="rect" id="node2" href="$classMesquite_1_1Mesh.html" title="A Mesquite::Mesh is a collection of mesh elements which are composed of mesh vertices. Intermediate objects are not accessible through this interface (where intermediate objects include things like the faces of a hex, or an element&#39;s edges). " alt="" coords="5,5,59,32"/>
-<area shape="rect" id="node3" href="$classMesquite_1_1MeshImplTags.html" title="Store tags and tag data for Mesquite&#39;s native mesh representation. " alt="" coords="83,5,191,32"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1MeshImplData.html" title="Class to store mesh representation for MeshImpl. " alt="" coords="216,5,323,32"/>
-</map>

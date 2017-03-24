@@ -1,5 +1,0 @@
-<map id="get_all_mesh" name="get_all_mesh">
-<area shape="rect" id="node2" href="$classMesquite_1_1MeshImplData.html#a3a733d926750d3a895f965dcb0cb3479" title="Copy internal representation into CSR rep Does not include mid&#45;nodes. " alt="" coords="152,27,320,69"/>
-<area shape="rect" id="node3" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="421,5,475,32"/>
-<area shape="rect" id="node4" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="369,57,527,98"/>
-</map>

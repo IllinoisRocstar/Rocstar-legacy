@@ -1,8 +1,0 @@
-<map id="is_valid" name="is_valid">
-<area shape="rect" id="node2" href="$classKdtree__d_1_1Node.html#a31ead32bdb3416b06e5a36d34fd4bec6" title="get_hs" alt="" coords="145,12,207,39"/>
-<area shape="rect" id="node4" href="$classKdtree__d_1_1Node.html#a6f8158e237172bcd4d1c57f4cca9bc0f" title="is_point" alt="" coords="324,75,391,101"/>
-<area shape="rect" id="node5" href="$classKdtree__d_1_1Node.html#a31524f7f8ae8f1a0c383991945c8bb02" title="is_points_in_hs" alt="" coords="120,137,232,164"/>
-<area shape="rect" id="node3" href="$classKdtree__d_1_1Node_1_1Plane.html#ae8bb9a1fa01e163cce398c97d0b292c9" title="Kdtree_d::Node::Plane\l::orient_half_space" alt="" coords="280,5,435,46"/>
-<area shape="rect" id="node6" href="$classKdtree__d_1_1Node_1_1Plane.html#a426cd1ffc40a1f32160a64ce3ccc150b" title="Kdtree_d::Node::Plane\l::is_in" alt="" coords="280,130,435,171"/>
-<area shape="rect" id="node7" href="$namespaceCGAL.html#a3a117ec585c910d2afdb55a41702bffe" title="CGAL::compare" alt="" coords="483,137,599,164"/>
-</map>

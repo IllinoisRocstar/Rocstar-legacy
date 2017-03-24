@@ -1,7 +1,0 @@
-<map id="PopulateSurfaceWindow" name="PopulateSurfaceWindow">
-<area shape="rect" id="node2" href="$classGEM__DomainBoundary.html#af6567d72353feb4f64a815fdf8a4a405" title="GEM_DomainBoundary\l::PopulateSurfaceArrays" alt="" coords="223,5,387,46"/>
-<area shape="rect" id="node3" href="$classGEM__DomainBoundary.html#a97eb19c567165a237588c3fe67257f2f" title="GEM_DomainBoundary\l::Register_com_surfmesh" alt="" coords="219,70,391,111"/>
-<area shape="rect" id="node4" href="$roccom__c_09_09_8h.html#adca6827f3c065859156fa3562c2cd9a8" title="Associates an array with an attribute for a specific pane. " alt="" coords="440,52,555,79"/>
-<area shape="rect" id="node6" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="443,103,552,129"/>
-<area shape="rect" id="node5" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="603,77,731,104"/>
-</map>

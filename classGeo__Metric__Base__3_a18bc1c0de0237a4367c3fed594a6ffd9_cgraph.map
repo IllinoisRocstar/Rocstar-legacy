@@ -1,9 +1,0 @@
-<map id="compute_aspects" name="compute_aspects">
-<area shape="rect" id="node2" href="$geometry_8h.html#a957066e3826ec7e30a4ec5df60a7cf0a" title="Compute the edge length of a vector. " alt="" coords="294,23,386,49"/>
-<area shape="rect" id="node3" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="435,23,479,49"/>
-<area shape="rect" id="node4" href="$geometry_8h.html#af59662a6b46c35024e16e40c0f3bdbf4" title="Compute the volume of a tetrahedron given three edges from a point as vectors. " alt="" coords="181,149,243,176"/>
-<area shape="rect" id="node8" href="$geometry_8h.html#aa018e9f54fcc4a6edd94244baf18dda0" title="Compute the area of a triangle defined by its three sides as vectors. " alt="" coords="179,73,245,100"/>
-<area shape="rect" id="node5" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="301,124,379,151"/>
-<area shape="rect" id="node6" href="$geometry_8h.html#a0d90b497cf779e3fb734e026e3722419" title="Compute the cross Product of two vectors. " alt="" coords="309,175,371,201"/>
-<area shape="rect" id="node7" href="$geometry_8h.html#a3f884839e02fce28dc24f56b4f121900" title="Compute the dot Product of two vectors. " alt="" coords="315,225,365,252"/>
-</map>

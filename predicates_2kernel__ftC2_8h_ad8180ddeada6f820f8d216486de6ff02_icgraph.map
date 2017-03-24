@@ -1,9 +1,0 @@
-<map id="orientationC2" name="orientationC2">
-<area shape="rect" id="node2" href="$predicates_2kernel__ftC3_8h.html#a6a285d4a6098390abf93c0cd7d8f0577" title="coplanar_orientationC3" alt="" coords="163,5,317,32"/>
-<area shape="rect" id="node4" href="$predicates__on__pointsS2_8h.html#a3dd42eed2682f57f9d2b9e23db66ccda" title="leftturn" alt="" coords="209,56,271,83"/>
-<area shape="rect" id="node5" href="$predicates__on__pointsS2_8h.html#a628be4514965af35bd1826c297a544ee" title="orientation" alt="" coords="199,107,281,133"/>
-<area shape="rect" id="node6" href="$predicates__on__pointsS2_8h.html#abe68763ef81d2372f2f64808f9f520d1" title="rightturn" alt="" coords="205,157,275,184"/>
-<area shape="rect" id="node7" href="$predicates_2kernel__ftC2_8h.html#ad82251b99a252ff83ea334a0bf924c3d" title="side_of_bounded_circleC2" alt="" coords="153,208,327,235"/>
-<area shape="rect" id="node3" href="$predicates__on__pointsS3_8h.html#a9127ce3bd78a8d437b456e6988778656" title="coplanar_orientation" alt="" coords="387,5,525,32"/>
-<area shape="rect" id="node8" href="$predicates__on__pointsS2_8h.html#a46725625e2959aa2f47f03ea82d2dc8d" title="side_of_bounded_circle" alt="" coords="377,208,535,235"/>
-</map>
