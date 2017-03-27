@@ -1,0 +1,5 @@
+<map id="timesInvA" name="timesInvA">
+<area shape="rect" id="node2" href="$classMesquite_1_1DistanceFromTarget.html#a7189c3b4f0d361c88adf6e84b790053e" title="For a given element, compute each corner matrix A, and given a target corner matrix W..." alt="" coords="136,38,339,79"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1sI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="387,5,571,46"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1sRI__DFT.html#ad30387433d569311e80f5de50679902e" title="Evaluate the metric for an element. " alt="" coords="406,70,551,111"/>
+</map>

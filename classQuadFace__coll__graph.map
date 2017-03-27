@@ -1,0 +1,14 @@
+<map id="QuadFace" name="QuadFace">
+<area shape="rect" id="node2" href="$classFace.html" title="The Face class is an abstract base class that supplies implemented general methods, as well as a vew virtual interface methods to child classes. " alt="" coords="257,156,308,183"/>
+<area shape="rect" id="node4" href="$classElement.html" title="Element" alt="" coords="497,105,567,132"/>
+<area shape="rect" id="node6" href="$classMesh.html" title="Class Mesh is the main class that holds all information to describe the current state of the mesh..." alt="" coords="1231,72,1286,99"/>
+<area shape="rect" id="node3" href="$classNode.html" title="This class encapsulate a node over a window manifold. " alt="" coords="912,237,965,264"/>
+<area shape="rect" id="node24" href="$classVector__3.html" title="Some basic geometric data types. " alt="" coords="219,769,346,796"/>
+<area shape="rect" id="node7" href="$classPane__manifold__2.html" title="This class implements a data structure for 2&#45;manifold on each pane. " alt="" coords="1429,437,1552,464"/>
+<area shape="rect" id="node8" href="$classSimple__manifold__2.html" title="Provides a data structure accessing nodes, elements, and edges in a pane, in a manner similar to the ..." alt="" coords="1193,499,1325,525"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="487,535,577,561"/>
+<area shape="rect" id="node15" href="$classFacet__ID.html" title="The ID of a facet (edge in 2D and face in 3D) encodes an element ID and the local facet&#39;s ID internal..." alt="" coords="494,699,570,725"/>
+<area shape="rect" id="node17" href="$class__HDS__vector__halfedge.html" title="_HDS_vector_halfedge\l\&lt; V, H, F \&gt;" alt="" coords="453,426,611,467"/>
+<area shape="rect" id="node22" href="$classVector__3.html" title="Vector_3\&lt; Real \&gt;" alt="" coords="469,769,595,796"/>
+<area shape="rect" id="node25" href="$classMVec.html" title="MVec" alt="" coords="504,375,560,401"/>
+</map>

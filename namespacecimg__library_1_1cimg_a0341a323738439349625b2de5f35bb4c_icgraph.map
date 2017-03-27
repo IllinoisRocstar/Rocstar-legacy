@@ -1,0 +1,9 @@
+<map id="grand" name="grand">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#aaaf8df45b2e20d132a28cbdffef77c18" title="Draw a plasma random texture. " alt="" coords="117,57,277,98"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a0d684ffed0cafbfb2ac08af28a718c34" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="109,122,285,163"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#acaf16c667ccfe861ba7c565537f67a1a" title="Add random noise to the values of the instance image. " alt="" coords="355,231,487,273"/>
+<area shape="rect" id="node8" href="$namespacecimg__library_1_1cimg.html#a7f927973e2bc17b851bb61cdfbfef061" title="Return a random variable following a Poisson distribution of parameter z. " alt="" coords="170,239,225,265"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a95045af3dbd37ce54b03914a367d9a55" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="333,5,509,46"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg_1_1__marching2d__func__expr.html#a63538257e8d4ca79962c14f1bddbd418" title="cimg_library::CImg\l::_marching2d_func_expr\l::operator()" alt="" coords="337,71,505,127"/>
+<area shape="rect" id="node6" href="$structcimg__library_1_1CImg_1_1__marching3d__func__expr.html#a4839e5b7a8568395b7c8e6fb4d4cf957" title="cimg_library::CImg\l::_marching3d_func_expr\l::operator()" alt="" coords="337,151,505,207"/>
+</map>

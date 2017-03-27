@@ -1,0 +1,8 @@
+<map id="replaceNode" name="replaceNode">
+<area shape="rect" id="node2" href="$classQCoElement.html#ab23575966f713faa40dc0aeea1c414fb" title="QCoElement::replaceFaceNode" alt="" coords="150,5,357,32"/>
+<area shape="rect" id="node3" href="$classTCoElement.html#ab23575966f713faa40dc0aeea1c414fb" title="TCoElement::replaceFaceNode" alt="" coords="151,56,356,83"/>
+<area shape="rect" id="node4" href="$classElement.html#a2f274474f46c3b963a33d16617ce1826" title="Element::replaceNode" alt="" coords="178,107,329,133"/>
+<area shape="rect" id="node5" href="$classMesh.html#a614a4adf598595b7126cdaa822a9bade" title="Mesh::replaceNode" alt="" coords="406,107,541,133"/>
+<area shape="rect" id="node6" href="$classNode.html#aea0042ea84160d091512051ea23d8e41" title="Node::separate" alt="" coords="590,107,701,133"/>
+<area shape="rect" id="node7" href="$classMesh.html#a96f8003c64bff21d807cea52f48db2a7" title="The addCohesive method is the driver for the entire process of adding cohesive elements to the mesh..." alt="" coords="749,107,888,133"/>
+</map>

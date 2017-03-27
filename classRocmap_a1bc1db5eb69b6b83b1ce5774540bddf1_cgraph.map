@@ -1,0 +1,5 @@
+<map id="pane_border_nodes" name="pane_border_nodes">
+<area shape="rect" id="node2" href="$classPane__boundary.html#ab0b93fcbb7c9167f394b691a54e05af2" title="Determine the nodes at pane boundaries of a given mesh. " alt="" coords="190,27,367,69"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a701c22c997913a2773d36a0b47683716" title="COM_compatible_types" alt="" coords="424,5,587,32"/>
+<area shape="rect" id="node4" href="$classPane__boundary.html#a2e082b0e846c99a3ba6669dadbd85645" title="Determine the border nodes (excluding isolated nodes) " alt="" coords="417,57,594,98"/>
+</map>

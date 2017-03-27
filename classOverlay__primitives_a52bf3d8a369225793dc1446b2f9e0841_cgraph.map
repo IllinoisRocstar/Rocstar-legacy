@@ -1,0 +1,5 @@
+<map id="get_point" name="get_point">
+<area shape="rect" id="node2" href="$classHalfedge__overlay.html#aa126fd94949c810d24869ad04cd97e15" title="Halfedge_overlay::is\l_border" alt="" coords="128,5,269,46"/>
+<area shape="rect" id="node3" href="$classPoint__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Point_set::size_of\l_edges" alt="" coords="135,70,262,111"/>
+<area shape="rect" id="node4" href="$classVertex__set.html#a4f0691b7d5b758976824cfaba46572e5" title="Vertex_set::size_of\l_edges" alt="" coords="318,70,453,111"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="incident_elements" name="incident_elements">
+<area shape="rect" id="node2" href="$classSimple__manifold__2.html#ab192883c34a029fc51443dceb6b5a164" title="Determine the opposite halfedges of each halfedge, and identify border halfedge. " alt="" coords="182,5,381,46"/>
+<area shape="rect" id="node3" href="$classSimple__manifold__2.html#ad02b3f49c3fc55ea61095afaea1eefe1" title="Initialize the database for the pane, including ghost information, opposite halfedges, incident halfedges, and border halfedges. " alt="" coords="429,12,587,39"/>
+<area shape="rect" id="node4" href="$classSimple__manifold__2.html#a40c7966094160ec0043056b5b1b37ec8" title="Constructors. " alt="" coords="635,5,775,46"/>
+</map>

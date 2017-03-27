@@ -1,0 +1,20 @@
+<map id="compute_analytical_hessian" name="compute_analytical_hessian">
+<area shape="rect" id="node2" href="$classMesquite_1_1MsqHessian.html#a04439b6a7b0680fc5459427fda269c7f" title="Mesquite::MsqHessian\l::accumulate_entries" alt="" coords="206,70,362,111"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1QualityMetric.html#a9365f8cf70ee3ec40966ba950468bb50" title="For MetricType == ELEMENT_BASED. Calls either compute_element_numerical_hessian() or compute_element_..." alt="" coords="191,645,377,686"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1PatchData.html#a3e94692727e2bf9bc09fd1625788e21c" title="Returns a pointer to the start of the element array. " alt="" coords="442,5,587,46"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1ObjectiveFunction.html#aa530b53b6a4f1bc675af6017b5f35ed1" title="Returns negateFlag. " alt="" coords="190,187,378,229"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1ObjectiveFunction.html#a836e8d40b1fab46ac9a8658667d582a6" title="Mesquite::ObjectiveFunction\l::get_quality_metric" alt="" coords="190,253,378,294"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="211,318,357,359"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1MsqMeshEntity.html#ad71b653bcc409c99d990a688e45f25d6" title="Very efficient retrieval of vertices indexes (corresponding to the PatchData vertex array)..." alt="" coords="197,383,371,425"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1MsqVertex.html#a973f8b63ffd0d57ba859939e12634852" title="Returns true if vertex is ``free&#39;&#39;. " alt="" coords="211,449,357,490"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1PatchData.html#a3f7ed6a14a98f283aa700342b9cc2a01" title="number of elements in the Patch. " alt="" coords="211,514,357,555"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="211,579,357,621"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="427,135,602,177"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1MsqHessian.html#a64e203a5b36af51461b47ff1ee536043" title="Mesquite::MsqHessian\l::zero_out" alt="" coords="206,710,362,751"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1Matrix3D.html#ac45ad4bf3fa3bdafe7e67a5fd17db945" title=" " alt="" coords="437,70,593,111"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1MsqMeshEntity.html#a0b552656e1b264732e90715ccba32b1f" title="Return number of nodes in element (number of corner vertices + number of higher&#45;order nodes)..." alt="" coords="651,102,826,143"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="659,167,818,209"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1MsqMeshEntity.html#a0c714ede2b6a39abea6314bb07d28a81" title="gets the vertices of the mesh entity " alt="" coords="427,579,602,621"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1PatchData.html#ac7e854784f3106e9421332c48b7d9e94" title="Mesquite::PatchData\l::get_vertex_index" alt="" coords="442,645,587,686"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1Matrix3D.html#a0c4493a5d4723940d60164428f11adc3" title="Sets all entries to zero (more efficient than assignement). " alt="" coords="447,710,583,751"/>
+</map>

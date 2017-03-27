@@ -1,0 +1,4 @@
+<map id="get_angle_defect" name="get_angle_defect">
+<area shape="rect" id="node2" href="$group__fdp.html#ga8a472c4f56c78564bafa4a9610b706c7" title="Compute the angle defect of a vertex. " alt="" coords="177,5,330,46"/>
+<area shape="rect" id="node3" href="$group__ntc.html#gaa2576922e2451c82be9775526d133835" title="Dump out the 0&#45; and 1&#45;features in Tecplot format into files &lt;name&gt;f0.plt, &lt;name&gt;f1.plt, respectively. " alt="" coords="177,70,330,111"/>
+</map>

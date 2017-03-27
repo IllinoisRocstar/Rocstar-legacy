@@ -1,0 +1,8 @@
+<map id="TRAIL_FluRegisterVolSoln" name="TRAIL_FluRegisterVolSoln">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="455,5,593,32"/>
+<area shape="rect" id="node4" href="$roccom__c_09_09_8h.html#adca6827f3c065859156fa3562c2cd9a8" title="Associates an array with an attribute for a specific pane. " alt="" coords="467,107,581,133"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#a000a075fb1782d7eeaae75a7136e6411" title="Set sizes of for a specific attribute. " alt="" coords="255,161,364,188"/>
+<area shape="rect" id="node6" href="$classGEM__Partition.html#a997ab02f49cca056a710d4cdac1a83f7" title="GEM_Partition::Create\l_com_volsoln" alt="" coords="232,45,387,86"/>
+<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="661,81,789,108"/>
+<area shape="rect" id="node7" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="435,56,613,83"/>
+</map>

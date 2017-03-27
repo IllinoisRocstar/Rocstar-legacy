@@ -1,0 +1,5 @@
+<map id="GlobalDofReMapExchange" name="GlobalDofReMapExchange">
+<area shape="rect" id="node2" href="$classMesh_1_1Connectivity.html#a41299e7e87f3fea27cc28c5ea973c879" title="Mesh::Connectivity\l::Inverse" alt="" coords="235,38,370,79"/>
+<area shape="rect" id="node3" href="$classMesh_1_1Connectivity.html#a07c8a0d2aa0388b9eff23a632c27c68d" title="Mesh::Connectivity\l::Resize" alt="" coords="419,5,554,46"/>
+<area shape="rect" id="node4" href="$classMesh_1_1Connectivity.html#a93098eecf20d66124bd7bc8370ebe52e" title="Mesh::Connectivity\l::Sync" alt="" coords="419,70,554,111"/>
+</map>

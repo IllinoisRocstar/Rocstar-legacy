@@ -1,0 +1,7 @@
+<map id="glob_error" name="glob_error">
+<area shape="rect" id="node2" href="$classRocin.html#a047b46290d1e21123ec029fb4660de28" title="Create a series of Roccom windows by reading in a list of files. " alt="" coords="133,5,280,32"/>
+<area shape="rect" id="node3" href="$classRocin.html#ab7733b09674181678bd1f13dc45e6d31" title="Initialize the module by registering it to Roccom with the given module name. " alt="" coords="747,31,829,57"/>
+<area shape="rect" id="node5" href="$classRocin.html#a1dd937ec0c005ce85561ccfe548bc6d0" title="Create a single Roccom window by reading in a list of files. " alt="" coords="329,31,469,57"/>
+<area shape="rect" id="node4" href="$readsdv_8C.html#a1e1668934356b578ddd0a0cdaae423f1" title="Load the module Rocin into Roccom using the given module name. " alt="" coords="877,31,1013,57"/>
+<area shape="rect" id="node6" href="$classRocin.html#a1b089e18b401f74035c6574e3a95f95e" title="Create a single Roccom window by reading in the files specified by the given control file..." alt="" coords="518,81,698,108"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="min" name="min">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a8178955893867147b35b226e3f75077c" title="cimg_library::CImg\l\&lt; uintT \&gt;::_quicksort" alt="" coords="97,5,239,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a5171714f7d54415d5c65fc02caf86a3a" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_min" alt="" coords="102,70,234,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a25b3097b0dfce12d12b70862d83a89f5" title="Pointwise min operator between two images. " alt="" coords="102,135,234,177"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#acaf16c667ccfe861ba7c565537f67a1a" title="Add random noise to the values of the instance image. " alt="" coords="102,201,234,242"/>
+</map>

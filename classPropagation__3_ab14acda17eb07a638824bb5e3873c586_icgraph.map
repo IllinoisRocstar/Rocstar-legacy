@@ -1,0 +1,12 @@
+<map id="square" name="square">
+<area shape="rect" id="node2" href="$classPropagation__3.html#a2d9a9de292132d8d8a35947a570a2371" title="bound_radial_disp" alt="" coords="155,5,282,32"/>
+<area shape="rect" id="node4" href="$classPropagation__3.html#a3a5b6f45eccc2ce0bf44bb3d93dc9a7c" title="bound_spherical_disp" alt="" coords="145,56,292,83"/>
+<area shape="rect" id="node5" href="$classPropagation__3.html#a379a16835b439ff35e6b1c6f22965bbe" title="check_radial_bound" alt="" coords="150,107,287,133"/>
+<area shape="rect" id="node8" href="$classPropagation__3.html#ad30222460b27d9a96161d70c751d47b1" title="check_spherical_bound" alt="" coords="139,157,298,184"/>
+<area shape="rect" id="node9" href="$classFaceOffset__3.html#a4c9a63da5ed6e14b7a4b8fbf2c987a4e" title="FaceOffset_3::reset\l_default_parameters" alt="" coords="149,209,289,250"/>
+<area shape="rect" id="node11" href="$classFaceOffset__3.html#a783ef724c654090f68ae03d32fe18870" title="Set the threshold for weak&#45;feature angle. " alt="" coords="115,275,322,301"/>
+<area shape="rect" id="node3" href="$classPropagation__3.html#a21366e4654e8768c90e9e228694db8bc" title="bound_nodal_motion" alt="" coords="395,31,536,57"/>
+<area shape="rect" id="node6" href="$classPropagation__3.html#ae97499c2e70e126264a6be277ce98ccf" title="reached_nodal_bound" alt="" coords="391,132,539,159"/>
+<area shape="rect" id="node7" href="$classPropagation__3.html#a96878798f4dd364ff3147f80edf628da" title="bound_facial_speed" alt="" coords="609,132,746,159"/>
+<area shape="rect" id="node10" href="$classFaceOffset__3.html#af64e9c8803eddca33f3550137bc81a73" title="Construct an object from a window manifold and a buffer window. " alt="" coords="371,216,559,243"/>
+</map>

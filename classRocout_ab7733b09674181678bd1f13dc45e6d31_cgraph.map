@@ -1,0 +1,51 @@
+<map id="init" name="init">
+<area shape="rect" id="node2" href="$classRocout.html#a1c5203c5ca111c4b4177e04e216b1db3" title="Append a (possibly aggregate) attribute to a file. " alt="" coords="126,132,223,159"/>
+<area shape="rect" id="node29" href="$roccom__c_09_09_8h.html#ad7bf2c13f6aa69e81834215fd3e05203" title="Registering an attribute type. " alt="" coords="341,707,480,733"/>
+<area shape="rect" id="node30" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="343,436,478,463"/>
+<area shape="rect" id="node31" href="$roccom__c_09_09_8h.html#acc079440c65ed1f12ee3a148a01d9858" title="COM_set_member_function" alt="" coords="318,487,503,513"/>
+<area shape="rect" id="node32" href="$roccom__c_09_09_8h.html#a5e5321de4f0f8940ea99b25b0060afe3" title="COM_set_object" alt="" coords="115,537,235,564"/>
+<area shape="rect" id="node33" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="93,588,256,615"/>
+<area shape="rect" id="node34" href="$classHDF4.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="Create and start the I/O thread. " alt="" coords="133,740,216,767"/>
+<area shape="rect" id="node35" href="$classRocout.html#a763364901e2c959922428b15356b3351" title="Write a (possibly aggregate) attribute to a new file. " alt="" coords="127,183,222,209"/>
+<area shape="rect" id="node36" href="$classRocout.html#a6b02360a0612b0fe9dc2d5e9e402f005" title="Set options for Rocout via a control file. " alt="" coords="116,791,233,817"/>
+<area shape="rect" id="node40" href="$classRocout.html#ac83c6eda0a78d658ac8f12d3dde2b9b0" title="Set an option for Rocout, such as controlling the output format. " alt="" coords="369,875,452,901"/>
+<area shape="rect" id="node41" href="$classRocout.html#ad55f80ed3cd8b6c4f247763b747016af" title="Wait for the completion of an asychronous write operation. " alt="" coords="149,892,200,919"/>
+<area shape="rect" id="node42" href="$classRocout.html#a96dfaf0a6d6860d2c68466b2a993fa06" title="Write a (possibly aggregate) attribute to a file. " alt="" coords="123,233,227,260"/>
+<area shape="rect" id="node43" href="$classRocout.html#af161b7590c573735e6470735602b0e46" title="Write out the parameters defined in the fiven window into a parameter file. " alt="" coords="341,647,480,673"/>
+<area shape="rect" id="node47" href="$classRocout.html#ac677af3eb8dee075026bfb259b95b195" title="Generate a control file for Rocin. " alt="" coords="97,335,252,361"/>
+<area shape="rect" id="node3" href="$Handle_8h.html#a459850cd445841d238d0af12068f45a3" title="id" alt="" coords="391,132,430,159"/>
+<area shape="rect" id="node4" href="$classRocout.html#a69466e6a13557ca6ac500e678f5f66a8" title="Does the actual writing to file. " alt="" coords="348,183,473,209"/>
+<area shape="rect" id="node5" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="800,259,923,285"/>
+<area shape="rect" id="node7" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="603,5,712,32"/>
+<area shape="rect" id="node8" href="$classWindow.html#aa1c4659992db640d62cff1fea2b9c6b8" title="Obtain the communicator of the window. " alt="" coords="565,56,749,83"/>
+<area shape="rect" id="node9" href="$classWindow.html#aa49b8825d169c54c62b6cda74c8ac273" title="Inherit the attributes of another window with a different name. " alt="" coords="601,335,713,361"/>
+<area shape="rect" id="node20" href="$roccom__c_09_09_8h.html#a6e38c0b1f83c30b166b7500902e13be1" title="COM_get_panes" alt="" coords="597,385,717,412"/>
+<area shape="rect" id="node22" href="$classRocout.html#a98f239ba1d154d011c9d64c532e8223e" title="Builds a filename from the given prefix and rank. " alt="" coords="616,107,699,133"/>
+<area shape="rect" id="node25" href="$Rocout__hdf4_8h.html#a712cb5933225c744f19311889d8790d3" title="write_attr_HDF4" alt="" coords="598,157,717,184"/>
+<area shape="rect" id="node28" href="$Rocout_8h.html#a647b2836726bcf486a939550f0e87091" title="Write the data for the given attribute to file. " alt="" coords="596,208,719,235"/>
+<area shape="rect" id="node6" href="$classPane.html#a05d1abca9cbb0ec7bdc59f58dd81797c" title="Obtain a constant pointer to its owner window object. " alt="" coords="981,259,1085,285"/>
+<area shape="rect" id="node10" href="$classAttribute.html#a21e126a1a188012532afb158c6fbd562" title="Inherit from parent. If depth&gt;0, then the procedure is for the subcomponents. " alt="" coords="976,360,1091,387"/>
+<area shape="rect" id="node14" href="$classPane.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain the attribute from given name. " alt="" coords="980,461,1087,488"/>
+<area shape="rect" id="node17" href="$classAttribute.html#a2e7d4fe5a490266aed5667444935490f" title="Obtain a constant pointer to the physical address. " alt="" coords="974,512,1093,539"/>
+<area shape="rect" id="node18" href="$classPane.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Get the ID of the pane. " alt="" coords="826,309,897,336"/>
+<area shape="rect" id="node19" href="$classPane.html#a82d9b88af823382ccc86ead7520ac6d4" title="Inherit an attribute from another pane onto the current pane: " alt="" coords="814,411,909,437"/>
+<area shape="rect" id="node11" href="$classAttribute.html#af69420db7b9e1d806a3d45d5a91b3404" title="Allocate memory for the attribute. " alt="" coords="1142,309,1266,336"/>
+<area shape="rect" id="node12" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="1319,284,1401,311"/>
+<area shape="rect" id="node13" href="$classAttribute.html#a77f06f41441a97714ec0acf49c89b568" title="Root of use&#45;inheritance. " alt="" coords="1153,360,1255,387"/>
+<area shape="rect" id="node15" href="$classWindow.html#a0d3861fb59beaccbed7cd16a32c548f8" title="Obtain a pointer to the attribute metadata from its name. " alt="" coords="1142,461,1266,488"/>
+<area shape="rect" id="node16" href="$classAttribute.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Obtain the id (or index) of the attribute. " alt="" coords="1315,461,1405,488"/>
+<area shape="rect" id="node21" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="797,563,925,589"/>
+<area shape="rect" id="node23" href="$namespacecimg__library_1_1cimg.html#ae54f76e8c2bcff93277e9cae1906a3d6" title="Close a file, and check for possible errors. " alt="" coords="797,91,925,133"/>
+<area shape="rect" id="node24" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="797,26,925,67"/>
+<area shape="rect" id="node26" href="$Rocout__hdf4_8C.html#a70c9425e0b7e535d21713e1fd41324bb" title="io_pane" alt="" coords="828,208,895,235"/>
+<area shape="rect" id="node27" href="$classWindow.html#a3da5fa9e97b2f3321a948366f179ebd9" title="Find the pane with given ID. If not found, insert a pane with given ID. " alt="" coords="809,157,914,184"/>
+<area shape="rect" id="node37" href="$Rocout_8C.html#a4f41034bafb49b9810a2e53480a97ec9" title="Return true if the given string is the name of a Rocout option. " alt="" coords="601,857,714,884"/>
+<area shape="rect" id="node38" href="$Rocout_8C.html#a8ed0e45f99075ad3a0d94de39ed5dc12" title="Return true if the given Rocout option name/value pair is valid. " alt="" coords="601,908,713,935"/>
+<area shape="rect" id="node39" href="$Rocout_8C.html#a63a34f134b6080d28daf5c75420da894" title="is_whole" alt="" coords="825,908,898,935"/>
+<area shape="rect" id="node44" href="$roccom__c_09_09_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="570,639,745,665"/>
+<area shape="rect" id="node45" href="$namespacecimg__library_1_1cimg.html#ab9308a5128017dd92d3f602a19ca7611" title="cimg_library::cimg\l::option" alt="" coords="593,741,721,782"/>
+<area shape="rect" id="node46" href="$namespacecimg__library_1_1cimg.html#abc491a5ed3a8d97e395138a379767a45" title="Compute the basename of a filename. " alt="" coords="797,741,925,782"/>
+<area shape="rect" id="node48" href="$roccom__c_09_09_8h.html#a6ebf7d3be61b364094596342a1d64827" title="COM_get_default_communicator" alt="" coords="304,335,517,361"/>
+<area shape="rect" id="node49" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="341,233,480,260"/>
+<area shape="rect" id="node50" href="$vinci_8h.html#a9d685369a20ad2d6f5c2256b857614f6" title="empty" alt="" coords="381,284,440,311"/>
+</map>

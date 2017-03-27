@@ -1,0 +1,6 @@
+<map id="is_sameX" name="is_sameX">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a6387321660093e45a4339334f7f02ace" title="Return true if images (*this) and img have same width. " alt="" coords="139,5,280,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a1196976be93ae9d179bd9de3a5d997fe" title="Return true if image (*this) has the specified width and number of channels. " alt="" coords="134,70,285,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#af202a5fce446abc81966aa0df075075c" title="Return true if image (*this) has the specified width and height. " alt="" coords="134,135,285,177"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a3d19709f9f46ca0ab06a5942f91b8ee4" title="Return true if image (*this) has the specified width and depth. " alt="" coords="135,201,284,242"/>
+</map>

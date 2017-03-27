@@ -1,0 +1,5 @@
+<map id="load_cimg" name="load_cimg">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImgList.html#a5d903f8df0741cf00e6c9e2f1dc8d835" title="cimg_library::CImgList\l\&lt; uintT \&gt;::get_load_cimg" alt="" coords="137,5,303,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImgList.html#a8ee71f92f35cc9e24d9d3a09456be2ae" title="Load an image list from a file. " alt="" coords="143,70,297,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#acdae64c0c93793df8b0a0b28a34d9694" title="Load an image (list) from a .cimg file. " alt="" coords="149,135,291,177"/>
+</map>

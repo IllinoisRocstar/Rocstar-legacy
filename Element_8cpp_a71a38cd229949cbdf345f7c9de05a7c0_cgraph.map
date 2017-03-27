@@ -1,0 +1,6 @@
+<map id="operator&gt;&gt;" name="operator&gt;&gt;">
+<area shape="rect" id="node2" href="$classNode.html#aae187d4fa6d52e572c0a39520558b856" title="Node::addElement" alt="" coords="165,5,296,32"/>
+<area shape="rect" id="node3" href="$classMesh.html#aa827ec2132968149a430bfc53c1f1cb8" title="The following get methods return a node, face or element. " alt="" coords="175,56,286,83"/>
+<area shape="rect" id="node4" href="$classElement.html#a6c707b13ee25c7a3c73965cb4bdeee75" title="Element::getNumNodes" alt="" coords="149,107,312,133"/>
+<area shape="rect" id="node5" href="$classElement.html#aee2664462d5735c6d2b51917f4a5b88c" title="Element::setFromMyNodes" alt="" coords="139,157,322,184"/>
+</map>

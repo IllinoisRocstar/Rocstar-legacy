@@ -1,0 +1,5 @@
+<map id="ConjugateGradient" name="ConjugateGradient">
+<area shape="rect" id="node2" href="$classMesquite_1_1VertexMover.html" title="VertexMover" alt="" coords="23,155,119,181"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityImprover.html" title="Base class for all quality improvers. Mote that the PatchData settings are inherited from the PathDat..." alt="" coords="13,80,128,107"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1PatchDataUser.html" title="This should be the parent class of all algorithms retrieving information from a MeshSet object..." alt="" coords="15,5,127,32"/>
+</map>

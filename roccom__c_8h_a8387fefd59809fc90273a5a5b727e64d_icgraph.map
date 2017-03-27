@@ -1,0 +1,9 @@
+<map id="COM_delete_pane" name="COM_delete_pane">
+<area shape="rect" id="node2" href="$rfctest_8C.html#a61aedb2ed2b960eb62f1ea07936ec18d" title="read_file" alt="" coords="250,5,321,32"/>
+<area shape="rect" id="node3" href="$TRAIL_8C.html#af7e2e6685485d21fdc2604671c65e028" title="TRAIL_File2Window" alt="" coords="214,56,357,83"/>
+<area shape="rect" id="node8" href="$classRFC__Window__base.html#ada7ac76a1aaceb37b222f9f4e70fb6e1" title="Write out panes in native binary format or using Rocout. " alt="" coords="184,107,387,133"/>
+<area shape="rect" id="node4" href="$TRAIL_8C.html#a62332aa5a04e044e28bc8e254698748b" title="TRAIL_AutoSurfer" alt="" coords="467,31,597,57"/>
+<area shape="rect" id="node7" href="$TRAIL_8C.html#ae47528d0a66d44e7697c23c8f2c84038" title="TRAIL_TransferSurfDataFILE" alt="" coords="435,81,629,108"/>
+<area shape="rect" id="node5" href="$RemeshFunctions_8C.html#a50b033348949d4726aa221a856563257" title="TRAIL_RemeshAutoSurfer" alt="" coords="677,56,856,83"/>
+<area shape="rect" id="node6" href="$RemeshFunctions_8C.html#ae9febf522548933be7a2ae75c5dc1a62" title="TRAIL_RemeshWrite" alt="" coords="904,56,1051,83"/>
+</map>

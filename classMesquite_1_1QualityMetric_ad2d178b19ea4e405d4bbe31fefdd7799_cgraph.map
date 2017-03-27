@@ -1,0 +1,4 @@
+<map id="compute_vertex_gradient" name="compute_vertex_gradient">
+<area shape="rect" id="node2" href="$classMesquite_1_1QualityMetric.html#a74b861a5c3e6804e9d404f39e7ca473c" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="222,5,399,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#a8b658b93e4b1decedfe135490d4572d7" title="compute_vertex_numerical\l_gradient" alt="" coords="221,70,400,111"/>
+</map>

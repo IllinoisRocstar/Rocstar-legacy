@@ -1,0 +1,6 @@
+<map id="BuildBorderStiffness" name="BuildBorderStiffness">
+<area shape="rect" id="node2" href="$classMesh_1_1Connectivity.html#a41299e7e87f3fea27cc28c5ea973c879" title="Mesh::Connectivity\l::Inverse" alt="" coords="195,38,330,79"/>
+<area shape="rect" id="node5" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="235,104,290,131"/>
+<area shape="rect" id="node3" href="$classMesh_1_1Connectivity.html#a07c8a0d2aa0388b9eff23a632c27c68d" title="Mesh::Connectivity\l::Resize" alt="" coords="379,5,514,46"/>
+<area shape="rect" id="node4" href="$classMesh_1_1Connectivity.html#a93098eecf20d66124bd7bc8370ebe52e" title="Mesh::Connectivity\l::Sync" alt="" coords="379,70,514,111"/>
+</map>

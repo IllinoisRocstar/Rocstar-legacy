@@ -1,0 +1,5 @@
+<map id="blur" name="blur">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a0da5be77c4b3829690661df2561b6c12" title="Return a blurred version of the image, using a Canny&#45;Deriche filter. " alt="" coords="111,5,243,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a9211d99716b9ac5c33db2486f27c0bcd" title="Get a diffusion tensor for edge&#45;preserving anisotropic smoothing of an image. " alt="" coords="97,70,258,111"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a0ceb6caab72b2f7bd94697007d4f4aaf" title="cimg_library::CImg\l\&lt; uintT \&gt;::get_blur" alt="" coords="111,135,243,177"/>
+</map>

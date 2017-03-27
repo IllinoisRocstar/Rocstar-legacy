@@ -1,0 +1,6 @@
+<map id="reset_inner" name="reset_inner">
+<area shape="rect" id="node2" href="$classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Improves the quality of the MeshSet, calling some methods specified in a class derived from VertexMov..." alt="" coords="277,5,435,46"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1TerminationCriterion.html#abb595efb30088610673b262261ada67c" title="Clear any data accumulated during an outer iteration. " alt="" coords="142,37,229,64"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1ShapeImprovementWrapper.html#a52b954daacf72db4a8b0b8811e81bbb0" title="run_instructions runs the wrapper on the given MeshSet. " alt="" coords="483,5,679,46"/>
+<area shape="rect" id="node4" href="$classRocmop.html#a2dbb41ea0da20e141ec61d8d4a726ddf" title="Smooth the panes of the working window using MESQUITE. " alt="" coords="729,12,911,39"/>
+</map>

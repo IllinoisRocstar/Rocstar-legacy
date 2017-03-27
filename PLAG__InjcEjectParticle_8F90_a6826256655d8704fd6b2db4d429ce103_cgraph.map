@@ -1,0 +1,38 @@
+<map id="plag_injcejectparticle" name="plag_injcejectparticle">
+<area shape="rect" id="node2" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="631,816,815,843"/>
+<area shape="rect" id="node3" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="887,1069,1019,1096"/>
+<area shape="rect" id="node6" href="$PLAG__InjcMakeParticle_8F90.html#a65db7f22f5d4db6cb466c3a283daf1e2" title="plag_injcmakeparticle" alt="" coords="199,461,345,488"/>
+<area shape="rect" id="node23" href="$PLAG__InjcSetInjection_8F90.html#af2f86ae6bfd4c57ab6f53dc7016eb13f" title="plag_injcsetinjection" alt="" coords="419,664,557,691"/>
+<area shape="rect" id="node24" href="$PLAG__InjcEjectParticle_8F90.html#a0443abad7eae6614ad0b36895425bde4" title="plag_rflo_ejectparticle" alt="" coords="198,1348,346,1375"/>
+<area shape="rect" id="node7" href="$classmodrandom.html#a0d74c4ff926c6399d32992719ae34bba" title="modrandom::rand1uniform" alt="" coords="1345,411,1519,437"/>
+<area shape="rect" id="node20" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="637,1019,808,1045"/>
+<area shape="rect" id="node30" href="$RFLO__GetDimensions_8F90.html#a05181a2410be15ef34493a9b3a5a0638" title="rflo_getcelloffset" alt="" coords="213,1019,331,1045"/>
+<area shape="rect" id="node33" href="$RFLO__GetDimensions_8F90.html#a574ff4a131bdb63eac55b68f6ccb3e85" title="rflo_getnodeoffset" alt="" coords="209,1069,335,1096"/>
+<area shape="rect" id="node35" href="$RFLO__GetPatchDimens_8F90.html#a318ab6a72ca2e23e9d7500d785c0b95e" title="rflo_getpatchdirection" alt="" coords="199,1576,345,1603"/>
+<area shape="rect" id="node36" href="$RFLO__GetPatchDimens_8F90.html#a0ec3e4e7927962711817fb87f1f8db27" title="rflo_getpatchindices" alt="" coords="203,943,341,969"/>
+<area shape="rect" id="node15" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="1410,993,1454,1020"/>
+<area shape="rect" id="node29" href="$structcimg__library_1_1CImg.html#a77d222b4837c78aad604f3f0b5f1409c" title="Return the sum of all the pixel values in an image. " alt="" coords="640,1475,805,1501"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="1115,1030,1263,1071"/>
+<area shape="rect" id="node5" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="1109,1095,1270,1137"/>
+<area shape="rect" id="node11" href="$classmodrandom.html#a2198b654319b8cc723ed55b631bb8ad4" title="modrandom::rand1lognormal" alt="" coords="629,296,816,323"/>
+<area shape="rect" id="node16" href="$classmodrandom.html#a339ba1babd8bab0bfdec097342a55065" title="modrandom::rand1imposedpdf" alt="" coords="1091,107,1288,133"/>
+<area shape="rect" id="node21" href="$classColor.html#af94d15b3f5e32b9137fc219dcb16bd53" title="Color::alpha" alt="" coords="677,461,769,488"/>
+<area shape="rect" id="node22" href="$PLAG__InjcMakeParticle_8F90.html#ac5f4482543b688b091716054ecb55013" title="plag_rand1logskewed" alt="" coords="415,411,561,437"/>
+<area shape="rect" id="node8" href="$classmodrandom.html#afa132b1a48f5cfaf1db2794be4ec54e9" title="modrandom::randuniform" alt="" coords="1577,360,1743,387"/>
+<area shape="rect" id="node9" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="1836,208,1911,235"/>
+<area shape="rect" id="node10" href="$classAff__transformation__2.html#a365f1affce6586f551082723758c0fcc" title="Aff_transformation_2::m" alt="" coords="1792,360,1955,387"/>
+<area shape="rect" id="node12" href="$classmodrandom.html#ac3ca8a8c3076d91914f0cfba85df5c8c" title="modrandom::randlognormal" alt="" coords="864,259,1043,285"/>
+<area shape="rect" id="node13" href="$classmodrandom.html#aa58c31497742823134b7ce7d98dd2eec" title="modrandom::randnormal" alt="" coords="1108,259,1271,285"/>
+<area shape="rect" id="node14" href="$classColor.html#a2cd31514360f55547e6cb3e94dfe6ad5" title="Color::r" alt="" coords="1399,259,1465,285"/>
+<area shape="rect" id="node17" href="$classmodrandom.html#acd2e9c0cab6465259afbc97217e01747" title="modrandom::randimposedpdf" alt="" coords="1337,107,1527,133"/>
+<area shape="rect" id="node18" href="$ModRandom_8F90.html#a729de0912da75fe9218301ba01cb5209" title="findpdf" alt="" coords="1629,5,1691,32"/>
+<area shape="rect" id="node19" href="$compute__curvature_8C.html#a2cccb6517bc61ed2eee5b2ac38772dce" title="sign" alt="" coords="1850,5,1897,32"/>
+<area shape="rect" id="node25" href="$PLAG__InjcEjectParticle_8F90.html#a487451624fb9f4dcb3b50ab799d6c8c9" title="plag_injcsetpositions" alt="" coords="417,1373,559,1400"/>
+<area shape="rect" id="node28" href="$PLAG__InjcEjectParticle_8F90.html#a7df6b9983e20f2bc9761ec10afaacd38" title="plag_injctestcell" alt="" coords="431,1424,545,1451"/>
+<area shape="rect" id="node26" href="$utilities_2rc__cmp_2util_8cpp.html#a0d9256a364d8efaad23e52d4042654e0" title="dot_product" alt="" coords="677,1424,768,1451"/>
+<area shape="rect" id="node27" href="$utilities_2rc__cmp_2util_8cpp.html#a7198ddaeac1d22c06c4daf75de4ceaef" title="nan" alt="" coords="932,1424,975,1451"/>
+<area shape="rect" id="node31" href="$RFLO__GetDimensions_8F90.html#ac02260aae73117efbd721b072247e542" title="rflo_getdimensdummy" alt="" coords="413,1120,563,1147"/>
+<area shape="rect" id="node32" href="$structCOM__exception.html#a7fc97963662ee96e7c885e9213fec030" title="COM_exception::msg" alt="" coords="648,1120,797,1147"/>
+<area shape="rect" id="node34" href="$RFLO__GetDimensions_8F90.html#af3840de18437855e47c7fcc0dd2db9b5" title="rflo_getdimensdummynodes" alt="" coords="395,1171,581,1197"/>
+<area shape="rect" id="node37" href="$RFLO__GetDimensions_8F90.html#aba5d7dd0b2f2e1086a6fc3293a20c8f1" title="rflo_getdimensphys" alt="" coords="421,917,555,944"/>
+</map>

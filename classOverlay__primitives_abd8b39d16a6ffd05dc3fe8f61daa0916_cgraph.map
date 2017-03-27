@@ -1,0 +1,10 @@
+<map id="snap_blue_ridge_edge" name="snap_blue_ridge_edge">
+<area shape="rect" id="node2" href="$classHDS__accessor.html#a7454a9634b77e8853af6aac3167dea77" title="HDS_accessor::get_destination" alt="" coords="206,5,413,32"/>
+<area shape="rect" id="node3" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="213,56,406,83"/>
+<area shape="rect" id="node4" href="$classHDS__accessor.html#a591425c5ea18f4820a812d753f3d6006" title="HDS_accessor::get_origin" alt="" coords="222,107,397,133"/>
+<area shape="rect" id="node5" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="223,157,395,184"/>
+<area shape="rect" id="node6" href="$classHDS__accessor.html#a42d9f6a4b4d4209023f0db986e7d1cd3" title="HDS_accessor::is_border" alt="" coords="223,208,395,235"/>
+<area shape="rect" id="node7" href="$classRFC__Pane__overlay.html#afb9dc54668d25e24492e3c0cab222096" title="RFC_Pane_overlay::is\l_feature_1" alt="" coords="232,259,387,301"/>
+<area shape="rect" id="node9" href="$classHDS__accessor.html#a354e718ee1dd5a8669700be693afc762" title="HDS_accessor::is_on\l_feature" alt="" coords="234,325,385,366"/>
+<area shape="rect" id="node8" href="$classRFC__Pane__overlay.html#a8ec09b1da2ce631bfbca1670669cc963" title="RFC_Pane_overlay::get\l_index" alt="" coords="461,259,624,301"/>
+</map>

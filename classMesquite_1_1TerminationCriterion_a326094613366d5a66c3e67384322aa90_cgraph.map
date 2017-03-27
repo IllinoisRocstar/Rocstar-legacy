@@ -1,0 +1,34 @@
+<map id="accumulate_outer" name="accumulate_outer">
+<area shape="rect" id="node2" href="$classMesquite_1_1TerminationCriterion.html#afd2c12358711995a576f8c8a9200c94a" title="Accumulate data during inner iteration. " alt="" coords="223,805,347,832"/>
+<area shape="rect" id="node31" href="$classMesquite_1_1MeshSet.html#a07f501549939bc946dd771de5f06b2a3" title="Gets the next PatchData. " alt="" coords="214,1002,357,1043"/>
+<area shape="rect" id="node33" href="$classMesquite_1_1PatchDataParameters.html#a247c2678640754cdb0bd45ab6f777cd9" title="Tells the MeshSet what kind of data the patches should include. " alt="" coords="179,1067,391,1109"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1ObjectiveFunction.html#a91076d1dd1a59a6f3c00c46d9c16ad45" title="Calls either compute_numerical_gradient or compute_analytical_gradient depending on the value of grad..." alt="" coords="441,726,629,767"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1ObjectiveFunction.html#aa4022056de427aeed2972f46957a8cb9" title="Mesquite::ObjectiveFunction\l::evaluate" alt="" coords="1403,346,1591,387"/>
+<area shape="rect" id="node27" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="1662,905,1807,946"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1ObjectiveFunction.html#a96fd4fab3da95f31341ab275bbed6c25" title="Mesquite::ObjectiveFunction\l::compute_analytical_gradient" alt="" coords="677,726,872,767"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1ObjectiveFunction.html#a4a7414cc796e109918b7d9ee31d27e0d" title="Non&#45;virtual function which numerically computes the gradient of the Objective Function. Function returns &#39;false&#39; if the patch is not within a required feasible regeion. Otherwise, it returns &#39;true&#39;. " alt="" coords="921,663,1117,705"/>
+<area shape="rect" id="node30" href="$classMesquite_1_1ObjectiveFunction.html#aade5b9a631e31103631f47d265fbb399" title="Set gradType to either NUMERICAL_GRADIENT or ANALYTICAL_GRADIENT. " alt="" coords="925,729,1113,770"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1ObjectiveFunction.html#ad3eeed0b0c55973430c6ca89387692c2" title="Returns eps used in the numerical gradient calculation. " alt="" coords="1166,507,1354,549"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1PatchData.html#aeaf52b1d7f533102a7f43a6860fbf072" title="Fills a PatchData with the elements attached to a center vertex. " alt="" coords="1187,697,1333,738"/>
+<area shape="rect" id="node29" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="1187,631,1333,673"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1ObjectiveFunction.html#a0f076c7d1b01e9357370c3c7116eaeb2" title="Mesquite::ObjectiveFunction\l::concrete_evaluate" alt="" coords="1641,5,1829,46"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1MsqMeshEntity.html#a06bdcd1ba605937676eadd289f3ecdf1" title="Returns element type. " alt="" coords="1410,821,1585,862"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1PatchData.html#a4367259cd09575525ccb70d68a6cb1c4" title="Mesquite::PatchData\l::get_vertex_element\l_adjacencies" alt="" coords="1425,412,1570,468"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1MsqMeshEntity.html#a95f3007f7221bdc89536dd3a7127084b" title="Mesquite::MsqMeshEntity\l::get_vertex_index" alt="" coords="1410,755,1585,797"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1PatchData.html#acc3b55f634ba18a094dbf3869e046fa9" title="Call after filling vertex handle and connectivity arrays to finish initializing the PatchData..." alt="" coords="1425,493,1570,534"/>
+<area shape="rect" id="node22" href="$classMesquite_1_1MsqMeshEntity.html#a0b552656e1b264732e90715ccba32b1f" title="Return number of nodes in element (number of corner vertices + number of higher&#45;order nodes)..." alt="" coords="1891,693,2066,734"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1PatchDataMem.html#a5d264785c6b1332458969367996bdf92" title="Mesquite::PatchDataMem\l::resize" alt="" coords="1891,427,2066,469"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1PatchDataMem.html#ac6e61de369e994009e36f344f99c15ad" title="Mesquite::PatchDataMem\l::empty" alt="" coords="1891,38,2066,79"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1PatchData.html#ac289a4bb6ad171017babaa1d98ed0c0c" title="Mesquite::PatchData\l::generate_vertex_to\l_element_data" alt="" coords="1662,121,1807,177"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1PatchDataMem.html#af5afe4022b20578032b8c24b352d6e8b" title="Mesquite::PatchDataMem\l::begin" alt="" coords="1891,155,2066,197"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1PatchDataMem.html#a9a82678493835431e099c71066bda062" title="Mesquite::PatchDataMem::end" alt="" coords="1877,104,2080,131"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1PatchData.html#a7619ea708c552f119c4c1b9f35af8522" title="Get number of nodes (vertex + higher&#45;order nodes) " alt="" coords="1906,221,2051,262"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1PatchDataMem.html#aac782da1f912bceb5d8ad00c8dc892ac" title="Mesquite::PatchDataMem\l::size" alt="" coords="1891,311,2066,353"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="1647,755,1822,797"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="1899,758,2058,799"/>
+<area shape="rect" id="node24" href="$classMesquite_1_1PatchDataMem.html#ac8bb3912a3ce86b15842e79d0b421204" title="Mesquite::PatchDataMem\l::clear" alt="" coords="1647,253,1822,294"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1PatchData.html#a0b4af11453e4d4bf9863e928c6d6b95a" title="Mesquite::PatchData\l::clear_tag_data" alt="" coords="1662,318,1807,359"/>
+<area shape="rect" id="node26" href="$classMesquite_1_1MsqMeshEntity.html#ad71b653bcc409c99d990a688e45f25d6" title="Very efficient retrieval of vertices indexes (corresponding to the PatchData vertex array)..." alt="" coords="1647,486,1822,527"/>
+<area shape="rect" id="node28" href="$buildface_8cpp.html#a34cd8fd4d99fbdd4ef97fcc94070b460" title="swap" alt="" coords="1708,552,1761,579"/>
+<area shape="rect" id="node32" href="$classMesquite_1_1PatchDataUser.html#a8d971b50e78fc6139f03726bbba3008d" title="Returns the PatchDataParameters object. " alt="" coords="448,1039,621,1081"/>
+</map>

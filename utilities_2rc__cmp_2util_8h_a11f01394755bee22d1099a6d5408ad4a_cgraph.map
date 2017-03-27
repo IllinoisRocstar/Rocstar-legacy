@@ -1,0 +1,9 @@
+<map id="pnt_in_tri" name="pnt_in_tri">
+<area shape="rect" id="node2" href="$utilities_2rc__cmp_2util_8cpp.html#a59241d9374fff26f1e0c502fbf383b10" title="side_check" alt="" coords="128,101,216,128"/>
+<area shape="rect" id="node3" href="$CGAL_2include_2CGAL_2SimpleCartesian_2VectorS3_8h.html#a33b6e8ff0e1597a6fa10d0be4d2bdeea" title="cross_product" alt="" coords="264,69,368,96"/>
+<area shape="rect" id="node7" href="$utilities_2rc__cmp_2util_8cpp.html#a0d9256a364d8efaad23e52d4042654e0" title="dot_product" alt="" coords="271,132,361,159"/>
+<area shape="rect" id="node4" href="$classVectorS3.html#ae367a52fcb29c7638852621653fdb407" title="VectorS3::y" alt="" coords="416,5,507,32"/>
+<area shape="rect" id="node5" href="$classVectorS3.html#a585581369640d7edc6c5a40277fba5d7" title="VectorS3::z" alt="" coords="416,56,507,83"/>
+<area shape="rect" id="node6" href="$classVectorS3.html#a242e8b7096a678fdbb08e337420acb84" title="VectorS3::x" alt="" coords="416,107,507,133"/>
+<area shape="rect" id="node8" href="$utilities_2rc__cmp_2util_8cpp.html#a7198ddaeac1d22c06c4daf75de4ceaef" title="nan" alt="" coords="440,157,483,184"/>
+</map>

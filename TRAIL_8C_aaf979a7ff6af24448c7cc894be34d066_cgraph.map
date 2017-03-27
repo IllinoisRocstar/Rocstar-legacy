@@ -1,0 +1,5 @@
+<map id="TRAIL_Get_Block_Structured_Neighbors" name="TRAIL_Get_Block_Structured_Neighbors">
+<area shape="rect" id="node2" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="446,5,493,32"/>
+<area shape="rect" id="node3" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="448,60,491,87"/>
+<area shape="rect" id="node4" href="$TRAIL_8C.html#a34d87f709e6b94cb9a46a4259b2a6631" title="Given an array of ranges: search_extent[nd][2] and one array of array of ranges: partition_extent[num..." alt="" coords="249,25,397,66"/>
+</map>

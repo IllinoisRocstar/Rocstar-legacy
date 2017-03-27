@@ -1,0 +1,5 @@
+<map id="attributes" name="attributes">
+<area shape="rect" id="node2" href="$classPane.html#a4d18e272967ed99a266283d1c173a26a" title="Obtain all the attributes of the pane. " alt="" coords="131,35,245,61"/>
+<area shape="rect" id="node3" href="$classAttribute.html#afaa016f7aa87969def6903a4a7e8490f" title="Obtain a constant pointer to the owner pane of the attribute. " alt="" coords="301,5,408,32"/>
+<area shape="rect" id="node4" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="294,57,415,98"/>
+</map>

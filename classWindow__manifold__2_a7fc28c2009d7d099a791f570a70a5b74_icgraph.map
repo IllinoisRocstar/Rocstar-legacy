@@ -1,0 +1,11 @@
+<map id="size_of_nodes" name="size_of_nodes">
+<area shape="rect" id="node2" href="$classWindow__manifold__2.html#a5f8c567b00651d857cd423f4e66c183a" title="assign_global_nodeIDs" alt="" coords="160,81,317,108"/>
+<area shape="rect" id="node3" href="$classWindow__manifold__2.html#a820303825a3597407f6b5ba4a922d1f7" title="Create a serial window (with single pane) from the current window. " alt="" coords="366,107,487,133"/>
+<area shape="rect" id="node4" href="$classRocsurf.html#a4425eeff98e6b22e12140ea76f6023df" title="Serialize the mesh of a given window. " alt="" coords="536,107,699,133"/>
+<area shape="rect" id="node5" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="747,107,847,133"/>
+<area shape="rect" id="node6" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="923,5,1071,32"/>
+<area shape="rect" id="node7" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="926,56,1069,83"/>
+<area shape="rect" id="node8" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="899,107,1095,133"/>
+<area shape="rect" id="node9" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="923,157,1072,184"/>
+<area shape="rect" id="node10" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="896,208,1099,235"/>
+</map>

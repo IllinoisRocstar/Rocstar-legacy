@@ -1,0 +1,14 @@
+<map id="erase" name="erase">
+<area shape="rect" id="node2" href="$classIn__place__list__n.html#ad5edc9a20c00c95f7d4ba398c5fca68f" title="assign" alt="" coords="138,5,198,32"/>
+<area shape="rect" id="node3" href="$classIn__place__list__n.html#ac8bb3912a3ce86b15842e79d0b421204" title="clear" alt="" coords="143,56,193,83"/>
+<area shape="rect" id="node4" href="$classIn__place__list__n.html#a2342a32d16536df9b1ad7a1f8d85a2e6" title="erase" alt="" coords="141,107,195,133"/>
+<area shape="rect" id="node5" href="$classIn__place__list__n.html#a058bda4957df6a97b1ea6c9fd783f672" title="pop_back" alt="" coords="129,208,207,235"/>
+<area shape="rect" id="node11" href="$classIn__place__list__n.html#a56f4ffbc6fd414b3c02a6c368e99594f" title="pop_front" alt="" coords="130,157,206,184"/>
+<area shape="rect" id="node12" href="$classIn__place__list__n.html#aad6706c6c0af26bf82479d1e1aa41331" title="resize" alt="" coords="139,259,197,285"/>
+<area shape="rect" id="node13" href="$classIn__place__list__n.html#a8b7b80f1fb4be803301be2f4e8cdd37b" title="~In_place_list_n" alt="" coords="109,309,227,336"/>
+<area shape="rect" id="node6" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="Overlay::insert_node\l_in_blue_edge" alt="" coords="275,201,418,242"/>
+<area shape="rect" id="node7" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="493,142,619,183"/>
+<area shape="rect" id="node9" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="467,208,645,235"/>
+<area shape="rect" id="node10" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="483,259,629,301"/>
+<area shape="rect" id="node8" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="693,179,811,205"/>
+</map>

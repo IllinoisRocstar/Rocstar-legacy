@@ -1,0 +1,11 @@
+<map id="IdealWeightInverseMeanRatio" name="IdealWeightInverseMeanRatio">
+<area shape="rect" id="node2" href="$classMesquite_1_1QualityMetric.html#a3dd851786f1d533b752643c3193b2bba" title="Sets the evaluation mode for the ELEMENT_BASED metrics. " alt="" coords="251,5,458,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1QualityMetric.html#aade5b9a631e31103631f47d265fbb399" title="Sets gradType for this metric. " alt="" coords="275,70,435,111"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1QualityMetric.html#a4e962aa4592a88a626316efb2d4d1d65" title="Sets hessianType for this metric. " alt="" coords="275,135,435,177"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1IdealWeightInverseMeanRatio.html#a79bf99facc09bf4b62e2304b20475388" title="Sets the power value in the metric computation. " alt="" coords="292,201,417,228"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1QualityMetric.html#a892f2de77eacaf9d1e51cf2b29ee2d57" title="This function should be used in the constructor of every concrete quality metric. ..." alt="" coords="275,253,435,294"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1QualityMetric.html#ab6c509dee736029280d9360d19a7919d" title="Sets the name of this metric. " alt="" coords="275,318,435,359"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1QualityMetric.html#a3a6d316bcee1e7712001aa9f7e2b92aa" title="Mesquite::QualityMetric\l::set_negate_flag" alt="" coords="507,165,667,206"/>
+<area shape="rect" id="node7" href="$namespaceMesquite.html#a158e89125c01402924b46cd1cefa5240" title="Mesquite::pow" alt="" coords="533,231,640,257"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1Exponent.html#a665516b85c2af1c1e62945896e9178b2" title="Mesquite::Exponent\l::raise" alt="" coords="715,223,853,265"/>
+</map>

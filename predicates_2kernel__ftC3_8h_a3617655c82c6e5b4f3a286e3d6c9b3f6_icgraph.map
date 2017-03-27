@@ -1,0 +1,6 @@
+<map id="orientationC3" name="orientationC3">
+<area shape="rect" id="node2" href="$predicates__on__pointsS3_8h.html#a87041305cd5b162b6c0a1830bf8f31da" title="orientation" alt="" coords="203,5,285,32"/>
+<area shape="rect" id="node3" href="$predicates_2kernel__ftC3_8h.html#a4fa0959bd3681a74c4b1a00f7e93c466" title="side_of_bounded_sphereC3" alt="" coords="153,56,335,83"/>
+<area shape="rect" id="node4" href="$predicates__on__pointsS3_8h.html#a186f4668be3a27c76c0cd92a12e648cb" title="side_of_bounded_sphere" alt="" coords="385,56,551,83"/>
+<area shape="rect" id="node5" href="$classCGALi_1_1Side__of__bounded__sphere.html#ac628e42116de57529c3d54355bdb5716" title="CGALi::Side_of_bounded\l_sphere::operator()" alt="" coords="601,49,770,90"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="side_check" name="side_check">
+<area shape="rect" id="node2" href="$CGAL_2include_2CGAL_2SimpleCartesian_2VectorS3_8h.html#a33b6e8ff0e1597a6fa10d0be4d2bdeea" title="cross_product" alt="" coords="141,69,245,96"/>
+<area shape="rect" id="node6" href="$utilities_2rc__cmp_2util_8cpp.html#a0d9256a364d8efaad23e52d4042654e0" title="dot_product" alt="" coords="148,132,239,159"/>
+<area shape="rect" id="node3" href="$classVectorS3.html#ae367a52fcb29c7638852621653fdb407" title="VectorS3::y" alt="" coords="293,5,384,32"/>
+<area shape="rect" id="node4" href="$classVectorS3.html#a585581369640d7edc6c5a40277fba5d7" title="VectorS3::z" alt="" coords="293,56,384,83"/>
+<area shape="rect" id="node5" href="$classVectorS3.html#a242e8b7096a678fdbb08e337420acb84" title="VectorS3::x" alt="" coords="293,107,384,133"/>
+<area shape="rect" id="node7" href="$utilities_2rc__cmp_2util_8cpp.html#a7198ddaeac1d22c06c4daf75de4ceaef" title="nan" alt="" coords="317,157,360,184"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="update_vertex_centers" name="update_vertex_centers">
+<area shape="rect" id="node2" href="$classElement__node__enumerator.html#a3b0965f57d58cd0e85fab4b12a9d6899" title="Number of edges per element. " alt="" coords="209,27,386,69"/>
+<area shape="rect" id="node3" href="$classPane.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Dimension of the pane. " alt="" coords="439,5,558,32"/>
+<area shape="rect" id="node4" href="$classConnectivity.html#a85e2c3a17c45bc48b5613929dedb216a" title="Get the number of edges per element of the current connectivity table. " alt="" coords="435,57,562,98"/>
+</map>

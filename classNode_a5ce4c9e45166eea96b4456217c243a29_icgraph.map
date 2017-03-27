@@ -1,0 +1,10 @@
+<map id="sharedFace" name="sharedFace">
+<area shape="rect" id="node2" href="$classHexElement.html#af24a81bb88c9a41b19e016fecaccf8ae" title="HexElement::setFaceFromNodes" alt="" coords="146,5,363,32"/>
+<area shape="rect" id="node4" href="$classTetElement.html#af24a81bb88c9a41b19e016fecaccf8ae" title="TetElement::setFaceFromNodes" alt="" coords="149,56,361,83"/>
+<area shape="rect" id="node6" href="$classTCoElement.html#af24a81bb88c9a41b19e016fecaccf8ae" title="TCoElement::setFaceFromNodes" alt="" coords="145,107,364,133"/>
+<area shape="rect" id="node8" href="$classQCoElement.html#af24a81bb88c9a41b19e016fecaccf8ae" title="QCoElement::setFaceFromNodes" alt="" coords="145,157,365,184"/>
+<area shape="rect" id="node3" href="$classHexElement.html#ac9856c7c2ee35b1155368577de614249" title="HexElement::setFromMyNodes" alt="" coords="415,5,622,32"/>
+<area shape="rect" id="node5" href="$classTetElement.html#ac9856c7c2ee35b1155368577de614249" title="TetElement::setFromMyNodes" alt="" coords="418,56,619,83"/>
+<area shape="rect" id="node7" href="$classTCoElement.html#ac9856c7c2ee35b1155368577de614249" title="TCoElement::setFromMyNodes" alt="" coords="415,107,622,133"/>
+<area shape="rect" id="node9" href="$classQCoElement.html#ac9856c7c2ee35b1155368577de614249" title="QCoElement::setFromMyNodes" alt="" coords="414,157,623,184"/>
+</map>

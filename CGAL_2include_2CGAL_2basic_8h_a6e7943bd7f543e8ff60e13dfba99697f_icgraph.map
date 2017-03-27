@@ -1,0 +1,23 @@
+<map id="Assert_compile_time_tag" name="Assert_compile_time_tag">
+<area shape="rect" id="node2" href="$circulator_8h.html#abc3a5e8c32926d0d1df0a7ba11626d88" title="Assert_bidirectional\l_category" alt="" coords="252,5,388,46"/>
+<area shape="rect" id="node3" href="$circulator_8h.html#af7aabe097e77139488c0d0efb0730e62" title="Assert_circulator" alt="" coords="260,71,380,97"/>
+<area shape="rect" id="node8" href="$circulator_8h.html#a8f947afcd58be9954ccf9a6901bde5d3" title="Assert_circulator_or\l_iterator" alt="" coords="251,122,389,163"/>
+<area shape="rect" id="node9" href="$circulator_8h.html#a312cc24dcc6db042a4f7b076e8c75d61" title="Assert_forward_category" alt="" coords="237,188,403,215"/>
+<area shape="rect" id="node10" href="$circulator_8h.html#a45fdce640c3d1b4ffbb9b64284e3c939" title="Assert_input_category" alt="" coords="244,239,396,265"/>
+<area shape="rect" id="node11" href="$circulator_8h.html#a217568fcc5c12611d02c299e8902d32b" title="Assert_iterator" alt="" coords="267,289,373,316"/>
+<area shape="rect" id="node12" href="$circulator_8h.html#a663996ba5a9c5bde03e6b3981d455900" title="Assert_output_category" alt="" coords="240,340,400,367"/>
+<area shape="rect" id="node13" href="$circulator_8h.html#a5e85ea567e86420dc09ec6d2e3e273b2" title="Assert_random_access\l_category" alt="" coords="241,391,399,433"/>
+<area shape="rect" id="node14" href="$classHalfedge__data__structure__decorator.html#a85628cd4f6e02c713a92300bfdc9fbb2" title="Halfedge_data_structure\l_decorator::erase_connected\l_component" alt="" coords="225,457,415,513"/>
+<area shape="rect" id="node15" href="$classHalfedge__data__structure__decorator.html#ac89f65b400729653ed4719b11ad2d278" title="Halfedge_data_structure\l_decorator::erase_facet" alt="" coords="238,538,402,579"/>
+<area shape="rect" id="node16" href="$classHalfedge__data__structure__decorator.html#acea850b1c2193ebbbe8839355d0fbfaf" title="Halfedge_data_structure\l_decorator::join_facet" alt="" coords="238,603,402,645"/>
+<area shape="rect" id="node17" href="$classHalfedge__data__structure__decorator.html#abac89554d5a5134b0252d56ef18711a0" title="Halfedge_data_structure\l_decorator::join_loop" alt="" coords="238,669,402,710"/>
+<area shape="rect" id="node18" href="$classHalfedge__data__structure__decorator.html#a8ef5c078e56ad37f0aa1423ed511fac0" title="Halfedge_data_structure\l_decorator::join_vertex" alt="" coords="238,734,402,775"/>
+<area shape="rect" id="node19" href="$classPolyhedron__incremental__builder__3.html#ad3a2652704bafb5cc2a95f08b370ff36" title="Polyhedron_incremental\l_builder_3::lookup_halfedge" alt="" coords="229,799,411,841"/>
+<area shape="rect" id="node22" href="$classHalfedge__data__structure__decorator.html#a4319328bbaa6705603a732a1592a5d97" title="Halfedge_data_structure\l_decorator::make_hole" alt="" coords="238,865,402,906"/>
+<area shape="rect" id="node4" href="$circulator_8h.html#ace4875f4d500fd0d6be9d2fc3d1d2253" title="I_min_circulator_size" alt="" coords="473,235,618,261"/>
+<area shape="rect" id="node5" href="$circulator_8h.html#a6212acbdfda2d6c21010bb19b5624331" title="I_circulator_size" alt="" coords="697,184,815,211"/>
+<area shape="rect" id="node6" href="$circulator_8h.html#a70c0ca2d4eb062ce60499224049a9819" title="I_circulator_distance" alt="" coords="685,235,827,261"/>
+<area shape="rect" id="node7" href="$classIterator__from__circulator.html#a5257659ecdbbdaee7504978c2054b09a" title="Iterator_from_circulator\l::operator&#45;" alt="" coords="678,286,834,327"/>
+<area shape="rect" id="node20" href="$classPolyhedron__incremental__builder__3.html#a2c87480f89222776f7cbb1bfeca98e29" title="Polyhedron_incremental\l_builder_3::add_vertex\l_to_facet" alt="" coords="465,792,626,848"/>
+<area shape="rect" id="node21" href="$classPolyhedron__incremental__builder__3.html#a74cfc3317835a62d5b15d795a44cc86c" title="Polyhedron_incremental\l_builder_3::end_facet" alt="" coords="675,799,837,841"/>
+</map>

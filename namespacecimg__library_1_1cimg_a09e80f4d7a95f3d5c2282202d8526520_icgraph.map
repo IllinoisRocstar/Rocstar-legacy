@@ -1,0 +1,19 @@
+<map id="system" name="system">
+<area shape="rect" id="node2" href="$roccom__f_8C.html#af757ff5e5286c0456c2a5ba312f9919d" title="COM_F_FUNC2" alt="" coords="165,5,285,32"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a67cf88da9c1122b55ebcef3d223bccbe" title="Load a RAW Color Camera image file, using external tool &#39;dcraw&#39;. " alt="" coords="151,56,300,112"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImgList.html#aa3885ef29cd5036361c12d407019de6c" title="Load an image from a video file (MPEG,AVI) using the external tool &#39;ffmpeg&#39;. " alt="" coords="148,136,303,192"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#aad5a1ff332f904a39b3ea2035d3a94dc" title="Load an image using GraphicsMagick&#39;s external tool &#39;gm&#39;. " alt="" coords="123,216,328,272"/>
+<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#a1b8bf7e0b1371dbdc0d845a39f6451a8" title="Load a gzipped image file, using external tool &#39;gunzip&#39;. " alt="" coords="156,296,295,352"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImgList.html#a0ab64a5a6414629623467ad5ee80b6fe" title="Load a gzipped list, using external tool &#39;gunzip&#39;. " alt="" coords="130,377,321,418"/>
+<area shape="rect" id="node8" href="$structcimg__library_1_1CImg.html#a841db22435a4f77bf3e4c9fc65ecbb6e" title="Load an image using ImageMagick&#39;s external tool &#39;convert&#39;. " alt="" coords="130,443,321,499"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a38df90ee1c431b684fcb5ed8248464b1" title="Load a DICOM image file, using XMedcon&#39;s external tool &#39;medcon&#39;. " alt="" coords="145,523,305,579"/>
+<area shape="rect" id="node10" href="$classCoupling.html#a3743217a687c638a600341721e219b55" title="Coupling::restart_at_time" alt="" coords="141,603,309,629"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImgList.html#a3b4ad0233afe8d38700bb1d0d0dc6ecc" title="Save an image sequence using the external tool &#39;ffmpeg&#39;. " alt="" coords="146,653,305,709"/>
+<area shape="rect" id="node14" href="$structcimg__library_1_1CImg.html#afdab21cdc4ef778bfaf4e123b28c9aa0" title="Save the image using GraphicsMagick&#39;s gm. " alt="" coords="121,733,330,789"/>
+<area shape="rect" id="node15" href="$structcimg__library_1_1CImg.html#a882ef6fb0c2487da8598e36c45b8eeab" title="Save an image as a gzipped file, using external tool &#39;gzip&#39;. " alt="" coords="154,813,297,869"/>
+<area shape="rect" id="node16" href="$structcimg__library_1_1CImgList.html#ae9d11f1d698df3ffe1ef4a9ede594e1e" title="Save a file in TIFF format. " alt="" coords="128,894,323,935"/>
+<area shape="rect" id="node17" href="$structcimg__library_1_1CImg.html#ab0ff4f35fc74d40fda4893b7e2fdbe7b" title="Save the image using ImageMagick&#39;s convert. " alt="" coords="128,960,323,1016"/>
+<area shape="rect" id="node18" href="$structcimg__library_1_1CImg.html#af3608edc3098e7c850c69cd347d4f9e8" title="Save an image as a Dicom file (need &#39;(X)Medcon&#39; : http://xmedcon.sourceforge.net ) ..." alt="" coords="143,1040,307,1096"/>
+<area shape="rect" id="node11" href="$classCoupling.html#a952d598b43dfc5742886e9e747aa7ca1" title="Coupling::ProcessInterrupt" alt="" coords="379,577,557,604"/>
+<area shape="rect" id="node12" href="$rocstar__driver_8C.html#a9bd600c9ac2dc870a213ab778b70d788" title="rocstar_driver" alt="" coords="605,603,707,629"/>
+</map>

@@ -1,0 +1,51 @@
+<map id="get_acos" name="get_acos">
+<area shape="rect" id="node2" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="128,1010,256,1036"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#aec748ded5bb19d52f564ef7a6ae2652d" title="Compute the arc&#45;cosine of each pixel value. " alt="" coords="326,190,458,232"/>
+<area shape="rect" id="node4" href="$geometry_8C.html#a2f642138fc2786ca05a687aa45a352f2" title="Compute the angle between two vectors. " alt="" coords="365,396,419,423"/>
+<area shape="rect" id="node17" href="$namespacenvc.html#aaf814d661f9cecef5334805d441bef38" title="nvc::angle" alt="" coords="351,802,433,828"/>
+<area shape="rect" id="node18" href="$namespacenvc.html#a4332eae572fd0dc9fd2e07442ad88581" title="nvc::angle_unitized" alt="" coords="325,852,459,879"/>
+<area shape="rect" id="node19" href="$group__fdp.html#ga8a472c4f56c78564bafa4a9610b706c7" title="Compute the angle defect of a vertex. " alt="" coords="315,904,469,945"/>
+<area shape="rect" id="node7" href="$classRocmop.html#a4c6e496385e479c044a89f1e545edaa5" title="Compute medial quadric for every vertex. " alt="" coords="538,57,713,98"/>
+<area shape="rect" id="node12" href="$classGeoPrim_1_1CFacet.html#a005d826749c8ee06238e1f29b295d690" title="GeoPrim::CFacet::contains\l_point" alt="" coords="535,553,716,594"/>
+<area shape="rect" id="node20" href="$group__pifd.html#ga62b78979d2f09f83c3015f2e8dc232d5" title="The main entry of feature detection. " alt="" coords="315,969,469,1010"/>
+<area shape="rect" id="node22" href="$classHalfedge.html#a65b3779cc62f4ddefa17ae4a7b27c35c" title="Return the dihedral angle at the edge. " alt="" coords="329,1100,455,1141"/>
+<area shape="rect" id="node23" href="$group__io.html#ga8d0e1d57af47dd37365ab7e0e6243c75" title="Dump out the strong edges in Tecplot format into file &lt;name&gt;s1.plt. " alt="" coords="315,1165,469,1206"/>
+<area shape="rect" id="node24" href="$classWindow__manifold__2.html#a2eebb41f1831723225ffd524188bcb54" title="Convert element values to nodal values using weighted averaging. " alt="" coords="319,1230,465,1272"/>
+<area shape="rect" id="node30" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a0d684ffed0cafbfb2ac08af28a718c34" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="304,1296,480,1337"/>
+<area shape="rect" id="node34" href="$classFaceOffset__3.html#a57db1d663b1ece755919d222a853f529" title="FaceOffset_3::eval\l_angle" alt="" coords="325,681,459,722"/>
+<area shape="rect" id="node36" href="$classFaceOffset__3.html#a3fb81b9009e23436007ccd5c6f0931e9" title="Filter out isolated ridge vertices and identify ridge edges. " alt="" coords="776,742,952,784"/>
+<area shape="rect" id="node38" href="$classOverlay__primitives.html#a1c20fa0c901b440606f581e1a031eff5" title="Overlay_primitives\l::get_face_normal" alt="" coords="327,1034,457,1076"/>
+<area shape="rect" id="node44" href="$classFaceOffset__3.html#abf063e5e35726c49fa93abf055032d17" title="Set the threshold for weak&#45;feature angle. " alt="" coords="307,1361,477,1402"/>
+<area shape="rect" id="node45" href="$classMesquite_1_1Vector3D.html#a91415c718769a08fd009c19cad8984c3" title="Mesquite::Vector3D\l::interior_angle" alt="" coords="323,1426,461,1468"/>
+<area shape="rect" id="node46" href="$group__fdp.html#ga28c6e9969896c8410f11e592df2a3f44" title="Determine whether a vertex is relatively strong in edge angle within a give feature. " alt="" coords="315,1492,469,1533"/>
+<area shape="rect" id="node47" href="$structRocblas_1_1acosa.html#adf4cd194867c3bf404e037fe4c5b2229" title="Rocblas::acosa::operator()" alt="" coords="304,1558,480,1584"/>
+<area shape="rect" id="node48" href="$group__ntc.html#gaa2576922e2451c82be9775526d133835" title="Dump out the 0&#45; and 1&#45;features in Tecplot format into files &lt;name&gt;f0.plt, &lt;name&gt;f1.plt, respectively. " alt="" coords="315,1609,469,1650"/>
+<area shape="rect" id="node49" href="$classRocmop.html#aaff38c32926fd43f2c63d0f359a31f77" title="Redistribute smooth vertices within their tangent spaces. " alt="" coords="321,256,463,297"/>
+<area shape="rect" id="node50" href="$structcimg__library_1_1CImg.html#ae5820d33b36cc0266b98c0d9c9f0c3a6" title="Convert color pixels from (R,G,B) to (H,S,I). " alt="" coords="319,1674,465,1716"/>
+<area shape="rect" id="node5" href="$classGeo__Metric__Base__2.html#aebeae4fdd86b085524c00f77bc254c1e" title="Compute the min and max angles. " alt="" coords="551,122,699,164"/>
+<area shape="rect" id="node6" href="$classGeo__Metric__Base__3.html#aebeae4fdd86b085524c00f77bc254c1e" title="Compute min and max dihedral angles. " alt="" coords="790,240,938,281"/>
+<area shape="rect" id="node9" href="$classFaceOffset__3.html#a45b67149fd095958850c67444a148c2f" title="Compute quadrics for every vertex. " alt="" coords="546,618,705,660"/>
+<area shape="rect" id="node11" href="$structcimg__library_1_1CImg.html#a744a584d87f069fb5b2511a4b6449425" title="Create and return a 3D cone. " alt="" coords="559,357,691,398"/>
+<area shape="rect" id="node13" href="$structcimg__library_1_1CImg.html#ab924fbf66b85c9ff9bfbb1e31f0640c7" title="Create and return a 3D cylinder. " alt="" coords="554,422,697,464"/>
+<area shape="rect" id="node14" href="$structcimg__library_1_1CImg.html#a06caa7f5d6a6671d3e08fc79a9b2fcc4" title="Draw a colored arrow in the instance image. " alt="" coords="550,488,701,529"/>
+<area shape="rect" id="node15" href="$geometry_8C.html#a94536a931753d2f5dfa0e91c2e2e9eac" title="Compute the angle between two faces. " alt="" coords="593,188,657,215"/>
+<area shape="rect" id="node16" href="$structcimg__library_1_1CImg.html#a949ac315fc855dd9e5ac3377d19b01b2" title="Compute a 1D Fast Fourier Transform, along a specified axis. " alt="" coords="559,240,691,281"/>
+<area shape="rect" id="node8" href="$classRocmop.html#a679bfb8c7da7e819b00dc132ba57dc8f" title="Smooths a surface using the medial quadric. " alt="" coords="789,28,939,69"/>
+<area shape="rect" id="node10" href="$classFaceOffset__3.html#a06f5080069fe44c7dcdbb88ddf41cd8f" title="Main entry of the algorithm. " alt="" coords="1006,677,1141,718"/>
+<area shape="rect" id="node21" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="805,882,923,908"/>
+<area shape="rect" id="node25" href="$classWindow__manifold__2.html#ab5ca31d43bed67e02e89be167de9da7f" title="Compute nodal normals using one of the following weighting schemes: E2N_ONE, E2N_AREA, and E2N_ANGLE, and E2N_USER. " alt="" coords="544,1230,707,1272"/>
+<area shape="rect" id="node28" href="$classRocsurf.html#a4f24fa35a8c266187a6c07110f263313" title="Computes nodal or elemental normals of a given window. " alt="" coords="552,1296,699,1337"/>
+<area shape="rect" id="node26" href="$classWindow__manifold__2.html#a870e40efa9ab58452a354eaca2b75d30" title="Compute the normals at nodes or faces, depending on the type of the attribute normals. " alt="" coords="791,1233,937,1274"/>
+<area shape="rect" id="node27" href="$classWindow__manifold__2.html#a63077b4a404ef8457c38c64b320323e7" title="Perturb the given mesh along its normal direction by length equal to a random number between &#45;range a..." alt="" coords="791,1168,937,1209"/>
+<area shape="rect" id="node29" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="814,1303,914,1330"/>
+<area shape="rect" id="node31" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a95045af3dbd37ce54b03914a367d9a55" title="cimg_library::CImg\l::_cimg_math_parser::eval" alt="" coords="537,1522,713,1564"/>
+<area shape="rect" id="node32" href="$structcimg__library_1_1CImg_1_1__marching2d__func__expr.html#a63538257e8d4ca79962c14f1bddbd418" title="cimg_library::CImg\l::_marching2d_func_expr\l::operator()" alt="" coords="541,1362,709,1418"/>
+<area shape="rect" id="node33" href="$structcimg__library_1_1CImg_1_1__marching3d__func__expr.html#a4839e5b7a8568395b7c8e6fb4d4cf957" title="cimg_library::CImg\l::_marching3d_func_expr\l::operator()" alt="" coords="541,1442,709,1498"/>
+<area shape="rect" id="node35" href="$classFaceOffset__3.html#af6ea285d2c94a53c160dfe64ee44282e" title="Build the list of ridge nighbors and obtain a list of weak&#45;ended vertices Return the number of obscen..." alt="" coords="557,736,694,777"/>
+<area shape="rect" id="node37" href="$classFaceOffset__3.html#a932f06459b53d1207fdbf1d78a4a09c6" title="FaceOffset_3::compute\l_anisotropic_vertex_centers" alt="" coords="771,677,957,718"/>
+<area shape="rect" id="node39" href="$group__fdp.html#ga26603d3c69ad54a093a6925f93d0afac" title="Compute the cosine of the face angle (dihedral angle) at an edge. " alt="" coords="549,969,702,1010"/>
+<area shape="rect" id="node40" href="$classRFC__Pane__overlay.html#a7f96d32b13df97ab6783e01c97e4723f" title="RFC_Pane_overlay::evaluate\l_normals" alt="" coords="529,1034,722,1076"/>
+<area shape="rect" id="node41" href="$group__ntc.html#ga7f96d32b13df97ab6783e01c97e4723f" title="RFC_Window_overlay\l::evaluate_normals" alt="" coords="549,904,702,945"/>
+<area shape="rect" id="node42" href="$classOverlay.html#a6054035d0679586f98c8667b9951ae60" title="Overlay::get_green\l_parent" alt="" coords="559,1100,691,1141"/>
+<area shape="rect" id="node43" href="$classOverlay.html#a4e48a2738490a917f489f3ff50b740b8" title="Helper for associate_green_vertices(). " alt="" coords="540,1165,711,1206"/>
+</map>

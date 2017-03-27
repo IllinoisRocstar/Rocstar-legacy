@@ -1,0 +1,11 @@
+<map id="begin_update_shared_nodes" name="begin_update_shared_nodes">
+<area shape="rect" id="node2" href="$classPane__communicator.html#a02cc2c24d239640658d99057119afe2b" title="Initiates updating by calling MPI_Isend and MPI_Irecv. " alt="" coords="200,107,299,133"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#ad0963775a018dcb83d982e5cfeeb3a22" title="COM_get_sizeof" alt="" coords="559,208,679,235"/>
+<area shape="rect" id="node5" href="$commpi_8h.html#a8a8389bc67ae874f8ec20c56f758c8bf" title="COMMPI_Comm_rank" alt="" coords="347,56,501,83"/>
+<area shape="rect" id="node6" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="549,107,688,133"/>
+<area shape="rect" id="node7" href="$commpi_8h.html#ad6fa7197f23c104706e70381e5c766b5" title="Begins a nonblocking receive. " alt="" coords="367,157,481,184"/>
+<area shape="rect" id="node9" href="$commpi_8h.html#aa00bccf22112317d8ff7784ce592a6df" title="Begins a nonblocking send. " alt="" coords="366,5,482,32"/>
+<area shape="rect" id="node4" href="$commpi_8C.html#aa00c2248b16333919baea12e6935aac9" title="Get the size of a given MPI data type. " alt="" coords="736,157,819,184"/>
+<area shape="rect" id="node8" href="$commpi_8C.html#a78389db06a6bd6c7f0ca305c8399923a" title="COM_recv" alt="" coords="576,157,661,184"/>
+<area shape="rect" id="node10" href="$commpi_8C.html#aec45fe584c7f0bc5e1f583e2f5945648" title="COM_send" alt="" coords="575,31,663,57"/>
+</map>

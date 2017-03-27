@@ -1,0 +1,9 @@
+<map id="side_vertices" name="side_vertices">
+<area shape="rect" id="node2" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="171,5,237,32"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1TopologyInfo.html#a72e6b96dd3d457ef398ed6d62d9a50a6" title="Dimension of element topology. " alt="" coords="531,81,613,108"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1TopologyInfo.html#a5ac39b7eb646d0fe5edd84589809c90b" title="Get indices of edge ends in element connectivity array. " alt="" coords="153,107,255,133"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1TopologyInfo.html#a5c49c5c5052d8513249f899e8d2b738e" title="Get face corner indices in element connectivity array. " alt="" coords="154,157,254,184"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1TopologyInfo.html#a664028df04b3b8dbc5a453d5a2caf350" title="Get the number of edges in a given topology. " alt="" coords="305,107,362,133"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1TopologyInfo.html#a795183830fb2002a37b11775c9605266" title="Number of adjacent entities of a specified dimension. " alt="" coords="411,107,482,133"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1TopologyInfo.html#a84d9816ff80027ce8775c0b4f43a86ab" title="Get the number of faces in a given topology. " alt="" coords="306,157,361,184"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="get_handle" name="get_handle">
+<area shape="rect" id="node2" href="$classMesquite_1_1CornerTagHandles.html#a1a6da75370a0b218f159e10ee804ffb8" title="size" alt="" coords="199,5,246,32"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1Mesh.html#a3835198ae19381628a362f89395ff30e" title="Create a tag. " alt="" coords="152,57,293,98"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1Mesh.html#a8db95295ff2a6b35460145105b20d825" title="Get handle for existing tag, by name. " alt="" coords="139,123,306,149"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1Mesh.html#afd0daa14076258d72d85c6df82c472ee" title="Get properites of tag. " alt="" coords="152,174,293,215"/>
+</map>

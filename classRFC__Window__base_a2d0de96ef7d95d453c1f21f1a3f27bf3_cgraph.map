@@ -1,0 +1,6 @@
+<map id="build_pc_tables" name="build_pc_tables">
+<area shape="rect" id="node2" href="$classRFC__Pane__base.html#a54e7a803a0fd7f979a607a09298f3458" title="Build pane connectivity. " alt="" coords="165,5,323,46"/>
+<area shape="rect" id="node5" href="$classRFC__Window__base.html#a273c492cf3d20d71cef06e522c262bde" title="pane" alt="" coords="459,67,509,93"/>
+<area shape="rect" id="node3" href="$classRFC__Pane__base.html#a9caf2153c8f0ee22c414fec683d13701" title="Is a give node an isolated node not belong to any element? " alt="" coords="371,12,597,39"/>
+<area shape="rect" id="node4" href="$classRFC__Pane__base.html#a35a62313d45990cfa4cab8caa1dfbff6" title="The total number of nodes in the pane. " alt="" coords="645,5,800,46"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="reduce_real" name="reduce_real">
+<area shape="rect" id="node2" href="$classPane__communicator.html#af0df5de54b655e96adbe38a03a95ead4" title="Perform a reduction operation using locally cached values of the shared nodes, assuming begin_update_..." alt="" coords="144,5,315,46"/>
+<area shape="rect" id="node3" href="$classPane__communicator.html#aca5d90b690994ecd8c7516df66435c54" title="Reduce to the average of values using locally cached values of the shared nodes, assuming begin_updat..." alt="" coords="363,5,586,46"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="opposite" name="opposite">
+<area shape="rect" id="node2" href="$classHalfedge__data__structure__using__vector.html#a2cb32897327a1ec0e854f0e12d7cba19" title="Halfedge_data_structure\l_using_vector::normalize\l_border" alt="" coords="126,5,293,61"/>
+<area shape="rect" id="node3" href="$classRay__3.html#ad2fb70c055e9791bdd7109483275d8d2" title="Ray_3::opposite" alt="" coords="151,85,268,112"/>
+<area shape="rect" id="node4" href="$class__HDS__vector__halfedge.html#ad5cbb26db0240d73e33ed904b80f97bf" title="_HDS_vector_halfedge\l::opposite" alt="" coords="131,137,288,178"/>
+<area shape="rect" id="node6" href="$classLine__3.html#a6660c9345259b1ebd5b104760088947d" title="Line_3::opposite" alt="" coords="151,203,268,229"/>
+<area shape="rect" id="node7" href="$classRay__2.html#a3ecea2c8478e2e8bf5f1d7132b8677aa" title="Ray_2::opposite" alt="" coords="151,253,268,280"/>
+<area shape="rect" id="node8" href="$classPlane__3.html#a31ecd1fbcebd8691a47b7176beea5429" title="Plane_3::opposite" alt="" coords="146,304,273,331"/>
+<area shape="rect" id="node9" href="$classLine__2.html#ace0ec69b01ceb57089c84e1359653e1d" title="Line_2\&lt; R \&gt;::opposite" alt="" coords="134,355,285,381"/>
+<area shape="rect" id="node5" href="$classHalfedge__data__structure__using__vector.html#af141d0ccd938480d0e0e7a6fa5e9ae07" title="Halfedge_data_structure\l_using_vector::new_edge" alt="" coords="341,137,512,178"/>
+</map>

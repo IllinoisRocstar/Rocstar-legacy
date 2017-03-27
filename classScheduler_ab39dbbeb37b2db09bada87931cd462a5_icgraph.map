@@ -1,0 +1,17 @@
+<map id="finalize_actions" name="finalize_actions">
+<area shape="rect" id="node2" href="$classSchedulerAction.html#a32d626626eee0bc4ade146973f6abb1c" title="SchedulerAction::finalize" alt="" coords="166,91,333,117"/>
+<area shape="rect" id="node3" href="$classUserSchedulerAction.html#a32d626626eee0bc4ade146973f6abb1c" title="UserSchedulerAction\l::finalize" alt="" coords="177,142,322,183"/>
+<area shape="rect" id="node4" href="$classCoupling.html#a32d626626eee0bc4ade146973f6abb1c" title="Invoke finalization of the actions in the scheduler and the agents. " alt="" coords="188,208,311,235"/>
+<area shape="rect" id="node12" href="$classAgent.html#a32d626626eee0bc4ade146973f6abb1c" title="Agent::finalize" alt="" coords="197,259,302,285"/>
+<area shape="rect" id="node16" href="$test_8C.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="224,309,275,336"/>
+<area shape="rect" id="node5" href="$classCoupling.html#a00ac77cfb49cefa5eef995801743257a" title="Coupling::Interrupt" alt="" coords="401,56,530,83"/>
+<area shape="rect" id="node10" href="$classCoupling.html#a3743217a687c638a600341721e219b55" title="Coupling::restart_at_time" alt="" coords="381,157,549,184"/>
+<area shape="rect" id="node9" href="$rocstar__driver_8C.html#a9bd600c9ac2dc870a213ab778b70d788" title="rocstar_driver" alt="" coords="840,132,941,159"/>
+<area shape="rect" id="node6" href="$classCoupling.html#a8caa2607aa668edf0edb8a5e4535f80a" title="Coupling::baseInit" alt="" coords="623,5,750,32"/>
+<area shape="rect" id="node8" href="$rocstar__driver_8C.html#a05bfdef40d695af301e8ebe637e24e5c" title="check_for_interrupt" alt="" coords="620,56,753,83"/>
+<area shape="rect" id="node7" href="$classCoupling.html#a22e859d76ef20e728e4dfd51940e55ca" title="Constructor. Derived class will add actions for the coupling scheme. " alt="" coords="825,5,957,32"/>
+<area shape="rect" id="node11" href="$classCoupling.html#a952d598b43dfc5742886e9e747aa7ca1" title="Coupling::ProcessInterrupt" alt="" coords="598,107,775,133"/>
+<area shape="rect" id="node13" href="$classBurnAgent.html#a32d626626eee0bc4ade146973f6abb1c" title="BurnAgent::finalize" alt="" coords="399,259,531,285"/>
+<area shape="rect" id="node14" href="$classFluidAgent.html#a32d626626eee0bc4ade146973f6abb1c" title="FluidAgent::finalize" alt="" coords="399,309,532,336"/>
+<area shape="rect" id="node15" href="$classSolidAgent.html#a32d626626eee0bc4ade146973f6abb1c" title="SolidAgent::finalize" alt="" coords="398,360,533,387"/>
+</map>

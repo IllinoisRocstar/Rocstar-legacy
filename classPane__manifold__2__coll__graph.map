@@ -1,0 +1,13 @@
+<map id="Pane_manifold_2" name="Pane_manifold_2">
+<area shape="rect" id="node15" href="$classNode.html" title="This class encapsulate a node over a window manifold. " alt="" coords="1452,328,1505,355"/>
+<area shape="rect" id="node2" href="$classSimple__manifold__2.html" title="Provides a data structure accessing nodes, elements, and edges in a pane, in a manner similar to the ..." alt="" coords="947,311,1079,337"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="255,216,345,243"/>
+<area shape="rect" id="node9" href="$classFacet__ID.html" title="The ID of a facet (edge in 2D and face in 3D) encodes an element ID and the local facet&#39;s ID internal..." alt="" coords="262,415,338,441"/>
+<area shape="rect" id="node11" href="$class__HDS__vector__halfedge.html" title="_HDS_vector_halfedge\l\&lt; V, H, F \&gt;" alt="" coords="221,49,379,90"/>
+<area shape="rect" id="node16" href="$classElement.html" title="Element" alt="" coords="1649,460,1719,487"/>
+<area shape="rect" id="node18" href="$classFace.html" title="The Face class is an abstract base class that supplies implemented general methods, as well as a vew virtual interface methods to child classes. " alt="" coords="2016,460,2067,487"/>
+<area shape="rect" id="node19" href="$classMesh.html" title="Class Mesh is the main class that holds all information to describe the current state of the mesh..." alt="" coords="1862,415,1917,441"/>
+<area shape="rect" id="node24" href="$classVector__3.html" title="Some basic geometric data types. " alt="" coords="237,465,363,492"/>
+<area shape="rect" id="node20" href="$classMVec.html" title="MVec" alt="" coords="1249,328,1305,355"/>
+<area shape="rect" id="node22" href="$classVector__3.html" title="Vector_3\&lt; Real \&gt;" alt="" coords="624,479,749,505"/>
+</map>

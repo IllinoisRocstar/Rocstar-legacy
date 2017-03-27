@@ -1,0 +1,9 @@
+<map id="Vertex_set" name="Vertex_set">
+<area shape="rect" id="node2" href="$classRFC__Pane__base.html#aaf7afda48576a438485a647cb2167a21" title="The id of its base COM::Pane object. " alt="" coords="151,5,310,32"/>
+<area shape="rect" id="node3" href="$classHalfedge__overlay.html#a19b8ed647dec27c8a751cc52eaa6b5e1" title="Halfedge_overlay::facet" alt="" coords="151,56,311,83"/>
+<area shape="rect" id="node4" href="$classRFC__Pane__overlay.html#a2ab79a6fafd98cec9e0fa8c8b6c578b5" title="RFC_Pane_overlay::get_lid" alt="" coords="139,107,322,133"/>
+<area shape="rect" id="node5" href="$classElement__node__enumerator.html#a35a62313d45990cfa4cab8caa1dfbff6" title="Number of nodes per element. " alt="" coords="142,158,319,199"/>
+<area shape="rect" id="node8" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="147,224,314,251"/>
+<area shape="rect" id="node6" href="$classPane.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Dimension of the pane. " alt="" coords="375,136,494,163"/>
+<area shape="rect" id="node7" href="$classConnectivity.html#a6b814939135364a0cd18ee54799897ee" title="Get the number of nodes per element of the current connectivity table. " alt="" coords="371,187,498,229"/>
+</map>

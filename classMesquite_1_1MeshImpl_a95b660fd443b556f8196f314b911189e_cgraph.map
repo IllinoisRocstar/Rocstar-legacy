@@ -1,0 +1,5 @@
+<map id="vertex_get_byte" name="vertex_get_byte">
+<area shape="rect" id="node2" href="$classMesquite_1_1MeshImpl.html#aec8d0b19ff23a87d5062824f4fb72a21" title="vertices_get_byte" alt="" coords="168,12,293,39"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1MeshImplData.html#aac5fdbe631e60e0ab15d4e064a578e02" title="Get vertex byte. " alt="" coords="341,5,509,46"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1MeshImplData.html#a104a1c4bbfb05d4cada7edbaff6f8f2b" title="Check if passed vertex index is valid. " alt="" coords="557,5,725,46"/>
+</map>

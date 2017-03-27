@@ -1,0 +1,9 @@
+<map id="compare_lexicographically_xyz" name="compare_lexicographically_xyz">
+<area shape="rect" id="node2" href="$predicates__on__pointsS3_8h.html#af81bcfa8f9aa6aac9dd7b247a1f08ebc" title="lexicographically_xyz\l_smaller" alt="" coords="259,74,405,115"/>
+<area shape="rect" id="node7" href="$predicates__on__pointsS3_8h.html#afa5cea2427d57f9b248b5247d7595722" title="lexicographically_xyz\l_smaller_or_equal" alt="" coords="259,139,405,181"/>
+<area shape="rect" id="node8" href="$classCGALi_1_1Compare__xyz.html#aca0d1fbee4c229d02353bc7b1552254a" title="CGALi::Compare_xyz\l::operator()" alt="" coords="257,205,407,246"/>
+<area shape="rect" id="node3" href="$classCGALi_1_1Less__xyz.html#ad2e837b1360821471074fd02fed4e094" title="CGALi::Less_xyz::operator()" alt="" coords="457,5,645,32"/>
+<area shape="rect" id="node4" href="$classPointS3.html#adc5f28be184274f49bbe647a3e70d78b" title="PointS3::operator\&lt;" alt="" coords="485,56,616,83"/>
+<area shape="rect" id="node5" href="$classSegmentS3.html#a99362fe1b00738fcd28d1dcba7b1425b" title="SegmentS3::min" alt="" coords="491,107,610,133"/>
+<area shape="rect" id="node6" href="$classSegmentS3.html#a3ca70d5a7dd1c066037806e9810299ba" title="SegmentS3::max" alt="" coords="489,157,612,184"/>
+</map>

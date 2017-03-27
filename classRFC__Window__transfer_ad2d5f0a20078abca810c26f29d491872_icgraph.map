@@ -1,0 +1,4 @@
+<map id="init_send_buffer" name="init_send_buffer">
+<area shape="rect" id="node2" href="$classRFC__Window__transfer.html#a15aff7a74853c597fcbc121d53d29e0c" title="Replicate the metadata of a remote pane only the local process. " alt="" coords="169,5,301,32"/>
+<area shape="rect" id="node3" href="$classRFC__Window__transfer.html#a1e774716e97169d887a20f47339edfbb" title="Replicate the remote panes that are in contact with the local panes in opp_win. " alt="" coords="350,5,482,32"/>
+</map>

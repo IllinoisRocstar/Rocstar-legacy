@@ -1,0 +1,5 @@
+<map id="intersect_bbox" name="intersect_bbox">
+<area shape="rect" id="node2" href="$Pane__connectivity_8C.html#a66971bb35acc2d41596346f6278833a8" title="collect_coincident\l_nodes" alt="" coords="161,5,287,46"/>
+<area shape="rect" id="node4" href="$Pane__connectivity_8C.html#a0572823fb23770cc2f5201df67879114" title="intersect_bbox" alt="" coords="171,71,277,97"/>
+<area shape="rect" id="node3" href="$classPane__connectivity.html#a77a70f323f098007f3ce0dbdae07fdce" title="Collect the boundary nodes of all panes that are coincident with the boundary nodes of local panes..." alt="" coords="336,5,499,46"/>
+</map>

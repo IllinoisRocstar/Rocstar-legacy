@@ -1,0 +1,26 @@
+<map id="get_next_patch" name="get_next_patch">
+<area shape="rect" id="node2" href="$classMesquite_1_1PatchData.html#ac8bb3912a3ce86b15842e79d0b421204" title="Removes data. " alt="" coords="199,97,345,139"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1MeshSet.html#a7bfa519a2805ef4b0910f95d18c95b9d" title="get_next_elem_on_vert\l_patch" alt="" coords="193,316,351,357"/>
+<area shape="rect" id="node24" href="$classMesquite_1_1MeshSet.html#a49d26069ef9dc15614b552680b49417f" title="get_next_global_patch" alt="" coords="196,421,348,447"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1PatchDataParameters.html#a40660f57ae3b8ae0df25b03778c6a172" title="Returns Patch Type (local around vertices, local around elements, global) " alt="" coords="166,472,378,513"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1PatchDataMem.html#ac8bb3912a3ce86b15842e79d0b421204" title="Mesquite::PatchDataMem\l::clear" alt="" coords="689,68,863,109"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1PatchDataParameters.html#a59ae8597e504454bfe7538b1cf76f577" title="returns the bitset. " alt="" coords="427,35,639,76"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1PatchData.html#a3e94692727e2bf9bc09fd1625788e21c" title="Returns a pointer to the start of the element array. " alt="" coords="461,348,606,389"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1PatchDataParameters.html#a87225da63c65e74c6173b56e616e6b3a" title="Returns numbers of layers for local patch. " alt="" coords="427,100,639,141"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1PatchData.html#a5a414f86d33d49d3a3c43643208a9903" title="Returns a pointer to the start of the vertex array. " alt="" coords="461,283,606,324"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1MeshDomain.html#a9a1f15568f1049e02d96c206f961004a" title="Give a hint about the nature of the domain for better performance. " alt="" coords="453,413,613,455"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1PatchData.html#acc3b55f634ba18a094dbf3869e046fa9" title="Call after filling vertex handle and connectivity arrays to finish initializing the PatchData..." alt="" coords="461,531,606,572"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1EntityIterator.html#a456deebf707976f468785e7b02fdd059" title="Returns false until the iterator has been advanced PAST the last entity. " alt="" coords="454,165,613,207"/>
+<area shape="rect" id="node22" href="$classMesquite_1_1MeshSet.html#ae7f6e22ad7a7ae1216ff849eb1f0e6f5" title="Resets the MeshSet object so that get_next_patch() will restart its iterations at the first vertex..." alt="" coords="508,597,559,623"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1PatchDataMem.html#a5d264785c6b1332458969367996bdf92" title="Mesquite::PatchDataMem\l::resize" alt="" coords="689,225,863,267"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1PatchData.html#a0b4af11453e4d4bf9863e928c6d6b95a" title="Mesquite::PatchData\l::clear_tag_data" alt="" coords="703,589,849,631"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1MsqMeshEntity.html#ad71b653bcc409c99d990a688e45f25d6" title="Very efficient retrieval of vertices indexes (corresponding to the PatchData vertex array)..." alt="" coords="689,655,863,696"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1PatchData.html#a73ac6a0e68b4cfd53adbb171ce07fbb7" title="number of vertices in the patch. " alt="" coords="703,291,849,332"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1MsqMeshEntity.html#a7a571e1342c469006968b9eda6d023c5" title="Returns the number of vertices in this element, based on its element type. " alt="" coords="689,356,863,397"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1PatchData.html#a7619ea708c552f119c4c1b9f35af8522" title="Get number of nodes (vertex + higher&#45;order nodes) " alt="" coords="703,421,849,463"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1MsqMeshEntity.html#a0b552656e1b264732e90715ccba32b1f" title="Return number of nodes in element (number of corner vertices + number of higher&#45;order nodes)..." alt="" coords="913,451,1087,492"/>
+<area shape="rect" id="node19" href="$buildface_8cpp.html#a34cd8fd4d99fbdd4ef97fcc94070b460" title="swap" alt="" coords="749,538,803,565"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1PatchDataMem.html#aac782da1f912bceb5d8ad00c8dc892ac" title="Mesquite::PatchDataMem\l::size" alt="" coords="689,785,863,827"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1TopologyInfo.html#a280680fb3531c013c808d0ff300e83fe" title="Get the number of defining vertices for a given element topology. " alt="" coords="921,356,1079,397"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1EntityIterator.html#aa8850ed68fa313e7a4f87647f106b754" title="Moves the iterator back to the first entity in the list. " alt="" coords="697,720,855,761"/>
+</map>

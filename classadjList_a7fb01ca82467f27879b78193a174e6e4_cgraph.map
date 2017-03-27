@@ -1,0 +1,7 @@
+<map id="isExternal" name="isExternal">
+<area shape="rect" id="node2" href="$classadjRec.html#a248c00a10c70dd5e6e69a9680bb16632" title="adjRec::getFace" alt="" coords="145,5,263,32"/>
+<area shape="rect" id="node3" href="$classadjRec.html#acded957a7fb9afa84e5ad3f5b597cc42" title="adjRec::getLoc" alt="" coords="149,56,259,83"/>
+<area shape="rect" id="node4" href="$classadjRec.html#a0aee7ca361720ef07d3fd80854fc35bc" title="adjRec::getNext" alt="" coords="145,107,263,133"/>
+<area shape="rect" id="node5" href="$classpatch.html#a7fb01ca82467f27879b78193a174e6e4" title="patch::isExternal" alt="" coords="144,157,264,184"/>
+<area shape="rect" id="node6" href="$classface.html#abf6673d3484175e01e8b6eaea6ecda4f" title="face::patchForCoord" alt="" coords="133,208,275,235"/>
+</map>

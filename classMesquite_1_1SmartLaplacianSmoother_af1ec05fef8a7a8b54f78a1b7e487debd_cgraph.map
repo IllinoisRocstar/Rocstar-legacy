@@ -1,0 +1,5 @@
+<map id="SmartLaplacianSmoother" name="SmartLaplacianSmoother">
+<area shape="rect" id="node2" href="$classMesquite_1_1QualityImprover.html#a23b93d0c05b5ccd5162eaafbd9e612ac" title="provides a name to the QualityImprover (use it in constructor). " alt="" coords="222,5,397,46"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1PatchDataUser.html#a7870d253a83673c6ad2794c41cc1e821" title="Sets the Patch Type. " alt="" coords="223,70,396,111"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1PatchDataParameters.html#a247c2678640754cdb0bd45ab6f777cd9" title="Tells the MeshSet what kind of data the patches should include. " alt="" coords="446,70,658,111"/>
+</map>

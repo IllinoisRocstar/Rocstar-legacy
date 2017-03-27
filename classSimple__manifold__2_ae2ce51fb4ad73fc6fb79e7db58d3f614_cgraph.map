@@ -1,0 +1,14 @@
+<map id="get_borders" name="get_borders">
+<area shape="rect" id="node2" href="$classSimple__manifold__2.html#a9d228fc3894d548a55db1c25d28ec9af" title="Is the node on pane boundary (not isolated)? " alt="" coords="162,157,273,184"/>
+<area shape="rect" id="node5" href="$classSimple__manifold__2.html#a9e03f2573109c6f058a99025223d5483" title="Is the node isolated (i.e. not incident on any element)? " alt="" coords="158,56,277,83"/>
+<area shape="rect" id="node9" href="$classSimple__manifold__2.html#ad6d1f85a4b3a0d2d2c8f74494d90e1fe" title="Is the node on the pane boundary of real part (not isolated)? " alt="" coords="148,107,287,133"/>
+<area shape="rect" id="node11" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="190,208,245,235"/>
+<area shape="rect" id="node12" href="$classSimple__manifold__2.html#ade52f517626761deb5d630404f3472b2" title="Number of ghost nodes of the pane. " alt="" coords="145,259,290,285"/>
+<area shape="rect" id="node13" href="$classSimple__manifold__2.html#a13a80794cea20dee18610fae9fd4e7fd" title="Number of real nodes of the pane. " alt="" coords="150,309,285,336"/>
+<area shape="rect" id="node3" href="$classSimple__manifold__2.html#ab10e70cbf6e6aeedb1e3dd1cab81ebf8" title="Is the given node a ghost node? " alt="" coords="355,157,461,184"/>
+<area shape="rect" id="node4" href="$classSimple__manifold__2.html#ab0d9ef8fcaf5c4306b57958fadf8c8f1" title="Is a given edge on the boundary of the whole pane? " alt="" coords="353,208,463,235"/>
+<area shape="rect" id="node6" href="$classFacet__ID.html#aa126fd94949c810d24869ad04cd97e15" title="Determines whether the facet is on border. " alt="" coords="339,56,477,83"/>
+<area shape="rect" id="node8" href="$classFacet__ID.html#a1dea367be190d5726e3aa6b8d0c47076" title="Element ID of the halfedge. " alt="" coords="357,5,459,32"/>
+<area shape="rect" id="node7" href="$classFacet__ID.html#ae7df635a2e18521c31e7da0b999b802b" title="Local edge ID of the halfedge within its element. " alt="" coords="526,56,623,83"/>
+<area shape="rect" id="node10" href="$classSimple__manifold__2.html#ada174cc24bb104689a8ded70a6674ebb" title="Is the given node a real node? " alt="" coords="361,107,455,133"/>
+</map>

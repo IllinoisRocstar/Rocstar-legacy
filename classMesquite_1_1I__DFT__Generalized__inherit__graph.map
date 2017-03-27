@@ -1,0 +1,5 @@
+<map id="I_DFT_Generalized" name="I_DFT_Generalized">
+<area shape="rect" id="node2" href="$classMesquite_1_1I__DFT.html" title="Class containing the target corner matrices for the context based smoothing. " alt="" coords="47,155,105,181"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1DistanceFromTarget.html" title="Base class for the computation of the distance from target between the target matrices W and the actu..." alt="" coords="5,80,147,107"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1QualityMetric.html" title="Base class for concrete quality metrics. " alt="" coords="27,5,125,32"/>
+</map>

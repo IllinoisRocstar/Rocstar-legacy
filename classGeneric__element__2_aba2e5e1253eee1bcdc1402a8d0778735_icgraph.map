@@ -1,0 +1,15 @@
+<map id="get_gp_weight" name="get_gp_weight">
+<area shape="rect" id="node2" href="$compute__curvature_8C.html#a6e65cb8f6a84edced8eedb0e978b5b71" title="compute_lbop_weights" alt="" coords="160,67,315,93"/>
+<area shape="rect" id="node11" href="$compute__bounded__volumes_8C.html#a979ce84eb276bc57b7c0be1341e27b5e" title="get_face_volume" alt="" coords="375,123,497,149"/>
+<area shape="rect" id="node3" href="$classWindow__manifold__2.html#a2de69b1dfeafce08ec7b515710fb76c4" title="Window_manifold_2::\lcompute_mcn" alt="" coords="363,25,509,66"/>
+<area shape="rect" id="node4" href="$classRocsurf.html#a98cadabf2c5e377e91182ea5e6c2c567" title="Computes nodal or elemental normals of a given window. " alt="" coords="570,15,729,41"/>
+<area shape="rect" id="node5" href="$classRocsurf.html#aa4aab2663cc7cef9510e14b6cf12ec12" title="Loads Rocsurf onto Roccom with a given module name. " alt="" coords="790,107,890,133"/>
+<area shape="rect" id="node6" href="$Rocsurf_8C.html#aac6a72fcbd70a8d827b9533bc6b7fdce" title="Rocsurf_load_module" alt="" coords="966,5,1114,32"/>
+<area shape="rect" id="node7" href="$Rocsurf_8C.html#a0a28f664581a04b963e3448f87cbacc6" title="rocsurf_load_module" alt="" coords="969,56,1111,83"/>
+<area shape="rect" id="node8" href="$Rocsurf_8C.html#abe07fba371b1e4b316ff19a51daa3df7" title="ROCSURF_LOAD_MODULE" alt="" coords="942,107,1138,133"/>
+<area shape="rect" id="node9" href="$Rocsurf_8C.html#a5dc5154f3c69e38f4ce4d11ca48f80d4" title="rocsurf_load_module_" alt="" coords="965,157,1115,184"/>
+<area shape="rect" id="node10" href="$Rocsurf_8C.html#a8561152c54b0935b4096549da1cd05e8" title="ROCSURF_LOAD_MODULE_" alt="" coords="939,208,1141,235"/>
+<area shape="rect" id="node12" href="$classRocsurf.html#a75fbdc31631afdd7fadf0f5a8ae6b963" title="Computes the volume bounded between two different locations of each face of the surface mesh of windo..." alt="" coords="558,66,741,107"/>
+<area shape="rect" id="node13" href="$classRocsurf.html#a105ada0c2358cfcc9aa226a62ad573c0" title="Computes the signed volume of a body. " alt="" coords="564,131,735,173"/>
+<area shape="rect" id="node14" href="$classRocsurf.html#a9184eb38a332f27f061237455dcdf6bd" title="Computes the swept volume by a given displacement of each face of the surface mesh of window volumes&#45;..." alt="" coords="565,197,733,238"/>
+</map>

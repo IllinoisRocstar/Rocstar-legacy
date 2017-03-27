@@ -1,0 +1,8 @@
+<map id="finalize" name="finalize">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="117,5,251,32"/>
+<area shape="rect" id="node3" href="$classScheduler.html#ab39dbbeb37b2db09bada87931cd462a5" title="Scheduler::finalize\l_actions" alt="" coords="119,57,249,98"/>
+<area shape="rect" id="node6" href="$classAgent.html#a7166b9d0c3321d1abf347377b32bf154" title="get_agent_name" alt="" coords="125,123,243,149"/>
+<area shape="rect" id="node7" href="$classAgent.html#a5d3576b9180e99959235980d580a4090" title="get_coupling" alt="" coords="137,173,231,200"/>
+<area shape="rect" id="node4" href="$structScheduler_1_1ActionItem.html#a4d53ef72c920649a6dcaf1ccb1392b5d" title="Scheduler::ActionItem\l::action" alt="" coords="299,27,450,69"/>
+<area shape="rect" id="node5" href="$classAction.html#a4e44143f72657f0e69d2a1816b6cc54d" title="Action::finalize" alt="" coords="321,93,429,120"/>
+</map>

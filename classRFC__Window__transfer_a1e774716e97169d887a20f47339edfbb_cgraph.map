@@ -1,0 +1,51 @@
+<map id="replicate_metadata" name="replicate_metadata">
+<area shape="rect" id="node2" href="$classRFC__Pane__base.html#aaf7afda48576a438485a647cb2167a21" title="The id of its base COM::Pane object. " alt="" coords="1010,222,1169,248"/>
+<area shape="rect" id="node3" href="$classRFC__Window__transfer.html#af844b2af41f868c533c1043528749497" title="comm_rank" alt="" coords="396,347,487,374"/>
+<area shape="rect" id="node6" href="$rational__rotation_8h.html#a8b9eb702eb3f9bcba3923532d1e801db" title="for" alt="" coords="422,195,461,222"/>
+<area shape="rect" id="node7" href="$classRFC__Window__transfer.html#a614253ebc5132152327d006a0edee212" title="Obtain the list of incident faces in each pane of the opposite mesh. " alt="" coords="207,94,313,120"/>
+<area shape="rect" id="node10" href="$classRFC__Pane__transfer.html#a584f868480e84dcf5750fe21c96c4dd8" title="RFC_Pane_transfer::\lis_master" alt="" coords="187,196,333,237"/>
+<area shape="rect" id="node8" href="$classRFC__Window__transfer.html#aad1f435b8a27014b3d4944dd3ceb6fd2" title="pane" alt="" coords="612,246,663,272"/>
+<area shape="rect" id="node11" href="$classRFC__Window__transfer.html#a15aff7a74853c597fcbc121d53d29e0c" title="Replicate the metadata of a remote pane only the local process. " alt="" coords="194,388,326,415"/>
+<area shape="rect" id="node9" href="$classRFC__Pane__base.html#a0b45edfd6a9edd2692bff918b7ca7522" title="The total number of faces in the subdivision of the pane. " alt="" coords="1012,86,1167,128"/>
+<area shape="rect" id="node4" href="$commpi_8h.html#a8a8389bc67ae874f8ec20c56f758c8bf" title="COMMPI_Comm_rank" alt="" coords="560,296,715,323"/>
+<area shape="rect" id="node5" href="$commpi_8h.html#a0ac6f9335053e39843f8e0612bc3a0ff" title="COMMPI_Initialized" alt="" coords="568,347,707,374"/>
+<area shape="rect" id="node12" href="$classRFC__Window__transfer.html#a758825e116b59e8176cf3a2ef562e017" title="comm_size" alt="" coords="397,448,486,475"/>
+<area shape="rect" id="node14" href="$classRFC__Window__transfer.html#a54287764e55fa05919e7ddc3f3115597" title="counts_to_displs" alt="" coords="381,398,501,424"/>
+<area shape="rect" id="node15" href="$classRFC__Window__transfer.html#a05e169ae7b2dd51b533d87ce429d604f" title="init_recv_buffer" alt="" coords="386,671,497,698"/>
+<area shape="rect" id="node50" href="$classRFC__Window__transfer.html#ad2d5f0a20078abca810c26f29d491872" title="init_send_buffer" alt="" coords="384,296,499,323"/>
+<area shape="rect" id="node13" href="$commpi_8h.html#a4e3337b1847be124709d7c1471c3834d" title="COMMPI_Comm_size" alt="" coords="560,398,715,424"/>
+<area shape="rect" id="node16" href="$classRFC__Window__base.html#a9345f49ee39c86f34983cffde3dcec0c" title="The color of the window for overlay or for data transfer (BLUE or GREEN). " alt="" coords="550,814,725,840"/>
+<area shape="rect" id="node17" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="571,864,704,891"/>
+<area shape="rect" id="node18" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="789,954,936,980"/>
+<area shape="rect" id="node20" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="774,903,951,930"/>
+<area shape="rect" id="node21" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="775,583,951,610"/>
+<area shape="rect" id="node22" href="$classRFC__Window__base.html#af5f8445c6edad26fd91a2909d1f86073" title="RFC_Window_base::get\l_prefix_base" alt="" coords="555,514,720,556"/>
+<area shape="rect" id="node23" href="$classRFC__Window__base.html#a1a940cf5d49e7cd9589fa6a88fa344d0" title="RFC_Window_base::get\l_sdv_fname" alt="" coords="555,580,720,621"/>
+<area shape="rect" id="node24" href="$classRFC__Pane__base.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="RFC_Pane_base::init" alt="" coords="564,646,711,672"/>
+<area shape="rect" id="node25" href="$classRFC__Pane__base.html#a91ce7d425b661073a4d6bd49dea92a10" title="RFC_Pane_base::read\l_binary" alt="" coords="560,449,715,490"/>
+<area shape="rect" id="node45" href="$classRFC__Pane__base.html#a8d07df12aec78d43eacbb5bf5ee2f11a" title="Read in using Rocin. " alt="" coords="560,748,715,789"/>
+<area shape="rect" id="node19" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="1025,878,1153,904"/>
+<area shape="rect" id="node26" href="$classRFC__Pane__base.html#a2f9e1618fef477f04ffe8d1560d03228" title="Compute the natural coordinates. " alt="" coords="781,456,944,497"/>
+<area shape="rect" id="node41" href="$io_8h.html#a2f553e67d676f64ed65e873c671e3a5a" title="read" alt="" coords="839,404,886,431"/>
+<area shape="rect" id="node42" href="$classRFC__Pane__base.html#af4f9a44cfa67dbbabecdefb99a081bc5" title="The total number of faces in the pane. " alt="" coords="785,634,940,676"/>
+<area shape="rect" id="node39" href="$classRFC__Pane__base.html#a35a62313d45990cfa4cab8caa1dfbff6" title="The total number of nodes in the pane. " alt="" coords="1012,689,1167,730"/>
+<area shape="rect" id="node43" href="$RFC__Window__base__IO__binary_8C.html#a2ec0c78c103ae710264bde85c247a45b" title="swap_endian" alt="" coords="813,271,912,298"/>
+<area shape="rect" id="node27" href="$classRFC__Pane__base.html#a7e2ad5d047afd4b30737ba86835b9c31" title="RFC_Pane_base::get\l_host_element_of_subface" alt="" coords="1000,521,1179,562"/>
+<area shape="rect" id="node35" href="$classRFC__Pane__base.html#aabf7aa9dcaff7168e721970b59323766" title="Take a subface id and a local subnode id, return the natual coordinates of the subnode within the par..." alt="" coords="1015,456,1164,497"/>
+<area shape="rect" id="node28" href="$classElement__node__enumerator.html#ae0c063cfb2479f614be43b9d2f92ba63" title="Get the local id of the element within the pane. " alt="" coords="1227,514,1421,540"/>
+<area shape="rect" id="node36" href="$classElement__node__enumerator.html#a041249f802c5bf4c2deae666610e03c4" title="Go to the next element within the connectivity tables of a pane. " alt="" coords="1235,630,1413,672"/>
+<area shape="rect" id="node34" href="$classElement__node__enumerator.html#afaa016f7aa87969def6903a4a7e8490f" title="Element_node_enumerator\l::pane" alt="" coords="1235,565,1413,606"/>
+<area shape="rect" id="node38" href="$classRFC__Pane__base.html#a1336be8a0a667426c2041e1135bd1365" title="Determine the parent type of a subnode of given tyep. " alt="" coords="1006,273,1173,314"/>
+<area shape="rect" id="node40" href="$classRFC__Pane__base.html#a1d6aebe545e161e676c767a74e78456c" title="The total number of nodes in the subdivision of the pane. " alt="" coords="1012,338,1167,380"/>
+<area shape="rect" id="node29" href="$classConnectivity.html#a69bd059da8cf335fbee896488f5c1e97" title="Get the index of the first element. " alt="" coords="1662,673,1797,714"/>
+<area shape="rect" id="node30" href="$classPane.html#afc3d6a08a6436efe1af8e83699d4ca53" title="Is mesh of the pane structured? " alt="" coords="1662,516,1797,543"/>
+<area shape="rect" id="node31" href="$classConnectivity.html#a3ab0f5b4dbc683714ef15ccfb16225ac" title="Get a constant pointer to the connectivity array. " alt="" coords="1470,579,1613,606"/>
+<area shape="rect" id="node32" href="$classPane.html#a78f646f49fb83340032b735b056a19d3" title="Get the number of nodes in i&#45;dimension if the mesh is structured. " alt="" coords="1494,630,1589,656"/>
+<area shape="rect" id="node33" href="$classConnectivity.html#a6b814939135364a0cd18ee54799897ee" title="Get the number of nodes per element of the current connectivity table. " alt="" coords="1478,513,1605,554"/>
+<area shape="rect" id="node37" href="$classPane.html#a62d5a7a3e02da8c334472006166d67ea" title="Obtain the connectivity table containing the element with the given ID. " alt="" coords="1476,680,1607,707"/>
+<area shape="rect" id="node44" href="$buildface_8cpp.html#a34cd8fd4d99fbdd4ef97fcc94070b460" title="swap" alt="" coords="1063,171,1116,198"/>
+<area shape="rect" id="node46" href="$roccom__c_09_09_8h.html#a92237a2ea1b3833484b9fd0c01cc1f0a" title="Copy an array from an attribute on a specific pane into a given buffer. " alt="" coords="801,1004,925,1031"/>
+<area shape="rect" id="node48" href="$roccom__c_09_09_8h.html#a74e2d52abbc3b6532fc19b38deabba26" title="Get the sizes of an attribute. " alt="" coords="808,751,917,778"/>
+<area shape="rect" id="node49" href="$classRFC__Pane__base.html#ae0c063cfb2479f614be43b9d2f92ba63" title="RFC_Pane_base::id" alt="" coords="793,802,933,828"/>
+<area shape="rect" id="node47" href="$PlaneNorm_8f90.html#aff8c3fba8a8281aa23276c4e54edc470" title="offset" alt="" coords="1062,1004,1117,1031"/>
+</map>

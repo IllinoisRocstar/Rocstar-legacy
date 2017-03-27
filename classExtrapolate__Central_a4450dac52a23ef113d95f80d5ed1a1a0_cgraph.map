@@ -1,0 +1,12 @@
+<map id="init" name="init">
+<area shape="rect" id="node2" href="$roccom__c_09_09_8h.html#ac30f8d5c776f75044e005ce4f2aca9d4" title="COM_get_attribute_handle" alt="" coords="505,250,682,276"/>
+<area shape="rect" id="node4" href="$roccom__c_09_09_8h.html#a18a6824608686682b76b860744a104d6" title="COM_get_window_handle" alt="" coords="94,35,269,62"/>
+<area shape="rect" id="node5" href="$classInterpolateBase.html#a4450dac52a23ef113d95f80d5ed1a1a0" title="InterpolateBase::init" alt="" coords="112,170,251,196"/>
+<area shape="rect" id="node3" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="731,60,859,87"/>
+<area shape="rect" id="node6" href="$classAction.html#ad116f378d988ba583f13bfa8519f05f0" title="Action::name" alt="" coords="337,170,436,196"/>
+<area shape="rect" id="node7" href="$classAction.html#af0750c1b2d7d6be0edf70b32d082ce44" title="Action::get_attribute\l_handle" alt="" coords="317,272,456,313"/>
+<area shape="rect" id="node8" href="$roccom__c_09_09_8h.html#a299161a8c4977e89b90876b670289762" title="COM_get_attribute_handle\l_const" alt="" coords="505,53,682,94"/>
+<area shape="rect" id="node9" href="$classAction.html#af683de28d94fa100c64365da81d86bdb" title="Action::get_io" alt="" coords="335,338,438,364"/>
+<area shape="rect" id="node10" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="320,52,453,79"/>
+<area shape="rect" id="node11" href="$classAction.html#ac0616a5dada5768caed7fbda0876ea2b" title="Action::get_attribute\l_handle_const" alt="" coords="317,104,456,145"/>
+</map>

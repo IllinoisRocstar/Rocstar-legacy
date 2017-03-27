@@ -1,0 +1,7 @@
+<map id="cmp_signed_dist_to_planeC3" name="cmp_signed_dist_to_planeC3">
+<area shape="rect" id="node2" href="$distance__predicatesS3_8h.html#a4b63aece211f73975c919585a43b2890" title="cmp_signed_dist_to\l_plane" alt="" coords="200,5,339,46"/>
+<area shape="rect" id="node3" href="$predicates_2kernel__ftC3_8h.html#acd2c267c66b54d62d082ac30c2ed18d6" title="has_larger_signed_dist\l_to_planeC3" alt="" coords="192,70,347,111"/>
+<area shape="rect" id="node5" href="$predicates_2kernel__ftC3_8h.html#a5558e9d15e9e1c338acddfed72b8374c" title="has_smaller_signed\l_dist_to_planeC3" alt="" coords="201,135,338,177"/>
+<area shape="rect" id="node4" href="$distance__predicatesS3_8h.html#a176934565bddafed58e012cda8ffdab4" title="has_larger_signed_dist\l_to_plane" alt="" coords="395,70,549,111"/>
+<area shape="rect" id="node6" href="$distance__predicatesS3_8h.html#a231ccf61a1f51c216033051e9e89b9dc" title="has_smaller_signed\l_dist_to_plane" alt="" coords="403,135,541,177"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="remove_tip" name="remove_tip">
+<area shape="rect" id="node2" href="$classHalfedge__data__structure__decorator.html#ac89f65b400729653ed4719b11ad2d278" title="erase_facet" alt="" coords="141,5,232,32"/>
+<area shape="rect" id="node3" href="$classHalfedge__data__structure__decorator.html#aa4cf771809bb8f620ad9bfb890f1fd13" title="flip_edge" alt="" coords="149,56,224,83"/>
+<area shape="rect" id="node4" href="$classHalfedge__data__structure__decorator.html#acea850b1c2193ebbbe8839355d0fbfaf" title="join_facet" alt="" coords="147,107,226,133"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="target" name="target">
+<area shape="rect" id="node2" href="$classSegment__2.html#a5bf22c610924b266446526f98001f911" title="Segment_2\&lt; R \&gt;::bbox" alt="" coords="119,5,278,32"/>
+<area shape="rect" id="node3" href="$namespaceCGAL.html#a95fc5b4707754cc44983d73bf683b920" title="CGAL::do_intersect" alt="" coords="130,56,267,83"/>
+<area shape="rect" id="node9" href="$classSegment__2.html#ad254d8bff05af7e53346230a2b3d9119" title="Segment_2\&lt; R \&gt;::opposite" alt="" coords="109,107,288,133"/>
+<area shape="rect" id="node4" href="$classTriangulation.html#aba3f32dc957f5df74d9d2b4187083bb3" title="Triangulation::is_diagonalie" alt="" coords="336,56,515,83"/>
+<area shape="rect" id="node5" href="$classTriangulation.html#ac3001f56f94ec919c721c8d897931e1d" title="Triangulation::is_diagonal" alt="" coords="563,56,733,83"/>
+<area shape="rect" id="node6" href="$classTriangulation.html#a614267789be8944cd704d0ee66e235c2" title="Main entry for triangulation. " alt="" coords="782,56,946,83"/>
+<area shape="rect" id="node7" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="995,56,1173,83"/>
+<area shape="rect" id="node8" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="1221,56,1339,83"/>
+</map>

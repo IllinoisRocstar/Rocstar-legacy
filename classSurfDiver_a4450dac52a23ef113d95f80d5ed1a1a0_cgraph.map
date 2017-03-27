@@ -1,0 +1,9 @@
+<map id="init" name="init">
+<area shape="rect" id="node2" href="$Coupling_8C.html#aa92a1a225a5db4bf21a72bd7537ab1c0" title="_load_rocface" alt="" coords="137,5,239,32"/>
+<area shape="rect" id="node3" href="$roccom__c_09_09_8h.html#a299161a8c4977e89b90876b670289762" title="COM_get_attribute_handle\l_const" alt="" coords="99,57,277,98"/>
+<area shape="rect" id="node5" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="100,123,276,149"/>
+<area shape="rect" id="node6" href="$classAgent.html#a5d3576b9180e99959235980d580a4090" title="Agent::get_coupling" alt="" coords="119,173,257,200"/>
+<area shape="rect" id="node7" href="$classCoupling.html#a74d1138ae9a6c79d20343b54e30b051e" title="Coupling::get_rocmancontrol\l_param" alt="" coords="94,225,282,266"/>
+<area shape="rect" id="node8" href="$classAgent.html#afbec49777e2fdf6d5e9c8777380e9545" title="Agent::get_rocmod_name" alt="" coords="103,291,273,317"/>
+<area shape="rect" id="node4" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="331,93,459,120"/>
+</map>

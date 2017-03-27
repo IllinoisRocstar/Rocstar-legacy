@@ -1,0 +1,11 @@
+<map id="end" name="end">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#aa7654881265062b99bf26735fcdf6159" title="cimg_library::CImg\l::_cimg_math_parser\l::compile" alt="" coords="115,5,259,61"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#a1017563288be5d5ff23f70a91ef519df" title="Fill sequentially all pixel values with values val0 and val1 respectively. " alt="" coords="121,86,253,127"/>
+<area shape="rect" id="node5" href="$structcimg__library_1_1CImg.html#a770b28a6ddc3c11af056d27f8dede3d7" title="Return a shared&#45;memory image referencing a set of channels (v0&#45;&gt;v1) of the instance image..." alt="" coords="113,152,260,208"/>
+<area shape="rect" id="node6" href="$structcimg__library_1_1CImg.html#acb22178b8e77a784d443fd7a6fad7836" title="Return a shared&#45;memory image referencing a set of lines of the instance image. " alt="" coords="96,233,277,274"/>
+<area shape="rect" id="node7" href="$structcimg__library_1_1CImg.html#a321bd9cc21a2f658df1dcc5b95eb6fd6" title="Return a shared memory image referencing a set of planes (z0&#45;&gt;z1,v0) of the instance image..." alt="" coords="113,299,260,355"/>
+<area shape="rect" id="node8" href="$structcimg__library_1_1CImg.html#a2bec31726ee3647345577b893c102dea" title="Get a shared&#45;memory image referencing a set of points of the instance image. " alt="" coords="113,379,260,435"/>
+<area shape="rect" id="node9" href="$structcimg__library_1_1CImg.html#a0752b44324e973aed012d79bc9a2d3fd" title="Operator~(). " alt="" coords="117,459,256,501"/>
+<area shape="rect" id="node10" href="$structcimg__library_1_1CImg.html#a6996328dda8169890a02942e19b6d445" title="Display informations about the image on the standard error output. " alt="" coords="121,525,253,566"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg_1_1__cimg__math__parser.html#a2b9673483bc5fe4443cf097333bbb975" title="cimg_library::CImg\l::_cimg_math_parser\l::_cimg_math_parser" alt="" coords="325,5,469,61"/>
+</map>

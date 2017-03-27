@@ -1,0 +1,9 @@
+<map id="cmp_dist_to_pointC3" name="cmp_dist_to_pointC3">
+<area shape="rect" id="node2" href="$distance__predicatesS3_8h.html#ae34443ecab2fed354ac70cc0990b4252" title="cmp_dist_to_point" alt="" coords="205,5,333,32"/>
+<area shape="rect" id="node3" href="$predicates_2kernel__ftC3_8h.html#a86d04ec258ded3a4ce03783c23ed43c8" title="has_larger_dist_to\l_pointC3" alt="" coords="205,57,333,98"/>
+<area shape="rect" id="node6" href="$predicates_2kernel__ftC3_8h.html#ae7cb5705037fa4e9ccc2467091fa28d9" title="has_smaller_dist_to\l_pointC3" alt="" coords="200,122,339,163"/>
+<area shape="rect" id="node4" href="$distance__predicatesS3_8h.html#ac0c9c1903ecd7f8e2d2b6b302146fc2c" title="has_larger_dist_to\l_point" alt="" coords="392,57,520,98"/>
+<area shape="rect" id="node5" href="$classp__Less__rotate__ccw__E.html#aca3a58c80fca53588151a342f5fafba8" title="p_Less_rotate_ccw_E\l::operator()" alt="" coords="574,57,725,98"/>
+<area shape="rect" id="node7" href="$distance__predicatesS3_8h.html#a8ca8e41bd612f62944e34f158f7fa354" title="has_smaller_dist_to\l_point" alt="" coords="387,122,525,163"/>
+<area shape="rect" id="node8" href="$classp__Less__dist__to__point.html#a8c9258e32292a13f12ad18a30f29c806" title="p_Less_dist_to_point\l::operator()" alt="" coords="577,122,722,163"/>
+</map>

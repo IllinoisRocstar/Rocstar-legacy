@@ -1,0 +1,10 @@
+<map id="RFC_Pane_base" name="RFC_Pane_base">
+<area shape="rect" id="node3" href="$structNode__ID.html" title="A global ID of a node. " alt="" coords="305,149,380,176"/>
+<area shape="rect" id="node4" title="STL class. " alt="" coords="297,407,388,433"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="701,39,797,65"/>
+<area shape="rect" id="node10" href="$structFace__ID.html" title="A global ID of a face. " alt="" coords="307,200,379,227"/>
+<area shape="rect" id="node14" href="$structThree__tuple.html" title="Three_tuple\&lt; Point_2S \&gt;" alt="" coords="259,649,426,676"/>
+<area shape="rect" id="node15" href="$structThree__tuple.html" title="Three_tuple\&lt; T \&gt;" alt="" coords="5,709,128,736"/>
+<area shape="rect" id="node20" href="$structThree__tuple.html" title="Three_tuple\&lt; int \&gt;" alt="" coords="279,771,407,797"/>
+<area shape="rect" id="node18" href="$structRFC__Pane__base_1_1Edge__ID.html" title="A local ID of an edge. " alt="" coords="306,720,379,747"/>
+</map>

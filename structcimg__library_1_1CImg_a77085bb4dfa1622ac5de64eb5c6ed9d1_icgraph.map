@@ -1,0 +1,4 @@
+<map id="crop" name="crop">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a3765c4f7dd09f184b8c26cc7a290ea22" title="Autocrop an image, regarding of the specified backround value. " alt="" coords="101,5,235,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#a0a1400f592a7192b1e6421f5d7045d6a" title="Get a rectangular part of the instance image. " alt="" coords="102,70,234,111"/>
+</map>

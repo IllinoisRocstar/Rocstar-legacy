@@ -1,0 +1,26 @@
+<map id="get_element_array" name="get_element_array">
+<area shape="rect" id="node2" href="$classMesquite_1_1MsqHessian.html#a04439b6a7b0680fc5459427fda269c7f" title="Mesquite::MsqHessian\l::accumulate_entries" alt="" coords="229,186,385,228"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1VertexMover.html#a3446bdd214516cc9300ab42ebb3be41f" title="CHECK FEASIBLE IS NOT YET IMPLEMENTED. " alt="" coords="228,56,385,97"/>
+<area shape="rect" id="node5" href="$classMesquite_1_1LPtoPTemplate.html#a96fd4fab3da95f31341ab275bbed6c25" title="Mesquite::LPtoPTemplate\l::compute_analytical_gradient" alt="" coords="209,121,404,162"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1LPtoPTemplate.html#a8de60b83054bdbedab620a59b0ec7540" title="Mesquite::LPtoPTemplate\l::compute_analytical_hessian" alt="" coords="488,92,683,133"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1TargetCalculator.html#adffb8528b2cfc1e23168aa2c44c5cfd0" title="Compute the default &quot;isotropic&quot; target matrices that are often used in the computation of reference&#45;b..." alt="" coords="217,252,396,308"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1TargetCalculator.html#ab066dc9db4106bf2adbafc8f7986aabc" title="Computes the guide corner matrices A for a given element index in the reference patch. " alt="" coords="217,464,396,505"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1TargetCalculator.html#a14179ad197e9a02f52380f1b0e6d0ec3" title="Compute the corner matrices for the reference mesh refMesh. " alt="" coords="215,383,399,439"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1WTargetCalculator.html#af386ad951ad29a68944557ccfc6f18ec" title="Mesquite::WTargetCalculator\l::compute_target_matrices" alt="" coords="489,493,681,534"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1LVQDTargetCalculator.html#a7bebe2f2afb7cd9b6552569edd96e9a1" title="Function called by compute_target_matrices(PatchData&amp; pd, MsqError&amp; err) to compute the matrices afte..." alt="" coords="478,390,693,432"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1TargetCalculator.html#af6bf2de626e0808056f0b428cd15d127" title="This function wraps compute_target_matrices and checks that the determinant of each target is positiv..." alt="" coords="217,580,396,636"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1LInfTemplate.html#a6183fc5725edbf2c2e8d39347d70564d" title="Mesquite::LInfTemplate\l::concrete_evaluate" alt="" coords="227,661,386,702"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1MaxTemplate.html#a6183fc5725edbf2c2e8d39347d70564d" title="Mesquite::MaxTemplate\l::concrete_evaluate" alt="" coords="225,726,388,768"/>
+<area shape="rect" id="node15" href="$classMesquite_1_1LPtoPTemplate.html#a6183fc5725edbf2c2e8d39347d70564d" title="Mesquite::LPtoPTemplate\l::concrete_evaluate" alt="" coords="220,792,393,833"/>
+<area shape="rect" id="node16" href="$classMesquite_1_1ASMQualityMetric.html#afc1a16a1793ba9459a9b930b5292ffc5" title="evaluate using mesquite objects " alt="" coords="212,857,401,898"/>
+<area shape="rect" id="node17" href="$classMesquite_1_1VertexConditionNumberQualityMetric.html#a5a90f78516fa587f85daf4011bfb1ba8" title="evaluate using mesquite objects " alt="" coords="184,922,429,964"/>
+<area shape="rect" id="node18" href="$classMesquite_1_1LocalSizeQualityMetric.html#a5a90f78516fa587f85daf4011bfb1ba8" title="For the given vertex, vert, calculate the local size metric value. " alt="" coords="216,988,397,1029"/>
+<area shape="rect" id="node19" href="$classMesquite_1_1MeshSet.html#a7bfa519a2805ef4b0910f95d18c95b9d" title="Mesquite::MeshSet::\lget_next_elem_on_vert_patch" alt="" coords="209,1118,405,1160"/>
+<area shape="rect" id="node21" href="$classMesquite_1_1MeshSet.html#a49d26069ef9dc15614b552680b49417f" title="Mesquite::MeshSet::\lget_next_global_patch" alt="" coords="231,1053,383,1094"/>
+<area shape="rect" id="node22" href="$classMesquite_1_1MsqHessian.html#a497a4645ccf251f6993261c5ecf88712" title="creates a sparse structure for a Hessian, based on the connectivity information contained in the Patc..." alt="" coords="229,1184,385,1225"/>
+<area shape="rect" id="node24" href="$classMesquite_1_1NonSmoothSteepestDescent.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::NonSmoothSteepest\lDescent::optimize_vertex\l_positions" alt="" coords="205,1250,409,1306"/>
+<area shape="rect" id="node25" href="$classMesquite_1_1CornerTagHandles.html#af7df6241ad11d8cc13040c39ce23d645" title="Mesquite::CornerTagHandles\l::save_load_tags" alt="" coords="211,1330,403,1372"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1TargetCalculator.html#a74331070fa7c1042f17b7d3583e7bcb9" title="This is the &quot;run&quot; function of PatchDataUser. It can do anything really. " alt="" coords="496,588,675,629"/>
+<area shape="rect" id="node20" href="$classMesquite_1_1MeshSet.html#a06226a9836be0e1cc76252e9100b16e6" title="Mesquite::MeshSet::\lget_next_patch" alt="" coords="514,1086,657,1128"/>
+<area shape="rect" id="node23" href="$classMesquite_1_1FeasibleNewton.html#a89b3bc78bf7cd4b7e8b7155ac30d03fd" title="Mesquite::FeasibleNewton\l::optimize_vertex_positions" alt="" coords="495,1184,676,1225"/>
+</map>

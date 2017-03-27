@@ -1,0 +1,5 @@
+<map id="get_domain_normal_at_element" name="get_domain_normal_at_element">
+<area shape="rect" id="node2" href="$classMesquite_1_1PatchData.html#a80ace172b3bfe563e3dd0afd8adb3f57" title="get_domain_normal_at\l_element" alt="" coords="209,38,362,79"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1MeshSet.html#aad0ca628c9cb18dba10b2badf8cd448d" title="Returns the domain associated with the MeshSet from which the Patch originates. " alt="" coords="414,5,567,46"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1MeshDomain.html#af51d0710f9894de362dd3d9aa1399d5c" title="Returns the normal of the domain to which &quot;entity_handle&quot; is constrained. " alt="" coords="411,70,571,111"/>
+</map>

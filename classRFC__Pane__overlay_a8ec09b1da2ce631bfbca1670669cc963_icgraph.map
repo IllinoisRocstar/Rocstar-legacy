@@ -1,0 +1,51 @@
+<map id="get_index" name="get_index">
+<area shape="rect" id="node2" href="$classRFC__Pane__overlay.html#ab7ea2290150c22963050ec6a0d3f5aa8" title="add_tangent" alt="" coords="384,66,477,93"/>
+<area shape="rect" id="node3" href="$group__ntc.html#ga7f96d32b13df97ab6783e01c97e4723f" title="RFC_Window_overlay\l::evaluate_normals" alt="" coords="586,183,739,224"/>
+<area shape="rect" id="node5" href="$classRFC__Pane__overlay.html#a8715073b184c8e18e99d4831d6d8ddb8" title="get_angle_defect" alt="" coords="150,942,271,969"/>
+<area shape="rect" id="node8" href="$classRFC__Pane__overlay.html#a54965789f7c62f2c1542ede333225ccf" title="get_buffered_inode" alt="" coords="145,1043,277,1070"/>
+<area shape="rect" id="node10" href="$classRFC__Pane__overlay.html#a1f55ef4c17601e6eab59e7671bcb8ac5" title="get_cos_edge_angle" alt="" coords="140,993,281,1019"/>
+<area shape="rect" id="node12" href="$classRFC__Pane__overlay.html#a345930a33af5e70a1bbdb38484ddf5f4" title="get_cos_face_angle" alt="" coords="141,1094,280,1121"/>
+<area shape="rect" id="node14" href="$classRFC__Pane__overlay.html#a41a73a231b94a897d7dd709c90d70c95" title="get_inode" alt="" coords="171,1145,250,1171"/>
+<area shape="rect" id="node16" href="$classRFC__Pane__overlay.html#a446a710e88d0d97a99fd024d4a5f76d7" title="get_inode_list" alt="" coords="159,1195,262,1222"/>
+<area shape="rect" id="node18" href="$classRFC__Pane__overlay.html#ad323ae1e8477a8b357b4b116e87bf95d" title="get_normal" alt="" coords="167,1246,254,1273"/>
+<area shape="rect" id="node19" href="$classRFC__Pane__overlay.html#afcf49fb6ab20e173c13758e5ce5594e1" title="get_point" alt="" coords="173,1297,248,1323"/>
+<area shape="rect" id="node20" href="$classRFC__Pane__overlay.html#a38f4f6454f38e6fed9029cea84462988" title="get_tangent" alt="" coords="385,665,476,691"/>
+<area shape="rect" id="node21" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="Overlay::insert_node\l_in_blue_edge" alt="" coords="139,767,282,808"/>
+<area shape="rect" id="node22" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="600,548,725,589"/>
+<area shape="rect" id="node25" href="$classOverlay.html#a41c1d5ad91477125ab8d20fdf2653724" title="Overlay::intersect_link" alt="" coords="355,366,507,393"/>
+<area shape="rect" id="node26" href="$classRFC__Pane__overlay.html#a541e22567f6cb479647631ebddab3c17" title="is_feature_0" alt="" coords="164,190,257,217"/>
+<area shape="rect" id="node29" href="$classRFC__Pane__overlay.html#afb9dc54668d25e24492e3c0cab222096" title="is_feature_1" alt="" coords="164,555,257,582"/>
+<area shape="rect" id="node34" href="$classRFC__Pane__overlay.html#a354e718ee1dd5a8669700be693afc762" title="is_on_feature" alt="" coords="161,1347,261,1374"/>
+<area shape="rect" id="node37" href="$classRFC__Pane__overlay.html#a7f63417626869195d2a9a4ec10ff4351" title="mark" alt="" coords="185,1449,236,1475"/>
+<area shape="rect" id="node38" href="$classRFC__Pane__overlay.html#a58739abca0fbeefccb54776db35f1398" title="marked" alt="" coords="178,1398,243,1425"/>
+<area shape="rect" id="node23" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="341,833,520,859"/>
+<area shape="rect" id="node39" href="$classOverlay.html#a3c924a6a66bbe40910a8f854b09b4742" title="Overlay::number_subfaces" alt="" coords="573,842,752,869"/>
+<area shape="rect" id="node40" href="$group__mf1.html#ga8257223a550979975b20a77712e55eb0" title="Remove a false strong curve. " alt="" coords="134,1500,287,1541"/>
+<area shape="rect" id="node41" href="$classRFC__Pane__overlay.html#a6c2a374be96732c6d9df155c0b198393" title="reset_cos_edge_angle" alt="" coords="135,1566,287,1593"/>
+<area shape="rect" id="node42" href="$classRFC__Pane__overlay.html#a13419bfeff485be4c06966e36956f078" title="set_buffered_inode" alt="" coords="145,1617,277,1643"/>
+<area shape="rect" id="node43" href="$classRFC__Pane__overlay.html#a50509d61eeace9fb11ba21830b2fc5db" title="set_feature_0" alt="" coords="160,1667,261,1694"/>
+<area shape="rect" id="node44" href="$classRFC__Pane__overlay.html#addb43c35694cf2e5b68ff37753d7aca0" title="set_inode" alt="" coords="171,1718,250,1745"/>
+<area shape="rect" id="node45" href="$classRFC__Pane__overlay.html#a805cead8340e5700164fae813a1dbd2f" title="set_on_feature" alt="" coords="157,1769,265,1795"/>
+<area shape="rect" id="node46" href="$classRFC__Pane__overlay.html#a5a78628d9706c77b51ff2bd8fa5d31ec" title="set_strong_edge" alt="" coords="151,1819,270,1846"/>
+<area shape="rect" id="node47" href="$classRFC__Pane__overlay.html#a7f447bc7e0dae2f1bf4868b4c6df14a4" title="unmark" alt="" coords="178,1870,243,1897"/>
+<area shape="rect" id="node48" href="$classRFC__Pane__overlay.html#ab1664c42e80ec2a43d7615cf828c44f0" title="unset_feature_0" alt="" coords="153,1921,268,1947"/>
+<area shape="rect" id="node49" href="$classRFC__Pane__overlay.html#a2c64a08614722a67841d237a81b4f6f9" title="unset_on_feature" alt="" coords="149,1971,272,1998"/>
+<area shape="rect" id="node50" href="$classRFC__Pane__overlay.html#a965e33733182b305ec4811dafea0178b" title="unset_strong_edge" alt="" coords="145,2022,277,2049"/>
+<area shape="rect" id="node4" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="800,598,917,625"/>
+<area shape="rect" id="node6" href="$group__fdp.html#ga8a472c4f56c78564bafa4a9610b706c7" title="Compute the angle defect of a vertex. " alt="" coords="354,935,507,976"/>
+<area shape="rect" id="node7" href="$group__ntc.html#gaa2576922e2451c82be9775526d133835" title="Dump out the 0&#45; and 1&#45;features in Tecplot format into files &lt;name&gt;f0.plt, &lt;name&gt;f1.plt, respectively. " alt="" coords="354,1000,507,1041"/>
+<area shape="rect" id="node9" href="$classHDS__accessor.html#a54965789f7c62f2c1542ede333225ccf" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_buffered_inode" alt="" coords="343,1131,518,1172"/>
+<area shape="rect" id="node11" href="$group__fdp.html#ga78fff1d3f28c6607c0ba8fe175d95e5d" title="Compute the cosine of the edge angle at a vertex in a given feature curve. " alt="" coords="354,1065,507,1107"/>
+<area shape="rect" id="node13" href="$group__fdp.html#ga26603d3c69ad54a093a6925f93d0afac" title="Compute the cosine of the face angle (dihedral angle) at an edge. " alt="" coords="354,1196,507,1237"/>
+<area shape="rect" id="node15" href="$classHDS__accessor.html#a798b177ceda47c50a64035e61fde579a" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_inode" alt="" coords="343,1261,518,1303"/>
+<area shape="rect" id="node17" href="$classHDS__accessor.html#ac7fa8c54554338449b239a5e1acebcd0" title="HDS_accessor\&lt; Tag_true\l \&gt;::get_inode_list" alt="" coords="343,1327,518,1368"/>
+<area shape="rect" id="node24" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="357,767,504,808"/>
+<area shape="rect" id="node27" href="$classHDS__accessor.html#a541e22567f6cb479647631ebddab3c17" title="HDS_accessor\&lt; Tag_true\l \&gt;::is_feature_0" alt="" coords="343,117,518,159"/>
+<area shape="rect" id="node28" href="$group__fdh.html#ga541e22567f6cb479647631ebddab3c17" title="RFC_Window_overlay\l::is_feature_0" alt="" coords="354,183,507,224"/>
+<area shape="rect" id="node30" href="$classHDS__accessor.html#afb9dc54668d25e24492e3c0cab222096" title="HDS_accessor\&lt; Tag_true\l \&gt;::is_feature_1" alt="" coords="343,417,518,459"/>
+<area shape="rect" id="node31" href="$classOverlay__primitives.html#abd8b39d16a6ffd05dc3fe8f61daa0916" title="Overlay_primitives\l::snap_blue_ridge_edge" alt="" coords="351,483,510,524"/>
+<area shape="rect" id="node32" href="$classOverlay__primitives.html#aaf3a9b82fdde10fa43a9375665a3c05e" title="Overlay_primitives\l::snap_blue_ridge_vertex" alt="" coords="347,548,514,589"/>
+<area shape="rect" id="node33" href="$group__fdh.html#gafb9dc54668d25e24492e3c0cab222096" title="RFC_Window_overlay\l::is_feature_1" alt="" coords="354,300,507,341"/>
+<area shape="rect" id="node35" href="$classHDS__accessor.html#a354e718ee1dd5a8669700be693afc762" title="HDS_accessor\&lt; Tag_true\l \&gt;::is_on_feature" alt="" coords="343,1392,518,1433"/>
+<area shape="rect" id="node36" href="$group__pio.html#ga3da839dac99750b87214dd5fcf75d138" title="RFC_Window_overlay\l::get_an_unmarked_halfedge" alt="" coords="336,1457,525,1499"/>
+</map>

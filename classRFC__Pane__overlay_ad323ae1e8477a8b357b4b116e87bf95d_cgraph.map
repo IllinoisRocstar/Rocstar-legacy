@@ -1,0 +1,10 @@
+<map id="get_normal" name="get_normal">
+<area shape="rect" id="node2" href="$classHalfedge__overlay.html#a49a0ced46edaa808d9951d79b7e43d31" title="Halfedge_overlay::destination" alt="" coords="141,5,336,32"/>
+<area shape="rect" id="node4" href="$classRFC__Pane__overlay.html#a8ec09b1da2ce631bfbca1670669cc963" title="get_index" alt="" coords="199,56,278,83"/>
+<area shape="rect" id="node5" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="153,107,325,133"/>
+<area shape="rect" id="node6" href="$classHDS__accessor.html#a3f8daf32c954f78b7e250543e0ee4f22" title="HDS_accessor::get_prev\l_around_destination" alt="" coords="154,158,323,199"/>
+<area shape="rect" id="node7" href="$classHalfedge__overlay.html#aa126fd94949c810d24869ad04cd97e15" title="Halfedge_overlay::is\l_border" alt="" coords="168,223,309,265"/>
+<area shape="rect" id="node8" href="$classHalfedge__overlay.html#aa274ac14f207d82094a34345820a3058" title="Halfedge_overlay::prev" alt="" coords="161,289,317,316"/>
+<area shape="rect" id="node3" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="385,5,551,32"/>
+<area shape="rect" id="node9" href="$classHalfedge__overlay.html#acba595f65090d9721649cdf1f0999894" title="Halfedge_overlay::is\l_primary" alt="" coords="397,282,539,323"/>
+</map>

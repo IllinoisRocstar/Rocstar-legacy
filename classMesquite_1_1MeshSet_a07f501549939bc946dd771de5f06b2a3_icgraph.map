@@ -1,0 +1,15 @@
+<map id="get_next_patch" name="get_next_patch">
+<area shape="rect" id="node2" href="$classMesquite_1_1TerminationCriterion.html#a326094613366d5a66c3e67384322aa90" title="Mesquite::TerminationCriterion\l::accumulate_outer" alt="" coords="173,5,373,46"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1TargetCalculator.html#a14179ad197e9a02f52380f1b0e6d0ec3" title="Compute the corner matrices for the reference mesh refMesh. " alt="" coords="181,71,365,127"/>
+<area shape="rect" id="node7" href="$classMesquite_1_1WTargetCalculator.html#af386ad951ad29a68944557ccfc6f18ec" title="Mesquite::WTargetCalculator\l::compute_target_matrices" alt="" coords="177,151,369,193"/>
+<area shape="rect" id="node8" href="$classMesquite_1_1LVQDTargetCalculator.html#af386ad951ad29a68944557ccfc6f18ec" title="Mesquite::LVQDTargetCalculator\l::compute_target_matrices" alt="" coords="166,217,381,258"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1VertexMover.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Improves the quality of the MeshSet, calling some methods specified in a class derived from VertexMov..." alt="" coords="440,305,597,346"/>
+<area shape="rect" id="node9" href="$classMesquite_1_1MeshTransform.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Loop over the mesh and perform the affine transformation. " alt="" coords="186,334,361,375"/>
+<area shape="rect" id="node10" href="$classMesquite_1_1QualityAssessor.html#a74331070fa7c1042f17b7d3583e7bcb9" title="Does one sweep over the mesh and assess the quality with the metrics previously added. " alt="" coords="429,429,608,470"/>
+<area shape="rect" id="node11" href="$classMesquite_1_1TerminationCriterion.html#abb595efb30088610673b262261ada67c" title="Clear any data accumulated during an outer iteration. " alt="" coords="173,399,373,441"/>
+<area shape="rect" id="node12" href="$classMesquite_1_1InstructionQueue.html#a6b8e795b0f2089182a323a9b3c29af92" title="This function is virtual so that it may be redefined in the wraper classes. " alt="" coords="182,517,365,558"/>
+<area shape="rect" id="node13" href="$classMesquite_1_1MeshSet.html#ae09aaebdb0f6e0f73869919fe225bc5d" title="write_gnuplot" alt="" coords="224,583,323,609"/>
+<area shape="rect" id="node14" href="$classMesquite_1_1MeshSet.html#a10713b226f6c03385b6a590461770e12" title="write_vtk" alt="" coords="236,633,311,660"/>
+<area shape="rect" id="node4" href="$classMesquite_1_1ShapeImprovementWrapper.html#a52b954daacf72db4a8b0b8811e81bbb0" title="run_instructions runs the wrapper on the given MeshSet. " alt="" coords="657,367,853,409"/>
+<area shape="rect" id="node5" href="$classRocmop.html#a2dbb41ea0da20e141ec61d8d4a726ddf" title="Smooth the panes of the working window using MESQUITE. " alt="" coords="902,375,1085,401"/>
+</map>

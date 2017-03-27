@@ -1,0 +1,5 @@
+<map id="save_pnm" name="save_pnm">
+<area shape="rect" id="node2" href="$structcimg__library_1_1CImg.html#a4fd91f4fb021d20c5b62329c49733bd9" title="Save the image as a file. " alt="" coords="175,5,307,46"/>
+<area shape="rect" id="node3" href="$structcimg__library_1_1CImg.html#afdab21cdc4ef778bfaf4e123b28c9aa0" title="Save the image using GraphicsMagick&#39;s gm. " alt="" coords="137,71,346,127"/>
+<area shape="rect" id="node4" href="$structcimg__library_1_1CImg.html#ab0ff4f35fc74d40fda4893b7e2fdbe7b" title="Save the image using ImageMagick&#39;s convert. " alt="" coords="144,151,339,207"/>
+</map>

@@ -1,0 +1,51 @@
+<map id="rocstar_driver" name="rocstar_driver">
+<area shape="rect" id="node2" href="$classCoupling.html#a7b0fefc2866b126097193b3bece2cff7" title="Coupling::check_convergence" alt="" coords="155,5,352,32"/>
+<area shape="rect" id="node3" href="$rocstar__driver_8C.html#a05bfdef40d695af301e8ebe637e24e5c" title="check_for_interrupt" alt="" coords="187,259,320,285"/>
+<area shape="rect" id="node11" href="$roccom__c_09_09_8h.html#ae231f40abf373de8e0f0c62e6dd3c6fb" title="COM_print_profile" alt="" coords="430,1152,557,1179"/>
+<area shape="rect" id="node13" href="$roccom__c_09_09_8h.html#a1cbe8cccd93c1de56f45dc4e0e46805a" title="COM_set_debug" alt="" coords="433,1203,553,1229"/>
+<area shape="rect" id="node14" href="$roccom__c_09_09_8h.html#a1c38d3b83185ed89dcc2d2e9424b0f8c" title="COM_set_profiling" alt="" coords="660,461,791,488"/>
+<area shape="rect" id="node15" href="$roccom__c_09_09_8h.html#acac8419a87efe55e985100251e731bce" title="COM_set_verbose" alt="" coords="428,613,559,640"/>
+<area shape="rect" id="node16" href="$rocstar__driver_8C.html#ad88be58081242916b2f2c51d20cb2613" title="create_coupling" alt="" coords="197,929,310,956"/>
+<area shape="rect" id="node5" href="$classCoupling.html#a32d626626eee0bc4ade146973f6abb1c" title="Invoke finalization of the actions in the scheduler and the agents. " alt="" coords="664,81,787,108"/>
+<area shape="rect" id="node17" href="$classRocBlas.html#a02fd73d861ef2e4aabb38c0c9ff82947" title="RocBlas::init" alt="" coords="205,727,302,753"/>
+<area shape="rect" id="node20" href="$classCoupling.html#a0c6084da90694ea89ccd618ed8c8e6a4" title="Coupling::init_convergence" alt="" coords="164,980,343,1007"/>
+<area shape="rect" id="node21" href="$classCoupling.html#a152013c4f4d029f84f09d02f5062298a" title="Coupling::initialize" alt="" coords="661,157,789,184"/>
+<area shape="rect" id="node26" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="472,1253,515,1280"/>
+<area shape="rect" id="node8" href="$classCoupling.html#a5eb8adb23317ad3995690c804e059197" title="Coupling::output_restart\l_files" alt="" coords="645,285,806,326"/>
+<area shape="rect" id="node27" href="$classCoupling.html#a8dcaf27dd002ea0d3187f469cdd3a360" title="Coupling::output_visualization\l_files" alt="" coords="155,1133,351,1174"/>
+<area shape="rect" id="node28" href="$classControl__parameters.html#a388f572c62279f839ee138a9afbdeeb5" title="Control_parameters\l::print" alt="" coords="185,1198,321,1239"/>
+<area shape="rect" id="node29" href="$classRocmanControl__parameters.html#a388f572c62279f839ee138a9afbdeeb5" title="RocmanControl_parameters\l::print" alt="" coords="161,1263,346,1305"/>
+<area shape="rect" id="node30" href="$classCoupling.html#a952d598b43dfc5742886e9e747aa7ca1" title="Coupling::ProcessInterrupt" alt="" coords="165,208,342,235"/>
+<area shape="rect" id="node32" href="$rocstar__driver_8C.html#a24fcde47bf59dd246e92f6df8c2d158d" title="reached_restartdump_time" alt="" coords="165,1329,341,1356"/>
+<area shape="rect" id="node33" href="$rocstar__driver_8C.html#a3ac653c05e5cf052610e753d98035574" title="reached_simulation_time" alt="" coords="170,1380,337,1407"/>
+<area shape="rect" id="node34" href="$rocstar__driver_8C.html#a2488dfe4599681413c777f1a617820a2" title="reached_visdump_time" alt="" coords="175,1431,331,1457"/>
+<area shape="rect" id="node35" href="$classControl__parameters.html#aaa936da334e29618ece019bd8a9aa06f" title="Control_parameters\l::read" alt="" coords="185,661,321,702"/>
+<area shape="rect" id="node44" href="$classRocmanControl__parameters.html#a79fc17436931ac60e243f6f6241b7cc5" title="RocmanControl_parameters\l::read" alt="" coords="401,985,586,1026"/>
+<area shape="rect" id="node45" href="$classCoupling.html#a8cd3164575bb5cfde01584917503b1dc" title="Coupling::read_restart_info" alt="" coords="404,411,583,437"/>
+<area shape="rect" id="node31" href="$classCoupling.html#a3743217a687c638a600341721e219b55" title="Coupling::restart_at_time" alt="" coords="409,107,577,133"/>
+<area shape="rect" id="node46" href="$classCoupling.html#a8f2367982533a227bd7aad73650e8803" title="Invoke the scheduler. " alt="" coords="204,1081,303,1108"/>
+<area shape="rect" id="node47" href="$classCoupling.html#a7d06701ac073c331c83519e3909b7fce" title="Schedule the top&#45;level actions of the coupling scheme and the actions of the agents. " alt="" coords="187,1481,320,1508"/>
+<area shape="rect" id="node48" href="$namespacecimg__library_1_1cimg.html#a43334b3df38ff7c4369a503a4fc3a9f9" title="Compare two C&#45;strings, ignoring the case. " alt="" coords="189,1533,317,1574"/>
+<area shape="rect" id="node49" href="$classCoupling.html#a4596502ef0bf7f3915dee64d02cf722c" title="Coupling::update_distances" alt="" coords="162,1599,345,1625"/>
+<area shape="rect" id="node50" href="$classCoupling.html#a5a9f27d028a94e9970751009ddd93ac6" title="Coupling::update_integrals" alt="" coords="165,1649,341,1676"/>
+<area shape="rect" id="node9" href="$classCoupling.html#a3f2bd05f213d9de47594822ade40d224" title="Coupling::write_restart_info" alt="" coords="635,360,816,387"/>
+<area shape="rect" id="node4" href="$classCoupling.html#a00ac77cfb49cefa5eef995801743257a" title="Coupling::Interrupt" alt="" coords="429,259,558,285"/>
+<area shape="rect" id="node7" href="$Coupling_8C.html#a83f4e1cc14f5787ea19907b93f0cd5cb" title="RocstarShutdown" alt="" coords="662,216,789,243"/>
+<area shape="rect" id="node6" href="$classScheduler.html#ab39dbbeb37b2db09bada87931cd462a5" title="Scheduler::finalize\l_actions" alt="" coords="883,41,1013,82"/>
+<area shape="rect" id="node10" href="$namespacecimg__library_1_1cimg.html#a19ad60edf05bad32e75b7077509ef566" title="Open a file, and check for possible errors. " alt="" coords="884,454,1012,495"/>
+<area shape="rect" id="node12" href="$Roccom__base_8h.html#acae08a4a05370b226bc5aef8c478a00b" title="COM_get_roccom" alt="" coords="884,988,1012,1015"/>
+<area shape="rect" id="node18" href="$classRocBlas.html#a3a8f9c7ea4f4c3fc3b1c4b1c28a344d3" title="RocBlas::initHandles" alt="" coords="421,933,566,960"/>
+<area shape="rect" id="node19" href="$roccom__c_09_09_8h.html#acbbf9749cce36d33b4c60c100bdfaea2" title="COM_get_function_handle" alt="" coords="637,912,813,939"/>
+<area shape="rect" id="node22" href="$classCoupling.html#a1ec0a709a179ca5a6fc3352994de431c" title="Invoke input functions of the agents. " alt="" coords="893,208,1003,235"/>
+<area shape="rect" id="node23" href="$classCoupling.html#a26bc665db8e8a51e3aa6541646f165fb" title="Invoke initialization of the actions in the scheduler and the agents. " alt="" coords="899,259,997,285"/>
+<area shape="rect" id="node24" href="$classCoupling.html#a3cb9c1ae4e18c8ebee176bcab84acdd1" title="Coupling::reload_rocface" alt="" coords="865,107,1031,133"/>
+<area shape="rect" id="node25" href="$classCoupling.html#af2a0914ea228ea5ac8e97ae91cf64fbf" title="Coupling::run_initactions" alt="" coords="865,157,1031,184"/>
+<area shape="rect" id="node36" href="$roccom__c_09_09_8h.html#a4859cec968839295988dd58b44f5237e" title="COM_new_window" alt="" coords="658,963,793,989"/>
+<area shape="rect" id="node37" href="$roccom__c_09_09_8h.html#a194cf98ab438699fba9f1d1705044e70" title="COM_window_init_done" alt="" coords="644,1013,807,1040"/>
+<area shape="rect" id="node38" href="$roccom__c_09_09_8h.html#a6f9e4ea8f2cb977968964f4cb5a4b4f6" title="COM_call_function" alt="" coords="659,723,792,749"/>
+<area shape="rect" id="node39" href="$rocstar__driver_8C.html#aee06a1a237cac4a5fd821178d7ea5b91" title="get_restart_time" alt="" coords="435,512,551,539"/>
+<area shape="rect" id="node40" href="$roccom__c_09_09_8h.html#aee2bdea02bb47943444e452f62372e33" title="COM_delete_window" alt="" coords="652,1064,799,1091"/>
+<area shape="rect" id="node41" href="$commpi_8h.html#a8a8389bc67ae874f8ec20c56f758c8bf" title="COMMPI_Comm_rank" alt="" coords="416,832,571,859"/>
+<area shape="rect" id="node42" href="$classControl__parameters.html#a3d7a47742376fe9fba2888a2daae910e" title="Control_parameters\l::update_communicator" alt="" coords="414,715,573,757"/>
+<area shape="rect" id="node43" href="$rocstar__driver_8C.html#a978493ed4516b9914e068ed0a88492b0" title="init_profiling" alt="" coords="680,563,771,589"/>
+</map>

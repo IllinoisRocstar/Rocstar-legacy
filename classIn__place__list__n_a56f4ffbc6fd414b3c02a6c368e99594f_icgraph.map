@@ -1,0 +1,7 @@
+<map id="pop_front" name="pop_front">
+<area shape="rect" id="node2" href="$classOverlay.html#a016736eafdc52a674a90429a3b21d7af" title="Overlay::insert_node\l_in_blue_edge" alt="" coords="131,63,274,105"/>
+<area shape="rect" id="node3" href="$classOverlay.html#ae61113ca16597b0a538d4f54df1f1cc5" title="Overlay::intersect\l_blue_with_green" alt="" coords="349,5,475,46"/>
+<area shape="rect" id="node5" href="$classOverlay.html#add0f510193641f79af80dc6487dc5db9" title="Overlay::match_features_0" alt="" coords="323,71,501,97"/>
+<area shape="rect" id="node6" href="$classOverlay.html#a2a088fe9b26c559287b922a770ae72eb" title="Overlay::project_next\l_vertex" alt="" coords="339,122,485,163"/>
+<area shape="rect" id="node4" href="$classOverlay.html#a65ee7bf74f7175fb955ff2cb30d98f77" title="Overlay::overlay" alt="" coords="549,41,667,68"/>
+</map>

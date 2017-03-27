@@ -1,0 +1,28 @@
+<map id="plag_writestattecascii" name="plag_writestattecascii">
+<area shape="rect" id="node2" href="$classLine__2.html#a788c8fb7953bc03c442e6d905abe0c01" title="Line_2::a" alt="" coords="252,5,327,32"/>
+<area shape="rect" id="node3" href="$POST__Average_8F90.html#ad6a861733b7ae71781bdf12add4164e1" title="aver" alt="" coords="266,56,313,83"/>
+<area shape="rect" id="node4" href="$classmoderror.html#a33fff7a538dcba07c384ac060e126787" title="moderror::deregisterfunction" alt="" coords="848,715,1032,741"/>
+<area shape="rect" id="node5" href="$classmoderror.html#a9eb0a8ad78432f94c482abaaa1922ed4" title="moderror::errorstop" alt="" coords="1089,765,1221,792"/>
+<area shape="rect" id="node8" href="$classsetup__py.html#a10a46d36b410b970a3083ee0a4f590f9" title="setup_py::grid" alt="" coords="237,107,341,133"/>
+<area shape="rect" id="node10" href="$classAff__transformation__repS2.html#a2758e8c9df83e803e7509d563733f531" title="Aff_transformation\l_repS2::print" alt="" coords="426,142,555,183"/>
+<area shape="rect" id="node12" href="$classmoderror.html#aeb9851abf144040b345493441f8432f0" title="moderror::registerfunction" alt="" coords="855,917,1025,944"/>
+<area shape="rect" id="node13" href="$RFLO__CopyGeometryDummy_8F90.html#af14355fdbcc419d57ce350e653f7eded" title="rflo_copygeometrydummy" alt="" coords="203,791,375,817"/>
+<area shape="rect" id="node18" href="$RFLO__GenerateCoarseGrids_8F90.html#a2bb26410ffcbcfb27520c44c601bfd22" title="rflo_generatecoarsegrids" alt="" coords="207,917,371,944"/>
+<area shape="rect" id="node19" href="$RFLO__GetDimensions_8F90.html#a05181a2410be15ef34493a9b3a5a0638" title="rflo_getcelloffset" alt="" coords="431,1171,550,1197"/>
+<area shape="rect" id="node20" href="$RFLO__GetDimensions_8F90.html#ac02260aae73117efbd721b072247e542" title="rflo_getdimensdummy" alt="" coords="623,1221,774,1248"/>
+<area shape="rect" id="node14" href="$RFLO__GetDimensions_8F90.html#af3840de18437855e47c7fcc0dd2db9b5" title="rflo_getdimensdummynodes" alt="" coords="606,765,791,792"/>
+<area shape="rect" id="node21" href="$RFLO__GetDimensions_8F90.html#aba5d7dd0b2f2e1086a6fc3293a20c8f1" title="rflo_getdimensphys" alt="" coords="631,1323,766,1349"/>
+<area shape="rect" id="node16" href="$RFLO__GetDimensions_8F90.html#ae6f50e294b64363a4d74e0a51d34cbd7" title="rflo_getdimensphysnodes" alt="" coords="613,1019,784,1045"/>
+<area shape="rect" id="node17" href="$RFLO__GetDimensions_8F90.html#a574ff4a131bdb63eac55b68f6ccb3e85" title="rflo_getnodeoffset" alt="" coords="427,765,554,792"/>
+<area shape="rect" id="node22" href="$RFLO__ReadGridRegion_8F90.html#af43f7534e919707467279488006d8303" title="rflo_readgridregion" alt="" coords="225,588,353,615"/>
+<area shape="rect" id="node26" href="$classAttribute.html#a8bcf950a774cbd3106d4c68d3b2f38c9" title="Obtain the status of the attribute. " alt="" coords="433,664,548,691"/>
+<area shape="rect" id="node27" href="$structcimg__library_1_1CImg.html#a77d222b4837c78aad604f3f0b5f1409c" title="Return the sum of all the pixel values in an image. " alt="" coords="207,1424,372,1451"/>
+<area shape="rect" id="node6" href="$classMesquite_1_1StopWatch.html#a8c528baf37154d347366083f0f816846" title="Mesquite::StopWatch\l::stop" alt="" coords="1277,725,1425,766"/>
+<area shape="rect" id="node7" href="$classPolyhedron__incremental__builder__3.html#a38cc0cf6cb8c20b57ae92558f887569e" title="Polyhedron_incremental\l_builder_3::error" alt="" coords="1270,790,1431,831"/>
+<area shape="rect" id="node9" href="$classBbox__2.html#a9fc84e6da4a37412b5d7af2ce8b22588" title="Bbox_2::xmax" alt="" coords="437,91,544,117"/>
+<area shape="rect" id="node11" href="$classKdtree__d_1_1ExtPoint.html#a6d3ff0af9dd1932c1c031b2c51d88ee0" title="Kdtree_d::ExtPoint\l::term" alt="" coords="425,25,557,66"/>
+<area shape="rect" id="node15" href="$structCOM__exception.html#a7fc97963662ee96e7c885e9213fec030" title="COM_exception::msg" alt="" coords="865,1221,1015,1248"/>
+<area shape="rect" id="node23" href="$RFLO__ReadDataFile_8F90.html#abaa5693eaed70bea7452a65cec8d4a22" title="rflo_readdatafileint" alt="" coords="635,461,763,488"/>
+<area shape="rect" id="node25" href="$RFLO__ReadDataFile_8F90.html#a9f4fe0ee9e7d7e7328f6a5e1d03d71ec" title="rflo_readdatafilereal" alt="" coords="631,411,766,437"/>
+<area shape="rect" id="node24" href="$classContainer__from__circulator.html#acad38d52497a975bfb6f2f6acd76631f" title="Container_from_circulator::end" alt="" coords="840,461,1040,488"/>
+</map>

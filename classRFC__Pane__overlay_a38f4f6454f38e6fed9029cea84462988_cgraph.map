@@ -1,0 +1,9 @@
+<map id="get_tangent" name="get_tangent">
+<area shape="rect" id="node2" href="$classHalfedge__overlay.html#a49a0ced46edaa808d9951d79b7e43d31" title="Halfedge_overlay::destination" alt="" coords="144,5,339,32"/>
+<area shape="rect" id="node4" href="$classRFC__Pane__overlay.html#a8ec09b1da2ce631bfbca1670669cc963" title="get_index" alt="" coords="431,157,510,184"/>
+<area shape="rect" id="node5" href="$classHDS__accessor.html#ac6aeeb013060db5eb7fdcc07e2410eb4" title="HDS_accessor::get_opposite" alt="" coords="145,107,338,133"/>
+<area shape="rect" id="node6" href="$classHDS__accessor.html#a66183dabb1d9f72347ceb70d1d4f5c4a" title="HDS_accessor::get_pane" alt="" coords="155,157,327,184"/>
+<area shape="rect" id="node7" href="$classRFC__Pane__overlay.html#aca9f348e36d19e00b784bdd4242dad41" title="get_tangent" alt="" coords="196,208,287,235"/>
+<area shape="rect" id="node8" href="$classRFC__Pane__overlay.html#afb9dc54668d25e24492e3c0cab222096" title="is_feature_1" alt="" coords="195,259,288,285"/>
+<area shape="rect" id="node3" href="$classHalfedge__overlay.html#a976002381f5e75ae99e75b14d56ec778" title="Halfedge_overlay::vertex" alt="" coords="387,5,554,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="average_metric_and_weights" name="average_metric_and_weights">
+<area shape="rect" id="node2" href="$classMesquite_1_1IdealWeightInverseMeanRatio.html#a863e7798594aa345b6b94d2d209d450f" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="193,5,389,61"/>
+<area shape="rect" id="node3" href="$classMesquite_1_1IdealWeightMeanRatio.html#a863e7798594aa345b6b94d2d209d450f" title="Virtual function that computes the gradient of the QualityMetric analytically. The base class impleme..." alt="" coords="199,85,383,141"/>
+</map>

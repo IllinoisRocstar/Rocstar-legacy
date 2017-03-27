@@ -1,0 +1,51 @@
+<map id="compute_anisotropic_vertex_centers" name="compute_anisotropic_vertex_centers">
+<area shape="rect" id="node2" href="$classRocblas.html#a67987d3b72ffb73c5fa0cc2930822afd" title="Operation wrapper for copy (x is a scalar pointer). " alt="" coords="213,69,361,96"/>
+<area shape="rect" id="node4" href="$classRocblas.html#a065ad834f700affb4c861da75459325c" title="Operation wrapper for division. " alt="" coords="239,145,334,172"/>
+<area shape="rect" id="node13" href="$classFaceOffset__3.html#ae567b553d4a9a500996a8211c9202a9c" title="eigen_analyze_vertex" alt="" coords="213,567,361,593"/>
+<area shape="rect" id="node27" href="$classFaceOffset__3.html#a57db1d663b1ece755919d222a853f529" title="eval_angle" alt="" coords="245,365,329,392"/>
+<area shape="rect" id="node31" href="$classFaceOffset__3.html#ac9e1c527e399bcf96c28a0cc4875b9e8" title="get_tangents" alt="" coords="238,693,335,720"/>
+<area shape="rect" id="node32" href="$Vector__n_8h.html#aa501d41ea25a24792164a12fd4784044" title="min" alt="" coords="485,617,528,644"/>
+<area shape="rect" id="node36" href="$classElement__node__enumerator.html#a041249f802c5bf4c2deae666610e03c4" title="Go to the next element within the connectivity tables of a pane. " alt="" coords="198,1019,375,1061"/>
+<area shape="rect" id="node49" href="$classElement__node__enumerator.html#a3b0965f57d58cd0e85fab4b12a9d6899" title="Number of edges per element. " alt="" coords="198,1213,375,1254"/>
+<area shape="rect" id="node3" href="$classAttribute.html#a31e5bdf111bbc9b44690b89982b25dad" title="Obtain the data type of each component of the attribute. " alt="" coords="439,56,575,83"/>
+<area shape="rect" id="node5" href="$classRocblas.html#a014ebce01bb2ec4eacb969b142b13d97" title="Chooses which calc function to call based on type of y. " alt="" coords="433,157,580,184"/>
+<area shape="rect" id="node8" href="$classAttribute.html#a59792315103c4358049673a86e8579fb" title="Obtain the full name of the attribute including window name suitable for printing out error messages..." alt="" coords="443,107,571,133"/>
+<area shape="rect" id="node6" href="$classAttribute.html#ab642771d1269b6ccb9e6ba87ec15de3b" title="Checks whether the attribute is associated with the window. " alt="" coords="637,157,792,184"/>
+<area shape="rect" id="node7" href="$classAttribute.html#abc4b98257cfab82335b1ff26b46d5efc" title="Obtain the number of components in the attribute. " alt="" coords="654,209,775,250"/>
+<area shape="rect" id="node9" href="$classWindow.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the window&#39;s name. " alt="" coords="660,107,769,133"/>
+<area shape="rect" id="node10" href="$classAttribute.html#a324e8c54c4c5161913681a1a52fef959" title="Obtain the name of the attribute. " alt="" coords="659,5,770,32"/>
+<area shape="rect" id="node11" href="$classAttribute.html#ae879462c456db18c8c3b111bcd2d1a01" title="Obtain a constant pointer to the parent window of the attribute. " alt="" coords="653,56,776,83"/>
+<area shape="rect" id="node12" href="$classPane.html#a05d1abca9cbb0ec7bdc59f58dd81797c" title="Obtain a constant pointer to its owner window object. " alt="" coords="877,56,981,83"/>
+<area shape="rect" id="node14" href="$classFaceOffset__3.html#a7cd0e18f9d180971a5c656207a67a464" title="compute_eigenvectors" alt="" coords="430,516,583,543"/>
+<area shape="rect" id="node26" href="$namespaceNTS.html#a61aa0d7bc8a0439c1008dbb20e14c771" title="NTS::abs" alt="" coords="675,668,754,695"/>
+<area shape="rect" id="node15" href="$namespacecimg__library_1_1cimg.html#ac1b66fe77173de9e5e8542b2823d6071" title="Print informations about CImg environement variables. " alt="" coords="651,570,779,611"/>
+<area shape="rect" id="node21" href="$smooth__medial_8C.html#ac59a848fa2ab164102030221f21de474" title="dsyevq3" alt="" coords="679,340,750,367"/>
+<area shape="rect" id="node25" href="$buildface_8cpp.html#a34cd8fd4d99fbdd4ef97fcc94070b460" title="swap" alt="" coords="688,516,741,543"/>
+<area shape="rect" id="node16" href="$namespacecimg__library_1_1cimg.html#a0d2a283a3aa2572e9d343f040c8c4c6b" title="Return the current endianness of the CPU. " alt="" coords="865,703,993,745"/>
+<area shape="rect" id="node17" href="$namespacecimg__library_1_1cimg.html#ad0db1003e37cc111d9eddd282c1ab27b" title="Return or set path to the ImageMagick&#39;s convert tool. " alt="" coords="860,442,999,483"/>
+<area shape="rect" id="node18" href="$namespacecimg__library_1_1cimg.html#aa9f7e166f51b43facc8ecc9f05e4ceba" title="Return path of the GraphicsMagick&#39;s gm tool. " alt="" coords="853,507,1006,549"/>
+<area shape="rect" id="node19" href="$namespacecimg__library_1_1cimg.html#aaedba1291890f50edb5be58ef662e516" title="Return or set path of the XMedcon tool. " alt="" coords="865,573,993,614"/>
+<area shape="rect" id="node20" href="$namespacecimg__library_1_1cimg.html#a797797a309ca40aa28cdfbb92f4d1621" title="Return or set path to store temporary files. " alt="" coords="865,638,993,679"/>
+<area shape="rect" id="node22" href="$smooth__medial_8C.html#a064649646f4641b48463cf641b032e32" title="dsytrd3" alt="" coords="897,289,962,316"/>
+<area shape="rect" id="node23" href="$smooth__medial_8C.html#a008137b55395036613fb97c40e7ba8b5" title="SQR" alt="" coords="1109,264,1160,291"/>
+<area shape="rect" id="node24" href="$double_8h.html#ac12b3d29117dc72313c36cdb5a9d3e0e" title="sqrt" alt="" coords="1113,365,1157,392"/>
+<area shape="rect" id="node28" href="$classVector__3.html#a7905d5be1116a4920d9e7b85b2ef8834" title="Vector_3::squared_norm" alt="" coords="425,340,589,367"/>
+<area shape="rect" id="node29" href="$namespacecimg__library.html#a539dd46f536be820887f4df391a9f2fd" title="cimg_library::acos" alt="" coords="443,285,571,312"/>
+<area shape="rect" id="node30" href="$structcimg__library_1_1CImg.html#a80972e1b6fd55bf970cbb07d56c39335" title="cimg_library::CImg\l::get_acos" alt="" coords="649,274,781,315"/>
+<area shape="rect" id="node33" href="$Vector__n_8h.html#a7dddfa733bea2c50f405764d775e636a" title="max" alt="" coords="906,820,953,847"/>
+<area shape="rect" id="node34" href="$classFaceOffset__3.html#ae480653bf10ba8d57e357c289646d660" title="is_acute_ridge" alt="" coords="453,719,560,745"/>
+<area shape="rect" id="node35" href="$classFaceOffset__3.html#a990f5b50335c13fc3890d5e23cfb2b6b" title="is_acute_corner" alt="" coords="449,668,564,695"/>
+<area shape="rect" id="node37" href="$classPane.html#a62d5a7a3e02da8c334472006166d67ea" title="Obtain the connectivity table containing the element with the given ID. " alt="" coords="441,951,572,977"/>
+<area shape="rect" id="node45" href="$classPane.html#ae5acbe47d704ceb866e3717e2ac9422f" title="Dimension of the pane. " alt="" coords="447,1220,566,1247"/>
+<area shape="rect" id="node38" href="$classConnectivity.html#a69bd059da8cf335fbee896488f5c1e97" title="Get the index of the first element. " alt="" coords="647,1053,782,1094"/>
+<area shape="rect" id="node43" href="$classConnectivity.html#a3ab0f5b4dbc683714ef15ccfb16225ac" title="Get a constant pointer to the connectivity array. " alt="" coords="858,1063,1001,1089"/>
+<area shape="rect" id="node46" href="$classPane.html#a78f646f49fb83340032b735b056a19d3" title="Get the number of nodes in i&#45;dimension if the mesh is structured. " alt="" coords="459,1103,554,1129"/>
+<area shape="rect" id="node40" href="$classConnectivity.html#a89f1396a7f4dc43120977a9a42c3ceef" title="Get the total number of elements (including ghost elements) in the table. " alt="" coords="651,914,778,955"/>
+<area shape="rect" id="node48" href="$classConnectivity.html#a6b814939135364a0cd18ee54799897ee" title="Get the number of nodes per element of the current connectivity table. " alt="" coords="443,1154,570,1195"/>
+<area shape="rect" id="node39" href="$classConnectivity.html#aafbe63b1107c964c3673375df9a7472a" title="Root of use&#45;inheritance. " alt="" coords="867,1113,992,1140"/>
+<area shape="rect" id="node41" href="$classPane.html#a20818cc1edd59ab35c1eded37741f6ee" title="Pane::ignore_ghost" alt="" coords="1067,937,1202,964"/>
+<area shape="rect" id="node42" href="$classConnectivity.html#afc3d6a08a6436efe1af8e83699d4ca53" title="Determine whether the mesh is quadratic. " alt="" coords="840,921,1019,948"/>
+<area shape="rect" id="node44" href="$classAttribute.html#a61bd804508cb1f9b4c33fd54351b315e" title="Obtain the number of items in the attribute. " alt="" coords="869,997,990,1038"/>
+<area shape="rect" id="node47" href="$classPane.html#afc3d6a08a6436efe1af8e83699d4ca53" title="Is mesh of the pane structured? " alt="" coords="647,1119,782,1145"/>
+<area shape="rect" id="node50" href="$classConnectivity.html#a85e2c3a17c45bc48b5613929dedb216a" title="Get the number of edges per element of the current connectivity table. " alt="" coords="443,1271,570,1313"/>
+</map>

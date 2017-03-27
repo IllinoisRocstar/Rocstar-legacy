@@ -1,0 +1,8 @@
+<map id="collect_boundary_nodes" name="collect_boundary_nodes">
+<area shape="rect" id="node2" href="$Pane__connectivity_8C.html#a66971bb35acc2d41596346f6278833a8" title="collect_coincident\l_nodes" alt="" coords="217,61,343,102"/>
+<area shape="rect" id="node7" href="$Pane__connectivity_8C.html#a2f91c8aaf095a5aa24998ba4aae3e262" title="make_kd_tree" alt="" coords="228,127,332,153"/>
+<area shape="rect" id="node3" href="$Pane__connectivity_8C.html#a6775cd6991b395d8b55b2ab0b8566e2e" title="intersect_bbox" alt="" coords="392,43,499,69"/>
+<area shape="rect" id="node4" href="$classPoint__3.html#a3bdf357b9d5503b2de25431eff70aa52" title="Point_3::x" alt="" coords="547,5,629,32"/>
+<area shape="rect" id="node5" href="$classPoint__3.html#a9d1baab38d1d918b84896b1dbefb83d5" title="Point_3::y" alt="" coords="547,81,629,108"/>
+<area shape="rect" id="node6" href="$classPoint__3.html#ac8aaef9a7e2811484a4000df39425d34" title="Point_3::z" alt="" coords="547,132,629,159"/>
+</map>
