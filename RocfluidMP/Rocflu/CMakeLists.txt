@@ -680,38 +680,38 @@ ENDIF()
 IF(STATS)
   add_definitions(-DSTATS)
 ENDIF()
-IF(PERI)
+if(PERI)
   add_definitions(-DPERI)
-ENDIF()
-IF(SPEC)
+endif()
+if(SPEC)
   add_definitions(-DSPEC)
-ENDIF()
+endif()
 
-SET(ALL_SRCS ${LIB_SRCS} ${INIT_SRCS} ${PART_SRCS} ${MAP_SRCS})
-SET_SOURCE_FILES_PROPERTIES(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "${MPI_Fortran_COMPILE_FLAGS}")
+set(ALL_SRCS ${LIB_SRCS} ${INIT_SRCS} ${PART_SRCS} ${MAP_SRCS})
+set_source_files_properties(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "${MPI_Fortran_COMPILE_FLAGS}")
 # rpath settings
-SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
-SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 include_directories( ../include ${ROCCOM_INC} ${ROCMAN_INC} ${HDF4_INC})
 
-IF(NOT BUILD_STATIC)
+if(NOT BUILD_STATIC)
   add_library(Rocflu SHARED ${LIB_SRCS})
-ELSE()
+else()
   add_library(Rocflu STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
-ENDIF()
-SET( CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${BLAS_LINKER_FLAGS} ${LAPACK_LINKER_FLAGS}" )
-target_link_libraries(Rocflu Rocmop SITCOMF SITCOM ${LAPACK_LIBRARIES} ${BLAS_LIBRARIES} ${MPI_Fortran_LIBRARIES})
+endif()
+set( CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${BLAS_LINKER_FLAGS} ${LAPACK_LINKER_FLAGS}" )
+target_link_libraries(Rocflu Rocmop ${IMPACT_LIB} ${LAPACK_LIBRARIES} ${BLAS_LIBRARIES} ${MPI_Fortran_LIBRARIES})
 
 add_executable(rfluinit ${INIT_SRCS})
-target_link_libraries(rfluinit Rocflu Rocmop SimOUT SimIN SITCOMF SITCOM ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
+target_link_libraries(rfluinit Rocflu Rocmop ${IMPACT_LIB} ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
 
 add_executable(rflupart ${PART_SRCS})
-target_link_libraries(rflupart Rocflu Rocmop SimOUT SimIN SITCOMF SITCOM ${METIS_LIB} ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
+target_link_libraries(rflupart Rocflu Rocmop ${IMPACT_LIB} ${METIS_LIB} ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
 
 add_executable(rflumap ${MAP_SRCS})
-target_link_libraries(rflumap Rocflu Rocmop SimOUT SimIN SITCOMF SITCOM ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
+target_link_libraries(rflumap Rocflu Rocmop ${IMPACT_LIB} ${MPI_Fortran_LIBRARIES} ${MPI_CXX_LIBRARIES})
 
 SET_TARGET_PROPERTIES(Rocflu rfluinit rflupart rflumap PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS} ${MPI_Fortran_LINK_FLAGS}")
 #target_link_libraries(makeflo read write ${MFHDF_LIB} ${HDF4_LIB} ${JPEG_LIB} ${ZLIB})
@@ -719,11 +719,11 @@ SET_TARGET_PROPERTIES(Rocflu rfluinit rflupart rflumap PROPERTIES LINK_FLAGS "${
 
 # Unit test programs
 #read.tst: $(RTST) read.cpp
-#	$(CXX)  $(OPTS) $(CCFLAGS) -DSTANDALONE -c read.cpp 
+#	$(CXX)  $(OPTS) $(CCFLAGS) -DSTANDALONE -c read.cpp
 #	$(LD) $(OPTS) read.o $(RTST) -o $@ $(LFLAGS)
 
 #adj.tst: $(ATST) adj.cpp
-#	$(CXX)  $(OPTS) $(CCFLAGS) -DSTANDALONE -c adj.cpp 
+#	$(CXX)  $(OPTS) $(CCFLAGS) -DSTANDALONE -c adj.cpp
 #	$(LD) $(OPTS) adj.o $(ATST) -o $@ $(LFLAGS)
 
 #ADD_TEST(RunAllTests ${EXECUTABLE_OUTPUT_PATH}/testx testresults.txt)

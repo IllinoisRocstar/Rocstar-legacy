@@ -13,13 +13,13 @@ set (INRT FALSE CACHE BOOL "Enable Particle Interactions")
 set (RADI FALSE CACHE BOOL "Enable Radiation")
 set (SPEC FALSE CACHE BOOL "Enable Species")
 add_definitions(-DNO_TECPLOT -DRFLO)
-IF(NOT ENABLE_MPI)
+if(NOT ENABLE_MPI)
   add_definitions( -DDUMMY_MPI )
-ELSE()
-  FIND_PACKAGE(MPI REQUIRED)
+else()
+  find_package(MPI REQUIRED)
   add_definitions( -DMPICH_IGNORE_CXX_SEEK -DMPI)
   INCLUDE_DIRECTORIES(${MPI_INCLUDE_PATH})
-ENDIF()
+endif()
 find_library(HDF4_LIB df HINTS /usr/lib/hdf /usr/lib64/hdf)
 find_library(MFHDF_LIB mfhdf HINTS /usr/lib/hdf /usr/lib64/hdf)
 find_library(ZLIB z)
@@ -27,11 +27,11 @@ find_library(JPEG_LIB jpeg)
 find_path(HDF4_INC hdf.h HINTS /usr/include/hdf)
 
 #INCLUDE(CTest)
-find_path(ROCCOM_INC com.h HINTS ../../IMPACT/COM/include) 
+find_path(ROCCOM_INC com.h HINTS ../../IMPACT/COM/include)
 find_path(ROCMAN_INC rocman.h HINTS ../../Rocman/include)
 
-FILE (GLOB CORE_SRCS ../rocflo/*.F90)
-SET (LIBFLOFLU_SRCS 	
+file (GLOB CORE_SRCS ../rocflo/*.F90)
+set (LIBFLOFLU_SRCS
   ../libfloflu/AfterUpdateMP.F90
   ../libfloflu/AllocateMemoryWork.F90
   ../libfloflu/AverageVecVar.F90
@@ -114,10 +114,10 @@ SET (LIBFLOFLU_SRCS
   ../libfloflu/WriteTotalMass.F90
   ../libfloflu/ZeroDummyCellsMP.F90
   ../libfloflu/ZeroResidualsMP.F90 )
-IF(STATS)
-  SET (LIBFLOFLU_SRCS ${LIBFLOFLU_SRCS} ../libfloflu/ReadStatisticSection.F90)
-ENDIF()
-SET (LIBFLO_SRCS 
+if(STATS)
+  set (LIBFLOFLU_SRCS ${LIBFLOFLU_SRCS} ../libfloflu/ReadStatisticSection.F90)
+endif()
+set (LIBFLO_SRCS
   ../libflo/RFLO_ArcLengthBounds.F90
   ../libflo/RFLO_BoundaryDeformation.F90
   ../libflo/RFLO_CalcCellCentroids.F90
@@ -182,13 +182,13 @@ SET (LIBFLO_SRCS
   ../libflo/RFLO_WriteSolution.F90
   ../libflo/RFLO_WriteSolutionRegion.F90
   ../libflo/RFLO_ZeroDummyCells.F90)
-IF (STATS)
-  SET (LIBFLO_SRCS ${LIBFLO_SRCS} ../libflo/RFLO_ReadStat.F90
+if (STATS)
+  set (LIBFLO_SRCS ${LIBFLO_SRCS} ../libflo/RFLO_ReadStat.F90
     ../libflo/RFLO_ReadStatRegion.F90
     ../libflo/RFLO_WriteStat.F90)
-ENDIF()
+endif()
 
-SET ( MODFLOFLU_SRCS
+set ( MODFLOFLU_SRCS
   ../modfloflu/ModDataTypes.F90
   ../modfloflu/ModError.F90
   ../modfloflu/ModGlobal.F90
@@ -217,24 +217,24 @@ SET ( MODFLOFLU_SRCS
   ../modfloflu/ModTools.F90
   ../modfloflu/ModTurbulence.F90 )
 
-IF(ROCSTAR)
-  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModRocstar.F90 )
-ENDIF()
-IF(INRT)                
-  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesInteract.F90 )
-ENDIF()
-IF(PEUL)
-  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesEulerian.F90 )
-ENDIF()
-IF(PLAG)
-  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesLagrangian.F90 )
-ENDIF()
-IF(PERI)
-  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesPeriodic.F90 ) 		
-ENDIF()
-IF(RADI)
-  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesRadiation.F90 )
-ENDIF()
+if(ROCSTAR)
+  list (APPEND MODFLOFLU_SRCS ../modfloflu/ModRocstar.F90 )
+endif()
+if(INRT)
+  list (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesInteract.F90 )
+endif()
+if(PEUL)
+  list (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesEulerian.F90 )
+endif()
+if(PLAG)
+  list (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesLagrangian.F90 )
+endif()
+if(PERI)
+  list (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesPeriodic.F90 )
+endif()
+if(RADI)
+  list (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesRadiation.F90 )
+endif()
 IF(SPEC)
   LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesSpecies.F90 )
 ENDIF()
@@ -243,7 +243,7 @@ IF(STATS)
     ../modfloflu/ModStatsRoutines.F90 )
 ENDIF()
 IF(TURB)
-  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesTurbulence.F90 )  		
+  LIST (APPEND MODFLOFLU_SRCS ../modfloflu/ModInterfacesTurbulence.F90 )
 ENDIF()
 
 SET (MODFLO_SRCS
@@ -275,7 +275,7 @@ IF(STATS)
 ENDIF()
 
 
-SET (TURB_SRCS 
+SET (TURB_SRCS
   ../rocturb/TURB_ModInterfaces.F90
   ../rocturb/TURB_ModParameters.F90
   ../rocturb/TURB_AllocateMemory.F90
@@ -405,10 +405,10 @@ SET (TURB_SRCS
 IF(STATS)
   LIST (APPEND TURB_SRCS   ../rocturb/TURB_StatCCollector.F90
     ../rocturb/TURB_StatFCollector.F90
-    ../rocturb/TURB_StatMapping.F90 )                
+    ../rocturb/TURB_StatMapping.F90 )
 ENDIF()
 FILE(GLOB RADI_SRCS ../rocrad/*.F90)
-SET(PLAG_SRCS 
+SET(PLAG_SRCS
   ../rocpart/PLAG_BuildVersionString.F90
   ../rocpart/PLAG_ModInterfaces.F90
   ../rocpart/PLAG_ModInterfacesCECells.F90
@@ -497,7 +497,7 @@ SET(PLAG_SRCS
   ../rocpart/PLAG_RFLO_FindGridMapping.F90
   ../rocpart/PLAG_RFLO_RecvMetrics.F90
   ../rocpart/PLAG_RFLO_SendMetrics.F90
-  ../rocpart/PLAG_RFLO_SendRecvMetrics.F90)              
+  ../rocpart/PLAG_RFLO_SendRecvMetrics.F90)
 
 IF(STATS)
   LIST(APPEND PLAG_SRCS ../rocpart/PLAG_ModEulerian.F90
@@ -507,7 +507,7 @@ IF(STATS)
 ENDIF()
 FILE(GLOB PEUL_SRCS ../rocsmoke/*.F90)
 FILE(GLOB INRT_SRCS ../rocinteract/*.F90)
-SET(ROCSTAR_SRCS 
+SET(ROCSTAR_SRCS
   ../rocstar/RFLO_FlowSolverDummy.F90
   ../rocstar/RFLO_GetBoundaryValues.F90
   ../rocstar/RFLO_GetDeformation.F90
@@ -540,7 +540,7 @@ endif()
 IF(STATS)
   LIST(APPEND ROCSTAR_SRCS ../rocstar/STAT_RocstarStatNaming.F90)
 ENDIF()
-SET(FLOPREP_SRCS 
+SET(FLOPREP_SRCS
   ../utilities/rocflo/prep/PREP_ModInterfaces.F90
   ../utilities/rocflo/prep/PREP_ModParameters.F90
   ../utilities/rocflo/prep/PREP_ModBcDistribution.F90
@@ -559,9 +559,9 @@ IF(ROCSTAR)
     ../utilities/rocflo/prep/PREP_RocstarWriteRocinout.F90
     ../utilities/rocflo/prep/PREP_RocstarWriteSolution.F90
     ../utilities/rocflo/prep/PREP_InitRocstarInterface.F90)
-ENDIF()  
+ENDIF()
 
-SET(LIB_SRCS ${MODFLO_SRCS} ${MODFLOFLU_SRCS} ${LIBFLO_SRCS} ${LIBFLOFLU_SRCS} 
+SET(LIB_SRCS ${MODFLO_SRCS} ${MODFLOFLU_SRCS} ${LIBFLO_SRCS} ${LIBFLOFLU_SRCS}
   ${CORE_SRCS})
 IF(ROCSTAR)
   add_definitions(-DROCSTAR -DGENX)
@@ -579,28 +579,28 @@ IF(PLAG)
   add_definitions(-DPLAG)
   LIST(APPEND LIB_SRCS ${PLAG_SRCS})
 ENDIF()
-IF(PEUL)
+if(PEUL)
   add_definitions(-DPEUL)
-  LIST(APPEND LIB_SRCS ${PEUL_SRCS})
-ENDIF()
-IF(INRT)
+  list(APPEND LIB_SRCS ${PEUL_SRCS})
+endif()
+if(INRT)
   add_definitions(-DINRT)
-  LIST(APPEND LIB_SRCS ${INRT_SRCS})
-ENDIF()
-IF(STATS)
+  list(APPEND LIB_SRCS ${INRT_SRCS})
+endif()
+if(STATS)
   add_definitions(-DSTATS)
-ENDIF()
-IF(PERI)
+endif()
+if(PERI)
   add_definitions(-DPERI)
-ENDIF()
-IF(SPEC)
+endif()
+if(SPEC)
   add_definitions(-DSPEC)
-ENDIF()
-SET_SOURCE_FILES_PROPERTIES(${LIB_SRCS} PROPERTIES COMPILE_FLAGS "${MPI_Fortran_COMPILE_FLAGS}")
+endif()
+set_source_files_properties(${LIB_SRCS} PROPERTIES COMPILE_FLAGS "${MPI_Fortran_COMPILE_FLAGS}")
 #
 #UTIL_OBJ=hash_table.o read.a write.a util.o
-#OBJ= adj.o face.o buildface.o split.o volume.o 
-#	readinp.o writeflo.o writetop.o writemblock.o 
+#OBJ= adj.o face.o buildface.o split.o volume.o
+#	readinp.o writeflo.o writetop.o writemblock.o
 #	$(UTIL_OBJ)
 #HEADERS=adj.h face.h util.h hash_table.h vector3d.h gridutil.h
 #DEST=$(BINPRE)makeflo    # Prepend $(BINPRE) to put into bin directory
@@ -611,40 +611,40 @@ SET_SOURCE_FILES_PROPERTIES(${LIB_SRCS} PROPERTIES COMPILE_FLAGS "${MPI_Fortran_
 #LFLAGS=$(LDFLAGS) $(HDFLIB) $(SYSLIBS) $(DEPLIBS)
 #
 
-SET(MAKEFLO_DIR ../utilities/rocflo/makeflo)
-FILE(GLOB MAKEFLO_CPP_FILES ${MAKEFLO_DIR}/*.cpp)
-FILE(GLOB MAKEFLO_F90_FILES ${MAKEFLO_DIR}/*.f90)
+set(MAKEFLO_DIR ../utilities/rocflo/makeflo)
+file(GLOB MAKEFLO_CPP_FILES ${MAKEFLO_DIR}/*.cpp)
+file(GLOB MAKEFLO_F90_FILES ${MAKEFLO_DIR}/*.f90)
 set_source_files_properties(${MAKEFLO_CPP_FILES} PROPERTIES COMPILE_FLAGS "${MPI_CXX_COMPILE_FLAGS}")
 set_source_files_properties(${MAKEFLO_F90_FILES} PROPERTIES COMPILE_FLAGS "${MPI_Fortran_COMPILE_FLAGS}")
-SET(MAKEFLO_READ_SRCS ${MAKEFLO_DIR}/read.cpp ${MAKEFLO_DIR}/readgrd.cpp ${MAKEFLO_DIR}/readreg.cpp
+set(MAKEFLO_READ_SRCS ${MAKEFLO_DIR}/read.cpp ${MAKEFLO_DIR}/readgrd.cpp ${MAKEFLO_DIR}/readreg.cpp
                       ${MAKEFLO_DIR}/readmsh.f90 ${MAKEFLO_DIR}/readhdf.cpp)
-SET(MAKEFLO_WRITE_SRCS ${MAKEFLO_DIR}/write.cpp ${MAKEFLO_DIR}/writemsh.f90 ${MAKEFLO_DIR}/writehdf.cpp
+set(MAKEFLO_WRITE_SRCS ${MAKEFLO_DIR}/write.cpp ${MAKEFLO_DIR}/writemsh.f90 ${MAKEFLO_DIR}/writehdf.cpp
                        ${MAKEFLO_DIR}/writegrda.f90 ${MAKEFLO_DIR}/writegrdb.f90)
-SET(MAKEFLO_UTIL_SRCS ${MAKEFLO_DIR}/hash_table.cpp ${MAKEFLO_DIR}/util.cpp)
-SET(MAKEFLO_CORE_SRCS ${MAKEFLO_DIR}/adj.cpp ${MAKEFLO_DIR}/face.cpp ${MAKEFLO_DIR}/buildface.cpp 
+set(MAKEFLO_UTIL_SRCS ${MAKEFLO_DIR}/hash_table.cpp ${MAKEFLO_DIR}/util.cpp)
+set(MAKEFLO_CORE_SRCS ${MAKEFLO_DIR}/adj.cpp ${MAKEFLO_DIR}/face.cpp ${MAKEFLO_DIR}/buildface.cpp
                       ${MAKEFLO_DIR}/split.cpp ${MAKEFLO_DIR}/volume.cpp ${MAKEFLO_DIR}/readinp.cpp
                       ${MAKEFLO_DIR}/writeflo.cpp ${MAKEFLO_DIR}/writetop.cpp ${MAKEFLO_DIR}/writemblock.cpp
                       ${MAKEFLO_UTIL_SRCS})
-SET(MAKEFLO_SRCS ${MAKEFLO_CPP_FILES} ${MAKEFLO_F90_FILES})
-SET(UTIL_SRCS ${MAKEFLO_SRCS})
-SET(ALL_SRCS ${LIB_SRCS} ${UTIL_SRCS})
+set(MAKEFLO_SRCS ${MAKEFLO_CPP_FILES} ${MAKEFLO_F90_FILES})
+set(UTIL_SRCS ${MAKEFLO_SRCS})
+set(ALL_SRCS ${LIB_SRCS} ${UTIL_SRCS})
 set_source_files_properties(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC" )
 #set(TEST_SRCS src/MANTest.C)
 
 # rpath settings
-SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
-SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 include_directories( ../include ${ROCCOM_INC} ${ROCMAN_INC} ${HDF4_INC})
 add_definitions(-DUSE_HDF=1)
 
-IF(NOT BUILD_STATIC)
+if(NOT BUILD_STATIC)
   add_library(Rocflo SHARED ${LIB_SRCS})
-ELSE()
+else()
   add_library(Rocflo STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
-ENDIF()
-target_link_libraries(Rocflo SITCOMF SITCOM ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
+endif()
+target_link_libraries(Rocflo ${IMPACT_LIB} ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
 
 #add_library(makeflofio ${MAKEFLO_DIR}/readmsh.f90 ${MAKEFLO_DIR}/writemsh.f90 ${MAKEFLO_DIR}/writegrda.f90 ${MAKEFLO_DIR}/writegrdb.f90)
 #add_library(read ${MAKEFLO_DIR}/read.cpp ${MAKEFLO_DIR}/readgrd.cpp ${MAKEFLO_DIR}/readreg.cpp ${MAKEFLO_DIR}/readhdf.cpp)
@@ -659,7 +659,7 @@ add_executable(simpleblock ${MAKEFLO_DIR}/simpleblock.cpp ${MAKEFLO_CORE_SRCS} $
 target_link_libraries(simpleblock ${MFHDF_LIB} ${HDF4_LIB} ${JPEG_LIB} ${ZLIB} ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
 add_executable(rfloprep ${FLOPREP_SRCS})
 set_property(TARGET rfloprep PROPERTY LINKER_LANGUAGE Fortran)
-target_link_libraries(rfloprep Rocflo SimOUT SimIN SITCOM ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
+target_link_libraries(rfloprep Rocflo ${IMPACT_LIB} ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
 
 set_target_properties(Rocflo PROPERTIES LINK_FLAGS "${MPI_Fortran_LINK_FLAGS}")
 set_target_properties(makemblock PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS} ${MPI_Fortran_LINK_FLAGS}")
@@ -669,15 +669,15 @@ set_target_properties(makeflo PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS} ${MPI
 
 # Unit test programs
 #read.tst: $(RTST) read.cpp
-#	$(CXX)  $(OPTS) $(CCFLAGS) -DSTANDALONE -c read.cpp 
+#	$(CXX)  $(OPTS) $(CCFLAGS) -DSTANDALONE -c read.cpp
 #	$(LD) $(OPTS) read.o $(RTST) -o $@ $(LFLAGS)
 
 #adj.tst: $(ATST) adj.cpp
-#	$(CXX)  $(OPTS) $(CCFLAGS) -DSTANDALONE -c adj.cpp 
+#	$(CXX)  $(OPTS) $(CCFLAGS) -DSTANDALONE -c adj.cpp
 #	$(LD) $(OPTS) adj.o $(ATST) -o $@ $(LFLAGS)
 
 #ADD_TEST(RunAllTests ${EXECUTABLE_OUTPUT_PATH}/testx testresults.txt)
 #ADD_TEST(TestObject:ValidHandle ${TEST_RESULTS} TestObject:ValidHandle testresults.txt)
 #ADD_TEST(TestObject:Exists ${TEST_RESULTS} TestObject:Exists testresults.txt)
 
-INSTALL(TARGETS makemblock simpleblock rfloprep Rocflo makeflo RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
+install(TARGETS makemblock simpleblock rfloprep Rocflo makeflo RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)

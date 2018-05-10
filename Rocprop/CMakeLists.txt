@@ -2,13 +2,13 @@ cmake_minimum_required (VERSION 2.8)
 project(Rocprop)
 
 load_cache(../)
-IF(NOT ENABLE_MPI)
+if(NOT ENABLE_MPI)
   add_definitions( -DDUMMY_MPI )
-ELSE()
-  FIND_PACKAGE(MPI REQUIRED)
+else()
+  find_package(MPI REQUIRED)
   add_definitions( -DMPICH_IGNORE_CXX_SEEK )
-  INCLUDE_DIRECTORIES(${MPI_INCLUDE_PATH})
-ENDIF()
+  include_directories(${MPI_INCLUDE_PATH})
+endif()
 
 #INCLUDE(CTest)
 find_path(IMPACT_INC com.h HINTS ../IMPACT/COM/include)
@@ -26,19 +26,19 @@ set_source_files_properties(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC ${MPI_CX
 #set(TEST_SRCS src/MANTest.C)
 
 # rpath settings
-SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
-SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
+set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+set(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 include_directories(include ${SIMPAL_INC} ${MAP_INC} ${SURF_INC} ${SURF_INC}/../test ${ROCCOM_INC})
 
 
-IF(NOT BUILD_STATIC)
+if(NOT BUILD_STATIC)
   add_library(Rocprop SHARED ${LIB_SRCS})
-ELSE()
+else()
   add_library(Rocprop STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
-ENDIF()
-target_link_libraries(Rocprop Simpal SurfUtil ${IMPACT_LIB} ${MPI_CXX_LIBRARIES})
+endif()
+target_link_libraries(Rocprop ${IMPACT_LIB} ${MPI_CXX_LIBRARIES})
 
 add_executable(proptest test/proptest.C)
 add_executable(mptest test/mptest.C)
@@ -61,4 +61,4 @@ set_target_properties(rotate PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
 set_target_properties(advectest PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
 set_target_properties(detectfeas PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
 
-INSTALL(TARGETS Rocprop RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
+install(TARGETS Rocprop RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)

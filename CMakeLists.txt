@@ -6,70 +6,56 @@ set (ENABLE_MPI TRUE CACHE BOOL "Build with MPI Support")
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin CACHE PATH "Single directory for all executables.")
 set (LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib CACHE PATH "Single directory for all libraries and archives.")
 mark_as_advanced (LIBRARY_OUTPUT_PATH EXECUTABLE_OUTPUT_PATH)
-IF(NOT ENABLE_MPI)
+if(NOT ENABLE_MPI)
   add_definitions( -DDUMMY_MPI )
-ELSE()
-  FIND_PACKAGE(MPI REQUIRED)
+else()
+  find_package(MPI REQUIRED)
   add_definitions( -DMPICH_IGNORE_CXX_SEEK )
-  INCLUDE_DIRECTORIES(${MPI_INCLUDE_PATH})
-ENDIF()
+  include_directories(${MPI_INCLUDE_PATH})
+endif()
 if (NOT CMAKE_BUILD_TYPE)
   message(STATUS "No build type selected, default to Release")
   set(CMAKE_BUILD_TYPE "Release")
 endif()
 
-# 
-# Add testing support from IRAD
-#
-INCLUDE(CTest)
-IF(BUILD_TESTING)
-  SET(BUILDNAME "${BUILDNAME}" CACHE STRING "Name of build on the dashboard")
-  MARK_AS_ADVANCED(BUILDNAME)
-ENDIF(BUILD_TESTING)
+include(CTest)
+if(BUILD_TESTING)
+  set(BUILDNAME "${BUILDNAME}" CACHE STRING "Name of build on the dashboard")
+  mark_as_advanced(BUILDNAME)
+endif(BUILD_TESTING)
 
-IF(EXISTS ${CMAKE_SOURCE_DIR}/IMPACT)
-  add_subdirectory(IMPACT)
-  SET(IMPACT_INCPATH ${CMAKE_SOURCE_DIR}/IMPACT/COM/include)
-  SET(IRAD_INCPATH ${CMAKE_SOURCE_DIR}/IMPACT/IRAD/include)
-  SET(RUNTEST ${EXECUTABLE_OUTPUT_PATH}/runtest)
-  SET(TESTRESULT ${EXECUTABLE_OUTPUT_PATH}/testresults)
-  SET(IRAD_LIB IRAD)
-  SET(IMPACT_LIB SITCOM)
-ELSE()
-  FIND_LIBRARY(IMPACT_LIB SITCOM)
-  FIND_LIBRARY(IRAD_LIB IRAD)
-  FIND_FILE(IRAD_HDR COMM.H)
-  FIND_FILE(IMPACT_HDR com.h)
-  FIND_PROGRAM(RUNTEST runtest)
-  FIND_PROGRAM(TESTRESULT testresults)
-  GET_FILENAME_COMPONENT(IRAD_LIBPATH ${IRAD_LIB} PATH)
-  GET_FILENAME_COMPONENT(IRAD_INCPATH ${IRAD_HDR} PATH)
-  GET_FILENAME_COMPONENT(IRAD_EXEPATH ${RUNTEST} PATH)
-  GET_FILENAME_COMPONENT(IMPACT_LIBPATH ${IMPACT_LIB} PATH)
-  GET_FILENAME_COMPONENT(IMPACT_INCPATH ${IMPACT_HDR} PATH)
-  GET_FILENAME_COMPONENT(IRAD_EXEPATH ${RUNTEST} PATH)
-ENDIF()
-include_directories(${CMAKE_BINARY_DIR}/include ${IRAD_INCPATH} ${IMPACT_INCPATH})
+# finding IMPACT libs and incs
+find_library(SITCOM_LIB SITCOM)
+get_filename_component(IMPACT_LIBPATH ${SITCOM_LIB} PATH)
+set(IMPACT_BINPATH "${IMPACT_LIBPATH}/../bin" )
+find_library(SITCOMF_LIB SITCOMF HINTS ${IMPACT_LIBPATH})
+find_library(SIMIN_LIB SimIN HINTS ${IMPACT_LIBPATH})
+find_library(SIMOUT_LIB SimOUT HINTS ${IMPACT_LIBPATH})
+find_library(SIMPAL_LIB Simpal HINTS ${IMPACT_LIBPATH})
+find_library(SIM_LIB SIM HINTS ${IMPACT_LIBPATH})
+find_library(SURFMAP_LIB SurfMap HINTS ${IMPACT_LIBPATH})
+find_library(SURFUTIL_LIB SurfUtil HINTS ${IMPACT_LIBPATH})
+find_library(SURFX_LIB SurfX HINTS ${IMPACT_LIBPATH})
+set(IMPACT_LIB ${SITCOM_LIB} ${SITCOMF_LIB} ${SIMIN_LIB}
+               ${SIMIN_LIB} ${SIMOUT_LIB} ${SIMPAL_LIB}
+               ${SIM_LIB} ${SURFMAP_LIB} ${SURFUTIL_LIB}
+               ${SURFX_LIB})
+find_file(IMPACT_HDR com.h)
+get_filename_component(IMPACT_INCPATH ${IMPACT_HDR} PATH)
+message("IMPACT_INCPATH = ${IMPACT_INCPATH}")
+message("IMPACT_BINPATH = ${IMPACT_BINPATH}")
+set(IMPACT_INC ${IMPACT_INCPATH})
+set(ROCCOM_INC ${IMPACT_INCPATH})
+set(ROCIN_INC ${IMPACT_INCPATH})
+set(SIMPAL_INC ${IMPACT_INCPATH})
+set(SURF_INC ${IMPACT_INCPATH})
+set(MAP_INC ${IMPACT_INCPATH})
+include_directories(${IMPACT_INCPATH})
 
-# add some stubs for testing. this crap all gets removed
-# when we add the real tests for Rocstar
+if(MPI_CXX_COMPILER)
+  add_definitions(-D_ROCSTAR_PARALLEL_)
+endif()
 
-#ADD_LIBRARY(Rocstar SHARED src/ExampleSourceFile.C)
-#TARGET_LINK_LIBRARIES(Rocstar ${IRAD_LIB})
-#ADD_EXECUTABLE(rocstar_test src/TestRocstar.C)
-#TARGET_LINK_LIBRARIES(rocstar_test Rocstar)
-#ADD_EXECUTABLE(sep src/ExampleSerialProgram.C src/sep.C)
-#TARGET_LINK_LIBRARIES(sep Rocstar)
-#ADD_EXECUTABLE(make_project src/MakeProject.C)
-#TARGET_LINK_LIBRARIES(make_project Rocstar)
-
-IF(MPI_CXX_COMPILER)
-  ADD_DEFINITIONS(-D_ROCSTAR_PARALLEL_)
-#  ADD_EXECUTABLE(pepi src/ExampleParallelProgram.C src/pepi.C)
-#  TARGET_LINK_LIBRARIES(pepi Rocstar)
-#  ADD_EXECUTABLE(rocstar_parallel_test src/ParallelTestRocstar.C)
-#  TARGET_LINK_LIBRARIES(rocstar_parallel_test Rocstar)
-ENDIF()
 #
 # original rocstar stuff below here
 #
@@ -90,49 +76,32 @@ include_directories(./Roccom/include ./Rocman/include)
 add_executable(rocstar src/rocstar.C)
 set_source_files_properties(src/rocstar.C PROPERTIES COMPILE_FLAGS "${MPI_CXX_COMPILE_FLAGS}")
 set_target_properties(rocstar PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
-target_link_libraries(rocstar Rocman SITCOMF ${IMPACT_LIB} ${IRAD_LIB} ${MPI_CXX_LIBRARIES})
+target_link_libraries(rocstar Rocman ${IMPACT_LIB} ${MPI_CXX_LIBRARIES})
+#add_dependencies(rocstar Rocprop Rocmop Roccon Rocman RocfluidMP Rocfrac Rocburn Rocprep)
+#add_dependencies(rocstar Rocman RocfluidMP Rocfrac Rocburn Rocprep)
 
-INSTALL(TARGETS rocstar RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
+install(TARGETS rocstar RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
 
 # Add target to build the documentation
 option(BUILD_DOCUMENTATION "Create and install the HTML based API
 documentation (requires Doxygen)" ON)
-IF(BUILD_DOCUMENTATION)
-
-  FIND_PACKAGE(Doxygen)
-  IF(NOT DOXYGEN_FOUND)
-    MESSAGE(FATAL_ERROR "Doxygen is needed to build the documentation.")
-  ENDIF()
-  
-#  FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/doc DESTINATION
-#  ${CMAKE_CURRENT_BINARY_DIR})
-  
-  
-  SET( doxyfile_in          ${CMAKE_CURRENT_SOURCE_DIR}/Docs/Rocstar.cfg.in )
-  SET( doxyfile             ${CMAKE_CURRENT_BINARY_DIR}/Rocstar.cfg        )
-  SET( documentation        ${CMAKE_CURRENT_BINARY_DIR}/Docs                 )
-
-  CONFIGURE_FILE( ${doxyfile_in} ${doxyfile} @ONLY )
-
-  ADD_CUSTOM_COMMAND( OUTPUT ${documentation}
+if(BUILD_DOCUMENTATION)
+  find_package(Doxygen)
+  if(NOT DOXYGEN_FOUND)
+    message(FATAL_ERROR "Doxygen is needed to build the documentation.")
+  endif()
+  set( doxyfile_in          ${CMAKE_CURRENT_SOURCE_DIR}/Docs/Rocstar.cfg.in )
+  set( doxyfile             ${CMAKE_CURRENT_BINARY_DIR}/Rocstar.cfg        )
+  set( documentation        ${CMAKE_CURRENT_BINARY_DIR}/Docs                 )
+  configure_file( ${doxyfile_in} ${doxyfile} @ONLY )
+  add_custom_command( OUTPUT ${documentation}
                       COMMAND ${DOXYGEN_EXECUTABLE} ${doxyfile}
                       MAIN_DEPENDENCY ${doxyfile} ${doxyfile_in}
                       COMMENT "Generating documentation")
+  add_custom_target( Docs DEPENDS ${documentation} )
+  install( DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Docs DESTINATION share/Rocstar )
+  file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/Docs/RocstarQuickStart.pdf DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/Docs/)
+  file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/Docs/legacy DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/Docs/)
+endif()
 
-  ADD_CUSTOM_TARGET( Docs DEPENDS ${documentation} )
-
-  INSTALL( DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Docs DESTINATION
-share/Rocstar )
-
-  FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/Docs/RocstarQuickStart.pdf DESTINATION
-${CMAKE_CURRENT_BINARY_DIR}/Docs/)
-  FILE(COPY ${CMAKE_CURRENT_SOURCE_DIR}/Docs/legacy DESTINATION
-${CMAKE_CURRENT_BINARY_DIR}/Docs/)
-
-ENDIF()
-
-INCLUDE(CPack)
-
-
-
-
+include(CPack)

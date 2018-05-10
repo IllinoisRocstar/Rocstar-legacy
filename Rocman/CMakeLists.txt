@@ -11,9 +11,9 @@ ELSE()
 ENDIF()
 
 #INCLUDE(CTest)
-find_path(ROCCOM_INC com.h HINTS ../IMPACT/COM/include) 
-find_path(ROCIN_INC HDF4.h HINTS ../IMPACT/SimIO/In/include) 
-set (LIB_SRCS src/rocstar_driver.C src/Action.C src/Scheduler.C src/Coupling.C src/Agent.C src/SolidAgent.C 
+find_path(ROCCOM_INC com.h HINTS ../IMPACT/COM/include)
+find_path(ROCIN_INC HDF4.h HINTS ../IMPACT/SimIO/In/include)
+set (LIB_SRCS src/rocstar_driver.C src/Action.C src/Scheduler.C src/Coupling.C src/Agent.C src/SolidAgent.C
               src/BurnAgent.C src/basic_actions.C src/transfer_actions.C src/Interpolate.C src/builtin_couplings.C
               src/derived_couplings.C src/Surfdiver.C src/FluidAgent.C)
 set (ALL_SRCS ${LIB_SRCS})
@@ -34,7 +34,7 @@ ELSE()
   add_library(Rocman STATIC ${LIB_SRCS})
   add_definitions( -DSTATIC_LINK )
 ENDIF()
-target_link_libraries(Rocman SITCOM ${MPI_CXX_LIBRARIES})
+target_link_libraries(Rocman ${IMPACT_LIB} ${MPI_CXX_LIBRARIES})
 set_target_properties(Rocman PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS}")
 
 #add_executable(testx ${TEST_SRCS})
