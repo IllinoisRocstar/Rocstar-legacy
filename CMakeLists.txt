@@ -2,10 +2,12 @@ cmake_minimum_required (VERSION 2.8)
 project(Rocstar Fortran C CXX)
 set (BUILD_STATIC FALSE CACHE BOOL "Build static libraries")
 set (ENABLE_MPI TRUE CACHE BOOL "Build with MPI Support")
+set (ENABLE_CGNS TRUE CACHE BOOL "Build with CGNS Support")
 
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin CACHE PATH "Single directory for all executables.")
 set (LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib CACHE PATH "Single directory for all libraries and archives.")
 mark_as_advanced (LIBRARY_OUTPUT_PATH EXECUTABLE_OUTPUT_PATH)
+
 if(NOT ENABLE_MPI)
   add_definitions( -DDUMMY_MPI )
 else()
@@ -42,8 +44,6 @@ set(IMPACT_LIB ${SITCOM_LIB} ${SITCOMF_LIB} ${SIMIN_LIB}
                ${SURFX_LIB})
 find_file(IMPACT_HDR com.h)
 get_filename_component(IMPACT_INCPATH ${IMPACT_HDR} PATH)
-message("IMPACT_INCPATH = ${IMPACT_INCPATH}")
-message("IMPACT_BINPATH = ${IMPACT_BINPATH}")
 set(IMPACT_INC ${IMPACT_INCPATH})
 set(ROCCOM_INC ${IMPACT_INCPATH})
 set(ROCIN_INC ${IMPACT_INCPATH})
@@ -52,16 +52,23 @@ set(SURF_INC ${IMPACT_INCPATH})
 set(MAP_INC ${IMPACT_INCPATH})
 include_directories(${IMPACT_INCPATH})
 
+# other needed libraries
+find_library(HDF4_LIB df HINTS /usr/lib /usr/lib64)
+find_library(MFHDF_LIB mfhdf HINTS /usr/lib /usr/lib64)
+find_path(HDF4_INC hdf.h HINTS /usr/include /usr/include/hdf)
+
+if (ENABLE_CGNS)
+  find_package(HDF5 REQUIRED) # will set HDF5_LIBRARIES
+  find_library(CGNS_LIB cgns HINTS /usr/lib/ /usr/lib64/)
+  add_definitions(-D_CGNS)
+endif()
+
+# compiler definitions
 if(MPI_CXX_COMPILER)
   add_definitions(-D_ROCSTAR_PARALLEL_)
 endif()
 
-#
 # original rocstar stuff below here
-#
-
-#add_subdirectory(Roccom)
-#add_subdirectory(Rocface)
 add_subdirectory(Rocprop)
 add_subdirectory(Rocmop)
 add_subdirectory(Rocon)

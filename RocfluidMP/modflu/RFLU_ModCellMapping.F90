@@ -1040,7 +1040,6 @@ MODULE RFLU_ModCellMapping
 ! ******************************************************************************
 !   Start
 ! ******************************************************************************
-
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteLoc2GlobCellMapping',&

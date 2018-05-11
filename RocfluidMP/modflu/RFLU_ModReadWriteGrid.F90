@@ -1747,7 +1747,7 @@ MODULE RFLU_ModReadWriteGrid
       END IF ! global%gridFormat
 #ifdef GENX
     ELSE 
-      CALL RFLU_GENX_PutGrid(pRegion) 
+        CALL RFLU_GENX_PutGrid(pRegion) 
     END IF ! RFLU_GENX_DecideReadFile         
 #endif    
     

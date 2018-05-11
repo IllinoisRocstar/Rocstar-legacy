@@ -111,6 +111,11 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
   INTEGER :: write_attr, set_option,  ierrFlg, sur_all
   INTEGER :: iNB, iBU, iNI
+  ! MS : A toggle to check whether append or write
+  LOGICAL :: appendToggle = .FALSE.
+  appendToggle = .FALSE.
+  WRITE (*,*) '**** iProc = ', iProcs, ' appendToggle = ', appendToggle
+  ! MS
 
 ! obtain function handle ------------------------------------------------------
 
@@ -577,37 +582,40 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrhex8 => ptrhex8%next
      ENDDO
 
-     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
-     CALL COM_set_size( surWin//'.nc', iBU, NumNpNew )
-     CALL COM_resize_array(surWin//'.nc', iBU, MeshCoor, 3)
-
-     DO i = 1, NumNpNew
-        MeshCoor(1:3,i) = coor(1:3,NodeFlag2D(1,i))
-     END DO
-
-! nodeflag  to VolumeNode
-
-     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, 'm')
-     CALL COM_set_array( surWin//'.bv', iBU, NodeFlag2D(2,1), 2)
-
-! connectiveity
-
-     TestNumSurfEl = NumElhex2D(1,iProcs)
-
-     CALL COM_set_size( surWin//'.:q4', iBU, TestNumSurfEl)
-     CALL COM_resize_array( surWin//'.:q4', iBU, ElConnTable, 4)
-
-
-! elemflag to VolumeElem
-
-     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
-     CALL COM_resize_array(surWin//'.bf2c', iBU, ElFlag_List, 1)
-
-     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
-     CALL COM_set_size( surWin//'.bcflag', iBU,  1)
-     CALL COM_resize_array(surWin//'.bcflag', iBU, BCSurfFlagOne, 1)
-     
-     BCSurfFlagOne(1) = 1
+     ! MS: Writing only non-vanishing windows
+     IF (NumNpNew.GT.0) THEN
+        CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+        CALL COM_set_size( surWin//'.nc', iBU, NumNpNew )
+        CALL COM_resize_array(surWin//'.nc', iBU, MeshCoor, 3)
+   
+        DO i = 1, NumNpNew
+           MeshCoor(1:3,i) = coor(1:3,NodeFlag2D(1,i))
+        END DO
+   
+   ! nodeflag  to VolumeNode
+   
+        CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, 'm')
+        CALL COM_set_array( surWin//'.bv', iBU, NodeFlag2D(2,1), 2)
+   
+   ! connectiveity
+   
+        TestNumSurfEl = NumElhex2D(1,iProcs)
+   
+        CALL COM_set_size( surWin//'.:q4', iBU, TestNumSurfEl)
+        CALL COM_resize_array( surWin//'.:q4', iBU, ElConnTable, 4)
+   
+   
+   ! elemflag to VolumeElem
+   
+        CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+        CALL COM_resize_array(surWin//'.bf2c', iBU, ElFlag_List, 1)
+   
+        CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+        CALL COM_set_size( surWin//'.bcflag', iBU,  1)
+        CALL COM_resize_array(surWin//'.bcflag', iBU, BCSurfFlagOne, 1)
+        BCSurfFlagOne(1) = 1
+     ENDIF
+     ! MS End
 
      TestNumSurfEl = 0
      ptrhex8 => SurfMesh_hex8_SF_head
@@ -649,9 +657,20 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
   sur_all = Com_get_dataitem_handle( SurWin//'.all')
 
-  CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh.'//ichr4, sur_all,&
-       "isolid","00.000000")
-
+  
+  ! MS: Writing only non-vanishing windows
+  IF (NumNpNew.GT.0) THEN
+     IF (appendToggle.EQV..TRUE.) THEN
+       CALL COM_call_function( set_option, 2, 'mode', 'a')
+     ELSE
+       CALL COM_call_function( set_option, 2, 'mode', 'w')
+       appendToggle = .TRUE.
+     END IF       
+     CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh.'//ichr4, sur_all,&
+          "isolid","00.000000")
+  ENDIF
+  WRITE (*,*) 'iProc = ', iProcs, ' appendToggle = ', appendToggle
+  ! MS : End
   
   CALL COM_delete_window( surWin)
 
@@ -1110,36 +1129,38 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrhex8 => ptrhex8%next
      ENDDO
 
-     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
-     CALL COM_set_size( surWin//'.nc', iNB, NumNpNew )
-     CALL COM_resize_array(surWin//'.nc', iNB, MeshCoor, 3)
-
-     DO i = 1, NumNpNew 
-        MeshCoor(1:3,i) = coor(1:3,NodeFlag2D(1,i))
-     END DO
-
-     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, '')
-!     CALL COM_set_size( surWin//'.bv', iNB, NumNpNew )
-     CALL COM_set_array(surWin//'.bv', iNB, NodeFlag2D(2,1), 2)
-
-! connectiveity
-
-
-     TestNumSurfEl = NumElhex2D(3,iProcs)
-
-     CALL COM_set_size( surWin//'.:q4', iNB, TestNumSurfEl)
-     CALL COM_resize_array( surWin//'.:q4', iNB, ElConnTable, 4)
-
-
-     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
-     CALL COM_resize_array(surWin//'.bf2c', iNB, ElFlag_List, 1)
-
-     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
-     CALL COM_set_size( surWin//'.bcflag', iNB, 1)
-     CALL COM_resize_array(surWin//'.bcflag', iNB, BCSurfFlagZero, 1)
-     
-     BCSurfFlagZero(1) = 0
-
+     ! MS
+     IF (NumNpNew.GT.0) THEN
+        CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+        CALL COM_set_size( surWin//'.nc', iNB, NumNpNew )
+        CALL COM_resize_array(surWin//'.nc', iNB, MeshCoor, 3)
+   
+        DO i = 1, NumNpNew 
+           MeshCoor(1:3,i) = coor(1:3,NodeFlag2D(1,i))
+        END DO
+   
+        CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, '')
+   !     CALL COM_set_size( surWin//'.bv', iNB, NumNpNew )
+        CALL COM_set_array(surWin//'.bv', iNB, NodeFlag2D(2,1), 2)
+   
+   ! connectiveity
+   
+   
+        TestNumSurfEl = NumElhex2D(3,iProcs)
+   
+        CALL COM_set_size( surWin//'.:q4', iNB, TestNumSurfEl)
+        CALL COM_resize_array( surWin//'.:q4', iNB, ElConnTable, 4)
+   
+   
+        CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+        CALL COM_resize_array(surWin//'.bf2c', iNB, ElFlag_List, 1)
+   
+        CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+        CALL COM_set_size( surWin//'.bcflag', iNB, 1)
+        CALL COM_resize_array(surWin//'.bcflag', iNB, BCSurfFlagZero, 1)
+        BCSurfFlagZero(1) = 0
+     END IF
+     ! MS End
 
      TestNumSurfEl = 0
      ptrhex8 => SurfMesh_hex8_SF_NonIgnt_head
@@ -1160,7 +1181,7 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrhex8 => ptrhex8%next
      ENDDO
 
-    IF(TestNumSurfEl.NE.NumElhex2D(3,iProcs))THEN
+     IF(TestNumSurfEl.NE.NumElhex2D(3,iProcs))THEN
         PRINT*,'ERROR, number of quads from link list in Non-Ignitable surface mesh'
         PRINT*,'  different then that in read_patran'
         PRINT*,TestNumSurfEl,NumElhex2D(3,iProcs)
@@ -1186,9 +1207,19 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
   sur_all = Com_get_dataitem_handle( SurWin//'.all')
 
-  CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh.'//ichr4, sur_all,&
-       "isolid","00.000000")
-
+  ! MS
+  IF (NumNpNew.GT.0) THEN
+     IF (appendToggle.EQV..TRUE.) THEN
+       CALL COM_call_function( set_option, 2, 'mode', 'a')
+     ELSE
+       CALL COM_call_function( set_option, 2, 'mode', 'w')
+       appendToggle = .TRUE.
+     END IF       
+     CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh.'//ichr4, sur_all,&
+          "isolid","00.000000")
+  END IF
+  WRITE (*,*) 'iProc = ', iProcs, ' appendToggle = ', appendToggle
+  ! MS End
 
   CALL COM_delete_window( surWin)
 
@@ -1604,37 +1635,41 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
         ptrhex8 => ptrhex8%next
      ENDDO
 
-     CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
-     CALL COM_set_size( surWin//'.nc', iNI, NumNpNew )
-     CALL COM_resize_array(surWin//'.nc', iNI, MeshCoor, 3)
-
-     DO i = 1, NumNpNew 
-        MeshCoor(1:3,i) = coor(1:3,NodeFlag2D(1,i))
-     END DO
-
-
-     CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, '')
-!     CALL COM_set_size( surWin//'.bv', iNI, NumNpNew )
-     CALL COM_set_array( surWin//'.bv', iNI, NodeFlag2D(2,1), 2)
-
-
-! connectivity
-     TestNumSurfEl = NumElhex2D(2,iProcs)
-     PRINT*,'Number of Non-Interacting nodes and elements',NumNpNew,TestNumSurfEl
-
-     CALL COM_set_size( surWin//'.:q4', iNI, TestNumSurfEl)
-     CALL COM_resize_array( surWin//'.:q4', iNI, ElConnTable, 4)
-
-
-     CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
-     CALL COM_resize_array(surWin//'.bf2c', iNI, ElFlag_List, 1)
-
-     CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
-     CALL COM_set_size( surWin//'.bcflag', iNI,  1)
-     CALL COM_resize_array(surWin//'.bcflag', iNI, BCSurfFlagTwo, 1)
+     ! MS: Writing only non-vanishing windows
+     IF (NumNpNew.GT.0) THEN
+        CALL COM_new_dataitem( surWin//'.nc', 'n', COM_DOUBLE, 3, 'm')
+        CALL COM_set_size( surWin//'.nc', iNI, NumNpNew )
+        CALL COM_resize_array(surWin//'.nc', iNI, MeshCoor, 3)
+   
+        DO i = 1, NumNpNew 
+           MeshCoor(1:3,i) = coor(1:3,NodeFlag2D(1,i))
+        END DO
+   
+   
+        CALL COM_new_dataitem( surWin//'.bv', 'n', COM_INTEGER, 1, '')
+   !     CALL COM_set_size( surWin//'.bv', iNI, NumNpNew )
+        CALL COM_set_array( surWin//'.bv', iNI, NodeFlag2D(2,1), 2)
+   
+   
+   ! connectivity
+        TestNumSurfEl = NumElhex2D(2,iProcs)
+        PRINT*,'Number of Non-Interacting nodes and elements',NumNpNew,TestNumSurfEl
+   
+        CALL COM_set_size( surWin//'.:q4', iNI, TestNumSurfEl)
+        CALL COM_resize_array( surWin//'.:q4', iNI, ElConnTable, 4)
+   
+   
+        CALL COM_new_dataitem( surWin//'.bf2c', 'e', COM_INTEGER, 1, '')
+        CALL COM_resize_array(surWin//'.bf2c', iNI, ElFlag_List, 1)
+   
+        CALL COM_new_dataitem( surWin//'.bcflag', 'p', COM_INTEGER, 1, '')
+        CALL COM_set_size( surWin//'.bcflag', iNI,  1)
+        CALL COM_resize_array(surWin//'.bcflag', iNI, BCSurfFlagTwo, 1)
+        BCSurfFlagTwo(1) = 2
+     END IF
+     ! MS : End
      
 
-     BCSurfFlagTwo(1) = 2
 ! connectivity
      NULLIFY(ptrhex8)
      TestNumSurfEl = 0
@@ -1672,8 +1707,19 @@ SUBROUTINE mesh2d(nprocs,iProcs,ichr4)
 
   sur_all = Com_get_dataitem_handle( SurWin//'.all')
 
-  CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh.'//ichr4, sur_all,&
-       "isolid","00.000000")
+  ! MS: Writing only non-vanishing windows
+  IF (NumNpNew.GT.0) THEN
+     IF (appendToggle.EQV..TRUE.) THEN
+       CALL COM_call_function( set_option, 2, 'mode', 'a')
+     ELSE
+       CALL COM_call_function( set_option, 2, 'mode', 'w')
+       appendToggle = .TRUE.
+     END IF       
+     CALL COM_call_function( write_attr, 4, 'Rocin/SurfMesh.'//ichr4, sur_all,&
+          "isolid","00.000000")
+  END IF
+  WRITE (*,*) 'iProc = ', iProcs, ' appendToggle = ', appendToggle
+  ! MS : END
 
 
   CALL COM_delete_window( surWin)

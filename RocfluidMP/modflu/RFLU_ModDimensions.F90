@@ -748,7 +748,6 @@ MODULE RFLU_ModDimensions
 ! ******************************************************************************
 !   Start
 ! ******************************************************************************
-
     global => pRegion%global
 
     CALL RegisterFunction(global,'RFLU_WriteDimensions',&
@@ -884,7 +883,6 @@ MODULE RFLU_ModDimensions
          global%error /= ERR_NONE ) THEN 
       CALL ErrorStop(global,ERR_FILE_CLOSE,__LINE__,iFileName)
     END IF ! global%error
-   
 ! ******************************************************************************
 !   End
 ! ******************************************************************************

@@ -140,7 +140,6 @@ SUBROUTINE rflupart(caseString,verbLevel)
 ! ******************************************************************************
 ! Start, initialize global data
 ! ******************************************************************************  
-
   ALLOCATE(global,STAT=errorFlag)
   IF ( errorFlag /= ERR_NONE ) THEN 
     WRITE(STDERR,'(A,1X,A)') SOLVER_NAME,'ERROR - Pointer allocation failed.'
@@ -150,6 +149,7 @@ SUBROUTINE rflupart(caseString,verbLevel)
   casename = caseString(1:LEN(caseString))
 
   CALL RFLU_InitGlobal(casename,verbLevel,MPI_COMM_WORLD,global)
+
 
   CALL RegisterFunction(global,'rflupart', & 
                         'rflupart.F90')
@@ -166,6 +166,10 @@ SUBROUTINE rflupart(caseString,verbLevel)
   CALL RFLU_GENX_HardCodeWindowName(global)
 #endif
 
+  ! MS TODO The verbosity level is not propagated to RFLU properly
+  !global%verbLevel = 3
+  !WRITE (*,*) 'global%verbLevel = ', global%verbLevel
+  ! MS end
 ! ******************************************************************************
 ! Print header and write version string
 ! ******************************************************************************
@@ -714,6 +718,7 @@ SUBROUTINE rflupart(caseString,verbLevel)
 
   CALL DeregisterFunction(global)
 
+  WRITE (*,*) "rflumap finished sucessfully"
 END SUBROUTINE rflupart
 
 ! ******************************************************************************

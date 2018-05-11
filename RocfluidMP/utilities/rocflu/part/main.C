@@ -73,6 +73,7 @@ Usage(const string &pn)
        << "                       0 - Quiet" << endl
        << "                       1 - Moderately verbose" << endl
        << "                       2 - Ridiculously verbose" << endl
+       << "                       3 - Exteremly verbose" << endl
        << endl;
 }
 
@@ -133,7 +134,7 @@ main(int argc,char *argv[])
     }
     istringstream Istr(sverb);
     Istr >> verbosity;
-    if(verbosity < 0 || verbosity > 2){ // Some jerk specified a non numeric or negative
+    if(verbosity < 0 || verbosity > 4){ // Some jerk specified a non numeric or negative
       cerr << program_name
 	   << ": Invalid verbosity value.  Use -h for usage "
 	   << "instructions." << endl;

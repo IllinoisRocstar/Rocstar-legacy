@@ -19,7 +19,6 @@ find_path(BLOCKSOLVE_INC blocksolve95.h)
 find_library(METIS_LIB metis)
 find_path(METIS_INC metis.h)
 
-#INCLUDE(CTest)
 find_path(ROCCOM_INC com.h HINTS ../../IMPACT/COM/include)
 find_path(ROCMAN_INC rocman.h HINTS ../../Rocman/include)
 
@@ -31,7 +30,6 @@ set(LIB_SRCS ${LIBFRAC_SRCS})
 set(UTIL_SRCS ${PREP_SRCS})
 set(ALL_SRCS ${LIB_SRCS} ${UTIL_SRCS})
 set_source_files_properties(${ALL_SRCS} PROPERTIES COMPILE_FLAGS "-fPIC" )
-#set(TEST_SRCS src/MANTest.C)
 
 # rpath settings
 set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
@@ -50,6 +48,6 @@ target_link_libraries(Rocfrac ${IMPACT_LIB})
 
 add_executable(rfracprep ${PREP_SRCS})
 set_property(TARGET rfracprep PROPERTY LINKER_LANGUAGE Fortran)
-target_link_libraries(rfracprep ${IMPACT_LIB} ${METIS_LIB})
+target_link_libraries(rfracprep ${IMPACT_LIB} ${METIS_LIB} ${HDF5_LIBRARIES})
 
 install(TARGETS Rocfrac rfracprep RUNTIME DESTINATION bin LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)

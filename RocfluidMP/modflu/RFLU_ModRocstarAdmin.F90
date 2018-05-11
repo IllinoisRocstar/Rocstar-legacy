@@ -2527,7 +2527,7 @@ MODULE RFLU_ModRocstarAdmin
 ! ==============================================================================  
     
     CHARACTER(CHRLEN) :: winName
-    INTEGER :: paneId
+    INTEGER :: paneId,sz,ng
     REAL(RFREAL), POINTER :: pReal    
     TYPE(t_global), POINTER :: global
     TYPE(t_grid), POINTER :: pGrid
@@ -2570,9 +2570,10 @@ MODULE RFLU_ModRocstarAdmin
 ! ------------------------------------------------------------------------------   
    
     pReal => pRegion%mixt%cv(CV_MIXT_DENS,1)
-   
+  
     CALL COM_set_array(TRIM(winName)//'.rhof',paneId,pReal,pMixtInput%nCv, &
                        pGrid%nCellsTot)
+
  
     pReal => pRegion%mixt%cv(CV_MIXT_XMOM,1)
    
@@ -2611,6 +2612,8 @@ MODULE RFLU_ModRocstarAdmin
          global%verbLevel >= VERBOSE_HIGH ) THEN 
       WRITE(STDOUT,'(A,1X,A)') SOLVER_NAME,'Registering flow data done.'
     END IF ! global%verbLevel 
+    
+    CALL COM_get_size(TRIM(winName)//'.rhof',paneId,sz,ng)
   
   END SUBROUTINE RFLU_GENX_RegisterDataFlow
 

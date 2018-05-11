@@ -659,7 +659,7 @@ add_executable(simpleblock ${MAKEFLO_DIR}/simpleblock.cpp ${MAKEFLO_CORE_SRCS} $
 target_link_libraries(simpleblock ${MFHDF_LIB} ${HDF4_LIB} ${JPEG_LIB} ${ZLIB} ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
 add_executable(rfloprep ${FLOPREP_SRCS})
 set_property(TARGET rfloprep PROPERTY LINKER_LANGUAGE Fortran)
-target_link_libraries(rfloprep Rocflo ${IMPACT_LIB} ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES})
+target_link_libraries(rfloprep Rocflo ${IMPACT_LIB} ${MPI_CXX_LIBRARIES} ${MPI_Fortran_LIBRARIES} ${HDF5_LIBRARIES})
 
 set_target_properties(Rocflo PROPERTIES LINK_FLAGS "${MPI_Fortran_LINK_FLAGS}")
 set_target_properties(makemblock PROPERTIES LINK_FLAGS "${MPI_CXX_LINK_FLAGS} ${MPI_Fortran_LINK_FLAGS}")

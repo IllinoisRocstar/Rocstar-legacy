@@ -52,7 +52,7 @@ COM_EXTERN_MODULE(Rocpanda);
 #endif
 void init_profiling(Control_parameters &param, int comm_rank);
 
-int man_verbose = 0;
+int man_verbose = 1;
 void RocstarShutdown(int = 0);
 
 void 
@@ -181,7 +181,7 @@ Control_parameters::Control_parameters()
   maxNumTimeSteps = std::numeric_limits<int>::max();
   strcpy(output_module,"Rocout");
   strcpy(timingDataDir,"Rocman/Profiles");
-  controlVerb = 1;
+  controlVerb = 5;
 }
 
 void Control_parameters::read()
@@ -331,7 +331,7 @@ void Control_parameters::update_start_time(int step, double t)
 RocmanControl_parameters::RocmanControl_parameters()
 {
   // default
-  verbose = 0;
+  verbose = 1;
   separate_out = 0;
 
   order = 0;
@@ -433,7 +433,8 @@ void RocmanControl_parameters::read( MPI_Comm comm, int comm_rank)
   const char *rankWidth = "4";
   COM_call_function( OUT_set_option, "rankwidth", rankWidth);
   COM_call_function( OUT_set_option, "pnidwidth", "0");
-  const char *ioFormat = "HDF";
+  //const char *ioFormat = "HDF";
+  const char *ioFormat = "CGNS";
   COM_call_function( OUT_set_option, "format", ioFormat);
   if ( async_out) 
        COM_call_function( OUT_set_option, "async", "on");
@@ -565,6 +566,7 @@ void rocstar_driver( int verb, int remeshed, bool debug) {
   param.read();
 
   int comm_rank = param.myRank;
+
 
   param.controlVerb = verb;
   param.controlDebug = debug;
