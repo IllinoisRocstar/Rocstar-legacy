@@ -6,6 +6,7 @@ namespace GridConversion{ namespace DriverProgram{
 
       std::ostringstream Ostr;
 
+      FunctionEntry("ReadPatranInput");
       // Open the specified input file for reading
       Inf.open(input_name.c_str());
       if(!Inf){
@@ -20,7 +21,7 @@ namespace GridConversion{ namespace DriverProgram{
         ErrOstr.str("");
         // don't forget to tell the profiler/stacker the
         // function is exiting.
-        FunctionExit("Run");
+        FunctionExit("ReadPatranInput");
         return(1);
       }
 
@@ -213,7 +214,7 @@ namespace GridConversion{ namespace DriverProgram{
         ErrOstr.str("");
         // don't forget to tell the profiler/stacker the
         // function is exiting.
-        FunctionExit("Run");
+        FunctionExit("ReadPatranInput");
         return(1);
       }
 
@@ -258,7 +259,7 @@ namespace GridConversion{ namespace DriverProgram{
           ErrOstr.str("");
           // don't forget to tell the profiler/stacker the
           // function is exiting.
-          FunctionExit("Run");
+          FunctionExit("ReadPatranInput");
           return(1);
         }
       
@@ -309,7 +310,7 @@ namespace GridConversion{ namespace DriverProgram{
             ErrOstr.str("");
             // don't forget to tell the profiler/stacker the
             // function is exiting.
-            FunctionExit("Run");
+            FunctionExit("ReadPatranInput");
             return(1);
           }
         std::cout << "line " << __LINE__ << std::endl;
@@ -322,6 +323,7 @@ namespace GridConversion{ namespace DriverProgram{
 
       StdOut(Ostr.str());
       Ostr.str("");
+      FunctionExit("ReadPatranInput");
 
     return 0;
  

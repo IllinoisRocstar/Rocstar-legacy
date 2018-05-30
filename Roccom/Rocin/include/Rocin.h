@@ -47,6 +47,7 @@
 
 #ifdef USE_CGNS
 #include "cgnslib.h"
+#define MODE_READ CG_MODE_READ
 #endif // USE_CGNS
 
 /** \name Module loading and unloading

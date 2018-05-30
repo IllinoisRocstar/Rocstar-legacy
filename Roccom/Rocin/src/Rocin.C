@@ -67,9 +67,6 @@
 //#endif
 
 #include "Rocin.h"
-#ifdef USE_CGNS
-# include "cgnslib.h"
-#endif // USE_CGNS
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 USE_COM_NAME_SPACE
