@@ -70,7 +70,7 @@ sub checkNDA {
 
     # check Rocmop files
     if ($props->processModule("ROCMOP")) {
-        if (!analyzeRocburn($baseDir)) {
+        if (!analyzeRocmop($baseDir)) {
             $log->processErrorCode(405, $baseDir);
             push(@error, 405);
         };
